@@ -6,101 +6,148 @@ import path from 'path';
 const apiPath = path.resolve(process.cwd(), 'public/api.json');
 const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
 
-const categoryIcons: Record<string, string> = {
-  'PPh 21': '👤', 'PPh 22': '📦', 'PPh 23': '🔧', 'PPh 26': '🌍',
-  'PPh Badan': '🏢', 'PPh UMKM': '🏪', 'PPh 4(2) Final': '💰',
-  'PPN': '🧾', 'PPnBM': '💎', 'Bea Meterai': '📋'
+// Flatten all entries for the main table
+type FlatEntry = {
+  category: string;
+  categorySlug: string;
+  transactionType: string;
+  id: string;
+  status: string;
+  rate: string;
+  taxBase: string;
+  payer: string;
+  effectiveFrom: string;
+  effectiveTo: string;
+  bppuKode: { kode: string; nama: string; tarif: number }[] | null;
 };
+
+const allEntries: FlatEntry[] = [];
+api.categories.forEach((cat: any) => {
+  const slug = cat.taxType.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
+  cat.entries.forEach((entry: any) => {
+    let rateStr = '';
+    if (entry.rate.type === 'percentage') rateStr = `${entry.rate.value}%`;
+    else if (entry.rate.type === 'range') rateStr = `${entry.rate.value[0]}%–${entry.rate.value[1]}%`;
+    else if (entry.rate.type === 'progressive' && entry.rate.brackets) rateStr = entry.rate.brackets.map((b: any) => `${b.rate}%`).join(' / ');
+    else rateStr = String(entry.rate.value);
+
+    allEntries.push({
+      category: cat.taxType,
+      categorySlug: slug,
+      transactionType: entry.transactionType,
+      id: entry.id,
+      status: entry.status,
+      rate: rateStr,
+      taxBase: entry.taxBase,
+      payer: entry.payer,
+      effectiveFrom: entry.effectiveFrom,
+      effectiveTo: entry.effectiveTo || 'sekarang',
+      bppuKode: entry.bppuKode || null,
+    });
+  });
+});
+
+const statusOrder: Record<string, number> = { berlaku: 0, diubah: 1, belum_berlaku: 2, dicabut: 3 };
+allEntries.sort((a, b) => (statusOrder[a.status] ?? 9) - (statusOrder[b.status] ?? 9));
+
+const statusBadge: Record<string, string> = {
+  'berlaku': 'badge-berlaku',
+  'dicabut': 'badge-dicabut',
+  'diubah': 'badge-diubah',
+  'belum_berlaku': 'badge-belum-berlaku',
+};
+const statusLabel: Record<string, string> = {
+  'berlaku': '✓ Berlaku',
+  'dicabut': '✗ Dicabut',
+  'diubah': '⟳ Diubah',
+  'belum_berlaku': '○ Belum Berlaku',
+};
+
+// Count total unique BPPU codes
+const bppuCodeSet = new Set<string>();
+allEntries.forEach(e => e.bppuKode?.forEach(b => bppuCodeSet.add(b.kode)));
 ---
 
 <BaseLayout title="Beranda">
-  <!-- Hero -->
-  <section class="text-center py-12 mb-8">
-    <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 via-emerald-400 to-amber-400 bg-clip-text text-transparent">
-      Database Tarif Pajak Indonesia
-    </h1>
-    <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-6">
-      Database terbuka berisi tarif pajak Indonesia dari 1983 hingga saat ini. 
-      Bersumber dari regulasi resmi, lengkap dengan status berlaku/dicabut, dasar hukum, dan riwayat perubahan.
-    </p>
-    <div class="flex justify-center gap-4 text-sm">
-      <div class="bg-gray-800 rounded-lg px-4 py-2">
-        <span class="text-2xl font-bold text-white">{api.meta.stats.entries}</span>
-        <span class="text-gray-400 ml-1">Tarif</span>
-      </div>
-      <div class="bg-gray-800 rounded-lg px-4 py-2">
-        <span class="text-2xl font-bold text-white">{api.meta.stats.regulations}</span>
-        <span class="text-gray-400 ml-1">Regulasi</span>
-      </div>
-      <div class="bg-gray-800 rounded-lg px-4 py-2">
-        <span class="text-2xl font-bold text-white">{api.meta.stats.categories.length}</span>
-        <span class="text-gray-400 ml-1">Kategori</span>
-      </div>
+  <!-- Stats bar -->
+  <div class="flex items-center gap-6 mb-4 text-sm">
+    <div class="flex items-center gap-4 text-gray-500">
+      <span><strong class="text-gray-900">{api.meta.stats.entries}</strong> tarif</span>
+      <span class="text-gray-300">|</span>
+      <span><strong class="text-gray-900">{api.meta.stats.regulations}</strong> regulasi</span>
+      <span class="text-gray-300">|</span>
+      <span><strong class="text-gray-900">{api.meta.stats.categories.length}</strong> kategori</span>
+      <span class="text-gray-300">|</span>
+      <span><strong class="text-gray-900">{bppuCodeSet.size}</strong> <a href="/kode-objek-pajak" class="text-blue-600 hover:underline">kode BPPU</a></span>
     </div>
-  </section>
+    <div class="flex-1"></div>
+    <div class="hidden md:flex items-center gap-2 text-xs">
+      <a href="/api.json" class="legal-tag">/api.json</a>
+      <a href="/rates.json" class="legal-tag">/rates.json</a>
+      <a href="/regulations.json" class="legal-tag">/regulations.json</a>
+    </div>
+  </div>
 
-  <!-- Categories Grid -->
-  <section>
-    <h2 class="text-2xl font-bold mb-6">Kategori Pajak</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {api.meta.stats.categories.map((cat: any) => {
-        const slug = cat.taxType.toLowerCase().replace(/[^a-z0-9]/g, '-');
-        return (
-          <a href={`/kategori/${slug}`} 
-             class="group block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-gray-600 hover:bg-gray-800/50 transition-all">
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-2xl">{categoryIcons[cat.taxType] || '📊'}</span>
-              <span class="text-gray-500 text-sm">{cat.count} tarif</span>
-            </div>
-            <h3 class="font-semibold text-white group-hover:text-blue-400 transition text-lg">{cat.taxType}</h3>
-            <p class="text-gray-500 text-sm mt-1">Kategori {cat.taxType}</p>
-          </a>
-        );
-      })}
+  <!-- Main Data Table -->
+  <div class="border border-gray-200 rounded-lg overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="tax-table" id="main-table">
+        <thead>
+          <tr>
+            <th>Kategori</th>
+            <th>Jenis Transaksi</th>
+            <th>ID</th>
+            <th>Tarif</th>
+            <th>Kode BPPU</th>
+            <th>Status</th>
+            <th>Berlaku</th>
+          </tr>
+        </thead>
+        <tbody>
+          {allEntries.map((entry: FlatEntry) => (
+            <tr>
+              <td>
+                <a href={`/kategori/${entry.categorySlug}`} class="cat-link font-medium">{entry.category}</a>
+              </td>
+              <td class="font-medium text-gray-900">
+                <a href={`/kategori/${entry.categorySlug}`} class="hover:text-blue-600 transition">{entry.transactionType}</a>
+              </td>
+              <td class="mono text-gray-500">{entry.id}</td>
+              <td><span class="rate-value">{entry.rate}</span></td>
+              <td>
+                {entry.bppuKode && entry.bppuKode.length > 0 ? (
+                  <a href="/kode-objek-pajak" class="text-blue-600 hover:underline text-xs font-mono">
+                    {entry.bppuKode.length === 1 
+                      ? entry.bppuKode[0].kode 
+                      : `${entry.bppuKode[0].kode.split('-').slice(0,2).join('-')}-xx (${entry.bppuKode.length})`}
+                  </a>
+                ) : (
+                  <span class="text-gray-300 text-xs">—</span>
+                )}
+              </td>
+              <td><span class={`badge ${statusBadge[entry.status] || 'badge-belum-berlaku'}`}>{statusLabel[entry.status] || entry.status}</span></td>
+              <td class="mono text-gray-500 text-xs">{entry.effectiveFrom} → {entry.effectiveTo}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-  </section>
+  </div>
 
-  <!-- API Section -->
-  <section class="mt-12 bg-gray-900 border border-gray-800 rounded-xl p-8">
-    <h2 class="text-2xl font-bold mb-4">🔌 API Terbuka</h2>
-    <p class="text-gray-400 mb-4">Akses database tarif pajak Indonesia dalam format JSON. Gratis untuk digunakan oleh chatbot, aplikasi, atau integrasi apapun.</p>
-    <div class="bg-gray-950 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-      <span class="text-gray-500">$ curl</span> <span class="text-emerald-400">https://tarif-pajak-id.vercel.app/api.json</span>
+  <!-- API & Sources -->
+  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <h3 class="text-sm font-semibold text-gray-700 mb-2">API Terbuka</h3>
+      <div class="code-block">
+        <span class="text-gray-400">$</span> curl <span class="text-emerald-600">https://tarif-pajak-id.vercel.app/api.json</span>
+      </div>
     </div>
-    <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-      <a href="/api.json" class="bg-gray-800 rounded-lg p-3 hover:bg-gray-700 transition">
-        <span class="text-blue-400 font-semibold">/api.json</span>
-        <p class="text-gray-500 mt-1">Database lengkap</p>
-      </a>
-      <a href="/rates.json" class="bg-gray-800 rounded-lg p-3 hover:bg-gray-700 transition">
-        <span class="text-emerald-400 font-semibold">/rates.json</span>
-        <p class="text-gray-500 mt-1">Tarif ternormalisasi</p>
-      </a>
-      <a href="/regulations.json" class="bg-gray-800 rounded-lg p-3 hover:bg-gray-700 transition">
-        <span class="text-purple-400 font-semibold">/regulations.json</span>
-        <p class="text-gray-500 mt-1">Metadata regulasi</p>
-      </a>
+    <div>
+      <h3 class="text-sm font-semibold text-gray-700 mb-2">Sumber Data</h3>
+      <div class="flex gap-3">
+        <a href="https://pasal.id" target="_blank" class="legal-tag py-1.5 px-3 text-xs">⚖️ Pasal.id ↗</a>
+        <a href="https://peraturan.bpk.go.id" target="_blank" class="legal-tag py-1.5 px-3 text-xs">🏛️ JDIH BPK ↗</a>
+      </div>
     </div>
-  </section>
-
-  <!-- Data Sources -->
-  <section class="mt-8 bg-gray-900 border border-gray-800 rounded-xl p-8">
-    <h2 class="text-xl font-bold mb-4">📚 Sumber Data</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-      <a href="https://pasal.id" target="_blank" class="flex items-center gap-3 bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition">
-        <span class="text-2xl">⚖️</span>
-        <div>
-          <div class="text-white font-semibold">Pasal.id</div>
-          <div class="text-gray-400">40,000+ peraturan Indonesia</div>
-        </div>
-      </a>
-      <a href="https://peraturan.bpk.go.id" target="_blank" class="flex items-center gap-3 bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition">
-        <span class="text-2xl">🏛️</span>
-        <div>
-          <div class="text-white font-semibold">JDIH BPK</div>
-          <div class="text-gray-400">Database peraturan resmi</div>
-        </div>
-      </a>
-    </div>
-  </section>
+  </div>
 </BaseLayout>

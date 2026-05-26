@@ -9,7 +9,10 @@
       "taxType": "PPh 4(2) Final",
       "transactionType": "Bunga Deposito dan Tabungan",
       "description": "Pajak final atas bunga deposito dan simpanan tabungan yang dibayar oleh bank.",
-      "rate": { "type": "percentage", "value": 20 },
+      "rate": {
+        "type": "percentage",
+        "value": 20
+      },
       "taxBase": "Jumlah bunga bruto",
       "payer": "Pemilik deposito/tabungan",
       "recipient": "Negara",
@@ -18,13 +21,110 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "UU 36/2008", "article": "Pasal 4 ayat (2)", "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008" },
-        { "regulation": "PP 131/2000", "article": "Pasal 2", "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000" }
+        {
+          "regulation": "UU 36/2008",
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+        },
+        {
+          "regulation": "PP 131/2000",
+          "article": "Pasal 2",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
+      "supersedes": [],
+      "supersededBy": [],
       "notes": "Bunga tabungan dan deposito bank umum dan BPR dikenakan PPh final 20%. Bebas pajak untuk bunga simpanan di bank perwakilan negara P3B.",
-      "tags": ["pph-final", "bunga", "deposito", "tabungan", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "pph-final",
+        "bunga",
+        "deposito",
+        "tabungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "bppuKode": [
+        {
+          "kode": "28-404-01",
+          "nama": "Bunga Tabungan dan Bunga Deposito yang Ditempatkan di Dalam Negeri yang Dananya Bersumber Selain dari Devisa Hasil Ekspor (DHE)",
+          "tarif": 20.0
+        },
+        {
+          "kode": "28-404-02",
+          "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang IDR bersumber dari DHE tenor 1 bulan)",
+          "tarif": 7.5
+        },
+        {
+          "kode": "28-404-03",
+          "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang IDR bersumber dari DHE tenor 3 bulan)",
+          "tarif": 5.0
+        },
+        {
+          "kode": "28-404-04",
+          "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang IDR bersumber dari DHE tenor 6 bulan atau lebih)",
+          "tarif": 0.0
+        },
+        {
+          "kode": "28-404-05",
+          "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor 1 bulan)",
+          "tarif": 10.0
+        },
+        {
+          "kode": "28-404-06",
+          "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor 3 bulan)",
+          "tarif": 7.5
+        },
+        {
+          "kode": "28-404-07",
+          "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor 6 bulan)",
+          "tarif": 2.5
+        },
+        {
+          "kode": "28-404-08",
+          "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor lebih 6 bulan)",
+          "tarif": 0.0
+        },
+        {
+          "kode": "28-404-09",
+          "nama": "Bunga Deposito/Tabungan yang Ditempatkan di Luar Negeri Melalui Bank yang Didirikan atau Bertempat Kedudukan di Indonesia atau Cabang Bank Luar Negeri di Indonesia",
+          "tarif": 20.0
+        },
+        {
+          "kode": "28-404-10",
+          "nama": "Diskonto Sertifikat Bank Indonesia",
+          "tarif": 20.0
+        },
+        {
+          "kode": "28-404-11",
+          "nama": "Jasa Giro",
+          "tarif": 20.0
+        },
+        {
+          "kode": "28-401-01",
+          "nama": "Bunga Obligasi, Surat Utang Negara, atau Obligasi Daerah yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap.",
+          "tarif": 15.0
+        },
+        {
+          "kode": "28-401-06",
+          "nama": "Bunga Obligasi yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap",
+          "tarif": 10.0
+        },
+        {
+          "kode": "28-401-03",
+          "nama": "Bunga Obligasi yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap yang diadministrasikan oleh BI",
+          "tarif": 10.0
+        },
+        {
+          "kode": "28-401-04",
+          "nama": "Diskonto Surat Perbendaharaan Negara yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap",
+          "tarif": 20.0
+        },
+        {
+          "kode": "28-401-05",
+          "nama": "Diskonto Surat Perbendaharaan Negara yang Diterima Wajib Pajak Penduduk/Berkedudukan di Luar Negeri",
+          "tarif": 20.0
+        }
+      ]
     },
     {
       "id": "pph-final-sewa-tanah",
@@ -32,7 +132,10 @@
       "taxType": "PPh 4(2) Final",
       "transactionType": "Sewa Tanah dan/atau Bangunan",
       "description": "Pajak final atas penghasilan berupa sewa tanah dan/atau bangunan selain yang dipotong PPh 23.",
-      "rate": { "type": "percentage", "value": 10 },
+      "rate": {
+        "type": "percentage",
+        "value": 10
+      },
       "taxBase": "Jumlah bruto sewa",
       "payer": "Penerima sewa",
       "recipient": "Negara",
@@ -41,13 +144,45 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "UU 36/2008", "article": "Pasal 4 ayat (2)", "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008" },
-        { "regulation": "PP 131/2000", "article": "Pasal 4", "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000" }
+        {
+          "regulation": "UU 36/2008",
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+        },
+        {
+          "regulation": "PP 131/2000",
+          "article": "Pasal 4",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
+      "supersedes": [],
+      "supersededBy": [],
       "notes": "PP 131/2000 Pasal 4 mengatur bahwa sewa tanah dan/atau bangunan yang dipotong PPh final 10% adalah yang tidak termasuk PPh 23.",
-      "tags": ["pph-final", "sewa", "tanah", "bangunan", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "pph-final",
+        "sewa",
+        "tanah",
+        "bangunan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "bppuKode": [
+        {
+          "kode": "28-402-01",
+          "nama": "Pengalihan Hak atas Tanah dan/atau Bangunan",
+          "tarif": 2.5
+        },
+        {
+          "kode": "28-402-02",
+          "nama": "Pengalihan Rumah Sederhana dan Rumah Susun Sederhana yang Dilakukan oleh WP yang Usaha Pokoknya Mengalihkan Hak atas Tanah dan/atau Bangunan",
+          "tarif": 1.0
+        },
+        {
+          "kode": "28-402-03",
+          "nama": "Pengalihan Hak atas Tanah dan/atau Bangunan kepada Pemerintah, BUMN yang Mendapat Penugasan Khusus dari Pemerintah, atau BUMD yang Mendapat Penugasan Khusus dari Kepala Daerah, sesuai UU mengenai Pengadaan Tanah bagi Pembangunan untuk Kepentingan Umum",
+          "tarif": 0.0
+        }
+      ]
     },
     {
       "id": "pph-final-hadiah-undian",
@@ -55,7 +190,10 @@
       "taxType": "PPh 4(2) Final",
       "transactionType": "Hadiah Undian",
       "description": "Pajak final atas hadiah undian, baik berupa uang maupun barang.",
-      "rate": { "type": "percentage", "value": 25 },
+      "rate": {
+        "type": "percentage",
+        "value": 25
+      },
       "taxBase": "Nilai hadiah bruto",
       "payer": "Penerima hadiah",
       "recipient": "Negara",
@@ -64,11 +202,33 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "PP 131/2000", "article": "Pasal 3", "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000" }
+        {
+          "regulation": "PP 131/2000",
+          "article": "Pasal 3",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
-      "tags": ["pph-final", "hadiah", "undian", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "supersedes": [],
+      "supersededBy": [],
+      "tags": [
+        "pph-final",
+        "hadiah",
+        "undian",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "bppuKode": [
+        {
+          "kode": "28-405-01",
+          "nama": "Hadiah Undian",
+          "tarif": 25.0
+        },
+        {
+          "kode": "28-419-01",
+          "nama": "Dividen yang Diterima/Diperoleh Wajib Pajak Orang Pribadi Dalam Negeri",
+          "tarif": 10.0
+        }
+      ]
     },
     {
       "id": "pph-final-transaksi-saham-bursa",
@@ -76,7 +236,10 @@
       "taxType": "PPh 4(2) Final",
       "transactionType": "Keuntungan Transaksi Saham di Bursa Efek",
       "description": "Pajak final atas penghasilan dari perdagangan saham di bursa efek melalui perantara pedagang efek.",
-      "rate": { "type": "percentage", "value": 0.1 },
+      "rate": {
+        "type": "percentage",
+        "value": 0.1
+      },
       "taxBase": "Nilai transaksi penjualan saham",
       "payer": "Penjual saham",
       "recipient": "Negara",
@@ -85,11 +248,382 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "UU 36/2008", "article": "Pasal 4 ayat (2)", "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008" }
+        {
+          "regulation": "UU 36/2008",
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
+      "supersedes": [],
+      "supersededBy": [],
       "notes": "Tarif 0,1% dari nilai transaksi penjualan saham (final). Berlaku untuk transaksi di bursa efek.",
-      "tags": ["pph-final", "saham", "bursa-efek", "berlaku"],
+      "tags": [
+        "pph-final",
+        "saham",
+        "bursa-efek",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "bppuKode": [
+        {
+          "kode": "28-407-01",
+          "nama": "Transaksi Penjualan Saham di Bursa Efek (Saham Pendiri)",
+          "tarif": 0.5
+        },
+        {
+          "kode": "28-406-01",
+          "nama": "Transaksi Penjualan Saham di Bursa Efek (Bukan Saham Pendiri)",
+          "tarif": 0.1
+        },
+        {
+          "kode": "28-408-01",
+          "nama": "Transaksi Penjualan Saham Milik Perusahaan Modal Ventura Tidak di Bursa Efek",
+          "tarif": 0.1
+        }
+      ]
+    },
+    {
+      "id": "pph-final-konstruksi",
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "transactionType": "Pekerjaan dan Jasa Konstruksi",
+      "description": "Pemotongan PPh Final atas penghasilan dari pekerjaan konstruksi, jasa perencanaan konstruksi, jasa pelaksanaan konstruksi, jasa pengawasan konstruksi, dan jasa konsultansi konstruksi sesuai PP 51/2008 jo. PP 40/2009.",
+      "rate": {
+        "type": "range",
+        "value": [
+          1.75,
+          6.0
+        ]
+      },
+      "taxBase": "Jumlah bruto nilai kontrak atau nilai pekerjaan",
+      "payer": "Penyedia jasa konstruksi",
+      "recipient": "Negara",
+      "withholder": "Pemberi kerja/pemilik proyek",
+      "effectiveFrom": "2009-07-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 51/2008",
+          "article": "Pasal 2-5"
+        },
+        {
+          "regulation": "PP 40/2009",
+          "article": "Pasal 2"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 19"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Terdiri dari 14 kode objek pajak BPPU dengan tarif 1.75%, 2.0%, 2.65%, 3.0%, 3.5%, 4.0%, 6.0%.",
+      "examples": [],
+      "tags": [
+        "pph-final",
+        "konstruksi"
+      ],
+      "bppuKode": [
+        {
+          "kode": "28-409-22",
+          "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha Kualifikasi Kecil atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+          "tarif": 1.75
+        },
+        {
+          "kode": "28-409-23",
+          "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha Atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+          "tarif": 4.0
+        },
+        {
+          "kode": "28-409-24",
+          "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Selain Sertifikat Badan Usaha Kualifikasi Kecil atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+          "tarif": 2.65
+        },
+        {
+          "kode": "28-409-25",
+          "nama": "Pekerjaan Konstruksi Terintegrasi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha",
+          "tarif": 2.65
+        },
+        {
+          "kode": "28-409-26",
+          "nama": "Pekerjaan Konstruksi Terintegrasi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha",
+          "tarif": 4.0
+        },
+        {
+          "kode": "28-409-27",
+          "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+          "tarif": 3.5
+        },
+        {
+          "kode": "28-409-28",
+          "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+          "tarif": 6.0
+        },
+        {
+          "kode": "28-409-08",
+          "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Dengan Kualifikasi Usaha)",
+          "tarif": 4.0
+        },
+        {
+          "kode": "28-409-09",
+          "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Tanpa Kualifikasi Usaha)",
+          "tarif": 6.0
+        },
+        {
+          "kode": "28-409-10",
+          "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Kecil)",
+          "tarif": 2.0
+        },
+        {
+          "kode": "28-409-11",
+          "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Menengah dan Besar)",
+          "tarif": 3.0
+        },
+        {
+          "kode": "28-409-12",
+          "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Tanpa Kualifikasi Usaha)",
+          "tarif": 4.0
+        },
+        {
+          "kode": "28-409-13",
+          "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Dengan Kualifikasi Usaha)",
+          "tarif": 4.0
+        },
+        {
+          "kode": "28-409-14",
+          "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Tanpa Kualifikasi Usaha)",
+          "tarif": 6.0
+        }
+      ],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-final-bunga-koperasi",
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "transactionType": "Bunga Simpanan Koperasi",
+      "description": "Pemotongan PPh atas bunga simpanan yang dibayarkan oleh koperasi kepada anggota WP Orang Pribadi.",
+      "rate": {
+        "type": "range",
+        "value": [
+          0.0,
+          10.0
+        ]
+      },
+      "taxBase": "Jumlah bunga simpanan",
+      "payer": "Anggota koperasi (WP OP)",
+      "recipient": "Negara",
+      "withholder": "Koperasi",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (2)"
+        },
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 2"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Terdiri dari 2 kode objek pajak BPPU dengan tarif 0.0%, 10.0%.",
+      "examples": [],
+      "tags": [
+        "pph-final",
+        "koperasi"
+      ],
+      "bppuKode": [
+        {
+          "kode": "28-417-01",
+          "nama": "Bunga Simpanan yang Dibayarkan oleh Koperasi kepada Anggota Wajib Pajak Orang Pribadi (bunga sampai dengan Rp240.000,00)",
+          "tarif": 0.0
+        },
+        {
+          "kode": "28-417-02",
+          "nama": "Bunga Simpanan yang Dibayarkan oleh Koperasi kepada Anggota Wajib Pajak Orang Pribadi (bunga di atas Rp240.000,00)",
+          "tarif": 10.0
+        }
+      ],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-final-transportasi",
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "transactionType": "Penghasilan dari Pengangkutan dan Charter",
+      "description": "Pemotongan PPh atas imbalan pengangkutan orang dan/atau barang, charter kapal laut dan pesawat udara, baik perusahaan dalam negeri maupun luar negeri.",
+      "rate": {
+        "type": "range",
+        "value": [
+          1.2,
+          2.64
+        ]
+      },
+      "taxBase": "Jumlah bruto imbalan",
+      "payer": "Perusahaan pelayaran/penerbangan",
+      "recipient": "Negara",
+      "withholder": "Pemberi kerja/pembayar imbalan",
+      "effectiveFrom": "2009-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (2)"
+        },
+        {
+          "regulation": "PP 51/2008",
+          "article": "Pasal 5A"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Terdiri dari 5 kode objek pajak BPPU dengan tarif 1.2%, 1.8%, 2.64%.",
+      "examples": [],
+      "tags": [
+        "pph-final",
+        "transportasi"
+      ],
+      "bppuKode": [
+        {
+          "kode": "28-410-02",
+          "nama": "Imbalan yang Dibayarkan/Terutang kepada Perusahaan Pelayaran Dalam Negeri",
+          "tarif": 1.2
+        },
+        {
+          "kode": "28-411-02",
+          "nama": "Imbalan Charter Kapal Laut dan/atau Pesawat Udara yang Dibayarkan/ Terutang kepada Perusahaan Pelayaran dan/atau Penerbangan Luar Negeri  melalui BUT di Indonesia",
+          "tarif": 2.64
+        },
+        {
+          "kode": "29-101-01",
+          "nama": "Imbalan Charter Pesawat Udara yang Dibayarkan/Terutang kepada Perusahaan Penerbangan Dalam Negeri oleh Pemotong Pajak",
+          "tarif": 1.8
+        },
+        {
+          "kode": "28-410-01",
+          "nama": "Imbalan yang Diterima/Diperoleh Sehubungan dengan Pengangkutan Orang dan/atau Barang Termasuk Penyewaan Kapal Laut Oleh Perusahaan Pelayaran Dalam Negeri",
+          "tarif": 1.2
+        },
+        {
+          "kode": "28-411-01",
+          "nama": "Imbalan yang Dibayarkan/Terutang kepada Perusahaan Pelayaran dan/atau Penerbangan Luar Negeri Sehubungan dengan Pengangkutan Orang dan/atau Barang (Selain Berdasarkan Perjanjian Charter)",
+          "tarif": 2.64
+        }
+      ],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-final-migas",
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "transactionType": "Penghasilan dari Kegiatan Hulu Migas",
+      "description": "Pemotongan PPh atas penghasilan sehubungan dengan kegiatan hulu minyak dan gas bumi meliputi uplift, participating interest eksplorasi dan eksploitasi.",
+      "rate": {
+        "type": "range",
+        "value": [
+          5.0,
+          20.0
+        ]
+      },
+      "taxBase": "Jumlah bruto penghasilan",
+      "payer": "Kontraktor migas",
+      "recipient": "Negara",
+      "withholder": "Pemerintah/BP Migas",
+      "effectiveFrom": "2009-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (2)"
+        },
+        {
+          "regulation": "PP 51/2008",
+          "article": "Pasal 5B"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Terdiri dari 3 kode objek pajak BPPU dengan tarif 5.0%, 7.0%, 20.0%.",
+      "examples": [],
+      "tags": [
+        "pph-final",
+        "migas"
+      ],
+      "bppuKode": [
+        {
+          "kode": "28-421-01",
+          "nama": "Uplift Hulu Migas",
+          "tarif": 20.0
+        },
+        {
+          "kode": "28-421-02",
+          "nama": "Participating Interest Eksplorasi Hulu Migas",
+          "tarif": 5.0
+        },
+        {
+          "kode": "28-421-03",
+          "nama": "Participating Interest Eksploitasi Hulu Migas",
+          "tarif": 7.0
+        }
+      ],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-final-investasi-lpi",
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "transactionType": "Penghasilan dari Kerja Sama dengan LPI / Jasa Maklon Internasional",
+      "description": "Pemotongan PPh atas penghasilan yang diterima atau diperoleh sehubungan dengan kerja sama dengan Lembaga Pengelola Investasi (LPI) dan jasa maklon internasional di bidang produksi mainan anak-anak.",
+      "rate": {
+        "type": "range",
+        "value": [
+          2.1,
+          7.5
+        ]
+      },
+      "taxBase": "Jumlah bruto penghasilan",
+      "payer": "WP penerima penghasilan",
+      "recipient": "Negara",
+      "withholder": "LPI / Pemberi kerja",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (2)"
+        },
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 3"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Terdiri dari 2 kode objek pajak BPPU dengan tarif 2.1%, 7.5%.",
+      "examples": [],
+      "tags": [
+        "pph-final",
+        "investasi"
+      ],
+      "bppuKode": [
+        {
+          "kode": "28-499-02",
+          "nama": "Penghasilan yang Diterima atau Diperoleh Sehubungan dengan Kerja Sama dengan Lembaga Pengelola Investasi (LPI)",
+          "tarif": 7.5
+        },
+        {
+          "kode": "28-499-01",
+          "nama": "Penghasilan Wajib Pajak yang Melakukan Kegiatan Usaha Jasa Maklon (Contract Manufacturing) Internasional di Bidang Produksi Mainan Anak-Anak",
+          "tarif": 2.1
+        }
+      ],
       "lastVerified": "2026-05-26"
     }
   ]

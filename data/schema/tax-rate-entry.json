@@ -218,6 +218,32 @@
     "lastVerified": {
       "type": "string",
       "format": "date"
+    },
+    "bppuKode": {
+      "type": "array",
+      "description": "Kode Objek Pajak BPPU (Bukti Pemotongan Pajak Unifikasi) yang sesuai dengan entry ini",
+      "items": {
+        "type": "object",
+        "required": [
+          "kode",
+          "nama",
+          "tarif"
+        ],
+        "properties": {
+          "kode": {
+            "type": "string",
+            "description": "Kode objek pajak, e.g. 24-104-01"
+          },
+          "nama": {
+            "type": "string",
+            "description": "Nama objek pajak"
+          },
+          "tarif": {
+            "type": "number",
+            "description": "Tarif dalam persen"
+          }
+        }
+      }
     }
   },
   "additionalProperties": false

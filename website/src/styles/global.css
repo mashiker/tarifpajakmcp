@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+/* ===== Custom styles (must be after @tailwind directives) ===== */
+@layer components {
+  body {
+    font-family: 'Rubik', system-ui, -apple-system, sans-serif;
+  }
 }
-EOF
-
-echo "Astro config created"

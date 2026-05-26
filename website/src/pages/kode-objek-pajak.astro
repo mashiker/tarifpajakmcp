@@ -1,0 +1,203 @@
+---
+import BaseLayout from '../layouts/Base.astro';
+import fs from 'fs';
+import path from 'path';
+
+const apiPath = path.resolve(process.cwd(), 'public/api.json');
+const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
+
+// Flatten all BPPU codes from all entries
+type BPPUCode = {
+  kode: string;
+  nama: string;
+  tarif: number;
+  entryId: string;
+  entryType: string;
+  categorySlug: string;
+};
+
+function toSlug(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
+}
+
+const allBppu: BPPUCode[] = [];
+const seenKode = new Set<string>();
+
+api.categories.forEach((cat: any) => {
+  const slug = toSlug(cat.taxType);
+  cat.entries.forEach((entry: any) => {
+    if (entry.bppuKode) {
+      entry.bppuKode.forEach((b: any) => {
+        if (!seenKode.has(b.kode)) {
+          seenKode.add(b.kode);
+          allBppu.push({
+            kode: b.kode,
+            nama: b.nama,
+            tarif: b.tarif,
+            entryId: entry.id,
+            entryType: entry.transactionType,
+            categorySlug: slug,
+          });
+        }
+      });
+    }
+  });
+});
+
+// Sort by kode
+allBppu.sort((a, b) => a.kode.localeCompare(b.kode));
+
+// Group by prefix
+const groups: Record<string, { label: string; items: BPPUCode[] }> = {};
+const prefixLabels: Record<string, string> = {
+  '22': 'PPh 22 — Penjualan/Pembelian Barang',
+  '24': 'PPh 23/26 — Jasa, Dividen, Bunga, Royalti',
+  '28': 'PPh 4(2) Final — Bunga, Sewa, Saham, Konstruksi',
+  '29': 'PPh Lainnya — Charter Pesawat',
+};
+
+allBppu.forEach(item => {
+  const prefix = item.kode.split('-')[0];
+  if (!groups[prefix]) {
+    groups[prefix] = { label: prefixLabels[prefix] || `Prefix ${prefix}`, items: [] };
+  }
+  groups[prefix].items.push(item);
+});
+---
+
+<BaseLayout title="Kode Objek Pajak BPPU">
+  <div class="mb-5">
+    <a href="/" class="text-xs text-gray-400 hover:text-gray-600 transition font-mono">← Beranda</a>
+    <div class="flex items-center gap-3 mt-2">
+      <h1 class="text-xl font-semibold text-gray-900">Kode Objek Pajak BPPU</h1>
+      <span class="text-xs text-gray-400 font-mono">{allBppu.length} kode</span>
+    </div>
+    <p class="text-sm text-gray-500 mt-1">
+      Referensi lengkap kode objek pajak untuk Bukti Pemotongan Pajak Unifikasi (BPPU). 
+      Data bersumber dari DJP Online.
+    </p>
+  </div>
+
+  <!-- Search & Filter -->
+  <div class="flex items-center gap-3 mb-4">
+    <input type="text" id="bppu-search" placeholder="Cari kode atau nama objek pajak..." 
+           class="search-box flex-1 max-w-md" />
+    <div class="flex gap-1">
+      {Object.entries(groups).map(([prefix, group]) => (
+        <button data-filter={prefix} class="filter-btn px-3 py-1.5 text-xs rounded-md border border-gray-200 bg-white text-gray-600 hover:bg-gray-50 transition">
+          {prefix}-xxx ({group.items.length})
+        </button>
+      ))}
+      <button data-filter="all" class="filter-btn px-3 py-1.5 text-xs rounded-md border border-gray-200 bg-gray-900 text-white transition">
+        Semua
+      </button>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="flex items-center gap-4 mb-4 text-sm text-gray-500">
+    <span><strong class="text-gray-900">{allBppu.length}</strong> unik kode</span>
+    <span class="text-gray-300">|</span>
+    <span><strong class="text-gray-900">{Object.keys(groups).length}</strong> grup</span>
+    <span class="text-gray-300">|</span>
+    <span>Di <strong class="text-gray-900">{new Set(allBppu.map(b => b.entryId)).size}</strong> entry tarif</span>
+  </div>
+
+  <!-- Tables by group -->
+  {Object.entries(groups).map(([prefix, group]) => (
+    <div class="bppu-group mb-8" data-prefix={prefix}>
+      <h2 class="text-sm font-semibold text-gray-700 mb-3">{group.label}</h2>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="tax-table">
+          <thead>
+            <tr>
+              <th style="width:130px">Kode</th>
+              <th>Nama Objek Pajak</th>
+              <th style="width:70px" class="text-right">Tarif</th>
+              <th style="width:200px">Entry Terkait</th>
+            </tr>
+          </thead>
+          <tbody>
+            {group.items.map((item: BPPUCode) => (
+              <tr>
+                <td class="mono font-semibold text-gray-900">{item.kode}</td>
+                <td class="text-gray-700" style="white-space:normal;max-width:none">{item.nama}</td>
+                <td class="text-right"><span class="rate-value">{item.tarif}%</span></td>
+                <td>
+                  <a href={`/kategori/${item.categorySlug}`} class="cat-link text-xs">
+                    {item.entryType.length > 30 ? item.entryType.substring(0, 30) + '...' : item.entryType}
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  ))}
+</BaseLayout>
+
+<style is:global>
+  .search-box {
+    font-family: 'Rubik', sans-serif;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.15s;
+    color: #374151;
+    background: #fff;
+  }
+  .search-box:focus { border-color: #9ca3af; }
+  .search-box::placeholder { color: #9ca3af; }
+  
+  .filter-btn.active {
+    background: #111827 !important;
+    color: #fff !important;
+    border-color: #111827 !important;
+  }
+</style>
+
+<script>
+  const search = document.getElementById('bppu-search');
+  const groups = document.querySelectorAll('.bppu-group');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+
+  function filterTable() {
+    const query = (search as HTMLInputElement)?.value.toLowerCase() || '';
+    const activeFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter') || 'all';
+
+    groups.forEach(group => {
+      const prefix = group.getAttribute('data-prefix');
+      const showByFilter = activeFilter === 'all' || activeFilter === prefix;
+      
+      if (!showByFilter) {
+        (group as HTMLElement).style.display = 'none';
+        return;
+      }
+
+      const rows = group.querySelectorAll('tbody tr');
+      let hasVisible = false;
+      rows.forEach(row => {
+        const text = row.textContent?.toLowerCase() || '';
+        const visible = !query || text.includes(query);
+        (row as HTMLElement).style.display = visible ? '' : 'none';
+        if (visible) hasVisible = true;
+      });
+      (group as HTMLElement).style.display = hasVisible ? '' : 'none';
+    });
+  }
+
+  search?.addEventListener('input', filterTable);
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterTable();
+    });
+  });
+
+  // Set "all" as default active
+  document.querySelector('[data-filter="all"]')?.classList.add('active');
+</script>

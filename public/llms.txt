@@ -6,7 +6,7 @@
 
 ## Statistik
 - 16 regulasi tercatat
-- 27 entry tarif pajak (22 berlaku saat ini)
+- 32 entry tarif pajak (27 berlaku saat ini)
 - 10 kategori pajak
 
 ## Kategori Pajak
@@ -15,7 +15,7 @@
 - **PPh 22** (PPh): 3 tarif - Pajak Penghasilan Pasal 22 - Pemungutan pajak atas impor, pembelian barang, dan penjualan barang tertentu
 - **PPh 23** (PPh): 5 tarif - Pajak Penghasilan Pasal 23 - Pemotongan atas penghasilan berupa imbalan jasa tertentu, sewa tanah dan/atau bangunan, dan hadiah/penghargaan. Jenis jasa diatur dalam PMK 141/PMK.03/2015.
 - **PPh 26** (PPh): 1 tarif - Pajak Penghasilan Pasal 26 - Pemotongan atas penghasilan yang diterima WP luar negeri
-- **PPh 4(2) Final** (PPh): 4 tarif - Pajak Penghasilan Final Pasal 4 ayat (2) - Pajak yang dipungut pada saat penghasilan tertentu diterima
+- **PPh 4(2) Final** (PPh): 9 tarif - Pajak Penghasilan Final Pasal 4 ayat (2) - Pajak yang dipungut pada saat penghasilan tertentu diterima
 - **PPh Badan** (PPh): 2 tarif - Pajak Penghasilan bagi Wajib Pajak Badan - Tarif flat yang berlaku atas penghasilan kena pajak badan
 - **PPh UMKM** (PPh): 2 tarif - Pajak Penghasilan atas penghasilan dari usaha UMKM - tarif final untuk WP yang memiliki peredaran bruto tertentu
 - **PPN** (PPN): 4 tarif - Pajak Pertambahan Nilai - Pajak atas konsumsi Barang Kena Pajak dan/atau Jasa Kena Pajak di dalam Daerah Pabean
@@ -157,6 +157,46 @@
 - Berlaku sejak: 2009-01-01
 - Dasar hukum: UU 36/2008
 - Catatan: Tarif 0,1% dari nilai transaksi penjualan saham (final). Berlaku untuk transaksi di bursa efek.
+
+### PPh 4(2) Final - Pekerjaan dan Jasa Konstruksi
+- ID: pph-final-konstruksi
+- Tarif: 1.75% - 6%
+- Status: berlaku
+- Berlaku sejak: 2009-07-01
+- Dasar hukum: PP 51/2008, PP 40/2009, UU 7/2021 (HPP)
+- Catatan: Terdiri dari 14 kode objek pajak BPPU dengan tarif 1.75%, 2.0%, 2.65%, 3.0%, 3.5%, 4.0%, 6.0%.
+
+### PPh 4(2) Final - Bunga Simpanan Koperasi
+- ID: pph-final-bunga-koperasi
+- Tarif: 0% - 10%
+- Status: berlaku
+- Berlaku sejak: 2022-01-01
+- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Catatan: Terdiri dari 2 kode objek pajak BPPU dengan tarif 0.0%, 10.0%.
+
+### PPh 4(2) Final - Penghasilan dari Pengangkutan dan Charter
+- ID: pph-final-transportasi
+- Tarif: 1.2% - 2.64%
+- Status: berlaku
+- Berlaku sejak: 2009-01-01
+- Dasar hukum: UU 7/2021 (HPP), PP 51/2008
+- Catatan: Terdiri dari 5 kode objek pajak BPPU dengan tarif 1.2%, 1.8%, 2.64%.
+
+### PPh 4(2) Final - Penghasilan dari Kegiatan Hulu Migas
+- ID: pph-final-migas
+- Tarif: 5% - 20%
+- Status: berlaku
+- Berlaku sejak: 2009-01-01
+- Dasar hukum: UU 7/2021 (HPP), PP 51/2008
+- Catatan: Terdiri dari 3 kode objek pajak BPPU dengan tarif 5.0%, 7.0%, 20.0%.
+
+### PPh 4(2) Final - Penghasilan dari Kerja Sama dengan LPI / Jasa Maklon Internasional
+- ID: pph-final-investasi-lpi
+- Tarif: 2.1% - 7.5%
+- Status: berlaku
+- Berlaku sejak: 2022-01-01
+- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Catatan: Terdiri dari 2 kode objek pajak BPPU dengan tarif 2.1%, 7.5%.
 
 ### PPh Badan - Penghasilan Kena Pajak Badan (2022-2023)
 - ID: pph-badan-2022-plus

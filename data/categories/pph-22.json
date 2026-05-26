@@ -9,7 +9,10 @@
       "taxType": "PPh 22",
       "transactionType": "Impor Barang",
       "description": "Pemungutan PPh 22 atas impor barang oleh instansi pemerintah, yang dilakukan oleh Direktorat Jenderal Bea dan Cukai bersamaan dengan pemungutan Bea Masuk dan Cukai.",
-      "rate": { "type": "percentage", "value": 7.5 },
+      "rate": {
+        "type": "percentage",
+        "value": 7.5
+      },
       "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
       "payer": "Importir",
       "recipient": "Negara",
@@ -18,13 +21,35 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "PP 60/2023", "article": "Pasal 2", "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023" },
-        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 22", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021", "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021" }
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 2",
+          "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+          "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
+      "supersedes": [],
+      "supersededBy": [],
       "notes": "Tarif 7,5% untuk impor yang tidak menggunakan angka pengenal impor (API) atau menggunakan API umum. Berbeda untuk API produsen.",
-      "tags": ["pph-22", "impor", "bea-cukai", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "pph-22",
+        "impor",
+        "bea-cukai",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "bppuKode": [
+        {
+          "kode": "22-404-01",
+          "nama": "Ekspor Komoditas Tambang Batubara, Mineral Logam, dan Mineral Bukan Logam yang Dilakukan Oleh Eksportir, Kecuali WP yang Terikat dalam PKP2B dan KK",
+          "tarif": 1.5
+        }
+      ]
     },
     {
       "id": "pph-22-pembelian-barang-2024",
@@ -32,7 +57,10 @@
       "taxType": "PPh 22",
       "transactionType": "Pembelian Barang oleh Badan Usaha Industri Tertentu",
       "description": "Pemungutan PPh 22 atas pembelian bahan-bahan untuk keperluan industri atau ekspor dari pedagang pengepul atau pedagang perantara.",
-      "rate": { "type": "percentage", "value": 0.25 },
+      "rate": {
+        "type": "percentage",
+        "value": 0.25
+      },
       "taxBase": "Harga pembelian bruto (DPP)",
       "payer": "Penjual (pedagang pengepul/perantara)",
       "recipient": "Negara",
@@ -41,12 +69,34 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "PP 60/2023", "article": "Pasal 3", "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023" }
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 3",
+          "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
+      "supersedes": [],
+      "supersededBy": [],
       "notes": "Tarif 0,25% berlaku untuk pembeli yang sudah ber-NPWP. Tanpa NPWP tarif menjadi 0,25% × 2 = 0,5%.",
-      "tags": ["pph-22", "pembelian", "industri", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "pph-22",
+        "pembelian",
+        "industri",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "bppuKode": [
+        {
+          "kode": "22-900-01",
+          "nama": "Pembayaran atas Pembelian Barang dan/atau Bahan untuk Kegiatan Usahanya oleh BUMN/Badan Usaha Tertentu",
+          "tarif": 1.5
+        },
+        {
+          "kode": "22-910-01",
+          "nama": "Pemungutan oleh Bendaharawan",
+          "tarif": 1.5
+        }
+      ]
     },
     {
       "id": "pph-22-penjualan-barang-2024",
@@ -54,7 +104,10 @@
       "taxType": "PPh 22",
       "transactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu",
       "description": "Pemungutan PPh 22 atas penjualan barang yang sangat diperlukan oleh masyarakat luas seperti bahan bakar, gas, pupuk, dan lain-lain.",
-      "rate": { "type": "percentage", "value": 0.5 },
+      "rate": {
+        "type": "percentage",
+        "value": 0.5
+      },
       "taxBase": "Harga jual bruto (DPP)",
       "payer": "Pembeli",
       "recipient": "Negara",
@@ -63,11 +116,188 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "PP 60/2023", "article": "Pasal 4", "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023" }
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 4",
+          "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
-      "tags": ["pph-22", "penjualan", "bahan-bakar", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "supersedes": [],
+      "supersededBy": [],
+      "tags": [
+        "pph-22",
+        "penjualan",
+        "bahan-bakar",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "bppuKode": [
+        {
+          "kode": "22-100-07",
+          "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (Industri Semen)",
+          "tarif": 0.25
+        },
+        {
+          "kode": "22-100-08",
+          "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (Industri Baja)",
+          "tarif": 0.3
+        },
+        {
+          "kode": "22-100-09",
+          "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (Industri Otomotif)",
+          "tarif": 0.45
+        },
+        {
+          "kode": "22-100-10",
+          "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (Industri Farmasi)",
+          "tarif": 0.3
+        },
+        {
+          "kode": "22-100-11",
+          "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (industri Kertas)",
+          "tarif": 0.1
+        },
+        {
+          "kode": "22-100-12",
+          "nama": "Penjualan Kendaraan Bermotor di Dalam Negeri oleh ATPM, APM dan Importir Umum Kendaraan Bermotor",
+          "tarif": 0.45
+        },
+        {
+          "kode": "22-100-13",
+          "nama": "Pembelian oleh Badan Usaha Berupa Komoditas Tambang Batubara, Mineral Logam dan Mineral Bukan Logam dari Badan atau Orang Pribadi Pemegang IUP",
+          "tarif": 1.5
+        },
+        {
+          "kode": "22-100-14",
+          "nama": "Penjualan Emas Batangan di Dalam Negeri oleh Badan Usaha",
+          "tarif": 0.45
+        },
+        {
+          "kode": "22-100-15",
+          "nama": "Pembelian Bahan Hasil Kehutanan yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya oleh Badan Usaha Industri/Eksportir",
+          "tarif": 0.25
+        },
+        {
+          "kode": "22-100-16",
+          "nama": "Pembelian Bahan Hasil Perkebunan yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya Oleh Badan Usaha Industri/Eksportir",
+          "tarif": 0.25
+        },
+        {
+          "kode": "22-100-17",
+          "nama": "Pembelian Bahan Hasil Pertanian yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya Oleh Badan Usaha Industri/Eksportir",
+          "tarif": 0.25
+        },
+        {
+          "kode": "22-100-18",
+          "nama": "Pembelian Bahan Hasil Peternakan yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya Oleh Badan Usaha Industri/Eksportir",
+          "tarif": 0.25
+        },
+        {
+          "kode": "22-100-19",
+          "nama": "Pembelian Bahan Hasil Perikanan yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya Oleh Badan Usaha Industri/Eksportir",
+          "tarif": 0.25
+        },
+        {
+          "kode": "22-401-01",
+          "nama": "Penjualan BBM oleh Pertamina atau Anak Perusahaan Pertamina Kepada SPBU (Final)",
+          "tarif": 0.25
+        },
+        {
+          "kode": "22-100-20",
+          "nama": "Penjualan BBM oleh Pertamina atau Anak Perusahaan Pertamina Kepada Selain SPBU/Agen/Penyalur (Tidak Final)",
+          "tarif": 0.3
+        },
+        {
+          "kode": "22-401-02",
+          "nama": "Penjualan BBM oleh Badan Usaha Selain Pertamina atau Anak Perusahaan Pertamina Kepada SPBU/Agen/Penyalur  (Final)",
+          "tarif": 0.3
+        },
+        {
+          "kode": "22-100-21",
+          "nama": "Penjualan BBM oleh Badan Usaha Selain Pertamina atau Anak Perusahaan Pertamina Kepada Selain SPBU/Agen/Penyalur (Tidak Final)",
+          "tarif": 0.3
+        },
+        {
+          "kode": "22-100-22",
+          "nama": "Penjualan Pelumas oleh Importir/Produsen",
+          "tarif": 0.3
+        },
+        {
+          "kode": "22-100-23",
+          "nama": "Penjualan  Pulsa dan Kartu Perdana oleh Penyelenggara Distribusi Tingkat Kedua yang Merupakan\nPemungut PPh Pasal 22",
+          "tarif": 0.5
+        },
+        {
+          "kode": "22-100-24",
+          "nama": "Penjualan BBG oleh Produsen/Importir Kepada Selain SPBU/Agen/Penyalur (Tidak Final)",
+          "tarif": 0.3
+        },
+        {
+          "kode": "22-401-03",
+          "nama": "Penjualan BBG oleh produsen/importir Kepada SPBU/Agen/Penyalur (Final)",
+          "tarif": 0.3
+        },
+        {
+          "kode": "22-401-04",
+          "nama": "Penjualan BBM oleh Pertamina atau Anak Perusahaan Pertamina kepada Agen/Penyalur selain SPBU (Final)",
+          "tarif": 0.3
+        },
+        {
+          "kode": "22-403-01",
+          "nama": "Penjualan Barang yang Tergolong Sangat Mewah Selain Rumah Beserta Tanahnya, Apartemen, Kondominium dan Sejenisnya",
+          "tarif": 5.0
+        },
+        {
+          "kode": "22-403-02",
+          "nama": "Penjualan Barang yang Tergolong Sangat Mewah Untuk Rumah Beserta Tanahnya, Apartemen, Kondominium dan Sejenisnya",
+          "tarif": 1.0
+        },
+        {
+          "kode": "22-405-01",
+          "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Merupakan Pedagang Fisik Aset Kripto",
+          "tarif": 0.1
+        },
+        {
+          "kode": "22-405-02",
+          "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Bukan Merupakan Pedagang Fisik Aset Kripto",
+          "tarif": 0.2
+        },
+        {
+          "kode": "22-101-01",
+          "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Tidak Final)",
+          "tarif": 0.5
+        },
+        {
+          "kode": "22-101-02",
+          "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Final)",
+          "tarif": 0.5
+        },
+        {
+          "kode": "22-102-01",
+          "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Tidak Final)",
+          "tarif": 0.5
+        },
+        {
+          "kode": "22-102-02",
+          "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Final)",
+          "tarif": 0.5
+        },
+        {
+          "kode": "22-100-25",
+          "nama": "Penjualan Emas Batangan di Dalam Negeri oleh Pengusaha Emas Perhiasan dan/atau Emas Batangan",
+          "tarif": 0.25
+        },
+        {
+          "kode": "22-100-26",
+          "nama": "Penjualan Emas Perhiasan di Dalam Negeri oleh Pengusaha Emas Perhiasan dan/atau Emas Batangan",
+          "tarif": 0.25
+        },
+        {
+          "kode": "22-100-27",
+          "nama": "Penjualan Perhiasan Selain dari Emas dan/atau Batu Permata dan/atau Batu Lainnya yang Sejenis oleh Pengusaha Emas Perhiasan dan/atau Emas Batangan",
+          "tarif": 0.25
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,10 @@
       "taxType": "PPh 26",
       "transactionType": "Penghasilan WP Luar Negeri Umum",
       "description": "Pemotongan PPh 26 atas penghasilan yang diterima atau diperoleh Wajib Pajak luar negeri dari Indonesia, kecuali yang dikenakan PPh final.",
-      "rate": { "type": "percentage", "value": 20 },
+      "rate": {
+        "type": "percentage",
+        "value": 20
+      },
       "taxBase": "Jumlah bruto (DPP)",
       "payer": "WP luar negeri",
       "recipient": "Negara",
@@ -18,12 +21,49 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 26 ayat (1)", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021" }
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 26 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
+      "supersedes": [],
+      "supersededBy": [],
       "notes": "Tarif dapat berbeda berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/ tax treaty) antara Indonesia dan negara residen WP luar negeri.",
-      "tags": ["pph-26", "wp-luar-negeri", "tax-treaty", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "pph-26",
+        "wp-luar-negeri",
+        "tax-treaty",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "bppuKode": [
+        {
+          "kode": "24-101-01",
+          "nama": "Dividen",
+          "tarif": 15.0
+        },
+        {
+          "kode": "24-102-01",
+          "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
+          "tarif": 15.0
+        },
+        {
+          "kode": "24-103-01",
+          "nama": "Royalti",
+          "tarif": 15.0
+        },
+        {
+          "kode": "24-105-01",
+          "nama": "Bunga Pinjaman yang Diterima  Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap Melalui Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi",
+          "tarif": 0.0
+        },
+        {
+          "kode": "28-413-01",
+          "nama": "Penghasilan Wajib Pajak Luar Negeri yang Mempunyai Kantor Perwakilan Dagang di Indonesia",
+          "tarif": 0.44
+        }
+      ]
     }
   ]
 }
