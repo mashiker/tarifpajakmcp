@@ -1,0 +1,29 @@
+{
+  "category": "PPh",
+  "taxType": "PPh 26",
+  "description": "Pajak Penghasilan Pasal 26 - Pemotongan atas penghasilan yang diterima WP luar negeri",
+  "entries": [
+    {
+      "id": "pph-26-general-2024",
+      "category": "PPh",
+      "taxType": "PPh 26",
+      "transactionType": "Penghasilan WP Luar Negeri Umum",
+      "description": "Pemotongan PPh 26 atas penghasilan yang diterima atau diperoleh Wajib Pajak luar negeri dari Indonesia, kecuali yang dikenakan PPh final.",
+      "rate": { "type": "percentage", "value": 20 },
+      "taxBase": "Jumlah bruto (DPP)",
+      "payer": "WP luar negeri",
+      "recipient": "Negara",
+      "withholder": "Pemberi penghasilan (WP dalam negeri/bentuk usaha tetap)",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 26 ayat (1)", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021" }
+      ],
+      "supersedes": [], "supersededBy": [],
+      "notes": "Tarif dapat berbeda berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/ tax treaty) antara Indonesia dan negara residen WP luar negeri.",
+      "tags": ["pph-26", "wp-luar-negeri", "tax-treaty", "berlaku"],
+      "lastVerified": "2026-05-26"
+    }
+  ]
+}

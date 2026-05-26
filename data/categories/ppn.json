@@ -1,0 +1,106 @@
+{
+  "category": "PPN",
+  "taxType": "PPN",
+  "description": "Pajak Pertambahan Nilai - Pajak atas konsumsi Barang Kena Pajak dan/atau Jasa Kena Pajak di dalam Daerah Pabean",
+  "entries": [
+    {
+      "id": "ppn-11pct-effective-2025",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Penyerahan BKP/JKP dalam negeri",
+      "description": "Tarif PPN efektif 11% berdasarkan mekanisme PMK 131/2024. Tarif dasar UU HPP menetapkan PPN 12%, namun PMK 131/2024 menetapkan tarif efektif yang diperhitungkan sebagai 11/12 dari tarif dasar 12%.",
+      "rate": {
+        "type": "percentage",
+        "value": 11,
+        "effectiveRate": "11/12 × 12% = 11% (PMK 131/2024)"
+      },
+      "taxBase": "Dasar Pengenaan Pajak (DPP) = Harga Jual/Penggantian/Uang muka/Nilai ekspor",
+      "payer": "Konsumen akhir",
+      "recipient": "Negara",
+      "withholder": "PKP (Pengusaha Kena Pajak) sebagai pemungut",
+      "effectiveFrom": "2025-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "PMK 131/2024", "article": "Pasal 2", "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024" },
+        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 7 ayat (1)", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021" }
+      ],
+      "supersedes": ["ppn-11pct-2022", "ppn-10pct"],
+      "supersededBy": [],
+      "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.",
+      "examples": [
+        { "scenario": "Penjualan BKP Rp 1.000.000", "calculation": "PPN = 11% × Rp 1.000.000", "result": "PPN = Rp 110.000" }
+      ],
+      "tags": ["ppn", "tarif-efektif", "pmk-131-2024", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "ppn-11pct-2022",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Penyerahan BKP/JKP (2022-2024)",
+      "description": "Tarif PPN 11% berdasarkan UU HPP yang mulai berlaku 1 April 2022.",
+      "rate": { "type": "percentage", "value": 11 },
+      "taxBase": "DPP",
+      "payer": "Konsumen akhir",
+      "recipient": "Negara",
+      "withholder": "PKP",
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": "2024-12-31",
+      "status": "diubah",
+      "legalBasis": [
+        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 7 ayat (1)", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021" }
+      ],
+      "supersedes": ["ppn-10pct"],
+      "supersededBy": ["ppn-11pct-effective-2025"],
+      "tags": ["ppn", "11-persen", "historis"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "ppn-10pct",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Penyerahan BKP/JKP (Pra-HPP)",
+      "description": "Tarif PPN 10% yang berlaku sejak awal UU PPN 1984 hingga sebelum UU HPP.",
+      "rate": { "type": "percentage", "value": 10 },
+      "taxBase": "DPP",
+      "payer": "Konsumen akhir",
+      "recipient": "Negara",
+      "withholder": "PKP",
+      "effectiveFrom": "1984-04-01",
+      "effectiveTo": "2022-03-31",
+      "status": "diubah",
+      "legalBasis": [
+        { "regulation": "UU 8/1983", "article": "Pasal 7", "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983" },
+        { "regulation": "UU 42/2009", "article": "Pasal 7", "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009" }
+      ],
+      "supersedes": [],
+      "supersededBy": ["ppn-11pct-2022"],
+      "notes": "Tarif PPN 10% berlaku konsisten dari 1984 hingga 2022.",
+      "tags": ["ppn", "10-persen", "historis"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "ppn-ekspor-bkp",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Ekspor Barang Kena Pajak",
+      "description": "PPN atas ekspor Barang Kena Pajak Berwujud dikenakan tarif 0%.",
+      "rate": { "type": "percentage", "value": 0 },
+      "taxBase": "Nilai ekspor",
+      "payer": "Eksportir PKP",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 7 ayat (2)", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021" }
+      ],
+      "supersedes": [], "supersededBy": [],
+      "notes": "Tarif 0% untuk ekspor BKP berwujud. Berbeda dengan ekspor jasa (dapat berbeda tarif tergantung jenis).",
+      "tags": ["ppn", "ekspor", "tarif-nol", "berlaku"],
+      "lastVerified": "2026-05-26"
+    }
+  ]
+}

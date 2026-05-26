@@ -1,0 +1,230 @@
+{
+  "category": "PPh",
+  "taxType": "PPh 23",
+  "description": "Pajak Penghasilan Pasal 23 - Pemotongan atas penghasilan berupa imbalan jasa tertentu, sewa tanah dan/atau bangunan, dan hadiah/penghargaan. Jenis jasa diatur dalam PMK 141/PMK.03/2015.",
+  "serviceTypes": {
+    "source": "PMK 141/PMK.03/2015",
+    "sourceUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015",
+    "totalCategories": 36,
+    "services": [
+      { "code": "a", "name": "Jasa Penilai (Appraisal)" },
+      { "code": "b", "name": "Jasa Aktuaris" },
+      { "code": "c", "name": "Jasa Akuntansi, Pembukuan, dan Atestasi Laporan Keuangan" },
+      { "code": "d", "name": "Jasa Hukum" },
+      { "code": "e", "name": "Jasa Arsitektur" },
+      { "code": "f", "name": "Jasa Perencanaan Kota dan Arsitektur Landscape" },
+      { "code": "g", "name": "Jasa Perancang (Design)" },
+      { "code": "h", "name": "Jasa Pengeboran (Drilling) Migas", "note": "Kecuali yang dilakukan oleh BUT" },
+      { "code": "i", "name": "Jasa Penunjang Migas & Panas Bumi", "note": "Detail di Pasal 2 ayat (1)" },
+      { "code": "j", "name": "Jasa Penambangan & Penunjang Non-Migas", "note": "Detail di Pasal 2 ayat (2)" },
+      { "code": "k", "name": "Jasa Penunjang Penerbangan & Bandar Udara", "note": "Detail di Pasal 2 ayat (3)" },
+      { "code": "l", "name": "Jasa Penebangan Hutan" },
+      { "code": "m", "name": "Jasa Pengolahan Limbah" },
+      { "code": "n", "name": "Jasa Penyedia Tenaga Kerja/Tenaga Ahli (Outsourcing)" },
+      { "code": "o", "name": "Jasa Perantara dan/atau Keagenan" },
+      { "code": "p", "name": "Jasa Perdagangan Surat Berharga", "note": "Kecuali Bursa Efek, KSEI, KPEI" },
+      { "code": "q", "name": "Jasa Kustodian/Penyimpanan/Penitipan", "note": "Kecuali KSEI" },
+      { "code": "r", "name": "Jasa Pengisian Suara (Dubbing) dan/atau Sulih Suara" },
+      { "code": "s", "name": "Jasa Mixing Film" },
+      { "code": "t", "name": "Jasa Pembuatan Sarana Promosi Film, Iklan, Poster, dll" },
+      { "code": "u", "name": "Jasa Software/Hardware/Sistem Komputer", "note": "Termasuk perawatan, pemeliharaan, perbaikan" },
+      { "code": "v", "name": "Jasa Pembuatan dan/atau Pengelolaan Website" },
+      { "code": "w", "name": "Jasa Internet Termasuk Sambungannya" },
+      { "code": "x", "name": "Jasa Penyimpanan, Pengolahan, Penyaluran Data/Informasi/Program" },
+      { "code": "y", "name": "Jasa Instalasi/Pemasangan Mesin, Peralatan, Listrik, dll", "note": "Selain WP bidang konstruksi berizin" },
+      { "code": "z", "name": "Jasa Perawatan/Perbaikan/Pemeliharaan Mesin, Peralatan, dll", "note": "Selain WP bidang konstruksi berizin" },
+      { "code": "aa", "name": "Jasa Perawatan Kendaraan dan/atau Alat Transportasi" },
+      { "code": "ab", "name": "Jasa Maklon (Toll Manufacturing)" },
+      { "code": "ac", "name": "Jasa Penyelidikan dan Keamanan" },
+      { "code": "ad", "name": "Jasa Penyelenggara Kegiatan / Event Organizer" },
+      { "code": "ae", "name": "Jasa Penyediaan Tempat/Waktu di Media & Periklanan" },
+      { "code": "af", "name": "Jasa Pembasmian Hama" },
+      { "code": "ag", "name": "Jasa Kebersihan / Cleaning Service" },
+      { "code": "ah", "name": "Jasa Sedot Septic Tank" },
+      { "code": "ai", "name": "Jasa Pemeliharaan Kolam" },
+      { "code": "aj", "name": "Jasa Katering / Tata Boga" },
+      { "code": "ak", "name": "Jasa Freight Forwarding" },
+      { "code": "al", "name": "Jasa Logistik" },
+      { "code": "am", "name": "Jasa Pengurusan Dokumen" },
+      { "code": "an", "name": "Jasa Pengepakan" },
+      { "code": "ao", "name": "Jasa Loading dan Unloading" },
+      { "code": "ap", "name": "Jasa Laboratorium dan/atau Pengujian", "note": "Kecuali lembaga pendidikan untuk riset akademis" },
+      { "code": "aq", "name": "Jasa Pengelolaan Parkir" },
+      { "code": "ar", "name": "Jasa Sondir Tanah" },
+      { "code": "as", "name": "Jasa Penyiapan dan/atau Pengujian", "note": "Kecuali lembaga pendidikan untuk riset akademis" },
+      { "code": "at", "name": "Jasa Pembibitan dan/atau Penanaman Bibit" },
+      { "code": "au", "name": "Jasa Pemeliharaan Tanaman" },
+      { "code": "av", "name": "Jasa Pemanenan" },
+      { "code": "aw", "name": "Jasa Pengolahan Hasil Pertanian/Perkebunan/Perikanan/Peternakan/Perhutanan" },
+      { "code": "ax", "name": "Jasa Dekorasi" },
+      { "code": "ay", "name": "Jasa Pencetakan/Penerbitan" },
+      { "code": "az", "name": "Jasa Penerjemahan" },
+      { "code": "ba", "name": "Jasa Pengangkutan/Ekspedisi", "note": "Kecuali yang diatur Pasal 15 UU PPh" },
+      { "code": "bb", "name": "Jasa Pelayanan Kepelabuhanan" },
+      { "code": "bc", "name": "Jasa Pengangkutan melalui Jalur Pipa" },
+      { "code": "bd", "name": "Jasa Pengelolaan Penitipan Anak" },
+      { "code": "be", "name": "Jasa Pelatihan dan/atau Kursus" },
+      { "code": "bf", "name": "Jasa Pengiriman dan Pengisian Uang ke ATM" },
+      { "code": "bg", "name": "Jasa Sertifikasi" },
+      { "code": "bh", "name": "Jasa Survey" },
+      { "code": "bi", "name": "Jasa Tester" },
+      { "code": "bj", "name": "Jasa Lain yang Dibebankan APBN/APBD" }
+    ]
+  },
+  "entries": [
+    {
+      "id": "pph-23-jasa-lain-2pct",
+      "category": "PPh",
+      "taxType": "PPh 23",
+      "transactionType": "Imbalan Jasa Lain (BerNPWP)",
+      "description": "Pemotongan PPh 23 sebesar 2% atas imbalan sehubungan dengan jasa lain yang dipotong oleh badan pemerintah, SP badan dalam negeri, penyelenggara kegiatan, BUT, atau perwakilan perusahaan luar negeri lainnya. Mencakup 36 jenis jasa sebagaimana diatur dalam PMK 141/PMK.03/2015 Pasal 1 ayat (6) huruf a sampai bj.",
+      "rate": { "type": "percentage", "value": 2 },
+      "taxBase": "Jumlah bruto tidak termasuk PPN. Untuk jasa katering: seluruh penghasilan. Untuk jasa lain: seluruh penghasilan dikurangi pembayaran yang dapat dibuktikan untuk gaji/upah, pengadaan barang, perjalanan dinas, dan biaya lain yang terkait langsung.",
+      "payer": "Penerima jasa (WP dalam negeri berNPWP)",
+      "recipient": "Negara",
+      "withholder": "Badan pemerintah, SP badan dalam negeri, penyelenggara kegiatan, BUT, perwakilan perusahaan luar negeri lainnya",
+      "effectiveFrom": "2015-12-31",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 23 ayat (1) huruf c angka 2",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+          "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PMK 141/PMK.03/2015",
+          "article": "Pasal 1 ayat (1), (3), (6)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/70615/pmk-no-141-pmk-03-2015-tahun-2015",
+          "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "DPP untuk jasa katering = seluruh penghasilan bruto. DPP untuk jasa non-katering = seluruh penghasilan dikurangi: (1) gaji/upah/honorarium/tunjangan untuk tenaga kerja yang dipakai penyedia jasa, (2) biaya perolehan barang/material, (3) perjalanan dinas, (4) biaya administrasi/pengurusan—asal bisa dibuktikan dengan kontrak, faktur, bukti pembelian. Jika tidak bisa dibuktikan, DPP = seluruh pembayaran.",
+      "examples": [
+        { "scenario": "Perusahaan membayar jasa akuntansi Rp 50.000.000 (belum PPN)", "calculation": "2% × Rp 50.000.000", "result": "PPh 23 = Rp 1.000.000" },
+        { "scenario": "Kantor pusat membayar jasa cleaning service Rp 10.000.000", "calculation": "2% × Rp 10.000.000", "result": "PPh 23 = Rp 200.000" },
+        { "scenario": "Jasa IT pembuatan website Rp 100.000.000 (belum PPN)", "calculation": "2% × Rp 100.000.000", "result": "PPh 23 = Rp 2.000.000" }
+      ],
+      "tags": ["pph-23", "jasa-lain", "bernpwp", "2-persen", "pmk-141", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-23-jasa-lain-4pct",
+      "category": "PPh",
+      "taxType": "PPh 23",
+      "transactionType": "Imbalan Jasa Lain (Tanpa NPWP)",
+      "description": "Pemotongan PPh 23 yang lebih tinggi untuk WP dalam negeri penerima imbalan jasa yang tidak memiliki NPWP. Dikenakan pengali 100% lebih tinggi dari tarif normal 2%.",
+      "rate": { "type": "percentage", "value": 4 },
+      "taxBase": "Sama dengan jasa berNPWP (jumlah bruto tidak termasuk PPN)",
+      "payer": "Penerima jasa (WP dalam negeri tanpa NPWP)",
+      "recipient": "Negara",
+      "withholder": "Badan pemerintah, SP badan, penyelenggara kegiatan, BUT, perwakilan perusahaan luar negeri",
+      "effectiveFrom": "2015-12-31",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 141/PMK.03/2015",
+          "article": "Pasal 1 ayat (7)",
+          "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 23 ayat (1) huruf c angka 2",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 4% = 2% × 2 (pengali 100% lebih tinggi karena tidak berNPWP).",
+      "tags": ["pph-23", "jasa-lain", "tanpa-npwp", "4-persen", "pmk-141", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-23-jasa-katering-2pct",
+      "category": "PPh",
+      "taxType": "PPh 23",
+      "transactionType": "Jasa Katering / Tata Boga",
+      "description": "Pemotongan PPh 23 atas jasa katering/tata boga dengan DPP khusus yaitu seluruh jumlah penghasilan bruto (tanpa pengurangan biaya bahan makanan/jasa tenaga kerja).",
+      "rate": { "type": "percentage", "value": 2 },
+      "taxBase": "Seluruh jumlah penghasilan bruto termasuk dalam bentuk apapun (tanpa pengurangan). Tidak termasuk PPN.",
+      "payer": "Penyedia jasa katering (WP dalam negeri)",
+      "recipient": "Negara",
+      "withholder": "Badan pemerintah, SP badan, penyelenggara kegiatan, BUT",
+      "effectiveFrom": "2015-12-31",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 141/PMK.03/2015",
+          "article": "Pasal 1 ayat (3) huruf a",
+          "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Berbeda dari jasa lainnya, DPP katering tidak boleh dikurangi biaya bahan makanan maupun tenaga kerja. Seluruh tagihan katering menjadi dasar pemotongan.",
+      "tags": ["pph-23", "katering", "tata-boga", "dpp-khusus", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-23-sewa-tanah-bangunan",
+      "category": "PPh",
+      "taxType": "PPh 23",
+      "transactionType": "Sewa Tanah dan/atau Bangunan",
+      "description": "Pemotongan PPh 23 atas sewa tanah dan/atau bangunan yang diterima WP dalam negeri, dipotong oleh badan pemerintah, SP badan, penyelenggara kegiatan, atau BUT.",
+      "rate": { "type": "percentage", "value": 10 },
+      "taxBase": "Jumlah bruto sewa (tidak termasuk PPN)",
+      "payer": "Penerima sewa (WP dalam negeri)",
+      "recipient": "Negara",
+      "withholder": "Badan pemerintah, SP badan, penyelenggara kegiatan, BUT",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 23 ayat (1) huruf c angka 1",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+          "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 10% atas sewa tanah dan/atau bangunan. Tanpa NPWP: 10% × 2 = 20%. Juga berlaku untuk sewa peralatan dan mesin sejak UU HPP.",
+      "tags": ["pph-23", "sewa", "tanah", "bangunan", "10-persen", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-23-hadiah-penghargaan",
+      "category": "PPh",
+      "taxType": "PPh 23",
+      "transactionType": "Hadiah/Penghargaan kepada OP Bukan Pegawai",
+      "description": "Pemotongan PPh 23 final atas hadiah atau penghargaan yang diberikan kepada WP orang pribadi bukan pegawai yang berhubungan dengan pekerjaan, jasa, atau kegiatan, termasuk penghargaan kepada petugas/anggota kegiatan.",
+      "rate": { "type": "percentage", "value": 15 },
+      "taxBase": "Jumlah bruto hadiah/penghargaan (tidak termasuk PPN)",
+      "payer": "Penerima hadiah/penghargaan (OP bukan pegawai)",
+      "recipient": "Negara",
+      "withholder": "Penyelenggara kegiatan / pemberi hadiah/penghargaan",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 23 ayat (1) huruf d",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+          "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif final 15% atas hadiah/penghargaan untuk non-pegawai. Termasuk penghargaan kepada petugas keamanan, anggota panitia, atau siapapun yang menerima imbalan terkait kegiatan tertentu. Tanpa NPWP: 15% × 2 = 30%.",
+      "tags": ["pph-23", "hadiah", "penghargaan", "final", "15-persen", "berlaku"],
+      "lastVerified": "2026-05-26"
+    }
+  ]
+}

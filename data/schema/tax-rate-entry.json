@@ -1,0 +1,224 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TaxRateEntry",
+  "description": "Skema untuk entry tarif pajak Indonesia",
+  "type": "object",
+  "required": [
+    "id",
+    "category",
+    "taxType",
+    "transactionType",
+    "description",
+    "rate",
+    "taxBase",
+    "payer",
+    "recipient",
+    "effectiveFrom",
+    "status",
+    "legalBasis",
+    "supersedes",
+    "supersededBy",
+    "tags",
+    "lastVerified"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier, e.g. pph-21-progressive-2024",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "PPh",
+        "PPN",
+        "PPnBM",
+        "PBB",
+        "Bea Meterai",
+        "JKM",
+        "Bea Masuk",
+        "Cukai",
+        "Pajak Daerah"
+      ]
+    },
+    "taxType": {
+      "type": "string",
+      "description": "e.g. PPh 21, PPN, PPnBM"
+    },
+    "transactionType": {
+      "type": "string",
+      "description": "e.g. Gaji Bulanan, Penjualan BKP, Impor Barang"
+    },
+    "description": {
+      "type": "string",
+      "description": "Penjelasan lengkap dalam Bahasa Indonesia"
+    },
+    "rate": {
+      "type": "object",
+      "required": [
+        "type",
+        "value"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "percentage",
+            "range",
+            "progressive",
+            "formula"
+          ]
+        },
+        "value": {
+          "description": "Number, array of numbers, or formula string"
+        },
+        "effectiveRate": {
+          "type": "string",
+          "description": "e.g. 11/12 x tarif dasar for PPN PMK 131/2024"
+        },
+        "brackets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "min",
+              "max",
+              "rate"
+            ],
+            "properties": {
+              "min": {
+                "type": "number"
+              },
+              "max": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "rate": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "taxBase": {
+      "type": "string",
+      "description": "Dasar pengenaan pajak"
+    },
+    "payer": {
+      "type": "string",
+      "description": "Wajib pajak yang menanggung"
+    },
+    "recipient": {
+      "type": "string",
+      "description": "Penerima/pemungut"
+    },
+    "withholder": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Pemotong/pemungut pihak ketiga"
+    },
+    "effectiveFrom": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date mulai berlaku"
+    },
+    "effectiveTo": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "ISO date berakhir berlaku, null jika masih berlaku"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "berlaku",
+        "dicabut",
+        "diubah",
+        "belum_berlaku"
+      ]
+    },
+    "legalBasis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "regulation",
+          "article"
+        ],
+        "properties": {
+          "regulation": {
+            "type": "string"
+          },
+          "article": {
+            "type": "string"
+          },
+          "paragraph": {
+            "type": "string"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "pasalUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "statusSource": {
+            "type": "string"
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supersededBy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scenario": {
+            "type": "string"
+          },
+          "calculation": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lastVerified": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "additionalProperties": false
+}

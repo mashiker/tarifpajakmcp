@@ -1,0 +1,1765 @@
+{
+  "meta": {
+    "name": "tarif-pajak-id",
+    "version": "0.1.0",
+    "description": "Open database tarif pajak Indonesia",
+    "lastUpdated": "2026-05-26",
+    "stats": {
+      "regulations": 16,
+      "entries": 27,
+      "categories": [
+        {
+          "taxType": "Bea Meterai",
+          "count": 1
+        },
+        {
+          "taxType": "PPh 21",
+          "count": 4
+        },
+        {
+          "taxType": "PPh 22",
+          "count": 3
+        },
+        {
+          "taxType": "PPh 23",
+          "count": 5
+        },
+        {
+          "taxType": "PPh 26",
+          "count": 1
+        },
+        {
+          "taxType": "PPh 4(2) Final",
+          "count": 4
+        },
+        {
+          "taxType": "PPh Badan",
+          "count": 2
+        },
+        {
+          "taxType": "PPh UMKM",
+          "count": 2
+        },
+        {
+          "taxType": "PPN",
+          "count": 4
+        },
+        {
+          "taxType": "PPnBM",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "regulations": [
+    {
+      "id": "uu-7-2021-hpp",
+      "pasalLawId": 1829,
+      "number": "7",
+      "year": 2021,
+      "title": "Undang-Undang Harmonisasi Peraturan Perpajakan",
+      "type": "UU",
+      "effectiveDate": "2022-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+      "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021",
+      "pdfUrl": "https://peraturan.bpk.go.id/Download/178620/UU%20Nomor%207%20Tahun%202021.pdf",
+      "status": "berlaku",
+      "relatedRegulations": [
+        "uu-7-1983-pph",
+        "uu-10-1994",
+        "uu-17-2000",
+        "uu-36-2008",
+        "uu-8-1983-ppn",
+        "uu-42-2009"
+      ]
+    },
+    {
+      "id": "uu-7-1983-pph",
+      "number": "7",
+      "year": 1983,
+      "title": "Undang-Undang Pajak Penghasilan",
+      "type": "UU",
+      "effectiveDate": "1984-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44028/uu-no-7-tahun-1983",
+      "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-1983",
+      "status": "dicabut",
+      "relatedRegulations": [
+        "uu-10-1994"
+      ]
+    },
+    {
+      "id": "uu-10-1994",
+      "number": "10",
+      "year": 1994,
+      "title": "Undang-Undang Perubahan UU Pajak Penghasilan",
+      "type": "UU",
+      "effectiveDate": "1995-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44043/uu-no-10-tahun-1994",
+      "status": "dicabut",
+      "relatedRegulations": [
+        "uu-7-1983-pph",
+        "uu-17-2000"
+      ]
+    },
+    {
+      "id": "uu-17-2000",
+      "number": "17",
+      "year": 2000,
+      "title": "Undang-Undang Perubahan Kedua UU Pajak Penghasilan",
+      "type": "UU",
+      "effectiveDate": "2001-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44063/uu-no-17-tahun-2000",
+      "status": "dicabut",
+      "relatedRegulations": [
+        "uu-10-1994",
+        "uu-36-2008"
+      ]
+    },
+    {
+      "id": "uu-36-2008",
+      "number": "36",
+      "year": 2008,
+      "title": "Undang-Undang Perubahan Keempat UU Pajak Penghasilan",
+      "type": "UU",
+      "effectiveDate": "2009-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008",
+      "status": "diubah_sebagian",
+      "relatedRegulations": [
+        "uu-17-2000",
+        "uu-7-2021-hpp"
+      ]
+    },
+    {
+      "id": "uu-8-1983-ppn",
+      "number": "8",
+      "year": 1983,
+      "title": "Undang-Undang Pajak Pertambahan Nilai",
+      "type": "UU",
+      "effectiveDate": "1984-04-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983",
+      "status": "dicabut",
+      "relatedRegulations": [
+        "uu-42-2009"
+      ]
+    },
+    {
+      "id": "uu-42-2009",
+      "pasalLawId": 1926,
+      "number": "42",
+      "year": 2009,
+      "title": "Undang-Undang Perubahan UU Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah",
+      "type": "UU",
+      "effectiveDate": "2010-04-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009",
+      "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-42-tahun-2009",
+      "pdfUrl": "https://peraturan.bpk.go.id/Download/44119/UU%20Nomor%2042%20Tahun%202009.pdf",
+      "status": "diubah_sebagian",
+      "relatedRegulations": [
+        "uu-8-1983-ppn",
+        "uu-7-2021-hpp"
+      ]
+    },
+    {
+      "id": "pp-58-2023",
+      "pasalLawId": 1069,
+      "number": "58",
+      "year": 2023,
+      "title": "Tarif Pemotongan Pajak Penghasilan Pasal 21 (TER)",
+      "type": "PP",
+      "effectiveDate": "2024-01-01",
+      "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023",
+      "pasalUrl": "https://pasal.id/peraturan/pp/pp-no-58-tahun-2023",
+      "pdfUrl": "https://peraturan.bpk.go.id/Download/332609/PP%20Nomor%2058%20Tahun%202023.pdf",
+      "status": "berlaku",
+      "relatedRegulations": [
+        "uu-7-2021-hpp",
+        "pmk-168-2023"
+      ]
+    },
+    {
+      "id": "pmk-168-2023",
+      "number": "168",
+      "year": 2023,
+      "title": "Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Wajib Pajak Orang Pribadi",
+      "type": "PMK",
+      "effectiveDate": "2024-01-01",
+      "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023",
+      "status": "berlaku",
+      "relatedRegulations": [
+        "pp-58-2023",
+        "uu-7-2021-hpp"
+      ]
+    },
+    {
+      "id": "pp-23-2018",
+      "number": "23",
+      "year": 2018,
+      "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+      "type": "PP",
+      "effectiveDate": "2018-07-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/135493/pp-no-23-tahun-2018",
+      "status": "dicabut",
+      "relatedRegulations": [
+        "pp-55-2022",
+        "uu-7-2021-hpp"
+      ]
+    },
+    {
+      "id": "pp-55-2022",
+      "number": "55",
+      "year": 2022,
+      "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+      "type": "PP",
+      "effectiveDate": "2023-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022",
+      "status": "berlaku",
+      "relatedRegulations": [
+        "pp-23-2018"
+      ]
+    },
+    {
+      "id": "pmk-131-2024",
+      "number": "131",
+      "year": 2024,
+      "title": "Penentuan Tarif Pajak Pertambahan Nilai",
+      "type": "PMK",
+      "effectiveDate": "2025-01-01",
+      "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024",
+      "status": "berlaku",
+      "relatedRegulations": [
+        "uu-7-2021-hpp",
+        "uu-42-2009"
+      ]
+    },
+    {
+      "id": "pp-60-2023",
+      "number": "60",
+      "year": 2023,
+      "title": "Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
+      "type": "PP",
+      "effectiveDate": "2024-01-01",
+      "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
+      "status": "berlaku",
+      "relatedRegulations": [
+        "uu-7-2021-hpp"
+      ]
+    },
+    {
+      "id": "pp-131-2000",
+      "number": "131",
+      "year": 2000,
+      "title": "Pajak Penghasilan Final atas Penghasilan Tertentu",
+      "type": "PP",
+      "effectiveDate": "2000-12-29",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000",
+      "status": "diubah_sebagian",
+      "relatedRegulations": [
+        "uu-7-2021-hpp"
+      ]
+    },
+    {
+      "id": "uu-10-2020-bea-meterai",
+      "number": "10",
+      "year": 2020,
+      "title": "Undang-Undang Bea Meterai",
+      "type": "UU",
+      "effectiveDate": "2021-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020",
+      "status": "berlaku",
+      "relatedRegulations": []
+    },
+    {
+      "id": "uu-1-2022-pbb",
+      "number": "1",
+      "year": 2022,
+      "title": "Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintahan Daerah (HKPD) - PBB",
+      "type": "UU",
+      "effectiveDate": "2022-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/196435/uu-no-1-tahun-2022",
+      "status": "berlaku",
+      "relatedRegulations": [
+        "uu-12-1985",
+        "uu-28-2009"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "Bea Meterai",
+      "taxType": "Bea Meterai",
+      "description": "Bea Meterai - Pajak atas dokumen tertentu yang dikenakan berdasarkan UU Bea Meterai",
+      "serviceTypes": null,
+      "entries": [
+        {
+          "id": "bea-meterai-dokumen-2021",
+          "category": "Bea Meterai",
+          "taxType": "Bea Meterai",
+          "transactionType": "Dokumen dengan nilai tertentu",
+          "description": "Bea meterai Rp 10.000 untuk dokumen yang diterima sebagai alat pembuktian atau keterangan tentang sesuatu perbuatan, peristiwa, atau keadaan yang tertulis.",
+          "rate": {
+            "type": "formula",
+            "value": "Rp 10.000 per lembar"
+          },
+          "taxBase": "Nominal nilai dokumen > Rp 5.000.000",
+          "payer": "Pihak yang menandatangani / menerima dokumen",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2021-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 10/2020",
+              "article": "Pasal 3-5",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020"
+            }
+          ],
+          "supersedes": [
+            "bea-meterai-6000"
+          ],
+          "supersededBy": [],
+          "notes": "Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai.",
+          "tags": [
+            "bea-meterai",
+            "dokumen",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "description": "Pajak Penghasilan Pasal 21 - Pajak atas penghasilan sehubungan dengan pekerjaan, jasa, atau kegiatan orang pribadi",
+      "serviceTypes": null,
+      "entries": [
+        {
+          "id": "pph-21-ter-monthly-2024",
+          "category": "PPh",
+          "taxType": "PPh 21",
+          "transactionType": "Gaji/Bulan TER",
+          "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan atas penghasilan pekerjaan, jasa, atau kegiatan WP Orang Pribadi dalam negeri. Menggantikan metode tarif progresif lama untuk pemotongan bulanan.",
+          "rate": {
+            "type": "formula",
+            "value": "TER sesuai tabel lampiran PP 58/2023 (TER A/B/C berdasarkan status PTKP)",
+            "effectiveRate": "0% - 30% sesuai tabel TER"
+          },
+          "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
+          "payer": "WP Orang Pribadi dalam negeri (pegawai/freelancer)",
+          "recipient": "Negara",
+          "withholder": "Pemberi kerja/pemberi penghasilan",
+          "effectiveFrom": "2024-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 58/2023",
+              "article": "Pasal 2-4",
+              "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023",
+              "pasalUrl": "https://pasal.id/peraturan/pp/pp-no-58-tahun-2023"
+            },
+            {
+              "regulation": "PMK 168/2023",
+              "article": "Pasal 2-15",
+              "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+            },
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 17 ayat (1) huruf a",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+              "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [
+            "pph-21-progressive-monthly-pre2024"
+          ],
+          "supersededBy": [],
+          "notes": "TER berlaku untuk pemotongan bulanan. Pada akhir tahun tetap dilakukan perhitungan dengan tarif progresif Pasal 17 UU PPh untuk SPT Tahunan. Terdapat 3 kategori TER: TER A (tidak menikah tanpa tanggungan), TER B (menikah), TER C (menikah dengan tanggungan).",
+          "examples": [
+            {
+              "scenario": "Pegawai single, gaji Rp 10.000.000/bulan",
+              "calculation": "TER A Category = 3% × Rp 10.000.000",
+              "result": "PPh 21 = Rp 300.000/bulan"
+            }
+          ],
+          "tags": [
+            "pph-21",
+            "ter",
+            "pegawai",
+            "bulanan",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-21-progressive-annual-2024",
+          "category": "PPh",
+          "taxType": "PPh 21",
+          "transactionType": "SPT Tahunan Progresif",
+          "description": "Tarif progresif PPh Orang Pribadi berlaku untuk perhitungan SPT Tahunan. Tarif ini merupakan tarif dasar yang ditetapkan UU PPh dan terakhir diubah oleh UU HPP.",
+          "rate": {
+            "type": "progressive",
+            "value": "Progresif 5 lapis",
+            "brackets": [
+              {
+                "min": 0,
+                "max": 60000000,
+                "rate": 5
+              },
+              {
+                "min": 60000000,
+                "max": 250000000,
+                "rate": 15
+              },
+              {
+                "min": 250000000,
+                "max": 500000000,
+                "rate": 25
+              },
+              {
+                "min": 500000000,
+                "max": 5000000000,
+                "rate": 30
+              },
+              {
+                "min": 5000000000,
+                "max": null,
+                "rate": 35
+              }
+            ]
+          },
+          "taxBase": "Penghasilan Kena Pajak (PKP) = Penghasilan neto - PTKP",
+          "payer": "WP Orang Pribadi dalam negeri",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2022-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 17 ayat (1) huruf a",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+              "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [
+            "pph-21-progressive-pre2022"
+          ],
+          "supersededBy": [],
+          "notes": "Lapisan tarif 35% ditambahkan oleh UU HPP (sebelumnya maksimal 30%). PTKP 2024: Single Rp 54.000.000; Kawin Rp 58.500.000; Tanggungan Rp 4.500.000/orang (maks 3).",
+          "examples": [
+            {
+              "scenario": "PKP Rp 300.000.000 setahun",
+              "calculation": "5%×60jt + 15%×190jt + 25%×50jt = 3jt + 28.5jt + 12.5jt",
+              "result": "PPh terutang = Rp 44.000.000"
+            }
+          ],
+          "tags": [
+            "pph-21",
+            "progresif",
+            "spt-tahunan",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-21-progressive-pre2022",
+          "category": "PPh",
+          "taxType": "PPh 21",
+          "transactionType": "Tarif Progresif Pra-HPP",
+          "description": "Tarif progresif PPh OP sebelum UU HPP berlaku. Maksimal 30% tanpa lapisan 35%.",
+          "rate": {
+            "type": "progressive",
+            "value": "Progresif 4 lapis",
+            "brackets": [
+              {
+                "min": 0,
+                "max": 50000000,
+                "rate": 5
+              },
+              {
+                "min": 50000000,
+                "max": 250000000,
+                "rate": 15
+              },
+              {
+                "min": 250000000,
+                "max": 500000000,
+                "rate": 25
+              },
+              {
+                "min": 500000000,
+                "max": null,
+                "rate": 30
+              }
+            ]
+          },
+          "taxBase": "Penghasilan Kena Pajak",
+          "payer": "WP Orang Pribadi dalam negeri",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2009-01-01",
+          "effectiveTo": "2021-12-31",
+          "status": "diubah",
+          "legalBasis": [
+            {
+              "regulation": "UU 36/2008",
+              "article": "Pasal 17 ayat (1) huruf a",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+            }
+          ],
+          "supersedes": [
+            "pph-21-progressive-pre2009"
+          ],
+          "supersededBy": [
+            "pph-21-progressive-annual-2024"
+          ],
+          "notes": "Diberlakukan oleh UU 36/2008. Brackets berubah dari UU 17/2000 (batas atas berbeda).",
+          "tags": [
+            "pph-21",
+            "progresif",
+            "historis",
+            "uu-36-2008"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-21-non-taxable-income",
+          "category": "PPh",
+          "taxType": "PPh 21",
+          "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+          "description": "Batas Penghasilan Tidak Kena Pajak (PTKP) yang mengurangi penghasilan neto untuk menghitung PKP. Ditetapkan oleh PMK setiap tahunnya.",
+          "rate": {
+            "type": "formula",
+            "value": "PTKP sesuai PMK berlaku",
+            "effectiveRate": "Rp 54.000.000 (TK/0) s/d Rp 72.000.000 (K/3)"
+          },
+          "taxBase": "Bukan tarif, melainkan pengurang",
+          "payer": "-",
+          "recipient": "-",
+          "effectiveFrom": "2016-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PMK 122/2015",
+              "article": "Pasal 1",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/51529/pmk-no-122-tahun-2015"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "PTKP: TK/0 = Rp 54.000.000; K/0 = Rp 58.500.000; K/1 = Rp 63.000.000; K/2 = Rp 67.500.000; K/3 = Rp 72.000.000. Belum ada perubahan sejak PMK 122/2015.",
+          "tags": [
+            "pph-21",
+            "ptkp",
+            "pengurang",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "description": "Pajak Penghasilan Pasal 22 - Pemungutan pajak atas impor, pembelian barang, dan penjualan barang tertentu",
+      "serviceTypes": null,
+      "entries": [
+        {
+          "id": "pph-22-impor-2024",
+          "category": "PPh",
+          "taxType": "PPh 22",
+          "transactionType": "Impor Barang",
+          "description": "Pemungutan PPh 22 atas impor barang oleh instansi pemerintah, yang dilakukan oleh Direktorat Jenderal Bea dan Cukai bersamaan dengan pemungutan Bea Masuk dan Cukai.",
+          "rate": {
+            "type": "percentage",
+            "value": 7.5
+          },
+          "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
+          "payer": "Importir",
+          "recipient": "Negara",
+          "withholder": "Direktorat Jenderal Bea dan Cukai",
+          "effectiveFrom": "2024-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 60/2023",
+              "article": "Pasal 2",
+              "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+            },
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 22",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+              "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Tarif 7,5% untuk impor yang tidak menggunakan angka pengenal impor (API) atau menggunakan API umum. Berbeda untuk API produsen.",
+          "tags": [
+            "pph-22",
+            "impor",
+            "bea-cukai",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-22-pembelian-barang-2024",
+          "category": "PPh",
+          "taxType": "PPh 22",
+          "transactionType": "Pembelian Barang oleh Badan Usaha Industri Tertentu",
+          "description": "Pemungutan PPh 22 atas pembelian bahan-bahan untuk keperluan industri atau ekspor dari pedagang pengepul atau pedagang perantara.",
+          "rate": {
+            "type": "percentage",
+            "value": 0.25
+          },
+          "taxBase": "Harga pembelian bruto (DPP)",
+          "payer": "Penjual (pedagang pengepul/perantara)",
+          "recipient": "Negara",
+          "withholder": "Pembeli (badan usaha industri tertentu)",
+          "effectiveFrom": "2024-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 60/2023",
+              "article": "Pasal 3",
+              "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Tarif 0,25% berlaku untuk pembeli yang sudah ber-NPWP. Tanpa NPWP tarif menjadi 0,25% × 2 = 0,5%.",
+          "tags": [
+            "pph-22",
+            "pembelian",
+            "industri",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-22-penjualan-barang-2024",
+          "category": "PPh",
+          "taxType": "PPh 22",
+          "transactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu",
+          "description": "Pemungutan PPh 22 atas penjualan barang yang sangat diperlukan oleh masyarakat luas seperti bahan bakar, gas, pupuk, dan lain-lain.",
+          "rate": {
+            "type": "percentage",
+            "value": 0.5
+          },
+          "taxBase": "Harga jual bruto (DPP)",
+          "payer": "Pembeli",
+          "recipient": "Negara",
+          "withholder": "Penjual (badan usaha industri tertentu)",
+          "effectiveFrom": "2024-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 60/2023",
+              "article": "Pasal 4",
+              "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "tags": [
+            "pph-22",
+            "penjualan",
+            "bahan-bakar",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "category": "PPh",
+      "taxType": "PPh 23",
+      "description": "Pajak Penghasilan Pasal 23 - Pemotongan atas penghasilan berupa imbalan jasa tertentu, sewa tanah dan/atau bangunan, dan hadiah/penghargaan. Jenis jasa diatur dalam PMK 141/PMK.03/2015.",
+      "serviceTypes": {
+        "source": "PMK 141/PMK.03/2015",
+        "sourceUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015",
+        "totalCategories": 36,
+        "services": [
+          {
+            "code": "a",
+            "name": "Jasa Penilai (Appraisal)"
+          },
+          {
+            "code": "b",
+            "name": "Jasa Aktuaris"
+          },
+          {
+            "code": "c",
+            "name": "Jasa Akuntansi, Pembukuan, dan Atestasi Laporan Keuangan"
+          },
+          {
+            "code": "d",
+            "name": "Jasa Hukum"
+          },
+          {
+            "code": "e",
+            "name": "Jasa Arsitektur"
+          },
+          {
+            "code": "f",
+            "name": "Jasa Perencanaan Kota dan Arsitektur Landscape"
+          },
+          {
+            "code": "g",
+            "name": "Jasa Perancang (Design)"
+          },
+          {
+            "code": "h",
+            "name": "Jasa Pengeboran (Drilling) Migas",
+            "note": "Kecuali yang dilakukan oleh BUT"
+          },
+          {
+            "code": "i",
+            "name": "Jasa Penunjang Migas & Panas Bumi",
+            "note": "Detail di Pasal 2 ayat (1)"
+          },
+          {
+            "code": "j",
+            "name": "Jasa Penambangan & Penunjang Non-Migas",
+            "note": "Detail di Pasal 2 ayat (2)"
+          },
+          {
+            "code": "k",
+            "name": "Jasa Penunjang Penerbangan & Bandar Udara",
+            "note": "Detail di Pasal 2 ayat (3)"
+          },
+          {
+            "code": "l",
+            "name": "Jasa Penebangan Hutan"
+          },
+          {
+            "code": "m",
+            "name": "Jasa Pengolahan Limbah"
+          },
+          {
+            "code": "n",
+            "name": "Jasa Penyedia Tenaga Kerja/Tenaga Ahli (Outsourcing)"
+          },
+          {
+            "code": "o",
+            "name": "Jasa Perantara dan/atau Keagenan"
+          },
+          {
+            "code": "p",
+            "name": "Jasa Perdagangan Surat Berharga",
+            "note": "Kecuali Bursa Efek, KSEI, KPEI"
+          },
+          {
+            "code": "q",
+            "name": "Jasa Kustodian/Penyimpanan/Penitipan",
+            "note": "Kecuali KSEI"
+          },
+          {
+            "code": "r",
+            "name": "Jasa Pengisian Suara (Dubbing) dan/atau Sulih Suara"
+          },
+          {
+            "code": "s",
+            "name": "Jasa Mixing Film"
+          },
+          {
+            "code": "t",
+            "name": "Jasa Pembuatan Sarana Promosi Film, Iklan, Poster, dll"
+          },
+          {
+            "code": "u",
+            "name": "Jasa Software/Hardware/Sistem Komputer",
+            "note": "Termasuk perawatan, pemeliharaan, perbaikan"
+          },
+          {
+            "code": "v",
+            "name": "Jasa Pembuatan dan/atau Pengelolaan Website"
+          },
+          {
+            "code": "w",
+            "name": "Jasa Internet Termasuk Sambungannya"
+          },
+          {
+            "code": "x",
+            "name": "Jasa Penyimpanan, Pengolahan, Penyaluran Data/Informasi/Program"
+          },
+          {
+            "code": "y",
+            "name": "Jasa Instalasi/Pemasangan Mesin, Peralatan, Listrik, dll",
+            "note": "Selain WP bidang konstruksi berizin"
+          },
+          {
+            "code": "z",
+            "name": "Jasa Perawatan/Perbaikan/Pemeliharaan Mesin, Peralatan, dll",
+            "note": "Selain WP bidang konstruksi berizin"
+          },
+          {
+            "code": "aa",
+            "name": "Jasa Perawatan Kendaraan dan/atau Alat Transportasi"
+          },
+          {
+            "code": "ab",
+            "name": "Jasa Maklon (Toll Manufacturing)"
+          },
+          {
+            "code": "ac",
+            "name": "Jasa Penyelidikan dan Keamanan"
+          },
+          {
+            "code": "ad",
+            "name": "Jasa Penyelenggara Kegiatan / Event Organizer"
+          },
+          {
+            "code": "ae",
+            "name": "Jasa Penyediaan Tempat/Waktu di Media & Periklanan"
+          },
+          {
+            "code": "af",
+            "name": "Jasa Pembasmian Hama"
+          },
+          {
+            "code": "ag",
+            "name": "Jasa Kebersihan / Cleaning Service"
+          },
+          {
+            "code": "ah",
+            "name": "Jasa Sedot Septic Tank"
+          },
+          {
+            "code": "ai",
+            "name": "Jasa Pemeliharaan Kolam"
+          },
+          {
+            "code": "aj",
+            "name": "Jasa Katering / Tata Boga"
+          },
+          {
+            "code": "ak",
+            "name": "Jasa Freight Forwarding"
+          },
+          {
+            "code": "al",
+            "name": "Jasa Logistik"
+          },
+          {
+            "code": "am",
+            "name": "Jasa Pengurusan Dokumen"
+          },
+          {
+            "code": "an",
+            "name": "Jasa Pengepakan"
+          },
+          {
+            "code": "ao",
+            "name": "Jasa Loading dan Unloading"
+          },
+          {
+            "code": "ap",
+            "name": "Jasa Laboratorium dan/atau Pengujian",
+            "note": "Kecuali lembaga pendidikan untuk riset akademis"
+          },
+          {
+            "code": "aq",
+            "name": "Jasa Pengelolaan Parkir"
+          },
+          {
+            "code": "ar",
+            "name": "Jasa Sondir Tanah"
+          },
+          {
+            "code": "as",
+            "name": "Jasa Penyiapan dan/atau Pengujian",
+            "note": "Kecuali lembaga pendidikan untuk riset akademis"
+          },
+          {
+            "code": "at",
+            "name": "Jasa Pembibitan dan/atau Penanaman Bibit"
+          },
+          {
+            "code": "au",
+            "name": "Jasa Pemeliharaan Tanaman"
+          },
+          {
+            "code": "av",
+            "name": "Jasa Pemanenan"
+          },
+          {
+            "code": "aw",
+            "name": "Jasa Pengolahan Hasil Pertanian/Perkebunan/Perikanan/Peternakan/Perhutanan"
+          },
+          {
+            "code": "ax",
+            "name": "Jasa Dekorasi"
+          },
+          {
+            "code": "ay",
+            "name": "Jasa Pencetakan/Penerbitan"
+          },
+          {
+            "code": "az",
+            "name": "Jasa Penerjemahan"
+          },
+          {
+            "code": "ba",
+            "name": "Jasa Pengangkutan/Ekspedisi",
+            "note": "Kecuali yang diatur Pasal 15 UU PPh"
+          },
+          {
+            "code": "bb",
+            "name": "Jasa Pelayanan Kepelabuhanan"
+          },
+          {
+            "code": "bc",
+            "name": "Jasa Pengangkutan melalui Jalur Pipa"
+          },
+          {
+            "code": "bd",
+            "name": "Jasa Pengelolaan Penitipan Anak"
+          },
+          {
+            "code": "be",
+            "name": "Jasa Pelatihan dan/atau Kursus"
+          },
+          {
+            "code": "bf",
+            "name": "Jasa Pengiriman dan Pengisian Uang ke ATM"
+          },
+          {
+            "code": "bg",
+            "name": "Jasa Sertifikasi"
+          },
+          {
+            "code": "bh",
+            "name": "Jasa Survey"
+          },
+          {
+            "code": "bi",
+            "name": "Jasa Tester"
+          },
+          {
+            "code": "bj",
+            "name": "Jasa Lain yang Dibebankan APBN/APBD"
+          }
+        ]
+      },
+      "entries": [
+        {
+          "id": "pph-23-jasa-lain-2pct",
+          "category": "PPh",
+          "taxType": "PPh 23",
+          "transactionType": "Imbalan Jasa Lain (BerNPWP)",
+          "description": "Pemotongan PPh 23 sebesar 2% atas imbalan sehubungan dengan jasa lain yang dipotong oleh badan pemerintah, SP badan dalam negeri, penyelenggara kegiatan, BUT, atau perwakilan perusahaan luar negeri lainnya. Mencakup 36 jenis jasa sebagaimana diatur dalam PMK 141/PMK.03/2015 Pasal 1 ayat (6) huruf a sampai bj.",
+          "rate": {
+            "type": "percentage",
+            "value": 2
+          },
+          "taxBase": "Jumlah bruto tidak termasuk PPN. Untuk jasa katering: seluruh penghasilan. Untuk jasa lain: seluruh penghasilan dikurangi pembayaran yang dapat dibuktikan untuk gaji/upah, pengadaan barang, perjalanan dinas, dan biaya lain yang terkait langsung.",
+          "payer": "Penerima jasa (WP dalam negeri berNPWP)",
+          "recipient": "Negara",
+          "withholder": "Badan pemerintah, SP badan dalam negeri, penyelenggara kegiatan, BUT, perwakilan perusahaan luar negeri lainnya",
+          "effectiveFrom": "2015-12-31",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 23 ayat (1) huruf c angka 2",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+              "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+            },
+            {
+              "regulation": "PMK 141/PMK.03/2015",
+              "article": "Pasal 1 ayat (1), (3), (6)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/70615/pmk-no-141-pmk-03-2015-tahun-2015",
+              "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "DPP untuk jasa katering = seluruh penghasilan bruto. DPP untuk jasa non-katering = seluruh penghasilan dikurangi: (1) gaji/upah/honorarium/tunjangan untuk tenaga kerja yang dipakai penyedia jasa, (2) biaya perolehan barang/material, (3) perjalanan dinas, (4) biaya administrasi/pengurusan—asal bisa dibuktikan dengan kontrak, faktur, bukti pembelian. Jika tidak bisa dibuktikan, DPP = seluruh pembayaran.",
+          "examples": [
+            {
+              "scenario": "Perusahaan membayar jasa akuntansi Rp 50.000.000 (belum PPN)",
+              "calculation": "2% × Rp 50.000.000",
+              "result": "PPh 23 = Rp 1.000.000"
+            },
+            {
+              "scenario": "Kantor pusat membayar jasa cleaning service Rp 10.000.000",
+              "calculation": "2% × Rp 10.000.000",
+              "result": "PPh 23 = Rp 200.000"
+            },
+            {
+              "scenario": "Jasa IT pembuatan website Rp 100.000.000 (belum PPN)",
+              "calculation": "2% × Rp 100.000.000",
+              "result": "PPh 23 = Rp 2.000.000"
+            }
+          ],
+          "tags": [
+            "pph-23",
+            "jasa-lain",
+            "bernpwp",
+            "2-persen",
+            "pmk-141",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-23-jasa-lain-4pct",
+          "category": "PPh",
+          "taxType": "PPh 23",
+          "transactionType": "Imbalan Jasa Lain (Tanpa NPWP)",
+          "description": "Pemotongan PPh 23 yang lebih tinggi untuk WP dalam negeri penerima imbalan jasa yang tidak memiliki NPWP. Dikenakan pengali 100% lebih tinggi dari tarif normal 2%.",
+          "rate": {
+            "type": "percentage",
+            "value": 4
+          },
+          "taxBase": "Sama dengan jasa berNPWP (jumlah bruto tidak termasuk PPN)",
+          "payer": "Penerima jasa (WP dalam negeri tanpa NPWP)",
+          "recipient": "Negara",
+          "withholder": "Badan pemerintah, SP badan, penyelenggara kegiatan, BUT, perwakilan perusahaan luar negeri",
+          "effectiveFrom": "2015-12-31",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PMK 141/PMK.03/2015",
+              "article": "Pasal 1 ayat (7)",
+              "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
+            },
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 23 ayat (1) huruf c angka 2",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Tarif 4% = 2% × 2 (pengali 100% lebih tinggi karena tidak berNPWP).",
+          "tags": [
+            "pph-23",
+            "jasa-lain",
+            "tanpa-npwp",
+            "4-persen",
+            "pmk-141",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-23-jasa-katering-2pct",
+          "category": "PPh",
+          "taxType": "PPh 23",
+          "transactionType": "Jasa Katering / Tata Boga",
+          "description": "Pemotongan PPh 23 atas jasa katering/tata boga dengan DPP khusus yaitu seluruh jumlah penghasilan bruto (tanpa pengurangan biaya bahan makanan/jasa tenaga kerja).",
+          "rate": {
+            "type": "percentage",
+            "value": 2
+          },
+          "taxBase": "Seluruh jumlah penghasilan bruto termasuk dalam bentuk apapun (tanpa pengurangan). Tidak termasuk PPN.",
+          "payer": "Penyedia jasa katering (WP dalam negeri)",
+          "recipient": "Negara",
+          "withholder": "Badan pemerintah, SP badan, penyelenggara kegiatan, BUT",
+          "effectiveFrom": "2015-12-31",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PMK 141/PMK.03/2015",
+              "article": "Pasal 1 ayat (3) huruf a",
+              "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Berbeda dari jasa lainnya, DPP katering tidak boleh dikurangi biaya bahan makanan maupun tenaga kerja. Seluruh tagihan katering menjadi dasar pemotongan.",
+          "tags": [
+            "pph-23",
+            "katering",
+            "tata-boga",
+            "dpp-khusus",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-23-sewa-tanah-bangunan",
+          "category": "PPh",
+          "taxType": "PPh 23",
+          "transactionType": "Sewa Tanah dan/atau Bangunan",
+          "description": "Pemotongan PPh 23 atas sewa tanah dan/atau bangunan yang diterima WP dalam negeri, dipotong oleh badan pemerintah, SP badan, penyelenggara kegiatan, atau BUT.",
+          "rate": {
+            "type": "percentage",
+            "value": 10
+          },
+          "taxBase": "Jumlah bruto sewa (tidak termasuk PPN)",
+          "payer": "Penerima sewa (WP dalam negeri)",
+          "recipient": "Negara",
+          "withholder": "Badan pemerintah, SP badan, penyelenggara kegiatan, BUT",
+          "effectiveFrom": "2022-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 23 ayat (1) huruf c angka 1",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+              "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Tarif 10% atas sewa tanah dan/atau bangunan. Tanpa NPWP: 10% × 2 = 20%. Juga berlaku untuk sewa peralatan dan mesin sejak UU HPP.",
+          "tags": [
+            "pph-23",
+            "sewa",
+            "tanah",
+            "bangunan",
+            "10-persen",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-23-hadiah-penghargaan",
+          "category": "PPh",
+          "taxType": "PPh 23",
+          "transactionType": "Hadiah/Penghargaan kepada OP Bukan Pegawai",
+          "description": "Pemotongan PPh 23 final atas hadiah atau penghargaan yang diberikan kepada WP orang pribadi bukan pegawai yang berhubungan dengan pekerjaan, jasa, atau kegiatan, termasuk penghargaan kepada petugas/anggota kegiatan.",
+          "rate": {
+            "type": "percentage",
+            "value": 15
+          },
+          "taxBase": "Jumlah bruto hadiah/penghargaan (tidak termasuk PPN)",
+          "payer": "Penerima hadiah/penghargaan (OP bukan pegawai)",
+          "recipient": "Negara",
+          "withholder": "Penyelenggara kegiatan / pemberi hadiah/penghargaan",
+          "effectiveFrom": "2022-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 23 ayat (1) huruf d",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+              "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Tarif final 15% atas hadiah/penghargaan untuk non-pegawai. Termasuk penghargaan kepada petugas keamanan, anggota panitia, atau siapapun yang menerima imbalan terkait kegiatan tertentu. Tanpa NPWP: 15% × 2 = 30%.",
+          "tags": [
+            "pph-23",
+            "hadiah",
+            "penghargaan",
+            "final",
+            "15-persen",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "category": "PPh",
+      "taxType": "PPh 26",
+      "description": "Pajak Penghasilan Pasal 26 - Pemotongan atas penghasilan yang diterima WP luar negeri",
+      "serviceTypes": null,
+      "entries": [
+        {
+          "id": "pph-26-general-2024",
+          "category": "PPh",
+          "taxType": "PPh 26",
+          "transactionType": "Penghasilan WP Luar Negeri Umum",
+          "description": "Pemotongan PPh 26 atas penghasilan yang diterima atau diperoleh Wajib Pajak luar negeri dari Indonesia, kecuali yang dikenakan PPh final.",
+          "rate": {
+            "type": "percentage",
+            "value": 20
+          },
+          "taxBase": "Jumlah bruto (DPP)",
+          "payer": "WP luar negeri",
+          "recipient": "Negara",
+          "withholder": "Pemberi penghasilan (WP dalam negeri/bentuk usaha tetap)",
+          "effectiveFrom": "2022-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 26 ayat (1)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Tarif dapat berbeda berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/ tax treaty) antara Indonesia dan negara residen WP luar negeri.",
+          "tags": [
+            "pph-26",
+            "wp-luar-negeri",
+            "tax-treaty",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "description": "Pajak Penghasilan Final Pasal 4 ayat (2) - Pajak yang dipungut pada saat penghasilan tertentu diterima",
+      "serviceTypes": null,
+      "entries": [
+        {
+          "id": "pph-final-bunga-deposito",
+          "category": "PPh",
+          "taxType": "PPh 4(2) Final",
+          "transactionType": "Bunga Deposito dan Tabungan",
+          "description": "Pajak final atas bunga deposito dan simpanan tabungan yang dibayar oleh bank.",
+          "rate": {
+            "type": "percentage",
+            "value": 20
+          },
+          "taxBase": "Jumlah bunga bruto",
+          "payer": "Pemilik deposito/tabungan",
+          "recipient": "Negara",
+          "withholder": "Bank pembayar bunga",
+          "effectiveFrom": "2009-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 36/2008",
+              "article": "Pasal 4 ayat (2)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+            },
+            {
+              "regulation": "PP 131/2000",
+              "article": "Pasal 2",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Bunga tabungan dan deposito bank umum dan BPR dikenakan PPh final 20%. Bebas pajak untuk bunga simpanan di bank perwakilan negara P3B.",
+          "tags": [
+            "pph-final",
+            "bunga",
+            "deposito",
+            "tabungan",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-final-sewa-tanah",
+          "category": "PPh",
+          "taxType": "PPh 4(2) Final",
+          "transactionType": "Sewa Tanah dan/atau Bangunan",
+          "description": "Pajak final atas penghasilan berupa sewa tanah dan/atau bangunan selain yang dipotong PPh 23.",
+          "rate": {
+            "type": "percentage",
+            "value": 10
+          },
+          "taxBase": "Jumlah bruto sewa",
+          "payer": "Penerima sewa",
+          "recipient": "Negara",
+          "withholder": "Penyewa (sebagai pemotong)",
+          "effectiveFrom": "2009-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 36/2008",
+              "article": "Pasal 4 ayat (2)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+            },
+            {
+              "regulation": "PP 131/2000",
+              "article": "Pasal 4",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "PP 131/2000 Pasal 4 mengatur bahwa sewa tanah dan/atau bangunan yang dipotong PPh final 10% adalah yang tidak termasuk PPh 23.",
+          "tags": [
+            "pph-final",
+            "sewa",
+            "tanah",
+            "bangunan",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-final-hadiah-undian",
+          "category": "PPh",
+          "taxType": "PPh 4(2) Final",
+          "transactionType": "Hadiah Undian",
+          "description": "Pajak final atas hadiah undian, baik berupa uang maupun barang.",
+          "rate": {
+            "type": "percentage",
+            "value": 25
+          },
+          "taxBase": "Nilai hadiah bruto",
+          "payer": "Penerima hadiah",
+          "recipient": "Negara",
+          "withholder": "Penyelenggara undian",
+          "effectiveFrom": "2009-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 131/2000",
+              "article": "Pasal 3",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "tags": [
+            "pph-final",
+            "hadiah",
+            "undian",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-final-transaksi-saham-bursa",
+          "category": "PPh",
+          "taxType": "PPh 4(2) Final",
+          "transactionType": "Keuntungan Transaksi Saham di Bursa Efek",
+          "description": "Pajak final atas penghasilan dari perdagangan saham di bursa efek melalui perantara pedagang efek.",
+          "rate": {
+            "type": "percentage",
+            "value": 0.1
+          },
+          "taxBase": "Nilai transaksi penjualan saham",
+          "payer": "Penjual saham",
+          "recipient": "Negara",
+          "withholder": "Perantara pedagang efek",
+          "effectiveFrom": "2009-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 36/2008",
+              "article": "Pasal 4 ayat (2)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Tarif 0,1% dari nilai transaksi penjualan saham (final). Berlaku untuk transaksi di bursa efek.",
+          "tags": [
+            "pph-final",
+            "saham",
+            "bursa-efek",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "category": "PPh",
+      "taxType": "PPh Badan",
+      "description": "Pajak Penghasilan bagi Wajib Pajak Badan - Tarif flat yang berlaku atas penghasilan kena pajak badan",
+      "serviceTypes": null,
+      "entries": [
+        {
+          "id": "pph-badan-2022-plus",
+          "category": "PPh",
+          "taxType": "PPh Badan",
+          "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
+          "description": "Tarif PPh badan 22% berlaku untuk WP badan dalam negeri dan bentuk usaha tetap mulai tahun pajak 2022 sampai dengan tahun pajak yang belum ditentukan. Sebelumnya 25%.",
+          "rate": {
+            "type": "percentage",
+            "value": 22
+          },
+          "taxBase": "Penghasilan Kena Pajak (PKP) badan",
+          "payer": "WP Badan dalam negeri / BUT",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2022-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 17 ayat (1) huruf b",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+              "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [
+            "pph-badan-pre2022"
+          ],
+          "supersededBy": [],
+          "notes": "UU HPP menetapkan tarif PPh badan menurun: 22% (2022-dan seterusnya), turun menjadi 20% untuk WP badan yang sahamnya diperdagangkan di bursa efek dan memenuhi syarat tertentu. Penurunan ke 20% umum belum diaktifkan.",
+          "tags": [
+            "pph-badan",
+            "tarif-flat",
+            "berlaku",
+            "hpp"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-badan-pre2022",
+          "category": "PPh",
+          "taxType": "PPh Badan",
+          "transactionType": "Penghasilan Kena Pajak Badan (Pra-HPP)",
+          "description": "Tarif PPh badan 25% yang berlaku sebelum UU HPP.",
+          "rate": {
+            "type": "percentage",
+            "value": 25
+          },
+          "taxBase": "Penghasilan Kena Pajak (PKP) badan",
+          "payer": "WP Badan dalam negeri / BUT",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2010-01-01",
+          "effectiveTo": "2021-12-31",
+          "status": "diubah",
+          "legalBasis": [
+            {
+              "regulation": "UU 36/2008",
+              "article": "Pasal 17 ayat (1) huruf b",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+            }
+          ],
+          "supersedes": [
+            "pph-badan-pre2010"
+          ],
+          "supersededBy": [
+            "pph-badan-2022-plus"
+          ],
+          "notes": "Sebelum UU 36/2008, tarif PPh badan juga 28% (UU 17/2000) dan 20% untuk go-public.",
+          "tags": [
+            "pph-badan",
+            "tarif-flat",
+            "historis"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "category": "PPh",
+      "taxType": "PPh UMKM",
+      "description": "Pajak Penghasilan atas penghasilan dari usaha UMKM - tarif final untuk WP yang memiliki peredaran bruto tertentu",
+      "serviceTypes": null,
+      "entries": [
+        {
+          "id": "pph-umkm-05pct-2023",
+          "category": "PPh",
+          "taxType": "PPh UMKM",
+          "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
+          "description": "Tarif final PPh 0,5% atas penghasilan dari usaha yang diterima WP orang pribadi yang memiliki peredaran bruto tertentu, sesuai PP 55/2022.",
+          "rate": {
+            "type": "percentage",
+            "value": 0.5
+          },
+          "taxBase": "Peredaran bruto (omzet) bulanan",
+          "payer": "WP Orang Pribadi pelaku UMKM",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2023-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 55/2022",
+              "article": "Pasal 2-3",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022"
+            },
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 4 ayat (2)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [
+            "pph-umkm-05pct-2018"
+          ],
+          "supersededBy": [],
+          "notes": "Masa berlaku 7 tahun sejak PP 55/2022. Batas peredaran bruto Rp 4,8 miliar/tahun. PP 55/2022 menggantikan PP 23/2018. Kini juga berlaku untuk WP badan (perubahan dari PP 23/2018).",
+          "tags": [
+            "pph-umkm",
+            "final",
+            "0.5-persen",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "pph-umkm-05pct-2018",
+          "category": "PPh",
+          "taxType": "PPh UMKM",
+          "transactionType": "Penghasilan Usaha (PP 23/2018)",
+          "description": "Tarif final PPh 0,5% berdasarkan PP 23/2018 yang berlaku untuk WP OP pelaku UMKM. Dicabut dan diganti PP 55/2022.",
+          "rate": {
+            "type": "percentage",
+            "value": 0.5
+          },
+          "taxBase": "Peredaran bruto (omzet) bulanan",
+          "payer": "WP Orang Pribadi pelaku UMKM",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2018-07-01",
+          "effectiveTo": "2022-12-31",
+          "status": "dicabut",
+          "legalBasis": [
+            {
+              "regulation": "PP 23/2018",
+              "article": "Pasal 2-3",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/135493/pp-no-23-tahun-2018"
+            }
+          ],
+          "supersedes": [
+            "pph-umkm-1pct"
+          ],
+          "supersededBy": [
+            "pph-umkm-05pct-2023"
+          ],
+          "notes": "Berlaku 3 tahun (bisa diperpanjang). Hanya untuk WP OP, bukan badan. Dicabut oleh PP 55/2022.",
+          "tags": [
+            "pph-umkm",
+            "final",
+            "dicabut",
+            "historis"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "category": "PPN",
+      "taxType": "PPN",
+      "description": "Pajak Pertambahan Nilai - Pajak atas konsumsi Barang Kena Pajak dan/atau Jasa Kena Pajak di dalam Daerah Pabean",
+      "serviceTypes": null,
+      "entries": [
+        {
+          "id": "ppn-11pct-effective-2025",
+          "category": "PPN",
+          "taxType": "PPN",
+          "transactionType": "Penyerahan BKP/JKP dalam negeri",
+          "description": "Tarif PPN efektif 11% berdasarkan mekanisme PMK 131/2024. Tarif dasar UU HPP menetapkan PPN 12%, namun PMK 131/2024 menetapkan tarif efektif yang diperhitungkan sebagai 11/12 dari tarif dasar 12%.",
+          "rate": {
+            "type": "percentage",
+            "value": 11,
+            "effectiveRate": "11/12 × 12% = 11% (PMK 131/2024)"
+          },
+          "taxBase": "Dasar Pengenaan Pajak (DPP) = Harga Jual/Penggantian/Uang muka/Nilai ekspor",
+          "payer": "Konsumen akhir",
+          "recipient": "Negara",
+          "withholder": "PKP (Pengusaha Kena Pajak) sebagai pemungut",
+          "effectiveFrom": "2025-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PMK 131/2024",
+              "article": "Pasal 2",
+              "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024"
+            },
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 7 ayat (1)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [
+            "ppn-11pct-2022",
+            "ppn-10pct"
+          ],
+          "supersededBy": [],
+          "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.",
+          "examples": [
+            {
+              "scenario": "Penjualan BKP Rp 1.000.000",
+              "calculation": "PPN = 11% × Rp 1.000.000",
+              "result": "PPN = Rp 110.000"
+            }
+          ],
+          "tags": [
+            "ppn",
+            "tarif-efektif",
+            "pmk-131-2024",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "ppn-11pct-2022",
+          "category": "PPN",
+          "taxType": "PPN",
+          "transactionType": "Penyerahan BKP/JKP (2022-2024)",
+          "description": "Tarif PPN 11% berdasarkan UU HPP yang mulai berlaku 1 April 2022.",
+          "rate": {
+            "type": "percentage",
+            "value": 11
+          },
+          "taxBase": "DPP",
+          "payer": "Konsumen akhir",
+          "recipient": "Negara",
+          "withholder": "PKP",
+          "effectiveFrom": "2022-04-01",
+          "effectiveTo": "2024-12-31",
+          "status": "diubah",
+          "legalBasis": [
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 7 ayat (1)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [
+            "ppn-10pct"
+          ],
+          "supersededBy": [
+            "ppn-11pct-effective-2025"
+          ],
+          "tags": [
+            "ppn",
+            "11-persen",
+            "historis"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "ppn-10pct",
+          "category": "PPN",
+          "taxType": "PPN",
+          "transactionType": "Penyerahan BKP/JKP (Pra-HPP)",
+          "description": "Tarif PPN 10% yang berlaku sejak awal UU PPN 1984 hingga sebelum UU HPP.",
+          "rate": {
+            "type": "percentage",
+            "value": 10
+          },
+          "taxBase": "DPP",
+          "payer": "Konsumen akhir",
+          "recipient": "Negara",
+          "withholder": "PKP",
+          "effectiveFrom": "1984-04-01",
+          "effectiveTo": "2022-03-31",
+          "status": "diubah",
+          "legalBasis": [
+            {
+              "regulation": "UU 8/1983",
+              "article": "Pasal 7",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983"
+            },
+            {
+              "regulation": "UU 42/2009",
+              "article": "Pasal 7",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [
+            "ppn-11pct-2022"
+          ],
+          "notes": "Tarif PPN 10% berlaku konsisten dari 1984 hingga 2022.",
+          "tags": [
+            "ppn",
+            "10-persen",
+            "historis"
+          ],
+          "lastVerified": "2026-05-26"
+        },
+        {
+          "id": "ppn-ekspor-bkp",
+          "category": "PPN",
+          "taxType": "PPN",
+          "transactionType": "Ekspor Barang Kena Pajak",
+          "description": "PPN atas ekspor Barang Kena Pajak Berwujud dikenakan tarif 0%.",
+          "rate": {
+            "type": "percentage",
+            "value": 0
+          },
+          "taxBase": "Nilai ekspor",
+          "payer": "Eksportir PKP",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2022-04-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 7 ayat (2)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Tarif 0% untuk ekspor BKP berwujud. Berbeda dengan ekspor jasa (dapat berbeda tarif tergantung jenis).",
+          "tags": [
+            "ppn",
+            "ekspor",
+            "tarif-nol",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "category": "PPnBM",
+      "taxType": "PPnBM",
+      "description": "Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah",
+      "serviceTypes": null,
+      "entries": [
+        {
+          "id": "ppnbm-general",
+          "category": "PPnBM",
+          "taxType": "PPnBM",
+          "transactionType": "Penyerahan Barang Mewah",
+          "description": "Tarif PPnBM berkisar 10% sampai dengan 200% tergantung kelompok barang mewah yang diserahkan.",
+          "rate": {
+            "type": "range",
+            "value": [
+              10,
+              200
+            ]
+          },
+          "taxBase": "DPP (Harga Jual / Penggantian / Nilai ekspor)",
+          "payer": "Pembeli / konsumen",
+          "recipient": "Negara",
+          "withholder": "PKP penjual",
+          "effectiveFrom": "2022-04-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 8",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Tarif spesifik ditetapkan per kelompok barang: sedan/station wagon 4x2 (10-75%), sedan 4x4 (10-75%), van/wagon >10 penumpang (10%), kapal pesiar (10-50%), pesawat pribadi (10-50%), rumah mewah (10-40%), perlengkapan mewah (10-200%).",
+          "tags": [
+            "ppnbm",
+            "barang-mewah",
+            "berlaku"
+          ],
+          "lastVerified": "2026-05-26"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "category": "PPh",
+  "taxType": "PPh 22",
+  "description": "Pajak Penghasilan Pasal 22 - Pemungutan pajak atas impor, pembelian barang, dan penjualan barang tertentu",
+  "entries": [
+    {
+      "id": "pph-22-impor-2024",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Impor Barang",
+      "description": "Pemungutan PPh 22 atas impor barang oleh instansi pemerintah, yang dilakukan oleh Direktorat Jenderal Bea dan Cukai bersamaan dengan pemungutan Bea Masuk dan Cukai.",
+      "rate": { "type": "percentage", "value": 7.5 },
+      "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
+      "payer": "Importir",
+      "recipient": "Negara",
+      "withholder": "Direktorat Jenderal Bea dan Cukai",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "PP 60/2023", "article": "Pasal 2", "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023" },
+        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 22", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021", "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021" }
+      ],
+      "supersedes": [], "supersededBy": [],
+      "notes": "Tarif 7,5% untuk impor yang tidak menggunakan angka pengenal impor (API) atau menggunakan API umum. Berbeda untuk API produsen.",
+      "tags": ["pph-22", "impor", "bea-cukai", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-22-pembelian-barang-2024",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Pembelian Barang oleh Badan Usaha Industri Tertentu",
+      "description": "Pemungutan PPh 22 atas pembelian bahan-bahan untuk keperluan industri atau ekspor dari pedagang pengepul atau pedagang perantara.",
+      "rate": { "type": "percentage", "value": 0.25 },
+      "taxBase": "Harga pembelian bruto (DPP)",
+      "payer": "Penjual (pedagang pengepul/perantara)",
+      "recipient": "Negara",
+      "withholder": "Pembeli (badan usaha industri tertentu)",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "PP 60/2023", "article": "Pasal 3", "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023" }
+      ],
+      "supersedes": [], "supersededBy": [],
+      "notes": "Tarif 0,25% berlaku untuk pembeli yang sudah ber-NPWP. Tanpa NPWP tarif menjadi 0,25% × 2 = 0,5%.",
+      "tags": ["pph-22", "pembelian", "industri", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-22-penjualan-barang-2024",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu",
+      "description": "Pemungutan PPh 22 atas penjualan barang yang sangat diperlukan oleh masyarakat luas seperti bahan bakar, gas, pupuk, dan lain-lain.",
+      "rate": { "type": "percentage", "value": 0.5 },
+      "taxBase": "Harga jual bruto (DPP)",
+      "payer": "Pembeli",
+      "recipient": "Negara",
+      "withholder": "Penjual (badan usaha industri tertentu)",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "PP 60/2023", "article": "Pasal 4", "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023" }
+      ],
+      "supersedes": [], "supersededBy": [],
+      "tags": ["pph-22", "penjualan", "bahan-bakar", "berlaku"],
+      "lastVerified": "2026-05-26"
+    }
+  ]
+}

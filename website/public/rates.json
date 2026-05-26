@@ -1,0 +1,577 @@
+[
+  {
+    "id": "bea-meterai-dokumen-2021",
+    "category": "Bea Meterai",
+    "taxType": "Bea Meterai",
+    "transactionType": "Dokumen dengan nilai tertentu",
+    "rate": {
+      "type": "formula",
+      "value": "Rp 10.000 per lembar"
+    },
+    "effectiveFrom": "2021-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "bea-meterai",
+      "dokumen",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-21-ter-monthly-2024",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "Gaji/Bulan TER",
+    "rate": {
+      "type": "formula",
+      "value": "TER sesuai tabel lampiran PP 58/2023 (TER A/B/C berdasarkan status PTKP)",
+      "effectiveRate": "0% - 30% sesuai tabel TER"
+    },
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-21",
+      "ter",
+      "pegawai",
+      "bulanan",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-21-progressive-annual-2024",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "SPT Tahunan Progresif",
+    "rate": {
+      "type": "progressive",
+      "value": "Progresif 5 lapis",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 60000000,
+          "rate": 5
+        },
+        {
+          "min": 60000000,
+          "max": 250000000,
+          "rate": 15
+        },
+        {
+          "min": 250000000,
+          "max": 500000000,
+          "rate": 25
+        },
+        {
+          "min": 500000000,
+          "max": 5000000000,
+          "rate": 30
+        },
+        {
+          "min": 5000000000,
+          "max": null,
+          "rate": 35
+        }
+      ]
+    },
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-21",
+      "progresif",
+      "spt-tahunan",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-21-progressive-pre2022",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "Tarif Progresif Pra-HPP",
+    "rate": {
+      "type": "progressive",
+      "value": "Progresif 4 lapis",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 50000000,
+          "rate": 5
+        },
+        {
+          "min": 50000000,
+          "max": 250000000,
+          "rate": 15
+        },
+        {
+          "min": 250000000,
+          "max": 500000000,
+          "rate": 25
+        },
+        {
+          "min": 500000000,
+          "max": null,
+          "rate": 30
+        }
+      ]
+    },
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": "2021-12-31",
+    "status": "diubah",
+    "tags": [
+      "pph-21",
+      "progresif",
+      "historis",
+      "uu-36-2008"
+    ]
+  },
+  {
+    "id": "pph-21-non-taxable-income",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+    "rate": {
+      "type": "formula",
+      "value": "PTKP sesuai PMK berlaku",
+      "effectiveRate": "Rp 54.000.000 (TK/0) s/d Rp 72.000.000 (K/3)"
+    },
+    "effectiveFrom": "2016-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-21",
+      "ptkp",
+      "pengurang",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-22-impor-2024",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Impor Barang",
+    "rate": {
+      "type": "percentage",
+      "value": 7.5
+    },
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-22",
+      "impor",
+      "bea-cukai",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-22-pembelian-barang-2024",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Pembelian Barang oleh Badan Usaha Industri Tertentu",
+    "rate": {
+      "type": "percentage",
+      "value": 0.25
+    },
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-22",
+      "pembelian",
+      "industri",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-22-penjualan-barang-2024",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu",
+    "rate": {
+      "type": "percentage",
+      "value": 0.5
+    },
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-22",
+      "penjualan",
+      "bahan-bakar",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-23-jasa-lain-2pct",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Imbalan Jasa Lain (BerNPWP)",
+    "rate": {
+      "type": "percentage",
+      "value": 2
+    },
+    "effectiveFrom": "2015-12-31",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-23",
+      "jasa-lain",
+      "bernpwp",
+      "2-persen",
+      "pmk-141",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-23-jasa-lain-4pct",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Imbalan Jasa Lain (Tanpa NPWP)",
+    "rate": {
+      "type": "percentage",
+      "value": 4
+    },
+    "effectiveFrom": "2015-12-31",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-23",
+      "jasa-lain",
+      "tanpa-npwp",
+      "4-persen",
+      "pmk-141",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-23-jasa-katering-2pct",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Jasa Katering / Tata Boga",
+    "rate": {
+      "type": "percentage",
+      "value": 2
+    },
+    "effectiveFrom": "2015-12-31",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-23",
+      "katering",
+      "tata-boga",
+      "dpp-khusus",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-23-sewa-tanah-bangunan",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Sewa Tanah dan/atau Bangunan",
+    "rate": {
+      "type": "percentage",
+      "value": 10
+    },
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-23",
+      "sewa",
+      "tanah",
+      "bangunan",
+      "10-persen",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-23-hadiah-penghargaan",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Hadiah/Penghargaan kepada OP Bukan Pegawai",
+    "rate": {
+      "type": "percentage",
+      "value": 15
+    },
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-23",
+      "hadiah",
+      "penghargaan",
+      "final",
+      "15-persen",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-26-general-2024",
+    "category": "PPh",
+    "taxType": "PPh 26",
+    "transactionType": "Penghasilan WP Luar Negeri Umum",
+    "rate": {
+      "type": "percentage",
+      "value": 20
+    },
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-26",
+      "wp-luar-negeri",
+      "tax-treaty",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-final-bunga-deposito",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Bunga Deposito dan Tabungan",
+    "rate": {
+      "type": "percentage",
+      "value": 20
+    },
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-final",
+      "bunga",
+      "deposito",
+      "tabungan",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-final-sewa-tanah",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Sewa Tanah dan/atau Bangunan",
+    "rate": {
+      "type": "percentage",
+      "value": 10
+    },
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-final",
+      "sewa",
+      "tanah",
+      "bangunan",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-final-hadiah-undian",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Hadiah Undian",
+    "rate": {
+      "type": "percentage",
+      "value": 25
+    },
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-final",
+      "hadiah",
+      "undian",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-final-transaksi-saham-bursa",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Keuntungan Transaksi Saham di Bursa Efek",
+    "rate": {
+      "type": "percentage",
+      "value": 0.1
+    },
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-final",
+      "saham",
+      "bursa-efek",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-badan-2022-plus",
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
+    "rate": {
+      "type": "percentage",
+      "value": 22
+    },
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-badan",
+      "tarif-flat",
+      "berlaku",
+      "hpp"
+    ]
+  },
+  {
+    "id": "pph-badan-pre2022",
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "transactionType": "Penghasilan Kena Pajak Badan (Pra-HPP)",
+    "rate": {
+      "type": "percentage",
+      "value": 25
+    },
+    "effectiveFrom": "2010-01-01",
+    "effectiveTo": "2021-12-31",
+    "status": "diubah",
+    "tags": [
+      "pph-badan",
+      "tarif-flat",
+      "historis"
+    ]
+  },
+  {
+    "id": "pph-umkm-05pct-2023",
+    "category": "PPh",
+    "taxType": "PPh UMKM",
+    "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
+    "rate": {
+      "type": "percentage",
+      "value": 0.5
+    },
+    "effectiveFrom": "2023-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-umkm",
+      "final",
+      "0.5-persen",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-umkm-05pct-2018",
+    "category": "PPh",
+    "taxType": "PPh UMKM",
+    "transactionType": "Penghasilan Usaha (PP 23/2018)",
+    "rate": {
+      "type": "percentage",
+      "value": 0.5
+    },
+    "effectiveFrom": "2018-07-01",
+    "effectiveTo": "2022-12-31",
+    "status": "dicabut",
+    "tags": [
+      "pph-umkm",
+      "final",
+      "dicabut",
+      "historis"
+    ]
+  },
+  {
+    "id": "ppn-11pct-effective-2025",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Penyerahan BKP/JKP dalam negeri",
+    "rate": {
+      "type": "percentage",
+      "value": 11,
+      "effectiveRate": "11/12 × 12% = 11% (PMK 131/2024)"
+    },
+    "effectiveFrom": "2025-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "ppn",
+      "tarif-efektif",
+      "pmk-131-2024",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "ppn-11pct-2022",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Penyerahan BKP/JKP (2022-2024)",
+    "rate": {
+      "type": "percentage",
+      "value": 11
+    },
+    "effectiveFrom": "2022-04-01",
+    "effectiveTo": "2024-12-31",
+    "status": "diubah",
+    "tags": [
+      "ppn",
+      "11-persen",
+      "historis"
+    ]
+  },
+  {
+    "id": "ppn-10pct",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Penyerahan BKP/JKP (Pra-HPP)",
+    "rate": {
+      "type": "percentage",
+      "value": 10
+    },
+    "effectiveFrom": "1984-04-01",
+    "effectiveTo": "2022-03-31",
+    "status": "diubah",
+    "tags": [
+      "ppn",
+      "10-persen",
+      "historis"
+    ]
+  },
+  {
+    "id": "ppn-ekspor-bkp",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Ekspor Barang Kena Pajak",
+    "rate": {
+      "type": "percentage",
+      "value": 0
+    },
+    "effectiveFrom": "2022-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "ppn",
+      "ekspor",
+      "tarif-nol",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "ppnbm-general",
+    "category": "PPnBM",
+    "taxType": "PPnBM",
+    "transactionType": "Penyerahan Barang Mewah",
+    "rate": {
+      "type": "range",
+      "value": [
+        10,
+        200
+      ]
+    },
+    "effectiveFrom": "2022-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "ppnbm",
+      "barang-mewah",
+      "berlaku"
+    ]
+  }
+]

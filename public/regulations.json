@@ -1,0 +1,232 @@
+[
+  {
+    "id": "uu-7-2021-hpp",
+    "pasalLawId": 1829,
+    "number": "7",
+    "year": 2021,
+    "title": "Undang-Undang Harmonisasi Peraturan Perpajakan",
+    "type": "UU",
+    "effectiveDate": "2022-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021",
+    "pdfUrl": "https://peraturan.bpk.go.id/Download/178620/UU%20Nomor%207%20Tahun%202021.pdf",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "uu-7-1983-pph",
+      "uu-10-1994",
+      "uu-17-2000",
+      "uu-36-2008",
+      "uu-8-1983-ppn",
+      "uu-42-2009"
+    ]
+  },
+  {
+    "id": "uu-7-1983-pph",
+    "number": "7",
+    "year": 1983,
+    "title": "Undang-Undang Pajak Penghasilan",
+    "type": "UU",
+    "effectiveDate": "1984-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44028/uu-no-7-tahun-1983",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-1983",
+    "status": "dicabut",
+    "relatedRegulations": [
+      "uu-10-1994"
+    ]
+  },
+  {
+    "id": "uu-10-1994",
+    "number": "10",
+    "year": 1994,
+    "title": "Undang-Undang Perubahan UU Pajak Penghasilan",
+    "type": "UU",
+    "effectiveDate": "1995-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44043/uu-no-10-tahun-1994",
+    "status": "dicabut",
+    "relatedRegulations": [
+      "uu-7-1983-pph",
+      "uu-17-2000"
+    ]
+  },
+  {
+    "id": "uu-17-2000",
+    "number": "17",
+    "year": 2000,
+    "title": "Undang-Undang Perubahan Kedua UU Pajak Penghasilan",
+    "type": "UU",
+    "effectiveDate": "2001-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44063/uu-no-17-tahun-2000",
+    "status": "dicabut",
+    "relatedRegulations": [
+      "uu-10-1994",
+      "uu-36-2008"
+    ]
+  },
+  {
+    "id": "uu-36-2008",
+    "number": "36",
+    "year": 2008,
+    "title": "Undang-Undang Perubahan Keempat UU Pajak Penghasilan",
+    "type": "UU",
+    "effectiveDate": "2009-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008",
+    "status": "diubah_sebagian",
+    "relatedRegulations": [
+      "uu-17-2000",
+      "uu-7-2021-hpp"
+    ]
+  },
+  {
+    "id": "uu-8-1983-ppn",
+    "number": "8",
+    "year": 1983,
+    "title": "Undang-Undang Pajak Pertambahan Nilai",
+    "type": "UU",
+    "effectiveDate": "1984-04-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983",
+    "status": "dicabut",
+    "relatedRegulations": [
+      "uu-42-2009"
+    ]
+  },
+  {
+    "id": "uu-42-2009",
+    "pasalLawId": 1926,
+    "number": "42",
+    "year": 2009,
+    "title": "Undang-Undang Perubahan UU Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah",
+    "type": "UU",
+    "effectiveDate": "2010-04-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-42-tahun-2009",
+    "pdfUrl": "https://peraturan.bpk.go.id/Download/44119/UU%20Nomor%2042%20Tahun%202009.pdf",
+    "status": "diubah_sebagian",
+    "relatedRegulations": [
+      "uu-8-1983-ppn",
+      "uu-7-2021-hpp"
+    ]
+  },
+  {
+    "id": "pp-58-2023",
+    "pasalLawId": 1069,
+    "number": "58",
+    "year": 2023,
+    "title": "Tarif Pemotongan Pajak Penghasilan Pasal 21 (TER)",
+    "type": "PP",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023",
+    "pasalUrl": "https://pasal.id/peraturan/pp/pp-no-58-tahun-2023",
+    "pdfUrl": "https://peraturan.bpk.go.id/Download/332609/PP%20Nomor%2058%20Tahun%202023.pdf",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "uu-7-2021-hpp",
+      "pmk-168-2023"
+    ]
+  },
+  {
+    "id": "pmk-168-2023",
+    "number": "168",
+    "year": 2023,
+    "title": "Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Wajib Pajak Orang Pribadi",
+    "type": "PMK",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "pp-58-2023",
+      "uu-7-2021-hpp"
+    ]
+  },
+  {
+    "id": "pp-23-2018",
+    "number": "23",
+    "year": 2018,
+    "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "type": "PP",
+    "effectiveDate": "2018-07-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/135493/pp-no-23-tahun-2018",
+    "status": "dicabut",
+    "relatedRegulations": [
+      "pp-55-2022",
+      "uu-7-2021-hpp"
+    ]
+  },
+  {
+    "id": "pp-55-2022",
+    "number": "55",
+    "year": 2022,
+    "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "type": "PP",
+    "effectiveDate": "2023-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "pp-23-2018"
+    ]
+  },
+  {
+    "id": "pmk-131-2024",
+    "number": "131",
+    "year": 2024,
+    "title": "Penentuan Tarif Pajak Pertambahan Nilai",
+    "type": "PMK",
+    "effectiveDate": "2025-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "uu-7-2021-hpp",
+      "uu-42-2009"
+    ]
+  },
+  {
+    "id": "pp-60-2023",
+    "number": "60",
+    "year": 2023,
+    "title": "Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
+    "type": "PP",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "uu-7-2021-hpp"
+    ]
+  },
+  {
+    "id": "pp-131-2000",
+    "number": "131",
+    "year": 2000,
+    "title": "Pajak Penghasilan Final atas Penghasilan Tertentu",
+    "type": "PP",
+    "effectiveDate": "2000-12-29",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000",
+    "status": "diubah_sebagian",
+    "relatedRegulations": [
+      "uu-7-2021-hpp"
+    ]
+  },
+  {
+    "id": "uu-10-2020-bea-meterai",
+    "number": "10",
+    "year": 2020,
+    "title": "Undang-Undang Bea Meterai",
+    "type": "UU",
+    "effectiveDate": "2021-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020",
+    "status": "berlaku",
+    "relatedRegulations": []
+  },
+  {
+    "id": "uu-1-2022-pbb",
+    "number": "1",
+    "year": 2022,
+    "title": "Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintahan Daerah (HKPD) - PBB",
+    "type": "UU",
+    "effectiveDate": "2022-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/196435/uu-no-1-tahun-2022",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "uu-12-1985",
+      "uu-28-2009"
+    ]
+  }
+]

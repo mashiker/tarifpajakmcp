@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Regulation",
+  "description": "Skema untuk metadata regulasi pajak Indonesia",
+  "type": "object",
+  "required": ["id", "number", "year", "title", "type", "sourceUrl", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "pasalLawId": {
+      "type": "integer",
+      "description": "Pasal.id law_id for linking"
+    },
+    "number": { "type": "string" },
+    "year": { "type": "integer" },
+    "title": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["UU", "PP", "PMK", "PER", "KMK", "SE", "Perpres", "Keppres", "Inpres", "Perda", "Tap MPR", "UUD"]
+    },
+    "promulgationDate": { "type": "string", "format": "date" },
+    "effectiveDate": { "type": "string", "format": "date" },
+    "sourceUrl": { "type": "string", "format": "uri" },
+    "pasalUrl": { "type": "string", "format": "uri" },
+    "pdfUrl": { "type": "string", "format": "uri" },
+    "status": {
+      "type": "string",
+      "enum": ["berlaku", "dicabut", "diubah_sebagian", "belum_berlaku"]
+    },
+    "relatedRegulations": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

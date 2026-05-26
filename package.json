@@ -1,0 +1,17 @@
+{
+  "name": "tarif-pajak-id",
+  "version": "0.1.0",
+  "description": "Open database tarif pajak Indonesia - Indonesian tax rates open database",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.ts",
+    "validate": "node src/validate.ts",
+    "generate": "node src/generate.ts"
+  },
+  "keywords": ["pajak", "tax", "indonesia", "tarif", "pph", "ppn", "database"],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "ajv": "^8.17.0"
+  }
+}

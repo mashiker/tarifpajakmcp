@@ -1,0 +1,96 @@
+{
+  "category": "PPh",
+  "taxType": "PPh 4(2) Final",
+  "description": "Pajak Penghasilan Final Pasal 4 ayat (2) - Pajak yang dipungut pada saat penghasilan tertentu diterima",
+  "entries": [
+    {
+      "id": "pph-final-bunga-deposito",
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "transactionType": "Bunga Deposito dan Tabungan",
+      "description": "Pajak final atas bunga deposito dan simpanan tabungan yang dibayar oleh bank.",
+      "rate": { "type": "percentage", "value": 20 },
+      "taxBase": "Jumlah bunga bruto",
+      "payer": "Pemilik deposito/tabungan",
+      "recipient": "Negara",
+      "withholder": "Bank pembayar bunga",
+      "effectiveFrom": "2009-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "UU 36/2008", "article": "Pasal 4 ayat (2)", "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008" },
+        { "regulation": "PP 131/2000", "article": "Pasal 2", "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000" }
+      ],
+      "supersedes": [], "supersededBy": [],
+      "notes": "Bunga tabungan dan deposito bank umum dan BPR dikenakan PPh final 20%. Bebas pajak untuk bunga simpanan di bank perwakilan negara P3B.",
+      "tags": ["pph-final", "bunga", "deposito", "tabungan", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-final-sewa-tanah",
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "transactionType": "Sewa Tanah dan/atau Bangunan",
+      "description": "Pajak final atas penghasilan berupa sewa tanah dan/atau bangunan selain yang dipotong PPh 23.",
+      "rate": { "type": "percentage", "value": 10 },
+      "taxBase": "Jumlah bruto sewa",
+      "payer": "Penerima sewa",
+      "recipient": "Negara",
+      "withholder": "Penyewa (sebagai pemotong)",
+      "effectiveFrom": "2009-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "UU 36/2008", "article": "Pasal 4 ayat (2)", "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008" },
+        { "regulation": "PP 131/2000", "article": "Pasal 4", "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000" }
+      ],
+      "supersedes": [], "supersededBy": [],
+      "notes": "PP 131/2000 Pasal 4 mengatur bahwa sewa tanah dan/atau bangunan yang dipotong PPh final 10% adalah yang tidak termasuk PPh 23.",
+      "tags": ["pph-final", "sewa", "tanah", "bangunan", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-final-hadiah-undian",
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "transactionType": "Hadiah Undian",
+      "description": "Pajak final atas hadiah undian, baik berupa uang maupun barang.",
+      "rate": { "type": "percentage", "value": 25 },
+      "taxBase": "Nilai hadiah bruto",
+      "payer": "Penerima hadiah",
+      "recipient": "Negara",
+      "withholder": "Penyelenggara undian",
+      "effectiveFrom": "2009-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "PP 131/2000", "article": "Pasal 3", "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000" }
+      ],
+      "supersedes": [], "supersededBy": [],
+      "tags": ["pph-final", "hadiah", "undian", "berlaku"],
+      "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-final-transaksi-saham-bursa",
+      "category": "PPh",
+      "taxType": "PPh 4(2) Final",
+      "transactionType": "Keuntungan Transaksi Saham di Bursa Efek",
+      "description": "Pajak final atas penghasilan dari perdagangan saham di bursa efek melalui perantara pedagang efek.",
+      "rate": { "type": "percentage", "value": 0.1 },
+      "taxBase": "Nilai transaksi penjualan saham",
+      "payer": "Penjual saham",
+      "recipient": "Negara",
+      "withholder": "Perantara pedagang efek",
+      "effectiveFrom": "2009-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        { "regulation": "UU 36/2008", "article": "Pasal 4 ayat (2)", "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008" }
+      ],
+      "supersedes": [], "supersededBy": [],
+      "notes": "Tarif 0,1% dari nilai transaksi penjualan saham (final). Berlaku untuk transaksi di bursa efek.",
+      "tags": ["pph-final", "saham", "bursa-efek", "berlaku"],
+      "lastVerified": "2026-05-26"
+    }
+  ]
+}
