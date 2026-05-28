@@ -5,80 +5,69 @@ import path from 'path';
 
 export function getStaticPaths() {
   const raw = JSON.parse(fs.readFileSync(path.resolve('public/api.json'), 'utf-8'));
-  return raw.categories.map((c: any) => ({
-    params: { slug: c.taxType.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-') }
-  }));
+  return raw.categories.map((c: any) => ({ params: { slug: c.taxType.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-') } }));
 }
-
-const apiPath = path.resolve('public/api.json');
-const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
+const api = JSON.parse(fs.readFileSync(path.resolve('public/api.json'), 'utf-8'));
 const slug = Astro.params.slug!;
-
-function toSlug(s: string): string {
-  return s.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
-}
-
+function toSlug(s: string) { return s.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-'); }
 const category = api.categories.find((c: any) => toSlug(c.taxType) === slug);
 if (!category) return Astro.redirect('/404');
 
-const statusBadge: Record<string, string> = {
-  'berlaku': 'badge-berlaku', 'dicabut': 'badge-dicabut', 'diubah': 'badge-diubah', 'belum_berlaku': 'badge-belum-berlaku',
-};
-const statusLabel: Record<string, string> = {
-  'berlaku': '✓ Berlaku', 'dicabut': '✗ Dicabut', 'diubah': '⟳ Diubah', 'belum_berlaku': '○ Belum',
-};
+const sb: Record<string, string> = { berlaku: 'badge-berlaku', dicabut: 'badge-dicabut', diubah: 'badge-diubah', belum_berlaku: 'badge-belum-berlaku' };
+const sl: Record<string, string> = { berlaku: 'Berlaku', dicabut: 'Dicabut', diubah: 'Diubah', belum_berlaku: 'Belum' };
 
-function formatRate(rate: any): string {
-  if (rate.type === 'percentage') return `${rate.value}%`;
-  if (rate.type === 'range') return `${rate.value[0]}%–${rate.value[1]}%`;
-  if (rate.type === 'progressive' && rate.brackets) return rate.brackets.map((b: any) => `${b.rate}%`).join('/');
-  return String(rate.value);
+function fmtRate(r: any): string {
+  if (r.type === 'percentage') return `${r.value}%`;
+  if (r.type === 'range') return `${r.value[0]}–${r.value[1]}%`;
+  if (r.type === 'progressive' && r.brackets) return r.brackets.map((b: any) => `${b.rate}%`).join('/');
+  return String(r.value);
 }
 
-const totalBppu = category.entries.reduce((sum: number, e: any) => sum + (e.bppuKode?.length || 0), 0);
 const activeCount = category.entries.filter((e: any) => e.status === 'berlaku').length;
+const totalBppu = category.entries.reduce((s: number, e: any) => s + (e.bppuKode?.length || 0), 0);
 const allSlugs = api.categories.map((c: any) => toSlug(c.taxType));
-const currentIndex = allSlugs.indexOf(slug);
-const prevCat = currentIndex > 0 ? api.categories[currentIndex - 1] : null;
-const nextCat = currentIndex < api.categories.length - 1 ? api.categories[currentIndex + 1] : null;
+const ci = allSlugs.indexOf(slug);
+const prev = ci > 0 ? api.categories[ci - 1] : null;
+const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
 ---
 
 <BaseLayout title={`${category.taxType} - Tarif Pajak`}>
-  <nav class="flex items-center gap-2 text-[11px] mb-3">
-    <a href="/" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">Beranda</a>
-    <svg class="w-3 h-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+  <!-- Breadcrumb -->
+  <nav class="flex items-center gap-1.5 text-xs mb-4 text-gray-400">
+    <a href="/" class="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Beranda</a>
+    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
     <span class="text-gray-700 dark:text-gray-300 font-medium">{category.taxType}</span>
   </nav>
 
   <!-- Header -->
-  <div class="flex items-center justify-between gap-3 mb-4">
+  <div class="flex items-start justify-between gap-4 mb-6">
     <div>
-      <h1 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-50">{category.taxType}</h1>
-      <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 max-w-xl">{category.description}</p>
+      <h1 class="text-xl sm:text-2xl font-black text-gray-900 dark:text-gray-50 tracking-tight">{category.taxType}</h1>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 max-w-2xl">{category.description}</p>
     </div>
-    <div class="flex gap-1.5 shrink-0">
-      <span class="bg-brand-50 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 px-2 py-0.5 rounded text-[11px] font-medium">{activeCount} aktif</span>
-      <span class="bg-gray-100 dark:bg-gray-800 text-gray-500 px-2 py-0.5 rounded text-[11px] font-medium">{category.entries.length} total</span>
+    <div class="shrink-0 flex gap-2">
+      <span class="bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 px-3 py-1 rounded-lg text-xs font-semibold">{activeCount} aktif</span>
+      <span class="bg-gray-100 dark:bg-gray-800 text-gray-500 px-3 py-1 rounded-lg text-xs font-semibold">{category.entries.length} total</span>
     </div>
   </div>
   {totalBppu > 0 && (
-    <a href="/kode-objek-pajak" class="inline-flex items-center gap-1 text-[11px] text-brand-600 dark:text-brand-400 hover:underline font-mono mb-3">→ {totalBppu} kode BPPU terkait</a>
+    <a href="/kode-objek-pajak" class="inline-flex items-center gap-1.5 text-xs text-brand-600 dark:text-brand-400 hover:underline font-medium mb-4">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+      {totalBppu} kode BPPU terkait
+    </a>
   )}
 
   <!-- Service Types -->
-  {category.serviceTypes && category.serviceTypes.services && (
-    <details class="card mb-4" open={category.serviceTypes.services.length <= 20}>
-      <summary class="bg-gray-50 dark:bg-gray-800 px-4 py-2.5 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-750 transition-colors flex items-center justify-between text-xs font-semibold text-gray-700 dark:text-gray-300">
-        <span>{category.serviceTypes.services.length} Jenis Jasa</span>
-        <a href={category.serviceTypes.sourceUrl} target="_blank" class="text-[10px] text-brand-600 dark:text-brand-400 hover:underline font-mono">{category.serviceTypes.source} ↗</a>
+  {category.serviceTypes?.services && (
+    <details class="card mb-5" open={category.serviceTypes.services.length <= 15}>
+      <summary class="px-5 py-3 bg-gray-50 dark:bg-gray-800/50 rounded-t-xl border-b border-gray-200 dark:border-gray-800 flex items-center justify-between cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+        <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">{category.serviceTypes.services.length} Jenis Jasa</span>
+        <a href={category.serviceTypes.sourceUrl} target="_blank" class="text-[11px] text-brand-600 dark:text-brand-400 hover:underline font-mono">{category.serviceTypes.source} ↗</a>
       </summary>
-      <div class="p-3 max-h-52 overflow-y-auto custom-scrollbar">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-0.5">
-          {category.serviceTypes.services.map((svc: any) => (
-            <div class="flex items-start gap-1 py-0.5">
-              <span class="text-gray-400 font-mono text-[10px] min-w-[1.5rem] shrink-0">{svc.code}.</span>
-              <span class="text-xs text-gray-600 dark:text-gray-400">{svc.name}</span>
-            </div>
+      <div class="p-4 max-h-60 overflow-y-auto custom-scrollbar">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-1">
+          {category.serviceTypes.services.map((s: any) => (
+            <div class="flex gap-1.5 py-0.5"><span class="text-gray-400 font-mono text-[11px] min-w-[1.5rem] shrink-0">{s.code}.</span><span class="text-sm text-gray-600 dark:text-gray-400">{s.name}</span></div>
           ))}
         </div>
       </div>
@@ -86,56 +75,52 @@ const nextCat = currentIndex < api.categories.length - 1 ? api.categories[curren
   )}
 
   <!-- Entries -->
-  <div class="space-y-2">
+  <div class="space-y-2.5">
     {category.entries.map((entry: any, idx: number) => {
-      const isOpen = idx < 5 || entry.status === 'berlaku';
+      const isOpen = entry.status === 'berlaku' || idx < 3;
       return (
       <details class="card overflow-hidden group" open={isOpen}>
-        <summary class="px-4 py-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
-          <div class="flex items-center justify-between gap-3">
+        <summary class="px-5 py-4 hover:bg-gray-50/50 dark:hover:bg-gray-800/30 transition-colors">
+          <div class="flex items-center justify-between gap-4">
             <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2">
-                <span class="text-sm font-medium text-gray-900 dark:text-gray-100">{entry.transactionType}</span>
-                <span class={`badge ${statusBadge[entry.status] || 'badge-belum-berlaku'} text-[10px]`}>{statusLabel[entry.status]}</span>
+              <div class="flex items-center gap-2 mb-1">
+                <h3 class="text-sm sm:text-base font-semibold text-gray-900 dark:text-gray-100">{entry.transactionType}</h3>
+                <span class={`badge ${sb[entry.status] || 'badge-belum-berlaku'}`}>{sl[entry.status]}</span>
               </div>
-              <div class="flex items-center gap-3 mt-1">
-                <span class="rate-value text-sm">{formatRate(entry.rate)}</span>
-                <span class="text-[10px] text-gray-400 font-mono">{entry.effectiveFrom}{entry.effectiveTo ? ` → ${entry.effectiveTo}` : ' → sekarang'}</span>
-                {entry.bppuKode && entry.bppuKode.length > 0 && (
-                  <span class="text-[10px] text-brand-600 dark:text-brand-400 font-mono">{entry.bppuKode.length} BPPU</span>
-                )}
+              <div class="flex items-center gap-4 text-xs text-gray-400">
+                <span class="rate-value text-base">{fmtRate(entry.rate)}</span>
+                <span class="font-mono">{entry.effectiveFrom} → {entry.effectiveTo || 'sekarang'}</span>
+                {entry.bppuKode?.length > 0 && <span class="text-brand-600 dark:text-brand-400 font-mono">{entry.bppuKode.length} BPPU</span>}
               </div>
             </div>
             <svg class="w-4 h-4 text-gray-400 shrink-0 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </div>
         </summary>
-        <div class="px-4 pb-4 border-t border-gray-100 dark:border-gray-800 pt-3">
-          <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">{entry.description}</p>
+        <div class="px-5 pb-5 border-t border-gray-100 dark:border-gray-800">
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 mb-4">{entry.description}</p>
 
-          <!-- Rate Box -->
-          <div class="bg-gray-50 dark:bg-gray-800 rounded-md p-3 mb-3">
-            <div class="flex items-baseline gap-2">
-              <span class="rate-value-lg">{formatRate(entry.rate)}</span>
+          <!-- Rate Display -->
+          <div class="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-5 mb-4">
+            <div class="flex items-baseline gap-3 flex-wrap">
+              <span class="rate-value-lg">{fmtRate(entry.rate)}</span>
               {entry.rate.effectiveRate && (
-                <span class="text-[10px] text-gray-400 bg-white dark:bg-gray-900 px-1.5 py-0.5 rounded border border-gray-200 dark:border-gray-700">
-                  efektif: {entry.rate.effectiveRate}
-                </span>
+                <span class="text-xs text-gray-400 bg-white dark:bg-gray-900 px-2 py-1 rounded-lg border border-gray-200 dark:border-gray-700">Tarif efektif: {entry.rate.effectiveRate}</span>
               )}
             </div>
-            <div class="text-[11px] text-gray-400 mt-1">Dasar: {entry.taxBase}</div>
+            <div class="text-sm text-gray-400 mt-2">Dasar pengenaan: <span class="text-gray-600 dark:text-gray-300">{entry.taxBase}</span></div>
           </div>
 
           <!-- Brackets -->
           {entry.rate.brackets && (
-            <div class="mb-3 overflow-x-auto custom-scrollbar border border-gray-200 dark:border-gray-700 rounded-md">
-              <table class="data-table text-xs">
-                <thead><tr><th>Lapis</th><th class="text-right">Bawah</th><th class="text-right">Atas</th><th class="text-right">Tarif</th></tr></thead>
+            <div class="mb-4 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+              <table class="data-table">
+                <thead><tr><th>Lapisan</th><th class="text-right">Batas Bawah</th><th class="text-right">Batas Atas</th><th class="text-right">Tarif</th></tr></thead>
                 <tbody>
                   {entry.rate.brackets.map((b: any, i: number) => (
                     <tr>
                       <td class="text-gray-500">{i + 1}</td>
-                      <td class="text-right font-mono">Rp {(b.min / 1000000).toLocaleString('id')} jt</td>
-                      <td class="text-right font-mono">{b.max ? `Rp ${(b.max / 1000000).toLocaleString('id')} jt` : '∞'}</td>
+                      <td class="text-right font-mono">Rp {(b.min / 1e6).toLocaleString('id')} jt</td>
+                      <td class="text-right font-mono">{b.max ? `Rp ${(b.max / 1e6).toLocaleString('id')} jt` : '∞'}</td>
                       <td class="text-right"><span class="rate-value">{b.rate}%</span></td>
                     </tr>
                   ))}
@@ -144,41 +129,37 @@ const nextCat = currentIndex < api.categories.length - 1 ? api.categories[curren
             </div>
           )}
 
-          <!-- Details -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs mb-3">
-            <div><div class="text-[10px] text-gray-400">Wajib Pajak</div><div class="text-gray-700 dark:text-gray-300">{entry.payer}</div></div>
-            <div><div class="text-[10px] text-gray-400">Penerima</div><div class="text-gray-700 dark:text-gray-300">{entry.recipient}</div></div>
-            {entry.withholder && <div><div class="text-[10px] text-gray-400">Pemotong</div><div class="text-gray-700 dark:text-gray-300">{entry.withholder}</div></div>}
-            <div><div class="text-[10px] text-gray-400">Berlaku</div><div class="text-gray-700 dark:text-gray-300 font-mono">{entry.effectiveFrom}{entry.effectiveTo ? ` → ${entry.effectiveTo}` : ' → sekarang'}</div></div>
+          <!-- Details Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
+            <div><div class="text-[11px] text-gray-400 mb-0.5 font-medium uppercase">Wajib Pajak</div><div class="text-sm text-gray-700 dark:text-gray-300">{entry.payer}</div></div>
+            <div><div class="text-[11px] text-gray-400 mb-0.5 font-medium uppercase">Penerima</div><div class="text-sm text-gray-700 dark:text-gray-300">{entry.recipient}</div></div>
+            {entry.withholder && <div><div class="text-[11px] text-gray-400 mb-0.5 font-medium uppercase">Pemotong</div><div class="text-sm text-gray-700 dark:text-gray-300">{entry.withholder}</div></div>}
+            <div><div class="text-[11px] text-gray-400 mb-0.5 font-medium uppercase">Berlaku</div><div class="text-sm text-gray-700 dark:text-gray-300 font-mono">{entry.effectiveFrom} → {entry.effectiveTo || 'sekarang'}</div></div>
           </div>
 
           <!-- BPPU -->
-          {entry.bppuKode && entry.bppuKode.length > 0 && (
-            <div class="border-t border-gray-100 dark:border-gray-800 pt-3 mb-3">
-              <div class="flex items-center justify-between mb-1.5">
-                <span class="text-[11px] font-semibold text-gray-500">Kode BPPU ({entry.bppuKode.length})</span>
-                <a href="/kode-objek-pajak" class="text-[10px] text-brand-600 dark:text-brand-400 hover:underline">Semua ↗</a>
+          {entry.bppuKode?.length > 0 && (
+            <div class="border-t border-gray-100 dark:border-gray-800 pt-4 mb-4">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-gray-700 dark:text-gray-300">Kode BPPU ({entry.bppuKode.length})</span>
+                <a href="/kode-objek-pajak" class="text-[11px] text-brand-600 dark:text-brand-400 hover:underline">Lihat semua ↗</a>
               </div>
-              {entry.bppuKode.length <= 10 ? (
-                <div class="flex flex-wrap gap-1">
+              {entry.bppuKode.length <= 12 ? (
+                <div class="flex flex-wrap gap-1.5">
                   {entry.bppuKode.map((b: any) => (
-                    <span class="inline-flex items-center gap-1 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded px-1.5 py-0.5 text-[11px] font-mono">
-                      <span class="text-gray-900 dark:text-gray-100 font-medium">{b.kode}</span>
-                      <span class="text-gray-400">{b.tarif}%</span>
+                    <span class="inline-flex items-center gap-1.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg px-2.5 py-1 text-xs">
+                      <span class="font-mono font-bold text-gray-900 dark:text-gray-100">{b.kode}</span>
+                      <span class="text-gray-400 font-mono">{b.tarif}%</span>
                     </span>
                   ))}
                 </div>
               ) : (
-                <div class="overflow-x-auto custom-scrollbar border border-gray-200 dark:border-gray-700 rounded-md max-h-48">
-                  <table class="data-table text-xs">
+                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden max-h-64 overflow-y-auto custom-scrollbar">
+                  <table class="data-table">
                     <thead><tr><th>Kode</th><th>Nama</th><th class="text-right">Tarif</th></tr></thead>
                     <tbody>
                       {entry.bppuKode.map((b: any) => (
-                        <tr>
-                          <td class="font-mono font-medium text-gray-900 dark:text-gray-100 whitespace-nowrap">{b.kode}</td>
-                          <td class="cell-wrap" style="white-space:normal;max-width:300px;font-size:11px">{b.nama}</td>
-                          <td class="text-right"><span class="rate-value">{b.tarif}%</span></td>
-                        </tr>
+                        <tr><td class="font-mono font-bold text-gray-900 dark:text-gray-100 whitespace-nowrap">{b.kode}</td><td class="cell-wrap text-sm" style="white-space:normal;max-width:350px">{b.nama}</td><td class="text-right"><span class="rate-value">{b.tarif}%</span></td></tr>
                       ))}
                     </tbody>
                   </table>
@@ -188,13 +169,14 @@ const nextCat = currentIndex < api.categories.length - 1 ? api.categories[curren
           )}
 
           <!-- Legal Basis -->
-          <div class="border-t border-gray-100 dark:border-gray-800 pt-3">
-            <div class="text-[10px] text-gray-400 mb-1 font-medium uppercase tracking-wide">Dasar Hukum</div>
-            <div class="flex flex-wrap gap-1">
+          <div class="border-t border-gray-100 dark:border-gray-800 pt-4">
+            <div class="text-[11px] text-gray-400 mb-1.5 font-bold uppercase tracking-wider">Dasar Hukum</div>
+            <div class="flex flex-wrap gap-1.5">
               {entry.legalBasis.map((lb: any) => (
-                <a href={lb.sourceUrl || lb.pasalUrl || '#'} target="_blank" class="tag text-[10px]">
-                  <span class="text-brand-600 dark:text-brand-400">{lb.regulation}</span>
+                <a href={lb.sourceUrl || lb.pasalUrl || '#'} target="_blank" class="tag">
+                  <span class="text-brand-600 dark:text-brand-400 font-semibold">{lb.regulation}</span>
                   <span class="text-gray-400">{lb.article}</span>
+                  {(lb.sourceUrl || lb.pasalUrl) && <span class="text-gray-300">↗</span>}
                 </a>
               ))}
             </div>
@@ -202,22 +184,22 @@ const nextCat = currentIndex < api.categories.length - 1 ? api.categories[curren
 
           <!-- Notes -->
           {entry.notes && (
-            <div class="mt-3 text-xs text-gray-500 dark:text-gray-400 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-md p-2.5 flex gap-2">
-              <svg class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <div>{entry.notes.substring(0, 400)}{entry.notes.length > 400 ? '...' : ''}</div>
+            <div class="mt-4 flex gap-2.5 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/40 rounded-xl p-4">
+              <svg class="w-4 h-4 text-amber-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="text-sm text-amber-800 dark:text-amber-200">{entry.notes.substring(0, 500)}{entry.notes.length > 500 ? '...' : ''}</div>
             </div>
           )}
 
           <!-- Examples -->
-          {entry.examples && entry.examples.length > 0 && (
-            <div class="mt-3 border-t border-gray-100 dark:border-gray-800 pt-3">
-              <div class="text-[10px] text-gray-400 mb-1.5 font-medium uppercase tracking-wide">Contoh Perhitungan</div>
-              <div class="grid gap-2">
+          {entry.examples?.length > 0 && (
+            <div class="mt-4 border-t border-gray-100 dark:border-gray-800 pt-4">
+              <div class="text-[11px] text-gray-400 mb-2 font-bold uppercase tracking-wider">Contoh Perhitungan</div>
+              <div class="space-y-2">
                 {entry.examples.map((ex: any) => (
-                  <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800/30 rounded-md p-2.5">
-                    <div class="text-xs text-gray-700 dark:text-gray-300 mb-0.5">{ex.scenario}</div>
-                    <div class="text-[11px] text-gray-500 mb-1">{ex.calculation}</div>
-                    <div class="text-emerald-700 dark:text-emerald-400 font-semibold font-mono text-xs">→ {ex.result}</div>
+                  <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800/40 rounded-xl p-4">
+                    <div class="text-sm font-medium text-emerald-900 dark:text-emerald-100 mb-1">{ex.scenario}</div>
+                    <div class="text-xs text-emerald-700 dark:text-emerald-300 mb-1.5">{ex.calculation}</div>
+                    <div class="text-sm text-emerald-800 dark:text-emerald-200 font-bold font-mono">→ {ex.result}</div>
                   </div>
                 ))}
               </div>
@@ -228,19 +210,9 @@ const nextCat = currentIndex < api.categories.length - 1 ? api.categories[curren
     );})}
   </div>
 
-  <!-- Pagination -->
-  <div class="mt-6 flex items-center justify-between gap-3">
-    {prevCat ? (
-      <a href={`/kategori/${toSlug(prevCat.taxType)}`} class="btn-secondary text-xs py-1.5">
-        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-        {prevCat.taxType}
-      </a>
-    ) : <div></div>}
-    {nextCat ? (
-      <a href={`/kategori/${toSlug(nextCat.taxType)}`} class="btn-secondary text-xs py-1.5">
-        {nextCat.taxType}
-        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-      </a>
-    ) : <div></div>}
+  <!-- Nav -->
+  <div class="mt-8 flex justify-between gap-4">
+    {prev ? <a href={`/kategori/${toSlug(prev.taxType)}`} class="btn-secondary"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>{prev.taxType}</a> : <div></div>}
+    {next ? <a href={`/kategori/${toSlug(next.taxType)}`} class="btn-secondary">{next.taxType}<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a> : <div></div>}
   </div>
 </BaseLayout>
