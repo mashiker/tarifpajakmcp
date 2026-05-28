@@ -32,178 +32,97 @@
     font-family: 'Rubik', system-ui, -apple-system, sans-serif;
     color: var(--color-text);
     background-color: var(--color-background);
-    line-height: 1.6;
+    line-height: 1.5;
   }
 }
 
 @layer components {
-  /* ===== Navigation ===== */
+  /* Navigation */
   .nav-link {
-    @apply flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-gray-100 dark:hover:bg-gray-800 transition-colors duration-150;
+    @apply flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-gray-100 dark:hover:bg-gray-800 transition-colors;
   }
   .nav-link.active {
     @apply text-brand-600 bg-brand-50 dark:text-brand-400 dark:bg-brand-900/30;
   }
 
-  /* ===== Badges ===== */
-  .badge {
-    @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap;
-  }
-  .badge-berlaku {
-    @apply bg-emerald-50 text-emerald-700 border border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800;
-  }
-  .badge-dicabut {
-    @apply bg-red-50 text-red-700 border border-red-200 dark:bg-red-900/30 dark:text-red-400 dark:border-red-800;
-  }
-  .badge-diubah {
-    @apply bg-amber-50 text-amber-700 border border-amber-200 dark:bg-amber-900/30 dark:text-amber-400 dark:border-amber-800;
-  }
-  .badge-belum-berlaku {
-    @apply bg-gray-50 text-gray-600 border border-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-700;
-  }
+  /* Badges */
+  .badge { @apply inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold whitespace-nowrap; }
+  .badge-berlaku { @apply bg-emerald-50 text-emerald-700 border border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800; }
+  .badge-dicabut { @apply bg-red-50 text-red-700 border border-red-200 dark:bg-red-900/30 dark:text-red-400 dark:border-red-800; }
+  .badge-diubah { @apply bg-amber-50 text-amber-700 border border-amber-200 dark:bg-amber-900/30 dark:text-amber-400 dark:border-amber-800; }
+  .badge-belum-berlaku { @apply bg-gray-50 text-gray-600 border border-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-700; }
 
-  /* ===== Data Table (models.dev style) ===== */
-  .data-table {
-    @apply w-full border-collapse text-sm;
-  }
+  /* Data Table */
+  .data-table { @apply w-full border-collapse text-sm; }
   .data-table th {
-    @apply bg-gray-50/95 dark:bg-gray-900/95 backdrop-blur-sm px-4 py-3 text-left text-[0.7rem] font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider border-b border-gray-200 dark:border-gray-700 whitespace-nowrap;
-    position: sticky;
-    top: 0;
-    z-index: 5;
+    @apply bg-gray-50/95 dark:bg-gray-900/95 px-3 py-2.5 text-left text-[0.65rem] font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider border-b border-gray-200 dark:border-gray-700 whitespace-nowrap;
+    position: sticky; top: 0; z-index: 5;
   }
   .data-table td {
-    @apply px-4 py-3 border-b border-gray-100 dark:border-gray-800 text-gray-500 dark:text-gray-400;
-    white-space: nowrap;
-    height: 48px;
+    @apply px-3 py-2.5 border-b border-gray-100 dark:border-gray-800 text-gray-500 dark:text-gray-400;
+    white-space: nowrap; height: 42px;
   }
-  .data-table tbody tr {
-    @apply hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors duration-100;
-  }
-  .data-table td:first-child {
-    font-weight: 500;
-    color: var(--color-text);
-  }
-  .data-table td:nth-child(2) {
-    color: var(--color-text);
-  }
+  .data-table tbody tr { @apply hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors; }
+  .data-table td:first-child { font-weight: 500; color: var(--color-text); }
+  .data-table td:nth-child(2) { color: var(--color-text); }
 
-  /* ===== Cards ===== */
-  .card {
-    @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg;
-  }
-  .card:hover {
-    @apply border-gray-300 dark:border-gray-700;
-  }
+  /* Cards */
+  .card { @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg; }
+  .card:hover { @apply border-gray-300 dark:border-gray-700; }
 
-  /* ===== Rate Display ===== */
-  .rate-value {
-    @apply font-mono font-semibold text-gray-900 dark:text-gray-100;
-  }
-  .rate-value-lg {
-    @apply font-mono font-bold text-2xl text-gray-900 dark:text-gray-100;
-  }
+  /* Rate */
+  .rate-value { @apply font-mono font-semibold text-gray-900 dark:text-gray-100; }
+  .rate-value-lg { @apply font-mono font-bold text-xl text-gray-900 dark:text-gray-100; }
 
-  /* ===== Code Block ===== */
-  .code-block {
-    @apply font-mono text-sm bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md p-4 overflow-x-auto;
-  }
+  /* Code Block */
+  .code-block { @apply font-mono text-sm bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md p-3 overflow-x-auto; }
 
-  /* ===== Tags ===== */
-  .tag {
-    @apply inline-flex items-center gap-1.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md px-2 py-1 text-xs font-mono text-gray-600 dark:text-gray-400 hover:bg-brand-50 hover:border-brand-200 hover:text-brand-700 dark:hover:bg-brand-900/30 dark:hover:border-brand-800 dark:hover:text-brand-400 transition-all;
-  }
+  /* Tags */
+  .tag { @apply inline-flex items-center gap-1 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded px-1.5 py-0.5 text-[11px] font-mono text-gray-600 dark:text-gray-400 hover:bg-brand-50 hover:border-brand-200 hover:text-brand-700 dark:hover:bg-brand-900/30 dark:hover:border-brand-800 dark:hover:text-brand-400 transition-all; }
 
-  /* ===== Buttons ===== */
-  .btn-primary {
-    @apply inline-flex items-center gap-2 px-4 py-2 bg-brand-500 hover:bg-brand-600 text-white rounded-md font-medium text-sm transition-colors duration-150;
-  }
-  .btn-secondary {
-    @apply inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-md font-medium text-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-150;
-  }
-  .btn-ghost {
-    @apply inline-flex items-center gap-2 px-3 py-2 text-gray-500 dark:text-gray-400 rounded-md text-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-150;
-  }
+  /* Buttons */
+  .btn-primary { @apply inline-flex items-center gap-2 px-3 py-1.5 bg-brand-500 hover:bg-brand-600 text-white rounded-md font-medium text-xs transition-colors; }
+  .btn-secondary { @apply inline-flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-md font-medium text-xs hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors; }
+  .btn-ghost { @apply inline-flex items-center gap-2 px-2 py-1.5 text-gray-500 dark:text-gray-400 rounded-md text-xs hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors; }
 
-  /* ===== Search ===== */
-  .search-input {
-    @apply w-full pl-11 pr-4 py-2 text-sm bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-md focus:outline-none focus:border-brand-500 transition-colors duration-150;
-  }
+  /* Search */
+  .search-input { @apply w-full pl-9 pr-4 py-2 text-sm bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-md focus:outline-none focus:border-brand-500 transition-colors; }
 
-  /* ===== Scrollbar ===== */
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 dark:bg-gray-600 rounded-full;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-400 dark:bg-gray-500;
-  }
+  /* Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar { width: 5px; height: 5px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { @apply bg-gray-300 dark:bg-gray-600 rounded-full; }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover { @apply bg-gray-400 dark:bg-gray-500; }
 
-  /* ===== Category Card ===== */
-  .category-card {
-    @apply relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-4 hover:border-brand-400 dark:hover:border-brand-600 hover:shadow-sm transition-all duration-200 cursor-pointer group;
-  }
-  .category-card .category-icon {
-    @apply w-8 h-8 rounded-md flex items-center justify-center text-base mb-2;
-  }
-  .category-card .category-count {
-    @apply text-xs font-mono text-gray-400 dark:text-gray-500;
-  }
+  /* Category Card */
+  .category-card { @apply relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg hover:border-brand-400 dark:hover:border-brand-600 hover:shadow-sm transition-all cursor-pointer group; }
 
-  /* ===== Stat Card ===== */
-  .stat-card {
-    @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-4 text-center;
-  }
-  .stat-card .stat-value {
-    @apply text-2xl font-bold text-gray-900 dark:text-gray-100 tabular-nums;
-  }
-  .stat-card .stat-label {
-    @apply text-sm text-gray-500 dark:text-gray-400 mt-1;
-  }
+  /* Stat Card */
+  .stat-card { @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-3 text-center; }
+  .stat-card .stat-value { @apply text-lg font-bold text-gray-900 dark:text-gray-100 tabular-nums; }
+  .stat-card .stat-label { @apply text-[10px] text-gray-400 mt-0.5; }
 
-  /* ===== Filter Chip ===== */
-  .chip {
-    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors duration-150 cursor-pointer select-none;
-  }
-  .chip-default {
-    @apply border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:border-gray-300 dark:hover:border-gray-600;
-  }
-  .chip-active {
-    @apply border-brand-500 bg-brand-500 text-white;
-  }
+  /* Chips */
+  .chip { @apply inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium border transition-colors cursor-pointer select-none; }
+  .chip-default { @apply border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-500 hover:border-gray-300 dark:hover:border-gray-600; }
+  .chip-active { @apply border-brand-500 bg-brand-500 text-white; }
 
-  /* ===== Skip to content (accessibility) ===== */
-  .skip-link {
-    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-brand-500 focus:text-white focus:rounded-md;
-  }
+  /* Skip */
+  .skip-link { @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-brand-500 focus:text-white focus:rounded-md; }
 
-  /* ===== Table viewport ===== */
-  .table-viewport {
-    height: calc(100vh - var(--header-height));
-    margin-top: var(--header-height);
-    overflow: auto;
-  }
+  /* Cell wrap for BPPU names */
+  .cell-wrap { white-space: normal !important; height: auto !important; min-height: 42px; }
 
-  /* ===== Allow wrapping in specific cells ===== */
-  .cell-wrap {
-    white-space: normal !important;
-    height: auto !important;
-    min-height: 48px;
-  }
+  /* Section heading */
+  .section-heading { @apply text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide; }
 
-  /* ===== Legal basis tag ===== */
-  .legal-tag {
-    @apply inline-flex items-center gap-1 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded px-2 py-0.5 text-xs font-mono;
-  }
+  /* Mobile entry card */
+  .mobile-entry-card { transition: all 0.15s ease; }
+  .mobile-entry-card:active { transform: scale(0.98); }
 
-  /* ===== Section heading ===== */
-  .section-heading {
-    @apply text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide;
-  }
+  /* Details/summary styling */
+  details summary { list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::marker { display: none; content: ""; }
+  details[open] > summary { border-bottom: 1px solid var(--color-border); }
 }
