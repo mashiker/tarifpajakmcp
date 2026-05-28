@@ -25,7 +25,7 @@ const statusBadge: Record<string, string> = {
   'berlaku': 'badge-berlaku', 'dicabut': 'badge-dicabut', 'diubah': 'badge-diubah', 'belum_berlaku': 'badge-belum-berlaku',
 };
 const statusLabel: Record<string, string> = {
-  'berlaku': '✓ Berlaku', 'dicabut': '✗ Dicabut', 'diubah': '⟳ Diubah', 'belum_berlaku': '○ Belum Berlaku',
+  'berlaku': '✓ Berlaku', 'dicabut': '✗ Dicabut', 'diubah': '⟳ Diubah', 'belum_berlaku': '○ Belum',
 };
 
 function formatRate(rate: any): string {
@@ -35,39 +35,57 @@ function formatRate(rate: any): string {
   return String(rate.value);
 }
 
-// Count total BPPU codes in this category
 const totalBppu = category.entries.reduce((sum: number, e: any) => sum + (e.bppuKode?.length || 0), 0);
+const activeCount = category.entries.filter((e: any) => e.status === 'berlaku').length;
+
+const allSlugs = api.categories.map((c: any) => toSlug(c.taxType));
+const currentIndex = allSlugs.indexOf(slug);
+const prevCat = currentIndex > 0 ? api.categories[currentIndex - 1] : null;
+const nextCat = currentIndex < api.categories.length - 1 ? api.categories[currentIndex + 1] : null;
 ---
 
 <BaseLayout title={`${category.taxType} - Tarif Pajak`}>
-  <div class="mb-5">
-    <a href="/" class="text-xs text-gray-400 hover:text-gray-600 transition font-mono">← Beranda</a>
-    <div class="flex items-center gap-3 mt-2">
-      <h1 class="text-xl font-semibold text-gray-900">{category.taxType}</h1>
-      <span class="text-xs text-gray-400 font-mono">{category.entries.length} tarif</span>
-      {totalBppu > 0 && (
-        <a href="/kode-objek-pajak" class="text-xs text-blue-600 hover:underline font-mono">
-          {totalBppu} kode BPPU ↗
-        </a>
-      )}
+  <!-- Breadcrumb -->
+  <nav class="flex items-center gap-2 text-xs mb-4" aria-label="Breadcrumb">
+    <a href="/" class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition">Beranda</a>
+    <svg class="w-3 h-3 text-gray-300 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+    <span class="text-gray-900 dark:text-gray-100 font-medium">{category.taxType}</span>
+  </nav>
+
+  <!-- Category Header -->
+  <div class="mb-6">
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <h1 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-50 mb-1">{category.taxType}</h1>
+        <p class="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">{category.description}</p>
+      </div>
+      <div class="shrink-0 flex gap-1.5">
+        <span class="bg-brand-50 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 px-2.5 py-1 rounded-md text-xs font-medium">{activeCount} aktif</span>
+        <span class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-2.5 py-1 rounded-md text-xs font-medium">{category.entries.length} total</span>
+      </div>
     </div>
-    <p class="text-sm text-gray-500 mt-1">{category.description}</p>
+    {totalBppu > 0 && (
+      <div class="mt-2">
+        <a href="/kode-objek-pajak" class="inline-flex items-center gap-1 text-xs text-brand-600 dark:text-brand-400 hover:underline font-mono">
+          → {totalBppu} kode BPPU terkait
+        </a>
+      </div>
+    )}
   </div>
 
+  <!-- Service Types -->
   {category.serviceTypes && category.serviceTypes.services && (
-    <div class="mb-6 border border-gray-200 rounded-lg overflow-hidden">
-      <div class="bg-gray-50 px-4 py-3 border-b border-gray-200">
-        <div class="flex items-center justify-between">
-          <h2 class="text-sm font-semibold text-gray-700">Daftar {category.serviceTypes.services.length} Jenis Jasa</h2>
-          <a href={category.serviceTypes.sourceUrl} target="_blank" class="text-xs text-blue-600 hover:underline font-mono">{category.serviceTypes.source} ↗</a>
-        </div>
+    <div class="card mb-6 overflow-hidden">
+      <div class="bg-gray-50 dark:bg-gray-800 px-4 py-3 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
+        <span class="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide">{category.serviceTypes.services.length} Jenis Jasa</span>
+        <a href={category.serviceTypes.sourceUrl} target="_blank" class="text-[11px] text-brand-600 dark:text-brand-400 hover:underline font-mono">{category.serviceTypes.source} ↗</a>
       </div>
-      <div class="p-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-0.5 text-sm">
+      <div class="p-4 max-h-64 overflow-y-auto custom-scrollbar">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-1.5">
           {category.serviceTypes.services.map((svc: any) => (
-            <div class="flex items-start gap-2 py-1.5 border-b border-gray-100 last:border-0">
-              <span class="text-gray-400 font-mono text-xs min-w-[2rem] shrink-0">{svc.code}.</span>
-              <div><span class="text-gray-700">{svc.name}</span>{svc.note && <span class="text-gray-400 text-xs ml-1">({svc.note})</span>}</div>
+            <div class="flex items-start gap-1.5 py-0.5">
+              <span class="text-gray-400 font-mono text-[11px] min-w-[1.5rem] shrink-0">{svc.code}.</span>
+              <span class="text-sm text-gray-600 dark:text-gray-400">{svc.name}</span>
             </div>
           ))}
         </div>
@@ -75,74 +93,114 @@ const totalBppu = category.entries.reduce((sum: number, e: any) => sum + (e.bppu
     </div>
   )}
 
+  <!-- Entries -->
   <div class="space-y-3">
     {category.entries.map((entry: any) => (
-      <article class="border border-gray-200 rounded-lg overflow-hidden">
-        <div class="p-4">
-          <div class="flex items-start justify-between mb-3">
-            <div>
-              <h2 class="text-sm font-semibold text-gray-900">{entry.transactionType}</h2>
-              <span class="text-xs text-gray-400 font-mono">{entry.id}</span>
+      <article class="card overflow-hidden">
+        <div class="p-4 sm:p-5">
+          <!-- Entry Header -->
+          <div class="flex items-start justify-between gap-3 mb-3">
+            <div class="flex-1 min-w-0">
+              <h2 class="text-base font-semibold text-gray-900 dark:text-gray-50">{entry.transactionType}</h2>
+              <span class="text-[11px] text-gray-400 font-mono">{entry.id}</span>
             </div>
-            <span class={`badge ${statusBadge[entry.status] || 'badge-belum-berlaku'}`}>{statusLabel[entry.status] || entry.status}</span>
+            <span class={`badge ${statusBadge[entry.status] || 'badge-belum-berlaku'} shrink-0`}>{statusLabel[entry.status] || entry.status}</span>
           </div>
-          <p class="text-xs text-gray-500 mb-3">{entry.description}</p>
-          <div class="bg-gray-50 border border-gray-100 rounded-md p-3 mb-3">
+
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">{entry.description}</p>
+
+          <!-- Rate Display -->
+          <div class="bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-md p-3 mb-3">
             <div class="flex items-baseline gap-2">
-              <span class="text-2xl font-bold text-gray-900 font-mono">{formatRate(entry.rate)}</span>
-              {entry.rate.effectiveRate && <span class="text-xs text-gray-400">Tarif efektif: {entry.rate.effectiveRate}</span>}
+              <span class="rate-value-lg">{formatRate(entry.rate)}</span>
+              {entry.rate.effectiveRate && (
+                <span class="text-[11px] text-gray-400 bg-white dark:bg-gray-900 px-1.5 py-0.5 rounded border border-gray-200 dark:border-gray-700">
+                  efektif: {entry.rate.effectiveRate}
+                </span>
+              )}
             </div>
             <div class="text-xs text-gray-400 mt-1">Dasar pengenaan: {entry.taxBase}</div>
           </div>
+
+          <!-- Progressive Brackets -->
           {entry.rate.brackets && (
-            <div class="mb-3 overflow-x-auto border border-gray-200 rounded-md">
-              <table class="tax-table text-xs">
-                <thead><tr><th>Lapisan</th><th class="text-right">Batas Bawah</th><th class="text-right">Batas Atas</th><th class="text-right">Tarif</th></tr></thead>
+            <div class="mb-3 overflow-x-auto custom-scrollbar border border-gray-200 dark:border-gray-700 rounded-md">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Lapisan</th>
+                    <th class="text-right">Batas Bawah</th>
+                    <th class="text-right">Batas Atas</th>
+                    <th class="text-right">Tarif</th>
+                  </tr>
+                </thead>
                 <tbody>
                   {entry.rate.brackets.map((b: any, i: number) => (
                     <tr>
                       <td class="text-gray-500">{i + 1}</td>
-                      <td class="text-right mono">Rp {(b.min / 1000000).toLocaleString('id')} jt</td>
-                      <td class="text-right mono">{b.max ? `Rp ${(b.max / 1000000).toLocaleString('id')} jt` : '∞'}</td>
-                      <td class="text-right font-semibold text-gray-900 mono">{b.rate}%</td>
+                      <td class="text-right font-mono text-sm">Rp {(b.min / 1000000).toLocaleString('id')} jt</td>
+                      <td class="text-right font-mono text-sm">{b.max ? `Rp ${(b.max / 1000000).toLocaleString('id')} jt` : '∞'}</td>
+                      <td class="text-right"><span class="rate-value">{b.rate}%</span></td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
           )}
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs mb-3">
-            <div><span class="text-gray-400 block mb-0.5">Wajib Pajak</span><span class="text-gray-700">{entry.payer}</span></div>
-            <div><span class="text-gray-400 block mb-0.5">Penerima</span><span class="text-gray-700">{entry.recipient}</span></div>
-            {entry.withholder && <div><span class="text-gray-400 block mb-0.5">Pemotong</span><span class="text-gray-700">{entry.withholder}</span></div>}
-            <div><span class="text-gray-400 block mb-0.5">Berlaku</span><span class="text-gray-700 font-mono">{entry.effectiveFrom}{entry.effectiveTo ? ` → ${entry.effectiveTo}` : ' → sekarang'}</span></div>
+
+          <!-- Details Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm mb-3">
+            <div>
+              <div class="text-[11px] text-gray-400 mb-0.5">Wajib Pajak</div>
+              <div class="text-gray-700 dark:text-gray-300 text-sm">{entry.payer}</div>
+            </div>
+            <div>
+              <div class="text-[11px] text-gray-400 mb-0.5">Penerima</div>
+              <div class="text-gray-700 dark:text-gray-300 text-sm">{entry.recipient}</div>
+            </div>
+            {entry.withholder && (
+              <div>
+                <div class="text-[11px] text-gray-400 mb-0.5">Pemotong</div>
+                <div class="text-gray-700 dark:text-gray-300 text-sm">{entry.withholder}</div>
+              </div>
+            )}
+            <div>
+              <div class="text-[11px] text-gray-400 mb-0.5">Berlaku</div>
+              <div class="text-gray-700 dark:text-gray-300 font-mono text-sm">{entry.effectiveFrom}{entry.effectiveTo ? ` → ${entry.effectiveTo}` : ' → sekarang'}</div>
+            </div>
           </div>
 
-          <!-- BPPU Codes Section -->
+          <!-- BPPU Codes -->
           {entry.bppuKode && entry.bppuKode.length > 0 && (
-            <div class="border-t border-gray-100 pt-3 mb-3">
+            <div class="border-t border-gray-100 dark:border-gray-800 pt-3 mb-3">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-xs text-gray-400 font-semibold">Kode Objek Pajak BPPU ({entry.bppuKode.length})</span>
-                <a href="/kode-objek-pajak" class="text-xs text-blue-600 hover:underline">Lihat semua ↗</a>
+                <span class="text-xs font-semibold text-gray-600 dark:text-gray-400">Kode BPPU ({entry.bppuKode.length})</span>
+                <a href="/kode-objek-pajak" class="text-[11px] text-brand-600 dark:text-brand-400 hover:underline">Semua ↗</a>
               </div>
               {entry.bppuKode.length <= 10 ? (
                 <div class="flex flex-wrap gap-1.5">
                   {entry.bppuKode.map((b: any) => (
-                    <span class="inline-flex items-center gap-1 bg-gray-50 border border-gray-200 rounded px-2 py-1 text-xs font-mono">
-                      <span class="text-gray-900 font-medium">{b.kode}</span>
+                    <span class="inline-flex items-center gap-1 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded px-2 py-1 text-xs font-mono">
+                      <span class="text-gray-900 dark:text-gray-100 font-medium">{b.kode}</span>
                       <span class="text-gray-400">{b.tarif}%</span>
                     </span>
                   ))}
                 </div>
               ) : (
-                <div class="overflow-x-auto border border-gray-200 rounded-md">
-                  <table class="tax-table text-xs">
-                    <thead><tr><th>Kode</th><th>Nama Objek Pajak</th><th class="text-right">Tarif</th></tr></thead>
+                <div class="overflow-x-auto custom-scrollbar border border-gray-200 dark:border-gray-700 rounded-md max-h-64">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>Kode</th>
+                        <th>Nama</th>
+                        <th class="text-right">Tarif</th>
+                      </tr>
+                    </thead>
                     <tbody>
                       {entry.bppuKode.map((b: any) => (
                         <tr>
-                          <td class="mono font-medium text-gray-900" style="white-space:nowrap">{b.kode}</td>
-                          <td class="text-gray-700" style="white-space:normal;max-width:400px">{b.nama}</td>
+                          <td class="font-mono font-medium text-gray-900 dark:text-gray-100 whitespace-nowrap">{b.kode}</td>
+                          <td class="cell-wrap" style="white-space:normal;max-width:400px">{b.nama}</td>
                           <td class="text-right"><span class="rate-value">{b.tarif}%</span></td>
                         </tr>
                       ))}
@@ -153,31 +211,38 @@ const totalBppu = category.entries.reduce((sum: number, e: any) => sum + (e.bppu
             </div>
           )}
 
-          <div class="border-t border-gray-100 pt-3">
-            <span class="text-xs text-gray-400 block mb-1.5">Dasar Hukum</span>
+          <!-- Legal Basis -->
+          <div class="border-t border-gray-100 dark:border-gray-800 pt-3">
+            <div class="text-[11px] text-gray-400 mb-1.5 font-medium uppercase tracking-wide">Dasar Hukum</div>
             <div class="flex flex-wrap gap-1.5">
               {entry.legalBasis.map((lb: any) => (
-                <a href={lb.sourceUrl || lb.pasalUrl || '#'} target="_blank" class="legal-tag">
-                  <span class="text-blue-600">{lb.regulation}</span> <span class="text-gray-400">{lb.article}</span>
+                <a href={lb.sourceUrl || lb.pasalUrl || '#'} target="_blank" class="tag">
+                  <span class="text-brand-600 dark:text-brand-400">{lb.regulation}</span>
+                  <span class="text-gray-400">{lb.article}</span>
                   {(lb.sourceUrl || lb.pasalUrl) && <span class="text-gray-300">↗</span>}
                 </a>
               ))}
             </div>
           </div>
+
+          <!-- Notes -->
           {entry.notes && (
-            <div class="mt-3 text-xs text-gray-500 bg-gray-50 border border-gray-100 rounded-md p-3">
-              {entry.notes.substring(0, 500)}{entry.notes.length > 500 ? '...' : ''}
+            <div class="mt-3 text-sm text-gray-500 dark:text-gray-400 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-md p-3 flex gap-2">
+              <svg class="w-4 h-4 text-amber-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="text-sm">{entry.notes.substring(0, 500)}{entry.notes.length > 500 ? '...' : ''}</div>
             </div>
           )}
+
+          <!-- Examples -->
           {entry.examples && entry.examples.length > 0 && (
-            <div class="mt-3 border-t border-gray-100 pt-3">
-              <span class="text-xs text-gray-400 block mb-1.5">Contoh Perhitungan</span>
-              <div class="space-y-1.5">
+            <div class="mt-3 border-t border-gray-100 dark:border-gray-800 pt-3">
+              <div class="text-[11px] text-gray-400 mb-2 font-medium uppercase tracking-wide">Contoh Perhitungan</div>
+              <div class="grid gap-2">
                 {entry.examples.map((ex: any) => (
-                  <div class="bg-gray-50 border border-gray-100 rounded-md p-2.5 text-xs">
-                    <div class="text-gray-600 mb-0.5">{ex.scenario}</div>
-                    <div class="text-gray-400">{ex.calculation}</div>
-                    <div class="text-emerald-600 font-semibold mt-0.5 font-mono">→ {ex.result}</div>
+                  <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800/30 rounded-md p-3">
+                    <div class="text-sm text-gray-700 dark:text-gray-300 mb-1">{ex.scenario}</div>
+                    <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">{ex.calculation}</div>
+                    <div class="text-emerald-700 dark:text-emerald-400 font-semibold font-mono text-sm">→ {ex.result}</div>
                   </div>
                 ))}
               </div>
@@ -186,5 +251,21 @@ const totalBppu = category.entries.reduce((sum: number, e: any) => sum + (e.bppu
         </div>
       </article>
     ))}
+  </div>
+
+  <!-- Pagination -->
+  <div class="mt-8 flex items-center justify-between gap-4">
+    {prevCat ? (
+      <a href={`/kategori/${toSlug(prevCat.taxType)}`} class="btn-secondary text-sm">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        {prevCat.taxType}
+      </a>
+    ) : <div></div>}
+    {nextCat ? (
+      <a href={`/kategori/${toSlug(nextCat.taxType)}`} class="btn-secondary text-sm">
+        {nextCat.taxType}
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
+    ) : <div></div>}
   </div>
 </BaseLayout>

@@ -6,6 +6,36 @@ import path from 'path';
 const apiPath = path.resolve(process.cwd(), 'public/api.json');
 const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
 
+function toSlug(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
+}
+
+// Build category summaries
+const categoryMeta: Record<string, { icon: string; color: string; bgColor: string }> = {
+  'pph-21': { icon: '💰', color: 'text-blue-600', bgColor: 'bg-blue-50 dark:bg-blue-900/30' },
+  'pph-22': { icon: '🏭', color: 'text-indigo-600', bgColor: 'bg-indigo-50 dark:bg-indigo-900/30' },
+  'pph-23': { icon: '🤝', color: 'text-violet-600', bgColor: 'bg-violet-50 dark:bg-violet-900/30' },
+  'pph-26': { icon: '🌍', color: 'text-purple-600', bgColor: 'bg-purple-50 dark:bg-purple-900/30' },
+  'pph-badan': { icon: '🏢', color: 'text-cyan-600', bgColor: 'bg-cyan-50 dark:bg-cyan-900/30' },
+  'pph-umkm': { icon: '🏪', color: 'text-teal-600', bgColor: 'bg-teal-50 dark:bg-teal-900/30' },
+  'pph-4-2-final': { icon: '📋', color: 'text-emerald-600', bgColor: 'bg-emerald-50 dark:bg-emerald-900/30' },
+  'ppn': { icon: '🧾', color: 'text-green-600', bgColor: 'bg-green-50 dark:bg-green-900/30' },
+  'ppnbm': { icon: '💎', color: 'text-amber-600', bgColor: 'bg-amber-50 dark:bg-amber-900/30' },
+  'bea-meterai': { icon: '📜', color: 'text-orange-600', bgColor: 'bg-orange-50 dark:bg-orange-900/30' },
+  'pbb': { icon: '🏠', color: 'text-rose-600', bgColor: 'bg-rose-50 dark:bg-rose-900/30' },
+  'bphtb': { icon: '🏗️', color: 'text-pink-600', bgColor: 'bg-pink-50 dark:bg-pink-900/30' },
+  'bea-masuk': { icon: '🚢', color: 'text-sky-600', bgColor: 'bg-sky-50 dark:bg-sky-900/30' },
+  'cukai': { icon: '🚬', color: 'text-red-600', bgColor: 'bg-red-50 dark:bg-red-900/30' },
+  'pajak-daerah': { icon: '🏘️', color: 'text-lime-600', bgColor: 'bg-lime-50 dark:bg-lime-900/30' },
+};
+
+const categories = api.categories.map((cat: any) => {
+  const slug = toSlug(cat.taxType);
+  const activeEntries = cat.entries.filter((e: any) => e.status === 'berlaku');
+  const meta = categoryMeta[slug] || { icon: '📊', color: 'text-gray-600', bgColor: 'bg-gray-50 dark:bg-gray-800' };
+  return { ...cat, slug, activeEntries: activeEntries.length, meta };
+});
+
 // Flatten all entries for the main table
 type FlatEntry = {
   category: string;
@@ -23,7 +53,7 @@ type FlatEntry = {
 
 const allEntries: FlatEntry[] = [];
 api.categories.forEach((cat: any) => {
-  const slug = cat.taxType.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
+  const slug = toSlug(cat.taxType);
   cat.entries.forEach((entry: any) => {
     let rateStr = '';
     if (entry.rate.type === 'percentage') rateStr = `${entry.rate.value}%`;
@@ -41,7 +71,7 @@ api.categories.forEach((cat: any) => {
       taxBase: entry.taxBase,
       payer: entry.payer,
       effectiveFrom: entry.effectiveFrom,
-      effectiveTo: entry.effectiveTo || 'sekarang',
+      effectiveTo: entry.effectiveTo || '—',
       bppuKode: entry.bppuKode || null,
     });
   });
@@ -51,103 +81,238 @@ const statusOrder: Record<string, number> = { berlaku: 0, diubah: 1, belum_berla
 allEntries.sort((a, b) => (statusOrder[a.status] ?? 9) - (statusOrder[b.status] ?? 9));
 
 const statusBadge: Record<string, string> = {
-  'berlaku': 'badge-berlaku',
-  'dicabut': 'badge-dicabut',
-  'diubah': 'badge-diubah',
-  'belum_berlaku': 'badge-belum-berlaku',
+  'berlaku': 'badge-berlaku', 'dicabut': 'badge-dicabut', 'diubah': 'badge-diubah', 'belum_berlaku': 'badge-belum-berlaku',
 };
 const statusLabel: Record<string, string> = {
-  'berlaku': '✓ Berlaku',
-  'dicabut': '✗ Dicabut',
-  'diubah': '⟳ Diubah',
-  'belum_berlaku': '○ Belum Berlaku',
+  'berlaku': '✓ Berlaku', 'dicabut': '✗ Dicabut', 'diubah': '⟳ Diubah', 'belum_berlaku': '○ Belum',
 };
 
-// Count total unique BPPU codes
 const bppuCodeSet = new Set<string>();
 allEntries.forEach(e => e.bppuKode?.forEach(b => bppuCodeSet.add(b.kode)));
 ---
 
-<BaseLayout title="Beranda">
-  <!-- Stats bar -->
-  <div class="flex items-center gap-6 mb-4 text-sm">
-    <div class="flex items-center gap-4 text-gray-500">
-      <span><strong class="text-gray-900">{api.meta.stats.entries}</strong> tarif</span>
-      <span class="text-gray-300">|</span>
-      <span><strong class="text-gray-900">{api.meta.stats.regulations}</strong> regulasi</span>
-      <span class="text-gray-300">|</span>
-      <span><strong class="text-gray-900">{api.meta.stats.categories.length}</strong> kategori</span>
-      <span class="text-gray-300">|</span>
-      <span><strong class="text-gray-900">{bppuCodeSet.size}</strong> <a href="/kode-objek-pajak" class="text-blue-600 hover:underline">kode BPPU</a></span>
+<BaseLayout title="Beranda" activeNav="home">
+  <!-- Hero -->
+  <section class="mb-8">
+    <div class="text-center mb-6 pt-4">
+      <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-2 tracking-tight">
+        Database Tarif Pajak Indonesia
+      </h1>
+      <p class="text-sm text-gray-500 dark:text-gray-400 max-w-xl mx-auto mb-5">
+        Semua tarif pajak dari 1983 hingga sekarang. Bersumber dari regulasi resmi, gratis, dan terbuka.
+      </p>
+      <!-- Search -->
+      <div class="max-w-lg mx-auto relative">
+        <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <input id="hero-search" type="text" placeholder="Cari tarif pajak... (Ctrl+K)" class="search-input pl-10 py-2.5" aria-label="Cari tarif pajak" />
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-gray-400 font-mono pointer-events-none">⌘K</span>
+        <div id="hero-search-results" class="absolute top-full left-0 right-0 mt-1 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg max-h-72 overflow-y-auto hidden z-50 custom-scrollbar"></div>
+      </div>
     </div>
-    <div class="flex-1"></div>
-    <div class="hidden md:flex items-center gap-2 text-xs">
-      <a href="/api.json" class="legal-tag">/api.json</a>
-      <a href="/rates.json" class="legal-tag">/rates.json</a>
-      <a href="/regulations.json" class="legal-tag">/regulations.json</a>
-    </div>
-  </div>
 
-  <!-- Main Data Table -->
-  <div class="border border-gray-200 rounded-lg overflow-hidden">
-    <div class="overflow-x-auto">
-      <table class="tax-table" id="main-table">
-        <thead>
-          <tr>
-            <th>Kategori</th>
-            <th>Jenis Transaksi</th>
-            <th>ID</th>
-            <th>Tarif</th>
-            <th>Kode BPPU</th>
-            <th>Status</th>
-            <th>Berlaku</th>
-          </tr>
-        </thead>
-        <tbody>
-          {allEntries.map((entry: FlatEntry) => (
+    <!-- Stats -->
+    <div class="grid grid-cols-4 gap-3 max-w-2xl mx-auto">
+      <div class="stat-card">
+        <div class="stat-value text-xl">{api.meta.stats.entries}</div>
+        <div class="stat-label text-xs">Tarif</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value text-xl">{api.meta.stats.regulations}</div>
+        <div class="stat-label text-xs">Regulasi</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value text-xl">{api.meta.stats.categories.length}</div>
+        <div class="stat-label text-xs">Kategori</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value text-xl">{bppuCodeSet.size}</div>
+        <div class="stat-label text-xs">BPPU</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Grid -->
+  <section class="mb-8">
+    <div class="flex items-center justify-between mb-3">
+      <h2 class="section-heading">Kategori Pajak</h2>
+      <span class="text-xs text-gray-400 font-mono">{categories.length} kategori</span>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+      {categories.map((cat: any) => (
+        <a href={`/kategori/${cat.slug}`} class="category-card group">
+          <div class="flex items-center gap-2.5">
+            <div class={`category-icon ${cat.meta.bgColor} ${cat.meta.color} shrink-0`}>
+              <span class="text-sm">{cat.meta.icon}</span>
+            </div>
+            <div class="min-w-0">
+              <h3 class="text-sm font-medium text-gray-900 dark:text-gray-100 truncate group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">{cat.taxType}</h3>
+              <p class="text-[11px] text-gray-400 font-mono">{cat.activeEntries} aktif / {cat.entries.length} total</p>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Main Table -->
+  <section class="mb-8">
+    <div class="flex items-center justify-between mb-3">
+      <div>
+        <h2 class="section-heading">Tabel Tarif Lengkap</h2>
+        <p class="text-xs text-gray-400 mt-0.5">{allEntries.length} entri</p>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <button id="filter-berlaku" class="chip chip-active" data-status="berlaku">Berlaku</button>
+        <button id="filter-semua" class="chip chip-default" data-status="all">Semua</button>
+      </div>
+    </div>
+    <div class="card overflow-hidden">
+      <div class="overflow-x-auto custom-scrollbar" style="max-height: 70vh;">
+        <table class="data-table" id="main-table">
+          <thead>
             <tr>
-              <td>
-                <a href={`/kategori/${entry.categorySlug}`} class="cat-link font-medium">{entry.category}</a>
-              </td>
-              <td class="font-medium text-gray-900">
-                <a href={`/kategori/${entry.categorySlug}`} class="hover:text-blue-600 transition">{entry.transactionType}</a>
-              </td>
-              <td class="mono text-gray-500">{entry.id}</td>
-              <td><span class="rate-value">{entry.rate}</span></td>
-              <td>
-                {entry.bppuKode && entry.bppuKode.length > 0 ? (
-                  <a href="/kode-objek-pajak" class="text-blue-600 hover:underline text-xs font-mono">
-                    {entry.bppuKode.length === 1 
-                      ? entry.bppuKode[0].kode 
-                      : `${entry.bppuKode[0].kode.split('-').slice(0,2).join('-')}-xx (${entry.bppuKode.length})`}
-                  </a>
-                ) : (
-                  <span class="text-gray-300 text-xs">—</span>
-                )}
-              </td>
-              <td><span class={`badge ${statusBadge[entry.status] || 'badge-belum-berlaku'}`}>{statusLabel[entry.status] || entry.status}</span></td>
-              <td class="mono text-gray-500 text-xs">{entry.effectiveFrom} → {entry.effectiveTo}</td>
+              <th>Kategori</th>
+              <th>Jenis Transaksi</th>
+              <th>Tarif</th>
+              <th class="hidden lg:table-cell">Kode BPPU</th>
+              <th>Status</th>
+              <th class="hidden md:table-cell">Berlaku</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {allEntries.map((entry: FlatEntry) => (
+              <tr data-status={entry.status}>
+                <td>
+                  <a href={`/kategori/${entry.categorySlug}`} class="font-medium text-gray-900 dark:text-gray-100 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">{entry.category}</a>
+                </td>
+                <td>
+                  <div class="max-w-[300px]">
+                    <a href={`/kategori/${entry.categorySlug}`} class="text-gray-900 dark:text-gray-100 hover:text-brand-600 dark:hover:text-brand-400 transition-colors truncate block">{entry.transactionType}</a>
+                    <div class="text-[11px] text-gray-400 font-mono mt-0.5 md:hidden">{entry.id}</div>
+                  </div>
+                </td>
+                <td><span class="rate-value text-sm">{entry.rate}</span></td>
+                <td class="hidden lg:table-cell">
+                  {entry.bppuKode && entry.bppuKode.length > 0 ? (
+                    <a href="/kode-objek-pajak" class="text-brand-600 dark:text-brand-400 hover:underline text-xs font-mono">
+                      {entry.bppuKode.length === 1
+                        ? entry.bppuKode[0].kode
+                        : `${entry.bppuKode[0].kode.split('-').slice(0,2).join('-')}-xx (${entry.bppuKode.length})`}
+                    </a>
+                  ) : (
+                    <span class="text-gray-300 dark:text-gray-600 text-xs">—</span>
+                  )}
+                </td>
+                <td><span class={`badge ${statusBadge[entry.status] || 'badge-belum-berlaku'}`}>{statusLabel[entry.status] || entry.status}</span></td>
+                <td class="hidden md:table-cell font-mono text-gray-500 dark:text-gray-400 text-xs">{entry.effectiveFrom} → {entry.effectiveTo}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- API & Sources -->
-  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div>
-      <h3 class="text-sm font-semibold text-gray-700 mb-2">API Terbuka</h3>
-      <div class="code-block">
-        <span class="text-gray-400">$</span> curl <span class="text-emerald-600">https://tarif-pajak-id.vercel.app/api.json</span>
+  <!-- Quick Links -->
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div class="card p-4">
+      <h3 class="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2 flex items-center gap-2">
+        <svg class="w-4 h-4 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        API Terbuka
+      </h3>
+      <div class="code-block text-xs py-2.5">
+        <span class="text-gray-400">$</span> curl <span class="text-brand-600">https://tarif-pajak-id.pages.dev/api.json</span>
+      </div>
+      <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">JSON statis, tanpa autentikasi, tanpa batas permintaan.</p>
+    </div>
+    <div class="card p-4">
+      <h3 class="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2 flex items-center gap-2">
+        <svg class="w-4 h-4 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+        Sumber Regulasi
+      </h3>
+      <div class="flex flex-wrap gap-1.5 mt-1">
+        <a href="https://pasal.id" target="_blank" class="tag">⚖️ Pasal.id ↗</a>
+        <a href="https://peraturan.bpk.go.id" target="_blank" class="tag">🏛️ JDIH BPK ↗</a>
+        <a href="https://github.com/mashiker/tarifpajakmcp" target="_blank" class="tag">💻 GitHub ↗</a>
       </div>
     </div>
-    <div>
-      <h3 class="text-sm font-semibold text-gray-700 mb-2">Sumber Data</h3>
-      <div class="flex gap-3">
-        <a href="https://pasal.id" target="_blank" class="legal-tag py-1.5 px-3 text-xs">⚖️ Pasal.id ↗</a>
-        <a href="https://peraturan.bpk.go.id" target="_blank" class="legal-tag py-1.5 px-3 text-xs">🏛️ JDIH BPK ↗</a>
-      </div>
-    </div>
-  </div>
+  </section>
 </BaseLayout>
+
+<script>
+  // Status filter
+  const filterBerlaku = document.getElementById('filter-berlaku');
+  const filterSemua = document.getElementById('filter-semua');
+  const table = document.getElementById('main-table');
+  
+  function setStatusFilter(status: string) {
+    const rows = table?.querySelectorAll('tbody tr') as NodeListOf<HTMLTableRowElement>;
+    rows?.forEach(row => {
+      const rowStatus = row.getAttribute('data-status');
+      row.style.display = (status === 'all' || rowStatus === status) ? '' : 'none';
+    });
+    if (status === 'berlaku') {
+      filterBerlaku?.classList.replace('chip-default', 'chip-active');
+      filterSemua?.classList.replace('chip-active', 'chip-default');
+    } else {
+      filterSemua?.classList.replace('chip-default', 'chip-active');
+      filterBerlaku?.classList.replace('chip-active', 'chip-default');
+    }
+  }
+  
+  filterBerlaku?.addEventListener('click', () => setStatusFilter('berlaku'));
+  filterSemua?.addEventListener('click', () => setStatusFilter('all'));
+
+  // Search
+  const searchEntries = async (query: string) => {
+    if (!query || query.length < 2) return [];
+    const res = await fetch('/api/v1/search-index.json');
+    const data = await res.json();
+    const q = query.toLowerCase();
+    const matches: string[] = [];
+    for (const [keyword, ids] of Object.entries(data.keywords)) {
+      if ((keyword as string).includes(q)) {
+        for (const id of (ids as string[])) {
+          if (!matches.includes(id)) matches.push(id);
+        }
+      }
+    }
+    return matches.slice(0, 10);
+  };
+
+  const fmt = (id: string) => id.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+  const heroInput = document.getElementById('hero-search') as HTMLInputElement;
+  const heroResults = document.getElementById('hero-search-results');
+  
+  let debounce: ReturnType<typeof setTimeout>;
+  heroInput?.addEventListener('input', () => {
+    clearTimeout(debounce);
+    debounce = setTimeout(async () => {
+      const ids = await searchEntries(heroInput.value);
+      if (ids.length === 0) { heroResults?.classList.add('hidden'); return; }
+      if (heroResults) {
+        heroResults.innerHTML = ids.map(id =>
+          `<a href="/api/v1/entries/${id}.json" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-50 dark:hover:bg-gray-800 transition border-b border-gray-100 dark:border-gray-800 last:border-0">
+            <svg class="w-3.5 h-3.5 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <div class="min-w-0">
+              <div class="text-sm font-medium text-gray-900 dark:text-gray-100 truncate">${fmt(id)}</div>
+              <div class="text-[11px] text-gray-400 font-mono">${id}</div>
+            </div>
+          </a>`
+        ).join('');
+        heroResults.classList.remove('hidden');
+      }
+    }, 200);
+  });
+  
+  heroInput?.addEventListener('blur', () => setTimeout(() => heroResults?.classList.add('hidden'), 200));
+  heroInput?.addEventListener('focus', () => { if (heroResults?.innerHTML) heroResults.classList.remove('hidden'); });
+  
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      heroInput?.focus();
+    }
+  });
+</script>
