@@ -8,7 +8,6 @@ const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
 
 function toSlug(s: string) { return s.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-'); }
 
-// Category colors & labels (no emoji — use solid color dots)
 const catColors: Record<string, { bg: string; text: string; dot: string }> = {
   'pph-21':        { bg: 'bg-blue-100 dark:bg-blue-900/40', text: 'text-blue-700 dark:text-blue-300', dot: 'bg-blue-500' },
   'pph-22':        { bg: 'bg-indigo-100 dark:bg-indigo-900/40', text: 'text-indigo-700 dark:text-indigo-300', dot: 'bg-indigo-500' },
@@ -35,7 +34,6 @@ const categories = api.categories.map((cat: any) => {
 });
 
 type FE = { category: string; slug: string; type: string; id: string; status: string; rate: string; from: string; to: string; bppu: number; };
-
 const entries: FE[] = [];
 api.categories.forEach((cat: any) => {
   const slug = toSlug(cat.taxType);
@@ -43,29 +41,31 @@ api.categories.forEach((cat: any) => {
     let r = '';
     if (e.rate.type === 'percentage') r = `${e.rate.value}%`;
     else if (e.rate.type === 'range') r = `${e.rate.value[0]}–${e.rate.value[1]}%`;
-    else if (e.rate.type === 'progressive' && e.rate.brackets) r = e.rate.brackets.map((b: any) => `${b.rate}%`).join(' / ');
+    else if (e.rate.type === 'progressive' && e.rate.brackets) r = e.rate.brackets.map((b: any) => `${b.rate}%`).join('/');
     else r = String(e.rate.value);
     entries.push({ category: cat.taxType, slug, type: e.transactionType, id: e.id, status: e.status, rate: r, from: e.effectiveFrom, to: e.effectiveTo || '—', bppu: e.bppuKode?.length || 0 });
   });
 });
-
 const so: Record<string, number> = { berlaku: 0, diubah: 1, belum_berlaku: 2, dicabut: 3 };
 entries.sort((a, b) => (so[a.status] ?? 9) - (so[b.status] ?? 9));
-
 const sb: Record<string, string> = { berlaku: 'badge-berlaku', dicabut: 'badge-dicabut', diubah: 'badge-diubah', belum_berlaku: 'badge-belum-berlaku' };
 const sl: Record<string, string> = { berlaku: 'Berlaku', dicabut: 'Dicabut', diubah: 'Diubah', belum_berlaku: 'Belum' };
-
 const activeEntries = entries.filter(e => e.status === 'berlaku');
 const bppuTotal = new Set<string>();
 api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?.forEach((b: any) => bppuTotal.add(b.kode))));
+
+// Group entries by category for mobile
+const groupedEntries: Record<string, { slug: string; items: FE[] }> = {};
+entries.forEach(e => {
+  if (!groupedEntries[e.category]) groupedEntries[e.category] = { slug: e.slug, items: [] };
+  groupedEntries[e.category].items.push(e);
+});
 ---
 
 <BaseLayout title="Beranda" activeNav="home">
   <!-- Hero -->
   <div class="text-center mb-8 pt-2">
-    <h1 class="text-2xl sm:text-4xl font-black text-gray-900 dark:text-gray-50 tracking-tight mb-2">
-      Tarif Pajak Indonesia
-    </h1>
+    <h1 class="text-2xl sm:text-4xl font-black text-gray-900 dark:text-gray-50 tracking-tight mb-2">Tarif Pajak Indonesia</h1>
     <p class="text-gray-500 dark:text-gray-400 max-w-lg mx-auto mb-5 text-sm sm:text-base">
       Referensi lengkap tarif pajak dari <strong class="text-gray-700 dark:text-gray-300">1983</strong> hingga sekarang. Bersumber dari regulasi resmi.
     </p>
@@ -104,7 +104,7 @@ api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?
     </div>
   </section>
 
-  <!-- Table -->
+  <!-- Rate Table -->
   <section class="mb-8">
     <div class="flex items-center justify-between mb-3">
       <h2 class="section-heading">Tabel Tarif Lengkap</h2>
@@ -113,7 +113,9 @@ api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?
         <button id="filter-semua" class="chip chip-default" data-status="all">Semua ({entries.length})</button>
       </div>
     </div>
-    <div class="card overflow-hidden">
+
+    <!-- Desktop: full table -->
+    <div class="hidden md:block card overflow-hidden">
       <div class="overflow-auto custom-scrollbar" style="max-height:70vh">
         <table class="data-table" id="main-table">
           <thead>
@@ -128,7 +130,7 @@ api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?
           </thead>
           <tbody>
             {entries.map((e: FE) => {
-              const cc = catColors[e.slug] || { bg: 'bg-gray-100', text: 'text-gray-700', dot: 'bg-gray-400' };
+              const cc = catColors[e.slug] || { dot: 'bg-gray-400' };
               return (
               <tr data-status={e.status}>
                 <td>
@@ -143,9 +145,7 @@ api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?
                 </td>
                 <td><span class="rate-value text-sm">{e.rate}</span></td>
                 <td class="hidden lg:table-cell">
-                  {e.bppu > 0
-                    ? <a href="/kode-objek-pajak" class="text-xs font-mono text-brand-600 dark:text-brand-400 hover:underline">{e.bppu} kode</a>
-                    : <span class="text-gray-300 text-xs">—</span>}
+                  {e.bppu > 0 ? <a href="/kode-objek-pajak" class="text-xs font-mono text-brand-600 dark:text-brand-400 hover:underline">{e.bppu} kode</a> : <span class="text-gray-300 text-xs">—</span>}
                 </td>
                 <td><span class={`badge ${sb[e.status] || 'badge-belum-berlaku'}`}>{sl[e.status]}</span></td>
                 <td class="hidden sm:table-cell"><span class="text-xs text-gray-500 font-mono whitespace-nowrap">{e.from} → {e.to}</span></td>
@@ -156,9 +156,41 @@ api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?
         </table>
       </div>
     </div>
+
+    <!-- Mobile: grouped card list -->
+    <div class="md:hidden space-y-4" id="mobile-list">
+      {Object.entries(groupedEntries).map(([catName, group]: [string, { slug: string; items: FE[] }]) => {
+        const cc = catColors[group.slug] || { dot: 'bg-gray-400', bg: 'bg-gray-100', text: 'text-gray-700' };
+        return (
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class={`w-2.5 h-2.5 rounded-full ${cc.dot}`}></span>
+            <a href={`/kategori/${group.slug}`} class="text-xs font-bold text-gray-700 dark:text-gray-300 hover:text-brand-600">{catName}</a>
+            <span class="text-[10px] text-gray-400 font-mono">{group.items.length}</span>
+          </div>
+          <div class="space-y-1.5">
+            {group.items.map((e: FE) => (
+              <a href={`/kategori/${group.slug}`} data-status={e.status} class="mobile-card block bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl px-3.5 py-2.5 hover:border-brand-300 dark:hover:border-brand-700 active:scale-[0.98] transition-all">
+                <div class="flex items-center justify-between gap-2">
+                  <div class="flex-1 min-w-0">
+                    <div class="text-sm font-medium text-gray-900 dark:text-gray-100 truncate">{e.type}</div>
+                    <div class="flex items-center gap-2 mt-1">
+                      <span class="rate-value text-sm">{e.rate}</span>
+                      <span class="text-[10px] text-gray-400 font-mono">{e.from} → {e.to}</span>
+                    </div>
+                  </div>
+                  <span class={`badge ${sb[e.status] || 'badge-belum-berlaku'} text-[10px] shrink-0`}>{sl[e.status]}</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+        );
+      })}
+    </div>
   </section>
 
-  <!-- Bottom links -->
+  <!-- Bottom -->
   <div class="grid sm:grid-cols-2 gap-3">
     <div class="card p-4">
       <h3 class="text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">API Terbuka</h3>
@@ -180,6 +212,7 @@ api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?
   const fb = document.getElementById('filter-berlaku'), fs2 = document.getElementById('filter-semua'), t = document.getElementById('main-table');
   function setStatus(s: string) {
     t?.querySelectorAll('tbody tr').forEach(r => { (r as HTMLElement).style.display = (s === 'all' || r.dataset.status === s) ? '' : 'none'; });
+    document.querySelectorAll('#mobile-list .mobile-card').forEach(c => { (c as HTMLElement).style.display = (s === 'all' || c.dataset.status === s) ? '' : 'none'; });
     if (s === 'berlaku') { fb?.classList.replace('chip-default', 'chip-active'); fs2?.classList.replace('chip-active', 'chip-default'); }
     else { fs2?.classList.replace('chip-default', 'chip-active'); fb?.classList.replace('chip-active', 'chip-default'); }
   }
