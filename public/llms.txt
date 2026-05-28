@@ -6,7 +6,7 @@
 
 ## Statistik
 - 37 regulasi tercatat
-- 135 entry tarif pajak (111 berlaku saat ini)
+- 136 entry tarif pajak (111 berlaku saat ini)
 - 15 kategori pajak
 - 3 UU konsolidasi
 
@@ -19,7 +19,7 @@
 - **PBB** (Pajak Daerah): 4 tarif - Pajak Bumi dan Bangunan - Pajak atas bumi dan/atau bangunan yang dimiliki, dikuasai, dan/atau dimanfaatkan
 - **PPh 21** (PPh): 29 tarif - Pajak Penghasilan Pasal 21 - Pajak atas penghasilan sehubungan dengan pekerjaan, jasa, atau kegiatan orang pribadi
 - **PPh 22** (PPh): 11 tarif - Pajak Penghasilan Pasal 22 - Pemungutan pajak atas impor, pembelian barang, dan penjualan barang tertentu
-- **PPh 23** (PPh): 7 tarif - Pajak Penghasilan Pasal 23 - Pemotongan atas penghasilan berupa imbalan jasa tertentu, sewa tanah dan/atau bangunan, dan hadiah/penghargaan. Jenis jasa diatur dalam PMK 141/PMK.03/2015.
+- **PPh 23** (PPh): 8 tarif - Pajak Penghasilan Pasal 23 - Pemotongan atas penghasilan berupa imbalan jasa tertentu, sewa tanah dan/atau bangunan, dan hadiah/penghargaan. Jenis jasa diatur dalam PMK 141/PMK.03/2015.
 - **PPh 26** (PPh): 7 tarif - Pajak Penghasilan Pasal 26 - Pemotongan atas penghasilan yang diterima WP luar negeri
 - **PPh 4(2) Final** (PPh): 18 tarif - Pajak Penghasilan Final Pasal 4 ayat (2) - Pajak yang dipungut pada saat penghasilan tertentu diterima
 - **PPh Badan** (PPh): 8 tarif - Pajak Penghasilan bagi Wajib Pajak Badan - Tarif flat yang berlaku atas penghasilan kena pajak badan
@@ -506,7 +506,7 @@
 - Status: berlaku
 - Berlaku sejak: 2015-12-31
 - Dasar hukum: PMK 141/PMK.03/2015
-- Catatan: Berbeda dari jasa lainnya, DPP katering tidak boleh dikurangi biaya bahan makanan maupun tenaga kerja. Seluruh tagihan katering menjadi dasar pemotongan.
+- Catatan: PMK 141/2015 mengatur DPP khusus katering: seluruh jumlah bruto TANPA dikurangi biaya bahan makanan maupun jasa tenaga kerja. Sebelum PMK ini, katering dikenakan tarif PPh 23 umum 2% dari bruto (2001-
 
 ### PPh 23 - Sewa Tanah dan/atau Bangunan
 - ID: pph-23-sewa-tanah-bangunan

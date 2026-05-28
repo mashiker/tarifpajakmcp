@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:30:58.683Z",
+  "generated": "2026-05-28T16:43:36.730Z",
   "data": {
     "id": "pph-23-jasa-lain-4pct",
     "category": "PPh",
@@ -31,7 +31,9 @@
         "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
       }
     ],
-    "supersedes": [],
+    "supersedes": [
+      "pph-23-jasa-2001"
+    ],
     "supersededBy": [],
     "notes": "Tarif 4% = 2% × 2 (pengali 100% lebih tinggi karena tidak berNPWP).",
     "tags": [
@@ -403,13 +405,17 @@
       }
     ],
     "relatedEntries": {
+      "supersedes": [
+        "pph-23-jasa-2001"
+      ],
       "sameCategory": [
         "pph-23-jasa-lain-2pct",
         "pph-23-jasa-katering-2pct",
         "pph-23-sewa-tanah-bangunan",
         "pph-23-hadiah-penghargaan",
         "pph-23-jasa-pre2001",
-        "pph-23-jasa-2001"
+        "pph-23-jasa-2001",
+        "pph-23-katering-pre2015"
       ]
     }
   }

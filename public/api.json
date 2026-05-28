@@ -6,7 +6,7 @@
     "lastUpdated": "2026-05-28",
     "stats": {
       "regulations": 37,
-      "entries": 135,
+      "entries": 136,
       "categories": [
         {
           "taxType": "Bea Masuk",
@@ -42,7 +42,7 @@
         },
         {
           "taxType": "PPh 23",
-          "count": 7
+          "count": 8
         },
         {
           "taxType": "PPh 26",
@@ -4550,7 +4550,9 @@
               "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
             }
           ],
-          "supersedes": [],
+          "supersedes": [
+            "pph-23-jasa-2001"
+          ],
           "supersededBy": [],
           "notes": "DPP untuk jasa katering = seluruh penghasilan bruto. DPP untuk jasa non-katering = seluruh penghasilan dikurangi: (1) gaji/upah/honorarium/tunjangan untuk tenaga kerja yang dipakai penyedia jasa, (2) biaya perolehan barang/material, (3) perjalanan dinas, (4) biaya administrasi/pengurusan—asal bisa dibuktikan dengan kontrak, faktur, bukti pembelian. Jika tidak bisa dibuktikan, DPP = seluruh pembayaran.",
           "examples": [
@@ -4961,7 +4963,9 @@
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
             }
           ],
-          "supersedes": [],
+          "supersedes": [
+            "pph-23-jasa-2001"
+          ],
           "supersededBy": [],
           "notes": "Tarif 4% = 2% × 2 (pengali 100% lebih tinggi karena tidak berNPWP).",
           "tags": [
@@ -5338,7 +5342,7 @@
           "category": "PPh",
           "taxType": "PPh 23",
           "transactionType": "Jasa Katering / Tata Boga",
-          "description": "Pemotongan PPh 23 atas jasa katering/tata boga dengan DPP khusus yaitu seluruh jumlah penghasilan bruto (tanpa pengurangan biaya bahan makanan/jasa tenaga kerja).",
+          "description": "Pemotongan PPh 23 atas jasa katering/tata boga berdasarkan PMK 141/PMK.010/2015. Tarif 2% dari DPP khusus yaitu seluruh jumlah penghasilan bruto (tanpa pengurangan biaya bahan makanan/jasa tenaga kerja). DPP katering = 100% dari bruto tagihan.",
           "rate": {
             "type": "percentage",
             "value": 2
@@ -5357,9 +5361,11 @@
               "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
             }
           ],
-          "supersedes": [],
+          "supersedes": [
+            "pph-23-katering-pre2015"
+          ],
           "supersededBy": [],
-          "notes": "Berbeda dari jasa lainnya, DPP katering tidak boleh dikurangi biaya bahan makanan maupun tenaga kerja. Seluruh tagihan katering menjadi dasar pemotongan.",
+          "notes": "PMK 141/2015 mengatur DPP khusus katering: seluruh jumlah bruto TANPA dikurangi biaya bahan makanan maupun jasa tenaga kerja. Sebelum PMK ini, katering dikenakan tarif PPh 23 umum 2% dari bruto (2001-2015) atau 15% dari bruto (1984-2000). Chain: UU 7/1983 (15% umum) → UU 17/2000 (2% umum) → PMK 141/2015 (2% khusus DPP).",
           "tags": [
             "pph-23",
             "katering",
@@ -5492,7 +5498,7 @@
           "category": "PPh",
           "taxType": "PPh 23",
           "transactionType": "Imbalan Jasa & Sewa (UU 7/1983)",
-          "description": "Tarif PPh 23 berdasarkan UU 7/1983 Pasal 23. Tarif atas imbalan jasa 15% dan atas sewa 10%. Berlaku 1984-2000.",
+          "description": "Tarif PPh 23 berdasarkan UU 7/1983 Pasal 23 ayat (1) huruf c. Tarif atas seluruh imbalan jasa (termasuk jasa katering/tata boga) sebesar 15% dan atas sewa tanah/bangunan sebesar 10%. Berlaku 1984-2000. Pada era ini belum ada perlakuan khusus untuk jasa katering — semua jasa dikenakan tarif yang sama.",
           "rate": {
             "type": "range",
             "value": [
@@ -5518,17 +5524,23 @@
           "supersededBy": [
             "pph-23-jasa-2001"
           ],
-          "notes": "UU 7/1983: Imbalan jasa 15%, sewa 10%. Tarif jasa sangat tinggi dibanding 2% sekarang.",
+          "notes": "UU 7/1983 Pasal 23 ayat (1) huruf c: imbalan jasa 15%, sewa 10%. Jasa katering/tata boga belum dibedakan dari jasa lainnya — tarif sama 15%. Belum ada DPP khusus katering (DPP = jumlah bruto). Perlakuan khusus katering baru diatur secara eksplisit oleh PMK 141/2015.",
           "examples": [
             {
               "scenario": "Jasa konsultasi Rp 50.000.000 tahun 1995",
               "calculation": "15% × 50.000.000",
               "result": "PPh 23 = Rp 7.500.000"
+            },
+            {
+              "scenario": "Jasa katering Rp 30.000.000 tahun 1998",
+              "calculation": "15% × 30.000.000 (belum ada tarif khusus katering)",
+              "result": "PPh 23 = Rp 4.500.000"
             }
           ],
           "tags": [
-            "pph-23",
             "historis",
+            "katering",
+            "pph-23",
             "uu-7-1983"
           ],
           "lastVerified": "2026-05-28"
@@ -5538,7 +5550,7 @@
           "category": "PPh",
           "taxType": "PPh 23",
           "transactionType": "Imbalan Jasa & Sewa (UU 17/2000)",
-          "description": "Tarif PPh 23 berdasarkan UU 17/2000. Tarif jasa diturunkan drastis dari 15% menjadi 2%. Sewa tetap 10%. Berlaku 2001-2021.",
+          "description": "Tarif PPh 23 berdasarkan UU 17/2000 Pasal 23 ayat (1) huruf c. Tarif atas imbalan jasa diturunkan drastis dari 15% menjadi 2%. Sewa tetap 10%. Jasa katering/tata boga dikenakan tarif umum 2% dari jumlah bruto (belum ada DPP khusus). Berlaku 2001-2021.",
           "rate": {
             "type": "range",
             "value": [
@@ -5565,18 +5577,76 @@
           ],
           "supersededBy": [
             "pph-23-jasa-lain-2pct",
-            "pph-23-jasa-lain-4pct"
+            "pph-23-jasa-lain-4pct",
+            "pph-23-jasa-katering-2pct"
           ],
-          "notes": "UU 17/2000 menurunkan tarif PPh 23 jasa dari 15% ke 2% — penurunan sangat signifikan. Sewa tetap 10%.",
+          "notes": "UU 17/2000 menurunkan tarif PPh 23 jasa dari 15% ke 2% — penurunan sangat signifikan. Sewa tetap 10%. Jasa katering pada periode ini diperlakukan sama dengan jasa lainnya (2% dari bruto, DPP = jumlah bruto). Perlakuan khusus katering dengan DPP khusus (tanpa dikurangi biaya bahan makanan) baru diatur oleh PMK 141/PMK.010/2015.",
           "examples": [
             {
               "scenario": "Jasa konsultasi Rp 50.000.000 tahun 2010",
               "calculation": "2% × 50.000.000",
               "result": "PPh 23 = Rp 1.000.000"
+            },
+            {
+              "scenario": "Jasa katering Rp 30.000.000 tahun 2010",
+              "calculation": "2% × 30.000.000 (belum ada tarif khusus, masuk jasa umum)",
+              "result": "PPh 23 = Rp 600.000"
+            }
+          ],
+          "tags": [
+            "historis",
+            "katering",
+            "pph-23",
+            "uu-17-2000"
+          ],
+          "lastVerified": "2026-05-28"
+        },
+        {
+          "id": "pph-23-katering-pre2015",
+          "category": "PPh",
+          "taxType": "PPh 23",
+          "transactionType": "Jasa Katering / Tata Boga (Pra-PMK 141/2015)",
+          "description": "PPh 23 atas jasa katering/tata boga pada periode 2001-2015. Sebelum PMK 141/2015, jasa katering belum memiliki perlakuan khusus — dikenakan tarif PPh 23 jasa umum 2% dari jumlah bruto. DPP = seluruh tagihan (belum ada pengkhususan DPP tanpa potongan biaya bahan makanan).",
+          "rate": {
+            "type": "percentage",
+            "value": 2
+          },
+          "taxBase": "Jumlah bruto (seluruh tagihan katering, termasuk biaya bahan makanan dan tenaga kerja)",
+          "payer": "WP dalam negeri penerima penghasilan katering",
+          "recipient": "Negara",
+          "withholder": "WP badan / bendahara pemerintah yang membeli jasa katering",
+          "effectiveFrom": "2001-01-01",
+          "effectiveTo": "2015-12-30",
+          "status": "dicabut",
+          "legalBasis": [
+            {
+              "regulation": "UU 17/2000",
+              "article": "Pasal 23 ayat (1) huruf c",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/44066/uu-no-17-tahun-2000"
+            }
+          ],
+          "supersedes": [
+            "pph-23-jasa-pre2001"
+          ],
+          "supersededBy": [
+            "pph-23-jasa-katering-2pct"
+          ],
+          "notes": "Pada periode 2001-2015, jasa katering belum diatur secara khusus. Dikenakan tarif PPh 23 jasa umum 2% dari DPP (jumlah bruto). DPP katering = seluruh tagihan termasuk biaya bahan makanan dan tenaga kerja. PMK 141/PMK.010/2015 kemudian mengatur DPP khusus katering = 100% bruto (tidak boleh dikurangi biaya bahan), tapi tarif tetap 2%. Perubahan utama PMK 141/2015 bukan tarif, tapi DPP — sebelumnya DPP bisa diperdebatkan.",
+          "examples": [
+            {
+              "scenario": "Jasa katering Rp 100.000.000 tahun 2010",
+              "calculation": "2% × 100.000.000 (DPP = seluruh bruto)",
+              "result": "PPh 23 = Rp 2.000.000"
+            },
+            {
+              "scenario": "Jasa katering Rp 50.000.000 tahun 2005",
+              "calculation": "2% × 50.000.000 (tarif umum, belum ada perlakuan khusus)",
+              "result": "PPh 23 = Rp 1.000.000"
             }
           ],
           "tags": [
             "pph-23",
+            "katering",
             "historis",
             "uu-17-2000"
           ],

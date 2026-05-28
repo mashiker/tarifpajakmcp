@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:30:58.683Z",
+  "generated": "2026-05-28T16:43:36.730Z",
   "data": {
     "id": "pph-23-jasa-lain-2pct",
     "category": "PPh",
@@ -33,7 +33,9 @@
         "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
       }
     ],
-    "supersedes": [],
+    "supersedes": [
+      "pph-23-jasa-2001"
+    ],
     "supersededBy": [],
     "notes": "DPP untuk jasa katering = seluruh penghasilan bruto. DPP untuk jasa non-katering = seluruh penghasilan dikurangi: (1) gaji/upah/honorarium/tunjangan untuk tenaga kerja yang dipakai penyedia jasa, (2) biaya perolehan barang/material, (3) perjalanan dinas, (4) biaya administrasi/pengurusan—asal bisa dibuktikan dengan kontrak, faktur, bukti pembelian. Jika tidak bisa dibuktikan, DPP = seluruh pembayaran.",
     "examples": [
@@ -415,13 +417,17 @@
       }
     ],
     "relatedEntries": {
+      "supersedes": [
+        "pph-23-jasa-2001"
+      ],
       "sameCategory": [
         "pph-23-jasa-lain-4pct",
         "pph-23-jasa-katering-2pct",
         "pph-23-sewa-tanah-bangunan",
         "pph-23-hadiah-penghargaan",
         "pph-23-jasa-pre2001",
-        "pph-23-jasa-2001"
+        "pph-23-jasa-2001",
+        "pph-23-katering-pre2015"
       ]
     }
   }

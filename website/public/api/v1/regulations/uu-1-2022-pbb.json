@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:30:58.683Z",
+  "generated": "2026-05-28T16:43:36.730Z",
   "data": {
     "id": "uu-1-2022-pbb",
     "number": "1",
@@ -77,6 +77,7 @@
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-pre2001",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-general-2024",
       "pph-26-dividen",
       "pph-26-bunga",

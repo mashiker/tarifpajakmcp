@@ -1,14 +1,14 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:30:58.683Z",
+  "generated": "2026-05-28T16:43:36.730Z",
   "data": {
-    "totalEntries": 135,
+    "totalEntries": 136,
     "totalCategories": 15,
     "totalRegulations": 37,
     "byStatus": {
       "berlaku": 111,
-      "dicabut": 15,
+      "dicabut": 16,
       "diubah": 9
     },
     "byCategory": [
@@ -55,7 +55,7 @@
       {
         "taxType": "PPh 23",
         "slug": "pph-23",
-        "count": 7
+        "count": 8
       },
       {
         "taxType": "PPh 26",

@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:30:58.683Z",
+  "generated": "2026-05-28T16:43:36.730Z",
   "data": {
     "id": "pph-23-jasa-pre2001",
     "category": "PPh",
     "taxType": "PPh 23",
     "transactionType": "Imbalan Jasa & Sewa (UU 7/1983)",
-    "description": "Tarif PPh 23 berdasarkan UU 7/1983 Pasal 23. Tarif atas imbalan jasa 15% dan atas sewa 10%. Berlaku 1984-2000.",
+    "description": "Tarif PPh 23 berdasarkan UU 7/1983 Pasal 23 ayat (1) huruf c. Tarif atas seluruh imbalan jasa (termasuk jasa katering/tata boga) sebesar 15% dan atas sewa tanah/bangunan sebesar 10%. Berlaku 1984-2000. Pada era ini belum ada perlakuan khusus untuk jasa katering — semua jasa dikenakan tarif yang sama.",
     "rate": {
       "type": "range",
       "value": [
@@ -33,17 +33,23 @@
     "supersededBy": [
       "pph-23-jasa-2001"
     ],
-    "notes": "UU 7/1983: Imbalan jasa 15%, sewa 10%. Tarif jasa sangat tinggi dibanding 2% sekarang.",
+    "notes": "UU 7/1983 Pasal 23 ayat (1) huruf c: imbalan jasa 15%, sewa 10%. Jasa katering/tata boga belum dibedakan dari jasa lainnya — tarif sama 15%. Belum ada DPP khusus katering (DPP = jumlah bruto). Perlakuan khusus katering baru diatur secara eksplisit oleh PMK 141/2015.",
     "examples": [
       {
         "scenario": "Jasa konsultasi Rp 50.000.000 tahun 1995",
         "calculation": "15% × 50.000.000",
         "result": "PPh 23 = Rp 7.500.000"
+      },
+      {
+        "scenario": "Jasa katering Rp 30.000.000 tahun 1998",
+        "calculation": "15% × 30.000.000 (belum ada tarif khusus katering)",
+        "result": "PPh 23 = Rp 4.500.000"
       }
     ],
     "tags": [
-      "pph-23",
       "historis",
+      "katering",
+      "pph-23",
       "uu-7-1983"
     ],
     "lastVerified": "2026-05-28",
@@ -57,7 +63,8 @@
         "pph-23-jasa-katering-2pct",
         "pph-23-sewa-tanah-bangunan",
         "pph-23-hadiah-penghargaan",
-        "pph-23-jasa-2001"
+        "pph-23-jasa-2001",
+        "pph-23-katering-pre2015"
       ]
     }
   }

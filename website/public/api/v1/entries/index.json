@@ -1,9 +1,9 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:30:58.683Z",
+  "generated": "2026-05-28T16:43:36.730Z",
   "data": {
-    "count": 135,
+    "count": 136,
     "entries": [
       {
         "id": "bea-masuk-umum-mf",
@@ -1360,8 +1360,9 @@
         "effectiveFrom": "1984-01-01",
         "effectiveTo": "2000-12-31",
         "tags": [
-          "pph-23",
           "historis",
+          "katering",
+          "pph-23",
           "uu-7-1983"
         ],
         "hasBppu": false
@@ -1377,7 +1378,26 @@
         "effectiveFrom": "2001-01-01",
         "effectiveTo": "2021-12-31",
         "tags": [
+          "historis",
+          "katering",
           "pph-23",
+          "uu-17-2000"
+        ],
+        "hasBppu": false
+      },
+      {
+        "id": "pph-23-katering-pre2015",
+        "category": "PPh",
+        "taxType": "PPh 23",
+        "transactionType": "Jasa Katering / Tata Boga (Pra-PMK 141/2015)",
+        "rate": "2%",
+        "rateType": "percentage",
+        "status": "dicabut",
+        "effectiveFrom": "2001-01-01",
+        "effectiveTo": "2015-12-30",
+        "tags": [
+          "pph-23",
+          "katering",
           "historis",
           "uu-17-2000"
         ],

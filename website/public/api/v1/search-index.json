@@ -1,6 +1,6 @@
 {
   "version": "2026-05-28",
-  "entryCount": 135,
+  "entryCount": 136,
   "entries": {
     "bea-masuk-umum-mf": [
       "bea",
@@ -2740,7 +2740,14 @@
       "boga",
       "pemotongan",
       "atas",
-      "dengan",
+      "berdasarkan",
+      "pmk",
+      "141",
+      "010",
+      "2015",
+      "tarif",
+      "2%",
+      "dari",
       "dpp",
       "khusus",
       "yaitu",
@@ -2755,14 +2762,13 @@
       "makanan",
       "tenaga",
       "kerja",
+      "100%",
+      "tagihan",
       "pph-23",
       "tata-boga",
       "dpp-khusus",
       "berlaku",
-      "pmk",
-      "141",
       "03",
-      "2015",
       "24",
       "104",
       "39",
@@ -2860,15 +2866,37 @@
       "tarif",
       "berdasarkan",
       "pasal",
+      "ayat",
+      "huruf",
       "atas",
+      "seluruh",
+      "termasuk",
+      "katering",
+      "tata",
+      "boga",
+      "sebesar",
       "15%",
       "dan",
+      "tanah",
+      "bangunan",
       "10%",
       "berlaku",
       "1984",
       "2000",
-      "pph-23",
+      "pada",
+      "era",
+      "ini",
+      "belum",
+      "ada",
+      "perlakuan",
+      "khusus",
+      "untuk",
+      "semua",
+      "dikenakan",
+      "yang",
+      "sama",
       "historis",
+      "pph-23",
       "uu-7-1983"
     ],
     "pph-23-jasa-2001": [
@@ -2883,6 +2911,10 @@
       "2000",
       "tarif",
       "berdasarkan",
+      "pasal",
+      "ayat",
+      "huruf",
+      "atas",
       "diturunkan",
       "drastis",
       "dari",
@@ -2891,11 +2923,67 @@
       "2%",
       "tetap",
       "10%",
+      "katering",
+      "tata",
+      "boga",
+      "dikenakan",
+      "umum",
+      "jumlah",
+      "bruto",
+      "belum",
+      "ada",
+      "dpp",
+      "khusus",
       "berlaku",
       "2021",
+      "historis",
+      "pph-23",
+      "uu-17-2000"
+    ],
+    "pph-23-katering-pre2015": [
+      "pph",
+      "23",
+      "katering",
+      "pre2015",
+      "jasa",
+      "tata",
+      "boga",
+      "pra",
+      "pmk",
+      "141",
+      "2015",
+      "atas",
+      "pada",
+      "periode",
+      "2001",
+      "sebelum",
+      "belum",
+      "memiliki",
+      "perlakuan",
+      "khusus",
+      "dikenakan",
+      "tarif",
+      "umum",
+      "2%",
+      "dari",
+      "jumlah",
+      "bruto",
+      "dpp",
+      "seluruh",
+      "tagihan",
+      "ada",
+      "pengkhususan",
+      "tanpa",
+      "potongan",
+      "biaya",
+      "bahan",
+      "makanan",
       "pph-23",
       "historis",
-      "uu-17-2000"
+      "uu-17-2000",
+      "uu",
+      "17",
+      "2000"
     ],
     "pph-26-general-2024": [
       "pph",
@@ -4780,6 +4868,7 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-but",
       "pph-final-bunga-pre2009",
       "pph-badan-go-public",
@@ -4862,6 +4951,7 @@
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-pre2001",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-final-sewa-tanah",
       "pph-final-konstruksi",
       "pph-umkm-05pct-2023",
@@ -5216,7 +5306,8 @@
     "141": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-katering-pre2015"
     ],
     "162": [
       "pph-21-ptkp-2009"
@@ -5391,6 +5482,7 @@
       "pph-21-progressive-uulama1994",
       "pph-23-jasa-pre2001",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-final-bunga-deposito",
       "pph-final-sewa-tanah",
       "pph-final-hadiah-undian",
@@ -5401,6 +5493,7 @@
     ],
     "2001": [
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-final-bunga-pre2009"
     ],
     "2002": [
@@ -5478,7 +5571,8 @@
       "pph-21-ptkp-2009",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-katering-pre2015"
     ],
     "2018": [
       "pph-umkm-05pct-2023",
@@ -5666,6 +5760,8 @@
       "bphtb-pengalihan-dinkes",
       "pph-22-penjualan-barang-2024",
       "pph-22-impor-api-produsen",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-general-2024",
       "pph-26-dividen",
       "pph-final-sewa-tanah",
@@ -5699,8 +5795,10 @@
       "pph-21-ter-c-detail",
       "pph-22-pre2024",
       "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct",
       "pph-23-jasa-pre2001",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-dividen",
       "pph-26-but",
       "pph-26-tax-treaty",
@@ -5739,6 +5837,7 @@
       "pph-21-progressive-uulama1983",
       "pph-21-progressive-uulama1994",
       "pph-22-pre2024",
+      "pph-23-jasa-katering-2pct",
       "pph-23-jasa-pre2001",
       "pph-23-jasa-2001",
       "pph-26-dividen",
@@ -5967,6 +6066,7 @@
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-pre2001",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-general-2024",
       "pph-26-dividen",
       "pph-26-bunga",
@@ -6061,6 +6161,7 @@
       "pph-22-bumn-pembelian",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-pre2001",
       "pph-final-sewa-tanah",
       "pph-final-konstruksi",
       "pph-badan-2022-plus",
@@ -6103,7 +6204,9 @@
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
       "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-general-2024",
       "pph-26-dividen",
       "pph-26-but",
@@ -6245,6 +6348,8 @@
       "pph-23-sewa-tanah-bangunan",
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-general-2024",
       "pph-26-dividen",
       "pph-26-bunga",
@@ -6317,6 +6422,7 @@
       "pph-23-jasa-lain-4pct",
       "pph-23-sewa-tanah-bangunan",
       "pph-23-hadiah-penghargaan",
+      "pph-23-jasa-pre2001",
       "pph-26-general-2024",
       "pph-26-dividen",
       "pph-26-bunga",
@@ -6364,7 +6470,6 @@
       "pph-22-kripto",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-23-jasa-katering-2pct",
       "pph-23-hadiah-penghargaan",
       "pph-26-jasa-dan-sewa",
       "pph-26-tax-treaty",
@@ -6708,6 +6813,7 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-23-hadiah-penghargaan",
+      "pph-23-jasa-pre2001",
       "pph-final-transportasi",
       "ppn-tidak-kena-pajak"
     ],
@@ -6767,6 +6873,7 @@
       "pph-21-progressive-pre2009",
       "pph-21-progressive-monthly-pre2024",
       "pph-22-pre2024",
+      "pph-23-katering-pre2015",
       "pph-final-bunga-pre2009",
       "pph-badan-pre2022",
       "pph-badan-pre2010",
@@ -6778,6 +6885,7 @@
       "pph-21-progressive-pre2009",
       "pph-21-progressive-monthly-pre2024",
       "pph-22-pre2024",
+      "pph-23-katering-pre2015",
       "pph-badan-pre2022",
       "pph-badan-pre2010",
       "ppn-10pct"
@@ -6798,6 +6906,7 @@
       "pph-22-pre2024",
       "pph-23-jasa-pre2001",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-final-bunga-pre2009",
       "pph-final-pengalihan-pp131",
       "pph-badan-pre2022",
@@ -6860,6 +6969,7 @@
     "periode": [
       "bea-meterai-1000",
       "bea-meterai-3000",
+      "pph-23-katering-pre2015",
       "pph-umkm-1pct-pp46"
     ],
     "uu-13-1985": [
@@ -6893,6 +7003,7 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-23-sewa-tanah-bangunan",
+      "pph-23-jasa-pre2001",
       "pph-final-sewa-tanah",
       "pph-final-pengalihan-pp131",
       "pph-final-pengalihan-pp71"
@@ -6908,6 +7019,7 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-23-sewa-tanah-bangunan",
+      "pph-23-jasa-pre2001",
       "pph-final-sewa-tanah",
       "pph-final-pengalihan-pp131",
       "pph-final-pengalihan-pp71",
@@ -7386,6 +7498,7 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-23-jasa-katering-2pct",
+      "pph-23-katering-pre2015",
       "ppn-11pct-effective-2025",
       "ppn-impor-bkp",
       "ppn-pmse",
@@ -7647,6 +7760,7 @@
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-pre2001",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-general-2024",
       "pph-26-dividen",
       "pph-26-bunga",
@@ -7818,6 +7932,7 @@
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-pre2001",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-jasa-dan-sewa",
       "pph-final-bunga-deposito",
       "pph-final-konstruksi",
@@ -8052,6 +8167,7 @@
     ],
     "ini": [
       "pph-21-progressive-annual-2024",
+      "pph-23-jasa-pre2001",
       "pph-badan-umkm"
     ],
     "merupakan": [
@@ -8099,6 +8215,7 @@
       "pph-21-progressive-pre2022",
       "pph-23-jasa-lain-4pct",
       "pph-23-jasa-katering-2pct",
+      "pph-23-katering-pre2015",
       "pph-final-konstruksi"
     ],
     "lapisan": [
@@ -8281,6 +8398,9 @@
     "dikenakan": [
       "pph-21-honorarium-bukan-pegawai",
       "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-general-2024",
       "pph-26-bunga",
       "pph-26-but",
@@ -8299,6 +8419,7 @@
       "pph-23-jasa-lain-4pct",
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
       "pph-26-general-2024",
       "pph-26-bunga",
       "pph-26-but",
@@ -8353,6 +8474,8 @@
       "pph-21-norma-petani",
       "pph-21-norma-pengusaha-kecil",
       "pph-23-jasa-katering-2pct",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-dividen",
       "pph-badan-umkm",
       "pph-umkm-05pct-2023",
@@ -8572,6 +8695,7 @@
     "uu-17-2000": [
       "pph-21-progressive-pre2009",
       "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-badan-pre2010"
     ],
     "uulama1983": [
@@ -8668,7 +8792,9 @@
     "pada": [
       "pph-21-progressive-monthly-pre2024",
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct"
+      "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-pre2001",
+      "pph-23-katering-pre2015"
     ],
     "pra-ter": [
       "pph-21-progressive-monthly-pre2024"
@@ -8692,7 +8818,8 @@
     ],
     "010": [
       "pph-21-ptkp-2005",
-      "pph-21-ptkp-2009"
+      "pph-21-ptkp-2009",
+      "pph-23-jasa-katering-2pct"
     ],
     "detail": [
       "pph-21-ter-a-detail",
@@ -8987,7 +9114,8 @@
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024",
       "pph-22-bumn-pembelian",
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-katering-pre2015"
     ],
     "keperluan": [
       "pph-22-pembelian-barang-2024",
@@ -9148,6 +9276,9 @@
     ],
     "belum": [
       "pph-22-penjualan-barang-2024",
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-badan-2022-plus"
     ],
     "proses": [
@@ -9455,6 +9586,7 @@
     "memiliki": [
       "pph-22-impor-api-produsen",
       "pph-23-jasa-lain-4pct",
+      "pph-23-katering-pre2015",
       "pph-26-tax-treaty",
       "pph-final-konstruksi",
       "pph-umkm-05pct-2023"
@@ -9506,12 +9638,15 @@
     ],
     "sebesar": [
       "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-pre2001",
       "pph-badan-umkm"
     ],
     "2%": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-23-jasa-2001"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015"
     ],
     "sp": [
       "pph-23-jasa-lain-2pct",
@@ -9562,6 +9697,8 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-23-hadiah-penghargaan",
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
       "pph-26-general-2024",
       "pph-26-bunga",
       "pph-badan-go-public",
@@ -9570,6 +9707,8 @@
     "huruf": [
       "pph-23-jasa-lain-2pct",
       "pph-23-hadiah-penghargaan",
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
       "pph-badan-go-public"
     ],
     "sampai": [
@@ -9588,7 +9727,8 @@
       "pph-23-sewa-tanah-bangunan",
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-pre2001",
-      "pph-23-jasa-2001"
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015"
     ],
     "jasa-lain": [
       "pph-23-jasa-lain-2pct",
@@ -10117,17 +10257,26 @@
     "katering": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015"
     ],
     "tata": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015"
     ],
     "boga": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015"
     ],
     "freight": [
       "pph-23-jasa-lain-2pct",
@@ -10383,7 +10532,8 @@
       "pph-23-jasa-lain-4pct"
     ],
     "100%": [
-      "pph-23-jasa-lain-4pct"
+      "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct"
     ],
     "tanpa-npwp": [
       "pph-23-jasa-lain-4pct"
@@ -10393,30 +10543,45 @@
     ],
     "dpp": [
       "pph-23-jasa-katering-2pct",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "ppn-dpp-penghitungan"
     ],
     "khusus": [
       "pph-23-jasa-katering-2pct",
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-final-sewa-tanah"
     ],
     "yaitu": [
       "pph-23-jasa-katering-2pct"
     ],
     "seluruh": [
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-jasa-pre2001",
+      "pph-23-katering-pre2015"
     ],
     "jumlah": [
       "pph-23-jasa-katering-2pct",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
       "pph-26-dividen"
     ],
     "pengurangan": [
       "pph-23-jasa-katering-2pct"
     ],
     "biaya": [
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-katering-pre2015"
     ],
     "makanan": [
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-23-katering-pre2015"
+    ],
+    "tagihan": [
+      "pph-23-jasa-katering-2pct",
+      "pph-23-katering-pre2015"
     ],
     "tata-boga": [
       "pph-23-jasa-katering-2pct"
@@ -10451,11 +10616,40 @@
       "ppn-10pct",
       "ppnbm-general"
     ],
+    "era": [
+      "pph-23-jasa-pre2001"
+    ],
+    "ada": [
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015"
+    ],
+    "perlakuan": [
+      "pph-23-jasa-pre2001",
+      "pph-23-katering-pre2015"
+    ],
+    "semua": [
+      "pph-23-jasa-pre2001"
+    ],
+    "sama": [
+      "pph-23-jasa-pre2001",
+      "pph-final-investasi-lpi",
+      "pph-badan-pre2001"
+    ],
     "diturunkan": [
       "pph-23-jasa-2001"
     ],
     "drastis": [
       "pph-23-jasa-2001"
+    ],
+    "pre2015": [
+      "pph-23-katering-pre2015"
+    ],
+    "pengkhususan": [
+      "pph-23-katering-pre2015"
+    ],
+    "potongan": [
+      "pph-23-katering-pre2015"
     ],
     "general": [
       "pph-26-general-2024",
@@ -10822,10 +11016,6 @@
     ],
     "lpi": [
       "pph-final-investasi-lpi"
-    ],
-    "sama": [
-      "pph-final-investasi-lpi",
-      "pph-badan-pre2001"
     ],
     "internasional": [
       "pph-final-investasi-lpi"

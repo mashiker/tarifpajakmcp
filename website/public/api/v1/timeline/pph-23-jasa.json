@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:30:58.683Z",
+  "generated": "2026-05-28T16:43:36.730Z",
   "data": {
     "group": "pph-23-jasa",
     "count": 3,
@@ -33,7 +33,8 @@
         ],
         "supersededBy": [
           "pph-23-jasa-lain-2pct",
-          "pph-23-jasa-lain-4pct"
+          "pph-23-jasa-lain-4pct",
+          "pph-23-jasa-katering-2pct"
         ]
       },
       {
@@ -44,7 +45,9 @@
         "effectiveTo": null,
         "status": "berlaku",
         "legalBasis": "UU 7/2021 (HPP) Pasal 23 ayat (1) huruf c angka 2; PMK 141/PMK.03/2015 Pasal 1 ayat (1), (3), (6)",
-        "supersedes": [],
+        "supersedes": [
+          "pph-23-jasa-2001"
+        ],
         "supersededBy": []
       }
     ]

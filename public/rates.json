@@ -1652,8 +1652,9 @@
     "effectiveTo": "2000-12-31",
     "status": "dicabut",
     "tags": [
-      "pph-23",
       "historis",
+      "katering",
+      "pph-23",
       "uu-7-1983"
     ]
   },
@@ -1673,7 +1674,27 @@
     "effectiveTo": "2021-12-31",
     "status": "diubah",
     "tags": [
+      "historis",
+      "katering",
       "pph-23",
+      "uu-17-2000"
+    ]
+  },
+  {
+    "id": "pph-23-katering-pre2015",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Jasa Katering / Tata Boga (Pra-PMK 141/2015)",
+    "rate": {
+      "type": "percentage",
+      "value": 2
+    },
+    "effectiveFrom": "2001-01-01",
+    "effectiveTo": "2015-12-30",
+    "status": "dicabut",
+    "tags": [
+      "pph-23",
+      "katering",
       "historis",
       "uu-17-2000"
     ]

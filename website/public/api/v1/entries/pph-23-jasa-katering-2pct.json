@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:30:58.683Z",
+  "generated": "2026-05-28T16:43:36.730Z",
   "data": {
     "id": "pph-23-jasa-katering-2pct",
     "category": "PPh",
     "taxType": "PPh 23",
     "transactionType": "Jasa Katering / Tata Boga",
-    "description": "Pemotongan PPh 23 atas jasa katering/tata boga dengan DPP khusus yaitu seluruh jumlah penghasilan bruto (tanpa pengurangan biaya bahan makanan/jasa tenaga kerja).",
+    "description": "Pemotongan PPh 23 atas jasa katering/tata boga berdasarkan PMK 141/PMK.010/2015. Tarif 2% dari DPP khusus yaitu seluruh jumlah penghasilan bruto (tanpa pengurangan biaya bahan makanan/jasa tenaga kerja). DPP katering = 100% dari bruto tagihan.",
     "rate": {
       "type": "percentage",
       "value": 2
@@ -26,9 +26,11 @@
         "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
       }
     ],
-    "supersedes": [],
+    "supersedes": [
+      "pph-23-katering-pre2015"
+    ],
     "supersededBy": [],
-    "notes": "Berbeda dari jasa lainnya, DPP katering tidak boleh dikurangi biaya bahan makanan maupun tenaga kerja. Seluruh tagihan katering menjadi dasar pemotongan.",
+    "notes": "PMK 141/2015 mengatur DPP khusus katering: seluruh jumlah bruto TANPA dikurangi biaya bahan makanan maupun jasa tenaga kerja. Sebelum PMK ini, katering dikenakan tarif PPh 23 umum 2% dari bruto (2001-2015) atau 15% dari bruto (1984-2000). Chain: UU 7/1983 (15% umum) → UU 17/2000 (2% umum) → PMK 141/2015 (2% khusus DPP).",
     "tags": [
       "pph-23",
       "katering",
@@ -52,13 +54,17 @@
       }
     ],
     "relatedEntries": {
+      "supersedes": [
+        "pph-23-katering-pre2015"
+      ],
       "sameCategory": [
         "pph-23-jasa-lain-2pct",
         "pph-23-jasa-lain-4pct",
         "pph-23-sewa-tanah-bangunan",
         "pph-23-hadiah-penghargaan",
         "pph-23-jasa-pre2001",
-        "pph-23-jasa-2001"
+        "pph-23-jasa-2001",
+        "pph-23-katering-pre2015"
       ]
     }
   }

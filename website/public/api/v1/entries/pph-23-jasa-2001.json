@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:30:58.683Z",
+  "generated": "2026-05-28T16:43:36.730Z",
   "data": {
     "id": "pph-23-jasa-2001",
     "category": "PPh",
     "taxType": "PPh 23",
     "transactionType": "Imbalan Jasa & Sewa (UU 17/2000)",
-    "description": "Tarif PPh 23 berdasarkan UU 17/2000. Tarif jasa diturunkan drastis dari 15% menjadi 2%. Sewa tetap 10%. Berlaku 2001-2021.",
+    "description": "Tarif PPh 23 berdasarkan UU 17/2000 Pasal 23 ayat (1) huruf c. Tarif atas imbalan jasa diturunkan drastis dari 15% menjadi 2%. Sewa tetap 10%. Jasa katering/tata boga dikenakan tarif umum 2% dari jumlah bruto (belum ada DPP khusus). Berlaku 2001-2021.",
     "rate": {
       "type": "range",
       "value": [
@@ -34,26 +34,34 @@
     ],
     "supersededBy": [
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct"
+      "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct"
     ],
-    "notes": "UU 17/2000 menurunkan tarif PPh 23 jasa dari 15% ke 2% — penurunan sangat signifikan. Sewa tetap 10%.",
+    "notes": "UU 17/2000 menurunkan tarif PPh 23 jasa dari 15% ke 2% — penurunan sangat signifikan. Sewa tetap 10%. Jasa katering pada periode ini diperlakukan sama dengan jasa lainnya (2% dari bruto, DPP = jumlah bruto). Perlakuan khusus katering dengan DPP khusus (tanpa dikurangi biaya bahan makanan) baru diatur oleh PMK 141/PMK.010/2015.",
     "examples": [
       {
         "scenario": "Jasa konsultasi Rp 50.000.000 tahun 2010",
         "calculation": "2% × 50.000.000",
         "result": "PPh 23 = Rp 1.000.000"
+      },
+      {
+        "scenario": "Jasa katering Rp 30.000.000 tahun 2010",
+        "calculation": "2% × 30.000.000 (belum ada tarif khusus, masuk jasa umum)",
+        "result": "PPh 23 = Rp 600.000"
       }
     ],
     "tags": [
-      "pph-23",
       "historis",
+      "katering",
+      "pph-23",
       "uu-17-2000"
     ],
     "lastVerified": "2026-05-28",
     "relatedEntries": {
       "supersededBy": [
         "pph-23-jasa-lain-2pct",
-        "pph-23-jasa-lain-4pct"
+        "pph-23-jasa-lain-4pct",
+        "pph-23-jasa-katering-2pct"
       ],
       "supersedes": [
         "pph-23-jasa-pre2001"
@@ -64,7 +72,8 @@
         "pph-23-jasa-katering-2pct",
         "pph-23-sewa-tanah-bangunan",
         "pph-23-hadiah-penghargaan",
-        "pph-23-jasa-pre2001"
+        "pph-23-jasa-pre2001",
+        "pph-23-katering-pre2015"
       ]
     }
   }
