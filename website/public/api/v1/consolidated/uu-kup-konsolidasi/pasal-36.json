@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "36",
+    "bab": "IX",
+    "title": "Pencegahan",
+    "status": "diubah",
+    "description": "Pencegahan WP dari ke luar negeri jika diduga akan meninggalkan Indonesia untuk menghindar dari kewajiban perpajakan.",
+    "keywords": [
+      "pencegahan",
+      "imigrasi",
+      "ke luar negeri"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan ketentuan pencegahan"
+      }
+    ]
+  }
+}

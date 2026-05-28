@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "2",
+    "bab": "II",
+    "bagian": "1",
+    "title": "Objek PPN",
+    "status": "diubah",
+    "description": "PPN dikenakan atas: penyerahan BKP di dalam DA, penyerahan JKP di dalam DA, ekspor BKP, ekspor JKP.",
+    "keywords": [
+      "objek PPN",
+      "penyerahan",
+      "ekspor",
+      "BKP",
+      "JKP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli - 3 objek (penyerahan BKP, JKP, ekspor)"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan ekspor jasa sebagai objek PPN, penyerahan BKP tidak berwujud"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Penambahan PPN final atas penyerahan tertentu"
+      }
+    ]
+  }
+}

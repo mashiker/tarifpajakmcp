@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pmk-138-2005",
+    "number": "138/PMK.010/2005",
+    "year": 2005,
+    "title": "PMK tentang Besarnya PTKP",
+    "type": "PMK",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/49344/pmk-no-138pmk0102005",
+    "status": "dicabut",
+    "effectiveDate": "2005-01-01",
+    "referencingEntries": [
+      "pph-21-ptkp-2005"
+    ]
+  }
+}

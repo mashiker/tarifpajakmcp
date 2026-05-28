@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "22-102",
+    "count": 4,
+    "codes": [
+      {
+        "kode": "22-102-01",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Tidak Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      },
+      {
+        "kode": "22-102-02",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      },
+      {
+        "kode": "22-102-01",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Tidak Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-pmse",
+        "entryTransactionType": "Penjualan melalui Perdagangan Melalui Sistem Elektronik (PMSE/E-Commerce)"
+      },
+      {
+        "kode": "22-102-02",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-pmse",
+        "entryTransactionType": "Penjualan melalui Perdagangan Melalui Sistem Elektronik (PMSE/E-Commerce)"
+      }
+    ]
+  }
+}

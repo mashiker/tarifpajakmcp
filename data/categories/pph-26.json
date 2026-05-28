@@ -63,7 +63,346 @@
           "nama": "Penghasilan Wajib Pajak Luar Negeri yang Mempunyai Kantor Perwakilan Dagang di Indonesia",
           "tarif": 0.44
         }
+      ],
+      "examples": [
+        {
+          "scenario": "Penghasilan WP Luar Negeri Umum Rp 100.000.000",
+          "calculation": "20% × 100.000.000",
+          "result": "Pajak = Rp 20.000.000"
+        }
       ]
+    },
+    {
+      "id": "pph-26-dividen",
+      "category": "PPh",
+      "taxType": "PPh 26",
+      "transactionType": "Dividen WP Luar Negeri",
+      "description": "Pemotongan PPh 26 atas dividen yang dibayarkan kepada WP luar negeri. Tarif umum 20% dari jumlah bruto, namun dapat lebih rendah berdasarkan P3B (tax treaty).",
+      "rate": {
+        "type": "percentage",
+        "value": 20
+      },
+      "taxBase": "Jumlah bruto dividen",
+      "payer": "WP luar negeri penerima dividen",
+      "recipient": "Negara",
+      "withholder": "WP badan dalam negeri yang membagikan dividen",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 26 ayat (1) huruf a",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 5"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif P3B bervariasi: Singapura 15%, Jepang 15%, Belanda 10%, Mauritius 10%, dll. Tarif dapat lebih rendah jika WP luar negeri memenuhi syarat beneficial owner dan menyertakan Certificate of Residence (CoR).",
+      "tags": [
+        "pph-26",
+        "dividen",
+        "wp-luar-negeri",
+        "tax-treaty",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "24-101-01",
+          "nama": "Dividen",
+          "tarif": 15.0
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Dividen WP Luar Negeri Rp 100.000.000",
+          "calculation": "20% × 100.000.000",
+          "result": "Pajak = Rp 20.000.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-26-bunga",
+      "category": "PPh",
+      "taxType": "PPh 26",
+      "transactionType": "Bunga WP Luar Negeri",
+      "description": "Pemotongan PPh 26 atas bunga yang dibayarkan kepada WP luar negeri selain yang telah dikenakan PPh 4(2).",
+      "rate": {
+        "type": "percentage",
+        "value": 20
+      },
+      "taxBase": "Jumlah bruto bunga",
+      "payer": "WP luar negeri penerima bunga",
+      "recipient": "Negara",
+      "withholder": "WP dalam negeri/BUT yang membayar bunga",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 26 ayat (1) huruf b",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 5"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif P3B bervariasi untuk bunga: Singapura 15%, Jepang 10%, Belanda 10%, Hong Kong 10%. Bunga pinjaman luar negeri tertentu dapat dibebaskan berdasarkan P3B.",
+      "tags": [
+        "pph-26",
+        "bunga",
+        "wp-luar-negeri",
+        "tax-treaty",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "24-102-01",
+          "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
+          "tarif": 15.0
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Bunga WP Luar Negeri Rp 100.000.000",
+          "calculation": "20% × 100.000.000",
+          "result": "Pajak = Rp 20.000.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-26-royalti",
+      "category": "PPh",
+      "taxType": "PPh 26",
+      "transactionType": "Royalti WP Luar Negeri",
+      "description": "Pemotongan PPh 26 atas royalti yang dibayarkan kepada WP luar negeri.",
+      "rate": {
+        "type": "percentage",
+        "value": 20
+      },
+      "taxBase": "Jumlah bruto royalti",
+      "payer": "WP luar negeri penerima royalti",
+      "recipient": "Negara",
+      "withholder": "WP dalam negeri/BUT yang membayar royalti",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 26 ayat (1) huruf c",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 5"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif P3B bervariasi untuk royalti: Singapura 15%, Jepang 10%, Belanda 10%, Amerika 10%. Definisi royalti mencakup penggunaan hak cipta, paten, merek dagang, dll.",
+      "tags": [
+        "pph-26",
+        "royalti",
+        "wp-luar-negeri",
+        "tax-treaty",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "24-103-01",
+          "nama": "Royalti",
+          "tarif": 15.0
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Royalti WP Luar Negeri Rp 100.000.000",
+          "calculation": "20% × 100.000.000",
+          "result": "Pajak = Rp 20.000.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-26-jasa-dan-sewa",
+      "category": "PPh",
+      "taxType": "PPh 26",
+      "transactionType": "Imbalan Jasa dan Sewa WP Luar Negeri",
+      "description": "Pemotongan PPh 26 atas imbalan sehubungan dengan jasa dan sewa yang dibayarkan kepada WP luar negeri yang tidak melakukan kegiatan usaha melalui BUT di Indonesia.",
+      "rate": {
+        "type": "percentage",
+        "value": 20
+      },
+      "taxBase": "Jumlah bruto imbalan jasa/sewa",
+      "payer": "WP luar negeri penerima imbalan",
+      "recipient": "Negara",
+      "withholder": "WP dalam negeri/BUT yang membayar imbalan",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 26 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 5"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 20% dari jumlah bruto. Jika WP luar negeri memiliki BUT di Indonesia, penghasilan yang diterima melalui BUT dikenakan PPh sesuai tarif umum (Pasal 17), bukan PPh 26.",
+      "tags": [
+        "pph-26",
+        "jasa",
+        "sewa",
+        "wp-luar-negeri",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Imbalan Jasa dan Sewa WP Luar Negeri Rp 100.000.000",
+          "calculation": "20% × 100.000.000",
+          "result": "Pajak = Rp 20.000.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-26-but",
+      "category": "PPh",
+      "taxType": "PPh 26",
+      "transactionType": "Penghasilan BUT (Bentuk Usaha Tetap)",
+      "description": "Pemotongan PPh atas penghasilan yang diterima atau diperoleh BUT dari WP luar negeri. BUT diperlakukan sebagai WP dalam negeri dan dikenakan tarif Pasal 17 ditambah pajak cabang (branch profit tax) 20%.",
+      "rate": {
+        "type": "progressive",
+        "value": "Tarif Pasal 17 + Branch Profit Tax 20%",
+        "brackets": [
+          {
+            "min": 0,
+            "max": 50000000,
+            "rate": 5
+          },
+          {
+            "min": 50000000,
+            "max": 250000000,
+            "rate": 15
+          },
+          {
+            "min": 250000000,
+            "max": 500000000,
+            "rate": 25
+          },
+          {
+            "min": 500000000,
+            "max": null,
+            "rate": 30
+          }
+        ]
+      },
+      "taxBase": "PKP BUT + laba setelah pajak (untuk branch profit tax)",
+      "payer": "BUT (perusahaan luar negeri yang beroperasi di Indonesia)",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 20 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 5 ayat (3)"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "BUT dikenakan PPh normal (Pasal 17) atas laba usaha + Branch Profit Tax 20% atas laba setelah pajak yang dikirim ke kantor pusat. Beberapa P3B mengurangi atau menghapus branch profit tax.",
+      "tags": [
+        "pph-26",
+        "but",
+        "branch-profit-tax",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Penghasilan BUT (Bentuk Usaha Tetap) PKP Rp 100.000.000",
+          "calculation": "Hitung per lapisan progresif",
+          "result": "Pajak = jumlah dari setiap lapisan"
+        }
+      ]
+    },
+    {
+      "id": "pph-26-tax-treaty",
+      "category": "PPh",
+      "taxType": "PPh 26",
+      "transactionType": "Tarif P3B (Tax Treaty)",
+      "description": "Tarif PPh berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/Tax Treaty). Tarif bisa lebih rendah dari 20%. Indonesia memiliki P3B dengan 70+ negara.",
+      "rate": {
+        "type": "range",
+        "value": [
+          0,
+          20
+        ]
+      },
+      "taxBase": "Jumlah bruto penghasilan dari Indonesia ke WP luar negeri",
+      "payer": "WP luar negeri (residen negara mitra P3B)",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 26",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 26",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif P3B bervariasi per negara. Contoh: Singapura 10-15%, Jepang 7-15%, Belanda 5-15%, Malaysia 10-15%, Australia 10-15%, UK 10-15%, US 10-15%, China 10%, India 10%, Korea 10-15%. Wajib disertai Certificate of Residence (CoR).",
+      "examples": [
+        {
+          "scenario": "Dividen ke residen Singapura Rp 100.000.000",
+          "calculation": "P3B Singapura dividen 10%. 10%×100jt",
+          "result": "PPh 26 = Rp 10.000.000 (bukan 20%)"
+        },
+        {
+          "scenario": "Royalti ke residen Belanda Rp 500.000.000",
+          "calculation": "P3B Belanda royalti bisa 0% dengan BO",
+          "result": "PPh 26 = Rp 0"
+        }
+      ],
+      "tags": [
+        "pph-26",
+        "tax-treaty",
+        "p3b",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
     }
   ]
 }

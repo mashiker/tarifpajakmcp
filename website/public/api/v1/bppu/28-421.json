@@ -1,0 +1,32 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "28-421",
+    "count": 3,
+    "codes": [
+      {
+        "kode": "28-421-01",
+        "nama": "Uplift Hulu Migas",
+        "tarif": 20,
+        "entryId": "pph-final-migas",
+        "entryTransactionType": "Penghasilan dari Kegiatan Hulu Migas"
+      },
+      {
+        "kode": "28-421-02",
+        "nama": "Participating Interest Eksplorasi Hulu Migas",
+        "tarif": 5,
+        "entryId": "pph-final-migas",
+        "entryTransactionType": "Penghasilan dari Kegiatan Hulu Migas"
+      },
+      {
+        "kode": "28-421-03",
+        "nama": "Participating Interest Eksploitasi Hulu Migas",
+        "tarif": 7,
+        "entryId": "pph-final-migas",
+        "entryTransactionType": "Penghasilan dari Kegiatan Hulu Migas"
+      }
+    ]
+  }
+}

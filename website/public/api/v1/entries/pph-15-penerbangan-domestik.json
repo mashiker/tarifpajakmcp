@@ -1,0 +1,49 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-15-penerbangan-domestik",
+    "category": "PPh",
+    "taxType": "PPh 15",
+    "transactionType": "Penerbangan Dalam Negeri",
+    "description": "PPh deemed profit atas usaha penerbangan domestik.",
+    "rate": {
+      "type": "percentage",
+      "value": 22
+    },
+    "taxBase": "Deemed profit (norma laba netto × peredaran bruto)",
+    "payer": "WP Badan / WP Luar Negeri",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1984-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/1983",
+        "article": "Pasal 15 ayat (1) huruf a",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "PPh Pasal 15: PPh deemed profit atas usaha penerbangan domestik. Tarif 22%.",
+    "examples": [
+      {
+        "scenario": "Penerbangan Dalam Negeri bruto Rp 10 miliar",
+        "calculation": "Norma laba netto × 22%",
+        "result": "PPh 15 = deemed profit × 22%"
+      }
+    ],
+    "tags": [
+      "pph-15",
+      "deemed-profit",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": []
+    }
+  }
+}

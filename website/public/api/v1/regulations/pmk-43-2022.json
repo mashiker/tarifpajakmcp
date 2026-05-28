@@ -1,0 +1,26 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pmk-43-2022",
+    "number": "43/2022",
+    "year": 2022,
+    "title": "PMK tentang Norma Penghitungan Penghasilan Neto",
+    "type": "PMK",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022",
+    "status": "berlaku",
+    "effectiveDate": "2022-03-14",
+    "referencingEntries": [
+      "pph-21-norma-dokter",
+      "pph-21-norma-pengacara",
+      "pph-21-norma-akuntan",
+      "pph-21-norma-arsitek",
+      "pph-21-norma-notaris",
+      "pph-21-norma-konsultan",
+      "pph-21-norma-pedagang",
+      "pph-21-norma-petani",
+      "pph-21-norma-pengusaha-kecil"
+    ]
+  }
+}

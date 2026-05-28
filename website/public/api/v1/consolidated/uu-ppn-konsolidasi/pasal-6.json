@@ -1,0 +1,40 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "6",
+    "bab": "II",
+    "bagian": "1",
+    "title": "Ekspor BKP",
+    "status": "diubah",
+    "description": "Ketentuan PPN atas ekspor BKP berwujud dan tidak berwujud.",
+    "keywords": [
+      "ekspor",
+      "BKP",
+      "luar negeri"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan ekspor BKP tidak berwujud"
+      }
+    ]
+  }
+}

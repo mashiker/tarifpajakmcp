@@ -1,0 +1,50 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "3",
+    "bab": "III",
+    "title": "SPT - Bentuk dan Isi",
+    "status": "diubah",
+    "description": "Bentuk dan isi Surat Pemberitahuan (SPT) yang wajib disampaikan oleh WP, termasuk SPT Tahunan dan SPT Masa.",
+    "keywords": [
+      "SPT",
+      "SPT Tahunan",
+      "SPT Masa",
+      "pelaporan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli tentang bentuk dan isi SPT"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penyesuaian SPT untuk media elektronik"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan ketentuan SPT electronic filing"
+      }
+    ]
+  }
+}

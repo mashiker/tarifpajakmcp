@@ -1,0 +1,30 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "16A",
+    "bab": "II",
+    "bagian": "8",
+    "title": "Pelaporan PPN",
+    "status": "ditambah",
+    "description": "Ketentuan pelaporan SPT Masa PPN.",
+    "keywords": [
+      "SPT Masa",
+      "pelaporan",
+      "PPN"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "added",
+        "effectiveDate": "2010-04-01",
+        "summary": "Pasal baru tentang pelaporan PPN"
+      }
+    ]
+  }
+}

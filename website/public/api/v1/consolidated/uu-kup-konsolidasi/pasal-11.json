@@ -1,0 +1,40 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "11",
+    "bab": "IV",
+    "title": "Pengecualian Kewajiban Pembukuan",
+    "status": "diubah",
+    "description": "WP yang dikecualikan dari kewajiban pembukuan (cukup pencatatan).",
+    "keywords": [
+      "pembukuan",
+      "pengecualian",
+      "UMKM",
+      "peredaran bruto"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Perubahan batas peredaran bruto untuk pengecualian"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-badan-go-public",
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "transactionType": "Penghasilan Kena Pajak Badan Go-Public ( Listed di Bursa Efek)",
+    "description": "Tarif PPh badan 20% untuk WP badan yang sahamnya diperdagangkan di bursa efek dan memenuhi syarat tertentu sesuai Pasal 17 ayat (1) huruf b angka 2 UU HPP.",
+    "rate": {
+      "type": "percentage",
+      "value": 20
+    },
+    "taxBase": "Penghasilan Kena Pajak (PKP) badan",
+    "payer": "WP Badan go-public (listed)",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 17 ayat (1) huruf b angka 2",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Syarat: saham diperdagangkan di bursa efek dan memenuhi persyaratan peraturan perundang-undangan di bidang pasar modal serta memenuhi syarat perbandingan antara saham yang dimiliki oleh pihak yang bukan pemegang saham pengendali dengan jumlah seluruh saham yang diserahkan.",
+    "tags": [
+      "pph-badan",
+      "go-public",
+      "listed",
+      "tarif-khusus",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Penghasilan Kena Pajak Badan Go-Public ( Listed di Bursa Efek) Rp 100.000.000",
+        "calculation": "20% × 100.000.000",
+        "result": "Pajak = Rp 20.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-badan-2022-plus",
+        "pph-badan-pre2022",
+        "pph-badan-umkm",
+        "pph-badan-pre2010",
+        "pph-badan-pre2001",
+        "pph-badan-ikn-0pct",
+        "pph-badan-ikn-10y"
+      ]
+    }
+  }
+}

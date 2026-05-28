@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "22-101",
+    "count": 4,
+    "codes": [
+      {
+        "kode": "22-101-01",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Tidak Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      },
+      {
+        "kode": "22-101-02",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      },
+      {
+        "kode": "22-101-01",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Tidak Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-pengadaan-pemerintah",
+        "entryTransactionType": "Pengadaan melalui Sistem Informasi Pengadaan Pemerintah"
+      },
+      {
+        "kode": "22-101-02",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-pengadaan-pemerintah",
+        "entryTransactionType": "Pengadaan melalui Sistem Informasi Pengadaan Pemerintah"
+      }
+    ]
+  }
+}

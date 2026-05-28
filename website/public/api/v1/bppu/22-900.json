@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "22-900",
+    "count": 2,
+    "codes": [
+      {
+        "kode": "22-900-01",
+        "nama": "Pembayaran atas Pembelian Barang dan/atau Bahan untuk Kegiatan Usahanya oleh BUMN/Badan Usaha Tertentu",
+        "tarif": 1.5,
+        "entryId": "pph-22-pembelian-barang-2024",
+        "entryTransactionType": "Pembelian Barang oleh Badan Usaha Industri Tertentu"
+      },
+      {
+        "kode": "22-900-01",
+        "nama": "Pembayaran atas Pembelian Barang dan/atau Bahan untuk Kegiatan Usahanya oleh BUMN/Badan Usaha Tertentu",
+        "tarif": 1.5,
+        "entryId": "pph-22-bumn-pembelian",
+        "entryTransactionType": "Pembelian oleh BUMN/Badan Usaha Tertentu"
+      }
+    ]
+  }
+}

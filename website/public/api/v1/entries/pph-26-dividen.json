@@ -1,0 +1,69 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-26-dividen",
+    "category": "PPh",
+    "taxType": "PPh 26",
+    "transactionType": "Dividen WP Luar Negeri",
+    "description": "Pemotongan PPh 26 atas dividen yang dibayarkan kepada WP luar negeri. Tarif umum 20% dari jumlah bruto, namun dapat lebih rendah berdasarkan P3B (tax treaty).",
+    "rate": {
+      "type": "percentage",
+      "value": 20
+    },
+    "taxBase": "Jumlah bruto dividen",
+    "payer": "WP luar negeri penerima dividen",
+    "recipient": "Negara",
+    "withholder": "WP badan dalam negeri yang membagikan dividen",
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 26 ayat (1) huruf a",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 5"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif P3B bervariasi: Singapura 15%, Jepang 15%, Belanda 10%, Mauritius 10%, dll. Tarif dapat lebih rendah jika WP luar negeri memenuhi syarat beneficial owner dan menyertakan Certificate of Residence (CoR).",
+    "tags": [
+      "pph-26",
+      "dividen",
+      "wp-luar-negeri",
+      "tax-treaty",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "bppuKode": [
+      {
+        "kode": "24-101-01",
+        "nama": "Dividen",
+        "tarif": 15
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Dividen WP Luar Negeri Rp 100.000.000",
+        "calculation": "20% × 100.000.000",
+        "result": "Pajak = Rp 20.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-26-general-2024",
+        "pph-26-bunga",
+        "pph-26-royalti",
+        "pph-26-jasa-dan-sewa",
+        "pph-26-but",
+        "pph-26-tax-treaty"
+      ]
+    }
+  }
+}

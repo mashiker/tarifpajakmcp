@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "29-101",
+    "count": 1,
+    "codes": [
+      {
+        "kode": "29-101-01",
+        "nama": "Imbalan Charter Pesawat Udara yang Dibayarkan/Terutang kepada Perusahaan Penerbangan Dalam Negeri oleh Pemotong Pajak",
+        "tarif": 1.8,
+        "entryId": "pph-final-transportasi",
+        "entryTransactionType": "Penghasilan dari Pengangkutan dan Charter"
+      }
+    ]
+  }
+}

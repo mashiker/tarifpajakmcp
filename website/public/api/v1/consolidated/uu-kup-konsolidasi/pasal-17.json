@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "17",
+    "bab": "V",
+    "title": "Penyetoran Pajak",
+    "status": "diubah",
+    "description": "Ketentuan penyetoran pajak oleh WP dan/atau pemotong/pemungut pajak ke kas negara.",
+    "keywords": [
+      "penyetoran",
+      "kode billing",
+      "SUNAT"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penambahan SUNAT dan penyetoran elektronik"
+      }
+    ]
+  }
+}

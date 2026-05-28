@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "31B",
+    "bab": "IX",
+    "title": "Constructive Dividend",
+    "status": "ditambah",
+    "description": "Ketentuan tentang constructive dividend atas pengembalian modal atau pembagian dividen terselubung.",
+    "keywords": [
+      "constructive dividend",
+      "dividen",
+      "pengembalian modal"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "added",
+        "effectiveDate": "2009-01-01",
+        "summary": "Pasal baru tentang constructive dividend"
+      }
+    ]
+  }
+}

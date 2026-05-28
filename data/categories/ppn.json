@@ -22,16 +22,36 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "PMK 131/2024", "article": "Pasal 2", "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024" },
-        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 7 ayat (1)", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021" }
+        {
+          "regulation": "PMK 131/2024",
+          "article": "Pasal 2",
+          "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 7 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
       ],
-      "supersedes": ["ppn-11pct-2022", "ppn-10pct"],
+      "supersedes": [
+        "ppn-11pct-2022",
+        "ppn-10pct"
+      ],
       "supersededBy": [],
       "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.",
       "examples": [
-        { "scenario": "Penjualan BKP Rp 1.000.000", "calculation": "PPN = 11% × Rp 1.000.000", "result": "PPN = Rp 110.000" }
+        {
+          "scenario": "Penjualan BKP Rp 1.000.000",
+          "calculation": "PPN = 11% × Rp 1.000.000",
+          "result": "PPN = Rp 110.000"
+        }
       ],
-      "tags": ["ppn", "tarif-efektif", "pmk-131-2024", "berlaku"],
+      "tags": [
+        "ppn",
+        "tarif-efektif",
+        "pmk-131-2024",
+        "berlaku"
+      ],
       "lastVerified": "2026-05-26"
     },
     {
@@ -40,7 +60,10 @@
       "taxType": "PPN",
       "transactionType": "Penyerahan BKP/JKP (2022-2024)",
       "description": "Tarif PPN 11% berdasarkan UU HPP yang mulai berlaku 1 April 2022.",
-      "rate": { "type": "percentage", "value": 11 },
+      "rate": {
+        "type": "percentage",
+        "value": 11
+      },
       "taxBase": "DPP",
       "payer": "Konsumen akhir",
       "recipient": "Negara",
@@ -49,12 +72,31 @@
       "effectiveTo": "2024-12-31",
       "status": "diubah",
       "legalBasis": [
-        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 7 ayat (1)", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021" }
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 7 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
       ],
-      "supersedes": ["ppn-10pct"],
-      "supersededBy": ["ppn-11pct-effective-2025"],
-      "tags": ["ppn", "11-persen", "historis"],
-      "lastVerified": "2026-05-26"
+      "supersedes": [
+        "ppn-10pct"
+      ],
+      "supersededBy": [
+        "ppn-11pct-effective-2025"
+      ],
+      "tags": [
+        "ppn",
+        "11-persen",
+        "historis"
+      ],
+      "lastVerified": "2026-05-26",
+      "examples": [
+        {
+          "scenario": "Penyerahan BKP/JKP (2022-2024) Rp 100.000.000",
+          "calculation": "11% × 100.000.000",
+          "result": "Pajak = Rp 11.000.000"
+        }
+      ]
     },
     {
       "id": "ppn-10pct",
@@ -62,7 +104,10 @@
       "taxType": "PPN",
       "transactionType": "Penyerahan BKP/JKP (Pra-HPP)",
       "description": "Tarif PPN 10% yang berlaku sejak awal UU PPN 1984 hingga sebelum UU HPP.",
-      "rate": { "type": "percentage", "value": 10 },
+      "rate": {
+        "type": "percentage",
+        "value": 10
+      },
       "taxBase": "DPP",
       "payer": "Konsumen akhir",
       "recipient": "Negara",
@@ -71,14 +116,35 @@
       "effectiveTo": "2022-03-31",
       "status": "diubah",
       "legalBasis": [
-        { "regulation": "UU 8/1983", "article": "Pasal 7", "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983" },
-        { "regulation": "UU 42/2009", "article": "Pasal 7", "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009" }
+        {
+          "regulation": "UU 8/1983",
+          "article": "Pasal 7 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44024/uu-no-8-tahun-1983"
+        },
+        {
+          "regulation": "UU 42/2009",
+          "article": "Pasal 7 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+        }
       ],
       "supersedes": [],
-      "supersededBy": ["ppn-11pct-2022"],
+      "supersededBy": [
+        "ppn-11pct-2022"
+      ],
       "notes": "Tarif PPN 10% berlaku konsisten dari 1984 hingga 2022.",
-      "tags": ["ppn", "10-persen", "historis"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "ppn",
+        "10-persen",
+        "historis"
+      ],
+      "lastVerified": "2026-05-26",
+      "examples": [
+        {
+          "scenario": "Penjualan BKP Rp 100.000.000 tahun 2001",
+          "calculation": "10% × 100.000.000",
+          "result": "PPN = Rp 10.000.000"
+        }
+      ]
     },
     {
       "id": "ppn-ekspor-bkp",
@@ -86,7 +152,10 @@
       "taxType": "PPN",
       "transactionType": "Ekspor Barang Kena Pajak",
       "description": "PPN atas ekspor Barang Kena Pajak Berwujud dikenakan tarif 0%.",
-      "rate": { "type": "percentage", "value": 0 },
+      "rate": {
+        "type": "percentage",
+        "value": 0
+      },
       "taxBase": "Nilai ekspor",
       "payer": "Eksportir PKP",
       "recipient": "Negara",
@@ -95,12 +164,498 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 7 ayat (2)", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021" }
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 7 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
+      "supersedes": [],
+      "supersededBy": [],
       "notes": "Tarif 0% untuk ekspor BKP berwujud. Berbeda dengan ekspor jasa (dapat berbeda tarif tergantung jenis).",
-      "tags": ["ppn", "ekspor", "tarif-nol", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "ppn",
+        "ekspor",
+        "tarif-nol",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "examples": [
+        {
+          "scenario": "Ekspor Barang Kena Pajak - tidak kena pajak",
+          "calculation": "Tarif 0%",
+          "result": "Pajak = Rp 0"
+        }
+      ]
+    },
+    {
+      "id": "ppn-impor-bkp",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Impor Barang Kena Pajak",
+      "description": "PPN atas impor Barang Kena Pajak Berwujud yang dikenakan dan dipungut bersamaan dengan pemungutan Bea Masuk, Cukai, dan pungutan lainnya oleh Direktorat Jenderal Bea dan Cukai.",
+      "rate": {
+        "type": "percentage",
+        "value": 11,
+        "effectiveRate": "11% (PMK 131/2024)"
+      },
+      "taxBase": "Nilai pabean + Bea Masuk + pungutan lain (CIF + BM + Cukai)",
+      "payer": "Importir",
+      "recipient": "Negara",
+      "withholder": "Direktorat Jenderal Bea dan Cukai",
+      "effectiveFrom": "2025-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 7 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "UU 42/2009",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+        },
+        {
+          "regulation": "PMK 131/2024",
+          "article": "Pasal 2",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PPN impor = tarif PPN × (Nilai CIF + BM + Cukai). Tidak ada pemisahan PPN-in dan PPN-out seperti pada penyerahan domestik.",
+      "examples": [
+        {
+          "scenario": "Impor barang CIF USD 10.000 (Rp 160.000.000), BM 10%, PPN 11%",
+          "calculation": "BM = 10% × 160jt = 16jt. DPP = 160jt + 16jt = 176jt. PPN = 11% × 176jt",
+          "result": "PPN Impor = Rp 19.360.000"
+        }
+      ],
+      "tags": [
+        "ppn",
+        "impor",
+        "bkp",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27"
+    },
+    {
+      "id": "ppn-pmse",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Penyerahan melalui Perdagangan Melalui Sistem Elektronik (PMSE)",
+      "description": "PPN atas penyerahan BKP dan/atau JKP melalui PMSE (e-commerce/marketplace) baik dari pedagang dalam negeri maupun luar negeri. Penyelenggara PMSE bertindak sebagai pemungut PPN.",
+      "rate": {
+        "type": "percentage",
+        "value": 11,
+        "effectiveRate": "11% (PMK 131/2024)"
+      },
+      "taxBase": "Harga jual/penggantian yang disepakati (DPP)",
+      "payer": "Konsumen",
+      "recipient": "Negara",
+      "withholder": "Penyelenggara PMSE (marketplace)",
+      "effectiveFrom": "2025-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (3)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PP 44/2022",
+          "article": "Pasal 2-5"
+        },
+        {
+          "regulation": "PMK 131/2024",
+          "article": "Pasal 2",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PPN PMSE dipungut oleh penyelenggara (Shopee, Tokopedia, dll). PMSE luar negeri (Amazon, dll) wajib mendaftar sebagai PKP dan memungut PPN. DPP untuk BKP melalui PMSE = harga jual yang disepakati.",
+      "tags": [
+        "ppn",
+        "pmse",
+        "e-commerce",
+        "marketplace",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Penyerahan melalui Perdagangan Melalui Sistem Elektronik (PMSE) Rp 100.000.000",
+          "calculation": "11% × 100.000.000",
+          "result": "Pajak = Rp 11.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppn-jasa-tenaga-listrik",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Penyerahan Jasa Tenaga Listrik",
+      "description": "PPN atas penyerahan jasa tenaga listrik oleh PLN atau penyedia listrik lainnya.",
+      "rate": {
+        "type": "percentage",
+        "value": 11,
+        "effectiveRate": "11% (PMK 131/2024)"
+      },
+      "taxBase": "Harga jual tenaga listrik",
+      "payer": "Konsumen listrik",
+      "recipient": "Negara",
+      "withholder": "PLN / penyedia listrik",
+      "effectiveFrom": "2025-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PMK 131/2024",
+          "article": "Pasal 2",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Penyerahan jasa tenaga listrik di atas 6.600 VA (rumah tangga) dikenakan PPN. Di bawah 6.600 VA: tidak dipungut PPN (subtansi bukan JKP).",
+      "tags": [
+        "ppn",
+        "listrik",
+        "pln",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Penyerahan Jasa Tenaga Listrik Rp 100.000.000",
+          "calculation": "11% × 100.000.000",
+          "result": "Pajak = Rp 11.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppn-jasa-telekomunikasi",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Penyerahan Jasa Telekomunikasi",
+      "description": "PPN atas penyerahan jasa telekomunikasi (pulsa, data, telepon) oleh operator telekomunikasi.",
+      "rate": {
+        "type": "percentage",
+        "value": 11,
+        "effectiveRate": "11% (PMK 131/2024)"
+      },
+      "taxBase": "Harga jual/penggantian jasa telekomunikasi",
+      "payer": "Pengguna jasa telekomunikasi",
+      "recipient": "Negara",
+      "withholder": "Operator telekomunikasi (PKP)",
+      "effectiveFrom": "2025-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PMK 131/2024",
+          "article": "Pasal 2",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Penyerahan jasa telekomunikasi termasuk jasa kena pajak. Penjualan pulsa dan kartu perdana melalui distributor: PPN dipungut oleh distributor tingkat pertama.",
+      "tags": [
+        "ppn",
+        "telekomunikasi",
+        "pulsa",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Penyerahan Jasa Telekomunikasi Rp 100.000.000",
+          "calculation": "11% × 100.000.000",
+          "result": "Pajak = Rp 11.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppn-ekspor-jkp",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Ekspor Jasa Kena Pajak",
+      "description": "PPN atas ekspor Jasa Kena Pajak berupa jasa yang dilakukan di Indonesia yang manfaatnya digunakan di luar Indonesia. Dikenakan tarif 0%.",
+      "rate": {
+        "type": "percentage",
+        "value": 0
+      },
+      "taxBase": "Nilai penggantian/imbalan jasa",
+      "payer": "Eksportir jasa (PKP)",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 7 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "UU 42/2009",
+          "article": "Pasal 7 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 0% untuk ekspor JKP. Syarat: jasa dilakukan di Indonesia dan manfaatnya digunakan di luar Indonesia. Termasuk jasa konstruksi, jasa konsultansi, dll yang dikonsumsi di luar negeri.",
+      "tags": [
+        "ppn",
+        "ekspor",
+        "jkp",
+        "tarif-nol",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Ekspor Jasa Kena Pajak - tidak kena pajak",
+          "calculation": "Tarif 0%",
+          "result": "Pajak = Rp 0"
+        }
+      ]
+    },
+    {
+      "id": "ppn-tidak-kena-pajak",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Barang/Jasa Tidak Kena Pajak (Bukan JKP/BKP)",
+      "description": "Daftar barang dan jasa yang tidak termasuk Barang Kena Pajak dan Jasa Kena Pajak sehingga tidak dikenakan PPN. Diatur dalam Pasal 4A UU PPN.",
+      "rate": {
+        "type": "percentage",
+        "value": 0
+      },
+      "taxBase": "Tidak ada (bukan objek PPN)",
+      "payer": "-",
+      "recipient": "-",
+      "withholder": null,
+      "effectiveFrom": "2010-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 42/2009",
+          "article": "Pasal 4A",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4A",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Bukan BKP: hasil pertambangan/panas bumi sebelum diolah, kebutuhan pokok (beras, gabah, jagung, sagu, kedelai), makanan/minuman disajikan (restoran), uang, emas batangan, surat berharga. Bukan JKP: jasa keagamaan, jasa kesenian/hiburan, jasa perhotelan (room), jasa pelayanan kesehatan, jasa pendidikan, dll.",
+      "tags": [
+        "ppn",
+        "tidak-kena-pajak",
+        "exempt",
+        "nontaxable",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Barang/Jasa Tidak Kena Pajak (Bukan JKP/BKP) - tidak kena pajak",
+          "calculation": "Tarif 0%",
+          "result": "Pajak = Rp 0"
+        }
+      ]
+    },
+    {
+      "id": "ppn-jkpt-industri",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "PPN Tidak Dipungut (JKPT) Industri Strategis",
+      "description": "Pembebasan PPN (JKPT/Pajak Tidak Dipungut) untuk penyerahan BKP strategis tertentu yang dibeli oleh pengusaha yang mendapat fasilitas. Fasilitas PPN tidak dipungut diberikan melalui PMK.",
+      "rate": {
+        "type": "percentage",
+        "value": 0
+      },
+      "taxBase": "Harga jual BKP (PPN tidak dipungut)",
+      "payer": "Pembeli BKP (penerima fasilitas)",
+      "recipient": "Negara",
+      "withholder": "PKP penjual (tidak memungut PPN)",
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 16B",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "UU 42/2009",
+          "article": "Pasal 16B",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Fasilitas PPN tidak dipungut diberikan antara lain untuk: mesin dan peralatan industri tertentu, kapal, pesawat, kereta api, BKP untuk keperluan pendidikan/penelitian, BKP untuk perwakilan diplomatik, dll.",
+      "tags": [
+        "ppn",
+        "fasilitas",
+        "jkpt",
+        "tidak-dipungut",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "PPN Tidak Dipungut (JKPT) Industri Strategis - tidak kena pajak",
+          "calculation": "Tarif 0%",
+          "result": "Pajak = Rp 0"
+        }
+      ]
+    },
+    {
+      "id": "ppn-jasa-kegiatan-usaha-persewaan",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Jasa Kegiatan Usaha Persewaan (JKP)",
+      "description": "PPN atas JKP (sewa menyewa BKP/JKP). PPN dipungut penyewa.",
+      "rate": {
+        "type": "percentage",
+        "value": 11
+      },
+      "taxBase": "Dasar Pengenaan Pajak (DPP)",
+      "payer": "Konsumen / pembeli akhir",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (3) huruf a angka 2",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "JKP diperlakukan sebagai penyerahan BKP/JKP yang terutang PPN. Penyewa = pemungut PPN.",
+      "examples": [
+        {
+          "scenario": "Transaksi Jasa Kegiatan Usaha Persewaan (JKP) Rp 100.000.000",
+          "calculation": "11% × 100.000.000",
+          "result": "PPN = Rp 11.000.000"
+        }
+      ],
+      "tags": [
+        "ppn",
+        "detail",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "ppn-dpp-penghitungan",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Dasar Pengenaan Pajak (DPP) PPN",
+      "description": "Aturan penghitungan DPP untuk PPN. DPP umum = harga jual/penggantian/impor.",
+      "rate": {
+        "type": "percentage",
+        "value": 11
+      },
+      "taxBase": "Dasar Pengenaan Pajak (DPP)",
+      "payer": "Konsumen / pembeli akhir",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 8/1983",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44024/uu-no-8-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "DPP PPN = Harga Jual/Penggantian/Nilai Impor/Nilai Ekspor. Industri tertentu: DPP = 65-100% HJE.",
+      "examples": [
+        {
+          "scenario": "Transaksi Dasar Pengenaan Pajak (DPP) PPN Rp 100.000.000",
+          "calculation": "11% × 100.000.000",
+          "result": "PPN = Rp 11.000.000"
+        }
+      ],
+      "tags": [
+        "ppn",
+        "detail",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "ppn-pengkreditan",
+      "category": "PPN",
+      "taxType": "PPN",
+      "transactionType": "Pengkreditan PPN (Input Tax Credit)",
+      "description": "PPN Input - PPN Output = PPN disetor. Syarat: Faktur PPN valid, untuk kegiatan usaha kena PPN.",
+      "rate": {
+        "type": "percentage",
+        "value": 11
+      },
+      "taxBase": "Dasar Pengenaan Pajak (DPP)",
+      "payer": "Konsumen / pembeli akhir",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 8/1983",
+          "article": "Pasal 9",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44024/uu-no-8-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PPN Input dikreditkan dari PPN Output. Syarat: ada Faktur PPN, untuk kegiatan usaha yang kena PPN.",
+      "examples": [
+        {
+          "scenario": "Transaksi Pengkreditan PPN (Input Tax Credit) Rp 100.000.000",
+          "calculation": "11% × 100.000.000",
+          "result": "PPN = Rp 11.000.000"
+        }
+      ],
+      "tags": [
+        "ppn",
+        "detail",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
     }
   ]
 }

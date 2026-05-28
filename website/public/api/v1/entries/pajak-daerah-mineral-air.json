@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pajak-daerah-mineral-air",
+    "category": "Pajak Daerah",
+    "taxType": "Pajak Daerah",
+    "transactionType": "Pajak MBLB",
+    "description": "Pajak atas eksploitasi mineral bukan logam/batuan.",
+    "rate": {
+      "type": "range",
+      "value": [
+        5,
+        25
+      ]
+    },
+    "taxBase": "NJP",
+    "payer": "WP Daerah",
+    "recipient": "Pemerintah Daerah",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 60",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 5-25% dari NJP.",
+    "examples": [
+      {
+        "scenario": "Penambangan pasir NJP Rp 100.000.000",
+        "calculation": "10%×100jt",
+        "result": "Pajak=R10.000.000"
+      }
+    ],
+    "tags": [
+      "pajak-daerah",
+      "mblb"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "pajak-daerah-hotel",
+        "pajak-daerah-restoran",
+        "pajak-daerah-hiburan",
+        "pajak-daerah-reklame",
+        "pajak-daerah-penerangan-jalan",
+        "pajak-daerah-parkir",
+        "pajak-daerah-air-tanah"
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-26-but",
+    "category": "PPh",
+    "taxType": "PPh 26",
+    "transactionType": "Penghasilan BUT (Bentuk Usaha Tetap)",
+    "description": "Pemotongan PPh atas penghasilan yang diterima atau diperoleh BUT dari WP luar negeri. BUT diperlakukan sebagai WP dalam negeri dan dikenakan tarif Pasal 17 ditambah pajak cabang (branch profit tax) 20%.",
+    "rate": {
+      "type": "progressive",
+      "value": "Tarif Pasal 17 + Branch Profit Tax 20%",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 50000000,
+          "rate": 5
+        },
+        {
+          "min": 50000000,
+          "max": 250000000,
+          "rate": 15
+        },
+        {
+          "min": 250000000,
+          "max": 500000000,
+          "rate": 25
+        },
+        {
+          "min": 500000000,
+          "max": null,
+          "rate": 30
+        }
+      ]
+    },
+    "taxBase": "PKP BUT + laba setelah pajak (untuk branch profit tax)",
+    "payer": "BUT (perusahaan luar negeri yang beroperasi di Indonesia)",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 20 ayat (1)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 5 ayat (3)"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "BUT dikenakan PPh normal (Pasal 17) atas laba usaha + Branch Profit Tax 20% atas laba setelah pajak yang dikirim ke kantor pusat. Beberapa P3B mengurangi atau menghapus branch profit tax.",
+    "tags": [
+      "pph-26",
+      "but",
+      "branch-profit-tax",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Penghasilan BUT (Bentuk Usaha Tetap) PKP Rp 100.000.000",
+        "calculation": "Hitung per lapisan progresif",
+        "result": "Pajak = jumlah dari setiap lapisan"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-26-general-2024",
+        "pph-26-dividen",
+        "pph-26-bunga",
+        "pph-26-royalti",
+        "pph-26-jasa-dan-sewa",
+        "pph-26-tax-treaty"
+      ]
+    }
+  }
+}

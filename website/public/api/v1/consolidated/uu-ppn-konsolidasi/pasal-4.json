@@ -1,0 +1,50 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "4",
+    "bab": "II",
+    "bagian": "1",
+    "title": "Bukan Objek PPN - Jasa",
+    "status": "diubah",
+    "description": "Jasa yang tidak dikenakan PPN: jasa keagamaan, jasa kesenian/hiburan, jasa perhotelan, jasa pelayanan, dll.",
+    "keywords": [
+      "bukan objek PPN",
+      "jasa",
+      "pengecualian"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli - daftar jasa bukan objek"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan dan pengurangan daftar pengecualian"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pengurangan pengecualian objek PPN"
+      }
+    ]
+  }
+}

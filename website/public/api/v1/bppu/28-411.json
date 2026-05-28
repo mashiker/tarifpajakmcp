@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "28-411",
+    "count": 2,
+    "codes": [
+      {
+        "kode": "28-411-02",
+        "nama": "Imbalan Charter Kapal Laut dan/atau Pesawat Udara yang Dibayarkan/ Terutang kepada Perusahaan Pelayaran dan/atau Penerbangan Luar Negeri  melalui BUT di Indonesia",
+        "tarif": 2.64,
+        "entryId": "pph-final-transportasi",
+        "entryTransactionType": "Penghasilan dari Pengangkutan dan Charter"
+      },
+      {
+        "kode": "28-411-01",
+        "nama": "Imbalan yang Dibayarkan/Terutang kepada Perusahaan Pelayaran dan/atau Penerbangan Luar Negeri Sehubungan dengan Pengangkutan Orang dan/atau Barang (Selain Berdasarkan Perjanjian Charter)",
+        "tarif": 2.64,
+        "entryId": "pph-final-transportasi",
+        "entryTransactionType": "Penghasilan dari Pengangkutan dan Charter"
+      }
+    ]
+  }
+}

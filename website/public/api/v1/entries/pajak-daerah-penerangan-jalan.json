@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pajak-daerah-penerangan-jalan",
+    "category": "Pajak Daerah",
+    "taxType": "Pajak Daerah",
+    "transactionType": "Pajak Penerangan Jalan",
+    "description": "Pajak atas penggunaan listrik PJU.",
+    "rate": {
+      "type": "range",
+      "value": [
+        1,
+        5
+      ]
+    },
+    "taxBase": "Nilai tenaga listrik",
+    "payer": "WP Daerah",
+    "recipient": "Pemerintah Daerah",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 60",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif PPJ 1-5% dari nilai listrik.",
+    "examples": [
+      {
+        "scenario": "Listrik PJU Rp 5.000.000/bulan",
+        "calculation": "5%×5jt",
+        "result": "PPJ=R250.000"
+      }
+    ],
+    "tags": [
+      "pajak-daerah",
+      "ppj"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "pajak-daerah-hotel",
+        "pajak-daerah-restoran",
+        "pajak-daerah-hiburan",
+        "pajak-daerah-reklame",
+        "pajak-daerah-mineral-air",
+        "pajak-daerah-parkir",
+        "pajak-daerah-air-tanah"
+      ]
+    }
+  }
+}

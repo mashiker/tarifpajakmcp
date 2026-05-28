@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "31A",
+    "bab": "IX",
+    "title": "Thin Capitalization",
+    "status": "ditambah",
+    "description": "Ketentuan thin capitalization — rasio utang terhadap modal untuk WP Badan tertentu.",
+    "keywords": [
+      "thin capitalization",
+      "rasio utang",
+      "DER"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "added",
+        "effectiveDate": "2009-01-01",
+        "summary": "Pasal baru tentang thin cap"
+      }
+    ]
+  }
+}

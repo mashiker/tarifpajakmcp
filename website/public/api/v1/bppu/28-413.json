@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "28-413",
+    "count": 1,
+    "codes": [
+      {
+        "kode": "28-413-01",
+        "nama": "Penghasilan Wajib Pajak Luar Negeri yang Mempunyai Kantor Perwakilan Dagang di Indonesia",
+        "tarif": 0.44,
+        "entryId": "pph-26-general-2024",
+        "entryTransactionType": "Penghasilan WP Luar Negeri Umum"
+      }
+    ]
+  }
+}

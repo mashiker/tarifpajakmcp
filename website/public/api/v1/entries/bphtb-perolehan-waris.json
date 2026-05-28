@@ -1,0 +1,57 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "bphtb-perolehan-waris",
+    "category": "Pajak Daerah",
+    "taxType": "BPHTB",
+    "transactionType": "Perolehan Hak melalui Waris",
+    "description": "BPHTB atas perolehan hak atas tanah dan/atau bangunan melalui waris. NPOPTKP yang lebih tinggi diberikan untuk waris.",
+    "rate": {
+      "type": "percentage",
+      "value": 5
+    },
+    "taxBase": "NPOP dikurangi NPOPTKP waris (Rp 80.000.000 per ahli waris)",
+    "payer": "Ahli waris penerima hak",
+    "recipient": "Pemerintah Daerah",
+    "withholder": "PPAT / Notaris",
+    "effectiveFrom": "2010-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 28/2009",
+        "article": "Pasal 7"
+      },
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 80",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Untuk waris, NPOPTKP = Rp 80.000.000 per ahli waris. Jika ada 3 ahli waris, NPOPTKP = 3 × Rp 80.000.000 = Rp 240.000.000.",
+    "tags": [
+      "bphtb",
+      "waris",
+      "perolehan",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Perolehan Hak melalui Waris Rp 100.000.000",
+        "calculation": "5% × 100.000.000",
+        "result": "Pajak = Rp 5.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "bphtb-perolehan-umum",
+        "bphtb-pengalihan-dinkes"
+      ]
+    }
+  }
+}

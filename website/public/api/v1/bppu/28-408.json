@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "28-408",
+    "count": 1,
+    "codes": [
+      {
+        "kode": "28-408-01",
+        "nama": "Transaksi Penjualan Saham Milik Perusahaan Modal Ventura Tidak di Bursa Efek",
+        "tarif": 0.1,
+        "entryId": "pph-final-transaksi-saham-bursa",
+        "entryTransactionType": "Keuntungan Transaksi Saham di Bursa Efek"
+      }
+    ]
+  }
+}

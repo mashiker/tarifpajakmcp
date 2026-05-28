@@ -1,0 +1,32 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "9B",
+    "bab": "II",
+    "bagian": "2",
+    "title": "Tarif PPN Efektif",
+    "status": "ditambah",
+    "description": "Tarif PPN efektif yang berlaku pada saat peralihan tarif.",
+    "keywords": [
+      "tarif efektif",
+      "peralihan"
+    ],
+    "relatedTaxRates": [
+      "ppn-11pct-effective-2025"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru - tarif efektif peralihan"
+      }
+    ]
+  }
+}

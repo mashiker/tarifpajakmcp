@@ -1,0 +1,156 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-final-bunga-deposito",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Bunga Deposito dan Tabungan",
+    "description": "Pajak final atas bunga deposito dan simpanan tabungan yang dibayar oleh bank.",
+    "rate": {
+      "type": "percentage",
+      "value": 20
+    },
+    "taxBase": "Jumlah bunga bruto",
+    "payer": "Pemilik deposito/tabungan",
+    "recipient": "Negara",
+    "withholder": "Bank pembayar bunga",
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 36/2008",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+      },
+      {
+        "regulation": "PP 131/2000",
+        "article": "Pasal 2",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Bunga tabungan dan deposito bank umum dan BPR dikenakan PPh final 20%. Bebas pajak untuk bunga simpanan di bank perwakilan negara P3B.",
+    "tags": [
+      "pph-final",
+      "bunga",
+      "deposito",
+      "tabungan",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "bppuKode": [
+      {
+        "kode": "28-404-01",
+        "nama": "Bunga Tabungan dan Bunga Deposito yang Ditempatkan di Dalam Negeri yang Dananya Bersumber Selain dari Devisa Hasil Ekspor (DHE)",
+        "tarif": 20
+      },
+      {
+        "kode": "28-404-02",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang IDR bersumber dari DHE tenor 1 bulan)",
+        "tarif": 7.5
+      },
+      {
+        "kode": "28-404-03",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang IDR bersumber dari DHE tenor 3 bulan)",
+        "tarif": 5
+      },
+      {
+        "kode": "28-404-04",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang IDR bersumber dari DHE tenor 6 bulan atau lebih)",
+        "tarif": 0
+      },
+      {
+        "kode": "28-404-05",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor 1 bulan)",
+        "tarif": 10
+      },
+      {
+        "kode": "28-404-06",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor 3 bulan)",
+        "tarif": 7.5
+      },
+      {
+        "kode": "28-404-07",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor 6 bulan)",
+        "tarif": 2.5
+      },
+      {
+        "kode": "28-404-08",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor lebih 6 bulan)",
+        "tarif": 0
+      },
+      {
+        "kode": "28-404-09",
+        "nama": "Bunga Deposito/Tabungan yang Ditempatkan di Luar Negeri Melalui Bank yang Didirikan atau Bertempat Kedudukan di Indonesia atau Cabang Bank Luar Negeri di Indonesia",
+        "tarif": 20
+      },
+      {
+        "kode": "28-404-10",
+        "nama": "Diskonto Sertifikat Bank Indonesia",
+        "tarif": 20
+      },
+      {
+        "kode": "28-404-11",
+        "nama": "Jasa Giro",
+        "tarif": 20
+      },
+      {
+        "kode": "28-401-01",
+        "nama": "Bunga Obligasi, Surat Utang Negara, atau Obligasi Daerah yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap.",
+        "tarif": 15
+      },
+      {
+        "kode": "28-401-06",
+        "nama": "Bunga Obligasi yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap",
+        "tarif": 10
+      },
+      {
+        "kode": "28-401-03",
+        "nama": "Bunga Obligasi yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap yang diadministrasikan oleh BI",
+        "tarif": 10
+      },
+      {
+        "kode": "28-401-04",
+        "nama": "Diskonto Surat Perbendaharaan Negara yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap",
+        "tarif": 20
+      },
+      {
+        "kode": "28-401-05",
+        "nama": "Diskonto Surat Perbendaharaan Negara yang Diterima Wajib Pajak Penduduk/Berkedudukan di Luar Negeri",
+        "tarif": 20
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Bunga Deposito dan Tabungan Rp 100.000.000",
+        "calculation": "20% × 100.000.000",
+        "result": "Pajak = Rp 20.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-final-sewa-tanah",
+        "pph-final-hadiah-undian",
+        "pph-final-transaksi-saham-bursa",
+        "pph-final-konstruksi",
+        "pph-final-bunga-koperasi",
+        "pph-final-transportasi",
+        "pph-final-migas",
+        "pph-final-investasi-lpi",
+        "pph-final-bunga-pre2009",
+        "pph-final-pengalihan-pp131",
+        "pph-final-pengalihan-pp71",
+        "pph-15-penerbangan-domestik",
+        "pph-15-pelayaran-domestik",
+        "pph-15-perusahaan-asuransi",
+        "pph-15-buta-charter",
+        "pph-15-pma-opec",
+        "pph-15-perusahaan-kontraktor"
+      ]
+    }
+  }
+}

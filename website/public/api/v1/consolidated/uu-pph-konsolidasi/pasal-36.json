@@ -1,0 +1,27 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "36",
+    "bab": "X",
+    "title": "Pengesahan Perppu",
+    "status": "berlaku",
+    "description": "Pengesahan Perppu menjadi UU.",
+    "keywords": [
+      "Perppu"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ]
+  }
+}

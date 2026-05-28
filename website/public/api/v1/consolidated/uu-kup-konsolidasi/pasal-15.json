@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "15",
+    "bab": "IV",
+    "title": "Bahasa dan Satuan Pembukuan",
+    "status": "berlaku",
+    "description": "Pembukuan diselenggarakan dalam bahasa Indonesia dan menggunakan satuan rupiah.",
+    "keywords": [
+      "bahasa Indonesia",
+      "rupiah",
+      "pembukuan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ]
+  }
+}

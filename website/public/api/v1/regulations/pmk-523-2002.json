@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pmk-523-2002",
+    "number": "523/KMK.04/2002",
+    "year": 2002,
+    "title": "KMK tentang Norma Penghitungan Penghasilan Neto",
+    "type": "KMK",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002",
+    "status": "berlaku",
+    "referencingEntries": [
+      "pph-21-norma-dokter",
+      "pph-21-norma-pengacara",
+      "pph-21-norma-akuntan",
+      "pph-21-norma-arsitek",
+      "pph-21-norma-notaris",
+      "pph-21-norma-konsultan",
+      "pph-21-norma-pedagang",
+      "pph-21-norma-petani",
+      "pph-21-norma-pengusaha-kecil"
+    ]
+  }
+}

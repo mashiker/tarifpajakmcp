@@ -1,0 +1,28 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "19",
+    "bab": "III",
+    "title": "Dasar Pengenaan PPnBM",
+    "status": "berlaku",
+    "description": "DPP PPnBM = harga jual atau nilai impor.",
+    "keywords": [
+      "DPP",
+      "PPnBM"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      }
+    ]
+  }
+}

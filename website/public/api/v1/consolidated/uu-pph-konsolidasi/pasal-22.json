@@ -1,0 +1,45 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "22",
+    "bab": "VI",
+    "bagian": "2",
+    "title": "Pemotongan PPh 21",
+    "status": "diubah",
+    "description": "Pemberi kerja wajib memotong PPh 21 atas penghasilan yang dibayarkan kepada karyawan. Menggunakan TER pasca PP 58/2023.",
+    "keywords": [
+      "PPh 21",
+      "pemotongan",
+      "pemberi kerja",
+      "TER"
+    ],
+    "relatedTaxRates": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-progressive-annual-2024"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli - PPh 21"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Dasar hukum TER PPh 21"
+      }
+    ]
+  }
+}

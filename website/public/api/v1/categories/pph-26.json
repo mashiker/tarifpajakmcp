@@ -1,0 +1,69 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "category": "PPh",
+    "taxType": "PPh 26",
+    "description": "Pajak Penghasilan Pasal 26 - Pemotongan atas penghasilan yang diterima WP luar negeri",
+    "count": 7,
+    "entries": [
+      {
+        "id": "pph-26-general-2024",
+        "transactionType": "Penghasilan WP Luar Negeri Umum",
+        "rate": "20%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-26-dividen",
+        "transactionType": "Dividen WP Luar Negeri",
+        "rate": "20%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-26-bunga",
+        "transactionType": "Bunga WP Luar Negeri",
+        "rate": "20%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-26-royalti",
+        "transactionType": "Royalti WP Luar Negeri",
+        "rate": "20%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-26-jasa-dan-sewa",
+        "transactionType": "Imbalan Jasa dan Sewa WP Luar Negeri",
+        "rate": "20%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-26-but",
+        "transactionType": "Penghasilan BUT (Bentuk Usaha Tetap)",
+        "rate": "Progresif",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-26-tax-treaty",
+        "transactionType": "Tarif P3B (Tax Treaty)",
+        "rate": "0%–20%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

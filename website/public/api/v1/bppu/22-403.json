@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "22-403",
+    "count": 2,
+    "codes": [
+      {
+        "kode": "22-403-01",
+        "nama": "Penjualan Barang yang Tergolong Sangat Mewah Selain Rumah Beserta Tanahnya, Apartemen, Kondominium dan Sejenisnya",
+        "tarif": 5,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      },
+      {
+        "kode": "22-403-02",
+        "nama": "Penjualan Barang yang Tergolong Sangat Mewah Untuk Rumah Beserta Tanahnya, Apartemen, Kondominium dan Sejenisnya",
+        "tarif": 1,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      }
+    ]
+  }
+}

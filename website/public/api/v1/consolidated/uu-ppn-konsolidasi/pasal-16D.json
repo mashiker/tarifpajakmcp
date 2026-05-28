@@ -1,0 +1,30 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "16D",
+    "bab": "II",
+    "bagian": "8",
+    "title": "Fasilitas PPN",
+    "status": "ditambah",
+    "description": "Fasilitas PPN: tidak dipungut, dibebaskan, dll.",
+    "keywords": [
+      "fasilitas",
+      "tidak dipungut",
+      "dibebaskan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru tentang fasilitas PPN"
+      }
+    ]
+  }
+}

@@ -49,6 +49,13 @@
           "nama": "Ekspor Komoditas Tambang Batubara, Mineral Logam, dan Mineral Bukan Logam yang Dilakukan Oleh Eksportir, Kecuali WP yang Terikat dalam PKP2B dan KK",
           "tarif": 1.5
         }
+      ],
+      "examples": [
+        {
+          "scenario": "Impor Barang Rp 100.000.000",
+          "calculation": "7.5% × 100.000.000",
+          "result": "Pajak = Rp 7.500.000"
+        }
       ]
     },
     {
@@ -95,6 +102,13 @@
           "kode": "22-910-01",
           "nama": "Pemungutan oleh Bendaharawan",
           "tarif": 1.5
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Pembelian Barang oleh Badan Usaha Industri Tertentu Rp 100.000.000",
+          "calculation": "0.25% × 100.000.000",
+          "result": "Pajak = Rp 250.000"
         }
       ]
     },
@@ -296,6 +310,464 @@
           "kode": "22-100-27",
           "nama": "Penjualan Perhiasan Selain dari Emas dan/atau Batu Permata dan/atau Batu Lainnya yang Sejenis oleh Pengusaha Emas Perhiasan dan/atau Emas Batangan",
           "tarif": 0.25
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu Rp 100.000.000",
+          "calculation": "0.5% × 100.000.000",
+          "result": "Pajak = Rp 500.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-22-impor-api-produsen",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Impor Barang (API Produsen)",
+      "description": "Pemungutan PPh 22 atas impor barang yang dilakukan importir yang memiliki Angka Pengenal Importir (API) produsen untuk keperluan industri/produksi.",
+      "rate": {
+        "type": "percentage",
+        "value": 2.5
+      },
+      "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
+      "payer": "Importir (pemilik API produsen)",
+      "recipient": "Negara",
+      "withholder": "Direktorat Jenderal Bea dan Cukai",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 2 ayat (1)"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 2,5% untuk impor dengan API produsen. Berbeda dari non-API/API umum yang dikenakan 7,5%.",
+      "tags": [
+        "pph-22",
+        "impor",
+        "api-produsen",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "22-200-01",
+          "nama": "Pemungutan PPh Pasal 22 atas Impor yang menggunakan API (Angka Pengenal Importir) - Produsen",
+          "tarif": 2.5
+        },
+        {
+          "kode": "22-200-02",
+          "nama": "Pemungutan PPh Pasal 22 atas Impor yang menggunakan API (Angka Pengenal Importir) - Umum",
+          "tarif": 7.5
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Impor Barang (API Produsen) Rp 100.000.000",
+          "calculation": "2.5% × 100.000.000",
+          "result": "Pajak = Rp 2.500.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-22-bendaharawan",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Pemungutan oleh Bendaharawan Pemerintah",
+      "description": "Pemungutan PPh 22 oleh bendaharawan pemerintah atas pembelian barang dan jasa untuk keperluan instansi pemerintah.",
+      "rate": {
+        "type": "percentage",
+        "value": 1.5
+      },
+      "taxBase": "Jumlah bruto pembelian (DPP)",
+      "payer": "Penyedia barang/jasa",
+      "recipient": "Negara",
+      "withholder": "Bendaharawan pemerintah",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 3 ayat (1)"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 1,5% untuk pembelian oleh bendaharawan pemerintah. Untuk pembelian < Rp 2.000.000 tidak dipotong. Tanpa NPWP: 1,5% × 2 = 3%.",
+      "tags": [
+        "pph-22",
+        "bendaharawan",
+        "pemerintah",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "22-910-01",
+          "nama": "Pemungutan oleh Bendaharawan",
+          "tarif": 1.5
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Pemungutan oleh Bendaharawan Pemerintah Rp 100.000.000",
+          "calculation": "1.5% × 100.000.000",
+          "result": "Pajak = Rp 1.500.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-22-ekspor-batubara",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Ekspor Batubara dan Mineral",
+      "description": "Pemungutan PPh 22 atas ekspor komoditas tambang batubara, mineral logam, dan mineral bukan logam oleh eksportir selain WP yang terikat dalam PKP2B dan KK.",
+      "rate": {
+        "type": "percentage",
+        "value": 1.5
+      },
+      "taxBase": "Nilai ekspor bruto (FOB)",
+      "payer": "Eksportir batubara/mineral",
+      "recipient": "Negara",
+      "withholder": "Direktorat Jenderal Bea dan Cukai",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 2 ayat (2)"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 1,5% atas nilai ekspor batubara dan mineral. Untuk WP yang terikat PKP2B (Perjanjian Kerja Sama Pengusahaan Pertambangan Batubara) dan KK (Kontrak Karya) tidak dipungut PPh 22.",
+      "tags": [
+        "pph-22",
+        "ekspor",
+        "batubara",
+        "mineral",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "22-404-01",
+          "nama": "Ekspor Komoditas Tambang Batubara, Mineral Logam, dan Mineral Bukan Logam yang Dilakukan Oleh Eksportir, Kecuali WP yang Terikat dalam PKP2B dan KK",
+          "tarif": 1.5
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Ekspor Batubara dan Mineral Rp 100.000.000",
+          "calculation": "1.5% × 100.000.000",
+          "result": "Pajak = Rp 1.500.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-22-bumn-pembelian",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Pembelian oleh BUMN/Badan Usaha Tertentu",
+      "description": "Pemungutan PPh 22 atas pembayaran atas pembelian barang dan/atau bahan untuk kegiatan usahanya oleh BUMN/Badan Usaha tertentu.",
+      "rate": {
+        "type": "percentage",
+        "value": 1.5
+      },
+      "taxBase": "Jumlah bruto pembelian (DPP)",
+      "payer": "Penyedia barang/bahan",
+      "recipient": "Negara",
+      "withholder": "BUMN/Badan usaha tertentu",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 3 ayat (2)"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 1,5% atas pembelian oleh BUMN/badan usaha tertentu. Untuk pembelian < Rp 2.000.000 tidak dipotong. Tanpa NPWP: 1,5% × 2 = 3%.",
+      "tags": [
+        "pph-22",
+        "bumn",
+        "pembelian",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "22-900-01",
+          "nama": "Pembayaran atas Pembelian Barang dan/atau Bahan untuk Kegiatan Usahanya oleh BUMN/Badan Usaha Tertentu",
+          "tarif": 1.5
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Pembelian oleh BUMN/Badan Usaha Tertentu Rp 100.000.000",
+          "calculation": "1.5% × 100.000.000",
+          "result": "Pajak = Rp 1.500.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-22-pengadaan-pemerintah",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Pengadaan melalui Sistem Informasi Pengadaan Pemerintah",
+      "description": "Pemungutan PPh 22 atas penghasilan sehubungan dengan transaksi penjualan barang, penyerahan jasa, dan/atau persewaan yang dilakukan melalui pihak lain dalam sistem informasi pengadaan pemerintah (e-procurement).",
+      "rate": {
+        "type": "percentage",
+        "value": 0.5
+      },
+      "taxBase": "Jumlah bruto pembayaran",
+      "payer": "Penyedia barang/jasa",
+      "recipient": "Negara",
+      "withholder": "Pihak penyelenggara sistem pengadaan pemerintah",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 4 ayat (1)"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 0,5% atas transaksi melalui sistem informasi pengadaan pemerintah. Kode 22-101-01 (tidak final), 22-101-02 (final).",
+      "tags": [
+        "pph-22",
+        "pengadaan",
+        "pemerintah",
+        "e-procurement",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "22-101-01",
+          "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Tidak Final)",
+          "tarif": 0.5
+        },
+        {
+          "kode": "22-101-02",
+          "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Final)",
+          "tarif": 0.5
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Pengadaan melalui Sistem Informasi Pengadaan Pemerintah Rp 100.000.000",
+          "calculation": "0.5% × 100.000.000",
+          "result": "Pajak = Rp 500.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-22-pmse",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Penjualan melalui Perdagangan Melalui Sistem Elektronik (PMSE/E-Commerce)",
+      "description": "Pemungutan PPh 22 atas penghasilan yang diterima pedagang dalam negeri dari penjualan barang, penyerahan jasa, dan/atau persewaan melalui perdagangan melalui sistem elektronik (PMSE).",
+      "rate": {
+        "type": "percentage",
+        "value": 0.5
+      },
+      "taxBase": "Jumlah bruto nilai transaksi",
+      "payer": "Pedagang dalam negeri",
+      "recipient": "Negara",
+      "withholder": "Penyelenggara PMSE (marketplace/e-commerce)",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 4 ayat (2)"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 0,5% atas transaksi melalui PMSE. Kode 22-102-01 (tidak final), 22-102-02 (final). Berlaku untuk marketplace/e-commerce yang ditunjuk sebagai pemungut.",
+      "tags": [
+        "pph-22",
+        "pmse",
+        "e-commerce",
+        "marketplace",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "22-102-01",
+          "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Tidak Final)",
+          "tarif": 0.5
+        },
+        {
+          "kode": "22-102-02",
+          "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Final)",
+          "tarif": 0.5
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Penjualan melalui Perdagangan Melalui Sistem Elektronik (PMSE/E-Commerce) Rp 100.000.000",
+          "calculation": "0.5% × 100.000.000",
+          "result": "Pajak = Rp 500.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-22-kripto",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Transaksi Aset Kripto",
+      "description": "Pemungutan PPh 22 atas penghasilan sehubungan dengan aset kripto yang dipungut oleh penyelenggara perdagangan melalui sistem elektronik.",
+      "rate": {
+        "type": "range",
+        "value": [
+          0.1,
+          0.2
+        ]
+      },
+      "taxBase": "Nilai transaksi penjualan aset kripto",
+      "payer": "Pedagang/pemilik aset kripto",
+      "recipient": "Negara",
+      "withholder": "Penyelenggara perdagangan kripto (exchange)",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 4 ayat (3)"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Pedagang fisik aset kripto: 0,1%. Bukan pedagang fisik: 0,2%.",
+      "tags": [
+        "pph-22",
+        "kripto",
+        "crypto",
+        "final",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "bppuKode": [
+        {
+          "kode": "22-405-01",
+          "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Merupakan Pedagang Fisik Aset Kripto",
+          "tarif": 0.1
+        },
+        {
+          "kode": "22-405-02",
+          "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Bukan Merupakan Pedagang Fisik Aset Kripto",
+          "tarif": 0.2
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Transaksi Aset Kripto Rp 100.000.000",
+          "calculation": "Tarif 0.1%-0.2% × 100jt",
+          "result": "Pajak = Rp 100.000 - Rp 200.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-22-pre2024",
+      "category": "PPh",
+      "taxType": "PPh 22",
+      "transactionType": "Tarif PPh 22 Pra-PP 60/2023",
+      "description": "Tarif PPh 22 sebelum PP 60/2023 berlaku, masih berdasarkan PP 94/2010 dan KMK 523/2002.",
+      "rate": {
+        "type": "range",
+        "value": [
+          0.25,
+          7.5
+        ]
+      },
+      "taxBase": "Sesuai jenis transaksi",
+      "payer": "Sesuai jenis transaksi",
+      "recipient": "Negara",
+      "withholder": "Sesuai jenis transaksi",
+      "effectiveFrom": "2010-01-01",
+      "effectiveTo": "2023-12-31",
+      "status": "diubah",
+      "legalBasis": [
+        {
+          "regulation": "PP 94/2010",
+          "article": "Pasal 2-4"
+        },
+        {
+          "regulation": "UU 36/2008",
+          "article": "Pasal 22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+        }
+      ],
+      "supersedes": [
+        "pph-22-pre2010"
+      ],
+      "supersededBy": [
+        "pph-22-impor-2024",
+        "pph-22-penjualan-barang-2024"
+      ],
+      "notes": "Tarif pra-PP 60/2023: Impor non-API 7,5%, API produsen 2,5%, API umum 7,5%. Penjualan BBM 0,5%. Pembelian bahan industri 0,25%. Bendaharawan 1,5%.",
+      "tags": [
+        "pph-22",
+        "historis",
+        "pp-94-2010"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Tarif PPh 22 Pra-PP 60/2023 Rp 100.000.000",
+          "calculation": "Tarif 0.25%-7.5% × 100jt",
+          "result": "Pajak = Rp 250.000 - Rp 7.500.000"
         }
       ]
     }

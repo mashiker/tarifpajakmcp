@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "uu-39-2007",
+    "number": "39/2007",
+    "year": 2007,
+    "title": "UU tentang Perubahan UU 11/1995 tentang Cukai",
+    "type": "UU",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/45946/uu-no-39-tahun-2007",
+    "status": "berlaku",
+    "referencingEntries": [
+      "cukai-hasil-tembakau",
+      "cukai-eti-alkohol"
+    ]
+  }
+}

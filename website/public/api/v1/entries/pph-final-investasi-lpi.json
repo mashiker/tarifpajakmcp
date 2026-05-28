@@ -1,0 +1,85 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-final-investasi-lpi",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Penghasilan dari Kerja Sama dengan LPI / Jasa Maklon Internasional",
+    "description": "Pemotongan PPh atas penghasilan yang diterima atau diperoleh sehubungan dengan kerja sama dengan Lembaga Pengelola Investasi (LPI) dan jasa maklon internasional di bidang produksi mainan anak-anak.",
+    "rate": {
+      "type": "range",
+      "value": [
+        2.1,
+        7.5
+      ]
+    },
+    "taxBase": "Jumlah bruto penghasilan",
+    "payer": "WP penerima penghasilan",
+    "recipient": "Negara",
+    "withholder": "LPI / Pemberi kerja",
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 3"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Terdiri dari 2 kode objek pajak BPPU dengan tarif 2.1%, 7.5%.",
+    "examples": [
+      {
+        "scenario": "Penghasilan dari Kerja Sama dengan LPI / Jasa Maklon Internasional Rp 100.000.000",
+        "calculation": "Tarif 2.1%-7.5% × 100jt",
+        "result": "Pajak = Rp 2.100.000 - Rp 7.500.000"
+      }
+    ],
+    "tags": [
+      "pph-final",
+      "investasi"
+    ],
+    "bppuKode": [
+      {
+        "kode": "28-499-02",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Sehubungan dengan Kerja Sama dengan Lembaga Pengelola Investasi (LPI)",
+        "tarif": 7.5
+      },
+      {
+        "kode": "28-499-01",
+        "nama": "Penghasilan Wajib Pajak yang Melakukan Kegiatan Usaha Jasa Maklon (Contract Manufacturing) Internasional di Bidang Produksi Mainan Anak-Anak",
+        "tarif": 2.1
+      }
+    ],
+    "lastVerified": "2026-05-26",
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-final-bunga-deposito",
+        "pph-final-sewa-tanah",
+        "pph-final-hadiah-undian",
+        "pph-final-transaksi-saham-bursa",
+        "pph-final-konstruksi",
+        "pph-final-bunga-koperasi",
+        "pph-final-transportasi",
+        "pph-final-migas",
+        "pph-final-bunga-pre2009",
+        "pph-final-pengalihan-pp131",
+        "pph-final-pengalihan-pp71",
+        "pph-15-penerbangan-domestik",
+        "pph-15-pelayaran-domestik",
+        "pph-15-perusahaan-asuransi",
+        "pph-15-buta-charter",
+        "pph-15-pma-opec",
+        "pph-15-perusahaan-kontraktor"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-80-2007",
+    "number": "80/2007",
+    "year": 2007,
+    "title": "PP tentang Perubahan Bea Meterai",
+    "type": "PP",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/47779/pp-no-80-tahun-2007",
+    "status": "dicabut",
+    "effectiveDate": "2007-01-01",
+    "referencingEntries": [
+      "bea-meterai-pre2021"
+    ]
+  }
+}

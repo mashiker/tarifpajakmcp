@@ -1,0 +1,38 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "group": "pph-final-pengalihan",
+    "count": 2,
+    "description": "Timeline pph final pengalihan",
+    "entries": [
+      {
+        "id": "pph-final-pengalihan-pp131",
+        "transactionType": "Pengalihan Hak atas Tanah/Bangunan (PP 131/2000)",
+        "rate": "5%",
+        "effectiveFrom": "2000-12-29",
+        "effectiveTo": "2008-12-31",
+        "status": "dicabut",
+        "legalBasis": "PP 131/2000 Pasal 5",
+        "supersedes": [],
+        "supersededBy": [
+          "pph-final-pengalihan-pp71"
+        ]
+      },
+      {
+        "id": "pph-final-pengalihan-pp71",
+        "transactionType": "Pengalihan Hak atas Tanah/Bangunan (PP 71/2008)",
+        "rate": "0%–2.5%",
+        "effectiveFrom": "2009-01-01",
+        "effectiveTo": null,
+        "status": "berlaku",
+        "legalBasis": "PP 71/2008 Pasal 2-4",
+        "supersedes": [
+          "pph-final-pengalihan-pp131"
+        ],
+        "supersededBy": []
+      }
+    ]
+  }
+}

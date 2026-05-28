@@ -1,0 +1,30 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pmk-131-2024",
+    "number": "131",
+    "year": 2024,
+    "title": "Penentuan Tarif Pajak Pertambahan Nilai",
+    "type": "PMK",
+    "effectiveDate": "2025-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "uu-7-2021-hpp",
+      "uu-42-2009"
+    ],
+    "referencingEntries": [
+      "pph-final-bunga-deposito",
+      "pph-final-sewa-tanah",
+      "pph-final-hadiah-undian",
+      "pph-final-pengalihan-pp131",
+      "ppn-11pct-effective-2025",
+      "ppn-impor-bkp",
+      "ppn-pmse",
+      "ppn-jasa-tenaga-listrik",
+      "ppn-jasa-telekomunikasi"
+    ]
+  }
+}

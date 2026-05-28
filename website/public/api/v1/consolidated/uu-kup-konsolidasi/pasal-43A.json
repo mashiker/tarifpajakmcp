@@ -1,0 +1,40 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "43A",
+    "bab": "XII",
+    "title": "Sanksi Keterlambatan Penyampaian SPT",
+    "status": "ditambah",
+    "description": "Sanksi denda atas keterlambatan penyampaian SPT.",
+    "keywords": [
+      "sanksi",
+      "SPT",
+      "keterlambatan",
+      "Rp 1.000.000"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "added",
+        "effectiveDate": "2008-01-01",
+        "summary": "Pasal baru tentang sanksi keterlambatan SPT"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan besaran sanksi"
+      }
+    ]
+  }
+}

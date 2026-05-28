@@ -1,0 +1,98 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-21-ter-monthly-2024",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "Gaji/Bulan TER",
+    "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan atas penghasilan pekerjaan, jasa, atau kegiatan WP Orang Pribadi dalam negeri. Menggantikan metode tarif progresif lama untuk pemotongan bulanan.",
+    "rate": {
+      "type": "formula",
+      "value": "TER sesuai tabel lampiran PP 58/2023 (TER A/B/C berdasarkan status PTKP)",
+      "effectiveRate": "0% - 30% sesuai tabel TER"
+    },
+    "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
+    "payer": "WP Orang Pribadi dalam negeri (pegawai/freelancer)",
+    "recipient": "Negara",
+    "withholder": "Pemberi kerja/pemberi penghasilan",
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 58/2023",
+        "article": "Pasal 2-4",
+        "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023",
+        "pasalUrl": "https://pasal.id/peraturan/pp/pp-no-58-tahun-2023"
+      },
+      {
+        "regulation": "PMK 168/2023",
+        "article": "Pasal 2-15",
+        "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 17 ayat (1) huruf a",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+        "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [
+      "pph-21-progressive-monthly-pre2024"
+    ],
+    "supersededBy": [],
+    "notes": "TER berlaku untuk pemotongan bulanan. Pada akhir tahun tetap dilakukan perhitungan dengan tarif progresif Pasal 17 UU PPh untuk SPT Tahunan. Terdapat 3 kategori TER: TER A (tidak menikah tanpa tanggungan), TER B (menikah), TER C (menikah dengan tanggungan).",
+    "examples": [
+      {
+        "scenario": "Pegawai single, gaji Rp 10.000.000/bulan",
+        "calculation": "TER A Category = 3% × Rp 10.000.000",
+        "result": "PPh 21 = Rp 300.000/bulan"
+      }
+    ],
+    "tags": [
+      "pph-21",
+      "ter",
+      "pegawai",
+      "bulanan",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "relatedEntries": {
+      "supersedes": [
+        "pph-21-progressive-monthly-pre2024"
+      ],
+      "sameCategory": [
+        "pph-21-progressive-annual-2024",
+        "pph-21-progressive-pre2022",
+        "pph-21-non-taxable-income",
+        "pph-21-honorarium-bukan-pegawai",
+        "pph-21-pegawai-tidak-tetap",
+        "pph-21-shu-koperasi",
+        "pph-21-natura-kenikmatan",
+        "pph-21-dana-pensiun",
+        "pph-21-progressive-pre2009",
+        "pph-21-progressive-uulama1983",
+        "pph-21-progressive-uulama1994",
+        "pph-21-progressive-monthly-pre2024",
+        "pph-21-ptkp-1984",
+        "pph-21-ptkp-1995",
+        "pph-21-ptkp-2005",
+        "pph-21-ptkp-2009",
+        "pph-21-ter-a-detail",
+        "pph-21-ter-b-detail",
+        "pph-21-ter-c-detail",
+        "pph-21-norma-dokter",
+        "pph-21-norma-pengacara",
+        "pph-21-norma-akuntan",
+        "pph-21-norma-arsitek",
+        "pph-21-norma-notaris",
+        "pph-21-norma-konsultan",
+        "pph-21-norma-pedagang",
+        "pph-21-norma-petani",
+        "pph-21-norma-pengusaha-kecil"
+      ]
+    }
+  }
+}

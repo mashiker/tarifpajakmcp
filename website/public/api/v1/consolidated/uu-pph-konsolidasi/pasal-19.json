@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "19",
+    "bab": "VI",
+    "bagian": "1",
+    "title": "PPh Terutang",
+    "status": "diubah",
+    "description": "PPh terutang untuk WP OP dihitung berdasarkan tarif Pasal 17 dikali PKP. Untuk WP Badan berdasarkan tarif Pasal 17 ayat (2) dikali PKP.",
+    "keywords": [
+      "PPh terutang",
+      "perhitungan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan perhitungan"
+      }
+    ]
+  }
+}

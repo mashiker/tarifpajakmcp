@@ -1,0 +1,182 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "year": 1993,
+    "count": 19,
+    "entries": [
+      {
+        "id": "bea-masuk-umum-mf",
+        "taxType": "Bea Masuk",
+        "transactionType": "Bea Masuk Umum (MFN)",
+        "rate": "0%–40%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-masuk-bmt",
+        "taxType": "Bea Masuk",
+        "transactionType": "Bea Masuk Tinggi (BMT) — Barang Mewah",
+        "rate": "40%–150%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-meterai-1000",
+        "taxType": "Bea Meterai",
+        "transactionType": "Dokumen / Surat (UU 13/1985)",
+        "rate": "0%",
+        "status": "dicabut",
+        "effectiveFrom": "1986-01-01",
+        "effectiveTo": "1999-12-31"
+      },
+      {
+        "id": "pph-21-progressive-uulama1983",
+        "taxType": "PPh 21",
+        "transactionType": "Tarif Progresif UU 7/1983",
+        "rate": "Progresif",
+        "status": "dicabut",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "1994-12-31"
+      },
+      {
+        "id": "pph-21-progressive-monthly-pre2024",
+        "taxType": "PPh 21",
+        "transactionType": "Pemotongan Bulanan Progresif (Pra-TER)",
+        "rate": "Tarif Pasal 17 × (penghasilan neto bulanan × 12 - PTKP) setelah annualisasi",
+        "status": "dicabut",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "2023-12-31"
+      },
+      {
+        "id": "pph-21-ptkp-1984",
+        "taxType": "PPh 21",
+        "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+        "rate": "PTKP sesuai regulasi berlaku",
+        "status": "dicabut",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "1994-12-31"
+      },
+      {
+        "id": "pph-23-jasa-pre2001",
+        "taxType": "PPh 23",
+        "transactionType": "Imbalan Jasa & Sewa (UU 7/1983)",
+        "rate": "10%–15%",
+        "status": "dicabut",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "2000-12-31"
+      },
+      {
+        "id": "pph-26-tax-treaty",
+        "taxType": "PPh 26",
+        "transactionType": "Tarif P3B (Tax Treaty)",
+        "rate": "0%–20%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-15-penerbangan-domestik",
+        "taxType": "PPh 15",
+        "transactionType": "Penerbangan Dalam Negeri",
+        "rate": "22%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-15-pelayaran-domestik",
+        "taxType": "PPh 15",
+        "transactionType": "Pelayaran Dalam Negeri",
+        "rate": "22%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-15-perusahaan-asuransi",
+        "taxType": "PPh 15",
+        "transactionType": "Perusahaan Asuransi Dalam Negeri",
+        "rate": "22%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-15-buta-charter",
+        "taxType": "PPh 15",
+        "transactionType": "Penyewaan Pesawat/Kapal dari Luar Negeri",
+        "rate": "6.36%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-15-pma-opec",
+        "taxType": "PPh 15",
+        "transactionType": "Perusahaan Minyak Asing (PMA)",
+        "rate": "48%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-15-perusahaan-kontraktor",
+        "taxType": "PPh 15",
+        "transactionType": "Kontraktor/Operator Tambang",
+        "rate": "22%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-badan-pre2001",
+        "taxType": "PPh Badan",
+        "transactionType": "Penghasilan Kena Pajak Badan (UU 7/1983)",
+        "rate": "Progresif",
+        "status": "dicabut",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "2000-12-31"
+      },
+      {
+        "id": "ppn-10pct",
+        "taxType": "PPN",
+        "transactionType": "Penyerahan BKP/JKP (Pra-HPP)",
+        "rate": "10%",
+        "status": "diubah",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": "2022-03-31"
+      },
+      {
+        "id": "ppn-jasa-kegiatan-usaha-persewaan",
+        "taxType": "PPN",
+        "transactionType": "Jasa Kegiatan Usaha Persewaan (JKP)",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-dpp-penghitungan",
+        "taxType": "PPN",
+        "transactionType": "Dasar Pengenaan Pajak (DPP) PPN",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-pengkreditan",
+        "taxType": "PPN",
+        "transactionType": "Pengkreditan PPN (Input Tax Credit)",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

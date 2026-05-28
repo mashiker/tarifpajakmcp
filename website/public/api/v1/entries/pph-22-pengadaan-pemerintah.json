@@ -1,0 +1,78 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-22-pengadaan-pemerintah",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Pengadaan melalui Sistem Informasi Pengadaan Pemerintah",
+    "description": "Pemungutan PPh 22 atas penghasilan sehubungan dengan transaksi penjualan barang, penyerahan jasa, dan/atau persewaan yang dilakukan melalui pihak lain dalam sistem informasi pengadaan pemerintah (e-procurement).",
+    "rate": {
+      "type": "percentage",
+      "value": 0.5
+    },
+    "taxBase": "Jumlah bruto pembayaran",
+    "payer": "Penyedia barang/jasa",
+    "recipient": "Negara",
+    "withholder": "Pihak penyelenggara sistem pengadaan pemerintah",
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 4 ayat (1)"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 22",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 0,5% atas transaksi melalui sistem informasi pengadaan pemerintah. Kode 22-101-01 (tidak final), 22-101-02 (final).",
+    "tags": [
+      "pph-22",
+      "pengadaan",
+      "pemerintah",
+      "e-procurement",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "bppuKode": [
+      {
+        "kode": "22-101-01",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Tidak Final)",
+        "tarif": 0.5
+      },
+      {
+        "kode": "22-101-02",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Final)",
+        "tarif": 0.5
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Pengadaan melalui Sistem Informasi Pengadaan Pemerintah Rp 100.000.000",
+        "calculation": "0.5% × 100.000.000",
+        "result": "Pajak = Rp 500.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-22-impor-2024",
+        "pph-22-pembelian-barang-2024",
+        "pph-22-penjualan-barang-2024",
+        "pph-22-impor-api-produsen",
+        "pph-22-bendaharawan",
+        "pph-22-ekspor-batubara",
+        "pph-22-bumn-pembelian",
+        "pph-22-pmse",
+        "pph-22-kripto",
+        "pph-22-pre2024"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "description": "Data untuk kalkulasi PPh Badan",
+    "rates": {
+      "umum": 22,
+      "goPublic": 20,
+      "umkm": 11,
+      "ikn": 0
+    },
+    "formula": {
+      "pphBadan": "PPh = Tarif × PKP",
+      "pkp": "PKP = Penghasilan Neto - PTKP Badan"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "bea-masuk-anti-dumping",
+    "category": "Bea Masuk",
+    "taxType": "Bea Masuk",
+    "transactionType": "Bea Masuk Anti-Dumping (BMAD)",
+    "description": "BM tambahan atas impor barang yang masuk dengan harga di bawah normal (dumping).",
+    "rate": {
+      "type": "range",
+      "value": [
+        5,
+        100
+      ]
+    },
+    "taxBase": "Nilai Pabean (CIF)",
+    "payer": "Importir barang dumping",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1996-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 10/1995",
+        "article": "Pasal 20-22",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44070/uu-no-10-tahun-1995"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "BMAD berdasarkan penyelidikan KPUB. Contoh: baja China 5-30%. Masa berlaku 5 tahun.",
+    "examples": [
+      {
+        "scenario": "Impor baja China kena BMAD 15%, CIF Rp 1.000.000.000",
+        "calculation": "BM normal 15% + BMAD 15% = 30%",
+        "result": "Total BM = Rp 300.000.000"
+      }
+    ],
+    "tags": [
+      "bea-masuk",
+      "anti-dumping",
+      "bmad",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "bea-masuk-umum-mf",
+        "bea-masuk-asean-atiga",
+        "bea-masuk-bmt"
+      ]
+    }
+  }
+}

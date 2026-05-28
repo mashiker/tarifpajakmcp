@@ -37,7 +37,321 @@
         "dokumen",
         "berlaku"
       ],
-      "lastVerified": "2026-05-26"
+      "lastVerified": "2026-05-26",
+      "examples": [
+        {
+          "scenario": "Dokumen dengan nilai tertentu",
+          "calculation": "Sesuai formula yang berlaku",
+          "result": "Lihat ketentuan detail"
+        }
+      ]
+    },
+    {
+      "id": "bea-meterai-cek-bilyet",
+      "category": "Bea Meterai",
+      "taxType": "Bea Meterai",
+      "transactionType": "Cek dan Bilyet Giro",
+      "description": "Bea meterai atas cek dan bilyet giro yang diterima sebagai alat pembayaran atau pemindahan uang.",
+      "rate": {
+        "type": "formula",
+        "value": "Rp 10.000 per lembar"
+      },
+      "taxBase": "Setiap lembar cek/bilyet giro",
+      "payer": "Pihak yang menandatangani / mengeluarkan cek/bilyet giro",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2021-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 10/2020",
+          "article": "Pasal 3 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Cek dan bilyet giro dikenakan bea meterai Rp 10.000 per lembar, terlepas dari nominalnya.",
+      "tags": [
+        "bea-meterai",
+        "cek",
+        "bilyet-giro",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Cek dan Bilyet Giro",
+          "calculation": "Sesuai formula yang berlaku",
+          "result": "Lihat ketentuan detail"
+        }
+      ]
+    },
+    {
+      "id": "bea-meterai-kontrak",
+      "category": "Bea Meterai",
+      "taxType": "Bea Meterai",
+      "transactionType": "Kontrak/Perjanjian",
+      "description": "Bea meterai atas surat perjanjian, kontrak, dan dokumen bernilai > Rp 5.000.000 yang diterima sebagai alat pembuktian.",
+      "rate": {
+        "type": "formula",
+        "value": "Rp 10.000 per lembar"
+      },
+      "taxBase": "Dokumen kontrak/perjanjian dengan nilai > Rp 5.000.000",
+      "payer": "Pihak yang menandatangani kontrak",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2021-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 10/2020",
+          "article": "Pasal 3-5",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Kontrak/perjanjian dengan nilai ≤ Rp 5.000.000 tidak dikenai bea meterai. Yang > Rp 5.000.000: Rp 10.000 per lembar. Elektronik (e-meterai): Rp 10.000.",
+      "tags": [
+        "bea-meterai",
+        "kontrak",
+        "perjanjian",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Kontrak/Perjanjian",
+          "calculation": "Sesuai formula yang berlaku",
+          "result": "Lihat ketentuan detail"
+        }
+      ]
+    },
+    {
+      "id": "bea-meterai-surat-berharga",
+      "category": "Bea Meterai",
+      "taxType": "Bea Meterai",
+      "transactionType": "Surat Berharga dan Efek",
+      "description": "Bea meterai atas surat berharga, termasuk saham, obligasi, dan efek lainnya.",
+      "rate": {
+        "type": "formula",
+        "value": "Rp 10.000 per lembar"
+      },
+      "taxBase": "Setiap lembar surat berharga",
+      "payer": "Pihak yang menerbitkan surat berharga",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2021-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 10/2020",
+          "article": "Pasal 3 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Surat berharga termasuk saham, obligasi, commercial paper, dan efek bersifat utang lainnya yang diterbitkan dalam bentuk warkat.",
+      "tags": [
+        "bea-meterai",
+        "surat-berharga",
+        "efek",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Surat Berharga dan Efek",
+          "calculation": "Sesuai formula yang berlaku",
+          "result": "Lihat ketentuan detail"
+        }
+      ]
+    },
+    {
+      "id": "bea-meterai-nota-kredit",
+      "category": "Bea Meterai",
+      "taxType": "Bea Meterai",
+      "transactionType": "Nota Kredit dan Dokumen Pengganti",
+      "description": "Bea meterai atas nota kredit dan dokumen yang menjadi pengganti nota kredit, kwitansi, atau tanda terima pembayaran.",
+      "rate": {
+        "type": "formula",
+        "value": "Rp 10.000 per lembar"
+      },
+      "taxBase": "Nota kredit dengan nilai > Rp 5.000.000",
+      "payer": "Pihak yang menandatangani nota kredit",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2021-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 10/2020",
+          "article": "Pasal 3-5",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Nota kredit dengan nilai ≤ Rp 5.000.000: tidak kena bea meterai. > Rp 5.000.000: Rp 10.000 per lembar.",
+      "tags": [
+        "bea-meterai",
+        "nota-kredit",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Nota Kredit dan Dokumen Pengganti",
+          "calculation": "Sesuai formula yang berlaku",
+          "result": "Lihat ketentuan detail"
+        }
+      ]
+    },
+    {
+      "id": "bea-meterai-pre2021",
+      "category": "Bea Meterai",
+      "taxType": "Bea Meterai",
+      "transactionType": "Bea Meterai Pra-UU 10/2020",
+      "description": "Bea meterai Rp 6.000 berdasarkan UU 13/1985 yang berlaku sebelum UU 10/2020.",
+      "rate": {
+        "type": "formula",
+        "value": "Rp 6.000 per lembar"
+      },
+      "taxBase": "Dokumen dengan nilai > Rp 1.000.000",
+      "payer": "Pihak yang menandatangani dokumen",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2007-01-01",
+      "effectiveTo": "2020-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "PP 80/2007",
+          "article": "Pasal 1",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47779/pp-no-80-tahun-2007"
+        },
+        {
+          "regulation": "UU 13/1985",
+          "article": "Pasal 3",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44231/uu-no-13-tahun-1985"
+        }
+      ],
+      "supersedes": [
+        "bea-meterai-3000"
+      ],
+      "supersededBy": [
+        "bea-meterai-dokumen-2021"
+      ],
+      "notes": "Bea Meterai Rp 6.000 berdasarkan PP 80/2007 untuk dokumen bernilai > Rp 1.000.000. Berlaku 2007-2020.",
+      "tags": [
+        "bea-meterai",
+        "historis",
+        "dicabut"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Bea Meterai Pra-UU 10/2020",
+          "calculation": "Sesuai formula yang berlaku",
+          "result": "Lihat ketentuan detail"
+        }
+      ]
+    },
+    {
+      "id": "bea-meterai-1000",
+      "category": "Bea Meterai",
+      "taxType": "Bea Meterai",
+      "transactionType": "Dokumen / Surat (UU 13/1985)",
+      "description": "Bea Meterai Rp 1.000 berdasarkan UU 13/1985. Berlaku untuk dokumen dengan nilai > Rp 200.000. Periode 1986-1999.",
+      "rate": {
+        "type": "percentage",
+        "value": 0,
+        "effectiveRate": "Rp 1.000 per lembar untuk dokumen > Rp 200.000"
+      },
+      "taxBase": "Dokumen dengan nominal > Rp 200.000",
+      "payer": "Pihak yang menandatangani / membuat dokumen",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1986-01-01",
+      "effectiveTo": "1999-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "UU 13/1985",
+          "article": "Pasal 3",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44231/uu-no-13-tahun-1985"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [
+        "bea-meterai-3000"
+      ],
+      "notes": "Bea Meterai pertama: Rp 1.000/lembar untuk dokumen bernilai > Rp 200.000.",
+      "examples": [
+        {
+          "scenario": "Kontrak Rp 500.000 tahun 1995",
+          "calculation": "Dokumen > Rp 200.000 → Bea Meterai Rp 1.000",
+          "result": "Bea Meterai = Rp 1.000"
+        }
+      ],
+      "tags": [
+        "bea-meterai",
+        "historis",
+        "uu-13-1985"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "bea-meterai-3000",
+      "category": "Bea Meterai",
+      "taxType": "Bea Meterai",
+      "transactionType": "Dokumen / Surat (PP 23/2000)",
+      "description": "Bea Meterai Rp 3.000 berdasarkan PP 23/2000. Berlaku untuk dokumen dengan nilai > Rp 500.000. Periode 2000-2006.",
+      "rate": {
+        "type": "percentage",
+        "value": 0,
+        "effectiveRate": "Rp 3.000 per lembar untuk dokumen > Rp 500.000"
+      },
+      "taxBase": "Dokumen dengan nominal > Rp 500.000",
+      "payer": "Pihak yang menandatangani / membuat dokumen",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2000-01-01",
+      "effectiveTo": "2006-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "PP 23/2000",
+          "article": "Pasal 1",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44780/pp-no-23-tahun-2000"
+        }
+      ],
+      "supersedes": [
+        "bea-meterai-1000"
+      ],
+      "supersededBy": [
+        "bea-meterai-pre2021"
+      ],
+      "notes": "PP 23/2000: naik dari Rp 1.000 ke Rp 3.000, batas dari Rp 200.000 ke Rp 500.000.",
+      "examples": [
+        {
+          "scenario": "Surat perjanjian Rp 1.000.000 tahun 2003",
+          "calculation": "Dokumen > Rp 500.000 → Rp 3.000",
+          "result": "Bea Meterai = Rp 3.000"
+        }
+      ],
+      "tags": [
+        "bea-meterai",
+        "historis",
+        "pp-23-2000"
+      ],
+      "lastVerified": "2026-05-28"
     }
   ]
 }

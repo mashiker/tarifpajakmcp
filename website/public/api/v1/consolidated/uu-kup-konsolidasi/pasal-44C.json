@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "44C",
+    "bab": "XIII",
+    "title": "Pertukaran Informasi Perpajakan",
+    "status": "ditambah",
+    "description": "Ketentuan pertukaran informasi perpajakan dengan yurisdiksi lain.",
+    "keywords": [
+      "EOI",
+      "pertukaran informasi",
+      "BEPS"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru tentang exchange of information"
+      }
+    ]
+  }
+}

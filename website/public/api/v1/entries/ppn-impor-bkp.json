@@ -1,0 +1,75 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "ppn-impor-bkp",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Impor Barang Kena Pajak",
+    "description": "PPN atas impor Barang Kena Pajak Berwujud yang dikenakan dan dipungut bersamaan dengan pemungutan Bea Masuk, Cukai, dan pungutan lainnya oleh Direktorat Jenderal Bea dan Cukai.",
+    "rate": {
+      "type": "percentage",
+      "value": 11,
+      "effectiveRate": "11% (PMK 131/2024)"
+    },
+    "taxBase": "Nilai pabean + Bea Masuk + pungutan lain (CIF + BM + Cukai)",
+    "payer": "Importir",
+    "recipient": "Negara",
+    "withholder": "Direktorat Jenderal Bea dan Cukai",
+    "effectiveFrom": "2025-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 7 ayat (1)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "UU 42/2009",
+        "article": "Pasal 8",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+      },
+      {
+        "regulation": "PMK 131/2024",
+        "article": "Pasal 2",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "PPN impor = tarif PPN × (Nilai CIF + BM + Cukai). Tidak ada pemisahan PPN-in dan PPN-out seperti pada penyerahan domestik.",
+    "examples": [
+      {
+        "scenario": "Impor barang CIF USD 10.000 (Rp 160.000.000), BM 10%, PPN 11%",
+        "calculation": "BM = 10% × 160jt = 16jt. DPP = 160jt + 16jt = 176jt. PPN = 11% × 176jt",
+        "result": "PPN Impor = Rp 19.360.000"
+      }
+    ],
+    "tags": [
+      "ppn",
+      "impor",
+      "bkp",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "relatedEntries": {
+      "sameCategory": [
+        "ppn-11pct-effective-2025",
+        "ppn-11pct-2022",
+        "ppn-10pct",
+        "ppn-ekspor-bkp",
+        "ppn-pmse",
+        "ppn-jasa-tenaga-listrik",
+        "ppn-jasa-telekomunikasi",
+        "ppn-ekspor-jkp",
+        "ppn-tidak-kena-pajak",
+        "ppn-jkpt-industri",
+        "ppn-jasa-kegiatan-usaha-persewaan",
+        "ppn-dpp-penghitungan",
+        "ppn-pengkreditan"
+      ]
+    }
+  }
+}

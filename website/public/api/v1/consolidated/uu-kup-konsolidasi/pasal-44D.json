@@ -1,0 +1,30 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "44D",
+    "bab": "XIII",
+    "title": "Kewajiban Pelaporan Keuangan",
+    "status": "ditambah",
+    "description": "Ketentuan Country-by-Country Reporting dan pelaporan keuangan untuk WP MNE Group.",
+    "keywords": [
+      "CbCR",
+      "BEPS",
+      "MNE",
+      "pelaporan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru tentang CbCR"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-23-jasa-2001",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Imbalan Jasa & Sewa (UU 17/2000)",
+    "description": "Tarif PPh 23 berdasarkan UU 17/2000. Tarif jasa diturunkan drastis dari 15% menjadi 2%. Sewa tetap 10%. Berlaku 2001-2021.",
+    "rate": {
+      "type": "range",
+      "value": [
+        2,
+        10
+      ]
+    },
+    "taxBase": "Jumlah bruto imbalan jasa / sewa",
+    "payer": "WP dalam negeri / BUT penerima penghasilan",
+    "recipient": "Negara",
+    "withholder": "Wajib Pajak badan pemberi penghasilan / bendahara pemerintah",
+    "effectiveFrom": "2001-01-01",
+    "effectiveTo": "2021-12-31",
+    "status": "diubah",
+    "legalBasis": [
+      {
+        "regulation": "UU 17/2000",
+        "article": "Pasal 23 ayat (1) huruf c",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44066/uu-no-17-tahun-2000"
+      }
+    ],
+    "supersedes": [
+      "pph-23-jasa-pre2001"
+    ],
+    "supersededBy": [
+      "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-lain-4pct"
+    ],
+    "notes": "UU 17/2000 menurunkan tarif PPh 23 jasa dari 15% ke 2% — penurunan sangat signifikan. Sewa tetap 10%.",
+    "examples": [
+      {
+        "scenario": "Jasa konsultasi Rp 50.000.000 tahun 2010",
+        "calculation": "2% × 50.000.000",
+        "result": "PPh 23 = Rp 1.000.000"
+      }
+    ],
+    "tags": [
+      "pph-23",
+      "historis",
+      "uu-17-2000"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-23-jasa-lain-2pct",
+        "pph-23-jasa-lain-4pct"
+      ],
+      "supersedes": [
+        "pph-23-jasa-pre2001"
+      ],
+      "sameCategory": [
+        "pph-23-jasa-lain-2pct",
+        "pph-23-jasa-lain-4pct",
+        "pph-23-jasa-katering-2pct",
+        "pph-23-sewa-tanah-bangunan",
+        "pph-23-hadiah-penghargaan",
+        "pph-23-jasa-pre2001"
+      ]
+    }
+  }
+}

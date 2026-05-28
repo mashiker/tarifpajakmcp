@@ -1,0 +1,50 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "10",
+    "bab": "IV",
+    "title": "Kewajiban Pembukuan",
+    "status": "diubah",
+    "description": "Kewajiban menyelenggarakan pembukuan atau pencatatan bagi WP yang menjalankan usaha atau melakukan pekerjaan bebas.",
+    "keywords": [
+      "pembukuan",
+      "pencatatan",
+      "usaha",
+      "pekerjaan bebas"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli tentang kewajiban pembukuan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "partially_amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penyesuaian ketentuan pembukuan untuk UMKM"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan threshold pembukuan/pencatatan"
+      }
+    ]
+  }
+}

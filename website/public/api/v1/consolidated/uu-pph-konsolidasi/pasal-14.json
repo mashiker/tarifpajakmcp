@@ -1,0 +1,61 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "14",
+    "bab": "IV",
+    "bagian": "1",
+    "title": "Penyusutan",
+    "status": "diubah",
+    "description": "Ketentuan penyusutan harta tetap: kelompok bangunan (20 tahun), mesin/peralatan (4-8 tahun), dll.",
+    "keywords": [
+      "penyusutan",
+      "garis lurus",
+      "saldo menurun",
+      "harta tetap"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "10",
+          "year": 1994
+        },
+        "changeType": "amended",
+        "effectiveDate": "1995-01-01",
+        "summary": "Perubahan metode dan masa penyusutan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Penyesuaian penyusutan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan penyusutan pasca HPP"
+      }
+    ]
+  }
+}

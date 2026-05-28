@@ -1,0 +1,65 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-23-jasa-katering-2pct",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Jasa Katering / Tata Boga",
+    "description": "Pemotongan PPh 23 atas jasa katering/tata boga dengan DPP khusus yaitu seluruh jumlah penghasilan bruto (tanpa pengurangan biaya bahan makanan/jasa tenaga kerja).",
+    "rate": {
+      "type": "percentage",
+      "value": 2
+    },
+    "taxBase": "Seluruh jumlah penghasilan bruto termasuk dalam bentuk apapun (tanpa pengurangan). Tidak termasuk PPN.",
+    "payer": "Penyedia jasa katering (WP dalam negeri)",
+    "recipient": "Negara",
+    "withholder": "Badan pemerintah, SP badan, penyelenggara kegiatan, BUT",
+    "effectiveFrom": "2015-12-31",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PMK 141/PMK.03/2015",
+        "article": "Pasal 1 ayat (3) huruf a",
+        "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Berbeda dari jasa lainnya, DPP katering tidak boleh dikurangi biaya bahan makanan maupun tenaga kerja. Seluruh tagihan katering menjadi dasar pemotongan.",
+    "tags": [
+      "pph-23",
+      "katering",
+      "tata-boga",
+      "dpp-khusus",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "bppuKode": [
+      {
+        "kode": "24-104-39",
+        "nama": "Jasa Katering Atau Tata Boga",
+        "tarif": 2
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Jasa Katering / Tata Boga Rp 100.000.000",
+        "calculation": "2% × 100.000.000",
+        "result": "Pajak = Rp 2.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-23-jasa-lain-2pct",
+        "pph-23-jasa-lain-4pct",
+        "pph-23-sewa-tanah-bangunan",
+        "pph-23-hadiah-penghargaan",
+        "pph-23-jasa-pre2001",
+        "pph-23-jasa-2001"
+      ]
+    }
+  }
+}

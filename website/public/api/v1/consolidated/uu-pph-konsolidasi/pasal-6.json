@@ -1,0 +1,61 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "6",
+    "bab": "II",
+    "title": "Bukan Objek Pajak",
+    "status": "diubah",
+    "description": "Penghasilan yang bukan objek pajak: warisan, hibah, bantuan/sumbangan, pensiun, dll.",
+    "keywords": [
+      "bukan objek pajak",
+      "warisan",
+      "hibah",
+      "pensiun",
+      "sumbangan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Penambahan pengecualian"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Penambahan bukan objek pajak"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan bukan objek pajak"
+      }
+    ]
+  }
+}

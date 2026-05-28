@@ -1,0 +1,22 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-55-2022",
+    "number": "55",
+    "year": 2022,
+    "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "type": "PP",
+    "effectiveDate": "2023-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "pp-23-2018"
+    ],
+    "referencingEntries": [
+      "bea-masuk-asean-atiga",
+      "pph-umkm-05pct-2023"
+    ]
+  }
+}

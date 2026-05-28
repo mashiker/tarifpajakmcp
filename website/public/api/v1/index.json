@@ -1,0 +1,28 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "endpoints": {
+    "entries": "/api/v1/entries",
+    "entry": "/api/v1/entries/{id}",
+    "categories": "/api/v1/categories",
+    "category": "/api/v1/categories/{slug}",
+    "byYear": "/api/v1/by-year/{year}",
+    "bppu": "/api/v1/bppu",
+    "bppuPrefix": "/api/v1/bppu/{prefix}",
+    "timeline": "/api/v1/timeline/{group}",
+    "search": "/api/v1/search-index.json",
+    "regulations": "/api/v1/regulations",
+    "regulation": "/api/v1/regulations/{id}",
+    "calculator": "/api/v1/calculator",
+    "openapi": "/api/v1/openapi.json",
+    "consolidated": "/api/v1/consolidated",
+    "consolidatedLaw": "/api/v1/consolidated/{id}",
+    "consolidatedPasal": "/api/v1/consolidated/{id}/pasal-{number}"
+  },
+  "stats": {
+    "entries": 135,
+    "categories": 15,
+    "regulations": 37
+  }
+}

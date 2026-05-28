@@ -1,0 +1,118 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-21-honorarium-bukan-pegawai",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "Honorarium/Bukan Pegawai (BerNPWP)",
+    "description": "Pemotongan PPh 21 atas honorarium atau imbalan kepada tenaga ahli, dokter, pengacara, akuntan, arsitek, notaris, penilai, aktuaris, dan tenaga ahli lainnya yang melakukan pekerjaan bebas (bukan pegawai). Dikenakan tarif progresif Pasal 17 UU PPh dengan norma penghitungan 50% dari penghasilan bruto sebagai penghasilan neto (PP 16/2009 Pasal 17).",
+    "rate": {
+      "type": "progressive",
+      "value": "Progresif 5 lapis Pasal 17 UU PPh",
+      "effectiveRate": "Tarif Pasal 17 × 50% norma penghitungan",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 60000000,
+          "rate": 5
+        },
+        {
+          "min": 60000000,
+          "max": 250000000,
+          "rate": 15
+        },
+        {
+          "min": 250000000,
+          "max": 500000000,
+          "rate": 25
+        },
+        {
+          "min": 500000000,
+          "max": 5000000000,
+          "rate": 30
+        },
+        {
+          "min": 5000000000,
+          "max": null,
+          "rate": 35
+        }
+      ]
+    },
+    "taxBase": "50% × penghasilan bruto (norma penghitungan) dikurangi PTKP",
+    "payer": "Tenaga ahli/bukan pegawai (WP OP dalam negeri)",
+    "recipient": "Negara",
+    "withholder": "Pemberi penghasilan",
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 16/2009",
+        "article": "Pasal 17",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/50297/pp-no-16-tahun-2009"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 17 ayat (1) huruf a",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Norma penghitungan 50% berlaku untuk tenaga ahli. Untuk pekerjaan bebas lainnya norma penghitungan bisa berbeda (misalnya: pedagang 15%, petani 25%). Pegawai tidak tetap dan bukan pegawai dengan penghasilan ≤ Rp 4.500.000/bulan: PTKP dihitung harian.",
+    "examples": [
+      {
+        "scenario": "Notaris menerima honorarium Rp 100.000.000",
+        "calculation": "Neto = 50% × 100jt = 50jt. PKP = 50jt - 54jt (PTKP) = 0",
+        "result": "PPh 21 = Rp 0 (PKP negatif, tidak terutang)"
+      },
+      {
+        "scenario": "Konsultan menerima honorarium Rp 200.000.000",
+        "calculation": "Neto = 50% × 200jt = 100jt. PKP = 100jt - 54jt = 46jt. PPh = 5% × 46jt",
+        "result": "PPh 21 = Rp 2.300.000"
+      }
+    ],
+    "tags": [
+      "pph-21",
+      "honorarium",
+      "bukan-pegawai",
+      "tenaga-ahli",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-21-ter-monthly-2024",
+        "pph-21-progressive-annual-2024",
+        "pph-21-progressive-pre2022",
+        "pph-21-non-taxable-income",
+        "pph-21-pegawai-tidak-tetap",
+        "pph-21-shu-koperasi",
+        "pph-21-natura-kenikmatan",
+        "pph-21-dana-pensiun",
+        "pph-21-progressive-pre2009",
+        "pph-21-progressive-uulama1983",
+        "pph-21-progressive-uulama1994",
+        "pph-21-progressive-monthly-pre2024",
+        "pph-21-ptkp-1984",
+        "pph-21-ptkp-1995",
+        "pph-21-ptkp-2005",
+        "pph-21-ptkp-2009",
+        "pph-21-ter-a-detail",
+        "pph-21-ter-b-detail",
+        "pph-21-ter-c-detail",
+        "pph-21-norma-dokter",
+        "pph-21-norma-pengacara",
+        "pph-21-norma-akuntan",
+        "pph-21-norma-arsitek",
+        "pph-21-norma-notaris",
+        "pph-21-norma-konsultan",
+        "pph-21-norma-pedagang",
+        "pph-21-norma-petani",
+        "pph-21-norma-pengusaha-kecil"
+      ]
+    }
+  }
+}

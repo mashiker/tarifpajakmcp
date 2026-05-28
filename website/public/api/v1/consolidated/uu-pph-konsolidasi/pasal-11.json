@@ -1,0 +1,55 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "11",
+    "bab": "III",
+    "bagian": "1",
+    "title": "Tarif PPh Badan",
+    "status": "diubah",
+    "description": "Tarif PPh Badan 22% (pasca HPP), go-public 19%. Sebelumnya 20% (UU 36/2008), sebelum itu 28%.",
+    "keywords": [
+      "tarif",
+      "badan",
+      "22%",
+      "go-public",
+      "19%"
+    ],
+    "relatedTaxRates": [
+      "pph-badan-2022-plus"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Tarif PPh Badan 20% flat"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Tarif PPh Badan 28% (2009) dan 25% (2010+), go-public 5% lebih rendah"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Tarif PPh Badan 22%, go-public 19%, turun bertahap"
+      }
+    ]
+  }
+}

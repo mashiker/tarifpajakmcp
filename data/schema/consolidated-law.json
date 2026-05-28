@@ -1,0 +1,334 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ConsolidatedLaw",
+  "description": "Skema untuk UU Konsolidasi pajak Indonesia",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "shortTitle",
+    "baseLaw",
+    "amendmentChain",
+    "structure",
+    "pasals",
+    "lastUpdated"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "baseLaw": {
+      "type": "object",
+      "required": [
+        "type",
+        "number",
+        "year",
+        "title"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "UU",
+            "Perppu"
+          ]
+        },
+        "number": {
+          "type": "string"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "effectiveDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "sourceUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "pasalUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "pdfUrl": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "amendmentChain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "regulation",
+          "order",
+          "description",
+          "effectiveDate"
+        ],
+        "properties": {
+          "regulation": {
+            "type": "object",
+            "required": [
+              "type",
+              "number",
+              "year",
+              "title"
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "UU",
+                  "Perppu"
+                ]
+              },
+              "number": {
+                "type": "string"
+              },
+              "year": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string"
+              },
+              "shortTitle": {
+                "type": "string"
+              }
+            }
+          },
+          "order": {
+            "type": "integer"
+          },
+          "description": {
+            "type": "string"
+          },
+          "effectiveDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "pasalUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "pdfUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "keyChanges": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "structure": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "number",
+          "title"
+        ],
+        "properties": {
+          "number": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "bagians": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "number",
+                "title",
+                "pasals"
+              ],
+              "properties": {
+                "number": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "pasals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "pasals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "pasals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "number",
+          "status",
+          "amendmentHistory"
+        ],
+        "properties": {
+          "number": {
+            "type": "string"
+          },
+          "bab": {
+            "type": "string"
+          },
+          "bagian": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "berlaku",
+              "diubah",
+              "dicabut",
+              "ditambah"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "relatedTaxRates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "amendmentHistory": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "source",
+                "changeType",
+                "effectiveDate"
+              ],
+              "properties": {
+                "source": {
+                  "type": "object",
+                  "required": [
+                    "type",
+                    "number",
+                    "year"
+                  ],
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    },
+                    "year": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "changeType": {
+                  "type": "string",
+                  "enum": [
+                    "original",
+                    "amended",
+                    "added",
+                    "repealed",
+                    "partially_amended",
+                    "unchanged"
+                  ]
+                },
+                "effectiveDate": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "changedAyats": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "statistics": {
+      "type": "object",
+      "properties": {
+        "totalPasals": {
+          "type": "integer"
+        },
+        "berlakuPasals": {
+          "type": "integer"
+        },
+        "diubahPasals": {
+          "type": "integer"
+        },
+        "dicabutPasals": {
+          "type": "integer"
+        },
+        "ditambahPasals": {
+          "type": "integer"
+        },
+        "totalAmendments": {
+          "type": "integer"
+        }
+      }
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date"
+    },
+    "sourceNotes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

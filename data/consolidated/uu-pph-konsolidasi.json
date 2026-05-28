@@ -1,0 +1,688 @@
+{
+  "id": "uu-pph-konsolidasi",
+  "title": "Undang-Undang tentang Pajak Penghasilan (Konsolidasi)",
+  "shortTitle": "UU PPh Konsolidasi",
+  "description": "Naskah konsolidasi UU PPh yang memuat teks terkini setelah seluruh perubahan diterapkan, lengkap dengan riwayat perubahan per pasal dari UU 7/1983 hingga UU 7/2021 HPP.",
+  "baseLaw": {
+    "type": "UU",
+    "number": "7",
+    "year": 1983,
+    "title": "Undang-Undang tentang Pajak Penghasilan",
+    "effectiveDate": "1984-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44028/uu-no-7-tahun-1983",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-1983"
+  },
+  "amendmentChain": [
+    {
+      "regulation": { "type": "UU", "number": "7", "year": 1983, "title": "Pajak Penghasilan", "shortTitle": "UU PPh 1983" },
+      "order": 0,
+      "description": "UU Dasar Pajak Penghasilan",
+      "effectiveDate": "1984-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44028/uu-no-7-tahun-1983",
+      "keyChanges": ["Tarif progresif 10%-35%", "Tarif PPh Badan 20%", "PTKP perorangan", "Kredit pajak luar negeri", "Kerugian kompensasi 5 tahun"]
+    },
+    {
+      "regulation": { "type": "UU", "number": "10", "year": 1994, "title": "Perubahan Pertama UU PPh", "shortTitle": "UU 10/1994" },
+      "order": 1,
+      "description": "Perubahan Pertama atas UU 7/1983 PPh",
+      "effectiveDate": "1995-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44043/uu-no-10-tahun-1994",
+      "keyChanges": ["Penyesuaian tarif dan PTKP", "Perubahan ketentuan penyusutan", "Penambahan norma penghitungan"]
+    },
+    {
+      "regulation": { "type": "UU", "number": "17", "year": 2000, "title": "Perubahan Kedua UU PPh", "shortTitle": "UU 17/2000" },
+      "order": 2,
+      "description": "Perubahan Kedua atas UU 7/1983 PPh",
+      "effectiveDate": "2001-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44063/uu-no-17-tahun-2000",
+      "keyChanges": ["Tarif progresif 5%-35% (5 lapis)", "PTKP dinaikkan", "Perubahan PPh Final", "Ketentuan transfer pricing", "Penambahan Pasal 18A-18C"]
+    },
+    {
+      "regulation": { "type": "UU", "number": "36", "year": 2008, "title": "Perubahan Keempat UU PPh", "shortTitle": "UU 36/2008" },
+      "order": 3,
+      "description": "Perubahan Keempat atas UU 7/1983 PPh",
+      "effectiveDate": "2009-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008",
+      "keyChanges": [
+        "Tarif PPh Badan diturunkan ke 28% (2009) dan 25% (2010)",
+        "Tarif progresif OP 5%-30% (lebih banyak lapis)",
+        "Penghasilan tidak kena pajak (PTKP) dinaikkan signifikan",
+        "Penambahan Pasal 4 ayat (3) PPh Final",
+        "Ketentuan thin capitalization",
+        "Penambahan Pasal 31A, 31B"
+      ]
+    },
+    {
+      "regulation": { "type": "UU", "number": "7", "year": 2021, "title": "Harmonisasi Peraturan Perpajakan", "shortTitle": "UU HPP" },
+      "order": 4,
+      "description": "Perubahan Kelima atas UU 7/1983 PPh melalui UU HPP",
+      "effectiveDate": "2022-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+      "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021",
+      "pdfUrl": "https://peraturan.bpk.go.id/Download/178620/UU%20Nomor%207%20Tahun%202021.pdf",
+      "keyChanges": [
+        "Tarif PPh Badan diturunkan ke 20% (go-public 17%)",
+        "Tarif progresif OP berubah menjadi 4 lapis",
+        "PTKPT (Penghasilan Tidak Kena Pajak Tertentu)",
+        "Penambahan PPh final atas transaksi tertentu",
+        "Perubahan pengenaan natura/kenikmatan",
+        "Perubahan penyusutan dan amortisasi",
+        "Penambahan Pasal 4 ayat (4) tentang PPh final VDP",
+        "Tarif PPh UMKM 0,5%",
+        "Penambahan Pasal 17A tentang TARIF EFEKTIF RATA-RATA (TER)"
+      ]
+    }
+  ],
+  "structure": [
+    { "number": "I", "title": "Subjek Pajak", "bagians": [
+      { "number": "1", "title": "Subjek Pajak dan Bukan Subjek Pajak", "pasals": ["1", "2", "2A", "2B", "3"] },
+      { "number": "2", "title": "Wajib Pajak", "pasals": ["4"] }
+    ]},
+    { "number": "II", "title": "Objek Pajak", "bagians": [
+      { "number": "1", "title": "Objek Pajak dan Bukan Objek Pajak", "pasals": ["5", "6", "6A", "7"] },
+      { "number": "2", "title": "Penghasilan", "pasals": ["8", "9"] }
+    ]},
+    { "number": "III", "title": "Penghasilan Kena Pajak", "bagians": [
+      { "number": "1", "title": "Penghasilan Kena Pajak dan Tarif", "pasals": ["10", "11"] },
+      { "number": "2", "title": "PTKP", "pasals": ["12"] },
+      { "number": "3", "title": "Kompensasi Kerugian", "pasals": ["13"] }
+    ]},
+    { "number": "IV", "title": "Penghasilan dari Usaha", "bagians": [
+      { "number": "1", "title": "Penyusutan dan Amortisasi", "pasals": ["14", "15"] },
+      { "number": "2", "title": "Norma Penghitungan", "pasals": ["16", "17"] }
+    ]},
+    { "number": "V", "title": "Penghasilan dari Pekerjaan", "bagians": [
+      { "number": "1", "title": "Penghasilan dari Pekerjaan", "pasals": ["18"] },
+      { "number": "2", "title": "Imbalan Kerja", "pasals": ["18A"] }
+    ]},
+    { "number": "VI", "title": "Pajak Penghasilan yang Terutang", "bagians": [
+      { "number": "1", "title": "PPh terutang dan kredit pajak", "pasals": ["19", "20", "21"] },
+      { "number": "2", "title": "Pemotongan PPh", "pasals": ["22", "23", "24", "25", "26"] }
+    ]},
+    { "number": "VII", "title": "Penghasilan dari Usaha Berbasis Kepercayaan", "bagians": [
+      { "number": "1", "title": "Nabiyyah dan Trust", "pasals": ["27"] }
+    ]},
+    { "number": "VIII", "title": "Fasilitas Perpajakan", "bagians": [
+      { "number": "1", "title": "Penghasilan Tidak Kena Pajak", "pasals": ["28", "29"] }
+    ]},
+    { "number": "IX", "title": "Ketentuan Khusus", "bagians": [
+      { "number": "1", "title": "Transfer Pricing dan Thin Cap", "pasals": ["30", "31", "31A", "31B"] }
+    ]},
+    { "number": "X", "title": "Penutup", "pasals": ["32", "33", "34", "35", "36", "37"] }
+  ],
+  "pasals": [
+    {
+      "number": "1",
+      "bab": "I",
+      "title": "Subjek Pajak",
+      "status": "diubah",
+      "description": "Subjek pajak adalah orang pribadi dan badan. Termasuk bentuk usaha tetap (BUT). WP OP berdomisili di Indonesia dan WP OP yang berada di Indonesia lebih dari 183 hari.",
+      "keywords": ["subjek pajak", "OP", "badan", "BUT", "183 hari"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang subjek pajak" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penjelasan 183 hari dan BUT" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan definisi BUT" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan definisi subjek pajak" }
+      ]
+    },
+    {
+      "number": "2",
+      "bab": "I",
+      "title": "Bukan Subjek Pajak",
+      "status": "diubah",
+      "description": "Penghasilan yang diterima oleh badan tertentu yang bukan subjek pajak (kedutaan, organisasi internasional).",
+      "keywords": ["bukan subjek pajak", "kedutaan", "organisasi internasional"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan ketentuan bukan SP" }
+      ]
+    },
+    {
+      "number": "2A",
+      "bab": "I",
+      "title": "Penghasilan BUT",
+      "status": "ditambah",
+      "description": "Ketentuan khusus tentang penghasilan yang diterima atau diperoleh BUT.",
+      "keywords": ["BUT", "penghasilan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang penghasilan BUT" }
+      ]
+    },
+    {
+      "number": "2B",
+      "bab": "I",
+      "title": "Penghasilan WP OP di Luar Negeri",
+      "status": "ditambah",
+      "description": "Ketentuan tentang penghitungan penghasilan WP OP yang menerima penghasilan dari luar negeri.",
+      "keywords": ["luar negeri", "WP OP", "foreign income"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang penghasilan luar negeri" }
+      ]
+    },
+    {
+      "number": "3",
+      "bab": "I",
+      "title": "Kewajiban Pajak",
+      "status": "berlaku",
+      "description": "Ketentuan tentang kewajiban pajak bagi subjek pajak.",
+      "keywords": ["kewajiban pajak"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "4",
+      "bab": "I",
+      "bagian": "2",
+      "title": "Wajib Pajak dan PPh Final",
+      "status": "diubah",
+      "description": "WP yang menerima/memperoleh penghasilan kena pajak. Ayat (3) mengatur PPh Final atas penghasilan tertentu (deposito, bunga obligasi, penghargaan, undian).",
+      "keywords": ["WP", "PPh Final", "deposito", "obligasi", "undian"],
+      "relatedTaxRates": ["pph-final-bunga-deposito", "pph-final-bunga-pre2009"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang WP dan PPh Final" },
+        { "source": { "type": "UU", "number": "10", "year": 1994 }, "changeType": "partially_amended", "effectiveDate": "1995-01-01", "changedAyats": ["(3)"], "summary": "Perubahan PPh Final" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "changedAyats": ["(3)"], "summary": "Penambahan jenis PPh Final" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "changedAyats": ["(3)"], "summary": "Perubahan PPh Final bunga deposito 20%" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "changedAyats": ["(3)", "(4)"], "summary": "Penambahan PPh Final VDP dan perubahan ketentuan PPh Final" }
+      ]
+    },
+    {
+      "number": "5",
+      "bab": "II",
+      "title": "Objek Pajak",
+      "status": "diubah",
+      "description": "Objek pajak adalah penghasilan yaitu setiap tambahan kemampuan ekonomis yang diterima atau diperoleh WP. Termasuk natura/kenikmatan.",
+      "keywords": ["objek pajak", "penghasilan", "natura", "kenikmatan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "changedAyats": ["(1)"], "summary": "Perubahan ketentuan natura/kenikmatan menjadi objek pajak" }
+      ]
+    },
+    {
+      "number": "6",
+      "bab": "II",
+      "title": "Bukan Objek Pajak",
+      "status": "diubah",
+      "description": "Penghasilan yang bukan objek pajak: warisan, hibah, bantuan/sumbangan, pensiun, dll.",
+      "keywords": ["bukan objek pajak", "warisan", "hibah", "pensiun", "sumbangan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan pengecualian" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Penambahan bukan objek pajak" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan bukan objek pajak" }
+      ]
+    },
+    {
+      "number": "6A",
+      "bab": "II",
+      "title": "Penilaian Pengalihan Harta",
+      "status": "ditambah",
+      "description": "Ketentuan penilaian pengalihan harta dalam rangka pengungkapan sukarela.",
+      "keywords": ["pengalihan harta", "VDP", "penilaian"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang pengalihan harta VDP" }
+      ]
+    },
+    {
+      "number": "7",
+      "bab": "II",
+      "title": "Penilaian Penggantian",
+      "status": "berlaku",
+      "description": "Ketentuan penilaian penggantian untuk tujuan perpajakan.",
+      "keywords": ["penilaian", "penggantian"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "8",
+      "bab": "II",
+      "bagian": "2",
+      "title": "Penghasilan Neto",
+      "status": "diubah",
+      "description": "Penghasilan neto = penghasilan bruto dikurangi biaya untuk mendapatkan, menagih, dan memelihara penghasilan.",
+      "keywords": ["penghasilan neto", "biaya", "bruto"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan ketentuan penghasilan neto" }
+      ]
+    },
+    {
+      "number": "9",
+      "bab": "II",
+      "bagian": "2",
+      "title": "Penghasilan dari Penjualan Harta",
+      "status": "diubah",
+      "description": "Ketentuan penghitungan penghasilan dari pengalihan harta termasuk saham.",
+      "keywords": ["pengalihan", "saham", "hart"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Penambahan ketentuan saham" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan pengalihan harta" }
+      ]
+    },
+    {
+      "number": "10",
+      "bab": "III",
+      "bagian": "1",
+      "title": "Tarif PPh Orang Pribadi (Progresif)",
+      "status": "diubah",
+      "description": "Tarif PPh OP progresif 4 lapis: 5%, 15%, 25%, 35% (pasca HPP). Sebelumnya 5 lapis 5%-35%.",
+      "keywords": ["tarif", "progresif", "OP", "5%", "15%", "25%", "35%"],
+      "relatedTaxRates": ["pph-21-progressive-annual-2024"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Tarif progresif 10%-35% (4 lapis)" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Tarif progresif 5%-35% (5 lapis)" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Tarif progresif 5%-30% (7 lapis)" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Tarif progresif 5%-35% (4 lapis) — lapis baru PKP > Rp 5 miliar 35%" }
+      ]
+    },
+    {
+      "number": "11",
+      "bab": "III",
+      "bagian": "1",
+      "title": "Tarif PPh Badan",
+      "status": "diubah",
+      "description": "Tarif PPh Badan 22% (pasca HPP), go-public 19%. Sebelumnya 20% (UU 36/2008), sebelum itu 28%.",
+      "keywords": ["tarif", "badan", "22%", "go-public", "19%"],
+      "relatedTaxRates": ["pph-badan-2022-plus"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Tarif PPh Badan 20% flat" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Tarif PPh Badan 28% (2009) dan 25% (2010+), go-public 5% lebih rendah" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Tarif PPh Badan 22%, go-public 19%, turun bertahap" }
+      ]
+    },
+    {
+      "number": "12",
+      "bab": "III",
+      "bagian": "2",
+      "title": "PTKP (Penghasilan Tidak Kena Pajak)",
+      "status": "diubah",
+      "description": "PTKP untuk WP OP: TK/0, K/0, K/1 dst. Besaran PTKP diatur PMK terpisah. Pasca HPP dikenal PTKPT.",
+      "keywords": ["PTKP", "TK/0", "K/0", "K/1", "PTKPT"],
+      "relatedTaxRates": ["pph-21-non-taxable-income"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli PTKP" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan tanggungan" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "PTKP dinaikkan signifikan" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Penambahan PTKPT (PTKP Tertentu)" }
+      ]
+    },
+    {
+      "number": "13",
+      "bab": "III",
+      "bagian": "3",
+      "title": "Kompensasi Kerugian",
+      "status": "diubah",
+      "description": "Kerugian dapat dikompensasiikan selama 5 tahun (umum) atau 10 tahun (usaha tertentu).",
+      "keywords": ["kompensasi", "kerugian", "5 tahun", "10 tahun"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Kompensasi 5 tahun" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Penambahan 10 tahun untuk usaha tertentu" }
+      ]
+    },
+    {
+      "number": "14",
+      "bab": "IV",
+      "bagian": "1",
+      "title": "Penyusutan",
+      "status": "diubah",
+      "description": "Ketentuan penyusutan harta tetap: kelompok bangunan (20 tahun), mesin/peralatan (4-8 tahun), dll.",
+      "keywords": ["penyusutan", "garis lurus", "saldo menurun", "harta tetap"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "10", "year": 1994 }, "changeType": "amended", "effectiveDate": "1995-01-01", "summary": "Perubahan metode dan masa penyusutan" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Penyesuaian penyusutan" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan penyusutan pasca HPP" }
+      ]
+    },
+    {
+      "number": "15",
+      "bab": "IV",
+      "bagian": "1",
+      "title": "Amortisasi",
+      "status": "diubah",
+      "description": "Ketentuan amortisasi pengeluaran untuk mendapatkan harta berwujud dan tidak berwujud.",
+      "keywords": ["amortisasi", "biaya perolehan", "harta tidak berwujud"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan amortisasi" }
+      ]
+    },
+    {
+      "number": "16",
+      "bab": "IV",
+      "bagian": "2",
+      "title": "Norma Penghitungan Penghasilan Neto",
+      "status": "diubah",
+      "description": "Norma penghitungan penghasilan neto bagi WP OP tertentu yang diperbolehkan menghitung penghasilan neto dengan norma.",
+      "keywords": ["norma penghitungan", "persentase norma", "WP OP"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penyesuaian norma" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan norma penghitungan" }
+      ]
+    },
+    {
+      "number": "17",
+      "bab": "IV",
+      "bagian": "2",
+      "title": "Penghasilan dari Usaha UMKM",
+      "status": "diubah",
+      "description": "PPh terutang atas penghasilan dari usaha yang diterima WP OP yang memiliki peredaran bruto tertentu (UMKM). Tarif 0,5% pasca HPP.",
+      "keywords": ["UMKM", "0,5%", "peredaran bruto", "PP 55/2022"],
+      "relatedTaxRates": ["pph-umkm-05pct-2023"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan ketentuan UMKM" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan ketentuan UMKM" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Tarif PPh UMKM 0,5% dari peredaran bruto, threshold Rp 4,8 miliar" }
+      ]
+    },
+    {
+      "number": "17A",
+      "bab": "IV",
+      "bagian": "2",
+      "title": "Tarif Efektif Rata-Rata (TER) PPh 21",
+      "status": "ditambah",
+      "description": "Pemotongan PPh 21 menggunakan Tarif Efektif Rata-Rata (TER) berdasarkan PP 58/2023, menggantikan metode lama.",
+      "keywords": ["TER", "PPh 21", "PP 58/2023", "tarif efektif rata-rata"],
+      "relatedTaxRates": ["pph-21-ter-monthly-2024"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru — dasar hukum TER PPh 21, berlaku efektif 2024" }
+      ]
+    },
+    {
+      "number": "18",
+      "bab": "V",
+      "title": "Penghasilan dari Pekerjaan atau Jasa",
+      "status": "diubah",
+      "description": "Penghasilan dari pekerjaan, jasa, dan kegiatan yang dilakukan WP OP. Termasuk gaji, honorarium, uang pesangon, dll.",
+      "keywords": ["pekerjaan", "jasa", "gaji", "honorarium", "pesangon"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan jenis penghasilan" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan penghasilan dari pekerjaan" }
+      ]
+    },
+    {
+      "number": "18A",
+      "bab": "V",
+      "title": "Imbalan Kerja yang Dikecualikan",
+      "status": "ditambah",
+      "description": "Jenis imbalan kerja tertentu yang bukan objek PPh 21 atau dikenakan PPh Final.",
+      "keywords": ["imbalan kerja", "tunjangan", "PPh Final"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang imbalan kerja" }
+      ]
+    },
+    {
+      "number": "19",
+      "bab": "VI",
+      "bagian": "1",
+      "title": "PPh Terutang",
+      "status": "diubah",
+      "description": "PPh terutang untuk WP OP dihitung berdasarkan tarif Pasal 17 dikali PKP. Untuk WP Badan berdasarkan tarif Pasal 17 ayat (2) dikali PKP.",
+      "keywords": ["PPh terutang", "perhitungan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan perhitungan" }
+      ]
+    },
+    {
+      "number": "20",
+      "bab": "VI",
+      "bagian": "1",
+      "title": "Kredit Pajak",
+      "status": "diubah",
+      "description": "Kredit pajak yang dapat dikurangkan dari PPh terutang: PPh yang dipotong pihak lain, PPh yang dibayar di luar negeri.",
+      "keywords": ["kredit pajak", "PPh dipotong", "luar negeri", "tax credit"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Perubahan kredit pajak" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan metode kredit pajak luar negeri" }
+      ]
+    },
+    {
+      "number": "21",
+      "bab": "VI",
+      "bagian": "1",
+      "title": "SPT Tahunan PPh",
+      "status": "diubah",
+      "description": "WP wajib menyampaikan SPT Tahunan PPh. Kurang bayar harus dilunasi sebelum SPT disampaikan.",
+      "keywords": ["SPT Tahunan", "PPh", "kurang bayar"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan ketentuan SPT" }
+      ]
+    },
+    {
+      "number": "22",
+      "bab": "VI",
+      "bagian": "2",
+      "title": "Pemotongan PPh 21",
+      "status": "diubah",
+      "description": "Pemberi kerja wajib memotong PPh 21 atas penghasilan yang dibayarkan kepada karyawan. Menggunakan TER pasca PP 58/2023.",
+      "keywords": ["PPh 21", "pemotongan", "pemberi kerja", "TER"],
+      "relatedTaxRates": ["pph-21-ter-monthly-2024", "pph-21-progressive-annual-2024"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli - PPh 21" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Dasar hukum TER PPh 21" }
+      ]
+    },
+    {
+      "number": "23",
+      "bab": "VI",
+      "bagian": "2",
+      "title": "Pemotongan PPh 23",
+      "status": "diubah",
+      "description": "Pemotongan PPh 23 atas imbalan jasa dan sewa. Tarif 2% (jasa) dan 10% (sewa) untuk WP dalam negeri.",
+      "keywords": ["PPh 23", "jasa", "sewa", "2%", "10%"],
+      "relatedTaxRates": ["pph-23-jasa-2001", "pph-23-jasa-lain-2pct"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli - PPh 23" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan tarif PPh 23 via PP 60/2023" }
+      ]
+    },
+    {
+      "number": "24",
+      "bab": "VI",
+      "bagian": "2",
+      "title": "Pemotongan PPh 26",
+      "status": "diubah",
+      "description": "Pemotongan PPh 26 atas penghasilan yang diterima WP luar negeri sebesar 20% dari brut.",
+      "keywords": ["PPh 26", "WP luar negeri", "20%"],
+      "relatedTaxRates": ["pph-26-wna-20pct"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan PPh 26" }
+      ]
+    },
+    {
+      "number": "25",
+      "bab": "VI",
+      "bagian": "2",
+      "title": "Angsuran PPh 25",
+      "status": "diubah",
+      "description": "Angsuran PPh 25 yang harus dibayar sendiri oleh WP Badan dan WP OP tertentu setiap bulan.",
+      "keywords": ["PPh 25", "angsuran", "bulanan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan perhitungan angsuran" }
+      ]
+    },
+    {
+      "number": "26",
+      "bab": "VI",
+      "bagian": "2",
+      "title": "Pemotongan PPh 22",
+      "status": "diubah",
+      "description": "Pemotongan PPh 22 atas penyerahan barang dan impor. Badan pemerintah, importir, dan rekanan wajib memotong.",
+      "keywords": ["PPh 22", "impor", "pembelian", "badan pemerintah"],
+      "relatedTaxRates": ["pph-22-impor-2024", "pph-22-bmn-2024"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan PPh 22 via PP 60/2023" }
+      ]
+    },
+    {
+      "number": "27",
+      "bab": "VII",
+      "title": "Perusahaan Berbasis Kepercayaan",
+      "status": "ditambah",
+      "description": "Ketentuan PPh atas penghasilan dari perusahaan yang berbasis kepercayaan (nabiyyah/trust).",
+      "keywords": ["trust", "nabiyyah", "perusahaan kepercayaan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang trust" }
+      ]
+    },
+    {
+      "number": "28",
+      "bab": "VIII",
+      "title": "Fasilitas Pajak",
+      "status": "diubah",
+      "description": "Ketentuan fasilitas berupa pengurangan PPh terutang atau pembebasan bagi WP tertentu (investasi, IKN, dll).",
+      "keywords": ["fasilitas", "tax holiday", "tax allowance", "IKN"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan fasilitas" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Penambahan fasilitas IKN" }
+      ]
+    },
+    {
+      "number": "29",
+      "bab": "VIII",
+      "title": "Pajak Penghasilan yang Tidak Final",
+      "status": "berlaku",
+      "description": "PPh yang bersifat tidak final dapat dikreditkan terhadap PPh terutang.",
+      "keywords": ["tidak final", "kredit"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "30",
+      "bab": "IX",
+      "title": "Transfer Pricing",
+      "status": "diubah",
+      "description": "Ketentuan transfer pricing — transaksi antara pihak-pihak yang memiliki hubungan istimewa harus sesuai harga pasar (arm's length principle).",
+      "keywords": ["transfer pricing", "hubungan istimewa", "arm's length", "TP"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan ketentuan transfer pricing" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan TP" }
+      ]
+    },
+    {
+      "number": "31",
+      "bab": "IX",
+      "title": "Penyesuaian Laba (Profit Adjustment)",
+      "status": "berlaku",
+      "description": "Direktur Jenderal Pajak dapat melakukan koreksi terhadap laba WP yang bertransaksi dengan pihak berhubungan istimewa.",
+      "keywords": ["koreksi", "profit adjustment", "DJP"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "31A",
+      "bab": "IX",
+      "title": "Thin Capitalization",
+      "status": "ditambah",
+      "description": "Ketentuan thin capitalization — rasio utang terhadap modal untuk WP Badan tertentu.",
+      "keywords": ["thin capitalization", "rasio utang", "DER"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang thin cap" }
+      ]
+    },
+    {
+      "number": "31B",
+      "bab": "IX",
+      "title": "Constructive Dividend",
+      "status": "ditambah",
+      "description": "Ketentuan tentang constructive dividend atas pengembalian modal atau pembagian dividen terselubung.",
+      "keywords": ["constructive dividend", "dividen", "pengembalian modal"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang constructive dividend" }
+      ]
+    },
+    {
+      "number": "32",
+      "bab": "X",
+      "title": "Perjanjian Internasional",
+      "status": "diubah",
+      "description": "Ketentuan tentang perjanjian penghindaran pajak berganda (P3B) dan kepatuhan terhadap perjanjian internasional.",
+      "keywords": ["P3B", "tax treaty", "perjanjian internasional"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan perjanjian" }
+      ]
+    },
+    {
+      "number": "33",
+      "bab": "X",
+      "title": "Ketentuan Peralihan",
+      "status": "berlaku",
+      "description": "Ketentuan peralihan.",
+      "keywords": ["peralihan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "34",
+      "bab": "X",
+      "title": "Peraturan Pelaksanaan",
+      "status": "berlaku",
+      "description": "Ketentuan peraturan pelaksanaan.",
+      "keywords": ["PP", "PMK"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "35",
+      "bab": "X",
+      "title": "Pencabutan",
+      "status": "berlaku",
+      "description": "Pencabutan peraturan lama.",
+      "keywords": ["pencabutan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "36",
+      "bab": "X",
+      "title": "Pengesahan Perppu",
+      "status": "berlaku",
+      "description": "Pengesahan Perppu menjadi UU.",
+      "keywords": ["Perppu"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "37",
+      "bab": "X",
+      "title": "Penutup",
+      "status": "berlaku",
+      "description": "UU ini mulai berlaku pada tanggal diundangkan.",
+      "keywords": ["penutup"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+      ]
+    }
+  ],
+  "statistics": {
+    "totalPasals": 37,
+    "berlakuPasals": 12,
+    "diubahPasals": 18,
+    "dicabutPasals": 0,
+    "ditambahPasals": 7,
+    "totalAmendments": 5
+  },
+  "lastUpdated": "2026-05-28",
+  "sourceNotes": "Data disusun berdasarkan UU 7/1983 PPh beserta seluruh perubahannya hingga UU 7/2021 HPP. Sumber: peraturan.bpk.go.id, pasal.id."
+}

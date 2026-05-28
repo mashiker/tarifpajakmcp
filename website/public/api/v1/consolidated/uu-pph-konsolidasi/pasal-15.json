@@ -1,0 +1,40 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "15",
+    "bab": "IV",
+    "bagian": "1",
+    "title": "Amortisasi",
+    "status": "diubah",
+    "description": "Ketentuan amortisasi pengeluaran untuk mendapatkan harta berwujud dan tidak berwujud.",
+    "keywords": [
+      "amortisasi",
+      "biaya perolehan",
+      "harta tidak berwujud"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan amortisasi"
+      }
+    ]
+  }
+}

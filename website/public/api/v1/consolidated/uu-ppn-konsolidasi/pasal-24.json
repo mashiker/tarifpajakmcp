@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "24",
+    "bab": "IV",
+    "title": "Tata Cara Penyetoran",
+    "status": "diubah",
+    "description": "Tata cara penyetoran dan pelaporan PPN/PPnBM.",
+    "keywords": [
+      "penyetoran",
+      "pelaporan",
+      "tata cara"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Perubahan tata cara"
+      }
+    ]
+  }
+}

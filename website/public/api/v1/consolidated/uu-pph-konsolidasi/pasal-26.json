@@ -1,0 +1,45 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "26",
+    "bab": "VI",
+    "bagian": "2",
+    "title": "Pemotongan PPh 22",
+    "status": "diubah",
+    "description": "Pemotongan PPh 22 atas penyerahan barang dan impor. Badan pemerintah, importir, dan rekanan wajib memotong.",
+    "keywords": [
+      "PPh 22",
+      "impor",
+      "pembelian",
+      "badan pemerintah"
+    ],
+    "relatedTaxRates": [
+      "pph-22-impor-2024",
+      "pph-22-bmn-2024"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan PPh 22 via PP 60/2023"
+      }
+    ]
+  }
+}

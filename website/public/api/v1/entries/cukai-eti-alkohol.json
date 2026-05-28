@@ -1,0 +1,57 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "cukai-eti-alkohol",
+    "category": "Cukai",
+    "taxType": "Cukai",
+    "transactionType": "Cukai Etil Alkohol / MMEA",
+    "description": "Cukai atas etil alkohol dan MMEA. Tarif berdasarkan golongan dan kadar alkohol.",
+    "rate": {
+      "type": "formula",
+      "value": "Tarif spesifik per liter",
+      "effectiveRate": "Rp 5.000 - Rp 150.000 per liter"
+    },
+    "taxBase": "Volume produksi/impor (liter)",
+    "payer": "Produsen/importir MMEA",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2008-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 39/2007",
+        "article": "Pasal 6 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/45946/uu-no-39-tahun-2007"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "MMEA: Gol A (1-5%) Rp 5K-25K/ltr, Gol B (5-20%) Rp 25K-75K/ltr, Gol C (>20%) Rp 75K-150K/ltr.",
+    "examples": [
+      {
+        "scenario": "Impor wine 12% 1000 liter",
+        "calculation": "Gol B ±Rp 50.000/ltr × 1.000",
+        "result": "Cukai = ±Rp 50.000.000"
+      }
+    ],
+    "tags": [
+      "cukai",
+      "alkohol",
+      "mmea",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "cukai-hasil-tembakau",
+        "cukai-ecigarette"
+      ],
+      "regulations": [
+        "uu-39-2007"
+      ]
+    }
+  }
+}

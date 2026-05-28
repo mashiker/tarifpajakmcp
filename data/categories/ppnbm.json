@@ -9,7 +9,13 @@
       "taxType": "PPnBM",
       "transactionType": "Penyerahan Barang Mewah",
       "description": "Tarif PPnBM berkisar 10% sampai dengan 200% tergantung kelompok barang mewah yang diserahkan.",
-      "rate": { "type": "range", "value": [10, 200] },
+      "rate": {
+        "type": "range",
+        "value": [
+          10,
+          200
+        ]
+      },
       "taxBase": "DPP (Harga Jual / Penggantian / Nilai ekspor)",
       "payer": "Pembeli / konsumen",
       "recipient": "Negara",
@@ -18,12 +24,357 @@
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
-        { "regulation": "UU 7/2021 (HPP)", "article": "Pasal 8", "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021" }
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
       ],
-      "supersedes": [], "supersededBy": [],
+      "supersedes": [],
+      "supersededBy": [],
       "notes": "Tarif spesifik ditetapkan per kelompok barang: sedan/station wagon 4x2 (10-75%), sedan 4x4 (10-75%), van/wagon >10 penumpang (10%), kapal pesiar (10-50%), pesawat pribadi (10-50%), rumah mewah (10-40%), perlengkapan mewah (10-200%).",
-      "tags": ["ppnbm", "barang-mewah", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "ppnbm",
+        "barang-mewah",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "examples": [
+        {
+          "scenario": "Penyerahan Barang Mewah Rp 100.000.000",
+          "calculation": "Tarif 10%-200% × 100jt",
+          "result": "Pajak = Rp 10.000.000 - Rp 200.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppnbm-sedan-station-wagon",
+      "category": "PPnBM",
+      "taxType": "PPnBM",
+      "transactionType": "Sedan dan Station Wagon 4x2",
+      "description": "PPnBM atas penyerahan sedan dan station wagon dengan sistem penggerak 4x2. Tarif bervariasi berdasarkan kapasitas silinder.",
+      "rate": {
+        "type": "range",
+        "value": [
+          10,
+          40
+        ]
+      },
+      "taxBase": "DPP (Harga Jual/Penggantian)",
+      "payer": "Pembeli konsumen",
+      "recipient": "Negara",
+      "withholder": "PKP penjual/ATPM",
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "UU 42/2009",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif berdasarkan cc: ≤1.500cc = 10%, 1.500-2.500cc = 20%, 2.500-3.000cc = 30%, 3.000-4.000cc = 40%, >4.000cc = 40%.",
+      "tags": [
+        "ppnbm",
+        "sedan",
+        "station-wagon",
+        "kendaraan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Sedan dan Station Wagon 4x2 Rp 100.000.000",
+          "calculation": "Tarif 10%-40% × 100jt",
+          "result": "Pajak = Rp 10.000.000 - Rp 40.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppnbm-suv-4x4",
+      "category": "PPnBM",
+      "taxType": "PPnBM",
+      "transactionType": "Sedan dan Station Wagon 4x4 / SUV",
+      "description": "PPnBM atas penyerahan sedan, station wagon, dan SUV dengan sistem penggerak 4x4.",
+      "rate": {
+        "type": "range",
+        "value": [
+          10,
+          75
+        ]
+      },
+      "taxBase": "DPP (Harga Jual/Penggantian)",
+      "payer": "Pembeli konsumen",
+      "recipient": "Negara",
+      "withholder": "PKP penjual/ATPM",
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "UU 42/2009",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif lebih tinggi dari 4x2. ≤1.500cc = 10%, 1.500-2.500cc = 30%, 2.500-3.000cc = 50%, 3.000-4.000cc = 75%, >4.000cc = 75%.",
+      "tags": [
+        "ppnbm",
+        "suv",
+        "4x4",
+        "kendaraan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Sedan dan Station Wagon 4x4 / SUV Rp 100.000.000",
+          "calculation": "Tarif 10%-75% × 100jt",
+          "result": "Pajak = Rp 10.000.000 - Rp 75.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppnbm-van-wagon",
+      "category": "PPnBM",
+      "taxType": "PPnBM",
+      "transactionType": "Van/Wagon > 10 Penumpang",
+      "description": "PPnBM atas penyerahan van dan wagon dengan kapasitas lebih dari 10 penumpang.",
+      "rate": {
+        "type": "percentage",
+        "value": 10
+      },
+      "taxBase": "DPP (Harga Jual/Penggantian)",
+      "payer": "Pembeli konsumen",
+      "recipient": "Negara",
+      "withholder": "PKP penjual/ATPM",
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif tetap 10% untuk van dan wagon > 10 penumpang.",
+      "tags": [
+        "ppnbm",
+        "van",
+        "minibus",
+        "kendaraan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Van/Wagon > 10 Penumpang Rp 100.000.000",
+          "calculation": "10% × 100.000.000",
+          "result": "Pajak = Rp 10.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppnbm-kapal-pesiar",
+      "category": "PPnBM",
+      "taxType": "PPnBM",
+      "transactionType": "Kapal Pesiar dan Kapal Mewah",
+      "description": "PPnBM atas penyerahan kapal pesiar, kapal pesiar pribadi, dan kapal layar mewah yang panjangnya > 15 meter.",
+      "rate": {
+        "type": "range",
+        "value": [
+          10,
+          50
+        ]
+      },
+      "taxBase": "DPP (Harga Jual/Penggantian)",
+      "payer": "Pembeli konsumen",
+      "recipient": "Negara",
+      "withholder": "PKP penjual",
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 10-50% tergantung jenis dan ukuran kapal pesiar.",
+      "tags": [
+        "ppnbm",
+        "kapal",
+        "pesiar",
+        "mewah",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Kapal Pesiar dan Kapal Mewah Rp 100.000.000",
+          "calculation": "Tarif 10%-50% × 100jt",
+          "result": "Pajak = Rp 10.000.000 - Rp 50.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppnbm-pesawat-pribadi",
+      "category": "PPnBM",
+      "taxType": "PPnBM",
+      "transactionType": "Pesawat Udara Pribadi",
+      "description": "PPnBM atas penyerahan pesawat udara pribadi yang tidak digunakan untuk penerbangan komersial.",
+      "rate": {
+        "type": "range",
+        "value": [
+          10,
+          50
+        ]
+      },
+      "taxBase": "DPP (Harga Jual/Penggantian)",
+      "payer": "Pembeli konsumen",
+      "recipient": "Negara",
+      "withholder": "PKP penjual",
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 10-50% tergantung jenis pesawat. Tidak termasuk pesawat udara untuk angkutan umum.",
+      "tags": [
+        "ppnbm",
+        "pesawat",
+        "pribadi",
+        "mewah",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Pesawat Udara Pribadi Rp 100.000.000",
+          "calculation": "Tarif 10%-50% × 100jt",
+          "result": "Pajak = Rp 10.000.000 - Rp 50.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppnbm-rumah-mewah",
+      "category": "PPnBM",
+      "taxType": "PPnBM",
+      "transactionType": "Rumah Mewah dan Apartemen Mewah",
+      "description": "PPnBM atas penyerahan rumah mewah, apartemen mewah, dan kondominium mewah yang luas bangunan > 350 m² dan harga jual > Rp 5 miliar.",
+      "rate": {
+        "type": "range",
+        "value": [
+          10,
+          40
+        ]
+      },
+      "taxBase": "DPP (Harga Jual/Penggantian)",
+      "payer": "Pembeli konsumen",
+      "recipient": "Negara",
+      "withholder": "PKP penjual/developer",
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Kategori rumah mewah: tipe 350 m² dan yang tergolong sangat mewah. Tarif 10-40%.",
+      "tags": [
+        "ppnbm",
+        "rumah",
+        "apartemen",
+        "properti-mewah",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Rumah Mewah dan Apartemen Mewah Rp 100.000.000",
+          "calculation": "Tarif 10%-40% × 100jt",
+          "result": "Pajak = Rp 10.000.000 - Rp 40.000.000"
+        }
+      ]
+    },
+    {
+      "id": "ppnbm-perlengkapan-mewah",
+      "category": "PPnBM",
+      "taxType": "PPnBM",
+      "transactionType": "Perlengkapan Mewah",
+      "description": "PPnBM atas penyerahan perlengkapan mewah seperti perhiasan, batu permata, keramik mewah, lukisan, dan barang seni.",
+      "rate": {
+        "type": "range",
+        "value": [
+          10,
+          200
+        ]
+      },
+      "taxBase": "DPP (Harga Jual/Penggantian)",
+      "payer": "Pembeli konsumen",
+      "recipient": "Negara",
+      "withholder": "PKP penjual",
+      "effectiveFrom": "2022-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif 10-200% untuk perlengkapan mewah. Perhiasan dan batu permata dikenakan tarif 10%. Senjata api dan amunisi non-tentara/sipil: 10-200%.",
+      "tags": [
+        "ppnbm",
+        "perlengkapan",
+        "mewah",
+        "perhiasan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Perlengkapan Mewah Rp 100.000.000",
+          "calculation": "Tarif 10%-200% × 100jt",
+          "result": "Pajak = Rp 10.000.000 - Rp 200.000.000"
+        }
+      ]
     }
   ]
 }

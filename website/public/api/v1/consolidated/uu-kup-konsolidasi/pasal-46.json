@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "46",
+    "bab": "XIV",
+    "title": "Peraturan Pelaksanaan",
+    "status": "berlaku",
+    "description": "Ketentuan tentang peraturan pelaksanaan UU KUP.",
+    "keywords": [
+      "peraturan pelaksanaan",
+      "PP",
+      "PMK"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ]
+  }
+}

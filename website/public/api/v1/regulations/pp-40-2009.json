@@ -1,0 +1,21 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-40-2009",
+    "number": "40",
+    "year": 2009,
+    "title": "Peraturan Pemerintah tentang Perubahan atas PP 51/2008 tentang Pajak Penghasilan Final atas Penghasilan Tertentu",
+    "type": "PP",
+    "effectiveDate": "2009-07-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/50248/pp-no-40-tahun-2009",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "pp-51-2008"
+    ],
+    "referencingEntries": [
+      "pph-final-konstruksi"
+    ]
+  }
+}

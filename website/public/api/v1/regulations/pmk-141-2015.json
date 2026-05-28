@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pmk-141-2015",
+    "number": "141",
+    "year": 2015,
+    "title": "Peraturan Menteri Keuangan tentang Pemotongan Pajak Penghasilan Pasal 23 atas Penghasilan Berupa Imbalan Jasa Tertentu",
+    "type": "PMK",
+    "effectiveDate": "2015-12-31",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/70615/pmk-no-141-pmk-03-2015-tahun-2015",
+    "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "pp-60-2023",
+      "uu-7-2021-hpp"
+    ],
+    "referencingEntries": [
+      "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct"
+    ]
+  }
+}

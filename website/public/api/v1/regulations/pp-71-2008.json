@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-71-2008",
+    "number": "71/2008",
+    "year": 2008,
+    "title": "PP tentang PPh Pengalihan Hak atas Tanah/Bangunan dan Jasa Konstruksi",
+    "type": "PP",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/49660/pp-no-71-tahun-2008",
+    "status": "berlaku",
+    "effectiveDate": "2009-01-01",
+    "referencingEntries": [
+      "pph-final-pengalihan-pp71"
+    ]
+  }
+}

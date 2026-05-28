@@ -1,0 +1,318 @@
+---
+import BaseLayout from '../layouts/Base.astro';
+---
+
+<BaseLayout title="API Reference">
+  <div class="mb-6">
+    <h2 class="text-2xl font-bold text-gray-900 mb-1">API Reference</h2>
+    <p class="text-gray-500 text-sm">Pre-built static JSON API — fetch langsung dari CDN tanpa backend</p>
+  </div>
+
+  <!-- Quick Info -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+    <div class="border border-gray-200 rounded-lg p-4">
+      <div class="text-xs text-gray-500 mb-1">Base URL</div>
+      <code class="text-sm font-mono text-emerald-700">/api/v1/</code>
+    </div>
+    <div class="border border-gray-200 rounded-lg p-4">
+      <div class="text-xs text-gray-500 mb-1">Format</div>
+      <code class="text-sm font-mono text-gray-700">JSON (static files)</code>
+    </div>
+    <div class="border border-gray-200 rounded-lg p-4">
+      <div class="text-xs text-gray-500 mb-1">Auth</div>
+      <code class="text-sm font-mono text-gray-700">None — fully open</code>
+    </div>
+  </div>
+
+  <!-- Response Format -->
+  <div class="mb-8">
+    <h3 class="text-lg font-semibold text-gray-900 mb-3">Response Format</h3>
+    <div class="code-block text-xs overflow-x-auto">
+      
+    </div>
+  </div>
+
+  <!-- Endpoints Table -->
+  <div class="mb-8">
+    <h3 class="text-lg font-semibold text-gray-900 mb-3">Endpoints</h3>
+    
+    <!-- Meta -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-gray-100 text-gray-700 px-2 py-0.5 rounded text-xs font-mono">META</span>
+        Info & Stats
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/index.json</td><td>API index — daftar semua endpoint</td></tr>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/stats.json</td><td>Statistik database</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Entries -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-mono">ENTRIES</span>
+        Tarif Pajak
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/entries/index.json</td><td>Daftar semua entries (ringkasan)</td></tr>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/entries/<strong>&#123;id&#125;</strong>.json</td><td>Detail 1 entry lengkap</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-2 code-block text-xs">
+        <span class="text-gray-400">$</span> curl /api/v1/entries/ppn-10pct.json
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-purple-50 text-purple-700 px-2 py-0.5 rounded text-xs font-mono">CATEGORIES</span>
+        Kategori Pajak
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/categories/index.json</td><td>Daftar semua kategori</td></tr>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/categories/<strong>&#123;slug&#125;</strong>.json</td><td>Entries dalam 1 kategori</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-2 code-block text-xs">
+        <span class="text-gray-400">$</span> curl /api/v1/categories/pph-21.json
+      </div>
+    </div>
+
+    <!-- Temporal -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-amber-50 text-amber-700 px-2 py-0.5 rounded text-xs font-mono">TEMPORAL</span>
+        Query Berdasarkan Tahun
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/by-year/<strong>&#123;year&#125;</strong>.json</td><td>Entries berlaku di tahun tersebut</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-2 code-block text-xs">
+        <span class="text-gray-400">$</span> curl /api/v1/by-year/2001.json <span class="text-gray-400"># → PPN 10%, PPh 23 jasa 2%, dll</span>
+      </div>
+    </div>
+
+    <!-- BPPU -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-teal-50 text-teal-700 px-2 py-0.5 rounded text-xs font-mono">BPPU</span>
+        Kode Objek Pajak
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/bppu/index.json</td><td>Semua kode BPPU + mapping ke entry</td></tr>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/bppu/<strong>&#123;prefix&#125;</strong>.json</td><td>Kode BPPU per prefix (24-104, 28-404, dll)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-2 code-block text-xs">
+        <span class="text-gray-400">$</span> curl /api/v1/bppu/24-104.json <span class="text-gray-400"># → PPh 23 jasa lain</span>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-rose-50 text-rose-700 px-2 py-0.5 rounded text-xs font-mono">TIMELINE</span>
+        Rantai Sejarah Tarif
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/timeline/index.json</td><td>Daftar timeline groups</td></tr>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/timeline/<strong>&#123;group&#125;</strong>.json</td><td>Rantai sejarah per jenis tarif</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-2 code-block text-xs">
+        <span class="text-gray-400">$</span> curl /api/v1/timeline/pph-21-progressive.json <span class="text-gray-400"># → 5 era tarif</span>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded text-xs font-mono">SEARCH</span>
+        Full-text Search (Client-side)
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/search-index.json</td><td>Inverted index untuk client-side search</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-2 text-xs text-gray-500">
+        Fetch sekali → cache → filter di browser. Inverted index: keyword → entry IDs.
+      </div>
+    </div>
+
+    <!-- Regulations -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded text-xs font-mono">REGULATIONS</span>
+        Peraturan Perpajakan
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/regulations/index.json</td><td>Daftar semua regulasi</td></tr>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/regulations/<strong>&#123;id&#125;</strong>.json</td><td>Detail regulasi + entries terkait</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Calculator -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-mono">CALCULATOR</span>
+        Data Kalkulasi Pajak
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/calculator/index.json</td><td>Daftar kalkulator tersedia</td></tr>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/calculator/<strong>&#123;id&#125;</strong>.json</td><td>Data kalkulasi (brackets, PTKP, tarif)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-2 text-xs text-gray-500">
+        Kalkulator = data statis. Kalkulasi aktual dilakukan client-side.
+      </div>
+    </div>
+
+    <!-- OpenAPI -->
+    <div class="mb-6">
+      <h4 class="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+        <span class="bg-gray-100 text-gray-700 px-2 py-0.5 rounded text-xs font-mono">SPEC</span>
+        OpenAPI 3.0
+      </h4>
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <table class="api-table">
+          <thead><tr><th>Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><td><span class="method-get">GET</span></td><td class="font-mono text-xs">/api/v1/openapi.json</td><td>OpenAPI 3.0 specification</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Console -->
+  <div class="mb-8">
+    <h3 class="text-lg font-semibold text-gray-900 mb-3">Try It</h3>
+    <div class="border border-gray-200 rounded-lg p-4">
+      <div class="flex gap-3 mb-3">
+        <select id="api-endpoint" class="border border-gray-300 rounded px-3 py-2 text-sm font-mono bg-white">
+          <option value="/api/v1/index.json">GET /api/v1/index.json</option>
+          <option value="/api/v1/stats.json">GET /api/v1/stats.json</option>
+          <option value="/api/v1/entries/index.json">GET /api/v1/entries/index.json</option>
+          <option value="/api/v1/categories/index.json">GET /api/v1/categories/index.json</option>
+          <option value="/api/v1/by-year/2001.json">GET /api/v1/by-year/2001.json</option>
+          <option value="/api/v1/timeline/pph-21-progressive.json">GET /api/v1/timeline/pph-21-progressive.json</option>
+          <option value="/api/v1/calculator/pph-21.json">GET /api/v1/calculator/pph-21.json</option>
+          <option value="/api/v1/bppu/index.json">GET /api/v1/bppu/index.json</option>
+          <option value="/api/v1/search-index.json">GET /api/v1/search-index.json</option>
+          <option value="/api/v1/openapi.json">GET /api/v1/openapi.json</option>
+        </select>
+        <button id="api-execute" class="bg-emerald-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-emerald-700 transition">Execute</button>
+        <button id="api-copy-curl" class="border border-gray-300 text-gray-700 px-3 py-2 rounded text-sm hover:bg-gray-50 transition">Copy curl</button>
+      </div>
+      <div id="api-response" class="code-block text-xs overflow-auto max-h-96">
+        <span class="text-gray-400">Select an endpoint and click Execute...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Use Cases -->
+  <div class="mb-8">
+    <h3 class="text-lg font-semibold text-gray-900 mb-3">Contoh Use Case</h3>
+    <div class="space-y-3">
+      <div class="border border-gray-200 rounded-lg p-4">
+        <div class="text-sm font-medium text-gray-900 mb-1">Berapa tarif PPN tahun 2001?</div>
+        <div class="code-block text-xs">
+          <span class="text-gray-400">$</span> curl /api/v1/by-year/2001.json <span class="text-gray-400"># → ppn-10pct: 10%</span>
+        </div>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4">
+        <div class="text-sm font-medium text-gray-900 mb-1">Berapa tarif PPh 23 jasa tahun 1999?</div>
+        <div class="code-block text-xs">
+          <span class="text-gray-400">$</span> curl /api/v1/by-year/1999.json <span class="text-gray-400"># → pph-23-jasa-pre2001: 15%</span>
+        </div>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4">
+        <div class="text-sm font-medium text-gray-900 mb-1">Timeline lengkap PTKP?</div>
+        <div class="code-block text-xs">
+          <span class="text-gray-400">$</span> curl /api/v1/timeline/pph-21-ptkp.json <span class="text-gray-400"># → 5 era: 960K → 1.7M → 12M → 15.8M → 54M</span>
+        </div>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4">
+        <div class="text-sm font-medium text-gray-900 mb-1">Data untuk kalkulasi PPh 21?</div>
+        <div class="code-block text-xs">
+          <span class="text-gray-400">$</span> curl /api/v1/calculator/pph-21.json <span class="text-gray-400"># → brackets + PTKP values</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .api-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  .api-table th { text-align: left; padding: 0.5rem 1rem; background: #f9fafb; border-bottom: 1px solid #e5e7eb; font-weight: 600; color: #374151; }
+  .api-table td { padding: 0.5rem 1rem; border-bottom: 1px solid #f3f4f6; }
+  .api-table tr:hover td { background: #f9fafb; }
+  .method-get { display: inline-block; background: #dbeafe; color: #1d4ed8; padding: 0.125rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: 600; font-family: monospace; }
+</style>
+
+<script>
+  const sel = document.getElementById('api-endpoint') ;
+  const btn = document.getElementById('api-execute') ;
+  const copyBtn = document.getElementById('api-copy-curl') ;
+  const resp = document.getElementById('api-response') ;
+
+  btn?.addEventListener('click', async () => {
+    const url = sel.value;
+    resp.innerHTML = '<span class="text-gray-400">Loading...</span>';
+    try {
+      const r = await fetch(url);
+      const data = await r.json();
+      resp.textContent = JSON.stringify(data, null, 2).substring(0, 5000);
+    } catch (e) {
+      resp.textContent = 'Error: ' + e.message;
+    }
+  });
+
+  copyBtn?.addEventListener('click', () => {
+    const curl = `curl ${window.location.origin}${sel.value}`;
+    navigator.clipboard.writeText(curl);
+    copyBtn.textContent = 'Copied!';
+    setTimeout(() => { copyBtn.textContent = 'Copy curl'; }, 2000);
+  });
+</script>

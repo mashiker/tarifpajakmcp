@@ -1,0 +1,37 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "category": "Pajak Daerah",
+    "taxType": "BPHTB",
+    "description": "Bea Perolehan Hak atas Tanah dan Bangunan - Pajak yang dikenakan atas perolehan hak atas tanah dan/atau bangunan",
+    "count": 3,
+    "entries": [
+      {
+        "id": "bphtb-perolehan-umum",
+        "transactionType": "Perolehan Hak atas Tanah/Bangunan (Umum)",
+        "rate": "5%",
+        "status": "berlaku",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bphtb-perolehan-waris",
+        "transactionType": "Perolehan Hak melalui Waris",
+        "rate": "5%",
+        "status": "berlaku",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bphtb-pengalihan-dinkes",
+        "transactionType": "Pengalihan Hak untuk Kepentingan Umum",
+        "rate": "0%",
+        "status": "berlaku",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

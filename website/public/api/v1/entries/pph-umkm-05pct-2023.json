@@ -1,0 +1,90 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-umkm-05pct-2023",
+    "category": "PPh",
+    "taxType": "PPh UMKM",
+    "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
+    "description": "Tarif final PPh 0,5% atas penghasilan dari usaha yang diterima WP orang pribadi yang memiliki peredaran bruto tertentu, sesuai PP 55/2022.",
+    "rate": {
+      "type": "percentage",
+      "value": 0.5
+    },
+    "taxBase": "Peredaran bruto (omzet) bulanan",
+    "payer": "WP Orang Pribadi pelaku UMKM",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2023-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 55/2022",
+        "article": "Pasal 2-3",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [
+      "pph-umkm-05pct-2018"
+    ],
+    "supersededBy": [],
+    "notes": "Masa berlaku 7 tahun sejak PP 55/2022. Batas peredaran bruto Rp 4,8 miliar/tahun. PP 55/2022 menggantikan PP 23/2018. Kini juga berlaku untuk WP badan (perubahan dari PP 23/2018).",
+    "tags": [
+      "pph-umkm",
+      "final",
+      "0.5-persen",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "bppuKode": [
+      {
+        "kode": "28-423-01",
+        "nama": "Pemotongan atau pemungutan PPh atas  penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 23 Tahun 2018 atau Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0.5
+      },
+      {
+        "kode": "28-423-02",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0
+      },
+      {
+        "kode": "28-423-03",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak orang pribadi yang memiliki peredaran bruto tertentu sesuai dengan PP 55 Tahun 2022 dengan peredaran usaha s.d Rp500.000.000,00.",
+        "tarif": 0.5
+      },
+      {
+        "kode": "28-423-12",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak yang memenuhi persyaratan tertentu untuk dikenai PPh yang bersifat final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0
+      },
+      {
+        "kode": "28-423-13",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) Rp 100.000.000",
+        "calculation": "0.5% × 100.000.000",
+        "result": "Pajak = Rp 500.000"
+      }
+    ],
+    "relatedEntries": {
+      "supersedes": [
+        "pph-umkm-05pct-2018"
+      ],
+      "sameCategory": [
+        "pph-umkm-05pct-2018",
+        "pph-umkm-1pct-pp46"
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "17A",
+    "bab": "IV",
+    "bagian": "2",
+    "title": "Tarif Efektif Rata-Rata (TER) PPh 21",
+    "status": "ditambah",
+    "description": "Pemotongan PPh 21 menggunakan Tarif Efektif Rata-Rata (TER) berdasarkan PP 58/2023, menggantikan metode lama.",
+    "keywords": [
+      "TER",
+      "PPh 21",
+      "PP 58/2023",
+      "tarif efektif rata-rata"
+    ],
+    "relatedTaxRates": [
+      "pph-21-ter-monthly-2024"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru — dasar hukum TER PPh 21, berlaku efektif 2024"
+      }
+    ]
+  }
+}

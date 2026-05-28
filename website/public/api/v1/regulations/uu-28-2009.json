@@ -1,0 +1,26 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "uu-28-2009",
+    "number": "28",
+    "year": 2009,
+    "title": "Undang-Undang tentang PDRD (Pajak Daerah dan Retribusi Daerah)",
+    "type": "UU",
+    "effectiveDate": "2010-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44141/uu-no-28-tahun-2009",
+    "status": "dicabut_sebagian",
+    "relatedRegulations": [
+      "uu-1-2022-pbb"
+    ],
+    "referencingEntries": [
+      "bphtb-perolehan-umum",
+      "bphtb-perolehan-waris",
+      "bphtb-pengalihan-dinkes",
+      "pbb-perkotaan",
+      "pph-badan-ikn-0pct",
+      "pph-badan-ikn-10y"
+    ]
+  }
+}

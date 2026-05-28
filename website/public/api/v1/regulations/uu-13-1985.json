@@ -1,0 +1,34 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "uu-13-1985",
+    "number": "13",
+    "year": 1985,
+    "title": "Undang-Undang tentang Bea Meterai",
+    "type": "UU",
+    "effectiveDate": "1986-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44140/uu-no-13-tahun-1985",
+    "status": "dicabut",
+    "relatedRegulations": [
+      "uu-10-2020-bea-meterai"
+    ],
+    "referencingEntries": [
+      "bea-masuk-asean-atiga",
+      "bea-meterai-pre2021",
+      "bea-meterai-1000",
+      "pph-21-ptkp-2005",
+      "pph-final-bunga-deposito",
+      "pph-final-sewa-tanah",
+      "pph-final-hadiah-undian",
+      "pph-final-pengalihan-pp131",
+      "pph-umkm-1pct-pp46",
+      "ppn-11pct-effective-2025",
+      "ppn-impor-bkp",
+      "ppn-pmse",
+      "ppn-jasa-tenaga-listrik",
+      "ppn-jasa-telekomunikasi"
+    ]
+  }
+}

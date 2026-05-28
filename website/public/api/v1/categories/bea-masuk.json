@@ -1,0 +1,45 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "category": "Bea Masuk",
+    "taxType": "Bea Masuk",
+    "description": "Bea Masuk — pungutan negara atas barang yang diimpor berdasarkan HS Code",
+    "count": 4,
+    "entries": [
+      {
+        "id": "bea-masuk-umum-mf",
+        "transactionType": "Bea Masuk Umum (MFN)",
+        "rate": "0%–40%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-masuk-asean-atiga",
+        "transactionType": "Bea Masuk ASEAN (ATIGA)",
+        "rate": "0%",
+        "status": "berlaku",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-masuk-bmt",
+        "transactionType": "Bea Masuk Tinggi (BMT) — Barang Mewah",
+        "rate": "40%–150%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-masuk-anti-dumping",
+        "transactionType": "Bea Masuk Anti-Dumping (BMAD)",
+        "rate": "5%–100%",
+        "status": "berlaku",
+        "effectiveFrom": "1996-01-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

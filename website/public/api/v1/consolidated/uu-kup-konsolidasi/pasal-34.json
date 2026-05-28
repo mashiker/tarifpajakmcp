@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "34",
+    "bab": "IX",
+    "title": "Surat Paksa",
+    "status": "diubah",
+    "description": "Penagihan pajak dengan Surat Paksa jika WP tidak membayar setelah diterbitkan STP/SKPKB.",
+    "keywords": [
+      "surat paksa",
+      "penagihan",
+      "21 hari"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan ketentuan penagihan"
+      }
+    ]
+  }
+}

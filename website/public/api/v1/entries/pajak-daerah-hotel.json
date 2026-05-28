@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pajak-daerah-hotel",
+    "category": "Pajak Daerah",
+    "taxType": "Pajak Daerah",
+    "transactionType": "Pajak Hotel",
+    "description": "Pajak atas pelayanan hotel.",
+    "rate": {
+      "type": "range",
+      "value": [
+        5,
+        10
+      ]
+    },
+    "taxBase": "Penerimaan hotel",
+    "payer": "WP Daerah",
+    "recipient": "Pemerintah Daerah",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 60",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 5-10%. Umumnya 10% hotel berbintang.",
+    "examples": [
+      {
+        "scenario": "Hotel bintang 4 Rp 2.000.000/malam",
+        "calculation": "10%×2jt",
+        "result": "Pajak=R200.000"
+      }
+    ],
+    "tags": [
+      "pajak-daerah",
+      "hotel"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "pajak-daerah-restoran",
+        "pajak-daerah-hiburan",
+        "pajak-daerah-reklame",
+        "pajak-daerah-penerangan-jalan",
+        "pajak-daerah-mineral-air",
+        "pajak-daerah-parkir",
+        "pajak-daerah-air-tanah"
+      ]
+    }
+  }
+}

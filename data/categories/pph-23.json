@@ -1075,6 +1075,13 @@
           "nama": "Jasa Penyelenggaraan Program Loyalitas dan Penghargaan Pelanggan (Consumer Loyalty/Reward Program)  Oleh Penyelenggara Voucer",
           "tarif": 2.0
         }
+      ],
+      "examples": [
+        {
+          "scenario": "Imbalan Jasa Lain (Tanpa NPWP) Rp 100.000.000",
+          "calculation": "4% × 100.000.000",
+          "result": "Pajak = Rp 4.000.000"
+        }
       ]
     },
     {
@@ -1117,6 +1124,13 @@
           "kode": "24-104-39",
           "nama": "Jasa Katering Atau Tata Boga",
           "tarif": 2.0
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Jasa Katering / Tata Boga Rp 100.000.000",
+          "calculation": "2% × 100.000.000",
+          "result": "Pajak = Rp 2.000.000"
         }
       ]
     },
@@ -1163,6 +1177,13 @@
           "nama": "Persewaan Tanah dan/atau Bangunan",
           "tarif": 10.0
         }
+      ],
+      "examples": [
+        {
+          "scenario": "Sewa Tanah dan/atau Bangunan Rp 100.000.000",
+          "calculation": "10% × 100.000.000",
+          "result": "Pajak = Rp 10.000.000"
+        }
       ]
     },
     {
@@ -1208,7 +1229,109 @@
           "nama": "Hadiah, Penghargaan, Bonus dan Lainnya Selain yang Telah Dipotong PPh Pasal 21 Ayat (1) Huruf E UU PPh",
           "tarif": 15.0
         }
+      ],
+      "examples": [
+        {
+          "scenario": "Hadiah/Penghargaan kepada OP Bukan Pegawai Rp 100.000.000",
+          "calculation": "15% × 100.000.000",
+          "result": "Pajak = Rp 15.000.000"
+        }
       ]
+    },
+    {
+      "id": "pph-23-jasa-pre2001",
+      "category": "PPh",
+      "taxType": "PPh 23",
+      "transactionType": "Imbalan Jasa & Sewa (UU 7/1983)",
+      "description": "Tarif PPh 23 berdasarkan UU 7/1983 Pasal 23. Tarif atas imbalan jasa 15% dan atas sewa 10%. Berlaku 1984-2000.",
+      "rate": {
+        "type": "range",
+        "value": [
+          10,
+          15
+        ]
+      },
+      "taxBase": "Jumlah bruto imbalan jasa / sewa",
+      "payer": "WP dalam negeri / BUT penerima penghasilan",
+      "recipient": "Negara",
+      "withholder": "Wajib Pajak badan pemberi penghasilan / bendahara pemerintah",
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": "2000-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 23 ayat (1) huruf c",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [
+        "pph-23-jasa-2001"
+      ],
+      "notes": "UU 7/1983: Imbalan jasa 15%, sewa 10%. Tarif jasa sangat tinggi dibanding 2% sekarang.",
+      "examples": [
+        {
+          "scenario": "Jasa konsultasi Rp 50.000.000 tahun 1995",
+          "calculation": "15% × 50.000.000",
+          "result": "PPh 23 = Rp 7.500.000"
+        }
+      ],
+      "tags": [
+        "pph-23",
+        "historis",
+        "uu-7-1983"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-23-jasa-2001",
+      "category": "PPh",
+      "taxType": "PPh 23",
+      "transactionType": "Imbalan Jasa & Sewa (UU 17/2000)",
+      "description": "Tarif PPh 23 berdasarkan UU 17/2000. Tarif jasa diturunkan drastis dari 15% menjadi 2%. Sewa tetap 10%. Berlaku 2001-2021.",
+      "rate": {
+        "type": "range",
+        "value": [
+          2,
+          10
+        ]
+      },
+      "taxBase": "Jumlah bruto imbalan jasa / sewa",
+      "payer": "WP dalam negeri / BUT penerima penghasilan",
+      "recipient": "Negara",
+      "withholder": "Wajib Pajak badan pemberi penghasilan / bendahara pemerintah",
+      "effectiveFrom": "2001-01-01",
+      "effectiveTo": "2021-12-31",
+      "status": "diubah",
+      "legalBasis": [
+        {
+          "regulation": "UU 17/2000",
+          "article": "Pasal 23 ayat (1) huruf c",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44066/uu-no-17-tahun-2000"
+        }
+      ],
+      "supersedes": [
+        "pph-23-jasa-pre2001"
+      ],
+      "supersededBy": [
+        "pph-23-jasa-lain-2pct",
+        "pph-23-jasa-lain-4pct"
+      ],
+      "notes": "UU 17/2000 menurunkan tarif PPh 23 jasa dari 15% ke 2% — penurunan sangat signifikan. Sewa tetap 10%.",
+      "examples": [
+        {
+          "scenario": "Jasa konsultasi Rp 50.000.000 tahun 2010",
+          "calculation": "2% × 50.000.000",
+          "result": "PPh 23 = Rp 1.000.000"
+        }
+      ],
+      "tags": [
+        "pph-23",
+        "historis",
+        "uu-17-2000"
+      ],
+      "lastVerified": "2026-05-28"
     }
   ]
 }

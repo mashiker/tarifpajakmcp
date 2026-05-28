@@ -40,7 +40,9 @@
           "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
         }
       ],
-      "supersedes": ["pph-21-progressive-monthly-pre2024"],
+      "supersedes": [
+        "pph-21-progressive-monthly-pre2024"
+      ],
       "supersededBy": [],
       "notes": "TER berlaku untuk pemotongan bulanan. Pada akhir tahun tetap dilakukan perhitungan dengan tarif progresif Pasal 17 UU PPh untuk SPT Tahunan. Terdapat 3 kategori TER: TER A (tidak menikah tanpa tanggungan), TER B (menikah), TER C (menikah dengan tanggungan).",
       "examples": [
@@ -50,7 +52,13 @@
           "result": "PPh 21 = Rp 300.000/bulan"
         }
       ],
-      "tags": ["pph-21", "ter", "pegawai", "bulanan", "berlaku"],
+      "tags": [
+        "pph-21",
+        "ter",
+        "pegawai",
+        "bulanan",
+        "berlaku"
+      ],
       "lastVerified": "2026-05-26"
     },
     {
@@ -63,11 +71,31 @@
         "type": "progressive",
         "value": "Progresif 5 lapis",
         "brackets": [
-          { "min": 0, "max": 60000000, "rate": 5 },
-          { "min": 60000000, "max": 250000000, "rate": 15 },
-          { "min": 250000000, "max": 500000000, "rate": 25 },
-          { "min": 500000000, "max": 5000000000, "rate": 30 },
-          { "min": 5000000000, "max": null, "rate": 35 }
+          {
+            "min": 0,
+            "max": 60000000,
+            "rate": 5
+          },
+          {
+            "min": 60000000,
+            "max": 250000000,
+            "rate": 15
+          },
+          {
+            "min": 250000000,
+            "max": 500000000,
+            "rate": 25
+          },
+          {
+            "min": 500000000,
+            "max": 5000000000,
+            "rate": 30
+          },
+          {
+            "min": 5000000000,
+            "max": null,
+            "rate": 35
+          }
         ]
       },
       "taxBase": "Penghasilan Kena Pajak (PKP) = Penghasilan neto - PTKP",
@@ -85,7 +113,9 @@
           "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
         }
       ],
-      "supersedes": ["pph-21-progressive-pre2022"],
+      "supersedes": [
+        "pph-21-progressive-pre2022"
+      ],
       "supersededBy": [],
       "notes": "Lapisan tarif 35% ditambahkan oleh UU HPP (sebelumnya maksimal 30%). PTKP 2024: Single Rp 54.000.000; Kawin Rp 58.500.000; Tanggungan Rp 4.500.000/orang (maks 3).",
       "examples": [
@@ -95,7 +125,12 @@
           "result": "PPh terutang = Rp 44.000.000"
         }
       ],
-      "tags": ["pph-21", "progresif", "spt-tahunan", "berlaku"],
+      "tags": [
+        "pph-21",
+        "progresif",
+        "spt-tahunan",
+        "berlaku"
+      ],
       "lastVerified": "2026-05-26"
     },
     {
@@ -108,10 +143,26 @@
         "type": "progressive",
         "value": "Progresif 4 lapis",
         "brackets": [
-          { "min": 0, "max": 50000000, "rate": 5 },
-          { "min": 50000000, "max": 250000000, "rate": 15 },
-          { "min": 250000000, "max": 500000000, "rate": 25 },
-          { "min": 500000000, "max": null, "rate": 30 }
+          {
+            "min": 0,
+            "max": 50000000,
+            "rate": 5
+          },
+          {
+            "min": 50000000,
+            "max": 250000000,
+            "rate": 15
+          },
+          {
+            "min": 250000000,
+            "max": 500000000,
+            "rate": 25
+          },
+          {
+            "min": 500000000,
+            "max": null,
+            "rate": 30
+          }
         ]
       },
       "taxBase": "Penghasilan Kena Pajak",
@@ -128,11 +179,27 @@
           "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
         }
       ],
-      "supersedes": ["pph-21-progressive-pre2009"],
-      "supersededBy": ["pph-21-progressive-annual-2024"],
+      "supersedes": [
+        "pph-21-progressive-pre2009"
+      ],
+      "supersededBy": [
+        "pph-21-progressive-annual-2024"
+      ],
       "notes": "Diberlakukan oleh UU 36/2008. Brackets berubah dari UU 17/2000 (batas atas berbeda).",
-      "tags": ["pph-21", "progresif", "historis", "uu-36-2008"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "pph-21",
+        "progresif",
+        "historis",
+        "uu-36-2008"
+      ],
+      "lastVerified": "2026-05-26",
+      "examples": [
+        {
+          "scenario": "Tarif Progresif Pra-HPP PKP Rp 100.000.000",
+          "calculation": "Hitung per lapisan progresif",
+          "result": "Pajak = jumlah dari setiap lapisan"
+        }
+      ]
     },
     {
       "id": "pph-21-non-taxable-income",
@@ -158,11 +225,1311 @@
           "sourceUrl": "https://peraturan.bpk.go.id/Details/51529/pmk-no-122-tahun-2015"
         }
       ],
-      "supersedes": [],
+      "supersedes": [
+        "pph-21-ptkp-2009"
+      ],
       "supersededBy": [],
       "notes": "PTKP: TK/0 = Rp 54.000.000; K/0 = Rp 58.500.000; K/1 = Rp 63.000.000; K/2 = Rp 67.500.000; K/3 = Rp 72.000.000. Belum ada perubahan sejak PMK 122/2015.",
-      "tags": ["pph-21", "ptkp", "pengurang", "berlaku"],
-      "lastVerified": "2026-05-26"
+      "tags": [
+        "pph-21",
+        "ptkp",
+        "pengurang",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-26",
+      "examples": [
+        {
+          "scenario": "PTKP (Penghasilan Tidak Kena Pajak)",
+          "calculation": "Sesuai formula yang berlaku",
+          "result": "Lihat ketentuan detail"
+        }
+      ]
+    },
+    {
+      "id": "pph-21-honorarium-bukan-pegawai",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Honorarium/Bukan Pegawai (BerNPWP)",
+      "description": "Pemotongan PPh 21 atas honorarium atau imbalan kepada tenaga ahli, dokter, pengacara, akuntan, arsitek, notaris, penilai, aktuaris, dan tenaga ahli lainnya yang melakukan pekerjaan bebas (bukan pegawai). Dikenakan tarif progresif Pasal 17 UU PPh dengan norma penghitungan 50% dari penghasilan bruto sebagai penghasilan neto (PP 16/2009 Pasal 17).",
+      "rate": {
+        "type": "progressive",
+        "value": "Progresif 5 lapis Pasal 17 UU PPh",
+        "effectiveRate": "Tarif Pasal 17 × 50% norma penghitungan",
+        "brackets": [
+          {
+            "min": 0,
+            "max": 60000000,
+            "rate": 5
+          },
+          {
+            "min": 60000000,
+            "max": 250000000,
+            "rate": 15
+          },
+          {
+            "min": 250000000,
+            "max": 500000000,
+            "rate": 25
+          },
+          {
+            "min": 500000000,
+            "max": 5000000000,
+            "rate": 30
+          },
+          {
+            "min": 5000000000,
+            "max": null,
+            "rate": 35
+          }
+        ]
+      },
+      "taxBase": "50% × penghasilan bruto (norma penghitungan) dikurangi PTKP",
+      "payer": "Tenaga ahli/bukan pegawai (WP OP dalam negeri)",
+      "recipient": "Negara",
+      "withholder": "Pemberi penghasilan",
+      "effectiveFrom": "2009-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 16/2009",
+          "article": "Pasal 17",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/50297/pp-no-16-tahun-2009"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 17 ayat (1) huruf a",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 50% berlaku untuk tenaga ahli. Untuk pekerjaan bebas lainnya norma penghitungan bisa berbeda (misalnya: pedagang 15%, petani 25%). Pegawai tidak tetap dan bukan pegawai dengan penghasilan ≤ Rp 4.500.000/bulan: PTKP dihitung harian.",
+      "examples": [
+        {
+          "scenario": "Notaris menerima honorarium Rp 100.000.000",
+          "calculation": "Neto = 50% × 100jt = 50jt. PKP = 50jt - 54jt (PTKP) = 0",
+          "result": "PPh 21 = Rp 0 (PKP negatif, tidak terutang)"
+        },
+        {
+          "scenario": "Konsultan menerima honorarium Rp 200.000.000",
+          "calculation": "Neto = 50% × 200jt = 100jt. PKP = 100jt - 54jt = 46jt. PPh = 5% × 46jt",
+          "result": "PPh 21 = Rp 2.300.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "honorarium",
+        "bukan-pegawai",
+        "tenaga-ahli",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27"
+    },
+    {
+      "id": "pph-21-pegawai-tidak-tetap",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
+      "description": "Pemotongan PPh 21 atas penghasilan pegawai tidak tetap atau tenaga kerja lepas yang menerima penghasilan secara harian, mingguan, atau satuan waktu tertentu. Jika penghasilan ≤ Rp 4.500.000/hari dan sudah kena PTKP harian, PPh = 0. Jika > Rp 4.500.000/hari, tarif Pasal 17 berlaku.",
+      "rate": {
+        "type": "formula",
+        "value": "Tarif Pasal 17 progresif dengan PTKP harian",
+        "effectiveRate": "0% jika ≤ Rp 4.500.000/hari setelah PTKP"
+      },
+      "taxBase": "Penghasilan bruto harian dikurangi PTKP harian (1/360 × PTKP tahunan × jumlah hari kerja)",
+      "payer": "Pegawai tidak tetap / tenaga kerja lepas",
+      "recipient": "Negara",
+      "withholder": "Pemberi kerja",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 168/2023",
+          "article": "Pasal 8-10",
+          "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+        },
+        {
+          "regulation": "PP 58/2023",
+          "article": "Pasal 5",
+          "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PTKP harian = PTKP tahunan × 1/360. Untuk penghasilan > Rp 4.500.000/hari, dipotong PPh 21 dengan tarif Pasal 17 dengan PTKP harian terkumulasi.",
+      "tags": [
+        "pph-21",
+        "pegawai-tidak-tetap",
+        "tenaga-kerja-lepas",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
+          "calculation": "Sesuai formula yang berlaku",
+          "result": "Lihat ketentuan detail"
+        }
+      ]
+    },
+    {
+      "id": "pph-21-shu-koperasi",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Sisa Hasil Usaha (SHU) Koperasi",
+      "description": "Pemotongan PPh 21 atas Sisa Hasil Usaha (SHU) koperasi yang dibagikan kepada anggota WP Orang Pribadi. SHU yang diterima anggota koperasi diperlakukan sebagai dividen.",
+      "rate": {
+        "type": "percentage",
+        "value": 0
+      },
+      "taxBase": "Jumlah SHU yang dibagikan",
+      "payer": "Anggota koperasi (WP OP)",
+      "recipient": "Negara",
+      "withholder": "Koperasi",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (3) huruf f",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PP 60/2023",
+          "article": "Pasal 6"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "SHU koperasi yang dibayarkan kepada anggota WP OP dikenakan PPh final 0% (bebas pajak). Fasilitas ini diberikan untuk mendukung perkembangan koperasi.",
+      "tags": [
+        "pph-21",
+        "shu",
+        "koperasi",
+        "tarif-nol",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Sisa Hasil Usaha (SHU) Koperasi - tidak kena pajak",
+          "calculation": "Tarif 0%",
+          "result": "Pajak = Rp 0"
+        }
+      ]
+    },
+    {
+      "id": "pph-21-natura-kenikmatan",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Natura/Kenikmatan dari Pemberi Kerja",
+      "description": "Pajak atas pemberian natura (barang) atau kenikmatan dari pemberi kerja kepada pegawai. Mulai 2024, pemberian natura/kenikmatan yang diberikan bukan oleh pemberi kerja (bukan BP) menjadi objek PPh 21 yang dipotong oleh penerima penghasilan.",
+      "rate": {
+        "type": "percentage",
+        "value": 1
+      },
+      "taxBase": "Nilai wajar natura/kenikmatan",
+      "payer": "Penerima natura/kenikmatan",
+      "recipient": "Negara",
+      "withholder": "Pemberi kerja",
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 21 ayat (1) huruf b",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        },
+        {
+          "regulation": "PMK 168/2023",
+          "article": "Pasal 12",
+          "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Natura/kenikmatan dari pemberi kerja (BP) yang diberikan kepada pegawai: PPh ditanggung pemberi kerja (gross-up) atau dihitung dari nilai wajar. Natura dari bukan BP: 1% dari nilai wajar sebagai PPh yang dipotong sendiri oleh penerima.",
+      "tags": [
+        "pph-21",
+        "natura",
+        "kenikmatan",
+        "benefit-in-kind",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Natura/Kenikmatan dari Pemberi Kerja Rp 100.000.000",
+          "calculation": "1% × 100.000.000",
+          "result": "Pajak = Rp 1.000.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-21-dana-pensiun",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Penarikan Dana Pensiun / JHT",
+      "description": "Pemotongan PPh 21 atas penarikan iuran pensiun/jaminan hari tua (JHT) yang dibayarkan sekaligus. Tarif PPh final berjenjang berdasarkan akumulasi iuran.",
+      "rate": {
+        "type": "progressive",
+        "value": "Tarif final berjenjang",
+        "brackets": [
+          {
+            "min": 0,
+            "max": 50000000,
+            "rate": 0
+          },
+          {
+            "min": 50000000,
+            "max": 100000000,
+            "rate": 5
+          },
+          {
+            "min": 100000000,
+            "max": 500000000,
+            "rate": 10
+          },
+          {
+            "min": 500000000,
+            "max": null,
+            "rate": 15
+          }
+        ]
+      },
+      "taxBase": "Akumulasi iuran pensiun/JHT yang ditarik",
+      "payer": "Peserta pensiun/JHT",
+      "recipient": "Negara",
+      "withholder": "Dana pensiun/BPJS Ketenagakerjaan",
+      "effectiveFrom": "2014-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 58/2023",
+          "article": "Pasal 14",
+          "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+        },
+        {
+          "regulation": "PMK 168/2023",
+          "article": "Pasal 15",
+          "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif berjenjang final: ≤50jt = 0%, 50-100jt = 5%, 100-500jt = 10%, >500jt = 15%. Berlaku untuk penarikan yang dibayarkan sekaligus. Penarikan anuitas/bulanan: digabung dengan penghasilan rutin (bukan final).",
+      "examples": [
+        {
+          "scenario": "Penarikan JHT Rp 80.000.000 sekaligus",
+          "calculation": "50jt × 0% + 30jt × 5%",
+          "result": "PPh 21 = Rp 1.500.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "pensiun",
+        "jht",
+        "dana-pensiun",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27"
+    },
+    {
+      "id": "pph-21-progressive-pre2009",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Tarif Progresif Pra-2009",
+      "description": "Tarif progresif PPh OP sebelum UU 36/2008 berlaku. Tarif tertinggi 35% untuk bracket > Rp 250 juta.",
+      "rate": {
+        "type": "progressive",
+        "value": "Progresif 4 lapis",
+        "brackets": [
+          {
+            "min": 0,
+            "max": 25000000,
+            "rate": 5
+          },
+          {
+            "min": 25000000,
+            "max": 50000000,
+            "rate": 10
+          },
+          {
+            "min": 50000000,
+            "max": 100000000,
+            "rate": 15
+          },
+          {
+            "min": 100000000,
+            "max": 200000000,
+            "rate": 25
+          },
+          {
+            "min": 200000000,
+            "max": null,
+            "rate": 35
+          }
+        ]
+      },
+      "taxBase": "Penghasilan Kena Pajak",
+      "payer": "WP Orang Pribadi dalam negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2001-01-01",
+      "effectiveTo": "2008-12-31",
+      "status": "diubah",
+      "legalBasis": [
+        {
+          "regulation": "UU 17/2000",
+          "article": "Pasal 17 ayat (1) huruf a",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44066/uu-no-17-tahun-2000"
+        }
+      ],
+      "supersedes": [
+        "pph-21-progressive-pre2001"
+      ],
+      "supersededBy": [
+        "pph-21-progressive-pre2022"
+      ],
+      "notes": "Tarif progresif UU 17/2000 dengan lapisan 5%, 10%, 15%, 25%, 35%.",
+      "tags": [
+        "pph-21",
+        "progresif",
+        "historis",
+        "uu-17-2000"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Tarif Progresif Pra-2009 PKP Rp 100.000.000",
+          "calculation": "Hitung per lapisan progresif",
+          "result": "Pajak = jumlah dari setiap lapisan"
+        }
+      ]
+    },
+    {
+      "id": "pph-21-progressive-uulama1983",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Tarif Progresif UU 7/1983",
+      "description": "Tarif progresif PPh Orang Pribadi berdasarkan UU 7/1983 (UU PPh asli). Terdiri dari 3 lapis tarif: 15%, 25%, dan 35%. Berlaku dari tahun pajak 1984 hingga 1994.",
+      "rate": {
+        "type": "progressive",
+        "value": "Progresif 3 lapis",
+        "brackets": [
+          {
+            "min": 0,
+            "max": 10000000,
+            "rate": 15
+          },
+          {
+            "min": 10000000,
+            "max": 50000000,
+            "rate": 25
+          },
+          {
+            "min": 50000000,
+            "max": null,
+            "rate": 35
+          }
+        ]
+      },
+      "taxBase": "Penghasilan Kena Pajak (PKP)",
+      "payer": "WP Orang Pribadi dalam negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": "1994-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 17 ayat (1) huruf a",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [
+        "pph-21-progressive-uulama1994"
+      ],
+      "notes": "UU PPh pertama Indonesia (UU 7/1983). Tarif progresif 3 lapis: 15% (≤10jt), 25% (10-50jt), 35% (>50jt). PTKP awal sangat kecil (Rp 960.000/tahun untuk single).",
+      "examples": [
+        {
+          "scenario": "PKP Rp 30.000.000 tahun 1990",
+          "calculation": "15% × 10jt + 25% × 20jt = 1.5jt + 5jt",
+          "result": "PPh terutang = Rp 6.500.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "progresif",
+        "historis",
+        "uu-7-1983"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-progressive-uulama1994",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Tarif Progresif UU 10/1994",
+      "description": "Tarif progresif PPh OP berdasarkan UU 10/1994 (perubahan pertama UU PPh). Tarif tidak berubah dari UU 7/1983 namun PTKP dinaikkan. Berlaku 1995-2000.",
+      "rate": {
+        "type": "progressive",
+        "value": "Progresif 3 lapis",
+        "brackets": [
+          {
+            "min": 0,
+            "max": 10000000,
+            "rate": 15
+          },
+          {
+            "min": 10000000,
+            "max": 50000000,
+            "rate": 25
+          },
+          {
+            "min": 50000000,
+            "max": null,
+            "rate": 35
+          }
+        ]
+      },
+      "taxBase": "Penghasilan Kena Pajak (PKP)",
+      "payer": "WP Orang Pribadi dalam negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1995-01-01",
+      "effectiveTo": "2000-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "UU 10/1994",
+          "article": "Pasal 3",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44056/uu-no-10-tahun-1994"
+        }
+      ],
+      "supersedes": [
+        "pph-21-progressive-uulama1983"
+      ],
+      "supersededBy": [
+        "pph-21-progressive-pre2009"
+      ],
+      "notes": "UU 10/1994 tidak mengubah tarif Pasal 17 secara signifikan. Tarif tetap 15/25/35%. PTKP dinaikkan menjadi Rp 1.728.000/tahun.",
+      "examples": [
+        {
+          "scenario": "PKP Rp 30.000.000 tahun 1998",
+          "calculation": "15% × 10jt + 25% × 20jt = 1.5jt + 5jt",
+          "result": "PPh terutang = Rp 6.500.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "progresif",
+        "historis",
+        "uu-10-1994"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-progressive-monthly-pre2024",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Pemotongan Bulanan Progresif (Pra-TER)",
+      "description": "Metode pemotongan PPh 21 bulanan sebelum TER berlaku. Menggunakan tarif progresif Pasal 17 dengan annualisasi penghasilan. Berlaku dari 1984 hingga digantikan TER pada 2024.",
+      "rate": {
+        "type": "formula",
+        "value": "Tarif Pasal 17 × (penghasilan neto bulanan × 12 - PTKP) setelah annualisasi",
+        "effectiveRate": "Bervariasi sesuai lapisan progresif"
+      },
+      "taxBase": "Penghasilan bruto bulanan dikurangi biaya jabatan/iuran pensiun, kemudian annualisasi",
+      "payer": "WP Orang Pribadi dalam negeri (pegawai)",
+      "recipient": "Negara",
+      "withholder": "Pemberi kerja",
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": "2023-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 21",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        },
+        {
+          "regulation": "PP 16/2009",
+          "article": "Pasal 3-5",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/50297/pp-no-16-tahun-2009"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [
+        "pph-21-ter-monthly-2024"
+      ],
+      "notes": "Metode lama: annualisasi penghasilan (×12), hitung PPh setahun dengan tarif progresif, bagi 12 untuk mendapatkan PPh bulanan. Digantikan oleh TER mulai 2024 melalui PP 58/2023.",
+      "examples": [
+        {
+          "scenario": "Pegawai K/1, gaji Rp 8.000.000/bulan (2019)",
+          "calculation": "Neto=8jt×12=96jt. PTKP K/1=63jt. PKP=33jt. PPh tahunan=5%×33jt=1.65jt. Bulanan=1.65jt/12",
+          "result": "PPh 21 = Rp 137.500/bulan"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "bulanan",
+        "annualisasi",
+        "historis",
+        "pra-ter"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-ptkp-1984",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+      "description": "PTKP awal UU 7/1983. TK/0 = Rp 960.000/tahun. Berlaku 1984-1994.",
+      "rate": {
+        "type": "formula",
+        "value": "PTKP sesuai regulasi berlaku",
+        "effectiveRate": "TK/0 = Rp 960.000; K/0 = Rp 1.440.000; K/1 = Rp 1.680.000"
+      },
+      "taxBase": "Bukan tarif, melainkan pengurang",
+      "payer": "-",
+      "recipient": "-",
+      "withholder": null,
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": "1994-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 17 ayat (6)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [
+        "pph-21-ptkp-1995"
+      ],
+      "notes": "PTKP UU 7/1983: TK/0=R960.000; K/0=R1.440.000; K/1=R1.680.000; K/2=R1.920.000; K/3=R2.160.000. Tambahan wajib lapor R480.000.",
+      "examples": [
+        {
+          "scenario": "Pegawai TK/0 gaji Rp 5.000.000/bulan (1984)",
+          "calculation": "PTKP tahunan berlaku mengurangi penghasilan neto",
+          "result": "PTKP berlaku mengurangi penghasilan neto"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "ptkp",
+        "pengurang",
+        "historis"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-ptkp-1995",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+      "description": "PTKP UU 10/1994. TK/0 = Rp 1.728.000/tahun. Berlaku 1995-2004.",
+      "rate": {
+        "type": "formula",
+        "value": "PTKP sesuai regulasi berlaku",
+        "effectiveRate": "TK/0 = Rp 1.728.000; K/0 = Rp 1.920.000; K/1 = Rp 2.160.000"
+      },
+      "taxBase": "Bukan tarif, melainkan pengurang",
+      "payer": "-",
+      "recipient": "-",
+      "withholder": null,
+      "effectiveFrom": "1995-01-01",
+      "effectiveTo": "2004-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "UU 10/1994",
+          "article": "Pasal 5",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44056/uu-no-10-tahun-1994"
+        }
+      ],
+      "supersedes": [
+        "pph-21-ptkp-1984"
+      ],
+      "supersededBy": [
+        "pph-21-ptkp-2005"
+      ],
+      "notes": "PTKP dinaikkan: TK/0=R1.728.000; K/0=R1.920.000; Tanggungan R240.000/orang.",
+      "examples": [
+        {
+          "scenario": "Pegawai TK/0 gaji Rp 5.000.000/bulan (1995)",
+          "calculation": "PTKP tahunan berlaku mengurangi penghasilan neto",
+          "result": "PTKP berlaku mengurangi penghasilan neto"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "ptkp",
+        "pengurang",
+        "historis"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-ptkp-2005",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+      "description": "PTKP PMK 138/2005. Lonjakan besar. TK/0 = Rp 12.000.000/tahun. Berlaku 2005-2008.",
+      "rate": {
+        "type": "formula",
+        "value": "PTKP sesuai regulasi berlaku",
+        "effectiveRate": "TK/0 = Rp 12.000.000; K/0 = Rp 13.200.000; K/1 = Rp 14.400.000; K/2 = Rp 15.600.000; K/3 = Rp 16.800.000"
+      },
+      "taxBase": "Bukan tarif, melainkan pengurang",
+      "payer": "-",
+      "recipient": "-",
+      "withholder": null,
+      "effectiveFrom": "2005-01-01",
+      "effectiveTo": "2008-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "PMK 138/PMK.010/2005",
+          "article": "Pasal 1",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/49344/pmk-no-138pmk0102005"
+        }
+      ],
+      "supersedes": [
+        "pph-21-ptkp-1995"
+      ],
+      "supersededBy": [
+        "pph-21-ptkp-2009"
+      ],
+      "notes": "PTKP dinaikkan drastis: TK/0=R12.000.000 (naik 7x). Kawin +R1.200.000, tanggungan +R1.200.000/orang.",
+      "examples": [
+        {
+          "scenario": "Pegawai TK/0 gaji Rp 5.000.000/bulan (2005)",
+          "calculation": "PTKP tahunan berlaku mengurangi penghasilan neto",
+          "result": "PTKP berlaku mengurangi penghasilan neto"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "ptkp",
+        "pengurang",
+        "historis"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-ptkp-2009",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+      "description": "PTKP PMK 162/2009. TK/0 = Rp 15.840.000/tahun. Berlaku 2009-2015.",
+      "rate": {
+        "type": "formula",
+        "value": "PTKP sesuai regulasi berlaku",
+        "effectiveRate": "TK/0 = Rp 15.840.000; K/0 = Rp 17.280.000; K/1 = Rp 18.720.000; K/2 = Rp 20.160.000; K/3 = Rp 21.600.000"
+      },
+      "taxBase": "Bukan tarif, melainkan pengurang",
+      "payer": "-",
+      "recipient": "-",
+      "withholder": null,
+      "effectiveFrom": "2009-01-01",
+      "effectiveTo": "2015-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "PMK 162/PMK.010/2009",
+          "article": "Pasal 1",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/51412/pmk-no-162pmk0102009"
+        }
+      ],
+      "supersedes": [
+        "pph-21-ptkp-2005"
+      ],
+      "supersededBy": [
+        "pph-21-non-taxable-income"
+      ],
+      "notes": "PTKP dinaikkan lagi: TK/0=R15.840.000. Kawin +R1.440.000, tanggungan +R1.440.000/orang.",
+      "examples": [
+        {
+          "scenario": "Pegawai TK/0 gaji Rp 5.000.000/bulan (2009)",
+          "calculation": "PTKP tahunan berlaku mengurangi penghasilan neto",
+          "result": "PTKP berlaku mengurangi penghasilan neto"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "ptkp",
+        "pengurang",
+        "historis"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-ter-a-detail",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "TER Kategori A (Tidak Menikah)",
+      "description": "Tabel TER Kategori A (Tidak Menikah). Tarif efektif rata-rata sesuai PP 58/2023 Lampiran.",
+      "rate": {
+        "type": "formula",
+        "value": "0% - 25% sesuai tabel TER",
+        "effectiveRate": "0% untuk ≤ Rp 6.600.000, naik hingga 25% untuk > Rp 745.000.000"
+      },
+      "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
+      "payer": "WP OP dalam negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 58/2023",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+        },
+        {
+          "regulation": "PMK 168/2023",
+          "article": "Pasal 4-6",
+          "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "TER A untuk pegawai tidak kawin tanpa tanggungan. Tarif mulai 0% untuk penghasilan rendah.",
+      "examples": [
+        {
+          "scenario": "TER Kategori A (Tidak Menikah), gaji Rp 15.000.000/bulan",
+          "calculation": "Cari tarif TER di tabel sesuai range",
+          "result": "PPh 21 sesuai tabel TER"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "ter",
+        "detail",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-ter-b-detail",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
+      "description": "Tabel TER Kategori B (Menikah 0-2 Tanggungan). Tarif efektif rata-rata sesuai PP 58/2023 Lampiran.",
+      "rate": {
+        "type": "formula",
+        "value": "0% - 25% sesuai tabel TER",
+        "effectiveRate": "0% untuk ≤ Rp 6.950.000, naik hingga 25% untuk > Rp 855.000.000"
+      },
+      "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
+      "payer": "WP OP dalam negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 58/2023",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+        },
+        {
+          "regulation": "PMK 168/2023",
+          "article": "Pasal 4-6",
+          "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "TER B untuk pegawai kawin dengan tanggungan 0-2.",
+      "examples": [
+        {
+          "scenario": "TER Kategori B (Menikah 0-2 Tanggungan), gaji Rp 15.000.000/bulan",
+          "calculation": "Cari tarif TER di tabel sesuai range",
+          "result": "PPh 21 sesuai tabel TER"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "ter",
+        "detail",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-ter-c-detail",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
+      "description": "Tabel TER Kategori C (Menikah 3+ Tanggungan). Tarif efektif rata-rata sesuai PP 58/2023 Lampiran.",
+      "rate": {
+        "type": "formula",
+        "value": "0% - 25% sesuai tabel TER",
+        "effectiveRate": "0% untuk ≤ Rp 7.550.000, naik hingga 25% untuk > Rp 955.000.000"
+      },
+      "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
+      "payer": "WP OP dalam negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2024-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 58/2023",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+        },
+        {
+          "regulation": "PMK 168/2023",
+          "article": "Pasal 4-6",
+          "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "TER C untuk pegawai kawin dengan tanggungan ≥3.",
+      "examples": [
+        {
+          "scenario": "TER Kategori C (Menikah 3+ Tanggungan), gaji Rp 15.000.000/bulan",
+          "calculation": "Cari tarif TER di tabel sesuai range",
+          "result": "PPh 21 sesuai tabel TER"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "ter",
+        "detail",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-norma-dokter",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Norma - Dokter/Dokter Gigi",
+      "description": "Norma penghitungan penghasilan neto 50% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 50
+      },
+      "taxBase": "50% × penghasilan bruto (norma penghitungan)",
+      "payer": "WP OP pelaku pekerjaan bebas",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2002-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 523/KMK.04/2002",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+        },
+        {
+          "regulation": "PMK 43/2022",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 50% dari bruto. Berlaku jika WP tidak menyelenggarakan pembukuan.",
+      "examples": [
+        {
+          "scenario": "Dokter honorarium Rp 100.000.000",
+          "calculation": "Neto=50%×100jt=50jt. PKP=50jt-54jt=negatif",
+          "result": "PPh=R0"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "norma-penghitungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-norma-pengacara",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Norma - Pengacara/Advokat",
+      "description": "Norma penghitungan penghasilan neto 50% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 50
+      },
+      "taxBase": "50% × penghasilan bruto (norma penghitungan)",
+      "payer": "WP OP pelaku pekerjaan bebas",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2002-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 523/KMK.04/2002",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+        },
+        {
+          "regulation": "PMK 43/2022",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 50% dari bruto. Berlaku jika WP tidak menyelenggarakan pembukuan.",
+      "examples": [
+        {
+          "scenario": "Pengacara honorarium Rp 200.000.000",
+          "calculation": "Neto=50%×200jt=100jt. PKP=100jt-54jt=46jt",
+          "result": "PPh=5%×46jt=R2.300.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "norma-penghitungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-norma-akuntan",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Norma - Akuntan",
+      "description": "Norma penghitungan penghasilan neto 50% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 50
+      },
+      "taxBase": "50% × penghasilan bruto (norma penghitungan)",
+      "payer": "WP OP pelaku pekerjaan bebas",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2002-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 523/KMK.04/2002",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+        },
+        {
+          "regulation": "PMK 43/2022",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 50% dari bruto. Berlaku jika WP tidak menyelenggarakan pembukuan.",
+      "examples": [
+        {
+          "scenario": "Akuntan honorarium Rp 80.000.000",
+          "calculation": "Neto=50%×80jt=40jt. PKP=40jt-54jt=negatif",
+          "result": "PPh=R0"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "norma-penghitungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-norma-arsitek",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Norma - Arsitek",
+      "description": "Norma penghitungan penghasilan neto 50% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 50
+      },
+      "taxBase": "50% × penghasilan bruto (norma penghitungan)",
+      "payer": "WP OP pelaku pekerjaan bebas",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2002-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 523/KMK.04/2002",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+        },
+        {
+          "regulation": "PMK 43/2022",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 50% dari bruto. Berlaku jika WP tidak menyelenggarakan pembukuan.",
+      "examples": [
+        {
+          "scenario": "Arsitek honorarium Rp 150.000.000",
+          "calculation": "Neto=50%×150jt=75jt. PKP=75jt-54jt=21jt",
+          "result": "PPh=5%×21jt=R1.050.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "norma-penghitungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-norma-notaris",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Norma - Notaris/PPAT",
+      "description": "Norma penghitungan penghasilan neto 50% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 50
+      },
+      "taxBase": "50% × penghasilan bruto (norma penghitungan)",
+      "payer": "WP OP pelaku pekerjaan bebas",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2002-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 523/KMK.04/2002",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+        },
+        {
+          "regulation": "PMK 43/2022",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 50% dari bruto. Berlaku jika WP tidak menyelenggarakan pembukuan.",
+      "examples": [
+        {
+          "scenario": "Notaris honorarium Rp 120.000.000",
+          "calculation": "Neto=50%×120jt=60jt. PKP=60jt-54jt=6jt",
+          "result": "PPh=5%×6jt=R300.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "norma-penghitungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-norma-konsultan",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Norma - Konsultan",
+      "description": "Norma penghitungan penghasilan neto 50% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 50
+      },
+      "taxBase": "50% × penghasilan bruto (norma penghitungan)",
+      "payer": "WP OP pelaku pekerjaan bebas",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2002-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 523/KMK.04/2002",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+        },
+        {
+          "regulation": "PMK 43/2022",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 50% dari bruto. Berlaku jika WP tidak menyelenggarakan pembukuan.",
+      "examples": [
+        {
+          "scenario": "Konsultan honorarium Rp 200.000.000",
+          "calculation": "Neto=50%×200jt=100jt. PKP=100jt-54jt=46jt",
+          "result": "PPh=5%×46jt=R2.300.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "norma-penghitungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-norma-pedagang",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Norma - Pedagang",
+      "description": "Norma penghitungan penghasilan neto 15% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 15
+      },
+      "taxBase": "15% × penghasilan bruto (norma penghitungan)",
+      "payer": "WP OP pelaku pekerjaan bebas",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2002-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 523/KMK.04/2002",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+        },
+        {
+          "regulation": "PMK 43/2022",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 15% dari bruto. Berlaku jika WP tidak menyelenggarakan pembukuan.",
+      "examples": [
+        {
+          "scenario": "Pedagang omzet Rp 500.000.000/tahun",
+          "calculation": "Neto=15%×500jt=75jt. PKP=75jt-54jt=21jt",
+          "result": "PPh=5%×21jt=R1.050.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "norma-penghitungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-norma-petani",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Norma - Petani/Peternak",
+      "description": "Norma penghitungan penghasilan neto 25% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 25
+      },
+      "taxBase": "25% × penghasilan bruto (norma penghitungan)",
+      "payer": "WP OP pelaku pekerjaan bebas",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2002-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 523/KMK.04/2002",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+        },
+        {
+          "regulation": "PMK 43/2022",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 25% dari bruto. Berlaku jika WP tidak menyelenggarakan pembukuan.",
+      "examples": [
+        {
+          "scenario": "Petani omzet Rp 300.000.000/tahun",
+          "calculation": "Neto=25%×300jt=75jt. PKP=75jt-54jt=21jt",
+          "result": "PPh=5%×21jt=R1.050.000"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "norma-penghitungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-21-norma-pengusaha-kecil",
+      "category": "PPh",
+      "taxType": "PPh 21",
+      "transactionType": "Norma - Pengusaha Kecil Lainnya",
+      "description": "Norma penghitungan penghasilan neto 25% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 25
+      },
+      "taxBase": "25% × penghasilan bruto (norma penghitungan)",
+      "payer": "WP OP pelaku pekerjaan bebas",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2002-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PMK 523/KMK.04/2002",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+        },
+        {
+          "regulation": "PMK 43/2022",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Norma penghitungan 25% dari bruto. Berlaku jika WP tidak menyelenggarakan pembukuan.",
+      "examples": [
+        {
+          "scenario": "Pengusaha kecil omzet Rp 200.000.000/tahun",
+          "calculation": "Neto=25%×200jt=50jt. PKP=50jt-54jt=negatif",
+          "result": "PPh=R0"
+        }
+      ],
+      "tags": [
+        "pph-21",
+        "norma-penghitungan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
     }
   ]
 }

@@ -70,6 +70,13 @@
           "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
           "tarif": 0.0
         }
+      ],
+      "examples": [
+        {
+          "scenario": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) Rp 100.000.000",
+          "calculation": "0.5% × 100.000.000",
+          "result": "Pajak = Rp 500.000"
+        }
       ]
     },
     {
@@ -97,7 +104,7 @@
         }
       ],
       "supersedes": [
-        "pph-umkm-1pct"
+        "pph-umkm-1pct-pp46"
       ],
       "supersededBy": [
         "pph-umkm-05pct-2023"
@@ -109,7 +116,59 @@
         "dicabut",
         "historis"
       ],
-      "lastVerified": "2026-05-26"
+      "lastVerified": "2026-05-26",
+      "examples": [
+        {
+          "scenario": "Penghasilan Usaha (PP 23/2018) Rp 100.000.000",
+          "calculation": "0.5% × 100.000.000",
+          "result": "Pajak = Rp 500.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-umkm-1pct-pp46",
+      "category": "PPh",
+      "taxType": "PPh UMKM",
+      "transactionType": "Penghasilan Usaha (PP 46/2013)",
+      "description": "Tarif final PPh 1% atas peredaran bruto WP OP pelaku UMKM berdasarkan PP 46/2013. Berlaku untuk peredaran bruto ≤ Rp 4,8 miliar/tahun. Periode 2013-2018.",
+      "rate": {
+        "type": "percentage",
+        "value": 1
+      },
+      "taxBase": "Peredaran bruto (omzet)",
+      "payer": "WP Orang Pribadi pelaku UMKM",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2013-07-01",
+      "effectiveTo": "2018-06-30",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "PP 46/2013",
+          "article": "Pasal 2-3",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/49798/pp-no-46-tahun-2013"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [
+        "pph-umkm-05pct-2018"
+      ],
+      "notes": "PP 46/2013 memperkenalkan PPh final UMKM pertama: 1% dari peredaran bruto. Digantikan PP 23/2018 (0,5%).",
+      "examples": [
+        {
+          "scenario": "Pedagang omzet Rp 30.000.000/bulan (2015)",
+          "calculation": "1% × 30.000.000",
+          "result": "PPh UMKM = Rp 300.000/bulan"
+        }
+      ],
+      "tags": [
+        "pph-umkm",
+        "final",
+        "1-persen",
+        "historis",
+        "pp-46-2013"
+      ],
+      "lastVerified": "2026-05-28"
     }
   ]
 }

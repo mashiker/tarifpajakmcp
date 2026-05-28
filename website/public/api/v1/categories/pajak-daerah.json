@@ -1,0 +1,77 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "category": "Pajak Daerah",
+    "taxType": "Pajak Daerah",
+    "description": "Pajak Daerah berdasarkan UU 1/2022 (HKPD)",
+    "count": 8,
+    "entries": [
+      {
+        "id": "pajak-daerah-hotel",
+        "transactionType": "Pajak Hotel",
+        "rate": "5%–10%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pajak-daerah-restoran",
+        "transactionType": "Pajak Restoran",
+        "rate": "5%–10%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pajak-daerah-hiburan",
+        "transactionType": "Pajak Hiburan",
+        "rate": "5%–35%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pajak-daerah-reklame",
+        "transactionType": "Pajak Reklame",
+        "rate": "5%–25%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pajak-daerah-penerangan-jalan",
+        "transactionType": "Pajak Penerangan Jalan",
+        "rate": "1%–5%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pajak-daerah-mineral-air",
+        "transactionType": "Pajak MBLB",
+        "rate": "5%–25%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pajak-daerah-parkir",
+        "transactionType": "Pajak Parkir",
+        "rate": "5%–20%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pajak-daerah-air-tanah",
+        "transactionType": "Pajak Air Tanah/Permukaan",
+        "rate": "5%–20%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "uu-42-2009",
+    "pasalLawId": 1926,
+    "number": "42",
+    "year": 2009,
+    "title": "Undang-Undang Perubahan UU Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah",
+    "type": "UU",
+    "effectiveDate": "2010-04-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-42-tahun-2009",
+    "pdfUrl": "https://peraturan.bpk.go.id/Download/44119/UU%20Nomor%2042%20Tahun%202009.pdf",
+    "status": "diubah_sebagian",
+    "relatedRegulations": [
+      "uu-8-1983-ppn",
+      "uu-7-2021-hpp"
+    ],
+    "referencingEntries": [
+      "ppn-10pct",
+      "ppn-impor-bkp",
+      "ppn-ekspor-jkp",
+      "ppn-tidak-kena-pajak",
+      "ppn-jkpt-industri",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4"
+    ]
+  }
+}

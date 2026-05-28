@@ -1,0 +1,62 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "ppnbm-rumah-mewah",
+    "category": "PPnBM",
+    "taxType": "PPnBM",
+    "transactionType": "Rumah Mewah dan Apartemen Mewah",
+    "description": "PPnBM atas penyerahan rumah mewah, apartemen mewah, dan kondominium mewah yang luas bangunan > 350 m² dan harga jual > Rp 5 miliar.",
+    "rate": {
+      "type": "range",
+      "value": [
+        10,
+        40
+      ]
+    },
+    "taxBase": "DPP (Harga Jual/Penggantian)",
+    "payer": "Pembeli konsumen",
+    "recipient": "Negara",
+    "withholder": "PKP penjual/developer",
+    "effectiveFrom": "2022-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 8",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Kategori rumah mewah: tipe 350 m² dan yang tergolong sangat mewah. Tarif 10-40%.",
+    "tags": [
+      "ppnbm",
+      "rumah",
+      "apartemen",
+      "properti-mewah",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Rumah Mewah dan Apartemen Mewah Rp 100.000.000",
+        "calculation": "Tarif 10%-40% × 100jt",
+        "result": "Pajak = Rp 10.000.000 - Rp 40.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "ppnbm-general",
+        "ppnbm-sedan-station-wagon",
+        "ppnbm-suv-4x4",
+        "ppnbm-van-wagon",
+        "ppnbm-kapal-pesiar",
+        "ppnbm-pesawat-pribadi",
+        "ppnbm-perlengkapan-mewah"
+      ]
+    }
+  }
+}

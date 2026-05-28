@@ -1,0 +1,189 @@
+{
+  "category": "Bea Masuk",
+  "taxType": "Bea Masuk",
+  "description": "Bea Masuk — pungutan negara atas barang yang diimpor berdasarkan HS Code",
+  "entries": [
+    {
+      "id": "bea-masuk-umum-mf",
+      "category": "Bea Masuk",
+      "taxType": "Bea Masuk",
+      "transactionType": "Bea Masuk Umum (MFN)",
+      "description": "Tarif Bea Masuk umum (MFN) berdasarkan BTKI. Tarif 0%-40% tergantung HS Code.",
+      "rate": {
+        "type": "range",
+        "value": [
+          0,
+          40
+        ]
+      },
+      "taxBase": "Nilai Pabean (CIF)",
+      "payer": "Importir",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 10/1995",
+          "article": "Pasal 13-14",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44070/uu-no-10-tahun-1995"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tarif BM MFN sesuai BTKI: 0% (komoditas dasar), 5% (bahan baku), 10% (setengah jadi), 15-25% (barang jadi), 40% (mobil mewah).",
+      "examples": [
+        {
+          "scenario": "Impor laptop (HS 8471.30) USD 1.000",
+          "calculation": "Tarif BM 0% × Rp 15.500.000",
+          "result": "BM = Rp 0"
+        },
+        {
+          "scenario": "Impor tekstil (HS 5208) USD 10.000",
+          "calculation": "Tarif BM 15% × Rp 155.000.000",
+          "result": "BM = Rp 23.250.000"
+        }
+      ],
+      "tags": [
+        "bea-masuk",
+        "mfn",
+        "umum",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "bea-masuk-asean-atiga",
+      "category": "Bea Masuk",
+      "taxType": "Bea Masuk",
+      "transactionType": "Bea Masuk ASEAN (ATIGA)",
+      "description": "Tarif BM 0% untuk impor dari negara ASEAN berdasarkan ATIGA.",
+      "rate": {
+        "type": "percentage",
+        "value": 0
+      },
+      "taxBase": "Nilai Pabean (CIF)",
+      "payer": "Importir dari negara ASEAN",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2010-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "Perpres 55/2013",
+          "article": "Lampiran",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/53611/perpres-no-55-tahun-2013"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "ATIGA: tarif 0% untuk barang ASEAN dengan Form D. 6 founding + 4 CLMV (bertahap).",
+      "examples": [
+        {
+          "scenario": "Impor dari Thailand Form D USD 5.000",
+          "calculation": "Tarif ATIGA 0%",
+          "result": "BM = Rp 0"
+        }
+      ],
+      "tags": [
+        "bea-masuk",
+        "asean",
+        "atiga",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "bea-masuk-bmt",
+      "category": "Bea Masuk",
+      "taxType": "Bea Masuk",
+      "transactionType": "Bea Masuk Tinggi (BMT) — Barang Mewah",
+      "description": "Tarif BM tinggi untuk barang mewah: rokok 50-150%, alkohol 40-150%, mobil mewah 40-80%.",
+      "rate": {
+        "type": "range",
+        "value": [
+          40,
+          150
+        ]
+      },
+      "taxBase": "Nilai Pabean (CIF)",
+      "payer": "Importir barang mewah",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-04-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 10/1995",
+          "article": "Pasal 13 ayat (3)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44070/uu-no-10-tahun-1995"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "BMT: rokok 50-150%, alkohol 40-150%, mobil mewah 40-80%. Ditambah Cukai untuk rokok/alkohol.",
+      "examples": [
+        {
+          "scenario": "Impor mobil mewah USD 100.000",
+          "calculation": "BM 80% × Rp 1.550.000.000",
+          "result": "BM = Rp 1.240.000.000 + PPN + PPnBM"
+        }
+      ],
+      "tags": [
+        "bea-masuk",
+        "bmt",
+        "mewah",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "bea-masuk-anti-dumping",
+      "category": "Bea Masuk",
+      "taxType": "Bea Masuk",
+      "transactionType": "Bea Masuk Anti-Dumping (BMAD)",
+      "description": "BM tambahan atas impor barang yang masuk dengan harga di bawah normal (dumping).",
+      "rate": {
+        "type": "range",
+        "value": [
+          5,
+          100
+        ]
+      },
+      "taxBase": "Nilai Pabean (CIF)",
+      "payer": "Importir barang dumping",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1996-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 10/1995",
+          "article": "Pasal 20-22",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44070/uu-no-10-tahun-1995"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "BMAD berdasarkan penyelidikan KPUB. Contoh: baja China 5-30%. Masa berlaku 5 tahun.",
+      "examples": [
+        {
+          "scenario": "Impor baja China kena BMAD 15%, CIF Rp 1.000.000.000",
+          "calculation": "BM normal 15% + BMAD 15% = 30%",
+          "result": "Total BM = Rp 300.000.000"
+        }
+      ],
+      "tags": [
+        "bea-masuk",
+        "anti-dumping",
+        "bmad",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    }
+  ]
+}

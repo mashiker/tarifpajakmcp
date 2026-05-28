@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "9",
+    "bab": "II",
+    "bagian": "1",
+    "title": "PPN Final",
+    "status": "ditambah",
+    "description": "Ketentuan pengenaan tarif PPN final atas penyerahan BKP/JKP tertentu.",
+    "keywords": [
+      "PPN final",
+      "tarif final"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru - PPN final atas penyerahan tertentu"
+      }
+    ]
+  }
+}

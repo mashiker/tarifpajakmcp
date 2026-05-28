@@ -1,0 +1,67 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-badan-pre2022",
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "transactionType": "Penghasilan Kena Pajak Badan (Pra-HPP)",
+    "description": "Tarif PPh badan 25% yang berlaku sebelum UU HPP.",
+    "rate": {
+      "type": "percentage",
+      "value": 25
+    },
+    "taxBase": "Penghasilan Kena Pajak (PKP) badan",
+    "payer": "WP Badan dalam negeri / BUT",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2010-01-01",
+    "effectiveTo": "2021-12-31",
+    "status": "diubah",
+    "legalBasis": [
+      {
+        "regulation": "UU 36/2008",
+        "article": "Pasal 17 ayat (1) huruf b",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+      }
+    ],
+    "supersedes": [
+      "pph-badan-pre2010"
+    ],
+    "supersededBy": [
+      "pph-badan-2022-plus"
+    ],
+    "notes": "Sebelum UU 36/2008, tarif PPh badan juga 28% (UU 17/2000) dan 20% untuk go-public.",
+    "tags": [
+      "pph-badan",
+      "tarif-flat",
+      "historis"
+    ],
+    "lastVerified": "2026-05-26",
+    "examples": [
+      {
+        "scenario": "Penghasilan Kena Pajak Badan (Pra-HPP) Rp 100.000.000",
+        "calculation": "25% × 100.000.000",
+        "result": "Pajak = Rp 25.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-badan-2022-plus"
+      ],
+      "supersedes": [
+        "pph-badan-pre2010"
+      ],
+      "sameCategory": [
+        "pph-badan-2022-plus",
+        "pph-badan-go-public",
+        "pph-badan-umkm",
+        "pph-badan-pre2010",
+        "pph-badan-pre2001",
+        "pph-badan-ikn-0pct",
+        "pph-badan-ikn-10y"
+      ]
+    }
+  }
+}

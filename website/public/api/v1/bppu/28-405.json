@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "28-405",
+    "count": 1,
+    "codes": [
+      {
+        "kode": "28-405-01",
+        "nama": "Hadiah Undian",
+        "tarif": 25,
+        "entryId": "pph-final-hadiah-undian",
+        "entryTransactionType": "Hadiah Undian"
+      }
+    ]
+  }
+}

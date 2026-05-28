@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pmk-122-2015",
+    "number": "122/PMK.010/2015",
+    "year": 2015,
+    "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak",
+    "type": "PMK",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/51529/pmk-no-122-tahun-2015",
+    "status": "berlaku",
+    "effectiveDate": "2016-01-01",
+    "referencingEntries": [
+      "pph-21-non-taxable-income"
+    ]
+  }
+}

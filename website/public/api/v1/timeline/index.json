@@ -1,0 +1,70 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "count": 10,
+    "timelines": [
+      {
+        "group": "pph-21-progressive",
+        "count": 5,
+        "from": "1984-01-01",
+        "to": "sekarang"
+      },
+      {
+        "group": "pph-21-ptkp",
+        "count": 5,
+        "from": "1984-01-01",
+        "to": "sekarang"
+      },
+      {
+        "group": "pph-21-monthly",
+        "count": 2,
+        "from": "1984-01-01",
+        "to": "sekarang"
+      },
+      {
+        "group": "pph-badan",
+        "count": 4,
+        "from": "1984-01-01",
+        "to": "sekarang"
+      },
+      {
+        "group": "pph-23-jasa",
+        "count": 3,
+        "from": "1984-01-01",
+        "to": "sekarang"
+      },
+      {
+        "group": "pph-final-pengalihan",
+        "count": 2,
+        "from": "2000-12-29",
+        "to": "sekarang"
+      },
+      {
+        "group": "pph-final-bunga",
+        "count": 2,
+        "from": "2001-01-01",
+        "to": "sekarang"
+      },
+      {
+        "group": "pph-umkm",
+        "count": 3,
+        "from": "2013-07-01",
+        "to": "sekarang"
+      },
+      {
+        "group": "bea-meterai",
+        "count": 4,
+        "from": "1986-01-01",
+        "to": "sekarang"
+      },
+      {
+        "group": "ppn",
+        "count": 3,
+        "from": "1984-04-01",
+        "to": "sekarang"
+      }
+    ]
+  }
+}

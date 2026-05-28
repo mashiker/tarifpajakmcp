@@ -3,3 +3,7 @@ dist/
 .secrets/
 *.tgz
 .DS_Store
+# Astro build artifacts
+website/.astro/
+website/dist/
+website/node_modules/

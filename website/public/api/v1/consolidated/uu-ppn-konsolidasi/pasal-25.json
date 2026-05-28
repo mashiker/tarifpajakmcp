@@ -1,0 +1,38 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "25",
+    "bab": "IV",
+    "title": "Saat PPN Tidak Terutang",
+    "status": "diubah",
+    "description": "Kondisi ketika PPN tidak terutang: pembatalan penyerahan, pengembalian barang, dll.",
+    "keywords": [
+      "tidak terutang",
+      "pembatalan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan kondisi"
+      }
+    ]
+  }
+}

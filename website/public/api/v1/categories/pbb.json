@@ -1,0 +1,45 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "category": "Pajak Daerah",
+    "taxType": "PBB",
+    "description": "Pajak Bumi dan Bangunan - Pajak atas bumi dan/atau bangunan yang dimiliki, dikuasai, dan/atau dimanfaatkan",
+    "count": 4,
+    "entries": [
+      {
+        "id": "pbb-perkotaan",
+        "transactionType": "PBB Perkotaan dan Perdesaan (PBB-P2)",
+        "rate": "0.01%–0.3%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pbb-perkebunan",
+        "transactionType": "PBB Perkebunan (PBB-P3)",
+        "rate": "0.05%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pbb-kehutanan",
+        "transactionType": "PBB Kehutanan (PBB-P3)",
+        "rate": "0.05%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pbb-pertambangan",
+        "transactionType": "PBB Pertambangan (PBB-P3)",
+        "rate": "0.05%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "count": 37,
+    "regulations": [
+      {
+        "id": "uu-7-2021-hpp",
+        "number": "7",
+        "year": 2021,
+        "title": "Undang-Undang Harmonisasi Peraturan Perpajakan",
+        "type": "UU",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "id": "uu-7-1983-pph",
+        "number": "7",
+        "year": 1983,
+        "title": "Undang-Undang Pajak Penghasilan",
+        "type": "UU",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44028/uu-no-7-tahun-1983"
+      },
+      {
+        "id": "uu-10-1994",
+        "number": "10",
+        "year": 1994,
+        "title": "Undang-Undang Perubahan UU Pajak Penghasilan",
+        "type": "UU",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44043/uu-no-10-tahun-1994"
+      },
+      {
+        "id": "uu-17-2000",
+        "number": "17",
+        "year": 2000,
+        "title": "Undang-Undang Perubahan Kedua UU Pajak Penghasilan",
+        "type": "UU",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44063/uu-no-17-tahun-2000"
+      },
+      {
+        "id": "uu-36-2008",
+        "number": "36",
+        "year": 2008,
+        "title": "Undang-Undang Perubahan Keempat UU Pajak Penghasilan",
+        "type": "UU",
+        "status": "diubah_sebagian",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+      },
+      {
+        "id": "uu-8-1983-ppn",
+        "number": "8",
+        "year": 1983,
+        "title": "Undang-Undang Pajak Pertambahan Nilai",
+        "type": "UU",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983"
+      },
+      {
+        "id": "uu-42-2009",
+        "number": "42",
+        "year": 2009,
+        "title": "Undang-Undang Perubahan UU Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah",
+        "type": "UU",
+        "status": "diubah_sebagian",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009"
+      },
+      {
+        "id": "pp-58-2023",
+        "number": "58",
+        "year": 2023,
+        "title": "Tarif Pemotongan Pajak Penghasilan Pasal 21 (TER)",
+        "type": "PP",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+      },
+      {
+        "id": "pmk-168-2023",
+        "number": "168",
+        "year": 2023,
+        "title": "Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Wajib Pajak Orang Pribadi",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+      },
+      {
+        "id": "pp-23-2018",
+        "number": "23",
+        "year": 2018,
+        "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+        "type": "PP",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/135493/pp-no-23-tahun-2018"
+      },
+      {
+        "id": "pp-55-2022",
+        "number": "55",
+        "year": 2022,
+        "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+        "type": "PP",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022"
+      },
+      {
+        "id": "pmk-131-2024",
+        "number": "131",
+        "year": 2024,
+        "title": "Penentuan Tarif Pajak Pertambahan Nilai",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024"
+      },
+      {
+        "id": "pp-60-2023",
+        "number": "60",
+        "year": 2023,
+        "title": "Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
+        "type": "PP",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+      },
+      {
+        "id": "pp-131-2000",
+        "number": "131",
+        "year": 2000,
+        "title": "Pajak Penghasilan Final atas Penghasilan Tertentu",
+        "type": "PP",
+        "status": "diubah_sebagian",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+      },
+      {
+        "id": "uu-10-2020-bea-meterai",
+        "number": "10",
+        "year": 2020,
+        "title": "Undang-Undang Bea Meterai",
+        "type": "UU",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020"
+      },
+      {
+        "id": "uu-1-2022-pbb",
+        "number": "1",
+        "year": 2022,
+        "title": "Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintahan Daerah (HKPD) - PBB",
+        "type": "UU",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/196435/uu-no-1-tahun-2022"
+      },
+      {
+        "id": "pp-16-2009",
+        "number": "16",
+        "year": 2009,
+        "title": "Peraturan Pemerintah tentang Pemotongan Pajak Penghasilan atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi",
+        "type": "PP",
+        "status": "diubah_sebagian",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/50297/pp-no-16-tahun-2009"
+      },
+      {
+        "id": "pp-94-2010",
+        "number": "94",
+        "year": 2010,
+        "title": "Peraturan Pemerintah tentang Perhitungan Pajak Penghasilan Pasal 22 dan Pemungutan Pajak Pertambahan Nilai atas Penyerahan BKP",
+        "type": "PP",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/69530/pp-no-94-tahun-2010"
+      },
+      {
+        "id": "pmk-141-2015",
+        "number": "141",
+        "year": 2015,
+        "title": "Peraturan Menteri Keuangan tentang Pemotongan Pajak Penghasilan Pasal 23 atas Penghasilan Berupa Imbalan Jasa Tertentu",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/70615/pmk-no-141-pmk-03-2015-tahun-2015"
+      },
+      {
+        "id": "pp-51-2008",
+        "number": "51",
+        "year": 2008,
+        "title": "Peraturan Pemerintah tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu dan Pajak Penghasilan Final atas Penghasilan Tertentu",
+        "type": "PP",
+        "status": "diubah_sebagian",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/50182/pp-no-51-tahun-2008"
+      },
+      {
+        "id": "pp-40-2009",
+        "number": "40",
+        "year": 2009,
+        "title": "Peraturan Pemerintah tentang Perubahan atas PP 51/2008 tentang Pajak Penghasilan Final atas Penghasilan Tertentu",
+        "type": "PP",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/50248/pp-no-40-tahun-2009"
+      },
+      {
+        "id": "pp-44-2022",
+        "number": "44",
+        "year": 2022,
+        "title": "Peraturan Pemerintah tentang Pelaksanaan Pemungutan Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah pada Perdagangan Melalui Sistem Elektronik",
+        "type": "PP",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/196508/pp-no-44-tahun-2022"
+      },
+      {
+        "id": "uu-28-2009",
+        "number": "28",
+        "year": 2009,
+        "title": "Undang-Undang tentang PDRD (Pajak Daerah dan Retribusi Daerah)",
+        "type": "UU",
+        "status": "dicabut_sebagian",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44141/uu-no-28-tahun-2009"
+      },
+      {
+        "id": "uu-13-1985",
+        "number": "13",
+        "year": 1985,
+        "title": "Undang-Undang tentang Bea Meterai",
+        "type": "UU",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44140/uu-no-13-tahun-1985"
+      },
+      {
+        "id": "pp-14-2002",
+        "number": "14",
+        "year": 2002,
+        "title": "Peraturan Pemerintah tentang Pemotongan Pajak Penghasilan atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi (Pra-PP 16/2009)",
+        "type": "PP",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/50106/pp-no-14-tahun-2002"
+      },
+      {
+        "id": "pmk-122-2015",
+        "number": "122/PMK.010/2015",
+        "year": 2015,
+        "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/51529/pmk-no-122-tahun-2015"
+      },
+      {
+        "id": "pmk-138-2005",
+        "number": "138/PMK.010/2005",
+        "year": 2005,
+        "title": "PMK tentang Besarnya PTKP",
+        "type": "PMK",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/49344/pmk-no-138pmk0102005"
+      },
+      {
+        "id": "pmk-162-2009",
+        "number": "162/PMK.010/2009",
+        "year": 2009,
+        "title": "PMK tentang Besarnya PTKP",
+        "type": "PMK",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/51412/pmk-no-162pmk0102009"
+      },
+      {
+        "id": "pmk-523-2002",
+        "number": "523/KMK.04/2002",
+        "year": 2002,
+        "title": "KMK tentang Norma Penghitungan Penghasilan Neto",
+        "type": "KMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002"
+      },
+      {
+        "id": "pp-71-2008",
+        "number": "71/2008",
+        "year": 2008,
+        "title": "PP tentang PPh Pengalihan Hak atas Tanah/Bangunan dan Jasa Konstruksi",
+        "type": "PP",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/49660/pp-no-71-tahun-2008"
+      },
+      {
+        "id": "pp-46-2013",
+        "number": "46/2013",
+        "year": 2013,
+        "title": "PP tentang PPh UMKM Final 1%",
+        "type": "PP",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/49798/pp-no-46-tahun-2013"
+      },
+      {
+        "id": "pp-28-2023",
+        "number": "28/2023",
+        "year": 2023,
+        "title": "PP tentang Fasilitas Pajak di IKN",
+        "type": "PP",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/196894/pp-no-28-tahun-2023"
+      },
+      {
+        "id": "pp-80-2007",
+        "number": "80/2007",
+        "year": 2007,
+        "title": "PP tentang Perubahan Bea Meterai",
+        "type": "PP",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/47779/pp-no-80-tahun-2007"
+      },
+      {
+        "id": "pp-23-2000",
+        "number": "23/2000",
+        "year": 2000,
+        "title": "PP tentang Perubahan Besarnya Bea Meterai",
+        "type": "PP",
+        "status": "dicabut",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44780/pp-no-23-tahun-2000"
+      },
+      {
+        "id": "uu-39-2007",
+        "number": "39/2007",
+        "year": 2007,
+        "title": "UU tentang Perubahan UU 11/1995 tentang Cukai",
+        "type": "UU",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/45946/uu-no-39-tahun-2007"
+      },
+      {
+        "id": "pmk-43-2022",
+        "number": "43/2022",
+        "year": 2022,
+        "title": "PMK tentang Norma Penghitungan Penghasilan Neto",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022"
+      },
+      {
+        "id": "uu-1-2022-hkpd",
+        "number": "1/2022",
+        "year": 2022,
+        "title": "UU tentang Hubungan Keuangan Pusat-Daerah (HKPD)",
+        "type": "UU",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ]
+  }
+}

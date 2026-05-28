@@ -1,0 +1,1564 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "count": 253,
+    "prefixes": [
+      "22-404",
+      "22-900",
+      "22-910",
+      "22-100",
+      "22-401",
+      "22-403",
+      "22-405",
+      "22-101",
+      "22-102",
+      "22-200",
+      "24-100",
+      "24-104",
+      "28-403",
+      "24-101",
+      "24-102",
+      "24-103",
+      "24-105",
+      "28-413",
+      "28-404",
+      "28-401",
+      "28-402",
+      "28-405",
+      "28-419",
+      "28-407",
+      "28-406",
+      "28-408",
+      "28-409",
+      "28-417",
+      "28-410",
+      "28-411",
+      "29-101",
+      "28-421",
+      "28-499",
+      "28-423"
+    ],
+    "codes": [
+      {
+        "kode": "22-404-01",
+        "nama": "Ekspor Komoditas Tambang Batubara, Mineral Logam, dan Mineral Bukan Logam yang Dilakukan Oleh Eksportir, Kecuali WP yang Terikat dalam PKP2B dan KK",
+        "tarif": 1.5,
+        "entryId": "pph-22-impor-2024"
+      },
+      {
+        "kode": "22-900-01",
+        "nama": "Pembayaran atas Pembelian Barang dan/atau Bahan untuk Kegiatan Usahanya oleh BUMN/Badan Usaha Tertentu",
+        "tarif": 1.5,
+        "entryId": "pph-22-pembelian-barang-2024"
+      },
+      {
+        "kode": "22-910-01",
+        "nama": "Pemungutan oleh Bendaharawan",
+        "tarif": 1.5,
+        "entryId": "pph-22-pembelian-barang-2024"
+      },
+      {
+        "kode": "22-100-07",
+        "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (Industri Semen)",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-08",
+        "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (Industri Baja)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-09",
+        "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (Industri Otomotif)",
+        "tarif": 0.45,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-10",
+        "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (Industri Farmasi)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-11",
+        "nama": "Penjualan Hasil Produksi Kepada Distributor di Dalam Negeri oleh Badan Usaha/Industri Tertentu (industri Kertas)",
+        "tarif": 0.1,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-12",
+        "nama": "Penjualan Kendaraan Bermotor di Dalam Negeri oleh ATPM, APM dan Importir Umum Kendaraan Bermotor",
+        "tarif": 0.45,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-13",
+        "nama": "Pembelian oleh Badan Usaha Berupa Komoditas Tambang Batubara, Mineral Logam dan Mineral Bukan Logam dari Badan atau Orang Pribadi Pemegang IUP",
+        "tarif": 1.5,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-14",
+        "nama": "Penjualan Emas Batangan di Dalam Negeri oleh Badan Usaha",
+        "tarif": 0.45,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-15",
+        "nama": "Pembelian Bahan Hasil Kehutanan yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya oleh Badan Usaha Industri/Eksportir",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-16",
+        "nama": "Pembelian Bahan Hasil Perkebunan yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya Oleh Badan Usaha Industri/Eksportir",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-17",
+        "nama": "Pembelian Bahan Hasil Pertanian yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya Oleh Badan Usaha Industri/Eksportir",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-18",
+        "nama": "Pembelian Bahan Hasil Peternakan yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya Oleh Badan Usaha Industri/Eksportir",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-19",
+        "nama": "Pembelian Bahan Hasil Perikanan yang Belum Melalui Proses Industri Manufaktur, untuk Keperluan Industrinya/Ekspornya Oleh Badan Usaha Industri/Eksportir",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-401-01",
+        "nama": "Penjualan BBM oleh Pertamina atau Anak Perusahaan Pertamina Kepada SPBU (Final)",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-20",
+        "nama": "Penjualan BBM oleh Pertamina atau Anak Perusahaan Pertamina Kepada Selain SPBU/Agen/Penyalur (Tidak Final)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-401-02",
+        "nama": "Penjualan BBM oleh Badan Usaha Selain Pertamina atau Anak Perusahaan Pertamina Kepada SPBU/Agen/Penyalur  (Final)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-21",
+        "nama": "Penjualan BBM oleh Badan Usaha Selain Pertamina atau Anak Perusahaan Pertamina Kepada Selain SPBU/Agen/Penyalur (Tidak Final)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-22",
+        "nama": "Penjualan Pelumas oleh Importir/Produsen",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-23",
+        "nama": "Penjualan  Pulsa dan Kartu Perdana oleh Penyelenggara Distribusi Tingkat Kedua yang Merupakan\nPemungut PPh Pasal 22",
+        "tarif": 0.5,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-24",
+        "nama": "Penjualan BBG oleh Produsen/Importir Kepada Selain SPBU/Agen/Penyalur (Tidak Final)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-401-03",
+        "nama": "Penjualan BBG oleh produsen/importir Kepada SPBU/Agen/Penyalur (Final)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-401-04",
+        "nama": "Penjualan BBM oleh Pertamina atau Anak Perusahaan Pertamina kepada Agen/Penyalur selain SPBU (Final)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-403-01",
+        "nama": "Penjualan Barang yang Tergolong Sangat Mewah Selain Rumah Beserta Tanahnya, Apartemen, Kondominium dan Sejenisnya",
+        "tarif": 5,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-403-02",
+        "nama": "Penjualan Barang yang Tergolong Sangat Mewah Untuk Rumah Beserta Tanahnya, Apartemen, Kondominium dan Sejenisnya",
+        "tarif": 1,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-405-01",
+        "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Merupakan Pedagang Fisik Aset Kripto",
+        "tarif": 0.1,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-405-02",
+        "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Bukan Merupakan Pedagang Fisik Aset Kripto",
+        "tarif": 0.2,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-101-01",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Tidak Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-101-02",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-102-01",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Tidak Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-102-02",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-25",
+        "nama": "Penjualan Emas Batangan di Dalam Negeri oleh Pengusaha Emas Perhiasan dan/atau Emas Batangan",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-26",
+        "nama": "Penjualan Emas Perhiasan di Dalam Negeri oleh Pengusaha Emas Perhiasan dan/atau Emas Batangan",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-100-27",
+        "nama": "Penjualan Perhiasan Selain dari Emas dan/atau Batu Permata dan/atau Batu Lainnya yang Sejenis oleh Pengusaha Emas Perhiasan dan/atau Emas Batangan",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024"
+      },
+      {
+        "kode": "22-200-01",
+        "nama": "Pemungutan PPh Pasal 22 atas Impor yang menggunakan API (Angka Pengenal Importir) - Produsen",
+        "tarif": 2.5,
+        "entryId": "pph-22-impor-api-produsen"
+      },
+      {
+        "kode": "22-200-02",
+        "nama": "Pemungutan PPh Pasal 22 atas Impor yang menggunakan API (Angka Pengenal Importir) - Umum",
+        "tarif": 7.5,
+        "entryId": "pph-22-impor-api-produsen"
+      },
+      {
+        "kode": "22-910-01",
+        "nama": "Pemungutan oleh Bendaharawan",
+        "tarif": 1.5,
+        "entryId": "pph-22-bendaharawan"
+      },
+      {
+        "kode": "22-404-01",
+        "nama": "Ekspor Komoditas Tambang Batubara, Mineral Logam, dan Mineral Bukan Logam yang Dilakukan Oleh Eksportir, Kecuali WP yang Terikat dalam PKP2B dan KK",
+        "tarif": 1.5,
+        "entryId": "pph-22-ekspor-batubara"
+      },
+      {
+        "kode": "22-900-01",
+        "nama": "Pembayaran atas Pembelian Barang dan/atau Bahan untuk Kegiatan Usahanya oleh BUMN/Badan Usaha Tertentu",
+        "tarif": 1.5,
+        "entryId": "pph-22-bumn-pembelian"
+      },
+      {
+        "kode": "22-101-01",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Tidak Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-pengadaan-pemerintah"
+      },
+      {
+        "kode": "22-101-02",
+        "nama": "Penghasilan Sehubungan dengan Transaksi Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Pihak Lain dalam Sistem Informasi Pengadaan Pemerintah (Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-pengadaan-pemerintah"
+      },
+      {
+        "kode": "22-102-01",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Tidak Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-pmse"
+      },
+      {
+        "kode": "22-102-02",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Final)",
+        "tarif": 0.5,
+        "entryId": "pph-22-pmse"
+      },
+      {
+        "kode": "22-405-01",
+        "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Merupakan Pedagang Fisik Aset Kripto",
+        "tarif": 0.1,
+        "entryId": "pph-22-kripto"
+      },
+      {
+        "kode": "22-405-02",
+        "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Bukan Merupakan Pedagang Fisik Aset Kripto",
+        "tarif": 0.2,
+        "entryId": "pph-22-kripto"
+      },
+      {
+        "kode": "24-100-02",
+        "nama": "Sewa dan Penghasilan Lain Sehubungan Dengan Penggunaan Harta Kecuali Sewa Tanah dan/atau Bangunan yang Telah Dikenai PPh Pasal 4 Ayat (2) UU PPh.",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-01",
+        "nama": "Jasa Teknik",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-02",
+        "nama": "Jasa Manajemen",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-03",
+        "nama": "Jasa Konsultan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-04",
+        "nama": "Jasa Penilai (Appraisal)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-05",
+        "nama": "Jasa Aktuaris",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-06",
+        "nama": "Jasa Akuntansi, Pembukuan, dan Atestasi Laporan Keuangan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-07",
+        "nama": "Jasa Hukum",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-08",
+        "nama": "Jasa Arsitektur",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-09",
+        "nama": "Jasa Perencanaan Kota dan Arsitektur Landscape;",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-10",
+        "nama": "Jasa Perancang (Design)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-11",
+        "nama": "Jasa Pengeboran (Drilling) di Bidang Penambangan Minyak dan Gas Bumi (Migas) Kecuali yang Dilakukan oleh Badan Usaha Tetap (BUT)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-12",
+        "nama": "Jasa Penunjang di Bidang Usaha Panas Bumi dan Penambangan Minyak dan Gas Bumi (Migas)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-13",
+        "nama": "Jasa Penambangan dan Jasa Penunjang di Bidang Usaha Panas Bumi dan Penambangan Minyak dan Gas Bumi (Migas)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-14",
+        "nama": "Jasa Penunjang di Bidang Penerbangan dan Bandar Udara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-15",
+        "nama": "Jasa Penebangan Hutan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-16",
+        "nama": "Jasa Pengolahan Limbah",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-17",
+        "nama": "Jasa Penyedia Tenaga Kerja dan/atau Tenaga Ahli (Outsourcing Services)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-18",
+        "nama": "Jasa Perantara dan/atau Keagenan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-19",
+        "nama": "Jasa Bidang Perdagangan Surat-Surat Berharga, Kecuali yang Dilakukan Bursa Efek, Kustodian Sentral Efek Indonesia (KSEI) dan Kliring Penjaminan Efek Indonesia (KPEI)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-20",
+        "nama": "Jasa Kustodian/Penyimpanan/Penitipan, Kecuali yang Dilakukan Oleh KSEI",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-21",
+        "nama": "Jasa Pengisian Suara (Dubbing) dan/atau Sulih Suara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-22",
+        "nama": "Jasa Mixing Film",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-23",
+        "nama": "Jasa Pembuatan Sarana Promosi Film, Iklan, Poster, Foto, Slide, Klise, Banner, Pamphlet, Baliho dan Folder",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-24",
+        "nama": "Jasa Sehubungan Dengan Software Atau Hardware Atau Sistem Komputer, Termasuk Perawatan, Pemeliharaan dan Perbaikan.",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-25",
+        "nama": "Jasa Pembuatan dan/atau Pengelolaan Website",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-26",
+        "nama": "Jasa Internet Termasuk Sambungannya",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-27",
+        "nama": "Jasa Penyimpanan, Pengolahan dan/atau Penyaluran Data, Informasi, dan/atau Program",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-28",
+        "nama": "Jasa Instalasi/Pemasangan Mesin, Peralatan, Listrik, Telepon, Air, Gas, Ac dan/atau Tv Kabel, Selain Yang Dilakukan Oleh Wajib Pajak Yang Ruang Lingkupnya Di Bidang Konstruksi dan Mempunyai Izin dan/atau Sertifikasi Sebagai Pengusaha Konstruksi;",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-29",
+        "nama": "Jasa Perawatan/Perbaikan/Pemeliharaan Mesin, Peralatan, Listrik, Telepon, Air, Gas, Ac dan/atau Tv Kabel, Selain Yang Dilakukan Oleh Wajib Pajak Yang Ruang Lingkupnya di Bidang Konstruksi dan Mempunyai Izin dan/atau Sertifikasi Sebagai Pengusaha Konstruksi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-30",
+        "nama": "Jasa Perawatan Kendaraan dan/atau Alat Transportasi Darat, Laut dan Udara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-31",
+        "nama": "Jasa Maklon",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-32",
+        "nama": "Jasa Penyelidikan dan Keamanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-33",
+        "nama": "Jasa Penyelenggara Kegiatan Atau Event Organizer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-34",
+        "nama": "Jasa Penyediaan Tempat dan/atau Waktu Dalam Media Massa, Media Luar Ruang Atau Media Lain Untuk Penyampaian Informasi, dan/atau Jasa Periklanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-35",
+        "nama": "Jasa Pembasmian Hama",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-36",
+        "nama": "Jasa Kebersihan Atau Cleaning Service",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-37",
+        "nama": "Jasa Sedot Septic Tank",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-38",
+        "nama": "Jasa Pemeliharaan Kolam",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-39",
+        "nama": "Jasa Katering Atau Tata Boga",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-40",
+        "nama": "Jasa Freight Forwarding",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-41",
+        "nama": "Jasa Logistik",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-42",
+        "nama": "Jasa Pengurusan Dokumen",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-43",
+        "nama": "Jasa Pengepakan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-44",
+        "nama": "Jasa Loading dan Unloading",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-45",
+        "nama": "Jasa Laboratorium dan/atau Pengujian Kecuali yang Dilakukan oleh Lembaga atau Institusi Pendidikan Dalam Rangka Penelitian Akademis",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-46",
+        "nama": "Jasa Pengelolaan Parkir",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-47",
+        "nama": "Jasa Penyondiran Tanah",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-48",
+        "nama": "Jasa Penyiapan dan/atau Pengolahan Lahan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-49",
+        "nama": "Jasa Pembibitan dan/atau Penanaman Bibit",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-50",
+        "nama": "Jasa Pemeliharaan Tanaman",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-51",
+        "nama": "Jasa Pemanenan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-52",
+        "nama": "Jasa Pengolahan Hasil Pertanian, Perkebunan, Perikanan, Peternakan dan/atau Perhutanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-53",
+        "nama": "Jasa Dekorasi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-54",
+        "nama": "Jasa Pencetakan/Penerbitan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-55",
+        "nama": "Jasa Penerjemahan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-56",
+        "nama": "Jasa Pengangkutan/Ekspedisi Kecuali Yang Telah Diatur Dalam Pasal 15 Undang-Undang Pajak Penghasilan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-57",
+        "nama": "Jasa Pelayanan Pelabuhan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-58",
+        "nama": "Jasa Pengangkutan Melalui Jalur Pipa",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-59",
+        "nama": "Jasa Pengelolaan Penitipan Anak",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-60",
+        "nama": "Jasa Pelatihan dan/atau Kursus",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-61",
+        "nama": "Jasa Pengiriman dan Pengisian Uang Ke Atm",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-62",
+        "nama": "Jasa Sertifikasi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-63",
+        "nama": "Jasa Survey",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-64",
+        "nama": "Jasa Tester",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-65",
+        "nama": "Jasa Selain Jasa-Jasa Tersebut di Atas yang Pembayarannya Dibebankan pada APBN (Anggaran Pendapatan dan Belanja Negara) Atau APBD (Anggaran Pendapatan dan Belanja Daerah).",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-66",
+        "nama": "Jasa Penyelenggaraan Layanan Transaksi Pembayaran Terkait dengan Distribusi Token Oleh Penyelenggara Distribusi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-67",
+        "nama": "Jasa Pemasaran dengan Media Voucer Oleh Penyelenggara Voucer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-68",
+        "nama": "Jasa Penyelenggaraan Layanan Transaksi Pembayaran Terkait dengan Distribusi Voucer Oleh Penyelenggara Voucer dan Penyelenggara  Distribusi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-104-69",
+        "nama": "Jasa Penyelenggaraan Program Loyalitas dan Penghargaan Pelanggan (Consumer Loyalty/Reward Program)  Oleh Penyelenggara Voucer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct"
+      },
+      {
+        "kode": "24-100-02",
+        "nama": "Sewa dan Penghasilan Lain Sehubungan Dengan Penggunaan Harta Kecuali Sewa Tanah dan/atau Bangunan yang Telah Dikenai PPh Pasal 4 Ayat (2) UU PPh.",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-01",
+        "nama": "Jasa Teknik",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-02",
+        "nama": "Jasa Manajemen",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-03",
+        "nama": "Jasa Konsultan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-04",
+        "nama": "Jasa Penilai (Appraisal)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-05",
+        "nama": "Jasa Aktuaris",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-06",
+        "nama": "Jasa Akuntansi, Pembukuan, dan Atestasi Laporan Keuangan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-07",
+        "nama": "Jasa Hukum",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-08",
+        "nama": "Jasa Arsitektur",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-09",
+        "nama": "Jasa Perencanaan Kota dan Arsitektur Landscape;",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-10",
+        "nama": "Jasa Perancang (Design)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-11",
+        "nama": "Jasa Pengeboran (Drilling) di Bidang Penambangan Minyak dan Gas Bumi (Migas) Kecuali yang Dilakukan oleh Badan Usaha Tetap (BUT)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-12",
+        "nama": "Jasa Penunjang di Bidang Usaha Panas Bumi dan Penambangan Minyak dan Gas Bumi (Migas)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-13",
+        "nama": "Jasa Penambangan dan Jasa Penunjang di Bidang Usaha Panas Bumi dan Penambangan Minyak dan Gas Bumi (Migas)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-14",
+        "nama": "Jasa Penunjang di Bidang Penerbangan dan Bandar Udara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-15",
+        "nama": "Jasa Penebangan Hutan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-16",
+        "nama": "Jasa Pengolahan Limbah",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-17",
+        "nama": "Jasa Penyedia Tenaga Kerja dan/atau Tenaga Ahli (Outsourcing Services)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-18",
+        "nama": "Jasa Perantara dan/atau Keagenan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-19",
+        "nama": "Jasa Bidang Perdagangan Surat-Surat Berharga, Kecuali yang Dilakukan Bursa Efek, Kustodian Sentral Efek Indonesia (KSEI) dan Kliring Penjaminan Efek Indonesia (KPEI)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-20",
+        "nama": "Jasa Kustodian/Penyimpanan/Penitipan, Kecuali yang Dilakukan Oleh KSEI",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-21",
+        "nama": "Jasa Pengisian Suara (Dubbing) dan/atau Sulih Suara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-22",
+        "nama": "Jasa Mixing Film",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-23",
+        "nama": "Jasa Pembuatan Sarana Promosi Film, Iklan, Poster, Foto, Slide, Klise, Banner, Pamphlet, Baliho dan Folder",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-24",
+        "nama": "Jasa Sehubungan Dengan Software Atau Hardware Atau Sistem Komputer, Termasuk Perawatan, Pemeliharaan dan Perbaikan.",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-25",
+        "nama": "Jasa Pembuatan dan/atau Pengelolaan Website",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-26",
+        "nama": "Jasa Internet Termasuk Sambungannya",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-27",
+        "nama": "Jasa Penyimpanan, Pengolahan dan/atau Penyaluran Data, Informasi, dan/atau Program",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-28",
+        "nama": "Jasa Instalasi/Pemasangan Mesin, Peralatan, Listrik, Telepon, Air, Gas, Ac dan/atau Tv Kabel, Selain Yang Dilakukan Oleh Wajib Pajak Yang Ruang Lingkupnya Di Bidang Konstruksi dan Mempunyai Izin dan/atau Sertifikasi Sebagai Pengusaha Konstruksi;",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-29",
+        "nama": "Jasa Perawatan/Perbaikan/Pemeliharaan Mesin, Peralatan, Listrik, Telepon, Air, Gas, Ac dan/atau Tv Kabel, Selain Yang Dilakukan Oleh Wajib Pajak Yang Ruang Lingkupnya di Bidang Konstruksi dan Mempunyai Izin dan/atau Sertifikasi Sebagai Pengusaha Konstruksi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-30",
+        "nama": "Jasa Perawatan Kendaraan dan/atau Alat Transportasi Darat, Laut dan Udara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-31",
+        "nama": "Jasa Maklon",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-32",
+        "nama": "Jasa Penyelidikan dan Keamanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-33",
+        "nama": "Jasa Penyelenggara Kegiatan Atau Event Organizer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-34",
+        "nama": "Jasa Penyediaan Tempat dan/atau Waktu Dalam Media Massa, Media Luar Ruang Atau Media Lain Untuk Penyampaian Informasi, dan/atau Jasa Periklanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-35",
+        "nama": "Jasa Pembasmian Hama",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-36",
+        "nama": "Jasa Kebersihan Atau Cleaning Service",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-37",
+        "nama": "Jasa Sedot Septic Tank",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-38",
+        "nama": "Jasa Pemeliharaan Kolam",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-39",
+        "nama": "Jasa Katering Atau Tata Boga",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-40",
+        "nama": "Jasa Freight Forwarding",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-41",
+        "nama": "Jasa Logistik",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-42",
+        "nama": "Jasa Pengurusan Dokumen",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-43",
+        "nama": "Jasa Pengepakan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-44",
+        "nama": "Jasa Loading dan Unloading",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-45",
+        "nama": "Jasa Laboratorium dan/atau Pengujian Kecuali yang Dilakukan oleh Lembaga atau Institusi Pendidikan Dalam Rangka Penelitian Akademis",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-46",
+        "nama": "Jasa Pengelolaan Parkir",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-47",
+        "nama": "Jasa Penyondiran Tanah",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-48",
+        "nama": "Jasa Penyiapan dan/atau Pengolahan Lahan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-49",
+        "nama": "Jasa Pembibitan dan/atau Penanaman Bibit",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-50",
+        "nama": "Jasa Pemeliharaan Tanaman",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-51",
+        "nama": "Jasa Pemanenan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-52",
+        "nama": "Jasa Pengolahan Hasil Pertanian, Perkebunan, Perikanan, Peternakan dan/atau Perhutanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-53",
+        "nama": "Jasa Dekorasi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-54",
+        "nama": "Jasa Pencetakan/Penerbitan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-55",
+        "nama": "Jasa Penerjemahan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-56",
+        "nama": "Jasa Pengangkutan/Ekspedisi Kecuali Yang Telah Diatur Dalam Pasal 15 Undang-Undang Pajak Penghasilan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-57",
+        "nama": "Jasa Pelayanan Pelabuhan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-58",
+        "nama": "Jasa Pengangkutan Melalui Jalur Pipa",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-59",
+        "nama": "Jasa Pengelolaan Penitipan Anak",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-60",
+        "nama": "Jasa Pelatihan dan/atau Kursus",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-61",
+        "nama": "Jasa Pengiriman dan Pengisian Uang Ke Atm",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-62",
+        "nama": "Jasa Sertifikasi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-63",
+        "nama": "Jasa Survey",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-64",
+        "nama": "Jasa Tester",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-65",
+        "nama": "Jasa Selain Jasa-Jasa Tersebut di Atas yang Pembayarannya Dibebankan pada APBN (Anggaran Pendapatan dan Belanja Negara) Atau APBD (Anggaran Pendapatan dan Belanja Daerah).",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-66",
+        "nama": "Jasa Penyelenggaraan Layanan Transaksi Pembayaran Terkait dengan Distribusi Token Oleh Penyelenggara Distribusi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-67",
+        "nama": "Jasa Pemasaran dengan Media Voucer Oleh Penyelenggara Voucer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-68",
+        "nama": "Jasa Penyelenggaraan Layanan Transaksi Pembayaran Terkait dengan Distribusi Voucer Oleh Penyelenggara Voucer dan Penyelenggara  Distribusi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-69",
+        "nama": "Jasa Penyelenggaraan Program Loyalitas dan Penghargaan Pelanggan (Consumer Loyalty/Reward Program)  Oleh Penyelenggara Voucer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct"
+      },
+      {
+        "kode": "24-104-39",
+        "nama": "Jasa Katering Atau Tata Boga",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-katering-2pct"
+      },
+      {
+        "kode": "28-403-02",
+        "nama": "Persewaan Tanah dan/atau Bangunan",
+        "tarif": 10,
+        "entryId": "pph-23-sewa-tanah-bangunan"
+      },
+      {
+        "kode": "24-100-01",
+        "nama": "Hadiah, Penghargaan, Bonus dan Lainnya Selain yang Telah Dipotong PPh Pasal 21 Ayat (1) Huruf E UU PPh",
+        "tarif": 15,
+        "entryId": "pph-23-hadiah-penghargaan"
+      },
+      {
+        "kode": "24-101-01",
+        "nama": "Dividen",
+        "tarif": 15,
+        "entryId": "pph-26-general-2024"
+      },
+      {
+        "kode": "24-102-01",
+        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
+        "tarif": 15,
+        "entryId": "pph-26-general-2024"
+      },
+      {
+        "kode": "24-103-01",
+        "nama": "Royalti",
+        "tarif": 15,
+        "entryId": "pph-26-general-2024"
+      },
+      {
+        "kode": "24-105-01",
+        "nama": "Bunga Pinjaman yang Diterima  Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap Melalui Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi",
+        "tarif": 0,
+        "entryId": "pph-26-general-2024"
+      },
+      {
+        "kode": "28-413-01",
+        "nama": "Penghasilan Wajib Pajak Luar Negeri yang Mempunyai Kantor Perwakilan Dagang di Indonesia",
+        "tarif": 0.44,
+        "entryId": "pph-26-general-2024"
+      },
+      {
+        "kode": "24-101-01",
+        "nama": "Dividen",
+        "tarif": 15,
+        "entryId": "pph-26-dividen"
+      },
+      {
+        "kode": "24-102-01",
+        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
+        "tarif": 15,
+        "entryId": "pph-26-bunga"
+      },
+      {
+        "kode": "24-103-01",
+        "nama": "Royalti",
+        "tarif": 15,
+        "entryId": "pph-26-royalti"
+      },
+      {
+        "kode": "28-404-01",
+        "nama": "Bunga Tabungan dan Bunga Deposito yang Ditempatkan di Dalam Negeri yang Dananya Bersumber Selain dari Devisa Hasil Ekspor (DHE)",
+        "tarif": 20,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-02",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang IDR bersumber dari DHE tenor 1 bulan)",
+        "tarif": 7.5,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-03",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang IDR bersumber dari DHE tenor 3 bulan)",
+        "tarif": 5,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-04",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang IDR bersumber dari DHE tenor 6 bulan atau lebih)",
+        "tarif": 0,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-05",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor 1 bulan)",
+        "tarif": 10,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-06",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor 3 bulan)",
+        "tarif": 7.5,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-07",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor 6 bulan)",
+        "tarif": 2.5,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-08",
+        "nama": "Bunga Deposito yang Ditempatkan di Dalam Negeri (mata uang USD bersumber dari DHE tenor lebih 6 bulan)",
+        "tarif": 0,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-09",
+        "nama": "Bunga Deposito/Tabungan yang Ditempatkan di Luar Negeri Melalui Bank yang Didirikan atau Bertempat Kedudukan di Indonesia atau Cabang Bank Luar Negeri di Indonesia",
+        "tarif": 20,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-10",
+        "nama": "Diskonto Sertifikat Bank Indonesia",
+        "tarif": 20,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-404-11",
+        "nama": "Jasa Giro",
+        "tarif": 20,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-401-01",
+        "nama": "Bunga Obligasi, Surat Utang Negara, atau Obligasi Daerah yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap.",
+        "tarif": 15,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-401-06",
+        "nama": "Bunga Obligasi yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap",
+        "tarif": 10,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-401-03",
+        "nama": "Bunga Obligasi yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap yang diadministrasikan oleh BI",
+        "tarif": 10,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-401-04",
+        "nama": "Diskonto Surat Perbendaharaan Negara yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap",
+        "tarif": 20,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-401-05",
+        "nama": "Diskonto Surat Perbendaharaan Negara yang Diterima Wajib Pajak Penduduk/Berkedudukan di Luar Negeri",
+        "tarif": 20,
+        "entryId": "pph-final-bunga-deposito"
+      },
+      {
+        "kode": "28-402-01",
+        "nama": "Pengalihan Hak atas Tanah dan/atau Bangunan",
+        "tarif": 2.5,
+        "entryId": "pph-final-sewa-tanah"
+      },
+      {
+        "kode": "28-402-02",
+        "nama": "Pengalihan Rumah Sederhana dan Rumah Susun Sederhana yang Dilakukan oleh WP yang Usaha Pokoknya Mengalihkan Hak atas Tanah dan/atau Bangunan",
+        "tarif": 1,
+        "entryId": "pph-final-sewa-tanah"
+      },
+      {
+        "kode": "28-402-03",
+        "nama": "Pengalihan Hak atas Tanah dan/atau Bangunan kepada Pemerintah, BUMN yang Mendapat Penugasan Khusus dari Pemerintah, atau BUMD yang Mendapat Penugasan Khusus dari Kepala Daerah, sesuai UU mengenai Pengadaan Tanah bagi Pembangunan untuk Kepentingan Umum",
+        "tarif": 0,
+        "entryId": "pph-final-sewa-tanah"
+      },
+      {
+        "kode": "28-405-01",
+        "nama": "Hadiah Undian",
+        "tarif": 25,
+        "entryId": "pph-final-hadiah-undian"
+      },
+      {
+        "kode": "28-419-01",
+        "nama": "Dividen yang Diterima/Diperoleh Wajib Pajak Orang Pribadi Dalam Negeri",
+        "tarif": 10,
+        "entryId": "pph-final-hadiah-undian"
+      },
+      {
+        "kode": "28-407-01",
+        "nama": "Transaksi Penjualan Saham di Bursa Efek (Saham Pendiri)",
+        "tarif": 0.5,
+        "entryId": "pph-final-transaksi-saham-bursa"
+      },
+      {
+        "kode": "28-406-01",
+        "nama": "Transaksi Penjualan Saham di Bursa Efek (Bukan Saham Pendiri)",
+        "tarif": 0.1,
+        "entryId": "pph-final-transaksi-saham-bursa"
+      },
+      {
+        "kode": "28-408-01",
+        "nama": "Transaksi Penjualan Saham Milik Perusahaan Modal Ventura Tidak di Bursa Efek",
+        "tarif": 0.1,
+        "entryId": "pph-final-transaksi-saham-bursa"
+      },
+      {
+        "kode": "28-409-22",
+        "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha Kualifikasi Kecil atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 1.75,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-23",
+        "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha Atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-24",
+        "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Selain Sertifikat Badan Usaha Kualifikasi Kecil atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 2.65,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-25",
+        "nama": "Pekerjaan Konstruksi Terintegrasi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha",
+        "tarif": 2.65,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-26",
+        "nama": "Pekerjaan Konstruksi Terintegrasi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-27",
+        "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 3.5,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-28",
+        "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 6,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-08",
+        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Dengan Kualifikasi Usaha)",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-09",
+        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Tanpa Kualifikasi Usaha)",
+        "tarif": 6,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-10",
+        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Kecil)",
+        "tarif": 2,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-11",
+        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Menengah dan Besar)",
+        "tarif": 3,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-12",
+        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Tanpa Kualifikasi Usaha)",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-13",
+        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Dengan Kualifikasi Usaha)",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-409-14",
+        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Tanpa Kualifikasi Usaha)",
+        "tarif": 6,
+        "entryId": "pph-final-konstruksi"
+      },
+      {
+        "kode": "28-417-01",
+        "nama": "Bunga Simpanan yang Dibayarkan oleh Koperasi kepada Anggota Wajib Pajak Orang Pribadi (bunga sampai dengan Rp240.000,00)",
+        "tarif": 0,
+        "entryId": "pph-final-bunga-koperasi"
+      },
+      {
+        "kode": "28-417-02",
+        "nama": "Bunga Simpanan yang Dibayarkan oleh Koperasi kepada Anggota Wajib Pajak Orang Pribadi (bunga di atas Rp240.000,00)",
+        "tarif": 10,
+        "entryId": "pph-final-bunga-koperasi"
+      },
+      {
+        "kode": "28-410-02",
+        "nama": "Imbalan yang Dibayarkan/Terutang kepada Perusahaan Pelayaran Dalam Negeri",
+        "tarif": 1.2,
+        "entryId": "pph-final-transportasi"
+      },
+      {
+        "kode": "28-411-02",
+        "nama": "Imbalan Charter Kapal Laut dan/atau Pesawat Udara yang Dibayarkan/ Terutang kepada Perusahaan Pelayaran dan/atau Penerbangan Luar Negeri  melalui BUT di Indonesia",
+        "tarif": 2.64,
+        "entryId": "pph-final-transportasi"
+      },
+      {
+        "kode": "29-101-01",
+        "nama": "Imbalan Charter Pesawat Udara yang Dibayarkan/Terutang kepada Perusahaan Penerbangan Dalam Negeri oleh Pemotong Pajak",
+        "tarif": 1.8,
+        "entryId": "pph-final-transportasi"
+      },
+      {
+        "kode": "28-410-01",
+        "nama": "Imbalan yang Diterima/Diperoleh Sehubungan dengan Pengangkutan Orang dan/atau Barang Termasuk Penyewaan Kapal Laut Oleh Perusahaan Pelayaran Dalam Negeri",
+        "tarif": 1.2,
+        "entryId": "pph-final-transportasi"
+      },
+      {
+        "kode": "28-411-01",
+        "nama": "Imbalan yang Dibayarkan/Terutang kepada Perusahaan Pelayaran dan/atau Penerbangan Luar Negeri Sehubungan dengan Pengangkutan Orang dan/atau Barang (Selain Berdasarkan Perjanjian Charter)",
+        "tarif": 2.64,
+        "entryId": "pph-final-transportasi"
+      },
+      {
+        "kode": "28-421-01",
+        "nama": "Uplift Hulu Migas",
+        "tarif": 20,
+        "entryId": "pph-final-migas"
+      },
+      {
+        "kode": "28-421-02",
+        "nama": "Participating Interest Eksplorasi Hulu Migas",
+        "tarif": 5,
+        "entryId": "pph-final-migas"
+      },
+      {
+        "kode": "28-421-03",
+        "nama": "Participating Interest Eksploitasi Hulu Migas",
+        "tarif": 7,
+        "entryId": "pph-final-migas"
+      },
+      {
+        "kode": "28-499-02",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Sehubungan dengan Kerja Sama dengan Lembaga Pengelola Investasi (LPI)",
+        "tarif": 7.5,
+        "entryId": "pph-final-investasi-lpi"
+      },
+      {
+        "kode": "28-499-01",
+        "nama": "Penghasilan Wajib Pajak yang Melakukan Kegiatan Usaha Jasa Maklon (Contract Manufacturing) Internasional di Bidang Produksi Mainan Anak-Anak",
+        "tarif": 2.1,
+        "entryId": "pph-final-investasi-lpi"
+      },
+      {
+        "kode": "28-423-01",
+        "nama": "Pemotongan atau pemungutan PPh atas  penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 23 Tahun 2018 atau Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0.5,
+        "entryId": "pph-umkm-05pct-2023"
+      },
+      {
+        "kode": "28-423-02",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0,
+        "entryId": "pph-umkm-05pct-2023"
+      },
+      {
+        "kode": "28-423-03",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak orang pribadi yang memiliki peredaran bruto tertentu sesuai dengan PP 55 Tahun 2022 dengan peredaran usaha s.d Rp500.000.000,00.",
+        "tarif": 0.5,
+        "entryId": "pph-umkm-05pct-2023"
+      },
+      {
+        "kode": "28-423-12",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak yang memenuhi persyaratan tertentu untuk dikenai PPh yang bersifat final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0,
+        "entryId": "pph-umkm-05pct-2023"
+      },
+      {
+        "kode": "28-423-13",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0,
+        "entryId": "pph-umkm-05pct-2023"
+      }
+    ]
+  }
+}

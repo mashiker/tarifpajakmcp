@@ -1,0 +1,43 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "24",
+    "bab": "VI",
+    "bagian": "2",
+    "title": "Pemotongan PPh 26",
+    "status": "diubah",
+    "description": "Pemotongan PPh 26 atas penghasilan yang diterima WP luar negeri sebesar 20% dari brut.",
+    "keywords": [
+      "PPh 26",
+      "WP luar negeri",
+      "20%"
+    ],
+    "relatedTaxRates": [
+      "pph-26-wna-20pct"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan PPh 26"
+      }
+    ]
+  }
+}

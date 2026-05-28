@@ -1,0 +1,649 @@
+{
+  "id": "uu-ppn-konsolidasi",
+  "title": "Undang-Undang tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah (Konsolidasi)",
+  "shortTitle": "UU PPN Konsolidasi",
+  "description": "Naskah konsolidasi UU PPN/PPnBM yang memuat teks terkini setelah seluruh perubahan diterapkan, lengkap dengan riwayat perubahan per pasal dari UU 8/1983 hingga UU 7/2021 HPP.",
+  "baseLaw": {
+    "type": "UU",
+    "number": "8",
+    "year": 1983,
+    "title": "Undang-Undang tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah",
+    "effectiveDate": "1984-04-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-8-tahun-1983"
+  },
+  "amendmentChain": [
+    {
+      "regulation": { "type": "UU", "number": "8", "year": 1983, "title": "Pajak Pertambahan Nilai dan PPnBM", "shortTitle": "UU PPN 1983" },
+      "order": 0,
+      "description": "UU Dasar PPN/PPnBM",
+      "effectiveDate": "1984-04-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983",
+      "keyChanges": [
+        "Tarif PPN 10%",
+        "Penyerahan BKP dan Jasa sebagai objek",
+        "PPnBM atas barang mewah",
+        "Mekanisme kredit PPN (input tax credit)",
+        "Ketentuan ekspor BKP dan Jasa"
+      ]
+    },
+    {
+      "regulation": { "type": "UU", "number": "42", "year": 2009, "title": "Perubahan UU PPN dan PPnBM", "shortTitle": "UU 42/2009" },
+      "order": 1,
+      "description": "Perubahan atas UU 8/1983 PPN/PPnBM",
+      "effectiveDate": "2010-04-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009",
+      "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-42-tahun-2009",
+      "pdfUrl": "https://peraturan.bpk.go.id/Download/44119/UU%20Nomor%2042%20Tahun%202009.pdf",
+      "keyChanges": [
+        "Tarif PPN 10% tetap, pengaturan perubahan tarif ke 11% dan 12%",
+        "Penambahan ketentuan PMSE (Perdagangan Melalui Sistem Elektronik)",
+        "Pengenaan PPN atas penyerahan BKP berwujud dan tidak berwujud",
+        "Pengenaan PPN atas ekspor jasa",
+        "Penambahan ketentuan PPN final untuk PMSE",
+        "Perubahan PPnBM menjadi multi-tier",
+        "Penambahan banyak pengecualian dan fasilitas"
+      ]
+    },
+    {
+      "regulation": { "type": "UU", "number": "7", "year": 2021, "title": "Harmonisasi Peraturan Perpajakan", "shortTitle": "UU HPP" },
+      "order": 2,
+      "description": "Perubahan Kedua atas UU 8/1983 PPN/PPnBM melalui UU HPP",
+      "effectiveDate": "2022-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+      "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021",
+      "pdfUrl": "https://peraturan.bpk.go.id/Download/178620/UU%20Nomor%207%20Tahun%202021.pdf",
+      "keyChanges": [
+        "Tarif PPN berubah: 11% (2022), 12% (2025) namun ditunda via PMK 131/2024",
+        "Pengenaan PPN final atas penyerahan tertentu",
+        "Pengurangan pengecualian objek PPN",
+        "Pengaturan kembali fasilitas PPN",
+        "PPnBM diperluas (barang mewah, hunian mewah)",
+        "Perubahan ketentuan PMSE",
+        "Penambahan Pasal 9A, 9B, 13A, 16C-16F"
+      ]
+    }
+  ],
+  "structure": [
+    { "number": "I", "title": "Ketentuan Umum", "pasals": ["1"] },
+    { "number": "II", "title": "Pajak Pertambahan Nilai (PPN)", "bagians": [
+      { "number": "1", "title": "Objek PPN", "pasals": ["2", "3", "4", "4A", "5", "6", "6A", "7", "8", "9"] },
+      { "number": "2", "title": "Tarif PPN", "pasals": ["9A", "9B"] },
+      { "number": "3", "title": "Dasar Pengenaan PPN", "pasals": ["10", "11"] },
+      { "number": "4", "title": "Faktur Pajak dan PPN yang Dapat Dikreditkan", "pasals": ["12", "13", "13A"] },
+      { "number": "5", "title": "PPN yang Tidak Dapat Dikreditkan", "pasals": ["14"] },
+      { "number": "6", "title": "Saat PPN Terutang", "pasals": ["15"] },
+      { "number": "7", "title": "Tempat PPN Terutang", "pasals": ["16"] },
+      { "number": "8", "title": "Pelaporan dan Pembenaran PPN", "pasals": ["16A", "16B", "16C", "16D", "16E", "16F"] }
+    ]},
+    { "number": "III", "title": "Pajak Penjualan atas Barang Mewah (PPnBM)", "pasals": ["17", "18", "19", "20", "21", "22", "23"] },
+    { "number": "IV", "title": "Ketentuan Lain-lain", "pasals": ["24", "25", "26"] },
+    { "number": "V", "title": "Ketentuan Pidana", "pasals": ["27", "28"] },
+    { "number": "VI", "title": "Penutup", "pasals": ["29", "30", "31", "32", "33", "34"] }
+  ],
+  "pasals": [
+    {
+      "number": "1",
+      "bab": "I",
+      "title": "Definisi",
+      "status": "diubah",
+      "description": "Definisi istilah dalam UU PPN: Barang Kena Pajak (BKP), Jasa Kena Pajak (JKP), Pengusaha Kena Pajak (PKP), Faktur Pajak, dll.",
+      "keywords": ["definisi", "BKP", "JKP", "PKP", "faktur pajak", "DPP"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli dengan definisi dasar" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan definisi PMSE, BKP tidak berwujud, dll" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Penambahan definisi PPN final, perubahan istilah" }
+      ]
+    },
+    {
+      "number": "2",
+      "bab": "II",
+      "bagian": "1",
+      "title": "Objek PPN",
+      "status": "diubah",
+      "description": "PPN dikenakan atas: penyerahan BKP di dalam DA, penyerahan JKP di dalam DA, ekspor BKP, ekspor JKP.",
+      "keywords": ["objek PPN", "penyerahan", "ekspor", "BKP", "JKP"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli - 3 objek (penyerahan BKP, JKP, ekspor)" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan ekspor jasa sebagai objek PPN, penyerahan BKP tidak berwujud" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Penambahan PPN final atas penyerahan tertentu" }
+      ]
+    },
+    {
+      "number": "3",
+      "bab": "II",
+      "bagian": "1",
+      "title": "Penyerahan BKP",
+      "status": "diubah",
+      "description": "Penyerahan BKP yang terutang PPN: penyerahan hak, penyerahan karena sewa, dll.",
+      "keywords": ["penyerahan", "BKP", "sewa"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan jenis penyerahan" }
+      ]
+    },
+    {
+      "number": "4",
+      "bab": "II",
+      "bagian": "1",
+      "title": "Bukan Objek PPN - Jasa",
+      "status": "diubah",
+      "description": "Jasa yang tidak dikenakan PPN: jasa keagamaan, jasa kesenian/hiburan, jasa perhotelan, jasa pelayanan, dll.",
+      "keywords": ["bukan objek PPN", "jasa", "pengecualian"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli - daftar jasa bukan objek" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan dan pengurangan daftar pengecualian" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Pengurangan pengecualian objek PPN" }
+      ]
+    },
+    {
+      "number": "4A",
+      "bab": "II",
+      "bagian": "1",
+      "title": "Bukan Objek PPN - Barang",
+      "status": "ditambah",
+      "description": "Barang yang tidak dikenakan PPN.",
+      "keywords": ["bukan objek PPN", "barang"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "added", "effectiveDate": "2010-04-01", "summary": "Pasal baru - daftar barang bukan objek PPN" }
+      ]
+    },
+    {
+      "number": "5",
+      "bab": "II",
+      "bagian": "1",
+      "title": "Bukan Objek PPN - Umum",
+      "status": "diubah",
+      "description": "Pengecualian umum dari objek PPN.",
+      "keywords": ["bukan objek", "pengecualian"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan pengecualian" }
+      ]
+    },
+    {
+      "number": "6",
+      "bab": "II",
+      "bagian": "1",
+      "title": "Ekspor BKP",
+      "status": "diubah",
+      "description": "Ketentuan PPN atas ekspor BKP berwujud dan tidak berwujud.",
+      "keywords": ["ekspor", "BKP", "luar negeri"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan ekspor BKP tidak berwujud" }
+      ]
+    },
+    {
+      "number": "6A",
+      "bab": "II",
+      "bagian": "1",
+      "title": "Ekspor Jasa",
+      "status": "ditambah",
+      "description": "Ketentuan PPN atas ekspor Jasa Kena Pajak.",
+      "keywords": ["ekspor", "jasa", "JKP"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "added", "effectiveDate": "2010-04-01", "summary": "Pasal baru - ekspor jasa sebagai objek PPN" }
+      ]
+    },
+    {
+      "number": "7",
+      "bab": "II",
+      "bagian": "1",
+      "title": "Pengusaha Kena Pajak (PKP)",
+      "status": "diubah",
+      "description": "Definisi dan kewajiban PKP: Pengusaha yang melakukan penyerahan BKP/JKP yang dikenai PPN. Wajib dikukuhkan sebagai PKP jika peredaran bruto > Rp 4,8 miliar.",
+      "keywords": ["PKP", "pengusaha", "peredaran bruto", "4,8 miliar"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan threshold PKP" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan threshold PKP menjadi Rp 4,8 miliar" }
+      ]
+    },
+    {
+      "number": "8",
+      "bab": "II",
+      "bagian": "1",
+      "title": "PMSE (Perdagangan Melalui Sistem Elektronik)",
+      "status": "ditambah",
+      "description": "Ketentuan PPN atas transaksi PMSE: penyerahan BKP/JKP melalui marketplace/ecommerce.",
+      "keywords": ["PMSE", "ecommerce", "marketplace", "digital"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "added", "effectiveDate": "2010-04-01", "summary": "Pasal baru tentang PMSE" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan PMSE" }
+      ]
+    },
+    {
+      "number": "9",
+      "bab": "II",
+      "bagian": "1",
+      "title": "PPN Final",
+      "status": "ditambah",
+      "description": "Ketentuan pengenaan tarif PPN final atas penyerahan BKP/JKP tertentu.",
+      "keywords": ["PPN final", "tarif final"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru - PPN final atas penyerahan tertentu" }
+      ]
+    },
+    {
+      "number": "9A",
+      "bab": "II",
+      "bagian": "2",
+      "title": "Tarif PPN",
+      "status": "ditambah",
+      "description": "Tarif PPN: 10%, 11% (sejak 2022 per UU HPP), dan 12% (direncanakan 2025, ditunda via PMK 131/2024). Tarif efektif 11/12 x 11% untuk 2022.",
+      "keywords": ["tarif PPN", "10%", "11%", "12%", "PMK 131/2024"],
+      "relatedTaxRates": ["ppn-11pct-2022", "ppn-11pct-effective-2025"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru - pengaturan tarif PPN 11% (2022) dan 12% (2025)" }
+      ]
+    },
+    {
+      "number": "9B",
+      "bab": "II",
+      "bagian": "2",
+      "title": "Tarif PPN Efektif",
+      "status": "ditambah",
+      "description": "Tarif PPN efektif yang berlaku pada saat peralihan tarif.",
+      "keywords": ["tarif efektif", "peralihan"],
+      "relatedTaxRates": ["ppn-11pct-effective-2025"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru - tarif efektif peralihan" }
+      ]
+    },
+    {
+      "number": "10",
+      "bab": "II",
+      "bagian": "3",
+      "title": "Dasar Pengenaan PPN (DPP)",
+      "status": "diubah",
+      "description": "DPP PPN: Harga Jual, Penggantian, Nilai Impor, Nilai Ekspor, dll.",
+      "keywords": ["DPP", "harga jual", "penggantian", "nilai impor", "nilai ekspor"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan DPP untuk ekspor jasa, PMSE" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan DPP" }
+      ]
+    },
+    {
+      "number": "11",
+      "bab": "II",
+      "bagian": "3",
+      "title": "DPP untuk Impor",
+      "status": "diubah",
+      "description": "DPP atas impor BKP: nilai pabean + cukai.",
+      "keywords": ["DPP", "impor", "nilai pabean"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan DPP impor" }
+      ]
+    },
+    {
+      "number": "12",
+      "bab": "II",
+      "bagian": "4",
+      "title": "Faktur Pajak",
+      "status": "diubah",
+      "description": "Kewajiban membuat faktur pajak bagi PKP atas setiap penyerahan BKP/JKP. Syarat dan ketentuan faktur pajak elektronik.",
+      "keywords": ["faktur pajak", "e-Faktur", "PKP"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan faktur pajak elektronik" }
+      ]
+    },
+    {
+      "number": "13",
+      "bab": "II",
+      "bagian": "4",
+      "title": "Kredit PPN",
+      "status": "diubah",
+      "description": "PPN yang telah dibayar dapat dikreditkan oleh PKP: PPN atas perolehan BKP/JKP, PPN atas impor, PPN yang dipungut sendiri.",
+      "keywords": ["kredit PPN", "input tax", "PPN masukan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli - kredit PPN" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan ketentuan kredit" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan kredit PPN" }
+      ]
+    },
+    {
+      "number": "13A",
+      "bab": "II",
+      "bagian": "4",
+      "title": "Pengembalian PPN (Restitusi)",
+      "status": "ditambah",
+      "description": "Ketentuan pengembalian kelebihan PPN (restitusi) bagi PKP tertentu.",
+      "keywords": ["restitusi", "pengembalian", "lebih bayar"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang pengembalian PPN" }
+      ]
+    },
+    {
+      "number": "14",
+      "bab": "II",
+      "bagian": "5",
+      "title": "PPN yang Tidak Dapat Dikreditkan",
+      "status": "diubah",
+      "description": "PPN yang tidak dapat dikreditkan: perolehan BKP/JKP yang bukan barang modal, perolehan untuk keperluan pribadi, dll.",
+      "keywords": ["tidak dapat dikreditkan", "non-creditable"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan daftar non-creditable" }
+      ]
+    },
+    {
+      "number": "15",
+      "bab": "II",
+      "bagian": "6",
+      "title": "Saat PPN Terutang",
+      "status": "diubah",
+      "description": "Saat PPN terutang: saat penyerahan, saat pembayaran, saat impor, saat ekspor, dll.",
+      "keywords": ["saat terutang", "timing"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan saat terutang untuk PMSE" }
+      ]
+    },
+    {
+      "number": "16",
+      "bab": "II",
+      "bagian": "7",
+      "title": "Tempat PPN Terutang",
+      "status": "diubah",
+      "description": "Tempat PPN terutang sesuai lokasi penyerahan.",
+      "keywords": ["tempat terutang"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan ketentuan tempat" }
+      ]
+    },
+    {
+      "number": "16A",
+      "bab": "II",
+      "bagian": "8",
+      "title": "Pelaporan PPN",
+      "status": "ditambah",
+      "description": "Ketentuan pelaporan SPT Masa PPN.",
+      "keywords": ["SPT Masa", "pelaporan", "PPN"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "added", "effectiveDate": "2010-04-01", "summary": "Pasal baru tentang pelaporan PPN" }
+      ]
+    },
+    {
+      "number": "16B",
+      "bab": "II",
+      "bagian": "8",
+      "title": "Pembenaran PPN",
+      "status": "ditambah",
+      "description": "Pembenaran atas kesalahan pelaporan PPN.",
+      "keywords": ["pembenaran", "koreksi"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "added", "effectiveDate": "2010-04-01", "summary": "Pasal baru" }
+      ]
+    },
+    {
+      "number": "16C",
+      "bab": "II",
+      "bagian": "8",
+      "title": "Ketentuan PMSE",
+      "status": "ditambah",
+      "description": "Ketentuan khusus PPN atas PMSE: kewajiban pemungut oleh PMSE, pendaftaran PKP PMSE.",
+      "keywords": ["PMSE", "pemungut", "marketplace"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang PMSE" }
+      ]
+    },
+    {
+      "number": "16D",
+      "bab": "II",
+      "bagian": "8",
+      "title": "Fasilitas PPN",
+      "status": "ditambah",
+      "description": "Fasilitas PPN: tidak dipungut, dibebaskan, dll.",
+      "keywords": ["fasilitas", "tidak dipungut", "dibebaskan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang fasilitas PPN" }
+      ]
+    },
+    {
+      "number": "16E",
+      "bab": "II",
+      "bagian": "8",
+      "title": "Penetapan PKP",
+      "status": "ditambah",
+      "description": "Ketentuan penetapan dan penghapusan PKP.",
+      "keywords": ["PKP", "penetapan", "penghapusan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru" }
+      ]
+    },
+    {
+      "number": "16F",
+      "bab": "II",
+      "bagian": "8",
+      "title": "Perpajakan di IKN",
+      "status": "ditambah",
+      "description": "Ketentuan PPN khusus untuk Ibu Kota Nusantara (IKN).",
+      "keywords": ["IKN", "fasilitas IKN"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru - PPN khusus IKN" }
+      ]
+    },
+    {
+      "number": "17",
+      "bab": "III",
+      "title": "Objek PPnBM",
+      "status": "diubah",
+      "description": "PPnBM dikenakan atas: penyerahan BKP yang tergolong mewah oleh pabrikan, impor BKP mewah.",
+      "keywords": ["PPnBM", "barang mewah", "pabrikan", "impor"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan objek PPnBM" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "PPnBM diperluas, hunian mewah" }
+      ]
+    },
+    {
+      "number": "18",
+      "bab": "III",
+      "title": "Tarif PPnBM",
+      "status": "diubah",
+      "description": "Tarif PPnBM minimal 10% dan maksimal 200% dari DPP. Tarif spesifik ditetapkan PP.",
+      "keywords": ["tarif PPnBM", "10%", "200%"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan batas tarif PPnBM" }
+      ]
+    },
+    {
+      "number": "19",
+      "bab": "III",
+      "title": "Dasar Pengenaan PPnBM",
+      "status": "berlaku",
+      "description": "DPP PPnBM = harga jual atau nilai impor.",
+      "keywords": ["DPP", "PPnBM"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "20",
+      "bab": "III",
+      "title": "Saat PPnBM Terutang",
+      "status": "berlaku",
+      "description": "Saat PPnBM terutang: saat penyerahan oleh pabrikan, saat impor.",
+      "keywords": ["saat terutang", "PPnBM"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "21",
+      "bab": "III",
+      "title": "Penyetoran PPnBM",
+      "status": "berlaku",
+      "description": "Penyetoran PPnBM oleh pabrikan atau importir.",
+      "keywords": ["penyetoran", "PPnBM"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "22",
+      "bab": "III",
+      "title": "Fasilitas PPnBM",
+      "status": "diubah",
+      "description": "Fasilitas PPnBM berupa pembebasan atau ketidakdipungutan.",
+      "keywords": ["fasilitas", "PPnBM"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan fasilitas PPnBM" }
+      ]
+    },
+    {
+      "number": "23",
+      "bab": "III",
+      "title": "Ketentuan Lain PPnBM",
+      "status": "berlaku",
+      "description": "Ketentuan lain terkait PPnBM.",
+      "keywords": ["PPnBM"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "24",
+      "bab": "IV",
+      "title": "Tata Cara Penyetoran",
+      "status": "diubah",
+      "description": "Tata cara penyetoran dan pelaporan PPN/PPnBM.",
+      "keywords": ["penyetoran", "pelaporan", "tata cara"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan tata cara" }
+      ]
+    },
+    {
+      "number": "25",
+      "bab": "IV",
+      "title": "Saat PPN Tidak Terutang",
+      "status": "diubah",
+      "description": "Kondisi ketika PPN tidak terutang: pembatalan penyerahan, pengembalian barang, dll.",
+      "keywords": ["tidak terutang", "pembatalan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan kondisi" }
+      ]
+    },
+    {
+      "number": "26",
+      "bab": "IV",
+      "title": "Pengawasan",
+      "status": "berlaku",
+      "description": "Pengawasan pelaksanaan PPN/PPnBM.",
+      "keywords": ["pengawasan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "27",
+      "bab": "V",
+      "title": "Sanksi Pidana PPN/PPnBM",
+      "status": "diubah",
+      "description": "Sanksi pidana atas pelanggaran UU PPN/PPnBM.",
+      "keywords": ["pidana", "sanksi"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Penambahan sanksi" }
+      ]
+    },
+    {
+      "number": "28",
+      "bab": "V",
+      "title": "Sanksi Pidana Tambahan",
+      "status": "diubah",
+      "description": "Sanksi pidana tambahan atas pelanggaran.",
+      "keywords": ["pidana", "tambahan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan sanksi" }
+      ]
+    },
+    {
+      "number": "29",
+      "bab": "VI",
+      "title": "Peraturan Pelaksanaan",
+      "status": "diubah",
+      "description": "Peraturan pelaksanaan UU PPN/PPnBM.",
+      "keywords": ["PP", "PMK"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" },
+        { "source": { "type": "UU", "number": "42", "year": 2009 }, "changeType": "amended", "effectiveDate": "2010-04-01", "summary": "Perubahan" }
+      ]
+    },
+    {
+      "number": "30",
+      "bab": "VI",
+      "title": "Ketentuan Peralihan",
+      "status": "berlaku",
+      "description": "Ketentuan peralihan.",
+      "keywords": ["peralihan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "31",
+      "bab": "VI",
+      "title": "Pencabutan",
+      "status": "berlaku",
+      "description": "Pencabutan peraturan lama.",
+      "keywords": ["pencabutan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "32",
+      "bab": "VI",
+      "title": "Pengesahan Perppu",
+      "status": "berlaku",
+      "description": "Pengesahan Perppu menjadi UU.",
+      "keywords": ["Perppu"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "33",
+      "bab": "VI",
+      "title": "Ketentuan Lain",
+      "status": "berlaku",
+      "description": "Ketentuan lain.",
+      "keywords": ["ketentuan"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    },
+    {
+      "number": "34",
+      "bab": "VI",
+      "title": "Penutup",
+      "status": "berlaku",
+      "description": "UU ini mulai berlaku pada tanggal diundangkan.",
+      "keywords": ["penutup"],
+      "amendmentHistory": [
+        { "source": { "type": "UU", "number": "8", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-04-01", "summary": "Pasal asli" }
+      ]
+    }
+  ],
+  "statistics": {
+    "totalPasals": 34,
+    "berlakuPasals": 10,
+    "diubahPasals": 16,
+    "dicabutPasals": 0,
+    "ditambahPasals": 8,
+    "totalAmendments": 3
+  },
+  "lastUpdated": "2026-05-28",
+  "sourceNotes": "Data disusun berdasarkan UU 8/1983 PPN/PPnBM beserta seluruh perubahannya hingga UU 7/2021 HPP. Sumber: peraturan.bpk.go.id, pasal.id."
+}

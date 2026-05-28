@@ -1,0 +1,64 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-badan-2022-plus",
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
+    "description": "Tarif PPh badan 22% berlaku untuk WP badan dalam negeri dan bentuk usaha tetap mulai tahun pajak 2022 sampai dengan tahun pajak yang belum ditentukan. Sebelumnya 25%.",
+    "rate": {
+      "type": "percentage",
+      "value": 22
+    },
+    "taxBase": "Penghasilan Kena Pajak (PKP) badan",
+    "payer": "WP Badan dalam negeri / BUT",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 17 ayat (1) huruf b",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+        "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [
+      "pph-badan-pre2022"
+    ],
+    "supersededBy": [],
+    "notes": "UU HPP menetapkan tarif PPh badan menurun: 22% (2022-dan seterusnya), turun menjadi 20% untuk WP badan yang sahamnya diperdagangkan di bursa efek dan memenuhi syarat tertentu. Penurunan ke 20% umum belum diaktifkan.",
+    "tags": [
+      "pph-badan",
+      "tarif-flat",
+      "berlaku",
+      "hpp"
+    ],
+    "lastVerified": "2026-05-26",
+    "examples": [
+      {
+        "scenario": "Penghasilan Kena Pajak Badan (2022-2023) Rp 100.000.000",
+        "calculation": "22% × 100.000.000",
+        "result": "Pajak = Rp 22.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "supersedes": [
+        "pph-badan-pre2022"
+      ],
+      "sameCategory": [
+        "pph-badan-pre2022",
+        "pph-badan-go-public",
+        "pph-badan-umkm",
+        "pph-badan-pre2010",
+        "pph-badan-pre2001",
+        "pph-badan-ikn-0pct",
+        "pph-badan-ikn-10y"
+      ]
+    }
+  }
+}

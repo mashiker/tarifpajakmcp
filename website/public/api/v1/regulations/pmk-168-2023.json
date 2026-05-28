@@ -1,0 +1,28 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pmk-168-2023",
+    "number": "168",
+    "year": 2023,
+    "title": "Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Wajib Pajak Orang Pribadi",
+    "type": "PMK",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "pp-58-2023",
+      "uu-7-2021-hpp"
+    ],
+    "referencingEntries": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-pegawai-tidak-tetap",
+      "pph-21-natura-kenikmatan",
+      "pph-21-dana-pensiun",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail"
+    ]
+  }
+}

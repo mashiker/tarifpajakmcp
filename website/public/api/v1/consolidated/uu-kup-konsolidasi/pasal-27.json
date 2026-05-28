@@ -1,0 +1,28 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "27",
+    "bab": "VII",
+    "title": "SKPN",
+    "status": "berlaku",
+    "description": "SKP Nihil — pajak terutang sama dengan kredit pajak.",
+    "keywords": [
+      "SKPN",
+      "nihil"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ]
+  }
+}

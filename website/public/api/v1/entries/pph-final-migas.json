@@ -1,0 +1,90 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-final-migas",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Penghasilan dari Kegiatan Hulu Migas",
+    "description": "Pemotongan PPh atas penghasilan sehubungan dengan kegiatan hulu minyak dan gas bumi meliputi uplift, participating interest eksplorasi dan eksploitasi.",
+    "rate": {
+      "type": "range",
+      "value": [
+        5,
+        20
+      ]
+    },
+    "taxBase": "Jumlah bruto penghasilan",
+    "payer": "Kontraktor migas",
+    "recipient": "Negara",
+    "withholder": "Pemerintah/BP Migas",
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PP 51/2008",
+        "article": "Pasal 5B"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Terdiri dari 3 kode objek pajak BPPU dengan tarif 5.0%, 7.0%, 20.0%.",
+    "examples": [
+      {
+        "scenario": "Penghasilan dari Kegiatan Hulu Migas Rp 100.000.000",
+        "calculation": "Tarif 5.0%-20.0% × 100jt",
+        "result": "Pajak = Rp 5.000.000 - Rp 20.000.000"
+      }
+    ],
+    "tags": [
+      "pph-final",
+      "migas"
+    ],
+    "bppuKode": [
+      {
+        "kode": "28-421-01",
+        "nama": "Uplift Hulu Migas",
+        "tarif": 20
+      },
+      {
+        "kode": "28-421-02",
+        "nama": "Participating Interest Eksplorasi Hulu Migas",
+        "tarif": 5
+      },
+      {
+        "kode": "28-421-03",
+        "nama": "Participating Interest Eksploitasi Hulu Migas",
+        "tarif": 7
+      }
+    ],
+    "lastVerified": "2026-05-26",
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-final-bunga-deposito",
+        "pph-final-sewa-tanah",
+        "pph-final-hadiah-undian",
+        "pph-final-transaksi-saham-bursa",
+        "pph-final-konstruksi",
+        "pph-final-bunga-koperasi",
+        "pph-final-transportasi",
+        "pph-final-investasi-lpi",
+        "pph-final-bunga-pre2009",
+        "pph-final-pengalihan-pp131",
+        "pph-final-pengalihan-pp71",
+        "pph-15-penerbangan-domestik",
+        "pph-15-pelayaran-domestik",
+        "pph-15-perusahaan-asuransi",
+        "pph-15-buta-charter",
+        "pph-15-pma-opec",
+        "pph-15-perusahaan-kontraktor"
+      ]
+    }
+  }
+}

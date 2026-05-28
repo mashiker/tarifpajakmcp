@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "22-200",
+    "count": 2,
+    "codes": [
+      {
+        "kode": "22-200-01",
+        "nama": "Pemungutan PPh Pasal 22 atas Impor yang menggunakan API (Angka Pengenal Importir) - Produsen",
+        "tarif": 2.5,
+        "entryId": "pph-22-impor-api-produsen",
+        "entryTransactionType": "Impor Barang (API Produsen)"
+      },
+      {
+        "kode": "22-200-02",
+        "nama": "Pemungutan PPh Pasal 22 atas Impor yang menggunakan API (Angka Pengenal Importir) - Umum",
+        "tarif": 7.5,
+        "entryId": "pph-22-impor-api-produsen",
+        "entryTransactionType": "Impor Barang (API Produsen)"
+      }
+    ]
+  }
+}

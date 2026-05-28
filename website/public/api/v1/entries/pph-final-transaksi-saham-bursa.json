@@ -1,0 +1,85 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-final-transaksi-saham-bursa",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Keuntungan Transaksi Saham di Bursa Efek",
+    "description": "Pajak final atas penghasilan dari perdagangan saham di bursa efek melalui perantara pedagang efek.",
+    "rate": {
+      "type": "percentage",
+      "value": 0.1
+    },
+    "taxBase": "Nilai transaksi penjualan saham",
+    "payer": "Penjual saham",
+    "recipient": "Negara",
+    "withholder": "Perantara pedagang efek",
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 36/2008",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 0,1% dari nilai transaksi penjualan saham (final). Berlaku untuk transaksi di bursa efek.",
+    "tags": [
+      "pph-final",
+      "saham",
+      "bursa-efek",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "bppuKode": [
+      {
+        "kode": "28-407-01",
+        "nama": "Transaksi Penjualan Saham di Bursa Efek (Saham Pendiri)",
+        "tarif": 0.5
+      },
+      {
+        "kode": "28-406-01",
+        "nama": "Transaksi Penjualan Saham di Bursa Efek (Bukan Saham Pendiri)",
+        "tarif": 0.1
+      },
+      {
+        "kode": "28-408-01",
+        "nama": "Transaksi Penjualan Saham Milik Perusahaan Modal Ventura Tidak di Bursa Efek",
+        "tarif": 0.1
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Keuntungan Transaksi Saham di Bursa Efek Rp 100.000.000",
+        "calculation": "0.1% × 100.000.000",
+        "result": "Pajak = Rp 100.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-final-bunga-deposito",
+        "pph-final-sewa-tanah",
+        "pph-final-hadiah-undian",
+        "pph-final-konstruksi",
+        "pph-final-bunga-koperasi",
+        "pph-final-transportasi",
+        "pph-final-migas",
+        "pph-final-investasi-lpi",
+        "pph-final-bunga-pre2009",
+        "pph-final-pengalihan-pp131",
+        "pph-final-pengalihan-pp71",
+        "pph-15-penerbangan-domestik",
+        "pph-15-pelayaran-domestik",
+        "pph-15-perusahaan-asuransi",
+        "pph-15-buta-charter",
+        "pph-15-pma-opec",
+        "pph-15-perusahaan-kontraktor"
+      ]
+    }
+  }
+}

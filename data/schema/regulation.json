@@ -3,7 +3,15 @@
   "title": "Regulation",
   "description": "Skema untuk metadata regulasi pajak Indonesia",
   "type": "object",
-  "required": ["id", "number", "year", "title", "type", "sourceUrl", "status"],
+  "required": [
+    "id",
+    "number",
+    "year",
+    "title",
+    "type",
+    "sourceUrl",
+    "status"
+  ],
   "properties": {
     "id": {
       "type": "string",
@@ -13,25 +21,67 @@
       "type": "integer",
       "description": "Pasal.id law_id for linking"
     },
-    "number": { "type": "string" },
-    "year": { "type": "integer" },
-    "title": { "type": "string" },
+    "number": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
     "type": {
       "type": "string",
-      "enum": ["UU", "PP", "PMK", "PER", "KMK", "SE", "Perpres", "Keppres", "Inpres", "Perda", "Tap MPR", "UUD"]
+      "enum": [
+        "UU",
+        "PP",
+        "PMK",
+        "PER",
+        "KMK",
+        "SE",
+        "Perpres",
+        "Keppres",
+        "Inpres",
+        "Perda",
+        "Tap MPR",
+        "UUD"
+      ]
     },
-    "promulgationDate": { "type": "string", "format": "date" },
-    "effectiveDate": { "type": "string", "format": "date" },
-    "sourceUrl": { "type": "string", "format": "uri" },
-    "pasalUrl": { "type": "string", "format": "uri" },
-    "pdfUrl": { "type": "string", "format": "uri" },
+    "promulgationDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "effectiveDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "pasalUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "pdfUrl": {
+      "type": "string",
+      "format": "uri"
+    },
     "status": {
       "type": "string",
-      "enum": ["berlaku", "dicabut", "diubah_sebagian", "belum_berlaku"]
+      "enum": [
+        "berlaku",
+        "dicabut",
+        "diubah_sebagian",
+        "belum_berlaku",
+        "dicabut_sebagian"
+      ]
     },
     "relatedRegulations": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     }
   },
   "additionalProperties": false

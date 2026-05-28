@@ -1,0 +1,57 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "bphtb-pengalihan-dinkes",
+    "category": "Pajak Daerah",
+    "taxType": "BPHTB",
+    "transactionType": "Pengalihan Hak untuk Kepentingan Umum",
+    "description": "BPHTB yang tidak dipungut atas pengalihan hak atas tanah dan/atau bangunan untuk kepentingan umum yang dilakukan oleh pemerintah.",
+    "rate": {
+      "type": "percentage",
+      "value": 0
+    },
+    "taxBase": "Tidak dipungut",
+    "payer": "Penerima hak (pemerintah)",
+    "recipient": "Pemerintah Daerah",
+    "withholder": null,
+    "effectiveFrom": "2010-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 28/2009",
+        "article": "Pasal 14 ayat (1)"
+      },
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 84",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tidak dipungut untuk pengalihan hak untuk kepentingan umum, termasuk pengadaan tanah untuk pembangunan infrastruktur.",
+    "tags": [
+      "bphtb",
+      "kepentingan-umum",
+      "fasilitas",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Pengalihan Hak untuk Kepentingan Umum - tidak kena pajak",
+        "calculation": "Tarif 0%",
+        "result": "Pajak = Rp 0"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "bphtb-perolehan-umum",
+        "bphtb-perolehan-waris"
+      ]
+    }
+  }
+}

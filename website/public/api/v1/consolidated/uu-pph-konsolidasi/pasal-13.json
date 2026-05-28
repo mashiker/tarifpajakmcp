@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "13",
+    "bab": "III",
+    "bagian": "3",
+    "title": "Kompensasi Kerugian",
+    "status": "diubah",
+    "description": "Kerugian dapat dikompensasiikan selama 5 tahun (umum) atau 10 tahun (usaha tertentu).",
+    "keywords": [
+      "kompensasi",
+      "kerugian",
+      "5 tahun",
+      "10 tahun"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Kompensasi 5 tahun"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Penambahan 10 tahun untuk usaha tertentu"
+      }
+    ]
+  }
+}

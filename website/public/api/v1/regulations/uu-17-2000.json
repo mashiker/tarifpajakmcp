@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "uu-17-2000",
+    "number": "17",
+    "year": 2000,
+    "title": "Undang-Undang Perubahan Kedua UU Pajak Penghasilan",
+    "type": "UU",
+    "effectiveDate": "2001-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44063/uu-no-17-tahun-2000",
+    "status": "dicabut",
+    "relatedRegulations": [
+      "uu-10-1994",
+      "uu-36-2008"
+    ],
+    "referencingEntries": [
+      "pph-21-progressive-pre2009",
+      "pph-23-jasa-2001",
+      "pph-final-bunga-pre2009",
+      "pph-badan-pre2010"
+    ]
+  }
+}

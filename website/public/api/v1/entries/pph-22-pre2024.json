@@ -1,0 +1,79 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-22-pre2024",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Tarif PPh 22 Pra-PP 60/2023",
+    "description": "Tarif PPh 22 sebelum PP 60/2023 berlaku, masih berdasarkan PP 94/2010 dan KMK 523/2002.",
+    "rate": {
+      "type": "range",
+      "value": [
+        0.25,
+        7.5
+      ]
+    },
+    "taxBase": "Sesuai jenis transaksi",
+    "payer": "Sesuai jenis transaksi",
+    "recipient": "Negara",
+    "withholder": "Sesuai jenis transaksi",
+    "effectiveFrom": "2010-01-01",
+    "effectiveTo": "2023-12-31",
+    "status": "diubah",
+    "legalBasis": [
+      {
+        "regulation": "PP 94/2010",
+        "article": "Pasal 2-4"
+      },
+      {
+        "regulation": "UU 36/2008",
+        "article": "Pasal 22",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+      }
+    ],
+    "supersedes": [
+      "pph-22-pre2010"
+    ],
+    "supersededBy": [
+      "pph-22-impor-2024",
+      "pph-22-penjualan-barang-2024"
+    ],
+    "notes": "Tarif pra-PP 60/2023: Impor non-API 7,5%, API produsen 2,5%, API umum 7,5%. Penjualan BBM 0,5%. Pembelian bahan industri 0,25%. Bendaharawan 1,5%.",
+    "tags": [
+      "pph-22",
+      "historis",
+      "pp-94-2010"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Tarif PPh 22 Pra-PP 60/2023 Rp 100.000.000",
+        "calculation": "Tarif 0.25%-7.5% × 100jt",
+        "result": "Pajak = Rp 250.000 - Rp 7.500.000"
+      }
+    ],
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-22-impor-2024",
+        "pph-22-penjualan-barang-2024"
+      ],
+      "supersedes": [
+        "pph-22-pre2010"
+      ],
+      "sameCategory": [
+        "pph-22-impor-2024",
+        "pph-22-pembelian-barang-2024",
+        "pph-22-penjualan-barang-2024",
+        "pph-22-impor-api-produsen",
+        "pph-22-bendaharawan",
+        "pph-22-ekspor-batubara",
+        "pph-22-bumn-pembelian",
+        "pph-22-pengadaan-pemerintah",
+        "pph-22-pmse",
+        "pph-22-kripto"
+      ]
+    }
+  }
+}

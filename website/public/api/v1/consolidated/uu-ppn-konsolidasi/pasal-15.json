@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "15",
+    "bab": "II",
+    "bagian": "6",
+    "title": "Saat PPN Terutang",
+    "status": "diubah",
+    "description": "Saat PPN terutang: saat penyerahan, saat pembayaran, saat impor, saat ekspor, dll.",
+    "keywords": [
+      "saat terutang",
+      "timing"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Perubahan saat terutang untuk PMSE"
+      }
+    ]
+  }
+}

@@ -6,9 +6,19 @@
   "scripts": {
     "build": "node src/build.ts",
     "validate": "node src/validate.ts",
-    "generate": "node src/generate.ts"
+    "generate": "node src/generate.ts",
+    "build:api": "node src/build-api.ts",
+    "build:all": "npm run build && npm run build:api && cd website && npm run build"
   },
-  "keywords": ["pajak", "tax", "indonesia", "tarif", "pph", "ppn", "database"],
+  "keywords": [
+    "pajak",
+    "tax",
+    "indonesia",
+    "tarif",
+    "pph",
+    "ppn",
+    "database"
+  ],
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.7.0",

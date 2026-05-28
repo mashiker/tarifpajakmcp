@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "2A",
+    "bab": "II",
+    "title": "NPWP - Penggabungan dan Pemisahan",
+    "status": "ditambah",
+    "description": "Ketentuan tentang penggabungan dan pemisahan NPWP bagi WP tertentu.",
+    "keywords": [
+      "NPWP",
+      "penggabungan",
+      "pemisahan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "added",
+        "effectiveDate": "2008-01-01",
+        "summary": "Pasal baru ditambahkan melalui Perubahan Ketiga"
+      }
+    ]
+  }
+}

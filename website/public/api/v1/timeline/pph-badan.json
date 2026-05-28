@@ -1,0 +1,68 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "group": "pph-badan",
+    "count": 4,
+    "description": "Timeline pph badan",
+    "entries": [
+      {
+        "id": "pph-badan-pre2001",
+        "transactionType": "Penghasilan Kena Pajak Badan (UU 7/1983)",
+        "rate": "Progresif",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "2000-12-31",
+        "status": "dicabut",
+        "legalBasis": "UU 7/1983 Pasal 17 ayat (1) huruf b",
+        "supersedes": [],
+        "supersededBy": [
+          "pph-badan-pre2010"
+        ]
+      },
+      {
+        "id": "pph-badan-pre2010",
+        "transactionType": "Penghasilan Kena Pajak Badan (Pra-2010)",
+        "rate": "28%",
+        "effectiveFrom": "2001-01-01",
+        "effectiveTo": "2009-12-31",
+        "status": "diubah",
+        "legalBasis": "UU 17/2000 Pasal 17 ayat (1) huruf b",
+        "supersedes": [
+          "pph-badan-pre2001"
+        ],
+        "supersededBy": [
+          "pph-badan-pre2022"
+        ]
+      },
+      {
+        "id": "pph-badan-pre2022",
+        "transactionType": "Penghasilan Kena Pajak Badan (Pra-HPP)",
+        "rate": "25%",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": "2021-12-31",
+        "status": "diubah",
+        "legalBasis": "UU 36/2008 Pasal 17 ayat (1) huruf b",
+        "supersedes": [
+          "pph-badan-pre2010"
+        ],
+        "supersededBy": [
+          "pph-badan-2022-plus"
+        ]
+      },
+      {
+        "id": "pph-badan-2022-plus",
+        "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
+        "rate": "22%",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null,
+        "status": "berlaku",
+        "legalBasis": "UU 7/2021 (HPP) Pasal 17 ayat (1) huruf b",
+        "supersedes": [
+          "pph-badan-pre2022"
+        ],
+        "supersededBy": []
+      }
+    ]
+  }
+}

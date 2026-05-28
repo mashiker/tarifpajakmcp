@@ -1,0 +1,64 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "ppn-ekspor-bkp",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Ekspor Barang Kena Pajak",
+    "description": "PPN atas ekspor Barang Kena Pajak Berwujud dikenakan tarif 0%.",
+    "rate": {
+      "type": "percentage",
+      "value": 0
+    },
+    "taxBase": "Nilai ekspor",
+    "payer": "Eksportir PKP",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2022-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 7 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 0% untuk ekspor BKP berwujud. Berbeda dengan ekspor jasa (dapat berbeda tarif tergantung jenis).",
+    "tags": [
+      "ppn",
+      "ekspor",
+      "tarif-nol",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "examples": [
+      {
+        "scenario": "Ekspor Barang Kena Pajak - tidak kena pajak",
+        "calculation": "Tarif 0%",
+        "result": "Pajak = Rp 0"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "ppn-11pct-effective-2025",
+        "ppn-11pct-2022",
+        "ppn-10pct",
+        "ppn-impor-bkp",
+        "ppn-pmse",
+        "ppn-jasa-tenaga-listrik",
+        "ppn-jasa-telekomunikasi",
+        "ppn-ekspor-jkp",
+        "ppn-tidak-kena-pajak",
+        "ppn-jkpt-industri",
+        "ppn-jasa-kegiatan-usaha-persewaan",
+        "ppn-dpp-penghitungan",
+        "ppn-pengkreditan"
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "10",
+    "bab": "III",
+    "bagian": "1",
+    "title": "Tarif PPh Orang Pribadi (Progresif)",
+    "status": "diubah",
+    "description": "Tarif PPh OP progresif 4 lapis: 5%, 15%, 25%, 35% (pasca HPP). Sebelumnya 5 lapis 5%-35%.",
+    "keywords": [
+      "tarif",
+      "progresif",
+      "OP",
+      "5%",
+      "15%",
+      "25%",
+      "35%"
+    ],
+    "relatedTaxRates": [
+      "pph-21-progressive-annual-2024"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Tarif progresif 10%-35% (4 lapis)"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Tarif progresif 5%-35% (5 lapis)"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Tarif progresif 5%-30% (7 lapis)"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Tarif progresif 5%-35% (4 lapis) — lapis baru PKP > Rp 5 miliar 35%"
+      }
+    ]
+  }
+}

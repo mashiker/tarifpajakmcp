@@ -1,0 +1,115 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "count": 15,
+    "categories": [
+      {
+        "category": "Bea Masuk",
+        "taxType": "Bea Masuk",
+        "slug": "bea-masuk",
+        "description": "Bea Masuk — pungutan negara atas barang yang diimpor berdasarkan HS Code",
+        "count": 4
+      },
+      {
+        "category": "Bea Meterai",
+        "taxType": "Bea Meterai",
+        "slug": "bea-meterai",
+        "description": "Bea Meterai - Pajak atas dokumen tertentu yang dikenakan berdasarkan UU Bea Meterai",
+        "count": 8
+      },
+      {
+        "category": "Pajak Daerah",
+        "taxType": "BPHTB",
+        "slug": "bphtb",
+        "description": "Bea Perolehan Hak atas Tanah dan Bangunan - Pajak yang dikenakan atas perolehan hak atas tanah dan/atau bangunan",
+        "count": 3
+      },
+      {
+        "category": "Cukai",
+        "taxType": "Cukai",
+        "slug": "cukai",
+        "description": "Cukai — pungutan negara atas barang tertentu (etil alkohol, MMEA, hasil tembakau)",
+        "count": 3
+      },
+      {
+        "category": "Pajak Daerah",
+        "taxType": "Pajak Daerah",
+        "slug": "pajak-daerah",
+        "description": "Pajak Daerah berdasarkan UU 1/2022 (HKPD)",
+        "count": 8
+      },
+      {
+        "category": "Pajak Daerah",
+        "taxType": "PBB",
+        "slug": "pbb",
+        "description": "Pajak Bumi dan Bangunan - Pajak atas bumi dan/atau bangunan yang dimiliki, dikuasai, dan/atau dimanfaatkan",
+        "count": 4
+      },
+      {
+        "category": "PPh",
+        "taxType": "PPh 21",
+        "slug": "pph-21",
+        "description": "Pajak Penghasilan Pasal 21 - Pajak atas penghasilan sehubungan dengan pekerjaan, jasa, atau kegiatan orang pribadi",
+        "count": 29
+      },
+      {
+        "category": "PPh",
+        "taxType": "PPh 22",
+        "slug": "pph-22",
+        "description": "Pajak Penghasilan Pasal 22 - Pemungutan pajak atas impor, pembelian barang, dan penjualan barang tertentu",
+        "count": 11
+      },
+      {
+        "category": "PPh",
+        "taxType": "PPh 23",
+        "slug": "pph-23",
+        "description": "Pajak Penghasilan Pasal 23 - Pemotongan atas penghasilan berupa imbalan jasa tertentu, sewa tanah dan/atau bangunan, dan hadiah/penghargaan. Jenis jasa diatur dalam PMK 141/PMK.03/2015.",
+        "count": 7
+      },
+      {
+        "category": "PPh",
+        "taxType": "PPh 26",
+        "slug": "pph-26",
+        "description": "Pajak Penghasilan Pasal 26 - Pemotongan atas penghasilan yang diterima WP luar negeri",
+        "count": 7
+      },
+      {
+        "category": "PPh",
+        "taxType": "PPh 4(2) Final",
+        "slug": "pph-4-2-final",
+        "description": "Pajak Penghasilan Final Pasal 4 ayat (2) - Pajak yang dipungut pada saat penghasilan tertentu diterima",
+        "count": 18
+      },
+      {
+        "category": "PPh",
+        "taxType": "PPh Badan",
+        "slug": "pph-badan",
+        "description": "Pajak Penghasilan bagi Wajib Pajak Badan - Tarif flat yang berlaku atas penghasilan kena pajak badan",
+        "count": 8
+      },
+      {
+        "category": "PPh",
+        "taxType": "PPh UMKM",
+        "slug": "pph-umkm",
+        "description": "Pajak Penghasilan atas penghasilan dari usaha UMKM - tarif final untuk WP yang memiliki peredaran bruto tertentu",
+        "count": 3
+      },
+      {
+        "category": "PPN",
+        "taxType": "PPN",
+        "slug": "ppn",
+        "description": "Pajak Pertambahan Nilai - Pajak atas konsumsi Barang Kena Pajak dan/atau Jasa Kena Pajak di dalam Daerah Pabean",
+        "count": 14
+      },
+      {
+        "category": "PPnBM",
+        "taxType": "PPnBM",
+        "slug": "ppnbm",
+        "description": "Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah",
+        "count": 8
+      }
+    ]
+  }
+}

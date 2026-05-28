@@ -1,0 +1,49 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "8",
+    "bab": "III",
+    "title": "Pembetulan SPT",
+    "status": "diubah",
+    "description": "Hak WP untuk membetulkan SPT yang telah disampaikan.",
+    "keywords": [
+      "SPT",
+      "pembetulan",
+      "koreksi"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli tentang pembetulan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "9",
+          "year": 1994
+        },
+        "changeType": "amended",
+        "effectiveDate": "1995-01-01",
+        "summary": "Penyesuaian tata cara pembetulan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Pengetatan pembetulan SPT"
+      }
+    ]
+  }
+}

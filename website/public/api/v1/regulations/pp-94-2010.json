@@ -1,0 +1,23 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-94-2010",
+    "number": "94",
+    "year": 2010,
+    "title": "Peraturan Pemerintah tentang Perhitungan Pajak Penghasilan Pasal 22 dan Pemungutan Pajak Pertambahan Nilai atas Penyerahan BKP",
+    "type": "PP",
+    "effectiveDate": "2010-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/69530/pp-no-94-tahun-2010",
+    "status": "dicabut",
+    "relatedRegulations": [
+      "pp-60-2023"
+    ],
+    "referencingEntries": [
+      "pph-21-progressive-uulama1994",
+      "pph-21-ptkp-1995",
+      "pph-22-pre2024"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "44",
+    "bab": "XIII",
+    "title": "Sanksi Pidana - Ketentuan Umum",
+    "status": "diubah",
+    "description": "Sanksi pidana atas tindak pidana di bidang perpajakan: tidak menyampaikan SPT, menyampaikan SPT tidak benar, tidak membayar pajak.",
+    "keywords": [
+      "pidana",
+      "penjara",
+      "denda",
+      "tindak pidana"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli - sanksi pidana"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "16",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Penambahan sanksi pidana baru"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Perubahan sanksi pidana"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan daluwarsa pidana dan penambahan sanksi"
+      }
+    ]
+  }
+}

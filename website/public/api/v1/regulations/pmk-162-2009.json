@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pmk-162-2009",
+    "number": "162/PMK.010/2009",
+    "year": 2009,
+    "title": "PMK tentang Besarnya PTKP",
+    "type": "PMK",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/51412/pmk-no-162pmk0102009",
+    "status": "dicabut",
+    "effectiveDate": "2009-01-01",
+    "referencingEntries": [
+      "pph-21-ptkp-2009"
+    ]
+  }
+}

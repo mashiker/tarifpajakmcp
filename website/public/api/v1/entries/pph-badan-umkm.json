@@ -1,0 +1,58 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-badan-umkm",
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar)",
+    "description": "Tarif PPh badan dikurangi sebesar 50% dari tarif normal (22% × 50% = 11%) untuk WP badan yang menerima peredaran bruto ≤ Rp 50 miliar. Fasilitas ini diberikan berdasarkan UU HPP Pasal 17 ayat (2).",
+    "rate": {
+      "type": "percentage",
+      "value": 11
+    },
+    "taxBase": "Penghasilan Kena Pajak (PKP) badan",
+    "payer": "WP Badan UMKM (peredaran bruto ≤ Rp 50 miliar)",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 17 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Penurunan tarif 50% berlaku untuk WP badan yang menerima peredaran bruto dari usaha ≤ Rp 50 miliar dalam tahun pajak sebelumnya. Tarif efektif = 22% × 50% = 11%.",
+    "tags": [
+      "pph-badan",
+      "umkm",
+      "tarif-dikurangi",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar) Rp 100.000.000",
+        "calculation": "11% × 100.000.000",
+        "result": "Pajak = Rp 11.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-badan-2022-plus",
+        "pph-badan-pre2022",
+        "pph-badan-go-public",
+        "pph-badan-pre2010",
+        "pph-badan-pre2001",
+        "pph-badan-ikn-0pct",
+        "pph-badan-ikn-10y"
+      ]
+    }
+  }
+}

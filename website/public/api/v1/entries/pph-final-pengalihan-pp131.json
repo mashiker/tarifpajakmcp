@@ -1,0 +1,56 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-final-pengalihan-pp131",
+    "category": "PPh",
+    "taxType": "PPh 4(2)",
+    "transactionType": "Pengalihan Hak atas Tanah/Bangunan (PP 131/2000)",
+    "description": "PPh final atas pengalihan hak atas tanah dan/atau bangunan berdasarkan PP 131/2000. Tarif 5% dari NJOP. Berlaku 2000-2008.",
+    "rate": {
+      "type": "percentage",
+      "value": 5
+    },
+    "taxBase": "Jumlah bruto nilai pengalihan (NJOP / nilai transaksi)",
+    "payer": "WP yang mengalihkan hak atas tanah/bangunan",
+    "recipient": "Negara",
+    "withholder": "Notaris / PPAT / BPN",
+    "effectiveFrom": "2000-12-29",
+    "effectiveTo": "2008-12-31",
+    "status": "dicabut",
+    "legalBasis": [
+      {
+        "regulation": "PP 131/2000",
+        "article": "Pasal 5",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44850/pp-no-131-tahun-2000"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [
+      "pph-final-pengalihan-pp71"
+    ],
+    "notes": "PP 131/2000: tarif 5% dari nilai bruto. Digantikan PP 71/2008 dengan tarif 2.5%/1%/0%.",
+    "examples": [
+      {
+        "scenario": "Penjualan tanah NJOP Rp 500.000.000 tahun 2005",
+        "calculation": "5% × 500.000.000",
+        "result": "PPh final = Rp 25.000.000"
+      }
+    ],
+    "tags": [
+      "pph-final",
+      "tanah",
+      "bangunan",
+      "pengalihan",
+      "historis"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-final-pengalihan-pp71"
+      ],
+      "sameCategory": []
+    }
+  }
+}

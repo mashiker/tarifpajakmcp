@@ -1,0 +1,70 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "ppn-jasa-tenaga-listrik",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Penyerahan Jasa Tenaga Listrik",
+    "description": "PPN atas penyerahan jasa tenaga listrik oleh PLN atau penyedia listrik lainnya.",
+    "rate": {
+      "type": "percentage",
+      "value": 11,
+      "effectiveRate": "11% (PMK 131/2024)"
+    },
+    "taxBase": "Harga jual tenaga listrik",
+    "payer": "Konsumen listrik",
+    "recipient": "Negara",
+    "withholder": "PLN / penyedia listrik",
+    "effectiveFrom": "2025-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 4 ayat (1)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PMK 131/2024",
+        "article": "Pasal 2",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Penyerahan jasa tenaga listrik di atas 6.600 VA (rumah tangga) dikenakan PPN. Di bawah 6.600 VA: tidak dipungut PPN (subtansi bukan JKP).",
+    "tags": [
+      "ppn",
+      "listrik",
+      "pln",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Penyerahan Jasa Tenaga Listrik Rp 100.000.000",
+        "calculation": "11% × 100.000.000",
+        "result": "Pajak = Rp 11.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "ppn-11pct-effective-2025",
+        "ppn-11pct-2022",
+        "ppn-10pct",
+        "ppn-ekspor-bkp",
+        "ppn-impor-bkp",
+        "ppn-pmse",
+        "ppn-jasa-telekomunikasi",
+        "ppn-ekspor-jkp",
+        "ppn-tidak-kena-pajak",
+        "ppn-jkpt-industri",
+        "ppn-jasa-kegiatan-usaha-persewaan",
+        "ppn-dpp-penghitungan",
+        "ppn-pengkreditan"
+      ]
+    }
+  }
+}

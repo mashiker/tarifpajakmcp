@@ -1,0 +1,64 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "17",
+    "bab": "IV",
+    "bagian": "2",
+    "title": "Penghasilan dari Usaha UMKM",
+    "status": "diubah",
+    "description": "PPh terutang atas penghasilan dari usaha yang diterima WP OP yang memiliki peredaran bruto tertentu (UMKM). Tarif 0,5% pasca HPP.",
+    "keywords": [
+      "UMKM",
+      "0,5%",
+      "peredaran bruto",
+      "PP 55/2022"
+    ],
+    "relatedTaxRates": [
+      "pph-umkm-05pct-2023"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Penambahan ketentuan UMKM"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan ketentuan UMKM"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Tarif PPh UMKM 0,5% dari peredaran bruto, threshold Rp 4,8 miliar"
+      }
+    ]
+  }
+}

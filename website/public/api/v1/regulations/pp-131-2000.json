@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-131-2000",
+    "number": "131",
+    "year": 2000,
+    "title": "Pajak Penghasilan Final atas Penghasilan Tertentu",
+    "type": "PP",
+    "effectiveDate": "2000-12-29",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000",
+    "status": "diubah_sebagian",
+    "relatedRegulations": [
+      "uu-7-2021-hpp"
+    ],
+    "referencingEntries": [
+      "pph-final-bunga-deposito",
+      "pph-final-sewa-tanah",
+      "pph-final-hadiah-undian",
+      "pph-final-pengalihan-pp131",
+      "ppn-11pct-effective-2025",
+      "ppn-impor-bkp",
+      "ppn-pmse",
+      "ppn-jasa-tenaga-listrik",
+      "ppn-jasa-telekomunikasi"
+    ]
+  }
+}

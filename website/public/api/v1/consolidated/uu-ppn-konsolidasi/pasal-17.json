@@ -1,0 +1,50 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "17",
+    "bab": "III",
+    "title": "Objek PPnBM",
+    "status": "diubah",
+    "description": "PPnBM dikenakan atas: penyerahan BKP yang tergolong mewah oleh pabrikan, impor BKP mewah.",
+    "keywords": [
+      "PPnBM",
+      "barang mewah",
+      "pabrikan",
+      "impor"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Perubahan objek PPnBM"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "PPnBM diperluas, hunian mewah"
+      }
+    ]
+  }
+}

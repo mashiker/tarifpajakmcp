@@ -1,0 +1,23 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-51-2008",
+    "number": "51",
+    "year": 2008,
+    "title": "Peraturan Pemerintah tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu dan Pajak Penghasilan Final atas Penghasilan Tertentu",
+    "type": "PP",
+    "effectiveDate": "2009-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/50182/pp-no-51-tahun-2008",
+    "status": "diubah_sebagian",
+    "relatedRegulations": [
+      "pp-40-2009"
+    ],
+    "referencingEntries": [
+      "pph-final-konstruksi",
+      "pph-final-transportasi",
+      "pph-final-migas"
+    ]
+  }
+}

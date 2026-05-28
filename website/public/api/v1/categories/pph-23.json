@@ -1,0 +1,69 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "description": "Pajak Penghasilan Pasal 23 - Pemotongan atas penghasilan berupa imbalan jasa tertentu, sewa tanah dan/atau bangunan, dan hadiah/penghargaan. Jenis jasa diatur dalam PMK 141/PMK.03/2015.",
+    "count": 7,
+    "entries": [
+      {
+        "id": "pph-23-jasa-lain-2pct",
+        "transactionType": "Imbalan Jasa Lain (BerNPWP)",
+        "rate": "2%",
+        "status": "berlaku",
+        "effectiveFrom": "2015-12-31",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-23-jasa-lain-4pct",
+        "transactionType": "Imbalan Jasa Lain (Tanpa NPWP)",
+        "rate": "4%",
+        "status": "berlaku",
+        "effectiveFrom": "2015-12-31",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-23-jasa-katering-2pct",
+        "transactionType": "Jasa Katering / Tata Boga",
+        "rate": "2%",
+        "status": "berlaku",
+        "effectiveFrom": "2015-12-31",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-23-sewa-tanah-bangunan",
+        "transactionType": "Sewa Tanah dan/atau Bangunan",
+        "rate": "10%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-23-hadiah-penghargaan",
+        "transactionType": "Hadiah/Penghargaan kepada OP Bukan Pegawai",
+        "rate": "15%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-23-jasa-pre2001",
+        "transactionType": "Imbalan Jasa & Sewa (UU 7/1983)",
+        "rate": "10%–15%",
+        "status": "dicabut",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "2000-12-31"
+      },
+      {
+        "id": "pph-23-jasa-2001",
+        "transactionType": "Imbalan Jasa & Sewa (UU 17/2000)",
+        "rate": "2%–10%",
+        "status": "diubah",
+        "effectiveFrom": "2001-01-01",
+        "effectiveTo": "2021-12-31"
+      }
+    ]
+  }
+}

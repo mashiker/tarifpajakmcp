@@ -1,0 +1,112 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-21-progressive-annual-2024",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "SPT Tahunan Progresif",
+    "description": "Tarif progresif PPh Orang Pribadi berlaku untuk perhitungan SPT Tahunan. Tarif ini merupakan tarif dasar yang ditetapkan UU PPh dan terakhir diubah oleh UU HPP.",
+    "rate": {
+      "type": "progressive",
+      "value": "Progresif 5 lapis",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 60000000,
+          "rate": 5
+        },
+        {
+          "min": 60000000,
+          "max": 250000000,
+          "rate": 15
+        },
+        {
+          "min": 250000000,
+          "max": 500000000,
+          "rate": 25
+        },
+        {
+          "min": 500000000,
+          "max": 5000000000,
+          "rate": 30
+        },
+        {
+          "min": 5000000000,
+          "max": null,
+          "rate": 35
+        }
+      ]
+    },
+    "taxBase": "Penghasilan Kena Pajak (PKP) = Penghasilan neto - PTKP",
+    "payer": "WP Orang Pribadi dalam negeri",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 17 ayat (1) huruf a",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+        "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [
+      "pph-21-progressive-pre2022"
+    ],
+    "supersededBy": [],
+    "notes": "Lapisan tarif 35% ditambahkan oleh UU HPP (sebelumnya maksimal 30%). PTKP 2024: Single Rp 54.000.000; Kawin Rp 58.500.000; Tanggungan Rp 4.500.000/orang (maks 3).",
+    "examples": [
+      {
+        "scenario": "PKP Rp 300.000.000 setahun",
+        "calculation": "5%×60jt + 15%×190jt + 25%×50jt = 3jt + 28.5jt + 12.5jt",
+        "result": "PPh terutang = Rp 44.000.000"
+      }
+    ],
+    "tags": [
+      "pph-21",
+      "progresif",
+      "spt-tahunan",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "relatedEntries": {
+      "supersedes": [
+        "pph-21-progressive-pre2022"
+      ],
+      "sameCategory": [
+        "pph-21-ter-monthly-2024",
+        "pph-21-progressive-pre2022",
+        "pph-21-non-taxable-income",
+        "pph-21-honorarium-bukan-pegawai",
+        "pph-21-pegawai-tidak-tetap",
+        "pph-21-shu-koperasi",
+        "pph-21-natura-kenikmatan",
+        "pph-21-dana-pensiun",
+        "pph-21-progressive-pre2009",
+        "pph-21-progressive-uulama1983",
+        "pph-21-progressive-uulama1994",
+        "pph-21-progressive-monthly-pre2024",
+        "pph-21-ptkp-1984",
+        "pph-21-ptkp-1995",
+        "pph-21-ptkp-2005",
+        "pph-21-ptkp-2009",
+        "pph-21-ter-a-detail",
+        "pph-21-ter-b-detail",
+        "pph-21-ter-c-detail",
+        "pph-21-norma-dokter",
+        "pph-21-norma-pengacara",
+        "pph-21-norma-akuntan",
+        "pph-21-norma-arsitek",
+        "pph-21-norma-notaris",
+        "pph-21-norma-konsultan",
+        "pph-21-norma-pedagang",
+        "pph-21-norma-petani",
+        "pph-21-norma-pengusaha-kecil"
+      ]
+    }
+  }
+}

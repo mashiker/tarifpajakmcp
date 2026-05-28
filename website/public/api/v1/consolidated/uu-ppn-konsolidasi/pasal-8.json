@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "8",
+    "bab": "II",
+    "bagian": "1",
+    "title": "PMSE (Perdagangan Melalui Sistem Elektronik)",
+    "status": "ditambah",
+    "description": "Ketentuan PPN atas transaksi PMSE: penyerahan BKP/JKP melalui marketplace/ecommerce.",
+    "keywords": [
+      "PMSE",
+      "ecommerce",
+      "marketplace",
+      "digital"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "added",
+        "effectiveDate": "2010-04-01",
+        "summary": "Pasal baru tentang PMSE"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan ketentuan PMSE"
+      }
+    ]
+  }
+}

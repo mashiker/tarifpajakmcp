@@ -1,0 +1,147 @@
+{
+  "category": "Pajak Daerah",
+  "taxType": "BPHTB",
+  "description": "Bea Perolehan Hak atas Tanah dan Bangunan - Pajak yang dikenakan atas perolehan hak atas tanah dan/atau bangunan",
+  "entries": [
+    {
+      "id": "bphtb-perolehan-umum",
+      "category": "Pajak Daerah",
+      "taxType": "BPHTB",
+      "transactionType": "Perolehan Hak atas Tanah/Bangunan (Umum)",
+      "description": "BPHTB atas perolehan hak atas tanah dan/atau bangunan melalui jual beli, tukar-menukar, hibah, waris, pemasukan dalam perseroan, pemisahan hak, penunjukan pembeli dalam lelang, pelaksanaan putusan hakim, penggabungan usaha, peleburan usaha, pemekaran usaha, hadiah, pemberian hak baru.",
+      "rate": {
+        "type": "percentage",
+        "value": 5
+      },
+      "taxBase": "NPOP (Nilai Perolehan Objek Pajak) dikurangi NPOPTKP (Rp 80.000.000 untuk perorangan)",
+      "payer": "Penerima/pemperoleh hak",
+      "recipient": "Pemerintah Daerah",
+      "withholder": "PPAT (Pejabat Pembuat Akta Tanah) / Notaris",
+      "effectiveFrom": "2010-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 28/2009",
+          "article": "Pasal 5-7",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44141/uu-no-28-tahun-2009"
+        },
+        {
+          "regulation": "UU 1/2022 (HKPD)",
+          "article": "Pasal 78-82",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "NPOPTKP = Rp 80.000.000 (perorangan) atau Rp 80.000.000 × jumlah penerima hak (waris). NPOP minimum = NJOP. Tarif 5% × (NPOP - NPOPTKP).",
+      "examples": [
+        {
+          "scenario": "Membeli rumah NPOP Rp 1.000.000.000",
+          "calculation": "5% × (1.000.000.000 - 80.000.000)",
+          "result": "BPHTB = Rp 46.000.000"
+        }
+      ],
+      "tags": [
+        "bphtb",
+        "tanah",
+        "bangunan",
+        "perolehan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27"
+    },
+    {
+      "id": "bphtb-perolehan-waris",
+      "category": "Pajak Daerah",
+      "taxType": "BPHTB",
+      "transactionType": "Perolehan Hak melalui Waris",
+      "description": "BPHTB atas perolehan hak atas tanah dan/atau bangunan melalui waris. NPOPTKP yang lebih tinggi diberikan untuk waris.",
+      "rate": {
+        "type": "percentage",
+        "value": 5
+      },
+      "taxBase": "NPOP dikurangi NPOPTKP waris (Rp 80.000.000 per ahli waris)",
+      "payer": "Ahli waris penerima hak",
+      "recipient": "Pemerintah Daerah",
+      "withholder": "PPAT / Notaris",
+      "effectiveFrom": "2010-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 28/2009",
+          "article": "Pasal 7"
+        },
+        {
+          "regulation": "UU 1/2022 (HKPD)",
+          "article": "Pasal 80",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Untuk waris, NPOPTKP = Rp 80.000.000 per ahli waris. Jika ada 3 ahli waris, NPOPTKP = 3 × Rp 80.000.000 = Rp 240.000.000.",
+      "tags": [
+        "bphtb",
+        "waris",
+        "perolehan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Perolehan Hak melalui Waris Rp 100.000.000",
+          "calculation": "5% × 100.000.000",
+          "result": "Pajak = Rp 5.000.000"
+        }
+      ]
+    },
+    {
+      "id": "bphtb-pengalihan-dinkes",
+      "category": "Pajak Daerah",
+      "taxType": "BPHTB",
+      "transactionType": "Pengalihan Hak untuk Kepentingan Umum",
+      "description": "BPHTB yang tidak dipungut atas pengalihan hak atas tanah dan/atau bangunan untuk kepentingan umum yang dilakukan oleh pemerintah.",
+      "rate": {
+        "type": "percentage",
+        "value": 0
+      },
+      "taxBase": "Tidak dipungut",
+      "payer": "Penerima hak (pemerintah)",
+      "recipient": "Pemerintah Daerah",
+      "withholder": null,
+      "effectiveFrom": "2010-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 28/2009",
+          "article": "Pasal 14 ayat (1)"
+        },
+        {
+          "regulation": "UU 1/2022 (HKPD)",
+          "article": "Pasal 84",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "Tidak dipungut untuk pengalihan hak untuk kepentingan umum, termasuk pengadaan tanah untuk pembangunan infrastruktur.",
+      "tags": [
+        "bphtb",
+        "kepentingan-umum",
+        "fasilitas",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-27",
+      "examples": [
+        {
+          "scenario": "Pengalihan Hak untuk Kepentingan Umum - tidak kena pajak",
+          "calculation": "Tarif 0%",
+          "result": "Pajak = Rp 0"
+        }
+      ]
+    }
+  ]
+}

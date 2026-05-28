@@ -1,0 +1,31 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-16-2009",
+    "number": "16",
+    "year": 2009,
+    "title": "Peraturan Pemerintah tentang Pemotongan Pajak Penghasilan atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi",
+    "type": "PP",
+    "effectiveDate": "2009-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/50297/pp-no-16-tahun-2009",
+    "status": "diubah_sebagian",
+    "relatedRegulations": [
+      "uu-7-2021-hpp",
+      "pp-58-2023"
+    ],
+    "referencingEntries": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-honorarium-bukan-pegawai",
+      "pph-21-pegawai-tidak-tetap",
+      "pph-21-natura-kenikmatan",
+      "pph-21-dana-pensiun",
+      "pph-21-progressive-monthly-pre2024",
+      "pph-21-ptkp-2009",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail"
+    ]
+  }
+}

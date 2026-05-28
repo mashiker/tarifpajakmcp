@@ -1,0 +1,61 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "1",
+    "bab": "I",
+    "title": "Subjek Pajak",
+    "status": "diubah",
+    "description": "Subjek pajak adalah orang pribadi dan badan. Termasuk bentuk usaha tetap (BUT). WP OP berdomisili di Indonesia dan WP OP yang berada di Indonesia lebih dari 183 hari.",
+    "keywords": [
+      "subjek pajak",
+      "OP",
+      "badan",
+      "BUT",
+      "183 hari"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli tentang subjek pajak"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Penjelasan 183 hari dan BUT"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan definisi BUT"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan definisi subjek pajak"
+      }
+    ]
+  }
+}

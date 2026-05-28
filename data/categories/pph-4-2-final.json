@@ -124,6 +124,13 @@
           "nama": "Diskonto Surat Perbendaharaan Negara yang Diterima Wajib Pajak Penduduk/Berkedudukan di Luar Negeri",
           "tarif": 20.0
         }
+      ],
+      "examples": [
+        {
+          "scenario": "Bunga Deposito dan Tabungan Rp 100.000.000",
+          "calculation": "20% × 100.000.000",
+          "result": "Pajak = Rp 20.000.000"
+        }
       ]
     },
     {
@@ -182,6 +189,13 @@
           "nama": "Pengalihan Hak atas Tanah dan/atau Bangunan kepada Pemerintah, BUMN yang Mendapat Penugasan Khusus dari Pemerintah, atau BUMD yang Mendapat Penugasan Khusus dari Kepala Daerah, sesuai UU mengenai Pengadaan Tanah bagi Pembangunan untuk Kepentingan Umum",
           "tarif": 0.0
         }
+      ],
+      "examples": [
+        {
+          "scenario": "Sewa Tanah dan/atau Bangunan Rp 100.000.000",
+          "calculation": "10% × 100.000.000",
+          "result": "Pajak = Rp 10.000.000"
+        }
       ]
     },
     {
@@ -227,6 +241,13 @@
           "kode": "28-419-01",
           "nama": "Dividen yang Diterima/Diperoleh Wajib Pajak Orang Pribadi Dalam Negeri",
           "tarif": 10.0
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "Hadiah Undian Rp 100.000.000",
+          "calculation": "25% × 100.000.000",
+          "result": "Pajak = Rp 25.000.000"
         }
       ]
     },
@@ -280,6 +301,13 @@
           "nama": "Transaksi Penjualan Saham Milik Perusahaan Modal Ventura Tidak di Bursa Efek",
           "tarif": 0.1
         }
+      ],
+      "examples": [
+        {
+          "scenario": "Keuntungan Transaksi Saham di Bursa Efek Rp 100.000.000",
+          "calculation": "0.1% × 100.000.000",
+          "result": "Pajak = Rp 100.000"
+        }
       ]
     },
     {
@@ -313,13 +341,20 @@
         },
         {
           "regulation": "UU 7/2021 (HPP)",
-          "article": "Pasal 19"
+          "article": "Pasal 19",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
         }
       ],
       "supersedes": [],
       "supersededBy": [],
       "notes": "Terdiri dari 14 kode objek pajak BPPU dengan tarif 1.75%, 2.0%, 2.65%, 3.0%, 3.5%, 4.0%, 6.0%.",
-      "examples": [],
+      "examples": [
+        {
+          "scenario": "Pekerjaan dan Jasa Konstruksi Rp 100.000.000",
+          "calculation": "Tarif 1.75%-6.0% × 100jt",
+          "result": "Pajak = Rp 1.750.000 - Rp 6.000.000"
+        }
+      ],
       "tags": [
         "pph-final",
         "konstruksi"
@@ -421,7 +456,8 @@
       "legalBasis": [
         {
           "regulation": "UU 7/2021 (HPP)",
-          "article": "Pasal 4 ayat (2)"
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
         },
         {
           "regulation": "PP 60/2023",
@@ -431,7 +467,13 @@
       "supersedes": [],
       "supersededBy": [],
       "notes": "Terdiri dari 2 kode objek pajak BPPU dengan tarif 0.0%, 10.0%.",
-      "examples": [],
+      "examples": [
+        {
+          "scenario": "Bunga Simpanan Koperasi Rp 100.000.000",
+          "calculation": "Tarif 0.0%-10.0% × 100jt",
+          "result": "Pajak = Rp 0 - Rp 10.000.000"
+        }
+      ],
       "tags": [
         "pph-final",
         "koperasi"
@@ -473,7 +515,8 @@
       "legalBasis": [
         {
           "regulation": "UU 7/2021 (HPP)",
-          "article": "Pasal 4 ayat (2)"
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
         },
         {
           "regulation": "PP 51/2008",
@@ -483,7 +526,13 @@
       "supersedes": [],
       "supersededBy": [],
       "notes": "Terdiri dari 5 kode objek pajak BPPU dengan tarif 1.2%, 1.8%, 2.64%.",
-      "examples": [],
+      "examples": [
+        {
+          "scenario": "Penghasilan dari Pengangkutan dan Charter Rp 100.000.000",
+          "calculation": "Tarif 1.2%-2.64% × 100jt",
+          "result": "Pajak = Rp 1.200.000 - Rp 2.640.000"
+        }
+      ],
       "tags": [
         "pph-final",
         "transportasi"
@@ -540,7 +589,8 @@
       "legalBasis": [
         {
           "regulation": "UU 7/2021 (HPP)",
-          "article": "Pasal 4 ayat (2)"
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
         },
         {
           "regulation": "PP 51/2008",
@@ -550,7 +600,13 @@
       "supersedes": [],
       "supersededBy": [],
       "notes": "Terdiri dari 3 kode objek pajak BPPU dengan tarif 5.0%, 7.0%, 20.0%.",
-      "examples": [],
+      "examples": [
+        {
+          "scenario": "Penghasilan dari Kegiatan Hulu Migas Rp 100.000.000",
+          "calculation": "Tarif 5.0%-20.0% × 100jt",
+          "result": "Pajak = Rp 5.000.000 - Rp 20.000.000"
+        }
+      ],
       "tags": [
         "pph-final",
         "migas"
@@ -597,7 +653,8 @@
       "legalBasis": [
         {
           "regulation": "UU 7/2021 (HPP)",
-          "article": "Pasal 4 ayat (2)"
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
         },
         {
           "regulation": "PP 60/2023",
@@ -607,7 +664,13 @@
       "supersedes": [],
       "supersededBy": [],
       "notes": "Terdiri dari 2 kode objek pajak BPPU dengan tarif 2.1%, 7.5%.",
-      "examples": [],
+      "examples": [
+        {
+          "scenario": "Penghasilan dari Kerja Sama dengan LPI / Jasa Maklon Internasional Rp 100.000.000",
+          "calculation": "Tarif 2.1%-7.5% × 100jt",
+          "result": "Pajak = Rp 2.100.000 - Rp 7.500.000"
+        }
+      ],
       "tags": [
         "pph-final",
         "investasi"
@@ -625,6 +688,394 @@
         }
       ],
       "lastVerified": "2026-05-26"
+    },
+    {
+      "id": "pph-final-bunga-pre2009",
+      "category": "PPh",
+      "taxType": "PPh 4(2)",
+      "transactionType": "Bunga Simpanan (Pra-2009)",
+      "description": "PPh final atas bunga simpanan (deposito, tabungan, SBI) berdasarkan UU 17/2000. Tarif 15%. Berlaku 2001-2008.",
+      "rate": {
+        "type": "percentage",
+        "value": 15
+      },
+      "taxBase": "Jumlah bunga simpanan bruto",
+      "payer": "Penabung / deposan",
+      "recipient": "Negara",
+      "withholder": "Bank / lembaga keuangan",
+      "effectiveFrom": "2001-01-01",
+      "effectiveTo": "2008-12-31",
+      "status": "diubah",
+      "legalBasis": [
+        {
+          "regulation": "UU 17/2000",
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44066/uu-no-17-tahun-2000"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [
+        "pph-final-bunga-deposito"
+      ],
+      "notes": "Tarif bunga deposito 15% UU 17/2000. Diturunkan/sesuai skema berjenjang oleh UU 36/2008.",
+      "examples": [
+        {
+          "scenario": "Bunga deposito Rp 10.000.000 tahun 2005",
+          "calculation": "15% × 10.000.000",
+          "result": "PPh final = Rp 1.500.000"
+        }
+      ],
+      "tags": [
+        "pph-final",
+        "bunga",
+        "deposito",
+        "historis"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-final-pengalihan-pp131",
+      "category": "PPh",
+      "taxType": "PPh 4(2)",
+      "transactionType": "Pengalihan Hak atas Tanah/Bangunan (PP 131/2000)",
+      "description": "PPh final atas pengalihan hak atas tanah dan/atau bangunan berdasarkan PP 131/2000. Tarif 5% dari NJOP. Berlaku 2000-2008.",
+      "rate": {
+        "type": "percentage",
+        "value": 5
+      },
+      "taxBase": "Jumlah bruto nilai pengalihan (NJOP / nilai transaksi)",
+      "payer": "WP yang mengalihkan hak atas tanah/bangunan",
+      "recipient": "Negara",
+      "withholder": "Notaris / PPAT / BPN",
+      "effectiveFrom": "2000-12-29",
+      "effectiveTo": "2008-12-31",
+      "status": "dicabut",
+      "legalBasis": [
+        {
+          "regulation": "PP 131/2000",
+          "article": "Pasal 5",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/44850/pp-no-131-tahun-2000"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [
+        "pph-final-pengalihan-pp71"
+      ],
+      "notes": "PP 131/2000: tarif 5% dari nilai bruto. Digantikan PP 71/2008 dengan tarif 2.5%/1%/0%.",
+      "examples": [
+        {
+          "scenario": "Penjualan tanah NJOP Rp 500.000.000 tahun 2005",
+          "calculation": "5% × 500.000.000",
+          "result": "PPh final = Rp 25.000.000"
+        }
+      ],
+      "tags": [
+        "pph-final",
+        "tanah",
+        "bangunan",
+        "pengalihan",
+        "historis"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-final-pengalihan-pp71",
+      "category": "PPh",
+      "taxType": "PPh 4(2)",
+      "transactionType": "Pengalihan Hak atas Tanah/Bangunan (PP 71/2008)",
+      "description": "PPh final atas pengalihan hak atas tanah/bangunan berdasarkan PP 71/2008. Tarif berjenjang: 2.5% (umum), 1% (perumahan sederhana), 0% (waris/hibah keluarga inti).",
+      "rate": {
+        "type": "range",
+        "value": [
+          0,
+          2.5
+        ]
+      },
+      "taxBase": "NJOP atau nilai transaksi pengalihan",
+      "payer": "WP yang mengalihkan hak atas tanah/bangunan",
+      "recipient": "Negara",
+      "withholder": "Notaris / PPAT / BPN",
+      "effectiveFrom": "2009-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 71/2008",
+          "article": "Pasal 2-4",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/49660/pp-no-71-tahun-2008"
+        }
+      ],
+      "supersedes": [
+        "pph-final-pengalihan-pp131"
+      ],
+      "supersededBy": [],
+      "notes": "PP 71/2008: 2.5% umum, 1% perumahan sederhana (max 300jt)/rusun (max 350jt), 0% waris/hibah keluarga inti.",
+      "examples": [
+        {
+          "scenario": "Penjualan tanah NJOP Rp 1.000.000.000",
+          "calculation": "2.5% × 1.000.000.000",
+          "result": "PPh final = Rp 25.000.000"
+        },
+        {
+          "scenario": "Waris orang tua ke anak, NJOP Rp 800.000.000",
+          "calculation": "0% (hibah/waris keluarga inti)",
+          "result": "PPh final = Rp 0"
+        }
+      ],
+      "tags": [
+        "pph-final",
+        "tanah",
+        "bangunan",
+        "pengalihan",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-15-penerbangan-domestik",
+      "category": "PPh",
+      "taxType": "PPh 15",
+      "transactionType": "Penerbangan Dalam Negeri",
+      "description": "PPh deemed profit atas usaha penerbangan domestik.",
+      "rate": {
+        "type": "percentage",
+        "value": 22
+      },
+      "taxBase": "Deemed profit (norma laba netto × peredaran bruto)",
+      "payer": "WP Badan / WP Luar Negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 15 ayat (1) huruf a",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PPh Pasal 15: PPh deemed profit atas usaha penerbangan domestik. Tarif 22%.",
+      "examples": [
+        {
+          "scenario": "Penerbangan Dalam Negeri bruto Rp 10 miliar",
+          "calculation": "Norma laba netto × 22%",
+          "result": "PPh 15 = deemed profit × 22%"
+        }
+      ],
+      "tags": [
+        "pph-15",
+        "deemed-profit",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-15-pelayaran-domestik",
+      "category": "PPh",
+      "taxType": "PPh 15",
+      "transactionType": "Pelayaran Dalam Negeri",
+      "description": "PPh deemed profit atas usaha pelayaran domestik.",
+      "rate": {
+        "type": "percentage",
+        "value": 22
+      },
+      "taxBase": "Deemed profit (norma laba netto × peredaran bruto)",
+      "payer": "WP Badan / WP Luar Negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 15 ayat (1) huruf b",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PPh Pasal 15: PPh deemed profit atas usaha pelayaran domestik. Tarif 22%.",
+      "examples": [
+        {
+          "scenario": "Pelayaran Dalam Negeri bruto Rp 10 miliar",
+          "calculation": "Norma laba netto × 22%",
+          "result": "PPh 15 = deemed profit × 22%"
+        }
+      ],
+      "tags": [
+        "pph-15",
+        "deemed-profit",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-15-perusahaan-asuransi",
+      "category": "PPh",
+      "taxType": "PPh 15",
+      "transactionType": "Perusahaan Asuransi Dalam Negeri",
+      "description": "PPh deemed profit atas usaha asuransi/reasuransi dalam negeri.",
+      "rate": {
+        "type": "percentage",
+        "value": 22
+      },
+      "taxBase": "Deemed profit (norma laba netto × peredaran bruto)",
+      "payer": "WP Badan / WP Luar Negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 15 ayat (1) huruf c",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PPh Pasal 15: PPh deemed profit atas usaha asuransi/reasuransi dalam negeri. Tarif 22%.",
+      "examples": [
+        {
+          "scenario": "Perusahaan Asuransi Dalam Negeri bruto Rp 10 miliar",
+          "calculation": "Norma laba netto × 22%",
+          "result": "PPh 15 = deemed profit × 22%"
+        }
+      ],
+      "tags": [
+        "pph-15",
+        "deemed-profit",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-15-buta-charter",
+      "category": "PPh",
+      "taxType": "PPh 15",
+      "transactionType": "Penyewaan Pesawat/Kapal dari Luar Negeri",
+      "description": "PPh deemed profit atas penyewaan pesawat/kapal dari luar negeri (bareboat charter).",
+      "rate": {
+        "type": "percentage",
+        "value": 6.36
+      },
+      "taxBase": "Deemed profit (norma laba netto × peredaran bruto)",
+      "payer": "WP Badan / WP Luar Negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 15 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PPh Pasal 15: PPh deemed profit atas penyewaan pesawat/kapal dari luar negeri (bareboat charter). Tarif 6.36%.",
+      "examples": [
+        {
+          "scenario": "Penyewaan Pesawat/Kapal dari Luar Negeri bruto Rp 10 miliar",
+          "calculation": "Norma laba netto × 6.36%",
+          "result": "PPh 15 = deemed profit × 6.36%"
+        }
+      ],
+      "tags": [
+        "pph-15",
+        "deemed-profit",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-15-pma-opec",
+      "category": "PPh",
+      "taxType": "PPh 15",
+      "transactionType": "Perusahaan Minyak Asing (PMA)",
+      "description": "PPh deemed profit atas penghasilan badan usaha migas asing (PSC). Tarif 48%.",
+      "rate": {
+        "type": "percentage",
+        "value": 48
+      },
+      "taxBase": "Deemed profit (norma laba netto × peredaran bruto)",
+      "payer": "WP Badan / WP Luar Negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 15 ayat (4)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PPh Pasal 15: PPh deemed profit atas penghasilan badan usaha migas asing (PSC). Tarif 48%. Tarif 48%.",
+      "examples": [
+        {
+          "scenario": "Perusahaan Minyak Asing (PMA) bruto Rp 10 miliar",
+          "calculation": "Norma laba netto × 48%",
+          "result": "PPh 15 = deemed profit × 48%"
+        }
+      ],
+      "tags": [
+        "pph-15",
+        "deemed-profit",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
+    },
+    {
+      "id": "pph-15-perusahaan-kontraktor",
+      "category": "PPh",
+      "taxType": "PPh 15",
+      "transactionType": "Kontraktor/Operator Tambang",
+      "description": "PPh deemed profit atas penghasilan kontraktor pertambangan.",
+      "rate": {
+        "type": "percentage",
+        "value": 22
+      },
+      "taxBase": "Deemed profit (norma laba netto × peredaran bruto)",
+      "payer": "WP Badan / WP Luar Negeri",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "1984-01-01",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "UU 7/1983",
+          "article": "Pasal 15 ayat (1) huruf d",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+        }
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": "PPh Pasal 15: PPh deemed profit atas penghasilan kontraktor pertambangan. Tarif 22%.",
+      "examples": [
+        {
+          "scenario": "Kontraktor/Operator Tambang bruto Rp 10 miliar",
+          "calculation": "Norma laba netto × 22%",
+          "result": "PPh 15 = deemed profit × 22%"
+        }
+      ],
+      "tags": [
+        "pph-15",
+        "deemed-profit",
+        "berlaku"
+      ],
+      "lastVerified": "2026-05-28"
     }
   ]
 }

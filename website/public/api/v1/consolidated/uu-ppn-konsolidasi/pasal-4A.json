@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "4A",
+    "bab": "II",
+    "bagian": "1",
+    "title": "Bukan Objek PPN - Barang",
+    "status": "ditambah",
+    "description": "Barang yang tidak dikenakan PPN.",
+    "keywords": [
+      "bukan objek PPN",
+      "barang"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "added",
+        "effectiveDate": "2010-04-01",
+        "summary": "Pasal baru - daftar barang bukan objek PPN"
+      }
+    ]
+  }
+}

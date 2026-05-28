@@ -1,0 +1,984 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "prefix": "24-104",
+    "count": 139,
+    "codes": [
+      {
+        "kode": "24-104-01",
+        "nama": "Jasa Teknik",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-02",
+        "nama": "Jasa Manajemen",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-03",
+        "nama": "Jasa Konsultan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-04",
+        "nama": "Jasa Penilai (Appraisal)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-05",
+        "nama": "Jasa Aktuaris",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-06",
+        "nama": "Jasa Akuntansi, Pembukuan, dan Atestasi Laporan Keuangan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-07",
+        "nama": "Jasa Hukum",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-08",
+        "nama": "Jasa Arsitektur",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-09",
+        "nama": "Jasa Perencanaan Kota dan Arsitektur Landscape;",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-10",
+        "nama": "Jasa Perancang (Design)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-11",
+        "nama": "Jasa Pengeboran (Drilling) di Bidang Penambangan Minyak dan Gas Bumi (Migas) Kecuali yang Dilakukan oleh Badan Usaha Tetap (BUT)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-12",
+        "nama": "Jasa Penunjang di Bidang Usaha Panas Bumi dan Penambangan Minyak dan Gas Bumi (Migas)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-13",
+        "nama": "Jasa Penambangan dan Jasa Penunjang di Bidang Usaha Panas Bumi dan Penambangan Minyak dan Gas Bumi (Migas)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-14",
+        "nama": "Jasa Penunjang di Bidang Penerbangan dan Bandar Udara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-15",
+        "nama": "Jasa Penebangan Hutan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-16",
+        "nama": "Jasa Pengolahan Limbah",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-17",
+        "nama": "Jasa Penyedia Tenaga Kerja dan/atau Tenaga Ahli (Outsourcing Services)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-18",
+        "nama": "Jasa Perantara dan/atau Keagenan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-19",
+        "nama": "Jasa Bidang Perdagangan Surat-Surat Berharga, Kecuali yang Dilakukan Bursa Efek, Kustodian Sentral Efek Indonesia (KSEI) dan Kliring Penjaminan Efek Indonesia (KPEI)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-20",
+        "nama": "Jasa Kustodian/Penyimpanan/Penitipan, Kecuali yang Dilakukan Oleh KSEI",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-21",
+        "nama": "Jasa Pengisian Suara (Dubbing) dan/atau Sulih Suara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-22",
+        "nama": "Jasa Mixing Film",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-23",
+        "nama": "Jasa Pembuatan Sarana Promosi Film, Iklan, Poster, Foto, Slide, Klise, Banner, Pamphlet, Baliho dan Folder",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-24",
+        "nama": "Jasa Sehubungan Dengan Software Atau Hardware Atau Sistem Komputer, Termasuk Perawatan, Pemeliharaan dan Perbaikan.",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-25",
+        "nama": "Jasa Pembuatan dan/atau Pengelolaan Website",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-26",
+        "nama": "Jasa Internet Termasuk Sambungannya",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-27",
+        "nama": "Jasa Penyimpanan, Pengolahan dan/atau Penyaluran Data, Informasi, dan/atau Program",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-28",
+        "nama": "Jasa Instalasi/Pemasangan Mesin, Peralatan, Listrik, Telepon, Air, Gas, Ac dan/atau Tv Kabel, Selain Yang Dilakukan Oleh Wajib Pajak Yang Ruang Lingkupnya Di Bidang Konstruksi dan Mempunyai Izin dan/atau Sertifikasi Sebagai Pengusaha Konstruksi;",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-29",
+        "nama": "Jasa Perawatan/Perbaikan/Pemeliharaan Mesin, Peralatan, Listrik, Telepon, Air, Gas, Ac dan/atau Tv Kabel, Selain Yang Dilakukan Oleh Wajib Pajak Yang Ruang Lingkupnya di Bidang Konstruksi dan Mempunyai Izin dan/atau Sertifikasi Sebagai Pengusaha Konstruksi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-30",
+        "nama": "Jasa Perawatan Kendaraan dan/atau Alat Transportasi Darat, Laut dan Udara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-31",
+        "nama": "Jasa Maklon",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-32",
+        "nama": "Jasa Penyelidikan dan Keamanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-33",
+        "nama": "Jasa Penyelenggara Kegiatan Atau Event Organizer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-34",
+        "nama": "Jasa Penyediaan Tempat dan/atau Waktu Dalam Media Massa, Media Luar Ruang Atau Media Lain Untuk Penyampaian Informasi, dan/atau Jasa Periklanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-35",
+        "nama": "Jasa Pembasmian Hama",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-36",
+        "nama": "Jasa Kebersihan Atau Cleaning Service",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-37",
+        "nama": "Jasa Sedot Septic Tank",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-38",
+        "nama": "Jasa Pemeliharaan Kolam",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-39",
+        "nama": "Jasa Katering Atau Tata Boga",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-40",
+        "nama": "Jasa Freight Forwarding",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-41",
+        "nama": "Jasa Logistik",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-42",
+        "nama": "Jasa Pengurusan Dokumen",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-43",
+        "nama": "Jasa Pengepakan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-44",
+        "nama": "Jasa Loading dan Unloading",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-45",
+        "nama": "Jasa Laboratorium dan/atau Pengujian Kecuali yang Dilakukan oleh Lembaga atau Institusi Pendidikan Dalam Rangka Penelitian Akademis",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-46",
+        "nama": "Jasa Pengelolaan Parkir",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-47",
+        "nama": "Jasa Penyondiran Tanah",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-48",
+        "nama": "Jasa Penyiapan dan/atau Pengolahan Lahan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-49",
+        "nama": "Jasa Pembibitan dan/atau Penanaman Bibit",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-50",
+        "nama": "Jasa Pemeliharaan Tanaman",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-51",
+        "nama": "Jasa Pemanenan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-52",
+        "nama": "Jasa Pengolahan Hasil Pertanian, Perkebunan, Perikanan, Peternakan dan/atau Perhutanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-53",
+        "nama": "Jasa Dekorasi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-54",
+        "nama": "Jasa Pencetakan/Penerbitan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-55",
+        "nama": "Jasa Penerjemahan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-56",
+        "nama": "Jasa Pengangkutan/Ekspedisi Kecuali Yang Telah Diatur Dalam Pasal 15 Undang-Undang Pajak Penghasilan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-57",
+        "nama": "Jasa Pelayanan Pelabuhan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-58",
+        "nama": "Jasa Pengangkutan Melalui Jalur Pipa",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-59",
+        "nama": "Jasa Pengelolaan Penitipan Anak",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-60",
+        "nama": "Jasa Pelatihan dan/atau Kursus",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-61",
+        "nama": "Jasa Pengiriman dan Pengisian Uang Ke Atm",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-62",
+        "nama": "Jasa Sertifikasi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-63",
+        "nama": "Jasa Survey",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-64",
+        "nama": "Jasa Tester",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-65",
+        "nama": "Jasa Selain Jasa-Jasa Tersebut di Atas yang Pembayarannya Dibebankan pada APBN (Anggaran Pendapatan dan Belanja Negara) Atau APBD (Anggaran Pendapatan dan Belanja Daerah).",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-66",
+        "nama": "Jasa Penyelenggaraan Layanan Transaksi Pembayaran Terkait dengan Distribusi Token Oleh Penyelenggara Distribusi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-67",
+        "nama": "Jasa Pemasaran dengan Media Voucer Oleh Penyelenggara Voucer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-68",
+        "nama": "Jasa Penyelenggaraan Layanan Transaksi Pembayaran Terkait dengan Distribusi Voucer Oleh Penyelenggara Voucer dan Penyelenggara  Distribusi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-69",
+        "nama": "Jasa Penyelenggaraan Program Loyalitas dan Penghargaan Pelanggan (Consumer Loyalty/Reward Program)  Oleh Penyelenggara Voucer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-2pct",
+        "entryTransactionType": "Imbalan Jasa Lain (BerNPWP)"
+      },
+      {
+        "kode": "24-104-01",
+        "nama": "Jasa Teknik",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-02",
+        "nama": "Jasa Manajemen",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-03",
+        "nama": "Jasa Konsultan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-04",
+        "nama": "Jasa Penilai (Appraisal)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-05",
+        "nama": "Jasa Aktuaris",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-06",
+        "nama": "Jasa Akuntansi, Pembukuan, dan Atestasi Laporan Keuangan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-07",
+        "nama": "Jasa Hukum",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-08",
+        "nama": "Jasa Arsitektur",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-09",
+        "nama": "Jasa Perencanaan Kota dan Arsitektur Landscape;",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-10",
+        "nama": "Jasa Perancang (Design)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-11",
+        "nama": "Jasa Pengeboran (Drilling) di Bidang Penambangan Minyak dan Gas Bumi (Migas) Kecuali yang Dilakukan oleh Badan Usaha Tetap (BUT)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-12",
+        "nama": "Jasa Penunjang di Bidang Usaha Panas Bumi dan Penambangan Minyak dan Gas Bumi (Migas)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-13",
+        "nama": "Jasa Penambangan dan Jasa Penunjang di Bidang Usaha Panas Bumi dan Penambangan Minyak dan Gas Bumi (Migas)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-14",
+        "nama": "Jasa Penunjang di Bidang Penerbangan dan Bandar Udara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-15",
+        "nama": "Jasa Penebangan Hutan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-16",
+        "nama": "Jasa Pengolahan Limbah",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-17",
+        "nama": "Jasa Penyedia Tenaga Kerja dan/atau Tenaga Ahli (Outsourcing Services)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-18",
+        "nama": "Jasa Perantara dan/atau Keagenan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-19",
+        "nama": "Jasa Bidang Perdagangan Surat-Surat Berharga, Kecuali yang Dilakukan Bursa Efek, Kustodian Sentral Efek Indonesia (KSEI) dan Kliring Penjaminan Efek Indonesia (KPEI)",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-20",
+        "nama": "Jasa Kustodian/Penyimpanan/Penitipan, Kecuali yang Dilakukan Oleh KSEI",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-21",
+        "nama": "Jasa Pengisian Suara (Dubbing) dan/atau Sulih Suara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-22",
+        "nama": "Jasa Mixing Film",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-23",
+        "nama": "Jasa Pembuatan Sarana Promosi Film, Iklan, Poster, Foto, Slide, Klise, Banner, Pamphlet, Baliho dan Folder",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-24",
+        "nama": "Jasa Sehubungan Dengan Software Atau Hardware Atau Sistem Komputer, Termasuk Perawatan, Pemeliharaan dan Perbaikan.",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-25",
+        "nama": "Jasa Pembuatan dan/atau Pengelolaan Website",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-26",
+        "nama": "Jasa Internet Termasuk Sambungannya",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-27",
+        "nama": "Jasa Penyimpanan, Pengolahan dan/atau Penyaluran Data, Informasi, dan/atau Program",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-28",
+        "nama": "Jasa Instalasi/Pemasangan Mesin, Peralatan, Listrik, Telepon, Air, Gas, Ac dan/atau Tv Kabel, Selain Yang Dilakukan Oleh Wajib Pajak Yang Ruang Lingkupnya Di Bidang Konstruksi dan Mempunyai Izin dan/atau Sertifikasi Sebagai Pengusaha Konstruksi;",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-29",
+        "nama": "Jasa Perawatan/Perbaikan/Pemeliharaan Mesin, Peralatan, Listrik, Telepon, Air, Gas, Ac dan/atau Tv Kabel, Selain Yang Dilakukan Oleh Wajib Pajak Yang Ruang Lingkupnya di Bidang Konstruksi dan Mempunyai Izin dan/atau Sertifikasi Sebagai Pengusaha Konstruksi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-30",
+        "nama": "Jasa Perawatan Kendaraan dan/atau Alat Transportasi Darat, Laut dan Udara",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-31",
+        "nama": "Jasa Maklon",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-32",
+        "nama": "Jasa Penyelidikan dan Keamanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-33",
+        "nama": "Jasa Penyelenggara Kegiatan Atau Event Organizer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-34",
+        "nama": "Jasa Penyediaan Tempat dan/atau Waktu Dalam Media Massa, Media Luar Ruang Atau Media Lain Untuk Penyampaian Informasi, dan/atau Jasa Periklanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-35",
+        "nama": "Jasa Pembasmian Hama",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-36",
+        "nama": "Jasa Kebersihan Atau Cleaning Service",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-37",
+        "nama": "Jasa Sedot Septic Tank",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-38",
+        "nama": "Jasa Pemeliharaan Kolam",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-39",
+        "nama": "Jasa Katering Atau Tata Boga",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-40",
+        "nama": "Jasa Freight Forwarding",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-41",
+        "nama": "Jasa Logistik",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-42",
+        "nama": "Jasa Pengurusan Dokumen",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-43",
+        "nama": "Jasa Pengepakan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-44",
+        "nama": "Jasa Loading dan Unloading",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-45",
+        "nama": "Jasa Laboratorium dan/atau Pengujian Kecuali yang Dilakukan oleh Lembaga atau Institusi Pendidikan Dalam Rangka Penelitian Akademis",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-46",
+        "nama": "Jasa Pengelolaan Parkir",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-47",
+        "nama": "Jasa Penyondiran Tanah",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-48",
+        "nama": "Jasa Penyiapan dan/atau Pengolahan Lahan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-49",
+        "nama": "Jasa Pembibitan dan/atau Penanaman Bibit",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-50",
+        "nama": "Jasa Pemeliharaan Tanaman",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-51",
+        "nama": "Jasa Pemanenan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-52",
+        "nama": "Jasa Pengolahan Hasil Pertanian, Perkebunan, Perikanan, Peternakan dan/atau Perhutanan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-53",
+        "nama": "Jasa Dekorasi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-54",
+        "nama": "Jasa Pencetakan/Penerbitan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-55",
+        "nama": "Jasa Penerjemahan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-56",
+        "nama": "Jasa Pengangkutan/Ekspedisi Kecuali Yang Telah Diatur Dalam Pasal 15 Undang-Undang Pajak Penghasilan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-57",
+        "nama": "Jasa Pelayanan Pelabuhan",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-58",
+        "nama": "Jasa Pengangkutan Melalui Jalur Pipa",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-59",
+        "nama": "Jasa Pengelolaan Penitipan Anak",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-60",
+        "nama": "Jasa Pelatihan dan/atau Kursus",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-61",
+        "nama": "Jasa Pengiriman dan Pengisian Uang Ke Atm",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-62",
+        "nama": "Jasa Sertifikasi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-63",
+        "nama": "Jasa Survey",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-64",
+        "nama": "Jasa Tester",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-65",
+        "nama": "Jasa Selain Jasa-Jasa Tersebut di Atas yang Pembayarannya Dibebankan pada APBN (Anggaran Pendapatan dan Belanja Negara) Atau APBD (Anggaran Pendapatan dan Belanja Daerah).",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-66",
+        "nama": "Jasa Penyelenggaraan Layanan Transaksi Pembayaran Terkait dengan Distribusi Token Oleh Penyelenggara Distribusi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-67",
+        "nama": "Jasa Pemasaran dengan Media Voucer Oleh Penyelenggara Voucer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-68",
+        "nama": "Jasa Penyelenggaraan Layanan Transaksi Pembayaran Terkait dengan Distribusi Voucer Oleh Penyelenggara Voucer dan Penyelenggara  Distribusi",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-69",
+        "nama": "Jasa Penyelenggaraan Program Loyalitas dan Penghargaan Pelanggan (Consumer Loyalty/Reward Program)  Oleh Penyelenggara Voucer",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-lain-4pct",
+        "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
+      },
+      {
+        "kode": "24-104-39",
+        "nama": "Jasa Katering Atau Tata Boga",
+        "tarif": 2,
+        "entryId": "pph-23-jasa-katering-2pct",
+        "entryTransactionType": "Jasa Katering / Tata Boga"
+      }
+    ]
+  }
+}

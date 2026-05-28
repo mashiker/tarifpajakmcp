@@ -1,0 +1,27 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "uu-36-2008",
+    "number": "36",
+    "year": 2008,
+    "title": "Undang-Undang Perubahan Keempat UU Pajak Penghasilan",
+    "type": "UU",
+    "effectiveDate": "2009-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008",
+    "status": "diubah_sebagian",
+    "relatedRegulations": [
+      "uu-17-2000",
+      "uu-7-2021-hpp"
+    ],
+    "referencingEntries": [
+      "pph-21-progressive-pre2022",
+      "pph-22-pre2024",
+      "pph-final-bunga-deposito",
+      "pph-final-sewa-tanah",
+      "pph-final-transaksi-saham-bursa",
+      "pph-badan-pre2022"
+    ]
+  }
+}

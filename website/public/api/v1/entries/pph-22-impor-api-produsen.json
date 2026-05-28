@@ -1,0 +1,77 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-22-impor-api-produsen",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Impor Barang (API Produsen)",
+    "description": "Pemungutan PPh 22 atas impor barang yang dilakukan importir yang memiliki Angka Pengenal Importir (API) produsen untuk keperluan industri/produksi.",
+    "rate": {
+      "type": "percentage",
+      "value": 2.5
+    },
+    "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
+    "payer": "Importir (pemilik API produsen)",
+    "recipient": "Negara",
+    "withholder": "Direktorat Jenderal Bea dan Cukai",
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 2 ayat (1)"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 22",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 2,5% untuk impor dengan API produsen. Berbeda dari non-API/API umum yang dikenakan 7,5%.",
+    "tags": [
+      "pph-22",
+      "impor",
+      "api-produsen",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "bppuKode": [
+      {
+        "kode": "22-200-01",
+        "nama": "Pemungutan PPh Pasal 22 atas Impor yang menggunakan API (Angka Pengenal Importir) - Produsen",
+        "tarif": 2.5
+      },
+      {
+        "kode": "22-200-02",
+        "nama": "Pemungutan PPh Pasal 22 atas Impor yang menggunakan API (Angka Pengenal Importir) - Umum",
+        "tarif": 7.5
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Impor Barang (API Produsen) Rp 100.000.000",
+        "calculation": "2.5% × 100.000.000",
+        "result": "Pajak = Rp 2.500.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-22-impor-2024",
+        "pph-22-pembelian-barang-2024",
+        "pph-22-penjualan-barang-2024",
+        "pph-22-bendaharawan",
+        "pph-22-ekspor-batubara",
+        "pph-22-bumn-pembelian",
+        "pph-22-pengadaan-pemerintah",
+        "pph-22-pmse",
+        "pph-22-kripto",
+        "pph-22-pre2024"
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pajak-daerah-parkir",
+    "category": "Pajak Daerah",
+    "taxType": "Pajak Daerah",
+    "transactionType": "Pajak Parkir",
+    "description": "Pajak atas penyelenggaraan tempat parkir.",
+    "rate": {
+      "type": "range",
+      "value": [
+        5,
+        20
+      ]
+    },
+    "taxBase": "Penerimaan parkir",
+    "payer": "WP Daerah",
+    "recipient": "Pemerintah Daerah",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 60",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 5-20%. Jakarta umumnya 15-20%.",
+    "examples": [
+      {
+        "scenario": "Parkir mall Rp 10.000",
+        "calculation": "20%×10rb",
+        "result": "Pajak=R2.000"
+      }
+    ],
+    "tags": [
+      "pajak-daerah",
+      "parkir"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "pajak-daerah-hotel",
+        "pajak-daerah-restoran",
+        "pajak-daerah-hiburan",
+        "pajak-daerah-reklame",
+        "pajak-daerah-penerangan-jalan",
+        "pajak-daerah-mineral-air",
+        "pajak-daerah-air-tanah"
+      ]
+    }
+  }
+}

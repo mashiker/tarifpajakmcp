@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "description": "Data untuk kalkulasi PPN",
+    "rates": {
+      "umum_2022": {
+        "rate": 11,
+        "effectiveFrom": "2022-04-01",
+        "note": "11% (7/12 × 11% via PMK 131/2024 untuk Apr-Des 2022)"
+      },
+      "umum_2025": {
+        "rate": 12,
+        "effectiveFrom": "2025-01-01",
+        "note": "12% per UU HPP, belum berlaku"
+      },
+      "ekspor": 0
+    },
+    "formula": {
+      "ppn": "PPN = Tarif × DPP",
+      "dpp": "DPP = Harga Jual / Penggantian / Nilai Impor"
+    }
+  }
+}

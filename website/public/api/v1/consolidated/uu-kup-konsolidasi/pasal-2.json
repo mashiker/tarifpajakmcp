@@ -1,0 +1,51 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "2",
+    "bab": "II",
+    "title": "NPWP - Kewajiban dan Pemberian",
+    "status": "diubah",
+    "description": "Kewajiban memiliki NPWP bagi Wajib Pajak, tata cara pendaftaran, dan pemberian NPWP oleh DJP.",
+    "keywords": [
+      "NPWP",
+      "pendaftaran",
+      "WP orang pribadi",
+      "WP badan"
+    ],
+    "relatedTaxRates": [],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli tentang kewajiban NPWP"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penambahan ketentuan NPWP untuk WP yang menerima penghasilan dari lebih dari 1 pemberi kerja"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Penyesuaian ketentuan NPWP terkait perubahan definisi WP"
+      }
+    ]
+  }
+}

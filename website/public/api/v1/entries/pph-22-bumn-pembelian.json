@@ -1,0 +1,72 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pph-22-bumn-pembelian",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Pembelian oleh BUMN/Badan Usaha Tertentu",
+    "description": "Pemungutan PPh 22 atas pembayaran atas pembelian barang dan/atau bahan untuk kegiatan usahanya oleh BUMN/Badan Usaha tertentu.",
+    "rate": {
+      "type": "percentage",
+      "value": 1.5
+    },
+    "taxBase": "Jumlah bruto pembelian (DPP)",
+    "payer": "Penyedia barang/bahan",
+    "recipient": "Negara",
+    "withholder": "BUMN/Badan usaha tertentu",
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 3 ayat (2)"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 22",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 1,5% atas pembelian oleh BUMN/badan usaha tertentu. Untuk pembelian < Rp 2.000.000 tidak dipotong. Tanpa NPWP: 1,5% × 2 = 3%.",
+    "tags": [
+      "pph-22",
+      "bumn",
+      "pembelian",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "bppuKode": [
+      {
+        "kode": "22-900-01",
+        "nama": "Pembayaran atas Pembelian Barang dan/atau Bahan untuk Kegiatan Usahanya oleh BUMN/Badan Usaha Tertentu",
+        "tarif": 1.5
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Pembelian oleh BUMN/Badan Usaha Tertentu Rp 100.000.000",
+        "calculation": "1.5% × 100.000.000",
+        "result": "Pajak = Rp 1.500.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-22-impor-2024",
+        "pph-22-pembelian-barang-2024",
+        "pph-22-penjualan-barang-2024",
+        "pph-22-impor-api-produsen",
+        "pph-22-bendaharawan",
+        "pph-22-ekspor-batubara",
+        "pph-22-pengadaan-pemerintah",
+        "pph-22-pmse",
+        "pph-22-kripto",
+        "pph-22-pre2024"
+      ]
+    }
+  }
+}

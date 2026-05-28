@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "14",
+    "bab": "II",
+    "bagian": "5",
+    "title": "PPN yang Tidak Dapat Dikreditkan",
+    "status": "diubah",
+    "description": "PPN yang tidak dapat dikreditkan: perolehan BKP/JKP yang bukan barang modal, perolehan untuk keperluan pribadi, dll.",
+    "keywords": [
+      "tidak dapat dikreditkan",
+      "non-creditable"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan daftar non-creditable"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "group": "ppn",
+    "count": 3,
+    "description": "Timeline ppn",
+    "entries": [
+      {
+        "id": "ppn-10pct",
+        "transactionType": "Penyerahan BKP/JKP (Pra-HPP)",
+        "rate": "10%",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": "2022-03-31",
+        "status": "diubah",
+        "legalBasis": "UU 8/1983 Pasal 7 ayat (1); UU 42/2009 Pasal 7 ayat (1)",
+        "supersedes": [],
+        "supersededBy": [
+          "ppn-11pct-2022"
+        ]
+      },
+      {
+        "id": "ppn-11pct-2022",
+        "transactionType": "Penyerahan BKP/JKP (2022-2024)",
+        "rate": "11%",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": "2024-12-31",
+        "status": "diubah",
+        "legalBasis": "UU 7/2021 (HPP) Pasal 7 ayat (1)",
+        "supersedes": [
+          "ppn-10pct"
+        ],
+        "supersededBy": [
+          "ppn-11pct-effective-2025"
+        ]
+      },
+      {
+        "id": "ppn-11pct-effective-2025",
+        "transactionType": "Penyerahan BKP/JKP dalam negeri",
+        "rate": "11%",
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null,
+        "status": "berlaku",
+        "legalBasis": "PMK 131/2024 Pasal 2; UU 7/2021 (HPP) Pasal 7 ayat (1)",
+        "supersedes": [
+          "ppn-11pct-2022",
+          "ppn-10pct"
+        ],
+        "supersededBy": []
+      }
+    ]
+  }
+}

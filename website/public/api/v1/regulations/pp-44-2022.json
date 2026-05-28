@@ -1,0 +1,22 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-44-2022",
+    "number": "44",
+    "year": 2022,
+    "title": "Peraturan Pemerintah tentang Pelaksanaan Pemungutan Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah pada Perdagangan Melalui Sistem Elektronik",
+    "type": "PP",
+    "effectiveDate": "2022-04-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/196508/pp-no-44-tahun-2022",
+    "status": "berlaku",
+    "relatedRegulations": [
+      "uu-7-2021-hpp",
+      "uu-42-2009"
+    ],
+    "referencingEntries": [
+      "ppn-pmse"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "4",
+    "bab": "I",
+    "bagian": "2",
+    "title": "Wajib Pajak dan PPh Final",
+    "status": "diubah",
+    "description": "WP yang menerima/memperoleh penghasilan kena pajak. Ayat (3) mengatur PPh Final atas penghasilan tertentu (deposito, bunga obligasi, penghargaan, undian).",
+    "keywords": [
+      "WP",
+      "PPh Final",
+      "deposito",
+      "obligasi",
+      "undian"
+    ],
+    "relatedTaxRates": [
+      "pph-final-bunga-deposito",
+      "pph-final-bunga-pre2009"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli tentang WP dan PPh Final"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "10",
+          "year": 1994
+        },
+        "changeType": "partially_amended",
+        "effectiveDate": "1995-01-01",
+        "changedAyats": [
+          "(3)"
+        ],
+        "summary": "Perubahan PPh Final"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "changedAyats": [
+          "(3)"
+        ],
+        "summary": "Penambahan jenis PPh Final"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "changedAyats": [
+          "(3)"
+        ],
+        "summary": "Perubahan PPh Final bunga deposito 20%"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "changedAyats": [
+          "(3)",
+          "(4)"
+        ],
+        "summary": "Penambahan PPh Final VDP dan perubahan ketentuan PPh Final"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "30",
+    "bab": "IX",
+    "title": "Transfer Pricing",
+    "status": "diubah",
+    "description": "Ketentuan transfer pricing — transaksi antara pihak-pihak yang memiliki hubungan istimewa harus sesuai harga pasar (arm's length principle).",
+    "keywords": [
+      "transfer pricing",
+      "hubungan istimewa",
+      "arm's length",
+      "TP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Penambahan ketentuan transfer pricing"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan ketentuan TP"
+      }
+    ]
+  }
+}

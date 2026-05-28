@@ -1,0 +1,51 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "20",
+    "bab": "VI",
+    "bagian": "1",
+    "title": "Kredit Pajak",
+    "status": "diubah",
+    "description": "Kredit pajak yang dapat dikurangkan dari PPh terutang: PPh yang dipotong pihak lain, PPh yang dibayar di luar negeri.",
+    "keywords": [
+      "kredit pajak",
+      "PPh dipotong",
+      "luar negeri",
+      "tax credit"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Perubahan kredit pajak"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan metode kredit pajak luar negeri"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "bea-meterai-surat-berharga",
+    "category": "Bea Meterai",
+    "taxType": "Bea Meterai",
+    "transactionType": "Surat Berharga dan Efek",
+    "description": "Bea meterai atas surat berharga, termasuk saham, obligasi, dan efek lainnya.",
+    "rate": {
+      "type": "formula",
+      "value": "Rp 10.000 per lembar"
+    },
+    "taxBase": "Setiap lembar surat berharga",
+    "payer": "Pihak yang menerbitkan surat berharga",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2021-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 10/2020",
+        "article": "Pasal 3 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Surat berharga termasuk saham, obligasi, commercial paper, dan efek bersifat utang lainnya yang diterbitkan dalam bentuk warkat.",
+    "tags": [
+      "bea-meterai",
+      "surat-berharga",
+      "efek",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Surat Berharga dan Efek",
+        "calculation": "Sesuai formula yang berlaku",
+        "result": "Lihat ketentuan detail"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "bea-meterai-dokumen-2021",
+        "bea-meterai-cek-bilyet",
+        "bea-meterai-kontrak",
+        "bea-meterai-nota-kredit",
+        "bea-meterai-pre2021",
+        "bea-meterai-1000",
+        "bea-meterai-3000"
+      ]
+    }
+  }
+}

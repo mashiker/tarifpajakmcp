@@ -1,0 +1,23 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "id": "pp-28-2023",
+    "number": "28/2023",
+    "year": 2023,
+    "title": "PP tentang Fasilitas Pajak di IKN",
+    "type": "PP",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/196894/pp-no-28-tahun-2023",
+    "status": "berlaku",
+    "effectiveDate": "2023-11-02",
+    "referencingEntries": [
+      "bphtb-perolehan-umum",
+      "bphtb-perolehan-waris",
+      "bphtb-pengalihan-dinkes",
+      "pbb-perkotaan",
+      "pph-badan-ikn-0pct",
+      "pph-badan-ikn-10y"
+    ]
+  }
+}

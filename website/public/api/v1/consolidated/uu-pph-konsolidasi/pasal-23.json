@@ -1,0 +1,46 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-28T16:30:58.683Z",
+  "data": {
+    "number": "23",
+    "bab": "VI",
+    "bagian": "2",
+    "title": "Pemotongan PPh 23",
+    "status": "diubah",
+    "description": "Pemotongan PPh 23 atas imbalan jasa dan sewa. Tarif 2% (jasa) dan 10% (sewa) untuk WP dalam negeri.",
+    "keywords": [
+      "PPh 23",
+      "jasa",
+      "sewa",
+      "2%",
+      "10%"
+    ],
+    "relatedTaxRates": [
+      "pph-23-jasa-2001",
+      "pph-23-jasa-lain-2pct"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli - PPh 23"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan tarif PPh 23 via PP 60/2023"
+      }
+    ]
+  }
+}
