@@ -31,7 +31,7 @@ function fmtRp(n: number | null): string {
   <!-- Header -->
   <div class="mb-8">
     <div class="flex items-start gap-4 mb-4">
-      <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-sm shadow-blue-600/20 shrink-0">T</div>
+      <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center text-white font-bold text-lg shadow-sm shadow-slate-800/20 shrink-0">T</div>
       <div>
         <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">Tarif Efektif Rata-rata (TER)</h1>
         <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Pemotongan PPh Pasal 21 bulanan berdasarkan PP 58/2023 dan PMK 168/2023</p>
@@ -39,9 +39,9 @@ function fmtRp(n: number | null): string {
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-      <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200/60 dark:border-blue-800/40 rounded-2xl px-4 py-3">
-        <div class="text-[11px] text-blue-600 font-semibold uppercase mb-0.5">Berlaku Sejak</div>
-        <div class="text-sm font-bold text-blue-900 dark:text-blue-100">1 Januari 2024</div>
+      <div class="bg-slate-100 dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700 rounded-2xl px-4 py-3">
+        <div class="text-[11px] text-slate-600 font-semibold uppercase mb-0.5">Berlaku Sejak</div>
+        <div class="text-sm font-bold text-slate-900 dark:text-slate-100">1 Januari 2024</div>
       </div>
       <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200/60 dark:border-emerald-800/40 rounded-2xl px-4 py-3">
         <div class="text-[11px] text-emerald-600 font-semibold uppercase mb-0.5">Menggantikan</div>
@@ -60,29 +60,29 @@ function fmtRp(n: number | null): string {
 
   <!-- Quick Lookup Calculator -->
   <div class="card mb-6">
-    <div class="px-5 py-5 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-b border-blue-200/60 dark:border-blue-800/40 rounded-t-2xl">
+    <div class="px-5 py-5 bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-800 border-b border-slate-200/60 dark:border-slate-700 rounded-t-2xl">
       <div class="flex items-center gap-2 mb-4">
-        <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-        <h2 class="text-sm font-bold text-blue-900 dark:text-blue-100">Kalkulator Cepat TER PPh 21</h2>
+        <svg class="w-5 h-5 text-slate-600 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+        <h2 class="text-sm font-bold text-slate-900 dark:text-slate-100">Kalkulator Cepat TER PPh 21</h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <div>
           <label class="text-xs text-slate-500 font-medium mb-1.5 block">Penghasilan Bruto Bulanan</label>
           <div class="relative">
             <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-slate-400 font-mono">Rp</span>
-            <input id="calc-income" type="text" placeholder="10.000.000" class="w-full pl-10 pr-3 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none font-mono" oninput="calculateTER()" />
+            <input id="calc-income" type="text" placeholder="10.000.000" class="w-full pl-10 pr-3 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-slate-500/20 focus:border-slate-500 outline-none font-mono" oninput="calculateTER()" />
           </div>
         </div>
         <div>
           <label class="text-xs text-slate-500 font-medium mb-1.5 block">Iuran Pensiun / BPJS (per bulan)</label>
           <div class="relative">
             <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-slate-400 font-mono">Rp</span>
-            <input id="calc-bpjs" type="text" placeholder="0" value="0" class="w-full pl-10 pr-3 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none font-mono" oninput="calculateTER()" />
+            <input id="calc-bpjs" type="text" placeholder="0" value="0" class="w-full pl-10 pr-3 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-slate-500/20 focus:border-slate-500 outline-none font-mono" oninput="calculateTER()" />
           </div>
         </div>
         <div>
           <label class="text-xs text-slate-500 font-medium mb-1.5 block">Status PTKP</label>
-          <select id="calc-category" class="w-full py-2.5 px-3 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none" onchange="switchTab(this.value); calculateTER()">
+          <select id="calc-category" class="w-full py-2.5 px-3 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-slate-500/20 focus:border-slate-500 outline-none" onchange="switchTab(this.value); calculateTER()">
             <option value="a">TER A — Tidak Kawin</option>
             <option value="b">TER B — Kawin, 0-2 Tanggungan</option>
             <option value="c">TER C — Kawin, 3+ Tanggungan</option>
@@ -102,7 +102,7 @@ function fmtRp(n: number | null): string {
         </div>
         <div>
           <div class="text-[11px] text-slate-400 font-medium uppercase">Tarif TER</div>
-          <div id="res-rate" class="text-sm font-bold text-blue-600 dark:text-blue-400 font-mono mt-1">—</div>
+          <div id="res-rate" class="text-sm font-bold text-slate-600 dark:text-slate-400 font-mono mt-1">—</div>
         </div>
         <div>
           <div class="text-[11px] text-slate-400 font-medium uppercase">PPh 21 / Bulan</div>
@@ -159,7 +159,7 @@ function fmtRp(n: number | null): string {
                     <td class="px-4 py-2.5 text-slate-400 font-mono text-xs">{i + 1}</td>
                     <td class="px-4 py-2.5 text-right font-mono text-xs text-slate-600 dark:text-slate-400">{fmtRp(b.min)}</td>
                     <td class="px-4 py-2.5 text-right font-mono text-xs text-slate-600 dark:text-slate-400">
-                      {b.max ? fmtRp(b.max) : <span class="text-blue-600 dark:text-blue-400 font-semibold">di atas {fmtRp(b.min)}</span>}
+                      {b.max ? fmtRp(b.max) : <span class="text-slate-600 dark:text-slate-400 font-semibold">di atas {fmtRp(b.min)}</span>}
                     </td>
                     <td class="px-4 py-2.5 text-right font-mono text-sm">
                       {isZero
@@ -189,9 +189,9 @@ function fmtRp(n: number | null): string {
     </div>
     <div class="p-5">
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-4 border border-blue-200/60 dark:border-blue-800/40">
+        <div class="bg-slate-100 dark:bg-slate-800 rounded-2xl p-4 border border-slate-200/60 dark:border-slate-700">
           <div class="flex items-center gap-2 mb-2">
-            <span class="bg-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">A</span>
+            <span class="bg-slate-700 text-white text-xs font-bold px-2.5 py-1 rounded-lg">A</span>
             <span class="text-sm font-bold text-slate-900 dark:text-slate-100">Tidak Kawin</span>
           </div>
           <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1">
@@ -240,7 +240,7 @@ function fmtRp(n: number | null): string {
       Semua entry PPh 21
     </a>
     <a href="/api/v1/entries/pph-21-ter-a-detail.json" target="_blank" class="tag text-xs">
-      <span class="text-blue-600 dark:text-blue-400">API</span>
+      <span class="text-slate-600 dark:text-slate-400">API</span>
       <span class="text-slate-400">JSON</span>
       <span class="text-slate-300">&#8599;</span>
     </a>
@@ -252,7 +252,7 @@ function fmtRp(n: number | null): string {
     @apply flex flex-col items-center px-5 py-3 rounded-2xl text-sm border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all cursor-pointer;
   }
   .ter-tab.active {
-    @apply bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20;
+    @apply bg-slate-800 text-white border-slate-800 shadow-md shadow-slate-800/20;
   }
 </style>
 
