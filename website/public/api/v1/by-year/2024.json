@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:43:36.730Z",
+  "generated": "2026-05-29T00:15:20.033Z",
   "data": {
     "year": 2024,
     "count": 107,
@@ -253,7 +253,7 @@
         "id": "pph-21-ter-monthly-2024",
         "taxType": "PPh 21",
         "transactionType": "Gaji/Bulan TER",
-        "rate": "TER sesuai tabel lampiran PP 58/2023 (TER A/B/C berdasarkan status PTKP)",
+        "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null
@@ -325,7 +325,7 @@
         "id": "pph-21-ter-a-detail",
         "taxType": "PPh 21",
         "transactionType": "TER Kategori A (Tidak Menikah)",
-        "rate": "0% - 25% sesuai tabel TER",
+        "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null
@@ -334,7 +334,7 @@
         "id": "pph-21-ter-b-detail",
         "taxType": "PPh 21",
         "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
-        "rate": "0% - 25% sesuai tabel TER",
+        "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null
@@ -343,7 +343,7 @@
         "id": "pph-21-ter-c-detail",
         "taxType": "PPh 21",
         "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
-        "rate": "0% - 25% sesuai tabel TER",
+        "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null

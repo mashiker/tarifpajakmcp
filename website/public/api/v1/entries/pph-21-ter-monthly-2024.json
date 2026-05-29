@@ -1,17 +1,17 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:43:36.730Z",
+  "generated": "2026-05-29T00:15:20.033Z",
   "data": {
     "id": "pph-21-ter-monthly-2024",
     "category": "PPh",
     "taxType": "PPh 21",
     "transactionType": "Gaji/Bulan TER",
-    "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan atas penghasilan pekerjaan, jasa, atau kegiatan WP Orang Pribadi dalam negeri. Menggantikan metode tarif progresif lama untuk pemotongan bulanan.",
+    "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif lama sejak 1 Januari 2024. Terdiri dari 3 kategori: TER A (tidak kawin), TER B (kawin 0-2 tanggungan), TER C (kawin ≥3 tanggungan). Masing-masing memiliki 42 lapisan tarif.",
     "rate": {
-      "type": "formula",
-      "value": "TER sesuai tabel lampiran PP 58/2023 (TER A/B/C berdasarkan status PTKP)",
-      "effectiveRate": "0% - 30% sesuai tabel TER"
+      "type": "progressive",
+      "value": "0% – 25% (TER A/B/C)",
+      "effectiveRate": "0% untuk penghasilan rendah, hingga 25% untuk penghasilan tinggi"
     },
     "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
     "payer": "WP Orang Pribadi dalam negeri (pegawai/freelancer)",
@@ -43,12 +43,22 @@
       "pph-21-progressive-monthly-pre2024"
     ],
     "supersededBy": [],
-    "notes": "TER berlaku untuk pemotongan bulanan. Pada akhir tahun tetap dilakukan perhitungan dengan tarif progresif Pasal 17 UU PPh untuk SPT Tahunan. Terdapat 3 kategori TER: TER A (tidak menikah tanpa tanggungan), TER B (menikah), TER C (menikah dengan tanggungan).",
+    "notes": "Dasar hukum: PP 58 Tahun 2023 tentang Perubahan atas PP 16 Tahun 2009. TER menggantikan metode perhitungan lama yang menggunakan tarif Pasal 17 UU PPh annualized. Lihat detail tabel per kategori: TER A, TER B, TER C.",
     "examples": [
       {
-        "scenario": "Pegawai single, gaji Rp 10.000.000/bulan",
-        "calculation": "TER A Category = 3% × Rp 10.000.000",
-        "result": "PPh 21 = Rp 300.000/bulan"
+        "scenario": "Pegawai tidak kawin, gaji Rp 10.000.000",
+        "calculation": "Gunakan TER A → 2%",
+        "result": "PPh 21 = Rp 200.000/bulan"
+      },
+      {
+        "scenario": "Pegawai kawin 2 tanggungan, gaji Rp 25.000.000",
+        "calculation": "Gunakan TER B → 5.5%",
+        "result": "PPh 21 = Rp 1.375.000/bulan"
+      },
+      {
+        "scenario": "Pegawai kawin 3 tanggungan, gaji Rp 50.000.000",
+        "calculation": "Gunakan TER C → 9.5%",
+        "result": "PPh 21 = Rp 4.750.000/bulan"
       }
     ],
     "tags": [

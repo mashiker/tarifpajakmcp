@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:43:36.730Z",
+  "generated": "2026-05-29T00:15:20.033Z",
   "data": {
     "group": "pph-21-monthly",
     "count": 2,
@@ -23,7 +23,7 @@
       {
         "id": "pph-21-ter-monthly-2024",
         "transactionType": "Gaji/Bulan TER",
-        "rate": "TER sesuai tabel lampiran PP 58/2023 (TER A/B/C berdasarkan status PTKP)",
+        "rate": "Progresif",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null,
         "status": "berlaku",

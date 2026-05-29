@@ -1,17 +1,229 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-28T16:43:36.730Z",
+  "generated": "2026-05-29T00:15:20.033Z",
   "data": {
     "id": "pph-21-ter-b-detail",
     "category": "PPh",
     "taxType": "PPh 21",
     "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
-    "description": "Tabel TER Kategori B (Menikah 0-2 Tanggungan). Tarif efektif rata-rata sesuai PP 58/2023 Lampiran.",
+    "description": "Tabel lengkap TER Kategori B (Kawin, tanggungan 0-2) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
     "rate": {
-      "type": "formula",
-      "value": "0% - 25% sesuai tabel TER",
-      "effectiveRate": "0% untuk ≤ Rp 6.950.000, naik hingga 25% untuk > Rp 855.000.000"
+      "type": "progressive",
+      "value": "0% – 25% (42 lapisan)",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 6950000,
+          "rate": 0
+        },
+        {
+          "min": 6950001,
+          "max": 7300000,
+          "rate": 0.25
+        },
+        {
+          "min": 7300001,
+          "max": 7700000,
+          "rate": 0.5
+        },
+        {
+          "min": 7700001,
+          "max": 8100000,
+          "rate": 0.75
+        },
+        {
+          "min": 8100001,
+          "max": 8550000,
+          "rate": 1
+        },
+        {
+          "min": 8550001,
+          "max": 9000000,
+          "rate": 1.25
+        },
+        {
+          "min": 9000001,
+          "max": 9500000,
+          "rate": 1.5
+        },
+        {
+          "min": 9500001,
+          "max": 10050000,
+          "rate": 1.75
+        },
+        {
+          "min": 10050001,
+          "max": 10650000,
+          "rate": 2
+        },
+        {
+          "min": 10650001,
+          "max": 11250000,
+          "rate": 2.25
+        },
+        {
+          "min": 11250001,
+          "max": 11950000,
+          "rate": 2.5
+        },
+        {
+          "min": 11950001,
+          "max": 12650000,
+          "rate": 2.75
+        },
+        {
+          "min": 12650001,
+          "max": 13500000,
+          "rate": 3
+        },
+        {
+          "min": 13500001,
+          "max": 14350000,
+          "rate": 3.25
+        },
+        {
+          "min": 14350001,
+          "max": 15350000,
+          "rate": 3.5
+        },
+        {
+          "min": 15350001,
+          "max": 16450000,
+          "rate": 3.75
+        },
+        {
+          "min": 16450001,
+          "max": 17650000,
+          "rate": 4
+        },
+        {
+          "min": 17650001,
+          "max": 18950000,
+          "rate": 4.25
+        },
+        {
+          "min": 18950001,
+          "max": 20350000,
+          "rate": 4.5
+        },
+        {
+          "min": 20350001,
+          "max": 21950000,
+          "rate": 4.75
+        },
+        {
+          "min": 21950001,
+          "max": 23650000,
+          "rate": 5
+        },
+        {
+          "min": 23650001,
+          "max": 25550000,
+          "rate": 5.5
+        },
+        {
+          "min": 25550001,
+          "max": 27750000,
+          "rate": 6
+        },
+        {
+          "min": 27750001,
+          "max": 30150000,
+          "rate": 6.5
+        },
+        {
+          "min": 30150001,
+          "max": 32950000,
+          "rate": 7
+        },
+        {
+          "min": 32950001,
+          "max": 36150000,
+          "rate": 7.5
+        },
+        {
+          "min": 36150001,
+          "max": 39850000,
+          "rate": 8
+        },
+        {
+          "min": 39850001,
+          "max": 44150000,
+          "rate": 8.5
+        },
+        {
+          "min": 44150001,
+          "max": 49150000,
+          "rate": 9
+        },
+        {
+          "min": 49150001,
+          "max": 55150000,
+          "rate": 9.5
+        },
+        {
+          "min": 55150001,
+          "max": 62350000,
+          "rate": 10
+        },
+        {
+          "min": 62350001,
+          "max": 71350000,
+          "rate": 10.5
+        },
+        {
+          "min": 71350001,
+          "max": 82850000,
+          "rate": 11
+        },
+        {
+          "min": 82850001,
+          "max": 97350000,
+          "rate": 11.5
+        },
+        {
+          "min": 97350001,
+          "max": 116350000,
+          "rate": 12
+        },
+        {
+          "min": 116350001,
+          "max": 141350000,
+          "rate": 12.5
+        },
+        {
+          "min": 141350001,
+          "max": 177350000,
+          "rate": 13
+        },
+        {
+          "min": 177350001,
+          "max": 232350000,
+          "rate": 13.5
+        },
+        {
+          "min": 232350001,
+          "max": 327350000,
+          "rate": 14
+        },
+        {
+          "min": 327350001,
+          "max": 530350000,
+          "rate": 14.5
+        },
+        {
+          "min": 530350001,
+          "max": 855000000,
+          "rate": 15
+        },
+        {
+          "min": 855000001,
+          "max": null,
+          "rate": 25
+        }
+      ],
+      "effectiveRate": "0% untuk ≤ Rp 6.950.000, naik bertahap hingga 25% untuk > Rp 855.000.000"
     },
     "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
     "payer": "WP OP dalam negeri",
@@ -34,12 +246,17 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "TER B untuk pegawai kawin dengan tanggungan 0-2.",
+    "notes": "Berlaku untuk pegawai yang kawin dengan tanggungan 0, 1, atau 2. Tarif 0% untuk penghasilan bruto ≤ Rp 6.950.000/bulan. Tarif tertinggi 25% untuk penghasilan > Rp 855.000.000/bulan.",
     "examples": [
       {
-        "scenario": "TER Kategori B (Menikah 0-2 Tanggungan), gaji Rp 15.000.000/bulan",
-        "calculation": "Cari tarif TER di tabel sesuai range",
-        "result": "PPh 21 sesuai tabel TER"
+        "scenario": "Pegawai kawin 1 tanggungan, gaji Rp 10.000.000/bulan",
+        "calculation": "TER B: Rp 10.000.000 jatuh di lapisan ke-8 (Rp 9.500.001 – Rp 10.050.000) = 1.75%",
+        "result": "PPh 21 = 1.75% × Rp 10.000.000 = Rp 175.000"
+      },
+      {
+        "scenario": "Pegawai kawin 2 tanggungan, gaji Rp 50.000.000/bulan",
+        "calculation": "TER B: Rp 50.000.000 jatuh di lapisan ke-31 (Rp 49.150.001 – Rp 55.150.000) = 9.5%",
+        "result": "PPh 21 = 9.5% × Rp 50.000.000 = Rp 4.750.000"
       }
     ],
     "tags": [

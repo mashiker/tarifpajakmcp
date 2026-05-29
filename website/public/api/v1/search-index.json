@@ -1,5 +1,5 @@
 {
-  "version": "2026-05-28",
+  "version": "2026-05-29",
   "entryCount": 136,
   "entries": {
     "bea-masuk-umum-mf": [
@@ -643,21 +643,23 @@
       "untuk",
       "pemotongan",
       "bulanan",
-      "atas",
-      "penghasilan",
-      "pekerjaan",
-      "jasa",
-      "atau",
-      "kegiatan",
-      "wp",
-      "orang",
-      "pribadi",
-      "dalam",
-      "negeri",
       "menggantikan",
       "metode",
       "progresif",
       "lama",
+      "sejak",
+      "januari",
+      "terdiri",
+      "dari",
+      "kategori:",
+      "tidak",
+      "kawin",
+      "tanggungan",
+      "≥3",
+      "masing",
+      "memiliki",
+      "42",
+      "lapisan",
       "pph-21",
       "pegawai",
       "berlaku",
@@ -1173,14 +1175,22 @@
       "tidak",
       "menikah",
       "tabel",
-      "tarif",
-      "efektif",
-      "rata",
-      "sesuai",
+      "lengkap",
+      "kawin",
+      "punya",
+      "tanggungan",
+      "berdasarkan",
       "pp",
       "58",
       "2023",
       "lampiran",
+      "42",
+      "lapisan",
+      "tarif",
+      "dari",
+      "0%",
+      "hingga",
+      "25%",
       "pph-21",
       "berlaku",
       "pmk",
@@ -1195,14 +1205,20 @@
       "menikah",
       "tanggungan",
       "tabel",
-      "tarif",
-      "efektif",
-      "rata",
-      "sesuai",
+      "lengkap",
+      "kawin",
+      "berdasarkan",
       "pp",
       "58",
       "2023",
       "lampiran",
+      "42",
+      "lapisan",
+      "tarif",
+      "dari",
+      "0%",
+      "hingga",
+      "25%",
       "pph-21",
       "berlaku",
       "pmk",
@@ -1218,14 +1234,21 @@
       "3+",
       "tanggungan",
       "tabel",
-      "tarif",
-      "efektif",
-      "rata",
-      "sesuai",
+      "lengkap",
+      "kawin",
+      "≥3",
+      "berdasarkan",
       "pp",
       "58",
       "2023",
       "lampiran",
+      "42",
+      "lapisan",
+      "tarif",
+      "dari",
+      "0%",
+      "hingga",
+      "25%",
       "pph-21",
       "berlaku",
       "pmk",
@@ -5084,6 +5107,10 @@
       "pph-23-jasa-lain-4pct"
     ],
     "42": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "ppn-10pct",
@@ -5836,6 +5863,9 @@
       "pph-21-dana-pensiun",
       "pph-21-progressive-uulama1983",
       "pph-21-progressive-uulama1994",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail",
       "pph-22-pre2024",
       "pph-23-jasa-katering-2pct",
       "pph-23-jasa-pre2001",
@@ -5861,6 +5891,9 @@
     "0%": [
       "bea-masuk-umum-mf",
       "bea-masuk-asean-atiga",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail",
       "pph-final-pengalihan-pp71",
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y",
@@ -6186,11 +6219,15 @@
     ],
     "dari": [
       "bea-masuk-asean-atiga",
+      "pph-21-ter-monthly-2024",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-natura-kenikmatan",
       "pph-21-progressive-uulama1983",
       "pph-21-progressive-uulama1994",
       "pph-21-progressive-monthly-pre2024",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail",
       "pph-21-norma-dokter",
       "pph-21-norma-pengacara",
       "pph-21-norma-akuntan",
@@ -6326,7 +6363,6 @@
       "pajak-daerah-mineral-air",
       "pajak-daerah-parkir",
       "pajak-daerah-air-tanah",
-      "pph-21-ter-monthly-2024",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-shu-koperasi",
@@ -6632,7 +6668,6 @@
       "bphtb-perolehan-umum",
       "bphtb-perolehan-waris",
       "bphtb-pengalihan-dinkes",
-      "pph-21-ter-monthly-2024",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-natura-kenikmatan",
@@ -7070,7 +7105,6 @@
     ],
     "dalam": [
       "bphtb-perolehan-umum",
-      "pph-21-ter-monthly-2024",
       "pph-22-impor-2024",
       "pph-22-penjualan-barang-2024",
       "pph-22-ekspor-batubara",
@@ -7284,6 +7318,7 @@
     ],
     "tidak": [
       "bphtb-pengalihan-dinkes",
+      "pph-21-ter-monthly-2024",
       "pph-21-non-taxable-income",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-progressive-uulama1994",
@@ -7412,9 +7447,6 @@
     ],
     "sesuai": [
       "cukai-hasil-tembakau",
-      "pph-21-ter-a-detail",
-      "pph-21-ter-b-detail",
-      "pph-21-ter-c-detail",
       "pph-final-sewa-tanah",
       "pph-final-konstruksi",
       "pph-badan-go-public",
@@ -7466,6 +7498,7 @@
     "sejak": [
       "cukai-ecigarette",
       "pbb-perkotaan",
+      "pph-21-ter-monthly-2024",
       "ppn-10pct"
     ],
     "e-cigarette": [
@@ -7818,16 +7851,10 @@
     ],
     "efektif": [
       "pph-21-ter-monthly-2024",
-      "pph-21-ter-a-detail",
-      "pph-21-ter-b-detail",
-      "pph-21-ter-c-detail",
       "ppn-11pct-effective-2025"
     ],
     "rata": [
-      "pph-21-ter-monthly-2024",
-      "pph-21-ter-a-detail",
-      "pph-21-ter-b-detail",
-      "pph-21-ter-c-detail"
+      "pph-21-ter-monthly-2024"
     ],
     "pemotongan": [
       "pph-21-ter-monthly-2024",
@@ -7858,180 +7885,6 @@
       "pph-21-ter-monthly-2024",
       "pph-21-progressive-monthly-pre2024"
     ],
-    "penghasilan": [
-      "pph-21-ter-monthly-2024",
-      "pph-21-non-taxable-income",
-      "pph-21-honorarium-bukan-pegawai",
-      "pph-21-pegawai-tidak-tetap",
-      "pph-21-natura-kenikmatan",
-      "pph-21-progressive-monthly-pre2024",
-      "pph-21-ptkp-1984",
-      "pph-21-ptkp-1995",
-      "pph-21-ptkp-2005",
-      "pph-21-ptkp-2009",
-      "pph-21-norma-dokter",
-      "pph-21-norma-pengacara",
-      "pph-21-norma-akuntan",
-      "pph-21-norma-arsitek",
-      "pph-21-norma-notaris",
-      "pph-21-norma-konsultan",
-      "pph-21-norma-pedagang",
-      "pph-21-norma-petani",
-      "pph-21-norma-pengusaha-kecil",
-      "pph-22-penjualan-barang-2024",
-      "pph-22-pengadaan-pemerintah",
-      "pph-22-pmse",
-      "pph-22-kripto",
-      "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "pph-23-jasa-katering-2pct",
-      "pph-26-general-2024",
-      "pph-26-but",
-      "pph-final-sewa-tanah",
-      "pph-final-transaksi-saham-bursa",
-      "pph-final-konstruksi",
-      "pph-final-transportasi",
-      "pph-final-migas",
-      "pph-final-investasi-lpi",
-      "pph-15-pma-opec",
-      "pph-15-perusahaan-kontraktor",
-      "pph-badan-2022-plus",
-      "pph-badan-pre2022",
-      "pph-badan-go-public",
-      "pph-badan-umkm",
-      "pph-badan-pre2010",
-      "pph-badan-pre2001",
-      "pph-umkm-05pct-2023",
-      "pph-umkm-05pct-2018",
-      "pph-umkm-1pct-pp46"
-    ],
-    "pekerjaan": [
-      "pph-21-ter-monthly-2024",
-      "pph-21-honorarium-bukan-pegawai",
-      "pph-21-norma-dokter",
-      "pph-21-norma-pengacara",
-      "pph-21-norma-akuntan",
-      "pph-21-norma-arsitek",
-      "pph-21-norma-notaris",
-      "pph-21-norma-konsultan",
-      "pph-21-norma-pedagang",
-      "pph-21-norma-petani",
-      "pph-21-norma-pengusaha-kecil",
-      "pph-23-hadiah-penghargaan",
-      "pph-final-konstruksi"
-    ],
-    "jasa": [
-      "pph-21-ter-monthly-2024",
-      "pph-22-penjualan-barang-2024",
-      "pph-22-bendaharawan",
-      "pph-22-pengadaan-pemerintah",
-      "pph-22-pmse",
-      "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "pph-23-jasa-katering-2pct",
-      "pph-23-hadiah-penghargaan",
-      "pph-23-jasa-pre2001",
-      "pph-23-jasa-2001",
-      "pph-23-katering-pre2015",
-      "pph-26-jasa-dan-sewa",
-      "pph-final-bunga-deposito",
-      "pph-final-konstruksi",
-      "pph-final-investasi-lpi",
-      "pph-umkm-05pct-2023",
-      "ppn-jasa-tenaga-listrik",
-      "ppn-jasa-telekomunikasi",
-      "ppn-ekspor-jkp",
-      "ppn-tidak-kena-pajak",
-      "ppn-jasa-kegiatan-usaha-persewaan"
-    ],
-    "kegiatan": [
-      "pph-21-ter-monthly-2024",
-      "pph-22-pembelian-barang-2024",
-      "pph-22-bumn-pembelian",
-      "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "pph-23-sewa-tanah-bangunan",
-      "pph-23-hadiah-penghargaan",
-      "pph-26-jasa-dan-sewa",
-      "pph-final-migas",
-      "pph-final-investasi-lpi",
-      "ppn-jasa-kegiatan-usaha-persewaan",
-      "ppn-pengkreditan"
-    ],
-    "wp": [
-      "pph-21-ter-monthly-2024",
-      "pph-21-shu-koperasi",
-      "pph-22-impor-2024",
-      "pph-22-ekspor-batubara",
-      "pph-23-jasa-lain-4pct",
-      "pph-23-sewa-tanah-bangunan",
-      "pph-23-hadiah-penghargaan",
-      "pph-26-general-2024",
-      "pph-26-dividen",
-      "pph-26-bunga",
-      "pph-26-royalti",
-      "pph-26-jasa-dan-sewa",
-      "pph-26-but",
-      "pph-final-sewa-tanah",
-      "pph-final-bunga-koperasi",
-      "pph-badan-2022-plus",
-      "pph-badan-go-public",
-      "pph-badan-umkm",
-      "pph-badan-ikn-0pct",
-      "pph-umkm-05pct-2023",
-      "pph-umkm-05pct-2018",
-      "pph-umkm-1pct-pp46"
-    ],
-    "orang": [
-      "pph-21-ter-monthly-2024",
-      "pph-21-progressive-annual-2024",
-      "pph-21-shu-koperasi",
-      "pph-21-progressive-uulama1983",
-      "pph-22-penjualan-barang-2024",
-      "pph-23-hadiah-penghargaan",
-      "pph-final-hadiah-undian",
-      "pph-final-konstruksi",
-      "pph-final-bunga-koperasi",
-      "pph-final-transportasi",
-      "pph-umkm-05pct-2023"
-    ],
-    "pribadi": [
-      "pph-21-ter-monthly-2024",
-      "pph-21-progressive-annual-2024",
-      "pph-21-shu-koperasi",
-      "pph-21-progressive-uulama1983",
-      "pph-22-penjualan-barang-2024",
-      "pph-23-hadiah-penghargaan",
-      "pph-final-hadiah-undian",
-      "pph-final-bunga-koperasi",
-      "pph-umkm-05pct-2023",
-      "ppnbm-kapal-pesiar",
-      "ppnbm-pesawat-pribadi"
-    ],
-    "negeri": [
-      "pph-21-ter-monthly-2024",
-      "pph-22-penjualan-barang-2024",
-      "pph-22-pmse",
-      "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "pph-23-sewa-tanah-bangunan",
-      "pph-26-general-2024",
-      "pph-26-dividen",
-      "pph-26-bunga",
-      "pph-26-royalti",
-      "pph-26-jasa-dan-sewa",
-      "pph-26-but",
-      "pph-final-bunga-deposito",
-      "pph-final-hadiah-undian",
-      "pph-final-transportasi",
-      "pph-15-penerbangan-domestik",
-      "pph-15-pelayaran-domestik",
-      "pph-15-perusahaan-asuransi",
-      "pph-15-buta-charter",
-      "pph-badan-2022-plus",
-      "ppn-11pct-effective-2025",
-      "ppn-pmse"
-    ],
     "menggantikan": [
       "pph-21-ter-monthly-2024"
     ],
@@ -8052,6 +7905,51 @@
     ],
     "lama": [
       "pph-21-ter-monthly-2024"
+    ],
+    "januari": [
+      "pph-21-ter-monthly-2024"
+    ],
+    "terdiri": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-progressive-uulama1983"
+    ],
+    "kategori:": [
+      "pph-21-ter-monthly-2024"
+    ],
+    "kawin": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail"
+    ],
+    "tanggungan": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail"
+    ],
+    "≥3": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-ter-c-detail"
+    ],
+    "masing": [
+      "pph-21-ter-monthly-2024"
+    ],
+    "memiliki": [
+      "pph-21-ter-monthly-2024",
+      "pph-22-impor-api-produsen",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-katering-pre2015",
+      "pph-26-tax-treaty",
+      "pph-final-konstruksi",
+      "pph-umkm-05pct-2023"
+    ],
+    "lapisan": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-progressive-pre2022",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail"
     ],
     "pph-21": [
       "pph-21-ter-monthly-2024",
@@ -8162,6 +8060,30 @@
     "spt": [
       "pph-21-progressive-annual-2024"
     ],
+    "orang": [
+      "pph-21-progressive-annual-2024",
+      "pph-21-shu-koperasi",
+      "pph-21-progressive-uulama1983",
+      "pph-22-penjualan-barang-2024",
+      "pph-23-hadiah-penghargaan",
+      "pph-final-hadiah-undian",
+      "pph-final-konstruksi",
+      "pph-final-bunga-koperasi",
+      "pph-final-transportasi",
+      "pph-umkm-05pct-2023"
+    ],
+    "pribadi": [
+      "pph-21-progressive-annual-2024",
+      "pph-21-shu-koperasi",
+      "pph-21-progressive-uulama1983",
+      "pph-22-penjualan-barang-2024",
+      "pph-23-hadiah-penghargaan",
+      "pph-final-hadiah-undian",
+      "pph-final-bunga-koperasi",
+      "pph-umkm-05pct-2023",
+      "ppnbm-kapal-pesiar",
+      "ppnbm-pesawat-pribadi"
+    ],
     "perhitungan": [
       "pph-21-progressive-annual-2024"
     ],
@@ -8218,9 +8140,6 @@
       "pph-23-katering-pre2015",
       "pph-final-konstruksi"
     ],
-    "lapisan": [
-      "pph-21-progressive-pre2022"
-    ],
     "35%": [
       "pph-21-progressive-pre2022",
       "pph-21-progressive-pre2009",
@@ -8247,6 +8166,52 @@
       "pph-21-ptkp-1995",
       "pph-21-ptkp-2005",
       "pph-21-ptkp-2009"
+    ],
+    "penghasilan": [
+      "pph-21-non-taxable-income",
+      "pph-21-honorarium-bukan-pegawai",
+      "pph-21-pegawai-tidak-tetap",
+      "pph-21-natura-kenikmatan",
+      "pph-21-progressive-monthly-pre2024",
+      "pph-21-ptkp-1984",
+      "pph-21-ptkp-1995",
+      "pph-21-ptkp-2005",
+      "pph-21-ptkp-2009",
+      "pph-21-norma-dokter",
+      "pph-21-norma-pengacara",
+      "pph-21-norma-akuntan",
+      "pph-21-norma-arsitek",
+      "pph-21-norma-notaris",
+      "pph-21-norma-konsultan",
+      "pph-21-norma-pedagang",
+      "pph-21-norma-petani",
+      "pph-21-norma-pengusaha-kecil",
+      "pph-22-penjualan-barang-2024",
+      "pph-22-pengadaan-pemerintah",
+      "pph-22-pmse",
+      "pph-22-kripto",
+      "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct",
+      "pph-26-general-2024",
+      "pph-26-but",
+      "pph-final-sewa-tanah",
+      "pph-final-transaksi-saham-bursa",
+      "pph-final-konstruksi",
+      "pph-final-transportasi",
+      "pph-final-migas",
+      "pph-final-investasi-lpi",
+      "pph-15-pma-opec",
+      "pph-15-perusahaan-kontraktor",
+      "pph-badan-2022-plus",
+      "pph-badan-pre2022",
+      "pph-badan-go-public",
+      "pph-badan-umkm",
+      "pph-badan-pre2010",
+      "pph-badan-pre2001",
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-2018",
+      "pph-umkm-1pct-pp46"
     ],
     "kena": [
       "pph-21-non-taxable-income",
@@ -8382,6 +8347,20 @@
       "pph-21-honorarium-bukan-pegawai",
       "pph-26-jasa-dan-sewa",
       "pph-final-investasi-lpi"
+    ],
+    "pekerjaan": [
+      "pph-21-honorarium-bukan-pegawai",
+      "pph-21-norma-dokter",
+      "pph-21-norma-pengacara",
+      "pph-21-norma-akuntan",
+      "pph-21-norma-arsitek",
+      "pph-21-norma-notaris",
+      "pph-21-norma-konsultan",
+      "pph-21-norma-pedagang",
+      "pph-21-norma-petani",
+      "pph-21-norma-pengusaha-kecil",
+      "pph-23-hadiah-penghargaan",
+      "pph-final-konstruksi"
     ],
     "bebas": [
       "pph-21-honorarium-bukan-pegawai",
@@ -8564,6 +8543,29 @@
       "pph-23-hadiah-penghargaan",
       "pph-final-bunga-koperasi"
     ],
+    "wp": [
+      "pph-21-shu-koperasi",
+      "pph-22-impor-2024",
+      "pph-22-ekspor-batubara",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-sewa-tanah-bangunan",
+      "pph-23-hadiah-penghargaan",
+      "pph-26-general-2024",
+      "pph-26-dividen",
+      "pph-26-bunga",
+      "pph-26-royalti",
+      "pph-26-jasa-dan-sewa",
+      "pph-26-but",
+      "pph-final-sewa-tanah",
+      "pph-final-bunga-koperasi",
+      "pph-badan-2022-plus",
+      "pph-badan-go-public",
+      "pph-badan-umkm",
+      "pph-badan-ikn-0pct",
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-2018",
+      "pph-umkm-1pct-pp46"
+    ],
     "diperlakukan": [
       "pph-21-shu-koperasi",
       "pph-26-but"
@@ -8704,9 +8706,6 @@
     "asli": [
       "pph-21-progressive-uulama1983"
     ],
-    "terdiri": [
-      "pph-21-progressive-uulama1983"
-    ],
     "lapis": [
       "pph-21-progressive-uulama1983"
     ],
@@ -8723,6 +8722,9 @@
     ],
     "25%": [
       "pph-21-progressive-uulama1983",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail",
       "pph-21-norma-petani",
       "pph-21-norma-pengusaha-kecil",
       "pph-badan-2022-plus",
@@ -8744,6 +8746,9 @@
     "hingga": [
       "pph-21-progressive-uulama1983",
       "pph-21-progressive-monthly-pre2024",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail",
       "ppn-10pct"
     ],
     "uu-7-1983": [
@@ -8844,12 +8849,16 @@
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail"
     ],
-    "lampiran": [
+    "lengkap": [
       "pph-21-ter-a-detail",
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail"
     ],
-    "tanggungan": [
+    "punya": [
+      "pph-21-ter-a-detail"
+    ],
+    "lampiran": [
+      "pph-21-ter-a-detail",
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail"
     ],
@@ -9132,6 +9141,19 @@
       "pph-23-jasa-lain-4pct",
       "pph-final-transaksi-saham-bursa"
     ],
+    "kegiatan": [
+      "pph-22-pembelian-barang-2024",
+      "pph-22-bumn-pembelian",
+      "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-sewa-tanah-bangunan",
+      "pph-23-hadiah-penghargaan",
+      "pph-26-jasa-dan-sewa",
+      "pph-final-migas",
+      "pph-final-investasi-lpi",
+      "ppn-jasa-kegiatan-usaha-persewaan",
+      "ppn-pengkreditan"
+    ],
     "usahanya": [
       "pph-22-pembelian-barang-2024",
       "pph-22-bumn-pembelian"
@@ -9204,6 +9226,29 @@
     ],
     "distributor": [
       "pph-22-penjualan-barang-2024"
+    ],
+    "negeri": [
+      "pph-22-penjualan-barang-2024",
+      "pph-22-pmse",
+      "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-sewa-tanah-bangunan",
+      "pph-26-general-2024",
+      "pph-26-dividen",
+      "pph-26-bunga",
+      "pph-26-royalti",
+      "pph-26-jasa-dan-sewa",
+      "pph-26-but",
+      "pph-final-bunga-deposito",
+      "pph-final-hadiah-undian",
+      "pph-final-transportasi",
+      "pph-15-penerbangan-domestik",
+      "pph-15-pelayaran-domestik",
+      "pph-15-perusahaan-asuransi",
+      "pph-15-buta-charter",
+      "pph-badan-2022-plus",
+      "ppn-11pct-effective-2025",
+      "ppn-pmse"
     ],
     "semen": [
       "pph-22-penjualan-barang-2024"
@@ -9521,6 +9566,29 @@
       "ppnbm-rumah-mewah",
       "ppnbm-perlengkapan-mewah"
     ],
+    "jasa": [
+      "pph-22-penjualan-barang-2024",
+      "pph-22-bendaharawan",
+      "pph-22-pengadaan-pemerintah",
+      "pph-22-pmse",
+      "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct",
+      "pph-23-hadiah-penghargaan",
+      "pph-23-jasa-pre2001",
+      "pph-23-jasa-2001",
+      "pph-23-katering-pre2015",
+      "pph-26-jasa-dan-sewa",
+      "pph-final-bunga-deposito",
+      "pph-final-konstruksi",
+      "pph-final-investasi-lpi",
+      "pph-umkm-05pct-2023",
+      "ppn-jasa-tenaga-listrik",
+      "ppn-jasa-telekomunikasi",
+      "ppn-ekspor-jkp",
+      "ppn-tidak-kena-pajak",
+      "ppn-jasa-kegiatan-usaha-persewaan"
+    ],
     "persewaan": [
       "pph-22-penjualan-barang-2024",
       "pph-22-pengadaan-pemerintah",
@@ -9582,14 +9650,6 @@
     ],
     "api": [
       "pph-22-impor-api-produsen"
-    ],
-    "memiliki": [
-      "pph-22-impor-api-produsen",
-      "pph-23-jasa-lain-4pct",
-      "pph-23-katering-pre2015",
-      "pph-26-tax-treaty",
-      "pph-final-konstruksi",
-      "pph-umkm-05pct-2023"
     ],
     "angka": [
       "pph-22-impor-api-produsen",
