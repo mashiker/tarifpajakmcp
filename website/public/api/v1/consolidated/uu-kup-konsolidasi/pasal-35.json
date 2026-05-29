@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "35",
     "bab": "IX",
@@ -22,6 +22,19 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) DJP dapat melakukan pencegahan terhadap WP yang akan meninggalkan Indonesia.\n(2) Pencegahan sebagaimana dimaksud pada ayat (1) dilakukan jika DJP berpendapat bahwa WP akan meninggalkan Indonesia dengan tidak membayar pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat mencegah WP yang akan meninggalkan Indonesia.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Jika DJP berpendapat WP tidak akan membayar pajak.",
+        "status": "berlaku"
       }
     ]
   }

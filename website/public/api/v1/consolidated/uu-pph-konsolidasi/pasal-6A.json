@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "6A",
     "bab": "II",
@@ -23,6 +23,19 @@
         "changeType": "added",
         "effectiveDate": "2022-01-01",
         "summary": "Pasal baru tentang pengalihan harta VDP"
+      }
+    ],
+    "text": "(1) Penilaian pengalihan harta sebagaimana dimaksud dalam Pasal 4 ayat (3) huruf d dan huruf e dilakukan berdasarkan nilai pasar atau nilai yang ditetapkan oleh pemerintah.\n(2) Penilaian pengalihan harta berupa saham yang tidak diperdagangkan di bursa efek dilakukan berdasarkan nilai wajar.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penilaian pengalihan harta (tanah/bangunan, saham) berdasarkan nilai pasar atau nilai yang ditetapkan pemerintah.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Penilaian saham tidak di bursa berdasarkan nilai wajar.",
+        "status": "ditambah"
       }
     ]
   }

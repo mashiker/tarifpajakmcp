@@ -1,19 +1,22 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pmk-168-2023",
     "number": "168",
     "year": 2023,
-    "title": "Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Wajib Pajak Orang Pribadi",
+    "title": "PMK tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi",
+    "shortName": "PMK PPh 21 TER",
     "type": "PMK",
+    "promulgationDate": "2023-12-15",
     "effectiveDate": "2024-01-01",
     "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023",
     "status": "berlaku",
+    "description": "PMK pelaksanaan PP 58/2023. Mengatur detail TER (Pasal 2-6), pegawai tidak tetap (Pasal 8-10), natura (Pasal 12), dana pensiun/JHT (Pasal 15), dan bukan pegawai.",
+    "relevantArticles": "Pasal 2, 3, 4, 5, 6, 8, 9, 10, 12, 15",
     "relatedRegulations": [
-      "pp-58-2023",
-      "uu-7-2021-hpp"
+      "pp-58-2023"
     ],
     "referencingEntries": [
       "pph-21-ter-monthly-2024",

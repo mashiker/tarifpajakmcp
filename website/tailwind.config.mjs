@@ -5,21 +5,21 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Rubik', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['IBM Plex Mono', 'monospace'],
       },
       colors: {
         brand: {
-          50: '#fff7ed',
-          100: '#ffedd5',
-          200: '#fed7aa',
-          300: '#fdba74',
-          400: '#fb923c',
-          500: '#fd9527',
-          600: '#ea8520',
-          700: '#c26916',
-          800: '#9a5212',
-          900: '#7c4210',
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
         },
       },
     },

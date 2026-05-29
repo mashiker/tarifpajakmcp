@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "41",
     "bab": "X",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2008-01-01",
         "summary": "Perubahan perhitungan bunga"
+      }
+    ],
+    "text": "(1) Setiap orang yang memperoleh data perpajakan wajib merahasiakannya.\n(2) Data perpajakan sebagaimana dimaksud pada ayat (1) tidak boleh diketahui oleh pihak lain, kecuali ditentukan oleh peraturan perundang-undangan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Data perpajakan wajib dirahasiakan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Tidak boleh diketahui pihak lain, kecuali ditentukan UU.",
+        "status": "berlaku"
       }
     ]
   }

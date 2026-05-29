@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "43",
     "bab": "XII",
@@ -54,6 +54,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan sanksi administrasi"
+      }
+    ],
+    "text": "(1) WP yang terlambat menyampaikan SPT dikenakan sanksi administrasi berupa denda.\n(2) Besarnya denda ditetapkan sebesar:\na. Rp 1.000.000 untuk SPT Tahunan WP OP;\nb. Rp 1.000.000 untuk SPT Tahunan WP badan;\nc. Rp 100.000 untuk SPT Masa.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Sanksi denda atas keterlambatan SPT.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Denda: Rp1.000.000 (SPT Tahunan OP/badan), Rp100.000 (SPT Masa).",
+        "status": "diubah"
       }
     ]
   }

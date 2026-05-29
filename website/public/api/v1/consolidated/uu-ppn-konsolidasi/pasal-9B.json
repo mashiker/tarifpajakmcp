@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "9B",
     "bab": "II",
@@ -26,6 +26,29 @@
         "changeType": "added",
         "effectiveDate": "2022-01-01",
         "summary": "Pasal baru - tarif efektif peralihan"
+      }
+    ],
+    "text": "(1) Penghitungan PPN terutang dilakukan dengan cara mengalikan tarif PPN dengan Dasar Pengenaan Pajak.\n(2) PPN terutang = Tarif PPN × DPP.\n(3) PPN yang telah dibayar pada saat perolehan BKP atau penerimaan JKP (PPN Masukan) dapat dikreditkan terhadap PPN terutang (PPN Keluaran).\n(4) PPN yang harus disetor = PPN Keluaran - PPN Masukan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN terutang = tarif × DPP.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Formula PPN.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(3)",
+        "text": "PPN Masukan dapat dikreditkan terhadap PPN Keluaran.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(4)",
+        "text": "PPN disetor = PPN Keluaran - PPN Masukan.",
+        "status": "ditambah"
       }
     ]
   }

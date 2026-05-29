@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "9",
     "bab": "III",
@@ -33,6 +33,14 @@
         "changeType": "amended",
         "effectiveDate": "2008-01-01",
         "summary": "Penyesuaian ketentuan SPT tambahan"
+      }
+    ],
+    "text": "(1) WP dapat menyampaikan SPT Tambahan dalam hal WP mengetahui SPT yang disampaikan tidak benar.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SPT Tambahan dapat disampaikan jika SPT yang telah disampaikan tidak benar.",
+        "status": "berlaku"
       }
     ]
   }

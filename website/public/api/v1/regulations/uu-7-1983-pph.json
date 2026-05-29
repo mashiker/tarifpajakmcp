@@ -1,19 +1,28 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-7-1983-pph",
+    "pasalLawId": 332,
     "number": "7",
     "year": 1983,
     "title": "Undang-Undang Pajak Penghasilan",
+    "shortName": "UU PPh",
     "type": "UU",
+    "promulgationDate": "1983-12-31",
     "effectiveDate": "1984-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44028/uu-no-7-tahun-1983",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44031/uu-no-7-tahun-1983",
     "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-1983",
-    "status": "dicabut",
+    "pdfUrl": "https://peraturan.bpk.go.id/Download/44020/UU%20Nomor%207%20Tahun%201983.pdf",
+    "status": "diubah_sebagian",
+    "description": "Undang-Undang dasar Pajak Penghasilan Indonesia. Diubah oleh UU 10/1994, UU 17/2000, UU 36/2008, dan UU 7/2021 (HPP). Mengatur tarif progresif PPh OP (Pasal 17), PPh 21 (Pasal 21), PPh 22 (Pasal 22), PPh 23 (Pasal 23), PPh 26 (Pasal 26), PPh 15 deemed profit (Pasal 15), dan PPh 4(2) Final.",
+    "relevantArticles": "Pasal 4, 5, 6, 7, 8, 9, 15, 17, 21, 22, 23, 26",
     "relatedRegulations": [
-      "uu-10-1994"
+      "uu-10-1994",
+      "uu-17-2000",
+      "uu-36-2008",
+      "uu-7-2021-hpp"
     ],
     "referencingEntries": [
       "bea-meterai-pre2021",

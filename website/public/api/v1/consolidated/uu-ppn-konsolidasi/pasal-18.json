@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "18",
     "bab": "III",
@@ -33,6 +33,24 @@
         "changeType": "amended",
         "effectiveDate": "2010-04-01",
         "summary": "Perubahan batas tarif PPnBM"
+      }
+    ],
+    "text": "(1) Tarif PPnBM paling tinggi 200% (dua ratus persen).\n(2) Tarif PPnBM sebagaimana dimaksud pada ayat (1) ditetapkan dengan Peraturan Pemerintah.\n(3) PPnBM atas ekspor tidak dipungut.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Tarif PPnBM maksimal 200%.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Tarif ditetapkan PP.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Ekspor tidak dipungut PPnBM.",
+        "status": "berlaku"
       }
     ]
   }

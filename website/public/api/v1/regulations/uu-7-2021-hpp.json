@@ -1,23 +1,25 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-7-2021-hpp",
     "pasalLawId": 1829,
     "number": "7",
     "year": 2021,
     "title": "Undang-Undang Harmonisasi Peraturan Perpajakan",
+    "shortName": "UU HPP",
     "type": "UU",
+    "promulgationDate": "2021-10-29",
     "effectiveDate": "2022-01-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
     "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021",
     "pdfUrl": "https://peraturan.bpk.go.id/Download/178620/UU%20Nomor%207%20Tahun%202021.pdf",
     "status": "berlaku",
+    "description": "UU HPP mengubah UU PPh dan UU PPN secara komprehensif. Tarif PPh OP progresif ditambah lapisan 35% untuk PKP >5 miliar. Tarif PPh Badan turun ke 22% (2022), 20% (2023+). PPN naik ke 11% (2022), 12% (2025). Menambahkan Pasal 16B PPN (JKPT).",
+    "relevantArticles": "Pasal 4, 7, 8, 16B, 17, 19, 21, 22, 23, 26",
     "relatedRegulations": [
       "uu-7-1983-pph",
-      "uu-10-1994",
-      "uu-17-2000",
       "uu-36-2008",
       "uu-8-1983-ppn",
       "uu-42-2009"

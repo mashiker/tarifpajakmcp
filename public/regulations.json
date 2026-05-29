@@ -1,48 +1,41 @@
 [
   {
-    "id": "uu-7-2021-hpp",
-    "pasalLawId": 1829,
-    "number": "7",
-    "year": 2021,
-    "title": "Undang-Undang Harmonisasi Peraturan Perpajakan",
-    "type": "UU",
-    "effectiveDate": "2022-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
-    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021",
-    "pdfUrl": "https://peraturan.bpk.go.id/Download/178620/UU%20Nomor%207%20Tahun%202021.pdf",
-    "status": "berlaku",
-    "relatedRegulations": [
-      "uu-7-1983-pph",
-      "uu-10-1994",
-      "uu-17-2000",
-      "uu-36-2008",
-      "uu-8-1983-ppn",
-      "uu-42-2009"
-    ]
-  },
-  {
     "id": "uu-7-1983-pph",
+    "pasalLawId": 332,
     "number": "7",
     "year": 1983,
     "title": "Undang-Undang Pajak Penghasilan",
+    "shortName": "UU PPh",
     "type": "UU",
+    "promulgationDate": "1983-12-31",
     "effectiveDate": "1984-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44028/uu-no-7-tahun-1983",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44031/uu-no-7-tahun-1983",
     "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-1983",
-    "status": "dicabut",
+    "pdfUrl": "https://peraturan.bpk.go.id/Download/44020/UU%20Nomor%207%20Tahun%201983.pdf",
+    "status": "diubah_sebagian",
+    "description": "Undang-Undang dasar Pajak Penghasilan Indonesia. Diubah oleh UU 10/1994, UU 17/2000, UU 36/2008, dan UU 7/2021 (HPP). Mengatur tarif progresif PPh OP (Pasal 17), PPh 21 (Pasal 21), PPh 22 (Pasal 22), PPh 23 (Pasal 23), PPh 26 (Pasal 26), PPh 15 deemed profit (Pasal 15), dan PPh 4(2) Final.",
+    "relevantArticles": "Pasal 4, 5, 6, 7, 8, 9, 15, 17, 21, 22, 23, 26",
     "relatedRegulations": [
-      "uu-10-1994"
+      "uu-10-1994",
+      "uu-17-2000",
+      "uu-36-2008",
+      "uu-7-2021-hpp"
     ]
   },
   {
     "id": "uu-10-1994",
+    "pasalLawId": 447,
     "number": "10",
     "year": 1994,
-    "title": "Undang-Undang Perubahan UU Pajak Penghasilan",
+    "title": "Undang-Undang Perubahan Pertama atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan",
+    "shortName": "UU PPh (Perubahan I)",
     "type": "UU",
+    "promulgationDate": "1994-11-19",
     "effectiveDate": "1995-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44043/uu-no-10-tahun-1994",
-    "status": "dicabut",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44032/uu-no-10-tahun-1994",
+    "status": "dicabut_sebagian",
+    "description": "Perubahan pertama UU PPh. Tidak mengubah tarif Pasal 17 secara substansial. PTKP disesuaikan. Disahkan oleh Presiden Soeharto.",
+    "relevantArticles": "Pasal 3 (tarif), Pasal 5 (PTKP)",
     "relatedRegulations": [
       "uu-7-1983-pph",
       "uu-17-2000"
@@ -52,13 +45,18 @@
     "id": "uu-17-2000",
     "number": "17",
     "year": 2000,
-    "title": "Undang-Undang Perubahan Kedua UU Pajak Penghasilan",
+    "title": "Undang-Undang Perubahan Kedua atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan",
+    "shortName": "UU PPh (Perubahan II)",
     "type": "UU",
+    "promulgationDate": "2000-12-22",
     "effectiveDate": "2001-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44063/uu-no-17-tahun-2000",
-    "status": "dicabut",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44033/uu-no-17-tahun-2000",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-17-tahun-2000",
+    "status": "diubah_sebagian",
+    "description": "Perubahan kedua UU PPh. Menurunkan tarif PPh 23 jasa dari 15% menjadi 2%, tarif PPh Badan flat 28%/30%, menambahkan lapisan tarif progresif baru. Mengatur PPh Final atas bunga deposito (Pasal 4 ayat 2).",
+    "relevantArticles": "Pasal 4 ayat (2), Pasal 17, Pasal 23",
     "relatedRegulations": [
-      "uu-10-1994",
+      "uu-7-1983-pph",
       "uu-36-2008"
     ]
   },
@@ -66,220 +64,285 @@
     "id": "uu-36-2008",
     "number": "36",
     "year": 2008,
-    "title": "Undang-Undang Perubahan Keempat UU Pajak Penghasilan",
+    "title": "Undang-Undang Perubahan Keempat atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan",
+    "shortName": "UU PPh (Perubahan IV)",
     "type": "UU",
+    "promulgationDate": "2008-09-08",
     "effectiveDate": "2009-01-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-36-tahun-2008",
     "status": "diubah_sebagian",
+    "description": "Perubahan keempat UU PPh. Tarif PPh OP progresif maks 30% (5%/15%/25%/30%). Tarif PPh Badan turun ke 28% (2010-2012) dan 25% (2013+). PPh 23 sewa tanah/bangunan masuk PPh Final. PPh Final transaksi saam bursa efek (Pasal 4 ayat 2).",
+    "relevantArticles": "Pasal 4 ayat (2), Pasal 17, Pasal 22, Pasal 23",
     "relatedRegulations": [
       "uu-17-2000",
       "uu-7-2021-hpp"
     ]
   },
   {
-    "id": "uu-8-1983-ppn",
-    "number": "8",
-    "year": 1983,
-    "title": "Undang-Undang Pajak Pertambahan Nilai",
+    "id": "uu-7-2021-hpp",
+    "pasalLawId": 1829,
+    "number": "7",
+    "year": 2021,
+    "title": "Undang-Undang Harmonisasi Peraturan Perpajakan",
+    "shortName": "UU HPP",
     "type": "UU",
-    "effectiveDate": "1984-04-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983",
-    "status": "dicabut",
+    "promulgationDate": "2021-10-29",
+    "effectiveDate": "2022-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021",
+    "pdfUrl": "https://peraturan.bpk.go.id/Download/178620/UU%20Nomor%207%20Tahun%202021.pdf",
+    "status": "berlaku",
+    "description": "UU HPP mengubah UU PPh dan UU PPN secara komprehensif. Tarif PPh OP progresif ditambah lapisan 35% untuk PKP >5 miliar. Tarif PPh Badan turun ke 22% (2022), 20% (2023+). PPN naik ke 11% (2022), 12% (2025). Menambahkan Pasal 16B PPN (JKPT).",
+    "relevantArticles": "Pasal 4, 7, 8, 16B, 17, 19, 21, 22, 23, 26",
     "relatedRegulations": [
+      "uu-7-1983-pph",
+      "uu-36-2008",
+      "uu-8-1983-ppn",
       "uu-42-2009"
     ]
   },
   {
+    "id": "uu-8-1983-ppn",
+    "number": "8",
+    "year": 1983,
+    "title": "Undang-Undang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah",
+    "shortName": "UU PPN/PPnBM",
+    "type": "UU",
+    "promulgationDate": "1983-12-31",
+    "effectiveDate": "1984-04-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983",
+    "status": "dicabut",
+    "description": "UU dasar PPN dan PPnBM Indonesia. Tarif PPN 10%, PPnBM maks 35%. Diubah oleh UU 42/2009 dan UU 7/2021 (HPP).",
+    "relevantArticles": "Pasal 4, 4A, 7, 8, 9, 16B",
+    "relatedRegulations": [
+      "uu-42-2009",
+      "uu-7-2021-hpp"
+    ]
+  },
+  {
     "id": "uu-42-2009",
-    "pasalLawId": 1926,
     "number": "42",
     "year": 2009,
-    "title": "Undang-Undang Perubahan UU Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah",
+    "title": "Undang-Undang Perubahan Ketiga atas UU No. 8 Tahun 1983 tentang PPN dan PPnBM",
+    "shortName": "UU PPN (Perubahan III)",
     "type": "UU",
+    "promulgationDate": "2009-11-20",
     "effectiveDate": "2010-04-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009",
-    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-42-tahun-2009",
-    "pdfUrl": "https://peraturan.bpk.go.id/Download/44119/UU%20Nomor%2042%20Tahun%202009.pdf",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44245/uu-no-42-tahun-2009",
     "status": "diubah_sebagian",
+    "description": "Perubahan ketiga UU PPN/PPnBM. Menambahkan Pasal 4A (barang/jasa tidak kena pajak), mengatur PMSE, menambahkan PPnBM untuk mobil mewah. Diubah lagi oleh UU HPP.",
+    "relevantArticles": "Pasal 4, 4A, 7, 8, 16B",
     "relatedRegulations": [
       "uu-8-1983-ppn",
       "uu-7-2021-hpp"
     ]
   },
   {
-    "id": "pp-58-2023",
-    "pasalLawId": 1069,
-    "number": "58",
-    "year": 2023,
-    "title": "Tarif Pemotongan Pajak Penghasilan Pasal 21 (TER)",
-    "type": "PP",
-    "effectiveDate": "2024-01-01",
-    "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023",
-    "pasalUrl": "https://pasal.id/peraturan/pp/pp-no-58-tahun-2023",
-    "pdfUrl": "https://peraturan.bpk.go.id/Download/332609/PP%20Nomor%2058%20Tahun%202023.pdf",
+    "id": "uu-10-1995",
+    "number": "10",
+    "year": 1995,
+    "title": "Undang-Undang Kepabeanan",
+    "shortName": "UU Kepabeanan",
+    "type": "UU",
+    "promulgationDate": "1995-11-07",
+    "effectiveDate": "1996-07-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44205/uu-no-10-tahun-1995",
     "status": "berlaku",
-    "relatedRegulations": [
-      "uu-7-2021-hpp",
-      "pmk-168-2023"
-    ]
+    "description": "UU dasar kepabeanan Indonesia. Mengatur Bea Masuk (Pasal 13-14), Bea Masuk Anti-Dumping (Pasal 20-22), Bea Masuk Tindakan Pengamanan, dan Bea Keluaran.",
+    "relevantArticles": "Pasal 13, 14, 20, 21, 22",
+    "relatedRegulations": []
   },
   {
-    "id": "pmk-168-2023",
-    "number": "168",
-    "year": 2023,
-    "title": "Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Wajib Pajak Orang Pribadi",
-    "type": "PMK",
-    "effectiveDate": "2024-01-01",
-    "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023",
-    "status": "berlaku",
+    "id": "uu-13-1985",
+    "number": "13",
+    "year": 1985,
+    "title": "Undang-Undang Bea Meterai",
+    "shortName": "UU Bea Meterai",
+    "type": "UU",
+    "promulgationDate": "1985-03-28",
+    "effectiveDate": "1986-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44051/uu-no-13-tahun-1985",
+    "status": "dicabut_sebagian",
+    "description": "UU Bea Meterai. Tarif Rp 1.000 untuk dokumen >Rp 200.000. Diubah tarifnya oleh PP 23/2000, PP 80/2007, lalu diganti seluruhnya oleh UU 10/2020.",
+    "relevantArticles": "Pasal 3, 4, 5",
     "relatedRegulations": [
-      "pp-58-2023",
-      "uu-7-2021-hpp"
-    ]
-  },
-  {
-    "id": "pp-23-2018",
-    "number": "23",
-    "year": 2018,
-    "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
-    "type": "PP",
-    "effectiveDate": "2018-07-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/135493/pp-no-23-tahun-2018",
-    "status": "dicabut",
-    "relatedRegulations": [
-      "pp-55-2022",
-      "uu-7-2021-hpp"
-    ]
-  },
-  {
-    "id": "pp-55-2022",
-    "number": "55",
-    "year": 2022,
-    "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
-    "type": "PP",
-    "effectiveDate": "2023-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022",
-    "status": "berlaku",
-    "relatedRegulations": [
-      "pp-23-2018"
-    ]
-  },
-  {
-    "id": "pmk-131-2024",
-    "number": "131",
-    "year": 2024,
-    "title": "Penentuan Tarif Pajak Pertambahan Nilai",
-    "type": "PMK",
-    "effectiveDate": "2025-01-01",
-    "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024",
-    "status": "berlaku",
-    "relatedRegulations": [
-      "uu-7-2021-hpp",
-      "uu-42-2009"
-    ]
-  },
-  {
-    "id": "pp-60-2023",
-    "number": "60",
-    "year": 2023,
-    "title": "Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
-    "type": "PP",
-    "effectiveDate": "2024-01-01",
-    "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
-    "status": "berlaku",
-    "relatedRegulations": [
-      "uu-7-2021-hpp"
-    ]
-  },
-  {
-    "id": "pp-131-2000",
-    "number": "131",
-    "year": 2000,
-    "title": "Pajak Penghasilan Final atas Penghasilan Tertentu",
-    "type": "PP",
-    "effectiveDate": "2000-12-29",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000",
-    "status": "diubah_sebagian",
-    "relatedRegulations": [
-      "uu-7-2021-hpp"
+      "pp-23-2000",
+      "pp-80-2007",
+      "uu-10-2020-bea-meterai"
     ]
   },
   {
     "id": "uu-10-2020-bea-meterai",
     "number": "10",
     "year": 2020,
-    "title": "Undang-Undang Bea Meterai",
+    "title": "Undang-Undang Bea Meterai (Pengganti UU 13/1985)",
+    "shortName": "UU Bea Meterai Baru",
     "type": "UU",
+    "promulgationDate": "2020-11-09",
     "effectiveDate": "2021-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/135968/uu-no-10-tahun-2020",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-10-tahun-2020",
     "status": "berlaku",
-    "relatedRegulations": []
+    "description": "UU Bea Meterai baru menggantikan UU 13/1985. Tarif Rp 10.000 untuk dokumen >Rp 1.000.000. Berlaku 1 Januari 2021.",
+    "relevantArticles": "Pasal 3, 4, 5",
+    "relatedRegulations": [
+      "uu-13-1985"
+    ]
   },
   {
-    "id": "uu-1-2022-pbb",
+    "id": "uu-39-2007",
+    "number": "39",
+    "year": 2007,
+    "title": "Undang-Undang Perubahan atas UU No. 11 Tahun 1995 tentang Cukai",
+    "shortName": "UU Cukai (Perubahan)",
+    "type": "UU",
+    "promulgationDate": "2007-12-24",
+    "effectiveDate": "2008-07-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44106/uu-no-39-tahun-2007",
+    "status": "berlaku",
+    "description": "UU Cukai mengatur pengenaan cukai atas hasil tembakau (rokok), minuman mengandung etil alkohol (MMEA), dan e-cigarette. Menggunakan tarif spesifik dan ad valorem.",
+    "relevantArticles": "Pasal 6, 7, 8",
+    "relatedRegulations": [
+      "pmk-202-2023"
+    ]
+  },
+  {
+    "id": "uu-28-2009",
+    "number": "28",
+    "year": 2009,
+    "title": "Undang-Undang tentang Pajak Daerah dan Retribusi Daerah",
+    "shortName": "UU PDRD",
+    "type": "UU",
+    "promulgationDate": "2009-09-23",
+    "effectiveDate": "2010-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44213/uu-no-28-tahun-2009",
+    "status": "dicabut_sebagian",
+    "description": "UU PDRD lama. Mengatur PBB, BPHTB, dan pajak daerah. Dicabut sebagian oleh UU 1/2022 (HKPD) yang mengambil alih PBB-P3 dan BPHTB.",
+    "relevantArticles": "Pasal 1-7, 14",
+    "relatedRegulations": [
+      "uu-1-2022-hkpd"
+    ]
+  },
+  {
+    "id": "uu-1-2022-hkpd",
     "number": "1",
     "year": 2022,
-    "title": "Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintahan Daerah (HKPD) - PBB",
+    "title": "Undang-Undang tentang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintahan Daerah",
+    "shortName": "UU HKPD",
     "type": "UU",
-    "effectiveDate": "2022-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/196435/uu-no-1-tahun-2022",
+    "promulgationDate": "2022-01-05",
+    "effectiveDate": "2022-01-05",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/186730/uu-no-1-tahun-2022",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-1-tahun-2022",
     "status": "berlaku",
+    "description": "UU HKPD mengatur PBB-P2 (Pasal 39-46), PBB-P3 (Pasal 47-52), BPHTB (Pasal 78-84), dan Pajak Daerah (Pasal 60). Menggantikan UU 28/2009 PDRD untuk sebagian ketentuan.",
+    "relevantArticles": "Pasal 39-52, 60, 78-84",
     "relatedRegulations": [
-      "uu-12-1985",
       "uu-28-2009"
+    ]
+  },
+  {
+    "id": "pp-58-2023",
+    "number": "58",
+    "year": 2023,
+    "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 21",
+    "shortName": "PP TER PPh 21",
+    "type": "PP",
+    "promulgationDate": "2023-12-11",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023",
+    "pasalUrl": "https://pasal.id/peraturan/pp/pp-no-58-tahun-2023",
+    "status": "berlaku",
+    "description": "PP yang mengatur Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif annualized. TER terdiri dari 3 kategori (A, B, C) masing-masing 42 lapisan. Juga mengatur pemotongan PPh 21 atas dana pensiun (Pasal 14), pegawai tidak tetap (Pasal 5).",
+    "relevantArticles": "Pasal 2, 3, 4, 5, 14, Lampiran (Tabel TER A/B/C)",
+    "relatedRegulations": [
+      "pmk-168-2023",
+      "pp-16-2009"
+    ]
+  },
+  {
+    "id": "pp-60-2023",
+    "number": "60",
+    "year": 2023,
+    "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
+    "shortName": "PP Tarif PPh 22/23/26",
+    "type": "PP",
+    "promulgationDate": "2023-12-11",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
+    "status": "berlaku",
+    "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26.",
+    "relevantArticles": "Pasal 2 (PPh 22 impor/ekspor), Pasal 3 (PPh 22 pembelian/pengadaan), Pasal 4 (PPh 22 penjualan/PMSE/kripto), Pasal 5 (PPh 23 dan 26)",
+    "relatedRegulations": [
+      "pp-94-2010",
+      "pp-14-2002"
     ]
   },
   {
     "id": "pp-16-2009",
     "number": "16",
     "year": 2009,
-    "title": "Peraturan Pemerintah tentang Pemotongan Pajak Penghasilan atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi",
+    "title": "PP tentang Pemotongan Pajak Penghasilan atas Penghasilan Sehubungan dengan Pekerjaan",
+    "shortName": "PP PPh 21 Lama",
     "type": "PP",
-    "effectiveDate": "2009-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/50297/pp-no-16-tahun-2009",
-    "status": "diubah_sebagian",
+    "promulgationDate": "2009-07-06",
+    "effectiveDate": "2009-08-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44091/pp-no-16-tahun-2009",
+    "status": "dicabut_sebagian",
+    "description": "PP pelaksanaan PPh 21. Mengatur pemotongan bulanan progresif, honorarium bukan pegawai (Pasal 17), PTKP. Dicabut sebagian oleh PP 58/2023 (TER), tetapi Pasal 17 (bukan pegawai) masih berlaku.",
+    "relevantArticles": "Pasal 3, 5, 17",
     "relatedRegulations": [
-      "uu-7-2021-hpp",
       "pp-58-2023"
     ]
   },
   {
-    "id": "pp-94-2010",
-    "number": "94",
-    "year": 2010,
-    "title": "Peraturan Pemerintah tentang Perhitungan Pajak Penghasilan Pasal 22 dan Pemungutan Pajak Pertambahan Nilai atas Penyerahan BKP",
+    "id": "pp-131-2000",
+    "number": "131",
+    "year": 2000,
+    "title": "PP tentang Pajak Penghasilan Final atas Penghasilan Tertentu",
+    "shortName": "PP PPh Final",
     "type": "PP",
-    "effectiveDate": "2010-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/69530/pp-no-94-tahun-2010",
-    "status": "dicabut",
+    "promulgationDate": "2000-12-29",
+    "effectiveDate": "2001-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44271/pp-no-131-tahun-2000",
+    "status": "berlaku",
+    "description": "PP mengatur PPh Final atas: pengalihan hak atas tanah/bangunan (Pasal 5), hadiah undian (Pasal 3), sewa tanah/bangunan (Pasal 4). Catatan: Pasal 2 tentang bunga deposito sudah digantikan oleh PP 131/2000 hanya mengatur hal tersebut sebelum PP 131/2000 — bunga deposito sebenarnya diatur KMK 523/KMK.04/2002 dan PMK terkait.",
+    "relevantArticles": "Pasal 2 (bunga deposito/tabungan), Pasal 3 (hadiah undian), Pasal 4 (sewa tanah/bangunan), Pasal 5 (pengalihan hak atas tanah/bangunan)",
     "relatedRegulations": [
-      "pp-60-2023"
+      "pp-71-2008"
     ]
   },
   {
-    "id": "pmk-141-2015",
-    "number": "141",
-    "year": 2015,
-    "title": "Peraturan Menteri Keuangan tentang Pemotongan Pajak Penghasilan Pasal 23 atas Penghasilan Berupa Imbalan Jasa Tertentu",
-    "type": "PMK",
-    "effectiveDate": "2015-12-31",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/70615/pmk-no-141-pmk-03-2015-tahun-2015",
-    "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015",
+    "id": "pp-71-2008",
+    "number": "71",
+    "year": 2008,
+    "title": "PP tentang Pajak Penghasilan Final atas Penghasilan Tertentu berupa Pengalihan Hak atas Tanah dan/atau Bangunan",
+    "shortName": "PP PPh Pengalihan Tanah",
+    "type": "PP",
+    "promulgationDate": "2008-12-29",
+    "effectiveDate": "2009-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44113/pp-no-71-tahun-2008",
     "status": "berlaku",
+    "description": "PP mengatur PPh Final atas pengalihan hak atas tanah/bangunan. Tarif 2,5% (umum), 1% (perumahan sederhana), 0% (pemerintah). Menggantikan PP 131/2000 untuk pengalihan tanah.",
+    "relevantArticles": "Pasal 2, 3, 4",
     "relatedRegulations": [
-      "pp-60-2023",
-      "uu-7-2021-hpp"
+      "pp-131-2000"
     ]
   },
   {
     "id": "pp-51-2008",
     "number": "51",
     "year": 2008,
-    "title": "Peraturan Pemerintah tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu dan Pajak Penghasilan Final atas Penghasilan Tertentu",
+    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Berdomisili di Wilayah Negara Bagian Malaysia",
+    "shortName": "PP PPh Penghasilan Tertentu",
     "type": "PP",
-    "effectiveDate": "2009-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/50182/pp-no-51-tahun-2008",
-    "status": "diubah_sebagian",
+    "promulgationDate": "2008-07-28",
+    "effectiveDate": "2008-08-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44098/pp-no-51-tahun-2008",
+    "status": "berlaku",
+    "description": "PP tentang PPh atas penghasilan tetap dari pengalihan hak atas tanah/bangunan (Pasal 5B), penghasilan dari pengangkutan charter (Pasal 5A), dan pekerjaan konstruksi (Pasal 2-5). Juga mengatur PPh Final migas. Catatan: untuk konstruksi, PP 40/2009 lebih spesifik.",
+    "relevantArticles": "Pasal 2, 5A, 5B",
     "relatedRegulations": [
       "pp-40-2009"
     ]
@@ -288,183 +351,339 @@
     "id": "pp-40-2009",
     "number": "40",
     "year": 2009,
-    "title": "Peraturan Pemerintah tentang Perubahan atas PP 51/2008 tentang Pajak Penghasilan Final atas Penghasilan Tertentu",
+    "title": "PP tentang Perubahan atas PP No. 51 Tahun 2008 tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak Berdomisili di Wilayah Negara Bagian Malaysia",
+    "shortName": "PP PPh Konstruksi",
     "type": "PP",
-    "effectiveDate": "2009-07-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/50248/pp-no-40-tahun-2009",
+    "promulgationDate": "2009-07-06",
+    "effectiveDate": "2009-08-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44092/pp-no-40-tahun-2009",
     "status": "berlaku",
+    "description": "PP mengatur PPh Final atas pekerjaan jasa konstruksi: 2% (perencanaan), 4% (pelaksanaan), 6% (pengawasan). Perubahan atas PP 51/2008 yang lebih spesifik untuk konstruksi.",
+    "relevantArticles": "Pasal 2, 3, 4",
     "relatedRegulations": [
       "pp-51-2008"
     ]
   },
   {
-    "id": "pp-44-2022",
-    "number": "44",
-    "year": 2022,
-    "title": "Peraturan Pemerintah tentang Pelaksanaan Pemungutan Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah pada Perdagangan Melalui Sistem Elektronik",
+    "id": "pp-94-2010",
+    "number": "94",
+    "year": 2010,
+    "title": "PP tentang Perhitungan Pajak Penghasilan Pasal 22 dan Pemungut Pajak Penghasilan Pasal 22",
+    "shortName": "PP PPh 22 Lama",
     "type": "PP",
-    "effectiveDate": "2022-04-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/196508/pp-no-44-tahun-2022",
-    "status": "berlaku",
-    "relatedRegulations": [
-      "uu-7-2021-hpp",
-      "uu-42-2009"
-    ]
-  },
-  {
-    "id": "uu-28-2009",
-    "number": "28",
-    "year": 2009,
-    "title": "Undang-Undang tentang PDRD (Pajak Daerah dan Retribusi Daerah)",
-    "type": "UU",
-    "effectiveDate": "2010-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44141/uu-no-28-tahun-2009",
-    "status": "dicabut_sebagian",
-    "relatedRegulations": [
-      "uu-1-2022-pbb"
-    ]
-  },
-  {
-    "id": "uu-13-1985",
-    "number": "13",
-    "year": 1985,
-    "title": "Undang-Undang tentang Bea Meterai",
-    "type": "UU",
-    "effectiveDate": "1986-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44140/uu-no-13-tahun-1985",
+    "promulgationDate": "2010-12-31",
+    "effectiveDate": "2011-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44269/pp-no-94-tahun-2010",
     "status": "dicabut",
+    "description": "PP lama mengatur PPh 22. Digantikan oleh PP 60/2023 sejak 1 Januari 2024.",
+    "relevantArticles": "Pasal 2, 3, 4",
     "relatedRegulations": [
-      "uu-10-2020-bea-meterai"
+      "pp-60-2023"
     ]
   },
   {
     "id": "pp-14-2002",
     "number": "14",
     "year": 2002,
-    "title": "Peraturan Pemerintah tentang Pemotongan Pajak Penghasilan atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi (Pra-PP 16/2009)",
+    "title": "PP tentang Pemotongan Pajak Penghasilan atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi",
+    "shortName": "PP PPh 23/26 Lama",
     "type": "PP",
-    "effectiveDate": "2002-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/50106/pp-no-14-tahun-2002",
+    "promulgationDate": "2002-03-18",
+    "effectiveDate": "2002-04-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44194/pp-no-14-tahun-2002",
     "status": "dicabut",
+    "description": "PP lama mengatur pemotongan PPh 23 dan PPh 26. Digantikan oleh PP 60/2023 sejak 1 Januari 2024.",
+    "relevantArticles": "Pasal 2, 3, 5",
     "relatedRegulations": [
-      "pp-16-2009"
+      "pp-60-2023"
+    ]
+  },
+  {
+    "id": "pp-23-2000",
+    "number": "23",
+    "year": 2000,
+    "title": "PP tentang Perubahan Besarnya Bea Meterai",
+    "shortName": "PP Bea Meterai Rp 3.000",
+    "type": "PP",
+    "promulgationDate": "2000-12-22",
+    "effectiveDate": "2000-12-22",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44280/pp-no-23-tahun-2000",
+    "status": "dicabut_sebagian",
+    "description": "PP mengubah tarif bea meterai dari Rp 1.000 menjadi Rp 3.000 untuk dokumen >Rp 500.000. Digantikan tarifnya oleh PP 80/2007.",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": [
+      "pp-80-2007",
+      "uu-13-1985"
+    ]
+  },
+  {
+    "id": "pp-80-2007",
+    "number": "80",
+    "year": 2007,
+    "title": "PP tentang Perubahan atas PP No. 23 Tahun 2000 tentang Perubahan Besarnya Bea Meterai",
+    "shortName": "PP Bea Meterai Rp 6.000",
+    "type": "PP",
+    "promulgationDate": "2007-12-17",
+    "effectiveDate": "2008-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44116/pp-no-80-tahun-2007",
+    "status": "dicabut_sebagian",
+    "description": "PP mengubah tarif bea meterai dari Rp 3.000 menjadi Rp 6.000 untuk dokumen >Rp 1.000.000. Digantikan seluruhnya oleh UU 10/2020 (bea meterai baru Rp 10.000).",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": [
+      "pp-23-2000",
+      "uu-10-2020-bea-meterai"
+    ]
+  },
+  {
+    "id": "pp-23-2018",
+    "number": "23",
+    "year": 2018,
+    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "shortName": "PP PPh UMKM 0,5%",
+    "type": "PP",
+    "promulgationDate": "2018-07-05",
+    "effectiveDate": "2018-07-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/65898/pp-no-23-tahun-2018",
+    "status": "dicabut_sebagian",
+    "description": "PP mengatur PPh Final 0,5% untuk UMKM dengan peredaran bruto s.d. Rp 4,8 miliar. Menggantikan PP 46/2013. Tarif 0,5% dibagi: 0,25% WP OP / 0,5% WP Badan. Digantikan oleh PP 55/2022.",
+    "relevantArticles": "Pasal 2, 3",
+    "relatedRegulations": [
+      "pp-46-2013",
+      "pp-55-2022"
+    ]
+  },
+  {
+    "id": "pp-46-2013",
+    "number": "46",
+    "year": 2013,
+    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "shortName": "PP PPh UMKM 1%",
+    "type": "PP",
+    "promulgationDate": "2013-06-24",
+    "effectiveDate": "2013-07-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44748/pp-no-46-tahun-2013",
+    "status": "dicabut",
+    "description": "PP pertama mengatur PPh Final UMKM. Tarif 1% final untuk peredaran bruto s.d. Rp 4,8 miliar. Digantikan oleh PP 23/2018.",
+    "relevantArticles": "Pasal 2, 3",
+    "relatedRegulations": [
+      "pp-23-2018"
+    ]
+  },
+  {
+    "id": "pp-55-2022",
+    "number": "55",
+    "year": 2022,
+    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterika atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "shortName": "PP PPh UMKM 0,5% (Terbaru)",
+    "type": "PP",
+    "promulgationDate": "2022-12-22",
+    "effectiveDate": "2023-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/194769/pp-no-55-tahun-2022",
+    "status": "berlaku",
+    "description": "PP terbaru PPh UMKM. Tarif 0,5% final untuk peredaran bruto s.d. Rp 4,8 miliar (WP OP 0,25%). Menggantikan PP 23/2018.",
+    "relevantArticles": "Pasal 2, 3",
+    "relatedRegulations": [
+      "pp-23-2018"
+    ]
+  },
+  {
+    "id": "pp-28-2023",
+    "number": "28",
+    "year": 2023,
+    "title": "PP tentang Fasilitas Pajak di Ibu Kota Nusantara",
+    "shortName": "PP Fasilitas Pajak IKN",
+    "type": "PP",
+    "promulgationDate": "2023-11-27",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/197537/pp-no-28-tahun-2023",
+    "status": "berlaku",
+    "description": "PP memberikan fasilitas pajak untuk investasi di IKN: PPh Badan 0% (10 tahun pertama) lalu 10%, PPh 21 ditanggung pemerintah, PPN ditanggung pemerintah, dan fasilitas bea masuk.",
+    "relevantArticles": "Pasal 2, 3, 4",
+    "relatedRegulations": []
+  },
+  {
+    "id": "pp-44-2022",
+    "number": "44",
+    "year": 2022,
+    "title": "PP tentang Pelaksanaan Pemungutan Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah atas Perdagangan Melalui Sistem Elektronik",
+    "shortName": "PP PPN PMSE",
+    "type": "PP",
+    "promulgationDate": "2022-12-22",
+    "effectiveDate": "2023-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/194770/pp-no-44-tahun-2022",
+    "status": "berlaku",
+    "description": "PP mengatur pemungutan PPN dan PPnBM atas transaksi PMSE (e-commerce). Pemungutan oleh PMSE (marketplace) dan/atau penjual.",
+    "relevantArticles": "Pasal 2, 3, 4, 5",
+    "relatedRegulations": [
+      "pmk-131-2024"
+    ]
+  },
+  {
+    "id": "pmk-168-2023",
+    "number": "168",
+    "year": 2023,
+    "title": "PMK tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi",
+    "shortName": "PMK PPh 21 TER",
+    "type": "PMK",
+    "promulgationDate": "2023-12-15",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023",
+    "status": "berlaku",
+    "description": "PMK pelaksanaan PP 58/2023. Mengatur detail TER (Pasal 2-6), pegawai tidak tetap (Pasal 8-10), natura (Pasal 12), dana pensiun/JHT (Pasal 15), dan bukan pegawai.",
+    "relevantArticles": "Pasal 2, 3, 4, 5, 6, 8, 9, 10, 12, 15",
+    "relatedRegulations": [
+      "pp-58-2023"
+    ]
+  },
+  {
+    "id": "pmk-131-2024",
+    "number": "131",
+    "year": 2024,
+    "title": "PMK tentang Penentuan Tarif Pajak Pertambahan Nilai",
+    "shortName": "PMK Tarif PPN",
+    "type": "PMK",
+    "promulgationDate": "2024-07-30",
+    "effectiveDate": "2025-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/202689/pmk-no-131-tahun-2024",
+    "status": "berlaku",
+    "description": "PMK menentukan tarif PPN 12% berlaku 1 Januari 2025 untuk penyerahan BKP/JKP dalam negeri dan impor. Sebelumnya 11% (UU HPP). Ekspor tetap 0%.",
+    "relevantArticles": "Pasal 2",
+    "relatedRegulations": [
+      "uu-7-2021-hpp"
+    ]
+  },
+  {
+    "id": "pmk-141-2015",
+    "number": "141",
+    "year": 2015,
+    "title": "PMK tentang Pemotongan Pajak Penghasilan Pasal 23 atas Pendapatan yang Diterima oleh Badan Usaha Penyedia Jasa Katering atau Tata Boga",
+    "shortName": "PMK PPh 23 Katering",
+    "type": "PMK",
+    "promulgationDate": "2015-09-18",
+    "effectiveDate": "2015-10-05",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/52371/pmk-no-141-pmk-03-2015",
+    "status": "berlaku",
+    "description": "PMK mengatur PPh 23 khusus untuk jasa katering/tata boga. Tarif 2% untuk BerNPWP. Memisahkan katering dari jasa umum PPh 23.",
+    "relevantArticles": "Pasal 1, 3",
+    "relatedRegulations": [
+      "pp-60-2023"
     ]
   },
   {
     "id": "pmk-122-2015",
-    "number": "122/PMK.010/2015",
+    "number": "122",
     "year": 2015,
-    "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak",
+    "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak untuk Wajib Pajak Orang Pribadi",
+    "shortName": "PMK PTKP 2016+",
     "type": "PMK",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/51529/pmk-no-122-tahun-2015",
+    "promulgationDate": "2015-12-28",
+    "effectiveDate": "2016-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/54324/pmk-no-122-pmk-010-2015",
     "status": "berlaku",
-    "effectiveDate": "2016-01-01"
+    "description": "PMK menetapkan PTKP: Single Rp 54.000.000, Kawin Rp 58.500.000, Tanggungan Rp 4.500.000/orang (maks 3). Masih berlaku hingga sekarang.",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": []
   },
   {
     "id": "pmk-138-2005",
-    "number": "138/PMK.010/2005",
+    "number": "138",
     "year": 2005,
-    "title": "PMK tentang Besarnya PTKP",
+    "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak untuk Wajib Pajak Orang Pribadi",
+    "shortName": "PMK PTKP 2005",
     "type": "PMK",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/49344/pmk-no-138pmk0102005",
+    "promulgationDate": "2005-12-27",
+    "effectiveDate": "2005-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/45016/pmk-no-138-pmk-010-2005",
     "status": "dicabut",
-    "effectiveDate": "2005-01-01"
+    "description": "PMK menetapkan PTKP: Single Rp 12.000.000. Digantikan oleh PMK 162/2009.",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": [
+      "pmk-162-2009"
+    ]
   },
   {
     "id": "pmk-162-2009",
-    "number": "162/PMK.010/2009",
+    "number": "162",
     "year": 2009,
-    "title": "PMK tentang Besarnya PTKP",
+    "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak untuk Wajib Pajak Orang Pribadi",
+    "shortName": "PMK PTKP 2009",
     "type": "PMK",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/51412/pmk-no-162pmk0102009",
+    "promulgationDate": "2009-12-29",
+    "effectiveDate": "2009-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44745/pmk-no-162-pmk-010-2009",
     "status": "dicabut",
-    "effectiveDate": "2009-01-01"
+    "description": "PMK menetapkan PTKP: Single Rp 15.840.000. Digantikan oleh PMK 122/2015.",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": [
+      "pmk-122-2015"
+    ]
   },
   {
     "id": "pmk-523-2002",
-    "number": "523/KMK.04/2002",
+    "number": "523",
     "year": 2002,
-    "title": "KMK tentang Norma Penghitungan Penghasilan Neto",
+    "title": "KMK tentang Norma Penghitungan Penghasilan Neto untuk Wajib Pajak Orang Pribadi yang Melakukan Pekerjaan Bebas",
+    "shortName": "KMK Norma Penghitungan",
     "type": "KMK",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002",
-    "status": "berlaku"
-  },
-  {
-    "id": "pp-71-2008",
-    "number": "71/2008",
-    "year": 2008,
-    "title": "PP tentang PPh Pengalihan Hak atas Tanah/Bangunan dan Jasa Konstruksi",
-    "type": "PP",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/49660/pp-no-71-tahun-2008",
-    "status": "berlaku",
-    "effectiveDate": "2009-01-01"
-  },
-  {
-    "id": "pp-46-2013",
-    "number": "46/2013",
-    "year": 2013,
-    "title": "PP tentang PPh UMKM Final 1%",
-    "type": "PP",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/49798/pp-no-46-tahun-2013",
-    "status": "dicabut",
-    "effectiveDate": "2013-07-01"
-  },
-  {
-    "id": "pp-28-2023",
-    "number": "28/2023",
-    "year": 2023,
-    "title": "PP tentang Fasilitas Pajak di IKN",
-    "type": "PP",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/196894/pp-no-28-tahun-2023",
-    "status": "berlaku",
-    "effectiveDate": "2023-11-02"
-  },
-  {
-    "id": "pp-80-2007",
-    "number": "80/2007",
-    "year": 2007,
-    "title": "PP tentang Perubahan Bea Meterai",
-    "type": "PP",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/47779/pp-no-80-tahun-2007",
-    "status": "dicabut",
-    "effectiveDate": "2007-01-01"
-  },
-  {
-    "id": "pp-23-2000",
-    "number": "23/2000",
-    "year": 2000,
-    "title": "PP tentang Perubahan Besarnya Bea Meterai",
-    "type": "PP",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44780/pp-no-23-tahun-2000",
-    "status": "dicabut",
-    "effectiveDate": "2000-01-01"
-  },
-  {
-    "id": "uu-39-2007",
-    "number": "39/2007",
-    "year": 2007,
-    "title": "UU tentang Perubahan UU 11/1995 tentang Cukai",
-    "type": "UU",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/45946/uu-no-39-tahun-2007",
-    "status": "berlaku"
+    "promulgationDate": "2002-11-20",
+    "effectiveDate": "2003-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/45176/kmk-no-523-kmk-04-2002",
+    "status": "diubah_sebagian",
+    "description": "KMK mengatur norma penghitungan penghasilan neto untuk pekerja bebas (dokter 50%, pengacara 50%, akuntan 50%, arsitek 45%, notaris 50%, konsultan 50%, pedagang 20%, petani 10%, dll). Diubah sebagian oleh PMK 43/2022.",
+    "relevantArticles": "Lampiran",
+    "relatedRegulations": [
+      "pmk-43-2022"
+    ]
   },
   {
     "id": "pmk-43-2022",
-    "number": "43/2022",
+    "number": "43",
     "year": 2022,
-    "title": "PMK tentang Norma Penghitungan Penghasilan Neto",
+    "title": "PMK tentang Perubahan atas KMK No. 523/KMK.04/2002 tentang Norma Penghitungan Penghasilan Neto",
+    "shortName": "PMK Norma Penghitungan (Perubahan)",
     "type": "PMK",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/195814/pmk-no-43-tahun-2022",
+    "promulgationDate": "2022-06-08",
+    "effectiveDate": "2022-06-08",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/191552/pmk-no-43-tahun-2022",
     "status": "berlaku",
-    "effectiveDate": "2022-03-14"
+    "description": "PMK mengubah sebagian KMK 523/2002 tentang norma penghitungan. Beberapa profesi mengalami perubahan persentase norma.",
+    "relevantArticles": "Lampiran",
+    "relatedRegulations": [
+      "pmk-523-2002"
+    ]
   },
   {
-    "id": "uu-1-2022-hkpd",
-    "number": "1/2022",
-    "year": 2022,
-    "title": "UU tentang Hubungan Keuangan Pusat-Daerah (HKPD)",
-    "type": "UU",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022",
-    "status": "berlaku"
+    "id": "pmk-202-2023",
+    "number": "202",
+    "year": 2023,
+    "title": "PMK tentang Penetapan Tarif Cukai Hasil Tembakau dan Tarif Cukai E-Cigarette",
+    "shortName": "PMK Tarif Cukai 2024",
+    "type": "PMK",
+    "promulgationDate": "2023-12-18",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/198352/pmk-no-202-tahun-2023",
+    "status": "berlaku",
+    "description": "PMK menetapkan tarif cukai untuk rokok kretek, rokok putih, SIGARET (SKM, SKT, SP), dan e-cigarette / heated tobacco product berlaku tahun 2024.",
+    "relevantArticles": "Pasal 2, 3, 4",
+    "relatedRegulations": [
+      "uu-39-2007"
+    ]
+  },
+  {
+    "id": "perpres-55-2013",
+    "number": "55",
+    "year": 2013,
+    "title": "Perpres tentang Ratifikasi ASEAN Agreement on Trade in Goods (ATIGA)",
+    "shortName": "Perpres ATIGA",
+    "type": "Perpres",
+    "promulgationDate": "2013-08-05",
+    "effectiveDate": "2013-08-05",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44947/perpres-no-55-tahun-2013",
+    "status": "berlaku",
+    "description": "Perpres meratifikasi ATIGA — perjanjian perdagangan bebas ASEAN. Mengatur preferensi tarif bea masuk untuk barang ASEAN (0% untuk most products).",
+    "relevantArticles": "Lampiran",
+    "relatedRegulations": [
+      "uu-10-1995"
+    ]
   }
 ]

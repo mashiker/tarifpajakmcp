@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "10",
     "bab": "III",
@@ -61,6 +61,24 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Tarif progresif 5%-35% (4 lapis) — lapis baru PKP > Rp 5 miliar 35%"
+      }
+    ],
+    "text": "(1) Tarif Pajak Penghasilan bagi Wajib Pajak orang pribadi dalam negeri adalah sebagai berikut:\nLapisan Penghasilan Kena Pajak                               | Tarif\n Sampai dengan Rp 60.000.000                                 | 5%\n Di atas Rp 60.000.000 s.d. Rp 250.000.000                 | 15%\n Di atas Rp 250.000.000 s.d. Rp 500.000.000                | 25%\n Di atas Rp 500.000.000 s.d. Rp 5.000.000.000              | 30%\n Di atas Rp 5.000.000.000                                    | 35%\n(2) Tarif sebagaimana dimaksud pada ayat (1) berlaku juga untuk penghasilan yang diterima atau diperoleh BUT.\n(3) Tarif Pajak Penghasilan sebagaimana dimaksud pada ayat (1) bagi Wajib Pajak orang pribadi yang berdomisili di Indonesia yang menerima penghasilan dari luar Indonesia yang bersumber dari negara yang mempunyai perjanjian pajak dengan Indonesia, dihitung berdasarkan lapisan tarif sebagaimana dimaksud pada ayat (1) yang dikalikan dengan perbandingan antara penghasilan netto di Indonesia dengan penghasilan netto total.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Tarif PPh OP progresif 5 lapis: 5% (≤60jt), 15% (60-250jt), 25% (250-500jt), 30% (500jt-5M), 35% (>5M).",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Tarif ayat (1) berlaku juga untuk BUT.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Tarif untuk WP OP yang menerima penghasilan dari negara perjanjian pajak dihitung proporsional.",
+        "status": "berlaku"
       }
     ]
   }

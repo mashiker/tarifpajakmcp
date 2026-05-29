@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "23",
     "bab": "VII",
@@ -34,6 +34,19 @@
         "changeType": "partially_amended",
         "effectiveDate": "2008-01-01",
         "summary": "Penyesuaian STP"
+      }
+    ],
+    "text": "(1) STP diterbitkan jika terdapat pajak yang terutang belum dibayar.\n(2) STP juga diterbitkan atas sanksi administrasi berupa bunga dan/atau denda.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "STP diterbitkan jika pajak terutang belum dibayar.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "STP juga untuk sanksi administrasi bunga/denda.",
+        "status": "berlaku"
       }
     ]
   }

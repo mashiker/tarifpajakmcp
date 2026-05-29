@@ -1,16 +1,23 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pmk-162-2009",
-    "number": "162/PMK.010/2009",
+    "number": "162",
     "year": 2009,
-    "title": "PMK tentang Besarnya PTKP",
+    "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak untuk Wajib Pajak Orang Pribadi",
+    "shortName": "PMK PTKP 2009",
     "type": "PMK",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/51412/pmk-no-162pmk0102009",
-    "status": "dicabut",
+    "promulgationDate": "2009-12-29",
     "effectiveDate": "2009-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44745/pmk-no-162-pmk-010-2009",
+    "status": "dicabut",
+    "description": "PMK menetapkan PTKP: Single Rp 15.840.000. Digantikan oleh PMK 122/2015.",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": [
+      "pmk-122-2015"
+    ],
     "referencingEntries": [
       "pph-21-ptkp-2009"
     ]

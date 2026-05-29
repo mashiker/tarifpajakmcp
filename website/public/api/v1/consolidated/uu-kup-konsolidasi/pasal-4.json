@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "4",
     "bab": "III",
@@ -34,6 +34,29 @@
         "changeType": "partially_amended",
         "effectiveDate": "2008-01-01",
         "summary": "Penyesuaian jenis SPT"
+      }
+    ],
+    "text": "(1) SPT wajib disampaikan kepada DJP untuk tiap Tahun Pajak atau Masa Pajak.\n(2) SPT Tahunan PPh wajib disampaikan paling lambat 3 (tiga) bulan setelah akhir Tahun Pajak.\n(3) SPT Masa wajib disampaikan paling lambat 20 (dua puluh) hari setelah akhir Masa Pajak.\n(4) SPT Tahunan PPN wajib disampaikan paling lambat akhir bulan ke-3 setelah akhir Tahun Pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SPT wajib disampaikan untuk tiap Tahun Pajak/Masa Pajak.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "SPT Tahunan PPh: paling lambat 3 bulan setelah akhir Tahun Pajak.",
+        "status": "diubah"
+      },
+      {
+        "number": "(3)",
+        "text": "SPT Masa: paling lambat 20 hari setelah akhir Masa Pajak.",
+        "status": "diubah"
+      },
+      {
+        "number": "(4)",
+        "text": "SPT Tahunan PPN: paling lambat akhir bulan ke-3 setelah akhir Tahun Pajak.",
+        "status": "berlaku"
       }
     ]
   }

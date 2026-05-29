@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "31",
     "bab": "IX",
@@ -23,6 +23,19 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Dalam hal WP melakukan transaksi dengan pihak yang mempunyai hubungan istimewa dan perbedaan dalam syarat dan kondisi transaksi menyebabkan penghasilan yang dilaporkan lebih rendah dari penghasilan yang seharusnya, Direktur Jenderal Pajak dapat menyesuaikan besarnya penghasilan.\n(2) Penyesuaian sebagaimana dimaksud pada ayat (1) dilakukan berdasarkan metode yang ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat menyesuaikan penghasilan jika transaksi dengan pihak berhubungan istimewa menyebabkan penghasilan lebih rendah dari seharusnya.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Metode penyesuaian ditetapkan PP.",
+        "status": "berlaku"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "13A",
     "bab": "II",
@@ -24,6 +24,19 @@
         "changeType": "added",
         "effectiveDate": "2022-01-01",
         "summary": "Pasal baru tentang pengembalian PPN"
+      }
+    ],
+    "text": "(1) Dalam hal PPN Masukan dalam suatu Masa Pajak lebih besar dari PPN Keluaran, kelebihan PPN Masukan dikompensasikan ke Masa Pajak berikutnya.\n(2) Kelebihan PPN Masukan yang belum dikompensasikan dapat diminta pengembalian pada akhir tahun buku.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Kelebihan PPN Masukan dikompensasikan ke Masa Pajak berikutnya.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Dapat diminta pengembalian pada akhir tahun buku.",
+        "status": "ditambah"
       }
     ]
   }

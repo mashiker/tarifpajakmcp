@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "46",
     "bab": "XIV",
@@ -23,6 +23,14 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Peraturan pelaksanaan dari UU ini diatur dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Peraturan pelaksanaan diatur PP.",
+        "status": "berlaku"
       }
     ]
   }

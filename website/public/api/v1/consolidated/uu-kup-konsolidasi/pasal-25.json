@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "25",
     "bab": "VII",
@@ -22,6 +22,19 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) SKPKB diterbitkan jika berdasarkan hasil pemeriksaan terdapat kurang bayar pajak.\n(2) Besarnya kurang bayar pajak sebagaimana dimaksud pada ayat (1) ditetapkan oleh DJP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SKPKB diterbitkan jika ada kurang bayar pajak dari pemeriksaan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Besarnya kurang bayar ditetapkan DJP.",
+        "status": "berlaku"
       }
     ]
   }

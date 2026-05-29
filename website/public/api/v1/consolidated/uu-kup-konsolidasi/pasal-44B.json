@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "44B",
     "bab": "XIII",
@@ -23,6 +23,19 @@
         "changeType": "added",
         "effectiveDate": "2022-01-01",
         "summary": "Pasal baru tentang mutual assistance"
+      }
+    ],
+    "text": "(1) Setiap orang yang karena sengaja tidak menyetorkan pajak yang telah dipotong atau dipungutnya sehingga menimbulkan kerugian bagi pendapatan negara diancam dengan pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp 100.000.000.\n(2) Tindak pidana sebagaimana dimaksud pada ayat (1) adalah kejahatan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pidana max 2 tahun/denda max Rp100 juta atas tidak menyetorkan pajak yang dipotong/dipungut.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Kejahatan.",
+        "status": "ditambah"
       }
     ]
   }

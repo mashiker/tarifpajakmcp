@@ -1,15 +1,24 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-1-2022-hkpd",
-    "number": "1/2022",
+    "number": "1",
     "year": 2022,
-    "title": "UU tentang Hubungan Keuangan Pusat-Daerah (HKPD)",
+    "title": "Undang-Undang tentang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintahan Daerah",
+    "shortName": "UU HKPD",
     "type": "UU",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022",
+    "promulgationDate": "2022-01-05",
+    "effectiveDate": "2022-01-05",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/186730/uu-no-1-tahun-2022",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-1-tahun-2022",
     "status": "berlaku",
+    "description": "UU HKPD mengatur PBB-P2 (Pasal 39-46), PBB-P3 (Pasal 47-52), BPHTB (Pasal 78-84), dan Pajak Daerah (Pasal 60). Menggantikan UU 28/2009 PDRD untuk sebagian ketentuan.",
+    "relevantArticles": "Pasal 39-52, 60, 78-84",
+    "relatedRegulations": [
+      "uu-28-2009"
+    ],
     "referencingEntries": [
       "bea-masuk-umum-mf",
       "bea-masuk-asean-atiga",

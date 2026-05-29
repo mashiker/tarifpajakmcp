@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "21",
     "bab": "VI",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2008-01-01",
         "summary": "Penyesuaian batas waktu"
+      }
+    ],
+    "text": "(1) WP yang tidak puas dengan hasil pemeriksaan dapat mengajukan keberatan kepada DJP.\n(2) Keberatan disampaikan secara tertulis dalam bahasa Indonesia paling lambat 3 bulan sejak tanggal surat ketetapan pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP dapat mengajukan keberatan jika tidak puas.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Keberatan tertulis dalam bahasa Indonesia, paling lambat 3 bulan.",
+        "status": "diubah"
       }
     ]
   }

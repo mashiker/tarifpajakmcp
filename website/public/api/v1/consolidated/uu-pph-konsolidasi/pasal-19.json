@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "19",
     "bab": "VI",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2009-01-01",
         "summary": "Perubahan perhitungan"
+      }
+    ],
+    "text": "(1) Pajak Penghasilan terutang bagi WP dalam negeri dihitung berdasarkan tarif Pasal 17 ayat (1) huruf a atau huruf b dikalikan dengan Penghasilan Kena Pajak.\n(2) Pajak Penghasilan terutang bagi WP luar negeri dihitung berdasarkan tarif Pasal 26 dikalikan dengan jumlah penghasilan bruto.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPh terutang WP dalam negeri = tarif × PKP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "PPh terutang WP luar negeri = tarif Pasal 26 × bruto.",
+        "status": "berlaku"
       }
     ]
   }

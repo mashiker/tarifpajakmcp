@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "5",
     "bab": "II",
@@ -37,6 +37,19 @@
           "(1)"
         ],
         "summary": "Perubahan ketentuan natura/kenikmatan menjadi objek pajak"
+      }
+    ],
+    "text": "(1) Objek pajak adalah penghasilan, yaitu setiap tambahan kemampuan ekonomis yang diterima atau diperoleh Wajib Pajak, baik yang berasal dari Indonesia maupun dari luar Indonesia, yang dapat dipakai untuk konsumsi atau untuk menambah kekayaan Wajib Pajak yang bersangkutan dengan nama dan dalam bentuk apapun.\n(2) Objek pajak mencakup juga imbalan berupa natura dan kenikmatan, kecuali yang diberikan oleh bukan Wajib Pajak atau yang diberikan di daerah tertentu.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Objek pajak: setiap tambahan kemampuan ekonomis yang diterima/diperoleh WP dari Indonesia dan luar Indonesia, dalam bentuk apapun, yang dipakai untuk konsumsi atau menambah kekayaan.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Termasuk imbalan natura dan kenikmatan, kecuali dari bukan WP atau di daerah tertentu.",
+        "status": "diubah"
       }
     ]
   }

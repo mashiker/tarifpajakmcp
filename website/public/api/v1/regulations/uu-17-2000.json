@@ -1,18 +1,23 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-17-2000",
     "number": "17",
     "year": 2000,
-    "title": "Undang-Undang Perubahan Kedua UU Pajak Penghasilan",
+    "title": "Undang-Undang Perubahan Kedua atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan",
+    "shortName": "UU PPh (Perubahan II)",
     "type": "UU",
+    "promulgationDate": "2000-12-22",
     "effectiveDate": "2001-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44063/uu-no-17-tahun-2000",
-    "status": "dicabut",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44033/uu-no-17-tahun-2000",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-17-tahun-2000",
+    "status": "diubah_sebagian",
+    "description": "Perubahan kedua UU PPh. Menurunkan tarif PPh 23 jasa dari 15% menjadi 2%, tarif PPh Badan flat 28%/30%, menambahkan lapisan tarif progresif baru. Mengatur PPh Final atas bunga deposito (Pasal 4 ayat 2).",
+    "relevantArticles": "Pasal 4 ayat (2), Pasal 17, Pasal 23",
     "relatedRegulations": [
-      "uu-10-1994",
+      "uu-7-1983-pph",
       "uu-36-2008"
     ],
     "referencingEntries": [

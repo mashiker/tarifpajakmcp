@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "13",
     "bab": "II",
@@ -44,6 +44,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan kredit PPN"
+      }
+    ],
+    "text": "(1) PPN Masukan yang dapat dikreditkan adalah PPN yang telah dibayar pada saat:\na. perolehan BKP;\nb. penerimaan JKP;\nc. impor BKP;\nd. perolehan BKP Tidak Berwujud dari luar DP;\ne. penerimaan JKP dari luar DP.\n(2) PPN Masukan tidak dapat dikreditkan jika:\na. Faktur Pajak tidak memenuhi ketentuan;\nb. tidak melaporkan SPT Masa PPN;\nc. perolehan BKP/JKP tidak berhubungan dengan kegiatan usaha.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN Masukan dapat dikreditkan dari: perolehan BKP, JKP, impor, BKP tidak berwujud dari luar DP, JKP dari luar DP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Tidak dapat dikreditkan jika: FP tidak sesuai, tidak lapor SPT Masa, tidak terkait usaha.",
+        "status": "diubah"
       }
     ]
   }

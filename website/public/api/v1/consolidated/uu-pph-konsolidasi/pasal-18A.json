@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "18A",
     "bab": "V",
@@ -23,6 +23,19 @@
         "changeType": "added",
         "effectiveDate": "2009-01-01",
         "summary": "Pasal baru tentang imbalan kerja"
+      }
+    ],
+    "text": "(1) Imbalan kerja yang dikecualikan sebagai objek pajak meliputi:\na. bantuan atau santunan yang bersifat natalitat;\nb. bantuan atau santunan yang diberikan kepada WP yang bersangkutan dalam rangka pengabdian atau pekerjaan, termasuk santunan dari dana pensiun; dan\nc. tunjangan Hari Raya atau tunjangan tahunan atau bulanan.\n(2) Besarnya imbalan kerja yang dikecualikan sebagaimana dimaksud pada ayat (1) ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Imbalan kerja yang bukan objek pajak: santunan natalitat, bantuan/santunan dalam rangka pengabdian, THR/tunjangan tahunan.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Besar imbalan yang dikecualikan ditetapkan PP.",
+        "status": "ditambah"
       }
     ]
   }

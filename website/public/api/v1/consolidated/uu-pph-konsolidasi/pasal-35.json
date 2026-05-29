@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "35",
     "bab": "X",
@@ -21,6 +21,14 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Dengan berlakunya UU ini, maka:\na. Undang-Undang Pajak Penghasilan 1983 (UU 7/1983);\nb. Perubahan Pertama (UU 10/1994);\nc. Perubahan Kedua (UU 17/2000);\nd. Perubahan Keempat (UU 36/2008);\ndinyatakan tidak berlaku.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "UU PPh lama dan perubahannya dinyatakan tidak berlaku.",
+        "status": "berlaku"
       }
     ]
   }

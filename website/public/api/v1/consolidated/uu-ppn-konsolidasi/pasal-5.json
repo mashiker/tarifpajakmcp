@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "5",
     "bab": "II",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan pengecualian"
+      }
+    ],
+    "text": "(1) Penyerahan BKP dan JKP yang tidak dikenakan PPN meliputi:\na. penyerahan BKP dan JKP kepada misi diplomatik dan konsuler;\nb. penyerahan BKP dan JKP yang dibatalkan;\nc. penyerahan BKP dan JKP yang dikecualikan oleh PP.\n(2) Penyerahan sebagaimana dimaksud pada ayat (1) dikecualikan dengan syarat dan ketentuan yang ditetapkan oleh PP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Tidak dikenakan PPN: penyerahan ke misi diplomatik, yang dibatalkan, yang dikecualikan PP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Dengan syarat dan ketentuan PP.",
+        "status": "berlaku"
       }
     ]
   }

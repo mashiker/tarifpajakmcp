@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "2",
     "bab": "II",
@@ -46,6 +46,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Penambahan PPN final atas penyerahan tertentu"
+      }
+    ],
+    "text": "(1) PPN dikenakan atas:\na. penyerahan BKP di dalam Daerah Pabean yang dilakukan oleh PKP;\nb. penyerahan JKP di dalam Daerah Pabean yang dilakukan oleh PKP;\nc. ekspor BKP Berwujud;\nd. ekspor BKP Tidak Berwujud;\ne. ekspor JKP.\n(2) Penyerahan BKP dan JKP sebagaimana dimaksud pada ayat (1) termasuk penyerahan BKP Tidak Berwujud dan JKP yang dilakukan melalui media elektronik (PMSE).",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN dikenakan atas 5 objek: penyerahan BKP, JKP di DP, ekspor BKP berwujud, BKP tidak berwujud, dan JKP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Termasuk BKP tidak berwujud dan JKP melalui media elektronik (PMSE).",
+        "status": "diubah"
       }
     ]
   }

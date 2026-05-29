@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "26",
     "bab": "VI",
@@ -39,6 +39,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan PPh 22 via PP 60/2023"
+      }
+    ],
+    "text": "(1) Atas penghasilan yang diterima atau diperoleh WP dari:\na. pembelian bahan-bahan untuk keperluan industri atau ekspor oleh badan pemerintah;\nb. pembelian bahan-bahan untuk keperluan industri atau ekspor oleh WP badan yang ditetapkan;\nc. penjualan hasil produksi dalam kegiatan usaha di bidang perminyakan, gas, dan geotermal;\nd. penjualan yang dilakukan di bursa;\ne. penjualan media domestik atau media luar negeri;\nf. penjualan kendaraan bermotor melalui distributer atau dealer;\ng. penjualan produsen kendaraan bermotor kepada distributor atau dealer;\nh. penjualan mobil oleh rental;\ni. pemindahan media teknologi informasi;\nj. penjualan alat tulis kantoran;\nk. penjualan makanan dan minuman restoran; atau\nl. penjualan barang dagangan yang ditetapkan oleh Dirjen Pajak,\ndipotong PPh oleh pihak yang wajib memotong.\n(2) Tarif PPh 22 sebagaimana dimaksud pada ayat (1) ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPh 22 dipotong atas penjualan/pembelian: bahan industri, hasil migas, bursa, media, kendaraan bermotor, alat tulis, restoran, dll.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Tarif PPh 22 ditetapkan dengan PP.",
+        "status": "diubah"
       }
     ]
   }

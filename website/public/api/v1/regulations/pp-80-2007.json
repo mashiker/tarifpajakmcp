@@ -1,16 +1,24 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pp-80-2007",
-    "number": "80/2007",
+    "number": "80",
     "year": 2007,
-    "title": "PP tentang Perubahan Bea Meterai",
+    "title": "PP tentang Perubahan atas PP No. 23 Tahun 2000 tentang Perubahan Besarnya Bea Meterai",
+    "shortName": "PP Bea Meterai Rp 6.000",
     "type": "PP",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/47779/pp-no-80-tahun-2007",
-    "status": "dicabut",
-    "effectiveDate": "2007-01-01",
+    "promulgationDate": "2007-12-17",
+    "effectiveDate": "2008-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44116/pp-no-80-tahun-2007",
+    "status": "dicabut_sebagian",
+    "description": "PP mengubah tarif bea meterai dari Rp 3.000 menjadi Rp 6.000 untuk dokumen >Rp 1.000.000. Digantikan seluruhnya oleh UU 10/2020 (bea meterai baru Rp 10.000).",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": [
+      "pp-23-2000",
+      "uu-10-2020-bea-meterai"
+    ],
     "referencingEntries": [
       "bea-meterai-pre2021"
     ]

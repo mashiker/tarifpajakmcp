@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "11",
     "bab": "II",
@@ -34,6 +34,19 @@
         "changeType": "amended",
         "effectiveDate": "2010-04-01",
         "summary": "Perubahan DPP impor"
+      }
+    ],
+    "text": "(1) DPP atas penyerahan BKP tertentu yang ditetapkan oleh PMK dapat menggunakan nilai lain.\n(2) DPP atas penyerahan JKP tertentu yang ditetapkan oleh PMK dapat menggunakan nilai lain.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DPP BKP tertentu dapat menggunakan nilai lain sesuai PMK.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "DPP JKP tertentu dapat menggunakan nilai lain sesuai PMK.",
+        "status": "berlaku"
       }
     ]
   }

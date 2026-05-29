@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "7",
     "bab": "II",
@@ -45,6 +45,24 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan threshold PKP menjadi Rp 4,8 miliar"
+      }
+    ],
+    "text": "(1) Pengusaha yang melakukan penyerahan BKP dan/atau JKP yang dikenakan PPN dan yang peredaran brutonya dalam 1 tahun pajak mencapai lebih dari Rp 4.800.000.000,00 (empat miliar delapan ratus juta rupiah) wajib dikukuhkan sebagai PKP.\n(2) Pengusaha yang peredaran brutonya belum melebihi Rp 4.800.000.000,00 dapat memilih untuk dikukuhkan sebagai PKP.\n(3) PKP wajib memungut, menyetor, dan melaporkan PPN yang terutang.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Wajib PKP jika peredaran bruto >Rp4,8 miliar/tahun.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Peredaran <Rp4,8 miliar dapat memilih menjadi PKP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(3)",
+        "text": "PKP wajib memungut, menyetor, dan melaporkan PPN.",
+        "status": "berlaku"
       }
     ]
   }

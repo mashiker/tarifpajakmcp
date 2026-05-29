@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "31B",
     "bab": "IX",
@@ -23,6 +23,19 @@
         "changeType": "added",
         "effectiveDate": "2009-01-01",
         "summary": "Pasal baru tentang constructive dividend"
+      }
+    ],
+    "text": "(1) Dalam hal WP badan menerima pinjaman dari pihak yang mempunyai hubungan istimewa dan pinjaman tersebut tidak mempunyai kemampuan untuk membayar kembali, pinjaman tersebut dianggap sebagai dividen (constructive dividend).\n(2) Ketentuan lebih lanjut mengenai constructive dividend diatur dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pinjaman dari pihak hubungan istimewa yang tidak mempunyai kemampuan bayar dianggap dividen (constructive dividend).",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Ketentuan lebih lanjut diatur PP.",
+        "status": "ditambah"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "16C",
     "bab": "II",
@@ -24,6 +24,19 @@
         "changeType": "added",
         "effectiveDate": "2022-01-01",
         "summary": "Pasal baru tentang PMSE"
+      }
+    ],
+    "text": "(1) DJP dapat melakukan pemeriksaan terhadap PKP untuk menguji kepatuhan.\n(2) Pemeriksaan meliputi pemeriksaan kebenaran penghitungan PPN.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat memeriksa PKP.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Termasuk kebenaran penghitungan PPN.",
+        "status": "ditambah"
       }
     ]
   }

@@ -1,0 +1,26 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-05-29T15:12:55.538Z",
+  "data": {
+    "id": "perpres-55-2013",
+    "number": "55",
+    "year": 2013,
+    "title": "Perpres tentang Ratifikasi ASEAN Agreement on Trade in Goods (ATIGA)",
+    "shortName": "Perpres ATIGA",
+    "type": "Perpres",
+    "promulgationDate": "2013-08-05",
+    "effectiveDate": "2013-08-05",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44947/perpres-no-55-tahun-2013",
+    "status": "berlaku",
+    "description": "Perpres meratifikasi ATIGA — perjanjian perdagangan bebas ASEAN. Mengatur preferensi tarif bea masuk untuk barang ASEAN (0% untuk most products).",
+    "relevantArticles": "Lampiran",
+    "relatedRegulations": [
+      "uu-10-1995"
+    ],
+    "referencingEntries": [
+      "bea-masuk-asean-atiga",
+      "pph-umkm-05pct-2023"
+    ]
+  }
+}

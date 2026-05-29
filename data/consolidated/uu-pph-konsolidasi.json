@@ -14,31 +14,71 @@
   },
   "amendmentChain": [
     {
-      "regulation": { "type": "UU", "number": "7", "year": 1983, "title": "Pajak Penghasilan", "shortTitle": "UU PPh 1983" },
+      "regulation": {
+        "type": "UU",
+        "number": "7",
+        "year": 1983,
+        "title": "Pajak Penghasilan",
+        "shortTitle": "UU PPh 1983"
+      },
       "order": 0,
       "description": "UU Dasar Pajak Penghasilan",
       "effectiveDate": "1984-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/44028/uu-no-7-tahun-1983",
-      "keyChanges": ["Tarif progresif 10%-35%", "Tarif PPh Badan 20%", "PTKP perorangan", "Kredit pajak luar negeri", "Kerugian kompensasi 5 tahun"]
+      "keyChanges": [
+        "Tarif progresif 10%-35%",
+        "Tarif PPh Badan 20%",
+        "PTKP perorangan",
+        "Kredit pajak luar negeri",
+        "Kerugian kompensasi 5 tahun"
+      ]
     },
     {
-      "regulation": { "type": "UU", "number": "10", "year": 1994, "title": "Perubahan Pertama UU PPh", "shortTitle": "UU 10/1994" },
+      "regulation": {
+        "type": "UU",
+        "number": "10",
+        "year": 1994,
+        "title": "Perubahan Pertama UU PPh",
+        "shortTitle": "UU 10/1994"
+      },
       "order": 1,
       "description": "Perubahan Pertama atas UU 7/1983 PPh",
       "effectiveDate": "1995-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/44043/uu-no-10-tahun-1994",
-      "keyChanges": ["Penyesuaian tarif dan PTKP", "Perubahan ketentuan penyusutan", "Penambahan norma penghitungan"]
+      "keyChanges": [
+        "Penyesuaian tarif dan PTKP",
+        "Perubahan ketentuan penyusutan",
+        "Penambahan norma penghitungan"
+      ]
     },
     {
-      "regulation": { "type": "UU", "number": "17", "year": 2000, "title": "Perubahan Kedua UU PPh", "shortTitle": "UU 17/2000" },
+      "regulation": {
+        "type": "UU",
+        "number": "17",
+        "year": 2000,
+        "title": "Perubahan Kedua UU PPh",
+        "shortTitle": "UU 17/2000"
+      },
       "order": 2,
       "description": "Perubahan Kedua atas UU 7/1983 PPh",
       "effectiveDate": "2001-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/44063/uu-no-17-tahun-2000",
-      "keyChanges": ["Tarif progresif 5%-35% (5 lapis)", "PTKP dinaikkan", "Perubahan PPh Final", "Ketentuan transfer pricing", "Penambahan Pasal 18A-18C"]
+      "keyChanges": [
+        "Tarif progresif 5%-35% (5 lapis)",
+        "PTKP dinaikkan",
+        "Perubahan PPh Final",
+        "Ketentuan transfer pricing",
+        "Penambahan Pasal 18A-18C"
+      ]
     },
     {
-      "regulation": { "type": "UU", "number": "36", "year": 2008, "title": "Perubahan Keempat UU PPh", "shortTitle": "UU 36/2008" },
+      "regulation": {
+        "type": "UU",
+        "number": "36",
+        "year": 2008,
+        "title": "Perubahan Keempat UU PPh",
+        "shortTitle": "UU 36/2008"
+      },
       "order": 3,
       "description": "Perubahan Keempat atas UU 7/1983 PPh",
       "effectiveDate": "2009-01-01",
@@ -53,7 +93,13 @@
       ]
     },
     {
-      "regulation": { "type": "UU", "number": "7", "year": 2021, "title": "Harmonisasi Peraturan Perpajakan", "shortTitle": "UU HPP" },
+      "regulation": {
+        "type": "UU",
+        "number": "7",
+        "year": 2021,
+        "title": "Harmonisasi Peraturan Perpajakan",
+        "shortTitle": "UU HPP"
+      },
       "order": 4,
       "description": "Perubahan Kelima atas UU 7/1983 PPh melalui UU HPP",
       "effectiveDate": "2022-01-01",
@@ -74,41 +120,205 @@
     }
   ],
   "structure": [
-    { "number": "I", "title": "Subjek Pajak", "bagians": [
-      { "number": "1", "title": "Subjek Pajak dan Bukan Subjek Pajak", "pasals": ["1", "2", "2A", "2B", "3"] },
-      { "number": "2", "title": "Wajib Pajak", "pasals": ["4"] }
-    ]},
-    { "number": "II", "title": "Objek Pajak", "bagians": [
-      { "number": "1", "title": "Objek Pajak dan Bukan Objek Pajak", "pasals": ["5", "6", "6A", "7"] },
-      { "number": "2", "title": "Penghasilan", "pasals": ["8", "9"] }
-    ]},
-    { "number": "III", "title": "Penghasilan Kena Pajak", "bagians": [
-      { "number": "1", "title": "Penghasilan Kena Pajak dan Tarif", "pasals": ["10", "11"] },
-      { "number": "2", "title": "PTKP", "pasals": ["12"] },
-      { "number": "3", "title": "Kompensasi Kerugian", "pasals": ["13"] }
-    ]},
-    { "number": "IV", "title": "Penghasilan dari Usaha", "bagians": [
-      { "number": "1", "title": "Penyusutan dan Amortisasi", "pasals": ["14", "15"] },
-      { "number": "2", "title": "Norma Penghitungan", "pasals": ["16", "17"] }
-    ]},
-    { "number": "V", "title": "Penghasilan dari Pekerjaan", "bagians": [
-      { "number": "1", "title": "Penghasilan dari Pekerjaan", "pasals": ["18"] },
-      { "number": "2", "title": "Imbalan Kerja", "pasals": ["18A"] }
-    ]},
-    { "number": "VI", "title": "Pajak Penghasilan yang Terutang", "bagians": [
-      { "number": "1", "title": "PPh terutang dan kredit pajak", "pasals": ["19", "20", "21"] },
-      { "number": "2", "title": "Pemotongan PPh", "pasals": ["22", "23", "24", "25", "26"] }
-    ]},
-    { "number": "VII", "title": "Penghasilan dari Usaha Berbasis Kepercayaan", "bagians": [
-      { "number": "1", "title": "Nabiyyah dan Trust", "pasals": ["27"] }
-    ]},
-    { "number": "VIII", "title": "Fasilitas Perpajakan", "bagians": [
-      { "number": "1", "title": "Penghasilan Tidak Kena Pajak", "pasals": ["28", "29"] }
-    ]},
-    { "number": "IX", "title": "Ketentuan Khusus", "bagians": [
-      { "number": "1", "title": "Transfer Pricing dan Thin Cap", "pasals": ["30", "31", "31A", "31B"] }
-    ]},
-    { "number": "X", "title": "Penutup", "pasals": ["32", "33", "34", "35", "36", "37"] }
+    {
+      "number": "I",
+      "title": "Subjek Pajak",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Subjek Pajak dan Bukan Subjek Pajak",
+          "pasals": [
+            "1",
+            "2",
+            "2A",
+            "2B",
+            "3"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Wajib Pajak",
+          "pasals": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "II",
+      "title": "Objek Pajak",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Objek Pajak dan Bukan Objek Pajak",
+          "pasals": [
+            "5",
+            "6",
+            "6A",
+            "7"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Penghasilan",
+          "pasals": [
+            "8",
+            "9"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "III",
+      "title": "Penghasilan Kena Pajak",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Penghasilan Kena Pajak dan Tarif",
+          "pasals": [
+            "10",
+            "11"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "PTKP",
+          "pasals": [
+            "12"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Kompensasi Kerugian",
+          "pasals": [
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "IV",
+      "title": "Penghasilan dari Usaha",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Penyusutan dan Amortisasi",
+          "pasals": [
+            "14",
+            "15"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Norma Penghitungan",
+          "pasals": [
+            "16",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "V",
+      "title": "Penghasilan dari Pekerjaan",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Penghasilan dari Pekerjaan",
+          "pasals": [
+            "18"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Imbalan Kerja",
+          "pasals": [
+            "18A"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "VI",
+      "title": "Pajak Penghasilan yang Terutang",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "PPh terutang dan kredit pajak",
+          "pasals": [
+            "19",
+            "20",
+            "21"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Pemotongan PPh",
+          "pasals": [
+            "22",
+            "23",
+            "24",
+            "25",
+            "26"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "VII",
+      "title": "Penghasilan dari Usaha Berbasis Kepercayaan",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Nabiyyah dan Trust",
+          "pasals": [
+            "27"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "VIII",
+      "title": "Fasilitas Perpajakan",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Penghasilan Tidak Kena Pajak",
+          "pasals": [
+            "28",
+            "29"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "IX",
+      "title": "Ketentuan Khusus",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Transfer Pricing dan Thin Cap",
+          "pasals": [
+            "30",
+            "31",
+            "31A",
+            "31B"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "X",
+      "title": "Penutup",
+      "pasals": [
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37"
+      ]
+    }
   ],
   "pasals": [
     {
@@ -117,12 +327,72 @@
       "title": "Subjek Pajak",
       "status": "diubah",
       "description": "Subjek pajak adalah orang pribadi dan badan. Termasuk bentuk usaha tetap (BUT). WP OP berdomisili di Indonesia dan WP OP yang berada di Indonesia lebih dari 183 hari.",
-      "keywords": ["subjek pajak", "OP", "badan", "BUT", "183 hari"],
+      "keywords": [
+        "subjek pajak",
+        "OP",
+        "badan",
+        "BUT",
+        "183 hari"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang subjek pajak" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penjelasan 183 hari dan BUT" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan definisi BUT" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan definisi subjek pajak" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli tentang subjek pajak"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Penjelasan 183 hari dan BUT"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan definisi BUT"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan definisi subjek pajak"
+        }
+      ],
+      "text": "(1) Subjek pajak adalah orang pribadi dan badan, termasuk bentuk usaha tetat (BUT).\n(2) Yang termasuk subjek pajak orang pribadi adalah:\na. orang pribadi yang bertempat tinggal di Indonesia;\nb. orang pribadi yang berada di Indonesia lebih dari 183 (seratus delapan puluh tiga) hari dalam jangka waktu 12 (dua belas) bulan.\n(3) Yang termasuk subjek pajak badan adalah badan yang didirikan atau berkedudukan di Indonesia.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Subjek pajak adalah orang pribadi dan badan, termasuk bentuk usaha tetat (BUT).",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Yang termasuk subjek pajak orang pribadi adalah:\na. orang pribadi yang bertempat tinggal di Indonesia;\nb. orang pribadi yang berada di Indonesia lebih dari 183 (seratus delapan puluh tiga) hari dalam jangka waktu 12 (dua belas) bulan.",
+          "status": "diubah"
+        },
+        {
+          "number": "(3)",
+          "text": "Yang termasuk subjek pajak badan adalah badan yang didirikan atau berkedudukan di Indonesia.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -131,10 +401,45 @@
       "title": "Bukan Subjek Pajak",
       "status": "diubah",
       "description": "Penghasilan yang diterima oleh badan tertentu yang bukan subjek pajak (kedutaan, organisasi internasional).",
-      "keywords": ["bukan subjek pajak", "kedutaan", "organisasi internasional"],
+      "keywords": [
+        "bukan subjek pajak",
+        "kedutaan",
+        "organisasi internasional"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan ketentuan bukan SP" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan ketentuan bukan SP"
+        }
+      ],
+      "text": "(1) Bukan subjek pajak meliputi:\na. badan perwakilan diplomatik yang bertindak untuk kepentingan negara yang diwakilinya;\nb. pejabat-pejabat diplomatik dari suatu negara asing yang bekerja pada badan perwakilan diplomatik di Indonesia yang bukan warga negara Indonesia dan tidak memperoleh penghasilan lain di luar jabatannya di Indonesia;\nc. pejabat-pejabat konsulat yang bekerja pada konsulat suatu negara asing di Indonesia yang bukan warga negara Indonesia dan tidak memperoleh penghasilan lain di luar jabatannya di Indonesia;\nd. pegawai-pegawai teknis yang diangkat oleh Pemerintah negara asing pada badan perwakilan diplomatik di Indonesia yang bukan warga negara Indonesia dan tidak memperoleh penghasilan lain di luar jabatannya di Indonesia;\ne. anggota delegasi militer dari suatu negara asing yang bertugas di Indonesia;\nf. pegawai negeri asing yang bekerja pada badan perwakilan negara asing di Indonesia;\ng. anggota staf teknis yang diangkat oleh Pemerintah suatu negara asing dan bertugas pada badan perwakilan diplomatik di Indonesia.\n(2) Pengecualian sebagaimana dimaksud pada ayat (1) berlaku juga untuk orang pribadi yang bertindak untuk dan atas nama:\na. Pemerintah suatu negara asing yang memperoleh penghasilan dari kegiatan usaha di Indonesia; atau\nb. badan atau organisasi internasional yang ditetapkan dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Bukan subjek pajak meliputi badan perwakilan diplomatik, pejabat diplomatik, pejabat konsulat, pegawai teknis, delegasi militer, pegawai negeri asing, dan staf teknis dari negara asing yang bukan WNI dan tidak memperoleh penghasilan lain di luar jabatannya di Indonesia.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Pengecualian berlaku juga untuk orang pribadi yang bertindak untuk dan atas nama Pemerintah negara asing atau badan/organisasi internasional yang ditetapkan dengan Peraturan Pemerintah.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -143,9 +448,34 @@
       "title": "Penghasilan BUT",
       "status": "ditambah",
       "description": "Ketentuan khusus tentang penghasilan yang diterima atau diperoleh BUT.",
-      "keywords": ["BUT", "penghasilan"],
+      "keywords": [
+        "BUT",
+        "penghasilan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang penghasilan BUT" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "added",
+          "effectiveDate": "2009-01-01",
+          "summary": "Pasal baru tentang penghasilan BUT"
+        }
+      ],
+      "text": "(1) Bentuk Usaha Tetat (BUT) adalah bentuk usaha yang dipergunakan oleh orang pribadi yang tidak bertempat tinggal di Indonesia atau badan yang tidak didirikan dan tidak berkedudukan di Indonesia, untuk menjalankan usaha atau kegiatan di Indonesia.\n(2) Yang termasuk Bentuk Usaha Tetat meliputi:\na. suatu tempat kedudukan manajemen;\nb. suatu cabang perusahaan;\nc. suatu kantor perwakilan;\nd. suatu gedung kantor;\ne. suatu pabrik;\nf. suatu bengkel;\ng. suatu gudang;\nh. suatu ruang untuk promosi dan penjualan;\ni. suatu pertambangan dan penggalian;\nj. perusahaan pertanian, perkebunan, perikanan, atau peternakan;\nk. proyek konstruksi, pemasangan, atau perakitan;\nl. pemberian jasa yang dilakukan lebih dari 183 hari dalam 12 bulan;\nm. agen atau perwakilan yang bertindak untuk dan atas nama OP/badan bukan penduduk Indonesia.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Definisi BUT: bentuk usaha yang dipergunakan oleh OP tidak bertempat tinggal di Indonesia atau badan yang tidak didirikan di Indonesia.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Daftar 13 jenis BUT: tempat manajemen, cabang, kantor perwakilan, gedung kantor, pabrik, bengkel, gudang, ruang promosi, pertambangan, perusahaan agraris, proyek konstruksi, jasa >183 hari, agen perwakilan.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -154,9 +484,35 @@
       "title": "Penghasilan WP OP di Luar Negeri",
       "status": "ditambah",
       "description": "Ketentuan tentang penghitungan penghasilan WP OP yang menerima penghasilan dari luar negeri.",
-      "keywords": ["luar negeri", "WP OP", "foreign income"],
+      "keywords": [
+        "luar negeri",
+        "WP OP",
+        "foreign income"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang penghasilan luar negeri" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "added",
+          "effectiveDate": "2009-01-01",
+          "summary": "Pasal baru tentang penghasilan luar negeri"
+        }
+      ],
+      "text": "(1) Penghasilan yang diterima atau diperoleh Wajib Pajak orang pribadi yang berdomisili di Indonesia dari luar Indonesia turut menjadi objek pajak di Indonesia.\n(2) Atas penghasilan sebagaimana dimaksud pada ayat (1) diberikan kredit pajak sebesar pajak penghasilan yang telah dipotong atau dibayar di luar Indonesia.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penghasilan WP OP dari luar Indonesia turut menjadi objek pajak (worldwide income).",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Diberikan kredit pajak sebesar pajak yang telah dipotong/dibayar di luar Indonesia.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -165,9 +521,38 @@
       "title": "Kewajiban Pajak",
       "status": "berlaku",
       "description": "Ketentuan tentang kewajiban pajak bagi subjek pajak.",
-      "keywords": ["kewajiban pajak"],
+      "keywords": [
+        "kewajiban pajak"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Subjek pajak yang menerima atau memperoleh penghasilan merupakan Wajib Pajak.\n(2) Penghasilan yang diterima atau diperoleh Wajib Pajak orang pribadi yang berdomisili di Indonesia dan Wajib Pajak badan yang didirikan atau berkedudukan di Indonesia merupakan objek pajak.\n(3) Penghasilan yang diterima atau diperoleh Wajib Pajak orang pribadi yang tidak berdomisili di Indonesia dan Wajib Pajak badan yang tidak didirikan atau berkedudukan di Indonesia merupakan objek pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Subjek pajak yang menerima/memperoleh penghasilan merupakan Wajib Pajak.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Penghasilan WP OP berdomisili di Indonesia dan WP badan yang didirikan/berkedudukan di Indonesia merupakan objek pajak.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(3)",
+          "text": "Penghasilan WP OP tidak berdomisili dan WP badan tidak didirikan di Indonesia juga objek pajak.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -177,14 +562,104 @@
       "title": "Wajib Pajak dan PPh Final",
       "status": "diubah",
       "description": "WP yang menerima/memperoleh penghasilan kena pajak. Ayat (3) mengatur PPh Final atas penghasilan tertentu (deposito, bunga obligasi, penghargaan, undian).",
-      "keywords": ["WP", "PPh Final", "deposito", "obligasi", "undian"],
-      "relatedTaxRates": ["pph-final-bunga-deposito", "pph-final-bunga-pre2009"],
+      "keywords": [
+        "WP",
+        "PPh Final",
+        "deposito",
+        "obligasi",
+        "undian"
+      ],
+      "relatedTaxRates": [
+        "pph-final-bunga-deposito",
+        "pph-final-bunga-pre2009"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang WP dan PPh Final" },
-        { "source": { "type": "UU", "number": "10", "year": 1994 }, "changeType": "partially_amended", "effectiveDate": "1995-01-01", "changedAyats": ["(3)"], "summary": "Perubahan PPh Final" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "changedAyats": ["(3)"], "summary": "Penambahan jenis PPh Final" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "changedAyats": ["(3)"], "summary": "Perubahan PPh Final bunga deposito 20%" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "changedAyats": ["(3)", "(4)"], "summary": "Penambahan PPh Final VDP dan perubahan ketentuan PPh Final" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli tentang WP dan PPh Final"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "10",
+            "year": 1994
+          },
+          "changeType": "partially_amended",
+          "effectiveDate": "1995-01-01",
+          "changedAyats": [
+            "(3)"
+          ],
+          "summary": "Perubahan PPh Final"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "changedAyats": [
+            "(3)"
+          ],
+          "summary": "Penambahan jenis PPh Final"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "changedAyats": [
+            "(3)"
+          ],
+          "summary": "Perubahan PPh Final bunga deposito 20%"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "changedAyats": [
+            "(3)",
+            "(4)"
+          ],
+          "summary": "Penambahan PPh Final VDP dan perubahan ketentuan PPh Final"
+        }
+      ],
+      "text": "(1) Wajib Pajak yang menerima atau memperoleh penghasilan kena pajak wajib mendaftarkan diri pada kantor Direktorat Jenderal Pajak.\n(2) Wajib Pajak badan yang berkedudukan di Indonesia dan Wajib Pajak orang pribadi yang berdomisili di Indonesia yang menerima penghasilan dari luar Indonesia wajib mendaftarkan diri.\n(3) Pajak Penghasilan bersifat final dikenakan atas:\na. bunga deposito, tabungan lainnya, bunga obligasi, dan bunga diskonto;\nb. hadiah undian;\nc. penghasilan dari transaksi saham dan sekuritas lainnya yang diperdagangkan di bursa;\nd. penghasilan dari pengalihan harta berupa tanah dan/atau bangunan;\ne. penghasilan dari pengalihan saham atau perusahaan peserta Tax Amnesty;\nf. penghasilan tertentu bidang perminyakan, gas, dan geotermal;\ng. penghasilan dari usaha WP yang dikukuhkan sebagai PKP; dan\nh. penghasilan dari penjualan hasil tambang mineral dan batubara.\n(4) Pajak Penghasilan final sebagaimana dimaksud pada ayat (3) dipotong dan disetor oleh pihak yang wajib memotong.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Kewajiban mendaftar diri pada DJP bagi WP yang menerima penghasilan kena pajak.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Kewajiban mendaftar bagi WP badan dan WP OP yang menerima penghasilan dari luar Indonesia.",
+          "status": "diubah"
+        },
+        {
+          "number": "(3)",
+          "text": "PPh Final dikenakan atas: bunga deposito/obligasi, hadiah undian, saham di bursa, pengalihan tanah/bangunan, pengalihan saham Tax Amnesty, migas/geotermal, usaha PKP, dan tambang mineral/batubara.",
+          "status": "diubah"
+        },
+        {
+          "number": "(4)",
+          "text": "PPh Final dipotong dan disetor oleh pihak yang wajib memotong.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -193,10 +668,49 @@
       "title": "Objek Pajak",
       "status": "diubah",
       "description": "Objek pajak adalah penghasilan yaitu setiap tambahan kemampuan ekonomis yang diterima atau diperoleh WP. Termasuk natura/kenikmatan.",
-      "keywords": ["objek pajak", "penghasilan", "natura", "kenikmatan"],
+      "keywords": [
+        "objek pajak",
+        "penghasilan",
+        "natura",
+        "kenikmatan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "changedAyats": ["(1)"], "summary": "Perubahan ketentuan natura/kenikmatan menjadi objek pajak" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "changedAyats": [
+            "(1)"
+          ],
+          "summary": "Perubahan ketentuan natura/kenikmatan menjadi objek pajak"
+        }
+      ],
+      "text": "(1) Objek pajak adalah penghasilan, yaitu setiap tambahan kemampuan ekonomis yang diterima atau diperoleh Wajib Pajak, baik yang berasal dari Indonesia maupun dari luar Indonesia, yang dapat dipakai untuk konsumsi atau untuk menambah kekayaan Wajib Pajak yang bersangkutan dengan nama dan dalam bentuk apapun.\n(2) Objek pajak mencakup juga imbalan berupa natura dan kenikmatan, kecuali yang diberikan oleh bukan Wajib Pajak atau yang diberikan di daerah tertentu.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Objek pajak: setiap tambahan kemampuan ekonomis yang diterima/diperoleh WP dari Indonesia dan luar Indonesia, dalam bentuk apapun, yang dipakai untuk konsumsi atau menambah kekayaan.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Termasuk imbalan natura dan kenikmatan, kecuali dari bukan WP atau di daerah tertentu.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -205,12 +719,67 @@
       "title": "Bukan Objek Pajak",
       "status": "diubah",
       "description": "Penghasilan yang bukan objek pajak: warisan, hibah, bantuan/sumbangan, pensiun, dll.",
-      "keywords": ["bukan objek pajak", "warisan", "hibah", "pensiun", "sumbangan"],
+      "keywords": [
+        "bukan objek pajak",
+        "warisan",
+        "hibah",
+        "pensiun",
+        "sumbangan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan pengecualian" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Penambahan bukan objek pajak" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan bukan objek pajak" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Penambahan pengecualian"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Penambahan bukan objek pajak"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan bukan objek pajak"
+        }
+      ],
+      "text": "(1) Bukan objek pajak meliputi:\na. bantuan atau sumbangan, termasuk zakat yang diterima oleh badan amil zakat atau yang diterima oleh penerima zakat yang berhak atau sumbangan keagamaan yang sifatnya wajib bagi pemeluk agama yang diakui di Indonesia yang diterima oleh lembaga keagamaan yang dikelola oleh masyarakat;\nb. harta termasuk setoran yang diterima oleh badan sebagaimana dimaksud dalam Pasal 2 ayat (1) huruf b sebagai penyertaan modal;\nc. dividen atau bagian laba yang diterima atau diperoleh persekutuan, badan, dan yayasan termasuk yang diberikan bentuk usaha tetap;\nd. bunga obligasi yang diterima atau diperoleh WP badan sebagaimana dimaksud dalam Pasal 2 ayat (1) huruf b;\ne. iuran yang diterima atau diperoleh dana pensiun yang pendiriannya telah disahkan oleh Menteri Keuangan, baik yang dibayar oleh pemberi kerja maupun pegawai;\nf. sumbangan suatu badan atau lembaga yang dibentuk untuk tujuan pendidikan dan/atau pengembangan pengetahuan, dan/atau teknologi, atau budaya, yang dibentuk dan disahkan oleh pemerintah;\ng. penghasilan dari usaha perikanan yang tidak menggunakan kapal bermesin atau menggunakan kapal bermesin berukuran tidak lebih dari 7 (tujuh) GT;\nh. penghasilan yang diterima atau diperoleh WP OP yang berdomisili di Indonesia dan bekerja di luar Indonesia yang sudah dipotong PPh di luar Indonesia, dalam hal terdapat perjanjian pajak dengan negara sumber penghasilan;\ni. pembagian surplus dana pensiun sebagaimana dimaksud dalam Undang-Undang tentang Dana Pensiun;\nj. warisan;\nk. penghasilan yang diterima atau diperoleh WP OP berupa tunjangan hari raya atau tunjangan yang sifatnya tahunan atau bulanan yang diberikan oleh pemerintah daerah;\nl. bantuan, santunan, atau sumbangan yang diterima oleh WP OP sepanjang tidak ada hubungannya dengan usaha atau pekerjaan, kegiatan atau kepemilikan WP yang memberikan;\nm. penghasilan dari penjualan saham di bursa yang dikenakan pajak final.\n(2) Dalam hal WP badan menerima atau memperoleh penghasilan yang bukan objek pajak sebagaimana dimaksud pada ayat (1), penghasilan tersebut merupakan objek pajak dari WP badan yang menerima atau memperoleh penghasilan tersebut.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Bukan objek pajak: zakat/sumbangan keagamaan, penyertaan modal, dividen, bunga obligasi WP tertentu, iuran dana pensiun, sumbangan pendidikan/teknologi/budaya, usaha perikanan kecil, warisan, THR dari pemerintah, bantuan tanpa hubungan usaha, saham yang dikenakan pajak final.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Penghasilan bukan objek pajak yang diterima WP badan tetap merupakan objek pajak dari WP badan penerima.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -219,9 +788,35 @@
       "title": "Penilaian Pengalihan Harta",
       "status": "ditambah",
       "description": "Ketentuan penilaian pengalihan harta dalam rangka pengungkapan sukarela.",
-      "keywords": ["pengalihan harta", "VDP", "penilaian"],
+      "keywords": [
+        "pengalihan harta",
+        "VDP",
+        "penilaian"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang pengalihan harta VDP" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "added",
+          "effectiveDate": "2022-01-01",
+          "summary": "Pasal baru tentang pengalihan harta VDP"
+        }
+      ],
+      "text": "(1) Penilaian pengalihan harta sebagaimana dimaksud dalam Pasal 4 ayat (3) huruf d dan huruf e dilakukan berdasarkan nilai pasar atau nilai yang ditetapkan oleh pemerintah.\n(2) Penilaian pengalihan harta berupa saham yang tidak diperdagangkan di bursa efek dilakukan berdasarkan nilai wajar.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penilaian pengalihan harta (tanah/bangunan, saham) berdasarkan nilai pasar atau nilai yang ditetapkan pemerintah.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Penilaian saham tidak di bursa berdasarkan nilai wajar.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -230,9 +825,34 @@
       "title": "Penilaian Penggantian",
       "status": "berlaku",
       "description": "Ketentuan penilaian penggantian untuk tujuan perpajakan.",
-      "keywords": ["penilaian", "penggantian"],
+      "keywords": [
+        "penilaian",
+        "penggantian"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Penghasilan dari penggantian dari asuransi, karena tidak dikenakan PPh, bukan merupakan objek pajak.\n(2) Penggantian dari pemberi kerja atau badan lain sepanjang tidak melebihi jumlah yang ditetapkan oleh Pemerintah bukan merupakan objek pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penggantian asuransi bukan objek pajak.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Penggantian dari pemberi kerja sepanjang tidak melebihi batas pemerintah bukan objek pajak.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -242,10 +862,50 @@
       "title": "Penghasilan Neto",
       "status": "diubah",
       "description": "Penghasilan neto = penghasilan bruto dikurangi biaya untuk mendapatkan, menagih, dan memelihara penghasilan.",
-      "keywords": ["penghasilan neto", "biaya", "bruto"],
+      "keywords": [
+        "penghasilan neto",
+        "biaya",
+        "bruto"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan ketentuan penghasilan neto" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan ketentuan penghasilan neto"
+        }
+      ],
+      "text": "(1) Penghasilan neto adalah penghasilan bruto dikurangi biaya untuk mendapatkan, menagih, dan memelihara penghasilan.\n(2) Penghasilan neto untuk WP yang melakukan pekerjaan bebas dihitung dengan menggunakan norma penghitungan penghasilan neto sebagaimana dimaksud dalam Pasal 17.\n(3) Penghasilan neto untuk WP yang melakukan usaha yang telah dikukuhkan sebagai Pengusaha Kena Pajak dihitung berdasarkan pembukuan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penghasilan neto = bruto dikurangi biaya mendapatkan, menagih, dan memelihara penghasilan.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "WP pekerjaan bebas menggunakan norma penghitungan penghasilan neto.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(3)",
+          "text": "WP usaha yang dikukuhkan PKP menghitung neto berdasarkan pembukuan.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -255,11 +915,55 @@
       "title": "Penghasilan dari Penjualan Harta",
       "status": "diubah",
       "description": "Ketentuan penghitungan penghasilan dari pengalihan harta termasuk saham.",
-      "keywords": ["pengalihan", "saham", "hart"],
+      "keywords": [
+        "pengalihan",
+        "saham",
+        "hart"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Penambahan ketentuan saham" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan pengalihan harta" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Penambahan ketentuan saham"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan ketentuan pengalihan harta"
+        }
+      ],
+      "text": "(1) Penghasilan dari penjualan harta yang tidak termasuk penghasilan sebagaimana dimaksud dalam Pasal 4 ayat (3) huruf c dan huruf d dihitung berdasarkan selisih lebih antara jumlah penghasilan karena penjualan harta dengan harga perolehan harta yang dijual.\n(2) Dalam hal harga perolehan harta tidak dapat dibuktikan, penghitungan penghasilan dilakukan berdasarkan norma yang ditetapkan oleh Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penghasilan dari penjualan harta = selisih lebih antara jumlah penghasilan dan harga perolehan.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Jika harga perolehan tidak bisa dibuktikan, digunakan norma pemerintah.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -269,13 +973,77 @@
       "title": "Tarif PPh Orang Pribadi (Progresif)",
       "status": "diubah",
       "description": "Tarif PPh OP progresif 4 lapis: 5%, 15%, 25%, 35% (pasca HPP). Sebelumnya 5 lapis 5%-35%.",
-      "keywords": ["tarif", "progresif", "OP", "5%", "15%", "25%", "35%"],
-      "relatedTaxRates": ["pph-21-progressive-annual-2024"],
+      "keywords": [
+        "tarif",
+        "progresif",
+        "OP",
+        "5%",
+        "15%",
+        "25%",
+        "35%"
+      ],
+      "relatedTaxRates": [
+        "pph-21-progressive-annual-2024"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Tarif progresif 10%-35% (4 lapis)" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Tarif progresif 5%-35% (5 lapis)" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Tarif progresif 5%-30% (7 lapis)" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Tarif progresif 5%-35% (4 lapis) — lapis baru PKP > Rp 5 miliar 35%" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Tarif progresif 10%-35% (4 lapis)"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Tarif progresif 5%-35% (5 lapis)"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Tarif progresif 5%-30% (7 lapis)"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Tarif progresif 5%-35% (4 lapis) — lapis baru PKP > Rp 5 miliar 35%"
+        }
+      ],
+      "text": "(1) Tarif Pajak Penghasilan bagi Wajib Pajak orang pribadi dalam negeri adalah sebagai berikut:\nLapisan Penghasilan Kena Pajak                               | Tarif\n Sampai dengan Rp 60.000.000                                 | 5%\n Di atas Rp 60.000.000 s.d. Rp 250.000.000                 | 15%\n Di atas Rp 250.000.000 s.d. Rp 500.000.000                | 25%\n Di atas Rp 500.000.000 s.d. Rp 5.000.000.000              | 30%\n Di atas Rp 5.000.000.000                                    | 35%\n(2) Tarif sebagaimana dimaksud pada ayat (1) berlaku juga untuk penghasilan yang diterima atau diperoleh BUT.\n(3) Tarif Pajak Penghasilan sebagaimana dimaksud pada ayat (1) bagi Wajib Pajak orang pribadi yang berdomisili di Indonesia yang menerima penghasilan dari luar Indonesia yang bersumber dari negara yang mempunyai perjanjian pajak dengan Indonesia, dihitung berdasarkan lapisan tarif sebagaimana dimaksud pada ayat (1) yang dikalikan dengan perbandingan antara penghasilan netto di Indonesia dengan penghasilan netto total.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Tarif PPh OP progresif 5 lapis: 5% (≤60jt), 15% (60-250jt), 25% (250-500jt), 30% (500jt-5M), 35% (>5M).",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Tarif ayat (1) berlaku juga untuk BUT.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(3)",
+          "text": "Tarif untuk WP OP yang menerima penghasilan dari negara perjanjian pajak dihitung proporsional.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -285,12 +1053,65 @@
       "title": "Tarif PPh Badan",
       "status": "diubah",
       "description": "Tarif PPh Badan 22% (pasca HPP), go-public 19%. Sebelumnya 20% (UU 36/2008), sebelum itu 28%.",
-      "keywords": ["tarif", "badan", "22%", "go-public", "19%"],
-      "relatedTaxRates": ["pph-badan-2022-plus"],
+      "keywords": [
+        "tarif",
+        "badan",
+        "22%",
+        "go-public",
+        "19%"
+      ],
+      "relatedTaxRates": [
+        "pph-badan-2022-plus"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Tarif PPh Badan 20% flat" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Tarif PPh Badan 28% (2009) dan 25% (2010+), go-public 5% lebih rendah" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Tarif PPh Badan 22%, go-public 19%, turun bertahap" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Tarif PPh Badan 20% flat"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Tarif PPh Badan 28% (2009) dan 25% (2010+), go-public 5% lebih rendah"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Tarif PPh Badan 22%, go-public 19%, turun bertahap"
+        }
+      ],
+      "text": "(1) Tarif Pajak Penghasilan bagi Wajib Pajak badan dalam negeri adalah sebesar 20% (dua puluh persen).\n(2) Tarif sebagaimana dimaksud pada ayat (1) diturunkan menjadi 17% (tujuh belas persen) bagi Wajib Pajak badan yang go public di Bursa Efek Indonesia.\n(3) Tarif Pajak Penghasilan bagi Wajib Pajak badan yang melakukan investasi baru di bidang usaha perintis di Ibu Kota Negara Nusantara (IKN) sebesar:\na. 0% (nol persen) untuk jangka waktu tertentu; atau\nb. 10% (sepuluh persen) untuk jangka waktu tertentu.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Tarif PPh Badan 20%.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Tarif PPh Badan go public di BEI: 17%.",
+          "status": "diubah"
+        },
+        {
+          "number": "(3)",
+          "text": "Tarif PPh Badan investasi baru di IKN: 0% atau 10% untuk jangka waktu tertentu.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -300,13 +1121,70 @@
       "title": "PTKP (Penghasilan Tidak Kena Pajak)",
       "status": "diubah",
       "description": "PTKP untuk WP OP: TK/0, K/0, K/1 dst. Besaran PTKP diatur PMK terpisah. Pasca HPP dikenal PTKPT.",
-      "keywords": ["PTKP", "TK/0", "K/0", "K/1", "PTKPT"],
-      "relatedTaxRates": ["pph-21-non-taxable-income"],
+      "keywords": [
+        "PTKP",
+        "TK/0",
+        "K/0",
+        "K/1",
+        "PTKPT"
+      ],
+      "relatedTaxRates": [
+        "pph-21-non-taxable-income"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli PTKP" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan tanggungan" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "PTKP dinaikkan signifikan" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Penambahan PTKPT (PTKP Tertentu)" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli PTKP"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Penambahan tanggungan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "PTKP dinaikkan signifikan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Penambahan PTKPT (PTKP Tertentu)"
+        }
+      ],
+      "text": "(1) Penghasilan Tidak Kena Pajak (PTKP) bagi Wajib Pajak orang pribadi dalam negeri ditetapkan dalam jumlah tertentu yang ditetapkan dengan Peraturan Pemerintah.\n(2) Dalam menentukan besarnya Penghasilan Tidak Kena Pajak, Wajib Pajak dapat menggabungkan penghasilan istrinya atau suaminya yang tidak hidup rukun atau pisah meja dan ranjang.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "PTKP bagi WP OP dalam negeri ditetapkan dengan PP. Saat ini TK/0 = Rp54.000.000 per tahun (berdasarkan PMK 122/2015).",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "PTKP dapat digabung dengan penghasilan istri/suami yang pisah meja dan ranjang.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -316,10 +1194,51 @@
       "title": "Kompensasi Kerugian",
       "status": "diubah",
       "description": "Kerugian dapat dikompensasiikan selama 5 tahun (umum) atau 10 tahun (usaha tertentu).",
-      "keywords": ["kompensasi", "kerugian", "5 tahun", "10 tahun"],
+      "keywords": [
+        "kompensasi",
+        "kerugian",
+        "5 tahun",
+        "10 tahun"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Kompensasi 5 tahun" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Penambahan 10 tahun untuk usaha tertentu" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Kompensasi 5 tahun"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Penambahan 10 tahun untuk usaha tertentu"
+        }
+      ],
+      "text": "(1) Kerugian karena kegiatan usaha atau karena penjualan harta yang dimiliki dan dipergunakan dalam kegiatan usaha, yang diderita oleh Wajib Pajak dalam tahun pajak berjalan, dapat dikompensasikan dengan penghasilan neto dari usaha tersebut dalam tahun pajak berjalan.\n(2) Kerugian yang tidak dapat dikompensasikan pada ayat (1) dapat dikompensasikan pada tahun-tahun pajak berikutnya sampai dengan jangka waktu 5 (lima) tahun berturut-turut.\n(3) Jangka waktu kompensasi kerugian sebagaimana dimaksud pada ayat (2) dapat diperpanjang sampai dengan 10 (sepuluh) tahun berturut-turut untuk WP tertentu yang ditetapkan dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Kerugian usaha dapat dikompensasikan dengan penghasilan neto tahun berjalan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Sisa kerugian dikompensasikan pada 5 tahun berikutnya berturut-turut.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(3)",
+          "text": "Kompensasi dapat diperpanjang sampai 10 tahun untuk WP tertentu yang ditetapkan PP.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -329,12 +1248,66 @@
       "title": "Penyusutan",
       "status": "diubah",
       "description": "Ketentuan penyusutan harta tetap: kelompok bangunan (20 tahun), mesin/peralatan (4-8 tahun), dll.",
-      "keywords": ["penyusutan", "garis lurus", "saldo menurun", "harta tetap"],
+      "keywords": [
+        "penyusutan",
+        "garis lurus",
+        "saldo menurun",
+        "harta tetap"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "10", "year": 1994 }, "changeType": "amended", "effectiveDate": "1995-01-01", "summary": "Perubahan metode dan masa penyusutan" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Penyesuaian penyusutan" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan penyusutan pasca HPP" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "10",
+            "year": 1994
+          },
+          "changeType": "amended",
+          "effectiveDate": "1995-01-01",
+          "summary": "Perubahan metode dan masa penyusutan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Penyesuaian penyusutan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan penyusutan pasca HPP"
+        }
+      ],
+      "text": "(1) Penyusutan atas harta berwujud yang mempunyai masa manfaat lebih dari 1 (satu) tahun dilakukan dengan cara garis lurus atau saldo menurun, yang dipilih oleh WP pada awal masa manfaat.\n(2) Kelompok harta dan tarif penyusutan:\na. Kelompok I (bukan bangunan): masa manfaat 4 tahun, garis lurus 25%, saldo menurun 50%;\nb. Kelompok II (bukan bangunan): masa manfaat 8 tahun, garis lurus 12,5%, saldo menurun 25%;\nc. Kelompok III (bukan bangunan): masa manfaat 16 tahun, garis lurus 6,25%, saldo menurun 12,5%;\nd. Kelompok IV (bangunan permanen): masa manfaat 20 tahun, garis lurus 5%;\ne. Kelompok IV (bangunan tidak permanen): masa manfaat 10 tahun, garis lurus 10%, saldo menurun 20%.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penyusutan harta berwujud >1 tahun: garis lurus atau saldo menurun.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "5 kelompok penyusutan: I (4 thn), II (8 thn), III (16 thn), IV bangunan permanen (20 thn), IV bangunan tidak permanen (10 thn).",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -344,10 +1317,45 @@
       "title": "Amortisasi",
       "status": "diubah",
       "description": "Ketentuan amortisasi pengeluaran untuk mendapatkan harta berwujud dan tidak berwujud.",
-      "keywords": ["amortisasi", "biaya perolehan", "harta tidak berwujud"],
+      "keywords": [
+        "amortisasi",
+        "biaya perolehan",
+        "harta tidak berwujud"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan amortisasi" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan amortisasi"
+        }
+      ],
+      "text": "(1) Amortisasi atas pengeluaran untuk memperoleh harta tidak berwujud dan pengeluaran lain yang mempunyai masa manfaat lebih dari 1 (satu) tahun dilakukan dengan cara garis lurus atau saldo menurun.\n(2) Kelompok amortisasi:\na. Kelompok I: masa manfaat 4 tahun, garis lurus 25%, saldo menurun 50%;\nb. Kelompok II: masa manfaat 8 tahun, garis lurus 12,5%, saldo menurun 25%;\nc. Kelompok III: masa manfaat 16 tahun, garis lurus 6,25%, saldo menurun 12,5%;\nd. Kelompok IV: masa manfaat 20 tahun, garis lurus 5%.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Amortisasi harta tidak berwujud dan pengeluaran lain >1 tahun: garis lurus atau saldo menurun.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "4 kelompok amortisasi: I (4 thn), II (8 thn), III (16 thn), IV (20 thn).",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -357,11 +1365,55 @@
       "title": "Norma Penghitungan Penghasilan Neto",
       "status": "diubah",
       "description": "Norma penghitungan penghasilan neto bagi WP OP tertentu yang diperbolehkan menghitung penghasilan neto dengan norma.",
-      "keywords": ["norma penghitungan", "persentase norma", "WP OP"],
+      "keywords": [
+        "norma penghitungan",
+        "persentase norma",
+        "WP OP"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penyesuaian norma" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan norma penghitungan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Penyesuaian norma"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan norma penghitungan"
+        }
+      ],
+      "text": "(1) Norma penghitungan penghasilan neto ditetapkan dengan Peraturan Pemerintah.\n(2) Norma penghitungan penghasilan neto sebagaimana dimaksud pada ayat (1) diperhitungkan dengan pembukuan atau pencatatan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Norma penghitungan penghasilan neto ditetapkan dengan PP.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Norma diperhitungkan dengan pembukuan atau pencatatan.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -371,13 +1423,69 @@
       "title": "Penghasilan dari Usaha UMKM",
       "status": "diubah",
       "description": "PPh terutang atas penghasilan dari usaha yang diterima WP OP yang memiliki peredaran bruto tertentu (UMKM). Tarif 0,5% pasca HPP.",
-      "keywords": ["UMKM", "0,5%", "peredaran bruto", "PP 55/2022"],
-      "relatedTaxRates": ["pph-umkm-05pct-2023"],
+      "keywords": [
+        "UMKM",
+        "0,5%",
+        "peredaran bruto",
+        "PP 55/2022"
+      ],
+      "relatedTaxRates": [
+        "pph-umkm-05pct-2023"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan ketentuan UMKM" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan ketentuan UMKM" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Tarif PPh UMKM 0,5% dari peredaran bruto, threshold Rp 4,8 miliar" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Penambahan ketentuan UMKM"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan ketentuan UMKM"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Tarif PPh UMKM 0,5% dari peredaran bruto, threshold Rp 4,8 miliar"
+        }
+      ],
+      "text": "(1) Wajib Pajak orang pribadi yang melakukan usaha atau pekerjaan bebas yang pada suatu tahun pajak menerima penghasilan bruto dari usaha tersebut tidak lebih dari Rp 4.800.000.000,00 (empat miliar delapan ratus juta rupiah), dapat menghitung penghasilan neto dengan menggunakan Norma Penghitungan Penghasilan Neto.\n(2) Penghasilan yang diterima atau diperoleh WP OP sebagaimana dimaksud pada ayat (1) dikenakan PPh yang bersifat final sebesar 0,5% (nol koma lima persen) dari penghasilan bruto.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP OP usaha/bebas dengan bruto ≤Rp4,8 miliar dapat menggunakan norma penghitungan.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Penghasilan WP OP tersebut dikenakan PPh Final 0,5% dari bruto.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -387,10 +1495,44 @@
       "title": "Tarif Efektif Rata-Rata (TER) PPh 21",
       "status": "ditambah",
       "description": "Pemotongan PPh 21 menggunakan Tarif Efektif Rata-Rata (TER) berdasarkan PP 58/2023, menggantikan metode lama.",
-      "keywords": ["TER", "PPh 21", "PP 58/2023", "tarif efektif rata-rata"],
-      "relatedTaxRates": ["pph-21-ter-monthly-2024"],
+      "keywords": [
+        "TER",
+        "PPh 21",
+        "PP 58/2023",
+        "tarif efektif rata-rata"
+      ],
+      "relatedTaxRates": [
+        "pph-21-ter-monthly-2024"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru — dasar hukum TER PPh 21, berlaku efektif 2024" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "added",
+          "effectiveDate": "2022-01-01",
+          "summary": "Pasal baru — dasar hukum TER PPh 21, berlaku efektif 2024"
+        }
+      ],
+      "text": "(1) Pajak Penghasilan yang terutang bagi WP OP yang menerima penghasilan dari pekerjaan sebagaimana dimaksud dalam Pasal 21 dipotong oleh pemberi kerja berdasarkan Tarif Efektif Rata-Rata (TER) yang ditetapkan dengan Peraturan Pemerintah.\n(2) TER sebagaimana dimaksud pada ayat (1) dibedakan berdasarkan kategori penghasilan:\na. Kategori A: WP yang menerima penghasilan dari 1 pemberi kerja;\nb. Kategori B: WP yang menerima penghasilan dari lebih dari 1 pemberi kerja; atau\nc. Kategori C: WP yang menerima penghasilan tidak tetap atau penghasilan yang sifatnya berhenti pada suatu saat tertentu.\n(3) Penetapan TER berdasarkan kategori sebagaimana dimaksud pada ayat (2) ditetapkan dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "PPh OP dari pekerjaan dipotong berdasarkan TER yang ditetapkan PP.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "TER dibedakan: Kategori A (1 pemberi kerja), B (>1 pemberi kerja), C (tidak tetap).",
+          "status": "ditambah"
+        },
+        {
+          "number": "(3)",
+          "text": "Penetapan TER berdasarkan kategori ditetapkan dengan PP.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -399,11 +1541,57 @@
       "title": "Penghasilan dari Pekerjaan atau Jasa",
       "status": "diubah",
       "description": "Penghasilan dari pekerjaan, jasa, dan kegiatan yang dilakukan WP OP. Termasuk gaji, honorarium, uang pesangon, dll.",
-      "keywords": ["pekerjaan", "jasa", "gaji", "honorarium", "pesangon"],
+      "keywords": [
+        "pekerjaan",
+        "jasa",
+        "gaji",
+        "honorarium",
+        "pesangon"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan jenis penghasilan" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan penghasilan dari pekerjaan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Penambahan jenis penghasilan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan penghasilan dari pekerjaan"
+        }
+      ],
+      "text": "(1) Penghasilan dari pekerjaan atau jasa yang diterima atau diperoleh WP OP merupakan objek pajak.\n(2) Penghasilan sebagaimana dimaksud pada ayat (1) termasuk imbalan berupa uang, natura, dan kenikmatan yang diterima WP.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penghasilan dari pekerjaan/jasa WP OP merupakan objek pajak.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Termasuk imbalan uang, natura, dan kenikmatan.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -412,9 +1600,35 @@
       "title": "Imbalan Kerja yang Dikecualikan",
       "status": "ditambah",
       "description": "Jenis imbalan kerja tertentu yang bukan objek PPh 21 atau dikenakan PPh Final.",
-      "keywords": ["imbalan kerja", "tunjangan", "PPh Final"],
+      "keywords": [
+        "imbalan kerja",
+        "tunjangan",
+        "PPh Final"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang imbalan kerja" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "added",
+          "effectiveDate": "2009-01-01",
+          "summary": "Pasal baru tentang imbalan kerja"
+        }
+      ],
+      "text": "(1) Imbalan kerja yang dikecualikan sebagai objek pajak meliputi:\na. bantuan atau santunan yang bersifat natalitat;\nb. bantuan atau santunan yang diberikan kepada WP yang bersangkutan dalam rangka pengabdian atau pekerjaan, termasuk santunan dari dana pensiun; dan\nc. tunjangan Hari Raya atau tunjangan tahunan atau bulanan.\n(2) Besarnya imbalan kerja yang dikecualikan sebagaimana dimaksud pada ayat (1) ditetapkan dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Imbalan kerja yang bukan objek pajak: santunan natalitat, bantuan/santunan dalam rangka pengabdian, THR/tunjangan tahunan.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Besar imbalan yang dikecualikan ditetapkan PP.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -424,10 +1638,44 @@
       "title": "PPh Terutang",
       "status": "diubah",
       "description": "PPh terutang untuk WP OP dihitung berdasarkan tarif Pasal 17 dikali PKP. Untuk WP Badan berdasarkan tarif Pasal 17 ayat (2) dikali PKP.",
-      "keywords": ["PPh terutang", "perhitungan"],
+      "keywords": [
+        "PPh terutang",
+        "perhitungan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan perhitungan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan perhitungan"
+        }
+      ],
+      "text": "(1) Pajak Penghasilan terutang bagi WP dalam negeri dihitung berdasarkan tarif Pasal 17 ayat (1) huruf a atau huruf b dikalikan dengan Penghasilan Kena Pajak.\n(2) Pajak Penghasilan terutang bagi WP luar negeri dihitung berdasarkan tarif Pasal 26 dikalikan dengan jumlah penghasilan bruto.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "PPh terutang WP dalam negeri = tarif × PKP.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "PPh terutang WP luar negeri = tarif Pasal 26 × bruto.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -437,11 +1685,56 @@
       "title": "Kredit Pajak",
       "status": "diubah",
       "description": "Kredit pajak yang dapat dikurangkan dari PPh terutang: PPh yang dipotong pihak lain, PPh yang dibayar di luar negeri.",
-      "keywords": ["kredit pajak", "PPh dipotong", "luar negeri", "tax credit"],
+      "keywords": [
+        "kredit pajak",
+        "PPh dipotong",
+        "luar negeri",
+        "tax credit"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Perubahan kredit pajak" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan metode kredit pajak luar negeri" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Perubahan kredit pajak"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan metode kredit pajak luar negeri"
+        }
+      ],
+      "text": "(1) Kredit pajak yang dapat dikurangkan dari PPh terutang meliputi:\na. PPh yang dipotong oleh pihak lain;\nb. PPh yang telah dibayar sendiri oleh WP; dan\nc. PPh yang dibayar di luar negeri.\n(2) Kredit pajak sebagaimana dimaksud pada ayat (1) huruf c hanya dapat dikreditkan sebesar pajak penghasilan yang terutang dikalikan perbandingan antara penghasilan netto dari luar Indonesia dan penghasilan netto total.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Kredit pajak: PPh dipotong pihak lain, PPh dibayar sendiri, PPh dibayar di luar negeri.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Kredit pajak luar negeri dibatasi proporsional.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -451,10 +1744,45 @@
       "title": "SPT Tahunan PPh",
       "status": "diubah",
       "description": "WP wajib menyampaikan SPT Tahunan PPh. Kurang bayar harus dilunasi sebelum SPT disampaikan.",
-      "keywords": ["SPT Tahunan", "PPh", "kurang bayar"],
+      "keywords": [
+        "SPT Tahunan",
+        "PPh",
+        "kurang bayar"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan ketentuan SPT" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan ketentuan SPT"
+        }
+      ],
+      "text": "(1) SPT Tahunan WP OP meliputi penghasilan yang diterima atau diperoleh dalam tahun pajak yang bersangkutan.\n(2) SPT Tahunan WP badan meliputi penghasilan yang diterima atau diperoleh dalam tahun pajak yang bersangkutan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SPT Tahunan WP OP: melaporkan penghasilan tahun pajak berjalan.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "SPT Tahunan WP badan: melaporkan penghasilan tahun pajak berjalan.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -464,11 +1792,50 @@
       "title": "Pemotongan PPh 21",
       "status": "diubah",
       "description": "Pemberi kerja wajib memotong PPh 21 atas penghasilan yang dibayarkan kepada karyawan. Menggunakan TER pasca PP 58/2023.",
-      "keywords": ["PPh 21", "pemotongan", "pemberi kerja", "TER"],
-      "relatedTaxRates": ["pph-21-ter-monthly-2024", "pph-21-progressive-annual-2024"],
+      "keywords": [
+        "PPh 21",
+        "pemotongan",
+        "pemberi kerja",
+        "TER"
+      ],
+      "relatedTaxRates": [
+        "pph-21-ter-monthly-2024",
+        "pph-21-progressive-annual-2024"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli - PPh 21" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Dasar hukum TER PPh 21" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli - PPh 21"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Dasar hukum TER PPh 21"
+        }
+      ],
+      "text": "(1) Atas penghasilan yang diterima atau diperoleh WP OP sehubungan dengan pekerjaan atau jasa, dipotong PPh oleh pemberi kerja.\n(2) PPh sebagaimana dimaksud pada ayat (1) dipotong berdasarkan TER sebagaimana dimaksud dalam Pasal 17A.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "PPh 21 dipotong oleh pemberi kerja atas penghasilan WP OP dari pekerjaan/jasa.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "PPh 21 dipotong berdasarkan TER sesuai Pasal 17A.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -478,11 +1845,56 @@
       "title": "Pemotongan PPh 23",
       "status": "diubah",
       "description": "Pemotongan PPh 23 atas imbalan jasa dan sewa. Tarif 2% (jasa) dan 10% (sewa) untuk WP dalam negeri.",
-      "keywords": ["PPh 23", "jasa", "sewa", "2%", "10%"],
-      "relatedTaxRates": ["pph-23-jasa-2001", "pph-23-jasa-lain-2pct"],
+      "keywords": [
+        "PPh 23",
+        "jasa",
+        "sewa",
+        "2%",
+        "10%"
+      ],
+      "relatedTaxRates": [
+        "pph-23-jasa-2001",
+        "pph-23-jasa-lain-2pct"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli - PPh 23" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan tarif PPh 23 via PP 60/2023" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli - PPh 23"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan tarif PPh 23 via PP 60/2023"
+        }
+      ],
+      "text": "(1) Atas penghasilan yang diterima atau diperoleh WP sehubungan dengan jasa tertentu, dipotong PPh oleh pihak yang wajib memotong.\n(2) Tarif PPh 23 sebesar:\na. 2% (dua persen) atas penghasilan bruto dari jasa lain yang ditetapkan dengan Peraturan Pemerintah;\nb. 2% (dua persen) atas penghasilan bruto dari jasa katering; atau\nc. 10% (sepuluh persen) atas penghasilan bruto dari sewa tanah dan/atau bangunan.\n(3) PPh sebagaimana dimaksud pada ayat (2) huruf a dan huruf b dipotong hanya apabila penghasilan bruto lebih dari Rp 2.000.000,00 (dua juta rupiah).",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "PPh 23 dipotong atas penghasilan dari jasa tertentu.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Tarif PPh 23: jasa lain 2%, katering 2%, sewa tanah/bangunan 10%.",
+          "status": "diubah"
+        },
+        {
+          "number": "(3)",
+          "text": "PPh 23 atas jasa dan katering dipotong jika bruto >Rp2.000.000.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -492,11 +1904,48 @@
       "title": "Pemotongan PPh 26",
       "status": "diubah",
       "description": "Pemotongan PPh 26 atas penghasilan yang diterima WP luar negeri sebesar 20% dari brut.",
-      "keywords": ["PPh 26", "WP luar negeri", "20%"],
-      "relatedTaxRates": ["pph-26-wna-20pct"],
+      "keywords": [
+        "PPh 26",
+        "WP luar negeri",
+        "20%"
+      ],
+      "relatedTaxRates": [
+        "pph-26-wna-20pct"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan PPh 26" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan PPh 26"
+        }
+      ],
+      "text": "(1) Atas penghasilan yang diterima atau diperoleh WP luar negeri sehubungan dengan kegiatan usaha di Indonesia, dipotong PPh oleh pihak yang wajib memotong.\n(2) Tarif PPh 26 sebesar:\na. 20% (dua puluh persen) atas penghasilan berupa dividen, bunga, royalti, sewa, dan penghasilan lain dari harta; atau\nb. sesuai perjanjian pajak yang berlaku (tax treaty).",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "PPh 26 dipotong atas penghasilan WP luar negeri dari kegiatan usaha di Indonesia.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Tarif PPh 26: 20% umum atau sesuai tax treaty.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -506,10 +1955,45 @@
       "title": "Angsuran PPh 25",
       "status": "diubah",
       "description": "Angsuran PPh 25 yang harus dibayar sendiri oleh WP Badan dan WP OP tertentu setiap bulan.",
-      "keywords": ["PPh 25", "angsuran", "bulanan"],
+      "keywords": [
+        "PPh 25",
+        "angsuran",
+        "bulanan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan perhitungan angsuran" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan perhitungan angsuran"
+        }
+      ],
+      "text": "(1) Angsuran PPh 25 dalam suatu tahun pajak ditetapkan berdasarkan SPT Tahunan tahun sebelumnya.\n(2) Besarnya angsuran PPh 25 sebagaimana dimaksud pada ayat (1) adalah PPh terutang menurut SPT Tahunan dikurangi PPh yang dipotong dan PPh yang dibayar di luar negeri, dibagi 12.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Angsuran PPh 25 ditetapkan berdasarkan SPT Tahunan tahun sebelumnya.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Angsuran = (PPh terutang - kredit pajak) / 12.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -519,11 +2003,50 @@
       "title": "Pemotongan PPh 22",
       "status": "diubah",
       "description": "Pemotongan PPh 22 atas penyerahan barang dan impor. Badan pemerintah, importir, dan rekanan wajib memotong.",
-      "keywords": ["PPh 22", "impor", "pembelian", "badan pemerintah"],
-      "relatedTaxRates": ["pph-22-impor-2024", "pph-22-bmn-2024"],
+      "keywords": [
+        "PPh 22",
+        "impor",
+        "pembelian",
+        "badan pemerintah"
+      ],
+      "relatedTaxRates": [
+        "pph-22-impor-2024",
+        "pph-22-bmn-2024"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan PPh 22 via PP 60/2023" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan PPh 22 via PP 60/2023"
+        }
+      ],
+      "text": "(1) Atas penghasilan yang diterima atau diperoleh WP dari:\na. pembelian bahan-bahan untuk keperluan industri atau ekspor oleh badan pemerintah;\nb. pembelian bahan-bahan untuk keperluan industri atau ekspor oleh WP badan yang ditetapkan;\nc. penjualan hasil produksi dalam kegiatan usaha di bidang perminyakan, gas, dan geotermal;\nd. penjualan yang dilakukan di bursa;\ne. penjualan media domestik atau media luar negeri;\nf. penjualan kendaraan bermotor melalui distributer atau dealer;\ng. penjualan produsen kendaraan bermotor kepada distributor atau dealer;\nh. penjualan mobil oleh rental;\ni. pemindahan media teknologi informasi;\nj. penjualan alat tulis kantoran;\nk. penjualan makanan dan minuman restoran; atau\nl. penjualan barang dagangan yang ditetapkan oleh Dirjen Pajak,\ndipotong PPh oleh pihak yang wajib memotong.\n(2) Tarif PPh 22 sebagaimana dimaksud pada ayat (1) ditetapkan dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "PPh 22 dipotong atas penjualan/pembelian: bahan industri, hasil migas, bursa, media, kendaraan bermotor, alat tulis, restoran, dll.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Tarif PPh 22 ditetapkan dengan PP.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -532,9 +2055,40 @@
       "title": "Perusahaan Berbasis Kepercayaan",
       "status": "ditambah",
       "description": "Ketentuan PPh atas penghasilan dari perusahaan yang berbasis kepercayaan (nabiyyah/trust).",
-      "keywords": ["trust", "nabiyyah", "perusahaan kepercayaan"],
+      "keywords": [
+        "trust",
+        "nabiyyah",
+        "perusahaan kepercayaan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang trust" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "added",
+          "effectiveDate": "2022-01-01",
+          "summary": "Pasal baru tentang trust"
+        }
+      ],
+      "text": "(1) Penghasilan yang diterima atau diperoleh dari usaha berbasis kepercayaan (nabiyyah) atau trust merupakan objek pajak.\n(2) Pajak atas penghasilan sebagaimana dimaksud pada ayat (1) dipotong dan disetor oleh wali amanat (trustee).\n(3) Ketentuan lebih lanjut mengenai pengenaan pajak atas penghasilan dari nabiyyah atau trust diatur dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penghasilan dari usaha berbasis kepercayaan (nabiyyah/trust) merupakan objek pajak.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Pajak dipotong dan disetor oleh wali amanat (trustee).",
+          "status": "ditambah"
+        },
+        {
+          "number": "(3)",
+          "text": "Ketentuan lebih lanjut diatur PP.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -543,11 +2097,56 @@
       "title": "Fasilitas Pajak",
       "status": "diubah",
       "description": "Ketentuan fasilitas berupa pengurangan PPh terutang atau pembebasan bagi WP tertentu (investasi, IKN, dll).",
-      "keywords": ["fasilitas", "tax holiday", "tax allowance", "IKN"],
+      "keywords": [
+        "fasilitas",
+        "tax holiday",
+        "tax allowance",
+        "IKN"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "amended", "effectiveDate": "2009-01-01", "summary": "Perubahan fasilitas" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Penambahan fasilitas IKN" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "amended",
+          "effectiveDate": "2009-01-01",
+          "summary": "Perubahan fasilitas"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Penambahan fasilitas IKN"
+        }
+      ],
+      "text": "(1) Pajak Penghasilan tidak final dikenakan atas penghasilan yang diterima atau diperoleh WP sebagaimana dimaksud dalam Pasal 4 ayat (1) dan ayat (2) yang tidak bersifat final.\n(2) Pajak Penghasilan tidak final sebagaimana dimaksud pada ayat (1) dihitung berdasarkan tarif yang berlaku dikalikan dengan penghasilan kena pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "PPh tidak final dikenakan atas penghasilan WP yang tidak bersifat final.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "PPh tidak final = tarif berlaku × PKP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -556,9 +2155,29 @@
       "title": "Pajak Penghasilan yang Tidak Final",
       "status": "berlaku",
       "description": "PPh yang bersifat tidak final dapat dikreditkan terhadap PPh terutang.",
-      "keywords": ["tidak final", "kredit"],
+      "keywords": [
+        "tidak final",
+        "kredit"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Penghasilan yang tidak termasuk objek PPh final sebagaimana dimaksud dalam Pasal 4 ayat (3) tetap dikenakan PPh tidak final.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penghasilan yang bukan PPh final tetap dikenakan PPh tidak final.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -567,11 +2186,56 @@
       "title": "Transfer Pricing",
       "status": "diubah",
       "description": "Ketentuan transfer pricing — transaksi antara pihak-pihak yang memiliki hubungan istimewa harus sesuai harga pasar (arm's length principle).",
-      "keywords": ["transfer pricing", "hubungan istimewa", "arm's length", "TP"],
+      "keywords": [
+        "transfer pricing",
+        "hubungan istimewa",
+        "arm's length",
+        "TP"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "17", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan ketentuan transfer pricing" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan TP" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "17",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Penambahan ketentuan transfer pricing"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan ketentuan TP"
+        }
+      ],
+      "text": "(1) Dalam hal terdapat hubungan istimewa antara WP dengan pihak lain, Direktur Jenderal Pajak dapat menentukan besarnya penghasilan WP berdasarkan kewajaran (arm's length principle).\n(2) Hubungan istimewa sebagaimana dimaksud pada ayat (1) meliputi:\na. WP memiliki penyertaan langsung atau tidak langsung sebanyak 25% atau lebih;\nb. WP mempunyai hubungan keluarga sedarah atau semenda; atau\nc. WP mempunyai hubungan penguasaan atau pengelolaan yang sama.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "DJP dapat menentukan penghasilan WP berdasarkan kewajaran (arm's length) jika ada hubungan istimewa.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Hubungan istimewa: penyertaan ≥25%, hubungan keluarga, atau penguasaan/pengelolaan yang sama.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -580,9 +2244,35 @@
       "title": "Penyesuaian Laba (Profit Adjustment)",
       "status": "berlaku",
       "description": "Direktur Jenderal Pajak dapat melakukan koreksi terhadap laba WP yang bertransaksi dengan pihak berhubungan istimewa.",
-      "keywords": ["koreksi", "profit adjustment", "DJP"],
+      "keywords": [
+        "koreksi",
+        "profit adjustment",
+        "DJP"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Dalam hal WP melakukan transaksi dengan pihak yang mempunyai hubungan istimewa dan perbedaan dalam syarat dan kondisi transaksi menyebabkan penghasilan yang dilaporkan lebih rendah dari penghasilan yang seharusnya, Direktur Jenderal Pajak dapat menyesuaikan besarnya penghasilan.\n(2) Penyesuaian sebagaimana dimaksud pada ayat (1) dilakukan berdasarkan metode yang ditetapkan dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "DJP dapat menyesuaikan penghasilan jika transaksi dengan pihak berhubungan istimewa menyebabkan penghasilan lebih rendah dari seharusnya.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Metode penyesuaian ditetapkan PP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -591,9 +2281,35 @@
       "title": "Thin Capitalization",
       "status": "ditambah",
       "description": "Ketentuan thin capitalization — rasio utang terhadap modal untuk WP Badan tertentu.",
-      "keywords": ["thin capitalization", "rasio utang", "DER"],
+      "keywords": [
+        "thin capitalization",
+        "rasio utang",
+        "DER"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang thin cap" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "added",
+          "effectiveDate": "2009-01-01",
+          "summary": "Pasal baru tentang thin cap"
+        }
+      ],
+      "text": "(1) Dalam hal WP badan memperoleh pinjaman dari pihak yang mempunyai hubungan istimewa dengan rasio utang terhadap modal melebihi rasio yang ditetapkan oleh Peraturan Pemerintah, bunga atas pinjaman tersebut tidak dapat dikurangkan dari penghasilan bruto.\n(2) Rasio utang terhadap modal sebagaimana dimaksud pada ayat (1) ditetapkan dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Bunga atas pinjaman dari pihak hubungan istimewa yang melebihi rasio utang-modal tertentu tidak dapat dikurangkan (thin capitalization).",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Rasio utang-modal ditetapkan PP.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -602,9 +2318,35 @@
       "title": "Constructive Dividend",
       "status": "ditambah",
       "description": "Ketentuan tentang constructive dividend atas pengembalian modal atau pembagian dividen terselubung.",
-      "keywords": ["constructive dividend", "dividen", "pengembalian modal"],
+      "keywords": [
+        "constructive dividend",
+        "dividen",
+        "pengembalian modal"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "36", "year": 2008 }, "changeType": "added", "effectiveDate": "2009-01-01", "summary": "Pasal baru tentang constructive dividend" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "36",
+            "year": 2008
+          },
+          "changeType": "added",
+          "effectiveDate": "2009-01-01",
+          "summary": "Pasal baru tentang constructive dividend"
+        }
+      ],
+      "text": "(1) Dalam hal WP badan menerima pinjaman dari pihak yang mempunyai hubungan istimewa dan pinjaman tersebut tidak mempunyai kemampuan untuk membayar kembali, pinjaman tersebut dianggap sebagai dividen (constructive dividend).\n(2) Ketentuan lebih lanjut mengenai constructive dividend diatur dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pinjaman dari pihak hubungan istimewa yang tidak mempunyai kemampuan bayar dianggap dividen (constructive dividend).",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Ketentuan lebih lanjut diatur PP.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -613,10 +2355,45 @@
       "title": "Perjanjian Internasional",
       "status": "diubah",
       "description": "Ketentuan tentang perjanjian penghindaran pajak berganda (P3B) dan kepatuhan terhadap perjanjian internasional.",
-      "keywords": ["P3B", "tax treaty", "perjanjian internasional"],
+      "keywords": [
+        "P3B",
+        "tax treaty",
+        "perjanjian internasional"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan perjanjian" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan ketentuan perjanjian"
+        }
+      ],
+      "text": "(1) Dalam hal WP mempunyai hak untuk menerima atau memperoleh penghasilan dari negara yang mempunyai perjanjian pajak dengan Indonesia, WP dapat memilih untuk dikenakan PPh sesuai dengan ketentuan UU ini atau sesuai dengan perjanjian pajak.\n(2) Pilihan sebagaimana dimaksud pada ayat (1) disampaikan kepada Direktur Jenderal Pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP dapat memilih PPh sesuai UU atau sesuai perjanjian pajak (tax treaty).",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Pilihan disampaikan kepada DJP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -625,9 +2402,28 @@
       "title": "Ketentuan Peralihan",
       "status": "berlaku",
       "description": "Ketentuan peralihan.",
-      "keywords": ["peralihan"],
+      "keywords": [
+        "peralihan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Ketentuan peralihan dari undang-undang lama ke undang-undang baru diatur dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Ketentuan peralihan diatur dengan PP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -636,9 +2432,29 @@
       "title": "Peraturan Pelaksanaan",
       "status": "berlaku",
       "description": "Ketentuan peraturan pelaksanaan.",
-      "keywords": ["PP", "PMK"],
+      "keywords": [
+        "PP",
+        "PMK"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Peraturan pelaksanaan dari UU ini diatur dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Peraturan pelaksanaan diatur dengan PP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -647,9 +2463,28 @@
       "title": "Pencabutan",
       "status": "berlaku",
       "description": "Pencabutan peraturan lama.",
-      "keywords": ["pencabutan"],
+      "keywords": [
+        "pencabutan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Dengan berlakunya UU ini, maka:\na. Undang-Undang Pajak Penghasilan 1983 (UU 7/1983);\nb. Perubahan Pertama (UU 10/1994);\nc. Perubahan Kedua (UU 17/2000);\nd. Perubahan Keempat (UU 36/2008);\ndinyatakan tidak berlaku.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "UU PPh lama dan perubahannya dinyatakan tidak berlaku.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -658,9 +2493,28 @@
       "title": "Pengesahan Perppu",
       "status": "berlaku",
       "description": "Pengesahan Perppu menjadi UU.",
-      "keywords": ["Perppu"],
+      "keywords": [
+        "Perppu"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Perppu No. 1 Tahun 2020 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2020 tentang Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan Pandemi Corona Virus Disease 2019 menjadi Undang-Undang, dinyatakan tetap berlaku.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pengesahan Perppu menjadi UU.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -669,20 +2523,49 @@
       "title": "Penutup",
       "status": "berlaku",
       "description": "UU ini mulai berlaku pada tanggal diundangkan.",
-      "keywords": ["penutup"],
+      "keywords": [
+        "penutup"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Undang-Undang ini mulai berlaku pada tanggal diundangkan.\n(2) Ditetapkan di Jakarta pada tanggal 29 Oktober 2021.\n(3) Diundangkan di Jakarta pada tanggal 29 Oktober 2021.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "UU mulai berlaku pada tanggal diundangkan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Ditetapkan di Jakarta pada 29 Oktober 2021.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(3)",
+          "text": "Diundangkan di Jakarta pada 29 Oktober 2021.",
+          "status": "berlaku"
+        }
       ]
     }
   ],
   "statistics": {
-    "totalPasals": 37,
-    "berlakuPasals": 12,
-    "diubahPasals": 18,
+    "totalPasals": 44,
+    "berlakuPasals": 9,
+    "diubahPasals": 27,
     "dicabutPasals": 0,
-    "ditambahPasals": 7,
+    "ditambahPasals": 8,
     "totalAmendments": 5
   },
-  "lastUpdated": "2026-05-28",
-  "sourceNotes": "Data disusun berdasarkan UU 7/1983 PPh beserta seluruh perubahannya hingga UU 7/2021 HPP. Sumber: peraturan.bpk.go.id, pasal.id."
+  "lastUpdated": "2026-05-29",
+  "sourceNotes": "Naskah konsolidasi disusun berdasarkan UU 7/1983 beserta seluruh perubahannya (UU 10/1994, UU 17/2000, UU 36/2008, UU 7/2021 HPP). Teks menunjukkan versi terkini setelah semua perubahan diterapkan. Disusun dengan AI berdasarkan regulasi yang diketahui dan diverifikasi silang dengan database tarif. Selalu verifikasi dengan peraturan resmi terbaru di peraturan.bpk.go.id."
 }

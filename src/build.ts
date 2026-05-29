@@ -71,6 +71,24 @@ if (existsSync(consDir)) {
     consolidatedLaws.push(law);
     console.log(`  📜 ${law.shortTitle}: ${law.pasals.length} pasals, ${law.amendmentChain.length} amendments`);
   }
+
+// ── Recompute statistics from actual data ─────────────────────
+for (const law of consolidatedLaws) {
+  const counts: Record<string, number> = { berlaku: 0, diubah: 0, dicabut: 0, ditambah: 0 };
+  for (const p of law.pasals) {
+    const s = p.status || 'berlaku';
+    if (s in counts) counts[s]++;
+  }
+  law.statistics = {
+    totalPasals: law.pasals.length,
+    berlakuPasals: counts.berlaku,
+    diubahPasals: counts.diubah,
+    dicabutPasals: counts.dicabut,
+    ditambahPasals: counts.ditambah,
+    totalAmendments: law.amendmentChain.length,
+  };
+}
+
 }
 console.log(`✅ Loaded ${consolidatedLaws.length} consolidated laws`);
 

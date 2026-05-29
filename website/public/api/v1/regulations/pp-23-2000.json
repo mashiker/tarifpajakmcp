@@ -1,16 +1,24 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pp-23-2000",
-    "number": "23/2000",
+    "number": "23",
     "year": 2000,
     "title": "PP tentang Perubahan Besarnya Bea Meterai",
+    "shortName": "PP Bea Meterai Rp 3.000",
     "type": "PP",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44780/pp-no-23-tahun-2000",
-    "status": "dicabut",
-    "effectiveDate": "2000-01-01",
+    "promulgationDate": "2000-12-22",
+    "effectiveDate": "2000-12-22",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44280/pp-no-23-tahun-2000",
+    "status": "dicabut_sebagian",
+    "description": "PP mengubah tarif bea meterai dari Rp 1.000 menjadi Rp 3.000 untuk dokumen >Rp 500.000. Digantikan tarifnya oleh PP 80/2007.",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": [
+      "pp-80-2007",
+      "uu-13-1985"
+    ],
     "referencingEntries": [
       "bea-meterai-3000",
       "cukai-ecigarette",

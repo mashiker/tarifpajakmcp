@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "16B",
     "bab": "II",
@@ -23,6 +23,19 @@
         "changeType": "added",
         "effectiveDate": "2010-04-01",
         "summary": "Pasal baru"
+      }
+    ],
+    "text": "(1) PKP wajib menyelenggarakan pembukuan atas kegiatan usaha yang dilakukan.\n(2) Pembukuan sebagaimana dimaksud pada ayat (1) harus memungkinkan penghitungan PPN yang terutang.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PKP wajib menyelenggarakan pembukuan.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Pembukuan harus memungkinkan penghitungan PPN terutang.",
+        "status": "ditambah"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "24",
     "bab": "VII",
@@ -22,6 +22,19 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) SPHP diterbitkan berdasarkan hasil pemeriksaan.\n(2) WP dapat memberikan tanggapan atas SPHP dalam jangka waktu yang ditentukan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SPHP diterbitkan berdasarkan hasil pemeriksaan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "WP dapat memberi tanggapan dalam jangka waktu tertentu.",
+        "status": "berlaku"
       }
     ]
   }

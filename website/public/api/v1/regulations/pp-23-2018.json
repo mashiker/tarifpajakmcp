@@ -1,19 +1,23 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pp-23-2018",
     "number": "23",
     "year": 2018,
-    "title": "Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "shortName": "PP PPh UMKM 0,5%",
     "type": "PP",
+    "promulgationDate": "2018-07-05",
     "effectiveDate": "2018-07-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/135493/pp-no-23-tahun-2018",
-    "status": "dicabut",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/65898/pp-no-23-tahun-2018",
+    "status": "dicabut_sebagian",
+    "description": "PP mengatur PPh Final 0,5% untuk UMKM dengan peredaran bruto s.d. Rp 4,8 miliar. Menggantikan PP 46/2013. Tarif 0,5% dibagi: 0,25% WP OP / 0,5% WP Badan. Digantikan oleh PP 55/2022.",
+    "relevantArticles": "Pasal 2, 3",
     "relatedRegulations": [
-      "pp-55-2022",
-      "uu-7-2021-hpp"
+      "pp-46-2013",
+      "pp-55-2022"
     ],
     "referencingEntries": [
       "bea-meterai-3000",

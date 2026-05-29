@@ -1,15 +1,23 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pmk-523-2002",
-    "number": "523/KMK.04/2002",
+    "number": "523",
     "year": 2002,
-    "title": "KMK tentang Norma Penghitungan Penghasilan Neto",
+    "title": "KMK tentang Norma Penghitungan Penghasilan Neto untuk Wajib Pajak Orang Pribadi yang Melakukan Pekerjaan Bebas",
+    "shortName": "KMK Norma Penghitungan",
     "type": "KMK",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/47898/pmk-no-523kmk042002",
-    "status": "berlaku",
+    "promulgationDate": "2002-11-20",
+    "effectiveDate": "2003-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/45176/kmk-no-523-kmk-04-2002",
+    "status": "diubah_sebagian",
+    "description": "KMK mengatur norma penghitungan penghasilan neto untuk pekerja bebas (dokter 50%, pengacara 50%, akuntan 50%, arsitek 45%, notaris 50%, konsultan 50%, pedagang 20%, petani 10%, dll). Diubah sebagian oleh PMK 43/2022.",
+    "relevantArticles": "Lampiran",
+    "relatedRegulations": [
+      "pmk-43-2022"
+    ],
     "referencingEntries": [
       "pph-21-norma-dokter",
       "pph-21-norma-pengacara",

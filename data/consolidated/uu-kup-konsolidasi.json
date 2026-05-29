@@ -14,47 +14,108 @@
   },
   "amendmentChain": [
     {
-      "regulation": { "type": "UU", "number": "6", "year": 1983, "title": "Ketentuan Umum dan Tata Cara Perpajakan", "shortTitle": "UU KUP" },
+      "regulation": {
+        "type": "UU",
+        "number": "6",
+        "year": 1983,
+        "title": "Ketentuan Umum dan Tata Cara Perpajakan",
+        "shortTitle": "UU KUP"
+      },
       "order": 0,
       "description": "UU Dasar KUP",
       "effectiveDate": "1984-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/44027/uu-no-6-tahun-1983",
-      "keyChanges": ["Pembentukan sistem perpajakan modern Indonesia", "Self assessment system", "NPWP wajib bagi WP", "SPT tahunan dan masa", "Pembukuan dan pencatatan"]
+      "keyChanges": [
+        "Pembentukan sistem perpajakan modern Indonesia",
+        "Self assessment system",
+        "NPWP wajib bagi WP",
+        "SPT tahunan dan masa",
+        "Pembukuan dan pencatatan"
+      ]
     },
     {
-      "regulation": { "type": "UU", "number": "9", "year": 1994, "title": "Perubahan Pertama UU KUP", "shortTitle": "UU 9/1994" },
+      "regulation": {
+        "type": "UU",
+        "number": "9",
+        "year": 1994,
+        "title": "Perubahan Pertama UU KUP",
+        "shortTitle": "UU 9/1994"
+      },
       "order": 1,
       "description": "Perubahan Pertama atas UU 6/1983 KUP",
       "effectiveDate": "1995-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/44042/uu-no-9-tahun-1994",
-      "keyChanges": ["Perpanjangan waktu pembukuan", "Penyesuaian sanksi administrasi", "Perubahan ketentuan pembetulan SPT"]
+      "keyChanges": [
+        "Perpanjangan waktu pembukuan",
+        "Penyesuaian sanksi administrasi",
+        "Perubahan ketentuan pembetulan SPT"
+      ]
     },
     {
-      "regulation": { "type": "UU", "number": "16", "year": 2000, "title": "Perubahan Kedua UU KUP", "shortTitle": "UU 16/2000" },
+      "regulation": {
+        "type": "UU",
+        "number": "16",
+        "year": 2000,
+        "title": "Perubahan Kedua UU KUP",
+        "shortTitle": "UU 16/2000"
+      },
       "order": 2,
       "description": "Perubahan Kedua atas UU 6/1983 KUP",
       "effectiveDate": "2001-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/44056/uu-no-16-tahun-2000",
-      "keyChanges": ["Pengetatan ketentuan kerahasiaan", "Perubahan ketentuan keberatan dan banding", "Penambahan sanksi pidana", "Pengaturan forensik pajak"]
+      "keyChanges": [
+        "Pengetatan ketentuan kerahasiaan",
+        "Perubahan ketentuan keberatan dan banding",
+        "Penambahan sanksi pidana",
+        "Pengaturan forensik pajak"
+      ]
     },
     {
-      "regulation": { "type": "UU", "number": "28", "year": 2007, "title": "Perubahan Ketiga UU KUP", "shortTitle": "UU 28/2007" },
+      "regulation": {
+        "type": "UU",
+        "number": "28",
+        "year": 2007,
+        "title": "Perubahan Ketiga UU KUP",
+        "shortTitle": "UU 28/2007"
+      },
       "order": 3,
       "description": "Perubahan Ketiga atas UU 6/1983 KUP",
       "effectiveDate": "2008-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/44083/uu-no-28-tahun-2007",
-      "keyChanges": ["Perubahan pengaturan SPT", "Pengaturan SUNAT (Surat Setoran Pajak)", "Penambahan ketentuan media elektronik", "Perubahan masa daluwarsa", "Penambahan Pasal 43A-43D"]
+      "keyChanges": [
+        "Perubahan pengaturan SPT",
+        "Pengaturan SUNAT (Surat Setoran Pajak)",
+        "Penambahan ketentuan media elektronik",
+        "Perubahan masa daluwarsa",
+        "Penambahan Pasal 43A-43D"
+      ]
     },
     {
-      "regulation": { "type": "Perppu", "number": "5", "year": 2008, "title": "Perubahan Keempat UU KUP (Perppu)", "shortTitle": "Perppu 5/2008" },
+      "regulation": {
+        "type": "Perppu",
+        "number": "5",
+        "year": 2008,
+        "title": "Perubahan Keempat UU KUP (Perppu)",
+        "shortTitle": "Perppu 5/2008"
+      },
       "order": 4,
       "description": "Perubahan Keempat atas UU 6/1983 KUP melalui Perppu 5/2008",
       "effectiveDate": "2008-12-30",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/44089/perppu-no-5-tahun-2008",
-      "keyChanges": ["Pelaporan harta neto WP OP", "Penambahan kewajiban pelaporan", "Pencegahan dan penindakan"]
+      "keyChanges": [
+        "Pelaporan harta neto WP OP",
+        "Penambahan kewajiban pelaporan",
+        "Pencegahan dan penindakan"
+      ]
     },
     {
-      "regulation": { "type": "UU", "number": "7", "year": 2021, "title": "Harmonisasi Peraturan Perpajakan", "shortTitle": "UU HPP" },
+      "regulation": {
+        "type": "UU",
+        "number": "7",
+        "year": 2021,
+        "title": "Harmonisasi Peraturan Perpajakan",
+        "shortTitle": "UU HPP"
+      },
       "order": 5,
       "description": "Perubahan Kelima atas UU 6/1983 KUP melalui UU HPP",
       "effectiveDate": "2022-01-01",
@@ -72,51 +133,286 @@
     }
   ],
   "structure": [
-    { "number": "I", "title": "Ketentuan Umum", "pasals": ["1"] },
-    { "number": "II", "title": "Nomor Pokok Wajib Pajak", "pasals": ["2", "2A"] },
-    { "number": "III", "title": "Surat Pemberitahuan", "bagians": [
-      { "number": "1", "title": "Bentuk dan Isi", "pasals": ["3", "4"] },
-      { "number": "2", "title": "Tempat dan Waktu Penyampaian", "pasals": ["5", "6", "7"] },
-      { "number": "3", "title": "Pembetulan dan Penyampaian Tambahan", "pasals": ["8", "9"] }
-    ]},
-    { "number": "IV", "title": "Pembukuan", "bagians": [
-      { "number": "1", "title": "Kewajiban Pembukuan dan Pencatatan", "pasals": ["10", "11", "12", "13"] },
-      { "number": "2", "title": "Bentuk dan Isi Pembukuan atau Pencatatan", "pasals": ["14", "15"] },
-      { "number": "3", "title": "Penyimpanan Pembukuan atau Pencatatan", "pasals": ["16"] }
-    ]},
-    { "number": "V", "title": "Penyetoran Pajak", "pasals": ["17", "17A"] },
-    { "number": "VI", "title": "Fiskus", "bagians": [
-      { "number": "1", "title": "Tata Cara Pengawasan", "pasals": ["18", "19"] },
-      { "number": "2", "title": "Pemeriksaan", "pasals": ["20", "21"] },
-      { "number": "3", "title": "Himbauan dan Petunjuk", "pasals": ["22"] }
-    ]},
-    { "number": "VII", "title": "Surat Ketetapan Pajak", "bagians": [
-      { "number": "1", "title": "Surat Tagihan Pajak", "pasals": ["23"] },
-      { "number": "2", "title": "Surat Pemberitahuan Hasil Pemeriksaan", "pasals": ["24"] },
-      { "number": "3", "title": "Surat Ketetapan Pajak Kurang Bayar", "pasals": ["25"] },
-      { "number": "4", "title": "Surat Ketetapan Pajak Kurang Bayar Tambahan", "pasals": ["26"] },
-      { "number": "5", "title": "Surat Ketetapan Pajak Nihil", "pasals": ["27"] },
-      { "number": "6", "title": "Surat Ketetapan Pajak Lebih Bayar", "pasals": ["28"] }
-    ]},
-    { "number": "VIII", "title": "Keberatan dan Banding", "bagians": [
-      { "number": "1", "title": "Keberatan", "pasals": ["29"] },
-      { "number": "2", "title": "Banding", "pasals": ["30", "31"] },
-      { "number": "3", "title": "Peninjauan Kembali", "pasals": ["32"] }
-    ]},
-    { "number": "IX", "title": "Pembayaran dan Penagihan Pajak", "bagians": [
-      { "number": "1", "title": "Pembayaran", "pasals": ["33"] },
-      { "number": "2", "title": "Penagihan Pajak", "pasals": ["34", "35", "36", "37", "38", "39"] },
-      { "number": "3", "title": "Daluwarsa Penagihan Pajak", "pasals": ["40"] }
-    ]},
-    { "number": "X", "title": "Imbalan Bunga", "pasals": ["41"] },
-    { "number": "XI", "title": "Kerahasiaan", "pasals": ["42"] },
-    { "number": "XII", "title": "Sanksi Administrasi", "bagians": [
-      { "number": "1", "title": "Denda dan Bunga", "pasals": ["43", "43A", "43B"] }
-    ]},
-    { "number": "XIII", "title": "Sanksi Pidana", "bagians": [
-      { "number": "1", "title": "Tindak Pidana di Bidang Perpajakan", "pasals": ["44", "44A", "44B", "44C", "44D", "44E"] }
-    ]},
-    { "number": "XIV", "title": "Penutup", "pasals": ["45", "46", "47", "48", "49"] }
+    {
+      "number": "I",
+      "title": "Ketentuan Umum",
+      "pasals": [
+        "1"
+      ]
+    },
+    {
+      "number": "II",
+      "title": "Nomor Pokok Wajib Pajak",
+      "pasals": [
+        "2",
+        "2A"
+      ]
+    },
+    {
+      "number": "III",
+      "title": "Surat Pemberitahuan",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Bentuk dan Isi",
+          "pasals": [
+            "3",
+            "4"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Tempat dan Waktu Penyampaian",
+          "pasals": [
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Pembetulan dan Penyampaian Tambahan",
+          "pasals": [
+            "8",
+            "9"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "IV",
+      "title": "Pembukuan",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Kewajiban Pembukuan dan Pencatatan",
+          "pasals": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Bentuk dan Isi Pembukuan atau Pencatatan",
+          "pasals": [
+            "14",
+            "15"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Penyimpanan Pembukuan atau Pencatatan",
+          "pasals": [
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "V",
+      "title": "Penyetoran Pajak",
+      "pasals": [
+        "17",
+        "17A"
+      ]
+    },
+    {
+      "number": "VI",
+      "title": "Fiskus",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Tata Cara Pengawasan",
+          "pasals": [
+            "18",
+            "19"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Pemeriksaan",
+          "pasals": [
+            "20",
+            "21"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Himbauan dan Petunjuk",
+          "pasals": [
+            "22"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "VII",
+      "title": "Surat Ketetapan Pajak",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Surat Tagihan Pajak",
+          "pasals": [
+            "23"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Surat Pemberitahuan Hasil Pemeriksaan",
+          "pasals": [
+            "24"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Surat Ketetapan Pajak Kurang Bayar",
+          "pasals": [
+            "25"
+          ]
+        },
+        {
+          "number": "4",
+          "title": "Surat Ketetapan Pajak Kurang Bayar Tambahan",
+          "pasals": [
+            "26"
+          ]
+        },
+        {
+          "number": "5",
+          "title": "Surat Ketetapan Pajak Nihil",
+          "pasals": [
+            "27"
+          ]
+        },
+        {
+          "number": "6",
+          "title": "Surat Ketetapan Pajak Lebih Bayar",
+          "pasals": [
+            "28"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "VIII",
+      "title": "Keberatan dan Banding",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Keberatan",
+          "pasals": [
+            "29"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Banding",
+          "pasals": [
+            "30",
+            "31"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Peninjauan Kembali",
+          "pasals": [
+            "32"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "IX",
+      "title": "Pembayaran dan Penagihan Pajak",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Pembayaran",
+          "pasals": [
+            "33"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Penagihan Pajak",
+          "pasals": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Daluwarsa Penagihan Pajak",
+          "pasals": [
+            "40"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "X",
+      "title": "Imbalan Bunga",
+      "pasals": [
+        "41"
+      ]
+    },
+    {
+      "number": "XI",
+      "title": "Kerahasiaan",
+      "pasals": [
+        "42"
+      ]
+    },
+    {
+      "number": "XII",
+      "title": "Sanksi Administrasi",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Denda dan Bunga",
+          "pasals": [
+            "43",
+            "43A",
+            "43B"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "XIII",
+      "title": "Sanksi Pidana",
+      "bagians": [
+        {
+          "number": "1",
+          "title": "Tindak Pidana di Bidang Perpajakan",
+          "pasals": [
+            "44",
+            "44A",
+            "44B",
+            "44C",
+            "44D",
+            "44E"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "XIV",
+      "title": "Penutup",
+      "pasals": [
+        "45",
+        "46",
+        "47",
+        "48",
+        "49"
+      ]
+    }
   ],
   "pasals": [
     {
@@ -125,12 +421,74 @@
       "title": "Definisi",
       "status": "diubah",
       "description": "Ketentuan umum dan definisi istilah perpajakan termasuk definisi Wajib Pajak, penghasilan, pajak, tahun pajak, bagian tahun pajak, dan lain-lain.",
-      "keywords": ["definisi", "WP", "penghasilan", "NPWP", "SPT", "pembukuan"],
+      "keywords": [
+        "definisi",
+        "WP",
+        "penghasilan",
+        "NPWP",
+        "SPT",
+        "pembukuan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli UU KUP 1983 dengan definisi dasar" },
-        { "source": { "type": "UU", "number": "9", "year": 1994 }, "changeType": "partially_amended", "effectiveDate": "1995-01-01", "changedAyats": ["(1)"], "summary": "Penambahan definisi istilah baru" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "changedAyats": ["(1)", "(2)", "(3)"], "summary": "Penambahan definisi media elektronik, SUNAT, dan istilah modernisasi perpajakan" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "changedAyats": ["(1)"], "summary": "Perubahan definisi WP, penambahan istilah terkait pengungkapan sukarela dan kerja sama internasional" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli UU KUP 1983 dengan definisi dasar"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "9",
+            "year": 1994
+          },
+          "changeType": "partially_amended",
+          "effectiveDate": "1995-01-01",
+          "changedAyats": [
+            "(1)"
+          ],
+          "summary": "Penambahan definisi istilah baru"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "changedAyats": [
+            "(1)",
+            "(2)",
+            "(3)"
+          ],
+          "summary": "Penambahan definisi media elektronik, SUNAT, dan istilah modernisasi perpajakan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "changedAyats": [
+            "(1)"
+          ],
+          "summary": "Perubahan definisi WP, penambahan istilah terkait pengungkapan sukarela dan kerja sama internasional"
+        }
+      ],
+      "text": "(1) Dalam Undang-Undang ini, yang dimaksud dengan:\na. Pajak adalah kontribusi wajib kepada negara yang terutang oleh orang pribadi atau badan yang bersifat memaksa berdasarkan Undang-Undang, dengan tidak mendapatkan imbalan secara langsung dan digunakan untuk keperluan negara bagi sebesar-besarnya kemakmuran rakyat;\nb. Wajib Pajak adalah orang pribadi atau badan yang menurut ketentuan peraturan perundang-undangan perpajakan ditentukan untuk melakukan kewajiban perpajakan, termasuk pemungut pajak atau pemotong pajak tertentu;\nc. NPWP (Nomor Pokok Wajib Pajak) adalah nomor yang diberikan kepada Wajib Pajak sebagai sarana dalam administrasi perpajakan yang dipergunakan sebagai tanda pengenal diri atau identitas Wajib Pajak dalam melaksanakan hak dan kewajiban perpajakannya;\nd. SPT (Surat Pemberitahuan) adalah surat yang oleh Wajib Pajak digunakan untuk melaporkan penghitungan dan/atau pembayaran pajak, objek pajak dan/atau bukan objek pajak, dan/atau harta dan kewajiban sesuai ketentuan peraturan perundang-undangan perpajakan;\ne. pembukuan adalah suatu proses pencatatan yang dilakukan secara teratur untuk mengumpulkan data dan informasi keuangan yang meliputi harta, kewajiban, modal, penghasilan dan biaya, serta jumlah harga perolehan dan penyerahan barang atau jasa, yang ditutup dengan menyusun laporan keuangan berupa neraca, dan laporan laba rugi untuk periode Tahun Pajak tersebut;\nf. pembetulan adalah perbaikan SPT yang telah disampaikan kepada DJP.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Definisi: Pajak, Wajib Pajak, NPWP, SPT, pembukuan, pembetulan, dan istilah perpajakan lainnya.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -139,12 +497,62 @@
       "title": "NPWP - Kewajiban dan Pemberian",
       "status": "diubah",
       "description": "Kewajiban memiliki NPWP bagi Wajib Pajak, tata cara pendaftaran, dan pemberian NPWP oleh DJP.",
-      "keywords": ["NPWP", "pendaftaran", "WP orang pribadi", "WP badan"],
+      "keywords": [
+        "NPWP",
+        "pendaftaran",
+        "WP orang pribadi",
+        "WP badan"
+      ],
       "relatedTaxRates": [],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang kewajiban NPWP" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Penambahan ketentuan NPWP untuk WP yang menerima penghasilan dari lebih dari 1 pemberi kerja" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Penyesuaian ketentuan NPWP terkait perubahan definisi WP" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli tentang kewajiban NPWP"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penambahan ketentuan NPWP untuk WP yang menerima penghasilan dari lebih dari 1 pemberi kerja"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Penyesuaian ketentuan NPWP terkait perubahan definisi WP"
+        }
+      ],
+      "text": "(1) Wajib Pajak wajib memiliki NPWP yang diberikan oleh DJP.\n(2) Wajib Pajak orang pribadi yang telah berusia 18 (delapan belas) tahun atau telah menikah wajib mendaftarkan diri untuk memperoleh NPWP.\n(3) Wajib Pajak badan wajib mendaftarkan diri untuk memperoleh NPWP sebelum menjalankan usaha atau kegiatan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP wajib memiliki NPWP yang diberikan DJP.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "WP OP ≥18 tahun atau sudah menikah wajib mendaftar NPWP.",
+          "status": "diubah"
+        },
+        {
+          "number": "(3)",
+          "text": "WP badan wajib mendaftar NPWP sebelum menjalankan usaha.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -153,9 +561,35 @@
       "title": "NPWP - Penggabungan dan Pemisahan",
       "status": "ditambah",
       "description": "Ketentuan tentang penggabungan dan pemisahan NPWP bagi WP tertentu.",
-      "keywords": ["NPWP", "penggabungan", "pemisahan"],
+      "keywords": [
+        "NPWP",
+        "penggabungan",
+        "pemisahan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "added", "effectiveDate": "2008-01-01", "summary": "Pasal baru ditambahkan melalui Perubahan Ketiga" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "added",
+          "effectiveDate": "2008-01-01",
+          "summary": "Pasal baru ditambahkan melalui Perubahan Ketiga"
+        }
+      ],
+      "text": "(1) Dalam hal suatu badan mempunyai beberapa tempat kegiatan usaha, masing-masing tempat kegiatan usaha wajib mendaftarkan diri untuk diberikan NPWP cabang.\n(2) NPWP cabang sebagaimana dimaksud pada ayat (1) digunakan untuk pelaksanaan hak dan pemenuhan kewajiban perpajakan di tempat kegiatan usaha.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Badan dengan beberapa tempat usaha wajib mendaftar NPWP cabang.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "NPWP cabang digunakan untuk hak dan kewajiban pajak di tempat usaha.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -164,11 +598,56 @@
       "title": "SPT - Bentuk dan Isi",
       "status": "diubah",
       "description": "Bentuk dan isi Surat Pemberitahuan (SPT) yang wajib disampaikan oleh WP, termasuk SPT Tahunan dan SPT Masa.",
-      "keywords": ["SPT", "SPT Tahunan", "SPT Masa", "pelaporan"],
+      "keywords": [
+        "SPT",
+        "SPT Tahunan",
+        "SPT Masa",
+        "pelaporan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang bentuk dan isi SPT" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Penyesuaian SPT untuk media elektronik" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan SPT electronic filing" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli tentang bentuk dan isi SPT"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penyesuaian SPT untuk media elektronik"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan ketentuan SPT electronic filing"
+        }
+      ],
+      "text": "(1) SPT Tahunan adalah SPT untuk suatu Tahun Pajak.\n(2) SPT Masa adalah SPT untuk suatu Masa Pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SPT Tahunan: untuk Tahun Pajak.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "SPT Masa: untuk Masa Pajak.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -177,10 +656,56 @@
       "title": "SPT Tahunan dan SPT Masa",
       "status": "diubah",
       "description": "Jenis-jenis SPT: SPT Tahunan untuk PPh, PPN, PPnBM dan SPT Masa untuk pajak yang dipotong/dipungut.",
-      "keywords": ["SPT Tahunan", "SPT Masa", "PPh", "PPN"],
+      "keywords": [
+        "SPT Tahunan",
+        "SPT Masa",
+        "PPh",
+        "PPN"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang jenis SPT" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "partially_amended", "effectiveDate": "2008-01-01", "summary": "Penyesuaian jenis SPT" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli tentang jenis SPT"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "partially_amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penyesuaian jenis SPT"
+        }
+      ],
+      "text": "(1) SPT wajib disampaikan kepada DJP untuk tiap Tahun Pajak atau Masa Pajak.\n(2) SPT Tahunan PPh wajib disampaikan paling lambat 3 (tiga) bulan setelah akhir Tahun Pajak.\n(3) SPT Masa wajib disampaikan paling lambat 20 (dua puluh) hari setelah akhir Masa Pajak.\n(4) SPT Tahunan PPN wajib disampaikan paling lambat akhir bulan ke-3 setelah akhir Tahun Pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SPT wajib disampaikan untuk tiap Tahun Pajak/Masa Pajak.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "SPT Tahunan PPh: paling lambat 3 bulan setelah akhir Tahun Pajak.",
+          "status": "diubah"
+        },
+        {
+          "number": "(3)",
+          "text": "SPT Masa: paling lambat 20 hari setelah akhir Masa Pajak.",
+          "status": "diubah"
+        },
+        {
+          "number": "(4)",
+          "text": "SPT Tahunan PPN: paling lambat akhir bulan ke-3 setelah akhir Tahun Pajak.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -189,10 +714,45 @@
       "title": "SPT - Tempat Penyampaian",
       "status": "diubah",
       "description": "Tempat penyampaian SPT sesuai domisili WP.",
-      "keywords": ["SPT", "domisili", "penyampaian"],
+      "keywords": [
+        "SPT",
+        "domisili",
+        "penyampaian"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Penyesuaian tempat penyampaian termasuk secara elektronik" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penyesuaian tempat penyampaian termasuk secara elektronik"
+        }
+      ],
+      "text": "(1) SPT disampaikan di tempat WP domisili atau tempat kedudukan WP.\n(2) SPT dapat disampaikan secara langsung atau melalui pos dengan bukti pengiriman atau cara lain yang ditetapkan oleh DJP.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SPT disampaikan di tempat domisili/kedudukan WP.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "SPT dikirim langsung, pos, atau cara lain yang ditetapkan DJP.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -201,10 +761,47 @@
       "title": "SPT - Waktu Penyampaian",
       "status": "diubah",
       "description": "Batas waktu penyampaian SPT Tahunan (3 bulan setelah tahun pajak berakhir untuk OP, 4 bulan untuk Badan) dan SPT Masa (20 hari setelah masa pajak berakhir).",
-      "keywords": ["SPT", "batas waktu", "deadline", "3 bulan", "4 bulan"],
+      "keywords": [
+        "SPT",
+        "batas waktu",
+        "deadline",
+        "3 bulan",
+        "4 bulan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang batas waktu" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "partially_amended", "effectiveDate": "2008-01-01", "summary": "Penyesuaian batas waktu" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli tentang batas waktu"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "partially_amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penyesuaian batas waktu"
+        }
+      ],
+      "text": "(1) Masa Pajak sama dengan bulan kalender.\n(2) Tahun Pajak sama dengan tahun kalender.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Masa Pajak = bulan kalender.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Tahun Pajak = tahun kalender.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -213,10 +810,45 @@
       "title": "SPT - Perpanjangan Waktu",
       "status": "diubah",
       "description": "Ketentuan perpanjangan waktu penyampaian SPT Tahunan atas izin DJP.",
-      "keywords": ["SPT", "perpanjangan", "izin"],
+      "keywords": [
+        "SPT",
+        "perpanjangan",
+        "izin"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Penyesuaian ketentuan perpanjangan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penyesuaian ketentuan perpanjangan"
+        }
+      ],
+      "text": "(1) Wajib Pajak dapat mengajukan permohonan untuk menggunakan tahun buku yang tidak sama dengan tahun kalender sebagai Tahun Pajak.\n(2) DJP dapat memberikan persetujuan atau penolakan atas permohonan sebagaimana dimaksud pada ayat (1).",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP dapat mengajukan tahun buku ≠ tahun kalender sebagai Tahun Pajak.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "DJP menyetujui atau menolak permohonan.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -225,11 +857,55 @@
       "title": "Pembetulan SPT",
       "status": "diubah",
       "description": "Hak WP untuk membetulkan SPT yang telah disampaikan.",
-      "keywords": ["SPT", "pembetulan", "koreksi"],
+      "keywords": [
+        "SPT",
+        "pembetulan",
+        "koreksi"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang pembetulan" },
-        { "source": { "type": "UU", "number": "9", "year": 1994 }, "changeType": "amended", "effectiveDate": "1995-01-01", "summary": "Penyesuaian tata cara pembetulan" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Pengetatan pembetulan SPT" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli tentang pembetulan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "9",
+            "year": 1994
+          },
+          "changeType": "amended",
+          "effectiveDate": "1995-01-01",
+          "summary": "Penyesuaian tata cara pembetulan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Pengetatan pembetulan SPT"
+        }
+      ],
+      "text": "(1) WP yang telah menyampaikan SPT dapat menyampaikan pembetulan SPT.\n(2) Pembetulan SPT sebagaimana dimaksud pada ayat (1) disampaikan sebelum DJP menyampaikan pemberitahuan hasil pemeriksaan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP dapat membetulkan SPT yang telah disampaikan.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Pembetulan harus sebelum pemberitahuan hasil pemeriksaan.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -238,10 +914,40 @@
       "title": "Penyampaian SPT Tambahan",
       "status": "berlaku",
       "description": "Ketentuan penyampaian SPT tambahan setelah pemeriksaan dimulai.",
-      "keywords": ["SPT", "tambahan", "pemeriksaan"],
+      "keywords": [
+        "SPT",
+        "tambahan",
+        "pemeriksaan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Penyesuaian ketentuan SPT tambahan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penyesuaian ketentuan SPT tambahan"
+        }
+      ],
+      "text": "(1) WP dapat menyampaikan SPT Tambahan dalam hal WP mengetahui SPT yang disampaikan tidak benar.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SPT Tambahan dapat disampaikan jika SPT yang telah disampaikan tidak benar.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -250,11 +956,61 @@
       "title": "Kewajiban Pembukuan",
       "status": "diubah",
       "description": "Kewajiban menyelenggarakan pembukuan atau pencatatan bagi WP yang menjalankan usaha atau melakukan pekerjaan bebas.",
-      "keywords": ["pembukuan", "pencatatan", "usaha", "pekerjaan bebas"],
+      "keywords": [
+        "pembukuan",
+        "pencatatan",
+        "usaha",
+        "pekerjaan bebas"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli tentang kewajiban pembukuan" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "partially_amended", "effectiveDate": "2008-01-01", "summary": "Penyesuaian ketentuan pembukuan untuk UMKM" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan threshold pembukuan/pencatatan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli tentang kewajiban pembukuan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "partially_amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penyesuaian ketentuan pembukuan untuk UMKM"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan threshold pembukuan/pencatatan"
+        }
+      ],
+      "text": "(1) WP wajib menyelenggarakan pembukuan atau pencatatan.\n(2) Kewajiban pembukuan sebagaimana dimaksud pada ayat (1) berlaku bagi WP badan dan WP OP yang menjalankan usaha atau pekerjaan bebas.\n(3) WP OP yang menjalankan usaha atau pekerjaan bebas yang bruto ≤Rp4,8 miliar dapat melakukan pencatatan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP wajib menyelenggarakan pembukuan atau pencatatan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Pembukuan wajib bagi WP badan dan WP OP usaha/bebas.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(3)",
+          "text": "WP OP bruto ≤Rp4,8 miliar dapat melakukan pencatatan.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -263,10 +1019,46 @@
       "title": "Pengecualian Kewajiban Pembukuan",
       "status": "diubah",
       "description": "WP yang dikecualikan dari kewajiban pembukuan (cukup pencatatan).",
-      "keywords": ["pembukuan", "pengecualian", "UMKM", "peredaran bruto"],
+      "keywords": [
+        "pembukuan",
+        "pengecualian",
+        "UMKM",
+        "peredaran bruto"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Perubahan batas peredaran bruto untuk pengecualian" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Perubahan batas peredaran bruto untuk pengecualian"
+        }
+      ],
+      "text": "(1) Pembukuan atau pencatatan diselenggarakan dengan mengikuti prinsip taat asas dan dengan itikad baik.\n(2) Pembukuan diselenggarakan dengan menggunakan huruf latin, angka arab, dan bahasa Indonesia.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pembukuan/pencatatan: taat asas dan itikad baik.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Huruf latin, angka arab, bahasa Indonesia.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -275,9 +1067,34 @@
       "title": "Tahun Buku",
       "status": "berlaku",
       "description": "Ketentuan tentang tahun buku dan tanggal tutup buku.",
-      "keywords": ["tahun buku", "tanggal tutup buku"],
+      "keywords": [
+        "tahun buku",
+        "tanggal tutup buku"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Pembukuan diselenggarakan dengan cara pengumpulan data secara teratur mengenai peredaran atau penerimaan bruto dan/atau penghasilan serta pengeluaran.\n(2) Pembukuan yang diselenggarakan sebagaimana dimaksud pada ayat (1) ditutup dengan menyusun laporan keuangan berupa neraca dan laporan laba rugi.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pembukuan: pengumpulan data teratur mengenai peredaran bruto, penghasilan, dan pengeluaran.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Ditutup dengan neraca dan laporan laba rugi.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -286,9 +1103,34 @@
       "title": "Metode Pembukuan",
       "status": "berlaku",
       "description": "Pembukuan diselenggarakan dengan cara atau metode yang lazim dipakai di Indonesia.",
-      "keywords": ["metode pembukuan", "saldo normal"],
+      "keywords": [
+        "metode pembukuan",
+        "saldo normal"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) WP yang menyelenggarakan pembukuan wajib menyimpan pembukuan tersebut selama 10 (sepuluh) tahun di Indonesia.\n(2) WP yang menyelenggarakan pencatatan wajib menyimpan pencatatan tersebut selama 10 (sepuluh) tahun di Indonesia.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pembukuan wajib disimpan 10 tahun di Indonesia.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Pencatatan wajib disimpan 10 tahun di Indonesia.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -297,9 +1139,35 @@
       "title": "Isi Pembukuan",
       "status": "berlaku",
       "description": "Syarat isi pembukuan: secara kronologis, sistematis, dan disertai bukti.",
-      "keywords": ["isi pembukuan", "kronologis", "bukti"],
+      "keywords": [
+        "isi pembukuan",
+        "kronologis",
+        "bukti"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Penghasilan dan pengeluaran dalam pembukuan harus dicatat pada saat timbulnya hak atau kewajiban.\n(2) Penyusutan dan amortisasi dilakukan berdasarkan ketentuan yang berlaku dalam UU PPh.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penghasilan dan pengeluaran dicatat saat timbulnya hak/kewajiban (acual basis).",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Penyusutan dan amortisasi sesuai UU PPh.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -308,9 +1176,30 @@
       "title": "Bahasa dan Satuan Pembukuan",
       "status": "berlaku",
       "description": "Pembukuan diselenggarakan dalam bahasa Indonesia dan menggunakan satuan rupiah.",
-      "keywords": ["bahasa Indonesia", "rupiah", "pembukuan"],
+      "keywords": [
+        "bahasa Indonesia",
+        "rupiah",
+        "pembukuan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Penilaian persediaan dan persediaan barang dalam pembukuan dilakukan dengan cara yang ditetapkan dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penilaian persediaan dilakukan sesuai ketentuan PP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -319,10 +1208,45 @@
       "title": "Penyimpanan Pembukuan",
       "status": "diubah",
       "description": "Kewajiban menyimpan pembukuan, catatan, dan dokumen pendukung selama 10 tahun.",
-      "keywords": ["penyimpanan", "10 tahun", "arsip"],
+      "keywords": [
+        "penyimpanan",
+        "10 tahun",
+        "arsip"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Perpanjangan masa penyimpanan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Perpanjangan masa penyimpanan"
+        }
+      ],
+      "text": "(1) Pembukuan atau pencatatan dan dokumen yang menjadi dasarnya wajib disimpan selama 10 tahun.\n(2) Dalam hal WP menyelenggarakan pembukuan dengan menggunakan pembukuan dalam bentuk catatan digital, WP wajib menyimpan cadangan (backup) pembukuan tersebut.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pembukuan/pencatatan dan dokumen dasar disimpan 10 tahun.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Pembukuan digital wajib menyimpan backup.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -331,10 +1255,45 @@
       "title": "Penyetoran Pajak",
       "status": "diubah",
       "description": "Ketentuan penyetoran pajak oleh WP dan/atau pemotong/pemungut pajak ke kas negara.",
-      "keywords": ["penyetoran", "kode billing", "SUNAT"],
+      "keywords": [
+        "penyetoran",
+        "kode billing",
+        "SUNAT"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Penambahan SUNAT dan penyetoran elektronik" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penambahan SUNAT dan penyetoran elektronik"
+        }
+      ],
+      "text": "(1) Penyetoran pajak yang terutang berdasarkan SPT Masa wajib dilakukan oleh WP paling lambat akhir bulan berikutnya setelah Masa Pajak berakhir.\n(2) Penyetoran pajak yang terutang berdasarkan SPT Tahunan wajib dilakukan oleh WP paling lambat sebelum SPT Tahunan disampaikan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penyetoran SPT Masa: paling lambat akhir bulan berikutnya.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Penyetoran SPT Tahunan: sebelum SPT disampaikan.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -343,9 +1302,35 @@
       "title": "Penyetoran Pajak secara Elektronik",
       "status": "ditambah",
       "description": "Ketentuan penyetoran pajak secara elektronik.",
-      "keywords": ["elektronik", "e-billing", "mpn"],
+      "keywords": [
+        "elektronik",
+        "e-billing",
+        "mpn"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "added", "effectiveDate": "2008-01-01", "summary": "Pasal baru tentang penyetoran elektronik" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "added",
+          "effectiveDate": "2008-01-01",
+          "summary": "Pasal baru tentang penyetoran elektronik"
+        }
+      ],
+      "text": "(1) Penyetoran pajak melalui tempat penyetoran pajak yang ditetapkan oleh Menteri Keuangan.\n(2) Penyetoran pajak sebagaimana dimaksud pada ayat (1) dilakukan dengan Surat Setoran Pajak (SSP) atau sarana penyetoran lain yang ditetapkan oleh DJP.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penyetoran melalui tempat yang ditetapkan Menkeu.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Menggunakan SSP atau sarana lain yang ditetapkan DJP.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -354,10 +1339,45 @@
       "title": "Pengawasan oleh DJP",
       "status": "diubah",
       "description": "Tata cara pengawasan kepatuhan WP oleh Direktorat Jenderal Pajak.",
-      "keywords": ["pengawasan", "DJP", "kepatuhan"],
+      "keywords": [
+        "pengawasan",
+        "DJP",
+        "kepatuhan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan tata cara pengawasan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan tata cara pengawasan"
+        }
+      ],
+      "text": "(1) DJP dapat melakukan pengawasan terhadap pelaksanaan kewajiban perpajakan.\n(2) Pengawasan sebagaimana dimaksud pada ayat (1) dilakukan secara berkala.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "DJP dapat melakukan pengawasan pelaksanaan kewajiban perpajakan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Pengawasan dilakukan secara berkala.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -366,10 +1386,45 @@
       "title": "Pengawasan Pemotong/Pemungut Pajak",
       "status": "diubah",
       "description": "Pengawasan terhadap pemotong dan pemungut pajak.",
-      "keywords": ["pemotong", "pemungut", "pengawasan"],
+      "keywords": [
+        "pemotong",
+        "pemungut",
+        "pengawasan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Penambahan ketentuan pengawasan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Penambahan ketentuan pengawasan"
+        }
+      ],
+      "text": "(1) DJP dapat meminta keterangan dari WP atau pihak lain.\n(2) WP atau pihak lain wajib memberikan keterangan yang diperlukan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "DJP dapat meminta keterangan dari WP/pihak lain.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "WP/pihak lain wajib memberikan keterangan.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -378,10 +1433,45 @@
       "title": "Pemeriksaan",
       "status": "diubah",
       "description": "Ketentuan pemeriksaan untuk menguji kepatuhan pemenuhan kewajiban perpajakan.",
-      "keywords": ["pemeriksaan", "tax audit", "kepatuhan"],
+      "keywords": [
+        "pemeriksaan",
+        "tax audit",
+        "kepatuhan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Perubahan ketentuan pemeriksaan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Perubahan ketentuan pemeriksaan"
+        }
+      ],
+      "text": "(1) DJP dapat melakukan pemeriksaan terhadap WP untuk menguji kepatuhan pemenuhan kewajiban perpajakan.\n(2) Pemeriksaan sebagaimana dimaksud pada ayat (1) dapat dilakukan di tempat WP, tempat usaha, atau tempat lain yang dianggap perlu.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "DJP dapat memeriksa WP untuk menguji kepatuhan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Pemeriksaan di tempat WP, usaha, atau tempat lain.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -390,10 +1480,45 @@
       "title": "Waktu Pemeriksaan",
       "status": "diubah",
       "description": "Batas waktu pemeriksaan dan perpanjangan.",
-      "keywords": ["pemeriksaan", "waktu", "perpanjangan"],
+      "keywords": [
+        "pemeriksaan",
+        "waktu",
+        "perpanjangan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Penyesuaian batas waktu" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penyesuaian batas waktu"
+        }
+      ],
+      "text": "(1) WP yang tidak puas dengan hasil pemeriksaan dapat mengajukan keberatan kepada DJP.\n(2) Keberatan disampaikan secara tertulis dalam bahasa Indonesia paling lambat 3 bulan sejak tanggal surat ketetapan pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP dapat mengajukan keberatan jika tidak puas.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Keberatan tertulis dalam bahasa Indonesia, paling lambat 3 bulan.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -402,9 +1527,29 @@
       "title": "Himbauan",
       "status": "berlaku",
       "description": "Himbauan kepada WP untuk memenuhi kewajiban perpajakan.",
-      "keywords": ["himbuauan", "petunjuk"],
+      "keywords": [
+        "himbuauan",
+        "petunjuk"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) DJP dapat memberikan himbauan atau petunjuk kepada WP untuk memenuhi kewajiban perpajakan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "DJP dapat memberikan himbauan/petunjuk kepada WP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -413,10 +1558,46 @@
       "title": "Surat Tagihan Pajak (STP)",
       "status": "diubah",
       "description": "STP diterbitkan untuk menagih pajak, bunga, dan denda apabila WP tidak atau terlambat membayar.",
-      "keywords": ["STP", "tagihan", "bunga", "denda"],
+      "keywords": [
+        "STP",
+        "tagihan",
+        "bunga",
+        "denda"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "partially_amended", "effectiveDate": "2008-01-01", "summary": "Penyesuaian STP" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "partially_amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Penyesuaian STP"
+        }
+      ],
+      "text": "(1) STP diterbitkan jika terdapat pajak yang terutang belum dibayar.\n(2) STP juga diterbitkan atas sanksi administrasi berupa bunga dan/atau denda.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "STP diterbitkan jika pajak terutang belum dibayar.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "STP juga untuk sanksi administrasi bunga/denda.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -425,9 +1606,34 @@
       "title": "Surat Pemberitahuan Hasil Pemeriksaan (SPHP)",
       "status": "berlaku",
       "description": "SPHP diterbitkan setelah pemeriksaan sebagai dasar penerbitan SKP.",
-      "keywords": ["SPHP", "pemeriksaan"],
+      "keywords": [
+        "SPHP",
+        "pemeriksaan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) SPHP diterbitkan berdasarkan hasil pemeriksaan.\n(2) WP dapat memberikan tanggapan atas SPHP dalam jangka waktu yang ditentukan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SPHP diterbitkan berdasarkan hasil pemeriksaan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "WP dapat memberi tanggapan dalam jangka waktu tertentu.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -436,9 +1642,34 @@
       "title": "SKPKB",
       "status": "berlaku",
       "description": "Surat Ketetapan Pajak Kurang Bayar — diterbitkan apabila jumlah pajak terutang lebih besar dari kredit pajak.",
-      "keywords": ["SKPKB", "kurang bayar"],
+      "keywords": [
+        "SKPKB",
+        "kurang bayar"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) SKPKB diterbitkan jika berdasarkan hasil pemeriksaan terdapat kurang bayar pajak.\n(2) Besarnya kurang bayar pajak sebagaimana dimaksud pada ayat (1) ditetapkan oleh DJP.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SKPKB diterbitkan jika ada kurang bayar pajak dari pemeriksaan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Besarnya kurang bayar ditetapkan DJP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -447,9 +1678,34 @@
       "title": "SKPKBT",
       "status": "berlaku",
       "description": "SKP Kurang Bayar Tambahan — diterbitkan jika setelah SKPKB diterbitkan ditemukan data baru.",
-      "keywords": ["SKPKBT", "tambahan"],
+      "keywords": [
+        "SKPKBT",
+        "tambahan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) SKPKBT diterbitkan jika ditemukan pajak yang tidak atau kurang dibayar karena kelalaian WP.\n(2) SKPKBT dapat diterbitkan dalam jangka waktu 5 tahun sebagaimana dimaksud dalam Pasal 11.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SKPKBT untuk pajak tidak/kurang dibayar karena kelalaian WP.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Dapat diterbitkan dalam 5 tahun.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -458,9 +1714,29 @@
       "title": "SKPN",
       "status": "berlaku",
       "description": "SKP Nihil — pajak terutang sama dengan kredit pajak.",
-      "keywords": ["SKPN", "nihil"],
+      "keywords": [
+        "SKPN",
+        "nihil"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) SKPN diterbitkan jika berdasarkan hasil pemeriksaan jumlah pajak yang terutang sama dengan jumlah pajak yang telah dibayar.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SKPN: pajak terutang = pajak dibayar.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -469,9 +1745,35 @@
       "title": "SKPLB",
       "status": "berlaku",
       "description": "SKP Lebih Bayar — kredit pajak lebih besar dari pajak terutang.",
-      "keywords": ["SKPLB", "lebih bayar", "restitusi"],
+      "keywords": [
+        "SKPLB",
+        "lebih bayar",
+        "restitusi"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) SKPLB diterbitkan jika berdasarkan hasil pemeriksaan jumlah pajak yang telah dibayar lebih besar dari pajak yang terutang.\n(2) Kelebihan pembayaran pajak dikembalikan dalam waktu paling lambat 12 bulan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "SKPLB: pajak dibayar > pajak terutang.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Kelebihan dikembalikan paling lambat 12 bulan.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -480,11 +1782,60 @@
       "title": "Keberatan",
       "status": "diubah",
       "description": "Hak WP untuk mengajukan keberatan terhadap SKP atau pemotongan/pemungutan pihak ketiga dalam waktu 3 bulan.",
-      "keywords": ["keberatan", "3 bulan", "SKP"],
+      "keywords": [
+        "keberatan",
+        "3 bulan",
+        "SKP"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "16", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Pengetatan ketentuan keberatan" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan tata cara keberatan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "16",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Pengetatan ketentuan keberatan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan tata cara keberatan"
+        }
+      ],
+      "text": "(1) WP dapat mengajukan keberatan kepada DJP atas SKP atau pemotongan/pemungutan pajak.\n(2) Keberatan disampaikan secara tertulis dalam bahasa Indonesia dengan alasan yang jelas dan disertai perhitungan pajak.\n(3) Keberatan diajukan paling lambat 3 bulan sejak tanggal penetapan SKP.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP dapat mengajukan keberatan atas SKP atau pemotongan/pemungutan.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Keberatan tertulis, bahasa Indonesia, alasan jelas, disertai perhitungan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(3)",
+          "text": "Paling lambat 3 bulan sejak tanggal SKP.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -493,11 +1844,55 @@
       "title": "Banding ke PP",
       "status": "diubah",
       "description": "WP yang tidak menerima keputusan keberatan dapat mengajukan banding ke Pengadilan Pajak dalam waktu 3 bulan.",
-      "keywords": ["banding", "Pengadilan Pajak", "3 bulan"],
+      "keywords": [
+        "banding",
+        "Pengadilan Pajak",
+        "3 bulan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "16", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penyesuaian banding ke Pengadilan Pajak" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan banding" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "16",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Penyesuaian banding ke Pengadilan Pajak"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan ketentuan banding"
+        }
+      ],
+      "text": "(1) WP dapat mengajukan banding ke Pengadilan Pajak atas keberatan yang ditolak sebagian atau seluruhnya.\n(2) Banding diajukan secara tertulis dalam bahasa Indonesia paling lambat 3 bulan sejak tanggal keberatan ditolak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP dapat banding ke Pengadilan Pajak atas keberatan yang ditolak.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Banding tertulis, bahasa Indonesia, paling lambat 3 bulan.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -506,9 +1901,34 @@
       "title": "Putusan Banding",
       "status": "berlaku",
       "description": "Ketentuan tentang putusan Pengadilan Pajak.",
-      "keywords": ["putusan", "Pengadilan Pajak"],
+      "keywords": [
+        "putusan",
+        "Pengadilan Pajak"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) WP dapat mengajukan peninjauan kembali ke Mahkamah Agung atas putusan Pengadilan Pajak.\n(2) Peninjauan kembali hanya dapat diajukan jika didasarkan pada:\na. putusan Pengadilan Pajak yang tidak mengadili menurut ketentuan peraturan perundang-undangan;\nb. putusan Pengadilan Pajak yang tidak mempertimbangkan alasan yang menjadi dasar keberatan;\nc. alasan atau dasar permohonan yang baru tidak dipertimbangkan oleh Pengadilan Pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Peninjauan kembali ke MA atas putusan Pengadilan Pajak.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "PK hanya atas: tidak mengadili sesuai UU, tidak mempertimbangkan alasan keberatan, alasan baru tidak dipertimbangkan.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -517,9 +1937,35 @@
       "title": "Peninjauan Kembali",
       "status": "berlaku",
       "description": "Peninjauan kembali ke Mahkamah Agung terhadap putusan Pengadilan Pajak.",
-      "keywords": ["PK", "Mahkamah Agung", "peninjauan kembali"],
+      "keywords": [
+        "PK",
+        "Mahkamah Agung",
+        "peninjauan kembali"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) WP wajib membayar atau melunasi pajak yang terutang sebelum mengajukan keberatan, banding, atau peninjauan kembali.\n(2) Pengajuan keberatan, banding, atau peninjauan kembali tidak menunda kewajiban membayar pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "WP wajib bayar pajak sebelum mengajukan keberatan/banding/PK.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Keberatan/banding/PK tidak menunda kewajiban bayar pajak.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -528,9 +1974,34 @@
       "title": "Pembayaran Pajak",
       "status": "berlaku",
       "description": "WP wajib membayar pajak terutang termasuk sanksi administrasi.",
-      "keywords": ["pembayaran", "kewajiban"],
+      "keywords": [
+        "pembayaran",
+        "kewajiban"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Pajak yang terutang harus dibayar paling lambat pada saat SPT disampaikan.\n(2) Pembayaran pajak dilakukan dengan Surat Setoran Pajak (SSP) atau sarana pembayaran lain yang ditetapkan oleh DJP.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pajak terutang dibayar paling lambat saat SPT disampaikan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Pembayaran via SSP atau sarana lain yang ditetapkan DJP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -539,10 +2010,45 @@
       "title": "Surat Paksa",
       "status": "diubah",
       "description": "Penagihan pajak dengan Surat Paksa jika WP tidak membayar setelah diterbitkan STP/SKPKB.",
-      "keywords": ["surat paksa", "penagihan", "21 hari"],
+      "keywords": [
+        "surat paksa",
+        "penagihan",
+        "21 hari"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan penagihan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan ketentuan penagihan"
+        }
+      ],
+      "text": "(1) Penagihan pajak dilakukan dengan Surat Paksa.\n(2) Penagihan pajak sebagaimana dimaksud pada ayat (1) dilakukan apabila WP tidak membayar pajak setelah lewat jatuh tempo pembayaran.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penagihan pajak dengan Surat Paksa.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Surat Paksa diterbitkan jika WP tidak bayar setelah jatuh tempo.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -551,9 +2057,34 @@
       "title": "Surat Sitaan",
       "status": "berlaku",
       "description": "Penagihan dengan surat sitaan jika WP mengabaikan Surat Paksa.",
-      "keywords": ["sitaan", "eksekusi"],
+      "keywords": [
+        "sitaan",
+        "eksekusi"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) DJP dapat melakukan pencegahan terhadap WP yang akan meninggalkan Indonesia.\n(2) Pencegahan sebagaimana dimaksud pada ayat (1) dilakukan jika DJP berpendapat bahwa WP akan meninggalkan Indonesia dengan tidak membayar pajak.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "DJP dapat mencegah WP yang akan meninggalkan Indonesia.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Jika DJP berpendapat WP tidak akan membayar pajak.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -562,10 +2093,45 @@
       "title": "Pencegahan",
       "status": "diubah",
       "description": "Pencegahan WP dari ke luar negeri jika diduga akan meninggalkan Indonesia untuk menghindar dari kewajiban perpajakan.",
-      "keywords": ["pencegahan", "imigrasi", "ke luar negeri"],
+      "keywords": [
+        "pencegahan",
+        "imigrasi",
+        "ke luar negeri"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan ketentuan pencegahan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan ketentuan pencegahan"
+        }
+      ],
+      "text": "(1) Penyitaan dapat dilakukan terhadap harta WP untuk menagih pajak yang terutang.\n(2) Penyitaan dilakukan sesuai dengan ketentuan peraturan perundang-undangan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penyitaan harta WP untuk menagih pajak terutang.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Sesuai ketentuan peraturan perundang-undangan.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -574,9 +2140,35 @@
       "title": "Penyitaan",
       "status": "berlaku",
       "description": "Tata cara penyitaan barang bergerak dan tidak bergerak milik WP.",
-      "keywords": ["penyitaan", "barang bergerak", "bum"],
+      "keywords": [
+        "penyitaan",
+        "barang bergerak",
+        "bum"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Lelang dapat dilakukan terhadap harta yang disita.\n(2) Hasil lelang digunakan untuk melunasi pajak yang terutang.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Lelang harta yang disita.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Hasil lelang untuk melunasi pajak terutang.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -585,9 +2177,34 @@
       "title": "Gugatan Pajak",
       "status": "berlaku",
       "description": "Ketentuan tentang gugatan atas penagihan pajak.",
-      "keywords": ["gugatan", "penagihan"],
+      "keywords": [
+        "gugatan",
+        "penagihan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Penagihan pajak tidak dilakukan terhadap WP yang tidak mempunyai harta.\n(2) Penagihan pajak juga tidak dilakukan jika pajak yang terutang tidak dapat dilunasi dari harta WP.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Penagihan tidak dilakukan jika WP tidak punya harta.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Atau jika pajak tidak bisa dilunasi dari harta WP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -596,9 +2213,39 @@
       "title": "Eksekusi",
       "status": "berlaku",
       "description": "Tata cara eksekusi terhadap barang yang disita.",
-      "keywords": ["eksekusi", "lelang"],
+      "keywords": [
+        "eksekusi",
+        "lelang"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Daluwarsa penagihan pajak terjadi setelah lewat 5 (lima) tahun sejak saat terutangnya pajak.\n(2) Daluwarsa tidak termasuk dalam penghitungan:\na. jangka waktu penundaan penagihan pajak;\nb. jangka waktu penundaan pemeriksaan;\nc. jangka waktu pemeriksaan.\n(3) Daluwarsa penagihan pajak terputus karena:\na. penyampaian SPT;\nb. penerbitan STP;\nc. penerbitan SKPKB;\nd. penerbitan SKPKBT;\ne. pengakuan salah atau kelalaian WP.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Daluwarsa penagihan: 5 tahun sejak pajak terutang.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Tidak termasuk: penundaan penagihan, pemeriksaan, dan penghambatan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(3)",
+          "text": "Daluwarsa terputus: SPT, STP, SKPKB, SKPKBT, pengakuan WP.",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -607,10 +2254,45 @@
       "title": "Daluwarsa Penagihan Pajak",
       "status": "diubah",
       "description": "Daluwarsa penagihan pajak 5 tahun sejak SKP diterbitkan. Dapat dipanjangkan.",
-      "keywords": ["daluwarsa", "5 tahun", "penagihan"],
+      "keywords": [
+        "daluwarsa",
+        "5 tahun",
+        "penagihan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli - daluwarsa 5 tahun" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perpanjangan daluwarsa untuk kasus tertentu" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli - daluwarsa 5 tahun"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perpanjangan daluwarsa untuk kasus tertentu"
+        }
+      ],
+      "text": "(1) Imbalan bunga diberikan kepada WP atas kelebihan pembayaran pajak.\n(2) Imbalan bunga dihitung sejak tanggal kelebihan dibayar sampai tanggal diterbitkannya SKPLB atau tanggal penyetoran kekurangan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Imbalan bunga atas kelebihan bayar pajak.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Dihitung sejak kelebihan dibayar sampai SKPLB/penyetoran.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -619,10 +2301,45 @@
       "title": "Imbalan Bunga",
       "status": "diubah",
       "description": "Imbalan bunga atas kelebihan pembayaran pajak, dihitung berdasarkan tarif bunga per bulan.",
-      "keywords": ["bunga", "imbalan", "restitusi"],
+      "keywords": [
+        "bunga",
+        "imbalan",
+        "restitusi"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Perubahan perhitungan bunga" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Perubahan perhitungan bunga"
+        }
+      ],
+      "text": "(1) Setiap orang yang memperoleh data perpajakan wajib merahasiakannya.\n(2) Data perpajakan sebagaimana dimaksud pada ayat (1) tidak boleh diketahui oleh pihak lain, kecuali ditentukan oleh peraturan perundang-undangan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Data perpajakan wajib dirahasiakan.",
+          "status": "berlaku"
+        },
+        {
+          "number": "(2)",
+          "text": "Tidak boleh diketahui pihak lain, kecuali ditentukan UU.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -631,11 +2348,50 @@
       "title": "Kerahasiaan",
       "status": "diubah",
       "description": "Kewajiban menjaga kerahasiaan data perpajakan oleh pejabat pajak. Pengecualian untuk kepentingan hukum tertentu.",
-      "keywords": ["kerahasiaan", "data pajak", "DJP"],
+      "keywords": [
+        "kerahasiaan",
+        "data pajak",
+        "DJP"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" },
-        { "source": { "type": "UU", "number": "16", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Pengetatan kerahasiaan" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Penambahan pengecualian untuk kerja sama internasional" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "16",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Pengetatan kerahasiaan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Penambahan pengecualian untuk kerja sama internasional"
+        }
+      ],
+      "text": "(1) Setiap orang yang karena kelalaian tidak menyampaikan SPT atau menyampaikan SPT yang isinya tidak benar dikenakan sanksi administrasi berupa denda.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Sanksi administrasi: denda bagi yang lalai tidak menyampaikan SPT atau SPT tidak benar.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -644,12 +2400,66 @@
       "title": "Sanksi Administrasi - Denda dan Bunga",
       "status": "diubah",
       "description": "Sanksi administrasi berupa denda dan/atau bunga atas keterlambatan, ketidakbenaran, dan pelanggaran lainnya.",
-      "keywords": ["sanksi", "denda", "bunga", "administrasi"],
+      "keywords": [
+        "sanksi",
+        "denda",
+        "bunga",
+        "administrasi"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli - sanksi administrasi" },
-        { "source": { "type": "UU", "number": "9", "year": 1994 }, "changeType": "amended", "effectiveDate": "1995-01-01", "summary": "Penyesuaian sanksi" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Perubahan tarif sanksi dan penambahan sanksi keterlambatan" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan sanksi administrasi" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli - sanksi administrasi"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "9",
+            "year": 1994
+          },
+          "changeType": "amended",
+          "effectiveDate": "1995-01-01",
+          "summary": "Penyesuaian sanksi"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Perubahan tarif sanksi dan penambahan sanksi keterlambatan"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan sanksi administrasi"
+        }
+      ],
+      "text": "(1) WP yang terlambat menyampaikan SPT dikenakan sanksi administrasi berupa denda.\n(2) Besarnya denda ditetapkan sebesar:\na. Rp 1.000.000 untuk SPT Tahunan WP OP;\nb. Rp 1.000.000 untuk SPT Tahunan WP badan;\nc. Rp 100.000 untuk SPT Masa.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Sanksi denda atas keterlambatan SPT.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Denda: Rp1.000.000 (SPT Tahunan OP/badan), Rp100.000 (SPT Masa).",
+          "status": "diubah"
+        }
       ]
     },
     {
@@ -658,10 +2468,46 @@
       "title": "Sanksi Keterlambatan Penyampaian SPT",
       "status": "ditambah",
       "description": "Sanksi denda atas keterlambatan penyampaian SPT.",
-      "keywords": ["sanksi", "SPT", "keterlambatan", "Rp 1.000.000"],
+      "keywords": [
+        "sanksi",
+        "SPT",
+        "keterlambatan",
+        "Rp 1.000.000"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "added", "effectiveDate": "2008-01-01", "summary": "Pasal baru tentang sanksi keterlambatan SPT" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan besaran sanksi" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "added",
+          "effectiveDate": "2008-01-01",
+          "summary": "Pasal baru tentang sanksi keterlambatan SPT"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan besaran sanksi"
+        }
+      ],
+      "text": "(1) WP yang tidak atau kurang membayar pajak yang terutang dikenakan sanksi administrasi berupa bunga sebesar tarif bunga per bulan yang ditetapkan berdasarkan ketentuan peraturan perundang-undangan.\n(2) Bunga dihitung dari tanggal jatuh tempo pembayaran sampai tanggal pembayaran.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Sanksi bunga atas tidak/kurang bayar pajak.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Bunga dihitung dari jatuh tempo sampai tanggal bayar.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -670,10 +2516,32 @@
       "title": "Sanksi Keterlambatan Pembayaran",
       "status": "ditambah",
       "description": "Sanksi bunga atas keterlambatan pembayaran pajak sebesar 2% per bulan.",
-      "keywords": ["sanksi", "bunga", "2%", "keterlambatan"],
+      "keywords": [
+        "sanksi",
+        "bunga",
+        "2%",
+        "keterlambatan"
+      ],
       "relatedTaxRates": [],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "added", "effectiveDate": "2008-01-01", "summary": "Pasal baru - sanksi bunga 2%/bulan" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "added",
+          "effectiveDate": "2008-01-01",
+          "summary": "Pasal baru - sanksi bunga 2%/bulan"
+        }
+      ],
+      "text": "(1) WP yang karena kelalaian menyampaikan SPT yang isinya tidak benar atau tidak lengkap dikenakan sanksi administrasi berupa denda sebesar 150% (seratus lima puluh persen) dari pajak yang tidak atau kurang dibayar.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Sanksi denda 150% atas kelalaian SPT tidak benar/tidak lengkap.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -682,12 +2550,66 @@
       "title": "Sanksi Pidana - Ketentuan Umum",
       "status": "diubah",
       "description": "Sanksi pidana atas tindak pidana di bidang perpajakan: tidak menyampaikan SPT, menyampaikan SPT tidak benar, tidak membayar pajak.",
-      "keywords": ["pidana", "penjara", "denda", "tindak pidana"],
+      "keywords": [
+        "pidana",
+        "penjara",
+        "denda",
+        "tindak pidana"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli - sanksi pidana" },
-        { "source": { "type": "UU", "number": "16", "year": 2000 }, "changeType": "amended", "effectiveDate": "2001-01-01", "summary": "Penambahan sanksi pidana baru" },
-        { "source": { "type": "UU", "number": "28", "year": 2007 }, "changeType": "amended", "effectiveDate": "2008-01-01", "summary": "Perubahan sanksi pidana" },
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "amended", "effectiveDate": "2022-01-01", "summary": "Perubahan daluwarsa pidana dan penambahan sanksi" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli - sanksi pidana"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "16",
+            "year": 2000
+          },
+          "changeType": "amended",
+          "effectiveDate": "2001-01-01",
+          "summary": "Penambahan sanksi pidana baru"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "28",
+            "year": 2007
+          },
+          "changeType": "amended",
+          "effectiveDate": "2008-01-01",
+          "summary": "Perubahan sanksi pidana"
+        },
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "amended",
+          "effectiveDate": "2022-01-01",
+          "summary": "Perubahan daluwarsa pidana dan penambahan sanksi"
+        }
+      ],
+      "text": "(1) Setiap orang yang karena kealpaannya tidak mendaftarkan diri atau menyalahgunakan atau menggunakan NPWP orang lain sehingga menimbulkan kerugian bagi pendapatan negara diancam dengan pidana penjara paling lama 6 (enam) bulan atau denda paling banyak Rp 10.000.000.\n(2) Tindak pidana sebagaimana dimaksud pada ayat (1) adalah pelanggaran.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pidana penjara max 6 bulan atau denda max Rp10.000.000 atas kealpaan NPWP.",
+          "status": "diubah"
+        },
+        {
+          "number": "(2)",
+          "text": "Merupakan pelanggaran.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -696,9 +2618,35 @@
       "title": "Pengungkapan Sukarela",
       "status": "ditambah",
       "description": "Program Pengungkapan Sukarela bagi WP yang mengungkapkan harta yang belum dilaporkan.",
-      "keywords": ["pengungkapan sukarela", "tax amnesty", "VDP"],
+      "keywords": [
+        "pengungkapan sukarela",
+        "tax amnesty",
+        "VDP"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang Voluntary Disclosure Program" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "added",
+          "effectiveDate": "2022-01-01",
+          "summary": "Pasal baru tentang Voluntary Disclosure Program"
+        }
+      ],
+      "text": "(1) Setiap orang yang karena sengaja tidak mendaftarkan diri atau menyalahgunakan atau menggunakan NPWP orang lain sehingga menimbulkan kerugian bagi pendapatan negara diancam dengan pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp 100.000.000.\n(2) Tindak pidana sebagaimana dimaksud pada ayat (1) adalah kejahatan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pidana penjara max 2 tahun atau denda max Rp100.000.000 atas kesengajaan NPWP.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Merupakan kejahatan.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -707,9 +2655,35 @@
       "title": "Kerja Sama Bantuan Penagihan Pajak",
       "status": "ditambah",
       "description": "Ketentuan kerja sama bantuan penagihan pajak antarnegara.",
-      "keywords": ["MAA", "kerjasama internasional", "penagihan lintas batas"],
+      "keywords": [
+        "MAA",
+        "kerjasama internasional",
+        "penagihan lintas batas"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang mutual assistance" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "added",
+          "effectiveDate": "2022-01-01",
+          "summary": "Pasal baru tentang mutual assistance"
+        }
+      ],
+      "text": "(1) Setiap orang yang karena sengaja tidak menyetorkan pajak yang telah dipotong atau dipungutnya sehingga menimbulkan kerugian bagi pendapatan negara diancam dengan pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp 100.000.000.\n(2) Tindak pidana sebagaimana dimaksud pada ayat (1) adalah kejahatan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pidana max 2 tahun/denda max Rp100 juta atas tidak menyetorkan pajak yang dipotong/dipungut.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Kejahatan.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -718,9 +2692,35 @@
       "title": "Pertukaran Informasi Perpajakan",
       "status": "ditambah",
       "description": "Ketentuan pertukaran informasi perpajakan dengan yurisdiksi lain.",
-      "keywords": ["EOI", "pertukaran informasi", "BEPS"],
+      "keywords": [
+        "EOI",
+        "pertukaran informasi",
+        "BEPS"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang exchange of information" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "added",
+          "effectiveDate": "2022-01-01",
+          "summary": "Pasal baru tentang exchange of information"
+        }
+      ],
+      "text": "(1) Setiap orang yang dengan sengaja menerbitkan dan/atau menggunakan Faktur Pajak, Surat Setoran Pajak, dan/atau bukti pungutan pajak lainnya yang tidak berdasarkan kegiatan usaha atau peristiwa sebenarnya diancam dengan pidana penjara paling lama 6 (enam) tahun atau denda paling banyak Rp 600.000.000.\n(2) Tindak pidana sebagaimana dimaksud pada ayat (1) adalah kejahatan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pidana max 6 tahun/denda max Rp600 juta atas penerbitan/penggunaan fiktif FP/SSP.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Kejahatan.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -729,9 +2729,36 @@
       "title": "Kewajiban Pelaporan Keuangan",
       "status": "ditambah",
       "description": "Ketentuan Country-by-Country Reporting dan pelaporan keuangan untuk WP MNE Group.",
-      "keywords": ["CbCR", "BEPS", "MNE", "pelaporan"],
+      "keywords": [
+        "CbCR",
+        "BEPS",
+        "MNE",
+        "pelaporan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang CbCR" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "added",
+          "effectiveDate": "2022-01-01",
+          "summary": "Pasal baru tentang CbCR"
+        }
+      ],
+      "text": "(1) Setiap orang yang dengan sengaja tidak memotong atau memungut pajak sebagaimana mestinya sehingga menimbulkan kerugian bagi pendapatan negara diancam dengan pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp 100.000.000.\n(2) Tindak pidana sebagaimana dimaksud pada ayat (1) adalah kejahatan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pidana max 2 tahun/denda max Rp100 juta atas tidak memotong/memungut pajak.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Kejahatan.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -740,9 +2767,34 @@
       "title": "Kerahasiaan Informasi Internasional",
       "status": "ditambah",
       "description": "Ketentuan kerahasiaan informasi yang diperoleh melalui kerja sama internasional.",
-      "keywords": ["kerahasiaan", "internasional"],
+      "keywords": [
+        "kerahasiaan",
+        "internasional"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "7", "year": 2021 }, "changeType": "added", "effectiveDate": "2022-01-01", "summary": "Pasal baru tentang kerahasiaan info internasional" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "7",
+            "year": 2021
+          },
+          "changeType": "added",
+          "effectiveDate": "2022-01-01",
+          "summary": "Pasal baru tentang kerahasiaan info internasional"
+        }
+      ],
+      "text": "(1) Daluwarsa penuntutan pidana di bidang perpajakan adalah 5 (lima) tahun sejak saat terutangnya pajak.\n(2) Daluwarsa sebagaimana dimaksud pada ayat (1) terputus karena:\na. pengenaan sanksi administrasi;\nb. penyampaian SPT pembetulan;\nc. pengakuan salah atau kelalaian WP;\nd. penerbitan STP, SKPKB, atau SKPKBT.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Daluwarsa penuntutan pidana pajak: 5 tahun sejak terutangnya pajak.",
+          "status": "ditambah"
+        },
+        {
+          "number": "(2)",
+          "text": "Terputus: sanksi administrasi, SPT pembetulan, pengakuan WP, STP/SKPKB/SKPKBT.",
+          "status": "ditambah"
+        }
       ]
     },
     {
@@ -751,9 +2803,29 @@
       "title": "Ketentuan Peralihan",
       "status": "berlaku",
       "description": "Ketentuan peralihan dari undang-undang lama ke undang-undang baru.",
-      "keywords": ["peralihan", "transisi"],
+      "keywords": [
+        "peralihan",
+        "transisi"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Ketentuan peralihan dari undang-undang lama ke undang-undang baru diatur dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Ketentuan peralihan diatur PP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -762,9 +2834,30 @@
       "title": "Peraturan Pelaksanaan",
       "status": "berlaku",
       "description": "Ketentuan tentang peraturan pelaksanaan UU KUP.",
-      "keywords": ["peraturan pelaksanaan", "PP", "PMK"],
+      "keywords": [
+        "peraturan pelaksanaan",
+        "PP",
+        "PMK"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Peraturan pelaksanaan dari UU ini diatur dengan Peraturan Pemerintah.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Peraturan pelaksanaan diatur PP.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -773,9 +2866,28 @@
       "title": "Pencabutan",
       "status": "berlaku",
       "description": "Pencabutan peraturan perundang-undangan yang bertentangan.",
-      "keywords": ["pencabutan"],
+      "keywords": [
+        "pencabutan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Dengan berlakunya UU ini, UU KUP 1983 beserta perubahannya dinyatakan tidak berlaku.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "UU KUP lama dan perubahannya dicabut.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -784,9 +2896,29 @@
       "title": "Pengesahan Perppu",
       "status": "berlaku",
       "description": "Ketentuan pengesahan Perppu menjadi UU.",
-      "keywords": ["Perppu", "pengesahan"],
+      "keywords": [
+        "Perppu",
+        "pengesahan"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) Perppu No. 5 Tahun 2008 dinyatakan tetap berlaku.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "Pengesahan Perppu 5/2008.",
+          "status": "berlaku"
+        }
       ]
     },
     {
@@ -795,20 +2927,40 @@
       "title": "Penutup",
       "status": "berlaku",
       "description": "UU ini mulai berlaku pada tanggal diundangkan.",
-      "keywords": ["penutup", "berlaku"],
+      "keywords": [
+        "penutup",
+        "berlaku"
+      ],
       "amendmentHistory": [
-        { "source": { "type": "UU", "number": "6", "year": 1983 }, "changeType": "original", "effectiveDate": "1984-01-01", "summary": "Pasal asli" }
+        {
+          "source": {
+            "type": "UU",
+            "number": "6",
+            "year": 1983
+          },
+          "changeType": "original",
+          "effectiveDate": "1984-01-01",
+          "summary": "Pasal asli"
+        }
+      ],
+      "text": "(1) UU ini mulai berlaku pada tanggal diundangkan.",
+      "ayats": [
+        {
+          "number": "(1)",
+          "text": "UU mulai berlaku pada tanggal diundangkan.",
+          "status": "berlaku"
+        }
       ]
     }
   ],
   "statistics": {
-    "totalPasals": 49,
-    "berlakuPasals": 20,
-    "diubahPasals": 20,
+    "totalPasals": 58,
+    "berlakuPasals": 23,
+    "diubahPasals": 26,
     "dicabutPasals": 0,
     "ditambahPasals": 9,
     "totalAmendments": 6
   },
-  "lastUpdated": "2026-05-28",
-  "sourceNotes": "Data disusun berdasarkan UU 6/1983 KUP beserta seluruh perubahannya hingga UU 7/2021 HPP. Sumber: peraturan.bpk.go.id, pasal.id. Verifikasi terhadap naskah resmi BPK direkomendasikan."
+  "lastUpdated": "2026-05-29",
+  "sourceNotes": "Naskah konsolidasi disusun berdasarkan UU 6/1983 KUP beserta seluruh perubahannya (UU 9/1994, UU 16/2000, UU 28/2007, Perppu 5/2008, UU 7/2021 HPP). Teks menunjukkan versi terkini setelah semua perubahan diterapkan. Disusun dengan AI berdasarkan regulasi yang diketahui. Selalu verifikasi dengan peraturan resmi terbaru di peraturan.bpk.go.id."
 }

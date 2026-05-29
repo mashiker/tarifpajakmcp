@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "3",
     "bab": "III",
@@ -44,6 +44,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan ketentuan SPT electronic filing"
+      }
+    ],
+    "text": "(1) SPT Tahunan adalah SPT untuk suatu Tahun Pajak.\n(2) SPT Masa adalah SPT untuk suatu Masa Pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SPT Tahunan: untuk Tahun Pajak.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "SPT Masa: untuk Masa Pajak.",
+        "status": "berlaku"
       }
     ]
   }

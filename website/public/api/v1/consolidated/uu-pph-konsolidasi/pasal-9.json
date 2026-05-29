@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "9",
     "bab": "II",
@@ -44,6 +44,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan ketentuan pengalihan harta"
+      }
+    ],
+    "text": "(1) Penghasilan dari penjualan harta yang tidak termasuk penghasilan sebagaimana dimaksud dalam Pasal 4 ayat (3) huruf c dan huruf d dihitung berdasarkan selisih lebih antara jumlah penghasilan karena penjualan harta dengan harga perolehan harta yang dijual.\n(2) Dalam hal harga perolehan harta tidak dapat dibuktikan, penghitungan penghasilan dilakukan berdasarkan norma yang ditetapkan oleh Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penghasilan dari penjualan harta = selisih lebih antara jumlah penghasilan dan harga perolehan.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Jika harga perolehan tidak bisa dibuktikan, digunakan norma pemerintah.",
+        "status": "berlaku"
       }
     ]
   }

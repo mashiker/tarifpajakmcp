@@ -1,19 +1,20 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-42-2009",
-    "pasalLawId": 1926,
     "number": "42",
     "year": 2009,
-    "title": "Undang-Undang Perubahan UU Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah",
+    "title": "Undang-Undang Perubahan Ketiga atas UU No. 8 Tahun 1983 tentang PPN dan PPnBM",
+    "shortName": "UU PPN (Perubahan III)",
     "type": "UU",
+    "promulgationDate": "2009-11-20",
     "effectiveDate": "2010-04-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/44119/uu-no-42-tahun-2009",
-    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-42-tahun-2009",
-    "pdfUrl": "https://peraturan.bpk.go.id/Download/44119/UU%20Nomor%2042%20Tahun%202009.pdf",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44245/uu-no-42-tahun-2009",
     "status": "diubah_sebagian",
+    "description": "Perubahan ketiga UU PPN/PPnBM. Menambahkan Pasal 4A (barang/jasa tidak kena pajak), mengatur PMSE, menambahkan PPnBM untuk mobil mewah. Diubah lagi oleh UU HPP.",
+    "relevantArticles": "Pasal 4, 4A, 7, 8, 16B",
     "relatedRegulations": [
       "uu-8-1983-ppn",
       "uu-7-2021-hpp"

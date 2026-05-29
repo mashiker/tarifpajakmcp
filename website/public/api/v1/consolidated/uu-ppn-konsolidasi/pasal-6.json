@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "6",
     "bab": "II",
@@ -34,6 +34,19 @@
         "changeType": "amended",
         "effectiveDate": "2010-04-01",
         "summary": "Penambahan ekspor BKP tidak berwujud"
+      }
+    ],
+    "text": "(1) Ekspor BKP Berwujud dikenakan PPN dengan tarif 0% (nol persen).\n(2) Yang termasuk ekspor BKP Berwujud adalah penyerahan BKP dari Daerah Pabean ke luar Daerah Pabean.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Ekspor BKP berwujud: tarif PPN 0%.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Ekspor BKP: dari DP ke luar DP.",
+        "status": "berlaku"
       }
     ]
   }

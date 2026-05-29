@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "38",
     "bab": "IX",
@@ -22,6 +22,19 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Penagihan pajak tidak dilakukan terhadap WP yang tidak mempunyai harta.\n(2) Penagihan pajak juga tidak dilakukan jika pajak yang terutang tidak dapat dilunasi dari harta WP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penagihan tidak dilakukan jika WP tidak punya harta.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Atau jika pajak tidak bisa dilunasi dari harta WP.",
+        "status": "berlaku"
       }
     ]
   }

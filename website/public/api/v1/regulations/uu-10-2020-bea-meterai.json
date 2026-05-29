@@ -1,17 +1,24 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-10-2020-bea-meterai",
     "number": "10",
     "year": 2020,
-    "title": "Undang-Undang Bea Meterai",
+    "title": "Undang-Undang Bea Meterai (Pengganti UU 13/1985)",
+    "shortName": "UU Bea Meterai Baru",
     "type": "UU",
+    "promulgationDate": "2020-11-09",
     "effectiveDate": "2021-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/135968/uu-no-10-tahun-2020",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-10-tahun-2020",
     "status": "berlaku",
-    "relatedRegulations": [],
+    "description": "UU Bea Meterai baru menggantikan UU 13/1985. Tarif Rp 10.000 untuk dokumen >Rp 1.000.000. Berlaku 1 Januari 2021.",
+    "relevantArticles": "Pasal 3, 4, 5",
+    "relatedRegulations": [
+      "uu-13-1985"
+    ],
     "referencingEntries": [
       "bea-masuk-umum-mf",
       "bea-masuk-bmt",

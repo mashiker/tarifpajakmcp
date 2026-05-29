@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "3",
     "bab": "II",
@@ -34,6 +34,24 @@
         "changeType": "amended",
         "effectiveDate": "2010-04-01",
         "summary": "Penambahan jenis penyerahan"
+      }
+    ],
+    "text": "(1) Penyerahan BKP adalah penyerahan BKP dari wilayah Indonesia ke wilayah lain di dalam Daerah Pabean.\n(2) Yang termasuk penyerahan BKP:\na. penyerahan hak atas BKP karena suatu perjanjian;\nb. penyerahan BKP karena sewa;\nc. penyerahan BKP karena leasing.\n(3) Penyerahan BKP sebagaimana dimaksud pada ayat (1) tidak termasuk penyerahan BKP yang dibatalkan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penyerahan BKP: dari wilayah Indonesia ke wilayah lain dalam DP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Termasuk: penyerahan hak, sewa, leasing.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Tidak termasuk penyerahan yang dibatalkan.",
+        "status": "berlaku"
       }
     ]
   }

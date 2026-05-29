@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "17",
     "bab": "V",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2008-01-01",
         "summary": "Penambahan SUNAT dan penyetoran elektronik"
+      }
+    ],
+    "text": "(1) Penyetoran pajak yang terutang berdasarkan SPT Masa wajib dilakukan oleh WP paling lambat akhir bulan berikutnya setelah Masa Pajak berakhir.\n(2) Penyetoran pajak yang terutang berdasarkan SPT Tahunan wajib dilakukan oleh WP paling lambat sebelum SPT Tahunan disampaikan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penyetoran SPT Masa: paling lambat akhir bulan berikutnya.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Penyetoran SPT Tahunan: sebelum SPT disampaikan.",
+        "status": "berlaku"
       }
     ]
   }

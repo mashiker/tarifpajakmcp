@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "6A",
     "bab": "II",
@@ -24,6 +24,29 @@
         "changeType": "added",
         "effectiveDate": "2010-04-01",
         "summary": "Pasal baru - ekspor jasa sebagai objek PPN"
+      }
+    ],
+    "text": "(1) Ekspor BKP Tidak Berwujud dikenakan PPN dengan tarif 0% (nol persen).\n(2) Yang termasuk ekspor BKP Tidak Berwujud adalah penyerahan BKP Tidak Berwujud dari Daerah Pabean ke luar Daerah Pabean.\n(3) Ekspor Jasa Kena Pajak dikenakan PPN dengan tarif 0% (nol persen).\n(4) Yang termasuk ekspor JKP adalah penyerahan JKP dari Daerah Pabean ke luar Daerah Pabean.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Ekspor BKP tidak berwujud: tarif 0%.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Ekspor BKP tidak berwujud: dari DP ke luar DP.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(3)",
+        "text": "Ekspor JKP: tarif 0%.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(4)",
+        "text": "Ekspor JKP: dari DP ke luar DP.",
+        "status": "ditambah"
       }
     ]
   }

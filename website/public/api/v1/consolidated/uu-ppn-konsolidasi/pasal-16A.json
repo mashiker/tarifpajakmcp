@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "16A",
     "bab": "II",
@@ -24,6 +24,19 @@
         "changeType": "added",
         "effectiveDate": "2010-04-01",
         "summary": "Pasal baru tentang pelaporan PPN"
+      }
+    ],
+    "text": "(1) PKP wajib menyampaikan SPT Masa PPN paling lambat akhir bulan berikutnya setelah Masa Pajak berakhir.\n(2) SPT Masa PPN memuat data penyerahan BKP dan JKP, PPN Keluaran, PPN Masukan, dan PPN yang harus disetor atau dikompensasikan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SPT Masa PPN: paling lambat akhir bulan berikutnya.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Memuat data penyerahan, PPN Keluaran, Masukan, dan PPN disetor/dikompensasi.",
+        "status": "ditambah"
       }
     ]
   }

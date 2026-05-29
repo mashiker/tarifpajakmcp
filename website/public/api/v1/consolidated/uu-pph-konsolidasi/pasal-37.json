@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "37",
     "bab": "X",
@@ -21,6 +21,24 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Undang-Undang ini mulai berlaku pada tanggal diundangkan.\n(2) Ditetapkan di Jakarta pada tanggal 29 Oktober 2021.\n(3) Diundangkan di Jakarta pada tanggal 29 Oktober 2021.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "UU mulai berlaku pada tanggal diundangkan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Ditetapkan di Jakarta pada 29 Oktober 2021.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Diundangkan di Jakarta pada 29 Oktober 2021.",
+        "status": "berlaku"
       }
     ]
   }

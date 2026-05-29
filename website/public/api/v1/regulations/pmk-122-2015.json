@@ -1,16 +1,21 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pmk-122-2015",
-    "number": "122/PMK.010/2015",
+    "number": "122",
     "year": 2015,
-    "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak",
+    "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak untuk Wajib Pajak Orang Pribadi",
+    "shortName": "PMK PTKP 2016+",
     "type": "PMK",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/51529/pmk-no-122-tahun-2015",
-    "status": "berlaku",
+    "promulgationDate": "2015-12-28",
     "effectiveDate": "2016-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/54324/pmk-no-122-pmk-010-2015",
+    "status": "berlaku",
+    "description": "PMK menetapkan PTKP: Single Rp 54.000.000, Kawin Rp 58.500.000, Tanggungan Rp 4.500.000/orang (maks 3). Masih berlaku hingga sekarang.",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": [],
     "referencingEntries": [
       "pph-21-non-taxable-income"
     ]

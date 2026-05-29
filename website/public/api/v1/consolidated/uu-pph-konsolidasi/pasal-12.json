@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "12",
     "bab": "III",
@@ -59,6 +59,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Penambahan PTKPT (PTKP Tertentu)"
+      }
+    ],
+    "text": "(1) Penghasilan Tidak Kena Pajak (PTKP) bagi Wajib Pajak orang pribadi dalam negeri ditetapkan dalam jumlah tertentu yang ditetapkan dengan Peraturan Pemerintah.\n(2) Dalam menentukan besarnya Penghasilan Tidak Kena Pajak, Wajib Pajak dapat menggabungkan penghasilan istrinya atau suaminya yang tidak hidup rukun atau pisah meja dan ranjang.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PTKP bagi WP OP dalam negeri ditetapkan dengan PP. Saat ini TK/0 = Rp54.000.000 per tahun (berdasarkan PMK 122/2015).",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "PTKP dapat digabung dengan penghasilan istri/suami yang pisah meja dan ranjang.",
+        "status": "berlaku"
       }
     ]
   }

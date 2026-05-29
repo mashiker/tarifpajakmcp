@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "27",
     "bab": "VII",
@@ -23,6 +23,24 @@
         "changeType": "added",
         "effectiveDate": "2022-01-01",
         "summary": "Pasal baru tentang trust"
+      }
+    ],
+    "text": "(1) Penghasilan yang diterima atau diperoleh dari usaha berbasis kepercayaan (nabiyyah) atau trust merupakan objek pajak.\n(2) Pajak atas penghasilan sebagaimana dimaksud pada ayat (1) dipotong dan disetor oleh wali amanat (trustee).\n(3) Ketentuan lebih lanjut mengenai pengenaan pajak atas penghasilan dari nabiyyah atau trust diatur dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penghasilan dari usaha berbasis kepercayaan (nabiyyah/trust) merupakan objek pajak.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Pajak dipotong dan disetor oleh wali amanat (trustee).",
+        "status": "ditambah"
+      },
+      {
+        "number": "(3)",
+        "text": "Ketentuan lebih lanjut diatur PP.",
+        "status": "ditambah"
       }
     ]
   }

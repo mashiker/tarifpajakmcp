@@ -5,7 +5,7 @@
 > Lisensi: MIT (kode) + CC-BY-SA (data)
 
 ## Statistik
-- 37 regulasi tercatat
+- 39 regulasi tercatat
 - 136 entry tarif pajak (111 berlaku saat ini)
 - 15 kategori pajak
 - 3 UU konsolidasi
@@ -920,8 +920,8 @@
 Database ini juga memuat naskah konsolidasi UU pajak Indonesia yang menunjukkan teks terkini beserta riwayat perubahan setiap pasal.
 
 ### UU KUP Konsolidasi
-- 49 pasal total, 6 kali perubahan
-- 26 pasal diubah, 9 pasal ditambah, 20 pasal berlaku sejak awal
+- 58 pasal total, 6 kali perubahan
+- 26 pasal diubah, 9 pasal ditambah, 23 pasal berlaku sejak awal
 - Dasar: UU 6/1983
 - Rantai perubahan:
     - UU 6/1983 (UU Dasar KUP)
@@ -932,8 +932,8 @@ Database ini juga memuat naskah konsolidasi UU pajak Indonesia yang menunjukkan 
     - UU 7/2021 (Perubahan Kelima atas UU 6/1983 KUP melalui UU HPP)
 
 ### UU PPh Konsolidasi
-- 37 pasal total, 5 kali perubahan
-- 27 pasal diubah, 8 pasal ditambah, 12 pasal berlaku sejak awal
+- 44 pasal total, 5 kali perubahan
+- 27 pasal diubah, 8 pasal ditambah, 9 pasal berlaku sejak awal
 - Dasar: UU 7/1983
 - Rantai perubahan:
     - UU 7/1983 (UU Dasar Pajak Penghasilan)
@@ -943,7 +943,7 @@ Database ini juga memuat naskah konsolidasi UU pajak Indonesia yang menunjukkan 
     - UU 7/2021 (Perubahan Kelima atas UU 7/1983 PPh melalui UU HPP)
 
 ### UU PPN Konsolidasi
-- 34 pasal total, 3 kali perubahan
+- 45 pasal total, 3 kali perubahan
 - 22 pasal diubah, 13 pasal ditambah, 10 pasal berlaku sejak awal
 - Dasar: UU 8/1983
 - Rantai perubahan:

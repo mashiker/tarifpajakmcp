@@ -1,19 +1,22 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pp-44-2022",
     "number": "44",
     "year": 2022,
-    "title": "Peraturan Pemerintah tentang Pelaksanaan Pemungutan Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah pada Perdagangan Melalui Sistem Elektronik",
+    "title": "PP tentang Pelaksanaan Pemungutan Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah atas Perdagangan Melalui Sistem Elektronik",
+    "shortName": "PP PPN PMSE",
     "type": "PP",
-    "effectiveDate": "2022-04-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/196508/pp-no-44-tahun-2022",
+    "promulgationDate": "2022-12-22",
+    "effectiveDate": "2023-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/194770/pp-no-44-tahun-2022",
     "status": "berlaku",
+    "description": "PP mengatur pemungutan PPN dan PPnBM atas transaksi PMSE (e-commerce). Pemungutan oleh PMSE (marketplace) dan/atau penjual.",
+    "relevantArticles": "Pasal 2, 3, 4, 5",
     "relatedRegulations": [
-      "uu-7-2021-hpp",
-      "uu-42-2009"
+      "pmk-131-2024"
     ],
     "referencingEntries": [
       "ppn-pmse"

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "15",
     "bab": "II",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2010-04-01",
         "summary": "Perubahan saat terutang untuk PMSE"
+      }
+    ],
+    "text": "(1) Saat PPN terutang:\na. pada saat penyerahan BKP;\nb. pada saat penyerahan JKP;\nc. pada saat impor BKP;\nd. pada saat ekspor BKP dan JKP.\n(2) Pada saat ekspor BKP Berwujud, PPN terutang pada saat BKP dimasukkan ke sarana pengangkut.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN terutang saat: penyerahan BKP, JKP, impor, ekspor.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Ekspor BKP: saat dimasukkan ke sarana pengangkut.",
+        "status": "berlaku"
       }
     ]
   }

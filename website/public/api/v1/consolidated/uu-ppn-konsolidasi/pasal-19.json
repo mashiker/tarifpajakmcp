@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "19",
     "bab": "III",
@@ -22,6 +22,19 @@
         "changeType": "original",
         "effectiveDate": "1984-04-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) DPP PPnBM sama dengan DPP PPN.\n(2) PPnBM = Tarif PPnBM × DPP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DPP PPnBM = DPP PPN.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "PPnBM = tarif × DPP.",
+        "status": "berlaku"
       }
     ]
   }

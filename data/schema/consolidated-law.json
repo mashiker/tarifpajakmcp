@@ -222,6 +222,105 @@
               "ditambah"
             ]
           },
+          "text": {
+            "type": "string",
+            "description": "Teks konsolidasi lengkap pasal (versi terkini setelah semua perubahan)"
+          },
+          "ayats": {
+            "type": "array",
+            "description": "Ayat-ayat dalam pasal dengan teks lengkap dan riwayat perubahan",
+            "items": {
+              "type": "object",
+              "required": [
+                "number",
+                "text",
+                "status"
+              ],
+              "properties": {
+                "number": {
+                  "type": "string",
+                  "description": "Nomor ayat, misalnya (1), (2), (3)"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Teks lengkap ayat (versi konsolidasi terkini)"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "berlaku",
+                    "diubah",
+                    "dicabut",
+                    "ditambah"
+                  ],
+                  "description": "Status ayat saat ini"
+                },
+                "amendmentHistory": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "source",
+                      "changeType",
+                      "effectiveDate"
+                    ],
+                    "properties": {
+                      "source": {
+                        "type": "object",
+                        "required": [
+                          "type",
+                          "number",
+                          "year"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "number": {
+                            "type": "string"
+                          },
+                          "year": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "changeType": {
+                        "type": "string",
+                        "enum": [
+                          "original",
+                          "amended",
+                          "added",
+                          "repealed",
+                          "partially_amended",
+                          "unchanged"
+                        ]
+                      },
+                      "effectiveDate": {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      "changedAyats": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "summary": {
+                        "type": "string"
+                      },
+                      "notes": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "catatanKaki": {
+            "type": "string",
+            "description": "Catatan kaki dari naskah konsolidasi resmi"
+          },
           "description": {
             "type": "string"
           },
@@ -291,6 +390,12 @@
                   "type": "string"
                 },
                 "notes": {
+                  "type": "string"
+                },
+                "oldText": {
+                  "type": "string"
+                },
+                "newText": {
                   "type": "string"
                 }
               }

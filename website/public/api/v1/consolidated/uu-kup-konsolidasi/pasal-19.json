@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "19",
     "bab": "VI",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Penambahan ketentuan pengawasan"
+      }
+    ],
+    "text": "(1) DJP dapat meminta keterangan dari WP atau pihak lain.\n(2) WP atau pihak lain wajib memberikan keterangan yang diperlukan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat meminta keterangan dari WP/pihak lain.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "WP/pihak lain wajib memberikan keterangan.",
+        "status": "berlaku"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "40",
     "bab": "IX",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perpanjangan daluwarsa untuk kasus tertentu"
+      }
+    ],
+    "text": "(1) Imbalan bunga diberikan kepada WP atas kelebihan pembayaran pajak.\n(2) Imbalan bunga dihitung sejak tanggal kelebihan dibayar sampai tanggal diterbitkannya SKPLB atau tanggal penyetoran kekurangan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Imbalan bunga atas kelebihan bayar pajak.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Dihitung sejak kelebihan dibayar sampai SKPLB/penyetoran.",
+        "status": "berlaku"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "8",
     "bab": "II",
@@ -35,6 +35,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan ketentuan PMSE"
+      }
+    ],
+    "text": "(1) Pengusaha kecil yang peredaran brutonya kurang dari Rp 4.800.000.000,00 tidak wajib dikukuhkan sebagai PKP.\n(2) Pengusaha kecil sebagaimana dimaksud pada ayat (1) dapat memilih untuk dikukuhkan sebagai PKP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pengusaha kecil bruto <Rp4,8 miliar tidak wajib PKP.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Dapat memilih menjadi PKP.",
+        "status": "berlaku"
       }
     ]
   }

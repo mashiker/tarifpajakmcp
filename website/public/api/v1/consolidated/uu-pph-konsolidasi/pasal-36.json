@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "36",
     "bab": "X",
@@ -21,6 +21,14 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Perppu No. 1 Tahun 2020 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2020 tentang Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan Pandemi Corona Virus Disease 2019 menjadi Undang-Undang, dinyatakan tetap berlaku.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pengesahan Perppu menjadi UU.",
+        "status": "berlaku"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-pph-konsolidasi",
     "title": "Undang-Undang tentang Pajak Penghasilan (Konsolidasi)",
@@ -318,15 +318,15 @@
       }
     ],
     "statistics": {
-      "totalPasals": 37,
-      "berlakuPasals": 12,
-      "diubahPasals": 18,
+      "totalPasals": 44,
+      "berlakuPasals": 9,
+      "diubahPasals": 27,
       "dicabutPasals": 0,
-      "ditambahPasals": 7,
+      "ditambahPasals": 8,
       "totalAmendments": 5
     },
-    "lastUpdated": "2026-05-28",
-    "sourceNotes": "Data disusun berdasarkan UU 7/1983 PPh beserta seluruh perubahannya hingga UU 7/2021 HPP. Sumber: peraturan.bpk.go.id, pasal.id.",
+    "lastUpdated": "2026-05-29",
+    "sourceNotes": "Naskah konsolidasi disusun berdasarkan UU 7/1983 beserta seluruh perubahannya (UU 10/1994, UU 17/2000, UU 36/2008, UU 7/2021 HPP). Teks menunjukkan versi terkini setelah semua perubahan diterapkan. Disusun dengan AI berdasarkan regulasi yang diketahui dan diverifikasi silang dengan database tarif. Selalu verifikasi dengan peraturan resmi terbaru di peraturan.bpk.go.id.",
     "pasalCount": 44,
     "pasals": [
       {

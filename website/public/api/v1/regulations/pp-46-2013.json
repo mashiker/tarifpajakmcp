@@ -1,16 +1,23 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pp-46-2013",
-    "number": "46/2013",
+    "number": "46",
     "year": 2013,
-    "title": "PP tentang PPh UMKM Final 1%",
+    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "shortName": "PP PPh UMKM 1%",
     "type": "PP",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/49798/pp-no-46-tahun-2013",
-    "status": "dicabut",
+    "promulgationDate": "2013-06-24",
     "effectiveDate": "2013-07-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44748/pp-no-46-tahun-2013",
+    "status": "dicabut",
+    "description": "PP pertama mengatur PPh Final UMKM. Tarif 1% final untuk peredaran bruto s.d. Rp 4,8 miliar. Digantikan oleh PP 23/2018.",
+    "relevantArticles": "Pasal 2, 3",
+    "relatedRegulations": [
+      "pp-23-2018"
+    ],
     "referencingEntries": [
       "pph-umkm-1pct-pp46"
     ]

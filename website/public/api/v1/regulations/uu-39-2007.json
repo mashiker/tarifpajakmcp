@@ -1,15 +1,23 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-39-2007",
-    "number": "39/2007",
+    "number": "39",
     "year": 2007,
-    "title": "UU tentang Perubahan UU 11/1995 tentang Cukai",
+    "title": "Undang-Undang Perubahan atas UU No. 11 Tahun 1995 tentang Cukai",
+    "shortName": "UU Cukai (Perubahan)",
     "type": "UU",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/45946/uu-no-39-tahun-2007",
+    "promulgationDate": "2007-12-24",
+    "effectiveDate": "2008-07-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44106/uu-no-39-tahun-2007",
     "status": "berlaku",
+    "description": "UU Cukai mengatur pengenaan cukai atas hasil tembakau (rokok), minuman mengandung etil alkohol (MMEA), dan e-cigarette. Menggunakan tarif spesifik dan ad valorem.",
+    "relevantArticles": "Pasal 6, 7, 8",
+    "relatedRegulations": [
+      "pmk-202-2023"
+    ],
     "referencingEntries": [
       "cukai-hasil-tembakau",
       "cukai-eti-alkohol"

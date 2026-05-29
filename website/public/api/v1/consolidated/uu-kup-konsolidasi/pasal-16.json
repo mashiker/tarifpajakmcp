@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "16",
     "bab": "IV",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2008-01-01",
         "summary": "Perpanjangan masa penyimpanan"
+      }
+    ],
+    "text": "(1) Pembukuan atau pencatatan dan dokumen yang menjadi dasarnya wajib disimpan selama 10 tahun.\n(2) Dalam hal WP menyelenggarakan pembukuan dengan menggunakan pembukuan dalam bentuk catatan digital, WP wajib menyimpan cadangan (backup) pembukuan tersebut.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pembukuan/pencatatan dan dokumen dasar disimpan 10 tahun.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Pembukuan digital wajib menyimpan backup.",
+        "status": "ditambah"
       }
     ]
   }

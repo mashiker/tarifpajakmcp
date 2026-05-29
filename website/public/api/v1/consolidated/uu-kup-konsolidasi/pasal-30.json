@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "30",
     "bab": "VIII",
@@ -43,6 +43,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan ketentuan banding"
+      }
+    ],
+    "text": "(1) WP dapat mengajukan banding ke Pengadilan Pajak atas keberatan yang ditolak sebagian atau seluruhnya.\n(2) Banding diajukan secara tertulis dalam bahasa Indonesia paling lambat 3 bulan sejak tanggal keberatan ditolak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP dapat banding ke Pengadilan Pajak atas keberatan yang ditolak.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Banding tertulis, bahasa Indonesia, paling lambat 3 bulan.",
+        "status": "diubah"
       }
     ]
   }

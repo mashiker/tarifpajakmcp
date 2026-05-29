@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "25",
     "bab": "IV",
@@ -32,6 +32,14 @@
         "changeType": "amended",
         "effectiveDate": "2010-04-01",
         "summary": "Penambahan kondisi"
+      }
+    ],
+    "text": "(1) Peraturan pelaksanaan UU ini diatur dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PP sebagai peraturan pelaksanaan.",
+        "status": "berlaku"
       }
     ]
   }

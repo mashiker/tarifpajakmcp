@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "17A",
     "bab": "V",
@@ -23,6 +23,19 @@
         "changeType": "added",
         "effectiveDate": "2008-01-01",
         "summary": "Pasal baru tentang penyetoran elektronik"
+      }
+    ],
+    "text": "(1) Penyetoran pajak melalui tempat penyetoran pajak yang ditetapkan oleh Menteri Keuangan.\n(2) Penyetoran pajak sebagaimana dimaksud pada ayat (1) dilakukan dengan Surat Setoran Pajak (SSP) atau sarana penyetoran lain yang ditetapkan oleh DJP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penyetoran melalui tempat yang ditetapkan Menkeu.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Menggunakan SSP atau sarana lain yang ditetapkan DJP.",
+        "status": "ditambah"
       }
     ]
   }

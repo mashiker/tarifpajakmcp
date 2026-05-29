@@ -1,18 +1,23 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-8-1983-ppn",
     "number": "8",
     "year": 1983,
-    "title": "Undang-Undang Pajak Pertambahan Nilai",
+    "title": "Undang-Undang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah",
+    "shortName": "UU PPN/PPnBM",
     "type": "UU",
+    "promulgationDate": "1983-12-31",
     "effectiveDate": "1984-04-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/44029/uu-no-8-tahun-1983",
     "status": "dicabut",
+    "description": "UU dasar PPN dan PPnBM Indonesia. Tarif PPN 10%, PPnBM maks 35%. Diubah oleh UU 42/2009 dan UU 7/2021 (HPP).",
+    "relevantArticles": "Pasal 4, 4A, 7, 8, 9, 16B",
     "relatedRegulations": [
-      "uu-42-2009"
+      "uu-42-2009",
+      "uu-7-2021-hpp"
     ],
     "referencingEntries": [
       "bea-meterai-pre2021",

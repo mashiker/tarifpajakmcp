@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "27",
     "bab": "V",
@@ -32,6 +32,19 @@
         "changeType": "amended",
         "effectiveDate": "2010-04-01",
         "summary": "Penambahan sanksi"
+      }
+    ],
+    "text": "(1) Setiap orang yang dengan sengaja menerbitkan Faktur Pajak tidak berdasarkan penyerahan BKP/JKP atau menggunakan Faktur Pajak yang tidak berdasarkan penyerahan BKP/JKP diancam pidana.\n(2) Hukuman pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp 100.000.000.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pidana atas penerbitan/penggunaan FP fiktif.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Maks 2 tahun penjara atau denda max Rp100 juta.",
+        "status": "berlaku"
       }
     ]
   }

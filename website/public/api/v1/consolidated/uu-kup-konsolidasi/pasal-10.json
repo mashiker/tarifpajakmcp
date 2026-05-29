@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "10",
     "bab": "IV",
@@ -44,6 +44,24 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan threshold pembukuan/pencatatan"
+      }
+    ],
+    "text": "(1) WP wajib menyelenggarakan pembukuan atau pencatatan.\n(2) Kewajiban pembukuan sebagaimana dimaksud pada ayat (1) berlaku bagi WP badan dan WP OP yang menjalankan usaha atau pekerjaan bebas.\n(3) WP OP yang menjalankan usaha atau pekerjaan bebas yang bruto ≤Rp4,8 miliar dapat melakukan pencatatan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP wajib menyelenggarakan pembukuan atau pencatatan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Pembukuan wajib bagi WP badan dan WP OP usaha/bebas.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "WP OP bruto ≤Rp4,8 miliar dapat melakukan pencatatan.",
+        "status": "diubah"
       }
     ]
   }

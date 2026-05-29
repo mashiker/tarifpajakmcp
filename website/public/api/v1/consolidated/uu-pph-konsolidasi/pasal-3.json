@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "3",
     "bab": "I",
@@ -21,6 +21,24 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Subjek pajak yang menerima atau memperoleh penghasilan merupakan Wajib Pajak.\n(2) Penghasilan yang diterima atau diperoleh Wajib Pajak orang pribadi yang berdomisili di Indonesia dan Wajib Pajak badan yang didirikan atau berkedudukan di Indonesia merupakan objek pajak.\n(3) Penghasilan yang diterima atau diperoleh Wajib Pajak orang pribadi yang tidak berdomisili di Indonesia dan Wajib Pajak badan yang tidak didirikan atau berkedudukan di Indonesia merupakan objek pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Subjek pajak yang menerima/memperoleh penghasilan merupakan Wajib Pajak.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Penghasilan WP OP berdomisili di Indonesia dan WP badan yang didirikan/berkedudukan di Indonesia merupakan objek pajak.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Penghasilan WP OP tidak berdomisili dan WP badan tidak didirikan di Indonesia juga objek pajak.",
+        "status": "berlaku"
       }
     ]
   }

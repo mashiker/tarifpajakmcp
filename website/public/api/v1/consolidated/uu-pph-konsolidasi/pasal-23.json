@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "23",
     "bab": "VI",
@@ -40,6 +40,24 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan tarif PPh 23 via PP 60/2023"
+      }
+    ],
+    "text": "(1) Atas penghasilan yang diterima atau diperoleh WP sehubungan dengan jasa tertentu, dipotong PPh oleh pihak yang wajib memotong.\n(2) Tarif PPh 23 sebesar:\na. 2% (dua persen) atas penghasilan bruto dari jasa lain yang ditetapkan dengan Peraturan Pemerintah;\nb. 2% (dua persen) atas penghasilan bruto dari jasa katering; atau\nc. 10% (sepuluh persen) atas penghasilan bruto dari sewa tanah dan/atau bangunan.\n(3) PPh sebagaimana dimaksud pada ayat (2) huruf a dan huruf b dipotong hanya apabila penghasilan bruto lebih dari Rp 2.000.000,00 (dua juta rupiah).",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPh 23 dipotong atas penghasilan dari jasa tertentu.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Tarif PPh 23: jasa lain 2%, katering 2%, sewa tanah/bangunan 10%.",
+        "status": "diubah"
+      },
+      {
+        "number": "(3)",
+        "text": "PPh 23 atas jasa dan katering dipotong jika bruto >Rp2.000.000.",
+        "status": "berlaku"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "6",
     "bab": "III",
@@ -35,6 +35,19 @@
         "changeType": "partially_amended",
         "effectiveDate": "2008-01-01",
         "summary": "Penyesuaian batas waktu"
+      }
+    ],
+    "text": "(1) Masa Pajak sama dengan bulan kalender.\n(2) Tahun Pajak sama dengan tahun kalender.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Masa Pajak = bulan kalender.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Tahun Pajak = tahun kalender.",
+        "status": "berlaku"
       }
     ]
   }

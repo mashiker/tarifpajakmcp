@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "4A",
     "bab": "II",
@@ -23,6 +23,19 @@
         "changeType": "added",
         "effectiveDate": "2010-04-01",
         "summary": "Pasal baru - daftar barang bukan objek PPN"
+      }
+    ],
+    "text": "(1) Barang yang tidak dikenakan PPN (bukan objek PPN) meliputi:\na. barang hasil pertanian, perkebunan, kehutanan, peternakan, perikanan, dan pertambangan;\nb. barang kebutuhan pokok yang sangat dibutuhkan oleh masyarakat;\nc. makanan dan minuman yang disajikan di restoran;\nd. emas permata;\ne. barang-barang keagamaan.\n(2) Daftar barang yang bukan objek PPN dapat diubah dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Barang bukan objek PPN: hasil pertanian, kebutuhan pokok, makanan/minuman restoran, emas permata, barang keagamaan.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Daftar dapat diubah dengan PP.",
+        "status": "ditambah"
       }
     ]
   }

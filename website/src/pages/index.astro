@@ -8,29 +8,16 @@ const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
 
 function toSlug(s: string) { return s.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-'); }
 
-const catColors: Record<string, { bg: string; text: string; dot: string }> = {
-  'pph-21':        { bg: 'bg-blue-100 dark:bg-blue-900/40', text: 'text-blue-700 dark:text-blue-300', dot: 'bg-blue-500' },
-  'pph-22':        { bg: 'bg-indigo-100 dark:bg-indigo-900/40', text: 'text-indigo-700 dark:text-indigo-300', dot: 'bg-indigo-500' },
-  'pph-23':        { bg: 'bg-violet-100 dark:bg-violet-900/40', text: 'text-violet-700 dark:text-violet-300', dot: 'bg-violet-500' },
-  'pph-26':        { bg: 'bg-purple-100 dark:bg-purple-900/40', text: 'text-purple-700 dark:text-purple-300', dot: 'bg-purple-500' },
-  'pph-badan':     { bg: 'bg-cyan-100 dark:bg-cyan-900/40', text: 'text-cyan-700 dark:text-cyan-300', dot: 'bg-cyan-500' },
-  'pph-umkm':      { bg: 'bg-teal-100 dark:bg-teal-900/40', text: 'text-teal-700 dark:text-teal-300', dot: 'bg-teal-500' },
-  'pph-4-2-final': { bg: 'bg-emerald-100 dark:bg-emerald-900/40', text: 'text-emerald-700 dark:text-emerald-300', dot: 'bg-emerald-500' },
-  'ppn':           { bg: 'bg-green-100 dark:bg-green-900/40', text: 'text-green-700 dark:text-green-300', dot: 'bg-green-500' },
-  'ppnbm':         { bg: 'bg-amber-100 dark:bg-amber-900/40', text: 'text-amber-700 dark:text-amber-300', dot: 'bg-amber-500' },
-  'bea-meterai':   { bg: 'bg-orange-100 dark:bg-orange-900/40', text: 'text-orange-700 dark:text-orange-300', dot: 'bg-orange-500' },
-  'pbb':           { bg: 'bg-rose-100 dark:bg-rose-900/40', text: 'text-rose-700 dark:text-rose-300', dot: 'bg-rose-500' },
-  'bphtb':         { bg: 'bg-pink-100 dark:bg-pink-900/40', text: 'text-pink-700 dark:text-pink-300', dot: 'bg-pink-500' },
-  'bea-masuk':     { bg: 'bg-sky-100 dark:bg-sky-900/40', text: 'text-sky-700 dark:text-sky-300', dot: 'bg-sky-500' },
-  'cukai':         { bg: 'bg-red-100 dark:bg-red-900/40', text: 'text-red-700 dark:text-red-300', dot: 'bg-red-500' },
-  'pajak-daerah':  { bg: 'bg-lime-100 dark:bg-lime-900/40', text: 'text-lime-700 dark:text-lime-300', dot: 'bg-lime-500' },
+const catIcons: Record<string, string> = {
+  'pph-21': '💼', 'pph-22': '🏭', 'pph-23': '📋', 'pph-26': '🌍', 'pph-badan': '🏢',
+  'pph-umkm': '🏪', 'pph-4-2-final': '✅', 'ppn': '🧾', 'ppnbm': '🏎️',
+  'bea-meterai': '📄', 'pbb': '🏠', 'bphtb': '🏡', 'bea-masuk': '🚢', 'cukai': '🚬', 'pajak-daerah': '🏙️',
 };
 
 const categories = api.categories.map((cat: any) => {
   const slug = toSlug(cat.taxType);
   const active = cat.entries.filter((e: any) => e.status === 'berlaku').length;
-  const colors = catColors[slug] || { bg: 'bg-gray-100 dark:bg-gray-800', text: 'text-gray-700 dark:text-gray-300', dot: 'bg-gray-500' };
-  return { ...cat, slug, active, colors };
+  return { ...cat, slug, active };
 });
 
 type FE = { category: string; slug: string; type: string; id: string; status: string; rate: string; from: string; to: string; bppu: number; };
@@ -54,7 +41,6 @@ const activeEntries = entries.filter(e => e.status === 'berlaku');
 const bppuTotal = new Set<string>();
 api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?.forEach((b: any) => bppuTotal.add(b.kode))));
 
-// Group entries by category for mobile
 const groupedEntries: Record<string, { slug: string; items: FE[] }> = {};
 entries.forEach(e => {
   if (!groupedEntries[e.category]) groupedEntries[e.category] = { slug: e.slug, items: [] };
@@ -64,59 +50,64 @@ entries.forEach(e => {
 
 <BaseLayout title="Beranda" activeNav="home">
   <!-- Hero -->
-  <div class="text-center mb-8 pt-2">
-    <h1 class="text-2xl sm:text-4xl font-black text-gray-900 dark:text-gray-50 tracking-tight mb-2">Tarif Pajak Indonesia</h1>
-    <p class="text-gray-500 dark:text-gray-400 max-w-lg mx-auto mb-5 text-sm sm:text-base">
-      Referensi lengkap tarif pajak dari <strong class="text-gray-700 dark:text-gray-300">1983</strong> hingga sekarang. Bersumber dari regulasi resmi.
+  <div class="text-center mb-10 pt-4">
+    <div class="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 ring-1 ring-blue-200/60 dark:ring-blue-800">
+      <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+      Database Terbuka · Regulasi Resmi
+    </div>
+    <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4 leading-tight">
+      Tarif Pajak<br class="sm:hidden" /> Indonesia
+    </h1>
+    <p class="text-slate-500 dark:text-slate-400 max-w-xl mx-auto mb-6 text-base sm:text-lg leading-relaxed">
+      Referensi lengkap tarif pajak dari <strong class="text-slate-700 dark:text-slate-300">1983</strong> hingga sekarang. Bersumber dari regulasi resmi, gratis dan terbuka.
     </p>
-    <div class="max-w-md mx-auto relative">
-      <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-      <input id="hero-search" type="text" placeholder="Cari tarif pajak..." class="search-input text-sm" aria-label="Cari tarif pajak" />
-      <kbd class="hidden sm:inline-flex absolute right-3 top-1/2 -translate-y-1/2 text-[10px] text-gray-400 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded px-1.5 py-0.5 font-mono pointer-events-none">⌘K</kbd>
-      <div id="hero-search-results" class="absolute top-full left-0 right-0 mt-1 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl max-h-72 overflow-y-auto hidden z-50 custom-scrollbar"></div>
+    <div class="max-w-lg mx-auto relative">
+      <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      <input id="hero-search" type="text" placeholder="Cari tarif pajak, misal: PPh 21, PPN, TER..." class="search-input text-sm py-3" aria-label="Cari tarif pajak" />
+      <kbd class="hidden sm:inline-flex absolute right-4 top-1/2 -translate-y-1/2 text-[10px] text-slate-400 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-md px-1.5 py-0.5 font-mono pointer-events-none">⌘K</kbd>
+      <div id="hero-search-results" class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl shadow-2xl max-h-72 overflow-y-auto hidden z-50 custom-scrollbar"></div>
     </div>
   </div>
 
   <!-- Stats -->
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mb-8">
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto mb-10">
     <div class="stat-card"><div class="stat-value">{api.meta.stats.entries}</div><div class="stat-label">Jenis Tarif</div></div>
     <div class="stat-card"><div class="stat-value">{api.meta.stats.regulations}</div><div class="stat-label">Regulasi</div></div>
     <div class="stat-card"><div class="stat-value">{categories.length}</div><div class="stat-label">Kategori</div></div>
     <div class="stat-card"><div class="stat-value">{bppuTotal.size}</div><div class="stat-label">Kode BPPU</div></div>
   </div>
 
-  <!-- Category Grid -->
-  <section class="mb-8">
-    <h2 class="section-heading mb-3">Kategori Pajak</h2>
-    <a href="/ter-pph-21" class="mb-3 flex items-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl px-5 py-4 hover:shadow-lg hover:shadow-blue-600/20 transition-all group">
-      <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center font-bold text-sm shrink-0">TER</div>
+  <!-- TER Banner -->
+  <section class="mb-10">
+    <a href="/ter-pph-21" class="group flex items-center gap-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl px-6 py-5 hover:shadow-xl hover:shadow-blue-600/15 transition-all">
+      <div class="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center font-bold text-base shrink-0 backdrop-blur-sm">TER</div>
       <div class="flex-1 min-w-0">
-        <div class="text-sm font-bold">Tabel TER PPh 21 — Lengkap dengan Kalkulator</div>
-        <div class="text-xs opacity-80">42 lapisan tarif untuk 3 kategori (A/B/C) berdasarkan PP 58/2023</div>
+        <div class="text-sm font-bold mb-0.5">Tabel TER PPh 21 — Lengkap dengan Kalkulator</div>
+        <div class="text-xs text-blue-100">42 lapisan tarif untuk 3 kategori (A/B/C) berdasarkan PP 58/2023</div>
       </div>
-      <svg class="w-5 h-5 opacity-60 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      <svg class="w-5 h-5 opacity-50 group-hover:translate-x-1 group-hover:opacity-100 transition-all shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
     </a>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+  </section>
+
+  <!-- Category Grid -->
+  <section class="mb-10">
+    <h2 class="section-heading mb-4">Kategori Pajak</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
       {categories.map((cat: any) => (
-        <a href={`/kategori/${cat.slug}`} class="category-card flex items-center gap-3">
-          <div class={`w-10 h-10 rounded-xl ${cat.colors.bg} ${cat.colors.text} flex items-center justify-center font-bold text-xs shrink-0`}>
-            {cat.taxType.replace(/[^A-Z0-9]/g, '').substring(0, 3) || cat.taxType.substring(0, 3)}
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors truncate">{cat.taxType}</div>
-            <div class="text-[11px] text-gray-400 font-mono">{cat.active} aktif · {cat.entries.length} total</div>
-          </div>
-          <svg class="w-4 h-4 text-gray-300 dark:text-gray-600 group-hover:text-brand-500 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        <a href={`/kategori/${cat.slug}`} class="category-card flex flex-col items-center text-center p-4">
+          <div class="text-2xl mb-2">{catIcons[cat.slug] || '📋'}</div>
+          <div class="text-sm font-semibold text-slate-900 dark:text-slate-100 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors leading-snug mb-1">{cat.taxType}</div>
+          <div class="text-[11px] text-slate-400 font-mono">{cat.active} aktif · {cat.entries.length} total</div>
         </a>
       ))}
     </div>
   </section>
 
   <!-- Rate Table -->
-  <section class="mb-8">
-    <div class="flex items-center justify-between mb-3">
+  <section class="mb-10">
+    <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
       <h2 class="section-heading">Tabel Tarif Lengkap</h2>
-      <div class="flex gap-1.5">
+      <div class="flex gap-2">
         <button id="filter-berlaku" class="chip chip-active" data-status="berlaku"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Aktif ({activeEntries.length})</button>
         <button id="filter-semua" class="chip chip-default" data-status="all">Semua ({entries.length})</button>
       </div>
@@ -124,7 +115,7 @@ entries.forEach(e => {
 
     <!-- Desktop: full table -->
     <div class="hidden md:block card overflow-hidden">
-      <div class="overflow-auto custom-scrollbar" style="max-height:70vh">
+      <div class="overflow-auto custom-scrollbar" style="max-height:65vh">
         <table class="data-table" id="main-table">
           <thead>
             <tr>
@@ -133,33 +124,29 @@ entries.forEach(e => {
               <th>Tarif</th>
               <th class="hidden lg:table-cell">Kode BPPU</th>
               <th>Status</th>
-              <th class="hidden sm:table-cell">Masa Berlaku</th>
+              <th class="hidden xl:table-cell">Masa Berlaku</th>
             </tr>
           </thead>
           <tbody>
-            {entries.map((e: FE) => {
-              const cc = catColors[e.slug] || { dot: 'bg-gray-400' };
-              return (
+            {entries.map((e: FE) => (
               <tr data-status={e.status}>
                 <td>
-                  <a href={`/kategori/${e.slug}`} class="inline-flex items-center gap-1.5">
-                    <span class={`w-2 h-2 rounded-full ${cc.dot} shrink-0`}></span>
-                    <span class="text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">{e.category}</span>
+                  <a href={`/kategori/${e.slug}`} class="inline-flex items-center gap-1.5 hover:text-blue-700 dark:hover:text-blue-400 transition-colors">
+                    <span class="text-sm font-medium">{e.category}</span>
                   </a>
                 </td>
                 <td>
-                  <a href={`/kategori/${e.slug}`} class="text-sm text-gray-700 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors block truncate max-w-[300px]">{e.type}</a>
-                  <div class="text-[10px] text-gray-400 font-mono mt-0.5">{e.id}</div>
+                  <a href={`/kategori/${e.slug}`} class="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400 transition-colors">{e.type}</a>
+                  <div class="text-[10px] text-slate-400 font-mono mt-0.5">{e.id}</div>
                 </td>
                 <td><span class="rate-value text-sm">{e.rate}</span></td>
                 <td class="hidden lg:table-cell">
-                  {e.bppu > 0 ? <a href="/kode-objek-pajak" class="text-xs font-mono text-brand-600 dark:text-brand-400 hover:underline">{e.bppu} kode</a> : <span class="text-gray-300 text-xs">—</span>}
+                  {e.bppu > 0 ? <a href="/kode-objek-pajak" class="text-xs font-mono text-blue-600 dark:text-blue-400 hover:underline">{e.bppu} kode</a> : <span class="text-slate-300 text-xs">—</span>}
                 </td>
                 <td><span class={`badge ${sb[e.status] || 'badge-belum-berlaku'}`}>{sl[e.status]}</span></td>
-                <td class="hidden sm:table-cell"><span class="text-xs text-gray-500 font-mono whitespace-nowrap">{e.from} → {e.to}</span></td>
+                <td class="hidden xl:table-cell"><span class="text-xs text-slate-500 font-mono whitespace-nowrap">{e.from} → {e.to}</span></td>
               </tr>
-              );
-            })}
+            ))}
           </tbody>
         </table>
       </div>
@@ -167,24 +154,22 @@ entries.forEach(e => {
 
     <!-- Mobile: grouped card list -->
     <div class="md:hidden space-y-4" id="mobile-list">
-      {Object.entries(groupedEntries).map(([catName, group]: [string, { slug: string; items: FE[] }]) => {
-        const cc = catColors[group.slug] || { dot: 'bg-gray-400', bg: 'bg-gray-100', text: 'text-gray-700' };
-        return (
+      {Object.entries(groupedEntries).map(([catName, group]: [string, { slug: string; items: FE[] }]) => (
         <div>
           <div class="flex items-center gap-2 mb-2">
-            <span class={`w-2.5 h-2.5 rounded-full ${cc.dot}`}></span>
-            <a href={`/kategori/${group.slug}`} class="text-xs font-bold text-gray-700 dark:text-gray-300 hover:text-brand-600">{catName}</a>
-            <span class="text-[10px] text-gray-400 font-mono">{group.items.length}</span>
+            <span class="text-lg">{catIcons[group.slug] || '📋'}</span>
+            <a href={`/kategori/${group.slug}`} class="text-xs font-bold text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400">{catName}</a>
+            <span class="text-[10px] text-slate-400 font-mono">{group.items.length}</span>
           </div>
-          <div class="space-y-1.5">
+          <div class="space-y-2">
             {group.items.map((e: FE) => (
-              <a href={`/kategori/${group.slug}`} data-status={e.status} class="mobile-card block bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl px-3.5 py-2.5 hover:border-brand-300 dark:hover:border-brand-700 active:scale-[0.98] transition-all">
+              <a href={`/kategori/${group.slug}`} data-status={e.status} class="mobile-card block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 hover:border-blue-300 dark:hover:border-blue-700 active:scale-[0.98] transition-all">
                 <div class="flex items-center justify-between gap-2">
                   <div class="flex-1 min-w-0">
-                    <div class="text-sm font-medium text-gray-900 dark:text-gray-100 truncate">{e.type}</div>
+                    <div class="text-sm font-medium text-slate-900 dark:text-slate-100 truncate">{e.type}</div>
                     <div class="flex items-center gap-2 mt-1">
                       <span class="rate-value text-sm">{e.rate}</span>
-                      <span class="text-[10px] text-gray-400 font-mono">{e.from} → {e.to}</span>
+                      <span class="text-[10px] text-slate-400 font-mono">{e.from} → {e.to}</span>
                     </div>
                   </div>
                   <span class={`badge ${sb[e.status] || 'badge-belum-berlaku'} text-[10px] shrink-0`}>{sl[e.status]}</span>
@@ -193,21 +178,20 @@ entries.forEach(e => {
             ))}
           </div>
         </div>
-        );
-      })}
+      ))}
     </div>
   </section>
 
   <!-- Bottom -->
-  <div class="grid sm:grid-cols-2 gap-3">
-    <div class="card p-4">
-      <h3 class="text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">API Terbuka</h3>
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="card p-5">
+      <h3 class="text-sm font-bold text-slate-900 dark:text-slate-100 mb-3">API Terbuka</h3>
       <div class="code-block text-xs">curl https://tarif-pajak-id.pages.dev/api.json</div>
-      <p class="text-xs text-gray-400 mt-2">JSON statis · Tanpa auth · Tanpa rate limit</p>
+      <p class="text-xs text-slate-400 mt-2">JSON statis · Tanpa auth · Tanpa rate limit</p>
     </div>
-    <div class="card p-4">
-      <h3 class="text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">Sumber Regulasi</h3>
-      <div class="flex flex-wrap gap-1.5">
+    <div class="card p-5">
+      <h3 class="text-sm font-bold text-slate-900 dark:text-slate-100 mb-3">Sumber Regulasi</h3>
+      <div class="flex flex-wrap gap-2">
         <a href="https://pasal.id" target="_blank" class="tag">Pasal.id ↗</a>
         <a href="https://peraturan.bpk.go.id" target="_blank" class="tag">JDIH BPK ↗</a>
         <a href="https://github.com/mashiker/tarifpajakmcp" target="_blank" class="tag">GitHub ↗</a>
@@ -235,7 +219,7 @@ entries.forEach(e => {
     for (const [k, ids] of Object.entries(d.keywords)) { if (k.includes(q)) for (const id of (ids as string[])) if (!m.includes(id)) m.push(id); }
     if (!m.length) { res?.classList.add('hidden'); return; }
     const fmt = (s: string) => s.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-    if (res) { res.innerHTML = m.slice(0, 8).map(id => `<a href="/kategori/${id.split('-').slice(0,2).join('-')}" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 dark:hover:bg-gray-800 border-b border-gray-100 dark:border-gray-800"><div class="text-sm font-medium text-gray-900 dark:text-gray-100">${fmt(id)}</div><div class="text-[10px] text-gray-400 font-mono ml-auto">${id}</div></a>`).join(''); res.classList.remove('hidden'); }
+    if (res) { res.innerHTML = m.slice(0, 8).map(id => `<a href="/kategori/${id.split('-').slice(0,2).join('-')}" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 border-b border-slate-100 dark:border-slate-800 last:border-0"><div class="text-sm font-medium text-slate-900 dark:text-slate-100">${fmt(id)}</div><div class="text-[10px] text-slate-400 font-mono ml-auto">${id}</div></a>`).join(''); res.classList.remove('hidden'); }
   }, 200); });
   inp?.addEventListener('blur', () => setTimeout(() => res?.classList.add('hidden'), 200));
   document.addEventListener('keydown', e => { if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); inp?.focus(); } });

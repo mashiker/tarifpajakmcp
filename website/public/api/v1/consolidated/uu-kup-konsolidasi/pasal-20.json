@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "20",
     "bab": "VI",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2008-01-01",
         "summary": "Perubahan ketentuan pemeriksaan"
+      }
+    ],
+    "text": "(1) DJP dapat melakukan pemeriksaan terhadap WP untuk menguji kepatuhan pemenuhan kewajiban perpajakan.\n(2) Pemeriksaan sebagaimana dimaksud pada ayat (1) dapat dilakukan di tempat WP, tempat usaha, atau tempat lain yang dianggap perlu.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat memeriksa WP untuk menguji kepatuhan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Pemeriksaan di tempat WP, usaha, atau tempat lain.",
+        "status": "berlaku"
       }
     ]
   }

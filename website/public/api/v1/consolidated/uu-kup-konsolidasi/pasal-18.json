@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "18",
     "bab": "VI",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan tata cara pengawasan"
+      }
+    ],
+    "text": "(1) DJP dapat melakukan pengawasan terhadap pelaksanaan kewajiban perpajakan.\n(2) Pengawasan sebagaimana dimaksud pada ayat (1) dilakukan secara berkala.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat melakukan pengawasan pelaksanaan kewajiban perpajakan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Pengawasan dilakukan secara berkala.",
+        "status": "berlaku"
       }
     ]
   }

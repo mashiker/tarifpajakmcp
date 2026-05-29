@@ -1,16 +1,20 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pp-40-2009",
     "number": "40",
     "year": 2009,
-    "title": "Peraturan Pemerintah tentang Perubahan atas PP 51/2008 tentang Pajak Penghasilan Final atas Penghasilan Tertentu",
+    "title": "PP tentang Perubahan atas PP No. 51 Tahun 2008 tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak Berdomisili di Wilayah Negara Bagian Malaysia",
+    "shortName": "PP PPh Konstruksi",
     "type": "PP",
-    "effectiveDate": "2009-07-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/50248/pp-no-40-tahun-2009",
+    "promulgationDate": "2009-07-06",
+    "effectiveDate": "2009-08-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44092/pp-no-40-tahun-2009",
     "status": "berlaku",
+    "description": "PP mengatur PPh Final atas pekerjaan jasa konstruksi: 2% (perencanaan), 4% (pelaksanaan), 6% (pengawasan). Perubahan atas PP 51/2008 yang lebih spesifik untuk konstruksi.",
+    "relevantArticles": "Pasal 2, 3, 4",
     "relatedRegulations": [
       "pp-51-2008"
     ],

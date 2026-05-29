@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "6",
     "bab": "II",
@@ -55,6 +55,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan bukan objek pajak"
+      }
+    ],
+    "text": "(1) Bukan objek pajak meliputi:\na. bantuan atau sumbangan, termasuk zakat yang diterima oleh badan amil zakat atau yang diterima oleh penerima zakat yang berhak atau sumbangan keagamaan yang sifatnya wajib bagi pemeluk agama yang diakui di Indonesia yang diterima oleh lembaga keagamaan yang dikelola oleh masyarakat;\nb. harta termasuk setoran yang diterima oleh badan sebagaimana dimaksud dalam Pasal 2 ayat (1) huruf b sebagai penyertaan modal;\nc. dividen atau bagian laba yang diterima atau diperoleh persekutuan, badan, dan yayasan termasuk yang diberikan bentuk usaha tetap;\nd. bunga obligasi yang diterima atau diperoleh WP badan sebagaimana dimaksud dalam Pasal 2 ayat (1) huruf b;\ne. iuran yang diterima atau diperoleh dana pensiun yang pendiriannya telah disahkan oleh Menteri Keuangan, baik yang dibayar oleh pemberi kerja maupun pegawai;\nf. sumbangan suatu badan atau lembaga yang dibentuk untuk tujuan pendidikan dan/atau pengembangan pengetahuan, dan/atau teknologi, atau budaya, yang dibentuk dan disahkan oleh pemerintah;\ng. penghasilan dari usaha perikanan yang tidak menggunakan kapal bermesin atau menggunakan kapal bermesin berukuran tidak lebih dari 7 (tujuh) GT;\nh. penghasilan yang diterima atau diperoleh WP OP yang berdomisili di Indonesia dan bekerja di luar Indonesia yang sudah dipotong PPh di luar Indonesia, dalam hal terdapat perjanjian pajak dengan negara sumber penghasilan;\ni. pembagian surplus dana pensiun sebagaimana dimaksud dalam Undang-Undang tentang Dana Pensiun;\nj. warisan;\nk. penghasilan yang diterima atau diperoleh WP OP berupa tunjangan hari raya atau tunjangan yang sifatnya tahunan atau bulanan yang diberikan oleh pemerintah daerah;\nl. bantuan, santunan, atau sumbangan yang diterima oleh WP OP sepanjang tidak ada hubungannya dengan usaha atau pekerjaan, kegiatan atau kepemilikan WP yang memberikan;\nm. penghasilan dari penjualan saham di bursa yang dikenakan pajak final.\n(2) Dalam hal WP badan menerima atau memperoleh penghasilan yang bukan objek pajak sebagaimana dimaksud pada ayat (1), penghasilan tersebut merupakan objek pajak dari WP badan yang menerima atau memperoleh penghasilan tersebut.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Bukan objek pajak: zakat/sumbangan keagamaan, penyertaan modal, dividen, bunga obligasi WP tertentu, iuran dana pensiun, sumbangan pendidikan/teknologi/budaya, usaha perikanan kecil, warisan, THR dari pemerintah, bantuan tanpa hubungan usaha, saham yang dikenakan pajak final.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Penghasilan bukan objek pajak yang diterima WP badan tetap merupakan objek pajak dari WP badan penerima.",
+        "status": "berlaku"
       }
     ]
   }

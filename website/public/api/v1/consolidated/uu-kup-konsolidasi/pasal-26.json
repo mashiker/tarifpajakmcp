@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "26",
     "bab": "VII",
@@ -22,6 +22,19 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) SKPKBT diterbitkan jika ditemukan pajak yang tidak atau kurang dibayar karena kelalaian WP.\n(2) SKPKBT dapat diterbitkan dalam jangka waktu 5 tahun sebagaimana dimaksud dalam Pasal 11.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SKPKBT untuk pajak tidak/kurang dibayar karena kelalaian WP.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Dapat diterbitkan dalam 5 tahun.",
+        "status": "berlaku"
       }
     ]
   }

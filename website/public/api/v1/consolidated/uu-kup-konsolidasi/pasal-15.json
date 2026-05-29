@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "15",
     "bab": "IV",
@@ -23,6 +23,14 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Penilaian persediaan dan persediaan barang dalam pembukuan dilakukan dengan cara yang ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penilaian persediaan dilakukan sesuai ketentuan PP.",
+        "status": "berlaku"
       }
     ]
   }

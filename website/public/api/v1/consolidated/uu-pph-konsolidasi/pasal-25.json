@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "25",
     "bab": "VI",
@@ -34,6 +34,19 @@
         "changeType": "amended",
         "effectiveDate": "2009-01-01",
         "summary": "Perubahan perhitungan angsuran"
+      }
+    ],
+    "text": "(1) Angsuran PPh 25 dalam suatu tahun pajak ditetapkan berdasarkan SPT Tahunan tahun sebelumnya.\n(2) Besarnya angsuran PPh 25 sebagaimana dimaksud pada ayat (1) adalah PPh terutang menurut SPT Tahunan dikurangi PPh yang dipotong dan PPh yang dibayar di luar negeri, dibagi 12.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Angsuran PPh 25 ditetapkan berdasarkan SPT Tahunan tahun sebelumnya.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Angsuran = (PPh terutang - kredit pajak) / 12.",
+        "status": "berlaku"
       }
     ]
   }

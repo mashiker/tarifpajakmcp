@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "4",
     "bab": "I",
@@ -83,6 +83,29 @@
           "(4)"
         ],
         "summary": "Penambahan PPh Final VDP dan perubahan ketentuan PPh Final"
+      }
+    ],
+    "text": "(1) Wajib Pajak yang menerima atau memperoleh penghasilan kena pajak wajib mendaftarkan diri pada kantor Direktorat Jenderal Pajak.\n(2) Wajib Pajak badan yang berkedudukan di Indonesia dan Wajib Pajak orang pribadi yang berdomisili di Indonesia yang menerima penghasilan dari luar Indonesia wajib mendaftarkan diri.\n(3) Pajak Penghasilan bersifat final dikenakan atas:\na. bunga deposito, tabungan lainnya, bunga obligasi, dan bunga diskonto;\nb. hadiah undian;\nc. penghasilan dari transaksi saham dan sekuritas lainnya yang diperdagangkan di bursa;\nd. penghasilan dari pengalihan harta berupa tanah dan/atau bangunan;\ne. penghasilan dari pengalihan saham atau perusahaan peserta Tax Amnesty;\nf. penghasilan tertentu bidang perminyakan, gas, dan geotermal;\ng. penghasilan dari usaha WP yang dikukuhkan sebagai PKP; dan\nh. penghasilan dari penjualan hasil tambang mineral dan batubara.\n(4) Pajak Penghasilan final sebagaimana dimaksud pada ayat (3) dipotong dan disetor oleh pihak yang wajib memotong.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Kewajiban mendaftar diri pada DJP bagi WP yang menerima penghasilan kena pajak.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Kewajiban mendaftar bagi WP badan dan WP OP yang menerima penghasilan dari luar Indonesia.",
+        "status": "diubah"
+      },
+      {
+        "number": "(3)",
+        "text": "PPh Final dikenakan atas: bunga deposito/obligasi, hadiah undian, saham di bursa, pengalihan tanah/bangunan, pengalihan saham Tax Amnesty, migas/geotermal, usaha PKP, dan tambang mineral/batubara.",
+        "status": "diubah"
+      },
+      {
+        "number": "(4)",
+        "text": "PPh Final dipotong dan disetor oleh pihak yang wajib memotong.",
+        "status": "ditambah"
       }
     ]
   }

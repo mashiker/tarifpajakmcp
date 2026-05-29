@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "32",
     "bab": "X",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan ketentuan perjanjian"
+      }
+    ],
+    "text": "(1) Dalam hal WP mempunyai hak untuk menerima atau memperoleh penghasilan dari negara yang mempunyai perjanjian pajak dengan Indonesia, WP dapat memilih untuk dikenakan PPh sesuai dengan ketentuan UU ini atau sesuai dengan perjanjian pajak.\n(2) Pilihan sebagaimana dimaksud pada ayat (1) disampaikan kepada Direktur Jenderal Pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP dapat memilih PPh sesuai UU atau sesuai perjanjian pajak (tax treaty).",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Pilihan disampaikan kepada DJP.",
+        "status": "berlaku"
       }
     ]
   }

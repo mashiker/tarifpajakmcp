@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "17",
     "bab": "IV",
@@ -58,6 +58,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Tarif PPh UMKM 0,5% dari peredaran bruto, threshold Rp 4,8 miliar"
+      }
+    ],
+    "text": "(1) Wajib Pajak orang pribadi yang melakukan usaha atau pekerjaan bebas yang pada suatu tahun pajak menerima penghasilan bruto dari usaha tersebut tidak lebih dari Rp 4.800.000.000,00 (empat miliar delapan ratus juta rupiah), dapat menghitung penghasilan neto dengan menggunakan Norma Penghitungan Penghasilan Neto.\n(2) Penghasilan yang diterima atau diperoleh WP OP sebagaimana dimaksud pada ayat (1) dikenakan PPh yang bersifat final sebesar 0,5% (nol koma lima persen) dari penghasilan bruto.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP OP usaha/bebas dengan bruto ≤Rp4,8 miliar dapat menggunakan norma penghitungan.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Penghasilan WP OP tersebut dikenakan PPh Final 0,5% dari bruto.",
+        "status": "diubah"
       }
     ]
   }

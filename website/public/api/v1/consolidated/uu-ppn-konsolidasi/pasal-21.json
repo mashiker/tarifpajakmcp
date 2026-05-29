@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "21",
     "bab": "III",
@@ -22,6 +22,19 @@
         "changeType": "original",
         "effectiveDate": "1984-04-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) PPnBM atas penyerahan BKP oleh pabrikan dipungut oleh pabrikan.\n(2) PPnBM atas impor BKP dipungut oleh Direktorat Jenderal Bea dan Cukai.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPnBM dipungut oleh pabrikan saat penyerahan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "PPnBM impor dipungut oleh DJBC.",
+        "status": "berlaku"
       }
     ]
   }

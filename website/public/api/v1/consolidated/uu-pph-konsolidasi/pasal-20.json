@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "20",
     "bab": "VI",
@@ -45,6 +45,19 @@
         "changeType": "amended",
         "effectiveDate": "2009-01-01",
         "summary": "Perubahan metode kredit pajak luar negeri"
+      }
+    ],
+    "text": "(1) Kredit pajak yang dapat dikurangkan dari PPh terutang meliputi:\na. PPh yang dipotong oleh pihak lain;\nb. PPh yang telah dibayar sendiri oleh WP; dan\nc. PPh yang dibayar di luar negeri.\n(2) Kredit pajak sebagaimana dimaksud pada ayat (1) huruf c hanya dapat dikreditkan sebesar pajak penghasilan yang terutang dikalikan perbandingan antara penghasilan netto dari luar Indonesia dan penghasilan netto total.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Kredit pajak: PPh dipotong pihak lain, PPh dibayar sendiri, PPh dibayar di luar negeri.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Kredit pajak luar negeri dibatasi proporsional.",
+        "status": "berlaku"
       }
     ]
   }

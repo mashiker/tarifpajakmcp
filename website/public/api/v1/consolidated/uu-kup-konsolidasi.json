@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "uu-kup-konsolidasi",
     "title": "Undang-Undang tentang Ketentuan Umum dan Tata Cara Perpajakan (Konsolidasi)",
@@ -411,15 +411,15 @@
       }
     ],
     "statistics": {
-      "totalPasals": 49,
-      "berlakuPasals": 20,
-      "diubahPasals": 20,
+      "totalPasals": 58,
+      "berlakuPasals": 23,
+      "diubahPasals": 26,
       "dicabutPasals": 0,
       "ditambahPasals": 9,
       "totalAmendments": 6
     },
-    "lastUpdated": "2026-05-28",
-    "sourceNotes": "Data disusun berdasarkan UU 6/1983 KUP beserta seluruh perubahannya hingga UU 7/2021 HPP. Sumber: peraturan.bpk.go.id, pasal.id. Verifikasi terhadap naskah resmi BPK direkomendasikan.",
+    "lastUpdated": "2026-05-29",
+    "sourceNotes": "Naskah konsolidasi disusun berdasarkan UU 6/1983 KUP beserta seluruh perubahannya (UU 9/1994, UU 16/2000, UU 28/2007, Perppu 5/2008, UU 7/2021 HPP). Teks menunjukkan versi terkini setelah semua perubahan diterapkan. Disusun dengan AI berdasarkan regulasi yang diketahui. Selalu verifikasi dengan peraturan resmi terbaru di peraturan.bpk.go.id.",
     "pasalCount": 58,
     "pasals": [
       {

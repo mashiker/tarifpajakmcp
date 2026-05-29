@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "1",
     "bab": "I",
@@ -55,6 +55,24 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan definisi subjek pajak"
+      }
+    ],
+    "text": "(1) Subjek pajak adalah orang pribadi dan badan, termasuk bentuk usaha tetat (BUT).\n(2) Yang termasuk subjek pajak orang pribadi adalah:\na. orang pribadi yang bertempat tinggal di Indonesia;\nb. orang pribadi yang berada di Indonesia lebih dari 183 (seratus delapan puluh tiga) hari dalam jangka waktu 12 (dua belas) bulan.\n(3) Yang termasuk subjek pajak badan adalah badan yang didirikan atau berkedudukan di Indonesia.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Subjek pajak adalah orang pribadi dan badan, termasuk bentuk usaha tetat (BUT).",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Yang termasuk subjek pajak orang pribadi adalah:\na. orang pribadi yang bertempat tinggal di Indonesia;\nb. orang pribadi yang berada di Indonesia lebih dari 183 (seratus delapan puluh tiga) hari dalam jangka waktu 12 (dua belas) bulan.",
+        "status": "diubah"
+      },
+      {
+        "number": "(3)",
+        "text": "Yang termasuk subjek pajak badan adalah badan yang didirikan atau berkedudukan di Indonesia.",
+        "status": "diubah"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "16",
     "bab": "IV",
@@ -44,6 +44,19 @@
         "changeType": "amended",
         "effectiveDate": "2009-01-01",
         "summary": "Perubahan norma penghitungan"
+      }
+    ],
+    "text": "(1) Norma penghitungan penghasilan neto ditetapkan dengan Peraturan Pemerintah.\n(2) Norma penghitungan penghasilan neto sebagaimana dimaksud pada ayat (1) diperhitungkan dengan pembukuan atau pencatatan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Norma penghitungan penghasilan neto ditetapkan dengan PP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Norma diperhitungkan dengan pembukuan atau pencatatan.",
+        "status": "berlaku"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "14",
     "bab": "IV",
@@ -23,6 +23,19 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Penghasilan dan pengeluaran dalam pembukuan harus dicatat pada saat timbulnya hak atau kewajiban.\n(2) Penyusutan dan amortisasi dilakukan berdasarkan ketentuan yang berlaku dalam UU PPh.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penghasilan dan pengeluaran dicatat saat timbulnya hak/kewajiban (acual basis).",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Penyusutan dan amortisasi sesuai UU PPh.",
+        "status": "berlaku"
       }
     ]
   }

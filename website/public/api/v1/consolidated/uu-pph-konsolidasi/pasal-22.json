@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "22",
     "bab": "VI",
@@ -39,6 +39,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Dasar hukum TER PPh 21"
+      }
+    ],
+    "text": "(1) Atas penghasilan yang diterima atau diperoleh WP OP sehubungan dengan pekerjaan atau jasa, dipotong PPh oleh pemberi kerja.\n(2) PPh sebagaimana dimaksud pada ayat (1) dipotong berdasarkan TER sebagaimana dimaksud dalam Pasal 17A.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPh 21 dipotong oleh pemberi kerja atas penghasilan WP OP dari pekerjaan/jasa.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "PPh 21 dipotong berdasarkan TER sesuai Pasal 17A.",
+        "status": "diubah"
       }
     ]
   }

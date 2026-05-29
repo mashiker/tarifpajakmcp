@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "34",
     "bab": "IX",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan ketentuan penagihan"
+      }
+    ],
+    "text": "(1) Penagihan pajak dilakukan dengan Surat Paksa.\n(2) Penagihan pajak sebagaimana dimaksud pada ayat (1) dilakukan apabila WP tidak membayar pajak setelah lewat jatuh tempo pembayaran.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penagihan pajak dengan Surat Paksa.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Surat Paksa diterbitkan jika WP tidak bayar setelah jatuh tempo.",
+        "status": "berlaku"
       }
     ]
   }

@@ -1,16 +1,23 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pp-71-2008",
-    "number": "71/2008",
+    "number": "71",
     "year": 2008,
-    "title": "PP tentang PPh Pengalihan Hak atas Tanah/Bangunan dan Jasa Konstruksi",
+    "title": "PP tentang Pajak Penghasilan Final atas Penghasilan Tertentu berupa Pengalihan Hak atas Tanah dan/atau Bangunan",
+    "shortName": "PP PPh Pengalihan Tanah",
     "type": "PP",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/49660/pp-no-71-tahun-2008",
-    "status": "berlaku",
+    "promulgationDate": "2008-12-29",
     "effectiveDate": "2009-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44113/pp-no-71-tahun-2008",
+    "status": "berlaku",
+    "description": "PP mengatur PPh Final atas pengalihan hak atas tanah/bangunan. Tarif 2,5% (umum), 1% (perumahan sederhana), 0% (pemerintah). Menggantikan PP 131/2000 untuk pengalihan tanah.",
+    "relevantArticles": "Pasal 2, 3, 4",
+    "relatedRegulations": [
+      "pp-131-2000"
+    ],
     "referencingEntries": [
       "pph-final-pengalihan-pp71"
     ]

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "18",
     "bab": "V",
@@ -45,6 +45,19 @@
         "changeType": "amended",
         "effectiveDate": "2022-01-01",
         "summary": "Perubahan penghasilan dari pekerjaan"
+      }
+    ],
+    "text": "(1) Penghasilan dari pekerjaan atau jasa yang diterima atau diperoleh WP OP merupakan objek pajak.\n(2) Penghasilan sebagaimana dimaksud pada ayat (1) termasuk imbalan berupa uang, natura, dan kenikmatan yang diterima WP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penghasilan dari pekerjaan/jasa WP OP merupakan objek pajak.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Termasuk imbalan uang, natura, dan kenikmatan.",
+        "status": "diubah"
       }
     ]
   }

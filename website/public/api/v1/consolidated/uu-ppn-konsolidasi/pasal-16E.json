@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "16E",
     "bab": "II",
@@ -24,6 +24,19 @@
         "changeType": "added",
         "effectiveDate": "2022-01-01",
         "summary": "Pasal baru"
+      }
+    ],
+    "text": "(1) PKP yang terlambat menyampaikan SPT Masa dikenakan sanksi administrasi.\n(2) PKP yang tidak atau kurang menyetor PPN dikenakan sanksi administrasi berupa bunga.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Sanksi administrasi atas keterlambatan SPT Masa.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Sanksi bunga atas tidak/kurang setor PPN.",
+        "status": "ditambah"
       }
     ]
   }

@@ -1,11 +1,11 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "totalEntries": 136,
     "totalCategories": 15,
-    "totalRegulations": 37,
+    "totalRegulations": 39,
     "byStatus": {
       "berlaku": 111,
       "dicabut": 16,

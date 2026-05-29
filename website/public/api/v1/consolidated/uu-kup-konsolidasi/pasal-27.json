@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "27",
     "bab": "VII",
@@ -22,6 +22,14 @@
         "changeType": "original",
         "effectiveDate": "1984-01-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) SKPN diterbitkan jika berdasarkan hasil pemeriksaan jumlah pajak yang terutang sama dengan jumlah pajak yang telah dibayar.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SKPN: pajak terutang = pajak dibayar.",
+        "status": "berlaku"
       }
     ]
   }

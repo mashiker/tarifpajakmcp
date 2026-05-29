@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "5",
     "bab": "III",
@@ -33,6 +33,19 @@
         "changeType": "amended",
         "effectiveDate": "2008-01-01",
         "summary": "Penyesuaian tempat penyampaian termasuk secara elektronik"
+      }
+    ],
+    "text": "(1) SPT disampaikan di tempat WP domisili atau tempat kedudukan WP.\n(2) SPT dapat disampaikan secara langsung atau melalui pos dengan bukti pengiriman atau cara lain yang ditetapkan oleh DJP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SPT disampaikan di tempat domisili/kedudukan WP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "SPT dikirim langsung, pos, atau cara lain yang ditetapkan DJP.",
+        "status": "diubah"
       }
     ]
   }

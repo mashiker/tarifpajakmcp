@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "id": "pph-badan-ikn-10y",
     "category": "PPh",
@@ -52,9 +52,6 @@
         "pph-badan-pre2010",
         "pph-badan-pre2001",
         "pph-badan-ikn-0pct"
-      ],
-      "regulations": [
-        "pp-28-2023"
       ]
     }
   }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "20",
     "bab": "III",
@@ -22,6 +22,19 @@
         "changeType": "original",
         "effectiveDate": "1984-04-01",
         "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Barang yang tergolong mewah meliputi:\na. kendaraan bermotor sedan, jeep, station wagon, van, dan kombi;\nb. kapal pesiar;\nc. pesawat udara pribadi;\nd. rumah mewah;\ne. perlengkapan mewah.\n(2) Daftar BKP yang tergolong mewah ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "BKP mewah: sedan/jeep/van, kapal pesiar, pesawat pribadi, rumah mewah, perlengkapan mewah.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Daftar ditetapkan PP.",
+        "status": "berlaku"
       }
     ]
   }

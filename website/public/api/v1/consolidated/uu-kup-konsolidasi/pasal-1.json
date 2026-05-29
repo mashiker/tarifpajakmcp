@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T00:15:20.033Z",
+  "generated": "2026-05-29T15:12:55.538Z",
   "data": {
     "number": "1",
     "bab": "I",
@@ -67,6 +67,14 @@
           "(1)"
         ],
         "summary": "Perubahan definisi WP, penambahan istilah terkait pengungkapan sukarela dan kerja sama internasional"
+      }
+    ],
+    "text": "(1) Dalam Undang-Undang ini, yang dimaksud dengan:\na. Pajak adalah kontribusi wajib kepada negara yang terutang oleh orang pribadi atau badan yang bersifat memaksa berdasarkan Undang-Undang, dengan tidak mendapatkan imbalan secara langsung dan digunakan untuk keperluan negara bagi sebesar-besarnya kemakmuran rakyat;\nb. Wajib Pajak adalah orang pribadi atau badan yang menurut ketentuan peraturan perundang-undangan perpajakan ditentukan untuk melakukan kewajiban perpajakan, termasuk pemungut pajak atau pemotong pajak tertentu;\nc. NPWP (Nomor Pokok Wajib Pajak) adalah nomor yang diberikan kepada Wajib Pajak sebagai sarana dalam administrasi perpajakan yang dipergunakan sebagai tanda pengenal diri atau identitas Wajib Pajak dalam melaksanakan hak dan kewajiban perpajakannya;\nd. SPT (Surat Pemberitahuan) adalah surat yang oleh Wajib Pajak digunakan untuk melaporkan penghitungan dan/atau pembayaran pajak, objek pajak dan/atau bukan objek pajak, dan/atau harta dan kewajiban sesuai ketentuan peraturan perundang-undangan perpajakan;\ne. pembukuan adalah suatu proses pencatatan yang dilakukan secara teratur untuk mengumpulkan data dan informasi keuangan yang meliputi harta, kewajiban, modal, penghasilan dan biaya, serta jumlah harga perolehan dan penyerahan barang atau jasa, yang ditutup dengan menyusun laporan keuangan berupa neraca, dan laporan laba rugi untuk periode Tahun Pajak tersebut;\nf. pembetulan adalah perbaikan SPT yang telah disampaikan kepada DJP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Definisi: Pajak, Wajib Pajak, NPWP, SPT, pembukuan, pembetulan, dan istilah perpajakan lainnya.",
+        "status": "diubah"
       }
     ]
   }
