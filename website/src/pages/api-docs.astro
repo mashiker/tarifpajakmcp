@@ -4,38 +4,38 @@ import BaseLayout from '../layouts/Base.astro';
 
 <BaseLayout title="API Reference" activeNav="api">
   <!-- Breadcrumb -->
-  <nav class="flex items-center gap-1.5 text-xs mb-8 text-slate-400">
-    <a href="/" class="hover:text-slate-600 dark:hover:text-slate-300 transition-colors">Beranda</a>
+  <nav class="flex items-center gap-1.5 text-xs mb-8 text-[var(--text-tertiary)]">
+    <a href="/" class="hover:text-[var(--text)] transition-colors">Beranda</a>
     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-    <span class="text-slate-700 dark:text-slate-300 font-medium">API Reference</span>
+    <span class="text-[var(--text)] font-medium">API Reference</span>
   </nav>
 
   <!-- Header -->
   <div class="mb-10">
     <div class="flex items-center gap-3 mb-3">
-      <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-50 dark:bg-indigo-950/30">
-        <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+      <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent-soft)]">
+        <svg class="w-5 h-5 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
       </div>
       <div>
-        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">API Reference</h1>
+        <h1 class="text-xl font-bold text-[var(--text)] tracking-tight">API Reference</h1>
       </div>
     </div>
-    <p class="text-sm text-slate-500 dark:text-slate-400 max-w-lg">Pre-built static JSON API — fetch langsung dari CDN tanpa backend, tanpa auth.</p>
+    <p class="text-sm text-[var(--text-secondary)] max-w-lg">Pre-built static JSON API — fetch langsung dari CDN tanpa backend, tanpa auth.</p>
   </div>
 
   <!-- Info Cards -->
   <div class="grid grid-cols-3 gap-3 mb-10">
     <div class="card p-4">
-      <div class="text-[11px] text-slate-400 font-medium mb-1">Base URL</div>
-      <code class="text-sm font-mono font-semibold text-slate-900 dark:text-slate-100">/api/v1/</code>
+      <div class="text-[11px] text-[var(--text-tertiary)] font-medium mb-1">Base URL</div>
+      <code class="text-sm font-mono font-semibold text-[var(--text)]">/api/v1/</code>
     </div>
     <div class="card p-4">
-      <div class="text-[11px] text-slate-400 font-medium mb-1">Format</div>
-      <code class="text-sm font-mono font-semibold text-slate-900 dark:text-slate-100">JSON static</code>
+      <div class="text-[11px] text-[var(--text-tertiary)] font-medium mb-1">Format</div>
+      <code class="text-sm font-mono font-semibold text-[var(--text)]">JSON static</code>
     </div>
     <div class="card p-4">
-      <div class="text-[11px] text-slate-400 font-medium mb-1">Auth</div>
-      <code class="text-sm font-mono font-semibold text-emerald-600 dark:text-emerald-400">None — open</code>
+      <div class="text-[11px] text-[var(--text-tertiary)] font-medium mb-1">Auth</div>
+      <code class="text-sm font-mono font-semibold text-[var(--accent)]">None — open</code>
     </div>
   </div>
 
@@ -83,7 +83,7 @@ import BaseLayout from '../layouts/Base.astro';
       ]},
     ].map((section: any) => (
       <div class="mb-4">
-        <h3 class="text-xs font-semibold text-slate-600 dark:text-slate-400 mb-2 flex items-center gap-2">
+        <h3 class="text-xs font-semibold text-[var(--text-secondary)] mb-2 flex items-center gap-2">
           <span class={`px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold ${section.color}`}>{section.group}</span>
         </h3>
         <div class="card overflow-hidden">
@@ -92,9 +92,9 @@ import BaseLayout from '../layouts/Base.astro';
             <tbody>
               {section.endpoints.map((ep: any) => (
                 <tr>
-                  <td><span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 px-2 py-0.5 rounded-md text-[10px] font-mono font-bold">GET</span></td>
-                  <td class="font-mono text-xs text-slate-900 dark:text-slate-100">{ep.path}</td>
-                  <td class="text-sm text-slate-500 dark:text-slate-400">{ep.desc}</td>
+                  <td><span class="bg-slate-100 dark:bg-slate-800 text-[var(--text-secondary)] px-2 py-0.5 rounded-md text-[10px] font-mono font-bold">GET</span></td>
+                  <td class="font-mono text-xs text-[var(--text)]">{ep.path}</td>
+                  <td class="text-sm text-[var(--text-secondary)]">{ep.desc}</td>
                 </tr>
               ))}
             </tbody>
@@ -109,7 +109,7 @@ import BaseLayout from '../layouts/Base.astro';
     <h2 class="section-heading mb-5">Try It</h2>
     <div class="card p-6">
       <div class="flex flex-wrap gap-2 mb-4">
-        <select id="api-endpoint" class="border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-mono bg-white dark:bg-slate-900 flex-1 min-w-[200px] focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all">
+        <select id="api-endpoint" class="border border-[var(--border)] rounded-xl px-3 py-2.5 text-sm font-mono bg-[var(--surface)] flex-1 min-w-[200px] focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all">
           <option value="/api/v1/index.json">GET /api/v1/index.json</option>
           <option value="/api/v1/stats.json">GET /api/v1/stats.json</option>
           <option value="/api/v1/entries/index.json">GET /api/v1/entries/index.json</option>
@@ -124,7 +124,7 @@ import BaseLayout from '../layouts/Base.astro';
         <button id="api-copy-curl" class="btn-secondary">Copy curl</button>
       </div>
       <div id="api-response" class="code-block text-xs overflow-auto max-h-80">
-        <span class="text-slate-400">Select an endpoint and click Execute...</span>
+        <span class="text-[var(--text-tertiary)]">Select an endpoint and click Execute...</span>
       </div>
     </div>
   </div>
@@ -140,9 +140,9 @@ import BaseLayout from '../layouts/Base.astro';
         { q: 'Data untuk kalkulasi PPh 21?', cmd: 'curl /api/v1/calculator/pph-21.json', hint: '→ brackets + PTKP values' },
       ].map((uc: any) => (
         <div class="card-hover p-5">
-          <div class="text-sm font-medium text-slate-900 dark:text-slate-100 mb-3">{uc.q}</div>
+          <div class="text-sm font-medium text-[var(--text)] mb-3">{uc.q}</div>
           <div class="code-block text-xs py-2.5">
-            <span class="text-emerald-400">$</span> {uc.cmd} <span class="text-slate-500">{uc.hint}</span>
+            <span class="text-emerald-400">$</span> {uc.cmd} <span class="text-[var(--text-secondary)]">{uc.hint}</span>
           </div>
         </div>
       ))}
@@ -158,7 +158,7 @@ import BaseLayout from '../layouts/Base.astro';
 
   btn?.addEventListener('click', async () => {
     const url = sel.value;
-    resp!.innerHTML = '<span class="text-slate-400">Loading...</span>';
+    resp!.innerHTML = '<span class="text-[var(--text-tertiary)]">Loading...</span>';
     try {
       const r = await fetch(url);
       const data = await r.json();

@@ -1,6 +1,6 @@
 ---
-interface Props { title: string; description?: string; activeNav?: string; }
-const { title, description = 'Database tarif pajak Indonesia yang terbuka dan bersumber dari regulasi resmi.', activeNav = '' } = Astro.props;
+interface Props { title: string; description?: string; activeNav?: string; wide?: boolean; }
+const { title, description = 'Database tarif pajak Indonesia yang terbuka dan bersumber dari regulasi resmi.', activeNav = '', wide = false } = Astro.props;
 ---
 <!doctype html>
 <html lang="id">
@@ -29,28 +29,36 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
   <a href="#main-content" class="skip-link">Skip to content</a>
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-2xl border-b border-slate-200/60 dark:border-slate-800/60">
-    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+  <header class="sticky top-0 z-50 bg-[var(--bg)]/80 backdrop-blur-xl border-b border-[var(--border)]">
+    <div class="mx-auto flex h-14 max-w-8xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+
       <!-- Logo -->
-      <a href="/" class="group flex shrink-0 items-center gap-2.5" aria-label="Tarif Pajak ID home">
-        <div class="relative flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 shadow-sm transition-transform duration-200 group-hover:scale-105 dark:bg-white">
-          <svg class="h-5 w-5 text-white dark:text-slate-900" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M7 3.5h7.5L19 8v12.5H7V3.5Z" fill="currentColor" opacity="0.9"/>
-            <path d="M14.5 3.5V8H19" fill="currentColor" opacity="0.5"/>
-            <path d="M9 15.5L15.5 9" stroke="#10B981" stroke-width="1.8" stroke-linecap="round"/>
-            <circle cx="9.7" cy="9.8" r="1.4" fill="#10B981"/>
-            <circle cx="15" cy="15.2" r="1.4" fill="#10B981"/>
+      <a href="/" class="group flex shrink-0 items-center gap-2" aria-label="Tarif Pajak ID home">
+        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-[#111318] dark:bg-white transition-transform duration-200 group-hover:scale-105">
+          <svg class="h-4 w-4" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <rect x="14" y="16" width="36" height="32" rx="3" stroke="var(--accent)" stroke-width="3.5" fill="none"/>
+            <line x1="14" y1="26" x2="50" y2="26" stroke="var(--accent)" stroke-width="2.5"/>
+            <line x1="32" y1="16" x2="32" y2="48" stroke="var(--accent)" stroke-width="2.5"/>
+            <text x="41" y="23.5" font-family="monospace" font-size="8" font-weight="800" fill="var(--accent)" text-anchor="middle">%</text>
           </svg>
         </div>
         <div class="flex items-center gap-1.5">
-          <span class="text-[15px] font-extrabold tracking-tight text-slate-900 dark:text-white">Tarif Pajak</span>
-          <span class="rounded-md bg-emerald-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-emerald-700 ring-1 ring-emerald-200/80 dark:bg-emerald-950/50 dark:text-emerald-300 dark:ring-emerald-800/60">ID</span>
+          <span class="text-sm font-bold tracking-tight text-[var(--text)]">Tarif Pajak</span>
+          <span class="rounded bg-[var(--accent-soft)] px-1.5 py-0.5 font-mono text-[10px] font-bold text-[var(--accent)]">ID</span>
         </div>
       </a>
 
+      <!-- Search Bar (Desktop) -->
+      <div class="hidden md:flex flex-1 max-w-sm">
+        <button id="search-trigger" class="w-full flex items-center gap-2 h-9 px-3 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text-tertiary)] text-sm hover:border-[var(--accent)] transition-colors duration-200 cursor-pointer" aria-label="Search">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span class="flex-1 text-left">Cari tarif, kategori, kode...</span>
+          <kbd class="hidden lg:inline-flex items-center gap-0.5 rounded border border-[var(--border)] bg-[var(--surface-alt)] px-1.5 py-0.5 font-mono text-[10px] text-[var(--text-tertiary)]">⌘K</kbd>
+        </button>
+      </div>
+
       <!-- Desktop Nav -->
-      <nav class="hidden items-center gap-1 md:flex" aria-label="Main">
-        <a href="/" class:list={["nav-link", activeNav === "home" && "active"]}>Beranda</a>
+      <nav class="hidden items-center gap-0.5 lg:flex" aria-label="Main">
         <a href="/database" class:list={["nav-link", activeNav === "database" && "active"]}>Database</a>
         <a href="/ter-pph-21" class:list={["nav-link", activeNav === "ter" && "active"]}>TER PPh 21</a>
         <a href="/kode-objek-pajak" class:list={["nav-link", activeNav === "bppu" && "active"]}>BPPU</a>
@@ -58,97 +66,75 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
       </nav>
 
       <!-- Actions -->
-      <div class="flex items-center gap-2">
-        <a href="/api-docs" class="hidden sm:inline-flex items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3.5 py-2 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors duration-200">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          API Docs
-        </a>
-        <button id="dark-toggle" class="btn-ghost p-2 rounded-xl" aria-label="Toggle dark mode">
-          <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
-          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+      <div class="flex items-center gap-1">
+        <button id="dark-toggle" class="btn-ghost p-2 rounded-lg" aria-label="Toggle dark mode">
+          <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
         </button>
-        <button id="mobile-menu-btn" class="btn-ghost p-2 rounded-xl md:hidden" aria-label="Menu">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <button id="mobile-menu-btn" class="btn-ghost p-2 rounded-lg lg:hidden" aria-label="Menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden border-t border-slate-200/60 bg-white/95 backdrop-blur-xl md:hidden dark:border-slate-800/60 dark:bg-slate-950/95">
-      <div class="mx-auto max-w-6xl px-4 py-3 space-y-1">
+    <div id="mobile-menu" class="hidden border-t border-[var(--border)] bg-[var(--bg)]/95 backdrop-blur-xl lg:hidden">
+      <div class="mx-auto max-w-8xl px-4 py-3 space-y-1">
+        <!-- Mobile Search -->
+        <div class="relative mb-2">
+          <input id="mobile-search-input" type="text" placeholder="Cari tarif pajak..." class="w-full h-10 pl-9 pr-4 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-sm text-[var(--text)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent)]" />
+          <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--text-tertiary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
         <a href="/" class:list={["nav-link w-full", activeNav === "home" && "active"]}>Beranda</a>
         <a href="/database" class:list={["nav-link w-full", activeNav === "database" && "active"]}>Database</a>
         <a href="/ter-pph-21" class:list={["nav-link w-full", activeNav === "ter" && "active"]}>TER PPh 21</a>
-        <a href="/kode-objek-pajak" class:list={["nav-link w-full", activeNav === "bppu" && "active"]}>Kode BPPU</a>
-        <a href="/api-docs" class:list={["nav-link w-full", activeNav === "api" && "active"]}>API Reference</a>
+        <a href="/kode-objek-pajak" class:list={["nav-link w-full", activeNav === "bppu" && "active"]}>BPPU</a>
+        <a href="/api-docs" class:list={["nav-link w-full", activeNav === "api" && "active"]}>API</a>
       </div>
     </div>
   </header>
 
   <!-- Main -->
-  <main id="main-content" class="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+  <main id="main-content" class:list={[
+    "mx-auto w-full px-4 py-6 sm:px-6 sm:py-8 lg:px-8",
+    wide ? "max-w-8xl" : "max-w-4xl"
+  ]}>
     <slot />
   </main>
 
   <!-- Footer -->
-  <footer class="mt-16 border-t border-slate-200/60 dark:border-slate-800/60">
-    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        <!-- Brand -->
-        <div class="lg:col-span-1">
-          <div class="flex items-center gap-2 mb-3">
-            <div class="h-8 w-8 rounded-xl bg-slate-900 dark:bg-white flex items-center justify-center">
-              <svg class="h-4 w-4 text-white dark:text-slate-900" viewBox="0 0 24 24" fill="none"><path d="M7 3.5h7.5L19 8v12.5H7V3.5Z" fill="currentColor" opacity="0.9"/><path d="M14.5 3.5V8H19" fill="currentColor" opacity="0.5"/><path d="M9 15.5L15.5 9" stroke="#10B981" stroke-width="1.8" stroke-linecap="round"/><circle cx="9.7" cy="9.8" r="1.4" fill="#10B981"/><circle cx="15" cy="15.2" r="1.4" fill="#10B981"/></svg>
+  <footer class="mt-auto border-t border-[var(--border)]">
+    <div class="mx-auto max-w-8xl px-4 py-6 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <!-- Left -->
+        <div class="flex items-start gap-3">
+          <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#111318] dark:bg-white mt-0.5">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 64 64" fill="none"><rect x="14" y="16" width="36" height="32" rx="3" stroke="var(--accent)" stroke-width="3.5" fill="none"/><line x1="14" y1="26" x2="50" y2="26" stroke="var(--accent)" stroke-width="2.5"/><line x1="32" y1="16" x2="32" y2="48" stroke="var(--accent)" stroke-width="2.5"/><text x="41" y="23.5" font-family="monospace" font-size="8" font-weight="800" fill="var(--accent)" text-anchor="middle">%</text></svg>
+          </div>
+          <div>
+            <span class="text-xs font-bold text-[var(--text)]">Tarif Pajak ID</span>
+            <span class="mx-1.5 text-[var(--text-tertiary)]">·</span>
+            <span class="text-xs text-[var(--text-secondary)]">Open database, sumber regulasi resmi.</span>
+            <div class="mt-1 inline-flex items-center gap-1 rounded bg-[var(--highlight-soft)] px-1.5 py-0.5 text-[10px] font-semibold text-[var(--highlight)]">
+              <svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Bukan nasihat pajak resmi
             </div>
-            <span class="text-sm font-extrabold text-slate-900 dark:text-white">Tarif Pajak ID</span>
-          </div>
-          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed max-w-xs">Database tarif pajak Indonesia yang terbuka. Dibangun untuk konsultan pajak, developer, dan finance team.</p>
-          <div class="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-amber-50 dark:bg-amber-950/30 px-2.5 py-1.5 text-[11px] font-semibold text-amber-700 dark:text-amber-400 ring-1 ring-amber-200/60 dark:ring-amber-800/40">
-            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            Bukan nasihat pajak resmi
           </div>
         </div>
 
-        <!-- Database -->
-        <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-3">Database</h4>
-          <ul class="space-y-2">
-            <li><a href="/ter-pph-21" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">TER PPh 21</a></li>
-            <li><a href="/kode-objek-pajak" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Kode BPPU</a></li>
-            <li><a href="/kategori/ppn" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Tarif PPN</a></li>
-            <li><a href="/kategori/pph-21" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Tarif PPh 21</a></li>
-          </ul>
-        </div>
-
-        <!-- Developer -->
-        <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-3">Developer</h4>
-          <ul class="space-y-2">
-            <li><a href="/api-docs" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">API Reference</a></li>
-            <li><a href="/api/v1/openapi.json" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">OpenAPI Spec</a></li>
-            <li><a href="/llms.txt" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">LLMs.txt</a></li>
-            <li><a href="https://github.com/mashiker/tarifpajakmcp" target="_blank" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">GitHub ↗</a></li>
-          </ul>
-        </div>
-
-        <!-- Sumber -->
-        <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-3">Sumber Hukum</h4>
-          <ul class="space-y-2">
-            <li><a href="https://peraturan.bpk.go.id" target="_blank" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">JDIH BPK ↗</a></li>
-            <li><a href="https://pasal.id" target="_blank" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Pasal.id ↗</a></li>
-            <li><a href="https://pajak.go.id" target="_blank" class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">DJP Kemenkeu ↗</a></li>
-          </ul>
+        <!-- Right -->
+        <div class="flex items-center gap-4 text-xs text-[var(--text-tertiary)]">
+          <a href="https://github.com/mashiker/tarifpajakmcp" target="_blank" class="hover:text-[var(--text)] transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="/api-docs" class="hover:text-[var(--text)] transition-colors">API</a>
+          <a href="https://peraturan.bpk.go.id" target="_blank" class="hover:text-[var(--text)] transition-colors">JDIH BPK ↗</a>
         </div>
       </div>
 
-      <div class="mt-10 pt-6 border-t border-slate-200/60 dark:border-slate-800/60 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p class="text-xs text-slate-400 dark:text-slate-500">© 2024–2026 Tarif Pajak ID. Open database, data bersumber dari regulasi resmi.</p>
-        <div class="flex items-center gap-4">
-          <a href="https://github.com/mashiker/tarifpajakmcp" target="_blank" class="text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 transition-colors" aria-label="GitHub">
-            <svg class="w-4.5 h-4.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </a>
-        </div>
+      <div class="mt-4 pt-4 border-t border-[var(--border-subtle)]">
+        <p class="text-[11px] text-[var(--text-tertiary)]">© 2024–2026 Tarif Pajak ID. Data bersumber dari regulasi resmi Republik Indonesia.</p>
       </div>
     </div>
   </footer>
@@ -156,11 +142,33 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
 </html>
 
 <script>
+  // Dark mode toggle
   document.getElementById('dark-toggle')?.addEventListener('click', () => {
     document.documentElement.classList.toggle('dark');
     localStorage.setItem('darkMode', String(document.documentElement.classList.contains('dark')));
   });
+
+  // Mobile menu toggle
   document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
     document.getElementById('mobile-menu')?.classList.toggle('hidden');
+  });
+
+  // Search trigger (placeholder for future ⌘K implementation)
+  document.getElementById('search-trigger')?.addEventListener('click', () => {
+    const input = document.querySelector<HTMLInputElement>('#mobile-search-input');
+    if (input) input.focus();
+  });
+
+  // ⌘K shortcut
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      const mobileInput = document.querySelector<HTMLInputElement>('#mobile-search-input');
+      if (mobileInput) mobileInput.focus();
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu?.classList.contains('hidden')) {
+        mobileMenu?.classList.remove('hidden');
+      }
+    }
   });
 </script>

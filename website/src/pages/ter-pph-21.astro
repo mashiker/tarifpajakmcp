@@ -19,14 +19,14 @@ function fmtRp(n: number | null): string {
 }
 ---
 
-<BaseLayout title="Tabel TER PPh 21" activeNav="home">
+<BaseLayout title="Tabel TER PPh 21" activeNav="ter">
   <!-- Breadcrumb -->
-  <nav class="flex items-center gap-1.5 text-xs mb-8 text-slate-400">
-    <a href="/" class="hover:text-slate-600 dark:hover:text-slate-300 transition-colors">Beranda</a>
+  <nav class="flex items-center gap-1.5 text-xs mb-8 text-[var(--text-tertiary)]">
+    <a href="/" class="hover:text-[var(--text)] transition-colors">Beranda</a>
     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-    <a href="/kategori/pph-21" class="hover:text-slate-600 dark:hover:text-slate-300 transition-colors">PPh 21</a>
+    <a href="/kategori/pph-21" class="hover:text-[var(--text)] transition-colors">PPh 21</a>
     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-    <span class="text-slate-700 dark:text-slate-300 font-medium">Tabel TER</span>
+    <span class="text-[var(--text)] font-medium">Tabel TER</span>
   </nav>
 
   <!-- Page Header -->
@@ -34,57 +34,57 @@ function fmtRp(n: number | null): string {
     <div class="flex items-start gap-4 mb-5">
       <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center text-white text-lg font-bold shadow-sm shrink-0">T</div>
       <div>
-        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">Tarif Efektif Rata-rata (TER)</h1>
-        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Pemotongan PPh Pasal 21 bulanan berdasarkan PP 58/2023 dan PMK 168/2023</p>
+        <h1 class="text-xl font-bold text-[var(--text)] tracking-tight">Tarif Efektif Rata-rata (TER)</h1>
+        <p class="text-sm text-[var(--text-secondary)] mt-1">Pemotongan PPh Pasal 21 bulanan berdasarkan PP 58/2023 dan PMK 168/2023</p>
       </div>
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-      <div class="card px-4 py-3">
-        <div class="text-[11px] text-slate-500 font-semibold uppercase mb-0.5">Berlaku Sejak</div>
-        <div class="text-sm font-bold text-slate-900 dark:text-slate-100">1 Januari 2024</div>
+      <div class="card p-3">
+        <div class="text-[11px] text-[var(--text-secondary)] font-semibold uppercase mb-0.5">Berlaku Sejak</div>
+        <div class="text-sm font-bold text-[var(--text)]">1 Januari 2024</div>
       </div>
-      <div class="card px-4 py-3 border-emerald-200/80 dark:border-emerald-800/40">
+      <div class="card p-3 border-emerald-200/80 dark:border-emerald-800/40">
         <div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold uppercase mb-0.5">Menggantikan</div>
-        <div class="text-sm font-bold text-slate-900 dark:text-slate-100">Metode Progresif</div>
+        <div class="text-sm font-bold text-[var(--text)]">Metode Progresif</div>
       </div>
-      <div class="card px-4 py-3 border-violet-200/80 dark:border-violet-800/40">
+      <div class="card p-3 border-violet-200/80 dark:border-violet-800/40">
         <div class="text-[11px] text-violet-600 dark:text-violet-400 font-semibold uppercase mb-0.5">Kategori</div>
-        <div class="text-sm font-bold text-slate-900 dark:text-slate-100">A / B / C</div>
+        <div class="text-sm font-bold text-[var(--text)]">A / B / C</div>
       </div>
-      <div class="card px-4 py-3 border-amber-200/80 dark:border-amber-800/40">
+      <div class="card p-3 border-amber-200/80 dark:border-amber-800/40">
         <div class="text-[11px] text-amber-600 dark:text-amber-400 font-semibold uppercase mb-0.5">Lapisan Tarif</div>
-        <div class="text-sm font-bold text-slate-900 dark:text-slate-100">42 per kategori</div>
+        <div class="text-sm font-bold text-[var(--text)]">42 per kategori</div>
       </div>
     </div>
   </div>
 
   <!-- Calculator -->
   <div class="card mb-8 overflow-hidden">
-    <div class="px-6 py-5 bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200/80 dark:border-slate-800">
+    <div class="px-6 py-5 bg-[var(--surface)] border-b border-[var(--border)]">
       <div class="flex items-center gap-2.5 mb-4">
         <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 dark:bg-emerald-900/30">
           <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
         </div>
-        <h2 class="text-sm font-bold text-slate-900 dark:text-slate-100">Kalkulator Cepat TER PPh 21</h2>
+        <h2 class="text-sm font-bold text-[var(--text)]">Kalkulator Cepat TER PPh 21</h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <div>
-          <label class="text-xs text-slate-500 font-medium mb-1.5 block">Penghasilan Bruto Bulanan</label>
+          <label class="text-xs text-[var(--text-secondary)] font-medium mb-1.5 block">Penghasilan Bruto Bulanan</label>
           <div class="relative">
-            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-slate-400 font-mono">Rp</span>
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[var(--text-tertiary)] font-mono">Rp</span>
             <input id="calc-income" type="text" placeholder="10.000.000" class="w-full pl-10 pr-3 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none font-mono transition-all" oninput="calculateTER()" />
           </div>
         </div>
         <div>
-          <label class="text-xs text-slate-500 font-medium mb-1.5 block">Iuran Pensiun / BPJS</label>
+          <label class="text-xs text-[var(--text-secondary)] font-medium mb-1.5 block">Iuran Pensiun / BPJS</label>
           <div class="relative">
-            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-slate-400 font-mono">Rp</span>
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[var(--text-tertiary)] font-mono">Rp</span>
             <input id="calc-bpjs" type="text" placeholder="0" value="0" class="w-full pl-10 pr-3 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none font-mono transition-all" oninput="calculateTER()" />
           </div>
         </div>
         <div>
-          <label class="text-xs text-slate-500 font-medium mb-1.5 block">Status PTKP</label>
+          <label class="text-xs text-[var(--text-secondary)] font-medium mb-1.5 block">Status PTKP</label>
           <select id="calc-category" class="w-full py-2.5 px-3 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all" onchange="switchTab(this.value); calculateTER()">
             <option value="a">TER A — Tidak Kawin</option>
             <option value="b">TER B — Kawin, 0-2 Tanggungan</option>
@@ -96,20 +96,20 @@ function fmtRp(n: number | null): string {
     <div id="calc-result" class="px-6 py-5 hidden">
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <div>
-          <div class="text-[11px] text-slate-400 font-medium uppercase">Penghasilan Bruto</div>
-          <div id="res-bruto" class="text-sm font-bold text-slate-900 dark:text-slate-100 font-mono mt-1">—</div>
+          <div class="text-[11px] text-[var(--text-tertiary)] font-medium uppercase">Penghasilan Bruto</div>
+          <div id="res-bruto" class="text-sm font-bold text-[var(--text)] font-mono mt-1">—</div>
         </div>
         <div>
-          <div class="text-[11px] text-slate-400 font-medium uppercase">Dasar Pengenaan</div>
-          <div id="res-dasar" class="text-sm font-bold text-slate-900 dark:text-slate-100 font-mono mt-1">—</div>
+          <div class="text-[11px] text-[var(--text-tertiary)] font-medium uppercase">Dasar Pengenaan</div>
+          <div id="res-dasar" class="text-sm font-bold text-[var(--text)] font-mono mt-1">—</div>
         </div>
         <div>
-          <div class="text-[11px] text-slate-400 font-medium uppercase">Tarif TER</div>
-          <div id="res-rate" class="text-sm font-bold text-slate-600 dark:text-slate-400 font-mono mt-1">—</div>
+          <div class="text-[11px] text-[var(--text-tertiary)] font-medium uppercase">Tarif TER</div>
+          <div id="res-rate" class="text-sm font-bold text-[var(--text-secondary)] font-mono mt-1">—</div>
         </div>
         <div>
-          <div class="text-[11px] text-slate-400 font-medium uppercase">PPh 21 / Bulan</div>
-          <div id="res-pph" class="text-base font-extrabold text-emerald-600 dark:text-emerald-400 font-mono mt-1">—</div>
+          <div class="text-[11px] text-[var(--text-tertiary)] font-medium uppercase">PPh 21 / Bulan</div>
+          <div id="res-pph" class="text-base font-extrabold text-[var(--accent)] font-mono mt-1">—</div>
         </div>
       </div>
     </div>
@@ -139,18 +139,18 @@ function fmtRp(n: number | null): string {
   ].map((tab: any) => (
     <div id={`table-${tab.id}`} class:list={[tab.id !== 'a' ? 'hidden' : '']}>
       <div class="card overflow-hidden">
-        <div class="px-5 py-3 bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200/80 dark:border-slate-800 flex items-center justify-between">
-          <h3 class="text-sm font-bold text-slate-900 dark:text-slate-100">{tab.label}</h3>
-          <span class="text-[11px] text-slate-400 font-mono">{tab.data.rate.brackets.length} lapisan</span>
+        <div class="px-5 py-3 bg-[var(--surface)] border-b border-[var(--border)] flex items-center justify-between">
+          <h3 class="text-sm font-bold text-[var(--text)]">{tab.label}</h3>
+          <span class="text-[11px] text-[var(--text-tertiary)] font-mono">{tab.data.rate.brackets.length} lapisan</span>
         </div>
         <div class="overflow-x-auto">
           <table class="w-full text-sm">
             <thead>
-              <tr class="border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/30">
-                <th class="text-left px-4 py-3 text-[11px] font-bold text-slate-500 uppercase tracking-wider w-12">No</th>
-                <th class="text-right px-4 py-3 text-[11px] font-bold text-slate-500 uppercase tracking-wider">Batas Bawah</th>
-                <th class="text-right px-4 py-3 text-[11px] font-bold text-slate-500 uppercase tracking-wider">Batas Atas</th>
-                <th class="text-right px-4 py-3 text-[11px] font-bold text-slate-500 uppercase tracking-wider w-20">Tarif</th>
+              <tr class="border-b border-[var(--border)] bg-[var(--surface)]">
+                <th class="text-left px-4 py-3 text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider w-12">No</th>
+                <th class="text-right px-4 py-3 text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider">Batas Bawah</th>
+                <th class="text-right px-4 py-3 text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider">Batas Atas</th>
+                <th class="text-right px-4 py-3 text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider w-20">Tarif</th>
               </tr>
             </thead>
             <tbody>
@@ -158,18 +158,18 @@ function fmtRp(n: number | null): string {
                 const isZero = b.rate === 0;
                 const isHigh = b.rate >= 10;
                 return (
-                  <tr class="border-b border-slate-100 dark:border-slate-800/50 hover:bg-slate-50/50 dark:hover:bg-slate-800/20 transition-colors">
-                    <td class="px-4 py-2.5 text-slate-400 font-mono text-xs">{i + 1}</td>
-                    <td class="px-4 py-2.5 text-right font-mono text-xs text-slate-600 dark:text-slate-400">{fmtRp(b.min)}</td>
-                    <td class="px-4 py-2.5 text-right font-mono text-xs text-slate-600 dark:text-slate-400">
-                      {b.max ? fmtRp(b.max) : <span class="text-slate-600 dark:text-slate-400 font-semibold">di atas {fmtRp(b.min)}</span>}
+                  <tr class="border-b border-[var(--border)] hover:bg-[var(--surface-alt)] transition-colors">
+                    <td class="px-4 py-2.5 text-[var(--text-tertiary)] font-mono text-xs">{i + 1}</td>
+                    <td class="px-4 py-2.5 text-right font-mono text-xs text-[var(--text-secondary)]">{fmtRp(b.min)}</td>
+                    <td class="px-4 py-2.5 text-right font-mono text-xs text-[var(--text-secondary)]">
+                      {b.max ? fmtRp(b.max) : <span class="text-[var(--text-secondary)] font-semibold">di atas {fmtRp(b.min)}</span>}
                     </td>
                     <td class="px-4 py-2.5 text-right font-mono text-sm">
                       {isZero
-                        ? <span class="inline-block bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2.5 py-0.5 rounded-lg text-xs font-semibold ring-1 ring-emerald-200/60 dark:ring-emerald-800">0%</span>
+                        ? <span class="inline-block bg-[var(--accent-soft)] text-[var(--accent)] px-2.5 py-0.5 rounded-lg text-xs font-semibold ring-1 ring-emerald-200/60 dark:ring-emerald-800">0%</span>
                         : isHigh
                           ? <span class="inline-block bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300 px-2.5 py-0.5 rounded-lg text-xs font-semibold ring-1 ring-red-200/60 dark:ring-red-800">{b.rate}%</span>
-                          : <span class="text-slate-900 dark:text-slate-100 font-semibold">{b.rate}%</span>
+                          : <span class="text-[var(--text)] font-semibold">{b.rate}%</span>
                       }
                     </td>
                   </tr>
@@ -184,10 +184,10 @@ function fmtRp(n: number | null): string {
 
   <!-- Guide -->
   <div class="mt-10 card overflow-hidden">
-    <div class="px-5 py-3 bg-amber-50 dark:bg-amber-900/20 border-b border-amber-200/60 dark:border-amber-800/40">
+    <div class="px-5 py-3 bg-[var(--highlight-soft)] border-b border-amber-200/60 dark:border-amber-800/40">
       <div class="flex items-center gap-2">
-        <svg class="w-4 h-4 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <h3 class="text-sm font-bold text-amber-900 dark:text-amber-100">Panduan Kategori TER</h3>
+        <svg class="w-4 h-4 text-[var(--highlight)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <h3 class="text-sm font-bold text-[var(--text)]">Panduan Kategori TER</h3>
       </div>
     </div>
     <div class="p-5">
@@ -195,9 +195,9 @@ function fmtRp(n: number | null): string {
         <div class="card p-4">
           <div class="flex items-center gap-2 mb-2">
             <span class="bg-slate-800 text-white text-xs font-bold px-2.5 py-1 rounded-lg">A</span>
-            <span class="text-sm font-bold text-slate-900 dark:text-slate-100">Tidak Kawin</span>
+            <span class="text-sm font-bold text-[var(--text)]">Tidak Kawin</span>
           </div>
-          <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1">
+          <ul class="text-xs text-[var(--text-secondary)] space-y-1">
             <li>&#8226; Tidak menikah / belum menikah</li>
             <li>&#8226; Tidak memiliki tanggungan</li>
             <li>&#8226; Atau ditinggal meninggal</li>
@@ -206,9 +206,9 @@ function fmtRp(n: number | null): string {
         <div class="card p-4 border-violet-200/80 dark:border-violet-800/40">
           <div class="flex items-center gap-2 mb-2">
             <span class="bg-violet-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">B</span>
-            <span class="text-sm font-bold text-slate-900 dark:text-slate-100">Kawin 0-2 Tanggungan</span>
+            <span class="text-sm font-bold text-[var(--text)]">Kawin 0-2 Tanggungan</span>
           </div>
-          <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1">
+          <ul class="text-xs text-[var(--text-secondary)] space-y-1">
             <li>&#8226; Menikah (kawin)</li>
             <li>&#8226; 0, 1, atau 2 tanggungan</li>
             <li>&#8226; Termasuk menikah lalu bercerai</li>
@@ -217,9 +217,9 @@ function fmtRp(n: number | null): string {
         <div class="card p-4 border-emerald-200/80 dark:border-emerald-800/40">
           <div class="flex items-center gap-2 mb-2">
             <span class="bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">C</span>
-            <span class="text-sm font-bold text-slate-900 dark:text-slate-100">Kawin 3+ Tanggungan</span>
+            <span class="text-sm font-bold text-[var(--text)]">Kawin 3+ Tanggungan</span>
           </div>
-          <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1">
+          <ul class="text-xs text-[var(--text-secondary)] space-y-1">
             <li>&#8226; Menikah (kawin)</li>
             <li>&#8226; 3 atau lebih tanggungan</li>
             <li>&#8226; Maksimal PTKP paling tinggi</li>
@@ -227,11 +227,11 @@ function fmtRp(n: number | null): string {
         </div>
       </div>
 
-      <div class="mt-4 text-xs text-slate-500 dark:text-slate-400 card p-4">
-        <strong class="text-slate-700 dark:text-slate-300">Dasar pengenaan TER:</strong> Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS yang dibayar oleh pegawai.
+      <div class="mt-4 text-xs text-[var(--text-secondary)] card p-4">
+        <strong class="text-[var(--text)]">Dasar pengenaan TER:</strong> Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS yang dibayar oleh pegawai.
         Tidak lagi diperlukan perhitungan PTKP dan annualisasi seperti metode lama.
         <br/><br/>
-        <strong class="text-slate-700 dark:text-slate-300">Dasar hukum:</strong> PP 58 Tahun 2023 dan PMK 168/PMK.010/2023.
+        <strong class="text-[var(--text)]">Dasar hukum:</strong> PP 58 Tahun 2023 dan PMK 168/PMK.010/2023.
         Berlaku efektif sejak 1 Januari 2024.
       </div>
     </div>

@@ -8,232 +8,251 @@ const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
 
 function toSlug(s: string) { return s.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, ''); }
 
-const catMeta: Record<string, { icon: string; color: string; colorLight: string }> = {
-  'pph-21': { icon: '👤', color: 'text-blue-600 dark:text-blue-400', colorLight: 'bg-blue-50 dark:bg-blue-950/30' },
-  'pph-22': { icon: '🏭', color: 'text-violet-600 dark:text-violet-400', colorLight: 'bg-violet-50 dark:bg-violet-950/30' },
-  'pph-23': { icon: '📋', color: 'text-indigo-600 dark:text-indigo-400', colorLight: 'bg-indigo-50 dark:bg-indigo-950/30' },
-  'pph-26': { icon: '🌍', color: 'text-cyan-600 dark:text-cyan-400', colorLight: 'bg-cyan-50 dark:bg-cyan-950/30' },
-  'pph-badan': { icon: '🏢', color: 'text-emerald-600 dark:text-emerald-400', colorLight: 'bg-emerald-50 dark:bg-emerald-950/30' },
-  'pph-umkm': { icon: '🏪', color: 'text-amber-600 dark:text-amber-400', colorLight: 'bg-amber-50 dark:bg-amber-950/30' },
-  'pph-4-2-final': { icon: '✅', color: 'text-teal-600 dark:text-teal-400', colorLight: 'bg-teal-50 dark:bg-teal-950/30' },
-  'ppn': { icon: '💰', color: 'text-emerald-600 dark:text-emerald-400', colorLight: 'bg-emerald-50 dark:bg-emerald-950/30' },
-  'ppnbm': { icon: '🏷️', color: 'text-rose-600 dark:text-rose-400', colorLight: 'bg-rose-50 dark:bg-rose-950/30' },
-  'bea-meterai': { icon: '📄', color: 'text-orange-600 dark:text-orange-400', colorLight: 'bg-orange-50 dark:bg-orange-950/30' },
-  'pbb': { icon: '🏠', color: 'text-sky-600 dark:text-sky-400', colorLight: 'bg-sky-50 dark:bg-sky-950/30' },
-  'bphtb': { icon: '🏗️', color: 'text-lime-600 dark:text-lime-400', colorLight: 'bg-lime-50 dark:bg-lime-950/30' },
-  'bea-masuk': { icon: '🚢', color: 'text-slate-600 dark:text-slate-400', colorLight: 'bg-slate-100 dark:bg-slate-800' },
-  'cukai': { icon: '🍷', color: 'text-fuchsia-600 dark:text-fuchsia-400', colorLight: 'bg-fuchsia-50 dark:bg-fuchsia-950/30' },
-  'pajak-daerah': { icon: '🏛️', color: 'text-pink-600 dark:text-pink-400', colorLight: 'bg-pink-50 dark:bg-pink-950/30' },
+const catColor: Record<string, string> = {
+  'pph-21': '#3b82f6', 'pph-22': '#8b5cf6', 'pph-23': '#6366f1', 'pph-26': '#06b6d4',
+  'pph-badan': '#0d9488', 'pph-umkm': '#d97706', 'pph-4-2-final': '#059669', 'ppn': '#16a34a',
+  'ppnbm': '#e11d48', 'bea-meterai': '#ea580c', 'pbb': '#0284c7', 'bphtb': '#65a30d',
+  'bea-masuk': '#475569', 'cukai': '#a21caf', 'pajak-daerah': '#db2777',
 };
 
 const categories = api.categories.map((cat: any) => {
   const slug = toSlug(cat.taxType);
   const active = cat.entries.filter((e: any) => e.status === 'berlaku').length;
-  const meta = catMeta[slug] || { icon: '📊', color: 'text-slate-600 dark:text-slate-400', colorLight: 'bg-slate-100 dark:bg-slate-800' };
-  return { ...cat, slug, active, meta };
+  const color = catColor[slug] || '#475569';
+  return { ...cat, slug, active, color };
 });
 
-const activeEntries = api.categories.flatMap((cat: any) => cat.entries.filter((e: any) => e.status === 'berlaku'));
+type FE = { category: string; slug: string; type: string; id: string; status: string; rate: string; from: string; to: string; basis: string; };
+const entries: FE[] = [];
+api.categories.forEach((cat: any) => {
+  const slug = toSlug(cat.taxType);
+  cat.entries.forEach((e: any) => {
+    let r = '';
+    if (e.rate.type === 'percentage') r = `${e.rate.value}%`;
+    else if (e.rate.type === 'range') r = `${e.rate.value[0]}–${e.rate.value[1]}%`;
+    else if (e.rate.type === 'progressive' && e.rate.brackets) {
+      const rates = e.rate.brackets.map((b: any) => b.rate);
+      r = e.rate.brackets.length > 8 ? `${Math.min(...rates)}–${Math.max(...rates)}%` : rates.map((x: number) => `${x}%`).join('/');
+    }
+    else r = String(e.rate.value);
+    entries.push({ category: cat.taxType, slug, type: e.transactionType, id: e.id, status: e.status, rate: r, from: e.effectiveFrom, to: e.effectiveTo || 'sekarang', basis: e.taxBase || '—' });
+  });
+});
+
+const so: Record<string, number> = { berlaku: 0, diubah: 1, belum_berlaku: 2, dicabut: 3 };
+entries.sort((a, b) => (so[a.status] ?? 9) - (so[b.status] ?? 9));
+const sb: Record<string, string> = { berlaku: 'badge-berlaku', dicabut: 'badge-dicabut', diubah: 'badge-diubah', belum_berlaku: 'badge-belum-berlaku' };
+const sl: Record<string, string> = { berlaku: 'Berlaku', dicabut: 'Dicabut', diubah: 'Diubah', belum_berlaku: 'Belum' };
+
+const activeEntries = entries.filter(e => e.status === 'berlaku');
 const bppuTotal = new Set<string>();
 api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?.forEach((b: any) => bppuTotal.add(b.kode))));
 ---
 
-<BaseLayout title="Database Tarif Pajak Indonesia" activeNav="home" description="Database tarif pajak Indonesia terbuka: PPh, PPN, BPPU, TER PPh 21, regulasi resmi, dan API JSON statis untuk developer.">
+<BaseLayout title="Database Tarif Pajak Indonesia" activeNav="home" wide={true} description="Database tarif pajak Indonesia terbuka: PPh, PPN, BPPU, TER PPh 21, regulasi resmi, dan API JSON statis untuk developer.">
 
-  <!-- ====== HERO ====== -->
-  <section class="hero-gradient relative overflow-hidden -mx-4 -mt-8 px-4 pt-16 pb-20 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 lg:pt-24 lg:pb-28">
-    <div class="absolute inset-0 hero-grid-bg pointer-events-none"></div>
-
-    <div class="relative mx-auto max-w-3xl text-center animate-in">
-      <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-200/80 bg-emerald-50/80 dark:border-emerald-800/40 dark:bg-emerald-950/30 px-3.5 py-1.5 text-xs font-semibold text-emerald-700 dark:text-emerald-300 backdrop-blur-sm">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-        Open database · sumber regulasi resmi Indonesia
-      </div>
-
-      <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl leading-[1.1]">
-        Semua tarif pajak Indonesia,<br class="hidden sm:block"/>
-        <span class="gradient-text">satu tempat.</span>
-      </h1>
-
-      <p class="mt-5 text-base sm:text-lg text-slate-500 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
-        Database referensi untuk konsultan, developer, dan finance team — tarif aktif, timeline historis, kode BPPU, TER PPh 21, dan API siap pakai.
-      </p>
-
-      <!-- CTA Buttons -->
-      <div class="mt-8 flex flex-wrap justify-center gap-3 animate-in animate-in-delay-1">
-        <a href="/database" class="btn-primary px-6 py-3 text-base">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
-          Buka Database
-        </a>
-        <a href="/api-docs" class="btn-secondary px-6 py-3 text-base">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          API Docs
-        </a>
-      </div>
-
-      <!-- Stats -->
-      <div class="mt-10 flex flex-wrap justify-center gap-3 animate-in animate-in-delay-2">
-        <div class="metric-pill"><span class="val">{api.meta.stats.entries}</span> <span class="lbl">jenis tarif</span></div>
-        <div class="metric-pill"><span class="val text-emerald-600 dark:text-emerald-400">{activeEntries.length}</span> <span class="lbl">aktif</span></div>
-        <div class="metric-pill"><span class="val">{api.meta.stats.regulations}</span> <span class="lbl">regulasi</span></div>
-        <div class="metric-pill"><span class="val">{bppuTotal.size}</span> <span class="lbl">kode BPPU</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== FEATURES ====== -->
-  <section class="mt-16">
-    <div class="text-center mb-10">
-      <div class="eyebrow">Fitur Utama</div>
-      <h2 class="section-title mt-1">Semua yang kamu butuhkan</h2>
-    </div>
-
-    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- TER Calculator -->
-      <a href="/ter-pph-21" class="group card-hover p-6 flex flex-col">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-950/30 mb-4">
-          <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-        </div>
-        <h3 class="text-base font-bold text-slate-900 dark:text-white">TER PPh 21 + Kalkulator</h3>
-        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed flex-1">42 lapisan tarif A/B/C berdasarkan PP 58/2023. Hitung langsung penghasilan bruto bulanan.</p>
-        <div class="mt-4 text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform">Buka kalkulator →</div>
-      </a>
-
-      <!-- Database -->
-      <a href="/database" class="group card-hover p-6 flex flex-col">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 dark:bg-emerald-950/30 mb-4">
-          <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
-        </div>
-        <h3 class="text-base font-bold text-slate-900 dark:text-white">Database Tarif Lengkap</h3>
-        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed flex-1">{api.meta.stats.entries} jenis tarif dari 15 kategori pajak. Filter berdasarkan status, cari cepat, lihat dasar hukum.</p>
-        <div class="mt-4 text-xs font-semibold text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform">Browse database →</div>
-      </a>
-
-      <!-- BPPU -->
-      <a href="/kode-objek-pajak" class="group card-hover p-6 flex flex-col">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-violet-50 dark:bg-violet-950/30 mb-4">
-          <svg class="w-5 h-5 text-violet-600 dark:text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
-        </div>
-        <h3 class="text-base font-bold text-slate-900 dark:text-white">Kode BPPU</h3>
-        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed flex-1">{bppuTotal.size} kode objek pajak lengkap dengan tarif, nama, dan mapping ke entry terkait.</p>
-        <div class="mt-4 text-xs font-semibold text-violet-600 dark:text-violet-400 group-hover:translate-x-1 transition-transform">Lihat kode BPPU →</div>
-      </a>
-
-      <!-- API -->
-      <a href="/api-docs" class="group card-hover p-6 flex flex-col">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 dark:bg-indigo-950/30 mb-4">
-          <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-        </div>
-        <h3 class="text-base font-bold text-slate-900 dark:text-white">Static JSON API</h3>
-        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed flex-1">Open API tanpa auth. Fetch langsung dari CDN, bisa di-cache, siap dipakai agent dan MCP.</p>
-        <div class="mt-4 text-xs font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-1 transition-transform">Lihat API docs →</div>
-      </a>
-
-      <!-- LLM Ready -->
-      <a href="/llms.txt" class="group card-hover p-6 flex flex-col">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-50 dark:bg-amber-950/30 mb-4">
-          <svg class="w-5 h-5 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-        </div>
-        <h3 class="text-base font-bold text-slate-900 dark:text-white">LLM-Ready Context</h3>
-        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed flex-1">Gunakan /llms.txt dan endpoint JSON untuk MCP, agent pajak, atau integrasi AI tools lainnya.</p>
-        <div class="mt-4 text-xs font-semibold text-amber-600 dark:text-amber-400 group-hover:translate-x-1 transition-transform">Lihat llms.txt →</div>
-      </a>
-
-      <!-- Open Source -->
-      <a href="https://github.com/mashiker/tarifpajakmcp" target="_blank" class="group card-hover p-6 flex flex-col">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 mb-4">
-          <svg class="w-5 h-5 text-slate-600 dark:text-slate-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-        </div>
-        <h3 class="text-base font-bold text-slate-900 dark:text-white">Open Source</h3>
-        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed flex-1">Data dan kode terbuka di GitHub. Kontribusi, issue, dan pull request welcome.</p>
-        <div class="mt-4 text-xs font-semibold text-slate-600 dark:text-slate-400 group-hover:translate-x-1 transition-transform">GitHub ↗</div>
-      </a>
-    </div>
-  </section>
-
-  <!-- ====== CATEGORY PREVIEW ====== -->
-  <section class="mt-16">
-    <div class="flex flex-wrap items-end justify-between gap-4 mb-6">
+  <!-- Compact Header -->
+  <section class="mb-6">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-4">
       <div>
-        <div class="eyebrow">Browse by tax family</div>
-        <h2 class="section-title">15 Kategori Pajak</h2>
+        <h1 class="text-xl font-bold tracking-tight text-[var(--text)]">Database Tarif Pajak Indonesia</h1>
+        <p class="text-sm text-[var(--text-secondary)] mt-0.5">Sumber regulasi resmi · data terbuka</p>
       </div>
-      <a href="/database" class="btn-secondary text-xs">Lihat semua di database →</a>
+      <div class="flex flex-wrap gap-2">
+        <div class="metric-pill"><span class="val">{api.meta.stats.entries}</span><span class="lbl">tarif</span></div>
+        <div class="metric-pill"><span class="val text-[var(--status-active)]">{activeEntries.length}</span><span class="lbl">aktif</span></div>
+        <div class="metric-pill"><span class="val">{api.meta.stats.regulations}</span><span class="lbl">regulasi</span></div>
+        <div class="metric-pill"><span class="val">{bppuTotal.size}</span><span class="lbl">BPPU</span></div>
+      </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-      {categories.slice(0, 10).map((cat: any) => (
-        <a href={`/kategori/${cat.slug}`} class="category-card group">
-          <div class="mb-2 flex items-center justify-between">
-            <div class={`flex h-9 w-9 items-center justify-center rounded-xl ${cat.meta.colorLight}`}>
-              <span class="text-sm">{cat.meta.icon}</span>
-            </div>
-            <span class="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">{cat.active} aktif</span>
-          </div>
-          <h3 class="text-sm font-bold text-slate-900 dark:text-white truncate">{cat.taxType}</h3>
-          <div class="mt-2 flex items-center justify-between text-xs text-slate-400">
-            <span class="font-mono">{cat.entries.length} entries</span>
-            <span class="font-semibold text-slate-500 dark:text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">→</span>
-          </div>
-        </a>
+    <!-- Search -->
+    <div class="relative mb-4">
+      <input id="home-search" type="text" placeholder="Cari tarif pajak, kategori, atau kode BPPU..." class="w-full h-11 pl-11 pr-4 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-sm text-[var(--text)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/10 transition-all" />
+      <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4.5 h-4.5 text-[var(--text-tertiary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    </div>
+
+    <!-- Status Filter Chips -->
+    <div class="flex flex-wrap gap-1.5 mb-4" id="status-filters">
+      <button class="chip chip-active" data-status="berlaku">Berlaku <span class="ml-1 font-mono text-[11px] opacity-70">{activeEntries.length}</span></button>
+      <button class="chip chip-default" data-status="all">Semua <span class="ml-1 font-mono text-[11px] opacity-70">{entries.length}</span></button>
+      <button class="chip chip-default" data-status="diubah">Diubah <span class="ml-1 font-mono text-[11px] opacity-70">{entries.filter(e => e.status === 'diubah').length}</span></button>
+      <button class="chip chip-default" data-status="dicabut">Dicabut <span class="ml-1 font-mono text-[11px] opacity-70">{entries.filter(e => e.status === 'dicabut').length}</span></button>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="flex gap-1.5 overflow-x-auto pb-2 custom-scrollbar" id="category-tabs">
+      <button class="chip chip-active shrink-0" data-cat="all">Semua</button>
+      {categories.map((cat: any) => (
+        <button class="chip chip-default shrink-0" data-cat={cat.slug}>
+          <span class="inline-block w-2 h-2 rounded-full shrink-0" style={`background:${cat.color}`}></span>
+          {cat.taxType}
+          <span class="font-mono text-[11px] opacity-60">{cat.active}</span>
+        </button>
       ))}
     </div>
-    <!-- Show remaining categories link -->
-    {categories.length > 10 && (
-      <div class="mt-3 text-center">
-        <a href="/database" class="text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
-          + {categories.length - 10} kategori lainnya →
-        </a>
-      </div>
-    )}
   </section>
 
-  <!-- ====== TRUST ====== -->
-  <section class="mt-16">
-    <div class="text-center mb-6">
-      <div class="eyebrow">Sumber terpercaya</div>
-      <h2 class="section-title mt-1">Bersumber dari regulasi resmi</h2>
-    </div>
+  <!-- Full Data Table -->
+  <section>
+    <div class="card overflow-hidden">
+      <div class="hidden overflow-auto custom-scrollbar md:block" style="max-height:calc(100vh - 340px)">
+        <table class="data-table" id="main-table">
+          <thead>
+            <tr>
+              <th class="w-[130px]">Kategori</th>
+              <th>Jenis transaksi</th>
+              <th class="w-[100px] text-right">Tarif</th>
+              <th class="w-[170px]">Dasar pengenaan</th>
+              <th class="w-[80px] text-center">Status</th>
+              <th class="w-[160px]">Masa berlaku</th>
+            </tr>
+          </thead>
+          <tbody>
+            {entries.map((e: FE) => (
+              <tr data-status={e.status} data-cat={e.slug} data-search={`${e.category} ${e.type} ${e.rate} ${e.basis} ${e.id}`.toLowerCase()}>
+                <td>
+                  <a href={`/kategori/${e.slug}`} class="inline-flex items-center gap-1.5 rounded-md bg-[var(--surface-alt)] px-2 py-0.5 text-xs font-semibold text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors">
+                    <span class="w-1.5 h-1.5 rounded-full shrink-0" style={`background:${catColor[e.slug] || '#475569'}`}></span>
+                    {e.category}
+                  </a>
+                </td>
+                <td>
+                  <a href={`/kategori/${e.slug}`} class="block max-w-xl text-sm font-medium text-[var(--text)] hover:text-[var(--accent)] transition-colors">{e.type}</a>
+                  <div class="mt-0.5 font-mono text-[10px] text-[var(--text-tertiary)]">{e.id}</div>
+                </td>
+                <td class="text-right"><span class="rate-value text-sm">{e.rate}</span></td>
+                <td class="text-xs text-[var(--text-secondary)] truncate max-w-[170px]">{e.basis}</td>
+                <td class="text-center"><span class={`badge ${sb[e.status] || 'badge-belum-berlaku'}`}>{sl[e.status]}</span></td>
+                <td><span class="whitespace-nowrap font-mono text-[11px] text-[var(--text-tertiary)]">{e.from} → {e.to}</span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
-    <div class="grid gap-3 sm:grid-cols-3 max-w-2xl mx-auto">
-      <a href="https://peraturan.bpk.go.id" target="_blank" class="card-hover p-5 text-center group">
-        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 mx-auto mb-3">
-          <svg class="w-5 h-5 text-slate-600 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-        </div>
-        <div class="text-sm font-bold text-slate-900 dark:text-white">JDIH BPK</div>
-        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Regulasi resmi ↗</div>
-      </a>
-      <a href="https://pasal.id" target="_blank" class="card-hover p-5 text-center group">
-        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 mx-auto mb-3">
-          <svg class="w-5 h-5 text-slate-600 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        </div>
-        <div class="text-sm font-bold text-slate-900 dark:text-white">Pasal.id</div>
-        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Pasal & naskah ↗</div>
-      </a>
-      <a href="/api-docs" class="card-hover p-5 text-center group">
-        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 mx-auto mb-3">
-          <svg class="w-5 h-5 text-slate-600 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-        </div>
-        <div class="text-sm font-bold text-slate-900 dark:text-white">Static API</div>
-        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">JSON/CDN open ↗</div>
-      </a>
+      <!-- Mobile Cards -->
+      <div class="space-y-2 p-3 md:hidden" id="mobile-list">
+        {entries.map((e: FE) => (
+          <a href={`/kategori/${e.slug}`} data-status={e.status} data-cat={e.slug} data-search={`${e.category} ${e.type} ${e.rate} ${e.basis}`.toLowerCase()} class="mobile-card block rounded-lg border border-[var(--border)] bg-[var(--surface)] p-3 hover:bg-[var(--surface-alt)] transition-colors">
+            <div class="mb-1.5 flex items-center justify-between gap-2">
+              <span class="inline-flex items-center gap-1.5 rounded-md bg-[var(--surface-alt)] px-1.5 py-0.5 text-[11px] font-semibold text-[var(--text-secondary)]">
+                <span class="w-1.5 h-1.5 rounded-full" style={`background:${catColor[e.slug] || '#475569'}`}></span>
+                {e.category}
+              </span>
+              <span class={`badge ${sb[e.status] || 'badge-belum-berlaku'}`}>{sl[e.status]}</span>
+            </div>
+            <div class="text-sm font-medium text-[var(--text)]">{e.type}</div>
+            <div class="mt-2 flex items-center justify-between gap-3">
+              <span class="rate-value text-sm">{e.rate}</span>
+              <span class="font-mono text-[10px] text-[var(--text-tertiary)]">{e.from} → {e.to}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+    <div class="mt-3 text-center">
+      <span id="visible-count" class="text-xs text-[var(--text-tertiary)]">Menampilkan {activeEntries.length} tarif aktif dari {entries.length} total</span>
     </div>
   </section>
 
-  <!-- ====== QUICK API DEMO ====== -->
-  <section class="mt-16">
-    <div class="card p-6 sm:p-8">
-      <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
-        <div>
-          <div class="eyebrow">Coba API</div>
-          <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Static JSON, tanpa auth</h3>
-        </div>
-        <a href="/api-docs" class="btn-secondary text-xs">Semua endpoints →</a>
+  <!-- Quick Access -->
+  <section class="mt-8 grid gap-3 sm:grid-cols-3">
+    <a href="/ter-pph-21" class="group card-hover p-4 flex items-center gap-3">
+      <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-950/30">
+        <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
       </div>
-      <div class="code-block text-xs">
-        <span class="text-emerald-400">$</span> curl https://tarif-pajak-id.pages.dev/api/v1/index.json<br/>
-        <span class='text-slate-500'>&#123;</span><span class='text-slate-400'> "stats": &#123; "entries": {api.meta.stats.entries}, "regulations": {api.meta.stats.regulations} &#125; ...</span>
+      <div>
+        <div class="text-sm font-semibold text-[var(--text)]">TER PPh 21</div>
+        <div class="text-xs text-[var(--text-tertiary)]">Kalkulator tarif efektif</div>
       </div>
-    </div>
+    </a>
+    <a href="/kode-objek-pajak" class="group card-hover p-4 flex items-center gap-3">
+      <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-violet-50 dark:bg-violet-950/30">
+        <svg class="w-4 h-4 text-violet-600 dark:text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
+      </div>
+      <div>
+        <div class="text-sm font-semibold text-[var(--text)]">Kode BPPU</div>
+        <div class="text-xs text-[var(--text-tertiary)]">{bppuTotal.size} kode objek pajak</div>
+      </div>
+    </a>
+    <a href="/api-docs" class="group card-hover p-4 flex items-center gap-3">
+      <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[var(--accent-soft)]">
+        <svg class="w-4 h-4 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+      </div>
+      <div>
+        <div class="text-sm font-semibold text-[var(--text)]">API Reference</div>
+        <div class="text-xs text-[var(--text-tertiary)]">Static JSON, tanpa auth</div>
+      </div>
+    </a>
   </section>
 </BaseLayout>
+
+<script>
+  // Status filter
+  let currentStatus = 'berlaku';
+  let currentCat = 'all';
+  let searchQuery = '';
+
+  function filterEntries() {
+    let visible = 0;
+    const rows = document.querySelectorAll('#main-table tbody tr');
+    rows.forEach(r => {
+      const status = (r as HTMLElement).dataset.status || '';
+      const cat = (r as HTMLElement).dataset.cat || '';
+      const search = ((r as HTMLElement).dataset.search || '').toLowerCase();
+      const showStatus = currentStatus === 'all' || status === currentStatus;
+      const showCat = currentCat === 'all' || cat === currentCat;
+      const showSearch = !searchQuery || search.includes(searchQuery);
+      const show = showStatus && showCat && showSearch;
+      (r as HTMLElement).style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    document.querySelectorAll('#mobile-list .mobile-card').forEach(c => {
+      const status = (c as HTMLElement).dataset.status || '';
+      const cat = (c as HTMLElement).dataset.cat || '';
+      const search = ((c as HTMLElement).dataset.search || '').toLowerCase();
+      const showStatus = currentStatus === 'all' || status === currentStatus;
+      const showCat = currentCat === 'all' || cat === currentCat;
+      const showSearch = !searchQuery || search.includes(searchQuery);
+      const show = showStatus && showCat && showSearch;
+      (c as HTMLElement).style.display = show ? '' : 'none';
+    });
+
+    const total = document.querySelectorAll('#main-table tbody tr').length;
+    const vc = document.getElementById('visible-count');
+    if (vc) vc.textContent = `Menampilkan ${visible} tarif` + (currentStatus !== 'all' ? ' aktif' : '') + ` dari ${total} total`;
+  }
+
+  // Status chips
+  document.querySelectorAll('#status-filters .chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentStatus = (btn as HTMLElement).dataset.status || 'all';
+      document.querySelectorAll('#status-filters .chip').forEach(b => { b.classList.remove('chip-active'); b.classList.add('chip-default'); });
+      btn.classList.remove('chip-default');
+      btn.classList.add('chip-active');
+      filterEntries();
+    });
+  });
+
+  // Category tabs
+  document.querySelectorAll('#category-tabs .chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentCat = (btn as HTMLElement).dataset.cat || 'all';
+      document.querySelectorAll('#category-tabs .chip').forEach(b => { b.classList.remove('chip-active'); b.classList.add('chip-default'); });
+      btn.classList.remove('chip-default');
+      btn.classList.add('chip-active');
+      filterEntries();
+    });
+  });
+
+  // Search
+  document.getElementById('home-search')?.addEventListener('input', (e) => {
+    searchQuery = (e.target as HTMLInputElement).value.toLowerCase();
+    filterEntries();
+  });
+
+  // Initial filter
+  filterEntries();
+</script>

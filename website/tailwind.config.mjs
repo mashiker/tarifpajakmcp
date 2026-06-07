@@ -9,18 +9,24 @@ export default {
         mono: ['IBM Plex Mono', 'monospace'],
       },
       colors: {
-        brand: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',
-          500: '#64748b',
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
+        accent: {
+          DEFAULT: '#0d9488',
+          hover: '#0f766e',
+          soft: '#f0fdfa',
+          light: '#2dd4bf',
         },
+        highlight: {
+          DEFAULT: '#b45309',
+          soft: '#fffbeb',
+          light: '#fbbf24',
+        },
+        surface: {
+          DEFAULT: '#ffffff',
+          alt: '#f4f5f7',
+        },
+      },
+      maxWidth: {
+        '8xl': '1400px',
       },
     },
   },

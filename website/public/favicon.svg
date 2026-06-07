@@ -1,8 +1,23 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="18" fill="#0F172A"/>
-  <path d="M18 15.5C18 13.567 19.567 12 21.5 12H38L48 22V48.5C48 50.433 46.433 52 44.5 52H21.5C19.567 52 18 50.433 18 48.5V15.5Z" fill="white"/>
-  <path d="M38 12V20C38 21.105 38.895 22 40 22H48" fill="#CBD5E1"/>
-  <path d="M26 38L38 26" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="27" cy="27" r="4" fill="#10B981"/>
-  <circle cx="37" cy="39" r="4" fill="#10B981"/>
+  <rect width="64" height="64" rx="16" fill="#111318"/>
+  <!-- Data table grid -->
+  <rect x="16" y="18" width="32" height="28" rx="3" stroke="#0d9488" stroke-width="2" fill="none"/>
+  <!-- Header row -->
+  <line x1="16" y1="26" x2="48" y2="26" stroke="#0d9488" stroke-width="1.5"/>
+  <!-- Column divider -->
+  <line x1="32" y1="18" x2="32" y2="46" stroke="#0d9488" stroke-width="1.5"/>
+  <!-- Row dividers -->
+  <line x1="16" y1="33" x2="48" y2="33" stroke="#0d9488" stroke-width="1" opacity="0.5"/>
+  <line x1="16" y1="40" x2="48" y2="40" stroke="#0d9488" stroke-width="1" opacity="0.5"/>
+  <!-- Percentage symbol in top-right cell -->
+  <text x="40" y="24" font-family="IBM Plex Mono, monospace" font-size="9" font-weight="700" fill="#0d9488" text-anchor="middle">%</text>
+  <!-- Data dots in cells -->
+  <circle cx="22" cy="30" r="1.5" fill="#0d9488" opacity="0.4"/>
+  <circle cx="26" cy="30" r="1.5" fill="#0d9488" opacity="0.4"/>
+  <circle cx="22" cy="37" r="1.5" fill="#0d9488" opacity="0.4"/>
+  <circle cx="26" cy="37" r="1.5" fill="#0d9488" opacity="0.4"/>
+  <circle cx="38" cy="30" r="1.5" fill="#0d9488" opacity="0.4"/>
+  <circle cx="38" cy="37" r="1.5" fill="#0d9488" opacity="0.4"/>
+  <circle cx="38" cy="44" r="1.5" fill="#0d9488" opacity="0.4"/>
+  <circle cx="42" cy="44" r="1.5" fill="#0d9488" opacity="0.4"/>
 </svg>
