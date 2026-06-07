@@ -58,6 +58,9 @@
   }
   .data-table tbody tr { @apply hover:bg-slate-50/80 dark:hover:bg-slate-800/30 transition-colors; }
 
+  .data-table-compact th { @apply px-3 py-2.5; }
+  .data-table-compact td { @apply px-3 py-2.5; }
+
   .card { @apply bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm; }
 
   .rate-value { @apply font-mono font-bold text-slate-900 dark:text-slate-100; }

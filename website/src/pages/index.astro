@@ -104,8 +104,8 @@ entries.forEach(e => {
   </section>
 
   <!-- Rate Table -->
-  <section class="mb-10">
-    <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+  <section class="mb-10 -mx-4 sm:-mx-6 lg:-mx-8">
+    <div class="px-4 sm:px-6 lg:px-8 mb-4 flex items-center justify-between flex-wrap gap-2">
       <h2 class="section-heading">Tabel Tarif Lengkap</h2>
       <div class="flex gap-2">
         <button id="filter-berlaku" class="chip chip-active" data-status="berlaku"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Aktif ({activeEntries.length})</button>
@@ -114,42 +114,40 @@ entries.forEach(e => {
     </div>
 
     <!-- Desktop: full table -->
-    <div class="hidden md:block card overflow-hidden">
-      <div class="overflow-auto custom-scrollbar" style="max-height:65vh">
-        <table class="data-table" id="main-table">
-          <thead>
-            <tr>
-              <th>Kategori</th>
-              <th>Jenis Transaksi</th>
-              <th>Tarif</th>
-              <th class="hidden lg:table-cell">Kode BPPU</th>
-              <th>Status</th>
-              <th class="hidden xl:table-cell">Masa Berlaku</th>
+    <div class="hidden md:block overflow-auto custom-scrollbar" style="max-height:65vh">
+      <table class="data-table data-table-compact" id="main-table">
+        <thead>
+          <tr>
+            <th>Kategori</th>
+            <th>Jenis Transaksi</th>
+            <th>Tarif</th>
+            <th>Kode BPPU</th>
+            <th>Status</th>
+            <th>Masa Berlaku</th>
+          </tr>
+        </thead>
+        <tbody>
+          {entries.map((e: FE) => (
+            <tr data-status={e.status}>
+              <td>
+                <a href={`/kategori/${e.slug}`} class="inline-flex items-center gap-1.5 hover:text-slate-900 dark:hover:text-slate-200 transition-colors">
+                  <span class="text-sm font-medium">{e.category}</span>
+                </a>
+              </td>
+              <td>
+                <a href={`/kategori/${e.slug}`} class="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors">{e.type}</a>
+                <div class="text-[10px] text-slate-400 font-mono mt-0.5">{e.id}</div>
+              </td>
+              <td><span class="rate-value text-sm">{e.rate}</span></td>
+              <td>
+                {e.bppu > 0 ? <a href="/kode-objek-pajak" class="text-xs font-mono text-slate-800 dark:text-slate-200 hover:underline">{e.bppu} kode</a> : <span class="text-slate-300 text-xs">—</span>}
+              </td>
+              <td><span class={`badge ${sb[e.status] || 'badge-belum-berlaku'}`}>{sl[e.status]}</span></td>
+              <td><span class="text-xs text-slate-500 font-mono whitespace-nowrap">{e.from} → {e.to}</span></td>
             </tr>
-          </thead>
-          <tbody>
-            {entries.map((e: FE) => (
-              <tr data-status={e.status}>
-                <td>
-                  <a href={`/kategori/${e.slug}`} class="inline-flex items-center gap-1.5 hover:text-slate-900 dark:hover:text-slate-200 transition-colors">
-                    <span class="text-sm font-medium">{e.category}</span>
-                  </a>
-                </td>
-                <td>
-                  <a href={`/kategori/${e.slug}`} class="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors">{e.type}</a>
-                  <div class="text-[10px] text-slate-400 font-mono mt-0.5">{e.id}</div>
-                </td>
-                <td><span class="rate-value text-sm">{e.rate}</span></td>
-                <td class="hidden lg:table-cell">
-                  {e.bppu > 0 ? <a href="/kode-objek-pajak" class="text-xs font-mono text-slate-800 dark:text-slate-200 hover:underline">{e.bppu} kode</a> : <span class="text-slate-300 text-xs">—</span>}
-                </td>
-                <td><span class={`badge ${sb[e.status] || 'badge-belum-berlaku'}`}>{sl[e.status]}</span></td>
-                <td class="hidden xl:table-cell"><span class="text-xs text-slate-500 font-mono whitespace-nowrap">{e.from} → {e.to}</span></td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+          ))}
+        </tbody>
+      </table>
     </div>
 
     <!-- Mobile: grouped card list -->
