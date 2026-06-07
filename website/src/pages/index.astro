@@ -115,14 +115,22 @@ entries.forEach(e => {
 
     <!-- Desktop: full table -->
     <div class="hidden md:block overflow-auto custom-scrollbar" style="max-height:65vh">
-      <table class="data-table data-table-compact" id="main-table">
+      <table class="data-table" id="main-table" style="table-layout:fixed;width:100%">
+        <colgroup>
+          <col style="width:100px" />
+          <col style="width:auto" />
+          <col style="width:90px" />
+          <col style="width:70px" />
+          <col style="width:80px" />
+          <col style="width:180px" />
+        </colgroup>
         <thead>
           <tr>
             <th>Kategori</th>
             <th>Jenis Transaksi</th>
             <th>Tarif</th>
-            <th>Kode BPPU</th>
-            <th>Status</th>
+            <th class="text-center">Kode BPPU</th>
+            <th class="text-center">Status</th>
             <th>Masa Berlaku</th>
           </tr>
         </thead>
@@ -135,11 +143,11 @@ entries.forEach(e => {
                 </a>
               </td>
               <td>
-                <a href={`/kategori/${e.slug}`} class="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors">{e.type}</a>
-                <div class="text-[10px] text-slate-400 font-mono mt-0.5">{e.id}</div>
+                <a href={`/kategori/${e.slug}`} class="block text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors truncate">{e.type}</a>
+                <div class="text-[10px] text-slate-400 font-mono mt-0.5 truncate">{e.id}</div>
               </td>
               <td><span class="rate-value text-sm">{e.rate}</span></td>
-              <td>
+              <td class="text-center">
                 {e.bppu > 0 ? <a href="/kode-objek-pajak" class="text-xs font-mono text-slate-800 dark:text-slate-200 hover:underline">{e.bppu} kode</a> : <span class="text-slate-300 text-xs">—</span>}
               </td>
               <td><span class={`badge ${sb[e.status] || 'badge-belum-berlaku'}`}>{sl[e.status]}</span></td>
