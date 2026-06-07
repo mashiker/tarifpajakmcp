@@ -1,124 +1,148 @@
-# Tarif Pajak ID 🇮🇩
+# Tarif Pajak ID
 
 > Database tarif pajak Indonesia yang terbuka dan bersumber dari regulasi resmi.
 
-Database terbuka berisi **tarif pajak Indonesia** dari 1983 hingga saat ini, lengkap dengan status berlaku/dicabut, dasar hukum, dan riwayat perubahan. Juga memuat **UU Konsolidasi** (KUP, PPh, PPN) dengan pelacakan amendemen per pasal. Terinspirasi dari [models.dev](https://models.dev/).
+**[tarif-pajak-id.pages.dev](https://tarif-pajak-id.pages.dev)** — Terinspirasi dari [models.dev](https://models.dev).
 
-## 📊 Statistik
+Database terbuka berisi tarif pajak Indonesia dari 1983 hingga saat ini, lengkap dengan status berlaku/dicabut, dasar hukum, riwayat perubahan, kode BPPU, dan UU Konsolidasi dengan pelacakan amendemen per pasal.
 
-- **135** entry tarif pajak
-- **37** regulasi tercatat
-- **15** kategori pajak
-- **3** UU Konsolidasi (147 pasal total)
+---
 
-## 🏗️ Kategori
+## Statistik
 
-| Kategori | Jenis Pajak | Entry |
-|----------|-------------|-------|
-| PPh | PPh 21 (TER + Progresif) | 4+ |
-| PPh | PPh 22 (Impor/Pembelian) | 3+ |
-| PPh | PPh 23 (Jasa/Sewa) | 4+ |
-| PPh | PPh 26 (WP Luar Negeri) | 1+ |
-| PPh | PPh Badan | 2+ |
-| PPh | PPh UMKM | 2+ |
-| PPh | PPh 4(2) Final | 4+ |
-| PPN | PPN | 4+ |
-| PPnBM | PPnBM | 1+ |
-| Bea Meterai | Bea Meterai | 1+ |
-| PBB | PBB | 1+ |
-| BPHTB | BPHTB | 1+ |
-| Bea Masuk | Bea Masuk | 1+ |
-| Cukai | Cukai | 1+ |
-| Pajak Daerah | PDRD | 1+ |
+| | |
+|---|---|
+| **136** entry tarif pajak | **111** tarif aktif (berlaku) |
+| **15** kategori pajak | **170** kode BPPU |
+| **39** regulasi tercatat | **3** UU Konsolidasi (147 pasal) |
 
-## 📜 UU Konsolidasi
+---
 
-Naskah konsolidasi UU pajak Indonesia yang menunjukkan teks terkini setelah semua perubahan diterapkan, lengkap dengan riwayat perubahan per pasal.
+## Website
 
-| UU Konsolidasi | Dasar | Perubahan | Pasal | Diubah | Ditambah | Berlaku |
-|---|---|---|---|---|---|---|
+Website data-first dengan tabel interaktif, pencarian, filter status/kategori, dan kalkulator TER PPh 21.
+
+| Halaman | URL | Deskripsi |
+|---------|-----|-----------|
+| Beranda | `/` | Tabel data lengkap dengan search & filter |
+| Database | `/database` | Database tarif dengan filter status dan kategori |
+| TER PPh 21 | `/ter-pph-21` | Kalkulator tarif efektif + tabel A/B/C |
+| Kode BPPU | `/kode-objek-pajak` | 170 kode objek pajak dengan search |
+| API Docs | `/api-docs` | Dokumentasi API dengan try-it panel |
+| Kategori | `/kategori/:slug` | Detail per kategori pajak (15 halaman) |
+
+**Tech stack:** Astro 5 · Svelte 5 · Tailwind CSS 3 · TypeScript
+
+---
+
+## API
+
+Akses gratis dalam format JSON statis, tanpa auth.
+
+### Endpoint Utama
+
+```bash
+# Database lengkap
+curl https://tarif-pajak-id.pages.dev/api.json
+
+# Tarif ternormalisasi (flat)
+curl https://tarif-pajak-id.pages.dev/rates.json
+
+# Metadata regulasi
+curl https://tarif-pajak-id.pages.dev/regulations.json
+
+# UU Konsolidasi (semua)
+curl https://tarif-pajak-id.pages.dev/consolidated.json
+
+# Chatbot-friendly
+curl https://tarif-pajak-id.pages.dev/llms.txt
+```
+
+### API v1
+
+```bash
+# Index
+curl https://tarif-pajak-id.pages.dev/api/v1/index.json
+
+# Per kategori
+curl https://tarif-pajak-id.pages.dev/api/v1/categories/pph-21.json
+
+# Per entry
+curl https://tarif-pajak-id.pages.dev/api/v1/entries/ppn-11pct-effective-2025.json
+
+# UU Konsolidasi per pasal
+curl https://tarif-pajak-id.pages.dev/api/v1/consolidated/uu-pph-konsolidasi/pasal-10.json
+```
+
+---
+
+## Kategori Pajak
+
+| Kategori | Entry | | Kategori | Entry |
+|----------|-------|-|----------|-------|
+| PPh 21 (TER + Progresif) | 29 | | PPN | 14 |
+| PPh 22 (Impor/Pembelian) | 11 | | PPnBM | 8 |
+| PPh 23 (Jasa/Sewa) | 8 | | Bea Meterai | 8 |
+| PPh 26 (WP Luar Negeri) | 7 | | PBB | 4 |
+| PPh Badan | 8 | | BPHTB | 3 |
+| PPh UMKM | 3 | | Bea Masuk | 4 |
+| PPh 4(2) Final | 18 | | Cukai | 3 |
+| | | | Pajak Daerah | 8 |
+
+---
+
+## UU Konsolidasi
+
+Naskah konsolidasi UU pajak Indonesia — teks terkini setelah semua perubahan diterapkan, lengkap dengan riwayat per pasal.
+
+| UU | Dasar | Perubahan | Pasal | Diubah | Ditambah | Berlaku |
+|----|-------|-----------|-------|--------|----------|---------|
 | **UU KUP** | UU 6/1983 | 6 (→ UU 7/2021 HPP) | 58 | 26 | 9 | 23 |
 | **UU PPh** | UU 7/1983 | 5 (→ UU 7/2021 HPP) | 44 | 27 | 8 | 9 |
 | **UU PPN** | UU 8/1983 | 3 (→ UU 7/2021 HPP) | 45 | 22 | 13 | 10 |
 
-### Rantai Perubahan
+**Rantai perubahan:**
+- UU KUP: UU 6/1983 → UU 9/1994 → UU 16/2000 → UU 28/2007 → Perppu 5/2008 → UU 7/2021
+- UU PPh: UU 7/1983 → UU 10/1994 → UU 17/2000 → UU 36/2008 → UU 7/2021
+- UU PPN: UU 8/1983 → UU 42/2009 → UU 7/2021
 
-**UU KUP (UU 6/1983):**
-UU 6/1983 → UU 9/1994 → UU 16/2000 → UU 28/2007 → Perppu 5/2008 → UU 7/2021 HPP
+---
 
-**UU PPh (UU 7/1983):**
-UU 7/1983 → UU 10/1994 → UU 17/2000 → UU 36/2008 → UU 7/2021 HPP
-
-**UU PPN (UU 8/1983):**
-UU 8/1983 → UU 42/2009 → UU 7/2021 HPP
-
-### Contoh Data Per Pasal
-
-```json
-{
-  "number": "10",
-  "title": "Tarif PPh Orang Pribadi (Progresif)",
-  "status": "diubah",
-  "amendmentHistory": [
-    { "source": "UU 7/1983", "changeType": "original", "summary": "Tarif progresif 10%-35% (4 lapis)" },
-    { "source": "UU 17/2000", "changeType": "amended", "summary": "Tarif progresif 5%-35% (5 lapis)" },
-    { "source": "UU 36/2008", "changeType": "amended", "summary": "Tarif progresif 5%-30% (7 lapis)" },
-    { "source": "UU 7/2021", "changeType": "amended", "summary": "Tarif progresif 5%-35% (4 lapis) — PKP > Rp 5 miliar 35%" }
-  ]
-}
-```
-
-## 🔌 API
-
-Akses gratis dalam format JSON:
-
-```bash
-# Database lengkap (tarif + konsolidasi)
-curl https://tarif-pajak-id.vercel.app/api.json
-
-# Tarif ternormalisasi
-curl https://tarif-pajak-id.vercel.app/rates.json
-
-# Metadata regulasi
-curl https://tarif-pajak-id.vercel.app/regulations.json
-
-# UU Konsolidasi (semua)
-curl https://tarif-pajak-id.vercel.app/consolidated.json
-
-# UU Konsolidasi spesifik
-curl https://tarif-pajak-id.vercel.app/api/v1/consolidated/uu-pph-konsolidasi.json
-
-# Detail pasal tertentu
-curl https://tarif-pajak-id.vercel.app/api/v1/consolidated/uu-pph-konsolidasi/pasal-10.json
-
-# Chatbot-friendly
-curl https://tarif-pajak-id.vercel.app/llms.txt
-```
-
-## 📁 Struktur
+## Struktur Proyek
 
 ```
-tarif-pajak-id/
+tarifpajakmcp/
 ├── data/
-│   ├── regulations/     # Metadata regulasi (UU, PP, PMK, dll)
-│   ├── categories/      # Entry tarif per kategori pajak
-│   ├── consolidated/    # UU Konsolidasi (KUP, PPh, PPN)
-│   └── schema/          # JSON Schema validasi
+│   ├── categories/        # 15 JSON files — entry tarif per kategori
+│   ├── consolidated/      # 3 JSON files — UU Konsolidasi (KUP, PPh, PPN)
+│   ├── regulations/        # Metadata regulasi (UU, PP, PMK, dll)
+│   └── schema/             # JSON Schema validasi
 ├── src/
-│   ├── build.ts         # Build: validasi → generate API
-│   └── build-api.ts     # Build API v1 endpoints
-├── public/              # Generated JSON API + llms.txt
-├── website/             # Astro + Svelte website
-│   ├── src/pages/       # Homepage + kategori detail pages
-│   └── dist/            # Static build output
-└── .secrets/            # API keys (gitignored)
+│   ├── build.ts            # Validasi data + generate public/*.json
+│   └── build-api.ts        # Generate API v1 static endpoints
+├── public/                 # Generated JSON API + llms.txt
+├── website/                # Astro + Svelte + Tailwind frontend
+│   ├── src/
+│   │   ├── layouts/        # Base layout (header, footer, dark mode)
+│   │   ├── pages/          # 6 pages + 15 dynamic category pages
+│   │   └── styles/         # Design system (CSS custom properties)
+│   ├── public/             # Favicon + copied JSON
+│   └── dist/               # Static build output
+└── .secrets/               # API keys (gitignored)
 ```
 
-## 🚀 Quick Start
+---
+
+## Quick Start
 
 ```bash
+# Clone
+git clone git@github.com:mashiker/tarifpajakmcp.git
+cd tarifpajakmcp
+
 # Install dependencies
 pnpm install
+cd website && pnpm install && cd ..
 
 # Build data (validate + generate JSON)
 pnpm build
@@ -126,21 +150,16 @@ pnpm build
 # Build API v1 endpoints
 pnpm build:api
 
-# Build website
-cd website && pnpm install && pnpm build
+# Build everything (data + API + website)
+pnpm build:all
 
-# Preview
-cd website && pnpm preview
+# Dev server
+cd website && pnpm dev
 ```
 
-## 📚 Sumber Data
+---
 
-- **[Pasal.id](https://pasal.id)** — 40,000+ peraturan Indonesia via MCP API
-- **[JDIH BPK](https://peraturan.bpk.go.id)** — Database peraturan resmi
-- **[peraturan.go.id](https://peraturan.go.id)** — Portal peraturan Kemenkeu
-- **[DJP/Kemenkeu](https://pajak.go.id)** — Penjelasan tarif dan panduan
-
-## ⚖️ Dasar Hukum Utama
+## Dasar Hukum Utama
 
 | Regulasi | Tentang | Status |
 |----------|---------|--------|
@@ -150,13 +169,23 @@ cd website && pnpm preview
 | PP 60/2023 | Tarif PPh 22/23/26 | Berlaku |
 | PP 55/2022 | PPh UMKM 0,5% | Berlaku |
 | PMK 131/2024 | Tarif PPN Efektif | Berlaku |
-| PP 131/2000 | PPh Final | Diubah sebagian |
 
-## ⚠️ Disclaimer
+---
+
+## Sumber Data
+
+- **[JDIH BPK](https://peraturan.bpk.go.id)** — Database peraturan resmi
+- **[Pasal.id](https://pasal.id)** — 40.000+ peraturan Indonesia
+- **[DJP/Kemenkeu](https://pajak.go.id)** — Penjelasan tarif dan panduan
+- **[peraturan.go.id](https://peraturan.go.id)** — Portal peraturan Kemenkeu
+
+---
+
+## Disclaimer
 
 Database ini adalah **referensi bersumber dari regulasi resmi**, BUKAN nasihat hukum atau pajak. Selalu verifikasi dengan peraturan resmi terbaru.
 
-## 📝 Lisensi
+## Lisensi
 
-- **Kode**: MIT License
-- **Data**: CC-BY-SA 4.0
+- **Kode**: [MIT](LICENSE)
+- **Data**: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
