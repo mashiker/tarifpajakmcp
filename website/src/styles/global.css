@@ -60,6 +60,14 @@
 
   .data-table-compact th { @apply px-3 py-2.5; }
   .data-table-compact td { @apply px-3 py-2.5; }
+  .data-table-compact { table-layout: fixed; }
+  .data-table-compact th:nth-child(1), .data-table-compact td:nth-child(1) { width: 100px; }
+  .data-table-compact th:nth-child(2), .data-table-compact td:nth-child(2) { width: auto; }
+  .data-table-compact th:nth-child(3), .data-table-compact td:nth-child(3) { width: 90px; }
+  .data-table-compact th:nth-child(4), .data-table-compact td:nth-child(4) { width: 80px; text-align: center; }
+  .data-table-compact th:nth-child(5), .data-table-compact td:nth-child(5) { width: 80px; text-align: center; }
+  .data-table-compact th:nth-child(6), .data-table-compact td:nth-child(6) { width: 180px; }
+  .data-table-compact td:nth-child(2) > a { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
 
   .card { @apply bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm; }
 
