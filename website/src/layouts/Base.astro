@@ -24,6 +24,56 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
       if (s === 'true' || (s === null && d)) document.documentElement.classList.add('dark');
     })();
   </script>
+  <style is:inline>
+    /* Light mode CSS variables */
+    :root {
+      --bg:              #fafbfc;
+      --surface:         #ffffff;
+      --surface-alt:     #f4f5f7;
+      --border:          #e3e5e8;
+      --border-subtle:   #eff0f2;
+      --text:            #111318;
+      --text-secondary:  #555d6e;
+      --text-tertiary:   #8b93a1;
+      --accent:          #0d9488;
+      --accent-hover:    #0f766e;
+      --accent-soft:     #f0fdfa;
+      --accent-text:     #0d9488;
+      --highlight:       #b45309;
+      --highlight-soft:  #fffbeb;
+      --status-active:   #059669;
+      --status-revoked:  #dc2626;
+      --status-changed:  #d97706;
+      --status-pending:  #64748b;
+      --header-height:   56px;
+      --font-mono:       "IBM Plex Mono", monospace;
+    }
+    /* Dark mode CSS variables */
+    html.dark {
+      --bg:              #0a0c10;
+      --surface:         #111318;
+      --surface-alt:     #1a1d24;
+      --border:          #23272f;
+      --border-subtle:   #1d2028;
+      --text:            #edf0f5;
+      --text-secondary:  #8b93a1;
+      --text-tertiary:   #555d6e;
+      --accent:          #2dd4bf;
+      --accent-hover:    #5eead4;
+      --accent-soft:     rgba(13, 148, 136, 0.08);
+      --accent-text:     #2dd4bf;
+      --highlight:       #fbbf24;
+      --highlight-soft:  rgba(251, 191, 36, 0.08);
+      --status-active:   #34d399;
+      --status-revoked:  #f87171;
+      --status-changed:  #fbbf24;
+      --status-pending:  #94a3b8;
+    }
+    body {
+      color: var(--text);
+      background: var(--bg);
+    }
+  </style>
 </head>
 <body class="min-h-screen">
   <a href="#main-content" class="skip-link">Skip to content</a>
@@ -153,21 +203,38 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
     document.getElementById('mobile-menu')?.classList.toggle('hidden');
   });
 
-  // Search trigger (placeholder for future ⌘K implementation)
+  // Search trigger — focus home search on desktop, mobile input on mobile
   document.getElementById('search-trigger')?.addEventListener('click', () => {
-    const input = document.querySelector<HTMLInputElement>('#mobile-search-input');
-    if (input) input.focus();
+    const homeInput = document.querySelector<HTMLInputElement>('#home-search');
+    const dbInput = document.querySelector<HTMLInputElement>('#db-search');
+    const mobileInput = document.querySelector<HTMLInputElement>('#mobile-search-input');
+    const target = homeInput || dbInput;
+    if (target) {
+      target.focus();
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else if (mobileInput) {
+      // Open mobile menu first, then focus
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu?.classList.contains('hidden')) mobileMenu.classList.remove('hidden');
+      mobileInput.focus();
+    }
   });
 
   // ⌘K shortcut
   document.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
       e.preventDefault();
+      const homeInput = document.querySelector<HTMLInputElement>('#home-search');
+      const dbInput = document.querySelector<HTMLInputElement>('#db-search');
       const mobileInput = document.querySelector<HTMLInputElement>('#mobile-search-input');
-      if (mobileInput) mobileInput.focus();
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (mobileMenu?.classList.contains('hidden')) {
-        mobileMenu?.classList.remove('hidden');
+      const target = homeInput || dbInput;
+      if (target) {
+        target.focus();
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu?.classList.contains('hidden')) mobileMenu.classList.remove('hidden');
+        if (mobileInput) mobileInput.focus();
       }
     }
   });
