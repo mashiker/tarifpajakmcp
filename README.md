@@ -28,10 +28,49 @@ Website data-first dengan tabel interaktif, pencarian, filter status/kategori, d
 | Database | `/database` | Database tarif dengan filter status dan kategori |
 | TER PPh 21 | `/ter-pph-21` | Kalkulator tarif efektif + tabel A/B/C |
 | Kode BPPU | `/kode-objek-pajak` | 170 kode objek pajak dengan search |
+| **Panduan** | **`/docs`** | **Tutorial: user guide + integrasi + AI agent** |
 | API Docs | `/api-docs` | Dokumentasi API dengan try-it panel |
 | Kategori | `/kategori/:slug` | Detail per kategori pajak (15 halaman) |
 
 **Tech stack:** Astro 5 · Svelte 5 · Tailwind CSS 3 · TypeScript
+
+---
+
+## Quick Start — 3 Skenario
+
+### 👤 Sebagai User (browse web)
+1. Buka [tarif-pajak-id.pages.dev](https://tarif-pajak-id.pages.dev/database)
+2. Filter "Berlaku" + pilih kategori
+3. Klik entry untuk detail (tarif, regulasi, contoh perhitungan)
+
+### 👩‍💻 Sebagai Developer (API call)
+```bash
+# Semua tarif berlaku di tahun 2025
+curl https://tarif-pajak-id.pages.dev/api/v1/by-year/2025.json
+
+# Detail 1 entry lengkap
+curl https://tarif-pajak-id.pages.dev/api/v1/entries/ppn-12pct-mewah-2025.json
+```
+Lihat `/docs` untuk contoh Python, JavaScript, dan embed widget. Endpoint lengkap di `/api-docs`.
+
+### 🤖 Sebagai AI Agent (Hermes/OpenClaw/MCP)
+**Opsi A — Hermes/OpenClaw skill** (sudah tersedia):
+```bash
+bash ~/.agents/skills/tarif-pajak-lookup/scripts/lookup.sh year 2025
+bash ~/.agents/skills/tarif-pajak-lookup/scripts/lookup.sh entry ppn-12pct-mewah-2025
+```
+
+**Opsi B — MCP server** (untuk Claude Desktop, Cursor):
+```json
+{ "mcpServers": { "tarif-pajak": { "command": "node", "args": ["./mcp-server/index.js"] } } }
+```
+
+**Opsi C — llms.txt** (untuk NotebookLM, ChatGPT custom):
+```
+https://tarif-pajak-id.pages.dev/llms.txt
+```
+
+Detail lengkap integrasi AI agent: [tarif-pajak-id.pages.dev/docs#agent](https://tarif-pajak-id.pages.dev/docs#agent)
 
 ---
 
