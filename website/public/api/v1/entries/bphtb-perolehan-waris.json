@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "bphtb-perolehan-waris",
     "category": "Pajak Daerah",
@@ -22,7 +22,8 @@
     "legalBasis": [
       {
         "regulation": "UU 28/2009",
-        "article": "Pasal 7"
+        "article": "Pasal 7",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009"
       },
       {
         "regulation": "UU 1/2022 (HKPD)",

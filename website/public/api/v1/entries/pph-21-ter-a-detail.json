@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pph-21-ter-a-detail",
     "category": "PPh",
     "taxType": "PPh 21",
-    "transactionType": "TER Kategori A (Tidak Menikah)",
-    "description": "Tabel lengkap TER Kategori A (Tidak Kawin/Tidak Punya Tanggungan) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
+    "transactionType": "TER Kategori A (TK/0 - Tidak Kawin Tanpa Tanggungan)",
+    "description": "Tabel lengkap TER Kategori A khusus untuk Wajib Pajak Orang Pribadi berstatus Tidak Kawin tanpa tanggungan (TK/0). Berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
     "rate": {
       "type": "progressive",
       "value": "0% – 25% (42 lapisan)",

@@ -28,10 +28,10 @@
         }
       ],
       "supersedes": [
-        "bea-meterai-6000"
+        "bea-meterai-pre2021"
       ],
       "supersededBy": [],
-      "notes": "Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai.",
+      "notes": "Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai. Menggantikan bea meterai Rp 6.000 (UU 13/1985 jo. PP 23/2000) yang dicabut oleh UU 10/2020.",
       "tags": [
         "bea-meterai",
         "dokumen",
@@ -270,9 +270,9 @@
       "transactionType": "Dokumen / Surat (UU 13/1985)",
       "description": "Bea Meterai Rp 1.000 berdasarkan UU 13/1985. Berlaku untuk dokumen dengan nilai > Rp 200.000. Periode 1986-1999.",
       "rate": {
-        "type": "percentage",
-        "value": 0,
-        "effectiveRate": "Rp 1.000 per lembar untuk dokumen > Rp 200.000"
+        "type": "formula",
+        "value": "Rp 1.000 per lembar",
+        "effectiveRate": "Nominal tetap Rp 1.000 untuk dokumen > Rp 200.000"
       },
       "taxBase": "Dokumen dengan nominal > Rp 200.000",
       "payer": "Pihak yang menandatangani / membuat dokumen",
@@ -314,9 +314,9 @@
       "transactionType": "Dokumen / Surat (PP 23/2000)",
       "description": "Bea Meterai Rp 3.000 berdasarkan PP 23/2000. Berlaku untuk dokumen dengan nilai > Rp 500.000. Periode 2000-2006.",
       "rate": {
-        "type": "percentage",
-        "value": 0,
-        "effectiveRate": "Rp 3.000 per lembar untuk dokumen > Rp 500.000"
+        "type": "formula",
+        "value": "Rp 3.000 per lembar",
+        "effectiveRate": "Nominal tetap Rp 3.000 untuk dokumen > Rp 500.000"
       },
       "taxBase": "Dokumen dengan nominal > Rp 500.000",
       "payer": "Pihak yang menandatangani / membuat dokumen",

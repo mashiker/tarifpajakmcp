@@ -1,9 +1,9 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
-    "count": 39,
+    "count": 40,
     "regulations": [
       {
         "id": "uu-7-1983-pph",
@@ -130,15 +130,6 @@
         "type": "PP",
         "status": "berlaku",
         "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
-      },
-      {
-        "id": "pp-60-2023",
-        "number": "60",
-        "year": 2023,
-        "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
-        "type": "PP",
-        "status": "berlaku",
-        "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
       },
       {
         "id": "pp-16-2009",
@@ -355,6 +346,24 @@
         "type": "Perpres",
         "status": "berlaku",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/44947/perpres-no-55-tahun-2013"
+      },
+      {
+        "id": "pmk-34-2017",
+        "number": "34",
+        "year": 2017,
+        "title": "PMK tentang Petunjuk Pelaksanaan Pemungutan Pajak Penghasilan Pasal 22 sehubungan dengan Pembayaran atas Penyerahan Barang dan Kegiatan di Bidang Impor atau Kegiatan Usaha di Bidang Lain",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017"
+      },
+      {
+        "id": "pmk-81-2024",
+        "number": "81",
+        "year": 2024,
+        "title": "PMK tentang Pajak Penghasilan atas Penghasilan Sehubungan dengan Aset Kripto dan Imbalan Jasa Melalui Perdagangan Melalui Sistem Elektronik",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024"
       }
     ]
   }

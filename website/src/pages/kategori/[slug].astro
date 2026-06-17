@@ -52,8 +52,8 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
       <p class="text-sm text-[var(--text-secondary)] mt-1 max-w-2xl">{category.description}</p>
     </div>
     <div class="shrink-0 flex gap-2">
-      <span class="bg-[var(--accent-soft)] text-[var(--accent)] px-3 py-1.5 rounded-xl text-xs font-semibold ring-1 ring-[var(--accent)]/20">{activeCount} aktif</span>
-      <span class="bg-[var(--surface-alt)] text-[var(--text-secondary)] px-3 py-1.5 rounded-xl text-xs font-semibold ring-1 ring-[var(--border)]">{category.entries.length} total</span>
+      <span class="badge badge-berlaku" style="padding: 4px 10px; font-size: 11px;">{activeCount} aktif</span>
+      <span class="bg-[var(--surface-alt)] text-[var(--text-secondary)] px-3 py-1.5 rounded-[var(--radius)] text-xs font-semibold border border-[var(--border)]">{category.entries.length} total</span>
     </div>
   </div>
   {totalBppu > 0 && (
@@ -65,9 +65,9 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
 
   {category.serviceTypes?.services && (
     <details class="card mb-6" open={category.serviceTypes.services.length <= 15}>
-      <summary class="px-4 py-3 bg-[var(--surface-alt)] rounded-t-2xl border-b border-[var(--border)] flex items-center justify-between cursor-pointer hover:bg-[var(--surface-alt)] transition-colors">
+      <summary class="px-4 py-3 bg-[var(--surface-alt)] rounded-t-[var(--radius-lg)] border-b border-[var(--border)] flex items-center justify-between cursor-pointer hover:bg-[var(--accent-soft)] transition-colors">
         <span class="text-sm font-semibold text-[var(--text)]">{category.serviceTypes.services.length} Jenis Jasa</span>
-        <a href={category.serviceTypes.sourceUrl} target="_blank" class="text-[11px] text-[var(--text)] hover:underline font-mono">{category.serviceTypes.source} ↗</a>
+        <a href={category.serviceTypes.sourceUrl} target="_blank" rel="noopener noreferrer" class="text-[11px] text-[var(--text)] hover:underline font-mono">{category.serviceTypes.source} ↗</a>
       </summary>
       <div class="p-4 max-h-60 overflow-y-auto custom-scrollbar">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-1">
@@ -103,13 +103,13 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
         <div class="px-4 pb-4 border-t border-[var(--border)]">
           <p class="text-sm text-[var(--text-secondary)] mt-3 mb-4">{entry.description}</p>
           {entry.id?.startsWith('pph-21-ter-') && (
-            <a href="/ter-pph-21" class="inline-flex items-center gap-2 bg-[var(--surface-alt)] border border-[var(--border)] text-[var(--text)] rounded-2xl px-4 py-2.5 text-xs font-medium hover:bg-[var(--surface-alt)] transition-colors mb-4">
+            <a href="/ter-pph-21" class="inline-flex items-center gap-2 bg-[var(--surface-alt)] border border-[var(--border)] text-[var(--text)] rounded-[var(--radius-lg)] px-4 py-2.5 text-xs font-medium hover:bg-[var(--accent-soft)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors mb-4">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
               Lihat tabel lengkap dengan kalkulator TER →
             </a>
           )}
 
-          <div class="bg-[var(--surface-alt)] rounded-2xl p-4 mb-4">
+          <div class="bg-[var(--surface-alt)] rounded-[var(--radius-lg)] p-4 mb-4">
             <div class="flex items-baseline gap-3 flex-wrap">
               <span class="rate-value-lg">{fmtRate(entry.rate)}</span>
               {entry.rate.effectiveRate && (
@@ -120,9 +120,9 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
           </div>
 
           {entry.rate.brackets && (
-            <div class="mb-4 border border-[var(--border)] rounded-2xl overflow-hidden">
+            <div class="mb-4 border border-[var(--border)] rounded-[var(--radius-lg)] overflow-hidden">
               <table class="data-table">
-                <thead><tr><th>Lapisan</th><th class="text-right">Batas Bawah</th><th class="text-right">Batas Atas</th><th class="text-right">Tarif</th></tr></thead>
+                <thead><tr><th scope="col">Lapisan</th><th scope="col" class="text-right">Batas Bawah</th><th scope="col" class="text-right">Batas Atas</th><th scope="col" class="text-right">Tarif</th></tr></thead>
                 <tbody>
                   {entry.rate.brackets.map((b: any, i: number) => (
                     <tr>
@@ -160,9 +160,9 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
                   ))}
                 </div>
               ) : (
-                <div class="border border-[var(--border)] rounded-2xl overflow-hidden max-h-64 overflow-y-auto custom-scrollbar">
+                <div class="border border-[var(--border)] rounded-[var(--radius-lg)] overflow-hidden max-h-64 overflow-y-auto custom-scrollbar">
                   <table class="data-table">
-                    <thead><tr><th>Kode</th><th>Nama</th><th class="text-right">Tarif</th></tr></thead>
+                    <thead><tr><th scope="col">Kode</th><th scope="col">Nama</th><th scope="col" class="text-right">Tarif</th></tr></thead>
                     <tbody>
                       {entry.bppuKode.map((b: any) => (
                         <tr><td class="font-mono font-bold text-[var(--text)] whitespace-nowrap">{b.kode}</td><td class="cell-wrap text-sm" style="white-space:normal;max-width:350px">{b.nama}</td><td class="text-right"><span class="rate-value">{b.tarif}%</span></td></tr>
@@ -178,7 +178,7 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
             <div class="text-[11px] text-[var(--text-tertiary)] mb-1.5 font-bold uppercase tracking-wider">Dasar Hukum</div>
             <div class="flex flex-wrap gap-1.5">
               {entry.legalBasis.map((lb: any) => (
-                <a href={lb.sourceUrl || lb.pasalUrl || '#'} target="_blank" class="tag">
+                <a href={lb.sourceUrl || lb.pasalUrl || '#'} target="_blank" rel="noopener noreferrer" class="tag">
                   <span class="text-[var(--text)] font-semibold">{lb.regulation}</span>
                   <span class="text-[var(--text-tertiary)]">{lb.article}</span>
                   {(lb.sourceUrl || lb.pasalUrl) && <span class="text-[var(--text-tertiary)]">↗</span>}
@@ -188,9 +188,9 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
           </div>
 
           {entry.notes && (
-            <div class="mt-4 flex gap-2.5 bg-amber-50 dark:bg-amber-900/20 border border-amber-200/60 dark:border-amber-800/40 rounded-2xl p-4">
-              <svg class="w-4 h-4 text-amber-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <div class="text-sm text-amber-800 dark:text-amber-200">{entry.notes.substring(0, 500)}{entry.notes.length > 500 ? '...' : ''}</div>
+            <div class="mt-4 flex gap-2.5 bg-[var(--status-changed-soft)]  border border-[var(--status-changed)]/20  rounded-[var(--radius-lg)] p-4">
+              <svg class="w-4 h-4 text-[var(--status-changed)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="text-sm text-[var(--status-changed)] ">{entry.notes.substring(0, 500)}{entry.notes.length > 500 ? '...' : ''}</div>
             </div>
           )}
 
@@ -199,7 +199,7 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
               <div class="text-[11px] text-[var(--text-tertiary)] mb-2 font-bold uppercase tracking-wider">Contoh Perhitungan</div>
               <div class="space-y-2">
                 {entry.examples.map((ex: any) => (
-                  <div class="bg-[var(--accent-soft)] border border-[var(--accent)]/20 rounded-2xl p-4">
+                  <div class="bg-[var(--accent-soft)] border border-[var(--accent)]/20 rounded-[var(--radius-lg)] p-4">
                     <div class="text-sm font-medium text-[var(--text)] mb-1">{ex.scenario}</div>
                     <div class="text-xs text-[var(--accent)] mb-1.5">{ex.calculation}</div>
                     <div class="text-sm text-[var(--accent)] font-bold font-mono">→ {ex.result}</div>

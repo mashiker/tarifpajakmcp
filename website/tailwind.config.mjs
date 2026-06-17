@@ -10,23 +10,10 @@ export default {
       },
       colors: {
         accent: {
-          DEFAULT: '#0d9488',
-          hover: '#0f766e',
-          soft: '#f0fdfa',
-          light: '#2dd4bf',
+          DEFAULT: '#0E5E58',   /* matches --accent in Base.astro — single source of truth */
+          hover: '#0A4843',
+          soft: '#E6EFEE',
         },
-        highlight: {
-          DEFAULT: '#b45309',
-          soft: '#fffbeb',
-          light: '#fbbf24',
-        },
-        surface: {
-          DEFAULT: '#ffffff',
-          alt: '#f4f5f7',
-        },
-      },
-      maxWidth: {
-        '8xl': '1400px',
       },
     },
   },

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pph-final-bunga-koperasi",
     "category": "PPh",
@@ -29,8 +29,9 @@
         "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
       },
       {
-        "regulation": "PP 60/2023",
-        "article": "Pasal 2"
+        "regulation": "PMK 81/2024",
+        "article": "Pasal 2",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024"
       }
     ],
     "supersedes": [],

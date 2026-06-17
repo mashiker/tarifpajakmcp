@@ -262,24 +262,6 @@
     ]
   },
   {
-    "id": "pp-60-2023",
-    "number": "60",
-    "year": 2023,
-    "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
-    "shortName": "PP Tarif PPh 22/23/26",
-    "type": "PP",
-    "promulgationDate": "2023-12-11",
-    "effectiveDate": "2024-01-01",
-    "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
-    "status": "berlaku",
-    "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26.",
-    "relevantArticles": "Pasal 2 (PPh 22 impor/ekspor), Pasal 3 (PPh 22 pembelian/pengadaan), Pasal 4 (PPh 22 penjualan/PMSE/kripto), Pasal 5 (PPh 23 dan 26)",
-    "relatedRegulations": [
-      "pp-94-2010",
-      "pp-14-2002"
-    ]
-  },
-  {
     "id": "pp-16-2009",
     "number": "16",
     "year": 2009,
@@ -684,6 +666,42 @@
     "relevantArticles": "Lampiran",
     "relatedRegulations": [
       "uu-10-1995"
+    ]
+  },
+  {
+    "id": "pmk-34-2017",
+    "number": "34",
+    "year": 2017,
+    "title": "PMK tentang Petunjuk Pelaksanaan Pemungutan Pajak Penghasilan Pasal 22 sehubungan dengan Pembayaran atas Penyerahan Barang dan Kegiatan di Bidang Impor atau Kegiatan Usaha di Bidang Lain",
+    "shortName": "PMK PPh 22 Bendaharawan",
+    "type": "PMK",
+    "promulgationDate": "2017-06-07",
+    "effectiveDate": "2017-06-07",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017",
+    "status": "berlaku",
+    "description": "PMK pelaksanaan pemungutan PPh 22 oleh bendahara pemerintah, BUMN/BUMD, dan pihak tertentu atas pembelian barang dan jasa. Mengatur tarif 1,5% untuk bendaharawan dan ketentuan khusus lainnya.",
+    "relevantArticles": "Pasal 2, 3, 4",
+    "relatedRegulations": [
+      "pp-94-2010",
+      "uu-7-2021-hpp"
+    ]
+  },
+  {
+    "id": "pmk-81-2024",
+    "number": "81",
+    "year": 2024,
+    "title": "PMK tentang Pajak Penghasilan atas Penghasilan Sehubungan dengan Aset Kripto dan Imbalan Jasa Melalui Perdagangan Melalui Sistem Elektronik",
+    "shortName": "PMK PPh Aset Kripto & PMSE",
+    "type": "PMK",
+    "promulgationDate": "2024-11-29",
+    "effectiveDate": "2025-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024",
+    "status": "berlaku",
+    "description": "PMK yang mengatur pemungutan PPh Pasal 22 final atas transaksi aset kripto (0,21% melalui PPMSE) dan ketentuan PPh atas PMSE. Melengkapi PP 58/2023 dan PMK 131/2024.",
+    "relevantArticles": "Pasal 2, 3, 4, 5",
+    "relatedRegulations": [
+      "pp-58-2023",
+      "pmk-131-2024"
     ]
   }
 ]

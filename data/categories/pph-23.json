@@ -1273,9 +1273,10 @@
       ],
       "supersedes": [],
       "supersededBy": [
-        "pph-23-jasa-2001"
+        "pph-23-jasa-2001",
+        "pph-23-katering-pre2015"
       ],
-      "notes": "UU 7/1983 Pasal 23 ayat (1) huruf c: imbalan jasa 15%, sewa 10%. Jasa katering/tata boga belum dibedakan dari jasa lainnya — tarif sama 15%. Belum ada DPP khusus katering (DPP = jumlah bruto). Perlakuan khusus katering baru diatur secara eksplisit oleh PMK 141/2015.",
+      "notes": "UU 7/1983 Pasal 23 ayat (1) huruf c: imbalan jasa 15%, sewa 10%. Jasa katering/tata boga belum dibedakan dari jasa lainnya — tarif sama 15%. Belum ada DPP khusus katering (DPP = jumlah bruto). Perlakuan khusus katering baru diatur secara eksplisit oleh PMK 141/2015. Sejak 2001, jasa umum dilanjutkan pph-23-jasa-2001 dan jasa katering dilanjutkan pph-23-katering-pre2015.",
       "examples": [
         {
           "scenario": "Jasa konsultasi Rp 50.000.000 tahun 1995",

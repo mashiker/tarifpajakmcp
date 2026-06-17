@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "uu-17-2000",
     "number": "17",
@@ -22,6 +22,9 @@
     ],
     "referencingEntries": [
       "pph-21-progressive-pre2009",
+      "pph-22-bendaharawan",
+      "pph-22-bumn-pembelian",
+      "pph-22-pengadaan-pemerintah",
       "pph-23-jasa-2001",
       "pph-23-katering-pre2015",
       "pph-final-bunga-pre2009",

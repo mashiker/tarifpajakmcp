@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "group": "ppn",
     "count": 3,
@@ -32,20 +32,20 @@
           "ppn-10pct"
         ],
         "supersededBy": [
-          "ppn-11pct-effective-2025"
+          "ppn-11pct-effective-2025",
+          "ppn-12pct-mewah-2025"
         ]
       },
       {
         "id": "ppn-11pct-effective-2025",
-        "transactionType": "Penyerahan BKP/JKP dalam negeri",
+        "transactionType": "Penyerahan BKP/JKP dalam negeri (selain barang/jasa mewah)",
         "rate": "11%",
-        "effectiveFrom": "2025-01-01",
+        "effectiveFrom": "2025-02-01",
         "effectiveTo": null,
         "status": "berlaku",
         "legalBasis": "PMK 131/2024 Pasal 2; UU 7/2021 (HPP) Pasal 7 ayat (1)",
         "supersedes": [
-          "ppn-11pct-2022",
-          "ppn-10pct"
+          "ppn-11pct-2022"
         ],
         "supersededBy": []
       }

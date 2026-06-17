@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "bea-meterai-1000",
     "category": "Bea Meterai",
@@ -9,9 +9,9 @@
     "transactionType": "Dokumen / Surat (UU 13/1985)",
     "description": "Bea Meterai Rp 1.000 berdasarkan UU 13/1985. Berlaku untuk dokumen dengan nilai > Rp 200.000. Periode 1986-1999.",
     "rate": {
-      "type": "percentage",
-      "value": 0,
-      "effectiveRate": "Rp 1.000 per lembar untuk dokumen > Rp 200.000"
+      "type": "formula",
+      "value": "Rp 1.000 per lembar",
+      "effectiveRate": "Nominal tetap Rp 1.000 untuk dokumen > Rp 200.000"
     },
     "taxBase": "Dokumen dengan nominal > Rp 200.000",
     "payer": "Pihak yang menandatangani / membuat dokumen",

@@ -1,0 +1,28 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-06-16T15:43:04.067Z",
+  "data": {
+    "id": "pmk-81-2024",
+    "number": "81",
+    "year": 2024,
+    "title": "PMK tentang Pajak Penghasilan atas Penghasilan Sehubungan dengan Aset Kripto dan Imbalan Jasa Melalui Perdagangan Melalui Sistem Elektronik",
+    "shortName": "PMK PPh Aset Kripto & PMSE",
+    "type": "PMK",
+    "promulgationDate": "2024-11-29",
+    "effectiveDate": "2025-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024",
+    "status": "berlaku",
+    "description": "PMK yang mengatur pemungutan PPh Pasal 22 final atas transaksi aset kripto (0,21% melalui PPMSE) dan ketentuan PPh atas PMSE. Melengkapi PP 58/2023 dan PMK 131/2024.",
+    "relevantArticles": "Pasal 2, 3, 4, 5",
+    "relatedRegulations": [
+      "pp-58-2023",
+      "pmk-131-2024"
+    ],
+    "referencingEntries": [
+      "pph-22-pmse",
+      "pph-22-kripto",
+      "pph-final-bunga-koperasi"
+    ]
+  }
+}

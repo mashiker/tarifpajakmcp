@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "ppn-jasa-tenaga-listrik",
     "category": "PPN",
@@ -52,6 +52,7 @@
     "relatedEntries": {
       "sameCategory": [
         "ppn-11pct-effective-2025",
+        "ppn-12pct-mewah-2025",
         "ppn-11pct-2022",
         "ppn-10pct",
         "ppn-ekspor-bkp",

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "uu-10-1995",
     "number": "10",
@@ -29,7 +29,13 @@
       "pph-21-ptkp-1995",
       "pph-21-ptkp-2005",
       "pph-21-ptkp-2009",
-      "pph-22-pre2024"
+      "pph-22-impor-2024",
+      "pph-22-pembelian-barang-2024",
+      "pph-22-penjualan-barang-2024",
+      "pph-22-impor-api-produsen",
+      "pph-22-ekspor-batubara",
+      "pph-22-pre2024",
+      "pph-final-investasi-lpi"
     ]
   }
 }

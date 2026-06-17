@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pph-21-ter-c-detail",
     "category": "PPh",
     "taxType": "PPh 21",
-    "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
-    "description": "Tabel lengkap TER Kategori C (Kawin, tanggungan ≥3) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
+    "transactionType": "TER Kategori C (K/3 - Kawin 3+ Tanggungan)",
+    "description": "Tabel lengkap TER Kategori C khusus untuk Wajib Pajak Orang Pribadi berstatus Kawin dengan 3 atau lebih tanggungan (K/3). Berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
     "rate": {
       "type": "progressive",
       "value": "0% – 25% (42 lapisan)",

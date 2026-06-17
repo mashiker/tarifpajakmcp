@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pph-final-konstruksi",
     "category": "PPh",
@@ -25,11 +25,13 @@
     "legalBasis": [
       {
         "regulation": "PP 51/2008",
-        "article": "Pasal 2-5"
+        "article": "Pasal 2-5",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/4865/pp-no-51-tahun-2008"
       },
       {
         "regulation": "PP 40/2009",
-        "article": "Pasal 2"
+        "article": "Pasal 2",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/5053/pp-no-40-tahun-2009"
       },
       {
         "regulation": "UU 7/2021 (HPP)",

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "uu-8-1983-ppn",
     "number": "8",
@@ -38,6 +38,8 @@
       "pph-21-ter-a-detail",
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail",
+      "pph-22-pmse",
+      "pph-22-kripto",
       "pph-22-pre2024",
       "pph-23-jasa-pre2001",
       "pph-26-tax-treaty",
@@ -45,6 +47,7 @@
       "pph-final-sewa-tanah",
       "pph-final-transaksi-saham-bursa",
       "pph-final-konstruksi",
+      "pph-final-bunga-koperasi",
       "pph-final-transportasi",
       "pph-final-migas",
       "pph-final-pengalihan-pp71",

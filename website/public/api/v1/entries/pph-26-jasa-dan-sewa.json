@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pph-26-jasa-dan-sewa",
     "category": "PPh",
@@ -24,10 +24,6 @@
         "regulation": "UU 7/2021 (HPP)",
         "article": "Pasal 26 ayat (2)",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-      },
-      {
-        "regulation": "PP 60/2023",
-        "article": "Pasal 5"
       }
     ],
     "supersedes": [],

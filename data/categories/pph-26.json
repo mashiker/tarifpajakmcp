@@ -41,22 +41,22 @@
         {
           "kode": "24-101-01",
           "nama": "Dividen",
-          "tarif": 15.0
+          "tarif": 15
         },
         {
           "kode": "24-102-01",
           "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
-          "tarif": 15.0
+          "tarif": 15
         },
         {
           "kode": "24-103-01",
           "nama": "Royalti",
-          "tarif": 15.0
+          "tarif": 15
         },
         {
           "kode": "24-105-01",
           "nama": "Bunga Pinjaman yang Diterima  Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap Melalui Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi",
-          "tarif": 0.0
+          "tarif": 0
         },
         {
           "kode": "28-413-01",
@@ -94,10 +94,6 @@
           "regulation": "UU 7/2021 (HPP)",
           "article": "Pasal 26 ayat (1) huruf a",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-        },
-        {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 5"
         }
       ],
       "supersedes": [],
@@ -115,7 +111,7 @@
         {
           "kode": "24-101-01",
           "nama": "Dividen",
-          "tarif": 15.0
+          "tarif": 15
         }
       ],
       "examples": [
@@ -148,10 +144,6 @@
           "regulation": "UU 7/2021 (HPP)",
           "article": "Pasal 26 ayat (1) huruf b",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-        },
-        {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 5"
         }
       ],
       "supersedes": [],
@@ -169,7 +161,7 @@
         {
           "kode": "24-102-01",
           "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
-          "tarif": 15.0
+          "tarif": 15
         }
       ],
       "examples": [
@@ -202,10 +194,6 @@
           "regulation": "UU 7/2021 (HPP)",
           "article": "Pasal 26 ayat (1) huruf c",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-        },
-        {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 5"
         }
       ],
       "supersedes": [],
@@ -223,7 +211,7 @@
         {
           "kode": "24-103-01",
           "nama": "Royalti",
-          "tarif": 15.0
+          "tarif": 15
         }
       ],
       "examples": [
@@ -256,10 +244,6 @@
           "regulation": "UU 7/2021 (HPP)",
           "article": "Pasal 26 ayat (2)",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-        },
-        {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 5"
         }
       ],
       "supersedes": [],
@@ -325,10 +309,6 @@
           "regulation": "UU 7/2021 (HPP)",
           "article": "Pasal 20 ayat (1)",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-        },
-        {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 5 ayat (3)"
         }
       ],
       "supersedes": [],

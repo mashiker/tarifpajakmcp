@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pph-21-ter-b-detail",
     "category": "PPh",
     "taxType": "PPh 21",
-    "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
-    "description": "Tabel lengkap TER Kategori B (Kawin, tanggungan 0-2) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
+    "transactionType": "TER Kategori B (TK/1-2, K/0-2)",
+    "description": "Tabel lengkap TER Kategori B untuk Wajib Pajak Orang Pribadi berstatus: Tidak Kawin dengan 1-2 tanggungan (TK/1, TK/2), atau Kawin dengan 0-2 tanggungan (K/0, K/1, K/2). Berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
     "rate": {
       "type": "progressive",
       "value": "0% – 25% (42 lapisan)",

@@ -22,9 +22,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
+          "regulation": "PP 94/2010",
           "article": "Pasal 2",
-          "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
         },
         {
           "regulation": "UU 7/2021 (HPP)",
@@ -77,9 +77,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
+          "regulation": "PP 94/2010",
           "article": "Pasal 3",
-          "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
         }
       ],
       "supersedes": [],
@@ -131,9 +131,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
+          "regulation": "PP 94/2010",
           "article": "Pasal 4",
-          "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
         }
       ],
       "supersedes": [],
@@ -259,12 +259,12 @@
         {
           "kode": "22-403-01",
           "nama": "Penjualan Barang yang Tergolong Sangat Mewah Selain Rumah Beserta Tanahnya, Apartemen, Kondominium dan Sejenisnya",
-          "tarif": 5.0
+          "tarif": 5
         },
         {
           "kode": "22-403-02",
           "nama": "Penjualan Barang yang Tergolong Sangat Mewah Untuk Rumah Beserta Tanahnya, Apartemen, Kondominium dan Sejenisnya",
-          "tarif": 1.0
+          "tarif": 1
         },
         {
           "kode": "22-405-01",
@@ -339,8 +339,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 2 ayat (1)"
+          "regulation": "PP 94/2010",
+          "article": "Pasal 2 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
         },
         {
           "regulation": "UU 7/2021 (HPP)",
@@ -397,8 +398,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 3 ayat (1)"
+          "regulation": "PMK 34/2017",
+          "article": "Pasal 3 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017"
         },
         {
           "regulation": "UU 7/2021 (HPP)",
@@ -450,8 +452,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 2 ayat (2)"
+          "regulation": "PP 94/2010",
+          "article": "Pasal 2 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
         },
         {
           "regulation": "UU 7/2021 (HPP)",
@@ -504,8 +507,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 3 ayat (2)"
+          "regulation": "PMK 34/2017",
+          "article": "Pasal 3 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017"
         },
         {
           "regulation": "UU 7/2021 (HPP)",
@@ -557,8 +561,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 4 ayat (1)"
+          "regulation": "PMK 34/2017",
+          "article": "Pasal 4 ayat (1)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017"
         },
         {
           "regulation": "UU 7/2021 (HPP)",
@@ -616,8 +621,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 4 ayat (2)"
+          "regulation": "PMK 81/2024",
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024"
         },
         {
           "regulation": "UU 7/2021 (HPP)",
@@ -678,8 +684,9 @@
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PP 60/2023",
-          "article": "Pasal 4 ayat (3)"
+          "regulation": "PMK 81/2024",
+          "article": "Pasal 4 ayat (3)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024"
         },
         {
           "regulation": "UU 7/2021 (HPP)",
@@ -741,7 +748,8 @@
       "legalBasis": [
         {
           "regulation": "PP 94/2010",
-          "article": "Pasal 2-4"
+          "article": "Pasal 2-4",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
         },
         {
           "regulation": "UU 36/2008",
@@ -749,14 +757,12 @@
           "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
         }
       ],
-      "supersedes": [
-        "pph-22-pre2010"
-      ],
+      "supersedes": [],
       "supersededBy": [
         "pph-22-impor-2024",
         "pph-22-penjualan-barang-2024"
       ],
-      "notes": "Tarif pra-PP 60/2023: Impor non-API 7,5%, API produsen 2,5%, API umum 7,5%. Penjualan BBM 0,5%. Pembelian bahan industri 0,25%. Bendaharawan 1,5%.",
+      "notes": "Tarif pra-PP 60/2023: Impor non-API 7,5%, API produsen 2,5%, API umum 7,5%. Penjualan BBM 0,5%. Pembelian bahan industri 0,25%. Bendaharawan 1,5%. Berdasarkan PP 94/2010 jo. Kep-KMK 523/KMK.04/2002.",
       "tags": [
         "pph-22",
         "historis",

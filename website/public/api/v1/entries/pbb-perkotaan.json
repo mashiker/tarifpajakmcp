@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pbb-perkotaan",
     "category": "Pajak Daerah",
@@ -30,7 +30,8 @@
       },
       {
         "regulation": "UU 28/2009",
-        "article": "Pasal 1-5"
+        "article": "Pasal 1-5",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009"
       }
     ],
     "supersedes": [],

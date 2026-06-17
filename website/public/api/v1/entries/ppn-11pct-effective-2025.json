@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "ppn-11pct-effective-2025",
     "category": "PPN",
     "taxType": "PPN",
-    "transactionType": "Penyerahan BKP/JKP dalam negeri",
-    "description": "Tarif PPN efektif 11% berdasarkan mekanisme PMK 131/2024. Tarif dasar UU HPP menetapkan PPN 12%, namun PMK 131/2024 menetapkan tarif efektif yang diperhitungkan sebagai 11/12 dari tarif dasar 12%.",
+    "transactionType": "Penyerahan BKP/JKP dalam negeri (selain barang/jasa mewah)",
+    "description": "Tarif PPN efektif 11% untuk Barang dan Jasa Kena Pajak selain barang/jasa mewah, berdasarkan PMK 131/2024. Tarif dasar UU HPP menetapkan PPN 12% sejak 1 Januari 2025, namun PMK 131/2024 menetapkan tarif efektif 11% (diperhitungkan sebagai 11/12 dari tarif dasar 12%) untuk BKP/JKP umum. Berbeda dengan barang/jasa mewah yang dikenakan tarif efektif 12% sejak 1 Februari 2025 (lihat entry ppn-12pct-mewah-2025).",
     "rate": {
       "type": "percentage",
       "value": 11,
@@ -17,7 +17,7 @@
     "payer": "Konsumen akhir",
     "recipient": "Negara",
     "withholder": "PKP (Pengusaha Kena Pajak) sebagai pemungut",
-    "effectiveFrom": "2025-01-01",
+    "effectiveFrom": "2025-02-01",
     "effectiveTo": null,
     "status": "berlaku",
     "legalBasis": [
@@ -33,14 +33,13 @@
       }
     ],
     "supersedes": [
-      "ppn-11pct-2022",
-      "ppn-10pct"
+      "ppn-11pct-2022"
     ],
     "supersededBy": [],
-    "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.",
+    "notes": "UU HPP menaikkan tarif dasar PPN menjadi 12% per 1 Januari 2025. PMK 131/2024 membagi penerapan: tarif efektif 12% hanya untuk barang/jasa mewah tertentu (sejak 1 Februari 2025), sementara BKP/JKP lainnya tetap memakai tarif efektif 11% (mekanisme 11/12 × 12%). Untuk Januari 2025 seluruhnya masih 11%.",
     "examples": [
       {
-        "scenario": "Penjualan BKP Rp 1.000.000",
+        "scenario": "Penjualan BKP umum Rp 1.000.000",
         "calculation": "PPN = 11% × Rp 1.000.000",
         "result": "PPN = Rp 110.000"
       }
@@ -51,13 +50,13 @@
       "pmk-131-2024",
       "berlaku"
     ],
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-06-16",
     "relatedEntries": {
       "supersedes": [
-        "ppn-11pct-2022",
-        "ppn-10pct"
+        "ppn-11pct-2022"
       ],
       "sameCategory": [
+        "ppn-12pct-mewah-2025",
         "ppn-11pct-2022",
         "ppn-10pct",
         "ppn-ekspor-bkp",

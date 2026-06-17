@@ -93,7 +93,16 @@ for (const law of consolidatedLaws) {
 console.log(`✅ Loaded ${consolidatedLaws.length} consolidated laws`);
 
 // ── Generate public artifacts ─────────────────────────────────
+// Write to BOTH root public/ (for API consumers) and website/public/
+// (for the website itself to read at build/dev time).
 const publicDir = join(ROOT, 'public');
+const websitePublicDir = join(ROOT, 'website', 'public');
+
+/** Write a file to both public dirs so the website and root API stay in sync. */
+function writePublic(name: string, content: string) {
+  writeFileSync(join(publicDir, name), content);
+  writeFileSync(join(websitePublicDir, name), content);
+}
 
 // api.json - full database (with consolidated laws)
 const apiData = {
@@ -143,8 +152,8 @@ const apiData = {
   }))
 };
 
-writeFileSync(join(publicDir, 'api.json'), JSON.stringify(apiData, null, 2));
-console.log('📝 Generated public/api.json');
+writePublic('api.json', JSON.stringify(apiData, null, 2));
+console.log('📝 Generated public/api.json (+ website/public/api.json)');
 
 // rates.json - normalized flat entries
 const ratesData = allEntries.map(e => ({
@@ -159,15 +168,15 @@ const ratesData = allEntries.map(e => ({
   tags: e.tags
 }));
 
-writeFileSync(join(publicDir, 'rates.json'), JSON.stringify(ratesData, null, 2));
+writePublic('rates.json', JSON.stringify(ratesData, null, 2));
 console.log('📝 Generated public/rates.json');
 
 // regulations.json
-writeFileSync(join(publicDir, 'regulations.json'), JSON.stringify(regulations, null, 2));
+writePublic('regulations.json', JSON.stringify(regulations, null, 2));
 console.log('📝 Generated public/regulations.json');
 
 // consolidated.json - standalone consolidated laws file
-writeFileSync(join(publicDir, 'consolidated.json'), JSON.stringify(consolidatedLaws, null, 2));
+writePublic('consolidated.json', JSON.stringify(consolidatedLaws, null, 2));
 console.log('📝 Generated public/consolidated.json');
 
 // llms.txt - chatbot-friendly guide
@@ -228,13 +237,14 @@ Database ini adalah referensi bersumber dari regulasi resmi, BUKAN nasihat hukum
 Selalu verifikasi dengan peraturan resmi terbaru.
 
 ## Links
-- API: https://tarif-pajak-id.vercel.app/api.json
-- Consolidated: https://tarif-pajak-id.vercel.app/consolidated.json
-- GitHub: https://github.com/user/tarif-pajak-id
+- API: https://tarif-pajak-id.pages.dev/api.json
+- Consolidated: https://tarif-pajak-id.pages.dev/consolidated.json
+- Website: https://tarif-pajak-id.pages.dev
+- GitHub: https://github.com/mashiker/tarifpajakmcp
 - Sumber regulasi: pasal.id, peraturan.bpk.go.id, peraturan.go.id
 `;
 
-writeFileSync(join(publicDir, 'llms.txt'), llms);
+writePublic('llms.txt', llms);
 console.log('📝 Generated public/llms.txt');
 
 console.log('\n✅ Build complete!');

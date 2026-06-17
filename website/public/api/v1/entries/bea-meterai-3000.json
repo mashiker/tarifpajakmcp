@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "bea-meterai-3000",
     "category": "Bea Meterai",
@@ -9,9 +9,9 @@
     "transactionType": "Dokumen / Surat (PP 23/2000)",
     "description": "Bea Meterai Rp 3.000 berdasarkan PP 23/2000. Berlaku untuk dokumen dengan nilai > Rp 500.000. Periode 2000-2006.",
     "rate": {
-      "type": "percentage",
-      "value": 0,
-      "effectiveRate": "Rp 3.000 per lembar untuk dokumen > Rp 500.000"
+      "type": "formula",
+      "value": "Rp 3.000 per lembar",
+      "effectiveRate": "Nominal tetap Rp 3.000 untuk dokumen > Rp 500.000"
     },
     "taxBase": "Dokumen dengan nominal > Rp 500.000",
     "payer": "Pihak yang menandatangani / membuat dokumen",

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "description": "Data untuk kalkulasi PPh 21",
     "progressiveRate": {
@@ -46,7 +46,7 @@
       "source": "PMK 122/2015"
     },
     "ter": {
-      "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif lama sejak 1 Januari 2024. Terdiri dari 3 kategori: TER A (tidak kawin), TER B (kawin 0-2 tanggungan), TER C (kawin ≥3 tanggungan). Masing-masing memiliki 42 lapisan tarif.",
+      "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif lama sejak 1 Januari 2024. Terdiri dari 3 kategori: TER A (TK/0), TER B (TK/1-2, K/0-2), TER C (K/3). Masing-masing memiliki 42 lapisan tarif.",
       "categories": [
         "A",
         "B",

@@ -13,7 +13,7 @@ import BaseLayout from '../layouts/Base.astro';
   <!-- Header -->
   <div class="mb-10">
     <div class="flex items-center gap-3 mb-3">
-      <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent-soft)]">
+      <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--accent-soft)]">
         <svg class="w-5 h-5 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
       </div>
       <div>
@@ -24,7 +24,7 @@ import BaseLayout from '../layouts/Base.astro';
   </div>
 
   <!-- Info Cards -->
-  <div class="grid grid-cols-3 gap-3 mb-10">
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-10">
     <div class="card p-4">
       <div class="text-[11px] text-[var(--text-tertiary)] font-medium mb-1">Base URL</div>
       <code class="text-sm font-mono font-semibold text-[var(--text)]">/api/v1/</code>
@@ -42,57 +42,62 @@ import BaseLayout from '../layouts/Base.astro';
   <!-- Endpoints -->
   <div class="mb-10">
     <h2 class="section-heading mb-5">Endpoints</h2>
-    
+
     {[
-      { group: 'META', color: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300', endpoints: [
+      { group: 'META', endpoints: [
         { method: 'GET', path: '/api/v1/index.json', desc: 'API index' },
         { method: 'GET', path: '/api/v1/stats.json', desc: 'Statistik database' },
       ]},
-      { group: 'ENTRIES', color: 'bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-400', endpoints: [
+      { group: 'ENTRIES', endpoints: [
         { method: 'GET', path: '/api/v1/entries/index.json', desc: 'Daftar semua entries (ringkasan)' },
         { method: 'GET', path: '/api/v1/entries/{id}.json', desc: 'Detail 1 entry lengkap' },
       ]},
-      { group: 'CATEGORIES', color: 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400', endpoints: [
+      { group: 'CATEGORIES', endpoints: [
         { method: 'GET', path: '/api/v1/categories/index.json', desc: 'Daftar semua kategori' },
         { method: 'GET', path: '/api/v1/categories/{slug}.json', desc: 'Entries dalam 1 kategori' },
       ]},
-      { group: 'TEMPORAL', color: 'bg-amber-50 text-amber-700 dark:bg-amber-950/30 dark:text-amber-400', endpoints: [
+      { group: 'TEMPORAL', endpoints: [
         { method: 'GET', path: '/api/v1/by-year/{year}.json', desc: 'Entries berlaku di tahun tsb' },
       ]},
-      { group: 'BPPU', color: 'bg-teal-50 text-teal-700 dark:bg-teal-950/30 dark:text-teal-400', endpoints: [
+      { group: 'BPPU', endpoints: [
         { method: 'GET', path: '/api/v1/bppu/index.json', desc: 'Semua kode BPPU + mapping' },
         { method: 'GET', path: '/api/v1/bppu/{prefix}.json', desc: 'Kode BPPU per prefix' },
       ]},
-      { group: 'TIMELINE', color: 'bg-rose-50 text-rose-700 dark:bg-rose-950/30 dark:text-rose-400', endpoints: [
+      { group: 'TIMELINE', endpoints: [
         { method: 'GET', path: '/api/v1/timeline/index.json', desc: 'Daftar timeline groups' },
         { method: 'GET', path: '/api/v1/timeline/{group}.json', desc: 'Rantai sejarah tarif' },
       ]},
-      { group: 'SEARCH', color: 'bg-cyan-50 text-cyan-700 dark:bg-cyan-950/30 dark:text-cyan-400', endpoints: [
+      { group: 'SEARCH', endpoints: [
         { method: 'GET', path: '/api/v1/search-index.json', desc: 'Inverted index (client-side search)' },
       ]},
-      { group: 'REGULATIONS', color: 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400', endpoints: [
+      { group: 'REGULATIONS', endpoints: [
         { method: 'GET', path: '/api/v1/regulations/index.json', desc: 'Daftar semua regulasi' },
         { method: 'GET', path: '/api/v1/regulations/{id}.json', desc: 'Detail regulasi + entries' },
       ]},
-      { group: 'CALCULATOR', color: 'bg-green-50 text-green-700 dark:bg-green-950/30 dark:text-green-400', endpoints: [
+      { group: 'CALCULATOR', endpoints: [
         { method: 'GET', path: '/api/v1/calculator/index.json', desc: 'Daftar kalkulator' },
         { method: 'GET', path: '/api/v1/calculator/{id}.json', desc: 'Data kalkulasi (brackets, PTKP)' },
       ]},
-      { group: 'SPEC', color: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300', endpoints: [
+      { group: 'CONSOLIDATED', endpoints: [
+        { method: 'GET', path: '/api/v1/consolidated/index.json', desc: 'Daftar UU Konsolidasi (KUP, PPh, PPN)' },
+        { method: 'GET', path: '/api/v1/consolidated/{id}.json', desc: 'Detail UU Konsolidasi + ringkasan pasal' },
+        { method: 'GET', path: '/api/v1/consolidated/{id}/pasal-{number}.json', desc: 'Detail 1 pasal + riwayat amendemen' },
+      ]},
+      { group: 'SPEC', endpoints: [
         { method: 'GET', path: '/api/v1/openapi.json', desc: 'OpenAPI 3.0 specification' },
       ]},
     ].map((section: any) => (
       <div class="mb-4">
         <h3 class="text-xs font-semibold text-[var(--text-secondary)] mb-2 flex items-center gap-2">
-          <span class={`px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold ${section.color}`}>{section.group}</span>
+          <span class="cat-chip" style="cursor:default;">{section.group}</span>
         </h3>
         <div class="card overflow-hidden">
           <table class="data-table">
-            <thead><tr><th style="width:70px">Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+            <thead><tr><th style="width:70px">Method</th><th scope="col">Endpoint</th><th scope="col">Deskripsi</th></tr></thead>
             <tbody>
               {section.endpoints.map((ep: any) => (
                 <tr>
-                  <td><span class="bg-slate-100 dark:bg-slate-800 text-[var(--text-secondary)] px-2 py-0.5 rounded-md text-[10px] font-mono font-bold">GET</span></td>
+                  <td><span class="bg-[var(--accent-soft)] text-[var(--accent)] px-2 py-0.5 rounded-[var(--radius-sm)] text-[10px] font-mono font-bold">GET</span></td>
                   <td class="font-mono text-xs text-[var(--text)]">{ep.path}</td>
                   <td class="text-sm text-[var(--text-secondary)]">{ep.desc}</td>
                 </tr>
@@ -109,14 +114,17 @@ import BaseLayout from '../layouts/Base.astro';
     <h2 class="section-heading mb-5">Try It</h2>
     <div class="card p-6">
       <div class="flex flex-wrap gap-2 mb-4">
-        <select id="api-endpoint" class="border border-[var(--border)] rounded-xl px-3 py-2.5 text-sm font-mono bg-[var(--surface)] flex-1 min-w-[200px] focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all">
+        <select id="api-endpoint" class="border border-[var(--border)] rounded-lg px-3 py-2.5 text-sm font-mono bg-[var(--surface)] flex-1 min-w-[200px] focus:ring-2 focus:ring-[var(--accent)]/15 focus:border-[var(--accent)] outline-none transition-all">
           <option value="/api/v1/index.json">GET /api/v1/index.json</option>
           <option value="/api/v1/stats.json">GET /api/v1/stats.json</option>
           <option value="/api/v1/entries/index.json">GET /api/v1/entries/index.json</option>
-          <option value="/api/v1/categories/index.json">GET /api/v1/categories/index.json</option>
-          <option value="/api/v1/by-year/2001.json">GET /api/v1/by-year/2001.json</option>
-          <option value="/api/v1/timeline/pph-21-progressive.json">GET /api/v1/timeline/pph-21-progressive.json</option>
+          <option value="/api/v1/entries/ppn-12pct-mewah-2025.json">GET /api/v1/entries/ppn-12pct-mewah-2025.json</option>
+          <option value="/api/v1/categories/ppn.json">GET /api/v1/categories/ppn.json</option>
+          <option value="/api/v1/by-year/2025.json">GET /api/v1/by-year/2025.json</option>
           <option value="/api/v1/calculator/pph-21.json">GET /api/v1/calculator/pph-21.json</option>
+          <option value="/api/v1/consolidated/index.json">GET /api/v1/consolidated/index.json</option>
+          <option value="/api/v1/consolidated/uu-pph-konsolidasi.json">GET /api/v1/consolidated/uu-pph-konsolidasi.json</option>
+          <option value="/api/v1/consolidated/uu-kup-konsolidasi/pasal-17.json">GET /api/v1/consolidated/.../pasal-17.json</option>
           <option value="/api/v1/bppu/index.json">GET /api/v1/bppu/index.json</option>
           <option value="/api/v1/openapi.json">GET /api/v1/openapi.json</option>
         </select>
@@ -134,15 +142,15 @@ import BaseLayout from '../layouts/Base.astro';
     <h2 class="section-heading mb-5">Contoh Use Case</h2>
     <div class="grid sm:grid-cols-2 gap-3">
       {[
-        { q: 'Berapa tarif PPN tahun 2001?', cmd: 'curl /api/v1/by-year/2001.json', hint: '→ ppn-10pct: 10%' },
+        { q: 'Berapa tarif PPN tahun 2025?', cmd: 'curl /api/v1/by-year/2025.json', hint: '→ 11% (umum) & 12% (mewah)' },
         { q: 'Berapa tarif PPh 23 jasa tahun 1999?', cmd: 'curl /api/v1/by-year/1999.json', hint: '→ pph-23-jasa-pre2001: 15%' },
-        { q: 'Timeline lengkap PTKP?', cmd: 'curl /api/v1/timeline/pph-21-ptkp.json', hint: '→ 5 era: 960K → 54M' },
-        { q: 'Data untuk kalkulasi PPh 21?', cmd: 'curl /api/v1/calculator/pph-21.json', hint: '→ brackets + PTKP values' },
+        { q: 'Tarif TER PPh 21 (2024+)?', cmd: 'curl /api/v1/calculator/pph-21.json', hint: '→ brackets TER A/B/C + PTKP' },
+        { q: 'Pasal 17 UU PPh Konsolidasi?', cmd: 'curl /api/v1/consolidated/uu-pph-konsolidasi/pasal-17.json', hint: '→ tarif progresif + riwayat' },
       ].map((uc: any) => (
         <div class="card-hover p-5">
           <div class="text-sm font-medium text-[var(--text)] mb-3">{uc.q}</div>
           <div class="code-block text-xs py-2.5">
-            <span class="text-emerald-400">$</span> {uc.cmd} <span class="text-[var(--text-secondary)]">{uc.hint}</span>
+            <span class="text-[#54C7BB]">$</span> {uc.cmd} <span class="text-[#9CA3AF]">{uc.hint}</span>
           </div>
         </div>
       ))}
@@ -156,22 +164,39 @@ import BaseLayout from '../layouts/Base.astro';
   const copyBtn = document.getElementById('api-copy-curl');
   const resp = document.getElementById('api-response');
 
-  btn?.addEventListener('click', async () => {
+  if (!sel || !btn || !copyBtn || !resp) throw new Error('API docs elements not found');
+
+  btn.addEventListener('click', async () => {
     const url = sel.value;
-    resp!.innerHTML = '<span class="text-[var(--text-tertiary)]">Loading...</span>';
+    resp.innerHTML = '<span class="text-[var(--text-tertiary)]">Loading...</span>';
     try {
       const r = await fetch(url);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const data = await r.json();
-      resp!.textContent = JSON.stringify(data, null, 2).substring(0, 5000);
+      const json = JSON.stringify(data, null, 2);
+      resp.textContent = json.length > 5000 ? json.substring(0, 5000) + '\n... (truncated)' : json;
     } catch (e: any) {
-      resp!.textContent = 'Error: ' + e.message;
+      resp.textContent = 'Error: ' + e.message;
     }
   });
 
-  copyBtn?.addEventListener('click', () => {
+  let copyTimeout: ReturnType<typeof setTimeout>;
+  copyBtn.addEventListener('click', async () => {
     const curl = `curl ${window.location.origin}${sel.value}`;
-    navigator.clipboard.writeText(curl);
-    copyBtn.textContent = 'Copied!';
-    setTimeout(() => { copyBtn.textContent = 'Copy curl'; }, 2000);
+    try {
+      await navigator.clipboard.writeText(curl);
+      copyBtn.textContent = 'Copied!';
+    } catch {
+      // Fallback for non-secure contexts
+      const ta = document.createElement('textarea');
+      ta.value = curl;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      copyBtn.textContent = 'Copied!';
+    }
+    clearTimeout(copyTimeout);
+    copyTimeout = setTimeout(() => { copyBtn.textContent = 'Copy curl'; }, 2000);
   });
 </script>

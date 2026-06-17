@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "endpoints": {
     "entries": "/api/v1/entries",
     "entry": "/api/v1/entries/{id}",
@@ -21,8 +21,8 @@
     "consolidatedPasal": "/api/v1/consolidated/{id}/pasal-{number}"
   },
   "stats": {
-    "entries": 136,
+    "entries": 137,
     "categories": 15,
-    "regulations": 39
+    "regulations": 40
   }
 }

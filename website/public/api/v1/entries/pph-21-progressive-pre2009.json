@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pph-21-progressive-pre2009",
     "category": "PPh",
@@ -54,12 +54,12 @@
       }
     ],
     "supersedes": [
-      "pph-21-progressive-pre2001"
+      "pph-21-progressive-uulama1994"
     ],
     "supersededBy": [
       "pph-21-progressive-pre2022"
     ],
-    "notes": "Tarif progresif UU 17/2000 dengan lapisan 5%, 10%, 15%, 25%, 35%.",
+    "notes": "Tarif progresif UU 17/2000 dengan lapisan 5%, 10%, 15%, 25%, 35%. Menggantikan tarif progresif UU 10/1994.",
     "tags": [
       "pph-21",
       "progresif",
@@ -79,7 +79,7 @@
         "pph-21-progressive-pre2022"
       ],
       "supersedes": [
-        "pph-21-progressive-pre2001"
+        "pph-21-progressive-uulama1994"
       ],
       "sameCategory": [
         "pph-21-ter-monthly-2024",

@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
-    "totalEntries": 136,
+    "totalEntries": 137,
     "totalCategories": 15,
-    "totalRegulations": 39,
+    "totalRegulations": 40,
     "byStatus": {
-      "berlaku": 111,
+      "berlaku": 112,
       "dicabut": 16,
       "diubah": 9
     },
@@ -80,7 +80,7 @@
       {
         "taxType": "PPN",
         "slug": "ppn",
-        "count": 14
+        "count": 15
       },
       {
         "taxType": "PPnBM",

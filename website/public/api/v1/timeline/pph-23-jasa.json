@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "group": "pph-23-jasa",
     "count": 3,
@@ -17,7 +17,8 @@
         "legalBasis": "UU 7/1983 Pasal 23 ayat (1) huruf c",
         "supersedes": [],
         "supersededBy": [
-          "pph-23-jasa-2001"
+          "pph-23-jasa-2001",
+          "pph-23-katering-pre2015"
         ]
       },
       {

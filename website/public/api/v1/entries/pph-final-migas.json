@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pph-final-migas",
     "category": "PPh",
@@ -30,7 +30,8 @@
       },
       {
         "regulation": "PP 51/2008",
-        "article": "Pasal 5B"
+        "article": "Pasal 5B",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/4865/pp-no-51-tahun-2008"
       }
     ],
     "supersedes": [],

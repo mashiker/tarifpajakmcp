@@ -1,0 +1,28 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-06-16T15:43:04.067Z",
+  "data": {
+    "id": "pmk-34-2017",
+    "number": "34",
+    "year": 2017,
+    "title": "PMK tentang Petunjuk Pelaksanaan Pemungutan Pajak Penghasilan Pasal 22 sehubungan dengan Pembayaran atas Penyerahan Barang dan Kegiatan di Bidang Impor atau Kegiatan Usaha di Bidang Lain",
+    "shortName": "PMK PPh 22 Bendaharawan",
+    "type": "PMK",
+    "promulgationDate": "2017-06-07",
+    "effectiveDate": "2017-06-07",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017",
+    "status": "berlaku",
+    "description": "PMK pelaksanaan pemungutan PPh 22 oleh bendahara pemerintah, BUMN/BUMD, dan pihak tertentu atas pembelian barang dan jasa. Mengatur tarif 1,5% untuk bendaharawan dan ketentuan khusus lainnya.",
+    "relevantArticles": "Pasal 2, 3, 4",
+    "relatedRegulations": [
+      "pp-94-2010",
+      "uu-7-2021-hpp"
+    ],
+    "referencingEntries": [
+      "pph-22-bendaharawan",
+      "pph-22-bumn-pembelian",
+      "pph-22-pengadaan-pemerintah"
+    ]
+  }
+}

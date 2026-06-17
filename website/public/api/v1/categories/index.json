@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "count": 15,
     "categories": [
@@ -101,7 +101,7 @@
         "taxType": "PPN",
         "slug": "ppn",
         "description": "Pajak Pertambahan Nilai - Pajak atas konsumsi Barang Kena Pajak dan/atau Jasa Kena Pajak di dalam Daerah Pabean",
-        "count": 14
+        "count": 15
       },
       {
         "category": "PPnBM",

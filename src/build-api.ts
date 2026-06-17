@@ -370,11 +370,11 @@ function main() {
       title: 'Tarif Pajak Indonesia API', version: '1.0.0',
       description: 'Open database tarif pajak Indonesia — pre-built static JSON API. Semua endpoint mengembalikan file JSON statis yang bisa di-cache.',
       license: { name: 'MIT', url: 'https://opensource.org/licenses/MIT' },
-      contact: { name: 'Tarif Pajak ID', url: 'https://tarif-pajak-id.vercel.app' },
+      contact: { name: 'Tarif Pajak ID', url: 'https://tarif-pajak-id.pages.dev' },
     },
     servers: [
-      { url: 'https://tarif-pajak-id.vercel.app', description: 'Production' },
-      { url: 'http://localhost:4325', description: 'Development' },
+      { url: 'https://tarif-pajak-id.pages.dev', description: 'Production' },
+      { url: 'http://localhost:4321', description: 'Development' },
     ],
     paths: {
       '/api/v1/index.json': { get: { summary: 'API Index', tags: ['Meta'], responses: { '200': { description: 'API info & endpoint list' } } } },
@@ -417,13 +417,13 @@ function main() {
       },
       '/api/v1/calculator/index.json': { get: { summary: 'Calculator List', tags: ['Calculator'], responses: { '200': { description: 'Available calculator data sets' } } } },
       '/api/v1/calculator/{id}.json': {
-      '/api/v1/consolidated/index.json': { get: { summary: 'List Consolidated Laws', tags: ['Consolidated'], responses: { '200': { description: 'All consolidated tax laws (KUP, PPh, PPN)' } } } },
-      '/api/v1/consolidated/{id}.json': { get: { summary: 'Get Consolidated Law', tags: ['Consolidated'], parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string', enum: ['uu-kup-konsolidasi', 'uu-pph-konsolidasi', 'uu-ppn-konsolidasi'] }, description: 'Consolidated law ID' }], responses: { '200': { description: 'Full consolidated law with pasal summaries' } } } },
-      '/api/v1/consolidated/{id}/pasal-{number}.json': { get: { summary: 'Get Pasal Detail', tags: ['Consolidated'], parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }, { name: 'number', in: 'path', required: true, schema: { type: 'string' }, description: 'Pasal number, e.g. 1, 2A' }], responses: { '200': { description: 'Full pasal detail with amendment history' } } } },
         get: { summary: 'Calculator Data', tags: ['Calculator'],
           parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string', enum: ['pph-21', 'pph-23', 'ppn', 'pph-badan'] } }],
           responses: { '200': { description: 'Static data for tax calculation' } } },
       },
+      '/api/v1/consolidated/index.json': { get: { summary: 'List Consolidated Laws', tags: ['Consolidated'], responses: { '200': { description: 'All consolidated tax laws (KUP, PPh, PPN)' } } } },
+      '/api/v1/consolidated/{id}.json': { get: { summary: 'Get Consolidated Law', tags: ['Consolidated'], parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string', enum: ['uu-kup-konsolidasi', 'uu-pph-konsolidasi', 'uu-ppn-konsolidasi'] }, description: 'Consolidated law ID' }], responses: { '200': { description: 'Full consolidated law with pasal summaries' } } } },
+      '/api/v1/consolidated/{id}/pasal-{number}.json': { get: { summary: 'Get Pasal Detail', tags: ['Consolidated'], parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }, { name: 'number', in: 'path', required: true, schema: { type: 'string' }, description: 'Pasal number, e.g. 1, 2A' }], responses: { '200': { description: 'Full pasal detail with amendment history' } } } },
     },
     components: {
       schemas: {

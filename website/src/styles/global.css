@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS variables are defined in BaseLayout <style is:inline> to avoid Tailwind stripping them */
+/* CSS variables are defined in BaseLayout <style is:inline> */
 
 @layer base {
   html {
@@ -19,7 +19,19 @@
     line-height: 1.6;
   }
   *, *::before, *::after { box-sizing: border-box; }
-  ::selection { background: rgba(13, 148, 136, .22); }
+  ::selection { background: rgba(13, 107, 99, .22); }
+
+  /* Focus-visible for accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Scroll margin for sticky header */
+  #main-content, #home-search, #db-search {
+    scroll-margin-top: calc(var(--header-height) + 16px);
+  }
 }
 
 @layer components {
@@ -31,96 +43,105 @@
     @apply text-[var(--text)] bg-[var(--surface-alt)];
   }
 
-  /* === BADGES === */
+  /* === BADGES — Stripe-callout style: dot + tint + uppercase === */
   .badge {
-    @apply inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-bold whitespace-nowrap tracking-wide;
+    @apply inline-flex items-center gap-1.5 px-2 py-0.5 rounded-[4px] text-[10px] font-bold whitespace-nowrap uppercase tracking-[0.04em] leading-relaxed;
   }
-  .badge-berlaku {
-    background: rgba(5, 150, 105, 0.08);
-    color: var(--status-active);
+  .badge::before {
+    content: "";
+    width: 6px; height: 6px; border-radius: 9999px;
+    background: currentColor;
+    flex-shrink: 0;
   }
-  .badge-dicabut {
-    background: rgba(220, 38, 38, 0.08);
-    color: var(--status-revoked);
-  }
-  .badge-diubah {
-    background: rgba(217, 119, 6, 0.08);
-    color: var(--status-changed);
-  }
-  .badge-belum-berlaku {
-    background: var(--surface-alt);
-    color: var(--status-pending);
-  }
+  .badge-berlaku { background: var(--status-active-soft); color: var(--status-active); }
+  .badge-dicabut { background: var(--status-revoked-soft); color: var(--status-revoked); }
+  .badge-diubah  { background: var(--status-changed-soft); color: var(--status-changed); }
+  .badge-belum_berlaku { background: var(--status-pending-soft); color: var(--status-pending); }
 
-  /* === DATA TABLES === */
-  .data-table {
-    @apply w-full border-collapse;
-  }
+  /* === DATA TABLES — models.dev discipline: hairline rows, sticky header, tabular numerics === */
+  .data-table { @apply w-full border-collapse; }
   .data-table th {
-    @apply bg-[var(--surface)] px-3 py-2.5 text-left text-[11px] font-bold text-[var(--text-tertiary)] uppercase tracking-wider border-b border-[var(--border)] whitespace-nowrap;
-    position: sticky; top: 0; z-index: 5;
+    @apply bg-[var(--surface-alt)] px-4 py-2.5 text-left text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider whitespace-nowrap;
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 2;
   }
   .data-table td {
-    @apply px-3 py-2.5 border-b border-[var(--border-subtle)] text-sm;
+    @apply px-4 py-2.5 text-sm;
+    border-bottom: 1px solid var(--border-subtle);
     vertical-align: middle;
   }
-  .data-table tbody tr {
-    @apply hover:bg-[var(--surface-alt)] transition-colors duration-150;
-  }
-  .data-table-pro td {
-    @apply py-3;
-  }
+  .data-table tbody tr { transition: background-color 150ms; }
+  .data-table tbody tr:hover { background: var(--accent-soft); }
+  /* numeric cells */
+  .data-table .num,
+  .data-table td.text-right { font-variant-numeric: tabular-nums; text-align: right; }
 
   /* === CARDS === */
   .card {
-    @apply bg-[var(--surface)] border border-[var(--border)] rounded-xl;
+    @apply bg-[var(--surface)] border border-[var(--border)] rounded-[var(--radius-lg)];
   }
   .card-hover {
-    @apply card transition-all duration-200 hover:shadow-md hover:border-[var(--border)];
+    @apply card transition-all duration-200;
+  }
+  .card-hover:hover {
+    border-color: var(--accent);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  }
+
+  /* === METRIC PILL — homepage KPI cards (was undefined, broke homepage) === */
+  .metric-pill {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 10px 16px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 84px;
+  }
+  .metric-pill .val {
+    font: 600 22px/1 var(--font-sans);
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+  .metric-pill .lbl {
+    font: 600 10px/1 var(--font-sans);
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
   }
 
   /* === TYPOGRAPHY === */
   .section-heading {
     @apply text-sm font-bold text-[var(--text)] uppercase tracking-wider;
   }
-  .section-title {
-    @apply text-xl font-bold tracking-tight text-[var(--text)];
-  }
-  .eyebrow {
-    @apply text-[11px] font-bold uppercase tracking-[.16em] text-[var(--accent)];
-  }
 
-  /* === RATE VALUES === */
+  /* === RATE VALUES (WCAG AA compliant) === */
   .rate-value {
-    @apply font-mono font-bold text-[var(--accent)] tabular-nums;
+    @apply font-mono font-bold text-[var(--accent-text)] tabular-nums;
   }
   .rate-value-lg {
-    @apply font-mono font-extrabold text-2xl tracking-tight text-[var(--accent)] tabular-nums;
-  }
-  .rate-chip {
-    @apply inline-flex rounded-md bg-[var(--surface-alt)] px-2 py-1 font-mono text-xs font-bold text-[var(--accent)] tabular-nums;
+    @apply font-mono font-extrabold text-2xl tracking-tight text-[var(--accent-text)] tabular-nums;
   }
 
   /* === BUTTONS === */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-[var(--text)] hover:opacity-90 text-[var(--bg)] rounded-lg font-semibold text-sm transition-all duration-200;
-  }
-  .dark .btn-primary {
-    @apply bg-white text-[#111318] hover:opacity-90;
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-[var(--text)] hover:bg-[var(--accent-hover)] text-[var(--surface)] rounded-[var(--radius)] font-semibold text-sm transition-all duration-200;
   }
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-[var(--surface)] border border-[var(--border)] text-[var(--text-secondary)] rounded-lg font-semibold text-sm hover:bg-[var(--surface-alt)] transition-all duration-200;
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-[var(--surface)] border border-[var(--border)] text-[var(--text-secondary)] rounded-[var(--radius)] font-semibold text-sm hover:bg-[var(--surface-alt)] transition-all duration-200;
   }
   .btn-ghost {
-    @apply inline-flex items-center gap-2 px-2.5 py-1.5 text-[var(--text-tertiary)] rounded-lg text-sm hover:bg-[var(--surface-alt)] hover:text-[var(--text-secondary)] transition-colors duration-200;
+    @apply inline-flex items-center gap-2 px-2.5 py-1.5 text-[var(--text-tertiary)] rounded-[var(--radius)] text-sm hover:bg-[var(--surface-alt)] hover:text-[var(--text-secondary)] transition-colors duration-200;
   }
 
-  /* === SEARCH === */
+  /* === SEARCH — single unified spec for ALL search inputs === */
   .search-input {
-    @apply w-full pl-10 pr-4 py-2 text-sm bg-[var(--surface)] border border-[var(--border)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20 focus:border-[var(--accent)] transition-all duration-200 placeholder:text-[var(--text-tertiary)];
+    @apply w-full h-10 pl-10 pr-3 text-sm bg-[var(--surface)] border border-[var(--border)] rounded-[var(--radius)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-offset-0 focus:border-[var(--accent)] transition-all duration-200 placeholder:text-[var(--text-tertiary)] text-[var(--text)];
   }
   .search-panel {
-    filter: drop-shadow(0 12px 32px rgba(0, 0, 0, .12));
+    filter: drop-shadow(0 12px 32px rgba(0, 0, 0, .08));
   }
 
   /* === SCROLLBAR === */
@@ -131,81 +152,112 @@
 
   /* === CATEGORY CARDS === */
   .category-card {
-    @apply relative bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 hover:shadow-md hover:border-[var(--border)] transition-all duration-200 cursor-pointer group;
+    @apply relative bg-[var(--surface)] border border-[var(--border)] rounded-[var(--radius-lg)] p-4 transition-all duration-200 cursor-pointer;
   }
-
-  /* === STAT CARDS === */
-  .stat-card {
-    @apply bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4;
-  }
-  .stat-card .stat-value {
-    @apply text-xl font-bold text-[var(--text)] tabular-nums;
-  }
-  .stat-card .stat-label {
-    @apply text-xs text-[var(--text-tertiary)] mt-1 font-medium;
-  }
-  .metric-pill {
-    @apply inline-flex items-center gap-1.5 rounded-lg bg-[var(--surface)] border border-[var(--border)] px-3 py-1.5;
-  }
-  .metric-pill .val {
-    @apply text-sm font-bold tracking-tight text-[var(--text)] tabular-nums;
-  }
-  .metric-pill .lbl {
-    @apply text-[11px] text-[var(--text-tertiary)] font-medium;
+  .category-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   }
 
   /* === CHIPS / TAGS === */
   .tag {
-    @apply inline-flex items-center gap-1.5 bg-[var(--surface-alt)] rounded-md px-2 py-1 text-xs font-mono text-[var(--text-secondary)] hover:bg-[var(--border)] transition-colors duration-150 border border-[var(--border-subtle)];
+    @apply inline-flex items-center gap-1.5 bg-[var(--surface-alt)] rounded-[var(--radius-sm)] px-2 py-1 text-xs font-mono text-[var(--text-secondary)] hover:bg-[var(--border)] transition-colors duration-150 border border-[var(--border-subtle)];
   }
   .chip {
-    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold border transition-all duration-200 cursor-pointer select-none;
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[var(--radius)] text-sm font-semibold border transition-all duration-200 cursor-pointer select-none;
   }
   .chip-default {
     @apply border-[var(--border)] bg-[var(--surface)] text-[var(--text-secondary)] hover:bg-[var(--surface-alt)];
   }
   .chip-active {
-    @apply border-[var(--text)] bg-[var(--text)] text-[var(--bg)];
+    @apply border-transparent bg-[var(--text)] text-[var(--surface)];
   }
-  .category-token {
-    @apply inline-flex rounded-md border border-[var(--border)] bg-[var(--surface-alt)] px-2 py-0.5 text-xs font-bold text-[var(--text-secondary)];
+
+  /* === CAT CHIP — monochrome outline (replaces rainbow category dots) === */
+  .cat-chip {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-secondary);
+    font: 600 12px/1 var(--font-sans);
+    padding: 7px 11px;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all 150ms;
+    white-space: nowrap;
+  }
+  .cat-chip:hover { border-color: var(--accent); color: var(--text); }
+  .cat-chip[data-active],
+  .cat-chip.active {
+    background: var(--accent-soft);
+    border-color: transparent;
+    color: var(--accent);
+  }
+
+  /* === TER TAB — PPh 21 calculator (moved here from page-local style) === */
+  .ter-tab {
+    @apply flex-1 flex flex-col items-center gap-0.5 px-3 py-2.5 rounded-[var(--radius)] border text-xs font-semibold cursor-pointer select-none transition-all duration-200;
+    border-color: var(--border);
+    background: var(--surface);
+    color: var(--text-secondary);
+  }
+  .ter-tab:hover { border-color: var(--accent); color: var(--text); }
+  .ter-tab.active {
+    border-color: transparent;
+    background: var(--accent);
+    color: var(--surface);
   }
 
   /* === CODE === */
   .code-block {
-    @apply font-mono text-xs bg-[#111318] text-[#edf0f5] rounded-lg p-4 overflow-x-auto border border-[var(--border)];
-  }
-
-  /* === FILTER === */
-  .filter-pill {
-    @apply flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-sm font-semibold text-[var(--text-secondary)] transition-all duration-200 hover:bg-[var(--surface-alt)];
-  }
-  .filter-pill span {
-    @apply rounded-md bg-[var(--surface-alt)] px-2 py-0.5 font-mono text-[11px] text-[var(--text-tertiary)];
-  }
-  .filter-pill.active {
-    @apply bg-[var(--text)] text-[var(--bg)] shadow-sm;
-  }
-  .filter-pill.active span {
-    @apply bg-white/15 text-[var(--bg)];
+    @apply font-mono text-xs rounded-[var(--radius-lg)] p-4 overflow-x-auto border border-[var(--border)];
+    background: var(--code-bg);
+    color: var(--code-text);
   }
 
   /* === SKIP LINK === */
+  /* Plain CSS instead of @apply sr-only — Tailwind's sr-only utility
+     fails to compile reliably inside @layer components, leaving the
+     link visible at rest. https://www.tpgi.com/the-anatomy-of-visually-hidden/ */
   .skip-link {
-    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[var(--text)] focus:text-[var(--bg)] focus:rounded-lg;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+  .skip-link:focus,
+  .skip-link:focus-visible {
+    position: fixed !important;
+    top: 16px !important;
+    left: 16px !important;
+    z-index: 100 !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 10px 18px !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    clip-path: none !important;
+    white-space: normal !important;
+    background: var(--text) !important;
+    color: var(--surface) !important;
+    border-radius: var(--radius) !important;
+    font: 600 13px/1 var(--font-sans) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
   }
 
   /* === MISC === */
-  .cell-wrap { white-space: normal !important; vertical-align: top !important; }
+  .cell-wrap { white-space: normal !important; vertical-align: top !important; max-width: none !important; }
 
   details summary { list-style: none; cursor: pointer; }
   details summary::-webkit-details-marker { display: none; }
   details summary::marker { display: none; content: ""; }
-
-  .mobile-card { transition: all 0.15s ease; }
-
-  /* === GLASS CARD === */
-  .glass {
-    @apply bg-[var(--surface)]/70 backdrop-blur-xl border border-[var(--border)];
-  }
 }

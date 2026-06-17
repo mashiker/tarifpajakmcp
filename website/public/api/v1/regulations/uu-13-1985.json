@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "uu-13-1985",
     "number": "13",
@@ -31,6 +31,7 @@
       "pph-final-pengalihan-pp131",
       "pph-umkm-1pct-pp46",
       "ppn-11pct-effective-2025",
+      "ppn-12pct-mewah-2025",
       "ppn-impor-bkp",
       "ppn-pmse",
       "ppn-jasa-tenaga-listrik",

@@ -12,9 +12,9 @@ Database terbuka berisi tarif pajak Indonesia dari 1983 hingga saat ini, lengkap
 
 | | |
 |---|---|
-| **136** entry tarif pajak | **111** tarif aktif (berlaku) |
+| **137** entry tarif pajak | **112** tarif aktif (berlaku) |
 | **15** kategori pajak | **170** kode BPPU |
-| **39** regulasi tercatat | **3** UU Konsolidasi (147 pasal) |
+| **40** regulasi tercatat | **3** UU Konsolidasi (147 pasal) |
 
 ---
 
@@ -80,7 +80,7 @@ curl https://tarif-pajak-id.pages.dev/api/v1/consolidated/uu-pph-konsolidasi/pas
 
 | Kategori | Entry | | Kategori | Entry |
 |----------|-------|-|----------|-------|
-| PPh 21 (TER + Progresif) | 29 | | PPN | 14 |
+| PPh 21 (TER + Progresif) | 29 | | PPN | 15 |
 | PPh 22 (Impor/Pembelian) | 11 | | PPnBM | 8 |
 | PPh 23 (Jasa/Sewa) | 8 | | Bea Meterai | 8 |
 | PPh 26 (WP Luar Negeri) | 7 | | PBB | 4 |

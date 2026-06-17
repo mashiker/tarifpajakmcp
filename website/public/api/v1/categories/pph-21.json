@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "category": "PPh",
     "taxType": "PPh 21",
@@ -146,7 +146,7 @@
       },
       {
         "id": "pph-21-ter-a-detail",
-        "transactionType": "TER Kategori A (Tidak Menikah)",
+        "transactionType": "TER Kategori A (TK/0 - Tidak Kawin Tanpa Tanggungan)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -154,7 +154,7 @@
       },
       {
         "id": "pph-21-ter-b-detail",
-        "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
+        "transactionType": "TER Kategori B (TK/1-2, K/0-2)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -162,7 +162,7 @@
       },
       {
         "id": "pph-21-ter-c-detail",
-        "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
+        "transactionType": "TER Kategori C (K/3 - Kawin 3+ Tanggungan)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",

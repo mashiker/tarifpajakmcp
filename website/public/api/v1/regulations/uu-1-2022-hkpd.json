@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "uu-1-2022-hkpd",
     "number": "1",
@@ -66,6 +66,8 @@
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail",
       "pph-22-impor-2024",
+      "pph-22-pembelian-barang-2024",
+      "pph-22-penjualan-barang-2024",
       "pph-22-impor-api-produsen",
       "pph-22-bendaharawan",
       "pph-22-ekspor-batubara",
@@ -115,6 +117,7 @@
       "pph-umkm-05pct-2018",
       "pph-umkm-1pct-pp46",
       "ppn-11pct-effective-2025",
+      "ppn-12pct-mewah-2025",
       "ppn-11pct-2022",
       "ppn-10pct",
       "ppn-ekspor-bkp",

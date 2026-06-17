@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "ppn-11pct-2022",
     "category": "PPN",
@@ -30,7 +30,8 @@
       "ppn-10pct"
     ],
     "supersededBy": [
-      "ppn-11pct-effective-2025"
+      "ppn-11pct-effective-2025",
+      "ppn-12pct-mewah-2025"
     ],
     "tags": [
       "ppn",
@@ -47,13 +48,15 @@
     ],
     "relatedEntries": {
       "supersededBy": [
-        "ppn-11pct-effective-2025"
+        "ppn-11pct-effective-2025",
+        "ppn-12pct-mewah-2025"
       ],
       "supersedes": [
         "ppn-10pct"
       ],
       "sameCategory": [
         "ppn-11pct-effective-2025",
+        "ppn-12pct-mewah-2025",
         "ppn-10pct",
         "ppn-ekspor-bkp",
         "ppn-impor-bkp",

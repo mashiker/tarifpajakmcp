@@ -1,0 +1,77 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-06-16T15:43:04.067Z",
+  "data": {
+    "id": "ppn-12pct-mewah-2025",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Penyerahan Barang/Jasa Mewah Tertentu",
+    "description": "Tarif PPN efektif 12% yang dikenakan khusus atas penyerahan Barang Kena Pajak dan Jasa Kena Pajak yang tergolong mewah (Barang/Jasa Mewah Tertentu), sesuai PMK 131/2024. Tarif 12% berlaku sejak 1 Februari 2025. Untuk bulan Januari 2025, seluruh BKP/JKP (termasuk barang mewah) masih menggunakan tarif efektif 11%.",
+    "rate": {
+      "type": "percentage",
+      "value": 12,
+      "effectiveRate": "12/12 × 12% = 12% (PMK 131/2024 — Barang/Jasa Mewah Tertentu)"
+    },
+    "taxBase": "Dasar Pengenaan Pajak (DPP) = Harga Jual/Penggantian/Uang muka/Nilai ekspor",
+    "payer": "Konsumen akhir",
+    "recipient": "Negara",
+    "withholder": "PKP (Pengusaha Kena Pajak) sebagai pemungut",
+    "effectiveFrom": "2025-02-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PMK 131/2024",
+        "article": "Pasal 3",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 7 ayat (1)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [
+      "ppn-11pct-2022"
+    ],
+    "supersededBy": [],
+    "notes": "PMK 131/2024 menetapkan kelompok Barang dan Jasa Kena Pajak yang tergolong mewah (contoh: kendaraan bermotor mewah, pesawat pribadi, kapal pesiar, dll.) dikenakan tarif efektif penuh 12% sejak 1 Februari 2025. Sementara BKP/JKP selain mewah tetap 11% efektif (lihat ppn-11pct-effective-2025). Daftar lengkap barang/jasa mewah tertentu ditetapkan dalam lampiran PMK 131/2024.",
+    "examples": [
+      {
+        "scenario": "Penjualan barang mewah tertentu Rp 400.000.000",
+        "calculation": "PPN = 12% × Rp 400.000.000",
+        "result": "PPN = Rp 48.000.000"
+      }
+    ],
+    "tags": [
+      "ppn",
+      "tarif-efektif",
+      "pmk-131-2024",
+      "barang-mewah",
+      "berlaku"
+    ],
+    "lastVerified": "2026-06-16",
+    "relatedEntries": {
+      "supersedes": [
+        "ppn-11pct-2022"
+      ],
+      "sameCategory": [
+        "ppn-11pct-effective-2025",
+        "ppn-11pct-2022",
+        "ppn-10pct",
+        "ppn-ekspor-bkp",
+        "ppn-impor-bkp",
+        "ppn-pmse",
+        "ppn-jasa-tenaga-listrik",
+        "ppn-jasa-telekomunikasi",
+        "ppn-ekspor-jkp",
+        "ppn-tidak-kena-pajak",
+        "ppn-jkpt-industri",
+        "ppn-jasa-kegiatan-usaha-persewaan",
+        "ppn-dpp-penghitungan",
+        "ppn-pengkreditan"
+      ]
+    }
+  }
+}

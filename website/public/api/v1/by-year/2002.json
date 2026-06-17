@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "year": 2002,
     "count": 32,
@@ -37,7 +37,7 @@
         "id": "bea-meterai-3000",
         "taxType": "Bea Meterai",
         "transactionType": "Dokumen / Surat (PP 23/2000)",
-        "rate": "0%",
+        "rate": "Rp 3.000 per lembar",
         "status": "dicabut",
         "effectiveFrom": "2000-01-01",
         "effectiveTo": "2006-12-31"

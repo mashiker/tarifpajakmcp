@@ -1,12 +1,12 @@
 # Tarif Pajak Indonesia Open Database (tarif-pajak-id)
 
 > Database tarif pajak Indonesia yang bersumber dari regulasi resmi.
-> Versi: 0.2.0 | Terverifikasi: 2026-06-07
+> Versi: 0.2.0 | Terverifikasi: 2026-06-16
 > Lisensi: MIT (kode) + CC-BY-SA (data)
 
 ## Statistik
-- 39 regulasi tercatat
-- 136 entry tarif pajak (111 berlaku saat ini)
+- 40 regulasi tercatat
+- 137 entry tarif pajak (112 berlaku saat ini)
 - 15 kategori pajak
 - 3 UU konsolidasi
 
@@ -24,7 +24,7 @@
 - **PPh 4(2) Final** (PPh): 18 tarif - Pajak Penghasilan Final Pasal 4 ayat (2) - Pajak yang dipungut pada saat penghasilan tertentu diterima
 - **PPh Badan** (PPh): 8 tarif - Pajak Penghasilan bagi Wajib Pajak Badan - Tarif flat yang berlaku atas penghasilan kena pajak badan
 - **PPh UMKM** (PPh): 3 tarif - Pajak Penghasilan atas penghasilan dari usaha UMKM - tarif final untuk WP yang memiliki peredaran bruto tertentu
-- **PPN** (PPN): 14 tarif - Pajak Pertambahan Nilai - Pajak atas konsumsi Barang Kena Pajak dan/atau Jasa Kena Pajak di dalam Daerah Pabean
+- **PPN** (PPN): 15 tarif - Pajak Pertambahan Nilai - Pajak atas konsumsi Barang Kena Pajak dan/atau Jasa Kena Pajak di dalam Daerah Pabean
 - **PPnBM** (PPnBM): 8 tarif - Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah
 
 ## Tarif yang Sedang Berlaku
@@ -66,7 +66,7 @@
 - Status: berlaku
 - Berlaku sejak: 2021-01-01
 - Dasar hukum: UU 10/2020
-- Catatan: Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai.
+- Catatan: Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai. Menggantikan bea meterai Rp 6.000 (UU 13/1985 jo. PP 23/2000
 
 ### Bea Meterai - Cek dan Bilyet Giro
 - ID: bea-meterai-cek-bilyet
@@ -289,7 +289,7 @@
 - Tarif: 0%
 - Status: berlaku
 - Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Dasar hukum: UU 7/2021 (HPP), UU 7/2021 (HPP)
 - Catatan: SHU koperasi yang dibayarkan kepada anggota WP OP dikenakan PPh final 0% (bebas pajak). Fasilitas ini diberikan untuk mendukung perkembangan koperasi.
 
 ### PPh 21 - Natura/Kenikmatan dari Pemberi Kerja
@@ -308,7 +308,7 @@
 - Dasar hukum: PP 58/2023, PMK 168/2023
 - Catatan: Tarif berjenjang final: ≤50jt = 0%, 50-100jt = 5%, 100-500jt = 10%, >500jt = 15%. Berlaku untuk penarikan yang dibayarkan sekaligus. Penarikan anuitas/bulanan: digabung dengan penghasilan rutin (bukan
 
-### PPh 21 - TER Kategori A (Tidak Menikah)
+### PPh 21 - TER Kategori A (TK/0 - Tidak Kawin Tanpa Tanggungan)
 - ID: pph-21-ter-a-detail
 - Tarif: Progresif 42 lapis
 - Status: berlaku
@@ -316,7 +316,7 @@
 - Dasar hukum: PP 58/2023, PMK 168/2023
 - Catatan: Berlaku untuk pegawai yang tidak kawin dan tidak punya tanggungan. Tarif 0% untuk penghasilan bruto ≤ Rp 6.600.000/bulan. Tarif tertinggi 25% untuk penghasilan > Rp 745.000.000/bulan.
 
-### PPh 21 - TER Kategori B (Menikah 0-2 Tanggungan)
+### PPh 21 - TER Kategori B (TK/1-2, K/0-2)
 - ID: pph-21-ter-b-detail
 - Tarif: Progresif 42 lapis
 - Status: berlaku
@@ -324,7 +324,7 @@
 - Dasar hukum: PP 58/2023, PMK 168/2023
 - Catatan: Berlaku untuk pegawai yang kawin dengan tanggungan 0, 1, atau 2. Tarif 0% untuk penghasilan bruto ≤ Rp 6.950.000/bulan. Tarif tertinggi 25% untuk penghasilan > Rp 855.000.000/bulan.
 
-### PPh 21 - TER Kategori C (Menikah 3+ Tanggungan)
+### PPh 21 - TER Kategori C (K/3 - Kawin 3+ Tanggungan)
 - ID: pph-21-ter-c-detail
 - Tarif: Progresif 42 lapis
 - Status: berlaku
@@ -409,7 +409,7 @@
 - Tarif: 7.5%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023, UU 7/2021 (HPP)
+- Dasar hukum: PP 94/2010, UU 7/2021 (HPP)
 - Catatan: Tarif 7,5% untuk impor yang tidak menggunakan angka pengenal impor (API) atau menggunakan API umum. Berbeda untuk API produsen.
 
 ### PPh 22 - Pembelian Barang oleh Badan Usaha Industri Tertentu
@@ -417,7 +417,7 @@
 - Tarif: 0.25%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023
+- Dasar hukum: PP 94/2010
 - Catatan: Tarif 0,25% berlaku untuk pembeli yang sudah ber-NPWP. Tanpa NPWP tarif menjadi 0,25% × 2 = 0,5%.
 
 ### PPh 22 - Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu
@@ -425,7 +425,7 @@
 - Tarif: 0.5%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023
+- Dasar hukum: PP 94/2010
 
 
 ### PPh 22 - Impor Barang (API Produsen)
@@ -433,7 +433,7 @@
 - Tarif: 2.5%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023, UU 7/2021 (HPP)
+- Dasar hukum: PP 94/2010, UU 7/2021 (HPP)
 - Catatan: Tarif 2,5% untuk impor dengan API produsen. Berbeda dari non-API/API umum yang dikenakan 7,5%.
 
 ### PPh 22 - Pemungutan oleh Bendaharawan Pemerintah
@@ -441,7 +441,7 @@
 - Tarif: 1.5%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023, UU 7/2021 (HPP)
+- Dasar hukum: PMK 34/2017, UU 7/2021 (HPP)
 - Catatan: Tarif 1,5% untuk pembelian oleh bendaharawan pemerintah. Untuk pembelian < Rp 2.000.000 tidak dipotong. Tanpa NPWP: 1,5% × 2 = 3%.
 
 ### PPh 22 - Ekspor Batubara dan Mineral
@@ -449,7 +449,7 @@
 - Tarif: 1.5%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023, UU 7/2021 (HPP)
+- Dasar hukum: PP 94/2010, UU 7/2021 (HPP)
 - Catatan: Tarif 1,5% atas nilai ekspor batubara dan mineral. Untuk WP yang terikat PKP2B (Perjanjian Kerja Sama Pengusahaan Pertambangan Batubara) dan KK (Kontrak Karya) tidak dipungut PPh 22.
 
 ### PPh 22 - Pembelian oleh BUMN/Badan Usaha Tertentu
@@ -457,7 +457,7 @@
 - Tarif: 1.5%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023, UU 7/2021 (HPP)
+- Dasar hukum: PMK 34/2017, UU 7/2021 (HPP)
 - Catatan: Tarif 1,5% atas pembelian oleh BUMN/badan usaha tertentu. Untuk pembelian < Rp 2.000.000 tidak dipotong. Tanpa NPWP: 1,5% × 2 = 3%.
 
 ### PPh 22 - Pengadaan melalui Sistem Informasi Pengadaan Pemerintah
@@ -465,7 +465,7 @@
 - Tarif: 0.5%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023, UU 7/2021 (HPP)
+- Dasar hukum: PMK 34/2017, UU 7/2021 (HPP)
 - Catatan: Tarif 0,5% atas transaksi melalui sistem informasi pengadaan pemerintah. Kode 22-101-01 (tidak final), 22-101-02 (final).
 
 ### PPh 22 - Penjualan melalui Perdagangan Melalui Sistem Elektronik (PMSE/E-Commerce)
@@ -473,7 +473,7 @@
 - Tarif: 0.5%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023, UU 7/2021 (HPP)
+- Dasar hukum: PMK 81/2024, UU 7/2021 (HPP)
 - Catatan: Tarif 0,5% atas transaksi melalui PMSE. Kode 22-102-01 (tidak final), 22-102-02 (final). Berlaku untuk marketplace/e-commerce yang ditunjuk sebagai pemungut.
 
 ### PPh 22 - Transaksi Aset Kripto
@@ -481,7 +481,7 @@
 - Tarif: 0.1% - 0.2%
 - Status: berlaku
 - Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023, UU 7/2021 (HPP)
+- Dasar hukum: PMK 81/2024, UU 7/2021 (HPP)
 - Catatan: Pedagang fisik aset kripto: 0,1%. Bukan pedagang fisik: 0,2%.
 
 ### PPh 23 - Imbalan Jasa Lain (BerNPWP)
@@ -537,7 +537,7 @@
 - Tarif: 20%
 - Status: berlaku
 - Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Dasar hukum: UU 7/2021 (HPP)
 - Catatan: Tarif P3B bervariasi: Singapura 15%, Jepang 15%, Belanda 10%, Mauritius 10%, dll. Tarif dapat lebih rendah jika WP luar negeri memenuhi syarat beneficial owner dan menyertakan Certificate of Residence
 
 ### PPh 26 - Bunga WP Luar Negeri
@@ -545,7 +545,7 @@
 - Tarif: 20%
 - Status: berlaku
 - Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Dasar hukum: UU 7/2021 (HPP)
 - Catatan: Tarif P3B bervariasi untuk bunga: Singapura 15%, Jepang 10%, Belanda 10%, Hong Kong 10%. Bunga pinjaman luar negeri tertentu dapat dibebaskan berdasarkan P3B.
 
 ### PPh 26 - Royalti WP Luar Negeri
@@ -553,7 +553,7 @@
 - Tarif: 20%
 - Status: berlaku
 - Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Dasar hukum: UU 7/2021 (HPP)
 - Catatan: Tarif P3B bervariasi untuk royalti: Singapura 15%, Jepang 10%, Belanda 10%, Amerika 10%. Definisi royalti mencakup penggunaan hak cipta, paten, merek dagang, dll.
 
 ### PPh 26 - Imbalan Jasa dan Sewa WP Luar Negeri
@@ -561,7 +561,7 @@
 - Tarif: 20%
 - Status: berlaku
 - Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Dasar hukum: UU 7/2021 (HPP)
 - Catatan: Tarif 20% dari jumlah bruto. Jika WP luar negeri memiliki BUT di Indonesia, penghasilan yang diterima melalui BUT dikenakan PPh sesuai tarif umum (Pasal 17), bukan PPh 26.
 
 ### PPh 26 - Penghasilan BUT (Bentuk Usaha Tetap)
@@ -569,7 +569,7 @@
 - Tarif: Progresif 4 lapis
 - Status: berlaku
 - Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Dasar hukum: UU 7/2021 (HPP)
 - Catatan: BUT dikenakan PPh normal (Pasal 17) atas laba usaha + Branch Profit Tax 20% atas laba setelah pajak yang dikirim ke kantor pusat. Beberapa P3B mengurangi atau menghapus branch profit tax.
 
 ### PPh 26 - Tarif P3B (Tax Treaty)
@@ -625,7 +625,7 @@
 - Tarif: 0% - 10%
 - Status: berlaku
 - Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Dasar hukum: UU 7/2021 (HPP), PMK 81/2024
 - Catatan: Terdiri dari 2 kode objek pajak BPPU dengan tarif 0.0%, 10.0%.
 
 ### PPh 4(2) Final - Penghasilan dari Pengangkutan dan Charter
@@ -649,7 +649,7 @@
 - Tarif: 2.1% - 7.5%
 - Status: berlaku
 - Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP), PP 60/2023
+- Dasar hukum: UU 7/2021 (HPP), PP 94/2010
 - Catatan: Terdiri dari 2 kode objek pajak BPPU dengan tarif 2.1%, 7.5%.
 
 ### PPh 4(2) - Pengalihan Hak atas Tanah/Bangunan (PP 71/2008)
@@ -756,13 +756,21 @@
 - Dasar hukum: PP 55/2022, UU 7/2021 (HPP)
 - Catatan: Masa berlaku 7 tahun sejak PP 55/2022. Batas peredaran bruto Rp 4,8 miliar/tahun. PP 55/2022 menggantikan PP 23/2018. Kini juga berlaku untuk WP badan (perubahan dari PP 23/2018).
 
-### PPN - Penyerahan BKP/JKP dalam negeri
+### PPN - Penyerahan BKP/JKP dalam negeri (selain barang/jasa mewah)
 - ID: ppn-11pct-effective-2025
 - Tarif: 11%
 - Status: berlaku
-- Berlaku sejak: 2025-01-01
+- Berlaku sejak: 2025-02-01
 - Dasar hukum: PMK 131/2024, UU 7/2021 (HPP)
-- Catatan: UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.
+- Catatan: UU HPP menaikkan tarif dasar PPN menjadi 12% per 1 Januari 2025. PMK 131/2024 membagi penerapan: tarif efektif 12% hanya untuk barang/jasa mewah tertentu (sejak 1 Februari 2025), sementara BKP/JKP lai
+
+### PPN - Penyerahan Barang/Jasa Mewah Tertentu
+- ID: ppn-12pct-mewah-2025
+- Tarif: 12%
+- Status: berlaku
+- Berlaku sejak: 2025-02-01
+- Dasar hukum: PMK 131/2024, UU 7/2021 (HPP)
+- Catatan: PMK 131/2024 menetapkan kelompok Barang dan Jasa Kena Pajak yang tergolong mewah (contoh: kendaraan bermotor mewah, pesawat pribadi, kapal pesiar, dll.) dikenakan tarif efektif penuh 12% sejak 1 Febru
 
 ### PPN - Ekspor Barang Kena Pajak
 - ID: ppn-ekspor-bkp
@@ -962,7 +970,8 @@ Database ini adalah referensi bersumber dari regulasi resmi, BUKAN nasihat hukum
 Selalu verifikasi dengan peraturan resmi terbaru.
 
 ## Links
-- API: https://tarif-pajak-id.vercel.app/api.json
-- Consolidated: https://tarif-pajak-id.vercel.app/consolidated.json
-- GitHub: https://github.com/user/tarif-pajak-id
+- API: https://tarif-pajak-id.pages.dev/api.json
+- Consolidated: https://tarif-pajak-id.pages.dev/consolidated.json
+- Website: https://tarif-pajak-id.pages.dev
+- GitHub: https://github.com/mashiker/tarifpajakmcp
 - Sumber regulasi: pasal.id, peraturan.bpk.go.id, peraturan.go.id

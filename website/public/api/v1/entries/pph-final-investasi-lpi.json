@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pph-final-investasi-lpi",
     "category": "PPh",
@@ -29,8 +29,9 @@
         "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
       },
       {
-        "regulation": "PP 60/2023",
-        "article": "Pasal 3"
+        "regulation": "PP 94/2010",
+        "article": "Pasal 3",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
       }
     ],
     "supersedes": [],

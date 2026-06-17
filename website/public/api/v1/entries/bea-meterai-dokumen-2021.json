@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "bea-meterai-dokumen-2021",
     "category": "Bea Meterai",
@@ -27,10 +27,10 @@
       }
     ],
     "supersedes": [
-      "bea-meterai-6000"
+      "bea-meterai-pre2021"
     ],
     "supersededBy": [],
-    "notes": "Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai.",
+    "notes": "Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai. Menggantikan bea meterai Rp 6.000 (UU 13/1985 jo. PP 23/2000) yang dicabut oleh UU 10/2020.",
     "tags": [
       "bea-meterai",
       "dokumen",
@@ -46,7 +46,7 @@
     ],
     "relatedEntries": {
       "supersedes": [
-        "bea-meterai-6000"
+        "bea-meterai-pre2021"
       ],
       "sameCategory": [
         "bea-meterai-cek-bilyet",

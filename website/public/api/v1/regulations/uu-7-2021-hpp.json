@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "uu-7-2021-hpp",
     "pasalLawId": 1829,
@@ -79,6 +79,7 @@
       "pph-badan-pre2001",
       "pph-umkm-05pct-2023",
       "ppn-11pct-effective-2025",
+      "ppn-12pct-mewah-2025",
       "ppn-11pct-2022",
       "ppn-ekspor-bkp",
       "ppn-impor-bkp",

@@ -1,10 +1,10 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "year": 2026,
-    "count": 111,
+    "count": 112,
     "entries": [
       {
         "id": "bea-masuk-umum-mf",
@@ -324,7 +324,7 @@
       {
         "id": "pph-21-ter-a-detail",
         "taxType": "PPh 21",
-        "transactionType": "TER Kategori A (Tidak Menikah)",
+        "transactionType": "TER Kategori A (TK/0 - Tidak Kawin Tanpa Tanggungan)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -333,7 +333,7 @@
       {
         "id": "pph-21-ter-b-detail",
         "taxType": "PPh 21",
-        "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
+        "transactionType": "TER Kategori B (TK/1-2, K/0-2)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -342,7 +342,7 @@
       {
         "id": "pph-21-ter-c-detail",
         "taxType": "PPh 21",
-        "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
+        "transactionType": "TER Kategori C (K/3 - Kawin 3+ Tanggungan)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -828,10 +828,19 @@
       {
         "id": "ppn-11pct-effective-2025",
         "taxType": "PPN",
-        "transactionType": "Penyerahan BKP/JKP dalam negeri",
+        "transactionType": "Penyerahan BKP/JKP dalam negeri (selain barang/jasa mewah)",
         "rate": "11%",
         "status": "berlaku",
-        "effectiveFrom": "2025-01-01",
+        "effectiveFrom": "2025-02-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-12pct-mewah-2025",
+        "taxType": "PPN",
+        "transactionType": "Penyerahan Barang/Jasa Mewah Tertentu",
+        "rate": "12%",
+        "status": "berlaku",
+        "effectiveFrom": "2025-02-01",
         "effectiveTo": null
       },
       {

@@ -3,10 +3,10 @@
     "name": "tarif-pajak-id",
     "version": "0.2.0",
     "description": "Open database tarif pajak Indonesia + UU Konsolidasi",
-    "lastUpdated": "2026-06-07",
+    "lastUpdated": "2026-06-16",
     "stats": {
-      "regulations": 39,
-      "entries": 136,
+      "regulations": 40,
+      "entries": 137,
       "categories": [
         {
           "taxType": "Bea Masuk",
@@ -62,7 +62,7 @@
         },
         {
           "taxType": "PPN",
-          "count": 14
+          "count": 15
         },
         {
           "taxType": "PPnBM",
@@ -352,24 +352,6 @@
       "relatedRegulations": [
         "pmk-168-2023",
         "pp-16-2009"
-      ]
-    },
-    {
-      "id": "pp-60-2023",
-      "number": "60",
-      "year": 2023,
-      "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
-      "shortName": "PP Tarif PPh 22/23/26",
-      "type": "PP",
-      "promulgationDate": "2023-12-11",
-      "effectiveDate": "2024-01-01",
-      "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
-      "status": "berlaku",
-      "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26.",
-      "relevantArticles": "Pasal 2 (PPh 22 impor/ekspor), Pasal 3 (PPh 22 pembelian/pengadaan), Pasal 4 (PPh 22 penjualan/PMSE/kripto), Pasal 5 (PPh 23 dan 26)",
-      "relatedRegulations": [
-        "pp-94-2010",
-        "pp-14-2002"
       ]
     },
     {
@@ -778,6 +760,42 @@
       "relatedRegulations": [
         "uu-10-1995"
       ]
+    },
+    {
+      "id": "pmk-34-2017",
+      "number": "34",
+      "year": 2017,
+      "title": "PMK tentang Petunjuk Pelaksanaan Pemungutan Pajak Penghasilan Pasal 22 sehubungan dengan Pembayaran atas Penyerahan Barang dan Kegiatan di Bidang Impor atau Kegiatan Usaha di Bidang Lain",
+      "shortName": "PMK PPh 22 Bendaharawan",
+      "type": "PMK",
+      "promulgationDate": "2017-06-07",
+      "effectiveDate": "2017-06-07",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017",
+      "status": "berlaku",
+      "description": "PMK pelaksanaan pemungutan PPh 22 oleh bendahara pemerintah, BUMN/BUMD, dan pihak tertentu atas pembelian barang dan jasa. Mengatur tarif 1,5% untuk bendaharawan dan ketentuan khusus lainnya.",
+      "relevantArticles": "Pasal 2, 3, 4",
+      "relatedRegulations": [
+        "pp-94-2010",
+        "uu-7-2021-hpp"
+      ]
+    },
+    {
+      "id": "pmk-81-2024",
+      "number": "81",
+      "year": 2024,
+      "title": "PMK tentang Pajak Penghasilan atas Penghasilan Sehubungan dengan Aset Kripto dan Imbalan Jasa Melalui Perdagangan Melalui Sistem Elektronik",
+      "shortName": "PMK PPh Aset Kripto & PMSE",
+      "type": "PMK",
+      "promulgationDate": "2024-11-29",
+      "effectiveDate": "2025-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024",
+      "status": "berlaku",
+      "description": "PMK yang mengatur pemungutan PPh Pasal 22 final atas transaksi aset kripto (0,21% melalui PPMSE) dan ketentuan PPh atas PMSE. Melengkapi PP 58/2023 dan PMK 131/2024.",
+      "relevantArticles": "Pasal 2, 3, 4, 5",
+      "relatedRegulations": [
+        "pp-58-2023",
+        "pmk-131-2024"
+      ]
     }
   ],
   "categories": [
@@ -1002,10 +1020,10 @@
             }
           ],
           "supersedes": [
-            "bea-meterai-6000"
+            "bea-meterai-pre2021"
           ],
           "supersededBy": [],
-          "notes": "Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai.",
+          "notes": "Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai. Menggantikan bea meterai Rp 6.000 (UU 13/1985 jo. PP 23/2000) yang dicabut oleh UU 10/2020.",
           "tags": [
             "bea-meterai",
             "dokumen",
@@ -1244,9 +1262,9 @@
           "transactionType": "Dokumen / Surat (UU 13/1985)",
           "description": "Bea Meterai Rp 1.000 berdasarkan UU 13/1985. Berlaku untuk dokumen dengan nilai > Rp 200.000. Periode 1986-1999.",
           "rate": {
-            "type": "percentage",
-            "value": 0,
-            "effectiveRate": "Rp 1.000 per lembar untuk dokumen > Rp 200.000"
+            "type": "formula",
+            "value": "Rp 1.000 per lembar",
+            "effectiveRate": "Nominal tetap Rp 1.000 untuk dokumen > Rp 200.000"
           },
           "taxBase": "Dokumen dengan nominal > Rp 200.000",
           "payer": "Pihak yang menandatangani / membuat dokumen",
@@ -1288,9 +1306,9 @@
           "transactionType": "Dokumen / Surat (PP 23/2000)",
           "description": "Bea Meterai Rp 3.000 berdasarkan PP 23/2000. Berlaku untuk dokumen dengan nilai > Rp 500.000. Periode 2000-2006.",
           "rate": {
-            "type": "percentage",
-            "value": 0,
-            "effectiveRate": "Rp 3.000 per lembar untuk dokumen > Rp 500.000"
+            "type": "formula",
+            "value": "Rp 3.000 per lembar",
+            "effectiveRate": "Nominal tetap Rp 3.000 untuk dokumen > Rp 500.000"
           },
           "taxBase": "Dokumen dengan nominal > Rp 500.000",
           "payer": "Pihak yang menandatangani / membuat dokumen",
@@ -1403,7 +1421,8 @@
           "legalBasis": [
             {
               "regulation": "UU 28/2009",
-              "article": "Pasal 7"
+              "article": "Pasal 7",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009"
             },
             {
               "regulation": "UU 1/2022 (HKPD)",
@@ -1449,7 +1468,8 @@
           "legalBasis": [
             {
               "regulation": "UU 28/2009",
-              "article": "Pasal 14 ayat (1)"
+              "article": "Pasal 14 ayat (1)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009"
             },
             {
               "regulation": "UU 1/2022 (HKPD)",
@@ -2000,7 +2020,8 @@
             },
             {
               "regulation": "UU 28/2009",
-              "article": "Pasal 1-5"
+              "article": "Pasal 1-5",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009"
             }
           ],
           "supersedes": [],
@@ -2165,7 +2186,7 @@
           "category": "PPh",
           "taxType": "PPh 21",
           "transactionType": "Gaji/Bulan TER",
-          "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif lama sejak 1 Januari 2024. Terdiri dari 3 kategori: TER A (tidak kawin), TER B (kawin 0-2 tanggungan), TER C (kawin ≥3 tanggungan). Masing-masing memiliki 42 lapisan tarif.",
+          "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif lama sejak 1 Januari 2024. Terdiri dari 3 kategori: TER A (TK/0), TER B (TK/1-2, K/0-2), TER C (K/3). Masing-masing memiliki 42 lapisan tarif.",
           "rate": {
             "type": "progressive",
             "value": "0% – 25% (TER A/B/C)",
@@ -2565,8 +2586,9 @@
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
             },
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 6"
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 6",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
             }
           ],
           "supersedes": [],
@@ -2758,12 +2780,12 @@
             }
           ],
           "supersedes": [
-            "pph-21-progressive-pre2001"
+            "pph-21-progressive-uulama1994"
           ],
           "supersededBy": [
             "pph-21-progressive-pre2022"
           ],
-          "notes": "Tarif progresif UU 17/2000 dengan lapisan 5%, 10%, 15%, 25%, 35%.",
+          "notes": "Tarif progresif UU 17/2000 dengan lapisan 5%, 10%, 15%, 25%, 35%. Menggantikan tarif progresif UU 10/1994.",
           "tags": [
             "pph-21",
             "progresif",
@@ -3144,8 +3166,8 @@
           "id": "pph-21-ter-a-detail",
           "category": "PPh",
           "taxType": "PPh 21",
-          "transactionType": "TER Kategori A (Tidak Menikah)",
-          "description": "Tabel lengkap TER Kategori A (Tidak Kawin/Tidak Punya Tanggungan) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
+          "transactionType": "TER Kategori A (TK/0 - Tidak Kawin Tanpa Tanggungan)",
+          "description": "Tabel lengkap TER Kategori A khusus untuk Wajib Pajak Orang Pribadi berstatus Tidak Kawin tanpa tanggungan (TK/0). Berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
           "rate": {
             "type": "progressive",
             "value": "0% – 25% (42 lapisan)",
@@ -3414,8 +3436,8 @@
           "id": "pph-21-ter-b-detail",
           "category": "PPh",
           "taxType": "PPh 21",
-          "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
-          "description": "Tabel lengkap TER Kategori B (Kawin, tanggungan 0-2) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
+          "transactionType": "TER Kategori B (TK/1-2, K/0-2)",
+          "description": "Tabel lengkap TER Kategori B untuk Wajib Pajak Orang Pribadi berstatus: Tidak Kawin dengan 1-2 tanggungan (TK/1, TK/2), atau Kawin dengan 0-2 tanggungan (K/0, K/1, K/2). Berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
           "rate": {
             "type": "progressive",
             "value": "0% – 25% (42 lapisan)",
@@ -3679,8 +3701,8 @@
           "id": "pph-21-ter-c-detail",
           "category": "PPh",
           "taxType": "PPh 21",
-          "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
-          "description": "Tabel lengkap TER Kategori C (Kawin, tanggungan ≥3) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
+          "transactionType": "TER Kategori C (K/3 - Kawin 3+ Tanggungan)",
+          "description": "Tabel lengkap TER Kategori C khusus untuk Wajib Pajak Orang Pribadi berstatus Kawin dengan 3 atau lebih tanggungan (K/3). Berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
           "rate": {
             "type": "progressive",
             "value": "0% – 25% (42 lapisan)",
@@ -4381,9 +4403,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
+              "regulation": "PP 94/2010",
               "article": "Pasal 2",
-              "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -4436,9 +4458,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
+              "regulation": "PP 94/2010",
               "article": "Pasal 3",
-              "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
             }
           ],
           "supersedes": [],
@@ -4490,9 +4512,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
+              "regulation": "PP 94/2010",
               "article": "Pasal 4",
-              "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
             }
           ],
           "supersedes": [],
@@ -4698,8 +4720,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 2 ayat (1)"
+              "regulation": "PP 94/2010",
+              "article": "Pasal 2 ayat (1)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -4756,8 +4779,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 3 ayat (1)"
+              "regulation": "PMK 34/2017",
+              "article": "Pasal 3 ayat (1)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -4809,8 +4833,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 2 ayat (2)"
+              "regulation": "PP 94/2010",
+              "article": "Pasal 2 ayat (2)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -4863,8 +4888,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 3 ayat (2)"
+              "regulation": "PMK 34/2017",
+              "article": "Pasal 3 ayat (2)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -4916,8 +4942,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 4 ayat (1)"
+              "regulation": "PMK 34/2017",
+              "article": "Pasal 4 ayat (1)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/124901/pmk-no-34-pmk-010-2017"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -4975,8 +5002,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 4 ayat (2)"
+              "regulation": "PMK 81/2024",
+              "article": "Pasal 4 ayat (2)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -5037,8 +5065,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 4 ayat (3)"
+              "regulation": "PMK 81/2024",
+              "article": "Pasal 4 ayat (3)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -5100,7 +5129,8 @@
           "legalBasis": [
             {
               "regulation": "PP 94/2010",
-              "article": "Pasal 2-4"
+              "article": "Pasal 2-4",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
             },
             {
               "regulation": "UU 36/2008",
@@ -5108,14 +5138,12 @@
               "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
             }
           ],
-          "supersedes": [
-            "pph-22-pre2010"
-          ],
+          "supersedes": [],
           "supersededBy": [
             "pph-22-impor-2024",
             "pph-22-penjualan-barang-2024"
           ],
-          "notes": "Tarif pra-PP 60/2023: Impor non-API 7,5%, API produsen 2,5%, API umum 7,5%. Penjualan BBM 0,5%. Pembelian bahan industri 0,25%. Bendaharawan 1,5%.",
+          "notes": "Tarif pra-PP 60/2023: Impor non-API 7,5%, API produsen 2,5%, API umum 7,5%. Penjualan BBM 0,5%. Pembelian bahan industri 0,25%. Bendaharawan 1,5%. Berdasarkan PP 94/2010 jo. Kep-KMK 523/KMK.04/2002.",
           "tags": [
             "pph-22",
             "historis",
@@ -6407,9 +6435,10 @@
           ],
           "supersedes": [],
           "supersededBy": [
-            "pph-23-jasa-2001"
+            "pph-23-jasa-2001",
+            "pph-23-katering-pre2015"
           ],
-          "notes": "UU 7/1983 Pasal 23 ayat (1) huruf c: imbalan jasa 15%, sewa 10%. Jasa katering/tata boga belum dibedakan dari jasa lainnya — tarif sama 15%. Belum ada DPP khusus katering (DPP = jumlah bruto). Perlakuan khusus katering baru diatur secara eksplisit oleh PMK 141/2015.",
+          "notes": "UU 7/1983 Pasal 23 ayat (1) huruf c: imbalan jasa 15%, sewa 10%. Jasa katering/tata boga belum dibedakan dari jasa lainnya — tarif sama 15%. Belum ada DPP khusus katering (DPP = jumlah bruto). Perlakuan khusus katering baru diatur secara eksplisit oleh PMK 141/2015. Sejak 2001, jasa umum dilanjutkan pph-23-jasa-2001 dan jasa katering dilanjutkan pph-23-katering-pre2015.",
           "examples": [
             {
               "scenario": "Jasa konsultasi Rp 50.000.000 tahun 1995",
@@ -6636,10 +6665,6 @@
               "regulation": "UU 7/2021 (HPP)",
               "article": "Pasal 26 ayat (1) huruf a",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-            },
-            {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 5"
             }
           ],
           "supersedes": [],
@@ -6690,10 +6715,6 @@
               "regulation": "UU 7/2021 (HPP)",
               "article": "Pasal 26 ayat (1) huruf b",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-            },
-            {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 5"
             }
           ],
           "supersedes": [],
@@ -6744,10 +6765,6 @@
               "regulation": "UU 7/2021 (HPP)",
               "article": "Pasal 26 ayat (1) huruf c",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-            },
-            {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 5"
             }
           ],
           "supersedes": [],
@@ -6798,10 +6815,6 @@
               "regulation": "UU 7/2021 (HPP)",
               "article": "Pasal 26 ayat (2)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-            },
-            {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 5"
             }
           ],
           "supersedes": [],
@@ -6867,10 +6880,6 @@
               "regulation": "UU 7/2021 (HPP)",
               "article": "Pasal 20 ayat (1)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-            },
-            {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 5 ayat (3)"
             }
           ],
           "supersedes": [],
@@ -7284,11 +7293,13 @@
           "legalBasis": [
             {
               "regulation": "PP 51/2008",
-              "article": "Pasal 2-5"
+              "article": "Pasal 2-5",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/4865/pp-no-51-tahun-2008"
             },
             {
               "regulation": "PP 40/2009",
-              "article": "Pasal 2"
+              "article": "Pasal 2",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/5053/pp-no-40-tahun-2009"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -7411,8 +7422,9 @@
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
             },
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 2"
+              "regulation": "PMK 81/2024",
+              "article": "Pasal 2",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/288451/pmk-no-81-pmk-010-2024"
             }
           ],
           "supersedes": [],
@@ -7471,7 +7483,8 @@
             },
             {
               "regulation": "PP 51/2008",
-              "article": "Pasal 5A"
+              "article": "Pasal 5A",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/4865/pp-no-51-tahun-2008"
             }
           ],
           "supersedes": [],
@@ -7545,7 +7558,8 @@
             },
             {
               "regulation": "PP 51/2008",
-              "article": "Pasal 5B"
+              "article": "Pasal 5B",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/4865/pp-no-51-tahun-2008"
             }
           ],
           "supersedes": [],
@@ -7608,8 +7622,9 @@
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
             },
             {
-              "regulation": "PP 60/2023",
-              "article": "Pasal 3"
+              "regulation": "PP 94/2010",
+              "article": "Pasal 3",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/36193/pp-no-94-tahun-2010"
             }
           ],
           "supersedes": [],
@@ -8589,8 +8604,8 @@
           "id": "ppn-11pct-effective-2025",
           "category": "PPN",
           "taxType": "PPN",
-          "transactionType": "Penyerahan BKP/JKP dalam negeri",
-          "description": "Tarif PPN efektif 11% berdasarkan mekanisme PMK 131/2024. Tarif dasar UU HPP menetapkan PPN 12%, namun PMK 131/2024 menetapkan tarif efektif yang diperhitungkan sebagai 11/12 dari tarif dasar 12%.",
+          "transactionType": "Penyerahan BKP/JKP dalam negeri (selain barang/jasa mewah)",
+          "description": "Tarif PPN efektif 11% untuk Barang dan Jasa Kena Pajak selain barang/jasa mewah, berdasarkan PMK 131/2024. Tarif dasar UU HPP menetapkan PPN 12% sejak 1 Januari 2025, namun PMK 131/2024 menetapkan tarif efektif 11% (diperhitungkan sebagai 11/12 dari tarif dasar 12%) untuk BKP/JKP umum. Berbeda dengan barang/jasa mewah yang dikenakan tarif efektif 12% sejak 1 Februari 2025 (lihat entry ppn-12pct-mewah-2025).",
           "rate": {
             "type": "percentage",
             "value": 11,
@@ -8600,7 +8615,7 @@
           "payer": "Konsumen akhir",
           "recipient": "Negara",
           "withholder": "PKP (Pengusaha Kena Pajak) sebagai pemungut",
-          "effectiveFrom": "2025-01-01",
+          "effectiveFrom": "2025-02-01",
           "effectiveTo": null,
           "status": "berlaku",
           "legalBasis": [
@@ -8616,14 +8631,13 @@
             }
           ],
           "supersedes": [
-            "ppn-11pct-2022",
-            "ppn-10pct"
+            "ppn-11pct-2022"
           ],
           "supersededBy": [],
-          "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.",
+          "notes": "UU HPP menaikkan tarif dasar PPN menjadi 12% per 1 Januari 2025. PMK 131/2024 membagi penerapan: tarif efektif 12% hanya untuk barang/jasa mewah tertentu (sejak 1 Februari 2025), sementara BKP/JKP lainnya tetap memakai tarif efektif 11% (mekanisme 11/12 × 12%). Untuk Januari 2025 seluruhnya masih 11%.",
           "examples": [
             {
-              "scenario": "Penjualan BKP Rp 1.000.000",
+              "scenario": "Penjualan BKP umum Rp 1.000.000",
               "calculation": "PPN = 11% × Rp 1.000.000",
               "result": "PPN = Rp 110.000"
             }
@@ -8634,7 +8648,58 @@
             "pmk-131-2024",
             "berlaku"
           ],
-          "lastVerified": "2026-05-26"
+          "lastVerified": "2026-06-16"
+        },
+        {
+          "id": "ppn-12pct-mewah-2025",
+          "category": "PPN",
+          "taxType": "PPN",
+          "transactionType": "Penyerahan Barang/Jasa Mewah Tertentu",
+          "description": "Tarif PPN efektif 12% yang dikenakan khusus atas penyerahan Barang Kena Pajak dan Jasa Kena Pajak yang tergolong mewah (Barang/Jasa Mewah Tertentu), sesuai PMK 131/2024. Tarif 12% berlaku sejak 1 Februari 2025. Untuk bulan Januari 2025, seluruh BKP/JKP (termasuk barang mewah) masih menggunakan tarif efektif 11%.",
+          "rate": {
+            "type": "percentage",
+            "value": 12,
+            "effectiveRate": "12/12 × 12% = 12% (PMK 131/2024 — Barang/Jasa Mewah Tertentu)"
+          },
+          "taxBase": "Dasar Pengenaan Pajak (DPP) = Harga Jual/Penggantian/Uang muka/Nilai ekspor",
+          "payer": "Konsumen akhir",
+          "recipient": "Negara",
+          "withholder": "PKP (Pengusaha Kena Pajak) sebagai pemungut",
+          "effectiveFrom": "2025-02-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PMK 131/2024",
+              "article": "Pasal 3",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024"
+            },
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 7 ayat (1)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [
+            "ppn-11pct-2022"
+          ],
+          "supersededBy": [],
+          "notes": "PMK 131/2024 menetapkan kelompok Barang dan Jasa Kena Pajak yang tergolong mewah (contoh: kendaraan bermotor mewah, pesawat pribadi, kapal pesiar, dll.) dikenakan tarif efektif penuh 12% sejak 1 Februari 2025. Sementara BKP/JKP selain mewah tetap 11% efektif (lihat ppn-11pct-effective-2025). Daftar lengkap barang/jasa mewah tertentu ditetapkan dalam lampiran PMK 131/2024.",
+          "examples": [
+            {
+              "scenario": "Penjualan barang mewah tertentu Rp 400.000.000",
+              "calculation": "PPN = 12% × Rp 400.000.000",
+              "result": "PPN = Rp 48.000.000"
+            }
+          ],
+          "tags": [
+            "ppn",
+            "tarif-efektif",
+            "pmk-131-2024",
+            "barang-mewah",
+            "berlaku"
+          ],
+          "lastVerified": "2026-06-16"
         },
         {
           "id": "ppn-11pct-2022",
@@ -8664,7 +8729,8 @@
             "ppn-10pct"
           ],
           "supersededBy": [
-            "ppn-11pct-effective-2025"
+            "ppn-11pct-effective-2025",
+            "ppn-12pct-mewah-2025"
           ],
           "tags": [
             "ppn",
@@ -8849,7 +8915,8 @@
             },
             {
               "regulation": "PP 44/2022",
-              "article": "Pasal 2-5"
+              "article": "Pasal 2-5",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/232656/pp-no-44-tahun-2022"
             },
             {
               "regulation": "PMK 131/2024",

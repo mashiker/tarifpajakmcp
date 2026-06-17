@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-06-16T15:43:04.067Z",
   "data": {
     "id": "pmk-202-2023",
     "number": "202",
@@ -60,8 +60,6 @@
       "pph-21-norma-petani",
       "pph-21-norma-pengusaha-kecil",
       "pph-22-impor-2024",
-      "pph-22-pembelian-barang-2024",
-      "pph-22-penjualan-barang-2024",
       "pph-22-impor-api-produsen",
       "pph-22-bendaharawan",
       "pph-22-ekspor-batubara",
@@ -92,6 +90,7 @@
       "pph-badan-ikn-10y",
       "pph-umkm-05pct-2023",
       "ppn-11pct-effective-2025",
+      "ppn-12pct-mewah-2025",
       "ppn-11pct-2022",
       "ppn-ekspor-bkp",
       "ppn-impor-bkp",
