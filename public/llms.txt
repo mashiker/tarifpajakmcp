@@ -1,7 +1,7 @@
 # Tarif Pajak Indonesia Open Database (tarif-pajak-id)
 
 > Database tarif pajak Indonesia yang bersumber dari regulasi resmi.
-> Versi: 0.2.0 | Terverifikasi: 2026-06-16
+> Versi: 0.2.0 | Terverifikasi: 2026-06-17
 > Lisensi: MIT (kode) + CC-BY-SA (data)
 
 ## Statistik

@@ -84,11 +84,17 @@ const canonicalURL = Astro.url.href;
       <!-- Logo -->
       <a href="/" class="group flex shrink-0 items-center gap-2" aria-label="Tarif Pajak ID home">
         <div class="flex h-8 w-8 items-center justify-center rounded-[var(--radius)] bg-[var(--accent)] transition-transform duration-200 group-hover:scale-105">
-          <svg class="h-4 w-4" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-            <!-- Abstract % mark: two dots + diagonal slash -->
-            <circle cx="23" cy="23" r="6" fill="#FFFFFF"/>
-            <circle cx="41" cy="41" r="6" fill="#FFFFFF"/>
-            <rect x="30.25" y="22" width="3.5" height="20" rx="1.75" transform="rotate(45 32 32)" fill="#FFFFFF"/>
+          <svg class="h-[18px] w-[18px]" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <!-- Document card (database / reference) — white on teal -->
+            <path d="M17 11 H40 L48 19 V51 a3 3 0 0 1-3 3 H17 a3 3 0 0 1-3-3 V14 a3 3 0 0 1 3-3 Z" fill="#FFFFFF"/>
+            <path d="M40 11 V17 a2 2 0 0 0 2 2 H48 Z" fill="#0E5E58" opacity="0.4"/>
+            <!-- Bold % mark (rate / tarif) -->
+            <circle cx="24" cy="22" r="4" fill="#0E5E58"/>
+            <circle cx="39" cy="37" r="4" fill="#0E5E58"/>
+            <rect x="29" y="16" width="4.6" height="27" rx="2.3" transform="rotate(45 31.3 29.5)" fill="#0E5E58"/>
+            <!-- Data rows (lookup table) -->
+            <rect x="20" y="44" width="24" height="2.2" rx="1.1" fill="#0E5E58" opacity="0.55"/>
+            <rect x="20" y="48.5" width="16" height="2.2" rx="1.1" fill="#0E5E58" opacity="0.4"/>
           </svg>
         </div>
         <div class="flex items-center gap-1.5">
