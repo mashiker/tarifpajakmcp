@@ -1,0 +1,62 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "bea-masuk-umum-mf",
+    "category": "Bea Masuk",
+    "taxType": "Bea Masuk",
+    "transactionType": "Bea Masuk Umum (MFN)",
+    "description": "Tarif Bea Masuk umum (MFN) berdasarkan BTKI. Tarif 0%-40% tergantung HS Code.",
+    "rate": {
+      "type": "range",
+      "value": [
+        0,
+        40
+      ]
+    },
+    "taxBase": "Nilai Pabean (CIF)",
+    "payer": "Importir",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1984-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 10/1995",
+        "article": "Pasal 13-14",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44070/uu-no-10-tahun-1995"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif BM MFN sesuai BTKI: 0% (komoditas dasar), 5% (bahan baku), 10% (setengah jadi), 15-25% (barang jadi), 40% (mobil mewah).",
+    "examples": [
+      {
+        "scenario": "Impor laptop (HS 8471.30) USD 1.000",
+        "calculation": "Tarif BM 0% × Rp 15.500.000",
+        "result": "BM = Rp 0"
+      },
+      {
+        "scenario": "Impor tekstil (HS 5208) USD 10.000",
+        "calculation": "Tarif BM 15% × Rp 155.000.000",
+        "result": "BM = Rp 23.250.000"
+      }
+    ],
+    "tags": [
+      "bea-masuk",
+      "mfn",
+      "umum",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "bea-masuk-asean-atiga",
+        "bea-masuk-bmt",
+        "bea-masuk-anti-dumping"
+      ]
+    }
+  }
+}

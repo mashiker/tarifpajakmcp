@@ -1,0 +1,34 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pp-16-2009",
+    "number": "16",
+    "year": 2009,
+    "title": "PP tentang Pemotongan Pajak Penghasilan atas Penghasilan Sehubungan dengan Pekerjaan",
+    "shortName": "PP PPh 21 Lama",
+    "type": "PP",
+    "promulgationDate": "2009-07-06",
+    "effectiveDate": "2009-08-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44091/pp-no-16-tahun-2009",
+    "status": "dicabut_sebagian",
+    "description": "PP pelaksanaan PPh 21. Mengatur pemotongan bulanan progresif, honorarium bukan pegawai (Pasal 17), PTKP. Dicabut sebagian oleh PP 58/2023 (TER), tetapi Pasal 17 (bukan pegawai) masih berlaku.",
+    "relevantArticles": "Pasal 3, 5, 17",
+    "relatedRegulations": [
+      "pp-58-2023"
+    ],
+    "referencingEntries": [
+      "pph-21-ter-monthly-2024",
+      "pph-21-honorarium-bukan-pegawai",
+      "pph-21-pegawai-tidak-tetap",
+      "pph-21-natura-kenikmatan",
+      "pph-21-dana-pensiun",
+      "pph-21-progressive-monthly-pre2024",
+      "pph-21-ptkp-2009",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail"
+    ]
+  }
+}

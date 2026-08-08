@@ -1,0 +1,111 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-21-progressive-pre2022",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "Tarif Progresif Pra-HPP",
+    "description": "Tarif progresif PPh OP sebelum UU HPP berlaku. Maksimal 30% tanpa lapisan 35%.",
+    "rate": {
+      "type": "progressive",
+      "value": "Progresif 4 lapis",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 50000000,
+          "rate": 5
+        },
+        {
+          "min": 50000000,
+          "max": 250000000,
+          "rate": 15
+        },
+        {
+          "min": 250000000,
+          "max": 500000000,
+          "rate": 25
+        },
+        {
+          "min": 500000000,
+          "max": null,
+          "rate": 30
+        }
+      ]
+    },
+    "taxBase": "Penghasilan Kena Pajak",
+    "payer": "WP Orang Pribadi dalam negeri",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": "2021-12-31",
+    "status": "diubah",
+    "legalBasis": [
+      {
+        "regulation": "UU 36/2008",
+        "article": "Pasal 17 ayat (1) huruf a",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+      }
+    ],
+    "supersedes": [
+      "pph-21-progressive-pre2009"
+    ],
+    "supersededBy": [
+      "pph-21-progressive-annual-2024"
+    ],
+    "notes": "Diberlakukan oleh UU 36/2008. Brackets berubah dari UU 17/2000 (batas atas berbeda).",
+    "tags": [
+      "pph-21",
+      "progresif",
+      "historis",
+      "uu-36-2008"
+    ],
+    "lastVerified": "2026-05-26",
+    "examples": [
+      {
+        "scenario": "Tarif Progresif Pra-HPP PKP Rp 100.000.000",
+        "calculation": "Hitung per lapisan progresif",
+        "result": "Pajak = jumlah dari setiap lapisan"
+      }
+    ],
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-21-progressive-annual-2024"
+      ],
+      "supersedes": [
+        "pph-21-progressive-pre2009"
+      ],
+      "sameCategory": [
+        "pph-21-ter-monthly-2024",
+        "pph-21-progressive-annual-2024",
+        "pph-21-non-taxable-income",
+        "pph-21-honorarium-bukan-pegawai",
+        "pph-21-pegawai-tidak-tetap",
+        "pph-21-shu-koperasi",
+        "pph-21-natura-kenikmatan",
+        "pph-21-dana-pensiun",
+        "pph-21-progressive-pre2009",
+        "pph-21-progressive-uulama1983",
+        "pph-21-progressive-uulama1994",
+        "pph-21-progressive-monthly-pre2024",
+        "pph-21-ptkp-1984",
+        "pph-21-ptkp-1995",
+        "pph-21-ptkp-2005",
+        "pph-21-ptkp-2009",
+        "pph-21-ter-a-detail",
+        "pph-21-ter-b-detail",
+        "pph-21-ter-c-detail",
+        "pph-21-norma-dokter",
+        "pph-21-norma-pengacara",
+        "pph-21-norma-akuntan",
+        "pph-21-norma-arsitek",
+        "pph-21-norma-notaris",
+        "pph-21-norma-konsultan",
+        "pph-21-norma-pedagang",
+        "pph-21-norma-petani",
+        "pph-21-norma-pengusaha-kecil"
+      ]
+    }
+  }
+}

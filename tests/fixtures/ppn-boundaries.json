@@ -1,0 +1,129 @@
+{
+  "$comment": "Boundary fixtures for PPN 2022-2025 migration (Task 6). Every expectation encodes a verified primary-source fact: UU 7/2021 HPP Article 4 amending UU PPN Article 7(1)(a)/(b): 10% through 2022-03-31; 11% from 2022-04-01; nominal 12% from 2025-01-01. UU PPN Article 7(2): qualifying exports 0%. PMK 131/2024 Article 2 luxury BKP -> full base 12%. PMK 131/2024 Article 3 non-luxury domestic/import/JKP/foreign utilization -> DPP nilai lain 11/12 (effective 11% = 12% × 11/12). PMK 131/2024 Article 5 luxury-BKP domestic retail final consumer -> 11/12 through 31 Jan 2025, full base from 1 Feb 2025. PMK 131/2024 Article 4 carve-out for special schemes (PMK 11/2025 effective 4 Feb 2025; PMK 53/2025 from 1 Aug 2025). The model distinguishes nominal rate (Article 7) from DPP factor (PMK 131/11) from effective burden. Rates stored as decimal fractions (0.10 = 10%). Amounts are 2-decimal currency strings in IDR. See data/v2/sources.json for primary locators.",
+  "sourcesVerifiedAt": "2026-08-06",
+  "effectiveDate": {
+    "$comment": "UU HPP 7/2021 Article 4 amends UU PPN Article 7(1)(a)/(b). The 11% nominal rate started 2022-04-01 (NOT 2022-01-01). The 12% nominal rate started 2025-01-01 per UU HPP.",
+    "tenPctLastDay": "2022-03-31",
+    "elevenPctFirstDay": "2022-04-01",
+    "year2022TransitionDay": "2022-04-01",
+    "ppnElevenPctLastDayPre2025": "2024-12-31",
+    "ppnTwelvePctFirstDay": "2025-01-01",
+    "pmk131LuxuryRetailJanLastDay": "2025-01-31",
+    "pmk131LuxuryRetailFullBaseFirstDay": "2025-02-01",
+    "pmk11FirstDay": "2025-02-04",
+    "pmk53FirstDay": "2025-08-01"
+  },
+  "concepts": {
+    "$comment": "Distinct concepts for nominal rate (Article 7), DPP factor (PMK 131), and conditional 2025 candidates. Export 0% is its own concept, distinct from exempt/non-object.",
+    "domesticSupply": { "conceptId": "concept-ppn-domestic-supply" },
+    "importBkp": { "conceptId": "concept-ppn-import" },
+    "export": { "conceptId": "concept-ppn-export" },
+    "foreignUtilization": { "conceptId": "concept-ppn-foreign-utilization" },
+    "luxuryRetail": { "conceptId": "concept-ppn-luxury-retail" },
+    "dppNilaiLain": { "conceptId": "concept-ppn-dpp-nilai-lain" }
+  },
+  "boundaries": [
+    {
+      "id": "2022-03-31-still-10pct",
+      "description": "UU HPP Article 4 / UU PPN 7(1)(a): through 2022-03-31 the nominal rate is 10%. Boundary day must resolve 10%, NOT 11%.",
+      "date": "2022-03-31",
+      "request": { "conceptId": "concept-ppn-domestic-supply", "facts": { "transactionKind": "domestic-supply", "luxuryBkp": false, "dpp": "1000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.10", "ppnAmount": "100000.00" }
+    },
+    {
+      "id": "2022-04-01-now-11pct",
+      "description": "UU HPP Article 4 / UU PPN 7(1)(a): from 2022-04-01 the nominal rate is 11%. Boundary day must resolve 11%, NOT 10%.",
+      "date": "2022-04-01",
+      "request": { "conceptId": "concept-ppn-domestic-supply", "facts": { "transactionKind": "domestic-supply", "luxuryBkp": false, "dpp": "1000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.11", "ppnAmount": "110000.00" }
+    },
+    {
+      "id": "2024-12-31-still-11pct-nominal",
+      "description": "Through 2024-12-31 the nominal rate under UU PPN 7(1)(a) HPP is still 11%. The 12% nominal rate does NOT arrive before 2025-01-01.",
+      "date": "2024-12-31",
+      "request": { "conceptId": "concept-ppn-domestic-supply", "facts": { "transactionKind": "domestic-supply", "luxuryBkp": false, "dpp": "1000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.11", "ppnAmount": "110000.00" }
+    },
+    {
+      "id": "2025-nonluxury-domestic-effective-11pct",
+      "description": "PMK 131/2024 Article 3: non-luxury BKP domestic supply in 2025 -> DPP nilai lain 11/12 of actual price; effective burden = 12% × 11/12 = 11%. The substantive 2025 burden remains 11% for the non-luxury case.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-ppn-domestic-supply", "facts": { "transactionKind": "domestic-supply", "luxuryBkp": false, "dpp": "1200000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "effectiveBurdenFraction": "0.11", "ppnAmount": "132000.00", "informationFactor": "0.9166667" }
+    },
+    {
+      "id": "2025-luxury-domestic-full-12pct",
+      "description": "PMK 131/2024 Article 2: luxury BKP subject to PPnBM -> full-base 12% on domestic supply from 2025-01-01.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-ppn-domestic-supply", "facts": { "transactionKind": "domestic-supply", "luxuryBkp": true, "dpp": "1000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.12", "ppnAmount": "120000.00" }
+    },
+    {
+      "id": "2025-luxury-retail-jan-11pct",
+      "description": "PMK 131/2024 Article 5: domestic luxury-BKP supply to a final consumer by an entitled retail PKP in January 2025 uses 11/12 DPP (effective 11%).",
+      "date": "2025-01-15",
+      "request": { "conceptId": "concept-ppn-luxury-retail", "facts": { "transactionKind": "domestic-supply", "luxuryBkp": true, "retailFinalConsumer": true, "dpp": "1200000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "effectiveBurdenFraction": "0.11", "ppnAmount": "132000.00", "informationFactor": "0.9166667" }
+    },
+    {
+      "id": "2025-luxury-retail-feb-full-12pct",
+      "description": "PMK 131/2024 Article 5: from 2025-02-01 the luxury-BKP retail final-consumer supply moves to the full base (12%).",
+      "date": "2025-02-15",
+      "request": { "conceptId": "concept-ppn-luxury-retail", "facts": { "transactionKind": "domestic-supply", "luxuryBkp": true, "retailFinalConsumer": true, "dpp": "1000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.12", "ppnAmount": "120000.00" }
+    },
+    {
+      "id": "2025-import-nonluxury-effective-11pct",
+      "description": "PMK 131/2024 Article 3: non-luxury BKP import -> DPP 11/12, effective 11%.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-ppn-import", "facts": { "transactionKind": "import", "luxuryBkp": false, "dpp": "1200000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "effectiveBurdenFraction": "0.11", "ppnAmount": "132000.00" }
+    },
+    {
+      "id": "2025-import-luxury-full-12pct",
+      "description": "PMK 131/2024 Article 2: luxury BKP import -> full base 12%.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-ppn-import", "facts": { "transactionKind": "import", "luxuryBkp": true, "dpp": "1000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.12", "ppnAmount": "120000.00" }
+    },
+    {
+      "id": "export-0pct-throughout",
+      "description": "UU PPN Article 7(2): qualifying exports of tangible/intangible BKP and JKP are 0% throughout. Distinct concept from exempt/non-object.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-ppn-export", "facts": { "transactionKind": "export" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateType": "zero" }
+    },
+    {
+      "id": "2025-foreign-utilization-effective-11pct",
+      "description": "PMK 131/2024 Article 3: foreign intangible/JKP utilization -> DPP 11/12, effective 11%.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-ppn-foreign-utilization", "facts": { "transactionKind": "foreign-utilization", "luxuryBkp": false, "dpp": "1200000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "effectiveBurdenFraction": "0.11", "ppnAmount": "132000.00" }
+    },
+    {
+      "id": "2025-missing-luxury-classification-conditional",
+      "description": "In 2025 the luxury-BKP classification determines whether the full-base 12% or the 11/12 DPP applies. Without the luxuryBkp fact the resolver must return conditional candidates (bersyarat or fakta_kurang), never a single universal number.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-ppn-domestic-supply", "facts": { "transactionKind": "domestic-supply", "dpp": "1000000" } },
+      "expect": { "determinationIn": ["bersyarat", "fakta_kurang"], "missingFact": "luxuryBkp" }
+    }
+  ],
+  "dppFactor": {
+    "$comment": "PMK 131/2024 Article 3 DPP nilai lain factor for non-luxury transactions: 11/12 of the actual price. Stored as information_factor in the rule so the effective burden (12% × 11/12 = 11%) is computable without storing '11%' as the only substantive 2025 rate. 11/12 ≈ 0.9166667 (kept to 7 decimals; the canonical factor is the exact rational 11/12).",
+    "factor": "0.9166667",
+    "factorRational": "11/12",
+    "effectiveBurden": "0.11",
+    "nominalRate2025": "0.12"
+  },
+  "year2025ConditionalCandidates": {
+    "$comment": "Year 2025 must return conditional candidates, not one misleading universal number. A year query in 2025 should yield multiple segments covering the 11/12 DPP (effective 11%) regime and the full-base 12% regime side by side, with the determination surfacing the conditional nature.",
+    "expectedConcepts": [
+      "concept-ppn-domestic-supply",
+      "concept-ppn-import",
+      "concept-ppn-luxury-retail",
+      "concept-ppn-export",
+      "concept-ppn-foreign-utilization",
+      "concept-ppn-dpp-nilai-lain"
+    ]
+  }
+}

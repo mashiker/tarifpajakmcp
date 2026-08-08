@@ -1,0 +1,42 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "2B",
+    "bab": "I",
+    "title": "Penghasilan WP OP di Luar Negeri",
+    "status": "ditambah",
+    "description": "Ketentuan tentang penghitungan penghasilan WP OP yang menerima penghasilan dari luar negeri.",
+    "keywords": [
+      "luar negeri",
+      "WP OP",
+      "foreign income"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "added",
+        "effectiveDate": "2009-01-01",
+        "summary": "Pasal baru tentang penghasilan luar negeri"
+      }
+    ],
+    "text": "(1) Penghasilan yang diterima atau diperoleh Wajib Pajak orang pribadi yang berdomisili di Indonesia dari luar Indonesia turut menjadi objek pajak di Indonesia.\n(2) Atas penghasilan sebagaimana dimaksud pada ayat (1) diberikan kredit pajak sebesar pajak penghasilan yang telah dipotong atau dibayar di luar Indonesia.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penghasilan WP OP dari luar Indonesia turut menjadi objek pajak (worldwide income).",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Diberikan kredit pajak sebesar pajak yang telah dipotong/dibayar di luar Indonesia.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

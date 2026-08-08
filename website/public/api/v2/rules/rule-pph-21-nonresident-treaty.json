@@ -1,0 +1,68 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-21-nonresident-treaty",
+    "conceptId": "concept-pph-21-recipient-nonresident",
+    "conceptName": "Penerima bukan pegawai: nonresiden (Pasal 26)",
+    "categoryId": "cat-pph-21",
+    "categoryName": "Pajak Penghasilan Pasal 21",
+    "validFrom": "2022-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "percentage",
+      "value": "0.05"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "resident",
+          "value": false
+        },
+        {
+          "op": "equals",
+          "fact": "treaty",
+          "value": "5pct"
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_secondary",
+      "sourceIds": [
+        "src-uu-7-2021-hpp"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Tarif dapat diturunkan oleh P3B/tax treaty"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Sesuai UU HPP"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Bukan resident, dengan treaty tertentu"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-21-nonresident-treaty",
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "ILLUSTRATIVE treaty example rule. The 5% rate is a placeholder illustrating how a P3B/tax treaty can reduce the default 20% Article 26 rate; it is NOT authoritative for any specific country. Each treaty must be verified against its own primary instrument. Status verified_secondary.",
+    "conflicts": []
+  }
+}

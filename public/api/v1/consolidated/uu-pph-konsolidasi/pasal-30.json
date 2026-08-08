@@ -1,0 +1,63 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "30",
+    "bab": "IX",
+    "title": "Transfer Pricing",
+    "status": "diubah",
+    "description": "Ketentuan transfer pricing — transaksi antara pihak-pihak yang memiliki hubungan istimewa harus sesuai harga pasar (arm's length principle).",
+    "keywords": [
+      "transfer pricing",
+      "hubungan istimewa",
+      "arm's length",
+      "TP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Penambahan ketentuan transfer pricing"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan ketentuan TP"
+      }
+    ],
+    "text": "(1) Dalam hal terdapat hubungan istimewa antara WP dengan pihak lain, Direktur Jenderal Pajak dapat menentukan besarnya penghasilan WP berdasarkan kewajaran (arm's length principle).\n(2) Hubungan istimewa sebagaimana dimaksud pada ayat (1) meliputi:\na. WP memiliki penyertaan langsung atau tidak langsung sebanyak 25% atau lebih;\nb. WP mempunyai hubungan keluarga sedarah atau semenda; atau\nc. WP mempunyai hubungan penguasaan atau pengelolaan yang sama.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat menentukan penghasilan WP berdasarkan kewajaran (arm's length) jika ada hubungan istimewa.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Hubungan istimewa: penyertaan ≥25%, hubungan keluarga, atau penguasaan/pengelolaan yang sama.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

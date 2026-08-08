@@ -1,0 +1,56 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "16",
+    "bab": "II",
+    "bagian": "7",
+    "title": "Tempat PPN Terutang",
+    "status": "diubah",
+    "description": "Tempat PPN terutang sesuai lokasi penyerahan.",
+    "keywords": [
+      "tempat terutang"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Perubahan ketentuan tempat"
+      }
+    ],
+    "text": "(1) PPN terutang di tempat domisili PKP.\n(2) Dalam hal PKP mempunyai cabang, PPN terutang di tempat cabang tersebut.\n(3) PKP yang mempunyai beberapa cabang dapat memusatkan pembayaran PPN di tempat kedudukan PKP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN terutang di domisili PKP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Jika ada cabang, PPN di tempat cabang.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Dapat dipusatkan di tempat kedudukan PKP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

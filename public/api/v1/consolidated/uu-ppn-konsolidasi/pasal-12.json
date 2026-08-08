@@ -1,0 +1,53 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "12",
+    "bab": "II",
+    "bagian": "4",
+    "title": "Faktur Pajak",
+    "status": "diubah",
+    "description": "Kewajiban membuat faktur pajak bagi PKP atas setiap penyerahan BKP/JKP. Syarat dan ketentuan faktur pajak elektronik.",
+    "keywords": [
+      "faktur pajak",
+      "e-Faktur",
+      "PKP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan faktur pajak elektronik"
+      }
+    ],
+    "text": "(1) PKP wajib membuat Faktur Pajak untuk setiap penyerahan BKP dan/atau JKP.\n(2) Faktur Pajak sekurang-kurangnya memuat:\na. nama, alamat, dan NPWP PKP yang melakukan penyerahan;\nb. nama, alamat, dan NPWP pembeli BKP atau penerima JKP;\nc. nama BKP dan/atau JKP;\nd. Harga Jual, Penggantian, atau Nilai Ekspor;\ne. DPP;\nf. tarif dan PPN yang terutang;\ng. tanggal pembuatan Faktur Pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PKP wajib buat Faktur Pajak untuk setiap penyerahan BKP/JKP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Faktur Pajak memuat: nama/alamat/NPWP penyerah dan penerima, nama BKP/JKP, harga, DPP, tarif PPN, tanggal.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

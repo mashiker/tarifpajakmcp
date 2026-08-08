@@ -1,0 +1,362 @@
+[
+  {
+    "id": "src-illustrative-official",
+    "name": "Illustrative official gazette",
+    "official": true,
+    "role": "primary",
+    "regulationId": "ILLUSTRATIVE/REG/2024",
+    "locator": "Article 1",
+    "url": "https://example.invalid/illustrative-reg-2024",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-illustrative-secondary",
+    "name": "Illustrative secondary commentary",
+    "official": false,
+    "role": "secondary",
+    "regulationId": "ILLUSTRATIVE/REG/2024",
+    "locator": "p. 12",
+    "url": "https://example.invalid/illustrative-commentary",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-58-2023",
+    "name": "Peraturan Pemerintah Nomor 58 Tahun 2023 tentang Tarif Pemotongan Pajak Penghasilan Pasal 21 dan/atau Pajak Penghasilan Pasal 26 Atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi (TER)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/58/2023",
+    "locator": "Pasal 2-5 dan Lampiran A (TER A), Lampiran B (TER B), Lampiran C (TER C), Lampiran D (TER harian)",
+    "url": "https://peraturan.bpk.go.id/Details/274247/pp-no-58-tahun-2023",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-168-2023",
+    "name": "Peraturan Menteri Keuangan Nomor 168/PMK.010/2023 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/168/PMK.010/2023",
+    "locator": "Pasal 1, 9, 15, 18, 19, 21, 25 (tax point, Masa Pajak, Masa Pajak Terakhir, ordinary vs final reconciliation, PTKP at year start)",
+    "url": "https://peraturan.go.id/id/pmk-no-168-tahun-2023",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-uu-7-2021-hpp",
+    "name": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (HPP)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "UU/7/2021",
+    "locator": "Pasal 3 angka 7 (Pasal 17 ayat (1) huruf a UU PPh: tarif progresif tahunan 5/15/25/30/35), Pasal 17 ayat (3) (Pasal 26 20%), Pasal 4 ayat (3) (final 0% SHU koperasi); Pasal 7 (mengubah Pasal 7 UU PPN: tarif PPN 10% sampai 2022-03-31, 11% mulai 2022-04-01, nominal 12% mulai 2025-01-01; ekspor BKP/JKP berkualifikasi tetap 0% menurut Pasal 7 ayat (2))",
+    "url": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-101-2016-ptkp",
+    "name": "Peraturan Menteri Keuangan Nomor 101/PMK.010/2016 tentang Penyesuaian Besarnya PTKP",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/101/PMK.010/2016",
+    "locator": "Pasal 1 (PTKP TK/0 Rp54.000.000; K/0 Rp58.500.000; tanggungan Rp4.500.000/orang; berlaku Tahun Pajak 2016 sampai dengan saat ini)",
+    "url": "https://peraturan.bpk.go.id/Details/53397/pmk-no-101-pmk-010-2016",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-122-2015-ptkp",
+    "name": "Peraturan Menteri Keuangan Nomor 122/PMK.010/2015 tentang Penyesuaian Besarnya PTKP",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/122/PMK.010/2015",
+    "locator": "Pasal 1 (PTKP TK/0 Rp36.000.000; tanggungan Rp3.000.000/orang; berlaku Tahun Pajak 2015)",
+    "url": "https://peraturan.bpk.go.id/Details/51529/pmk-no-122-tahun-2015",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-162-2012-ptkp",
+    "name": "Peraturan Menteri Keuangan Nomor 162/PMK.011/2012 tentang Penyesuaian Besarnya PTKP",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/162/PMK.011/2012",
+    "locator": "Pasal 1 (PTKP TK/0 Rp24.300.000; tanggungan Rp2.025.000/orang; berlaku Tahun Pajak 2013 dan 2014)",
+    "url": "https://peraturan.bpk.go.id/Details/47735/pmk-no-162-pmk-011-2012",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-252-2008-legacy",
+    "name": "Peraturan Menteri Keuangan Nomor 252/PMK.03/2008 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi (rezim pra-TER untuk pegawai tetap)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/252/PMK.03/2008",
+    "locator": "Petunjuk pelaksanaan pemotongan PPh 21 pra-TER (metode annualisasi tarif Pasal 17)",
+    "url": "https://jdih.kemenkeu.go.id/dok/252-pmk-03-2008",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-uu-36-2008-pph",
+    "name": "Undang-Undang Nomor 36 Tahun 2008 tentang Perubahan Keempat atas Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan (UU PPh konsolidasi 2008)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "UU/36/2008",
+    "locator": "Pasal 23 ayat (1) huruf c angka 2 (jasa teknik, jasa manajemen, jasa konstruksi, jasa konsultan: 2% dari jumlah bruto; berlaku 1 Januari 2009); Pasal 23 ayat (1a) (penerima tanpa NPWP: tarif lebih tinggi 100% → 2% menjadi 4%)",
+    "url": "https://peraturan.bpk.go.id/Details/51343/uu-no-36-tahun-2008",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-141-2015",
+    "name": "Peraturan Menteri Keuangan Nomor 141/PMK.03/2015 tentang Pemotongan Pajak Penghasilan Pasal 23 atas Sehubungan Tidak Jalanya Suatu Hubungan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi (Daftar Jasa Lain dan Mekanika Jumlah Bruto)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/141/PMK.03/2015",
+    "locator": "Lampiran (Daftar 'jasa lain' Pasal 23 ayat (1) huruf c angka 2); Pasal 4 (diundangkan 27 Juli 2015, berlaku 30 hari setelah diundangkan → efektif 26 Agustus 2015); mekanika jumlah bruto (excl. PPN)",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/PMK.141-2015.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-34-2017",
+    "name": "Peraturan Pemerintah Nomor 34 Tahun 2017 tentang Pajak Penghasilan atas Penghasilan dari Persewaan Tanah dan/atau Bangunan dan/atau Jasa Konstruksi serta Pajak Penghasilan Final atas Penghasilan dari Transfer Hak atas Tanah dan/atau Bangunan",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/34/2017",
+    "locator": "Pasal 2 dan Lampiran (PPh final 10% atas persewaan tanah dan/atau bangunan; menggantikan rezim PPh 23 final sebelumnya; efektif 2 Januari 2018). CATATAN: KOP CSV eBupot unifikasi mengaitkan kode 28-403-02 dengan 'PP 8/2024' (Coretax). PP 8/2024 adalah penggabungan tarif final PPh 4(2); PP 34/2017 tetap menjadi dasar hukum utama tarif 10% persewaan tanah/bangunan pasca-2018. Konflik atribusi ini dideklarasikan pada cat-pph-23.knownDiscrepancies.",
+    "url": "https://peraturan.bpk.go.id/Details/48328/pp-no-34-tahun-2017",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-112-2022-nik",
+    "name": "Peraturan Menteri Keuangan Nomor 112/PMK.03/2022 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi (penggunaan NIK sebagai NPWP bagi Orang Pribadi)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/112/PMK.03/2022",
+    "locator": "Pasal 1 (NIK yang telah diverifikasi dengan Dukcapil digunakan sebagai NPWP bagi WP Orang Pribadi; diundangkan 14 Juli 2022)",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/PMK.112-2022.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-136-2023-nik",
+    "name": "Peraturan Menteri Keuangan Nomor 136/PMK.03/2023 tentang Penggunaan Nomor Induk Kependudukan sebagai Nomor Pokok Wajib Pajak bagi Orang Pribadi Wajib Pajak",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/136/PMK.03/2023",
+    "locator": "Pasal 1-2 (NIK sebagai NPWP bagi WP OP penduduk; berlaku 1 Juli 2024 untuk penggunaan penuh)",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/PMK.136-2023.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-peng-6-pj-09-2024-nik",
+    "name": "Surat Edaran Direktur Jenderal Pajak Nomor PENG-06/PJ.09/2024 tentang Petunjuk Pelaksanaan Pemotongan, Penyetoran, dan Pelaporan PPh Pasal 21 dan/atau PPh Pasal 26 serta PPh Pasal 22 dan/atau PPh Pasal 23 Masa Pajak Januari Tahun 2024",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PENG/06/PJ.09/2024",
+    "locator": "Penggunaan NIK dengan integrasi Dukcapil pada Masa Pajak Januari 2024 menghindari penggandaan tarif Pasal 23 ayat (1a); NIK yang belum diaktivasi selama transisi TIDAK menghapus pengali 100%",
+    "url": "https://pajak.go.id/id/surat-edaran-peng-06pj092024",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-per-04-pj-2017",
+    "name": "Peraturan Direktur Jenderal Pajak Nomor PER-04/PJ/2017 tentang Petunjuk Pelaksanaan Pemotongan, Penyetoran, dan Pelaporan Pajak Penghasilan Pasal 23 dan Pajak Penghasilan Pasal 26 (e-Bupot Masa PPh 23)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PER/04/PJ/2017",
+    "locator": "Form Bukti Potong dan tata cara pelaporan PPh 23 pra-Coretax (form chronology: PER-04/PJ/2017)",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/PER-04-PJ-2017.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-per-23-pj-2020",
+    "name": "Peraturan Direktur Jenderal Pajak Nomor PER-23/PJ/2020 tentang Petunjuk Pelaksanaan Pemotongan, Penyetoran, dan Pelaporan Pajak Penghasilan Pasal 21 dan/atau Pajak Penghasilan Pasal 26 serta Pajak Penghasilan Pasal 22 dan/atau Pajak Penghasilan Pasal 23 (e-Bupot Masa terintegrasi)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PER/23/PJ/2020",
+    "locator": "Diundangkan 28 Desember 2020; berlaku untuk Masa Pajak Januari 2021 dan seterusnya (TIDAK berlaku surut untuk Masa Pajak 2020 sebelumnya)",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/PER-23-PJ-2020.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-kep-143-pj-2022",
+    "name": "Keputusan Direktur Jenderal Pajak Nomor KEP-143/PJ/2022 tentang Penetapan Kode Objek Pajak Pemotongan/Pemungutan dan Penyetoran Pajak Penghasilan Pasal 21 dan/atau Pajak Penghasilan Pasal 26 serta Pajak Penghasilan Pasal 22 dan/atau Pajak Penghasilan Pasal 23 (KOP eBupot Unifikasi)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "KEP/143/PJ/2022",
+    "locator": "Lampiran KOP eBupot Unifikasi (jasa teknik 24-104-01, jasa manajemen 24-104-02, jasa konsultan 24-104-03, sewa harta non-tanah/bangunan 24-100-02). KOP berlaku 21 Februari 2022.",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/KEP-143-PJ-2022.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-per-24-pj-2021",
+    "name": "Peraturan Direktur Jenderal Pajak Nomor PER-24/PJ/2021 tentang Petunjuk Pelaksanaan Pemotongan, Penyetoran, dan Pelaporan Pajak Penghasilan Pasal 21 dan/atau Pajak Penghasilan Pasal 26 serta Pajak Penghasilan Pasal 22 dan/atau Pajak Penghasilan Pasal 23 (e-Bupot Unifikasi 2022)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PER/24/PJ/2021",
+    "locator": "Form Bukti Potong e-Bupot Unifikasi; berlaku efektif 21 Februari 2022 bersama KEP-143/PJ/2022",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/PER-24-PJ-2021.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-per-11-pj-2025",
+    "name": "Peraturan Direktur Jenderal Pajak Nomor PER-11/PJ/2025 tentang Bukti Pemotongan dan Pelaporan Pajak Penghasilan (BPPU) dalam Coretax",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PER/11/PJ/2025",
+    "locator": "Bukti Pemotongan Pajak Penghasilan (BPPU) Coretax; berlaku Masa Pajak Maret 2025 dan seterusnya (Coretax live 1 Maret 2025)",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/PER-11-PJ-2025.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-uu-8-1983-ppn",
+    "name": "Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah (UU PPN 1984, sebagaimana diubah terakhir oleh UU 7/2021 HPP)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "UU/8/1983",
+    "locator": "Pasal 4 (objek PPN), Pasal 4A (BKP/JKP dan pengecualian), Pasal 7 ayat (1) huruf a/b (tarif PPN: 10% berlaku sejak 1984-04-01), Pasal 7 ayat (2) (ekspor BKP/JKP berkualifikasi dikenai 0%), Pasal 8 (DPP), Pasal 9 (pengkreditan), Pasal 16B (fasilitas JKPT/Pajak Tidak Dipungut). Sebagaimana diubah oleh UU 42/2009 dan UU 7/2021 HPP.",
+    "url": "https://peraturan.bpk.go.id/Details/44024/uu-no-8-tahun-1983",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-131-2024",
+    "name": "Peraturan Menteri Keuangan Nomor 131/PMK.03/2024 tentang Dasar Pengenaan Pajak dalam Penghitungan Pajak Pertambahan Nilai yang Terutang atas Penyerahan Barang Kena Pajak dan/atau Jasa Kena Pajak serta Impor Barang Kena Pajak",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/131/PMK.03/2024",
+    "locator": "Pasal 2 (BKP mewah yang dikenai PPnBM: DPP penuh, tarif PPN 12% atas impor/penyerahan dalam negeri mulai 1 Januari 2025 / 2025-01-01, kecuali transisi Pasal 5 untuk retail konsumen akhir Januari 2025); Pasal 3 (BKP bukan mewah, JKP biasa, dan perolehan JKP/BKP tidak berwujud dari luar negeri: DPP nilai lain 11/12 sehingga beban efektif PPN = 12% × 11/12 = 11%); Pasal 4 (transaksi yang sudah diatur DPP nilai lain/besaran tertentu tersendiri TIDAK diubah oleh Pasal 3); Pasal 5 (penyerahan BKP mewah dalam negeri kepada konsumen akhir oleh PKP retail yang berhak: DPP 11/12 sampai 31 Januari 2025 / 2025-01-31, DPP penuh mulai 1 Februari 2025 / 2025-02-01; impor mewah dan penyerahan Pasal 2 lainnya menggunakan DPP penuh sejak 1 Januari 2025 / 2025-01-01).",
+    "url": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-11-2025",
+    "name": "Peraturan Menteri Keuangan Nomor 11/PMK.03/2025 tentang Dasar Pengenaan Pajak dalam Penghitungan Pajak Pertambahan Nilai yang Terutang (konsolidasi sektor DPP nilai lain/besaran tertentu)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/11/PMK.03/2025",
+    "locator": "Berlaku efektif 4 Februari 2025 (perhitungan dihitung untuk transaksi sejak 1 Januari 2025 sesuai transisi). Mengkonsolidasi skema DPP nilai lain/besaran tertentu sektoral yang dikecualikan oleh Pasal 4 PMK 131/2024; sering mempertahankan beban efektif 11% melalui faktor tambahan sektoral.",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/PMK-11-2025.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-53-2025",
+    "name": "Peraturan Menteri Keuangan Nomor 53/PMK.03/2025 tentang Perubahan atas PMK 11/PMK.03/2025 (DPP nilai lain sektor tertentu, termasuk asuransi)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/53/PMK.03/2025",
+    "locator": "Berlaku efektif 1 Agustus 2025. Perubahan tertarget atas PMK 11/2025 (mis. sektor asuransi). Tidak mengubah rezim PMK 131/2024 Pasal 3 untuk transaksi non-mewah di luar skema sektoral tersendiri.",
+    "url": "https://jdih.kemenkeu.go.id/peraturan/PMK-53-2025.htm",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-uu-2-2020",
+    "name": "Undang-Undang Nomor 2 Tahun 2020 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2020 tentang Kebijakan Keuangan Negara untuk Stabilitas Sistem Perekonomian dalam Menghadapi Ancaman yang Membahayakan Nasional Ekonomi Nasional dan/atau Stabilitas Sistem Keuangan Menjadi Undang-Undang (stimulus PPh Badan 22%)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "UU/2/2020",
+    "locator": "Pasal 5 ayat (1) huruf a (mengubah UU PPh Pasal 17 ayat (1) huruf b): tarif PPh Badan 22% untuk Tahun Pajak 2020 dan 2021; perusahaan listed mendapat pengurangan 3 persen poin menjadi 19%. MENJADWALAN tarif 20% mulai Tahun Pajak 2022 yang kemudian DITUNDA/SUPERSEDED oleh UU 7/2021 HPP Pasal 3 angka 7 yang menetapkan tarif 22% tetap berlaku dari Tahun Pajak 2022 sampai saat ini. Perppu 1/2020 diundangkan 31 Maret 2020; ditetapkan menjadi UU 2/2020.",
+    "url": "https://peraturan.bpk.go.id/Details/132819/uu-no-2-tahun-2020",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-55-2022-badan",
+    "name": "Peraturan Pemerintah Nomor 55 Tahun 2022 tentang Ketentuan Khusus Pajak Penghasilan atas Penghasilan Wajib Pajak Badan dalam Rangka Investasi (syarat perusahaan listed Pasal 64-65; mengatur pengurangan tarif badan listed)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/55/2022",
+    "locator": "Pasal 64-65 (syarat perusahaan listed untuk pengurangan tarif PPh Badan: minimal 40% saham diperdagangkan di bursa, minimal 300 pemegang saham, masing-masing <5%, dimiliki >=183 hari/tahun, kepatuhan pelaporan; pengurangan 3 persen poin dari tarif dasar 22% menjadi 19%). Menerapkan Pasal 17 ayat (2b) UU PPh. Diundangkan 20 Desember 2022.",
+    "url": "https://peraturan.bpk.go.id/Details/201266/pp-no-55-tahun-2022",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-40-2023-listed",
+    "name": "Peraturan Menteri Keuangan Nomor 40/PMK.010/2023 tentang Pelaksanaan Pengurangan Tarif Pajak Penghasilan Bagi Wajib Pajak Badan dalam Rangka Investasi (petunjuk pelaksanaan syarat perusahaan listed)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/40/PMK.010/2023",
+    "locator": "Pasal 2-4 (syarat perusahaan listed: >=40% saham diperdagangkan, >=300 pemegang saham, masing-masing <5%, dimiliki >=183 hari/tahun pajak, kepatuhan pelaporan; pengurangan 3 persen poin dari tarif dasar 22% menjadi 19%; berlaku Tahun Pajak 2022 dan seterusnya sehubungan dengan UU 7/2021 HPP). Melaksanakan PP 55/2022 Pasal 64-65.",
+    "url": "https://peraturan.bpk.go.id/Details/206959/pmk-no-40-pmk-010-2023",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pmk-28-2024-ikn",
+    "name": "Peraturan Menteri Keuangan Nomor 28/PMK.03/2024 tentang Fasilitas Pajak Penghasilan bagi Pelaku Usaha di Ibu Kota Nusantara",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PMK/28/PMK.03/2024",
+    "locator": "Pasal 4 ayat (1) (pengurangan 100% atas PKP terutang untuk kategori/kualifikasi tertentu); Pasal 8 ayat (10) (jadwal durasi fasilitas menurut kategori bidang usaha dan jendela investasi: 2023-2030 / 2031-2035 / 2036-2045); Pasal 8 ayat (5) (pengurangan 50% untuk 'bidang usaha lain' pada periode 2031-2045). Pasal 3 (definisi Pelaku Usaha dan kriteria IKN).",
+    "url": "https://peraturan.bpk.go.id/Details/289860/pmk-no-28-tahun-2024",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-46-2013",
+    "name": "Peraturan Pemerintah Nomor 46 Tahun 2013 tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu (PPh Final UMKM 1%)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/46/2013",
+    "locator": "Pasal 2 (tarif final 1% atas peredaran bruto usaha); Pasal 3 (WP OP atau badan yang memiliki peredaran bruto <= Rp4.800.000.000 setahun; BUT tidak eligible); Pasal 4 (mengecualikan jasa profesional dan penghasilan di bawah rezim final lain); Pasal 5 (tidak ada batas durasi); Pasal 1 (diundangkan 11 Juni 2013, berlaku 1 Juli 2013 sampai 30 Juni 2018 ketika digantikan PP 23/2018).",
+    "url": "https://peraturan.bpk.go.id/Details/68509/pp-no-46-tahun-2013",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-23-2018",
+    "name": "Peraturan Pemerintah Nomor 23 Tahun 2018 tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu (PPh Final UMKM 0,5%)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/23/2018",
+    "locator": "Pasal 4 ayat (1) (tarif final 0,5% atas peredaran bruto); Pasal 3 (OP, koperasi, CV, firma, PT yang memiliki peredaran bruto <= Rp4.800.000.000 setahun); Pasal 7 (batas durasi: WP OP 7 tahun pajak, koperasi/CV/firma 4 tahun pajak, PT 3 tahun pajak; tahun pajak parsial dihitung sebagai satu tahun pajak penuh); Pasal 10 (aturan transisi untuk WP yang eligible di PP 46/2013 tetapi tidak eligible di PP 23/2018); diundangkan 3 Juli 2018, berlaku 1 Juli 2018 sampai 19 Desember 2022 ketika digantikan PP 55/2022.",
+    "url": "https://peraturan.bpk.go.id/Details/55124/pp-no-23-tahun-2018",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-55-2022-umkm",
+    "name": "Peraturan Pemerintah Nomor 55 Tahun 2022 tentang Ketentuan Khusus Pajak Penghasilan bagi Wajib Pajak yang Memiliki Peredaran Bruto Tertentu (PPh Final UMKM 0,5%, penerus PP 23/2018)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/55/2022",
+    "locator": "Pasal 4 ayat (1) (tarif final 0,5% atas peredaran bruto); Pasal 2 (WP OP, badan, koperasi, BUT tertentu, BUM Desa, perseroan perorangan dengan peredaran bruto <= Rp4.800.000.000); Pasal 61 (pelanggaran langit-langit peredaran bruto tetap meneruskan tarif 0,5% sampai akhir tahun pajak); Pasal 69 (mempertahankan jam durasi PP 23/2018); pengecualian Rp500 juta atas peredaran bruto OP adalah pengecualian DASAR (kumulatif dari masa pajak pertama, refresh setiap tahun pajak) BUKAN langit-langit elegibilitas kedua; diundangkan 20 Desember 2022, berlaku 20 Desember 2022 sampai 21 April 2026 ketika diubah oleh PP 20/2026. CATATAN: PP 55/2022 versi asli Pasal 57/59 berlaku sendirian HANYA sampai 21 April 2026; Pasal 59 dihapus oleh PP 20/2026.",
+    "url": "https://peraturan.bpk.go.id/Details/201266/pp-no-55-tahun-2022",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-20-2026",
+    "name": "Peraturan Pemerintah Nomor 20 Tahun 2026 tentang Perubahan atas Peraturan Pemerintah Nomor 55 Tahun 2022 tentang Ketentuan Khusus Pajak Penghasilan bagi Wajib Pajak yang Memiliki Peredaran Bruto Tertentu (penyempitan entitas eligible UMKM)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/20/2026",
+    "locator": "Berlaku efektif 22 April 2026. Menyempitkan jenis badan eligible utama menjadi Orang Pribadi (OP), perseroan perorangan (pendiri individu tunggal), dan koperasi. CV/firma/PT/BUM Desa hanya kelanjutan warisan di bawah ketentuan transisi. Pasal 59 PP 55/2022 DIHAPUS. Tarif tetap 0,5%. Aturan agregasi dan jasa profesional diperketat.",
+    "url": "https://peraturan.bpk.go.id/Details/330015/pp-no-20-tahun-2026",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-9-2022",
+    "name": "Peraturan Pemerintah Nomor 9 Tahun 2022 tentang Pajak Penghasilan Final Atas Penghasilan dari Jasa Konstruksi (mengubah PP 51/2008)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/9/2022",
+    "locator": "Lampiran dan Pasal (tarif final jasa konstruksi menurut kualifikasi kontraktor: besar kualifikasi 2,65%, besar tidak kualifikasi/asing 3,5%, menengah 4%, kecil kualifikasi 4%, kecil tidak kualifikasi 6%). Berlaku efektif 21 Februari 2022. Kontrak warisan sebelum 21 Februari 2022 dibagi menurut tanggal pembayaran termin.",
+    "url": "https://peraturan.bpk.go.id/Details/201265/pp-no-9-tahun-2022",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-51-2008",
+    "name": "Peraturan Pemerintah Nomor 51 Tahun 2008 tentang Pajak Penghasilan atas Penghasilan dari Kegiatan Jasa Konstruksi (rezim pra-PP 9/2022)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/51/2008",
+    "locator": "Lampiran tarif final jasa konstruksi pra-21 Februari 2022 (besar 3%, menengah 4%, kecil 2% menurut sistem klasifikasi lapangan usaha). Digantikan oleh PP 9/2022 efektif 21 Februari 2022 untuk pembayaran termin pada/sesudah tanggal tersebut.",
+    "url": "https://peraturan.bpk.go.id/Details/51721/pp-no-51-tahun-2008",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-pp-34-2016",
+    "name": "Peraturan Pemerintah Nomor 34 Tahun 2016 tentang Pajak Penghasilan atas Penghasilan dari Transfer Hak atas Tanah dan/atau Bangunan (PPh Final transfer)",
+    "official": true,
+    "role": "primary",
+    "regulationId": "PP/34/2016",
+    "locator": "Pasal 2 dan Lampiran (tarif final menurut kategori: perumahan/perkantoran/permukiman 2,5%; tanah dan bangunan sederhana 1%; perkebunan/kehutanan/pertanian 0% dengan dasar perhitungan NPOPTBP/besaran tertentu). Berlaku efektif sekitar 8 September 2016.",
+    "url": "https://peraturan.bpk.go.id/Details/60306/pp-no-34-tahun-2016",
+    "accessedAt": "2026-08-06"
+  },
+  {
+    "id": "src-uu-15-pph",
+    "name": "Undang-Undang Nomor 36 Tahun 2008 (UU PPh konsolidasi 2008) Pasal 15 — Perhitungan Penghasilan Neto Khusus",
+    "official": true,
+    "role": "primary",
+    "regulationId": "UU/36/2008",
+    "locator": "Pasal 15 (delegasi perhitungan penghasilan neto khusus untuk WP tertentu: angkutan laut/udara internasional, perbankan/asuransi asing, bentuk usaha tetap, ladang migas, panas bumi, dsb.). BERBEDA dari Pasal 4(2) final: beberapa pajak Pasal 15 bersifat final, beberapa dapat dikreditkan. Dipisahkan dari kategori PPh 4(2) final sesuai Task 7.",
+    "url": "https://peraturan.bpk.go.id/Details/51343/uu-no-36-tahun-2008",
+    "accessedAt": "2026-08-06"
+  }
+]

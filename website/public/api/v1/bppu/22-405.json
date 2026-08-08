@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-09-11T02:40:00.000Z",
   "data": {
     "prefix": "22-405",
     "count": 4,
@@ -10,22 +10,15 @@
         "kode": "22-405-01",
         "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Merupakan Pedagang Fisik Aset Kripto",
         "tarif": 0.1,
-        "entryId": "pph-22-penjualan-barang-2024",
-        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
-      },
-      {
-        "kode": "22-405-02",
-        "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Bukan Merupakan Pedagang Fisik Aset Kripto",
-        "tarif": 0.2,
-        "entryId": "pph-22-penjualan-barang-2024",
-        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+        "entryId": "pph-22-kripto",
+        "entryTransactionType": "Transaksi Aset Kripto"
       },
       {
         "kode": "22-405-01",
         "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Merupakan Pedagang Fisik Aset Kripto",
         "tarif": 0.1,
-        "entryId": "pph-22-kripto",
-        "entryTransactionType": "Transaksi Aset Kripto"
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
       },
       {
         "kode": "22-405-02",
@@ -33,6 +26,13 @@
         "tarif": 0.2,
         "entryId": "pph-22-kripto",
         "entryTransactionType": "Transaksi Aset Kripto"
+      },
+      {
+        "kode": "22-405-02",
+        "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Bukan Merupakan Pedagang Fisik Aset Kripto",
+        "tarif": 0.2,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
       }
     ]
   }

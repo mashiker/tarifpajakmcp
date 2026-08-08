@@ -1,10 +1,34 @@
 ---
 import BaseLayout from '../layouts/Base.astro';
+import { CANONICAL_ORIGIN } from '../lib/seo.ts';
+import fs from 'fs';
+import path from 'path';
+
+// Load the v2 corpus so the docs surface live counts (rules, concepts,
+// categories, conflicts) and the canonical determination values. This keeps
+// the docs page in lock-step with the API it documents.
+const corpusPath = path.resolve(process.cwd(), 'public/api/v2/rules-corpus.json');
+const corpus = JSON.parse(fs.readFileSync(corpusPath, 'utf-8'));
+const v2Stats = {
+  rules: corpus.data.rules.length,
+  concepts: corpus.data.concepts.length,
+  categories: corpus.data.categories.length,
+  conflicts: corpus.data.conflicts.length,
+};
+const releaseLabel = corpus.release?.generatedAt
+  ? new Date(corpus.release.generatedAt).toISOString().slice(0, 10)
+  : '';
+const apiBaseUrl = `${CANONICAL_ORIGIN}/api/`;
 ---
 
-<BaseLayout title="API Reference" activeNav="api">
+<BaseLayout
+  title="API Reference"
+  activeNav="api"
+  canonicalPath="/api-docs"
+  description="Dokumentasi API statis Tarif Pajak ID: v1 kompatibel + v2 temporal (per tahun, per tanggal). Tanpa backend, tanpa auth, cacheable di CDN."
+>
   <!-- Breadcrumb -->
-  <nav class="flex items-center gap-1.5 text-xs mb-8 text-[var(--text-tertiary)]">
+  <nav class="flex items-center gap-1.5 text-xs mb-8 text-[var(--text-tertiary)]" aria-label="Breadcrumb">
     <a href="/" class="hover:text-[var(--text)] transition-colors">Beranda</a>
     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
     <span class="text-[var(--text)] font-medium">API Reference</span>
@@ -20,14 +44,50 @@ import BaseLayout from '../layouts/Base.astro';
         <h1 class="text-xl font-bold text-[var(--text)] tracking-tight">API Reference</h1>
       </div>
     </div>
-    <p class="text-sm text-[var(--text-secondary)] max-w-lg">Pre-built static JSON API — fetch langsung dari CDN tanpa backend, tanpa auth.</p>
+    <p class="text-sm text-[var(--text-secondary)] max-w-lg">
+      JSON statis yang di-fetch langsung dari CDN — tanpa backend, tanpa auth, sepenuhnya cacheable.
+      Data bersumber dari regulasi resmi Republik Indonesia dan diperbarui per rilis (rilis terbaru: {releaseLabel}).
+    </p>
   </div>
+
+  <!-- Static-host limitations + provenance banner -->
+  <aside class="api-host-note mb-10" aria-label="Catatan hosting statis dan provenance">
+    <h2 class="api-host-note-title">Hosting statis, provenance, dan batasan</h2>
+    <ul class="api-host-note-list">
+      <li>
+        <strong>Statis, bukan server.</strong> Setiap endpoint adalah file JSON yang sudah di-prebuild. Tidak ada
+        server-side resolver; query per tanggal/tahun di-resolve dari corpus aturan yang dipublikasikan di
+        <code>/api/v2/rules-corpus.json</code>. Cacheable selamanya per rilis (setiap rilis punya <code>sourceHash</code> sendiri).
+      </li>
+      <li>
+        <strong>Dua versi: v1 (kompatibel) + v2 (temporal).</strong> v1 menjaga kompatibilitas konsumen lama (entry IDs,
+        kategori, timeline, kalkulator). v2 adalah model temporal kanonik: interval half-open
+        (<code>validFrom &lt;= date &lt; validToExclusive</code>), union rate bertipe, dan kondisi penerapan terstruktur.
+        v1 PPN/PPh Badan kalkulator diproyeksikan dari v2 supaya tidak drift (lihat kontrak calculator-parity).
+      </li>
+      <li>
+        <strong>Determination, bukan jawaban tunggal.</strong> Resolver v2 mengembalikan satu dari lima nilai:
+        <code>tepat</code>, <code>bersyarat</code>, <code>rentang</code>, <code>fakta_kurang</code>,
+        <code>konflik_sumber</code>. Hanya <code>tepat</code> yang boleh dilaporkan sebagai tarif berlaku.
+        <code>source_conflict</code> dan <code>summary_only</code> tidak boleh menjadi jawaban pasti.
+      </li>
+      <li>
+        <strong>Provenance per klaim.</strong> Setiap aturan membawa <code>verification</code> (status, source IDs,
+        evidence locator) sehingga konsumen dapat menelusuri kembali ke sumber primer (UU, PP, PMK) via
+        <code>/api/v2/sources</code>. Konflik sumber dideklarasikan, bukan dipilih diam-diam.
+      </li>
+      <li>
+        <strong>BUKAN nasihat pajak resmi.</strong> Database ini adalah referensi bersumber dari regulasi resmi, bukan
+        panduan pemerintah. Konteks fakta transaksi menentukan penerapan tarif. Selalu verifikasi ke sumber primer.
+      </li>
+    </ul>
+  </aside>
 
   <!-- Info Cards -->
   <div class="grid grid-cols-3 gap-3 mb-10">
     <div class="card p-4">
       <div class="text-[11px] text-[var(--text-tertiary)] font-medium mb-1">Base URL</div>
-      <code class="text-sm font-mono font-semibold text-[var(--text)]">/api/v1/</code>
+      <code class="text-sm font-mono font-semibold text-[var(--text)]">{apiBaseUrl}</code>
     </div>
     <div class="card p-4">
       <div class="text-[11px] text-[var(--text-tertiary)] font-medium mb-1">Format</div>
@@ -39,47 +99,50 @@ import BaseLayout from '../layouts/Base.astro';
     </div>
   </div>
 
-  <!-- Endpoints -->
+  <!-- v2 stats snapshot -->
+  <div class="card p-4 mb-10">
+    <div class="text-[11px] text-[var(--text-tertiary)] font-medium mb-2">Snapshot data v2 (rilis {releaseLabel})</div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
+      <div><span class="text-[var(--text-tertiary)]">Aturan</span> <span class="font-mono font-semibold text-[var(--text)]">{v2Stats.rules}</span></div>
+      <div><span class="text-[var(--text-tertiary)]">Konsep</span> <span class="font-mono font-semibold text-[var(--text)]">{v2Stats.concepts}</span></div>
+      <div><span class="text-[var(--text-tertiary)]">Kategori</span> <span class="font-mono font-semibold text-[var(--text)]">{v2Stats.categories}</span></div>
+      <div><span class="text-[var(--text-tertiary)]">Konflik</span> <span class="font-mono font-semibold text-[var(--text)]">{v2Stats.conflicts}</span></div>
+    </div>
+  </div>
+
+  <!-- v2 Endpoints -->
   <div class="mb-10">
-    <h2 class="section-heading mb-5">Endpoints</h2>
-    
+    <h2 class="section-heading mb-2">Endpoint v2 (temporal, kanonik)</h2>
+    <p class="text-xs text-[var(--text-secondary)] mb-5 max-w-2xl">
+      v2 adalah sumber data utama website. Interval half-open, determination bertipe, dan provenance per klaim.
+    </p>
     {[
       { group: 'META', color: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300', endpoints: [
-        { method: 'GET', path: '/api/v1/index.json', desc: 'API index' },
-        { method: 'GET', path: '/api/v1/stats.json', desc: 'Statistik database' },
+        { method: 'GET', path: '/api/v2/index.json', desc: 'Index v2 + release metadata + endpoint map' },
+        { method: 'GET', path: '/api/v2/openapi.json', desc: 'OpenAPI 3.0.3 spesifikasi v2' },
       ]},
-      { group: 'ENTRIES', color: 'bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-400', endpoints: [
-        { method: 'GET', path: '/api/v1/entries/index.json', desc: 'Daftar semua entries (ringkasan)' },
-        { method: 'GET', path: '/api/v1/entries/{id}.json', desc: 'Detail 1 entry lengkap' },
+      { group: 'RULES', color: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-400', endpoints: [
+        { method: 'GET', path: '/api/v2/rules/index.json', desc: 'Semua aturan (ringkasan temporal)' },
+        { method: 'GET', path: '/api/v2/rules/{id}.json', desc: 'Detail aturan: rate, conditions, verification, konflik' },
       ]},
-      { group: 'CATEGORIES', color: 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400', endpoints: [
-        { method: 'GET', path: '/api/v1/categories/index.json', desc: 'Daftar semua kategori' },
-        { method: 'GET', path: '/api/v1/categories/{slug}.json', desc: 'Entries dalam 1 kategori' },
+      { group: 'CONCEPTS', color: 'bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-400', endpoints: [
+        { method: 'GET', path: '/api/v2/concepts/index.json', desc: 'Semua konsep transaksi' },
+        { method: 'GET', path: '/api/v2/concepts/{id}.json', desc: 'Konsep + daftar rule ids' },
       ]},
       { group: 'TEMPORAL', color: 'bg-amber-50 text-amber-700 dark:bg-amber-950/30 dark:text-amber-400', endpoints: [
-        { method: 'GET', path: '/api/v1/by-year/{year}.json', desc: 'Entries berlaku di tahun tsb' },
+        { method: 'GET', path: '/api/v2/by-year/index.json', desc: 'Index tahun + determination per tahun' },
+        { method: 'GET', path: '/api/v2/by-year/{year}.json', desc: 'Segmen tahun (interval half-open yang dipotong per tahun)' },
+        { method: 'GET', path: '/api/v2/at-date/index.json', desc: 'Fixture tanggal tepat terpilih' },
+        { method: 'GET', path: '/api/v2/at-date/{date}.json', desc: 'Resolusi tanggal: determination, kandidat, konflik, gap' },
       ]},
-      { group: 'BPPU', color: 'bg-teal-50 text-teal-700 dark:bg-teal-950/30 dark:text-teal-400', endpoints: [
-        { method: 'GET', path: '/api/v1/bppu/index.json', desc: 'Semua kode BPPU + mapping' },
-        { method: 'GET', path: '/api/v1/bppu/{prefix}.json', desc: 'Kode BPPU per prefix' },
+      { group: 'PROVENANCE', color: 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400', endpoints: [
+        { method: 'GET', path: '/api/v2/sources/index.json', desc: 'Sumber primer/pendukung + regulationId + URL' },
+        { method: 'GET', path: '/api/v2/bppu/index.json', desc: 'Kode BPPU versioned (metadata pelaporan, bukan dasar tarif)' },
+        { method: 'GET', path: '/api/v2/categories/index.json', desc: 'Kategori pajak + jumlah konsep' },
       ]},
-      { group: 'TIMELINE', color: 'bg-rose-50 text-rose-700 dark:bg-rose-950/30 dark:text-rose-400', endpoints: [
-        { method: 'GET', path: '/api/v1/timeline/index.json', desc: 'Daftar timeline groups' },
-        { method: 'GET', path: '/api/v1/timeline/{group}.json', desc: 'Rantai sejarah tarif' },
-      ]},
-      { group: 'SEARCH', color: 'bg-cyan-50 text-cyan-700 dark:bg-cyan-950/30 dark:text-cyan-400', endpoints: [
-        { method: 'GET', path: '/api/v1/search-index.json', desc: 'Inverted index (client-side search)' },
-      ]},
-      { group: 'REGULATIONS', color: 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400', endpoints: [
-        { method: 'GET', path: '/api/v1/regulations/index.json', desc: 'Daftar semua regulasi' },
-        { method: 'GET', path: '/api/v1/regulations/{id}.json', desc: 'Detail regulasi + entries' },
-      ]},
-      { group: 'CALCULATOR', color: 'bg-green-50 text-green-700 dark:bg-green-950/30 dark:text-green-400', endpoints: [
-        { method: 'GET', path: '/api/v1/calculator/index.json', desc: 'Daftar kalkulator' },
-        { method: 'GET', path: '/api/v1/calculator/{id}.json', desc: 'Data kalkulasi (brackets, PTKP)' },
-      ]},
-      { group: 'SPEC', color: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300', endpoints: [
-        { method: 'GET', path: '/api/v1/openapi.json', desc: 'OpenAPI 3.0 specification' },
+      { group: 'RESOLVER', color: 'bg-cyan-50 text-cyan-700 dark:bg-cyan-950/30 dark:text-cyan-400', endpoints: [
+        { method: 'GET', path: '/api/v2/rules-corpus.json', desc: 'Corpus aturan untuk resolve client-side' },
+        { method: 'GET', path: '/api/v2/search-index.json', desc: 'Inverted index pencarian' },
       ]},
     ].map((section: any) => (
       <div class="mb-4">
@@ -104,21 +167,108 @@ import BaseLayout from '../layouts/Base.astro';
     ))}
   </div>
 
+  <!-- v1 Endpoints -->
+  <div class="mb-10">
+    <h2 class="section-heading mb-2">Endpoint v1 (kompatibilitas legacy)</h2>
+    <p class="text-xs text-[var(--text-secondary)] mb-5 max-w-2xl">
+      v1 menjaga kompatibilitas konsumen lama (entry IDs, kategori, timeline, kalkulator). PPN/PPh Badan kalkulator
+      diproyeksikan dari v2 (kontrak <code>calculator-parity</code>). Untuk fitur temporal baru, gunakan v2.
+    </p>
+    {[
+      { group: 'META', color: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300', endpoints: [
+        { method: 'GET', path: '/api/v1/index.json', desc: 'API index v1' },
+        { method: 'GET', path: '/api/v1/stats.json', desc: 'Statistik database' },
+      ]},
+      { group: 'ENTRIES', color: 'bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-400', endpoints: [
+        { method: 'GET', path: '/api/v1/entries/index.json', desc: 'Daftar semua entries (ringkasan)' },
+        { method: 'GET', path: '/api/v1/entries/{id}.json', desc: 'Detail 1 entry lengkap' },
+      ]},
+      { group: 'CATEGORIES', color: 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400', endpoints: [
+        { method: 'GET', path: '/api/v1/categories/index.json', desc: 'Daftar semua kategori' },
+        { method: 'GET', path: '/api/v1/categories/{slug}.json', desc: 'Entries dalam 1 kategori' },
+      ]},
+      { group: 'TEMPORAL', color: 'bg-amber-50 text-amber-700 dark:bg-amber-950/30 dark:text-amber-400', endpoints: [
+        { method: 'GET', path: '/api/v1/by-year/{year}.json', desc: 'Entries berlaku di tahun tsb' },
+      ]},
+      { group: 'BPPU', color: 'bg-teal-50 text-teal-700 dark:bg-teal-950/30 dark:text-teal-400', endpoints: [
+        { method: 'GET', path: '/api/v1/bppu/index.json', desc: 'Semua kode BPPU + mapping' },
+        { method: 'GET', path: '/api/v1/bppu/{prefix}.json', desc: 'Kode BPPU per prefix' },
+      ]},
+      { group: 'TIMELINE', color: 'bg-rose-50 text-rose-700 dark:bg-rose-950/30 dark:text-rose-400', endpoints: [
+        { method: 'GET', path: '/api/v1/timeline/index.json', desc: 'Daftar timeline groups' },
+        { method: 'GET', path: '/api/v1/timeline/{group}.json', desc: 'Rantai sejarah tarif' },
+      ]},
+      { group: 'CALCULATOR', color: 'bg-green-50 text-green-700 dark:bg-green-950/30 dark:text-green-400', endpoints: [
+        { method: 'GET', path: '/api/v1/calculator/index.json', desc: 'Daftar kalkulator' },
+        { method: 'GET', path: '/api/v1/calculator/{id}.json', desc: 'Data kalkulasi (brackets, PTKP)' },
+      ]},
+      { group: 'CONSOLIDATED', color: 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400', endpoints: [
+        { method: 'GET', path: '/api/v1/consolidated/index.json', desc: 'Daftar UU Konsolidasi' },
+        { method: 'GET', path: '/api/v1/consolidated/{id}/pasal-{number}.json', desc: 'Detail pasal + amendment history' },
+      ]},
+      { group: 'SPEC', color: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300', endpoints: [
+        { method: 'GET', path: '/api/v1/openapi.json', desc: 'OpenAPI 3.0 spesifikasi v1' },
+      ]},
+    ].map((section: any) => (
+      <div class="mb-4">
+        <h3 class="text-xs font-semibold text-[var(--text-secondary)] mb-2 flex items-center gap-2">
+          <span class={`px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold ${section.color}`}>{section.group}</span>
+        </h3>
+        <div class="card overflow-hidden">
+          <table class="data-table">
+            <thead><tr><th style="width:70px">Method</th><th>Endpoint</th><th>Deskripsi</th></tr></thead>
+            <tbody>
+              {section.endpoints.map((ep: any) => (
+                <tr>
+                  <td><span class="bg-slate-100 dark:bg-slate-800 text-[var(--text-secondary)] px-2 py-0.5 rounded-md text-[10px] font-mono font-bold">GET</span></td>
+                  <td class="font-mono text-xs text-[var(--text)]">{ep.path}</td>
+                  <td class="text-sm text-[var(--text-secondary)]">{ep.desc}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- AI-friendly -->
+  <div class="mb-10">
+    <h2 class="section-heading mb-5">Output AI/LLM</h2>
+    <div class="card p-5">
+      <p class="text-sm text-[var(--text-secondary)] mb-3">
+        Dua file teks yang dirancang untuk konsumsi LLM, dihasilkan dari corpus v2 yang sama:
+      </p>
+      <ul class="text-sm text-[var(--text)] space-y-1.5 font-mono">
+        <li><a class="text-[var(--accent)] hover:underline" href="/llms.txt">/llms.txt</a> <span class="text-[var(--text-tertiary)]">— orientasi ringkas (determination, batasan, statistik)</span></li>
+        <li><a class="text-[var(--accent)] hover:underline" href="/llms-full.txt">/llms-full.txt</a> <span class="text-[var(--text-tertiary)]">— referensi lengkap (tarif berlaku terverifikasi + caveats)</span></li>
+      </ul>
+    </div>
+  </div>
+
   <!-- Try It -->
   <div class="mb-10">
     <h2 class="section-heading mb-5">Try It</h2>
     <div class="card p-6">
       <div class="flex flex-wrap gap-2 mb-4">
-        <select id="api-endpoint" class="border border-[var(--border)] rounded-xl px-3 py-2.5 text-sm font-mono bg-[var(--surface)] flex-1 min-w-[200px] focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all">
-          <option value="/api/v1/index.json">GET /api/v1/index.json</option>
-          <option value="/api/v1/stats.json">GET /api/v1/stats.json</option>
-          <option value="/api/v1/entries/index.json">GET /api/v1/entries/index.json</option>
-          <option value="/api/v1/categories/index.json">GET /api/v1/categories/index.json</option>
-          <option value="/api/v1/by-year/2001.json">GET /api/v1/by-year/2001.json</option>
-          <option value="/api/v1/timeline/pph-21-progressive.json">GET /api/v1/timeline/pph-21-progressive.json</option>
-          <option value="/api/v1/calculator/pph-21.json">GET /api/v1/calculator/pph-21.json</option>
-          <option value="/api/v1/bppu/index.json">GET /api/v1/bppu/index.json</option>
-          <option value="/api/v1/openapi.json">GET /api/v1/openapi.json</option>
+        <select id="api-endpoint" aria-label="Pilih endpoint API untuk dicoba" class="border border-[var(--border)] rounded-xl px-3 py-2.5 text-sm font-mono bg-[var(--surface)] flex-1 min-w-[200px] focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all">
+          <optgroup label="v2">
+            <option value="/api/v2/index.json">GET /api/v2/index.json</option>
+            <option value="/api/v2/rules/index.json">GET /api/v2/rules/index.json</option>
+            <option value="/api/v2/concepts/index.json">GET /api/v2/concepts/index.json</option>
+            <option value="/api/v2/by-year/index.json">GET /api/v2/by-year/index.json</option>
+            <option value="/api/v2/sources/index.json">GET /api/v2/sources/index.json</option>
+            <option value="/api/v2/rules-corpus.json">GET /api/v2/rules-corpus.json</option>
+            <option value="/api/v2/openapi.json">GET /api/v2/openapi.json</option>
+          </optgroup>
+          <optgroup label="v1 (legacy)">
+            <option value="/api/v1/index.json">GET /api/v1/index.json</option>
+            <option value="/api/v1/entries/index.json">GET /api/v1/entries/index.json</option>
+            <option value="/api/v1/categories/index.json">GET /api/v1/categories/index.json</option>
+            <option value="/api/v1/by-year/2001.json">GET /api/v1/by-year/2001.json</option>
+            <option value="/api/v1/calculator/ppn.json">GET /api/v1/calculator/ppn.json</option>
+            <option value="/api/v1/openapi.json">GET /api/v1/openapi.json</option>
+          </optgroup>
         </select>
         <button id="api-execute" class="btn-primary">Execute</button>
         <button id="api-copy-curl" class="btn-secondary">Copy curl</button>
@@ -129,15 +279,15 @@ import BaseLayout from '../layouts/Base.astro';
     </div>
   </div>
 
-  <!-- Use Cases -->
+  <!-- Use Cases (v2) -->
   <div>
-    <h2 class="section-heading mb-5">Contoh Use Case</h2>
+    <h2 class="section-heading mb-5">Contoh Use Case (v2)</h2>
     <div class="grid sm:grid-cols-2 gap-3">
       {[
-        { q: 'Berapa tarif PPN tahun 2001?', cmd: 'curl /api/v1/by-year/2001.json', hint: '→ ppn-10pct: 10%' },
-        { q: 'Berapa tarif PPh 23 jasa tahun 1999?', cmd: 'curl /api/v1/by-year/1999.json', hint: '→ pph-23-jasa-pre2001: 15%' },
-        { q: 'Timeline lengkap PTKP?', cmd: 'curl /api/v1/timeline/pph-21-ptkp.json', hint: '→ 5 era: 960K → 54M' },
-        { q: 'Data untuk kalkulasi PPh 21?', cmd: 'curl /api/v1/calculator/pph-21.json', hint: '→ brackets + PTKP values' },
+        { q: 'Bagaimana resolusi per tanggal?', cmd: 'curl /api/v2/at-date/index.json', hint: '→ daftar fixture tanggal tepat' },
+        { q: 'Aturan berlaku per tahun?', cmd: 'curl /api/v2/by-year/2025.json', hint: '→ segmen + determination per tahun' },
+        { q: 'Corpus aturan untuk resolve client-side?', cmd: 'curl /api/v2/rules-corpus.json', hint: '→ rules + concepts + categories + conflicts' },
+        { q: 'Provenance sumber primer?', cmd: 'curl /api/v2/sources/index.json', hint: '→ regulationId + URL peraturan resmi' },
       ].map((uc: any) => (
         <div class="card-hover p-5">
           <div class="text-sm font-medium text-[var(--text)] mb-3">{uc.q}</div>
@@ -175,3 +325,39 @@ import BaseLayout from '../layouts/Base.astro';
     setTimeout(() => { copyBtn.textContent = 'Copy curl'; }, 2000);
   });
 </script>
+
+<style>
+  .api-host-note {
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    border-radius: 0.5rem;
+    background: var(--surface, #FFFFFF);
+  }
+  .api-host-note-title {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--ink-secondary, #44545a);
+    margin: 0 0 0.5rem;
+  }
+  .api-host-note-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    font-size: 0.8125rem;
+    color: var(--ink-secondary, #44545a);
+    line-height: 1.5;
+  }
+  .api-host-note-list code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    background: var(--surface-alt, #EFF1EC);
+    padding: 0.0625rem 0.3125rem;
+    border-radius: 0.25rem;
+  }
+  :global(html.dark) .api-host-note { background: #111318; border-color: #23272F; }
+  :global(html.dark) .api-host-note-list { color: #B6BCC6; }
+  :global(html.dark) .api-host-note-list code { background: #1A1D24; }
+</style>

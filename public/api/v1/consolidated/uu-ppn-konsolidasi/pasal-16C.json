@@ -1,0 +1,43 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "16C",
+    "bab": "II",
+    "bagian": "8",
+    "title": "Ketentuan PMSE",
+    "status": "ditambah",
+    "description": "Ketentuan khusus PPN atas PMSE: kewajiban pemungut oleh PMSE, pendaftaran PKP PMSE.",
+    "keywords": [
+      "PMSE",
+      "pemungut",
+      "marketplace"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru tentang PMSE"
+      }
+    ],
+    "text": "(1) DJP dapat melakukan pemeriksaan terhadap PKP untuk menguji kepatuhan.\n(2) Pemeriksaan meliputi pemeriksaan kebenaran penghitungan PPN.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat memeriksa PKP.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Termasuk kebenaran penghitungan PPN.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

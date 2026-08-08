@@ -1,0 +1,55 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-final-bunga-pre2009",
+    "category": "PPh",
+    "taxType": "PPh 4(2)",
+    "transactionType": "Bunga Simpanan (Pra-2009)",
+    "description": "PPh final atas bunga simpanan (deposito, tabungan, SBI) berdasarkan UU 17/2000. Tarif 15%. Berlaku 2001-2008.",
+    "rate": {
+      "type": "percentage",
+      "value": 15
+    },
+    "taxBase": "Jumlah bunga simpanan bruto",
+    "payer": "Penabung / deposan",
+    "recipient": "Negara",
+    "withholder": "Bank / lembaga keuangan",
+    "effectiveFrom": "2001-01-01",
+    "effectiveTo": "2008-12-31",
+    "status": "diubah",
+    "legalBasis": [
+      {
+        "regulation": "UU 17/2000",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44066/uu-no-17-tahun-2000"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [
+      "pph-final-bunga-deposito"
+    ],
+    "notes": "Tarif bunga deposito 15% UU 17/2000. Diturunkan/sesuai skema berjenjang oleh UU 36/2008.",
+    "examples": [
+      {
+        "scenario": "Bunga deposito Rp 10.000.000 tahun 2005",
+        "calculation": "15% × 10.000.000",
+        "result": "PPh final = Rp 1.500.000"
+      }
+    ],
+    "tags": [
+      "pph-final",
+      "bunga",
+      "deposito",
+      "historis"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-final-bunga-deposito"
+      ],
+      "sameCategory": []
+    }
+  }
+}

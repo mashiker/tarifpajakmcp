@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "V2 BPPU code",
+  "type": "object",
+  "required": ["id", "code"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "code": { "type": "string", "minLength": 1 },
+    "label": { "type": "string" },
+    "validFrom": { "type": "string", "format": "date" },
+    "validToExclusive": { "type": ["string", "null"], "format": "date" }
+  },
+  "additionalProperties": true
+}

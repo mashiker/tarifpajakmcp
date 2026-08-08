@@ -1,0 +1,42 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "37",
+    "bab": "IX",
+    "title": "Penyitaan",
+    "status": "berlaku",
+    "description": "Tata cara penyitaan barang bergerak dan tidak bergerak milik WP.",
+    "keywords": [
+      "penyitaan",
+      "barang bergerak",
+      "bum"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Lelang dapat dilakukan terhadap harta yang disita.\n(2) Hasil lelang digunakan untuk melunasi pajak yang terutang.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Lelang harta yang disita.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Hasil lelang untuk melunasi pajak terutang.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-final-umkm-pp46",
+    "conceptId": "concept-pph-final-umkm-pp46",
+    "conceptName": "PPh Final UMKM PP 46/2013 (1%)",
+    "categoryId": "cat-pph-final-umkm",
+    "categoryName": "Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026)",
+    "validFrom": "2013-07-01",
+    "validToExclusive": "2018-07-01",
+    "rate": {
+      "type": "percentage",
+      "value": "0.01"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "in",
+          "fact": "entityType",
+          "value": [
+            "op",
+            "pt",
+            "cv",
+            "firma",
+            "badan"
+          ]
+        },
+        {
+          "op": "exists",
+          "fact": "grossTurnover"
+        },
+        {
+          "op": "equals",
+          "fact": "umkmTurnoverEligible",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-pp-46-2013"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pp-46-2013",
+          "locator": "PP 46/2013 Pasal 4 ayat (1): tarif final 1% atas peredaran bruto usaha"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pp-46-2013",
+          "locator": "PP 46/2013 berlaku 1 Juli 2013 sampai 30 Juni 2018; tidak ada batas durasi (Pasal 5)"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pp-46-2013",
+          "locator": "PP 46/2013 Pasal 3: WP OP atau badan (bukan BUT) dengan peredaran bruto <= Rp4.800.000.000; Pasal 4 mengecualikan jasa profesional dan penghasilan di bawah rezim final lain"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-final-umkm",
+    "supersedes": [],
+    "supersededBy": [
+      "rule-pph-final-umkm-pp23"
+    ],
+    "examples": [
+      {
+        "id": "ex-pph-final-umkm-pp46-op-2015",
+        "label": "WP OP UMKM peredaran bruto Rp1.000.000.000 tahun 2015",
+        "illustrative": true,
+        "input": {
+          "entityType": "op",
+          "grossTurnover": "1000000000",
+          "umkmTurnoverEligible": true
+        },
+        "expectedAmount": "10000000.00",
+        "notes": "1% × 1.000.000.000 = 10.000.000. Tarif final UMKM PP 46/2013."
+      }
+    ],
+    "notes": "PPh Final UMKM PP 46/2013: tarif 1% atas peredaran bruto. Eligible: WP OP/badan (bukan BUT), peredaran bruto <= Rp4.800.000.000, mengecualikan jasa profesional. Berlaku 1 Juli 2013 - 30 Juni 2018. TANPA batas durasi. Fakta umkmTurnoverEligible adalah gate boolean yang diturunkan pemanggil dari ambang peredaran bruto <= Rp4.800.000.000.",
+    "conflicts": []
+  }
+}

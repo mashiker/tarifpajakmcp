@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "31",
+    "bab": "VIII",
+    "title": "Putusan Banding",
+    "status": "berlaku",
+    "description": "Ketentuan tentang putusan Pengadilan Pajak.",
+    "keywords": [
+      "putusan",
+      "Pengadilan Pajak"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) WP dapat mengajukan peninjauan kembali ke Mahkamah Agung atas putusan Pengadilan Pajak.\n(2) Peninjauan kembali hanya dapat diajukan jika didasarkan pada:\na. putusan Pengadilan Pajak yang tidak mengadili menurut ketentuan peraturan perundang-undangan;\nb. putusan Pengadilan Pajak yang tidak mempertimbangkan alasan yang menjadi dasar keberatan;\nc. alasan atau dasar permohonan yang baru tidak dipertimbangkan oleh Pengadilan Pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Peninjauan kembali ke MA atas putusan Pengadilan Pajak.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "PK hanya atas: tidak mengadili sesuai UU, tidak mempertimbangkan alasan keberatan, alasan baru tidak dipertimbangkan.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

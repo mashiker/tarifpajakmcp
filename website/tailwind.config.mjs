@@ -9,24 +9,53 @@ export default {
         mono: ['IBM Plex Mono', 'monospace'],
       },
       colors: {
+        // Approved palette from the design spec (Task 8).
+        ink: {
+          DEFAULT: '#132A2A',
+          secondary: '#44545A',
+          tertiary: '#6E7B82',
+        },
+        teal: {
+          DEFAULT: '#0E5E58',
+          hover: '#0A4A45',
+          soft: '#EAF2F0',
+        },
+        paper: {
+          DEFAULT: '#F7F8F4',
+        },
+        rule: {
+          DEFAULT: '#D9E0DC',
+          subtle: '#E6EBE7',
+        },
+        warning: {
+          DEFAULT: '#B7791F',
+          soft: '#FBF3E3',
+        },
+        conflict: {
+          DEFAULT: '#B64545',
+        },
+        // Backward-compat aliases used by older pages (Tailwind utilities).
         accent: {
-          DEFAULT: '#0d9488',
-          hover: '#0f766e',
-          soft: '#f0fdfa',
-          light: '#2dd4bf',
+          DEFAULT: '#0E5E58',
+          hover: '#0A4A45',
+          soft: '#EAF2F0',
+          light: '#2DD4BF',
         },
         highlight: {
-          DEFAULT: '#b45309',
-          soft: '#fffbeb',
-          light: '#fbbf24',
+          DEFAULT: '#B7791F',
+          soft: '#FBF3E3',
+          light: '#FBBF24',
         },
         surface: {
-          DEFAULT: '#ffffff',
-          alt: '#f4f5f7',
+          DEFAULT: '#FFFFFF',
+          alt: '#EFF1EC',
         },
       },
       maxWidth: {
         '8xl': '1400px',
+        // Full-width database cap (raised above the legacy 1400px on this page).
+        'db': '1600px',
+        'screen-2xl': '1536px',
       },
     },
   },

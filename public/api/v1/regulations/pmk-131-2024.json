@@ -1,0 +1,33 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pmk-131-2024",
+    "number": "131",
+    "year": 2024,
+    "title": "PMK tentang Penentuan Tarif Pajak Pertambahan Nilai",
+    "shortName": "PMK Tarif PPN",
+    "type": "PMK",
+    "promulgationDate": "2024-07-30",
+    "effectiveDate": "2025-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/202689/pmk-no-131-tahun-2024",
+    "status": "berlaku",
+    "description": "PMK menentukan tarif PPN 12% berlaku 1 Januari 2025 untuk penyerahan BKP/JKP dalam negeri dan impor. Sebelumnya 11% (UU HPP). Ekspor tetap 0%.",
+    "relevantArticles": "Pasal 2",
+    "relatedRegulations": [
+      "uu-7-2021-hpp"
+    ],
+    "referencingEntries": [
+      "pph-final-bunga-deposito",
+      "pph-final-sewa-tanah",
+      "pph-final-hadiah-undian",
+      "pph-final-pengalihan-pp131",
+      "ppn-11pct-effective-2025",
+      "ppn-impor-bkp",
+      "ppn-pmse",
+      "ppn-jasa-tenaga-listrik",
+      "ppn-jasa-telekomunikasi"
+    ]
+  }
+}

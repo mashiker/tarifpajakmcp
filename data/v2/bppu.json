@@ -1,0 +1,63 @@
+[
+  {
+    "id": "bppu-illustrative-1",
+    "code": "22-100-01",
+    "label": "Illustrative BPPU code A",
+    "validFrom": "2024-01-01",
+    "validToExclusive": null
+  },
+  {
+    "id": "bppu-illustrative-2",
+    "code": "22-200-01",
+    "label": "Illustrative BPPU code B",
+    "validFrom": "2024-01-01",
+    "validToExclusive": null
+  },
+  {
+    "id": "bppu-24-104-01",
+    "code": "24-104-01",
+    "label": "Jasa Teknik (PPh 23)",
+    "validFrom": "2022-02-21",
+    "validToExclusive": null,
+    "sourceId": "src-kep-143-pj-2022",
+    "formSourceId": "src-per-24-pj-2021",
+    "$comment": "KOP eBupot Unifikasi KEP-143/PJ/2022 + PER-24/PJ/2021, berlaku 21 Februari 2022. Hanya metadata pelaporan — tarif kanonik ada di UU PPh Pasal 23 ayat (1) huruf c angka 2 (UU 36/2008) dan PMK 141/2015."
+  },
+  {
+    "id": "bppu-24-104-02",
+    "code": "24-104-02",
+    "label": "Jasa Manajemen (PPh 23)",
+    "validFrom": "2022-02-21",
+    "validToExclusive": null,
+    "sourceId": "src-kep-143-pj-2022",
+    "formSourceId": "src-per-24-pj-2021"
+  },
+  {
+    "id": "bppu-24-104-03",
+    "code": "24-104-03",
+    "label": "Jasa Konsultan (PPh 23)",
+    "validFrom": "2022-02-21",
+    "validToExclusive": null,
+    "sourceId": "src-kep-143-pj-2022",
+    "formSourceId": "src-per-24-pj-2021"
+  },
+  {
+    "id": "bppu-24-100-02",
+    "code": "24-100-02",
+    "label": "Sewa dan penghasilan lain sehubungan dengan penggunaan harta (kecuali sewa tanah/bangunan final PPh 4(2)) — PPh 23",
+    "validFrom": "2022-02-21",
+    "validToExclusive": null,
+    "sourceId": "src-kep-143-pj-2022",
+    "formSourceId": "src-per-24-pj-2021"
+  },
+  {
+    "id": "bppu-28-403-02",
+    "code": "28-403-02",
+    "label": "Persewaan Tanah dan/atau Bangunan — FINAL PPh 4(2)",
+    "validFrom": "2022-02-21",
+    "validToExclusive": null,
+    "sourceId": "src-kep-143-pj-2022",
+    "formSourceId": "src-per-24-pj-2021",
+    "$comment": "FINAL PPh 4(2) 10% per PP 34/2017 (efektif 2 Januari 2018). BUKAN objek PPh 23. Direferensikan oleh rule scope-exclusion concept-pph-23-scope-rent-land-building hanya untuk membuat batas cakupan dapat ditemukan. KOP CSV mengaitkan kode ini dengan 'PP 8/2024' (Coretax) — konflik atribusi dideklarasikan pada cat-pph-23.knownDiscrepancies."
+  }
+]

@@ -1,0 +1,116 @@
+---
+// Determination notice for gaps, transitions, and source conflicts.
+// Implements the design-spec error model: never invent a 0% answer, surface
+// `tepat`, `bersyarat`, `rentang`, `fakta_kurang`, and `konflik_sumber`.
+
+export interface Props {
+  kind: 'empty' | 'gap' | 'transition' | 'conflict' | 'review';
+  title?: string;
+  message?: string;
+}
+const { kind, title, message } = Astro.props;
+
+const COPY: Record<Props['kind'], { title: string; message: string }> = {
+  empty: {
+    title: 'Tidak ada tarif yang cocok',
+    message: 'Tidak ada hasil untuk filter saat ini. Longgarkan pencarian, status, verifikasi, atau tanggal untuk memperluas hasil.',
+  },
+  gap: {
+    title: 'Gap — tidak ada aturan pada tanggal ini',
+    message: 'Tidak ada aturan yang menutupi tanggal terpilih untuk filter ini. Resolver tidak mengembalikan 0% secara otomatis; pilih tanggal lain atau longgarkan kategori.',
+  },
+  transition: {
+    title: 'Tahun transisi',
+    message: 'Tahun terpilih memuat lebih dari satu interval. Pilih tanggal tepat (YYYY-MM-DD) untuk melihat aturan yang berlaku, atau tinjau setiap segmen di bawah.',
+  },
+  conflict: {
+    title: 'Konflik sumber',
+    message: 'Ada konflik sumber yang belum diputuskan pada aturan ini. Resolver tidak mengembalikan jawaban pasti; lihat detail untuk klaim yang bertentangan.',
+  },
+  review: {
+    title: 'Perlu tinjauan',
+    message: 'Aturan ini berstatus needs_review atau summary_only. Tidak boleh dipakai sebagai jawaban pasti.',
+  },
+};
+
+const copy = { ...COPY[kind], ...(title ? { title } : {}), ...(message ? { message } : {}) };
+const ICON: Record<Props['kind'], string> = {
+  empty: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z',
+  gap: 'M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+  transition: 'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z',
+  conflict: 'M12 9v2m0 4h.01M5.5 19h13a2 2 0 001.74-3l-6.5-11a2 2 0 00-3.48 0l-6.5 11a2 2 0 001.74 3z',
+  review: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+};
+---
+
+<aside class:list={['determination-notice', `determination-${kind}`]} aria-label={`Pemberitahuan: ${copy.title}`}>
+  <svg class="determination-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={ICON[kind]} />
+  </svg>
+  <div class="determination-body">
+    <p class="determination-title">{copy.title}</p>
+    <p class="determination-message">{copy.message}</p>
+  </div>
+</aside>
+
+<style>
+  .determination-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: var(--surface, #FFFFFF);
+    margin: 0.75rem 0;
+  }
+  .determination-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+  .determination-title {
+    font-weight: 700;
+    font-size: 0.8125rem;
+    color: var(--ink, #132A2A);
+    margin: 0 0 0.125rem;
+  }
+  .determination-message {
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: var(--ink-secondary, #44545a);
+    margin: 0;
+  }
+  /* Approved warning/conflict tokens. */
+  .determination-review,
+  .determination-transition {
+    background: rgba(183, 121, 31, 0.06);
+    border-color: rgba(183, 121, 31, 0.30);
+  }
+  .determination-review .determination-icon,
+  .determination-transition .determination-icon { color: #B7791F; }
+  .determination-conflict {
+    background: rgba(182, 69, 69, 0.06);
+    border-color: rgba(182, 69, 69, 0.30);
+  }
+  .determination-conflict .determination-icon { color: #B64545; }
+  .determination-gap {
+    background: rgba(183, 121, 31, 0.04);
+    border-color: rgba(183, 121, 31, 0.22);
+  }
+  .determination-gap .determination-icon { color: #B7791F; }
+  .determination-empty .determination-icon { color: var(--ink-secondary, #44545a); }
+
+  :global(html.dark) .determination-title { color: #EDF0F5; }
+  :global(html.dark) .determination-message { color: #B6BCC6; }
+  :global(html.dark) .determination-review,
+  :global(html.dark) .determination-transition {
+    background: rgba(251, 191, 36, 0.10);
+    border-color: rgba(251, 191, 36, 0.30);
+  }
+  :global(html.dark) .determination-conflict {
+    background: rgba(248, 113, 113, 0.10);
+    border-color: rgba(248, 113, 113, 0.32);
+  }
+</style>

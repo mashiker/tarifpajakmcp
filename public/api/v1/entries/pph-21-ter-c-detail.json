@@ -1,0 +1,302 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-21-ter-c-detail",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
+    "description": "Tabel lengkap TER Kategori C (Kawin, tanggungan ≥3) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
+    "rate": {
+      "type": "progressive",
+      "value": "0% – 25% (42 lapisan)",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 7550000,
+          "rate": 0
+        },
+        {
+          "min": 7550001,
+          "max": 7900000,
+          "rate": 0.25
+        },
+        {
+          "min": 7900001,
+          "max": 8300000,
+          "rate": 0.5
+        },
+        {
+          "min": 8300001,
+          "max": 8700000,
+          "rate": 0.75
+        },
+        {
+          "min": 8700001,
+          "max": 9150000,
+          "rate": 1
+        },
+        {
+          "min": 9150001,
+          "max": 9600000,
+          "rate": 1.25
+        },
+        {
+          "min": 9600001,
+          "max": 10100000,
+          "rate": 1.5
+        },
+        {
+          "min": 10100001,
+          "max": 10650000,
+          "rate": 1.75
+        },
+        {
+          "min": 10650001,
+          "max": 11250000,
+          "rate": 2
+        },
+        {
+          "min": 11250001,
+          "max": 11850000,
+          "rate": 2.25
+        },
+        {
+          "min": 11850001,
+          "max": 12550000,
+          "rate": 2.5
+        },
+        {
+          "min": 12550001,
+          "max": 13250000,
+          "rate": 2.75
+        },
+        {
+          "min": 13250001,
+          "max": 14100000,
+          "rate": 3
+        },
+        {
+          "min": 14100001,
+          "max": 14950000,
+          "rate": 3.25
+        },
+        {
+          "min": 14950001,
+          "max": 15950000,
+          "rate": 3.5
+        },
+        {
+          "min": 15950001,
+          "max": 17050000,
+          "rate": 3.75
+        },
+        {
+          "min": 17050001,
+          "max": 18250000,
+          "rate": 4
+        },
+        {
+          "min": 18250001,
+          "max": 19550000,
+          "rate": 4.25
+        },
+        {
+          "min": 19550001,
+          "max": 20950000,
+          "rate": 4.5
+        },
+        {
+          "min": 20950001,
+          "max": 22550000,
+          "rate": 4.75
+        },
+        {
+          "min": 22550001,
+          "max": 24250000,
+          "rate": 5
+        },
+        {
+          "min": 24250001,
+          "max": 26150000,
+          "rate": 5.5
+        },
+        {
+          "min": 26150001,
+          "max": 28350000,
+          "rate": 6
+        },
+        {
+          "min": 28350001,
+          "max": 30750000,
+          "rate": 6.5
+        },
+        {
+          "min": 30750001,
+          "max": 33550000,
+          "rate": 7
+        },
+        {
+          "min": 33550001,
+          "max": 36750000,
+          "rate": 7.5
+        },
+        {
+          "min": 36750001,
+          "max": 40450000,
+          "rate": 8
+        },
+        {
+          "min": 40450001,
+          "max": 44750000,
+          "rate": 8.5
+        },
+        {
+          "min": 44750001,
+          "max": 49750000,
+          "rate": 9
+        },
+        {
+          "min": 49750001,
+          "max": 55750000,
+          "rate": 9.5
+        },
+        {
+          "min": 55750001,
+          "max": 62950000,
+          "rate": 10
+        },
+        {
+          "min": 62950001,
+          "max": 71950000,
+          "rate": 10.5
+        },
+        {
+          "min": 71950001,
+          "max": 83450000,
+          "rate": 11
+        },
+        {
+          "min": 83450001,
+          "max": 97950000,
+          "rate": 11.5
+        },
+        {
+          "min": 97950001,
+          "max": 116950000,
+          "rate": 12
+        },
+        {
+          "min": 116950001,
+          "max": 141950000,
+          "rate": 12.5
+        },
+        {
+          "min": 141950001,
+          "max": 177950000,
+          "rate": 13
+        },
+        {
+          "min": 177950001,
+          "max": 232950000,
+          "rate": 13.5
+        },
+        {
+          "min": 232950001,
+          "max": 327950000,
+          "rate": 14
+        },
+        {
+          "min": 327950001,
+          "max": 530950000,
+          "rate": 14.5
+        },
+        {
+          "min": 530950001,
+          "max": 955000000,
+          "rate": 15
+        },
+        {
+          "min": 955000001,
+          "max": null,
+          "rate": 25
+        }
+      ],
+      "effectiveRate": "0% untuk ≤ Rp 7.550.000, naik bertahap hingga 25% untuk > Rp 955.000.000"
+    },
+    "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
+    "payer": "WP OP dalam negeri",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 58/2023",
+        "article": "Lampiran",
+        "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+      },
+      {
+        "regulation": "PMK 168/2023",
+        "article": "Pasal 4-6",
+        "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Berlaku untuk pegawai yang kawin dengan tanggungan 3 atau lebih. Tarif 0% untuk penghasilan bruto ≤ Rp 7.550.000/bulan. Tarif tertinggi 25% untuk penghasilan > Rp 955.000.000/bulan.",
+    "examples": [
+      {
+        "scenario": "Pegawai kawin 3 tanggungan, gaji Rp 10.000.000/bulan",
+        "calculation": "TER C: Rp 10.000.000 jatuh di lapisan ke-6 (Rp 9.600.001 – Rp 10.100.000) = 1.25%",
+        "result": "PPh 21 = 1.25% × Rp 10.000.000 = Rp 125.000"
+      },
+      {
+        "scenario": "Pegawai kawin 3 tanggungan, gaji Rp 100.000.000/bulan",
+        "calculation": "TER C: Rp 100.000.000 jatuh di lapisan ke-36 (Rp 97.950.001 – Rp 116.950.000) = 12%",
+        "result": "PPh 21 = 12% × Rp 100.000.000 = Rp 12.000.000"
+      }
+    ],
+    "tags": [
+      "pph-21",
+      "ter",
+      "detail",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-21-ter-monthly-2024",
+        "pph-21-progressive-annual-2024",
+        "pph-21-progressive-pre2022",
+        "pph-21-non-taxable-income",
+        "pph-21-honorarium-bukan-pegawai",
+        "pph-21-pegawai-tidak-tetap",
+        "pph-21-shu-koperasi",
+        "pph-21-natura-kenikmatan",
+        "pph-21-dana-pensiun",
+        "pph-21-progressive-pre2009",
+        "pph-21-progressive-uulama1983",
+        "pph-21-progressive-uulama1994",
+        "pph-21-progressive-monthly-pre2024",
+        "pph-21-ptkp-1984",
+        "pph-21-ptkp-1995",
+        "pph-21-ptkp-2005",
+        "pph-21-ptkp-2009",
+        "pph-21-ter-a-detail",
+        "pph-21-ter-b-detail",
+        "pph-21-norma-dokter",
+        "pph-21-norma-pengacara",
+        "pph-21-norma-akuntan",
+        "pph-21-norma-arsitek",
+        "pph-21-norma-notaris",
+        "pph-21-norma-konsultan",
+        "pph-21-norma-pedagang",
+        "pph-21-norma-petani",
+        "pph-21-norma-pengusaha-kecil"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "21",
+    "bab": "VI",
+    "title": "Waktu Pemeriksaan",
+    "status": "diubah",
+    "description": "Batas waktu pemeriksaan dan perpanjangan.",
+    "keywords": [
+      "pemeriksaan",
+      "waktu",
+      "perpanjangan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penyesuaian batas waktu"
+      }
+    ],
+    "text": "(1) WP yang tidak puas dengan hasil pemeriksaan dapat mengajukan keberatan kepada DJP.\n(2) Keberatan disampaikan secara tertulis dalam bahasa Indonesia paling lambat 3 bulan sejak tanggal surat ketetapan pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP dapat mengajukan keberatan jika tidak puas.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Keberatan tertulis dalam bahasa Indonesia, paling lambat 3 bulan.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

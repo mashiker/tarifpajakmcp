@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "44E",
+    "bab": "XIII",
+    "title": "Kerahasiaan Informasi Internasional",
+    "status": "ditambah",
+    "description": "Ketentuan kerahasiaan informasi yang diperoleh melalui kerja sama internasional.",
+    "keywords": [
+      "kerahasiaan",
+      "internasional"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru tentang kerahasiaan info internasional"
+      }
+    ],
+    "text": "(1) Daluwarsa penuntutan pidana di bidang perpajakan adalah 5 (lima) tahun sejak saat terutangnya pajak.\n(2) Daluwarsa sebagaimana dimaksud pada ayat (1) terputus karena:\na. pengenaan sanksi administrasi;\nb. penyampaian SPT pembetulan;\nc. pengakuan salah atau kelalaian WP;\nd. penerbitan STP, SKPKB, atau SKPKBT.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Daluwarsa penuntutan pidana pajak: 5 tahun sejak terutangnya pajak.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Terputus: sanksi administrasi, SPT pembetulan, pengakuan WP, STP/SKPKB/SKPKBT.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

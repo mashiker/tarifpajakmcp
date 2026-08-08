@@ -1,0 +1,42 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "16B",
+    "bab": "II",
+    "bagian": "8",
+    "title": "Pembenaran PPN",
+    "status": "ditambah",
+    "description": "Pembenaran atas kesalahan pelaporan PPN.",
+    "keywords": [
+      "pembenaran",
+      "koreksi"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "added",
+        "effectiveDate": "2010-04-01",
+        "summary": "Pasal baru"
+      }
+    ],
+    "text": "(1) PKP wajib menyelenggarakan pembukuan atas kegiatan usaha yang dilakukan.\n(2) Pembukuan sebagaimana dimaksud pada ayat (1) harus memungkinkan penghitungan PPN yang terutang.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PKP wajib menyelenggarakan pembukuan.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Pembukuan harus memungkinkan penghitungan PPN terutang.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

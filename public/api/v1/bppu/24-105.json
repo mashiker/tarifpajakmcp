@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "24-105",
+    "count": 1,
+    "codes": [
+      {
+        "kode": "24-105-01",
+        "nama": "Bunga Pinjaman yang Diterima  Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap Melalui Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi",
+        "tarif": 0,
+        "entryId": "pph-26-general-2024",
+        "entryTransactionType": "Penghasilan WP Luar Negeri Umum"
+      }
+    ]
+  }
+}

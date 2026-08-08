@@ -1,0 +1,77 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "ppn-11pct-effective-2025",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Penyerahan BKP/JKP dalam negeri",
+    "description": "Tarif PPN efektif 11% berdasarkan mekanisme PMK 131/2024. Tarif dasar UU HPP menetapkan PPN 12%, namun PMK 131/2024 menetapkan tarif efektif yang diperhitungkan sebagai 11/12 dari tarif dasar 12%.",
+    "rate": {
+      "type": "percentage",
+      "value": 11,
+      "effectiveRate": "11/12 × 12% = 11% (PMK 131/2024)"
+    },
+    "taxBase": "Dasar Pengenaan Pajak (DPP) = Harga Jual/Penggantian/Uang muka/Nilai ekspor",
+    "payer": "Konsumen akhir",
+    "recipient": "Negara",
+    "withholder": "PKP (Pengusaha Kena Pajak) sebagai pemungut",
+    "effectiveFrom": "2025-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PMK 131/2024",
+        "article": "Pasal 2",
+        "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 7 ayat (1)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [
+      "ppn-11pct-2022",
+      "ppn-10pct"
+    ],
+    "supersededBy": [],
+    "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.",
+    "examples": [
+      {
+        "scenario": "Penjualan BKP Rp 1.000.000",
+        "calculation": "PPN = 11% × Rp 1.000.000",
+        "result": "PPN = Rp 110.000"
+      }
+    ],
+    "tags": [
+      "ppn",
+      "tarif-efektif",
+      "pmk-131-2024",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "relatedEntries": {
+      "supersedes": [
+        "ppn-11pct-2022",
+        "ppn-10pct"
+      ],
+      "sameCategory": [
+        "ppn-11pct-2022",
+        "ppn-10pct",
+        "ppn-ekspor-bkp",
+        "ppn-impor-bkp",
+        "ppn-pmse",
+        "ppn-jasa-tenaga-listrik",
+        "ppn-jasa-telekomunikasi",
+        "ppn-ekspor-jkp",
+        "ppn-tidak-kena-pajak",
+        "ppn-jkpt-industri",
+        "ppn-jasa-kegiatan-usaha-persewaan",
+        "ppn-dpp-penghitungan",
+        "ppn-pengkreditan"
+      ]
+    }
+  }
+}

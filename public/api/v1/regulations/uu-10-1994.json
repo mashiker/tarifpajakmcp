@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "uu-10-1994",
+    "pasalLawId": 447,
+    "number": "10",
+    "year": 1994,
+    "title": "Undang-Undang Perubahan Pertama atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan",
+    "shortName": "UU PPh (Perubahan I)",
+    "type": "UU",
+    "promulgationDate": "1994-11-19",
+    "effectiveDate": "1995-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44032/uu-no-10-tahun-1994",
+    "status": "dicabut_sebagian",
+    "description": "Perubahan pertama UU PPh. Tidak mengubah tarif Pasal 17 secara substansial. PTKP disesuaikan. Disahkan oleh Presiden Soeharto.",
+    "relevantArticles": "Pasal 3 (tarif), Pasal 5 (PTKP)",
+    "relatedRegulations": [
+      "uu-7-1983-pph",
+      "uu-17-2000"
+    ],
+    "referencingEntries": [
+      "bea-masuk-umum-mf",
+      "bea-masuk-bmt",
+      "bea-masuk-anti-dumping",
+      "bea-meterai-dokumen-2021",
+      "bea-meterai-cek-bilyet",
+      "bea-meterai-kontrak",
+      "bea-meterai-surat-berharga",
+      "bea-meterai-nota-kredit",
+      "pph-21-progressive-uulama1994",
+      "pph-21-ptkp-1995",
+      "pph-21-ptkp-2005",
+      "pph-21-ptkp-2009",
+      "pph-22-pre2024"
+    ]
+  }
+}

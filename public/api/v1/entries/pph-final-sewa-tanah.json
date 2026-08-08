@@ -1,0 +1,91 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-final-sewa-tanah",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Sewa Tanah dan/atau Bangunan",
+    "description": "Pajak final atas penghasilan berupa sewa tanah dan/atau bangunan selain yang dipotong PPh 23.",
+    "rate": {
+      "type": "percentage",
+      "value": 10
+    },
+    "taxBase": "Jumlah bruto sewa",
+    "payer": "Penerima sewa",
+    "recipient": "Negara",
+    "withholder": "Penyewa (sebagai pemotong)",
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 36/2008",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008"
+      },
+      {
+        "regulation": "PP 131/2000",
+        "article": "Pasal 4",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "PP 131/2000 Pasal 4 mengatur bahwa sewa tanah dan/atau bangunan yang dipotong PPh final 10% adalah yang tidak termasuk PPh 23.",
+    "tags": [
+      "pph-final",
+      "sewa",
+      "tanah",
+      "bangunan",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "bppuKode": [
+      {
+        "kode": "28-402-01",
+        "nama": "Pengalihan Hak atas Tanah dan/atau Bangunan",
+        "tarif": 2.5
+      },
+      {
+        "kode": "28-402-02",
+        "nama": "Pengalihan Rumah Sederhana dan Rumah Susun Sederhana yang Dilakukan oleh WP yang Usaha Pokoknya Mengalihkan Hak atas Tanah dan/atau Bangunan",
+        "tarif": 1
+      },
+      {
+        "kode": "28-402-03",
+        "nama": "Pengalihan Hak atas Tanah dan/atau Bangunan kepada Pemerintah, BUMN yang Mendapat Penugasan Khusus dari Pemerintah, atau BUMD yang Mendapat Penugasan Khusus dari Kepala Daerah, sesuai UU mengenai Pengadaan Tanah bagi Pembangunan untuk Kepentingan Umum",
+        "tarif": 0
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Sewa Tanah dan/atau Bangunan Rp 100.000.000",
+        "calculation": "10% × 100.000.000",
+        "result": "Pajak = Rp 10.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-final-bunga-deposito",
+        "pph-final-hadiah-undian",
+        "pph-final-transaksi-saham-bursa",
+        "pph-final-konstruksi",
+        "pph-final-bunga-koperasi",
+        "pph-final-transportasi",
+        "pph-final-migas",
+        "pph-final-investasi-lpi",
+        "pph-final-bunga-pre2009",
+        "pph-final-pengalihan-pp131",
+        "pph-final-pengalihan-pp71",
+        "pph-15-penerbangan-domestik",
+        "pph-15-pelayaran-domestik",
+        "pph-15-perusahaan-asuransi",
+        "pph-15-buta-charter",
+        "pph-15-pma-opec",
+        "pph-15-perusahaan-kontraktor"
+      ]
+    }
+  }
+}

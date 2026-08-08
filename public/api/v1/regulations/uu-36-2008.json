@@ -1,0 +1,32 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "uu-36-2008",
+    "number": "36",
+    "year": 2008,
+    "title": "Undang-Undang Perubahan Keempat atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan",
+    "shortName": "UU PPh (Perubahan IV)",
+    "type": "UU",
+    "promulgationDate": "2008-09-08",
+    "effectiveDate": "2009-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44090/uu-no-36-tahun-2008",
+    "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-36-tahun-2008",
+    "status": "diubah_sebagian",
+    "description": "Perubahan keempat UU PPh. Tarif PPh OP progresif maks 30% (5%/15%/25%/30%). Tarif PPh Badan turun ke 28% (2010-2012) dan 25% (2013+). PPh 23 sewa tanah/bangunan masuk PPh Final. PPh Final transaksi saam bursa efek (Pasal 4 ayat 2).",
+    "relevantArticles": "Pasal 4 ayat (2), Pasal 17, Pasal 22, Pasal 23",
+    "relatedRegulations": [
+      "uu-17-2000",
+      "uu-7-2021-hpp"
+    ],
+    "referencingEntries": [
+      "pph-21-progressive-pre2022",
+      "pph-22-pre2024",
+      "pph-final-bunga-deposito",
+      "pph-final-sewa-tanah",
+      "pph-final-transaksi-saham-bursa",
+      "pph-badan-pre2022"
+    ]
+  }
+}

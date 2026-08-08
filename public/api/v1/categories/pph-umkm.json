@@ -1,0 +1,37 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "category": "PPh",
+    "taxType": "PPh UMKM",
+    "description": "Pajak Penghasilan atas penghasilan dari usaha UMKM - tarif final untuk WP yang memiliki peredaran bruto tertentu",
+    "count": 3,
+    "entries": [
+      {
+        "id": "pph-umkm-05pct-2023",
+        "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
+        "rate": "0.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2023-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-umkm-05pct-2018",
+        "transactionType": "Penghasilan Usaha (PP 23/2018)",
+        "rate": "0.5%",
+        "status": "dicabut",
+        "effectiveFrom": "2018-07-01",
+        "effectiveTo": "2022-12-31"
+      },
+      {
+        "id": "pph-umkm-1pct-pp46",
+        "transactionType": "Penghasilan Usaha (PP 46/2013)",
+        "rate": "1%",
+        "status": "dicabut",
+        "effectiveFrom": "2013-07-01",
+        "effectiveTo": "2018-06-30"
+      }
+    ]
+  }
+}

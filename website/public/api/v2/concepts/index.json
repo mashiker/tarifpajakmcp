@@ -1,0 +1,303 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "count": 41,
+    "concepts": [
+      {
+        "id": "concept-illustrative-conflict",
+        "categoryId": "cat-illustrative",
+        "name": "Illustrative conflicting rate",
+        "slug": "illustrative-conflict",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-illustrative-flat",
+        "categoryId": "cat-illustrative",
+        "name": "Illustrative flat rate",
+        "slug": "illustrative-flat",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-illustrative-progressive",
+        "categoryId": "cat-illustrative",
+        "name": "Illustrative progressive rate",
+        "slug": "illustrative-progressive",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-15-special",
+        "categoryId": "cat-pph-special-regimes",
+        "name": "PPh Pasal 15: perhitungan penghasilan neto khusus (delegasi)",
+        "slug": "pph-15-special",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-article17-annual",
+        "categoryId": "cat-pph-21",
+        "name": "Tarif Pasal 17 UU PPh tahunan (OP)",
+        "slug": "pph-21-article17-annual",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-pph-21-final-period",
+        "categoryId": "cat-pph-21",
+        "name": "Periode final PPh 21 (reconciliation Masa Pajak Terakhir)",
+        "slug": "pph-21-final-period",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-natura",
+        "categoryId": "cat-pph-21",
+        "name": "Natura / kenikmatan dari pemberi kerja",
+        "slug": "pph-21-natura",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-pre2024-permanent-regime",
+        "categoryId": "cat-pph-21",
+        "name": "Rezim pemotongan PPh 21 pegawai tetap pra-2024 (PMK 252/2008)",
+        "slug": "pph-21-pre2024-permanent-regime",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-ptkp",
+        "categoryId": "cat-pph-21",
+        "name": "Penghasilan Tidak Kena Pajak (PTKP)",
+        "slug": "pph-21-ptkp",
+        "ruleCount": 3
+      },
+      {
+        "id": "concept-pph-21-recipient-activity-participant",
+        "categoryId": "cat-pph-21",
+        "name": "Penerima bukan pegawai: peserta kegiatan (100% dasar)",
+        "slug": "pph-21-recipient-activity-participant",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-recipient-commissioner",
+        "categoryId": "cat-pph-21",
+        "name": "Penerima: anggota dewan komisaris non-pegawai",
+        "slug": "pph-21-recipient-commissioner",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-recipient-former-employee",
+        "categoryId": "cat-pph-21",
+        "name": "Penerima: mantan pegawai (pensiun kepadanya)",
+        "slug": "pph-21-recipient-former-employee",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-recipient-nonemployee",
+        "categoryId": "cat-pph-21",
+        "name": "Penerima bukan pegawai: tenaga ahli/pekerja bebas (norma 50%)",
+        "slug": "pph-21-recipient-nonemployee",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-recipient-nonresident",
+        "categoryId": "cat-pph-21",
+        "name": "Penerima bukan pegawai: nonresiden (Pasal 26)",
+        "slug": "pph-21-recipient-nonresident",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-pph-21-recipient-pension-participant",
+        "categoryId": "cat-pph-21",
+        "name": "Penerima: peserta pensiun / penarikan dana pensiun-JHT",
+        "slug": "pph-21-recipient-pension-participant",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-shu-koperasi",
+        "categoryId": "cat-pph-21",
+        "name": "Sisa Hasil Usaha (SHU) koperasi kepada anggota OP",
+        "slug": "pph-21-shu-koperasi",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-ter-daily",
+        "categoryId": "cat-pph-21",
+        "name": "Pemotongan harian TER PPh 21",
+        "slug": "pph-21-ter-daily",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-21-ter-monthly",
+        "categoryId": "cat-pph-21",
+        "name": "Pemotongan bulanan TER PPh 21 (PTKP kelas A/B/C)",
+        "slug": "pph-21-ter-monthly",
+        "ruleCount": 3
+      },
+      {
+        "id": "concept-pph-23-jasa-konsultan",
+        "categoryId": "cat-pph-23",
+        "name": "PPh 23 atas jasa konsultan",
+        "slug": "pph-23-jasa-konsultan",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-pph-23-jasa-manajemen",
+        "categoryId": "cat-pph-23",
+        "name": "PPh 23 atas jasa manajemen",
+        "slug": "pph-23-jasa-manajemen",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-pph-23-jasa-pmk141-lain",
+        "categoryId": "cat-pph-23",
+        "name": "PPh 23 atas jasa lain PMK 141/PMK.03/2015",
+        "slug": "pph-23-jasa-pmk141-lain",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-pph-23-jasa-teknik",
+        "categoryId": "cat-pph-23",
+        "name": "PPh 23 atas jasa teknik",
+        "slug": "pph-23-jasa-teknik",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-pph-23-rent-movable",
+        "categoryId": "cat-pph-23",
+        "name": "PPh 23 atas sewa/perolehan harta selain tanah/bangunan",
+        "slug": "pph-23-rent-movable",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-pph-23-scope-rent-land-building",
+        "categoryId": "cat-pph-23",
+        "name": "Pengecualian cakupan: persewaan tanah/bangunan adalah FINAL PPh 4(2)",
+        "slug": "pph-23-scope-rent-land-building",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-badan-article31e",
+        "categoryId": "cat-pph-badan",
+        "name": "Fasilitas Pasal 31E(1) UU PPh: pengurangan 50% bagi badan kecil",
+        "slug": "pph-badan-article31e",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-badan-base",
+        "categoryId": "cat-pph-badan",
+        "name": "Tarif dasar PPh Badan (UU PPh Pasal 17 ayat (1) huruf b)",
+        "slug": "pph-badan-base",
+        "ruleCount": 3
+      },
+      {
+        "id": "concept-pph-badan-ikn",
+        "categoryId": "cat-pph-badan",
+        "name": "Fasilitas PPh Badan IKN (PMK 28/2024)",
+        "slug": "pph-badan-ikn",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-badan-listed",
+        "categoryId": "cat-pph-badan",
+        "name": "Fasilitas pengurangan tarif perusahaan listed (UU PPh Pasal 17 ayat (2b) jo. PP 55/2022 jo. PMK 40/2023)",
+        "slug": "pph-badan-listed",
+        "ruleCount": 3
+      },
+      {
+        "id": "concept-pph-final-construction",
+        "categoryId": "cat-pph-final-umkm",
+        "name": "PPh Final jasa konstruksi (PP 9/2022 mengubah PP 51/2008)",
+        "slug": "pph-final-construction",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-pph-final-rent-land-building",
+        "categoryId": "cat-pph-final-umkm",
+        "name": "PPh Final 10% persewaan tanah dan/atau bangunan (PP 34/2017)",
+        "slug": "pph-final-rent-land-building",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-final-transfer",
+        "categoryId": "cat-pph-final-umkm",
+        "name": "PPh Final transfer hak atas tanah dan/atau bangunan (PP 34/2016)",
+        "slug": "pph-final-transfer",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-pph-final-umkm-pp20-2026",
+        "categoryId": "cat-pph-final-umkm",
+        "name": "PPh Final UMKM PP 20/2026 (perubahan PP 55/2022, 0,5%)",
+        "slug": "pph-final-umkm-pp20-2026",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-final-umkm-pp23",
+        "categoryId": "cat-pph-final-umkm",
+        "name": "PPh Final UMKM PP 23/2018 (0,5%)",
+        "slug": "pph-final-umkm-pp23",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-final-umkm-pp46",
+        "categoryId": "cat-pph-final-umkm",
+        "name": "PPh Final UMKM PP 46/2013 (1%)",
+        "slug": "pph-final-umkm-pp46",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-pph-final-umkm-pp55",
+        "categoryId": "cat-pph-final-umkm",
+        "name": "PPh Final UMKM PP 55/2022 versi asli (0,5%)",
+        "slug": "pph-final-umkm-pp55",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-ppn-domestic-supply",
+        "categoryId": "cat-ppn",
+        "name": "PPN atas penyerahan BKP/JKP dalam negeri",
+        "slug": "ppn-domestic-supply",
+        "ruleCount": 5
+      },
+      {
+        "id": "concept-ppn-dpp-nilai-lain",
+        "categoryId": "cat-ppn",
+        "name": "DPP nilai lain 11/12 untuk transaksi PPN non-mewah (PMK 131/2024 Pasal 3)",
+        "slug": "ppn-dpp-nilai-lain",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-ppn-export",
+        "categoryId": "cat-ppn",
+        "name": "PPN atas ekspor BKP/JKP berkualifikasi (0%)",
+        "slug": "ppn-export",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-ppn-foreign-utilization",
+        "categoryId": "cat-ppn",
+        "name": "PPN atas perolehan JKP/BKP tidak berwujud dari luar negeri (utilization)",
+        "slug": "ppn-foreign-utilization",
+        "ruleCount": 1
+      },
+      {
+        "id": "concept-ppn-import",
+        "categoryId": "cat-ppn",
+        "name": "PPN atas impor BKP",
+        "slug": "ppn-import",
+        "ruleCount": 2
+      },
+      {
+        "id": "concept-ppn-luxury-retail",
+        "categoryId": "cat-ppn",
+        "name": "PPN atas penyerahan BKP mewah kepada konsumen akhir oleh PKP retail (transisi Jan–Feb 2025)",
+        "slug": "ppn-luxury-retail",
+        "ruleCount": 3
+      }
+    ]
+  }
+}

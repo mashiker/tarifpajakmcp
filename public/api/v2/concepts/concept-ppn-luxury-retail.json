@@ -1,0 +1,23 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "concept-ppn-luxury-retail",
+    "categoryId": "cat-ppn",
+    "name": "PPN atas penyerahan BKP mewah kepada konsumen akhir oleh PKP retail (transisi Jan–Feb 2025)",
+    "slug": "ppn-luxury-retail",
+    "description": "PMK 131/2024 Pasal 5: penyerahan BKP mewah dalam negeri kepada konsumen akhir oleh Pengusaha Kena Pajak retail yang berhak menggunakan DPP 11/12 sampai dengan 31 Januari 2025 (beban efektif 11%), dan beralih ke DPP penuh 12% mulai 1 Februari 2025. Impor BKP mewah dan penyerahan Pasal 2 lainnya menggunakan DPP penuh sejak 1 Januari 2025.",
+    "ruleIds": [
+      "rule-ppn-luxury-retail-dpp-11-12-jan-2025",
+      "rule-ppn-luxury-retail-feb-2025",
+      "rule-ppn-luxury-retail-jan-2025"
+    ]
+  }
+}

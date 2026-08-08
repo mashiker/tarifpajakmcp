@@ -1,0 +1,78 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-22-pmse",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Penjualan melalui Perdagangan Melalui Sistem Elektronik (PMSE/E-Commerce)",
+    "description": "Pemungutan PPh 22 atas penghasilan yang diterima pedagang dalam negeri dari penjualan barang, penyerahan jasa, dan/atau persewaan melalui perdagangan melalui sistem elektronik (PMSE).",
+    "rate": {
+      "type": "percentage",
+      "value": 0.5
+    },
+    "taxBase": "Jumlah bruto nilai transaksi",
+    "payer": "Pedagang dalam negeri",
+    "recipient": "Negara",
+    "withholder": "Penyelenggara PMSE (marketplace/e-commerce)",
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 4 ayat (2)"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 22",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 0,5% atas transaksi melalui PMSE. Kode 22-102-01 (tidak final), 22-102-02 (final). Berlaku untuk marketplace/e-commerce yang ditunjuk sebagai pemungut.",
+    "tags": [
+      "pph-22",
+      "pmse",
+      "e-commerce",
+      "marketplace",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "bppuKode": [
+      {
+        "kode": "22-102-01",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Tidak Final)",
+        "tarif": 0.5
+      },
+      {
+        "kode": "22-102-02",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Pedagang Dalam Negeri Penjualan Barang, Penyerahan Jasa, dan/atau Persewaan serta Penghasilan Lain Sehubungan dengan Penggunaan Harta yang Dilakukan Melalui Perdagangan Melalui Sistem Elektronik (Final)",
+        "tarif": 0.5
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Penjualan melalui Perdagangan Melalui Sistem Elektronik (PMSE/E-Commerce) Rp 100.000.000",
+        "calculation": "0.5% × 100.000.000",
+        "result": "Pajak = Rp 500.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-22-impor-2024",
+        "pph-22-pembelian-barang-2024",
+        "pph-22-penjualan-barang-2024",
+        "pph-22-impor-api-produsen",
+        "pph-22-bendaharawan",
+        "pph-22-ekspor-batubara",
+        "pph-22-bumn-pembelian",
+        "pph-22-pengadaan-pemerintah",
+        "pph-22-kripto",
+        "pph-22-pre2024"
+      ]
+    }
+  }
+}

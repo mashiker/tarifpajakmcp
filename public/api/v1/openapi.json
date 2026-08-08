@@ -1,0 +1,467 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Tarif Pajak Indonesia API",
+    "version": "1.0.0",
+    "description": "Open database tarif pajak Indonesia — pre-built static JSON API. Semua endpoint mengembalikan file JSON statis yang bisa di-cache.",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "contact": {
+      "name": "Tarif Pajak ID",
+      "url": "https://tarif-pajak-id.pages.dev"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://tarif-pajak-id.pages.dev",
+      "description": "Production"
+    },
+    {
+      "url": "http://localhost:4321",
+      "description": "Development"
+    }
+  ],
+  "paths": {
+    "/api/v1/index.json": {
+      "get": {
+        "summary": "API Index",
+        "tags": [
+          "Meta"
+        ],
+        "responses": {
+          "200": {
+            "description": "API info & endpoint list"
+          }
+        }
+      }
+    },
+    "/api/v1/stats.json": {
+      "get": {
+        "summary": "Database Statistics",
+        "tags": [
+          "Meta"
+        ],
+        "responses": {
+          "200": {
+            "description": "Entry counts by status, category, temporal range"
+          }
+        }
+      }
+    },
+    "/api/v1/entries/index.json": {
+      "get": {
+        "summary": "List All Entries",
+        "tags": [
+          "Entries"
+        ],
+        "responses": {
+          "200": {
+            "description": "Flat list of all tax rate entries (summary)"
+          }
+        }
+      }
+    },
+    "/api/v1/entries/{id}.json": {
+      "get": {
+        "summary": "Get Entry Detail",
+        "tags": [
+          "Entries"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Entry ID, e.g. ppn-10pct"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Full entry detail with legalBasis, examples, BPPU codes, related entries"
+          }
+        }
+      }
+    },
+    "/api/v1/categories/index.json": {
+      "get": {
+        "summary": "List Categories",
+        "tags": [
+          "Categories"
+        ],
+        "responses": {
+          "200": {
+            "description": "All tax categories"
+          }
+        }
+      }
+    },
+    "/api/v1/categories/{slug}.json": {
+      "get": {
+        "summary": "Get Category Entries",
+        "tags": [
+          "Categories"
+        ],
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Category slug, e.g. pph-21, ppn"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Entries within a category"
+          }
+        }
+      }
+    },
+    "/api/v1/by-year/{year}.json": {
+      "get": {
+        "summary": "Temporal Query",
+        "tags": [
+          "Temporal"
+        ],
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 1984,
+              "maximum": 2026
+            },
+            "description": "Year, e.g. 2001"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Entries effective in the given year"
+          }
+        }
+      }
+    },
+    "/api/v1/bppu/index.json": {
+      "get": {
+        "summary": "All BPPU Codes",
+        "tags": [
+          "BPPU"
+        ],
+        "responses": {
+          "200": {
+            "description": "All BPPU codes with entry mappings"
+          }
+        }
+      }
+    },
+    "/api/v1/bppu/{prefix}.json": {
+      "get": {
+        "summary": "BPPU Codes by Prefix",
+        "tags": [
+          "BPPU"
+        ],
+        "parameters": [
+          {
+            "name": "prefix",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Prefix, e.g. 24-104, 28-404"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "BPPU codes matching prefix"
+          }
+        }
+      }
+    },
+    "/api/v1/timeline/index.json": {
+      "get": {
+        "summary": "Timeline Groups",
+        "tags": [
+          "Timeline"
+        ],
+        "responses": {
+          "200": {
+            "description": "Available timeline groups"
+          }
+        }
+      }
+    },
+    "/api/v1/timeline/{group}.json": {
+      "get": {
+        "summary": "Timeline Chain",
+        "tags": [
+          "Timeline"
+        ],
+        "parameters": [
+          {
+            "name": "group",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Group, e.g. pph-21-progressive, pph-21-ptkp"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Historical chain of entries"
+          }
+        }
+      }
+    },
+    "/api/v1/search-index.json": {
+      "get": {
+        "summary": "Search Index",
+        "tags": [
+          "Search"
+        ],
+        "responses": {
+          "200": {
+            "description": "Inverted index for client-side search"
+          }
+        }
+      }
+    },
+    "/api/v1/regulations/index.json": {
+      "get": {
+        "summary": "List Regulations",
+        "tags": [
+          "Regulations"
+        ],
+        "responses": {
+          "200": {
+            "description": "All regulations"
+          }
+        }
+      }
+    },
+    "/api/v1/regulations/{id}.json": {
+      "get": {
+        "summary": "Get Regulation",
+        "tags": [
+          "Regulations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Regulation ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Regulation detail with referencing entries"
+          }
+        }
+      }
+    },
+    "/api/v1/calculator/index.json": {
+      "get": {
+        "summary": "Calculator List",
+        "tags": [
+          "Calculator"
+        ],
+        "responses": {
+          "200": {
+            "description": "Available calculator data sets"
+          }
+        }
+      }
+    },
+    "/api/v1/calculator/{id}.json": {
+      "get": {
+        "summary": "Calculator Data",
+        "tags": [
+          "Calculator"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "pph-21",
+                "pph-23",
+                "ppn",
+                "pph-badan"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Static data for tax calculation"
+          }
+        }
+      }
+    },
+    "/api/v1/consolidated/index.json": {
+      "get": {
+        "summary": "List Consolidated Laws",
+        "tags": [
+          "Consolidated"
+        ],
+        "responses": {
+          "200": {
+            "description": "All consolidated tax laws (KUP, PPh, PPN)"
+          }
+        }
+      }
+    },
+    "/api/v1/consolidated/{id}.json": {
+      "get": {
+        "summary": "Get Consolidated Law",
+        "tags": [
+          "Consolidated"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "uu-kup-konsolidasi",
+                "uu-pph-konsolidasi",
+                "uu-ppn-konsolidasi"
+              ]
+            },
+            "description": "Consolidated law ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Full consolidated law with pasal summaries"
+          }
+        }
+      }
+    },
+    "/api/v1/consolidated/{id}/pasal-{number}.json": {
+      "get": {
+        "summary": "Get Pasal Detail",
+        "tags": [
+          "Consolidated"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "number",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Pasal number, e.g. 1, 2A"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Full pasal detail with amendment history"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Envelope": {
+        "type": "object",
+        "properties": {
+          "api": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "generated": {
+            "type": "string"
+          },
+          "data": {}
+        }
+      },
+      "TaxRateEntry": {
+        "type": "object",
+        "description": "Full tax rate entry"
+      },
+      "EntrySummary": {
+        "type": "object",
+        "description": "Summary entry for lists"
+      },
+      "Regulation": {
+        "type": "object",
+        "description": "Regulation metadata"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Meta",
+      "description": "API information"
+    },
+    {
+      "name": "Entries",
+      "description": "Tax rate entries"
+    },
+    {
+      "name": "Categories",
+      "description": "Tax categories"
+    },
+    {
+      "name": "Temporal",
+      "description": "Time-based queries"
+    },
+    {
+      "name": "BPPU",
+      "description": "BPPU code lookup"
+    },
+    {
+      "name": "Timeline",
+      "description": "Historical chains"
+    },
+    {
+      "name": "Search",
+      "description": "Full-text search"
+    },
+    {
+      "name": "Regulations",
+      "description": "Regulation metadata"
+    },
+    {
+      "name": "Calculator",
+      "description": "Tax calculator data"
+    },
+    {
+      "name": "Consolidated",
+      "description": "Consolidated tax laws (UU Konsolidasi) with amendment tracking"
+    }
+  ]
+}

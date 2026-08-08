@@ -1,0 +1,72 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "bea-meterai-pre2021",
+    "category": "Bea Meterai",
+    "taxType": "Bea Meterai",
+    "transactionType": "Bea Meterai Pra-UU 10/2020",
+    "description": "Bea meterai Rp 6.000 berdasarkan UU 13/1985 yang berlaku sebelum UU 10/2020.",
+    "rate": {
+      "type": "formula",
+      "value": "Rp 6.000 per lembar"
+    },
+    "taxBase": "Dokumen dengan nilai > Rp 1.000.000",
+    "payer": "Pihak yang menandatangani dokumen",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2007-01-01",
+    "effectiveTo": "2020-12-31",
+    "status": "dicabut",
+    "legalBasis": [
+      {
+        "regulation": "PP 80/2007",
+        "article": "Pasal 1",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/47779/pp-no-80-tahun-2007"
+      },
+      {
+        "regulation": "UU 13/1985",
+        "article": "Pasal 3",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44231/uu-no-13-tahun-1985"
+      }
+    ],
+    "supersedes": [
+      "bea-meterai-3000"
+    ],
+    "supersededBy": [
+      "bea-meterai-dokumen-2021"
+    ],
+    "notes": "Bea Meterai Rp 6.000 berdasarkan PP 80/2007 untuk dokumen bernilai > Rp 1.000.000. Berlaku 2007-2020.",
+    "tags": [
+      "bea-meterai",
+      "historis",
+      "dicabut"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Bea Meterai Pra-UU 10/2020",
+        "calculation": "Sesuai formula yang berlaku",
+        "result": "Lihat ketentuan detail"
+      }
+    ],
+    "relatedEntries": {
+      "supersededBy": [
+        "bea-meterai-dokumen-2021"
+      ],
+      "supersedes": [
+        "bea-meterai-3000"
+      ],
+      "sameCategory": [
+        "bea-meterai-dokumen-2021",
+        "bea-meterai-cek-bilyet",
+        "bea-meterai-kontrak",
+        "bea-meterai-surat-berharga",
+        "bea-meterai-nota-kredit",
+        "bea-meterai-1000",
+        "bea-meterai-3000"
+      ]
+    }
+  }
+}

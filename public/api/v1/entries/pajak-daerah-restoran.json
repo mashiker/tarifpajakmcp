@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pajak-daerah-restoran",
+    "category": "Pajak Daerah",
+    "taxType": "Pajak Daerah",
+    "transactionType": "Pajak Restoran",
+    "description": "Pajak atas pelayanan restoran/rumah makan.",
+    "rate": {
+      "type": "range",
+      "value": [
+        5,
+        10
+      ]
+    },
+    "taxBase": "Penerimaan restoran",
+    "payer": "WP Daerah",
+    "recipient": "Pemerintah Daerah",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 60",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 5-10%. Umumnya 10% di kota besar.",
+    "examples": [
+      {
+        "scenario": "Makan di restoran Rp 500.000",
+        "calculation": "10%×500rb",
+        "result": "Pajak=R50.000"
+      }
+    ],
+    "tags": [
+      "pajak-daerah",
+      "restoran"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "pajak-daerah-hotel",
+        "pajak-daerah-hiburan",
+        "pajak-daerah-reklame",
+        "pajak-daerah-penerangan-jalan",
+        "pajak-daerah-mineral-air",
+        "pajak-daerah-parkir",
+        "pajak-daerah-air-tanah"
+      ]
+    }
+  }
+}

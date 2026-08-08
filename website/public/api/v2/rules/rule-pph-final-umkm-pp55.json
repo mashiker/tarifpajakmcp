@@ -1,0 +1,98 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-final-umkm-pp55",
+    "conceptId": "concept-pph-final-umkm-pp55",
+    "conceptName": "PPh Final UMKM PP 55/2022 versi asli (0,5%)",
+    "categoryId": "cat-pph-final-umkm",
+    "categoryName": "Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026)",
+    "validFrom": "2022-12-20",
+    "validToExclusive": "2026-04-22",
+    "rate": {
+      "type": "percentage",
+      "value": "0.005"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "in",
+          "fact": "entityType",
+          "value": [
+            "op",
+            "pt",
+            "cv",
+            "firma",
+            "cooperative",
+            "bum-desa",
+            "one-person-company"
+          ]
+        },
+        {
+          "op": "exists",
+          "fact": "grossTurnover"
+        },
+        {
+          "op": "equals",
+          "fact": "umkmTurnoverEligible",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-pp-55-2022-umkm"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pp-55-2022-umkm",
+          "locator": "PP 55/2022 Pasal 4 ayat (1): tarif final 0,5% atas peredaran bruto"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pp-55-2022-umkm",
+          "locator": "PP 55/2022 versi asli berlaku 20 Desember 2022 - 21 April 2026; Pasal 57/59 berlaku sendirian HANYA sampai 21 April 2026 (Pasal 59 dihapus oleh PP 20/2026)"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pp-55-2022-umkm",
+          "locator": "PP 55/2022 Pasal 2 (WP OP/badan/koperasi/BUM Desa/perseroan perorangan, peredaran bruto <= Rp4.800.000.000); Pasal 61 (pelanggaran langit-langit tetap 0,5% sampai akhir tahun); Pasal 69 (mempertahankan jam durasi PP 23/2018); pengecualian Rp500 juta OP adalah pengecualian DASAR, BUKAN langit-langit elegibilitas kedua"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-final-umkm",
+    "supersedes": [
+      "rule-pph-final-umkm-pp23"
+    ],
+    "supersededBy": [
+      "rule-pph-final-umkm-pp20-2026"
+    ],
+    "examples": [
+      {
+        "id": "ex-pph-final-umkm-pp55-op-2023",
+        "label": "WP OP UMKM peredaran bruto Rp1.000.000.000 tahun 2023",
+        "illustrative": true,
+        "input": {
+          "entityType": "op",
+          "grossTurnover": "1000000000",
+          "umkmTurnoverEligible": true
+        },
+        "expectedAmount": "5000000.00",
+        "notes": "0,5% × 1.000.000.000 = 5.000.000. Tarif final UMKM PP 55/2022 versi asli (efektif 20 Desember 2022)."
+      }
+    ],
+    "notes": "PPh Final UMKM PP 55/2022 versi asli: tarif 0,5%. Berlaku 20 Desember 2022 - 21 April 2026. Menambah BUM Desa dan perseroan perorangan sebagai entitas eligible. Pasal 69 mempertahankan jam durasi PP 23/2018. Pengecualian Rp500 juta OP adalah pengecualian DASAR (kumulatif dari masa pajak pertama, refresh setiap tahun pajak) BUKAN langit-langit elegibilitas kedua. Pasal 61: pelanggaran langit-langit tetap meneruskan 0,5% sampai akhir tahun pajak. Versi asli — Pasal 57/59 berlaku sendirian HANYA sampai 21 April 2026.",
+    "conflicts": []
+  }
+}

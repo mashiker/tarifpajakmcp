@@ -1,0 +1,84 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-21-non-taxable-income",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+    "description": "Batas Penghasilan Tidak Kena Pajak (PTKP) yang mengurangi penghasilan neto untuk menghitung PKP. Ditetapkan oleh PMK setiap tahunnya.",
+    "rate": {
+      "type": "formula",
+      "value": "PTKP sesuai PMK berlaku",
+      "effectiveRate": "Rp 54.000.000 (TK/0) s/d Rp 72.000.000 (K/3)"
+    },
+    "taxBase": "Bukan tarif, melainkan pengurang",
+    "payer": "-",
+    "recipient": "-",
+    "effectiveFrom": "2016-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PMK 122/2015",
+        "article": "Pasal 1",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/51529/pmk-no-122-tahun-2015"
+      }
+    ],
+    "supersedes": [
+      "pph-21-ptkp-2009"
+    ],
+    "supersededBy": [],
+    "notes": "PTKP: TK/0 = Rp 54.000.000; K/0 = Rp 58.500.000; K/1 = Rp 63.000.000; K/2 = Rp 67.500.000; K/3 = Rp 72.000.000. Belum ada perubahan sejak PMK 122/2015.",
+    "tags": [
+      "pph-21",
+      "ptkp",
+      "pengurang",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "examples": [
+      {
+        "scenario": "PTKP (Penghasilan Tidak Kena Pajak)",
+        "calculation": "Sesuai formula yang berlaku",
+        "result": "Lihat ketentuan detail"
+      }
+    ],
+    "relatedEntries": {
+      "supersedes": [
+        "pph-21-ptkp-2009"
+      ],
+      "sameCategory": [
+        "pph-21-ter-monthly-2024",
+        "pph-21-progressive-annual-2024",
+        "pph-21-progressive-pre2022",
+        "pph-21-honorarium-bukan-pegawai",
+        "pph-21-pegawai-tidak-tetap",
+        "pph-21-shu-koperasi",
+        "pph-21-natura-kenikmatan",
+        "pph-21-dana-pensiun",
+        "pph-21-progressive-pre2009",
+        "pph-21-progressive-uulama1983",
+        "pph-21-progressive-uulama1994",
+        "pph-21-progressive-monthly-pre2024",
+        "pph-21-ptkp-1984",
+        "pph-21-ptkp-1995",
+        "pph-21-ptkp-2005",
+        "pph-21-ptkp-2009",
+        "pph-21-ter-a-detail",
+        "pph-21-ter-b-detail",
+        "pph-21-ter-c-detail",
+        "pph-21-norma-dokter",
+        "pph-21-norma-pengacara",
+        "pph-21-norma-akuntan",
+        "pph-21-norma-arsitek",
+        "pph-21-norma-notaris",
+        "pph-21-norma-konsultan",
+        "pph-21-norma-pedagang",
+        "pph-21-norma-petani",
+        "pph-21-norma-pengusaha-kecil"
+      ]
+    }
+  }
+}

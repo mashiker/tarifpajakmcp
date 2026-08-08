@@ -1,0 +1,74 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "14",
+    "bab": "IV",
+    "bagian": "1",
+    "title": "Penyusutan",
+    "status": "diubah",
+    "description": "Ketentuan penyusutan harta tetap: kelompok bangunan (20 tahun), mesin/peralatan (4-8 tahun), dll.",
+    "keywords": [
+      "penyusutan",
+      "garis lurus",
+      "saldo menurun",
+      "harta tetap"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "10",
+          "year": 1994
+        },
+        "changeType": "amended",
+        "effectiveDate": "1995-01-01",
+        "summary": "Perubahan metode dan masa penyusutan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Penyesuaian penyusutan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan penyusutan pasca HPP"
+      }
+    ],
+    "text": "(1) Penyusutan atas harta berwujud yang mempunyai masa manfaat lebih dari 1 (satu) tahun dilakukan dengan cara garis lurus atau saldo menurun, yang dipilih oleh WP pada awal masa manfaat.\n(2) Kelompok harta dan tarif penyusutan:\na. Kelompok I (bukan bangunan): masa manfaat 4 tahun, garis lurus 25%, saldo menurun 50%;\nb. Kelompok II (bukan bangunan): masa manfaat 8 tahun, garis lurus 12,5%, saldo menurun 25%;\nc. Kelompok III (bukan bangunan): masa manfaat 16 tahun, garis lurus 6,25%, saldo menurun 12,5%;\nd. Kelompok IV (bangunan permanen): masa manfaat 20 tahun, garis lurus 5%;\ne. Kelompok IV (bangunan tidak permanen): masa manfaat 10 tahun, garis lurus 10%, saldo menurun 20%.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penyusutan harta berwujud >1 tahun: garis lurus atau saldo menurun.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "5 kelompok penyusutan: I (4 thn), II (8 thn), III (16 thn), IV bangunan permanen (20 thn), IV bangunan tidak permanen (10 thn).",
+        "status": "diubah"
+      }
+    ]
+  }
+}

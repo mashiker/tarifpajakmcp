@@ -1,0 +1,23 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "concept-pph-21-ter-monthly",
+    "categoryId": "cat-pph-21",
+    "name": "Pemotongan bulanan TER PPh 21 (PTKP kelas A/B/C)",
+    "slug": "pph-21-ter-monthly",
+    "description": "Tarif Efektif Rata-rata bulanan menurut PP 58/2023 Lampiran A/B/C. PPh21 = TER(category, bruto bulanan dikurangi iuran pensiun/BPJS) x dasar pengenaan. Kategori ditentukan oleh kelas PTKP (TK/0, TK/1, K/0 -> A; TK/2, K/1, TK/3, K/2 -> B; K/3 -> C), bukan status perkawinan saja. Berlaku 2024-01-01.",
+    "ruleIds": [
+      "rule-pph-21-ter-monthly-a",
+      "rule-pph-21-ter-monthly-b",
+      "rule-pph-21-ter-monthly-c"
+    ]
+  }
+}

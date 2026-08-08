@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "20",
+    "bab": "III",
+    "title": "Saat PPnBM Terutang",
+    "status": "berlaku",
+    "description": "Saat PPnBM terutang: saat penyerahan oleh pabrikan, saat impor.",
+    "keywords": [
+      "saat terutang",
+      "PPnBM"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Barang yang tergolong mewah meliputi:\na. kendaraan bermotor sedan, jeep, station wagon, van, dan kombi;\nb. kapal pesiar;\nc. pesawat udara pribadi;\nd. rumah mewah;\ne. perlengkapan mewah.\n(2) Daftar BKP yang tergolong mewah ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "BKP mewah: sedan/jeep/van, kapal pesiar, pesawat pribadi, rumah mewah, perlengkapan mewah.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Daftar ditetapkan PP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

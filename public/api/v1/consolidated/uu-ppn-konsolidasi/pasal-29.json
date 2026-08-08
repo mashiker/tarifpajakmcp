@@ -1,0 +1,46 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "29",
+    "bab": "VI",
+    "title": "Peraturan Pelaksanaan",
+    "status": "diubah",
+    "description": "Peraturan pelaksanaan UU PPN/PPnBM.",
+    "keywords": [
+      "PP",
+      "PMK"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Perubahan"
+      }
+    ],
+    "text": "(1) Ketentuan peralihan diatur dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Ketentuan peralihan diatur PP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

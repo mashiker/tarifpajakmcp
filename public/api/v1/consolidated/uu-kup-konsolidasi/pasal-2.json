@@ -1,0 +1,69 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "2",
+    "bab": "II",
+    "title": "NPWP - Kewajiban dan Pemberian",
+    "status": "diubah",
+    "description": "Kewajiban memiliki NPWP bagi Wajib Pajak, tata cara pendaftaran, dan pemberian NPWP oleh DJP.",
+    "keywords": [
+      "NPWP",
+      "pendaftaran",
+      "WP orang pribadi",
+      "WP badan"
+    ],
+    "relatedTaxRates": [],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli tentang kewajiban NPWP"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penambahan ketentuan NPWP untuk WP yang menerima penghasilan dari lebih dari 1 pemberi kerja"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Penyesuaian ketentuan NPWP terkait perubahan definisi WP"
+      }
+    ],
+    "text": "(1) Wajib Pajak wajib memiliki NPWP yang diberikan oleh DJP.\n(2) Wajib Pajak orang pribadi yang telah berusia 18 (delapan belas) tahun atau telah menikah wajib mendaftarkan diri untuk memperoleh NPWP.\n(3) Wajib Pajak badan wajib mendaftarkan diri untuk memperoleh NPWP sebelum menjalankan usaha atau kegiatan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP wajib memiliki NPWP yang diberikan DJP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "WP OP ≥18 tahun atau sudah menikah wajib mendaftar NPWP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(3)",
+        "text": "WP badan wajib mendaftar NPWP sebelum menjalankan usaha.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

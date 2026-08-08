@@ -1,0 +1,86 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-badan-base-22pct-uu2-2020",
+    "conceptId": "concept-pph-badan-base",
+    "conceptName": "Tarif dasar PPh Badan (UU PPh Pasal 17 ayat (1) huruf b)",
+    "categoryId": "cat-pph-badan",
+    "categoryName": "Pajak Penghasilan Badan",
+    "validFrom": "2020-01-01",
+    "validToExclusive": "2022-01-01",
+    "rate": {
+      "type": "percentage",
+      "value": "0.22"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "taxpayerType",
+          "value": "badan"
+        },
+        {
+          "op": "equals",
+          "fact": "resident",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-2-2020"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-2-2020",
+          "locator": "Pasal 5 ayat (1) huruf a UU 2/2020 (mengubah UU PPh Pasal 17 ayat (1) huruf b): tarif PPh Badan 22% untuk Tahun Pajak 2020 dan 2021"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-2-2020",
+          "locator": "UU 2/2020 berlaku Tahun Pajak 2020-2021; jadwal 20% mulai TP 2022 kemudian DITUNDA/SUPERSEDED oleh UU HPP"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-2-2020",
+          "locator": "Pasal 5 ayat (1) huruf a: subjek badan resident"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-badan-base",
+    "supersedes": [
+      "rule-pph-badan-base-25pct-pre2020"
+    ],
+    "supersededBy": [
+      "rule-pph-badan-base-22pct-hpp"
+    ],
+    "examples": [
+      {
+        "id": "ex-pph-badan-22pct-2020",
+        "label": "PPh Badan TP 2020 PKP 1.000.000.000",
+        "illustrative": true,
+        "input": {
+          "taxpayerType": "badan",
+          "resident": true,
+          "pkp": "1000000000"
+        },
+        "expectedAmount": "220000000.00",
+        "notes": "22% × 1.000.000.000 = 220.000.000. Tarif dasar PPh Badan UU 2/2020 Pasal 5(1)(a) untuk TP 2020-2021."
+      }
+    ],
+    "notes": "Tarif dasar PPh Badan 22% per UU 2/2020 (Perppu 1/2020) Pasal 5 ayat (1) huruf a untuk Tahun Pajak 2020 dan 2021. UU 2/2020 juga menjadwalkan tarif 20% mulai TP 2022, namun jadwal tersebut DITUNDA/SUPERSEDED oleh UU 7/2021 HPP yang menetapkan tarif 22% tetap berlaku dari TP 2022 (lihat rule-pph-badan-base-22pct-hpp).",
+    "conflicts": []
+  }
+}

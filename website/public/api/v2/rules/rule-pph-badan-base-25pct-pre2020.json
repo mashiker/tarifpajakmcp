@@ -1,0 +1,84 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-badan-base-25pct-pre2020",
+    "conceptId": "concept-pph-badan-base",
+    "conceptName": "Tarif dasar PPh Badan (UU PPh Pasal 17 ayat (1) huruf b)",
+    "categoryId": "cat-pph-badan",
+    "categoryName": "Pajak Penghasilan Badan",
+    "validFrom": "2010-01-01",
+    "validToExclusive": "2020-01-01",
+    "rate": {
+      "type": "percentage",
+      "value": "0.25"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "taxpayerType",
+          "value": "badan"
+        },
+        {
+          "op": "equals",
+          "fact": "resident",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-36-2008-pph"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 17 ayat (1) huruf b UU PPh (UU 36/2008): tarif PPh Badan 25% berlaku Tahun Pajak 2010 sampai 2019"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "UU 36/2008 menetapkan tarif 28% untuk TP 2009 dan 25% dari TP 2010; berlaku sampai diubah oleh UU 2/2020"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 17 ayat (1) huruf b: subjek badan resident"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-badan-base",
+    "supersedes": [],
+    "supersededBy": [
+      "rule-pph-badan-base-22pct-uu2-2020"
+    ],
+    "examples": [
+      {
+        "id": "ex-pph-badan-25pct-2019",
+        "label": "PPh Badan TP 2019 PKP 1.000.000.000",
+        "illustrative": true,
+        "input": {
+          "taxpayerType": "badan",
+          "resident": true,
+          "pkp": "1000000000"
+        },
+        "expectedAmount": "250000000.00",
+        "notes": "25% × 1.000.000.000 = 250.000.000. Tarif dasar PPh Badan UU 36/2008 Pasal 17(1)(b) untuk TP 2019."
+      }
+    ],
+    "notes": "Tarif dasar PPh Badan 25% (UU 36/2008 Pasal 17 ayat (1) huruf b) berlaku Tahun Pajak 2010 sampai dengan 2019. Berbeda dari fasilitas listed (concept-pph-badan-listed), Pasal 31E (concept-pph-badan-article31e), dan IKN (concept-pph-badan-ikn) yang merupakan konsep terpisah dengan kondisi/formula eksplisit.",
+    "conflicts": []
+  }
+}

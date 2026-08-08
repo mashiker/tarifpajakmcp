@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-illustrative-progressive",
+    "conceptId": "concept-illustrative-progressive",
+    "conceptName": "Illustrative progressive rate",
+    "categoryId": "cat-illustrative",
+    "categoryName": "Illustrative fixtures",
+    "validFrom": "2024-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "progressive",
+      "brackets": [
+        {
+          "upTo": "50",
+          "rate": "0.05"
+        },
+        {
+          "upTo": "100",
+          "rate": "0.10"
+        },
+        {
+          "upTo": null,
+          "rate": "0.20"
+        }
+      ]
+    },
+    "verification": {
+      "status": "needs_review",
+      "sourceIds": [
+        "src-illustrative-secondary"
+      ]
+    },
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "example-progressive-1",
+        "label": "Illustrative",
+        "illustrative": true,
+        "input": {
+          "base": "150"
+        },
+        "expectedAmount": "17.50",
+        "notes": "5% of 50 + 10% of 50 + 20% of 50 = 17.50. Illustrative only."
+      }
+    ],
+    "notes": "Illustrative only. Not a real Indonesian tax rate.",
+    "conflicts": []
+  }
+}

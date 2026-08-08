@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "35",
+    "bab": "IX",
+    "title": "Surat Sitaan",
+    "status": "berlaku",
+    "description": "Penagihan dengan surat sitaan jika WP mengabaikan Surat Paksa.",
+    "keywords": [
+      "sitaan",
+      "eksekusi"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) DJP dapat melakukan pencegahan terhadap WP yang akan meninggalkan Indonesia.\n(2) Pencegahan sebagaimana dimaksud pada ayat (1) dilakukan jika DJP berpendapat bahwa WP akan meninggalkan Indonesia dengan tidak membayar pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat mencegah WP yang akan meninggalkan Indonesia.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Jika DJP berpendapat WP tidak akan membayar pajak.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

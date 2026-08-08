@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "22-401",
+    "count": 4,
+    "codes": [
+      {
+        "kode": "22-401-01",
+        "nama": "Penjualan BBM oleh Pertamina atau Anak Perusahaan Pertamina Kepada SPBU (Final)",
+        "tarif": 0.25,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      },
+      {
+        "kode": "22-401-02",
+        "nama": "Penjualan BBM oleh Badan Usaha Selain Pertamina atau Anak Perusahaan Pertamina Kepada SPBU/Agen/Penyalur  (Final)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      },
+      {
+        "kode": "22-401-03",
+        "nama": "Penjualan BBG oleh produsen/importir Kepada SPBU/Agen/Penyalur (Final)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      },
+      {
+        "kode": "22-401-04",
+        "nama": "Penjualan BBM oleh Pertamina atau Anak Perusahaan Pertamina kepada Agen/Penyalur selain SPBU (Final)",
+        "tarif": 0.3,
+        "entryId": "pph-22-penjualan-barang-2024",
+        "entryTransactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu"
+      }
+    ]
+  }
+}

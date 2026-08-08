@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "28-403",
+    "count": 1,
+    "codes": [
+      {
+        "kode": "28-403-02",
+        "nama": "Persewaan Tanah dan/atau Bangunan",
+        "tarif": 10,
+        "entryId": "pph-23-sewa-tanah-bangunan",
+        "entryTransactionType": "Sewa Tanah dan/atau Bangunan"
+      }
+    ]
+  }
+}

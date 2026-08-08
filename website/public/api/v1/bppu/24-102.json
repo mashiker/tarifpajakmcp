@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-09-11T02:40:00.000Z",
   "data": {
     "prefix": "24-102",
     "count": 2,
@@ -10,15 +10,15 @@
         "kode": "24-102-01",
         "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
         "tarif": 15,
-        "entryId": "pph-26-general-2024",
-        "entryTransactionType": "Penghasilan WP Luar Negeri Umum"
+        "entryId": "pph-26-bunga",
+        "entryTransactionType": "Bunga WP Luar Negeri"
       },
       {
         "kode": "24-102-01",
         "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
         "tarif": 15,
-        "entryId": "pph-26-bunga",
-        "entryTransactionType": "Bunga WP Luar Negeri"
+        "entryId": "pph-26-general-2024",
+        "entryTransactionType": "Penghasilan WP Luar Negeri Umum"
       }
     ]
   }

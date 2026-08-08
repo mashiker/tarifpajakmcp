@@ -1,0 +1,46 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "28-401",
+    "count": 5,
+    "codes": [
+      {
+        "kode": "28-401-01",
+        "nama": "Bunga Obligasi, Surat Utang Negara, atau Obligasi Daerah yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap.",
+        "tarif": 15,
+        "entryId": "pph-final-bunga-deposito",
+        "entryTransactionType": "Bunga Deposito dan Tabungan"
+      },
+      {
+        "kode": "28-401-03",
+        "nama": "Bunga Obligasi yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap yang diadministrasikan oleh BI",
+        "tarif": 10,
+        "entryId": "pph-final-bunga-deposito",
+        "entryTransactionType": "Bunga Deposito dan Tabungan"
+      },
+      {
+        "kode": "28-401-04",
+        "nama": "Diskonto Surat Perbendaharaan Negara yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap",
+        "tarif": 20,
+        "entryId": "pph-final-bunga-deposito",
+        "entryTransactionType": "Bunga Deposito dan Tabungan"
+      },
+      {
+        "kode": "28-401-05",
+        "nama": "Diskonto Surat Perbendaharaan Negara yang Diterima Wajib Pajak Penduduk/Berkedudukan di Luar Negeri",
+        "tarif": 20,
+        "entryId": "pph-final-bunga-deposito",
+        "entryTransactionType": "Bunga Deposito dan Tabungan"
+      },
+      {
+        "kode": "28-401-06",
+        "nama": "Bunga Obligasi yang Diterima Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap",
+        "tarif": 10,
+        "entryId": "pph-final-bunga-deposito",
+        "entryTransactionType": "Bunga Deposito dan Tabungan"
+      }
+    ]
+  }
+}

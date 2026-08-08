@@ -1,0 +1,70 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-26-tax-treaty",
+    "category": "PPh",
+    "taxType": "PPh 26",
+    "transactionType": "Tarif P3B (Tax Treaty)",
+    "description": "Tarif PPh berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/Tax Treaty). Tarif bisa lebih rendah dari 20%. Indonesia memiliki P3B dengan 70+ negara.",
+    "rate": {
+      "type": "range",
+      "value": [
+        0,
+        20
+      ]
+    },
+    "taxBase": "Jumlah bruto penghasilan dari Indonesia ke WP luar negeri",
+    "payer": "WP luar negeri (residen negara mitra P3B)",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1984-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/1983",
+        "article": "Pasal 26",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 26",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif P3B bervariasi per negara. Contoh: Singapura 10-15%, Jepang 7-15%, Belanda 5-15%, Malaysia 10-15%, Australia 10-15%, UK 10-15%, US 10-15%, China 10%, India 10%, Korea 10-15%. Wajib disertai Certificate of Residence (CoR).",
+    "examples": [
+      {
+        "scenario": "Dividen ke residen Singapura Rp 100.000.000",
+        "calculation": "P3B Singapura dividen 10%. 10%×100jt",
+        "result": "PPh 26 = Rp 10.000.000 (bukan 20%)"
+      },
+      {
+        "scenario": "Royalti ke residen Belanda Rp 500.000.000",
+        "calculation": "P3B Belanda royalti bisa 0% dengan BO",
+        "result": "PPh 26 = Rp 0"
+      }
+    ],
+    "tags": [
+      "pph-26",
+      "tax-treaty",
+      "p3b",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-26-general-2024",
+        "pph-26-dividen",
+        "pph-26-bunga",
+        "pph-26-royalti",
+        "pph-26-jasa-dan-sewa",
+        "pph-26-but"
+      ]
+    }
+  }
+}

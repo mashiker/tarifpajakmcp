@@ -1,0 +1,63 @@
+{
+  "$comment": "Boundary fixtures for versioned BPPU/KOP codes (Task 5). BPPU codes are first-class versioned reporting metadata — never rate authority. The codes carry their own validity interval and source, and they tag rules for reporting only. The 24-104-0x family became canonical in the eBupot unifikasi era (KEP-143/PJ/2022 + PER-24/PJ/2021, effective 21 Februari 2022), then transitioned to BPPU/Coretax under PER-11/PJ/2025 effective 1 Maret 2025. The underlying PPh 23 rates long predate those codes (UU 36/2008 + PMK 141/2015).",
+  "sourcesVerifiedAt": "2026-08-06",
+  "versioningBoundaries": [
+    {
+      "id": "bppu-24-104-02-jasa-manajemen-current",
+      "description": "KOP/BPPU 24-104-02 'Jasa Manajemen' is the current reporting code (KEP-143/PJ/2022 + PER-24/PJ/2021, effective 21 Februari 2022). It is referenced by rule-pph-23-jasa-manajemen-with-npwp purely as reporting metadata; the rate itself comes from UU PPh Pasal 23(1)(c)(2).",
+      "code": "24-104-02",
+      "expect": {
+        "validFrom": "2022-02-21",
+        "labelIncludes": "Jasa Manajemen",
+        "referencedByRule": "rule-pph-23-jasa-manajemen-with-npwp",
+        "sourceIncludes": "src-kep-143-pj-2022"
+      }
+    },
+    {
+      "id": "bppu-24-104-03-jasa-konsultan-current",
+      "description": "KOP/BPPU 24-104-03 'Jasa Konsultan' is the current reporting code referenced by the jasa konsultan rules (the goal scenario).",
+      "code": "24-104-03",
+      "expect": {
+        "validFrom": "2022-02-21",
+        "labelIncludes": "Jasa Konsultan",
+        "referencedByRule": "rule-pph-23-jasa-konsultan-with-npwp",
+        "sourceIncludes": "src-kep-143-pj-2022"
+      }
+    },
+    {
+      "id": "bppu-24-104-01-jasa-teknik-current",
+      "description": "KOP/BPPU 24-104-01 'Jasa Teknik' is referenced by the jasa teknik rules.",
+      "code": "24-104-01",
+      "expect": {
+        "validFrom": "2022-02-21",
+        "labelIncludes": "Jasa Teknik",
+        "referencedByRule": "rule-pph-23-jasa-teknik-with-npwp",
+        "sourceIncludes": "src-kep-143-pj-2022"
+      }
+    },
+    {
+      "id": "bppu-24-100-02-rent-movable",
+      "description": "KOP 24-100-02 'Sewa/perolehan lain atas harta selain tanah/bangunan' tags the PPh 23 movable-rent rule.",
+      "code": "24-100-02",
+      "expect": {
+        "validFrom": "2022-02-21",
+        "labelIncludes": "Sewa",
+        "referencedByRule": "rule-pph-23-rent-movable-with-npwp"
+      }
+    },
+    {
+      "id": "bppu-28-403-02-rent-land-building-final-4-2",
+      "description": "BPPU 28-403-02 'Persewaan Tanah dan/atau Bangunan' is FINAL PPh 4(2) 10% — used by the PPh 23 scope-exclusion marker rule. It is NOT PPh 23; it is referenced only to make the scope exclusion discoverable.",
+      "code": "28-403-02",
+      "expect": {
+        "labelIncludes": "Persewaan",
+        "referencedByRule": "rule-pph-23-scope-rent-land-building"
+      }
+    }
+  ],
+  "nonAuthority": [
+    "BPPU codes are reporting metadata. The PPh 23 rate is sourced from UU PPh Pasal 23(1)(c)(2) and PMK 141/2015, never from the BPPU code itself.",
+    "A rule's bppuId is a stable reporting reference; changing the BPPU code does not change the rate.",
+    "BPPU codes have their own validity interval and source registry entries independent of the rate rules."
+  ]
+}

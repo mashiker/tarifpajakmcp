@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "description": "Data untuk kalkulasi PPh 23",
+    "rates": {
+      "jasa_bernpwp": 2,
+      "jasa_tanpa_npwp": 4,
+      "sewa": 10,
+      "hadiah": 10
+    },
+    "formula": {
+      "dasar": "DPP = Jumlah Bruto",
+      "pp23": "PPh 23 = Tarif × DPP"
+    }
+  }
+}

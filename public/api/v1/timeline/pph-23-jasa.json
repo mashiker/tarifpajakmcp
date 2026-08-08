@@ -1,0 +1,55 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "group": "pph-23-jasa",
+    "count": 3,
+    "description": "Timeline pph 23 jasa",
+    "entries": [
+      {
+        "id": "pph-23-jasa-pre2001",
+        "transactionType": "Imbalan Jasa & Sewa (UU 7/1983)",
+        "rate": "10%–15%",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "2000-12-31",
+        "status": "dicabut",
+        "legalBasis": "UU 7/1983 Pasal 23 ayat (1) huruf c",
+        "supersedes": [],
+        "supersededBy": [
+          "pph-23-jasa-2001"
+        ]
+      },
+      {
+        "id": "pph-23-jasa-2001",
+        "transactionType": "Imbalan Jasa & Sewa (UU 17/2000)",
+        "rate": "2%–10%",
+        "effectiveFrom": "2001-01-01",
+        "effectiveTo": "2021-12-31",
+        "status": "diubah",
+        "legalBasis": "UU 17/2000 Pasal 23 ayat (1) huruf c",
+        "supersedes": [
+          "pph-23-jasa-pre2001"
+        ],
+        "supersededBy": [
+          "pph-23-jasa-lain-2pct",
+          "pph-23-jasa-lain-4pct",
+          "pph-23-jasa-katering-2pct"
+        ]
+      },
+      {
+        "id": "pph-23-jasa-lain-2pct",
+        "transactionType": "Imbalan Jasa Lain (BerNPWP)",
+        "rate": "2%",
+        "effectiveFrom": "2015-12-31",
+        "effectiveTo": null,
+        "status": "berlaku",
+        "legalBasis": "UU 7/2021 (HPP) Pasal 23 ayat (1) huruf c angka 2; PMK 141/PMK.03/2015 Pasal 1 ayat (1), (3), (6)",
+        "supersedes": [
+          "pph-23-jasa-2001"
+        ],
+        "supersededBy": []
+      }
+    ]
+  }
+}

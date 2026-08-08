@@ -1,0 +1,31 @@
+{
+  "api": "tarif-pajak-id",
+  "endpoints": {
+    "atDate": "/api/v2/at-date",
+    "bppu": "/api/v2/bppu",
+    "byYear": "/api/v2/by-year",
+    "categories": "/api/v2/categories",
+    "concepts": "/api/v2/concepts",
+    "openapi": "/api/v2/openapi.json",
+    "rules": "/api/v2/rules",
+    "rulesCorpus": "/api/v2/rules-corpus.json",
+    "search": "/api/v2/search-index.json",
+    "sources": "/api/v2/sources"
+  },
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "version": "0.1.0"
+  },
+  "stats": {
+    "bppu": 7,
+    "categories": 7,
+    "concepts": 41,
+    "conflicts": 1,
+    "rules": 67,
+    "sources": 36
+  },
+  "version": "v2"
+}

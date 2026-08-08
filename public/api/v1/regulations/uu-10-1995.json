@@ -1,0 +1,35 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "uu-10-1995",
+    "number": "10",
+    "year": 1995,
+    "title": "Undang-Undang Kepabeanan",
+    "shortName": "UU Kepabeanan",
+    "type": "UU",
+    "promulgationDate": "1995-11-07",
+    "effectiveDate": "1996-07-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44205/uu-no-10-tahun-1995",
+    "status": "berlaku",
+    "description": "UU dasar kepabeanan Indonesia. Mengatur Bea Masuk (Pasal 13-14), Bea Masuk Anti-Dumping (Pasal 20-22), Bea Masuk Tindakan Pengamanan, dan Bea Keluaran.",
+    "relevantArticles": "Pasal 13, 14, 20, 21, 22",
+    "relatedRegulations": [],
+    "referencingEntries": [
+      "bea-masuk-umum-mf",
+      "bea-masuk-bmt",
+      "bea-masuk-anti-dumping",
+      "bea-meterai-dokumen-2021",
+      "bea-meterai-cek-bilyet",
+      "bea-meterai-kontrak",
+      "bea-meterai-surat-berharga",
+      "bea-meterai-nota-kredit",
+      "pph-21-progressive-uulama1994",
+      "pph-21-ptkp-1995",
+      "pph-21-ptkp-2005",
+      "pph-21-ptkp-2009",
+      "pph-22-pre2024"
+    ]
+  }
+}

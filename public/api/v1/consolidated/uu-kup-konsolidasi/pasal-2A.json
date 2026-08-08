@@ -1,0 +1,42 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "2A",
+    "bab": "II",
+    "title": "NPWP - Penggabungan dan Pemisahan",
+    "status": "ditambah",
+    "description": "Ketentuan tentang penggabungan dan pemisahan NPWP bagi WP tertentu.",
+    "keywords": [
+      "NPWP",
+      "penggabungan",
+      "pemisahan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "added",
+        "effectiveDate": "2008-01-01",
+        "summary": "Pasal baru ditambahkan melalui Perubahan Ketiga"
+      }
+    ],
+    "text": "(1) Dalam hal suatu badan mempunyai beberapa tempat kegiatan usaha, masing-masing tempat kegiatan usaha wajib mendaftarkan diri untuk diberikan NPWP cabang.\n(2) NPWP cabang sebagaimana dimaksud pada ayat (1) digunakan untuk pelaksanaan hak dan pemenuhan kewajiban perpajakan di tempat kegiatan usaha.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Badan dengan beberapa tempat usaha wajib mendaftar NPWP cabang.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "NPWP cabang digunakan untuk hak dan kewajiban pajak di tempat usaha.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

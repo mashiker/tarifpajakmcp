@@ -1,0 +1,117 @@
+---
+import { renderDatabaseRow } from '../../lib/database-markup.ts';
+import type { DatabaseRow } from '../../lib/database-state.ts';
+
+export interface Props {
+  rows: DatabaseRow[];
+  selectedDate?: string;
+  /** Maps slug -> { name, color } for category pills. */
+  categoryMeta?: Record<string, { name: string; color?: string }>;
+}
+const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
+---
+
+<div class="db-table-shell">
+  <table class="data-table db-table" id="db-table">
+    <caption class="sr-only">
+      Database tarif pajak. {rows.length} baris ditampilkan. Gunakan toolbar untuk memfilter berdasarkan kategori, status, verifikasi, atau tanggal.
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col" class="col-category">Kategori</th>
+        <th scope="col" class="col-name">Jenis transaksi</th>
+        <th scope="col" class="col-rate text-right">Tarif</th>
+        <th scope="col" class="col-verification">Verifikasi</th>
+        <th scope="col" class="col-timeline">Masa berlaku</th>
+      </tr>
+    </thead>
+    <tbody>
+      <Fragment set:html={rows.map((row) => {
+        const meta = categoryMeta[row.category];
+        return renderDatabaseRow({
+          row,
+          selectedDate,
+          categoryName: meta?.name,
+          categoryColor: meta?.color,
+        });
+      }).join('')} />
+    </tbody>
+  </table>
+  {
+    rows.length === 0 && (
+      <p class="db-empty-inline">Tidak ada tarif yang cocok dengan filter saat ini.</p>
+    )
+  }
+</div>
+
+<style>
+  /* Critical Task 8 constraint: NO nested vertical scroll. The shell never sets
+     max-height or vertical overflow-auto. The page scrolls normally and the
+     table header is sticky to the page beneath the sticky header+toolbar. */
+  .db-table-shell {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .db-table {
+    width: 100%;
+    table-layout: auto;
+  }
+  .db-table thead th {
+    position: sticky;
+    /* Header is sticky to page, sitting beneath sticky global header (h-14) +
+       sticky toolbar. The exact offset is set dynamically by JS on the root
+       element via --db-th-top (see index.astro); this fallback is only used
+       when JS is disabled. */
+    top: var(--db-th-top, 13rem);
+    z-index: 5;
+    background: var(--surface, #FFFFFF);
+  }
+  :global(html.dark) .db-table thead th { background: #111318; }
+  .db-table .col-category { width: 9rem; }
+  .db-table .col-rate { width: 7rem; }
+  .db-table .col-verification { width: 8.5rem; }
+  .db-table .col-timeline { width: 11rem; }
+
+  /* Hide filtered-out rows without removing them so the client can re-show
+     them when filters change. The server renders all rows; the client toggles
+     `hidden` based on the pure isRowVisible helper. */
+  .db-table tr.db-row[hidden] { display: none !important; }
+
+  .db-category-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.375rem;
+    background: rgba(19, 42, 42, 0.05);
+    color: var(--ink-secondary, #44545a);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+  }
+  .db-category-pill:hover { background: rgba(19, 42, 42, 0.10); color: var(--ink, #132A2A); }
+  .db-category-dot {
+    width: 0.4375rem;
+    height: 0.4375rem;
+    border-radius: 9999px;
+    background: var(--cat-color, #0E5E58);
+  }
+  .db-detail-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    text-decoration: none;
+    color: var(--ink, #132A2A);
+  }
+  .db-detail-link:hover .db-name { color: #0E5E58; }
+  .db-name { font-size: 0.875rem; font-weight: 500; }
+  .db-ruleid { font-family: 'IBM Plex Mono', monospace; font-size: 0.625rem; color: var(--ink-tertiary, #8B93A1); }
+  .db-rate { font-size: 0.875rem; }
+
+  .db-empty-inline { padding: 1rem; text-align: center; color: var(--ink-secondary, #44545a); font-size: 0.875rem; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .db-category-pill, .db-detail-link { transition: none; }
+  }
+</style>

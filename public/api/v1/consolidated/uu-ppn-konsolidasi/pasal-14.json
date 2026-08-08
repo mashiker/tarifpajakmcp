@@ -1,0 +1,47 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "14",
+    "bab": "II",
+    "bagian": "5",
+    "title": "PPN yang Tidak Dapat Dikreditkan",
+    "status": "diubah",
+    "description": "PPN yang tidak dapat dikreditkan: perolehan BKP/JKP yang bukan barang modal, perolehan untuk keperluan pribadi, dll.",
+    "keywords": [
+      "tidak dapat dikreditkan",
+      "non-creditable"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan daftar non-creditable"
+      }
+    ],
+    "text": "(1) PPN Masukan atas perolehan BKP dan penerimaan JKP tertentu tidak dapat dikreditkan:\na. perolehan dan pemeliharaan kendaraan bermotor sedan, jeep, station wagon, van, dan kombi, kecuali merupakan barang dagangan atau disewakan;\nb. perolehan dan pemeliharaan perabot, perlengkapan, dan hiasan, kecuali merupakan barang dagangan;\nc. pembelian bahan bakar minyak, kecuali merupakan barang dagangan;\nd. penerimaan jasa katering;\ne. penerimaan jasa persewaan kendaraan sedan, jeep, station wagon, van, dan kombi, kecuali merupakan barang dagangan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN Masukan tidak dapat dikreditkan: kendaraan mewah, perabot/perhiasan, BBM (bukan dagangan), jasa katering, sewa kendaraan mewah.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

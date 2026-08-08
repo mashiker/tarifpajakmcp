@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/Base.astro';
 import fs from 'fs';
 import path from 'path';
+import { buildDatabaseDataset } from '../lib/dataset.ts';
 
 const apiPath = path.resolve(process.cwd(), 'public/api.json');
 const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
@@ -30,9 +31,16 @@ allBppu.forEach(item => {
   if (!groups[prefix]) groups[prefix] = { label: prefixLabels[prefix] || prefix, items: [] };
   groups[prefix].items.push(item);
 });
+
+// Task 9: include the canonical v2 categories (including the new ones,
+// cat-pph-final-umkm and cat-pph-special-regimes) in the category index so the
+// BPPU page exposes navigation to every category the database surfaces.
+const corpus = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'public/api/v2/rules-corpus.json'), 'utf-8'));
+const dataset = buildDatabaseDataset(corpus);
+const v2CategoryIndex = dataset.categories;
 ---
 
-<BaseLayout title="Kode Objek Pajak BPPU" activeNav="bppu">
+<BaseLayout title="Kode Objek Pajak BPPU" activeNav="bppu" canonicalPath="/kode-objek-pajak">
   <nav class="flex items-center gap-2 text-xs mb-6">
     <a href="/" class="text-[var(--text-tertiary)] hover:text-[var(--text)] transition">Beranda</a>
     <svg class="w-3 h-3 text-[var(--text-tertiary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
@@ -45,6 +53,20 @@ allBppu.forEach(item => {
       <p class="text-sm text-[var(--text-secondary)]">{allBppu.length} kode · {Object.keys(groups).length} grup</p>
     </div>
   </div>
+
+  <nav class="bppu-cat-nav" aria-label="Indeks kategori database">
+    <span class="bppu-cat-nav-label">Kategori database:</span>
+    <ul class="bppu-cat-nav-list">
+      {v2CategoryIndex.map((c: { slug: string; name: string; count: number }) => (
+        <li>
+          <a href={`/kategori/${c.slug}`} class="bppu-cat-nav-link">
+            <span class="bppu-cat-nav-name">{c.name}</span>
+            <span class="bppu-cat-nav-count">{c.count}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
 
   <div class="flex flex-wrap items-center gap-2 mb-6">
     <div class="relative flex-1 min-w-[180px] max-w-xs">
@@ -81,6 +103,54 @@ allBppu.forEach(item => {
       </div>
     </div>
   ))}
+<style is:inline>
+  .bppu-cat-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 0.75rem;
+    padding: 0.625rem 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border, #D9E0DC);
+    border-radius: 0.5rem;
+    background: var(--surface, #FFFFFF);
+  }
+  .bppu-cat-nav-label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary, #44545a);
+  }
+  .bppu-cat-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .bppu-cat-nav-link {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    padding: 0.1875rem 0.5rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border, #D9E0DC);
+    background: var(--surface-alt, #EFF1EC);
+    color: var(--text, #132A2A);
+    text-decoration: none;
+    font-size: 0.6875rem;
+    font-weight: 600;
+  }
+  .bppu-cat-nav-link:hover { border-color: var(--accent, #0E5E58); color: var(--accent, #0E5E58); }
+  .bppu-cat-nav-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.625rem;
+    color: var(--text-tertiary, #8B93A1);
+    font-weight: 700;
+  }
+</style>
 </BaseLayout>
 
 <script>

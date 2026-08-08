@@ -1,0 +1,57 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "bea-masuk-bmt",
+    "category": "Bea Masuk",
+    "taxType": "Bea Masuk",
+    "transactionType": "Bea Masuk Tinggi (BMT) — Barang Mewah",
+    "description": "Tarif BM tinggi untuk barang mewah: rokok 50-150%, alkohol 40-150%, mobil mewah 40-80%.",
+    "rate": {
+      "type": "range",
+      "value": [
+        40,
+        150
+      ]
+    },
+    "taxBase": "Nilai Pabean (CIF)",
+    "payer": "Importir barang mewah",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1984-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 10/1995",
+        "article": "Pasal 13 ayat (3)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44070/uu-no-10-tahun-1995"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "BMT: rokok 50-150%, alkohol 40-150%, mobil mewah 40-80%. Ditambah Cukai untuk rokok/alkohol.",
+    "examples": [
+      {
+        "scenario": "Impor mobil mewah USD 100.000",
+        "calculation": "BM 80% × Rp 1.550.000.000",
+        "result": "BM = Rp 1.240.000.000 + PPN + PPnBM"
+      }
+    ],
+    "tags": [
+      "bea-masuk",
+      "bmt",
+      "mewah",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "bea-masuk-umum-mf",
+        "bea-masuk-asean-atiga",
+        "bea-masuk-anti-dumping"
+      ]
+    }
+  }
+}

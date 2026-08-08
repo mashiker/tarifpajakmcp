@@ -1,0 +1,783 @@
+---
+import BaseLayout from '../../layouts/Base.astro';
+import fs from 'fs';
+import path from 'path';
+import {
+  buildDetailViewModel,
+  listConceptIds,
+  type DetailCorpus,
+  type DetailRule,
+  type DetailViewModel,
+} from '../../lib/detail.ts';
+import { formatRateLabel, relationHref } from '../../lib/detail.ts';
+import {
+  renderTimelineCell,
+  renderVerificationBadge,
+} from '../../lib/database-markup.ts';
+import { deriveRowStatus } from '../../lib/database-state.ts';
+import { buildEntryMetadata, CANONICAL_ORIGIN } from '../../lib/seo.ts';
+
+// Build-time: emit one static detail route per concept id. The list is the same
+// source of truth the root database emits deep links for, so every link
+// resolves (locked by tests/contracts/detail-routes.test.ts).
+export function getStaticPaths() {
+  // Astro hoists getStaticPaths into a scope that does not see module-level
+  // helpers, so the corpus load is inlined here.
+  const readJson = (rel: string) => JSON.parse(fs.readFileSync(path.resolve(process.cwd(), rel), 'utf-8'));
+  const baseCorpus = readJson('public/api/v2/rules-corpus.json');
+  const sources = readJson('public/api/v2/sources/index.json').data.sources;
+  const bppu = readJson('public/api/v2/bppu/index.json').data.codes;
+  const corpus: DetailCorpus = { ...baseCorpus, data: { ...baseCorpus.data, sources, bppu } };
+  return listConceptIds(corpus).map((cid) => ({
+    params: { id: cid },
+    props: { corpus },
+  }));
+}
+
+interface Props { corpus: DetailCorpus; }
+const { corpus: CORPUS } = Astro.props as Props;
+
+const id = Astro.params.id!;
+const vm: DetailViewModel | null = buildDetailViewModel(CORPUS, id);
+if (!vm) {
+  return Astro.redirect('/404');
+}
+
+// Deterministic "today" for the status-at-today label, matching the root.
+const releaseToday: string = (() => {
+  const generatedAt = (CORPUS as { release?: { generatedAt?: string } }).release?.generatedAt;
+  if (typeof generatedAt === 'string' && generatedAt.length >= 10) return generatedAt.slice(0, 10);
+  return vm.earliestValidFrom?.slice(0, 10) ?? '2026-08-06';
+})();
+
+// Verification tokens reused from the shared markup module.
+const VERIFICATION_LABEL: Record<string, string> = {
+  verified_primary: 'Primer',
+  verified_secondary: 'Sekunder',
+  needs_review: 'Tinjauan',
+  source_conflict: 'Konflik',
+  summary_only: 'Orientasi',
+};
+
+function fmtDate(value: string | null | undefined): string {
+  if (!value) return 'sekarang';
+  return value.slice(0, 10);
+}
+
+function isExternal(url: string | undefined): boolean {
+  return !!url && /^https?:\/\//.test(url);
+}
+
+// Status-at-today label per rule. Computed server-side for the initial render;
+// a small client script updates it when the user picks a different date.
+function statusLabel(rule: DetailRule): string {
+  const row = vm.rows.find((r) => r.id === rule.id)!;
+  const status = deriveRowStatus(row, releaseToday);
+  const map: Record<string, string> = {
+    berlaku: 'Berlaku',
+    diubah: 'Diubah (digantikan aturan lain)',
+    belum_berlaku: 'Belum berlaku',
+    dicabut: 'Dicabut / tidak berlaku',
+  };
+  return map[status] ?? status;
+}
+
+const releaseLabel = (CORPUS as { release?: { generatedAt?: string } }).release?.generatedAt
+  ? new Date((CORPUS as { release: { generatedAt: string } }).release.generatedAt).toISOString().slice(0, 10)
+  : '';
+
+// Entry-level machine-readable metadata (Task 10). Builds the canonical URL,
+// og:url, and a JSON-LD object for the concept's detail page.
+const entryMeta = buildEntryMetadata({
+  conceptId: vm.id,
+  conceptName: vm.name,
+  categoryId: vm.categoryId,
+  categorySlug: vm.categorySlug,
+  categoryName: vm.categoryName,
+  validFrom: vm.earliestValidFrom,
+  validToExclusive: vm.latestValidToExclusive,
+  apiUrl: vm.apiUrl,
+  origin: CANONICAL_ORIGIN,
+  description: vm.description,
+});
+---
+
+<BaseLayout
+  title={`${vm.name} — Detail Tarif`}
+  activeNav="home"
+  wide={true}
+  fullWidth={true}
+  canonicalPath={`/tarif/${vm.id}`}
+  description={`Detail tarif ${vm.name}: dasar hukum, interval berlaku, status historis, sumber primer, dan BPPU. ${vm.description ?? ''}`.slice(0, 160)}
+  jsonLd={entryMeta.jsonLd}
+>
+
+  <nav class="detail-breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Database</a>
+    <span aria-hidden="true">›</span>
+    <a href={vm.categoryUrl}>{vm.categoryName}</a>
+    <span aria-hidden="true">›</span>
+    <span class="detail-breadcrumb-current">{vm.name}</span>
+  </nav>
+
+  <header class="detail-header">
+    <div class="detail-header-main">
+      <p class="detail-category-line">
+        <a href={vm.categoryUrl} class="detail-category-pill">{vm.categoryName}</a>
+        <span class="detail-ruleid">{vm.id}</span>
+      </p>
+      <h1 id="detail-title" class="detail-title">{vm.name}</h1>
+      {vm.description && <p class="detail-description">{vm.description}</p>}
+      <p class="detail-meta-line">
+        <span>{vm.rules.length} aturan dalam kronologi</span>
+        <span aria-hidden="true">·</span>
+        <span>Berlaku {fmtDate(vm.earliestValidFrom)} sampai {fmtDate(vm.latestValidToExclusive)}</span>
+        {releaseLabel && <>
+          <span aria-hidden="true">·</span>
+          <span>Rilis {releaseLabel}</span>
+        </>}
+      </p>
+    </div>
+    <a class="detail-api-link" href={vm.apiUrl} aria-label={`Dokumen API JSON untuk ${vm.name}`}>
+      <span class="detail-api-pill">API</span>
+      <span class="detail-api-url">{vm.apiUrl}</span>
+      <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <section class="detail-date-bar" aria-label="Tanggal evaluasi status">
+    <label for="detail-date-input" class="detail-date-label">Status pada tanggal</label>
+    <input
+      id="detail-date-input"
+      type="text"
+      inputmode="numeric"
+      class="detail-date-input"
+      placeholder="YYYY-MM-DD atau YYYY (kosong = rilis terbaru)"
+      pattern="^\d{4}(-\d{2}-\d{2})?$"
+    />
+    <p id="detail-date-hint" class="detail-date-hint" role="status" aria-live="polite" aria-atomic="true">
+      Tanpa tanggal, status dihitung pada rilis terbaru ({releaseToday}).
+    </p>
+  </section>
+
+  <section class="detail-rules" aria-labelledby="detail-rules-heading">
+    <h2 id="detail-rules-heading" class="detail-section-title">Kronologi aturan</h2>
+    {vm.rules.map((rule: DetailRule, idx: number) => (
+      <article id={`rule-${rule.id}`} class="detail-rule" data-rule-id={rule.id} data-valid-from={rule.validFrom} data-valid-to-exclusive={rule.validToExclusive ?? ''} data-superseded={rule.supersededBy.length > 0 ? 'true' : 'false'}>
+        <header class="detail-rule-header">
+          <div class="detail-rule-headline">
+            <span class="detail-rule-index">{idx + 1}</span>
+            <h3 class="detail-rule-rate">{rule.rateLabel}</h3>
+            <span
+              class="detail-rule-status"
+              data-status-target={rule.id}
+              data-status-label={statusLabel(rule)}
+            >{statusLabel(rule)}</span>
+            <span class="detail-rule-verification" set:html={renderVerificationBadge(rule.verificationStatus, rule.conflictIds.length > 0)} />
+          </div>
+          <p class="detail-rule-interval">
+            {fmtDate(rule.validFrom)} &rarr; {fmtDate(rule.validToExclusive)}
+            <span class="detail-rule-interval-note">(eksklusif)</span>
+          </p>
+        </header>
+
+        <div class="detail-rule-timeline" set:html={renderTimelineCell(rule.validFrom, rule.validToExclusive, '', false)} />
+
+        {rule.conditionsLabel && (
+          <section class="detail-conditions" aria-label="Kondisi penerapan">
+            <h4 class="detail-subsection-title">Berlaku untuk</h4>
+            <p class="detail-conditions-text">{rule.conditionsLabel}</p>
+          </section>
+        )}
+
+        {rule.notes && <p class="detail-rule-notes">{rule.notes}</p>}
+
+        {rule.examples.length > 0 && (
+          <details class="detail-examples" open={rule.examples.length <= 3}>
+            <summary class="detail-examples-summary">Contoh ({rule.examples.length})</summary>
+            <ul class="detail-examples-list">
+              {rule.examples.map((ex) => (
+                <li class="detail-example">
+                  <div class="detail-example-header">
+                    <span class="detail-example-label">{ex.label}</span>
+                    <span class:list={['detail-example-tag', ex.illustrative ? 'detail-example-illustrative' : 'detail-example-verified']}>
+                      {ex.illustrative ? 'Ilustratif' : 'Terverifikasi'}
+                    </span>
+                  </div>
+                  {ex.expectedAmount && (
+                    <p class="detail-example-amount">Hasil: <span class="detail-example-amount-value">{ex.expectedAmount}</span></p>
+                  )}
+                  {ex.notes && <p class="detail-example-notes">{ex.notes}</p>}
+                </li>
+              ))}
+            </ul>
+          </details>
+        )}
+
+        {rule.bppuCodes.length > 0 && (
+          <div class="detail-bppu">
+            <h4 class="detail-subsection-title">Kode BPPU / KOP pelaporan</h4>
+            <ul class="detail-bppu-list">
+              {rule.bppuCodes.map((b) => (
+                <li class="detail-bppu-item">
+                  <span class="detail-bppu-code">{b.code}</span>
+                  <span class="detail-bppu-label">{b.label}</span>
+                  <span class="detail-bppu-version">versi {fmtDate(b.validFrom)}</span>
+                </li>
+              ))}
+            </ul>
+            <p class="detail-bppu-note">Kode BPPU adalah metadata pelaporan, bukan dasar tarif.</p>
+          </div>
+        )}
+
+        {(rule.supersedes.length > 0 || rule.supersededBy.length > 0) && (
+          <div class="detail-relations">
+            <h4 class="detail-subsection-title">Aturan pendahulu / penerus</h4>
+            <ul class="detail-relations-list">
+              {rule.supersedes.map((rid) => (
+                <li class="detail-relation detail-relation-predecessor">
+                  <span class="detail-relation-label">Mengganti:</span>
+                  <a href={relationHref(vm, rid)} class="detail-relation-link">{rid}</a>
+                </li>
+              ))}
+              {rule.supersededBy.map((rid) => (
+                <li class="detail-relation detail-relation-successor">
+                  <span class="detail-relation-label">Digantikan oleh:</span>
+                  <a href={relationHref(vm, rid)} class="detail-relation-link">{rid}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {rule.conflictIds.length > 0 && (
+          <div class="detail-conflicts">
+            <h4 class="detail-subsection-title">Konflik sumber terbuka</h4>
+            {rule.conflictIds.map((cid) => {
+              const conflict = vm.conflictsById.get(cid);
+              return (
+                <p class="detail-conflict">
+                  <span class="detail-conflict-id">{cid}</span>
+                  {conflict?.description && <span class="detail-conflict-desc">{conflict.description}</span>}
+                </p>
+              );
+            })}
+            <p class="detail-conflict-note">
+              Aturan ini berada dalam konflik sumber yang belum diputuskan dan tidak boleh dianggap sebagai jawaban pasti.
+            </p>
+          </div>
+        )}
+
+        {rule.sourceIds.length > 0 && (
+          <div class="detail-sources">
+            <h4 class="detail-subsection-title">Sumber {rule.verificationStatus === 'verified_primary' ? 'primer' : 'pendukung'}</h4>
+            <ul class="detail-sources-list">
+              {rule.sourceIds.map((sid) => {
+                const src = vm.sourcesById.get(sid);
+                const external = src ? isExternal(src.url) : false;
+                return (
+                  <li class="detail-source">
+                    {src && src.url ? (
+                      <a
+                        href={src.url}
+                        class:list={['detail-source-link', !src.official && 'detail-source-secondary']}
+                        {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      >
+                        <span class="detail-source-name">{src.name}</span>
+                        {src.regulationId && <span class="detail-source-regid">{src.regulationId}</span>}
+                        <span class:list={['detail-source-role', `detail-source-role-${src.role}`]}>{src.role}</span>
+                        {external && <span aria-hidden="true">↗</span>}
+                      </a>
+                    ) : (
+                      <span class="detail-source detail-source-orphan">
+                        <span class="detail-source-name">{src?.name ?? sid}</span>
+                        <span class="detail-source-regid">{sid}</span>
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+            {rule.evidence.length > 0 && (
+              <details class="detail-evidence" open={rule.evidence.length <= 3}>
+                <summary class="detail-evidence-summary">Locator klaim ({rule.evidence.length})</summary>
+                <ul class="detail-evidence-list">
+                  {rule.evidence.map((ev) => (
+                    <li class="detail-evidence-item">
+                      <span class="detail-evidence-claim">{ev.claim}</span>
+                      <span class="detail-evidence-locator">{ev.locator}</span>
+                      <span class="detail-evidence-source">{ev.sourceId}</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
+            {rule.verifiedAt && (
+              <p class="detail-verified-at">Diverifikasi {rule.verifiedAt}</p>
+            )}
+          </div>
+        )}
+      </article>
+    ))}
+  </section>
+
+  <aside class="detail-back" aria-label="Navigasi kembali">
+    <a href="/" class="detail-back-link">&larr; Kembali ke database</a>
+    <a href={vm.categoryUrl} class="detail-back-link">Lihat semua di {vm.categoryName}</a>
+    <a href={vm.apiUrl} class="detail-back-link detail-back-api" target="_blank" rel="noopener noreferrer">JSON API ↗</a>
+  </aside>
+</BaseLayout>
+
+<script is:inline define:vars={{ RELEASE_TODAY: releaseToday }}>
+  // Status-at-date re-evaluation. The page server-renders the status for the
+  // release date; this script re-evaluates each rule's status when the user
+  // picks a different date in the input above, mirroring the root's URL-driven
+  // behavior. The status logic is a tiny mirror of the pure
+  // `deriveRowStatus` helper so we do not need to embed the corpus twice.
+  (() => {
+    const STATUS_LABELS = {
+      berlaku: 'Berlaku',
+      diubah: 'Diubah (digantikan aturan lain)',
+      belum_berlaku: 'Belum berlaku',
+      dicabut: 'Dicabut / tidak berlaku',
+    };
+
+    function toEpochMs(value) {
+      if (/^\d{4}$/.test(value)) return Date.parse(`${value}-01-01T00:00:00Z`);
+      return Date.parse(`${value}T00:00:00Z`);
+    }
+    function isValidDate(value) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+      const parsed = Date.parse(`${value}T00:00:00Z`);
+      if (!Number.isFinite(parsed)) return false;
+      return new Date(parsed).toISOString().slice(0, 10) === value;
+    }
+
+    function deriveStatus(validFrom, validToExclusive, superseded, today) {
+      // Mirrors website/src/lib/database-state.ts deriveRowStatus.
+      const todayMs = toEpochMs(today);
+      if (toEpochMs(validFrom) > todayMs) return 'belum_berlaku';
+      if (superseded) return 'diubah';
+      if (validToExclusive && toEpochMs(validToExclusive) <= todayMs) return 'dicabut';
+      return 'berlaku';
+    }
+
+    const input = document.getElementById('detail-date-input');
+    const hint = document.getElementById('detail-date-hint');
+    const rules = document.querySelectorAll('[data-rule-id]');
+    function apply() {
+      const raw = (input?.value || '').trim();
+      let today = RELEASE_TODAY;
+      if (raw) {
+        if (/^\d{4}$/.test(raw) || isValidDate(raw)) today = raw;
+      }
+      rules.forEach((el) => {
+        const validFrom = el.getAttribute('data-valid-from') || '';
+        const validTo = el.getAttribute('data-valid-to-exclusive') || null;
+        const superseded = el.getAttribute('data-superseded') === 'true';
+        const status = deriveStatus(validFrom, validTo || null, superseded, today);
+        const target = el.querySelector('[data-status-target]');
+        if (target) target.textContent = STATUS_LABELS[status] || status;
+      });
+      if (hint) {
+        hint.textContent = raw
+          ? `Status dihitung pada ${raw}.`
+          : `Tanpa tanggal, status dihitung pada rilis terbaru (${RELEASE_TODAY}).`;
+      }
+    }
+    input?.addEventListener('input', () => {
+      // Debounce so each keystroke does not thrash the DOM.
+      clearTimeout(window.__detail_date_timer__);
+      window.__detail_date_timer__ = setTimeout(apply, 120);
+    });
+    input?.addEventListener('change', apply);
+  })();
+</script>
+
+<style>
+  .detail-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.75rem;
+    color: var(--ink-tertiary, #8B93A1);
+    margin-bottom: 0.75rem;
+  }
+  .detail-breadcrumb a { color: var(--ink-secondary, #44545a); text-decoration: none; }
+  .detail-breadcrumb a:hover { color: #0E5E58; text-decoration: underline; }
+  .detail-breadcrumb-current { color: var(--ink, #132A2A); font-weight: 600; }
+
+  .detail-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule, #D9E0DC);
+    margin-bottom: 1rem;
+  }
+  .detail-header-main { flex: 1 1 24rem; min-width: 0; }
+  .detail-category-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.25rem;
+    font-size: 0.6875rem;
+  }
+  .detail-category-pill {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    background: var(--accent-soft, #EAF2F0);
+    color: #0E5E58;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .detail-ruleid {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--ink-tertiary, #8B93A1);
+    font-size: 0.6875rem;
+  }
+  .detail-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ink, #132A2A);
+    margin: 0;
+  }
+  .detail-description {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    color: var(--ink-secondary, #44545a);
+    line-height: 1.5;
+    max-width: 60ch;
+  }
+  .detail-meta-line {
+    margin: 0.75rem 0 0;
+    font-size: 0.75rem;
+    color: var(--ink-tertiary, #8B93A1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+  }
+  .detail-api-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.625rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: var(--surface, #FFFFFF);
+    color: var(--ink-secondary, #44545a);
+    font-size: 0.6875rem;
+    text-decoration: none;
+    flex-shrink: 0;
+    /* The API URL is long and must not force horizontal page overflow on
+       narrow viewports (Task 11 mobile gate). Allow the link to wrap onto a
+       new line within the flex header rather than staying on one line. */
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .detail-api-link:hover { border-color: #0E5E58; color: #0E5E58; }
+  .detail-api-pill {
+    display: inline-block;
+    padding: 0.0625rem 0.375rem;
+    border-radius: 0.25rem;
+    background: var(--ink, #132A2A);
+    color: var(--paper, #F7F8F4);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 0.625rem;
+    letter-spacing: 0.04em;
+  }
+  .detail-api-url {
+    font-family: 'IBM Plex Mono', monospace;
+    /* Long API URLs must break rather than overflow the viewport on mobile. */
+    overflow-wrap: anywhere;
+    min-width: 0;
+  }
+
+  .detail-date-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+    padding: 0.625rem 0.75rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    border-radius: 0.5rem;
+    background: var(--surface, #FFFFFF);
+    margin-bottom: 1.25rem;
+  }
+  .detail-date-label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-secondary, #44545a);
+  }
+  .detail-date-input {
+    width: 18rem;
+    max-width: 100%;
+    height: 2.25rem;
+    padding: 0 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: var(--surface, #FFFFFF);
+    color: var(--ink, #132A2A);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8125rem;
+  }
+  .detail-date-input:focus { outline: none; border-color: #0E5E58; box-shadow: 0 0 0 3px rgba(14, 94, 88, 0.18); }
+  .detail-date-hint { margin: 0; font-size: 0.6875rem; color: var(--ink-tertiary, #8B93A1); }
+
+  .detail-section-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-secondary, #44545a);
+    margin: 0 0 0.75rem;
+  }
+  .detail-subsection-title {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-tertiary, #8B93A1);
+    margin: 0 0 0.375rem;
+  }
+
+  .detail-rule {
+    border: 1px solid var(--rule, #D9E0DC);
+    border-radius: 0.5rem;
+    background: var(--surface, #FFFFFF);
+    padding: 0.875rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .detail-rule-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .detail-rule-headline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .detail-rule-index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+    background: var(--surface-alt, #EFF1EC);
+    color: var(--ink-secondary, #44545a);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 700;
+  }
+  .detail-rule-rate {
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink, #132A2A);
+  }
+  .detail-rule-status {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    background: var(--accent-soft, #EAF2F0);
+    color: #0E5E58;
+    font-size: 0.6875rem;
+    font-weight: 600;
+  }
+  .detail-rule-interval {
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--ink-secondary, #44545a);
+  }
+  .detail-rule-interval-note { color: var(--ink-tertiary, #8B93A1); font-size: 0.625rem; }
+
+  .detail-rule-timeline { margin: 0.25rem 0 0.5rem; }
+  .detail-rule-notes {
+    margin: 0.5rem 0 0;
+    font-size: 0.8125rem;
+    color: var(--ink-secondary, #44545a);
+    line-height: 1.5;
+  }
+
+  .detail-conditions {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.625rem;
+    border-radius: 0.375rem;
+    background: var(--accent-soft, #EAF2F0);
+    border: 1px solid rgba(14, 94, 88, 0.18);
+  }
+  .detail-conditions-text {
+    margin: 0.25rem 0 0;
+    font-size: 0.8125rem;
+    color: var(--ink, #132A2A);
+    line-height: 1.5;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  :global(html.dark) .detail-conditions { background: rgba(45, 212, 191, 0.08); border-color: rgba(45, 212, 191, 0.20); }
+  :global(html.dark) .detail-conditions-text { color: #EDF0F5; }
+
+  .detail-examples { margin-top: 0.75rem; }
+  .detail-examples-summary {
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ink-secondary, #44545a);
+  }
+  .detail-examples-list { list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; flex-direction: column; gap: 0.375rem; }
+  .detail-example {
+    padding: 0.5rem 0.625rem;
+    border-radius: 0.375rem;
+    background: var(--surface-alt, #EFF1EC);
+    font-size: 0.8125rem;
+  }
+  .detail-example-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.375rem;
+  }
+  .detail-example-label { font-weight: 600; color: var(--ink, #132A2A); }
+  .detail-example-tag {
+    display: inline-block;
+    padding: 0.0625rem 0.375rem;
+    border-radius: 9999px;
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .detail-example-illustrative { background: var(--highlight-soft, #FBF3E3); color: #7A4F10; }
+  .detail-example-verified { background: var(--accent-soft, #EAF2F0); color: #0E5E58; }
+  .detail-example-amount { margin: 0.25rem 0 0; font-size: 0.75rem; color: var(--ink-secondary, #44545a); }
+  .detail-example-amount-value { font-family: 'IBM Plex Mono', monospace; font-weight: 700; color: var(--ink, #132A2A); }
+  .detail-example-notes { margin: 0.25rem 0 0; font-size: 0.6875rem; color: var(--ink-tertiary, #8B93A1); line-height: 1.45; }
+
+  .detail-bppu { margin-top: 0.75rem; }
+  .detail-bppu-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.25rem; }
+  .detail-bppu-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.375rem;
+    padding: 0.25rem 0;
+    border-bottom: 1px dashed var(--rule, #D9E0DC);
+    font-size: 0.75rem;
+  }
+  .detail-bppu-item:last-child { border-bottom: none; }
+  .detail-bppu-code { font-family: 'IBM Plex Mono', monospace; font-weight: 700; color: var(--ink, #132A2A); }
+  .detail-bppu-label { color: var(--ink-secondary, #44545a); flex: 1 1 18rem; }
+  .detail-bppu-version { font-family: 'IBM Plex Mono', monospace; font-size: 0.625rem; color: var(--ink-tertiary, #8B93A1); }
+  .detail-bppu-note { margin: 0.375rem 0 0; font-size: 0.625rem; color: var(--ink-tertiary, #8B93A1); }
+
+  .detail-relations { margin-top: 0.75rem; }
+  .detail-relations-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.25rem; }
+  .detail-relation { font-size: 0.75rem; color: var(--ink-secondary, #44545a); }
+  .detail-relation-label { font-weight: 600; margin-right: 0.375rem; }
+  .detail-relation-link { font-family: 'IBM Plex Mono', monospace; color: #0E5E58; text-decoration: none; }
+  .detail-relation-link:hover { text-decoration: underline; }
+
+  .detail-conflicts { margin-top: 0.75rem; padding: 0.5rem 0.625rem; border-radius: 0.375rem; background: rgba(182, 69, 69, 0.06); border: 1px solid rgba(182, 69, 69, 0.20); }
+  .detail-conflict { margin: 0 0 0.25rem; font-size: 0.75rem; color: var(--ink, #132A2A); }
+  .detail-conflict-id { font-family: 'IBM Plex Mono', monospace; font-weight: 700; color: #B64545; margin-right: 0.375rem; }
+  .detail-conflict-desc { color: var(--ink-secondary, #44545a); }
+  .detail-conflict-note { margin: 0.375rem 0 0; font-size: 0.6875rem; color: #B64545; font-style: italic; }
+
+  .detail-sources { margin-top: 0.75rem; }
+  .detail-sources-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.25rem; }
+  .detail-source-link, .detail-source-orphan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.375rem;
+    padding: 0.375rem 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: var(--surface, #FFFFFF);
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: var(--ink-secondary, #44545a);
+  }
+  .detail-source-link:hover { border-color: #0E5E58; color: #0E5E58; }
+  .detail-source-secondary { background: var(--surface-alt, #EFF1EC); }
+  .detail-source-name { color: var(--ink, #132A2A); font-weight: 600; flex: 1 1 20rem; }
+  .detail-source-regid { font-family: 'IBM Plex Mono', monospace; font-size: 0.625rem; color: var(--ink-tertiary, #8B93A1); }
+  .detail-source-role {
+    display: inline-block;
+    padding: 0.0625rem 0.375rem;
+    border-radius: 9999px;
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--accent-soft, #EAF2F0);
+    color: #0E5E58;
+  }
+  .detail-source-role-secondary { background: var(--highlight-soft, #FBF3E3); color: #7A4F10; }
+
+  .detail-evidence { margin-top: 0.5rem; }
+  .detail-evidence-summary { cursor: pointer; font-size: 0.6875rem; color: var(--ink-tertiary, #8B93A1); }
+  .detail-evidence-list { list-style: none; padding: 0; margin: 0.375rem 0 0; display: flex; flex-direction: column; gap: 0.375rem; }
+  .detail-evidence-item {
+    padding: 0.375rem 0.5rem;
+    border-left: 2px solid var(--rule, #D9E0DC);
+    font-size: 0.6875rem;
+    color: var(--ink-secondary, #44545a);
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+  .detail-evidence-claim { font-weight: 700; color: var(--ink, #132A2A); text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.625rem; }
+  .detail-evidence-locator { font-family: 'IBM Plex Mono', monospace; line-height: 1.45; }
+  .detail-evidence-source { font-family: 'IBM Plex Mono', monospace; font-size: 0.625rem; color: var(--ink-tertiary, #8B93A1); }
+  .detail-verified-at { margin: 0.5rem 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 0.625rem; color: var(--ink-tertiary, #8B93A1); }
+
+  .detail-back {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-top: 0.875rem;
+    border-top: 1px solid var(--rule, #D9E0DC);
+    font-size: 0.75rem;
+  }
+  .detail-back-link { color: #0E5E58; text-decoration: none; font-weight: 600; }
+  .detail-back-link:hover { text-decoration: underline; }
+  .detail-back-api { font-family: 'IBM Plex Mono', monospace; }
+
+  :global(html.dark) .detail-title { color: #EDF0F5; }
+  :global(html.dark) .detail-description { color: #B6BCC6; }
+  :global(html.dark) .detail-meta-line { color: #8B93A1; }
+  :global(html.dark) .detail-rule-rate { color: #EDF0F5; }
+  :global(html.dark) .detail-rule { background: #111318; border-color: #23272F; }
+  :global(html.dark) .detail-source-name { color: #EDF0F5; }
+  :global(html.dark) .detail-example { background: #1A1D24; }
+  :global(html.dark) .detail-breadcrumb a { color: #B6BCC6; }
+  :global(html.dark) .detail-breadcrumb-current { color: #EDF0F5; }
+  :global(html.dark) .detail-rule-interval { color: #B6BCC6; }
+  :global(html.dark) .detail-date-input { background: #111318; border-color: #23272F; color: #EDF0F5; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .detail-date-input, .detail-source-link, .detail-api-link, .detail-back-link { transition: none; }
+  }
+</style>

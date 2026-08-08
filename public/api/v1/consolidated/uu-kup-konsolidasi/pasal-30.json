@@ -1,0 +1,62 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "30",
+    "bab": "VIII",
+    "title": "Banding ke PP",
+    "status": "diubah",
+    "description": "WP yang tidak menerima keputusan keberatan dapat mengajukan banding ke Pengadilan Pajak dalam waktu 3 bulan.",
+    "keywords": [
+      "banding",
+      "Pengadilan Pajak",
+      "3 bulan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "16",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Penyesuaian banding ke Pengadilan Pajak"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan ketentuan banding"
+      }
+    ],
+    "text": "(1) WP dapat mengajukan banding ke Pengadilan Pajak atas keberatan yang ditolak sebagian atau seluruhnya.\n(2) Banding diajukan secara tertulis dalam bahasa Indonesia paling lambat 3 bulan sejak tanggal keberatan ditolak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP dapat banding ke Pengadilan Pajak atas keberatan yang ditolak.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Banding tertulis, bahasa Indonesia, paling lambat 3 bulan.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "group": "pph-umkm",
+    "count": 3,
+    "description": "Timeline pph umkm",
+    "entries": [
+      {
+        "id": "pph-umkm-1pct-pp46",
+        "transactionType": "Penghasilan Usaha (PP 46/2013)",
+        "rate": "1%",
+        "effectiveFrom": "2013-07-01",
+        "effectiveTo": "2018-06-30",
+        "status": "dicabut",
+        "legalBasis": "PP 46/2013 Pasal 2-3",
+        "supersedes": [],
+        "supersededBy": [
+          "pph-umkm-05pct-2018"
+        ]
+      },
+      {
+        "id": "pph-umkm-05pct-2018",
+        "transactionType": "Penghasilan Usaha (PP 23/2018)",
+        "rate": "0.5%",
+        "effectiveFrom": "2018-07-01",
+        "effectiveTo": "2022-12-31",
+        "status": "dicabut",
+        "legalBasis": "PP 23/2018 Pasal 2-3",
+        "supersedes": [
+          "pph-umkm-1pct-pp46"
+        ],
+        "supersededBy": [
+          "pph-umkm-05pct-2023"
+        ]
+      },
+      {
+        "id": "pph-umkm-05pct-2023",
+        "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
+        "rate": "0.5%",
+        "effectiveFrom": "2023-01-01",
+        "effectiveTo": null,
+        "status": "berlaku",
+        "legalBasis": "PP 55/2022 Pasal 2-3; UU 7/2021 (HPP) Pasal 4 ayat (2)",
+        "supersedes": [
+          "pph-umkm-05pct-2018"
+        ],
+        "supersededBy": []
+      }
+    ]
+  }
+}

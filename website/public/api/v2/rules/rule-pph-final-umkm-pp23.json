@@ -1,0 +1,107 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-final-umkm-pp23",
+    "conceptId": "concept-pph-final-umkm-pp23",
+    "conceptName": "PPh Final UMKM PP 23/2018 (0,5%)",
+    "categoryId": "cat-pph-final-umkm",
+    "categoryName": "Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026)",
+    "validFrom": "2018-07-01",
+    "validToExclusive": "2022-12-20",
+    "rate": {
+      "type": "percentage",
+      "value": "0.005"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "in",
+          "fact": "entityType",
+          "value": [
+            "op",
+            "pt",
+            "cv",
+            "firma",
+            "cooperative"
+          ]
+        },
+        {
+          "op": "exists",
+          "fact": "grossTurnover"
+        },
+        {
+          "op": "equals",
+          "fact": "umkmTurnoverEligible",
+          "value": true
+        },
+        {
+          "op": "exists",
+          "fact": "pp23YearsElapsed"
+        },
+        {
+          "op": "equals",
+          "fact": "pp23DurationNotExceeded",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-pp-23-2018"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pp-23-2018",
+          "locator": "PP 23/2018 Pasal 4 ayat (1): tarif final 0,5% atas peredaran bruto"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pp-23-2018",
+          "locator": "PP 23/2018 berlaku 1 Juli 2018 sampai 19 Desember 2022; Pasal 10 aturan transisi untuk WP eligible PP 46 tetapi tidak eligible PP 23"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pp-23-2018",
+          "locator": "PP 23/2018 Pasal 3 (OP/koperasi/CV/firma/PT, peredaran bruto <= Rp4.800.000.000) jo. Pasal 7 (batas durasi: OP 7 tahun pajak, koperasi/CV/firma 4 tahun pajak, PT 3 tahun pajak; tahun parsial dihitung penuh)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-final-umkm",
+    "supersedes": [
+      "rule-pph-final-umkm-pp46"
+    ],
+    "supersededBy": [
+      "rule-pph-final-umkm-pp55"
+    ],
+    "examples": [
+      {
+        "id": "ex-pph-final-umkm-pp23-op-2018",
+        "label": "WP OP UMKM peredaran bruto Rp1.000.000.000, Masa Juli 2018",
+        "illustrative": true,
+        "input": {
+          "entityType": "op",
+          "grossTurnover": "1000000000",
+          "umkmTurnoverEligible": true,
+          "pp23YearsElapsed": "1",
+          "pp23DurationNotExceeded": true
+        },
+        "expectedAmount": "5000000.00",
+        "notes": "0,5% × 1.000.000.000 = 5.000.000. Tarif final UMKM PP 23/2018 (efektif 1 Juli 2018). OP memiliki batas durasi 7 tahun pajak."
+      }
+    ],
+    "notes": "PPh Final UMKM PP 23/2018: tarif 0,5%. Eligible: OP, koperasi, CV, firma, PT dengan peredaran bruto <= Rp4.800.000.000. Batas durasi PP 23/2018 Pasal 7: WP OP 7 tahun pajak, koperasi/CV/firma 4 tahun pajak, PT 3 tahun pajak (tahun pajak parsial dihitung sebagai tahun penuh). Fakta pp23DurationNotExceeded adalah gate boolean yang diturunkan pemanggil dari ambang durasi sesuai jenis entitas dan pp23YearsElapsed. Berlaku 1 Juli 2018 - 19 Desember 2022.",
+    "conflicts": []
+  }
+}

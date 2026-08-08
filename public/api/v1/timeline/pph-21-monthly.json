@@ -1,0 +1,38 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "group": "pph-21-monthly",
+    "count": 2,
+    "description": "Timeline pph 21 monthly",
+    "entries": [
+      {
+        "id": "pph-21-progressive-monthly-pre2024",
+        "transactionType": "Pemotongan Bulanan Progresif (Pra-TER)",
+        "rate": "Tarif Pasal 17 × (penghasilan neto bulanan × 12 - PTKP) setelah annualisasi",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "2023-12-31",
+        "status": "dicabut",
+        "legalBasis": "UU 7/1983 Pasal 21; PP 16/2009 Pasal 3-5",
+        "supersedes": [],
+        "supersededBy": [
+          "pph-21-ter-monthly-2024"
+        ]
+      },
+      {
+        "id": "pph-21-ter-monthly-2024",
+        "transactionType": "Gaji/Bulan TER",
+        "rate": "Progresif",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null,
+        "status": "berlaku",
+        "legalBasis": "PP 58/2023 Pasal 2-4; PMK 168/2023 Pasal 2-15; UU 7/2021 (HPP) Pasal 17 ayat (1) huruf a",
+        "supersedes": [
+          "pph-21-progressive-monthly-pre2024"
+        ],
+        "supersededBy": []
+      }
+    ]
+  }
+}

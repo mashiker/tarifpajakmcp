@@ -6,11 +6,13 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-variant-numeric: tabular-nums;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
   }
   body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -19,7 +21,7 @@
     line-height: 1.6;
   }
   *, *::before, *::after { box-sizing: border-box; }
-  ::selection { background: rgba(13, 148, 136, .22); }
+  ::selection { background: rgba(14, 94, 88, .22); }
 }
 
 @layer components {

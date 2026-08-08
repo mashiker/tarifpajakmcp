@@ -1,0 +1,54 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "6",
+    "bab": "III",
+    "title": "SPT - Waktu Penyampaian",
+    "status": "diubah",
+    "description": "Batas waktu penyampaian SPT Tahunan (3 bulan setelah tahun pajak berakhir untuk OP, 4 bulan untuk Badan) dan SPT Masa (20 hari setelah masa pajak berakhir).",
+    "keywords": [
+      "SPT",
+      "batas waktu",
+      "deadline",
+      "3 bulan",
+      "4 bulan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli tentang batas waktu"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "partially_amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penyesuaian batas waktu"
+      }
+    ],
+    "text": "(1) Masa Pajak sama dengan bulan kalender.\n(2) Tahun Pajak sama dengan tahun kalender.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Masa Pajak = bulan kalender.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Tahun Pajak = tahun kalender.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

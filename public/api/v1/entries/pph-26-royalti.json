@@ -1,0 +1,69 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-26-royalti",
+    "category": "PPh",
+    "taxType": "PPh 26",
+    "transactionType": "Royalti WP Luar Negeri",
+    "description": "Pemotongan PPh 26 atas royalti yang dibayarkan kepada WP luar negeri.",
+    "rate": {
+      "type": "percentage",
+      "value": 20
+    },
+    "taxBase": "Jumlah bruto royalti",
+    "payer": "WP luar negeri penerima royalti",
+    "recipient": "Negara",
+    "withholder": "WP dalam negeri/BUT yang membayar royalti",
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 26 ayat (1) huruf c",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 5"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif P3B bervariasi untuk royalti: Singapura 15%, Jepang 10%, Belanda 10%, Amerika 10%. Definisi royalti mencakup penggunaan hak cipta, paten, merek dagang, dll.",
+    "tags": [
+      "pph-26",
+      "royalti",
+      "wp-luar-negeri",
+      "tax-treaty",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "bppuKode": [
+      {
+        "kode": "24-103-01",
+        "nama": "Royalti",
+        "tarif": 15
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Royalti WP Luar Negeri Rp 100.000.000",
+        "calculation": "20% × 100.000.000",
+        "result": "Pajak = Rp 20.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-26-general-2024",
+        "pph-26-dividen",
+        "pph-26-bunga",
+        "pph-26-jasa-dan-sewa",
+        "pph-26-but",
+        "pph-26-tax-treaty"
+      ]
+    }
+  }
+}

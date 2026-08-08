@@ -1,0 +1,71 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-final-transfer-sederhana",
+    "conceptId": "concept-pph-final-transfer",
+    "conceptName": "PPh Final transfer hak atas tanah dan/atau bangunan (PP 34/2016)",
+    "categoryId": "cat-pph-final-umkm",
+    "categoryName": "Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026)",
+    "validFrom": "2016-09-08",
+    "validToExclusive": null,
+    "rate": {
+      "type": "percentage",
+      "value": "0.01"
+    },
+    "conditions": {
+      "op": "equals",
+      "fact": "transferCategory",
+      "value": "sederhana"
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-pp-34-2016"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pp-34-2016",
+          "locator": "PP 34/2016 Lampiran: kategori tanah dan bangunan sederhana dikenai tarif final 1%"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pp-34-2016",
+          "locator": "PP 34/2016 efektif sekitar 8 September 2016"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pp-34-2016",
+          "locator": "PP 34/2016 Pasal 2 dan Lampiran: kategori tanah dan bangunan sederhana"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-final-transfer-sederhana",
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-pph-final-transfer-sederhana-2020",
+        "label": "Transfer tanah/bangunan kategori sederhana, bruto Rp1.000.000.000 tahun 2020",
+        "illustrative": true,
+        "input": {
+          "transferCategory": "sederhana",
+          "grossTransfer": "1000000000"
+        },
+        "expectedAmount": "10000000.00",
+        "notes": "1% × 1.000.000.000 = 10.000.000. Tarif final transfer PP 34/2016 kategori sederhana."
+      }
+    ],
+    "notes": "PPh final 1% atas transfer hak atas tanah dan/atau bangunan kategori tanah dan bangunan sederhana per PP 34/2016.",
+    "conflicts": []
+  }
+}

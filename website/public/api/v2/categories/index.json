@@ -1,0 +1,65 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "count": 7,
+    "categories": [
+      {
+        "id": "cat-illustrative",
+        "name": "Illustrative fixtures",
+        "slug": "illustrative",
+        "description": "Synthetic, non-primary fixtures used only to exercise the v2 temporal model and validator. Not tax law.",
+        "conceptCount": 3
+      },
+      {
+        "id": "cat-pph-21",
+        "name": "Pajak Penghasilan Pasal 21",
+        "slug": "pph-21",
+        "description": "PPh atas penghasilan sehubungan dengan pekerjaan, jasa, atau kegiatan orang pribadi. Mencakup Tarif Efektif Rata-rata (TER) PP 58/2023, tarif Pasal 17 UU PPh tahunan, PTKP, kelas penerima, dan periode final.",
+        "conceptCount": 14
+      },
+      {
+        "id": "cat-pph-23",
+        "name": "Pajak Penghasilan Pasal 23",
+        "slug": "pph-23",
+        "description": "PPh atas penghasilan dari modal, penyerahan jasa, atau hadiah/penghargaan, dipotong oleh pihak ketiga. Mencakup jasa teknik/manajemen/konsultan/jasa-lain PMK 141 dan sewa harta selain tanah/bangunan, dengan kondisi NPWP/NIK penerima dan pengali Pasal 23 ayat (1a). Persewaan tanah/bangunan TIDAK termasuk di sini (final PPh 4(2) 10% per PP 34/2017 sejak 2 Januari 2018) — hanya ditandai sebagai scope-exclusion.",
+        "conceptCount": 6
+      },
+      {
+        "id": "cat-pph-badan",
+        "name": "Pajak Penghasilan Badan",
+        "slug": "pph-badan",
+        "description": "Pajak Penghasilan atas penghasilan badan (perusahaan) resident. Mencakup kronologi tarif dasar (UU 36/2008 Art 17(1)(b): 25% dari TP 2010 sampai 2019; Perppu 1/2020 -> UU 2/2020 Art 5(1)(a): 22% untuk TP 2020-2021, dengan jadwal 20% mulai 2022 yang DITUNDA/SUPERSEDED oleh UU HPP; UU 7/2021 HPP Art 3 angka 7 mengubah UU PPh Art 17(1)(b): 22% dari TP 2022 sampai saat ini), fasilitas perusahaan listed (pengurangan dalam PERSEN POIN, bukan proporsional: pra-2020 5pp dari 25% menjadi 20%; UU 2/2020 dan UU HPP 3pp dari 22% menjadi 19%; syarat Pasal 17(2b) UU PPh jo. PP 55/2022 Pasal 64-65 jo. PMK 40/2023: >=40% saham diperdagangkan, >=300 pemegang saham, masing-masing <5%, dimiliki >=183 hari/tahun, kepatuhan pelaporan), fasilitas Pasal 31E(1) UU PPh (badan resident dengan peredaran bruto <= Rp50 miliar mendapat pengurangan tarif 50% atas PKP yang PROPORSIONAL terhadap peredaran bruto sampai Rp4,8 miliar — bukan pemulusan seluruh PKP; WAJIB bila memenuhi syarat, bukan opsi; tidak ada pengurangan di atas Rp50 miliar), dan fasilitas IKN (PMK 28/2024 Art 4(1) pengurangan 100%; Art 8/10 jadwal durasi menurut kategori bisnis dan jendela investasi 2023-2030/2031-2035/2036-2045; Art 8(5) pengurangan 50% untuk 'bidang usaha lain' 2031-2045). Fasilitas dimodelkan sebagai kondisi/formula, BUKAN tarif mandiri tanpa syarat. Karena kategori/usaha IKN dan jendela investasi tidak selalu sepenuhnya terbukti, catatan IKN ditandai needs_review bila elegibilitas tidak sepenuhnya didukung bukti.",
+        "conceptCount": 4
+      },
+      {
+        "id": "cat-pph-final-umkm",
+        "name": "Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026)",
+        "slug": "pph-final-umkm",
+        "description": "Pajak Penghasilan final yang diotorisasi oleh UU PPh Pasal 4(2) atas penghasilan tertentu. Mencakup kronologi UMKM: PP 46/2013 (1% final atas peredaran bruto usaha, WP OP/badan eligible (bukan BUT), peredaran bruto <= Rp4,8 miliar, mengecualikan jasa profesional dan penghasilan di bawah rezim final lain; berlaku 1 Juli 2013 - 30 Juni 2018; TANPA batas durasi), PP 23/2018 (0,5%; OP/koperasi/CV/firma/PT eligible; peredaran bruto <= Rp4,8 miliar; batas durasi OP 7 tahun, koperasi/CV/firma 4 tahun, PT 3 tahun; tahun parsial dihitung penuh; berlaku 1 Juli 2018 - 19 Des 2022; aturan transisi Pasal 10 untuk yang eligible PP 46 tetapi tidak eligible PP 23), PP 55/2022 versi asli (0,5%; berlaku 20 Desember 2022; menambah BUM Desa dan perseroan perorangan; Pasal 69 mempertahankan jam durasi PP 23; pengecualian Rp500 juta OP adalah pengecualian DASAR (kumulatif dari masa pajak pertama, refresh setiap tahun pajak) BUKAN langit-langit elegibilitas kedua; Pasal 61 pelanggaran langit-langit tetap meneruskan 0,5% sampai akhir tahun), dan PP 20/2026 (mengubah PP 55 efektif 22 April 2026: menyempitkan jenis badan eligible utama menjadi OP, perseroan perorangan (pendiri individu tunggal), koperasi; CV/firma/PT/BUM Desa kelanjutan warisan di bawah transisi; Pasal 59 dihapus; aturan agregasi dan jasa profesional diperketat). Juga mencakup objek final Pasal 4(2) lain: persewaan tanah/bangunan PP 34/2017 (final 10% sejak 2 Januari 2018, terpisah dari UMKM 0,5%), konstruksi PP 9/2022 (mengubah PP 51/2008; tarif final 1,75%/2,65%/4%/3,5%/6% menurut kualifikasi sejak 21 Februari 2022; kontrak warisan dibagi menurut tanggal pembayaran), dan transfer hak atas tanah/bangunan PP 34/2016 (final 2,5%/1%/0% menurut kategori; efektif sekitar 8 September 2016). Karena elegibilitas UMKM bergantung pada jenis badan, peredaran bruto, dan batas durasi, resolver WAJIB mengembalikan kandidat bersyarat dan menuntut fakta tersebut — bukan satu tarif universal. PPh Pasal 15 (delegasi perhitungan penghasilan neto khusus, UU PPh Pasal 15) adalah rezim yang BERBEDA dari Pasal 4(2) dan dipisahkan ke kategori tersendiri.",
+        "conceptCount": 7
+      },
+      {
+        "id": "cat-pph-special-regimes",
+        "name": "Rezim Pajak Penghasilan Khusus (PPh Pasal 15 dan sejenisnya)",
+        "slug": "pph-special-regimes",
+        "description": "Rezim perhitungan penghasilan neto khusus yang didelegasikan oleh UU PPh Pasal 15 untuk industri tertentu (angkutan laut/udara internasional, perbankan dan asuransi asing, bentuk usaha tetap, ladang migas, panas bumi, dsb.). BERBEDA dari Pasal 4(2) final: beberapa pajak Pasal 15 bersifat final, beberapa dapat dikreditkan. Dipisahkan dari kategori PPh 4(2) final sesuai Task 7.",
+        "conceptCount": 1
+      },
+      {
+        "id": "cat-ppn",
+        "name": "Pajak Pertambahan Nilai (PPN)",
+        "slug": "ppn",
+        "description": "Pajak atas konsumsi Barang Kena Pajak (BKP) dan Jasa Kena Pajak (JKP) di dalam Daerah Pabean, serta impor BKP dan perolehan JKP/BKP tidak berwujud dari luar negeri. Tahun transisi 2022 (10% sampai 31 Mar, 11% mulai 1 Apr) dan 2025 (UU HPP menetapkan tarif nominal 12%; PMK 131/2024 mengatur DPP nilai lain 11/12 untuk transaksi non-mewah sehingga beban efektif = 12% × 11/12 = 11%; BKP mewah dikenai PPnBM memakai DPP penuh 12%; transisi retail konsumen akhir Januari 2025 untuk BKP mewah). Karena penerapan di 2025 bergantung pada klasifikasi BKP mewah, status konsumen akhir retail, dan cakupan skema DPP sektoral (PMK 11/2025 efektif 4 Feb 2025; PMK 53/2025 dari 1 Agu 2025), tahun 2025 WAJIB mengembalikan kandidat bersyarat — bukan satu angka universal. Ekspor BKP/JKP berkualifikasi tetap 0% (UU PPN Pasal 7 ayat (2)) dan berdiri sebagai konsep tersendiri yang berbeda dari bukan objek/exempt.",
+        "conceptCount": 6
+      }
+    ]
+  }
+}

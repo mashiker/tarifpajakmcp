@@ -1,0 +1,60 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "1",
+    "bab": "I",
+    "title": "Definisi",
+    "status": "diubah",
+    "description": "Definisi istilah dalam UU PPN: Barang Kena Pajak (BKP), Jasa Kena Pajak (JKP), Pengusaha Kena Pajak (PKP), Faktur Pajak, dll.",
+    "keywords": [
+      "definisi",
+      "BKP",
+      "JKP",
+      "PKP",
+      "faktur pajak",
+      "DPP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli dengan definisi dasar"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan definisi PMSE, BKP tidak berwujud, dll"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Penambahan definisi PPN final, perubahan istilah"
+      }
+    ],
+    "text": "(1) Dalam Undang-Undang ini, yang dimaksud dengan:\na. Pajak Pertambahan Nilai (PPN) adalah pajak yang dikenakan atas:\n1. penyerahan Barang Kena Pajak di dalam Daerah Pabean yang dilakukan oleh Pengusaha Kena Pajak;\n2. penyerahan Jasa Kena Pajak di dalam Daerah Pabean yang dilakukan oleh Pengusaha Kena Pajak;\n3. ekspor Barang Kena Pajak Berwujud;\n4. ekspor Barang Kena Pajak Tidak Berwujud;\n5. ekspor Jasa Kena Pajak.\nb. Barang Kena Pajak (BKP) adalah barang berwujud dan barang tidak berwujud berupa:\n1. barang berwujud yang menurut sifat atau hukumnya berupa benda bergerak;\n2. barang tidak berwujud berupa merek, paten, hak cipta, atau produk digital;\n3. barang berwujud yang menurut sifat atau hukumnya berupa benda tidak bergerak.\nc. Jasa Kena Pajak (JKP) adalah jasa yang dilakukan di Daerah Pabean dengan imbalan.\nd. Pengusaha Kena Pajak (PKP) adalah Pengusaha yang melakukan penyerahan BKP dan/atau JKP yang dikenakan PPN.\ne. Daerah Pabean adalah wilayah Negara Kesatuan Republik Indonesia.\nf. Faktur Pajak adalah bukti pungutan PPN yang dibuat oleh PKP.\ng. Dasar Pengenaan Pajak (DPP) adalah jumlah yang menjadi dasar penghitungan PPN.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Definisi: PPN, BKP (berwujud/tidak berwujud), JKP, PKP, Daerah Pabean, Faktur Pajak, DPP.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

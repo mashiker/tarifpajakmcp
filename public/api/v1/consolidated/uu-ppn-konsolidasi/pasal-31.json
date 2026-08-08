@@ -1,0 +1,35 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "31",
+    "bab": "VI",
+    "title": "Pencabutan",
+    "status": "berlaku",
+    "description": "Pencabutan peraturan lama.",
+    "keywords": [
+      "pencabutan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Dengan berlakunya UU ini, UU PPN 1983 beserta perubahannya dinyatakan tidak berlaku.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "UU PPN lama dicabut.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

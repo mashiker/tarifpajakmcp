@@ -1,0 +1,63 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "13",
+    "bab": "II",
+    "bagian": "4",
+    "title": "Kredit PPN",
+    "status": "diubah",
+    "description": "PPN yang telah dibayar dapat dikreditkan oleh PKP: PPN atas perolehan BKP/JKP, PPN atas impor, PPN yang dipungut sendiri.",
+    "keywords": [
+      "kredit PPN",
+      "input tax",
+      "PPN masukan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli - kredit PPN"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Perubahan ketentuan kredit"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan kredit PPN"
+      }
+    ],
+    "text": "(1) PPN Masukan yang dapat dikreditkan adalah PPN yang telah dibayar pada saat:\na. perolehan BKP;\nb. penerimaan JKP;\nc. impor BKP;\nd. perolehan BKP Tidak Berwujud dari luar DP;\ne. penerimaan JKP dari luar DP.\n(2) PPN Masukan tidak dapat dikreditkan jika:\na. Faktur Pajak tidak memenuhi ketentuan;\nb. tidak melaporkan SPT Masa PPN;\nc. perolehan BKP/JKP tidak berhubungan dengan kegiatan usaha.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN Masukan dapat dikreditkan dari: perolehan BKP, JKP, impor, BKP tidak berwujud dari luar DP, JKP dari luar DP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Tidak dapat dikreditkan jika: FP tidak sesuai, tidak lapor SPT Masa, tidak terkait usaha.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-15-pma-opec",
+    "category": "PPh",
+    "taxType": "PPh 15",
+    "transactionType": "Perusahaan Minyak Asing (PMA)",
+    "description": "PPh deemed profit atas penghasilan badan usaha migas asing (PSC). Tarif 48%.",
+    "rate": {
+      "type": "percentage",
+      "value": 48
+    },
+    "taxBase": "Deemed profit (norma laba netto × peredaran bruto)",
+    "payer": "WP Badan / WP Luar Negeri",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1984-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/1983",
+        "article": "Pasal 15 ayat (4)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "PPh Pasal 15: PPh deemed profit atas penghasilan badan usaha migas asing (PSC). Tarif 48%. Tarif 48%.",
+    "examples": [
+      {
+        "scenario": "Perusahaan Minyak Asing (PMA) bruto Rp 10 miliar",
+        "calculation": "Norma laba netto × 48%",
+        "result": "PPh 15 = deemed profit × 48%"
+      }
+    ],
+    "tags": [
+      "pph-15",
+      "deemed-profit",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": []
+    }
+  }
+}

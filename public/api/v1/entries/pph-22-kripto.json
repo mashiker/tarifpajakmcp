@@ -1,0 +1,81 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-22-kripto",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Transaksi Aset Kripto",
+    "description": "Pemungutan PPh 22 atas penghasilan sehubungan dengan aset kripto yang dipungut oleh penyelenggara perdagangan melalui sistem elektronik.",
+    "rate": {
+      "type": "range",
+      "value": [
+        0.1,
+        0.2
+      ]
+    },
+    "taxBase": "Nilai transaksi penjualan aset kripto",
+    "payer": "Pedagang/pemilik aset kripto",
+    "recipient": "Negara",
+    "withholder": "Penyelenggara perdagangan kripto (exchange)",
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 4 ayat (3)"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 22",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Pedagang fisik aset kripto: 0,1%. Bukan pedagang fisik: 0,2%.",
+    "tags": [
+      "pph-22",
+      "kripto",
+      "crypto",
+      "final",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "bppuKode": [
+      {
+        "kode": "22-405-01",
+        "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Merupakan Pedagang Fisik Aset Kripto",
+        "tarif": 0.1
+      },
+      {
+        "kode": "22-405-02",
+        "nama": "Penghasilan Sehubungan dengan Aset Kripto yang dipungut oleh Penyelenggara Perdagangan Melalui Sistem Elektronik yang Bukan Merupakan Pedagang Fisik Aset Kripto",
+        "tarif": 0.2
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Transaksi Aset Kripto Rp 100.000.000",
+        "calculation": "Tarif 0.1%-0.2% × 100jt",
+        "result": "Pajak = Rp 100.000 - Rp 200.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-22-impor-2024",
+        "pph-22-pembelian-barang-2024",
+        "pph-22-penjualan-barang-2024",
+        "pph-22-impor-api-produsen",
+        "pph-22-bendaharawan",
+        "pph-22-ekspor-batubara",
+        "pph-22-bumn-pembelian",
+        "pph-22-pengadaan-pemerintah",
+        "pph-22-pmse",
+        "pph-22-pre2024"
+      ]
+    }
+  }
+}

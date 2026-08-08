@@ -1,0 +1,49 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-15-buta-charter",
+    "category": "PPh",
+    "taxType": "PPh 15",
+    "transactionType": "Penyewaan Pesawat/Kapal dari Luar Negeri",
+    "description": "PPh deemed profit atas penyewaan pesawat/kapal dari luar negeri (bareboat charter).",
+    "rate": {
+      "type": "percentage",
+      "value": 6.36
+    },
+    "taxBase": "Deemed profit (norma laba netto × peredaran bruto)",
+    "payer": "WP Badan / WP Luar Negeri",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1984-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/1983",
+        "article": "Pasal 15 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "PPh Pasal 15: PPh deemed profit atas penyewaan pesawat/kapal dari luar negeri (bareboat charter). Tarif 6.36%.",
+    "examples": [
+      {
+        "scenario": "Penyewaan Pesawat/Kapal dari Luar Negeri bruto Rp 10 miliar",
+        "calculation": "Norma laba netto × 6.36%",
+        "result": "PPh 15 = deemed profit × 6.36%"
+      }
+    ],
+    "tags": [
+      "pph-15",
+      "deemed-profit",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": []
+    }
+  }
+}

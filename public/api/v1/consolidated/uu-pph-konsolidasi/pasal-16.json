@@ -1,0 +1,63 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "16",
+    "bab": "IV",
+    "bagian": "2",
+    "title": "Norma Penghitungan Penghasilan Neto",
+    "status": "diubah",
+    "description": "Norma penghitungan penghasilan neto bagi WP OP tertentu yang diperbolehkan menghitung penghasilan neto dengan norma.",
+    "keywords": [
+      "norma penghitungan",
+      "persentase norma",
+      "WP OP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Penyesuaian norma"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan norma penghitungan"
+      }
+    ],
+    "text": "(1) Norma penghitungan penghasilan neto ditetapkan dengan Peraturan Pemerintah.\n(2) Norma penghitungan penghasilan neto sebagaimana dimaksud pada ayat (1) diperhitungkan dengan pembukuan atau pencatatan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Norma penghitungan penghasilan neto ditetapkan dengan PP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Norma diperhitungkan dengan pembukuan atau pencatatan.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

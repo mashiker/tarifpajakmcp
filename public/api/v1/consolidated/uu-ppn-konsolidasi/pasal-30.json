@@ -1,0 +1,35 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "30",
+    "bab": "VI",
+    "title": "Ketentuan Peralihan",
+    "status": "berlaku",
+    "description": "Ketentuan peralihan.",
+    "keywords": [
+      "peralihan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Peraturan pelaksanaan diatur dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PP pelaksanaan.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

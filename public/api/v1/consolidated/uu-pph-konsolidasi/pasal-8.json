@@ -1,0 +1,58 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "8",
+    "bab": "II",
+    "bagian": "2",
+    "title": "Penghasilan Neto",
+    "status": "diubah",
+    "description": "Penghasilan neto = penghasilan bruto dikurangi biaya untuk mendapatkan, menagih, dan memelihara penghasilan.",
+    "keywords": [
+      "penghasilan neto",
+      "biaya",
+      "bruto"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan ketentuan penghasilan neto"
+      }
+    ],
+    "text": "(1) Penghasilan neto adalah penghasilan bruto dikurangi biaya untuk mendapatkan, menagih, dan memelihara penghasilan.\n(2) Penghasilan neto untuk WP yang melakukan pekerjaan bebas dihitung dengan menggunakan norma penghitungan penghasilan neto sebagaimana dimaksud dalam Pasal 17.\n(3) Penghasilan neto untuk WP yang melakukan usaha yang telah dikukuhkan sebagai Pengusaha Kena Pajak dihitung berdasarkan pembukuan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penghasilan neto = bruto dikurangi biaya mendapatkan, menagih, dan memelihara penghasilan.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "WP pekerjaan bebas menggunakan norma penghitungan penghasilan neto.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "WP usaha yang dikukuhkan PKP menghitung neto berdasarkan pembukuan.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

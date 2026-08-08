@@ -1,0 +1,71 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-23-jasa-katering-2pct",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Jasa Katering / Tata Boga",
+    "description": "Pemotongan PPh 23 atas jasa katering/tata boga berdasarkan PMK 141/PMK.010/2015. Tarif 2% dari DPP khusus yaitu seluruh jumlah penghasilan bruto (tanpa pengurangan biaya bahan makanan/jasa tenaga kerja). DPP katering = 100% dari bruto tagihan.",
+    "rate": {
+      "type": "percentage",
+      "value": 2
+    },
+    "taxBase": "Seluruh jumlah penghasilan bruto termasuk dalam bentuk apapun (tanpa pengurangan). Tidak termasuk PPN.",
+    "payer": "Penyedia jasa katering (WP dalam negeri)",
+    "recipient": "Negara",
+    "withholder": "Badan pemerintah, SP badan, penyelenggara kegiatan, BUT",
+    "effectiveFrom": "2015-12-31",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PMK 141/PMK.03/2015",
+        "article": "Pasal 1 ayat (3) huruf a",
+        "pasalUrl": "https://pasal.id/peraturan/permen/permenkeu-no-141-pmk-03-2015-tahun-2015"
+      }
+    ],
+    "supersedes": [
+      "pph-23-katering-pre2015"
+    ],
+    "supersededBy": [],
+    "notes": "PMK 141/2015 mengatur DPP khusus katering: seluruh jumlah bruto TANPA dikurangi biaya bahan makanan maupun jasa tenaga kerja. Sebelum PMK ini, katering dikenakan tarif PPh 23 umum 2% dari bruto (2001-2015) atau 15% dari bruto (1984-2000). Chain: UU 7/1983 (15% umum) → UU 17/2000 (2% umum) → PMK 141/2015 (2% khusus DPP).",
+    "tags": [
+      "pph-23",
+      "katering",
+      "tata-boga",
+      "dpp-khusus",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "bppuKode": [
+      {
+        "kode": "24-104-39",
+        "nama": "Jasa Katering Atau Tata Boga",
+        "tarif": 2
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Jasa Katering / Tata Boga Rp 100.000.000",
+        "calculation": "2% × 100.000.000",
+        "result": "Pajak = Rp 2.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "supersedes": [
+        "pph-23-katering-pre2015"
+      ],
+      "sameCategory": [
+        "pph-23-jasa-lain-2pct",
+        "pph-23-jasa-lain-4pct",
+        "pph-23-sewa-tanah-bangunan",
+        "pph-23-hadiah-penghargaan",
+        "pph-23-jasa-pre2001",
+        "pph-23-jasa-2001",
+        "pph-23-katering-pre2015"
+      ]
+    }
+  }
+}

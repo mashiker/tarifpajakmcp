@@ -1,0 +1,272 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-21-ter-monthly-a",
+    "conceptId": "concept-pph-21-ter-monthly",
+    "conceptName": "Pemotongan bulanan TER PPh 21 (PTKP kelas A/B/C)",
+    "categoryId": "cat-pph-21",
+    "categoryName": "Pajak Penghasilan Pasal 21",
+    "validFrom": "2024-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "progressive",
+      "brackets": [
+        {
+          "upTo": "5400000",
+          "rate": "0"
+        },
+        {
+          "upTo": "5650000",
+          "rate": "0.0025"
+        },
+        {
+          "upTo": "5950000",
+          "rate": "0.005"
+        },
+        {
+          "upTo": "6300000",
+          "rate": "0.0075"
+        },
+        {
+          "upTo": "6750000",
+          "rate": "0.01"
+        },
+        {
+          "upTo": "7500000",
+          "rate": "0.0125"
+        },
+        {
+          "upTo": "8550000",
+          "rate": "0.015"
+        },
+        {
+          "upTo": "9650000",
+          "rate": "0.0175"
+        },
+        {
+          "upTo": "10050000",
+          "rate": "0.02"
+        },
+        {
+          "upTo": "10350000",
+          "rate": "0.0225"
+        },
+        {
+          "upTo": "10700000",
+          "rate": "0.025"
+        },
+        {
+          "upTo": "11050000",
+          "rate": "0.03"
+        },
+        {
+          "upTo": "11600000",
+          "rate": "0.035"
+        },
+        {
+          "upTo": "12500000",
+          "rate": "0.04"
+        },
+        {
+          "upTo": "13750000",
+          "rate": "0.05"
+        },
+        {
+          "upTo": "15100000",
+          "rate": "0.06"
+        },
+        {
+          "upTo": "16950000",
+          "rate": "0.07"
+        },
+        {
+          "upTo": "19750000",
+          "rate": "0.08"
+        },
+        {
+          "upTo": "24150000",
+          "rate": "0.09"
+        },
+        {
+          "upTo": "26450000",
+          "rate": "0.1"
+        },
+        {
+          "upTo": "28000000",
+          "rate": "0.11"
+        },
+        {
+          "upTo": "30050000",
+          "rate": "0.12"
+        },
+        {
+          "upTo": "32400000",
+          "rate": "0.13"
+        },
+        {
+          "upTo": "35400000",
+          "rate": "0.14"
+        },
+        {
+          "upTo": "39100000",
+          "rate": "0.15"
+        },
+        {
+          "upTo": "43850000",
+          "rate": "0.16"
+        },
+        {
+          "upTo": "47800000",
+          "rate": "0.17"
+        },
+        {
+          "upTo": "51400000",
+          "rate": "0.18"
+        },
+        {
+          "upTo": "56300000",
+          "rate": "0.19"
+        },
+        {
+          "upTo": "62200000",
+          "rate": "0.2"
+        },
+        {
+          "upTo": "68600000",
+          "rate": "0.21"
+        },
+        {
+          "upTo": "77500000",
+          "rate": "0.22"
+        },
+        {
+          "upTo": "89000000",
+          "rate": "0.23"
+        },
+        {
+          "upTo": "103000000",
+          "rate": "0.24"
+        },
+        {
+          "upTo": "125000000",
+          "rate": "0.25"
+        },
+        {
+          "upTo": "157000000",
+          "rate": "0.26"
+        },
+        {
+          "upTo": "206000000",
+          "rate": "0.27"
+        },
+        {
+          "upTo": "337000000",
+          "rate": "0.28"
+        },
+        {
+          "upTo": "454000000",
+          "rate": "0.29"
+        },
+        {
+          "upTo": "550000000",
+          "rate": "0.3"
+        },
+        {
+          "upTo": "695000000",
+          "rate": "0.31"
+        },
+        {
+          "upTo": "910000000",
+          "rate": "0.32"
+        },
+        {
+          "upTo": "1400000000",
+          "rate": "0.33"
+        },
+        {
+          "upTo": null,
+          "rate": "0.34"
+        }
+      ]
+    },
+    "conditions": {
+      "op": "in",
+      "fact": "ptkpClass",
+      "value": [
+        "TK/0",
+        "TK/1",
+        "K/0"
+      ]
+    },
+    "verification": {
+      "status": "verified_secondary",
+      "sourceIds": [
+        "src-pp-58-2023",
+        "src-pmk-168-2023"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pp-58-2023",
+          "locator": "Lampiran A (TER A, 44 lapisan, 0%-34%). NOTE: bracket endpoints and category mapping verified against the BPK abstract; middle layers reconstructed from government-aligned secondary extractions pending direct Lampiran PDF transcription, so the rate claim as a whole is verified_secondary."
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pp-58-2023",
+          "locator": "Pasal 5 (berlaku 1 Januari 2024)"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pp-58-2023",
+          "locator": "Lampiran A: TER A untuk PTKP TK/0, TK/1, K/0"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-21-ter-monthly-a",
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-ter-a-zero",
+        "label": "Batasi 0% (5.400.000 inklusif)",
+        "illustrative": true,
+        "input": {
+          "monthlyGross": "5400000"
+        },
+        "expectedAmount": "0.00",
+        "notes": "Lapisan pertama TER A, 0%."
+      },
+      {
+        "id": "ex-ter-a-2pct",
+        "label": "Bruto 10.000.000 -> 2%",
+        "illustrative": true,
+        "input": {
+          "monthlyGross": "10000000"
+        },
+        "expectedAmount": "200000.00",
+        "notes": "Lapisan ke-9 TER A (9.650.000-10.050.000) = 2%."
+      },
+      {
+        "id": "ex-ter-a-top",
+        "label": "Top band (≥1.400.000.000) -> 34%",
+        "illustrative": true,
+        "input": {
+          "monthlyGross": "1500000000"
+        },
+        "expectedAmount": "510000000.00",
+        "notes": "Lapisan terakhir TER A = 34%."
+      }
+    ],
+    "notes": "TER Kategori A menurut PP 58/2023 Lampiran A. Berlaku PTKP TK/0, TK/1, K/0. PPh21 = TER × bruto bulanan dikurangi iuran pensiun/BPJS. Status verified_secondary karena lapisan tengah direkonstruksi dari ekstraksi sekunder; interval dan kondisi (PTKP class) didukung primer.",
+    "conflicts": []
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "4",
+    "bab": "I",
+    "bagian": "2",
+    "title": "Wajib Pajak dan PPh Final",
+    "status": "diubah",
+    "description": "WP yang menerima/memperoleh penghasilan kena pajak. Ayat (3) mengatur PPh Final atas penghasilan tertentu (deposito, bunga obligasi, penghargaan, undian).",
+    "keywords": [
+      "WP",
+      "PPh Final",
+      "deposito",
+      "obligasi",
+      "undian"
+    ],
+    "relatedTaxRates": [
+      "pph-final-bunga-deposito",
+      "pph-final-bunga-pre2009"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli tentang WP dan PPh Final"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "10",
+          "year": 1994
+        },
+        "changeType": "partially_amended",
+        "effectiveDate": "1995-01-01",
+        "changedAyats": [
+          "(3)"
+        ],
+        "summary": "Perubahan PPh Final"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "changedAyats": [
+          "(3)"
+        ],
+        "summary": "Penambahan jenis PPh Final"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "changedAyats": [
+          "(3)"
+        ],
+        "summary": "Perubahan PPh Final bunga deposito 20%"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "changedAyats": [
+          "(3)",
+          "(4)"
+        ],
+        "summary": "Penambahan PPh Final VDP dan perubahan ketentuan PPh Final"
+      }
+    ],
+    "text": "(1) Wajib Pajak yang menerima atau memperoleh penghasilan kena pajak wajib mendaftarkan diri pada kantor Direktorat Jenderal Pajak.\n(2) Wajib Pajak badan yang berkedudukan di Indonesia dan Wajib Pajak orang pribadi yang berdomisili di Indonesia yang menerima penghasilan dari luar Indonesia wajib mendaftarkan diri.\n(3) Pajak Penghasilan bersifat final dikenakan atas:\na. bunga deposito, tabungan lainnya, bunga obligasi, dan bunga diskonto;\nb. hadiah undian;\nc. penghasilan dari transaksi saham dan sekuritas lainnya yang diperdagangkan di bursa;\nd. penghasilan dari pengalihan harta berupa tanah dan/atau bangunan;\ne. penghasilan dari pengalihan saham atau perusahaan peserta Tax Amnesty;\nf. penghasilan tertentu bidang perminyakan, gas, dan geotermal;\ng. penghasilan dari usaha WP yang dikukuhkan sebagai PKP; dan\nh. penghasilan dari penjualan hasil tambang mineral dan batubara.\n(4) Pajak Penghasilan final sebagaimana dimaksud pada ayat (3) dipotong dan disetor oleh pihak yang wajib memotong.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Kewajiban mendaftar diri pada DJP bagi WP yang menerima penghasilan kena pajak.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Kewajiban mendaftar bagi WP badan dan WP OP yang menerima penghasilan dari luar Indonesia.",
+        "status": "diubah"
+      },
+      {
+        "number": "(3)",
+        "text": "PPh Final dikenakan atas: bunga deposito/obligasi, hadiah undian, saham di bursa, pengalihan tanah/bangunan, pengalihan saham Tax Amnesty, migas/geotermal, usaha PKP, dan tambang mineral/batubara.",
+        "status": "diubah"
+      },
+      {
+        "number": "(4)",
+        "text": "PPh Final dipotong dan disetor oleh pihak yang wajib memotong.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

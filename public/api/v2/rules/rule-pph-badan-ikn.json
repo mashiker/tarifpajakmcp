@@ -1,0 +1,80 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-badan-ikn",
+    "conceptId": "concept-pph-badan-ikn",
+    "conceptName": "Fasilitas PPh Badan IKN (PMK 28/2024)",
+    "categoryId": "cat-pph-badan",
+    "categoryName": "Pajak Penghasilan Badan",
+    "validFrom": "2023-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "formula",
+      "expression": "PMK 28/2024. Art 4(1): pengurangan 100% atas PKP terutang untuk Pelaku Usaha IKN pada kategori/kualifikasi dan jendela investasi tertentu. Art 8/10: jadwal durasi menurut kategori bidang usaha dan jendela investasi (2023-2030 / 2031-2035 / 2036-2045). Art 8(5): pengurangan 50% untuk 'bidang usaha lain' pada periode 2031-2045."
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "taxpayerType",
+          "value": "badan"
+        },
+        {
+          "op": "equals",
+          "fact": "resident",
+          "value": true
+        },
+        {
+          "op": "exists",
+          "fact": "iknBusiness"
+        },
+        {
+          "op": "exists",
+          "fact": "iknBusinessCategory"
+        },
+        {
+          "op": "exists",
+          "fact": "iknInvestmentWindow"
+        }
+      ]
+    },
+    "verification": {
+      "status": "needs_review",
+      "sourceIds": [
+        "src-pmk-28-2024-ikn"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pmk-28-2024-ikn",
+          "locator": "PMK 28/2024 Pasal 4 ayat (1): pengurangan 100%; Pasal 8 ayat (5): pengurangan 50% untuk bidang usaha lain 2031-2045"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-28-2024-ikn",
+          "locator": "PMK 28/2024 Pasal 8 ayat (10): jadwal durasi menurut kategori bisnis dan jendela investasi 2023-2030/2031-2035/2036-2045"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-28-2024-ikn",
+          "locator": "PMK 28/2024 Pasal 3: definisi Pelaku Usaha dan kriteria IKN; elegibilitas penuh per kategori/jendela investasi memerlukan bukti tambahan"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-badan-ikn",
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Fasilitas PPh Badan IKN (PMK 28/2024). Pengurangan 100% (Art 4(1)) atau 50% untuk 'bidang usaha lain' 2031-2045 (Art 8(5)). Jadwal durasi Art 8/10 menurut kategori bisnis dan jendela investasi. Elegibilitas penuh (kategori spesifik, jendela investasi, persyaratan realisasi, zona IKN) tidak selalu dapat diverifikasi sepenuhnya pada tingkat rekord individual — ditandai needs_review. Resolver tidak boleh mengembalikan 'tepat' 0%.",
+    "conflicts": []
+  }
+}

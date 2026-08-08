@@ -1,0 +1,72 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-22-bendaharawan",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Pemungutan oleh Bendaharawan Pemerintah",
+    "description": "Pemungutan PPh 22 oleh bendaharawan pemerintah atas pembelian barang dan jasa untuk keperluan instansi pemerintah.",
+    "rate": {
+      "type": "percentage",
+      "value": 1.5
+    },
+    "taxBase": "Jumlah bruto pembelian (DPP)",
+    "payer": "Penyedia barang/jasa",
+    "recipient": "Negara",
+    "withholder": "Bendaharawan pemerintah",
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 3 ayat (1)"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 22",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 1,5% untuk pembelian oleh bendaharawan pemerintah. Untuk pembelian < Rp 2.000.000 tidak dipotong. Tanpa NPWP: 1,5% × 2 = 3%.",
+    "tags": [
+      "pph-22",
+      "bendaharawan",
+      "pemerintah",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "bppuKode": [
+      {
+        "kode": "22-910-01",
+        "nama": "Pemungutan oleh Bendaharawan",
+        "tarif": 1.5
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Pemungutan oleh Bendaharawan Pemerintah Rp 100.000.000",
+        "calculation": "1.5% × 100.000.000",
+        "result": "Pajak = Rp 1.500.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-22-impor-2024",
+        "pph-22-pembelian-barang-2024",
+        "pph-22-penjualan-barang-2024",
+        "pph-22-impor-api-produsen",
+        "pph-22-ekspor-batubara",
+        "pph-22-bumn-pembelian",
+        "pph-22-pengadaan-pemerintah",
+        "pph-22-pmse",
+        "pph-22-kripto",
+        "pph-22-pre2024"
+      ]
+    }
+  }
+}

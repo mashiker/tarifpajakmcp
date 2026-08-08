@@ -1,0 +1,101 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "description": "Pajak Penghasilan Pasal 22 - Pemungutan pajak atas impor, pembelian barang, dan penjualan barang tertentu",
+    "count": 11,
+    "entries": [
+      {
+        "id": "pph-22-impor-2024",
+        "transactionType": "Impor Barang",
+        "rate": "7.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-pembelian-barang-2024",
+        "transactionType": "Pembelian Barang oleh Badan Usaha Industri Tertentu",
+        "rate": "0.25%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-penjualan-barang-2024",
+        "transactionType": "Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu",
+        "rate": "0.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-impor-api-produsen",
+        "transactionType": "Impor Barang (API Produsen)",
+        "rate": "2.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-bendaharawan",
+        "transactionType": "Pemungutan oleh Bendaharawan Pemerintah",
+        "rate": "1.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-ekspor-batubara",
+        "transactionType": "Ekspor Batubara dan Mineral",
+        "rate": "1.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-bumn-pembelian",
+        "transactionType": "Pembelian oleh BUMN/Badan Usaha Tertentu",
+        "rate": "1.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-pengadaan-pemerintah",
+        "transactionType": "Pengadaan melalui Sistem Informasi Pengadaan Pemerintah",
+        "rate": "0.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-pmse",
+        "transactionType": "Penjualan melalui Perdagangan Melalui Sistem Elektronik (PMSE/E-Commerce)",
+        "rate": "0.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-kripto",
+        "transactionType": "Transaksi Aset Kripto",
+        "rate": "0.1%–0.2%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-pre2024",
+        "transactionType": "Tarif PPh 22 Pra-PP 60/2023",
+        "rate": "0.25%–7.5%",
+        "status": "diubah",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": "2023-12-31"
+      }
+    ]
+  }
+}

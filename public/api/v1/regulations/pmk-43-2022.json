@@ -1,0 +1,33 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pmk-43-2022",
+    "number": "43",
+    "year": 2022,
+    "title": "PMK tentang Perubahan atas KMK No. 523/KMK.04/2002 tentang Norma Penghitungan Penghasilan Neto",
+    "shortName": "PMK Norma Penghitungan (Perubahan)",
+    "type": "PMK",
+    "promulgationDate": "2022-06-08",
+    "effectiveDate": "2022-06-08",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/191552/pmk-no-43-tahun-2022",
+    "status": "berlaku",
+    "description": "PMK mengubah sebagian KMK 523/2002 tentang norma penghitungan. Beberapa profesi mengalami perubahan persentase norma.",
+    "relevantArticles": "Lampiran",
+    "relatedRegulations": [
+      "pmk-523-2002"
+    ],
+    "referencingEntries": [
+      "pph-21-norma-dokter",
+      "pph-21-norma-pengacara",
+      "pph-21-norma-akuntan",
+      "pph-21-norma-arsitek",
+      "pph-21-norma-notaris",
+      "pph-21-norma-konsultan",
+      "pph-21-norma-pedagang",
+      "pph-21-norma-petani",
+      "pph-21-norma-pengusaha-kecil"
+    ]
+  }
+}

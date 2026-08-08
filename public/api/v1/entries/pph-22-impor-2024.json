@@ -1,0 +1,74 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-22-impor-2024",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Impor Barang",
+    "description": "Pemungutan PPh 22 atas impor barang oleh instansi pemerintah, yang dilakukan oleh Direktorat Jenderal Bea dan Cukai bersamaan dengan pemungutan Bea Masuk dan Cukai.",
+    "rate": {
+      "type": "percentage",
+      "value": 7.5
+    },
+    "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
+    "payer": "Importir",
+    "recipient": "Negara",
+    "withholder": "Direktorat Jenderal Bea dan Cukai",
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 2",
+        "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 22",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+        "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 7,5% untuk impor yang tidak menggunakan angka pengenal impor (API) atau menggunakan API umum. Berbeda untuk API produsen.",
+    "tags": [
+      "pph-22",
+      "impor",
+      "bea-cukai",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "bppuKode": [
+      {
+        "kode": "22-404-01",
+        "nama": "Ekspor Komoditas Tambang Batubara, Mineral Logam, dan Mineral Bukan Logam yang Dilakukan Oleh Eksportir, Kecuali WP yang Terikat dalam PKP2B dan KK",
+        "tarif": 1.5
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Impor Barang Rp 100.000.000",
+        "calculation": "7.5% × 100.000.000",
+        "result": "Pajak = Rp 7.500.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-22-pembelian-barang-2024",
+        "pph-22-penjualan-barang-2024",
+        "pph-22-impor-api-produsen",
+        "pph-22-bendaharawan",
+        "pph-22-ekspor-batubara",
+        "pph-22-bumn-pembelian",
+        "pph-22-pengadaan-pemerintah",
+        "pph-22-pmse",
+        "pph-22-kripto",
+        "pph-22-pre2024"
+      ]
+    }
+  }
+}

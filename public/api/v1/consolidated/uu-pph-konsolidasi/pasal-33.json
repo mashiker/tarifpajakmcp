@@ -1,0 +1,35 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "33",
+    "bab": "X",
+    "title": "Ketentuan Peralihan",
+    "status": "berlaku",
+    "description": "Ketentuan peralihan.",
+    "keywords": [
+      "peralihan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Ketentuan peralihan dari undang-undang lama ke undang-undang baru diatur dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Ketentuan peralihan diatur dengan PP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

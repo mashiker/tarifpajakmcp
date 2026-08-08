@@ -1,0 +1,55 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "9B",
+    "bab": "II",
+    "bagian": "2",
+    "title": "Tarif PPN Efektif",
+    "status": "ditambah",
+    "description": "Tarif PPN efektif yang berlaku pada saat peralihan tarif.",
+    "keywords": [
+      "tarif efektif",
+      "peralihan"
+    ],
+    "relatedTaxRates": [
+      "ppn-11pct-effective-2025"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru - tarif efektif peralihan"
+      }
+    ],
+    "text": "(1) Penghitungan PPN terutang dilakukan dengan cara mengalikan tarif PPN dengan Dasar Pengenaan Pajak.\n(2) PPN terutang = Tarif PPN × DPP.\n(3) PPN yang telah dibayar pada saat perolehan BKP atau penerimaan JKP (PPN Masukan) dapat dikreditkan terhadap PPN terutang (PPN Keluaran).\n(4) PPN yang harus disetor = PPN Keluaran - PPN Masukan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN terutang = tarif × DPP.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Formula PPN.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(3)",
+        "text": "PPN Masukan dapat dikreditkan terhadap PPN Keluaran.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(4)",
+        "text": "PPN disetor = PPN Keluaran - PPN Masukan.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

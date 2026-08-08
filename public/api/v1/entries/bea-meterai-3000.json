@@ -1,0 +1,68 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "bea-meterai-3000",
+    "category": "Bea Meterai",
+    "taxType": "Bea Meterai",
+    "transactionType": "Dokumen / Surat (PP 23/2000)",
+    "description": "Bea Meterai Rp 3.000 berdasarkan PP 23/2000. Berlaku untuk dokumen dengan nilai > Rp 500.000. Periode 2000-2006.",
+    "rate": {
+      "type": "percentage",
+      "value": 0,
+      "effectiveRate": "Rp 3.000 per lembar untuk dokumen > Rp 500.000"
+    },
+    "taxBase": "Dokumen dengan nominal > Rp 500.000",
+    "payer": "Pihak yang menandatangani / membuat dokumen",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2000-01-01",
+    "effectiveTo": "2006-12-31",
+    "status": "dicabut",
+    "legalBasis": [
+      {
+        "regulation": "PP 23/2000",
+        "article": "Pasal 1",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44780/pp-no-23-tahun-2000"
+      }
+    ],
+    "supersedes": [
+      "bea-meterai-1000"
+    ],
+    "supersededBy": [
+      "bea-meterai-pre2021"
+    ],
+    "notes": "PP 23/2000: naik dari Rp 1.000 ke Rp 3.000, batas dari Rp 200.000 ke Rp 500.000.",
+    "examples": [
+      {
+        "scenario": "Surat perjanjian Rp 1.000.000 tahun 2003",
+        "calculation": "Dokumen > Rp 500.000 → Rp 3.000",
+        "result": "Bea Meterai = Rp 3.000"
+      }
+    ],
+    "tags": [
+      "bea-meterai",
+      "historis",
+      "pp-23-2000"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "supersededBy": [
+        "bea-meterai-pre2021"
+      ],
+      "supersedes": [
+        "bea-meterai-1000"
+      ],
+      "sameCategory": [
+        "bea-meterai-dokumen-2021",
+        "bea-meterai-cek-bilyet",
+        "bea-meterai-kontrak",
+        "bea-meterai-surat-berharga",
+        "bea-meterai-nota-kredit",
+        "bea-meterai-pre2021",
+        "bea-meterai-1000"
+      ]
+    }
+  }
+}

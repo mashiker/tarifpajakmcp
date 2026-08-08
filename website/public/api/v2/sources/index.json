@@ -1,0 +1,304 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "count": 36,
+    "sources": [
+      {
+        "id": "src-illustrative-official",
+        "name": "Illustrative official gazette",
+        "official": true,
+        "role": "primary",
+        "regulationId": "ILLUSTRATIVE/REG/2024",
+        "url": "https://example.invalid/illustrative-reg-2024"
+      },
+      {
+        "id": "src-illustrative-secondary",
+        "name": "Illustrative secondary commentary",
+        "official": false,
+        "role": "secondary",
+        "regulationId": "ILLUSTRATIVE/REG/2024",
+        "url": "https://example.invalid/illustrative-commentary"
+      },
+      {
+        "id": "src-kep-143-pj-2022",
+        "name": "Keputusan Direktur Jenderal Pajak Nomor KEP-143/PJ/2022 tentang Penetapan Kode Objek Pajak Pemotongan/Pemungutan dan Penyetoran Pajak Penghasilan Pasal 21 dan/atau Pajak Penghasilan Pasal 26 serta Pajak Penghasilan Pasal 22 dan/atau Pajak Penghasilan Pasal 23 (KOP eBupot Unifikasi)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "KEP/143/PJ/2022",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/KEP-143-PJ-2022.htm"
+      },
+      {
+        "id": "src-peng-6-pj-09-2024-nik",
+        "name": "Surat Edaran Direktur Jenderal Pajak Nomor PENG-06/PJ.09/2024 tentang Petunjuk Pelaksanaan Pemotongan, Penyetoran, dan Pelaporan PPh Pasal 21 dan/atau PPh Pasal 26 serta PPh Pasal 22 dan/atau PPh Pasal 23 Masa Pajak Januari Tahun 2024",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PENG/06/PJ.09/2024",
+        "url": "https://pajak.go.id/id/surat-edaran-peng-06pj092024"
+      },
+      {
+        "id": "src-per-04-pj-2017",
+        "name": "Peraturan Direktur Jenderal Pajak Nomor PER-04/PJ/2017 tentang Petunjuk Pelaksanaan Pemotongan, Penyetoran, dan Pelaporan Pajak Penghasilan Pasal 23 dan Pajak Penghasilan Pasal 26 (e-Bupot Masa PPh 23)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PER/04/PJ/2017",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/PER-04-PJ-2017.htm"
+      },
+      {
+        "id": "src-per-11-pj-2025",
+        "name": "Peraturan Direktur Jenderal Pajak Nomor PER-11/PJ/2025 tentang Bukti Pemotongan dan Pelaporan Pajak Penghasilan (BPPU) dalam Coretax",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PER/11/PJ/2025",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/PER-11-PJ-2025.htm"
+      },
+      {
+        "id": "src-per-23-pj-2020",
+        "name": "Peraturan Direktur Jenderal Pajak Nomor PER-23/PJ/2020 tentang Petunjuk Pelaksanaan Pemotongan, Penyetoran, dan Pelaporan Pajak Penghasilan Pasal 21 dan/atau Pajak Penghasilan Pasal 26 serta Pajak Penghasilan Pasal 22 dan/atau Pajak Penghasilan Pasal 23 (e-Bupot Masa terintegrasi)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PER/23/PJ/2020",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/PER-23-PJ-2020.htm"
+      },
+      {
+        "id": "src-per-24-pj-2021",
+        "name": "Peraturan Direktur Jenderal Pajak Nomor PER-24/PJ/2021 tentang Petunjuk Pelaksanaan Pemotongan, Penyetoran, dan Pelaporan Pajak Penghasilan Pasal 21 dan/atau Pajak Penghasilan Pasal 26 serta Pajak Penghasilan Pasal 22 dan/atau Pajak Penghasilan Pasal 23 (e-Bupot Unifikasi 2022)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PER/24/PJ/2021",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/PER-24-PJ-2021.htm"
+      },
+      {
+        "id": "src-pmk-101-2016-ptkp",
+        "name": "Peraturan Menteri Keuangan Nomor 101/PMK.010/2016 tentang Penyesuaian Besarnya PTKP",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/101/PMK.010/2016",
+        "url": "https://peraturan.bpk.go.id/Details/53397/pmk-no-101-pmk-010-2016"
+      },
+      {
+        "id": "src-pmk-11-2025",
+        "name": "Peraturan Menteri Keuangan Nomor 11/PMK.03/2025 tentang Dasar Pengenaan Pajak dalam Penghitungan Pajak Pertambahan Nilai yang Terutang (konsolidasi sektor DPP nilai lain/besaran tertentu)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/11/PMK.03/2025",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/PMK-11-2025.htm"
+      },
+      {
+        "id": "src-pmk-112-2022-nik",
+        "name": "Peraturan Menteri Keuangan Nomor 112/PMK.03/2022 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi (penggunaan NIK sebagai NPWP bagi Orang Pribadi)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/112/PMK.03/2022",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/PMK.112-2022.htm"
+      },
+      {
+        "id": "src-pmk-122-2015-ptkp",
+        "name": "Peraturan Menteri Keuangan Nomor 122/PMK.010/2015 tentang Penyesuaian Besarnya PTKP",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/122/PMK.010/2015",
+        "url": "https://peraturan.bpk.go.id/Details/51529/pmk-no-122-tahun-2015"
+      },
+      {
+        "id": "src-pmk-131-2024",
+        "name": "Peraturan Menteri Keuangan Nomor 131/PMK.03/2024 tentang Dasar Pengenaan Pajak dalam Penghitungan Pajak Pertambahan Nilai yang Terutang atas Penyerahan Barang Kena Pajak dan/atau Jasa Kena Pajak serta Impor Barang Kena Pajak",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/131/PMK.03/2024",
+        "url": "https://peraturan.bpk.go.id/Details/204066/pmk-no-131-tahun-2024"
+      },
+      {
+        "id": "src-pmk-136-2023-nik",
+        "name": "Peraturan Menteri Keuangan Nomor 136/PMK.03/2023 tentang Penggunaan Nomor Induk Kependudukan sebagai Nomor Pokok Wajib Pajak bagi Orang Pribadi Wajib Pajak",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/136/PMK.03/2023",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/PMK.136-2023.htm"
+      },
+      {
+        "id": "src-pmk-141-2015",
+        "name": "Peraturan Menteri Keuangan Nomor 141/PMK.03/2015 tentang Pemotongan Pajak Penghasilan Pasal 23 atas Sehubungan Tidak Jalanya Suatu Hubungan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi (Daftar Jasa Lain dan Mekanika Jumlah Bruto)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/141/PMK.03/2015",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/PMK.141-2015.htm"
+      },
+      {
+        "id": "src-pmk-162-2012-ptkp",
+        "name": "Peraturan Menteri Keuangan Nomor 162/PMK.011/2012 tentang Penyesuaian Besarnya PTKP",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/162/PMK.011/2012",
+        "url": "https://peraturan.bpk.go.id/Details/47735/pmk-no-162-pmk-011-2012"
+      },
+      {
+        "id": "src-pmk-168-2023",
+        "name": "Peraturan Menteri Keuangan Nomor 168/PMK.010/2023 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/168/PMK.010/2023",
+        "url": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+      },
+      {
+        "id": "src-pmk-252-2008-legacy",
+        "name": "Peraturan Menteri Keuangan Nomor 252/PMK.03/2008 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi (rezim pra-TER untuk pegawai tetap)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/252/PMK.03/2008",
+        "url": "https://jdih.kemenkeu.go.id/dok/252-pmk-03-2008"
+      },
+      {
+        "id": "src-pmk-28-2024-ikn",
+        "name": "Peraturan Menteri Keuangan Nomor 28/PMK.03/2024 tentang Fasilitas Pajak Penghasilan bagi Pelaku Usaha di Ibu Kota Nusantara",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/28/PMK.03/2024",
+        "url": "https://peraturan.bpk.go.id/Details/289860/pmk-no-28-tahun-2024"
+      },
+      {
+        "id": "src-pmk-40-2023-listed",
+        "name": "Peraturan Menteri Keuangan Nomor 40/PMK.010/2023 tentang Pelaksanaan Pengurangan Tarif Pajak Penghasilan Bagi Wajib Pajak Badan dalam Rangka Investasi (petunjuk pelaksanaan syarat perusahaan listed)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/40/PMK.010/2023",
+        "url": "https://peraturan.bpk.go.id/Details/206959/pmk-no-40-pmk-010-2023"
+      },
+      {
+        "id": "src-pmk-53-2025",
+        "name": "Peraturan Menteri Keuangan Nomor 53/PMK.03/2025 tentang Perubahan atas PMK 11/PMK.03/2025 (DPP nilai lain sektor tertentu, termasuk asuransi)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PMK/53/PMK.03/2025",
+        "url": "https://jdih.kemenkeu.go.id/peraturan/PMK-53-2025.htm"
+      },
+      {
+        "id": "src-pp-20-2026",
+        "name": "Peraturan Pemerintah Nomor 20 Tahun 2026 tentang Perubahan atas Peraturan Pemerintah Nomor 55 Tahun 2022 tentang Ketentuan Khusus Pajak Penghasilan bagi Wajib Pajak yang Memiliki Peredaran Bruto Tertentu (penyempitan entitas eligible UMKM)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/20/2026",
+        "url": "https://peraturan.bpk.go.id/Details/330015/pp-no-20-tahun-2026"
+      },
+      {
+        "id": "src-pp-23-2018",
+        "name": "Peraturan Pemerintah Nomor 23 Tahun 2018 tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu (PPh Final UMKM 0,5%)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/23/2018",
+        "url": "https://peraturan.bpk.go.id/Details/55124/pp-no-23-tahun-2018"
+      },
+      {
+        "id": "src-pp-34-2016",
+        "name": "Peraturan Pemerintah Nomor 34 Tahun 2016 tentang Pajak Penghasilan atas Penghasilan dari Transfer Hak atas Tanah dan/atau Bangunan (PPh Final transfer)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/34/2016",
+        "url": "https://peraturan.bpk.go.id/Details/60306/pp-no-34-tahun-2016"
+      },
+      {
+        "id": "src-pp-34-2017",
+        "name": "Peraturan Pemerintah Nomor 34 Tahun 2017 tentang Pajak Penghasilan atas Penghasilan dari Persewaan Tanah dan/atau Bangunan dan/atau Jasa Konstruksi serta Pajak Penghasilan Final atas Penghasilan dari Transfer Hak atas Tanah dan/atau Bangunan",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/34/2017",
+        "url": "https://peraturan.bpk.go.id/Details/48328/pp-no-34-tahun-2017"
+      },
+      {
+        "id": "src-pp-46-2013",
+        "name": "Peraturan Pemerintah Nomor 46 Tahun 2013 tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu (PPh Final UMKM 1%)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/46/2013",
+        "url": "https://peraturan.bpk.go.id/Details/68509/pp-no-46-tahun-2013"
+      },
+      {
+        "id": "src-pp-51-2008",
+        "name": "Peraturan Pemerintah Nomor 51 Tahun 2008 tentang Pajak Penghasilan atas Penghasilan dari Kegiatan Jasa Konstruksi (rezim pra-PP 9/2022)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/51/2008",
+        "url": "https://peraturan.bpk.go.id/Details/51721/pp-no-51-tahun-2008"
+      },
+      {
+        "id": "src-pp-55-2022-badan",
+        "name": "Peraturan Pemerintah Nomor 55 Tahun 2022 tentang Ketentuan Khusus Pajak Penghasilan atas Penghasilan Wajib Pajak Badan dalam Rangka Investasi (syarat perusahaan listed Pasal 64-65; mengatur pengurangan tarif badan listed)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/55/2022",
+        "url": "https://peraturan.bpk.go.id/Details/201266/pp-no-55-tahun-2022"
+      },
+      {
+        "id": "src-pp-55-2022-umkm",
+        "name": "Peraturan Pemerintah Nomor 55 Tahun 2022 tentang Ketentuan Khusus Pajak Penghasilan bagi Wajib Pajak yang Memiliki Peredaran Bruto Tertentu (PPh Final UMKM 0,5%, penerus PP 23/2018)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/55/2022",
+        "url": "https://peraturan.bpk.go.id/Details/201266/pp-no-55-tahun-2022"
+      },
+      {
+        "id": "src-pp-58-2023",
+        "name": "Peraturan Pemerintah Nomor 58 Tahun 2023 tentang Tarif Pemotongan Pajak Penghasilan Pasal 21 dan/atau Pajak Penghasilan Pasal 26 Atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi (TER)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/58/2023",
+        "url": "https://peraturan.bpk.go.id/Details/274247/pp-no-58-tahun-2023"
+      },
+      {
+        "id": "src-pp-9-2022",
+        "name": "Peraturan Pemerintah Nomor 9 Tahun 2022 tentang Pajak Penghasilan Final Atas Penghasilan dari Jasa Konstruksi (mengubah PP 51/2008)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "PP/9/2022",
+        "url": "https://peraturan.bpk.go.id/Details/201265/pp-no-9-tahun-2022"
+      },
+      {
+        "id": "src-uu-15-pph",
+        "name": "Undang-Undang Nomor 36 Tahun 2008 (UU PPh konsolidasi 2008) Pasal 15 — Perhitungan Penghasilan Neto Khusus",
+        "official": true,
+        "role": "primary",
+        "regulationId": "UU/36/2008",
+        "url": "https://peraturan.bpk.go.id/Details/51343/uu-no-36-tahun-2008"
+      },
+      {
+        "id": "src-uu-2-2020",
+        "name": "Undang-Undang Nomor 2 Tahun 2020 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2020 tentang Kebijakan Keuangan Negara untuk Stabilitas Sistem Perekonomian dalam Menghadapi Ancaman yang Membahayakan Nasional Ekonomi Nasional dan/atau Stabilitas Sistem Keuangan Menjadi Undang-Undang (stimulus PPh Badan 22%)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "UU/2/2020",
+        "url": "https://peraturan.bpk.go.id/Details/132819/uu-no-2-tahun-2020"
+      },
+      {
+        "id": "src-uu-36-2008-pph",
+        "name": "Undang-Undang Nomor 36 Tahun 2008 tentang Perubahan Keempat atas Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan (UU PPh konsolidasi 2008)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "UU/36/2008",
+        "url": "https://peraturan.bpk.go.id/Details/51343/uu-no-36-tahun-2008"
+      },
+      {
+        "id": "src-uu-7-2021-hpp",
+        "name": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (HPP)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "UU/7/2021",
+        "url": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "id": "src-uu-8-1983-ppn",
+        "name": "Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah (UU PPN 1984, sebagaimana diubah terakhir oleh UU 7/2021 HPP)",
+        "official": true,
+        "role": "primary",
+        "regulationId": "UU/8/1983",
+        "url": "https://peraturan.bpk.go.id/Details/44024/uu-no-8-tahun-1983"
+      }
+    ]
+  }
+}

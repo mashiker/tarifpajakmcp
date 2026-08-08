@@ -1,0 +1,83 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "group": "pph-21-ptkp",
+    "count": 5,
+    "description": "Timeline pph 21 ptkp",
+    "entries": [
+      {
+        "id": "pph-21-ptkp-1984",
+        "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+        "rate": "PTKP sesuai regulasi berlaku",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "1994-12-31",
+        "status": "dicabut",
+        "legalBasis": "UU 7/1983 Pasal 17 ayat (6)",
+        "supersedes": [],
+        "supersededBy": [
+          "pph-21-ptkp-1995"
+        ]
+      },
+      {
+        "id": "pph-21-ptkp-1995",
+        "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+        "rate": "PTKP sesuai regulasi berlaku",
+        "effectiveFrom": "1995-01-01",
+        "effectiveTo": "2004-12-31",
+        "status": "dicabut",
+        "legalBasis": "UU 10/1994 Pasal 5",
+        "supersedes": [
+          "pph-21-ptkp-1984"
+        ],
+        "supersededBy": [
+          "pph-21-ptkp-2005"
+        ]
+      },
+      {
+        "id": "pph-21-ptkp-2005",
+        "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+        "rate": "PTKP sesuai regulasi berlaku",
+        "effectiveFrom": "2005-01-01",
+        "effectiveTo": "2008-12-31",
+        "status": "dicabut",
+        "legalBasis": "PMK 138/PMK.010/2005 Pasal 1",
+        "supersedes": [
+          "pph-21-ptkp-1995"
+        ],
+        "supersededBy": [
+          "pph-21-ptkp-2009"
+        ]
+      },
+      {
+        "id": "pph-21-ptkp-2009",
+        "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+        "rate": "PTKP sesuai regulasi berlaku",
+        "effectiveFrom": "2009-01-01",
+        "effectiveTo": "2015-12-31",
+        "status": "dicabut",
+        "legalBasis": "PMK 162/PMK.010/2009 Pasal 1",
+        "supersedes": [
+          "pph-21-ptkp-2005"
+        ],
+        "supersededBy": [
+          "pph-21-non-taxable-income"
+        ]
+      },
+      {
+        "id": "pph-21-non-taxable-income",
+        "transactionType": "PTKP (Penghasilan Tidak Kena Pajak)",
+        "rate": "PTKP sesuai PMK berlaku",
+        "effectiveFrom": "2016-01-01",
+        "effectiveTo": null,
+        "status": "berlaku",
+        "legalBasis": "PMK 122/2015 Pasal 1",
+        "supersedes": [
+          "pph-21-ptkp-2009"
+        ],
+        "supersededBy": []
+      }
+    ]
+  }
+}

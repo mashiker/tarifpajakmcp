@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "28-419",
+    "count": 1,
+    "codes": [
+      {
+        "kode": "28-419-01",
+        "nama": "Dividen yang Diterima/Diperoleh Wajib Pajak Orang Pribadi Dalam Negeri",
+        "tarif": 10,
+        "entryId": "pph-final-hadiah-undian",
+        "entryTransactionType": "Hadiah Undian"
+      }
+    ]
+  }
+}

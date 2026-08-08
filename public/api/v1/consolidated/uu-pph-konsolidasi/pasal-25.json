@@ -1,0 +1,53 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "25",
+    "bab": "VI",
+    "bagian": "2",
+    "title": "Angsuran PPh 25",
+    "status": "diubah",
+    "description": "Angsuran PPh 25 yang harus dibayar sendiri oleh WP Badan dan WP OP tertentu setiap bulan.",
+    "keywords": [
+      "PPh 25",
+      "angsuran",
+      "bulanan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan perhitungan angsuran"
+      }
+    ],
+    "text": "(1) Angsuran PPh 25 dalam suatu tahun pajak ditetapkan berdasarkan SPT Tahunan tahun sebelumnya.\n(2) Besarnya angsuran PPh 25 sebagaimana dimaksud pada ayat (1) adalah PPh terutang menurut SPT Tahunan dikurangi PPh yang dipotong dan PPh yang dibayar di luar negeri, dibagi 12.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Angsuran PPh 25 ditetapkan berdasarkan SPT Tahunan tahun sebelumnya.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Angsuran = (PPh terutang - kredit pajak) / 12.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

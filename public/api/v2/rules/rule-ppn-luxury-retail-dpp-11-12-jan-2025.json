@@ -1,0 +1,73 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-ppn-luxury-retail-dpp-11-12-jan-2025",
+    "conceptId": "concept-ppn-luxury-retail",
+    "conceptName": "PPN atas penyerahan BKP mewah kepada konsumen akhir oleh PKP retail (transisi Jan–Feb 2025)",
+    "categoryId": "cat-ppn",
+    "categoryName": "Pajak Pertambahan Nilai (PPN)",
+    "validFrom": "2025-01-01",
+    "validToExclusive": "2025-02-01",
+    "rate": {
+      "type": "information_factor",
+      "factor": "0.9166667"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "transactionKind",
+          "value": "domestic-supply"
+        },
+        {
+          "op": "equals",
+          "fact": "luxuryBkp",
+          "value": true
+        },
+        {
+          "op": "equals",
+          "fact": "retailFinalConsumer",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-pmk-131-2024"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pmk-131-2024",
+          "locator": "PMK 131/2024 Pasal 5: DPP nilai lain 11/12 untuk penyerahan BKP mewah dalam negeri kepada konsumen akhir oleh PKP retail yang berhak sampai 31 Januari 2025"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-131-2024",
+          "locator": "PMK 131/2024 Pasal 5: DPP 11/12 berlaku 2025-01-01 sampai 2025-01-31; DPP penuh mulai 1 Februari 2025"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-131-2024",
+          "locator": "PMK 131/2024 Pasal 5: BKP mewah, penyerahan dalam negeri, kepada konsumen akhir, oleh PKP retail yang berhak (luxuryBkp = true, retailFinalConsumer = true)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "ppn-luxury-retail-dpp-factor-jan-2025",
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Faktor DPP 11/12 untuk transisi retail Januari 2025 (PMK 131/2024 Pasal 5). Companion factor rule untuk rule-ppn-luxury-retail-jan-2025: beban efektif PPN Januari 2025 = 12% × 11/12 = 11%.",
+    "conflicts": []
+  }
+}

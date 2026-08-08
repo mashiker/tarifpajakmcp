@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "bphtb-perolehan-umum",
+    "category": "Pajak Daerah",
+    "taxType": "BPHTB",
+    "transactionType": "Perolehan Hak atas Tanah/Bangunan (Umum)",
+    "description": "BPHTB atas perolehan hak atas tanah dan/atau bangunan melalui jual beli, tukar-menukar, hibah, waris, pemasukan dalam perseroan, pemisahan hak, penunjukan pembeli dalam lelang, pelaksanaan putusan hakim, penggabungan usaha, peleburan usaha, pemekaran usaha, hadiah, pemberian hak baru.",
+    "rate": {
+      "type": "percentage",
+      "value": 5
+    },
+    "taxBase": "NPOP (Nilai Perolehan Objek Pajak) dikurangi NPOPTKP (Rp 80.000.000 untuk perorangan)",
+    "payer": "Penerima/pemperoleh hak",
+    "recipient": "Pemerintah Daerah",
+    "withholder": "PPAT (Pejabat Pembuat Akta Tanah) / Notaris",
+    "effectiveFrom": "2010-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 28/2009",
+        "article": "Pasal 5-7",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44141/uu-no-28-tahun-2009"
+      },
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 78-82",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "NPOPTKP = Rp 80.000.000 (perorangan) atau Rp 80.000.000 × jumlah penerima hak (waris). NPOP minimum = NJOP. Tarif 5% × (NPOP - NPOPTKP).",
+    "examples": [
+      {
+        "scenario": "Membeli rumah NPOP Rp 1.000.000.000",
+        "calculation": "5% × (1.000.000.000 - 80.000.000)",
+        "result": "BPHTB = Rp 46.000.000"
+      }
+    ],
+    "tags": [
+      "bphtb",
+      "tanah",
+      "bangunan",
+      "perolehan",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "relatedEntries": {
+      "sameCategory": [
+        "bphtb-perolehan-waris",
+        "bphtb-pengalihan-dinkes"
+      ]
+    }
+  }
+}

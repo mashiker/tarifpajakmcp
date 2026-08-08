@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "17A",
+    "bab": "IV",
+    "bagian": "2",
+    "title": "Tarif Efektif Rata-Rata (TER) PPh 21",
+    "status": "ditambah",
+    "description": "Pemotongan PPh 21 menggunakan Tarif Efektif Rata-Rata (TER) berdasarkan PP 58/2023, menggantikan metode lama.",
+    "keywords": [
+      "TER",
+      "PPh 21",
+      "PP 58/2023",
+      "tarif efektif rata-rata"
+    ],
+    "relatedTaxRates": [
+      "pph-21-ter-monthly-2024"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru — dasar hukum TER PPh 21, berlaku efektif 2024"
+      }
+    ],
+    "text": "(1) Pajak Penghasilan yang terutang bagi WP OP yang menerima penghasilan dari pekerjaan sebagaimana dimaksud dalam Pasal 21 dipotong oleh pemberi kerja berdasarkan Tarif Efektif Rata-Rata (TER) yang ditetapkan dengan Peraturan Pemerintah.\n(2) TER sebagaimana dimaksud pada ayat (1) dibedakan berdasarkan kategori penghasilan:\na. Kategori A: WP yang menerima penghasilan dari 1 pemberi kerja;\nb. Kategori B: WP yang menerima penghasilan dari lebih dari 1 pemberi kerja; atau\nc. Kategori C: WP yang menerima penghasilan tidak tetap atau penghasilan yang sifatnya berhenti pada suatu saat tertentu.\n(3) Penetapan TER berdasarkan kategori sebagaimana dimaksud pada ayat (2) ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPh OP dari pekerjaan dipotong berdasarkan TER yang ditetapkan PP.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "TER dibedakan: Kategori A (1 pemberi kerja), B (>1 pemberi kerja), C (tidak tetap).",
+        "status": "ditambah"
+      },
+      {
+        "number": "(3)",
+        "text": "Penetapan TER berdasarkan kategori ditetapkan dengan PP.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

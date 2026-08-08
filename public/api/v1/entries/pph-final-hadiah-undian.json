@@ -1,0 +1,79 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-final-hadiah-undian",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Hadiah Undian",
+    "description": "Pajak final atas hadiah undian, baik berupa uang maupun barang.",
+    "rate": {
+      "type": "percentage",
+      "value": 25
+    },
+    "taxBase": "Nilai hadiah bruto",
+    "payer": "Penerima hadiah",
+    "recipient": "Negara",
+    "withholder": "Penyelenggara undian",
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 131/2000",
+        "article": "Pasal 3",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/50267/pp-no-131-tahun-2000"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "tags": [
+      "pph-final",
+      "hadiah",
+      "undian",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "bppuKode": [
+      {
+        "kode": "28-405-01",
+        "nama": "Hadiah Undian",
+        "tarif": 25
+      },
+      {
+        "kode": "28-419-01",
+        "nama": "Dividen yang Diterima/Diperoleh Wajib Pajak Orang Pribadi Dalam Negeri",
+        "tarif": 10
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Hadiah Undian Rp 100.000.000",
+        "calculation": "25% × 100.000.000",
+        "result": "Pajak = Rp 25.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-final-bunga-deposito",
+        "pph-final-sewa-tanah",
+        "pph-final-transaksi-saham-bursa",
+        "pph-final-konstruksi",
+        "pph-final-bunga-koperasi",
+        "pph-final-transportasi",
+        "pph-final-migas",
+        "pph-final-investasi-lpi",
+        "pph-final-bunga-pre2009",
+        "pph-final-pengalihan-pp131",
+        "pph-final-pengalihan-pp71",
+        "pph-15-penerbangan-domestik",
+        "pph-15-pelayaran-domestik",
+        "pph-15-perusahaan-asuransi",
+        "pph-15-buta-charter",
+        "pph-15-pma-opec",
+        "pph-15-perusahaan-kontraktor"
+      ]
+    }
+  }
+}

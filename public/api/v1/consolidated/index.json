@@ -1,0 +1,31 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "count": 3,
+    "laws": [
+      {
+        "id": "uu-kup-konsolidasi",
+        "shortTitle": "UU KUP Konsolidasi",
+        "baseLaw": "UU 6/1983",
+        "totalPasals": 58,
+        "totalAmendments": 6
+      },
+      {
+        "id": "uu-pph-konsolidasi",
+        "shortTitle": "UU PPh Konsolidasi",
+        "baseLaw": "UU 7/1983",
+        "totalPasals": 44,
+        "totalAmendments": 5
+      },
+      {
+        "id": "uu-ppn-konsolidasi",
+        "shortTitle": "UU PPN Konsolidasi",
+        "baseLaw": "UU 8/1983",
+        "totalPasals": 45,
+        "totalAmendments": 3
+      }
+    ]
+  }
+}

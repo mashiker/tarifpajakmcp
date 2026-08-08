@@ -1,0 +1,277 @@
+---
+import {
+  STATUS_OPTIONS,
+  VERIFICATION_OPTIONS,
+  SORT_OPTIONS,
+  type DatabaseState,
+} from '../../lib/database-state.ts';
+
+export interface Props {
+  state: DatabaseState;
+  categories: { slug: string; name: string; count: number }[];
+  /** Counts per status for the chip badges. */
+  statusCounts?: Record<string, number>;
+  totalCount: number;
+  conflictCount: number;
+}
+
+const { state, categories, statusCounts = {}, totalCount, conflictCount } = Astro.props;
+
+const STATUS_LABEL: Record<string, string> = {
+  all: 'Semua',
+  berlaku: 'Berlaku',
+  diubah: 'Diubah',
+  belum_berlaku: 'Belum berlaku',
+  dicabut: 'Dicabut',
+};
+const VERIFICATION_LABEL: Record<string, string> = {
+  all: 'Semua',
+  verified_primary: 'Primer',
+  verified_secondary: 'Sekunder',
+  needs_review: 'Tinjauan',
+  source_conflict: 'Konflik',
+  summary_only: 'Orientasi',
+  conflict: 'Konflik sumber',
+};
+const SORT_LABEL: Record<string, string> = {
+  category: 'Kategori',
+  rate: 'Tarif naik',
+  newest: 'Terbaru',
+  oldest: 'Terlama',
+};
+
+const isDefault = (a: string, b: string) => a === b;
+---
+
+<form id="db-toolbar" class="db-toolbar" role="search" aria-label="Filter database tarif pajak" data-default-state="">
+  <div class="db-toolbar-row db-toolbar-search">
+    <label for="db-input-q" class="db-field-label">Cari</label>
+    <div class="db-search-wrap">
+      <input
+        id="db-input-q"
+        name="q"
+        type="search"
+        class="db-input db-search-input"
+        placeholder="Cari tarif, kategori, ID aturan…"
+        autocomplete="off"
+        value={state.q}
+      />
+      <svg class="db-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="db-toolbar-row db-toolbar-grid">
+    <div class="db-field">
+      <label for="db-input-date" class="db-field-label">Tanggal / Tahun</label>
+      <input
+        id="db-input-date"
+        name="date"
+        type="text"
+        inputmode="numeric"
+        class="db-input"
+        placeholder="YYYY-MM-DD atau YYYY"
+        pattern="^\d{4}(-\d{2}-\d{2})?$"
+        value={state.date}
+      />
+    </div>
+
+    <div class="db-field">
+      <label for="db-input-category" class="db-field-label">Kategori</label>
+      <select id="db-input-category" name="category" class="db-input db-select">
+        <option value="all" selected={isDefault(state.category, 'all')}>Semua kategori ({totalCount})</option>
+        {categories.map((c) => (
+          <option value={c.slug} selected={state.category === c.slug}>{c.name} ({c.count})</option>
+        ))}
+      </select>
+    </div>
+
+    <div class="db-field">
+      <label for="db-input-sort" class="db-field-label">Urutan</label>
+      <select id="db-input-sort" name="sort" class="db-input db-select">
+        {SORT_OPTIONS.map((s) => (
+          <option value={s} selected={state.sort === s}>{SORT_LABEL[s]}</option>
+        ))}
+      </select>
+    </div>
+  </div>
+
+  <div class="db-toolbar-row db-toolbar-chips" role="group" aria-label="Filter status">
+    <span class="db-chip-label" id="db-status-label">Status:</span>
+    <div class="db-chips" role="group" aria-labelledby="db-status-label">
+      {
+        STATUS_OPTIONS.map((s) => (
+          <button
+            type="button"
+            class:list={['db-chip', state.status === s && 'db-chip-active']}
+            data-status={s}
+            aria-pressed={state.status === s ? 'true' : 'false'}
+          >
+            {STATUS_LABEL[s]}
+            {statusCounts[s] !== undefined && (
+              <span class="db-chip-count">{statusCounts[s]}</span>
+            )}
+          </button>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="db-toolbar-row db-toolbar-chips" role="group" aria-label="Filter verifikasi">
+    <span class="db-chip-label" id="db-verification-label">Verifikasi:</span>
+    <div class="db-chips" role="group" aria-labelledby="db-verification-label">
+      {
+        VERIFICATION_OPTIONS.map((v) => (
+          <button
+            type="button"
+            class:list={['db-chip', state.verification === v && 'db-chip-active']}
+            data-verification={v}
+            aria-pressed={state.verification === v ? 'true' : 'false'}
+          >
+            {VERIFICATION_LABEL[v]}
+            {v === 'conflict' && conflictCount > 0 && (
+              <span class="db-chip-count">{conflictCount}</span>
+            )}
+          </button>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="db-toolbar-row db-toolbar-actions">
+    <button type="button" id="db-clear" class="db-clear-btn" aria-label="Hapus semua filter">
+      <svg class="db-clear-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+      Hapus filter
+    </button>
+  </div>
+</form>
+
+<style>
+  /* Sticky toolbar: sits beneath the global header (h-14 = 3.5rem). */
+  .db-toolbar {
+    position: sticky;
+    top: 3.5rem;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 0.75rem 0;
+    background: var(--paper, #F7F8F4);
+    border-bottom: 1px solid var(--rule, #D9E0DC);
+  }
+  :global(html.dark) .db-toolbar { background: #0A0C10; border-bottom-color: #23272F; }
+
+  .db-toolbar-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+  .db-field { display: flex; flex-direction: column; gap: 0.25rem; flex: 1 1 9rem; min-width: 0; }
+  .db-field-label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-secondary, #44545a);
+  }
+  .db-toolbar-search { flex: 1 1 22rem; }
+  .db-search-wrap { position: relative; flex: 1; }
+  .db-search-input { padding-left: 2.25rem; }
+  .db-search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    color: var(--ink-tertiary, #8B93A1);
+    pointer-events: none;
+  }
+  .db-input {
+    width: 100%;
+    height: 2.25rem;
+    padding: 0 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: var(--surface, #FFFFFF);
+    color: var(--ink, #132A2A);
+    font-size: 0.8125rem;
+    font-family: 'IBM Plex Mono', monospace;
+    transition: border-color 0.15s ease;
+  }
+  .db-input:focus {
+    outline: none;
+    border-color: #0E5E58;
+    box-shadow: 0 0 0 3px rgba(14, 94, 88, 0.18);
+  }
+  .db-select { font-family: 'Inter', sans-serif; cursor: pointer; }
+
+  .db-chip-label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-secondary, #44545a);
+    margin-right: 0.25rem;
+  }
+  .db-chips { display: flex; gap: 0.375rem; flex-wrap: wrap; }
+  .db-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: var(--surface, #FFFFFF);
+    color: var(--ink-secondary, #44545a);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .db-chip:hover { border-color: #0E5E58; color: #0E5E58; }
+  .db-chip-active {
+    background: var(--ink, #132A2A);
+    border-color: var(--ink, #132A2A);
+    color: var(--paper, #F7F8F4);
+  }
+  .db-chip-count {
+    display: inline-block;
+    padding: 0 0.3125rem;
+    border-radius: 9999px;
+    background: rgba(19, 42, 42, 0.10);
+    color: var(--ink-secondary, #44545a);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.625rem;
+  }
+  .db-chip-active .db-chip-count { background: rgba(247, 248, 244, 0.18); color: var(--paper, #F7F8F4); }
+
+  .db-clear-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: transparent;
+    color: var(--ink-secondary, #44545a);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .db-clear-btn:hover { border-color: #B7791F; color: #B7791F; }
+  .db-clear-icon { width: 0.875rem; height: 0.875rem; }
+
+  @media (min-width: 768px) {
+    .db-toolbar-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 0.8fr;
+      gap: 0.75rem;
+      align-items: end;
+    }
+    .db-toolbar-search { flex: 1 1 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .db-chip, .db-clear-btn, .db-input { transition: none; }
+  }
+</style>

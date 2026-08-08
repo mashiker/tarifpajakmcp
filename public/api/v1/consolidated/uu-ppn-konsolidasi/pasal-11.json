@@ -1,0 +1,53 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "11",
+    "bab": "II",
+    "bagian": "3",
+    "title": "DPP untuk Impor",
+    "status": "diubah",
+    "description": "DPP atas impor BKP: nilai pabean + cukai.",
+    "keywords": [
+      "DPP",
+      "impor",
+      "nilai pabean"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Perubahan DPP impor"
+      }
+    ],
+    "text": "(1) DPP atas penyerahan BKP tertentu yang ditetapkan oleh PMK dapat menggunakan nilai lain.\n(2) DPP atas penyerahan JKP tertentu yang ditetapkan oleh PMK dapat menggunakan nilai lain.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DPP BKP tertentu dapat menggunakan nilai lain sesuai PMK.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "DPP JKP tertentu dapat menggunakan nilai lain sesuai PMK.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

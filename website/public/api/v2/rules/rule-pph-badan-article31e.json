@@ -1,0 +1,122 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-badan-article31e",
+    "conceptId": "concept-pph-badan-article31e",
+    "conceptName": "Fasilitas Pasal 31E(1) UU PPh: pengurangan 50% bagi badan kecil",
+    "categoryId": "cat-pph-badan",
+    "categoryName": "Pajak Penghasilan Badan",
+    "validFrom": "2010-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "formula",
+      "expression": "Pasal 31E(1) UU PPh. Elegibilitas: badan resident dengan peredaran bruto <= Rp50.000.000.000. Pengurangan tarif 50% atas PKP yang PROPORSIONAL terhadap peredaran bruto pertama Rp4.800.000.000 (bukan pemulusan seluruh PKP). Bila peredaran bruto <= Rp4.800.000.000: PPh = 50% × tarif dasar × PKP (seluruh PKP kena pengurangan). Bila Rp4.800.000.000 < peredaran bruto <= Rp50.000.000.000: porsi PKP kena pengurangan = PKP × (Rp4.800.000.000 / peredaran bruto); porsi tersebut kena (50% × tarif dasar), sisanya kena tarif dasar penuh."
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "taxpayerType",
+          "value": "badan"
+        },
+        {
+          "op": "equals",
+          "fact": "resident",
+          "value": true
+        },
+        {
+          "op": "exists",
+          "fact": "grossTurnover"
+        },
+        {
+          "op": "equals",
+          "fact": "article31eEligible",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-36-2008-pph",
+        "src-uu-7-2021-hpp"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 31E ayat (1) UU PPh: pengurangan tarif 50% atas PKP bagi badan dengan peredaran bruto tertentu"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 31E berlaku sejak UU 36/2008; tarif dasar 22% berlaku dari TP 2022 per UU HPP Pasal 3 angka 7"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 31E ayat (1): badan resident dengan peredaran bruto <= Rp50.000.000.000; alokasi proporsional terhadap Rp4.800.000.000"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-badan-article31e",
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-pph-badan-31e-turnover-under-4.8bn",
+        "label": "Peredaran bruto Rp4.000.000.000, PKP Rp1.000.000.000 (TP 2022)",
+        "illustrative": true,
+        "input": {
+          "taxpayerType": "badan",
+          "resident": true,
+          "grossTurnover": "4000000000",
+          "article31eEligible": true,
+          "pkp": "1000000000"
+        },
+        "expectedAmount": "110000000.00",
+        "notes": "Peredaran bruto <= Rp4.800.000.000 sehingga seluruh PKP kena pengurangan. PPh = 50% × 22% × 1.000.000.000 = 110.000.000. Tarif efektif = 11%."
+      },
+      {
+        "id": "ex-pph-badan-31e-turnover-exactly-4.8bn",
+        "label": "Peredaran bruto tepat Rp4.800.000.000, PKP Rp1.000.000.000 (TP 2022)",
+        "illustrative": true,
+        "input": {
+          "taxpayerType": "badan",
+          "resident": true,
+          "grossTurnover": "4800000000",
+          "article31eEligible": true,
+          "pkp": "1000000000"
+        },
+        "expectedAmount": "110000000.00",
+        "notes": "Pada peredaran bruto tepat Rp4.800.000.000, seluruh PKP masih proporsional terhadap ambang pertama. PPh = 50% × 22% × 1.000.000.000 = 110.000.000."
+      },
+      {
+        "id": "ex-pph-badan-31e-turnover-24bn-proportional",
+        "label": "Peredaran bruto Rp24.000.000.000, PKP Rp1.000.000.000 (TP 2022) - alokasi proporsional",
+        "illustrative": true,
+        "input": {
+          "taxpayerType": "badan",
+          "resident": true,
+          "grossTurnover": "24000000000",
+          "article31eEligible": true,
+          "pkp": "1000000000"
+        },
+        "expectedAmount": "198000000.00",
+        "notes": "Peredaran bruto 5× ambang Rp4.800.000.000. Porsi PKP kena pengurangan = 1.000.000.000 × (4.800.000.000/24.000.000.000) = 200.000.000 kena 11% (50%×22%) = 22.000.000; sisanya 800.000.000 kena 22% = 176.000.000; total = 198.000.000. Tarif efektif = 19,8%. BUKAN pemulusan seluruh PKP ke 11%."
+      }
+    ],
+    "notes": "Fasilitas Pasal 31E(1) UU PPh: pengurangan tarif 50% atas PKP yang PROPORSIONAL terhadap peredaran bruto pertama Rp4.800.000.000 (alokasi proporsional, BUKAN pemulusan seluruh PKP). WAJIB bila memenuhi syarat (bukan opsi); tidak ada pengurangan di atas Rp50.000.000.000. Memerlukan fakta grossTurnover untuk menentukan formula, DAN fakta article31eEligible (gate boolean yang diturunkan pemanggil dari ambang peredaran bruto <= Rp50.000.000.000). Tanpa salah satu fakta tersebut, resolver mengembalikan fakta_kurang.",
+    "conflicts": []
+  }
+}

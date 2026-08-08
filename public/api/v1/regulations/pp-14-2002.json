@@ -1,0 +1,27 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pp-14-2002",
+    "number": "14",
+    "year": 2002,
+    "title": "PP tentang Pemotongan Pajak Penghasilan atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi",
+    "shortName": "PP PPh 23/26 Lama",
+    "type": "PP",
+    "promulgationDate": "2002-03-18",
+    "effectiveDate": "2002-04-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44194/pp-no-14-tahun-2002",
+    "status": "dicabut",
+    "description": "PP lama mengatur pemotongan PPh 23 dan PPh 26. Digantikan oleh PP 60/2023 sejak 1 Januari 2024.",
+    "relevantArticles": "Pasal 2, 3, 5",
+    "relatedRegulations": [
+      "pp-60-2023"
+    ],
+    "referencingEntries": [
+      "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct"
+    ]
+  }
+}

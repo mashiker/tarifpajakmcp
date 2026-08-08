@@ -1,0 +1,40 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "26",
+    "bab": "IV",
+    "title": "Pengawasan",
+    "status": "berlaku",
+    "description": "Pengawasan pelaksanaan PPN/PPnBM.",
+    "keywords": [
+      "pengawasan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Pengusaha yang tidak berstatus PKP yang melakukan penyerahan BKP/JKP dikenakan PPN, PPN dipungut oleh pembeli.\n(2) Ketentuan mengenai pemungutan PPN oleh pembeli diatur dengan PMK.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN atas penyerahan oleh bukan PKP dipungut oleh pembeli.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Diatur dengan PMK.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

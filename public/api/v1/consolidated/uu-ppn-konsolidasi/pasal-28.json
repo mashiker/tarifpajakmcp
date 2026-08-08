@@ -1,0 +1,51 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "28",
+    "bab": "V",
+    "title": "Sanksi Pidana Tambahan",
+    "status": "diubah",
+    "description": "Sanksi pidana tambahan atas pelanggaran.",
+    "keywords": [
+      "pidana",
+      "tambahan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Perubahan sanksi"
+      }
+    ],
+    "text": "(1) Setiap orang yang dengan sengaja tidak memungut PPN sebagaimana mestinya diancam pidana.\n(2) Hukuman pidana penjara paling lama 1 (satu) tahun atau denda paling banyak Rp 50.000.000.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pidana atas tidak memungut PPN.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Maks 1 tahun penjara atau denda max Rp50 juta.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "2",
+    "bab": "II",
+    "bagian": "1",
+    "title": "Objek PPN",
+    "status": "diubah",
+    "description": "PPN dikenakan atas: penyerahan BKP di dalam DA, penyerahan JKP di dalam DA, ekspor BKP, ekspor JKP.",
+    "keywords": [
+      "objek PPN",
+      "penyerahan",
+      "ekspor",
+      "BKP",
+      "JKP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli - 3 objek (penyerahan BKP, JKP, ekspor)"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan ekspor jasa sebagai objek PPN, penyerahan BKP tidak berwujud"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Penambahan PPN final atas penyerahan tertentu"
+      }
+    ],
+    "text": "(1) PPN dikenakan atas:\na. penyerahan BKP di dalam Daerah Pabean yang dilakukan oleh PKP;\nb. penyerahan JKP di dalam Daerah Pabean yang dilakukan oleh PKP;\nc. ekspor BKP Berwujud;\nd. ekspor BKP Tidak Berwujud;\ne. ekspor JKP.\n(2) Penyerahan BKP dan JKP sebagaimana dimaksud pada ayat (1) termasuk penyerahan BKP Tidak Berwujud dan JKP yang dilakukan melalui media elektronik (PMSE).",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPN dikenakan atas 5 objek: penyerahan BKP, JKP di DP, ekspor BKP berwujud, BKP tidak berwujud, dan JKP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Termasuk BKP tidak berwujud dan JKP melalui media elektronik (PMSE).",
+        "status": "diubah"
+      }
+    ]
+  }
+}

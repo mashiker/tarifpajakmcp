@@ -1,0 +1,114 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "description": "Data untuk kalkulasi PPN (diproyeksikan dari aturan kanonik v2: UU HPP 7/2021, UU PPN 8/1983, PMK 131/2024, PMK 11/2025, PMK 53/2025)",
+    "sources": [
+      "src-pmk-131-2024",
+      "src-uu-7-2021-hpp",
+      "src-uu-8-1983-ppn"
+    ],
+    "rates": {
+      "nominal_10pct": {
+        "rate": 10,
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": "2022-04-01",
+        "note": "Tarif nominal PPN 10% per UU PPN Pasal 7 ayat (1) huruf a (berlaku sejak 1984-04-01 sampai 2022-03-31)."
+      },
+      "nominal_11pct": {
+        "rate": 11,
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": "2025-01-01",
+        "note": "Tarif nominal PPN 11% per UU HPP Pasal 7 (berlaku 2022-04-01 sampai 2024-12-31)."
+      },
+      "nominal_12pct": {
+        "rate": 12,
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null,
+        "note": "Tarif nominal PPN 12% per UU HPP Pasal 7 mulai 2025-01-01."
+      },
+      "dpp_nilai_lain_11_12": {
+        "factor": "0.9166667",
+        "effectiveBurdenPct": 11.0000004,
+        "effectiveFrom": "2025-01-01",
+        "note": "PMK 131/2024 Pasal 3: DPP nilai lain 11/12 untuk BKP bukan mewah, JKP biasa, dan perolehan JKP/BKP tidak berwujud dari luar negeri. Beban efektif PPN = 12% × 11/12 = 11%. Faktor ini BUKAN tarif; tarif nominal tetap 12% per UU HPP Pasal 7."
+      },
+      "luxury_full_base_12pct": {
+        "rate": 12,
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null,
+        "note": "PMK 131/2024 Pasal 2: BKP mewah yang dikenai PPnBM menggunakan DPP penuh (12%) atas impor/penyerahan dalam negeri sejak 2025-01-01 (kecuali transisi retail Pasal 5 Januari 2025)."
+      },
+      "ekspor": {
+        "rate": 0,
+        "effectiveFrom": "1984-04-01",
+        "note": "UU PPN Pasal 7 ayat (2): ekspor BKP/JKP berkualifikasi dikenai 0% (zero-rated, BUKAN exempt/bukan objek)."
+      }
+    },
+    "scenarios": [
+      {
+        "id": "domestic-non-luxury-2025",
+        "transactionKind": "domestic-supply",
+        "luxuryBkp": false,
+        "dppFactor": "0.9166667",
+        "nominalRatePct": 12,
+        "effectiveBurdenPct": 11.0000004,
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null,
+        "sourceRuleId": "rule-ppn-domestic-supply-2025-nonluxury",
+        "note": "Penyerahan BKP/JKP non-mewah dalam negeri tahun 2025: DPP nilai lain 11/12 (PMK 131/2024 Pasal 3) × tarif nominal 12% (UU HPP Pasal 7) = beban efektif 11%."
+      },
+      {
+        "id": "domestic-luxury-2025",
+        "transactionKind": "domestic-supply",
+        "luxuryBkp": true,
+        "nominalRatePct": 12,
+        "effectiveBurdenPct": 12,
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null,
+        "sourceRuleId": "rule-ppn-domestic-supply-2025-luxury",
+        "note": "Penyerahan BKP mewah dalam negeri tahun 2025: DPP penuh × 12% (PMK 131/2024 Pasal 2). BKP mewah juga tunduk pada PPnBM."
+      },
+      {
+        "id": "luxury-retail-jan-2025",
+        "transactionKind": "domestic-supply",
+        "luxuryBkp": true,
+        "retailFinalConsumer": true,
+        "dppFactor": "0.9166667",
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": "2025-02-01",
+        "effectiveBurdenPct": 11.0000004,
+        "sourceRuleId": "rule-ppn-luxury-retail-jan-2025",
+        "note": "PMK 131/2024 Pasal 5: penyerahan BKP mewah retail kepada konsumen akhir oleh PKP retail yang berhak menggunakan DPP 11/12 sampai 31 Januari 2025 (beban efektif 11%); DPP penuh 12% mulai 1 Februari 2025."
+      },
+      {
+        "id": "export-0pct",
+        "transactionKind": "export",
+        "ratePct": 0,
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null,
+        "sourceRuleId": "rule-ppn-export-0pct",
+        "note": "Ekspor BKP/JKP berkualifikasi = 0% per UU PPN Pasal 7 ayat (2). Zero-rated: pajak masukan tetap dapat dikreditkan."
+      }
+    ],
+    "formula": {
+      "ppn": "PPN = Tarif nominal × DPP",
+      "dpp_umum": "DPP = Harga Jual / Penggantian / Nilai Impor / Nilai Ekspor (UU PPN Pasal 8)",
+      "dpp_nilai_lain_2025": "DPP nilai lain = 11/12 × harga sebenarnya (PMK 131/2024 Pasal 3 untuk non-mewah); beban efektif = 12% × 11/12 = 11%"
+    },
+    "notes": "Tahun 2025 bersyarat: klasifikasi BKP mewah, status konsumen akhir retail, dan cakupan skema DPP sektoral (PMK 11/2025 efektif 4 Feb 2025; PMK 53/2025 dari 1 Agu 2025) menentukan apakah DPP penuh 12% atau DPP 11/12 (beban efektif 11%) yang berlaku. Tidak ada satu angka universal untuk 2025.",
+    "$projection": {
+      "projectedFromV2": true,
+      "v2RuleIds": [
+        "rule-ppn-domestic-supply-10pct-pre-hpp",
+        "rule-ppn-domestic-supply-11pct",
+        "rule-ppn-domestic-supply-2025-luxury",
+        "rule-ppn-domestic-supply-2025-nonluxury",
+        "rule-ppn-domestic-supply-2025-nonluxury-dpp-factor",
+        "rule-ppn-export-0pct",
+        "rule-ppn-luxury-retail-jan-2025"
+      ]
+    }
+  }
+}

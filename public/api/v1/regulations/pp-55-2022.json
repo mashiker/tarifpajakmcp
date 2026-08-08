@@ -1,0 +1,26 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pp-55-2022",
+    "number": "55",
+    "year": 2022,
+    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterika atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "shortName": "PP PPh UMKM 0,5% (Terbaru)",
+    "type": "PP",
+    "promulgationDate": "2022-12-22",
+    "effectiveDate": "2023-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/194769/pp-no-55-tahun-2022",
+    "status": "berlaku",
+    "description": "PP terbaru PPh UMKM. Tarif 0,5% final untuk peredaran bruto s.d. Rp 4,8 miliar (WP OP 0,25%). Menggantikan PP 23/2018.",
+    "relevantArticles": "Pasal 2, 3",
+    "relatedRegulations": [
+      "pp-23-2018"
+    ],
+    "referencingEntries": [
+      "bea-masuk-asean-atiga",
+      "pph-umkm-05pct-2023"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "13",
+    "bab": "IV",
+    "title": "Metode Pembukuan",
+    "status": "berlaku",
+    "description": "Pembukuan diselenggarakan dengan cara atau metode yang lazim dipakai di Indonesia.",
+    "keywords": [
+      "metode pembukuan",
+      "saldo normal"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) WP yang menyelenggarakan pembukuan wajib menyimpan pembukuan tersebut selama 10 (sepuluh) tahun di Indonesia.\n(2) WP yang menyelenggarakan pencatatan wajib menyimpan pencatatan tersebut selama 10 (sepuluh) tahun di Indonesia.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pembukuan wajib disimpan 10 tahun di Indonesia.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Pencatatan wajib disimpan 10 tahun di Indonesia.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

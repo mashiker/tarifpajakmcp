@@ -1,0 +1,53 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "21",
+    "bab": "VI",
+    "bagian": "1",
+    "title": "SPT Tahunan PPh",
+    "status": "diubah",
+    "description": "WP wajib menyampaikan SPT Tahunan PPh. Kurang bayar harus dilunasi sebelum SPT disampaikan.",
+    "keywords": [
+      "SPT Tahunan",
+      "PPh",
+      "kurang bayar"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan ketentuan SPT"
+      }
+    ],
+    "text": "(1) SPT Tahunan WP OP meliputi penghasilan yang diterima atau diperoleh dalam tahun pajak yang bersangkutan.\n(2) SPT Tahunan WP badan meliputi penghasilan yang diterima atau diperoleh dalam tahun pajak yang bersangkutan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SPT Tahunan WP OP: melaporkan penghasilan tahun pajak berjalan.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "SPT Tahunan WP badan: melaporkan penghasilan tahun pajak berjalan.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

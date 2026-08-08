@@ -1,0 +1,55 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-21-ptkp-2016-current",
+    "conceptId": "concept-pph-21-ptkp",
+    "conceptName": "Penghasilan Tidak Kena Pajak (PTKP)",
+    "categoryId": "cat-pph-21",
+    "categoryName": "Pajak Penghasilan Pasal 21",
+    "validFrom": "2016-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "information_factor",
+      "factor": "1"
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-pmk-101-2016-ptkp"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pmk-101-2016-ptkp",
+          "locator": "Pasal 1: TK/0 Rp54.000.000; K/0 Rp58.500.000; tanggungan Rp4.500.000/orang"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-101-2016-ptkp",
+          "locator": "Berlaku Tahun Pajak 2016 sampai saat ini"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-101-2016-ptkp",
+          "locator": "PTKP dipegang pada awal tahun pajak"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-21-ptkp",
+    "supersedes": [
+      "rule-pph-21-ptkp-2015"
+    ],
+    "supersededBy": [],
+    "notes": "PMK 101/PMK.010/2016. PTKP berlaku sejak Tahun Pajak 2016 sampai saat ini (belum diubah).",
+    "conflicts": []
+  }
+}

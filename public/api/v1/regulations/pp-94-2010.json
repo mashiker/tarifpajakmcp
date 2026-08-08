@@ -1,0 +1,27 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pp-94-2010",
+    "number": "94",
+    "year": 2010,
+    "title": "PP tentang Perhitungan Pajak Penghasilan Pasal 22 dan Pemungut Pajak Penghasilan Pasal 22",
+    "shortName": "PP PPh 22 Lama",
+    "type": "PP",
+    "promulgationDate": "2010-12-31",
+    "effectiveDate": "2011-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44269/pp-no-94-tahun-2010",
+    "status": "dicabut",
+    "description": "PP lama mengatur PPh 22. Digantikan oleh PP 60/2023 sejak 1 Januari 2024.",
+    "relevantArticles": "Pasal 2, 3, 4",
+    "relatedRegulations": [
+      "pp-60-2023"
+    ],
+    "referencingEntries": [
+      "pph-21-progressive-uulama1994",
+      "pph-21-ptkp-1995",
+      "pph-22-pre2024"
+    ]
+  }
+}

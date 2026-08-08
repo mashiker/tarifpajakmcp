@@ -1,0 +1,36 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "22",
+    "bab": "VI",
+    "title": "Himbauan",
+    "status": "berlaku",
+    "description": "Himbauan kepada WP untuk memenuhi kewajiban perpajakan.",
+    "keywords": [
+      "himbuauan",
+      "petunjuk"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) DJP dapat memberikan himbauan atau petunjuk kepada WP untuk memenuhi kewajiban perpajakan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat memberikan himbauan/petunjuk kepada WP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

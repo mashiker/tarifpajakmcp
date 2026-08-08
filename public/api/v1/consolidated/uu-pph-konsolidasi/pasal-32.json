@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "32",
+    "bab": "X",
+    "title": "Perjanjian Internasional",
+    "status": "diubah",
+    "description": "Ketentuan tentang perjanjian penghindaran pajak berganda (P3B) dan kepatuhan terhadap perjanjian internasional.",
+    "keywords": [
+      "P3B",
+      "tax treaty",
+      "perjanjian internasional"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan ketentuan perjanjian"
+      }
+    ],
+    "text": "(1) Dalam hal WP mempunyai hak untuk menerima atau memperoleh penghasilan dari negara yang mempunyai perjanjian pajak dengan Indonesia, WP dapat memilih untuk dikenakan PPh sesuai dengan ketentuan UU ini atau sesuai dengan perjanjian pajak.\n(2) Pilihan sebagaimana dimaksud pada ayat (1) disampaikan kepada Direktur Jenderal Pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP dapat memilih PPh sesuai UU atau sesuai perjanjian pajak (tax treaty).",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Pilihan disampaikan kepada DJP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

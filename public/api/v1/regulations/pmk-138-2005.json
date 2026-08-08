@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pmk-138-2005",
+    "number": "138",
+    "year": 2005,
+    "title": "PMK tentang Besarnya Penghasilan Tidak Kena Pajak untuk Wajib Pajak Orang Pribadi",
+    "shortName": "PMK PTKP 2005",
+    "type": "PMK",
+    "promulgationDate": "2005-12-27",
+    "effectiveDate": "2005-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/45016/pmk-no-138-pmk-010-2005",
+    "status": "dicabut",
+    "description": "PMK menetapkan PTKP: Single Rp 12.000.000. Digantikan oleh PMK 162/2009.",
+    "relevantArticles": "Pasal 1",
+    "relatedRegulations": [
+      "pmk-162-2009"
+    ],
+    "referencingEntries": [
+      "pph-21-ptkp-2005"
+    ]
+  }
+}

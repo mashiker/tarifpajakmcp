@@ -1,0 +1,42 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "28",
+    "bab": "VII",
+    "title": "SKPLB",
+    "status": "berlaku",
+    "description": "SKP Lebih Bayar — kredit pajak lebih besar dari pajak terutang.",
+    "keywords": [
+      "SKPLB",
+      "lebih bayar",
+      "restitusi"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) SKPLB diterbitkan jika berdasarkan hasil pemeriksaan jumlah pajak yang telah dibayar lebih besar dari pajak yang terutang.\n(2) Kelebihan pembayaran pajak dikembalikan dalam waktu paling lambat 12 bulan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SKPLB: pajak dibayar > pajak terutang.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Kelebihan dikembalikan paling lambat 12 bulan.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

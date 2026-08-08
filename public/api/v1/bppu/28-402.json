@@ -1,0 +1,32 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "28-402",
+    "count": 3,
+    "codes": [
+      {
+        "kode": "28-402-01",
+        "nama": "Pengalihan Hak atas Tanah dan/atau Bangunan",
+        "tarif": 2.5,
+        "entryId": "pph-final-sewa-tanah",
+        "entryTransactionType": "Sewa Tanah dan/atau Bangunan"
+      },
+      {
+        "kode": "28-402-02",
+        "nama": "Pengalihan Rumah Sederhana dan Rumah Susun Sederhana yang Dilakukan oleh WP yang Usaha Pokoknya Mengalihkan Hak atas Tanah dan/atau Bangunan",
+        "tarif": 1,
+        "entryId": "pph-final-sewa-tanah",
+        "entryTransactionType": "Sewa Tanah dan/atau Bangunan"
+      },
+      {
+        "kode": "28-402-03",
+        "nama": "Pengalihan Hak atas Tanah dan/atau Bangunan kepada Pemerintah, BUMN yang Mendapat Penugasan Khusus dari Pemerintah, atau BUMD yang Mendapat Penugasan Khusus dari Kepala Daerah, sesuai UU mengenai Pengadaan Tanah bagi Pembangunan untuk Kepentingan Umum",
+        "tarif": 0,
+        "entryId": "pph-final-sewa-tanah",
+        "entryTransactionType": "Sewa Tanah dan/atau Bangunan"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "29",
+    "bab": "VIII",
+    "title": "Keberatan",
+    "status": "diubah",
+    "description": "Hak WP untuk mengajukan keberatan terhadap SKP atau pemotongan/pemungutan pihak ketiga dalam waktu 3 bulan.",
+    "keywords": [
+      "keberatan",
+      "3 bulan",
+      "SKP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "16",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Pengetatan ketentuan keberatan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan tata cara keberatan"
+      }
+    ],
+    "text": "(1) WP dapat mengajukan keberatan kepada DJP atas SKP atau pemotongan/pemungutan pajak.\n(2) Keberatan disampaikan secara tertulis dalam bahasa Indonesia dengan alasan yang jelas dan disertai perhitungan pajak.\n(3) Keberatan diajukan paling lambat 3 bulan sejak tanggal penetapan SKP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "WP dapat mengajukan keberatan atas SKP atau pemotongan/pemungutan.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Keberatan tertulis, bahasa Indonesia, alasan jelas, disertai perhitungan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Paling lambat 3 bulan sejak tanggal SKP.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "11",
+    "bab": "III",
+    "bagian": "1",
+    "title": "Tarif PPh Badan",
+    "status": "diubah",
+    "description": "Tarif PPh Badan 22% (pasca HPP), go-public 19%. Sebelumnya 20% (UU 36/2008), sebelum itu 28%.",
+    "keywords": [
+      "tarif",
+      "badan",
+      "22%",
+      "go-public",
+      "19%"
+    ],
+    "relatedTaxRates": [
+      "pph-badan-2022-plus"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Tarif PPh Badan 20% flat"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Tarif PPh Badan 28% (2009) dan 25% (2010+), go-public 5% lebih rendah"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Tarif PPh Badan 22%, go-public 19%, turun bertahap"
+      }
+    ],
+    "text": "(1) Tarif Pajak Penghasilan bagi Wajib Pajak badan dalam negeri adalah sebesar 20% (dua puluh persen).\n(2) Tarif sebagaimana dimaksud pada ayat (1) diturunkan menjadi 17% (tujuh belas persen) bagi Wajib Pajak badan yang go public di Bursa Efek Indonesia.\n(3) Tarif Pajak Penghasilan bagi Wajib Pajak badan yang melakukan investasi baru di bidang usaha perintis di Ibu Kota Negara Nusantara (IKN) sebesar:\na. 0% (nol persen) untuk jangka waktu tertentu; atau\nb. 10% (sepuluh persen) untuk jangka waktu tertentu.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Tarif PPh Badan 20%.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Tarif PPh Badan go public di BEI: 17%.",
+        "status": "diubah"
+      },
+      {
+        "number": "(3)",
+        "text": "Tarif PPh Badan investasi baru di IKN: 0% atau 10% untuk jangka waktu tertentu.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

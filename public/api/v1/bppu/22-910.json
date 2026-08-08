@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "22-910",
+    "count": 2,
+    "codes": [
+      {
+        "kode": "22-910-01",
+        "nama": "Pemungutan oleh Bendaharawan",
+        "tarif": 1.5,
+        "entryId": "pph-22-bendaharawan",
+        "entryTransactionType": "Pemungutan oleh Bendaharawan Pemerintah"
+      },
+      {
+        "kode": "22-910-01",
+        "nama": "Pemungutan oleh Bendaharawan",
+        "tarif": 1.5,
+        "entryId": "pph-22-pembelian-barang-2024",
+        "entryTransactionType": "Pembelian Barang oleh Badan Usaha Industri Tertentu"
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "ppn-dpp-penghitungan",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "Dasar Pengenaan Pajak (DPP) PPN",
+    "description": "Aturan penghitungan DPP untuk PPN. DPP umum = harga jual/penggantian/impor.",
+    "rate": {
+      "type": "percentage",
+      "value": 11
+    },
+    "taxBase": "Dasar Pengenaan Pajak (DPP)",
+    "payer": "Konsumen / pembeli akhir",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1984-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 8/1983",
+        "article": "Pasal 8",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44024/uu-no-8-tahun-1983"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "DPP PPN = Harga Jual/Penggantian/Nilai Impor/Nilai Ekspor. Industri tertentu: DPP = 65-100% HJE.",
+    "examples": [
+      {
+        "scenario": "Transaksi Dasar Pengenaan Pajak (DPP) PPN Rp 100.000.000",
+        "calculation": "11% × 100.000.000",
+        "result": "PPN = Rp 11.000.000"
+      }
+    ],
+    "tags": [
+      "ppn",
+      "detail",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "ppn-11pct-effective-2025",
+        "ppn-11pct-2022",
+        "ppn-10pct",
+        "ppn-ekspor-bkp",
+        "ppn-impor-bkp",
+        "ppn-pmse",
+        "ppn-jasa-tenaga-listrik",
+        "ppn-jasa-telekomunikasi",
+        "ppn-ekspor-jkp",
+        "ppn-tidak-kena-pajak",
+        "ppn-jkpt-industri",
+        "ppn-jasa-kegiatan-usaha-persewaan",
+        "ppn-pengkreditan"
+      ]
+    }
+  }
+}

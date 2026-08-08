@@ -1,0 +1,77 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "category": "PPnBM",
+    "taxType": "PPnBM",
+    "description": "Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah",
+    "count": 8,
+    "entries": [
+      {
+        "id": "ppnbm-general",
+        "transactionType": "Penyerahan Barang Mewah",
+        "rate": "10%–200%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppnbm-sedan-station-wagon",
+        "transactionType": "Sedan dan Station Wagon 4x2",
+        "rate": "10%–40%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppnbm-suv-4x4",
+        "transactionType": "Sedan dan Station Wagon 4x4 / SUV",
+        "rate": "10%–75%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppnbm-van-wagon",
+        "transactionType": "Van/Wagon > 10 Penumpang",
+        "rate": "10%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppnbm-kapal-pesiar",
+        "transactionType": "Kapal Pesiar dan Kapal Mewah",
+        "rate": "10%–50%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppnbm-pesawat-pribadi",
+        "transactionType": "Pesawat Udara Pribadi",
+        "rate": "10%–50%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppnbm-rumah-mewah",
+        "transactionType": "Rumah Mewah dan Apartemen Mewah",
+        "rate": "10%–40%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppnbm-perlengkapan-mewah",
+        "transactionType": "Perlengkapan Mewah",
+        "rate": "10%–200%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

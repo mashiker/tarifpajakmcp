@@ -1,0 +1,30 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "description": "Kalkulator pajak — data statis untuk kalkulasi client-side",
+    "calculators": [
+      {
+        "id": "pph-21",
+        "name": "PPh 21 Orang Pribadi",
+        "description": "Progresif, TER, PTKP, honorarium"
+      },
+      {
+        "id": "pph-23",
+        "name": "PPh 23",
+        "description": "Jasa, sewa, hadiah"
+      },
+      {
+        "id": "ppn",
+        "name": "PPN",
+        "description": "Pajak Pertambahan Nilai"
+      },
+      {
+        "id": "pph-badan",
+        "name": "PPh Badan",
+        "description": "Tarif flat badan"
+      }
+    ]
+  }
+}

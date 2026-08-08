@@ -1,0 +1,196 @@
+{
+  "$comment": "Boundary fixtures for PPh Final Pasal 4(2) + UMKM migration (Task 7). Every expectation encodes a verified primary-source fact. UU PPh Pasal 4(2) authorizes final taxation for enumerated income. PP 46/2013: 1% final on business turnover, eligible WP OP/badan (not BUT), turnover <= Rp4.8bn, excludes professional services and income under another final regime. Effective 1 Juli 2013 - 30 Juni 2018. No duration limit. PP 23/2018: 0.5%, eligible OP/cooperative/CV/firma/PT, turnover <= Rp4.8bn, duration limits (OP 7yr, cooperative/CV/firma 4yr, PT 3yr; partial year counts as full). Effective 1 Juli 2018 - 19 Des 2022. Transition rule Pasal 10 for PP46-eligible-but-PP23-ineligible. PP 55/2022 original: 0.5%, effective 20 Des 2022, adds BUM Desa and one-person company; Pasal 69 preserves PP23 duration clocks; OP Rp500m exclusion is BASE exclusion (cumulative from first tax period, refreshes each tax year) NOT a second eligibility ceiling; Pasal 61 ceiling breach continues 0.5% through year-end. PP 20/2026 amends PP 55 effective 22 April 2026: narrows principal eligible types to OP, one-person company (single individual founder), cooperative; CV/firma/PT/BUM Desa legacy continuation under transitional; Pasal 59 deleted; tightened aggregation and professional-service rules. Land/building rent PP 34/2017: final 10% from 2 Jan 2018 (separate from UMKM 0.5%). Construction PP 9/2022 (amending PP 51/2008): final rates 1.75%/2.65%/4%/3.5%/6% by qualification from 21 Feb 2022. Transfer PP 34/2016: final 2.5%/1%/0% by category; effective ~8 Sep 2016. PPh 15 is a special net-income computation delegation (UU PPh Pasal 15), DISTINCT from Pasal 4(2); some PPh 15 taxes are final, some are creditable. Rates stored as decimal fractions (0.005 = 0.5%). Amounts are 2-decimal currency strings in IDR. See data/v2/sources.json for primary locators.",
+  "sourcesVerifiedAt": "2026-08-06",
+  "effectiveDate": {
+    "$comment": "UMKM chronology. PP 46/2013 effective 1 Juli 2013, replaced by PP 23/2018 effective 1 Juli 2018, replaced by PP 55/2022 effective 20 Des 2022, amended by PP 20/2026 effective 22 April 2026.",
+    "pp46EffectiveStart": "2013-07-01",
+    "pp46LastDay": "2018-06-30",
+    "pp23EffectiveStart": "2018-07-01",
+    "pp23LastDay": "2022-12-19",
+    "pp55EffectiveStart": "2022-12-20",
+    "pp55LastDay": "2026-04-21",
+    "pp20-2026EffectiveStart": "2026-04-22",
+    "constructionPp9FirstDay": "2022-02-21",
+    "constructionPp9LastDayPre": "2022-02-20",
+    "rentPp34FirstDay": "2018-01-02",
+    "transferPp34FirstDay": "2016-09-08"
+  },
+  "concepts": {
+    "$comment": "UMKM is its own concept family (pph-final-umkm). Land/building rent, construction, and transfer are distinct final PPh 4(2) objects. PPh 15 is separated out of PPh 4(2).",
+    "umkmPp46": { "conceptId": "concept-pph-final-umkm-pp46" },
+    "umkmPp23": { "conceptId": "concept-pph-final-umkm-pp23" },
+    "umkmPp55": { "conceptId": "concept-pph-final-umkm-pp55" },
+    "umkmPp20-2026": { "conceptId": "concept-pph-final-umkm-pp20-2026" },
+    "rentLandBuilding": { "conceptId": "concept-pph-final-rent-land-building" },
+    "construction": { "conceptId": "concept-pph-final-construction" },
+    "transfer": { "conceptId": "concept-pph-final-transfer" },
+    "pph15": { "conceptId": "concept-pph-15-special" }
+  },
+  "boundaries": [
+    {
+      "id": "pp46-2015-1pct-op",
+      "description": "PP 46/2013: 1% final on business turnover for an eligible WP OP with turnover <= Rp4.8bn. Effective 1 Juli 2013 - 30 Juni 2018.",
+      "date": "2015-06-15",
+      "request": { "conceptId": "concept-pph-final-umkm-pp46", "facts": { "entityType": "op", "grossTurnover": "1000000000", "umkmTurnoverEligible": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.01", "pphAmount": "10000000.00" }
+    },
+    {
+      "id": "pp46-2017-badan-1pct",
+      "description": "PP 46/2013: eligible badan (PT) with turnover <= Rp4.8bn also gets 1% final. BUT is explicitly excluded.",
+      "date": "2017-06-15",
+      "request": { "conceptId": "concept-pph-final-umkm-pp46", "facts": { "entityType": "pt", "grossTurnover": "1000000000", "umkmTurnoverEligible": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.01", "pphAmount": "10000000.00" }
+    },
+    {
+      "id": "pp46-2018-06-30-last-day",
+      "description": "PP 46/2013 last effective day is 30 Juni 2018. Boundary day must resolve 1%, NOT 0.5%.",
+      "date": "2018-06-30",
+      "request": { "conceptId": "concept-pph-final-umkm-pp46", "facts": { "entityType": "op", "grossTurnover": "1000000000", "umkmTurnoverEligible": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.01", "pphAmount": "10000000.00" }
+    },
+    {
+      "id": "pp23-2018-07-01-first-day",
+      "description": "PP 23/2018 effective 1 Juli 2018: 0.5% final. Boundary day must resolve 0.5%, NOT 1%.",
+      "date": "2018-07-01",
+      "request": { "conceptId": "concept-pph-final-umkm-pp23", "facts": { "entityType": "op", "grossTurnover": "1000000000", "umkmTurnoverEligible": true, "pp23YearsElapsed": "1", "pp23DurationNotExceeded": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.005", "pphAmount": "5000000.00" }
+    },
+    {
+      "id": "pp23-op-duration-7yr-still-eligible",
+      "description": "PP 23/2018 Pasal 7: WP OP has a 7-year duration limit. An OP in year 4 (2021) is still within the limit.",
+      "date": "2021-06-15",
+      "request": { "conceptId": "concept-pph-final-umkm-pp23", "facts": { "entityType": "op", "grossTurnover": "1000000000", "umkmTurnoverEligible": true, "pp23YearsElapsed": "4", "pp23DurationNotExceeded": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.005" }
+    },
+    {
+      "id": "pp23-pt-duration-3yr-exceeded-no-longer-final",
+      "description": "PP 23/2018 Pasal 7: PT has a 3-year duration limit. A PT in year 4 has exceeded the limit (pp23DurationNotExceeded=false); the 0.5% final regime no longer applies. Resolver must NOT return 0.5% as tepat.",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-final-umkm-pp23", "facts": { "entityType": "pt", "grossTurnover": "1000000000", "umkmTurnoverEligible": true, "pp23YearsElapsed": "4", "pp23DurationNotExceeded": false } },
+      "expect": { "determinationIn": ["fakta_kurang"] }
+    },
+    {
+      "id": "pp23-2022-12-19-last-day",
+      "description": "PP 23/2018 last effective day is 19 Des 2022. Boundary day must resolve 0.5%, NOT the PP 55/2022 rate regime.",
+      "date": "2022-12-19",
+      "request": { "conceptId": "concept-pph-final-umkm-pp23", "facts": { "entityType": "op", "grossTurnover": "1000000000", "umkmTurnoverEligible": true, "pp23YearsElapsed": "4", "pp23DurationNotExceeded": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.005", "pphAmount": "5000000.00" }
+    },
+    {
+      "id": "pp55-2022-12-20-first-day",
+      "description": "PP 55/2022 effective 20 Des 2022: 0.5% final. Boundary day must resolve 0.5% under PP 55/2022, NOT PP 23/2018.",
+      "date": "2022-12-20",
+      "request": { "conceptId": "concept-pph-final-umkm-pp55", "facts": { "entityType": "op", "grossTurnover": "1000000000", "umkmTurnoverEligible": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.005", "pphAmount": "5000000.00" }
+    },
+    {
+      "id": "pp55-bum-desa-added-eligible",
+      "description": "PP 55/2022 adds BUM Desa and one-person company to eligible entity types (original text). A BUM Desa with turnover <= Rp4.8bn qualifies under the original PP 55 text.",
+      "date": "2024-06-15",
+      "request": { "conceptId": "concept-pph-final-umkm-pp55", "facts": { "entityType": "bum-desa", "grossTurnover": "1000000000", "umkmTurnoverEligible": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.005" }
+    },
+    {
+      "id": "pp55-pt-still-eligible-pre-2026-amendment",
+      "description": "PP 55/2022 original text: PT remains an eligible entity type (carried over from PP 23/2018). Before the 22 April 2026 amendment, a PT still qualifies.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-pph-final-umkm-pp55", "facts": { "entityType": "pt", "grossTurnover": "1000000000", "umkmTurnoverEligible": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.005" }
+    },
+    {
+      "id": "pp55-turnover-above-4.8bn-not-eligible",
+      "description": "PP 55/2022 Pasal 3: turnover ceiling Rp4.8bn for eligibility. A WP with turnover 6.000.000.000 is NOT eligible (umkmTurnoverEligible=false). Resolver must NOT return 0.5% as tepat for the UMKM concept.",
+      "date": "2024-06-15",
+      "request": { "conceptId": "concept-pph-final-umkm-pp55", "facts": { "entityType": "op", "grossTurnover": "6000000000", "umkmTurnoverEligible": false } },
+      "expect": { "determinationIn": ["fakta_kurang"] }
+    },
+    {
+      "id": "pp20-2026-2026-04-22-first-day-op",
+      "description": "PP 20/2026 amends PP 55 effective 22 April 2026: narrows principal eligible types to OP, one-person company (single individual founder), cooperative. An OP after 22 April 2026 still qualifies under PP 20/2026. Boundary day must resolve 0.5% under PP 20/2026, NOT PP 55/2022.",
+      "date": "2026-04-22",
+      "request": { "conceptId": "concept-pph-final-umkm-pp20-2026", "facts": { "entityType": "op", "grossTurnover": "1000000000", "umkmTurnoverEligible": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.005", "pphAmount": "5000000.00" }
+    },
+    {
+      "id": "pp20-2026-pt-narrowed-out-no-longer-principal-eligible",
+      "description": "PP 20/2026 narrows principal eligible types to OP, one-person company, cooperative. A PT is NO LONGER principally eligible after 22 April 2026 (legacy continuation only under transitional). Resolver must NOT return 0.5% as tepat for a newly-entering PT under PP 20/2026.",
+      "date": "2026-06-15",
+      "request": { "conceptId": "concept-pph-final-umkm-pp20-2026", "facts": { "entityType": "pt", "grossTurnover": "1000000000", "umkmTurnoverEligible": true } },
+      "expect": { "determinationIn": ["fakta_kurang"] }
+    },
+    {
+      "id": "pp20-2026-cooperative-principally-eligible",
+      "description": "PP 20/2026: cooperative remains a principally eligible entity type. A cooperative after 22 April 2026 still qualifies.",
+      "date": "2026-06-15",
+      "request": { "conceptId": "concept-pph-final-umkm-pp20-2026", "facts": { "entityType": "cooperative", "grossTurnover": "1000000000", "umkmTurnoverEligible": true } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.005" }
+    },
+    {
+      "id": "rent-land-building-2018-01-02-first-day-10pct",
+      "description": "PP 34/2017: final 10% on land/building rent from 2 Januari 2018. Boundary day must resolve 10%, NOT a pre-2018 PPh 23 final regime. Distinct from UMKM 0.5%.",
+      "date": "2018-01-02",
+      "request": { "conceptId": "concept-pph-final-rent-land-building", "facts": { "grossRent": "100000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.10", "pphAmount": "10000000.00" }
+    },
+    {
+      "id": "construction-2022-02-21-first-day-qualified-besar",
+      "description": "PP 9/2022 (amending PP 51/2008): final construction rates by qualification from 21 Februari 2022. A besar-kualifikasi kontraktor gets 2.65%; kecil gets 4%. Boundary day must resolve the PP 9/2022 rate, NOT the pre-2022 rate.",
+      "date": "2022-02-21",
+      "request": { "conceptId": "concept-pph-final-construction", "facts": { "contractorQualification": "besar", "gross": "100000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.0265", "pphAmount": "2650000.00" }
+    },
+    {
+      "id": "construction-2022-02-20-day-before-not-yet-pp9",
+      "description": "PP 9/2022 effective 21 Februari 2022. Day before (20 Feb 2022) the PP 9/2022 rates must NOT yet apply — gap or pre-2022 regime, not the new 2.65%.",
+      "date": "2022-02-20",
+      "request": { "conceptId": "concept-pph-final-construction", "facts": { "contractorQualification": "besar", "gross": "100000000" } },
+      "expect": { "determinationIn": ["fakta_kurang"] }
+    },
+    {
+      "id": "construction-kecil-4pct",
+      "description": "PP 9/2022: kecil-kualifikasi kontraktor gets 4% final on construction gross.",
+      "date": "2023-06-15",
+      "request": { "conceptId": "concept-pph-final-construction", "facts": { "contractorQualification": "kecil", "gross": "100000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.04", "pphAmount": "4000000.00" }
+    },
+    {
+      "id": "transfer-permukiman-2.5pct",
+      "description": "PP 34/2016: final 2.5% on transfer of land/building for perumahan/perkantoran/permukiman category. Effective ~8 Sep 2016.",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-final-transfer", "facts": { "transferCategory": "permukiman", "grossTransfer": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.025", "pphAmount": "25000000.00" }
+    },
+    {
+      "id": "transfer-sederhana-1pct",
+      "description": "PP 34/2016: final 1% on transfer of tanah dan bangunan sederhana category.",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-final-transfer", "facts": { "transferCategory": "sederhana", "grossTransfer": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.01", "pphAmount": "10000000.00" }
+    },
+    {
+      "id": "pph15-separated-from-pph-4-2",
+      "description": "PPh 15 (UU PPh Pasal 15) is a special net-income computation delegation, DISTINCT from Pasal 4(2). Some PPh 15 taxes are final, some are creditable. The PPh 15 concept must NOT resolve under a PPh 4(2) category, and must NOT be flattened into the UMKM/final-rent/final-construction family.",
+      "date": "2024-06-15",
+      "request": { "conceptId": "concept-pph-15-special", "facts": { "industry": "shipping" } },
+      "expect": { "categoryIdNot": "cat-pph-final-umkm", "categoryIdIs": "cat-pph-special-regimes" }
+    }
+  ],
+  "umkmRateFractions": {
+    "$comment": "UMKM final rates stored as decimal fractions.",
+    "pp46Fraction": "0.01",
+    "pp23Fraction": "0.005",
+    "pp55Fraction": "0.005",
+    "pp20-2026Fraction": "0.005"
+  },
+  "umkmDurationYears": {
+    "$comment": "PP 23/2018 duration limits (partial year counts as full). PP 46/2013 had NO duration limit.",
+    "pp46NoLimit": true,
+    "pp23Op": 7,
+    "pp23CooperativeCvFirma": 4,
+    "pp23Pt": 3
+  },
+  "umkmTurnoverThreshold": {
+    "$comment": "Eligibility turnover ceiling Rp4.8bn (inclusive) across PP 46/2013, PP 23/2018, PP 55/2022, PP 20/2026.",
+    "fraction": "4800000000"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-final-umkm-pp20-2026",
+    "conceptId": "concept-pph-final-umkm-pp20-2026",
+    "conceptName": "PPh Final UMKM PP 20/2026 (perubahan PP 55/2022, 0,5%)",
+    "categoryId": "cat-pph-final-umkm",
+    "categoryName": "Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026)",
+    "validFrom": "2026-04-22",
+    "validToExclusive": null,
+    "rate": {
+      "type": "percentage",
+      "value": "0.005"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "in",
+          "fact": "entityType",
+          "value": [
+            "op",
+            "cooperative",
+            "one-person-company"
+          ]
+        },
+        {
+          "op": "exists",
+          "fact": "grossTurnover"
+        },
+        {
+          "op": "equals",
+          "fact": "umkmTurnoverEligible",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-pp-20-2026",
+        "src-pp-55-2022-umkm"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pp-20-2026",
+          "locator": "PP 20/2026 mempertahankan tarif final 0,5% atas peredaran bruto (mengubah PP 55/2022)"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pp-20-2026",
+          "locator": "PP 20/2026 berlaku efektif 22 April 2026; Pasal 59 PP 55/2022 DIHAPUS"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pp-20-2026",
+          "locator": "PP 20/2026 menyempitkan jenis badan eligible utama menjadi Orang Pribadi (OP), perseroan perorangan (pendiri individu tunggal), dan koperasi; CV/firma/PT/BUM Desa hanya kelanjutan warisan di bawah ketentuan transisi; aturan agregasi dan jasa profesional diperketat"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-final-umkm",
+    "supersedes": [
+      "rule-pph-final-umkm-pp55"
+    ],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-pph-final-umkm-pp20-2026-op-2026",
+        "label": "WP OP UMKM peredaran bruto Rp1.000.000.000, 22 April 2026",
+        "illustrative": true,
+        "input": {
+          "entityType": "op",
+          "grossTurnover": "1000000000",
+          "umkmTurnoverEligible": true
+        },
+        "expectedAmount": "5000000.00",
+        "notes": "0,5% × 1.000.000.000 = 5.000.000. Tarif final UMKM PP 20/2026 (efektif 22 April 2026). OP tetap eligible; PT/CV/firma bukan entitas eligible utama pasca-22-April-2026."
+      }
+    ],
+    "notes": "PPh Final UMKM PP 20/2026 (perubahan PP 55/2022): tarif tetap 0,5%. Berlaku 22 April 2026 - saat ini. Menyempitkan jenis badan eligible utama menjadi OP, perseroan perorangan (pendiri individu tunggal), dan koperasi. CV/firma/PT/BUM Desa hanya kelanjutan warisan di bawah ketentuan transisi. Pasal 59 PP 55/2022 DIHAPUS. Aturan agregasi dan jasa profesional diperketat. BUKAN boleh mengutip Pasal 57/59 PP 55/2022 sendirian untuk periode pasca-22-April-2026.",
+    "conflicts": []
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "cukai-hasil-tembakau",
+    "category": "Cukai",
+    "taxType": "Cukai",
+    "transactionType": "Cukai Hasil Tembakau (Rokok)",
+    "description": "Cukai atas rokok berdasarkan UU 39/2007. Tarif spesifik + ad valorem sesuai Kepmenkeu tahunan.",
+    "rate": {
+      "type": "formula",
+      "value": "Tarif spesifik + ad valorem",
+      "effectiveRate": "Rp 280 - Rp 640 per batang"
+    },
+    "taxBase": "HJE × jumlah produksi/impor",
+    "payer": "Produsen/importir rokok",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2008-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 39/2007",
+        "article": "Pasal 6-8",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/45946/uu-no-39-tahun-2007"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif cukai rokok naik setiap tahun. Spesifik (per batang) + ad valorem (% dari HJE).",
+    "examples": [
+      {
+        "scenario": "Rokok SKM HJE Rp 2.000/batang, 10.000 batang",
+        "calculation": "±Rp 600/batang × 10.000",
+        "result": "Cukai = ±Rp 6.000.000"
+      }
+    ],
+    "tags": [
+      "cukai",
+      "rokok",
+      "tembakau",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "cukai-eti-alkohol",
+        "cukai-ecigarette"
+      ]
+    }
+  }
+}

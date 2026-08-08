@@ -1,0 +1,77 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "description": "Pajak Penghasilan bagi Wajib Pajak Badan - Tarif flat yang berlaku atas penghasilan kena pajak badan",
+    "count": 8,
+    "entries": [
+      {
+        "id": "pph-badan-2022-plus",
+        "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
+        "rate": "22%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-badan-pre2022",
+        "transactionType": "Penghasilan Kena Pajak Badan (Pra-HPP)",
+        "rate": "25%",
+        "status": "diubah",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": "2021-12-31"
+      },
+      {
+        "id": "pph-badan-go-public",
+        "transactionType": "Penghasilan Kena Pajak Badan Go-Public ( Listed di Bursa Efek)",
+        "rate": "20%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-badan-umkm",
+        "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar)",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-badan-pre2010",
+        "transactionType": "Penghasilan Kena Pajak Badan (Pra-2010)",
+        "rate": "28%",
+        "status": "diubah",
+        "effectiveFrom": "2001-01-01",
+        "effectiveTo": "2009-12-31"
+      },
+      {
+        "id": "pph-badan-pre2001",
+        "transactionType": "Penghasilan Kena Pajak Badan (UU 7/1983)",
+        "rate": "Progresif",
+        "status": "dicabut",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "2000-12-31"
+      },
+      {
+        "id": "pph-badan-ikn-0pct",
+        "transactionType": "PPh Badan IKN (0%)",
+        "rate": "0%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-badan-ikn-10y",
+        "transactionType": "PPh Badan IKN 10 Tahun (10%)",
+        "rate": "10%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

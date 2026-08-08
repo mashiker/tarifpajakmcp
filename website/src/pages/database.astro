@@ -1,222 +1,48 @@
 ---
-import BaseLayout from '../layouts/Base.astro';
-import fs from 'fs';
-import path from 'path';
+// /database canonicalizes to /. We never duplicate the table here.
+// Strategy:
+//   1. <link rel="canonical"> to /
+//   2. <meta http-equiv="refresh"> as a no-JS fallback
+//   3. JavaScript location.replace preserving the query string and hash so
+//      deep links keep working and the back button is not polluted.
 
-const apiPath = path.resolve(process.cwd(), 'public/api.json');
-const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
-
-function toSlug(s: string) { return s.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, ''); }
-
-const catColor: Record<string, string> = {
-  'pph-21': '#3b82f6', 'pph-22': '#8b5cf6', 'pph-23': '#6366f1', 'pph-26': '#06b6d4',
-  'pph-badan': '#0d9488', 'pph-umkm': '#d97706', 'pph-4-2-final': '#059669', 'ppn': '#16a34a',
-  'ppnbm': '#e11d48', 'bea-meterai': '#ea580c', 'pbb': '#0284c7', 'bphtb': '#65a30d',
-  'bea-masuk': '#475569', 'cukai': '#a21caf', 'pajak-daerah': '#db2777',
-};
-
-const categories = api.categories.map((cat: any) => {
-  const slug = toSlug(cat.taxType);
-  const active = cat.entries.filter((e: any) => e.status === 'berlaku').length;
-  const color = catColor[slug] || '#475569';
-  return { ...cat, slug, active, color };
-});
-
-type FE = { category: string; slug: string; type: string; id: string; status: string; rate: string; from: string; to: string; bppu: number; basis: string; };
-const entries: FE[] = [];
-api.categories.forEach((cat: any) => {
-  const slug = toSlug(cat.taxType);
-  cat.entries.forEach((e: any) => {
-    let r = '';
-    if (e.rate.type === 'percentage') r = `${e.rate.value}%`;
-    else if (e.rate.type === 'range') r = `${e.rate.value[0]}–${e.rate.value[1]}%`;
-    else if (e.rate.type === 'progressive' && e.rate.brackets) {
-      const rates = e.rate.brackets.map((b: any) => b.rate);
-      r = e.rate.brackets.length > 8 ? `${Math.min(...rates)}–${Math.max(...rates)}%` : rates.map((x: number) => `${x}%`).join('/');
-    }
-    else r = String(e.rate.value);
-    entries.push({ category: cat.taxType, slug, type: e.transactionType, id: e.id, status: e.status, rate: r, from: e.effectiveFrom, to: e.effectiveTo || 'sekarang', bppu: e.bppuKode?.length || 0, basis: e.taxBase || '—' });
-  });
-});
-
-const so: Record<string, number> = { berlaku: 0, diubah: 1, belum_berlaku: 2, dicabut: 3 };
-entries.sort((a, b) => (so[a.status] ?? 9) - (so[b.status] ?? 9));
-const sb: Record<string, string> = { berlaku: 'badge-berlaku', dicabut: 'badge-dicabut', diubah: 'badge-diubah', belum_berlaku: 'badge-belum-berlaku' };
-const sl: Record<string, string> = { berlaku: 'Berlaku', dicabut: 'Dicabut', diubah: 'Diubah', belum_berlaku: 'Belum' };
-const activeEntries = entries.filter(e => e.status === 'berlaku');
-const bppuTotal = new Set<string>();
-api.categories.forEach((cat: any) => cat.entries.forEach((e: any) => e.bppuKode?.forEach((b: any) => bppuTotal.add(b.kode))));
+const target = '/';
 ---
 
-<BaseLayout title="Database Tarif Pajak" activeNav="database" wide={true} description="Database lengkap tarif pajak Indonesia: PPh, PPN, BPPU, dan lainnya. Filter berdasarkan status, cari cepat.">
-
-  <!-- Breadcrumb -->
-  <nav class="flex items-center gap-1.5 text-xs mb-4 text-[var(--text-tertiary)]">
-    <a href="/" class="hover:text-[var(--text)] transition-colors">Beranda</a>
-    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-    <span class="text-[var(--text)] font-medium">Database</span>
-  </nav>
-
-  <!-- Page Header -->
-  <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
-    <div>
-      <h1 class="text-xl font-bold tracking-tight text-[var(--text)]">Database Tarif Pajak</h1>
-      <p class="text-sm text-[var(--text-secondary)] mt-0.5">{entries.length} tarif dari {categories.length} kategori</p>
-    </div>
-    <div class="flex gap-2">
-      <a href="/kode-objek-pajak" class="btn-secondary text-xs">Kode BPPU</a>
-      <a href="/api-docs" class="btn-secondary text-xs">API</a>
-    </div>
-  </div>
-
-  <!-- Category Grid -->
-  <section class="mb-6">
-    <h2 class="section-heading mb-3">Kategori</h2>
-    <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
-      {categories.map((cat: any) => (
-        <a href={`/kategori/${cat.slug}`} class="category-card group">
-          <div class="mb-2 flex items-center justify-between">
-            <div class="flex h-8 w-8 items-center justify-center rounded-lg" style={`background:${cat.color}12`}>
-              <span class="w-2.5 h-2.5 rounded-full" style={`background:${cat.color}`}></span>
-            </div>
-            <span class="text-[11px] font-bold text-[var(--status-active)]">{cat.active} aktif</span>
-          </div>
-          <h3 class="text-sm font-semibold text-[var(--text)] truncate">{cat.taxType}</h3>
-          <div class="mt-1.5 flex items-center justify-between text-xs text-[var(--text-tertiary)]">
-            <span class="font-mono">{cat.entries.length} entries</span>
-            <span class="font-semibold text-[var(--text-secondary)] group-hover:text-[var(--accent)] transition-colors">→</span>
-          </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <!-- Filter & Search Bar -->
-  <div class="flex flex-col sm:flex-row gap-3 mb-4">
-    <div class="flex flex-wrap gap-1.5" id="db-status-filters">
-      <button class="chip chip-active" data-status="berlaku">Berlaku <span class="ml-1 font-mono text-[11px] opacity-70">{activeEntries.length}</span></button>
-      <button class="chip chip-default" data-status="all">Semua <span class="ml-1 font-mono text-[11px] opacity-70">{entries.length}</span></button>
-      <button class="chip chip-default" data-status="diubah">Diubah <span class="ml-1 font-mono text-[11px] opacity-70">{entries.filter(e => e.status === 'diubah').length}</span></button>
-      <button class="chip chip-default" data-status="dicabut">Dicabut <span class="ml-1 font-mono text-[11px] opacity-70">{entries.filter(e => e.status === 'dicabut').length}</span></button>
-    </div>
-    <div class="relative sm:ml-auto sm:w-64">
-      <input id="db-search" type="text" placeholder="Cari tarif..." class="w-full h-9 pl-9 pr-3 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-sm text-[var(--text)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent)] transition-all" />
-      <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--text-tertiary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-    </div>
-  </div>
-
-  <!-- Full Data Table -->
-  <div class="card overflow-hidden">
-    <div class="hidden overflow-auto custom-scrollbar md:block" style="max-height:calc(100vh - 300px)">
-      <table class="data-table" id="db-table">
-        <thead>
-          <tr>
-            <th class="w-[130px]">Kategori</th>
-            <th>Jenis transaksi</th>
-            <th class="w-[100px] text-right">Tarif</th>
-            <th class="w-[180px]">Dasar pengenaan</th>
-            <th class="w-[60px] text-center">BPPU</th>
-            <th class="w-[80px] text-center">Status</th>
-            <th class="w-[160px]">Masa berlaku</th>
-          </tr>
-        </thead>
-        <tbody>
-          {entries.map((e: FE) => (
-            <tr data-status={e.status} data-search={`${e.category} ${e.type} ${e.rate} ${e.basis} ${e.id}`.toLowerCase()}>
-              <td>
-                <a href={`/kategori/${e.slug}`} class="inline-flex items-center gap-1.5 rounded-md bg-[var(--surface-alt)] px-2 py-0.5 text-xs font-semibold text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors">
-                  <span class="w-1.5 h-1.5 rounded-full shrink-0" style={`background:${catColor[e.slug] || '#475569'}`}></span>
-                  {e.category}
-                </a>
-              </td>
-              <td>
-                <a href={`/kategori/${e.slug}`} class="block max-w-xl text-sm font-medium text-[var(--text)] hover:text-[var(--accent)] transition-colors">{e.type}</a>
-                <div class="mt-0.5 font-mono text-[10px] text-[var(--text-tertiary)]">{e.id}</div>
-              </td>
-              <td class="text-right"><span class="rate-value text-sm">{e.rate}</span></td>
-              <td class="text-xs text-[var(--text-secondary)] truncate max-w-[180px]">{e.basis}</td>
-              <td class="text-center">
-                {e.bppu > 0
-                  ? <a href="/kode-objek-pajak" class="font-mono text-xs font-semibold text-[var(--accent)] hover:underline">{e.bppu}</a>
-                  : <span class="text-[var(--text-tertiary)]">—</span>}
-              </td>
-              <td class="text-center"><span class={`badge ${sb[e.status] || 'badge-belum-berlaku'}`}>{sl[e.status]}</span></td>
-              <td><span class="whitespace-nowrap font-mono text-[11px] text-[var(--text-tertiary)]">{e.from} → {e.to}</span></td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-
-    <!-- Mobile Cards -->
-    <div class="space-y-2 p-3 md:hidden" id="db-mobile-list">
-      {entries.map((e: FE) => (
-        <a href={`/kategori/${e.slug}`} data-status={e.status} data-search={`${e.category} ${e.type} ${e.rate} ${e.basis}`.toLowerCase()} class="mobile-card block rounded-lg border border-[var(--border)] bg-[var(--surface)] p-3 hover:bg-[var(--surface-alt)] transition-colors">
-          <div class="mb-1.5 flex items-center justify-between gap-2">
-            <span class="inline-flex items-center gap-1.5 rounded-md bg-[var(--surface-alt)] px-1.5 py-0.5 text-[11px] font-semibold text-[var(--text-secondary)]">
-              <span class="w-1.5 h-1.5 rounded-full" style={`background:${catColor[e.slug] || '#475569'}`}></span>
-              {e.category}
-            </span>
-            <span class={`badge ${sb[e.status] || 'badge-belum-berlaku'}`}>{sl[e.status]}</span>
-          </div>
-          <div class="text-sm font-medium text-[var(--text)]">{e.type}</div>
-          <div class="mt-2 flex items-center justify-between gap-3">
-            <span class="rate-value text-sm">{e.rate}</span>
-            <span class="font-mono text-[10px] text-[var(--text-tertiary)]">{e.from} → {e.to}</span>
-          </div>
-        </a>
-      ))}
-    </div>
-  </div>
-
-  <div class="mt-3 text-center">
-    <span id="db-visible-count" class="text-xs text-[var(--text-tertiary)]">Menampilkan {activeEntries.length} tarif aktif dari {entries.length} total</span>
-  </div>
-</BaseLayout>
-
-<script>
-  let currentStatus = 'berlaku';
-  let searchQuery = '';
-
-  function filterEntries() {
-    let visible = 0;
-    document.querySelectorAll('#db-table tbody tr').forEach(r => {
-      const status = (r as HTMLElement).dataset.status || '';
-      const search = ((r as HTMLElement).dataset.search || '').toLowerCase();
-      const showStatus = currentStatus === 'all' || status === currentStatus;
-      const showSearch = !searchQuery || search.includes(searchQuery);
-      const show = showStatus && showSearch;
-      (r as HTMLElement).style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-
-    document.querySelectorAll('#db-mobile-list .mobile-card').forEach(c => {
-      const status = (c as HTMLElement).dataset.status || '';
-      const search = ((c as HTMLElement).dataset.search || '').toLowerCase();
-      const showStatus = currentStatus === 'all' || status === currentStatus;
-      const showSearch = !searchQuery || search.includes(searchQuery);
-      (c as HTMLElement).style.display = showStatus && showSearch ? '' : 'none';
-    });
-
-    const total = document.querySelectorAll('#db-table tbody tr').length;
-    const vc = document.getElementById('db-visible-count');
-    if (vc) vc.textContent = `Menampilkan ${visible} tarif` + (currentStatus !== 'all' ? ' aktif' : '') + ` dari ${total} total`;
-  }
-
-  document.querySelectorAll('#db-status-filters .chip').forEach(btn => {
-    btn.addEventListener('click', () => {
-      currentStatus = (btn as HTMLElement).dataset.status || 'all';
-      document.querySelectorAll('#db-status-filters .chip').forEach(b => { b.classList.remove('chip-active'); b.classList.add('chip-default'); });
-      btn.classList.remove('chip-default');
-      btn.classList.add('chip-active');
-      filterEntries();
-    });
-  });
-
-  document.getElementById('db-search')?.addEventListener('input', (e) => {
-    searchQuery = (e.target as HTMLInputElement).value.toLowerCase();
-    filterEntries();
-  });
-
-  filterEntries();
-</script>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Database Tarif Pajak — Tarif Pajak ID</title>
+  <meta name="description" content="Database tarif pajak Indonesia. Dialihkan ke /." />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href={target} />
+  <meta http-equiv="refresh" content={`0; url=${target}`} />
+  <script is:inline>
+    // Preserve any query string and hash the user arrived with. Use replace so
+    // /database does not linger in the browser history.
+    (function () {
+      var qs = window.location.search || '';
+      var hash = window.location.hash || '';
+      window.location.replace('/' + qs + hash);
+    })();
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #F7F8F4; color: #132A2A; margin: 0; padding: 2rem; }
+    .redirect-card { max-width: 32rem; margin: 4rem auto; padding: 1.5rem; background: #FFFFFF; border: 1px solid #D9E0DC; border-radius: 0.75rem; }
+    .redirect-title { font-size: 1.125rem; font-weight: 700; margin: 0 0 0.5rem; }
+    .redirect-text { font-size: 0.875rem; color: #44545a; margin: 0 0 1rem; }
+    .redirect-link { display: inline-block; padding: 0.5rem 0.875rem; background: #132A2A; color: #F7F8F4; text-decoration: none; border-radius: 0.5rem; font-size: 0.8125rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main class="redirect-card">
+    <h1 class="redirect-title">Database telah dipindahkan</h1>
+    <p class="redirect-text">
+      Database tarif pajak sekarang berada di URL utama. Anda akan dialihkan otomatis.
+    </p>
+    <a class="redirect-link" href={target}>Buka database</a>
+  </main>
+</body>
+</html>

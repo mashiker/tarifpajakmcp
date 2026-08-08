@@ -1,0 +1,83 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-23-jasa-pmk141-lain-with-npwp",
+    "conceptId": "concept-pph-23-jasa-pmk141-lain",
+    "conceptName": "PPh 23 atas jasa lain PMK 141/PMK.03/2015",
+    "categoryId": "cat-pph-23",
+    "categoryName": "Pajak Penghasilan Pasal 23",
+    "validFrom": "2015-08-26",
+    "validToExclusive": null,
+    "rate": {
+      "type": "percentage",
+      "value": "0.02"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "serviceClass",
+          "value": "pmk141-lain"
+        },
+        {
+          "op": "equals",
+          "fact": "recipientHasNpwp",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-36-2008-pph",
+        "src-pmk-141-2015"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 23 ayat (1) huruf c angka 2 (dasar 2%) jo. PMK 141/2015 Lampiran (perluasan daftar jasa lain)"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-141-2015",
+          "locator": "PMK 141/PMK.03/2015 Pasal 4: diundangkan 27 Juli 2015, berlaku 30 hari kemudian → efektif 26 Agustus 2015"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-141-2015",
+          "locator": "Lampiran PMK 141 (daftar jasa lain) + penerima WP Dalam Negeri/BUT dengan NPWP"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-23-jasa-pmk141-lain-recipient",
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-pph-23-pmk141-2015-effective-day",
+        "label": "PMK 141 efektif 26 Agu 2015, penerima dengan NPWP",
+        "illustrative": true,
+        "input": {
+          "serviceClass": "pmk141-lain",
+          "recipientHasNpwp": true,
+          "gross": "100000000"
+        },
+        "expectedAmount": "2000000.00",
+        "notes": "Efektif 26 Agustus 2015 (Pasal 4 PMK 141, 30 hari setelah pengundangan 27 Juli 2015)."
+      }
+    ],
+    "notes": "PPh 23 atas 'jasa lain' Lampiran PMK 141/PMK.03/2015. Tarif dasar UU PPh Pasal 23(1)(c)(2) (2%); PMK 141 hanya memperluas daftar dan mengatur mekanika jumlah bruto. Efektif 26 Agustus 2015 (BUKAN 24 Juli atau 27 Agustus).",
+    "conflicts": []
+  }
+}

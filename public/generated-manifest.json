@@ -1,0 +1,3004 @@
+{
+  "files": [
+    {
+      "path": "api.json",
+      "sha256": "8d53c2314abdafe29adf544598892228ea414a2ccd7e98db5b6bb4b9e77a0d52",
+      "bytes": 629345
+    },
+    {
+      "path": "api/v1/bppu/22-100.json",
+      "sha256": "9f2fca1689a3ab1d68ae3a67f30fe01bb87ed44dac582c57eb3ebde15500c595",
+      "bytes": 7513
+    },
+    {
+      "path": "api/v1/bppu/22-101.json",
+      "sha256": "9ae7b579572db048e7c96b57f59ad3f1e13b6a56ee787f1167d414f7aec55a18",
+      "bytes": 2053
+    },
+    {
+      "path": "api/v1/bppu/22-102.json",
+      "sha256": "50b746c72ec0512e9d941edb157fa4ec75aff016853e7b71dc59b87ac2031a22",
+      "bytes": 2081
+    },
+    {
+      "path": "api/v1/bppu/22-200.json",
+      "sha256": "132e727a4fadb97c032ad95c66201ea1ca0c616d0c86bb13c961fcfe4d2d9b53",
+      "bytes": 745
+    },
+    {
+      "path": "api/v1/bppu/22-401.json",
+      "sha256": "67d8cf00553849cfe9011ff13f93db6d39343b846d01550ccec6af12065af31c",
+      "bytes": 1468
+    },
+    {
+      "path": "api/v1/bppu/22-403.json",
+      "sha256": "7ed32628176b0155ba4440de8580889f9fa13c26c77034d316a69af30a3ffe8c",
+      "bytes": 858
+    },
+    {
+      "path": "api/v1/bppu/22-404.json",
+      "sha256": "72ac2a616d593c0a152ac19a9658f3c4dccfb77693a132013825f9ad6c49b1ed",
+      "bytes": 833
+    },
+    {
+      "path": "api/v1/bppu/22-405.json",
+      "sha256": "b29d62a13169ece43fbedec2baff536eb7173af125ba870f35b19473a22d8259",
+      "bytes": 1625
+    },
+    {
+      "path": "api/v1/bppu/22-900.json",
+      "sha256": "da6e9998b5451b3dde03b42c067efe4fd6966040655b88ca9f7a0aee7a750e48",
+      "bytes": 805
+    },
+    {
+      "path": "api/v1/bppu/22-910.json",
+      "sha256": "8f91f4f5389292077e168a1537dfceb31054361028e415789bf9b16c71d66b11",
+      "bytes": 654
+    },
+    {
+      "path": "api/v1/bppu/24-100.json",
+      "sha256": "8d7fd70b4a6bcca66d7b0a77b2f06e5c3c1229c1c13bcb53827111b1a27b9167",
+      "bytes": 1160
+    },
+    {
+      "path": "api/v1/bppu/24-101.json",
+      "sha256": "80887bead45bb32b76631b967c904d4b95bf45c10f3621312b8a279af81212ec",
+      "bytes": 559
+    },
+    {
+      "path": "api/v1/bppu/24-102.json",
+      "sha256": "564eb4ff741d945a60445aabf2190a495e74dfb9c1f3134480006db0a774e5be",
+      "bytes": 637
+    },
+    {
+      "path": "api/v1/bppu/24-103.json",
+      "sha256": "ccc3b34be96cdf81da7975767fa9098990139752dba023c86bd310317696c255",
+      "bytes": 559
+    },
+    {
+      "path": "api/v1/bppu/24-104.json",
+      "sha256": "032bd27fac652bb094f9e8fff33f6e0740954aeb2d7d7c0ee2b261dcb2922aa0",
+      "bytes": 34706
+    },
+    {
+      "path": "api/v1/bppu/24-105.json",
+      "sha256": "ccab6f2a7366bf79cdf8954fce02166ff0427b453f93fe3a7257bcb1e0e7838a",
+      "bytes": 506
+    },
+    {
+      "path": "api/v1/bppu/28-401.json",
+      "sha256": "7c1f99ca219fb4e287a862a9f5f5dfdc6bf5bd59bdb8b9c8a9450183c0eb980a",
+      "bytes": 1648
+    },
+    {
+      "path": "api/v1/bppu/28-402.json",
+      "sha256": "543710ef1be4ac280e4d70c8e3bec9ce23d691b08f134d1d2027b8862baadae9",
+      "bytes": 1181
+    },
+    {
+      "path": "api/v1/bppu/28-403.json",
+      "sha256": "e695e95181c2a7f9a8952225012700fc465927196f8a9919381351d34637448b",
+      "bytes": 401
+    },
+    {
+      "path": "api/v1/bppu/28-404.json",
+      "sha256": "583eced5afef616e7419e80474420393851e6cf67cb307d786b6e3d850accb66",
+      "bytes": 3348
+    },
+    {
+      "path": "api/v1/bppu/28-405.json",
+      "sha256": "f82c4287184619039b19151fe36f779fd760e25c252dbc1c8d3592625c83cc03",
+      "bytes": 363
+    },
+    {
+      "path": "api/v1/bppu/28-406.json",
+      "sha256": "e1aea3a0b710898e3c42d2213853b747a41455eec262c0416fe1eef81565f462",
+      "bytes": 447
+    },
+    {
+      "path": "api/v1/bppu/28-407.json",
+      "sha256": "e7fafd83534c54db68c67e3a6396fef8521680b8121936bb5dd85099ba8b391a",
+      "bytes": 441
+    },
+    {
+      "path": "api/v1/bppu/28-408.json",
+      "sha256": "d1d4723fd43c5c280803da69c5b26e83f319e9804ba5dee55dd8de8a3a2b1944",
+      "bytes": 462
+    },
+    {
+      "path": "api/v1/bppu/28-409.json",
+      "sha256": "3e37209d46d084cc305f8e159c1bc8f757aba9d6da5168a065222460d624eb4d",
+      "bytes": 4497
+    },
+    {
+      "path": "api/v1/bppu/28-410.json",
+      "sha256": "def025ffe9506d2089538acd94fb9dc0609f9a754f8cb6dbd2d5538bb46e4989",
+      "bytes": 813
+    },
+    {
+      "path": "api/v1/bppu/28-411.json",
+      "sha256": "04aa4a0f61a87685a260b3ee2e646b59ecd6dc9d209aacaec1061522b439570d",
+      "bytes": 937
+    },
+    {
+      "path": "api/v1/bppu/28-413.json",
+      "sha256": "c14da955b29df0157f4b1e49360fad9a721d2d7ddc4e4c0624b6e0d59eefb973",
+      "bytes": 454
+    },
+    {
+      "path": "api/v1/bppu/28-417.json",
+      "sha256": "0e2adad79514e65c0e5ca20cfc84792588b9ecabbfc709e47e50abc2f1e01b95",
+      "bytes": 786
+    },
+    {
+      "path": "api/v1/bppu/28-419.json",
+      "sha256": "50106498a3d21b5a694b275cb6e145d4082ba47b63cc4a9325125a38ff8f3af3",
+      "bytes": 420
+    },
+    {
+      "path": "api/v1/bppu/28-421.json",
+      "sha256": "2a4b42b632b6baaf1e7a3a923311a44e98723c433466543f939259f11ca255f3",
+      "bytes": 861
+    },
+    {
+      "path": "api/v1/bppu/28-423.json",
+      "sha256": "2bbeaba9d281d547caf22dcd97b302d674c939ff3237adec76325298eaf7eff1",
+      "bytes": 2314
+    },
+    {
+      "path": "api/v1/bppu/28-499.json",
+      "sha256": "b4011e30f86276408f4252d4b9e25b3bb80bee33c4e51d5e5fcab96c8ff9f2bf",
+      "bytes": 889
+    },
+    {
+      "path": "api/v1/bppu/29-101.json",
+      "sha256": "66817c472db9079589ae2b72aca6ea20761d863d3d86e20075bc63d8a3e722ff",
+      "bytes": 495
+    },
+    {
+      "path": "api/v1/bppu/index.json",
+      "sha256": "c9f71b1936d50d35e91bbdb991440126532c55a2623165fd2f5dba6dece2321a",
+      "bytes": 54690
+    },
+    {
+      "path": "api/v1/by-year/1984.json",
+      "sha256": "f722face4a86973b47d73a56c4b6957d0b8dc4ebc290355002a5cdd218ac5fca",
+      "bytes": 5131
+    },
+    {
+      "path": "api/v1/by-year/1985.json",
+      "sha256": "f537d7ff7196d666049d77b700f25eddfdec9f188d3493da10a7edbf50ee6a41",
+      "bytes": 5131
+    },
+    {
+      "path": "api/v1/by-year/1986.json",
+      "sha256": "bd4f70923b9c9c99ea7e8fe4afe9c29987850e6aa8c57f3369738a7d784a0501",
+      "bytes": 5401
+    },
+    {
+      "path": "api/v1/by-year/1987.json",
+      "sha256": "12482da879b17e3e6df1dc17a93e353f30760d3533bc42b86982b119b3bdde8d",
+      "bytes": 5401
+    },
+    {
+      "path": "api/v1/by-year/1988.json",
+      "sha256": "42213c3e81828dc1df8df3c2fcf4ddd9aba1f362e90e5924d8390a348b668e1e",
+      "bytes": 5401
+    },
+    {
+      "path": "api/v1/by-year/1989.json",
+      "sha256": "92772124aedfc2bff6332c149bb78b46bb12442d57c6357912cbc2dbfcd7abcb",
+      "bytes": 5401
+    },
+    {
+      "path": "api/v1/by-year/1990.json",
+      "sha256": "41b90bada0bcbc296c7621dfa8cee9390f81de8b0ad7d45acaab414f516e44e1",
+      "bytes": 5401
+    },
+    {
+      "path": "api/v1/by-year/1991.json",
+      "sha256": "407ca9b6c1cc90f390ac930cfd24c2a14f7324bdf1c8d7ba51ff0d2933ab94a0",
+      "bytes": 5401
+    },
+    {
+      "path": "api/v1/by-year/1992.json",
+      "sha256": "3506c064333e62a367d9b31b389371459cd6e9fb066b0f1c8f7f636121fde075",
+      "bytes": 5401
+    },
+    {
+      "path": "api/v1/by-year/1993.json",
+      "sha256": "a4cc3bfb0f8ae0e92ac2198c260ca923e3aa5b9e9aa45438fb70c00a90aef89c",
+      "bytes": 5401
+    },
+    {
+      "path": "api/v1/by-year/1994.json",
+      "sha256": "f220a5a0074317a7add272f23c6617d58b9e4a181f18beeb9657c36fe629c69e",
+      "bytes": 5401
+    },
+    {
+      "path": "api/v1/by-year/1995.json",
+      "sha256": "0c6095a9e5263362e907b3107f7bb8629e7463fe97b4f41a59c424e942b7d576",
+      "bytes": 5402
+    },
+    {
+      "path": "api/v1/by-year/1996.json",
+      "sha256": "1feda23d61924037df6134e8b9a17e6d98fa91ee0aff1b03c9ca86349baa5dc6",
+      "bytes": 5676
+    },
+    {
+      "path": "api/v1/by-year/1997.json",
+      "sha256": "512af33f8914a66d3764173e78756154deb70b5c500deb6ef6741a2d79a6cde0",
+      "bytes": 5676
+    },
+    {
+      "path": "api/v1/by-year/1998.json",
+      "sha256": "b5b4e1a1db6b8652c3f004bf63598338f95d4142b48ad7ed3035ac962b88cb35",
+      "bytes": 5676
+    },
+    {
+      "path": "api/v1/by-year/1999.json",
+      "sha256": "0804d3757c360ffbd0a01420f22acb6c2f1ab247ed09e7b1f631760eae7fc9d4",
+      "bytes": 5676
+    },
+    {
+      "path": "api/v1/by-year/2000.json",
+      "sha256": "aba9c25bca6207ff732bdc13f4a6a459a87e93dfd4ed4c57ee9357f543ce48f9",
+      "bytes": 5973
+    },
+    {
+      "path": "api/v1/by-year/2001.json",
+      "sha256": "4dbee950b03fe0d2850dbd7a3ba7ba953fb25541abb058475a04afe98c536d93",
+      "bytes": 6514
+    },
+    {
+      "path": "api/v1/by-year/2002.json",
+      "sha256": "9185b6a1eba14c3f06a03721f579de2343e944af20cbaac764cccb11bc1ab7ec",
+      "bytes": 8819
+    },
+    {
+      "path": "api/v1/by-year/2003.json",
+      "sha256": "7080c8e134b3b0d6c7d36842b676c785e6e265a78b07102cca77326321d052f8",
+      "bytes": 8819
+    },
+    {
+      "path": "api/v1/by-year/2004.json",
+      "sha256": "e56c02b9d5b48452ee3e90ff324fa3eafecc835c2b74c48c255a1ed2420f183e",
+      "bytes": 8819
+    },
+    {
+      "path": "api/v1/by-year/2005.json",
+      "sha256": "3208b6ebe110728102acce3386fee0ccc44912f56eb4bfcb7ec1d5cbc6f681c9",
+      "bytes": 8819
+    },
+    {
+      "path": "api/v1/by-year/2006.json",
+      "sha256": "97eb85c4aa004ed515d428aa36851e816abdffdf37e44230d3dcbee698c25c69",
+      "bytes": 8819
+    },
+    {
+      "path": "api/v1/by-year/2007.json",
+      "sha256": "460feed47f88aeee79d8e51c489a6e6cd02ea096895a8b76ec3f4b919f5c5413",
+      "bytes": 8837
+    },
+    {
+      "path": "api/v1/by-year/2008.json",
+      "sha256": "6bec4fc86e37cb267e620b60d5b3ea7a7d888ec93db8aece4aac8d1936a9056c",
+      "bytes": 9398
+    },
+    {
+      "path": "api/v1/by-year/2009.json",
+      "sha256": "b8e1c90c94a7617e75c8843a06fe9da3a36648463c56ece5b7b5f135ed93fd69",
+      "bytes": 11353
+    },
+    {
+      "path": "api/v1/by-year/2010.json",
+      "sha256": "8e5a15fdee8b0821d4ced5a79cf22bea83686a3023c943df6abccaffe29ff824",
+      "bytes": 12961
+    },
+    {
+      "path": "api/v1/by-year/2011.json",
+      "sha256": "aed11cae40ff28d8685f1bdc085e3bdca1f7bcf01222af7769bb8b32864d72c9",
+      "bytes": 12961
+    },
+    {
+      "path": "api/v1/by-year/2012.json",
+      "sha256": "f9f0d4fcad1965d5c3828ce33505618e58d5ac7f35b19b3efb3b11d2b2e5026f",
+      "bytes": 12961
+    },
+    {
+      "path": "api/v1/by-year/2013.json",
+      "sha256": "2670a26a7fba2a8716a0156b629e59be49d560c6cf8ff404ad5a1fa7e91b6cd7",
+      "bytes": 13232
+    },
+    {
+      "path": "api/v1/by-year/2014.json",
+      "sha256": "93f635e7e567e9119798f3b8ce2a25bb1a5b0a8efaa61f72ba96f7043b9fbf4e",
+      "bytes": 13499
+    },
+    {
+      "path": "api/v1/by-year/2015.json",
+      "sha256": "a7a8e4bd9cde8cadeaf90d80e0de0d5cce70ad0c399ff16d26d0090d5b63862c",
+      "bytes": 14287
+    },
+    {
+      "path": "api/v1/by-year/2016.json",
+      "sha256": "85fb20aeff06f08957632129b3f5b8bb1800a4567f21dffdea05d12e087b82b3",
+      "bytes": 13995
+    },
+    {
+      "path": "api/v1/by-year/2017.json",
+      "sha256": "0572e086a88335c171fdaa806c932ce20aba8256b262e3c43868457613d43e0e",
+      "bytes": 13995
+    },
+    {
+      "path": "api/v1/by-year/2018.json",
+      "sha256": "acb3dfe6dded1c2bd7bbfb1d682a46d85ff58d3439e38463816973b5b9866d8d",
+      "bytes": 14269
+    },
+    {
+      "path": "api/v1/by-year/2019.json",
+      "sha256": "fd11260077a433fbc8d908a47a5c37fd09fee5e68ebf5facd93fbdb10eb50a3c",
+      "bytes": 13998
+    },
+    {
+      "path": "api/v1/by-year/2020.json",
+      "sha256": "ff81890aebcb86e2d8fa4c97e12f4e7290a405284eaedb84277ea90aaca72178",
+      "bytes": 13998
+    },
+    {
+      "path": "api/v1/by-year/2021.json",
+      "sha256": "458e4b51b66d51008b1a36d482ea088f3245f4d3c87725e7c8b2d6fc59c1039c",
+      "bytes": 15126
+    },
+    {
+      "path": "api/v1/by-year/2022.json",
+      "sha256": "c190e27511381637cbd34dadf916b2e40e651d615c69a0f1e52c87766953b44f",
+      "bytes": 24631
+    },
+    {
+      "path": "api/v1/by-year/2023.json",
+      "sha256": "5389cd4469276de8edf63958e8545fdbc2c451bc8c6c8f5406b9d8a7e44802b5",
+      "bytes": 24392
+    },
+    {
+      "path": "api/v1/by-year/2024.json",
+      "sha256": "517c5929e8ec7548ec5564d438e6eb864fa2d50410c30fba587a39852c474291",
+      "bytes": 29004
+    },
+    {
+      "path": "api/v1/by-year/2025.json",
+      "sha256": "7b06ca377eafa422caa048c74fab4ce20bb4190b99889d705bdb0205c0124222",
+      "bytes": 30065
+    },
+    {
+      "path": "api/v1/by-year/2026.json",
+      "sha256": "eb85f6b1c427fbc4ad03a1692c48319740deac260f0ad722295327f7b6771dca",
+      "bytes": 30065
+    },
+    {
+      "path": "api/v1/calculator/index.json",
+      "sha256": "4a0d70ad48faebfe52e14cda42a7a4476252668a1279a95da4488931e1d5e458",
+      "bytes": 693
+    },
+    {
+      "path": "api/v1/calculator/pph-21.json",
+      "sha256": "dcb6b244d2ced77275ef311ee9daec171f05965c3fccb2e17ffe1179e63ee960",
+      "bytes": 1598
+    },
+    {
+      "path": "api/v1/calculator/pph-23.json",
+      "sha256": "61c6f1ab9a054221097bd6880ff3dbe79fb913ef40d3c4c6c0a7d34c226d03d3",
+      "bytes": 369
+    },
+    {
+      "path": "api/v1/calculator/pph-badan.json",
+      "sha256": "c17e6c6b2801669d90ce3f4422859e17573f6499f88b0299061e9dddeaaf49e4",
+      "bytes": 4296
+    },
+    {
+      "path": "api/v1/calculator/ppn.json",
+      "sha256": "3fb1b8144646e8fc8021c8158e64a154efa7cee0ac6fd58e64c0fe7a7f6b98d0",
+      "bytes": 5043
+    },
+    {
+      "path": "api/v1/categories/bea-masuk.json",
+      "sha256": "1f3f8fab6265041c2fef1a357cb608b8f82bb4113a987ba1152591ee2c522c99",
+      "bytes": 1242
+    },
+    {
+      "path": "api/v1/categories/bea-meterai.json",
+      "sha256": "dffafd7655ee996e1516a5d9e74bde493b1c14d445efce182f561fa7fd06a502",
+      "bytes": 2286
+    },
+    {
+      "path": "api/v1/categories/bphtb.json",
+      "sha256": "79f8f0a3e0e10d306ca984c331acb18200c7c917c2116bb0ace6a531580d31a0",
+      "bytes": 1058
+    },
+    {
+      "path": "api/v1/categories/cukai.json",
+      "sha256": "65a71f935a4909a8950c23f218dbe3b96c56987f6822de4a5062b7dea1947e89",
+      "bytes": 1055
+    },
+    {
+      "path": "api/v1/categories/index.json",
+      "sha256": "763414934e068927cb4def54c9d85c4b0464269d48f047ae2f6df49a12e54a44",
+      "bytes": 3934
+    },
+    {
+      "path": "api/v1/categories/pajak-daerah.json",
+      "sha256": "ff2f4130d627bbc296b1b48bf0672b7ccd7a430128470eda2110c2bf5e824823",
+      "bytes": 2086
+    },
+    {
+      "path": "api/v1/categories/pbb.json",
+      "sha256": "89c0345e1b041ff414f62d4bb0059b155c89964097420c0beb6300f21ad9ba43",
+      "bytes": 1247
+    },
+    {
+      "path": "api/v1/categories/pph-21.json",
+      "sha256": "86f8d7eddea04153e3f32f0c4548a86e55f56bb966d8c2e6a3a23f9fa3e00d6d",
+      "bytes": 7541
+    },
+    {
+      "path": "api/v1/categories/pph-22.json",
+      "sha256": "e3e06d8ab4444ef11c133f49e3350ab462ecade419641d736723aba328935c85",
+      "bytes": 3050
+    },
+    {
+      "path": "api/v1/categories/pph-23.json",
+      "sha256": "8df85ddf3d2d8725beb8097a5f24a26244e2ebff4290ce72ef3bcdb9bfccf229",
+      "bytes": 2348
+    },
+    {
+      "path": "api/v1/categories/pph-26.json",
+      "sha256": "6613212dc33e4fb873f69d7e09609e090a8a179b9f99ade3fc60709e6aa33d13",
+      "bytes": 1904
+    },
+    {
+      "path": "api/v1/categories/pph-4-2-final.json",
+      "sha256": "ed5658903b96d4518d19ae160a84dbcae9f9a7ff94377a00090acbd949f9d133",
+      "bytes": 4729
+    },
+    {
+      "path": "api/v1/categories/pph-badan.json",
+      "sha256": "6acf6f1f19937799dfa8248116fc0924a76e16ecdd7a6ff7f49641cde8e09bfd",
+      "bytes": 2299
+    },
+    {
+      "path": "api/v1/categories/pph-umkm.json",
+      "sha256": "9e5a5b7be1a9cf963ab092248cfa55cc9e328eee23638f80b4fe1c180d0d891e",
+      "bytes": 1074
+    },
+    {
+      "path": "api/v1/categories/ppn.json",
+      "sha256": "770ca24160824be97fc90da776da5f6d8a7929c1649b39d4c0b06d28a69de223",
+      "bytes": 3645
+    },
+    {
+      "path": "api/v1/categories/ppnbm.json",
+      "sha256": "18806e8d7530f16e91dee760fc75be4cad13930a521abba282bf464825493e05",
+      "bytes": 2205
+    },
+    {
+      "path": "api/v1/consolidated/index.json",
+      "sha256": "6b04724f766a9b64d76a03f5cd4c37f02fcc69fbb0c9adf7c28572c7a74e2ddc",
+      "bytes": 699
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi.json",
+      "sha256": "118186ccc724f27a6fb265f332bdb27626b5e327ad957ea8e86856a3badbd116",
+      "bytes": 31603
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-1.json",
+      "sha256": "4dad39aa04d91fc121ce7a152719d03e707c27e7c6df1ce87b715ebd098f3ede",
+      "bytes": 3529
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-10.json",
+      "sha256": "b6cb02a85bcda7bafde32e908f8b03418a5914af6e6645725621378c359a077f",
+      "bytes": 2020
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-11.json",
+      "sha256": "82f6f9cf3ef59fceeaccee54a44a04a0ea3339bc28704423c348d6a6ac4bc6b6",
+      "bytes": 1440
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-12.json",
+      "sha256": "91a5bcc4bca8ff7e1bb371d119561c21a70a1cc9775e29fb61a32e6bf71b5020",
+      "bytes": 1256
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-13.json",
+      "sha256": "f1bcdd5ba5b2b41fbf483da8c8f4d4c06bbd27df9d93dd60630c26bd671e8d7b",
+      "bytes": 1179
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-14.json",
+      "sha256": "deaf77925fd14c9595f15ff1a3ff1ad52d5715280f0078bc59a5ecab8ac42f2a",
+      "bytes": 1161
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-15.json",
+      "sha256": "4eccafea93907b7a07c3bb820d55476ab1d99ef1f678cb04ff3218a13bd19f6b",
+      "bytes": 965
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-16.json",
+      "sha256": "0a9ef9368ead1d4571df6e8c209c2ae2e7e4a4c38bb00208ad797ea6c498e797",
+      "bytes": 1458
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-17.json",
+      "sha256": "23f8af8fab4fd447201eb1c7c84539286802b4a11538f639556cd2f9b19477e8",
+      "bytes": 1499
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-17A.json",
+      "sha256": "3be3b27033c14efd0fe0f364f6700e11a08b3760b48f95abadd68e91a40c21a2",
+      "bytes": 1217
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-18.json",
+      "sha256": "f01522f9f9079b597db73d3bd62e093285a111bd390d509692a553ef4f88750b",
+      "bytes": 1341
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-19.json",
+      "sha256": "6bbd2ea3915630ad9dd84a3fc0c22ddd9d75efb80d890df5ed6977557cd8d658",
+      "bytes": 1306
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-2.json",
+      "sha256": "8211346a309503172ca1a9ba10591d0df880fc86bbcdd36a05b3ff17b1a48f1e",
+      "bytes": 2089
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-20.json",
+      "sha256": "c32c4352b935c7f5357b741b06de718880cbbdf249ed7f444b5de78a81b5eee9",
+      "bytes": 1434
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-21.json",
+      "sha256": "6733e82cc33e2f2345237b6b175c33f0b9e88c63beabe3cbd02eb0a97c4c7d31",
+      "bytes": 1382
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-22.json",
+      "sha256": "02bf22227f13203b947d4a4980939e7fecda84ffb005438d403c4c058a79d29c",
+      "bytes": 861
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-23.json",
+      "sha256": "58c7f150109f97fcf9dbb0f3eb213896cf925ca4ccc502b6dd4a1eefc8dbed32",
+      "bytes": 1373
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-24.json",
+      "sha256": "b2aff38bac385a8740bc266d83ea88374b412915db2b4a2b05fb405183cc20bb",
+      "bytes": 1088
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-25.json",
+      "sha256": "107a860c6a2ff42fbf40a3339406bd7bc9866850fae9c9b1fcef8cfea66b2b8c",
+      "bytes": 1136
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-26.json",
+      "sha256": "73eae0287a93c523f8a7742836f72daa1e008931be5d8cf57bed36db986d114a",
+      "bytes": 1123
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-27.json",
+      "sha256": "e8c30231074dde6a04ca7fbedd72773d3ca4017f2f7e27125fed0ef2c8b03dc8",
+      "bytes": 870
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-28.json",
+      "sha256": "49ab240adecc60961a397e7d8cb7878d404522df8b57c40a68c970c248958526",
+      "bytes": 1124
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-29.json",
+      "sha256": "3539823a9e9da47abc580e52bcb58524ff1ebbb003927e8526b99fe956c1985a",
+      "bytes": 1914
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-2A.json",
+      "sha256": "d6cefc342812a64fe133daef53c2f9f94f70c430dd474cca51d0bc782feea057",
+      "bytes": 1333
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-3.json",
+      "sha256": "f2dab340669d3b21adc537f16eb5dc322af0d348b0869d01fcf2d8e032e3e6f9",
+      "bytes": 1598
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-30.json",
+      "sha256": "9d9688cfbb58d8d5d0b74a76e4f3e4b91b070c41ef4d10fc86b8d8fade2be555",
+      "bytes": 1727
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-31.json",
+      "sha256": "faf0b823df0846b769974c85e1468b04e6c3420a0d7a7da05c5c6bafd94ecbcd",
+      "bytes": 1421
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-32.json",
+      "sha256": "42742a40e580992d296dea4b5374eb06466b32ed36d3cc19c9f5094ea3049f87",
+      "bytes": 1199
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-33.json",
+      "sha256": "57c5e0773ae0adcfd8a2140fba659596da9e6f287b498df59e4f0277288dd65b",
+      "bytes": 1136
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-34.json",
+      "sha256": "76653ecdefc793f888bb23e28cc8b645813376ce7df9de8877014badd94f6331",
+      "bytes": 1390
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-35.json",
+      "sha256": "fecd840606d6f400c6b3b0e5c5034b03ac4a6cc7a2dbec05b3ed83fd73a85df7",
+      "bytes": 1149
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-36.json",
+      "sha256": "f75f115decd2b4850bf13b774be59b1bfc0cbd81d54964398a13ece53e30e779",
+      "bytes": 1395
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-37.json",
+      "sha256": "d1c857e4dff0c18f28b20a8dac3a9f8ac44437d2b1d847db12a9f43f84807f82",
+      "bytes": 1024
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-38.json",
+      "sha256": "efe092fb94fdd3b1063b823b5e57859f3bbbdd0751f739fcdc618f355da5920e",
+      "bytes": 1084
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-39.json",
+      "sha256": "c050c2294030ff2c77da41cabac471cc429dbe35496e52f90b31eb3f63530a4b",
+      "bytes": 1493
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-4.json",
+      "sha256": "c7e93b8dd7b97fecea133b4d8337f8ed8034f87174d14988be0a0779ad260217",
+      "bytes": 1949
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-40.json",
+      "sha256": "7f2538f9af369fd46ddc7e5e79f1e976898a4f8872b9d430ac97238e3a6618ed",
+      "bytes": 1440
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-41.json",
+      "sha256": "dc41d1cbdaea7a67828ee42ba6ce23f795ac7ee5494201e95bcfe5b3c7cf5944",
+      "bytes": 1413
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-42.json",
+      "sha256": "3076245c691c68a9009c6f2da8607b3ebc45b5afb7f14c8c7106a02b43a0364c",
+      "bytes": 1537
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-43.json",
+      "sha256": "eb6a952e245ee36a0e278dcc84de81fddf7afbbb495048dd5722dd999a0ad987",
+      "bytes": 2029
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-43A.json",
+      "sha256": "2ced4787573fc1d77260c004004a1640d259c6a453a1d049912ccbf4daf78280",
+      "bytes": 1518
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-43B.json",
+      "sha256": "1371511df3d5ca982d8f72cb8a924ac4663953948e1d8692b0a737a18dc97504",
+      "bytes": 1116
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-44.json",
+      "sha256": "9a758cd793380311f2e8bc6b5e8a00a5f013d82fa350e0b9707c69b7e0581fb5",
+      "bytes": 2137
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-44A.json",
+      "sha256": "2937f95ebe984f550b576dd00f1df4d4a7d54029d61a2e0ba199f089fc1acd74",
+      "bytes": 1353
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-44B.json",
+      "sha256": "478f7c959df8356a4bb962abb2df35d1c2425bbe8cde7f519b0be5da8efeaa89",
+      "bytes": 1327
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-44C.json",
+      "sha256": "5ce17552c7cced04fd5bb616182caf433c874ca061c3fc9a14ff1d9ad6f86dcd",
+      "bytes": 1363
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-44D.json",
+      "sha256": "00189dd1bd59b619f36172eea87510030488b6a36e33b7435b4e78146e8b3654",
+      "bytes": 1292
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-44E.json",
+      "sha256": "839d32d9680a0f0c1eb995ebf13f0d9383b14684c3404f7bac92a0a557b93fd5",
+      "bytes": 1371
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-45.json",
+      "sha256": "80ae5030c0b6f47a7cf983c9305867af106d38603b7ffc81568b291dc96d4883",
+      "bytes": 876
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-46.json",
+      "sha256": "0e32578ab964c5231296071fd678313c8602f1d1e018f77c4091697f2b8463b3",
+      "bytes": 848
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-47.json",
+      "sha256": "36f2b9b4a30fc8af0868cd6ea65f9da2b461f3dd3006a423bda9d56c0df57f6e",
+      "bytes": 832
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-48.json",
+      "sha256": "72b13d5e88a6621f768a15c1bec79e343a5c5d14710a0ea56abce579d6d2a072",
+      "bytes": 789
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-49.json",
+      "sha256": "9323a7d37934cd09553603fee3dcef09fc36c0afa056ceeaab84c65389cac643",
+      "bytes": 798
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-5.json",
+      "sha256": "a58c8c9673ca1eda07710a446bbd887f346f65f4ca13194fc6ab2aaada974c74",
+      "bytes": 1397
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-6.json",
+      "sha256": "8952628395aa12b92463c6dba654e4c394b5908f20155c68035f5799427b0ae5",
+      "bytes": 1384
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-7.json",
+      "sha256": "e85de169536fc6a907c388f33afbf60a7a3d93c49c40b17f158c7a26d797617e",
+      "bytes": 1441
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-8.json",
+      "sha256": "bad68a3c5e71945730c03f4b27f8da97ce02e5ce7256fb8c0c115767fef9c303",
+      "bytes": 1625
+    },
+    {
+      "path": "api/v1/consolidated/uu-kup-konsolidasi/pasal-9.json",
+      "sha256": "a25de273138aa1f8a61b6bed4c53fe5a846d83f1f9d960cb63361023ae1b87a2",
+      "bytes": 1177
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi.json",
+      "sha256": "9ac71ae58e7763bda7c9a1fc47154fa12fc793cd8b08cc239474513a5d0026d4",
+      "bytes": 25773
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-1.json",
+      "sha256": "4076a3548d1b6e83c66786919915b5048b21a13418ef9d2a3533253a4d206309",
+      "bytes": 2625
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-10.json",
+      "sha256": "a6aea28b241809e26a8a287bd31a0b5c90ee3ec2b84eb024a1ad2c28d28cc85f",
+      "bytes": 3178
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-11.json",
+      "sha256": "aa06fdf78a3e6679e86128560693e6055f61fa93d09d27723c85abce785f45dc",
+      "bytes": 2272
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-12.json",
+      "sha256": "f6fc7fe8806f43ec1a6084d2e217c5644fce8e6c4a2a0958892e16340de04a13",
+      "bytes": 2256
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-13.json",
+      "sha256": "72d95c0eba7e526c0a2cd7c17bd0202e823a388c45c8c9d4a2252130b68dee8c",
+      "bytes": 2132
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-14.json",
+      "sha256": "53e1b3f39b80d7524f8ed70c93551d697e4ecc0d85e01ed8d1890e13cde60428",
+      "bytes": 2532
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-15.json",
+      "sha256": "6cfd905f1e06bac9adfb46983e3e85753ae83c4d68c345997537fe9f193b44d3",
+      "bytes": 1806
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-16.json",
+      "sha256": "ec75b248b76b96122abfb00beb898414dd45ffef59edb8a7225ae4254efc54ef",
+      "bytes": 1735
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-17.json",
+      "sha256": "e7dd541a877243f0b1d37835a8c4d85f95ba6023348a01cfe4df8346d0c0f9ec",
+      "bytes": 2414
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-17A.json",
+      "sha256": "811b729a2137bd52ca88f49b5de239ada148651eb93264ca7379a5e1ef169c11",
+      "bytes": 2078
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-18.json",
+      "sha256": "3f4397c0cd2265889cc981dfbae7a7f479856889a4817c383794b83e8c1ed8d5",
+      "bytes": 1760
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-18A.json",
+      "sha256": "cd8370b1141de707858fa111ec4fa48d5fb45b226bc8fcf86cd11e9bf8e7fa7f",
+      "bytes": 1517
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-19.json",
+      "sha256": "24921ac0d236e15d5b998a593d90b270eef4a47ed4db0f946b3bffee6808314e",
+      "bytes": 1538
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-2.json",
+      "sha256": "c9eedfbbf7a60dd8f5837fb925adf40477eae55357fbe6ae84086bcb2c1b9ce0",
+      "bytes": 2971
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-20.json",
+      "sha256": "3c69ab31a9a3049521b7f07d6fe9d0bd8e32f326ca7476f58fc3c5fa9907ebbb",
+      "bytes": 1979
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-21.json",
+      "sha256": "e25449deab4e86f8ad308473dd189e207ee35f30619a4d376ef6c1eb6a60e711",
+      "bytes": 1475
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-22.json",
+      "sha256": "9aab420c73a598d45e8dd636619745395cb87d5302a183d1a309f7916af16b1b",
+      "bytes": 1642
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-23.json",
+      "sha256": "61a5f50871a680d59fa1fcf2307eca2d514ce6769dd03569aa60a9c797d1fd17",
+      "bytes": 2089
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-24.json",
+      "sha256": "6eec34c39095623d75e84ec884de42796c36f34b008e52a4e088d2e9bd55e8ea",
+      "bytes": 1652
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-25.json",
+      "sha256": "c852bb73f477826904bdf5070c9dabdfe5b3804d5ee93132677db5013ed21b1e",
+      "bytes": 1516
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-26.json",
+      "sha256": "fff6daf0d79ad4a0c4ce40b958bef2f0a4e62826a0858674efa5a2059c68ee99",
+      "bytes": 2343
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-27.json",
+      "sha256": "df10ae8dd1b8a27f9176d8bf07053b2b3de6122b1d0862d27245030c6de2585e",
+      "bytes": 1534
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-28.json",
+      "sha256": "9e97008edfa9e086780c64d010f31b0ad49809e63f4e1fafc4da1b88356a26fc",
+      "bytes": 1816
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-29.json",
+      "sha256": "2b067030f01fadd9361cfc69ccef3ad01649d9c1c6ee2c73b1c821ed30d34714",
+      "bytes": 954
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-2A.json",
+      "sha256": "18ecabc70cd08d4ff361597ef8abf613603f203104291effd712db068f466db7",
+      "bytes": 2030
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-2B.json",
+      "sha256": "e97c9bb8bd60042aa2e9976c273c0002b78064f71b265c81a5d7e269d851bacc",
+      "bytes": 1408
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-3.json",
+      "sha256": "b60e0ccddd41b6689c5d7ae603531ff8ac77c66d817ec75aa690ece1c3949823",
+      "bytes": 1653
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-30.json",
+      "sha256": "432fb271c27b01e9edf71f8b2747a6e50a79bafa0e3fe45f96ef36b10041b042",
+      "bytes": 2091
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-31.json",
+      "sha256": "e5c2005ba11380f015624742d1dd0a6b4ff716cb0d2e67231e7b8c337e3fb36e",
+      "bytes": 1497
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-31A.json",
+      "sha256": "c130bd21a8cdb08025d55d1a06e5d53d860a61eec795a5c91e5b8cc2740dd66d",
+      "bytes": 1424
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-31B.json",
+      "sha256": "fdd4fdf523a1931fb4e57c42fd9b62424cb8dc244f3c44a4daaa1bfc7adef348",
+      "bytes": 1404
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-32.json",
+      "sha256": "164e589d65e2d725b137925937ada7082e753e1988eb50fbb7f2093fdd1bac36",
+      "bytes": 1587
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-33.json",
+      "sha256": "592fe30f98710446c03c7bf4649b3f0fa84ed5d8f51e50924d5711db8e49c961",
+      "bytes": 817
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-34.json",
+      "sha256": "933712b144f276551079ad626b29e12d4791cf8e31ac1ab32295b066b8d195f9",
+      "bytes": 807
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-35.json",
+      "sha256": "d8e7f7b3aaf0fab78dbbe1c33a24a7952abbc410187ec26dce407409b67feaa4",
+      "bytes": 949
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-36.json",
+      "sha256": "9f91687b3f7b4c520c7853a7fceabc794671d790a8f36c941358671b7abf89c2",
+      "bytes": 1045
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-37.json",
+      "sha256": "778165f95fcccfb3d68b1150b2ee75e142c03f468b2e8313d6599e47608038f8",
+      "bytes": 1172
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-4.json",
+      "sha256": "c0d34496768fc904ee622cb23419a1cf06de259bf402d590b090efcab189cbad",
+      "bytes": 3962
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-5.json",
+      "sha256": "336533c4ee233452b36183bd53f273df1d0785bb6405518e8030745f133ac448",
+      "bytes": 1981
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-6.json",
+      "sha256": "40a3b1cf0a2aec4e78ccd2bfd1f92085ca936f8d56345c8508569134bed7179b",
+      "bytes": 4168
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-6A.json",
+      "sha256": "ebfc381cbdfcc3f6c0a41846edd5b0d1fd2f3640c46007eb138f6f482b60e624",
+      "bytes": 1353
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-7.json",
+      "sha256": "d8d70d66353e2c83baba1a6b7cf66390ca263fc51b06ff5ad0dc939e0cc5d70c",
+      "bytes": 1203
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-8.json",
+      "sha256": "920c8fe70d86574a6fe45249a84878c9755b1d0dde652eba81f86c6fe2161aef",
+      "bytes": 1884
+    },
+    {
+      "path": "api/v1/consolidated/uu-pph-konsolidasi/pasal-9.json",
+      "sha256": "f46229ca8ec3e45e712fc5e4d6c9e15c83033553005f5490228fa83df30bdea4",
+      "bytes": 1939
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi.json",
+      "sha256": "f8dcb9f27582ceab657f5e6d30e9b80cfeff781185e133f268aaceb51a4a2f2d",
+      "bytes": 21367
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-1.json",
+      "sha256": "0a459504f9dd886e89dbd44c8d4ea21ef9a38a40bc58c1bc8bef0f388e32528e",
+      "bytes": 2636
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-10.json",
+      "sha256": "bcd13971412b772ca5e59ede9a6c501891a2416dae79ba9885868a1884cca14e",
+      "bytes": 1962
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-11.json",
+      "sha256": "c7072bd38057ca40f47c980a157d72499afd787344e6b1f21f28a6c3df84d7ec",
+      "bytes": 1364
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-12.json",
+      "sha256": "ef19b1b44b11b21ab2ec8151db8fbc8a2c2acd4b1d8c77649720a4b110cb94dc",
+      "bytes": 1711
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-13.json",
+      "sha256": "468c4d71aa6069fe6359ccbcb8e89e90f723b045ececde81038c195462f3ed80",
+      "bytes": 2006
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-13A.json",
+      "sha256": "c364fcd3eb1e9d89dd053547cc1ca7ec06d7944f6b53deff301048cd33e8fafe",
+      "bytes": 1269
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-14.json",
+      "sha256": "3c28e7ec2305a6149e8eaf83088367b0fffbc5ed4b4dcf206a9dd3eac5d4d935",
+      "bytes": 1768
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-15.json",
+      "sha256": "04725919175ca58cf35015bd861824e6c0735d0f196f743618e92ec10d241cc4",
+      "bytes": 1452
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-16.json",
+      "sha256": "7b2399876a900d7396f936b8811f8a8f8c33723e72194f8576dcd5342dd3c953",
+      "bytes": 1467
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-16A.json",
+      "sha256": "5458e4da10265dd452c5f1fdf648556987a6bc9c9ec7f54cb5547a534790e1b0",
+      "bytes": 1209
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-16B.json",
+      "sha256": "468ffb17ed52f888561937325b30caede2ef13bf87358452f864d4fc131c6a4a",
+      "bytes": 1089
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-16C.json",
+      "sha256": "35e85f2cecfbaa59381ebb6ce7399b37f1aa0631ca8a98059c443053ecf6d379",
+      "bytes": 1090
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-16D.json",
+      "sha256": "7d5976647bec1c776c0017334f3c96ba17601fb998eae62f34e55f746ef33f40",
+      "bytes": 1029
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-16E.json",
+      "sha256": "45b71eeda266e678318774dfc7d248275264846bf4132ca254860e5da6c10e1d",
+      "bytes": 1087
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-16F.json",
+      "sha256": "03d0036dc13b0c200e8dbf1e233044276ac3f548d72cecb84a42f26cdb1870b1",
+      "bytes": 1040
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-17.json",
+      "sha256": "40ae9ea43d5d7cc61f7de6ae1487e803a467f2e4e6022169b4bcd3b6e8fe4077",
+      "bytes": 1597
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-18.json",
+      "sha256": "71b3fb8fed771665b83a9b00cc3e9d8ad3a1d41501a5ddfdd0f41e82208d5746",
+      "bytes": 1439
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-19.json",
+      "sha256": "fe21711c85258fc6489bbc7c4c16f52b2a5a5c2cf68b0fc60f3053ccd1affcd4",
+      "bytes": 906
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-2.json",
+      "sha256": "0343f9c4375df52040bcffa33d8c2264c55937d7a85bcc710d5692145b7744d9",
+      "bytes": 2056
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-20.json",
+      "sha256": "7481bdcb230433b89034088c347166db3dd8dbada8a4c1910b684a65428fd7ec",
+      "bytes": 1210
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-21.json",
+      "sha256": "ce1e035b019257ce803e59faa6f1e2a892458b0075502fd5cf0770a06cfe608f",
+      "bytes": 1023
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-22.json",
+      "sha256": "c8c29cfdd9c85da57c101c5f55d4b83b6fc6573ce163fdf0c42634aaed905eed",
+      "bytes": 1281
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-23.json",
+      "sha256": "6b7f87be55e60106f0731d37fb69259e0af9d9b98c3ab0463baf3e70e17b94f1",
+      "bytes": 853
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-24.json",
+      "sha256": "ce1ce2f4ef838e0625ec2f3d608bb4eb4fc485fb684c6bb041a70a5c619ce60a",
+      "bytes": 1144
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-25.json",
+      "sha256": "95f24ca1c0771ed9baa01a139b73f7b464f5950373c55bf01fc1b7a8561e97db",
+      "bytes": 1101
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-26.json",
+      "sha256": "7f24d25ed4a53bd617a977bb2a819e8b1e349dfc3d7177b09c6df7f45b7f8577",
+      "bytes": 1031
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-27.json",
+      "sha256": "cf3ab234d5df3015cfee9a824388cd0b4b6016d0f2b5272db9c574ad40610776",
+      "bytes": 1409
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-28.json",
+      "sha256": "1f073559aeb27a5529089b74de4fb1346c7de45d3ecffa61304feb3d580fc438",
+      "bytes": 1297
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-29.json",
+      "sha256": "808da9df5063b86ef3fbf1cdebbc08baafcfea6ccf7208cf62f0486989663b80",
+      "bytes": 1011
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-3.json",
+      "sha256": "0eed709019f24c3661494b0b8341cfd7cecb99bef144f18c3061dbb281474959",
+      "bytes": 1701
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-30.json",
+      "sha256": "be9cef20013a1c0c750efbdf0cf3cb65174f04021b8a4001880befe1bc28f4df",
+      "bytes": 752
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-31.json",
+      "sha256": "767721e3834b9a085738483a58e930228f82f8ebcc085adbcda6a60f45907370",
+      "bytes": 782
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-32.json",
+      "sha256": "9690217df6b2d380b88f77f06ed6cf9edd1c21d2a885b82b90cae68b281acf71",
+      "bytes": 767
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-33.json",
+      "sha256": "1da3beee38f891b687af58dcca97edb42ec6fedc48b8fe1047d8c773233d7c3c",
+      "bytes": 765
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-34.json",
+      "sha256": "78bd664b3ee52049264a5d2b3a689ed226c32b08afe5e4534f782f7dbec44662",
+      "bytes": 1054
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-4.json",
+      "sha256": "14550b683bebd9f90350578914857fdeea5637cc4a55486edcb401f567646cab",
+      "bytes": 2111
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-4A.json",
+      "sha256": "075184cd3771f100ef7b237989d13f03a484d59ab2cff41afb94ac460603c511",
+      "bytes": 1405
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-5.json",
+      "sha256": "952519f5ea29bd6492ba0929a1ce49f4c7c7836b75126b9403e0f7b1d4d1cd7b",
+      "bytes": 1519
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-6.json",
+      "sha256": "d517694208ac418a038065172a92782c431093c6d0c2bb14465a92e114447ec3",
+      "bytes": 1328
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-6A.json",
+      "sha256": "ce4ef0845a2d5fb51d7bde27680caab92938bf59136728e1b7f2b5f6adf62324",
+      "bytes": 1535
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-7.json",
+      "sha256": "3d8fa8572bf215a8cddad6f2009105ba13d8f6263b56102c10dabdf8f31552bc",
+      "bytes": 2140
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-8.json",
+      "sha256": "3574d3a91cc47473f1fb6cada4da69ba97fbe38662ed7dcb9a211bc998fa71c9",
+      "bytes": 1464
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-9.json",
+      "sha256": "b07d704797ba016ba2b60c0cd882e62bee3befbe782f5884815f8de8a31ca7f6",
+      "bytes": 1900
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-9A.json",
+      "sha256": "1feca3cf41f5ec1c8a80ab16a65278e06b1ec8fa06220d4bff390a1621079e70",
+      "bytes": 1961
+    },
+    {
+      "path": "api/v1/consolidated/uu-ppn-konsolidasi/pasal-9B.json",
+      "sha256": "13747f099738e957d31d7006bca1f93e4a7da5b7968dcab427b4afd8016b307c",
+      "bytes": 1589
+    },
+    {
+      "path": "api/v1/entries/bea-masuk-anti-dumping.json",
+      "sha256": "a3496144b974bf8d4526a1251e4bfc52fe28524e1866cc34b0833f6196da0b61",
+      "bytes": 1504
+    },
+    {
+      "path": "api/v1/entries/bea-masuk-asean-atiga.json",
+      "sha256": "343e0dc72e1d7f3010365b643d9cb6ab0f54f7ac2f4ccf70a70562c4a919599d",
+      "bytes": 1406
+    },
+    {
+      "path": "api/v1/entries/bea-masuk-bmt.json",
+      "sha256": "ad75895ab1cbeb1522e4453828f520c5f3843ade0ca802707fe702855149947d",
+      "bytes": 1510
+    },
+    {
+      "path": "api/v1/entries/bea-masuk-umum-mf.json",
+      "sha256": "c1906e21782dacc47aa274cc4db677e3e968647995602eebe6badfbdc1ff298e",
+      "bytes": 1646
+    },
+    {
+      "path": "api/v1/entries/bea-meterai-1000.json",
+      "sha256": "a64337ef19a28f22b800b1a3fa068714c45a2f1fc5fcd50df072dfc24ad93403",
+      "bytes": 1823
+    },
+    {
+      "path": "api/v1/entries/bea-meterai-3000.json",
+      "sha256": "65030ce59d7b9ebc83166ef42277fd7d97ac1be58b588816e32d0d1bd053b06b",
+      "bytes": 1923
+    },
+    {
+      "path": "api/v1/entries/bea-meterai-cek-bilyet.json",
+      "sha256": "895bcbb7c2dadd3667be7503213b497b97dfdac0de568ef9739ec91c153b76ad",
+      "bytes": 1663
+    },
+    {
+      "path": "api/v1/entries/bea-meterai-dokumen-2021.json",
+      "sha256": "614fdc3592c2b5102f6e670082efd5fdb360d3ea6eb3f9b9f05166dd378cc145",
+      "bytes": 1851
+    },
+    {
+      "path": "api/v1/entries/bea-meterai-kontrak.json",
+      "sha256": "8ceb9078306a440d30be08b4f18f602e46b3a8117d66cdc3a52be5e35fa7503d",
+      "bytes": 1745
+    },
+    {
+      "path": "api/v1/entries/bea-meterai-nota-kredit.json",
+      "sha256": "1915bad829377faad3393a12509356059f43f40751a7bd1633a41367b6442c2e",
+      "bytes": 1697
+    },
+    {
+      "path": "api/v1/entries/bea-meterai-pre2021.json",
+      "sha256": "7903e334e9bcdd1093221cdec364029d2116f9e4500c77db516e055b43c0d564",
+      "bytes": 1995
+    },
+    {
+      "path": "api/v1/entries/bea-meterai-surat-berharga.json",
+      "sha256": "06443607d9f40d9b83ec9100cf1f525255b4ebe135fd7001b7a9d2ba6ce2609f",
+      "bytes": 1674
+    },
+    {
+      "path": "api/v1/entries/bphtb-pengalihan-dinkes.json",
+      "sha256": "fdb106ba49060574b1f502a16b8ccdd0b52e92b81f0deb4c19ccba7fae008e88",
+      "bytes": 1625
+    },
+    {
+      "path": "api/v1/entries/bphtb-perolehan-umum.json",
+      "sha256": "0f1b5307d9a521a94895aff8592233dbdf1ac680c83acc2925b09da60d6afa09",
+      "bytes": 2017
+    },
+    {
+      "path": "api/v1/entries/bphtb-perolehan-waris.json",
+      "sha256": "d14964e2791bf9f306be6bd36297b9a1f11748b296766940d65b771833fb851c",
+      "bytes": 1645
+    },
+    {
+      "path": "api/v1/entries/cukai-ecigarette.json",
+      "sha256": "e75317a66f54bd2fdd80858c81e66321697e0f8b2f9214cc72713f704f8d7f6f",
+      "bytes": 1452
+    },
+    {
+      "path": "api/v1/entries/cukai-eti-alkohol.json",
+      "sha256": "7a0f6ad86a51cfe30ee03ead8d553e1c5e765643a7b744da043aec66ed869e8f",
+      "bytes": 1500
+    },
+    {
+      "path": "api/v1/entries/cukai-hasil-tembakau.json",
+      "sha256": "f5de71b19e3c2d43b15f8cc12a9f8935763703f4c56d33c966c35f4a638e68dc",
+      "bytes": 1516
+    },
+    {
+      "path": "api/v1/entries/index.json",
+      "sha256": "e524a598c4dba2da85f07e7b98f7774d46cfb8e4b4376cfefda99e7571732898",
+      "bytes": 64419
+    },
+    {
+      "path": "api/v1/entries/pajak-daerah-air-tanah.json",
+      "sha256": "bd47e760d693832a21f3915ae6f9527add75fa7317ddb1f2b867d9c5775a08f1",
+      "bytes": 1468
+    },
+    {
+      "path": "api/v1/entries/pajak-daerah-hiburan.json",
+      "sha256": "ab8cc2ead360c10f325a027c40f96a1e5ea6bfce8f7e50a4e2a7bc28ee4d330a",
+      "bytes": 1500
+    },
+    {
+      "path": "api/v1/entries/pajak-daerah-hotel.json",
+      "sha256": "6d0a8966e603873d505583501f47ed7d78863d8f1833ab0a037fe74680ff6fe9",
+      "bytes": 1457
+    },
+    {
+      "path": "api/v1/entries/pajak-daerah-mineral-air.json",
+      "sha256": "6fdfbad9302c1895b5f0dd1427092c3eb64b392bc5166be8a13371416096dfd4",
+      "bytes": 1451
+    },
+    {
+      "path": "api/v1/entries/pajak-daerah-parkir.json",
+      "sha256": "6cbd689662f9d6abe12eaf6fdbf96d144cc1bff956ee1814fff973c7e122b6d4",
+      "bytes": 1454
+    },
+    {
+      "path": "api/v1/entries/pajak-daerah-penerangan-jalan.json",
+      "sha256": "7f8b3ca40abb0fc3fd24a43a71e1911c0ebcd5bcafd2f5c7574f4834036bcede",
+      "bytes": 1461
+    },
+    {
+      "path": "api/v1/entries/pajak-daerah-reklame.json",
+      "sha256": "b054feee206314e6891817e37a8f0dc5215d21f686a5dcbc965439f1a7b1759d",
+      "bytes": 1459
+    },
+    {
+      "path": "api/v1/entries/pajak-daerah-restoran.json",
+      "sha256": "eb1aefebc6ad0d25f7f99d2548a744806b6ecec0799d21c407b86b3473640a6b",
+      "bytes": 1473
+    },
+    {
+      "path": "api/v1/entries/pbb-kehutanan.json",
+      "sha256": "4540bb5487c4207b61fc2bb6c00916571b78d1f0cd247b7724dd1ee7b6be7017",
+      "bytes": 1490
+    },
+    {
+      "path": "api/v1/entries/pbb-perkebunan.json",
+      "sha256": "b8e3d13970c1c7287d2de5891cd75b37828c53bfc409244b8683905f144eeeab",
+      "bytes": 1493
+    },
+    {
+      "path": "api/v1/entries/pbb-perkotaan.json",
+      "sha256": "b44c01d1043d74a56724b66d3891a409e1a3c5e105d301e9e19d5d65c09eaf3f",
+      "bytes": 1855
+    },
+    {
+      "path": "api/v1/entries/pbb-pertambangan.json",
+      "sha256": "0398029112aef7d1d9f3b819fef09b2b2c1f1413a2c10b7de295bc87dd78e0ca",
+      "bytes": 1512
+    },
+    {
+      "path": "api/v1/entries/pph-15-buta-charter.json",
+      "sha256": "e9825035089a28862c2cf1968abb9ec0fd8581dc5ef5c8cb6a7d492d4d70d28a",
+      "bytes": 1448
+    },
+    {
+      "path": "api/v1/entries/pph-15-pelayaran-domestik.json",
+      "sha256": "1f57a8e2be6eb16d81f0386c74e3e5ac4f54ffc1c4a75cf29ca49162cbec28d2",
+      "bytes": 1348
+    },
+    {
+      "path": "api/v1/entries/pph-15-penerbangan-domestik.json",
+      "sha256": "bf5d9e9ebedf5452fbe4af5d8f9f111acbeaeaccf965bcdd2384b48d367593a5",
+      "bytes": 1358
+    },
+    {
+      "path": "api/v1/entries/pph-15-perusahaan-asuransi.json",
+      "sha256": "5c22fa94898f0f018832e89e5566c258365714ca3d608e54f4b4342735326291",
+      "bytes": 1397
+    },
+    {
+      "path": "api/v1/entries/pph-15-perusahaan-kontraktor.json",
+      "sha256": "47d534db752a32f98f2ce2eae6ff661983029294e57895e2fd8590517b09c314",
+      "bytes": 1383
+    },
+    {
+      "path": "api/v1/entries/pph-15-pma-opec.json",
+      "sha256": "6aad0f3b622b21aea2775b6d833c805195dbbe3f94045352a61722e56a714715",
+      "bytes": 1400
+    },
+    {
+      "path": "api/v1/entries/pph-21-dana-pensiun.json",
+      "sha256": "f6b86a3badd5c2ab0506a0edb751ea2fe4e7e6dd353013dfcbc4b4d843f3cfbc",
+      "bytes": 3150
+    },
+    {
+      "path": "api/v1/entries/pph-21-honorarium-bukan-pegawai.json",
+      "sha256": "355c204f56c077449db0d2c762658d6d089f9489598ea3da7d90d10efd9b4189",
+      "bytes": 3950
+    },
+    {
+      "path": "api/v1/entries/pph-21-natura-kenikmatan.json",
+      "sha256": "090977c614c3aaccf3737e58bad30da55731f1f105b8272e3d10de3fcabcb870",
+      "bytes": 2873
+    },
+    {
+      "path": "api/v1/entries/pph-21-non-taxable-income.json",
+      "sha256": "f18d1bc7cea2ef1263da1fee199e4e8b1e2f15b099eacc7aab72b472651534fe",
+      "bytes": 2590
+    },
+    {
+      "path": "api/v1/entries/pph-21-norma-akuntan.json",
+      "sha256": "486941e7b4325393b0ecedd54f712097dce0f739c771b78fb2a08736a7751542",
+      "bytes": 2539
+    },
+    {
+      "path": "api/v1/entries/pph-21-norma-arsitek.json",
+      "sha256": "5a1b100a412c7d60511d207d83746efb1fa916e837bef9d9065c74f1f967e082",
+      "bytes": 2555
+    },
+    {
+      "path": "api/v1/entries/pph-21-norma-dokter.json",
+      "sha256": "76d7c273232c26c307f0ae27c32292581d9e797c2f376207ad692a71c1374f5d",
+      "bytes": 2551
+    },
+    {
+      "path": "api/v1/entries/pph-21-norma-konsultan.json",
+      "sha256": "1114b406072b063b036bba310940fd348333f1f747c96964c2b43d21f6b10031",
+      "bytes": 2561
+    },
+    {
+      "path": "api/v1/entries/pph-21-norma-notaris.json",
+      "sha256": "3d9b1b6f0e3be3d1efc226d3222dddf45a649fff2b85b9125f7018956b18f25a",
+      "bytes": 2556
+    },
+    {
+      "path": "api/v1/entries/pph-21-norma-pedagang.json",
+      "sha256": "f8bd73af2a287a75c1dea17c6db2ee10c528cb69eb5892a945299dd0e0a3dbbd",
+      "bytes": 2558
+    },
+    {
+      "path": "api/v1/entries/pph-21-norma-pengacara.json",
+      "sha256": "e5991ad29bac98e1443fb1c2ad2d9ac1c03d6f45330326f32aca1445c54475e6",
+      "bytes": 2569
+    },
+    {
+      "path": "api/v1/entries/pph-21-norma-pengusaha-kecil.json",
+      "sha256": "65e6dc5666d9abb55de0119a1af6323ed251c4341b7dcf20dc01e73420e1c696",
+      "bytes": 2566
+    },
+    {
+      "path": "api/v1/entries/pph-21-norma-petani.json",
+      "sha256": "b42594ab422d554914c7557e543068abc37a18bdd8cce9a44ba804d71a68ef0b",
+      "bytes": 2563
+    },
+    {
+      "path": "api/v1/entries/pph-21-pegawai-tidak-tetap.json",
+      "sha256": "05f7bd9b34c41a19f2c5996cd8de2ecbfe4d530d288bdef58eb29980f81e22ad",
+      "bytes": 3001
+    },
+    {
+      "path": "api/v1/entries/pph-21-progressive-annual-2024.json",
+      "sha256": "f39ed26e97b7f8c44d30c6027e48e401da309da6f37ebeea02e744b34f20c552",
+      "bytes": 3269
+    },
+    {
+      "path": "api/v1/entries/pph-21-progressive-monthly-pre2024.json",
+      "sha256": "b98246b216d90bea33bf5af183cee256b5f0aaa5f06beb8364007f79690c830d",
+      "bytes": 3121
+    },
+    {
+      "path": "api/v1/entries/pph-21-progressive-pre2009.json",
+      "sha256": "dc28c891f894591792c9d51119a91d1e81485bc345d6fa2740c1fdd8cae1c0a5",
+      "bytes": 3112
+    },
+    {
+      "path": "api/v1/entries/pph-21-progressive-pre2022.json",
+      "sha256": "76dfd6a9c51edc17530f91f00337e9dc74b51c62c0b22e68e1663c48d49c7ca8",
+      "bytes": 3020
+    },
+    {
+      "path": "api/v1/entries/pph-21-progressive-uulama1983.json",
+      "sha256": "3a1e6d42869a37548d6c916061807fe4937c761d107a88df9bcd1bab73b69d90",
+      "bytes": 2966
+    },
+    {
+      "path": "api/v1/entries/pph-21-progressive-uulama1994.json",
+      "sha256": "515ea3de8e7c7d0ace942229771004677b96b24abbba970964ddd1c699725c66",
+      "bytes": 3013
+    },
+    {
+      "path": "api/v1/entries/pph-21-ptkp-1984.json",
+      "sha256": "b8cbc2e1094cc665ca1f60b3aa410f1e7de5fc0d652c18837adfe16b24dff70a",
+      "bytes": 2599
+    },
+    {
+      "path": "api/v1/entries/pph-21-ptkp-1995.json",
+      "sha256": "5e6c0d6f55ae00283187786d4d12613ae8bbdc7415675fe34616588acb2e2dee",
+      "bytes": 2629
+    },
+    {
+      "path": "api/v1/entries/pph-21-ptkp-2005.json",
+      "sha256": "82f058c738e4ee0374664f939fd98e7f376ae8277013874996f4947852b7fb34",
+      "bytes": 2729
+    },
+    {
+      "path": "api/v1/entries/pph-21-ptkp-2009.json",
+      "sha256": "f66bbe52c900637474e70a7a312ae659cb05f063881c54b1f1078caf28f3a37f",
+      "bytes": 2718
+    },
+    {
+      "path": "api/v1/entries/pph-21-shu-koperasi.json",
+      "sha256": "06c6ad3227f007ff0c730c7821e96b5e16503e2f2f4189a46e5c055c8cd8e67a",
+      "bytes": 2593
+    },
+    {
+      "path": "api/v1/entries/pph-21-ter-a-detail.json",
+      "sha256": "45edb84bf35473689927ef703fee04770e63e63c35fdf2711746faed59603277",
+      "bytes": 7461
+    },
+    {
+      "path": "api/v1/entries/pph-21-ter-b-detail.json",
+      "sha256": "c537eea8e5059c75793e0d88420b8b46deb9e7187fac5e570c65fed2cfbc6729",
+      "bytes": 7210
+    },
+    {
+      "path": "api/v1/entries/pph-21-ter-c-detail.json",
+      "sha256": "c61846a2cb157c61bc9e8d661e854e8c45e009631d5d7db76cc34360b24fbd1d",
+      "bytes": 7215
+    },
+    {
+      "path": "api/v1/entries/pph-21-ter-monthly-2024.json",
+      "sha256": "bc5557e07d2ea4d0dbd4975ea79327ed946540334aad1f4953873375bb39d6ea",
+      "bytes": 3825
+    },
+    {
+      "path": "api/v1/entries/pph-22-bendaharawan.json",
+      "sha256": "618b67613a44f72e6a3a8073ca751f519204e7e781b5ce6956c6144d012685b8",
+      "bytes": 2048
+    },
+    {
+      "path": "api/v1/entries/pph-22-bumn-pembelian.json",
+      "sha256": "0fab59fe1532fa972a341b92dbd6a4a3c427655eca05bdadb73bea28c08e009b",
+      "bytes": 2131
+    },
+    {
+      "path": "api/v1/entries/pph-22-ekspor-batubara.json",
+      "sha256": "89999575c365f5f25ddfd6678382c825dc444afadf971667061982f32db340eb",
+      "bytes": 2255
+    },
+    {
+      "path": "api/v1/entries/pph-22-impor-2024.json",
+      "sha256": "a17d0329fe6bf444b2ba4ff2b2f0293ff59fcbea7beddc0c49d01e42fcfb28e2",
+      "bytes": 2304
+    },
+    {
+      "path": "api/v1/entries/pph-22-impor-api-produsen.json",
+      "sha256": "281d6733d787b5a17a1ac37e5a45a2094ddad5d5b6e7a4beebb0434d8170f8bb",
+      "bytes": 2296
+    },
+    {
+      "path": "api/v1/entries/pph-22-kripto.json",
+      "sha256": "52a3dfe4e4a0d8ddcedbae5179466d9dff37cc051eaad9234e8259d8a89a1a38",
+      "bytes": 2421
+    },
+    {
+      "path": "api/v1/entries/pph-22-pembelian-barang-2024.json",
+      "sha256": "41b24c0fa73ede9ff53b556328599646fe22cb008c182a755681f357b92a0cda",
+      "bytes": 2158
+    },
+    {
+      "path": "api/v1/entries/pph-22-pengadaan-pemerintah.json",
+      "sha256": "6c6c8fbdbc95a3ec1937c6bea990d1e1bfa84eeac94ede19612626ddae780f5b",
+      "bytes": 2743
+    },
+    {
+      "path": "api/v1/entries/pph-22-penjualan-barang-2024.json",
+      "sha256": "1dfe7811ca379759071c208e7aaf501853c04aec2d8b6f839bca20a50f996d8d",
+      "bytes": 8895
+    },
+    {
+      "path": "api/v1/entries/pph-22-pmse.json",
+      "sha256": "95561a66f47c211df63147476e035afd60d0d5f587414086eac0306ae20a6bbb",
+      "bytes": 2794
+    },
+    {
+      "path": "api/v1/entries/pph-22-pre2024.json",
+      "sha256": "4bb9429204cdbc3d230b64e1a390a9f7df0975d8daddc94dc18a7c1d43345280",
+      "bytes": 2142
+    },
+    {
+      "path": "api/v1/entries/pph-23-hadiah-penghargaan.json",
+      "sha256": "c76a69da5ffac11b45e472bb9ca260ac4f73ea21f6cc749bb3aa7813b11be619",
+      "bytes": 2328
+    },
+    {
+      "path": "api/v1/entries/pph-23-jasa-2001.json",
+      "sha256": "c3c4e311a1fa5d18c0456199669155890c50e506dd81d87732f4d84193a2e8b5",
+      "bytes": 2682
+    },
+    {
+      "path": "api/v1/entries/pph-23-jasa-katering-2pct.json",
+      "sha256": "f71f237ba45d0c98e417c6e334c759876214458915263f338ff957dfac085ece",
+      "bytes": 2435
+    },
+    {
+      "path": "api/v1/entries/pph-23-jasa-lain-2pct.json",
+      "sha256": "7541bef9f80f139b82a1dba0304984940cef63f6fe184a38d6ea0015a1406938",
+      "bytes": 13332
+    },
+    {
+      "path": "api/v1/entries/pph-23-jasa-lain-4pct.json",
+      "sha256": "77cb2098d62238ec8182a896004584aec878922bd85c267bbeb3b87c4d7577cd",
+      "bytes": 12082
+    },
+    {
+      "path": "api/v1/entries/pph-23-jasa-pre2001.json",
+      "sha256": "8ca70990f9ca6e9bdc6c4e1bb4e893643ac0b04e821e881bb188ef47612931a4",
+      "bytes": 2426
+    },
+    {
+      "path": "api/v1/entries/pph-23-katering-pre2015.json",
+      "sha256": "8a4a9d7c75f310b1a1e30bdbbf7e655bba999837a48e3d4083415aeae7682be2",
+      "bytes": 2736
+    },
+    {
+      "path": "api/v1/entries/pph-23-sewa-tanah-bangunan.json",
+      "sha256": "4a7db8b6046a584b6c0cf4545ea1f6ed2eb3cc58e29e453316775077699f3300",
+      "bytes": 2070
+    },
+    {
+      "path": "api/v1/entries/pph-26-bunga.json",
+      "sha256": "2a18899de550d3d2109bc8a9076129adf28683ac0e073183f10b0739722e26b1",
+      "bytes": 1918
+    },
+    {
+      "path": "api/v1/entries/pph-26-but.json",
+      "sha256": "186c0c404eea4c4a9e895904feb054a145ee686e5f146212eead320d7d9fd689",
+      "bytes": 2398
+    },
+    {
+      "path": "api/v1/entries/pph-26-dividen.json",
+      "sha256": "369aa55cfd71f3e18628612598eef039239ddde4563e579b40b1551da7d141f1",
+      "bytes": 1996
+    },
+    {
+      "path": "api/v1/entries/pph-26-general-2024.json",
+      "sha256": "718953b2e3141a88fb891e727aed9416efa5672302a36da8919dcb617077e243",
+      "bytes": 2442
+    },
+    {
+      "path": "api/v1/entries/pph-26-jasa-dan-sewa.json",
+      "sha256": "1ecde01cc9c5f200a485cd821098f307a56241404d075a8a6c43cf699ee9ee00",
+      "bytes": 1864
+    },
+    {
+      "path": "api/v1/entries/pph-26-royalti.json",
+      "sha256": "5f527a742d5b4c3be148e4c99f64c37af79a873a7f2b336524c87452aaf25653",
+      "bytes": 1858
+    },
+    {
+      "path": "api/v1/entries/pph-26-tax-treaty.json",
+      "sha256": "38f95f5bf36b8ba7a2e1f3a59dc1f9167b96c1288606c2dbf3406d731442b922",
+      "bytes": 2181
+    },
+    {
+      "path": "api/v1/entries/pph-badan-2022-plus.json",
+      "sha256": "b33260a8b56dbd04dd45bdbacd1b7f977203438bfaea4fc88447634301a2baf6",
+      "bytes": 2000
+    },
+    {
+      "path": "api/v1/entries/pph-badan-go-public.json",
+      "sha256": "0a3bfa0fe874cf6a29c5840eed2fd1144fa4299a2bebbbc1de868b79ed58b31d",
+      "bytes": 1961
+    },
+    {
+      "path": "api/v1/entries/pph-badan-ikn-0pct.json",
+      "sha256": "e85461efd7a27de9c1d20348de81861717ff101784c18d309dc41e9c39b835be",
+      "bytes": 1546
+    },
+    {
+      "path": "api/v1/entries/pph-badan-ikn-10y.json",
+      "sha256": "c61f5933d5e921a46eb5dcbf11867efed46957306f5d9433ea29a9aa7b42e81e",
+      "bytes": 1514
+    },
+    {
+      "path": "api/v1/entries/pph-badan-pre2001.json",
+      "sha256": "1b30e59ddc530a8594728e720ae20a92b99e4c3c09d7a1a854dcd1bebc822c8d",
+      "bytes": 2166
+    },
+    {
+      "path": "api/v1/entries/pph-badan-pre2010.json",
+      "sha256": "6242a873abecb101fc6381b48c1cc22170feccea64fb00cb647aa8f33aff5f81",
+      "bytes": 1781
+    },
+    {
+      "path": "api/v1/entries/pph-badan-pre2022.json",
+      "sha256": "5bcdaafa96228ca1c6bd5ce76c8a7812ecb29e2821625640e1578b3b309c7664",
+      "bytes": 1759
+    },
+    {
+      "path": "api/v1/entries/pph-badan-umkm.json",
+      "sha256": "9dae17f4578b6155c10154d8b9482745ad8c2b51bf369c901d7b220ab420ad7f",
+      "bytes": 1895
+    },
+    {
+      "path": "api/v1/entries/pph-final-bunga-deposito.json",
+      "sha256": "a673449bc7745ebaa37036fa068510c6947bed7c68ec9e1de3286809c9aacb94",
+      "bytes": 5139
+    },
+    {
+      "path": "api/v1/entries/pph-final-bunga-koperasi.json",
+      "sha256": "4d08da37a534c27294e7b3768e8a68569b40550d52984f87fbb2dd0810208f2e",
+      "bytes": 2483
+    },
+    {
+      "path": "api/v1/entries/pph-final-bunga-pre2009.json",
+      "sha256": "fb11d267330c916427598c002e1bea2880f22b841eb6a24b7a9b86370a2a8ae9",
+      "bytes": 1524
+    },
+    {
+      "path": "api/v1/entries/pph-final-hadiah-undian.json",
+      "sha256": "843d6c77f80935cd77a0eb1c25b8cdcae01b3eeb3dea5447ca1713b89617fa15",
+      "bytes": 2099
+    },
+    {
+      "path": "api/v1/entries/pph-final-investasi-lpi.json",
+      "sha256": "80f391b49ab9d27fe0f05c6ddc7fc2ca832763341d9d25b47a5e674ffa95187a",
+      "bytes": 2710
+    },
+    {
+      "path": "api/v1/entries/pph-final-konstruksi.json",
+      "sha256": "0f587219e54a42820f413036a361a3d86976aa9f4c121f684f3f03161b806bbd",
+      "bytes": 5189
+    },
+    {
+      "path": "api/v1/entries/pph-final-migas.json",
+      "sha256": "9baba0714b42df32ae74f8b0becac77af7d66b40a160fd1122a3234c42ce478f",
+      "bytes": 2538
+    },
+    {
+      "path": "api/v1/entries/pph-final-pengalihan-pp131.json",
+      "sha256": "0a8f5125a2ef65826ca653548d1127cdf70a233d126551feb0a50c72e3dffcdc",
+      "bytes": 1633
+    },
+    {
+      "path": "api/v1/entries/pph-final-pengalihan-pp71.json",
+      "sha256": "16ef680f7ed86c3f415ca2bbfd3b70164b70067fd02e626936e00220bf76b9d3",
+      "bytes": 1864
+    },
+    {
+      "path": "api/v1/entries/pph-final-sewa-tanah.json",
+      "sha256": "76d41c0a6c4f90dfc81f2d7e975b511f1aba0ba2f769ff180477fb8885c1862c",
+      "bytes": 2933
+    },
+    {
+      "path": "api/v1/entries/pph-final-transaksi-saham-bursa.json",
+      "sha256": "0f4382b2ed19ae66bb19e59ca660138f6e5ff26ffbf60e7c85f80ad7926db990",
+      "bytes": 2521
+    },
+    {
+      "path": "api/v1/entries/pph-final-transportasi.json",
+      "sha256": "3559702d99cfac2c4452c3fd214387fdda3e85e4c480fd31ed5dcd80717121c0",
+      "bytes": 3346
+    },
+    {
+      "path": "api/v1/entries/pph-umkm-05pct-2018.json",
+      "sha256": "70421ebbb32f896b3a1ca4536c817be5c3cdadd430586d6f584037ccc82b57cb",
+      "bytes": 1672
+    },
+    {
+      "path": "api/v1/entries/pph-umkm-05pct-2023.json",
+      "sha256": "f4dfc13ee41dd8975a1207a333809b678b37a7eba3fd5d6d90f371a03e0d6b33",
+      "bytes": 3422
+    },
+    {
+      "path": "api/v1/entries/pph-umkm-1pct-pp46.json",
+      "sha256": "7f10c04ccd7e81c755eafb2822597876785c40899240ec196630f2c315cdd68b",
+      "bytes": 1645
+    },
+    {
+      "path": "api/v1/entries/ppn-10pct.json",
+      "sha256": "5ad9a9d9c4c527114632ad3bdd1f8c5de57f1c73ba421151b8686158a2fd919a",
+      "bytes": 1921
+    },
+    {
+      "path": "api/v1/entries/ppn-11pct-2022.json",
+      "sha256": "82e60057940740b21faf984e5dcf2ee48c62584ac4627cf7bda915168de82962",
+      "bytes": 1777
+    },
+    {
+      "path": "api/v1/entries/ppn-11pct-effective-2025.json",
+      "sha256": "b2df36393a40a06a57af355d0c336229b4f6847f5f5901b2b25de8e77518a2c7",
+      "bytes": 2378
+    },
+    {
+      "path": "api/v1/entries/ppn-dpp-penghitungan.json",
+      "sha256": "097c9fd4a84c8bc92cf082583f9dd9b045ec419e1bc97c9cc354c2f3d17c52f5",
+      "bytes": 1736
+    },
+    {
+      "path": "api/v1/entries/ppn-ekspor-bkp.json",
+      "sha256": "a1f7677f6eedc55e4b862d55578136ef3df3a452bbcfaad0a732ab08865e997e",
+      "bytes": 1700
+    },
+    {
+      "path": "api/v1/entries/ppn-ekspor-jkp.json",
+      "sha256": "893a4f1b6ec3e6e03f1fd8853358d549014983e74612bbc5713661f4e580b012",
+      "bytes": 2069
+    },
+    {
+      "path": "api/v1/entries/ppn-impor-bkp.json",
+      "sha256": "c6e588e932ee5c6a9fa554a61303d59070bb7c9b7ba5235fab86471b72781085",
+      "bytes": 2382
+    },
+    {
+      "path": "api/v1/entries/ppn-jasa-kegiatan-usaha-persewaan.json",
+      "sha256": "ad87bb94fafcb971223455b6ff8afb373267bde2354f994ec35386d51967f4a3",
+      "bytes": 1749
+    },
+    {
+      "path": "api/v1/entries/ppn-jasa-telekomunikasi.json",
+      "sha256": "d50a7dd8185e0d99ea84d94515bb074e31d55be43824024e2ab35fd9a4f484d5",
+      "bytes": 2108
+    },
+    {
+      "path": "api/v1/entries/ppn-jasa-tenaga-listrik.json",
+      "sha256": "8885710c383481a7edb8e53fb2261cec11e62c5b0fb82559dde9c6ee2b04a0bf",
+      "bytes": 2029
+    },
+    {
+      "path": "api/v1/entries/ppn-jkpt-industri.json",
+      "sha256": "bcae2200381fa463e16413527a4aed8d9245382d9e058dbb4dd6cc69a0ea0bdd",
+      "bytes": 2224
+    },
+    {
+      "path": "api/v1/entries/ppn-pengkreditan.json",
+      "sha256": "f5cf8da155edc360127affa9c6970dcaf63e0f0e8a3d33c1f48070e4026f2d1f",
+      "bytes": 1765
+    },
+    {
+      "path": "api/v1/entries/ppn-pmse.json",
+      "sha256": "c7ffb8e2921d0d0c1fdb7abb41fd96d9dff11bef3421593d392bacb549542672",
+      "bytes": 2382
+    },
+    {
+      "path": "api/v1/entries/ppn-tidak-kena-pajak.json",
+      "sha256": "8b21512e9952569eaca8031183303bcb04a7efb144038c3b678d39a5ee3f60d8",
+      "bytes": 2210
+    },
+    {
+      "path": "api/v1/entries/ppnbm-general.json",
+      "sha256": "7350a4b0a780ad430863031688b8f5b79a37e5de5ab121bc555e0286f1f9fb56",
+      "bytes": 1780
+    },
+    {
+      "path": "api/v1/entries/ppnbm-kapal-pesiar.json",
+      "sha256": "5e4f1a270a15e61c0644843e0bcb26942e712686dbdadb1163f1fec25ab98181",
+      "bytes": 1628
+    },
+    {
+      "path": "api/v1/entries/ppnbm-perlengkapan-mewah.json",
+      "sha256": "a737057da5e43a670372d6ddddeda2de69af955736cc589c0591ebe6325c828e",
+      "bytes": 1713
+    },
+    {
+      "path": "api/v1/entries/ppnbm-pesawat-pribadi.json",
+      "sha256": "20767677eb95d78c315552b9acdb6412b9404b403ca9bcfb0f59ec4adfa58558",
+      "bytes": 1637
+    },
+    {
+      "path": "api/v1/entries/ppnbm-rumah-mewah.json",
+      "sha256": "af04a66ec72c0241ba8c8add3bf5bd7031ff7e04f96b7914a6f34db417d2acfd",
+      "bytes": 1708
+    },
+    {
+      "path": "api/v1/entries/ppnbm-sedan-station-wagon.json",
+      "sha256": "9b21280f35d8ae224f395eb2fc4b46c128e05d7a5aae9aa2536abe12b1ee2c5a",
+      "bytes": 1890
+    },
+    {
+      "path": "api/v1/entries/ppnbm-suv-4x4.json",
+      "sha256": "b072736486854eeeac98384ce234d9bc46e103d7b9fe7e159c538f6754361be7",
+      "bytes": 1854
+    },
+    {
+      "path": "api/v1/entries/ppnbm-van-wagon.json",
+      "sha256": "1ebd3101092fecc6b95c391fb66484a706f028a8a6fc7276c407f0032c8c347a",
+      "bytes": 1550
+    },
+    {
+      "path": "api/v1/index.json",
+      "sha256": "d1e6ef2a0539982b7bac27fb6f625741411a4ab376b38b65ce18c7ef201642f6",
+      "bytes": 881
+    },
+    {
+      "path": "api/v1/openapi.json",
+      "sha256": "a31c099127f6ec600fddd25cef6736ca4410fe3ab4467141118103a5f31ec9fc",
+      "bytes": 10507
+    },
+    {
+      "path": "api/v1/regulations/index.json",
+      "sha256": "aef5e0f78c7325551010822bc6fe26df90005a360bdcb912de83a5bcfdac44cd",
+      "bytes": 13329
+    },
+    {
+      "path": "api/v1/regulations/perpres-55-2013.json",
+      "sha256": "49ccb508c4f1ccb2c1951dac9a4257b2c91a399820e96e15c5c1b12ec465b199",
+      "bytes": 856
+    },
+    {
+      "path": "api/v1/regulations/pmk-122-2015.json",
+      "sha256": "84d764506fe26a0e0b7ce418ee9e9f954618f7aafd686c7e35388e09259ee3e1",
+      "bytes": 800
+    },
+    {
+      "path": "api/v1/regulations/pmk-131-2024.json",
+      "sha256": "e7499ea09e94b11c84f92ff01ee75ba4f55cd7a360eb7007eef7d00ee5f3ec1d",
+      "bytes": 1042
+    },
+    {
+      "path": "api/v1/regulations/pmk-138-2005.json",
+      "sha256": "d7fc1a20e55675a6ac369caa69122910aabf2ecb2bcd73cf28fcf22e087ea539",
+      "bytes": 754
+    },
+    {
+      "path": "api/v1/regulations/pmk-141-2015.json",
+      "sha256": "af9999736290e663fba87766314854bd0074f3b1f13ecb43ea59f4c2d6055eea",
+      "bytes": 936
+    },
+    {
+      "path": "api/v1/regulations/pmk-162-2009.json",
+      "sha256": "effa870101cc5e7fd3c5bd6c24bb8359041aa7f4792de23bd51fa620c158fa72",
+      "bytes": 754
+    },
+    {
+      "path": "api/v1/regulations/pmk-168-2023.json",
+      "sha256": "4eee23984b3633344205e8859a2c65bee04048572b2f7be95b21a52fccf09e94",
+      "bytes": 1095
+    },
+    {
+      "path": "api/v1/regulations/pmk-202-2023.json",
+      "sha256": "712e9eb2da3be0e8c063b10cfd65676880e243a999969fd6c61ba0729e36444d",
+      "bytes": 3527
+    },
+    {
+      "path": "api/v1/regulations/pmk-43-2022.json",
+      "sha256": "8784c6dff24daca3f539f42f02a757ee4684a1887b3c8aa005bdd44f97f99296",
+      "bytes": 1085
+    },
+    {
+      "path": "api/v1/regulations/pmk-523-2002.json",
+      "sha256": "f5ab21d54dcac1cd6a390b601437869a4a58abf5d70f8d9f841dfe906333cb48",
+      "bytes": 1198
+    },
+    {
+      "path": "api/v1/regulations/pp-131-2000.json",
+      "sha256": "7b646d37c2b72169989b4053f0644e79e480a053aaeb18316d3010464a50659c",
+      "bytes": 1354
+    },
+    {
+      "path": "api/v1/regulations/pp-14-2002.json",
+      "sha256": "773ef83c94e983523dbb400178c3eccdf423bd47d314fb9f8ea3a4063b44f172",
+      "bytes": 885
+    },
+    {
+      "path": "api/v1/regulations/pp-16-2009.json",
+      "sha256": "1b6c503b6c97cfa487f30b7cfbc49ebcb31b133b1cbb459b65d03ddecc117cf1",
+      "bytes": 1187
+    },
+    {
+      "path": "api/v1/regulations/pp-23-2000.json",
+      "sha256": "bc1ff9cbfd6113b6754c034b4a6229b26cff09e8ef52483180bf26ed2ed1d97a",
+      "bytes": 1932
+    },
+    {
+      "path": "api/v1/regulations/pp-23-2018.json",
+      "sha256": "ba56777df9194d1d2e83e8385e3c93b44691a7a5d4c1a3a71acb5349d5bf9a7b",
+      "bytes": 2080
+    },
+    {
+      "path": "api/v1/regulations/pp-28-2023.json",
+      "sha256": "54b361a22e35fcf36d344c1a393a84076222d1e5050d15e1bbd95b33bf64d797",
+      "bytes": 954
+    },
+    {
+      "path": "api/v1/regulations/pp-40-2009.json",
+      "sha256": "f3691aba58227bb7f8b0771a0d298138eb76dbf665570d6a666230ae06e79612",
+      "bytes": 962
+    },
+    {
+      "path": "api/v1/regulations/pp-44-2022.json",
+      "sha256": "58714d6249fb7c8336c03fdaa537821ab5adc81537f9f23b6f575502fc33c3d4",
+      "bytes": 854
+    },
+    {
+      "path": "api/v1/regulations/pp-46-2013.json",
+      "sha256": "1cfa6a2d2fad15a929ad2c91c0e83b36446ba0595d4c5de006c5108354be1422",
+      "bytes": 853
+    },
+    {
+      "path": "api/v1/regulations/pp-51-2008.json",
+      "sha256": "5d40057b26d3c457391f35545120bb6ce4e23b024b158e0d6a35ec4bc5d36d62",
+      "bytes": 1084
+    },
+    {
+      "path": "api/v1/regulations/pp-55-2022.json",
+      "sha256": "e6977050dcbf93289502e43dae9566c70a7dcf2810d9a983a7feb22dac6fc388",
+      "bytes": 896
+    },
+    {
+      "path": "api/v1/regulations/pp-58-2023.json",
+      "sha256": "6d3e327ca5ac71770edf4bce545e99ad364588eed8ba54889f14043de9faa7d2",
+      "bytes": 1205
+    },
+    {
+      "path": "api/v1/regulations/pp-60-2023.json",
+      "sha256": "62fef9d3183c612f1fc4d9edf67b6806136413ba2360a856abee15091ad14b68",
+      "bytes": 1525
+    },
+    {
+      "path": "api/v1/regulations/pp-71-2008.json",
+      "sha256": "cf967d1a5efcec8d0d2a04a405b1325d74d9d30ed5f7de83c02686ed47667bfb",
+      "bytes": 901
+    },
+    {
+      "path": "api/v1/regulations/pp-80-2007.json",
+      "sha256": "d48ae63e3ea74a5b84fe37f5c6f2c6ae6f98d10d8e75ee7ca5b185712920d72e",
+      "bytes": 887
+    },
+    {
+      "path": "api/v1/regulations/pp-94-2010.json",
+      "sha256": "f1b3dde45adf51db83e646423c8e6c09bc84ad57989f97592305d8627c202a7e",
+      "bytes": 823
+    },
+    {
+      "path": "api/v1/regulations/uu-1-2022-hkpd.json",
+      "sha256": "6e34db99f296ed229e6ea7e382556b0258dab8a3325eb4691880cdd1c1600eac",
+      "bytes": 4380
+    },
+    {
+      "path": "api/v1/regulations/uu-10-1994.json",
+      "sha256": "817df403a7c3f1f8a8cd7be56f2744b9b9dd5cb43631e97ba693e0aeb55b3fc4",
+      "bytes": 1246
+    },
+    {
+      "path": "api/v1/regulations/uu-10-1995.json",
+      "sha256": "0ed358daa66fb0bad5a76b3bb04af6a510a29e3429a0946b7868998a62f31410",
+      "bytes": 1120
+    },
+    {
+      "path": "api/v1/regulations/uu-10-2020-bea-meterai.json",
+      "sha256": "b3ace277fa46b07c45df449f693cabd8e4b93828f958d86e7ff90159a735efb6",
+      "bytes": 1207
+    },
+    {
+      "path": "api/v1/regulations/uu-13-1985.json",
+      "sha256": "d83b0e2e75f268d8081c8a786545abc72c897f7927e7b0120b74523bb2769419",
+      "bytes": 1215
+    },
+    {
+      "path": "api/v1/regulations/uu-17-2000.json",
+      "sha256": "f4c71103fd28ebeacb3eff4534a596aeccf717e63026aa725bc818a353124057",
+      "bytes": 1139
+    },
+    {
+      "path": "api/v1/regulations/uu-28-2009.json",
+      "sha256": "1b067ed177dc0b895ed53e3b454a083c6e02d67a205b235425d08e757e96bd2e",
+      "bytes": 934
+    },
+    {
+      "path": "api/v1/regulations/uu-36-2008.json",
+      "sha256": "bcc9a367c0160a1a107e99ecc166f5607b36613b178bb871f4ce089391359333",
+      "bytes": 1217
+    },
+    {
+      "path": "api/v1/regulations/uu-39-2007.json",
+      "sha256": "a6d282e4baf9d481506b0e6c8e727282c9ac59369aac6d3e78dcb3b276010075",
+      "bytes": 862
+    },
+    {
+      "path": "api/v1/regulations/uu-42-2009.json",
+      "sha256": "c13d05d99518f2d4416fc24a4782f2ddd0727d28060714b0c1abbd2385d24f55",
+      "bytes": 1041
+    },
+    {
+      "path": "api/v1/regulations/uu-7-1983-pph.json",
+      "sha256": "b0248b1d7b34871c3fea89088936028da292cb9a71e958365c0c509cd0fb960e",
+      "bytes": 3341
+    },
+    {
+      "path": "api/v1/regulations/uu-7-2021-hpp.json",
+      "sha256": "1fe1b961b09b075f60703a7cac65dd7e76e9811883b4803a56e7d7b8d1673157",
+      "bytes": 3299
+    },
+    {
+      "path": "api/v1/regulations/uu-8-1983-ppn.json",
+      "sha256": "9970f2e49d78296d3a848bc790c0d8126c2ec60403a76477c289764a849d10d9",
+      "bytes": 2087
+    },
+    {
+      "path": "api/v1/search-index.json",
+      "sha256": "5c4166bc75e41c96b6cc005a2ea8de5c4f6a45f71858cc04f9faa777f6b6170b",
+      "bytes": 240339
+    },
+    {
+      "path": "api/v1/stats.json",
+      "sha256": "65b843f44600d978f775c1bab4149c5310b6955437618889e8b88533ee1ba40b",
+      "bytes": 1779
+    },
+    {
+      "path": "api/v1/timeline/bea-meterai.json",
+      "sha256": "b694734840eed2ed6f806b763d8cdd51be86123728edc00c54f298a72208a950",
+      "bytes": 1852
+    },
+    {
+      "path": "api/v1/timeline/index.json",
+      "sha256": "e693c250ba1ebbd1636067d166b7c56cc152e1d8408bd328eb8cfcefd906e74f",
+      "bytes": 1400
+    },
+    {
+      "path": "api/v1/timeline/pph-21-monthly.json",
+      "sha256": "39f04fe33e87225c56711711065b7d4da8f489ea1a12eea5fb63884799dc08c4",
+      "bytes": 1180
+    },
+    {
+      "path": "api/v1/timeline/pph-21-progressive.json",
+      "sha256": "a2fc61439375cf67e0ff426d6ab19e8ab56468ddae5963ad6c0c2d2de58f8483",
+      "bytes": 2436
+    },
+    {
+      "path": "api/v1/timeline/pph-21-ptkp.json",
+      "sha256": "da46ed7b5e3ba5538de746d2ba3edb1d5182069e3c6dbda36ffa313c3798a891",
+      "bytes": 2393
+    },
+    {
+      "path": "api/v1/timeline/pph-23-jasa.json",
+      "sha256": "3a8596369dbd3737a9116a3b060950b99cfd2e81439640cba81cc43bfddb8dd1",
+      "bytes": 1586
+    },
+    {
+      "path": "api/v1/timeline/pph-badan.json",
+      "sha256": "c04bd403257659cea431f43389e29cb14a0ddb04ad6216d8480c3520c618c3d2",
+      "bytes": 1913
+    },
+    {
+      "path": "api/v1/timeline/pph-final-bunga.json",
+      "sha256": "3ca48d5c3b7c0b6171182553803f656972562442ec7b661b14df22d086df2c0f",
+      "bytes": 983
+    },
+    {
+      "path": "api/v1/timeline/pph-final-pengalihan.json",
+      "sha256": "a97432836c0dbe10c4bf4f1505335b561392773e19e1a2ea02f60d715265fe40",
+      "bytes": 1059
+    },
+    {
+      "path": "api/v1/timeline/pph-umkm.json",
+      "sha256": "a6d4737fdf913e11731c39566e50c5d4cda1d165b991112b4d2a4adf7cbf5f53",
+      "bytes": 1451
+    },
+    {
+      "path": "api/v1/timeline/ppn.json",
+      "sha256": "1189c814bfdef3f47f7dbf8d30e8abd0208547116e8a059076aae28c04c467b0",
+      "bytes": 1460
+    },
+    {
+      "path": "api/v2/at-date/1984-01-01.json",
+      "sha256": "a371c7dd5f75fd17bfd92ea71798b0c05b1751153a58d6dcbda050bb866d0382",
+      "bytes": 775
+    },
+    {
+      "path": "api/v2/at-date/1984-04-01.json",
+      "sha256": "cf31a648ea5d23c913c515094f516ffeb691ee1cfaa2051da5f8ff4ad660bd5c",
+      "bytes": 1390
+    },
+    {
+      "path": "api/v2/at-date/2009-01-01.json",
+      "sha256": "bfa6041154d2310082e2b864326369cdaff9affd68881301a1f1ccab8ada4ccf",
+      "bytes": 4933
+    },
+    {
+      "path": "api/v2/at-date/2010-01-01.json",
+      "sha256": "aa24043311064ab52cd1e74c40909bbaf53c412bbd85ea50dd87a4b805169c82",
+      "bytes": 6106
+    },
+    {
+      "path": "api/v2/at-date/2013-01-01.json",
+      "sha256": "cd00b49ccd85f2f68be53fa29ea10933d668101f29f2c6e8a6500073692d5d13",
+      "bytes": 6353
+    },
+    {
+      "path": "api/v2/at-date/2013-07-01.json",
+      "sha256": "d92a4d3565d5a92a4b5e2adb560e1a6fae03b0e3514b9c3989bf042f14a8afe2",
+      "bytes": 6695
+    },
+    {
+      "path": "api/v2/at-date/2015-01-01.json",
+      "sha256": "70b02492e94a556e4c5949202679182abd34e78d303db64a7863cee8a03b4b98",
+      "bytes": 6685
+    },
+    {
+      "path": "api/v2/at-date/2015-08-26.json",
+      "sha256": "4a92b29c821a1b33faa562d4855745c78ee21bf6bfdde43da2bb0b672256a185",
+      "bytes": 7373
+    },
+    {
+      "path": "api/v2/at-date/2016-01-01.json",
+      "sha256": "cb1f9acc4c796b821a4f560a08766203ad6f787c534c4c8196bdcf387b2f13be",
+      "bytes": 7389
+    },
+    {
+      "path": "api/v2/at-date/2016-09-08.json",
+      "sha256": "b7f5d82ce0813681cba1c4da3e04a85adcb06234256a1f3f9cf224879542c49d",
+      "bytes": 8001
+    },
+    {
+      "path": "api/v2/at-date/2018-01-02.json",
+      "sha256": "74e3816be415235cde018ab9234af9b6d42c3a20daeb9920a264bdb314fa9a8d",
+      "bytes": 8299
+    },
+    {
+      "path": "api/v2/at-date/2018-07-01.json",
+      "sha256": "2ad4a000552ae9840972c625c1a510426327244c4d3172fe74db4259026de6a7",
+      "bytes": 8366
+    },
+    {
+      "path": "api/v2/at-date/index.json",
+      "sha256": "55679f2ed6808e890ba74092b90d0e49310af9b46672543ddf8de2eef642e1c2",
+      "bytes": 927
+    },
+    {
+      "path": "api/v2/bppu/index.json",
+      "sha256": "29602f2abff942d064a0817276aaf60655274640725e86cd86db0b4d09a47e9d",
+      "bytes": 2576
+    },
+    {
+      "path": "api/v2/by-year/1984.json",
+      "sha256": "be8baf197ad56d546d5e763ac584824840c578c904641795b2aa728ffafee2ac",
+      "bytes": 1160
+    },
+    {
+      "path": "api/v2/by-year/2009.json",
+      "sha256": "ae6c10bcc823a1fa1ba690c872f05294a6d51d890fe9dbda313eeb9270395348",
+      "bytes": 1950
+    },
+    {
+      "path": "api/v2/by-year/2010.json",
+      "sha256": "110fb156cd644c83eba305b2210bf9c15136fe61962f33416d09479df02cdc75",
+      "bytes": 2208
+    },
+    {
+      "path": "api/v2/by-year/2013.json",
+      "sha256": "be30f40daddfe5e228b872d1927a4f3ecd7d0eb4185a2e14ee5df86f3c03e221",
+      "bytes": 3388
+    },
+    {
+      "path": "api/v2/by-year/2014.json",
+      "sha256": "5cb8724e8d13777215a12f6d0faff893fcbd7f325cffb45b4d5fd4e80a2b5de9",
+      "bytes": 2356
+    },
+    {
+      "path": "api/v2/by-year/2015.json",
+      "sha256": "4f81b03183a94463a2e052567b06f695e79f31d0093c3acb70d22a8eed4c63fd",
+      "bytes": 3617
+    },
+    {
+      "path": "api/v2/by-year/2016.json",
+      "sha256": "5bc320f33beddd9cbcf158bfb5b87a99a4764a05d79fc0aed7ad6cc4f5e8025f",
+      "bytes": 3930
+    },
+    {
+      "path": "api/v2/by-year/2017.json",
+      "sha256": "99c9c921b558928d1c0eb9e43dcfd670eb95a52d706bd65f57300b25f4d81c73",
+      "bytes": 2750
+    },
+    {
+      "path": "api/v2/by-year/2018.json",
+      "sha256": "830e8dffe96305a1b296a525e09052cfb16a4a0d7a2f98aac06d06cbab31ae13",
+      "bytes": 5473
+    },
+    {
+      "path": "api/v2/by-year/2019.json",
+      "sha256": "a79f4f1ccb19f7262d2bbc9c47bf4acaf677613cc98a58b1fb4f96e59e776dee",
+      "bytes": 2840
+    },
+    {
+      "path": "api/v2/by-year/2020.json",
+      "sha256": "5ab14e3dd5acda9eacdea578779103db825a82f7043ad31d3fb319b4f5e36bb8",
+      "bytes": 2844
+    },
+    {
+      "path": "api/v2/by-year/2021.json",
+      "sha256": "9bc3f9e312790ac1d19e67a65faf1019fe55cc254407e91550084c3355694657",
+      "bytes": 2844
+    },
+    {
+      "path": "api/v2/by-year/2022.json",
+      "sha256": "c8f9d5e547f526a37d9351a56e3bc3b589d7d345ccf0bf24bd8378a8926d5c9b",
+      "bytes": 7930
+    },
+    {
+      "path": "api/v2/by-year/2023.json",
+      "sha256": "c157d864d04bb733632bb2049b5f681622cbcf6da893ecf470fe77eba60f64d8",
+      "bytes": 3344
+    },
+    {
+      "path": "api/v2/by-year/2024.json",
+      "sha256": "9ed1e51dcdd1ef64d21995274959b3a9a4bb09849dec266c3d71ca88b9b0e5a6",
+      "bytes": 4545
+    },
+    {
+      "path": "api/v2/by-year/2025.json",
+      "sha256": "06b757a6f28cfad6acdc890681d1cacefd0340c28d014b4303b44c25b7d897d5",
+      "bytes": 7596
+    },
+    {
+      "path": "api/v2/by-year/2026.json",
+      "sha256": "d9b305c090fdd0842bc464c98cc78b5d11d9cc17b2cea24f362ca2011e2e2a87",
+      "bytes": 7493
+    },
+    {
+      "path": "api/v2/by-year/index.json",
+      "sha256": "89d039adde9528974e5170e276c0d0d16376a7028a0127d767ec889aab436a61",
+      "bytes": 3012
+    },
+    {
+      "path": "api/v2/categories/index.json",
+      "sha256": "7820fd97f76a85345e37a4a111aad6eb7f8ec2e88555fc86889ec5b99bfc792e",
+      "bytes": 7332
+    },
+    {
+      "path": "api/v2/concepts/concept-illustrative-conflict.json",
+      "sha256": "d52bf10dd826e63eeb1c4012bd099ffc9fb77514111ef17fff9b7e67f3d4a374",
+      "bytes": 677
+    },
+    {
+      "path": "api/v2/concepts/concept-illustrative-flat.json",
+      "sha256": "336b5404f25a1c002182e6fe5ec0c88cd2a72a83dacf18673a714fd299a1297c",
+      "bytes": 677
+    },
+    {
+      "path": "api/v2/concepts/concept-illustrative-progressive.json",
+      "sha256": "4030890440020f8b01e9bb1fa062527aae1a1847848953c8b017a3ef1a821780",
+      "bytes": 661
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-15-special.json",
+      "sha256": "efbb19e4ff7d0afd13a80e489b2fb654beb6194ace314857130fc5b2ba8c957e",
+      "bytes": 1105
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-article17-annual.json",
+      "sha256": "15d8c3020cfb36568f182b5c716e4ddd2a5ba4c97c726f8ac951fefec23e32f1",
+      "bytes": 850
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-final-period.json",
+      "sha256": "437c1385d28b07433f20fe1f3ab88e2b4cecc9e95eb9b785eb28c820c4b094eb",
+      "bytes": 849
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-natura.json",
+      "sha256": "b4e251b463fbd02a2a4bb09ac6168715b29554d774b7598b142d0243d06a7db6",
+      "bytes": 879
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-pre2024-permanent-regime.json",
+      "sha256": "8f600c0d04c2e6c8a1d5745d99b6cda2bd9c6a5b4c714a0828269cf42741cfe5",
+      "bytes": 898
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-ptkp.json",
+      "sha256": "b0ba9247b0ef3e7bcebaa6ec532d9a83464333426a10c77c78dfe200de8c6ae4",
+      "bytes": 833
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-recipient-activity-participant.json",
+      "sha256": "fb696f2c07d15a584ea6fcf74c0296076ee6eaecb69e73ad8f5465420a72b40e",
+      "bytes": 834
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-recipient-commissioner.json",
+      "sha256": "f5a711506e0b0b4593c0e654fe50c5882bd7cf06257c7faba21984d6d2988c6e",
+      "bytes": 771
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-recipient-former-employee.json",
+      "sha256": "328e3c0eaf126647249b3055e3129911e8b565612156e93de9e82de3c0796469",
+      "bytes": 742
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-recipient-nonemployee.json",
+      "sha256": "eeb97dbb5353ca560328e144d89899f7207ac80691f5faaab78cf085a4ed9ff4",
+      "bytes": 922
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-recipient-nonresident.json",
+      "sha256": "3d7841a0fe1554d1356287669b91b69575c1dea258f4155338fd67998542cd08",
+      "bytes": 764
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-recipient-pension-participant.json",
+      "sha256": "d5004a48511e5a54864dd9da8fc9023d7653a4a7030254473c92ba47774a8688",
+      "bytes": 817
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-shu-koperasi.json",
+      "sha256": "d4b60a61592af842783b92819221dbc8ebcb840ba3de5d8535d99fab62d8989d",
+      "bytes": 856
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-ter-daily.json",
+      "sha256": "54716a609b23f4152acbf7d39e25a13a03606e72dcaab146beceb2dd2304df49",
+      "bytes": 686
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-21-ter-monthly.json",
+      "sha256": "ed6ab5bd6a15f0ab21eb56d9804f7c770305320d04b81a3a3bd648b25c8da180",
+      "bytes": 956
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-23-jasa-konsultan.json",
+      "sha256": "20b5e167109c0c74ee44bd82917402e82d4db73439de9c424c5bb25b38cb15a6",
+      "bytes": 1189
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-23-jasa-manajemen.json",
+      "sha256": "877196e6a51733c66da6422fe9650f9150284ec6e5659d2bc0795783234c1d8b",
+      "bytes": 925
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-23-jasa-pmk141-lain.json",
+      "sha256": "c175fb1b60cd3e8e8abe252fe168371774c2c5c3c92734e8f01d90cd3ce2a425",
+      "bytes": 1377
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-23-jasa-teknik.json",
+      "sha256": "128ce8c7d7d0dbfdac36675fdad0d970dbe5a0ebe27d283d01fa9a85715437d2",
+      "bytes": 934
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-23-rent-movable.json",
+      "sha256": "be0b929196382e9eb70f30f750c3ee6392206ae55ba8c1703d10bc9c09451592",
+      "bytes": 961
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-23-scope-rent-land-building.json",
+      "sha256": "2518e34f62c372a7f2025c8203fad9616eead47d83e6a85bead06513782ba0d3",
+      "bytes": 1074
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-badan-article31e.json",
+      "sha256": "1336a354f48ab5f3cf9c66ce87e5719e5169eab215e5c60b76073b77f8421829",
+      "bytes": 1256
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-badan-base.json",
+      "sha256": "140b56873b79d10483b4bec7b59d2039ee4ee8b88f1d0ada9fd36787aca2f903",
+      "bytes": 1164
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-badan-ikn.json",
+      "sha256": "76332bf1f132ea93912262578bd96c340e1d3cfcbfddf7b28365277dfe1e321c",
+      "bytes": 1159
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-badan-listed.json",
+      "sha256": "4d14e2b8f4c75f277c11de54e775063728cb57e09375b59b1a2bbcb3f55b24f7",
+      "bytes": 1379
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-final-construction.json",
+      "sha256": "e58afe55b7244a7aaf988dcc0d14d552945dbd9d5b6ae8b0a3cde98860b664bf",
+      "bytes": 1035
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-final-rent-land-building.json",
+      "sha256": "01b9a35441e382ca6bbcbac9f08667c1dbdd32d6e1c502b405e8b3595420a4dd",
+      "bytes": 955
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-final-transfer.json",
+      "sha256": "fdf2015163820b2100267bbe1a0b643afc39abf724dc5bb663e7bcf00c673e52",
+      "bytes": 965
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-final-umkm-pp20-2026.json",
+      "sha256": "fa1601b5d2444fe99eca1b3372cc2da2f6e4050619f0fe876c51d2eb5db4b57e",
+      "bytes": 957
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-final-umkm-pp23.json",
+      "sha256": "27b544c711775a55e2d6314d1dfc5e8e3fcea207a34881e2a15f6b5508824daf",
+      "bytes": 958
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-final-umkm-pp46.json",
+      "sha256": "ad85ae25b7858fe3fcd7112949fd356b4a5f9abd804a039369ea856a3b8a3b28",
+      "bytes": 836
+    },
+    {
+      "path": "api/v2/concepts/concept-pph-final-umkm-pp55.json",
+      "sha256": "377d531210b84555a22b562194d1ab47a8e1cea323cbbb022e8d4e5de5130aa9",
+      "bytes": 1206
+    },
+    {
+      "path": "api/v2/concepts/concept-ppn-domestic-supply.json",
+      "sha256": "0d12cf40548f0343841605f97795fac9068773f867e3c2f5f005a146eb1db640",
+      "bytes": 1289
+    },
+    {
+      "path": "api/v2/concepts/concept-ppn-dpp-nilai-lain.json",
+      "sha256": "5e67650210f55780a8f6a94b418c7a4f46e9ebaefdf674e1e2a0a3b9a410ba89",
+      "bytes": 1080
+    },
+    {
+      "path": "api/v2/concepts/concept-ppn-export.json",
+      "sha256": "298fe4970898d2fb1f6587ecfb30d1237c9574cdac87fcc527b36f6e916ff698",
+      "bytes": 912
+    },
+    {
+      "path": "api/v2/concepts/concept-ppn-foreign-utilization.json",
+      "sha256": "949fdd6ac5af50209a61edea530727ca8ceb0cc5fa57f815f51e43f7b7b45000",
+      "bytes": 845
+    },
+    {
+      "path": "api/v2/concepts/concept-ppn-import.json",
+      "sha256": "2dda05da28310c66d8dc28738a18086c94b1084cf2ecf78cb652ddf89d374e48",
+      "bytes": 785
+    },
+    {
+      "path": "api/v2/concepts/concept-ppn-luxury-retail.json",
+      "sha256": "edb34887cf98ee01e287d2bb315ead4fbabf18390ed5fe5823ce95029b75a036",
+      "bytes": 1064
+    },
+    {
+      "path": "api/v2/concepts/index.json",
+      "sha256": "d6cb7e7ab7086738934d96b78261890ab188a3fced6441d5673b65fcb786ee69",
+      "bytes": 9966
+    },
+    {
+      "path": "api/v2/index.json",
+      "sha256": "8700350b3b6e8771f719d8a51d2c8df2c9449c3c2d3969b886762454f59f8964",
+      "bytes": 835
+    },
+    {
+      "path": "api/v2/openapi.json",
+      "sha256": "bcd1f014d6b0cb4b949aad95ae594160ea8a06c8be12f5e97cd9175d7b512489",
+      "bytes": 7592
+    },
+    {
+      "path": "api/v2/rules-corpus.json",
+      "sha256": "d89d95cdb4b6c73a09bf2d2cfc461aa71cb9dca079af7b5ba07f51d65eb6b2d1",
+      "bytes": 204372
+    },
+    {
+      "path": "api/v2/rules/index.json",
+      "sha256": "90f16cb088f1128e3dd4b1a36d8b8328bfab851e305339fe12b8a9daefb5b239",
+      "bytes": 22344
+    },
+    {
+      "path": "api/v2/rules/rule-illustrative-conflict-a.json",
+      "sha256": "180dfd377db1cdd2196429103e81d3c1499e9825559601f424357c87298759ae",
+      "bytes": 1106
+    },
+    {
+      "path": "api/v2/rules/rule-illustrative-conflict-b.json",
+      "sha256": "d5ff6e6accfc2fec611b86171123d77982aaf60ed035812685550f4312ddbb6c",
+      "bytes": 1106
+    },
+    {
+      "path": "api/v2/rules/rule-illustrative-flat-new.json",
+      "sha256": "eb25e39e8d7aa98a06c84ab11214b69838c450bb313b6d05dd83ec890726150f",
+      "bytes": 1905
+    },
+    {
+      "path": "api/v2/rules/rule-illustrative-flat-old.json",
+      "sha256": "af5ec4ec78e2fdcb23944d394cacbc6ffde7d66185792c485aaf1d5536d56ccf",
+      "bytes": 1024
+    },
+    {
+      "path": "api/v2/rules/rule-illustrative-progressive.json",
+      "sha256": "d5befc411c15656ca7f0a181b5e16e048eef544e02caa2e5dfd9699a37dee61c",
+      "bytes": 1490
+    },
+    {
+      "path": "api/v2/rules/rule-pph-15-special.json",
+      "sha256": "d29f405274aab90035faed6aa6fac17f95a7a0ff9fcc540c365ceecbee384cbc",
+      "bytes": 2420
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-article17-annual-hpp.json",
+      "sha256": "8b0b72fa7c93bd8b8364ccebea82a6edbb45f9bb56adcf1499f9a3b10d2e2659",
+      "bytes": 2705
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-article17-annual-pre2022.json",
+      "sha256": "4b949de3c89e905bc9538f526ae3900365abc9f34e554a6f01ef194fc0024ec9",
+      "bytes": 1954
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-final-period.json",
+      "sha256": "e1d0864ab72e2f0ead1581d42f705ee1e748fd26972eca6549bccf15fb781db2",
+      "bytes": 2354
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-natura-summary.json",
+      "sha256": "6b08d06611d8b81c4b1ae01fdfd5bdd9f667ee6a7da0f6940e8fe690f41df418",
+      "bytes": 1699
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-nonresident-default.json",
+      "sha256": "18ae1c91e467204509b1014678a13199dd62770e7a6887d5895861c0fa212a74",
+      "bytes": 2117
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-nonresident-treaty.json",
+      "sha256": "d8b58003a4a16bb7a8cd1e6dfc136ccf0a54bbf274f71589c402f5405da6a688",
+      "bytes": 2048
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-pre2024-permanent-regime.json",
+      "sha256": "11757cbd4639229c83393a458149842c6a3ccad4ae26b55c6af6934c30fc638e",
+      "bytes": 1925
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-ptkp-2013-2014.json",
+      "sha256": "e944f79710a333278e52d15145ed5992a413ae42794b0d89c4e5291c297f2aeb",
+      "bytes": 1598
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-ptkp-2015.json",
+      "sha256": "18c711162ccd2420fa7c7e73d64a2ddf66a9a029c933f39ee69ce4d6d4baff8b",
+      "bytes": 1647
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-ptkp-2016-current.json",
+      "sha256": "c90cbac3c783d0fa537ae6a64dfa872c29e1788bfdb62e19233cbb27b6c1b028",
+      "bytes": 1646
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-recipient-activity-participant.json",
+      "sha256": "6a6adb6dabcee7b44dd4e89f914157b640ef5ab1ab1a054a2208dc4182fc451e",
+      "bytes": 1731
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-recipient-commissioner.json",
+      "sha256": "e47f29547f18538cc4b9815eca6409c1d430dc914bf839c3a7e5b0fbbd1222c4",
+      "bytes": 1693
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-recipient-former-employee.json",
+      "sha256": "17b137547263e4b6b6dbfb45c1009e9d18e56bda0b920352bd82e16e5e10d03a",
+      "bytes": 1706
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-recipient-nonemployee-norma.json",
+      "sha256": "dc156e3d0fe168862d632a70c66ae3441ab514425b25af3811ac4e35725ee429",
+      "bytes": 1735
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-recipient-pension-lumpsum.json",
+      "sha256": "755f761d3a242bad43ff79342f1546ec43f9405a7d269db18cc4b66fc236e9c2",
+      "bytes": 2634
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-shu-koperasi-final0.json",
+      "sha256": "ee753fdd7a98ec298cde9960b0eac6607c5b3278d0bc014044688a7e7a25bfb9",
+      "bytes": 1667
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-ter-daily.json",
+      "sha256": "38ffa6bf46ecc5dc1419bfb58428cbc613da9e5ba6972a1645c1291add1d5974",
+      "bytes": 1809
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-ter-monthly-a.json",
+      "sha256": "fc1f5a44e6b11e04082c967875679fb5d46782d008e163c2ff3543eb419afe3b",
+      "bytes": 6414
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-ter-monthly-b.json",
+      "sha256": "be0a20c9fe60970852d02960eac4b56fab8cf6c08e190452ff60fdfd29c25fc8",
+      "bytes": 5482
+    },
+    {
+      "path": "api/v2/rules/rule-pph-21-ter-monthly-c.json",
+      "sha256": "8e7ba1d9ac8f899bc199d7f10c31cd1875efa4e608b8a8d4a9c9ca9840eef237",
+      "bytes": 5465
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-jasa-konsultan-with-npwp.json",
+      "sha256": "b4ad6be19e54f9af972dc6b1c2cba275d54a110288ad29f54e8c8547da5bd53d",
+      "bytes": 2776
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-jasa-konsultan-without-npwp.json",
+      "sha256": "05cd03f75946e82c8c10a01d539003db49a3722e850dade4856ef6769d623e44",
+      "bytes": 2526
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-jasa-manajemen-with-npwp.json",
+      "sha256": "144d058c9d5a7b55e29d9e63d5069098b08559a9a2592003e8d1b1f0f05613d3",
+      "bytes": 2406
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-jasa-manajemen-without-npwp.json",
+      "sha256": "b2dfc869e9e69a4ff16962ba96ceb8ae97a9dcb58d93849d487fc72c2009390a",
+      "bytes": 1883
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-jasa-pmk141-lain-with-npwp.json",
+      "sha256": "f276e8b511302eb2d330f74597204ce2adf1b3a7b33983908634bf0124a45e30",
+      "bytes": 2708
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-jasa-pmk141-lain-without-npwp.json",
+      "sha256": "2a6a4b85dd2929f1621913f61233ab1db2b398405a1d8a71377cdd541ec767e7",
+      "bytes": 1911
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-jasa-teknik-with-npwp.json",
+      "sha256": "b27996fd858f82fa9e9e6345c54288b3a76ff29c786a624b2b7b107866ddb321",
+      "bytes": 2591
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-jasa-teknik-without-npwp.json",
+      "sha256": "0373ff8ba35217aa0443831afba8f448f4475d6bc564256a5eebbe57f4292513",
+      "bytes": 2095
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-rent-movable-with-npwp.json",
+      "sha256": "66d2dff1059ec1c3706e70e2eec9378902f584c4279cfb2b66c99b344d745c18",
+      "bytes": 2570
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-rent-movable-without-npwp.json",
+      "sha256": "d554f8d9e5449c5fd2704d342e5091f1185b59243c1b9b29d2f7351da0a05ff6",
+      "bytes": 1928
+    },
+    {
+      "path": "api/v2/rules/rule-pph-23-scope-rent-land-building.json",
+      "sha256": "cf74029d324a2ea7f6069959fc62d9429422338dbfdb60bb4f1daacbda0ec4da",
+      "bytes": 2345
+    },
+    {
+      "path": "api/v2/rules/rule-pph-badan-article31e.json",
+      "sha256": "f9f00813bc09f04d279f316d14fffa4c5af772ace6538551942ec9ba61d1226e",
+      "bytes": 5266
+    },
+    {
+      "path": "api/v2/rules/rule-pph-badan-base-22pct-hpp.json",
+      "sha256": "7dd5ca90363b4538fdc9a96013dcdc167854e6ec65f6c37118c8e940f326fb71",
+      "bytes": 2747
+    },
+    {
+      "path": "api/v2/rules/rule-pph-badan-base-22pct-uu2-2020.json",
+      "sha256": "13c22e05934555a1e9181d4f1ad88a60627af26fc14de7b0c9222f4ea27d7864",
+      "bytes": 2804
+    },
+    {
+      "path": "api/v2/rules/rule-pph-badan-base-25pct-pre2020.json",
+      "sha256": "bfabaa8804e3b380b1e53189d64df9054009d84cec6e82721af3668bda00d72f",
+      "bytes": 2738
+    },
+    {
+      "path": "api/v2/rules/rule-pph-badan-ikn.json",
+      "sha256": "11df5b5a3c3128d240da51749a7b152263b328fded5677de366dab92d1d2a66b",
+      "bytes": 3015
+    },
+    {
+      "path": "api/v2/rules/rule-pph-badan-listed-19pct-hpp.json",
+      "sha256": "8b99010d60499d188b3b5d88f989b79d009b39107e60dd320985db30f6912d64",
+      "bytes": 4040
+    },
+    {
+      "path": "api/v2/rules/rule-pph-badan-listed-19pct-uu2-2020.json",
+      "sha256": "92c6cfd63054619e104f41c7f910af3cbc290e6b79ac40f000ea56b5f953011c",
+      "bytes": 3712
+    },
+    {
+      "path": "api/v2/rules/rule-pph-badan-listed-20pct-pre2020.json",
+      "sha256": "77fdfa4f13d270aa19c11749cffdce09e8de203d50de0d014591ab41a67fa3a3",
+      "bytes": 3922
+    },
+    {
+      "path": "api/v2/rules/rule-pph-final-construction-besar-kualifikasi.json",
+      "sha256": "ebbd40b7d5af7acd8965167d1e81f54426e8e6a877516c448b9c7703ffbb68a8",
+      "bytes": 2699
+    },
+    {
+      "path": "api/v2/rules/rule-pph-final-construction-kecil-kualifikasi.json",
+      "sha256": "93c0c46c6d910985051e7b9f149d3261f658b7c012883992d20506ba73586f8b",
+      "bytes": 2420
+    },
+    {
+      "path": "api/v2/rules/rule-pph-final-rent-land-building.json",
+      "sha256": "3f4fd71c967815d85f7ea1285b09a8510a60c9f2f551ae7e4695cd172e28a419",
+      "bytes": 2506
+    },
+    {
+      "path": "api/v2/rules/rule-pph-final-transfer-permukiman.json",
+      "sha256": "9f0f8b02516de79ab6ea03f1a5d96c35c8d8377d68b7b5a6aca350b92187392e",
+      "bytes": 2432
+    },
+    {
+      "path": "api/v2/rules/rule-pph-final-transfer-sederhana.json",
+      "sha256": "99fd974e37028fce5d5f0b78d8373d01fb66dc47adcb26c07672dabf03de408c",
+      "bytes": 2371
+    },
+    {
+      "path": "api/v2/rules/rule-pph-final-umkm-pp20-2026.json",
+      "sha256": "040a72c45386c2445bec5c467f15e6566ef69d904c87354086a39c56b84b7002",
+      "bytes": 3422
+    },
+    {
+      "path": "api/v2/rules/rule-pph-final-umkm-pp23.json",
+      "sha256": "301506ff605388a6f50ec95de78b85ddf6e0a89d142310c06108d556ab8bd2d1",
+      "bytes": 3640
+    },
+    {
+      "path": "api/v2/rules/rule-pph-final-umkm-pp46.json",
+      "sha256": "93356c1cfef8e19d0564ea5ab41119fc4dad47819e36c93a6d506bc2d7a583de",
+      "bytes": 3054
+    },
+    {
+      "path": "api/v2/rules/rule-pph-final-umkm-pp55.json",
+      "sha256": "c7d4645228f47221daae411ff0d51f76eb7a09d43d18f2d16381ffcc6c242f03",
+      "bytes": 3630
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-domestic-supply-10pct-pre-hpp.json",
+      "sha256": "4812cdcf62c6972659a3975c412c696acb543bfabc8f532ca1d5f2028ef0aa86",
+      "bytes": 2681
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-domestic-supply-11pct.json",
+      "sha256": "a33c002a30bf6d7e1842242d6bab3a3c145554f21e429aa343d27082471888ba",
+      "bytes": 2741
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-domestic-supply-2025-luxury.json",
+      "sha256": "36a57f49d517dfab07d9b425c77983ea957d172356042f1f850e6a0fcce15ea4",
+      "bytes": 2715
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-domestic-supply-2025-nonluxury-dpp-factor.json",
+      "sha256": "709b7455ae43a3060f166e84ecae7e2ab889121473202471cce3d38accfa6fcd",
+      "bytes": 2213
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-domestic-supply-2025-nonluxury.json",
+      "sha256": "5ce7371dff7f10b5ba307ed16a5b8db7cf8fd4c91e37dca4c97317c12d8cd889",
+      "bytes": 3223
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-dpp-nilai-lain-11-12.json",
+      "sha256": "392dfb1f3e93e2577f43d116c6da07f2fb38fee23e288cb98c510369b32e9125",
+      "bytes": 3340
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-export-0pct.json",
+      "sha256": "812fd7fa76e4c847626eb3682929e541f35407b78bf10032347a8661c5bb018e",
+      "bytes": 2364
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-foreign-utilization-2025.json",
+      "sha256": "3678f88e997f228261e09e9e9e2792aa09e442436de89cdc9a313ec749c91c89",
+      "bytes": 2929
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-import-2025-luxury.json",
+      "sha256": "0f59e63a1392294e80e8c7288569c0549f8d3c8163a7b0f830b8f62378ae9f5e",
+      "bytes": 2344
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-import-2025-nonluxury.json",
+      "sha256": "1adce5a4fbe3385ee30c39b6ec973fd5111a2ff0db999f00afd827e37b7c05c2",
+      "bytes": 2603
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-luxury-retail-dpp-11-12-jan-2025.json",
+      "sha256": "bbac430b481812b892a79bc1899595ffccbe8ed4d572a7e737917fcf7073e3fc",
+      "bytes": 2481
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-luxury-retail-feb-2025.json",
+      "sha256": "b06903b36a5f8720d66af7986fad6f389ddd98281dfc3f53fc6dd1b82c8e1184",
+      "bytes": 2934
+    },
+    {
+      "path": "api/v2/rules/rule-ppn-luxury-retail-jan-2025.json",
+      "sha256": "e54dc667bedb5804c7c3d9ce67a24a3b7baa760da65ab9d875a85274fcbe767d",
+      "bytes": 3320
+    },
+    {
+      "path": "api/v2/search-index.json",
+      "sha256": "d5c44e6f13c18a386daf27e8f99b029a064943d3abfa22e74e459d163163b6e1",
+      "bytes": 433070
+    },
+    {
+      "path": "api/v2/sources/index.json",
+      "sha256": "129e29b9e99928d0dd7fd1cfcb8223769e1a17218e8c0c94707982ae4526be22",
+      "bytes": 15518
+    },
+    {
+      "path": "consolidated.json",
+      "sha256": "24eab359944bd2928061746c7da574b419ebfb9d0d8c8875599de959f64aa95b",
+      "bytes": 263836
+    },
+    {
+      "path": "dataset-jsonld.json",
+      "sha256": "595e2a7cb7aecfe8c3c1780b3fe4b9101a3c385d29d418449c37d2e51b3d0169",
+      "bytes": 3965
+    },
+    {
+      "path": "llms-full.txt",
+      "sha256": "40b60900df0a79ccf9af9876440938a885a483f860bbcb86aa050fd2c2d5f775",
+      "bytes": 14918
+    },
+    {
+      "path": "llms.txt",
+      "sha256": "98196d0cc2b55c779b6443363b0fbb39311970e7c6f7739b6100a9e21690894b",
+      "bytes": 3996
+    },
+    {
+      "path": "rates.json",
+      "sha256": "2fc32c55bf49456e7b681fe6a854d781a14f20bb69be98685278e27e87e27cc2",
+      "bytes": 72491
+    },
+    {
+      "path": "regulations.json",
+      "sha256": "e1521a1e24a950b23a017e4623ad3e457f6d310ad2d08a11b2024e4dd3358513",
+      "bytes": 28556
+    },
+    {
+      "path": "release.json",
+      "sha256": "cfeca1ff85ba90827a221377ded25380173c19c5e8352375ae2b24f9468f9f96",
+      "bytes": 246
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "ec4a91603ad09c50d27fdac93bf4b71e4cc5d56341b7e0ec1a3ab8a1340bd496",
+      "bytes": 161
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "b1f829995478a863656fbf327ea919a48ccf3da757e3d88ba0b8a8e270d7e854",
+      "bytes": 4724
+    }
+  ]
+}

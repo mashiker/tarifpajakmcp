@@ -1,0 +1,69 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-23-jasa-pmk141-lain-without-npwp",
+    "conceptId": "concept-pph-23-jasa-pmk141-lain",
+    "conceptName": "PPh 23 atas jasa lain PMK 141/PMK.03/2015",
+    "categoryId": "cat-pph-23",
+    "categoryName": "Pajak Penghasilan Pasal 23",
+    "validFrom": "2015-08-26",
+    "validToExclusive": null,
+    "rate": {
+      "type": "percentage",
+      "value": "0.04"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "serviceClass",
+          "value": "pmk141-lain"
+        },
+        {
+          "op": "equals",
+          "fact": "recipientHasNpwp",
+          "value": false
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-36-2008-pph",
+        "src-pmk-141-2015"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 23 ayat (1a): tanpa NPWP — 4%"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-141-2015",
+          "locator": "PMK 141 efektif 26 Agustus 2015"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 23 ayat (1a) (tanpa NPWP)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-23-jasa-pmk141-lain-multiplier-1a",
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Pengali Pasal 23 ayat (1a) untuk penerima tanpa NPWP pada jasa lain PMK 141.",
+    "conflicts": []
+  }
+}

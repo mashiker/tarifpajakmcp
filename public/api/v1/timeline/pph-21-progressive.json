@@ -1,0 +1,83 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "group": "pph-21-progressive",
+    "count": 5,
+    "description": "Timeline pph 21 progressive",
+    "entries": [
+      {
+        "id": "pph-21-progressive-uulama1983",
+        "transactionType": "Tarif Progresif UU 7/1983",
+        "rate": "Progresif",
+        "effectiveFrom": "1984-01-01",
+        "effectiveTo": "1994-12-31",
+        "status": "dicabut",
+        "legalBasis": "UU 7/1983 Pasal 17 ayat (1) huruf a",
+        "supersedes": [],
+        "supersededBy": [
+          "pph-21-progressive-uulama1994"
+        ]
+      },
+      {
+        "id": "pph-21-progressive-uulama1994",
+        "transactionType": "Tarif Progresif UU 10/1994",
+        "rate": "Progresif",
+        "effectiveFrom": "1995-01-01",
+        "effectiveTo": "2000-12-31",
+        "status": "dicabut",
+        "legalBasis": "UU 10/1994 Pasal 3",
+        "supersedes": [
+          "pph-21-progressive-uulama1983"
+        ],
+        "supersededBy": [
+          "pph-21-progressive-pre2009"
+        ]
+      },
+      {
+        "id": "pph-21-progressive-pre2009",
+        "transactionType": "Tarif Progresif Pra-2009",
+        "rate": "Progresif",
+        "effectiveFrom": "2001-01-01",
+        "effectiveTo": "2008-12-31",
+        "status": "diubah",
+        "legalBasis": "UU 17/2000 Pasal 17 ayat (1) huruf a",
+        "supersedes": [
+          "pph-21-progressive-pre2001"
+        ],
+        "supersededBy": [
+          "pph-21-progressive-pre2022"
+        ]
+      },
+      {
+        "id": "pph-21-progressive-pre2022",
+        "transactionType": "Tarif Progresif Pra-HPP",
+        "rate": "Progresif",
+        "effectiveFrom": "2009-01-01",
+        "effectiveTo": "2021-12-31",
+        "status": "diubah",
+        "legalBasis": "UU 36/2008 Pasal 17 ayat (1) huruf a",
+        "supersedes": [
+          "pph-21-progressive-pre2009"
+        ],
+        "supersededBy": [
+          "pph-21-progressive-annual-2024"
+        ]
+      },
+      {
+        "id": "pph-21-progressive-annual-2024",
+        "transactionType": "SPT Tahunan Progresif",
+        "rate": "Progresif",
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null,
+        "status": "berlaku",
+        "legalBasis": "UU 7/2021 (HPP) Pasal 17 ayat (1) huruf a",
+        "supersedes": [
+          "pph-21-progressive-pre2022"
+        ],
+        "supersededBy": []
+      }
+    ]
+  }
+}

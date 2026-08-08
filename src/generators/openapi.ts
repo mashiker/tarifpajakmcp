@@ -1,0 +1,186 @@
+// OpenAPI document builders. v1 is emitted by the v1 generator (kept inline so
+// the v1 surface is self-contained); this module owns the v2 document and the
+// shared canonical server list.
+//
+// The canonical origin lives in src/config.ts (Task 10). It is re-exported here
+// so existing callers (v1 generator) keep compiling without churn, but the
+// single source of truth is config.ts.
+
+import { CANONICAL_ORIGIN } from '../config.ts';
+
+export { CANONICAL_ORIGIN };
+
+const SERVERS = [
+  { url: CANONICAL_ORIGIN, description: 'Production' },
+  { url: 'http://localhost:4321', description: 'Development' },
+];
+
+/**
+ * Build the v2 OpenAPI 3.0.3 document. Declares the temporal endpoints
+ * (at-date, by-year), rule/concept/source/category/bppu detail, the rules
+ * corpus, the search index, and self-references.
+ */
+export function buildV2OpenApi(): Record<string, unknown> {
+  return {
+    openapi: '3.0.3',
+    info: {
+      title: 'Tarif Pajak Indonesia API (v2 temporal)',
+      version: '2.0.0',
+      description:
+        'Temporal tax-rate API. Half-open intervals validFrom <= date < validToExclusive. ' +
+        'Determination values: tepat, bersyarat, rentang, fakta_kurang, konflik_sumber. ' +
+        'All endpoints are static JSON files cacheable on a static host.',
+      license: { name: 'MIT', url: 'https://opensource.org/licenses/MIT' },
+      contact: { name: 'Tarif Pajak ID', url: CANONICAL_ORIGIN },
+    },
+    servers: SERVERS,
+    paths: {
+      '/api/v2/index.json': {
+        get: {
+          summary: 'API v2 index',
+          tags: ['Meta'],
+          responses: { '200': { description: 'Release metadata and typed endpoint map' } },
+        },
+      },
+      '/api/v2/rules/index.json': {
+        get: {
+          summary: 'List rules',
+          tags: ['Rules'],
+          responses: { '200': { description: 'All temporal rule summaries' } },
+        },
+      },
+      '/api/v2/rules/{id}.json': {
+        get: {
+          summary: 'Rule detail',
+          tags: ['Rules'],
+          parameters: [
+            { name: 'id', in: 'path', required: true, schema: { type: 'string' }, description: 'Rule id' },
+          ],
+          responses: { '200': { description: 'Full rule with rate, conditions, verification, conflicts' } },
+        },
+      },
+      '/api/v2/concepts/index.json': {
+        get: {
+          summary: 'List concepts',
+          tags: ['Concepts'],
+          responses: { '200': { description: 'All concept summaries with rule counts' } },
+        },
+      },
+      '/api/v2/concepts/{id}.json': {
+        get: {
+          summary: 'Concept detail',
+          tags: ['Concepts'],
+          parameters: [
+            { name: 'id', in: 'path', required: true, schema: { type: 'string' }, description: 'Concept id' },
+          ],
+          responses: { '200': { description: 'Concept with its rule ids' } },
+        },
+      },
+      '/api/v2/categories/index.json': {
+        get: {
+          summary: 'List categories',
+          tags: ['Categories'],
+          responses: { '200': { description: 'All category summaries' } },
+        },
+      },
+      '/api/v2/sources/index.json': {
+        get: {
+          summary: 'List sources',
+          tags: ['Sources'],
+          responses: { '200': { description: 'All source summaries with regulation ids' } },
+        },
+      },
+      '/api/v2/bppu/index.json': {
+        get: {
+          summary: 'BPPU codes',
+          tags: ['BPPU'],
+          responses: { '200': { description: 'Versioned BPPU codes with rule mappings' } },
+        },
+      },
+      '/api/v2/by-year/index.json': {
+        get: {
+          summary: 'Year index',
+          tags: ['Temporal'],
+          responses: { '200': { description: 'Years spanned by the ruleset with determination summaries' } },
+        },
+      },
+      '/api/v2/by-year/{year}.json': {
+        get: {
+          summary: 'Year segments',
+          tags: ['Temporal'],
+          parameters: [
+            { name: 'year', in: 'path', required: true, schema: { type: 'integer' }, description: 'Calendar year' },
+          ],
+          responses: { '200': { description: 'Clipped half-open year segments with rule ids and transition labels' } },
+        },
+      },
+      '/api/v2/at-date/index.json': {
+        get: {
+          summary: 'Exact-date fixture index',
+          tags: ['Temporal'],
+          responses: { '200': { description: 'Selected exact-date fixtures' } },
+        },
+      },
+      '/api/v2/at-date/{date}.json': {
+        get: {
+          summary: 'Exact-date resolution',
+          tags: ['Temporal'],
+          parameters: [
+            { name: 'date', in: 'path', required: true, schema: { type: 'string', format: 'date' }, description: 'ISO date' },
+          ],
+          responses: { '200': { description: 'Resolver result with determination, candidates, and conflicts' } },
+        },
+      },
+      '/api/v2/rules-corpus.json': {
+        get: {
+          summary: 'Rules corpus',
+          tags: ['Resolver'],
+          responses: { '200': { description: 'Serialized rules corpus for client-side resolution' } },
+        },
+      },
+      '/api/v2/search-index.json': {
+        get: {
+          summary: 'Search index',
+          tags: ['Search'],
+          responses: { '200': { description: 'Deterministic inverted index over rules' } },
+        },
+      },
+      '/api/v2/openapi.json': {
+        get: {
+          summary: 'OpenAPI document',
+          tags: ['Meta'],
+          responses: { '200': { description: 'This document' } },
+        },
+      },
+    },
+    components: {
+      schemas: {
+        Release: {
+          type: 'object',
+          properties: {
+            generatedAt: { type: 'string', format: 'date-time' },
+            sourceDateEpoch: { type: 'integer' },
+            sourceHash: { type: 'string', pattern: '^[a-f0-9]{64}$' },
+            gitCommit: { type: 'string' },
+            version: { type: 'string' },
+          },
+        },
+        Determination: {
+          type: 'string',
+          enum: ['tepat', 'bersyarat', 'rentang', 'fakta_kurang', 'konflik_sumber'],
+        },
+      },
+    },
+    tags: [
+      { name: 'Meta', description: 'API information' },
+      { name: 'Rules', description: 'Temporal tax rules' },
+      { name: 'Concepts', description: 'Transaction concepts' },
+      { name: 'Categories', description: 'Tax categories' },
+      { name: 'Sources', description: 'Provenance sources' },
+      { name: 'BPPU', description: 'Versioned BPPU codes' },
+      { name: 'Temporal', description: 'Date and year resolution' },
+      { name: 'Resolver', description: 'Client-side resolver corpus' },
+      { name: 'Search', description: 'Full-text search index' },
+    ],
+  };
+}

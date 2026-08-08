@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "13",
+    "bab": "III",
+    "bagian": "3",
+    "title": "Kompensasi Kerugian",
+    "status": "diubah",
+    "description": "Kerugian dapat dikompensasiikan selama 5 tahun (umum) atau 10 tahun (usaha tertentu).",
+    "keywords": [
+      "kompensasi",
+      "kerugian",
+      "5 tahun",
+      "10 tahun"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Kompensasi 5 tahun"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Penambahan 10 tahun untuk usaha tertentu"
+      }
+    ],
+    "text": "(1) Kerugian karena kegiatan usaha atau karena penjualan harta yang dimiliki dan dipergunakan dalam kegiatan usaha, yang diderita oleh Wajib Pajak dalam tahun pajak berjalan, dapat dikompensasikan dengan penghasilan neto dari usaha tersebut dalam tahun pajak berjalan.\n(2) Kerugian yang tidak dapat dikompensasikan pada ayat (1) dapat dikompensasikan pada tahun-tahun pajak berikutnya sampai dengan jangka waktu 5 (lima) tahun berturut-turut.\n(3) Jangka waktu kompensasi kerugian sebagaimana dimaksud pada ayat (2) dapat diperpanjang sampai dengan 10 (sepuluh) tahun berturut-turut untuk WP tertentu yang ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Kerugian usaha dapat dikompensasikan dengan penghasilan neto tahun berjalan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Sisa kerugian dikompensasikan pada 5 tahun berikutnya berturut-turut.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Kompensasi dapat diperpanjang sampai 10 tahun untuk WP tertentu yang ditetapkan PP.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

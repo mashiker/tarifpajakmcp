@@ -1,0 +1,64 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-final-pengalihan-pp71",
+    "category": "PPh",
+    "taxType": "PPh 4(2)",
+    "transactionType": "Pengalihan Hak atas Tanah/Bangunan (PP 71/2008)",
+    "description": "PPh final atas pengalihan hak atas tanah/bangunan berdasarkan PP 71/2008. Tarif berjenjang: 2.5% (umum), 1% (perumahan sederhana), 0% (waris/hibah keluarga inti).",
+    "rate": {
+      "type": "range",
+      "value": [
+        0,
+        2.5
+      ]
+    },
+    "taxBase": "NJOP atau nilai transaksi pengalihan",
+    "payer": "WP yang mengalihkan hak atas tanah/bangunan",
+    "recipient": "Negara",
+    "withholder": "Notaris / PPAT / BPN",
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 71/2008",
+        "article": "Pasal 2-4",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/49660/pp-no-71-tahun-2008"
+      }
+    ],
+    "supersedes": [
+      "pph-final-pengalihan-pp131"
+    ],
+    "supersededBy": [],
+    "notes": "PP 71/2008: 2.5% umum, 1% perumahan sederhana (max 300jt)/rusun (max 350jt), 0% waris/hibah keluarga inti.",
+    "examples": [
+      {
+        "scenario": "Penjualan tanah NJOP Rp 1.000.000.000",
+        "calculation": "2.5% × 1.000.000.000",
+        "result": "PPh final = Rp 25.000.000"
+      },
+      {
+        "scenario": "Waris orang tua ke anak, NJOP Rp 800.000.000",
+        "calculation": "0% (hibah/waris keluarga inti)",
+        "result": "PPh final = Rp 0"
+      }
+    ],
+    "tags": [
+      "pph-final",
+      "tanah",
+      "bangunan",
+      "pengalihan",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "supersedes": [
+        "pph-final-pengalihan-pp131"
+      ],
+      "sameCategory": []
+    }
+  }
+}

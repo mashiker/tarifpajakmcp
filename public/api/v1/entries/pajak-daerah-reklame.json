@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pajak-daerah-reklame",
+    "category": "Pajak Daerah",
+    "taxType": "Pajak Daerah",
+    "transactionType": "Pajak Reklame",
+    "description": "Pajak atas penyelenggaraan reklame.",
+    "rate": {
+      "type": "range",
+      "value": [
+        5,
+        25
+      ]
+    },
+    "taxBase": "NJOR / nilai sewa reklame",
+    "payer": "WP Daerah",
+    "recipient": "Pemerintah Daerah",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 60",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 5-25% dari NJOR.",
+    "examples": [
+      {
+        "scenario": "Reklame NJOR Rp 20.000.000/tahun",
+        "calculation": "25%×20jt",
+        "result": "Pajak=R5.000.000"
+      }
+    ],
+    "tags": [
+      "pajak-daerah",
+      "reklame"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "pajak-daerah-hotel",
+        "pajak-daerah-restoran",
+        "pajak-daerah-hiburan",
+        "pajak-daerah-penerangan-jalan",
+        "pajak-daerah-mineral-air",
+        "pajak-daerah-parkir",
+        "pajak-daerah-air-tanah"
+      ]
+    }
+  }
+}

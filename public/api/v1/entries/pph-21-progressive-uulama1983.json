@@ -1,0 +1,101 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-21-progressive-uulama1983",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "Tarif Progresif UU 7/1983",
+    "description": "Tarif progresif PPh Orang Pribadi berdasarkan UU 7/1983 (UU PPh asli). Terdiri dari 3 lapis tarif: 15%, 25%, dan 35%. Berlaku dari tahun pajak 1984 hingga 1994.",
+    "rate": {
+      "type": "progressive",
+      "value": "Progresif 3 lapis",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 10000000,
+          "rate": 15
+        },
+        {
+          "min": 10000000,
+          "max": 50000000,
+          "rate": 25
+        },
+        {
+          "min": 50000000,
+          "max": null,
+          "rate": 35
+        }
+      ]
+    },
+    "taxBase": "Penghasilan Kena Pajak (PKP)",
+    "payer": "WP Orang Pribadi dalam negeri",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1984-01-01",
+    "effectiveTo": "1994-12-31",
+    "status": "dicabut",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/1983",
+        "article": "Pasal 17 ayat (1) huruf a",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [
+      "pph-21-progressive-uulama1994"
+    ],
+    "notes": "UU PPh pertama Indonesia (UU 7/1983). Tarif progresif 3 lapis: 15% (≤10jt), 25% (10-50jt), 35% (>50jt). PTKP awal sangat kecil (Rp 960.000/tahun untuk single).",
+    "examples": [
+      {
+        "scenario": "PKP Rp 30.000.000 tahun 1990",
+        "calculation": "15% × 10jt + 25% × 20jt = 1.5jt + 5jt",
+        "result": "PPh terutang = Rp 6.500.000"
+      }
+    ],
+    "tags": [
+      "pph-21",
+      "progresif",
+      "historis",
+      "uu-7-1983"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-21-progressive-uulama1994"
+      ],
+      "sameCategory": [
+        "pph-21-ter-monthly-2024",
+        "pph-21-progressive-annual-2024",
+        "pph-21-progressive-pre2022",
+        "pph-21-non-taxable-income",
+        "pph-21-honorarium-bukan-pegawai",
+        "pph-21-pegawai-tidak-tetap",
+        "pph-21-shu-koperasi",
+        "pph-21-natura-kenikmatan",
+        "pph-21-dana-pensiun",
+        "pph-21-progressive-pre2009",
+        "pph-21-progressive-uulama1994",
+        "pph-21-progressive-monthly-pre2024",
+        "pph-21-ptkp-1984",
+        "pph-21-ptkp-1995",
+        "pph-21-ptkp-2005",
+        "pph-21-ptkp-2009",
+        "pph-21-ter-a-detail",
+        "pph-21-ter-b-detail",
+        "pph-21-ter-c-detail",
+        "pph-21-norma-dokter",
+        "pph-21-norma-pengacara",
+        "pph-21-norma-akuntan",
+        "pph-21-norma-arsitek",
+        "pph-21-norma-notaris",
+        "pph-21-norma-konsultan",
+        "pph-21-norma-pedagang",
+        "pph-21-norma-petani",
+        "pph-21-norma-pengusaha-kecil"
+      ]
+    }
+  }
+}

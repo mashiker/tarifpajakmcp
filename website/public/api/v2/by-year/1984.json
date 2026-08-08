@@ -1,0 +1,46 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "year": 1984,
+    "determination": "rentang",
+    "segments": [
+      {
+        "interval": {
+          "validFrom": "1984-01-01",
+          "validToExclusive": "1984-04-01"
+        },
+        "ruleIds": [
+          "rule-pph-21-pre2024-permanent-regime"
+        ],
+        "transition": false
+      },
+      {
+        "interval": {
+          "validFrom": "1984-04-01",
+          "validToExclusive": "1985-01-01"
+        },
+        "ruleIds": [
+          "rule-pph-21-pre2024-permanent-regime",
+          "rule-ppn-domestic-supply-10pct-pre-hpp",
+          "rule-ppn-export-0pct"
+        ],
+        "transition": true
+      }
+    ],
+    "ruleIds": [
+      "rule-pph-21-pre2024-permanent-regime",
+      "rule-ppn-domestic-supply-10pct-pre-hpp",
+      "rule-ppn-export-0pct"
+    ],
+    "conflicts": [],
+    "gap": false
+  }
+}

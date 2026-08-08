@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "7",
+    "bab": "II",
+    "title": "Penilaian Penggantian",
+    "status": "berlaku",
+    "description": "Ketentuan penilaian penggantian untuk tujuan perpajakan.",
+    "keywords": [
+      "penilaian",
+      "penggantian"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Penghasilan dari penggantian dari asuransi, karena tidak dikenakan PPh, bukan merupakan objek pajak.\n(2) Penggantian dari pemberi kerja atau badan lain sepanjang tidak melebihi jumlah yang ditetapkan oleh Pemerintah bukan merupakan objek pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penggantian asuransi bukan objek pajak.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Penggantian dari pemberi kerja sepanjang tidak melebihi batas pemerintah bukan objek pajak.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

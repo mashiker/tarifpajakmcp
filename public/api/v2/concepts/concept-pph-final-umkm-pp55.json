@@ -1,0 +1,21 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "concept-pph-final-umkm-pp55",
+    "categoryId": "cat-pph-final-umkm",
+    "name": "PPh Final UMKM PP 55/2022 versi asli (0,5%)",
+    "slug": "pph-final-umkm-pp55",
+    "description": "Pajak Penghasilan final 0,5% atas peredaran bruto usaha. Berlaku 20 Desember 2022 - 21 April 2026. Menambah BUM Desa dan perseroan perorangan sebagai entitas eligible. Pasal 69 mempertahankan jam durasi PP 23/2018. Pengecualian Rp500 juta OP adalah pengecualian DASAR (kumulatif dari masa pajak pertama, refresh setiap tahun pajak) BUKAN langit-langit elegibilitas kedua. Pasal 61: pelanggaran langit-langit tetap meneruskan 0,5% sampai akhir tahun pajak. Versi asli — Pasal 57/59 berlaku sendirian hanya sampai 21 April 2026 (PP 20/2026 menghapus Pasal 59 dan menyempitkan entitas eligible mulai 22 April 2026).",
+    "ruleIds": [
+      "rule-pph-final-umkm-pp55"
+    ]
+  }
+}

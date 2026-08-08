@@ -1,0 +1,54 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "8",
+    "bab": "II",
+    "bagian": "1",
+    "title": "PMSE (Perdagangan Melalui Sistem Elektronik)",
+    "status": "ditambah",
+    "description": "Ketentuan PPN atas transaksi PMSE: penyerahan BKP/JKP melalui marketplace/ecommerce.",
+    "keywords": [
+      "PMSE",
+      "ecommerce",
+      "marketplace",
+      "digital"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "added",
+        "effectiveDate": "2010-04-01",
+        "summary": "Pasal baru tentang PMSE"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan ketentuan PMSE"
+      }
+    ],
+    "text": "(1) Pengusaha kecil yang peredaran brutonya kurang dari Rp 4.800.000.000,00 tidak wajib dikukuhkan sebagai PKP.\n(2) Pengusaha kecil sebagaimana dimaksud pada ayat (1) dapat memilih untuk dikukuhkan sebagai PKP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pengusaha kecil bruto <Rp4,8 miliar tidak wajib PKP.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Dapat memilih menjadi PKP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

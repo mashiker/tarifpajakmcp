@@ -1,0 +1,81 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "1",
+    "bab": "I",
+    "title": "Definisi",
+    "status": "diubah",
+    "description": "Ketentuan umum dan definisi istilah perpajakan termasuk definisi Wajib Pajak, penghasilan, pajak, tahun pajak, bagian tahun pajak, dan lain-lain.",
+    "keywords": [
+      "definisi",
+      "WP",
+      "penghasilan",
+      "NPWP",
+      "SPT",
+      "pembukuan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli UU KUP 1983 dengan definisi dasar"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "9",
+          "year": 1994
+        },
+        "changeType": "partially_amended",
+        "effectiveDate": "1995-01-01",
+        "changedAyats": [
+          "(1)"
+        ],
+        "summary": "Penambahan definisi istilah baru"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "changedAyats": [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        "summary": "Penambahan definisi media elektronik, SUNAT, dan istilah modernisasi perpajakan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "changedAyats": [
+          "(1)"
+        ],
+        "summary": "Perubahan definisi WP, penambahan istilah terkait pengungkapan sukarela dan kerja sama internasional"
+      }
+    ],
+    "text": "(1) Dalam Undang-Undang ini, yang dimaksud dengan:\na. Pajak adalah kontribusi wajib kepada negara yang terutang oleh orang pribadi atau badan yang bersifat memaksa berdasarkan Undang-Undang, dengan tidak mendapatkan imbalan secara langsung dan digunakan untuk keperluan negara bagi sebesar-besarnya kemakmuran rakyat;\nb. Wajib Pajak adalah orang pribadi atau badan yang menurut ketentuan peraturan perundang-undangan perpajakan ditentukan untuk melakukan kewajiban perpajakan, termasuk pemungut pajak atau pemotong pajak tertentu;\nc. NPWP (Nomor Pokok Wajib Pajak) adalah nomor yang diberikan kepada Wajib Pajak sebagai sarana dalam administrasi perpajakan yang dipergunakan sebagai tanda pengenal diri atau identitas Wajib Pajak dalam melaksanakan hak dan kewajiban perpajakannya;\nd. SPT (Surat Pemberitahuan) adalah surat yang oleh Wajib Pajak digunakan untuk melaporkan penghitungan dan/atau pembayaran pajak, objek pajak dan/atau bukan objek pajak, dan/atau harta dan kewajiban sesuai ketentuan peraturan perundang-undangan perpajakan;\ne. pembukuan adalah suatu proses pencatatan yang dilakukan secara teratur untuk mengumpulkan data dan informasi keuangan yang meliputi harta, kewajiban, modal, penghasilan dan biaya, serta jumlah harga perolehan dan penyerahan barang atau jasa, yang ditutup dengan menyusun laporan keuangan berupa neraca, dan laporan laba rugi untuk periode Tahun Pajak tersebut;\nf. pembetulan adalah perbaikan SPT yang telah disampaikan kepada DJP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Definisi: Pajak, Wajib Pajak, NPWP, SPT, pembukuan, pembetulan, dan istilah perpajakan lainnya.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

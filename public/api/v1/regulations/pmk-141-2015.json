@@ -1,0 +1,27 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pmk-141-2015",
+    "number": "141",
+    "year": 2015,
+    "title": "PMK tentang Pemotongan Pajak Penghasilan Pasal 23 atas Pendapatan yang Diterima oleh Badan Usaha Penyedia Jasa Katering atau Tata Boga",
+    "shortName": "PMK PPh 23 Katering",
+    "type": "PMK",
+    "promulgationDate": "2015-09-18",
+    "effectiveDate": "2015-10-05",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/52371/pmk-no-141-pmk-03-2015",
+    "status": "berlaku",
+    "description": "PMK mengatur PPh 23 khusus untuk jasa katering/tata boga. Tarif 2% untuk BerNPWP. Memisahkan katering dari jasa umum PPh 23.",
+    "relevantArticles": "Pasal 1, 3",
+    "relatedRegulations": [
+      "pp-60-2023"
+    ],
+    "referencingEntries": [
+      "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct"
+    ]
+  }
+}

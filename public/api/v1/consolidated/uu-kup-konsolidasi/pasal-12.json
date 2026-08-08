@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "12",
+    "bab": "IV",
+    "title": "Tahun Buku",
+    "status": "berlaku",
+    "description": "Ketentuan tentang tahun buku dan tanggal tutup buku.",
+    "keywords": [
+      "tahun buku",
+      "tanggal tutup buku"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Pembukuan diselenggarakan dengan cara pengumpulan data secara teratur mengenai peredaran atau penerimaan bruto dan/atau penghasilan serta pengeluaran.\n(2) Pembukuan yang diselenggarakan sebagaimana dimaksud pada ayat (1) ditutup dengan menyusun laporan keuangan berupa neraca dan laporan laba rugi.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pembukuan: pengumpulan data teratur mengenai peredaran bruto, penghasilan, dan pengeluaran.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Ditutup dengan neraca dan laporan laba rugi.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

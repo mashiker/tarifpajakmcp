@@ -1,0 +1,54 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-21-natura-summary",
+    "conceptId": "concept-pph-21-natura",
+    "conceptName": "Natura / kenikmatan dari pemberi kerja",
+    "categoryId": "cat-pph-21",
+    "categoryName": "Pajak Penghasilan Pasal 21",
+    "validFrom": "2024-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "formula",
+      "expression": "Tergantung sumber (pemberi kerja vs bukan), pemotong, dan penilaian nilai wajar (PP 55/2022; PMK 66/2023). Tidak ada satu tarif tunggal."
+    },
+    "verification": {
+      "status": "summary_only",
+      "sourceIds": [
+        "src-uu-7-2021-hpp",
+        "src-pmk-168-2023"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Pasal 12 (natura/kenikmatan)"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Berlaku 2024"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Bergantung pada pemberi kerja/pemotong"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-21-natura",
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Reclassified: natura/kenikmatan tidak memiliki satu tarif primer yang berdiri sendiri; bergantung pada kondisi.",
+    "conflicts": []
+  }
+}

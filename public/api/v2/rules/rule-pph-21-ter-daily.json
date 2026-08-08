@@ -1,0 +1,58 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-21-ter-daily",
+    "conceptId": "concept-pph-21-ter-daily",
+    "conceptName": "Pemotongan harian TER PPh 21",
+    "categoryId": "cat-pph-21",
+    "categoryName": "Pajak Penghasilan Pasal 21",
+    "validFrom": "2024-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "formula",
+      "expression": "TER harian (Lampiran D PP 58/2023) × penghasilan bruto harian; per kelas PTKP, dengan PTKP harian = PTKP tahunan × 1/360"
+    },
+    "conditions": {
+      "op": "exists",
+      "fact": "dailyGross"
+    },
+    "verification": {
+      "status": "verified_secondary",
+      "sourceIds": [
+        "src-pp-58-2023",
+        "src-pmk-168-2023"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pp-58-2023",
+          "locator": "Lampiran D (tabel TER harian)"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pp-58-2023",
+          "locator": "Pasal 5 (berlaku 1 Januari 2024)"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Pasal 8-10 (PTKP harian, pegawai tidak tetap)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-21-ter-daily",
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tabel TER harian Lampiran D PP 58/2023. Lapisan lengkap belum ditranskripsi penuh; verify_secondary sampai tabel harian lengkap diverifikasi.",
+    "conflicts": []
+  }
+}

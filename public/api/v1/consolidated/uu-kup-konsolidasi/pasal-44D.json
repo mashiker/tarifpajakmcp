@@ -1,0 +1,43 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "44D",
+    "bab": "XIII",
+    "title": "Kewajiban Pelaporan Keuangan",
+    "status": "ditambah",
+    "description": "Ketentuan Country-by-Country Reporting dan pelaporan keuangan untuk WP MNE Group.",
+    "keywords": [
+      "CbCR",
+      "BEPS",
+      "MNE",
+      "pelaporan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru tentang CbCR"
+      }
+    ],
+    "text": "(1) Setiap orang yang dengan sengaja tidak memotong atau memungut pajak sebagaimana mestinya sehingga menimbulkan kerugian bagi pendapatan negara diancam dengan pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp 100.000.000.\n(2) Tindak pidana sebagaimana dimaksud pada ayat (1) adalah kejahatan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pidana max 2 tahun/denda max Rp100 juta atas tidak memotong/memungut pajak.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Kejahatan.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

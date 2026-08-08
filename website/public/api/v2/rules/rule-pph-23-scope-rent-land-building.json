@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-23-scope-rent-land-building",
+    "conceptId": "concept-pph-23-scope-rent-land-building",
+    "conceptName": "Pengecualian cakupan: persewaan tanah/bangunan adalah FINAL PPh 4(2)",
+    "categoryId": "cat-pph-23",
+    "categoryName": "Pajak Penghasilan Pasal 23",
+    "validFrom": "2009-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "not_applicable"
+    },
+    "conditions": {
+      "op": "equals",
+      "fact": "serviceClass",
+      "value": "rent-land-building"
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-36-2008-pph",
+        "src-pp-34-2017"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pp-34-2017",
+          "locator": "Pasal 2 dan Lampiran PP 34/2017: PPh final 10% atas persewaan tanah/bangunan; BUKAN PPh 23 (efektif 2 Januari 2018). Pra-2018: PPh 23 final 10% (UU PPh lama). Tarif kanonik 10% ada di kategori PPh 4(2)."
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pp-34-2017",
+          "locator": "PP 34/2017 efektif 2 Januari 2018 — menggantikan rezim PPh 23 final pra-2018 untuk sewa tanah/bangunan"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 23 ayat (1) huruf c angka 4 mengecualikan sewa tanah/bangunan (sudah PPh 4(2) final)."
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-23-scope-rent-land-building",
+    "supersedes": [],
+    "supersededBy": [],
+    "bppuId": "bppu-28-403-02",
+    "notes": "Pengecualian cakupan: persewaan tanah/bangunan adalah FINAL PPh 4(2) 10% per PP 34/2017 (efektif 2 Januari 2018), bukan PPh 23. Resolver TIDAK boleh mengembalikan 2% PPh 23 untuk objek ini. KOP CSV mengaitkan kode 28-403-02 dengan 'PP 8/2024' (Coretax); konflik atribusi ini dideklarasikan pada cat-pph-23.knownDiscrepancies (PP 34/2017 tetap dasar primer tarif 10%).",
+    "conflicts": []
+  }
+}

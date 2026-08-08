@@ -1,0 +1,171 @@
+{
+  "$comment": "Boundary fixtures for PPh Badan + facilities migration (Task 7). Every expectation encodes a verified primary-source fact. UU 36/2008 Art 17(1)(b): 25% from Tax Year 2010 (still 25% in 2019); listed-company reduction 5pp -> 20%. Perppu 1/2020 -> UU 2/2020 Art 5(1)(a): 22% for Tax Years 2020-2021; listed -> 19%. UU 7/2021 HPP Art 3 point 7 amending UU PPh Art 17(1)(b): 22% from Tax Year 2022-current; listed reduction now 3pp -> 19%. UU PPh Art 17(2b) + PP 55/2022 Art 64-65 + PMK 40/2023: listed conditions (>=40% traded, >=300 parties, each <5%, >=183 days/year, reporting); reduction is 3 PERCENTAGE POINTS, not 3% proportional. UU PPh Pasal 31E(1): resident badan with gross turnover <= Rp50bn gets 50% rate reduction on PKP attributable to first Rp4.8bn turnover. Formula turnover <= Rp4.8bn: 50%x22%xPKP. Formula Rp4.8bn<turnover<=Rp50bn: proportional allocation. Mandatory when eligible, not elective. No reduction above Rp50bn. IKN facilities PMK 28/2024 Art 4(1) 100% reduction; Art 8/10 duration schedules; Art 8(5) 50% for 'other business' 2031-2045. Mark needs_review when category/eligibility not fully evidenced. Rates stored as decimal fractions (0.22 = 22%). Amounts are 2-decimal currency strings in IDR. Tax-year semantics: a Tax Year N is covered by an interval whose validFrom is YYYY-01-01 of the year the rate first applies. See data/v2/sources.json for primary locators.",
+  "sourcesVerifiedAt": "2026-08-06",
+  "effectiveDate": {
+    "$comment": "Corporate rate chronology (tax-year based). UU 36/2008 brought the 25%/28% badan tier structure into 28% pre-2010 then 25% from Tax Year 2010; this fixture focuses on 2010-current as the brief specifies. UU 2/2020 (Perppu 1/2020) 22% applies to Tax Years 2020 and 2021. UU 7/2021 HPP 22% applies to Tax Year 2022 onward. The scheduled 20% from 2022 under UU 2/2020 was SUPERSEDED by UU HPP keeping 22%.",
+    "pct25TaxYearStart": "2010-01-01",
+    "pct25LastDay": "2019-12-31",
+    "pct22FirstDay": "2020-01-01",
+    "pct22LastDay": "2021-12-31",
+    "pct22HppFirstDay": "2022-01-01",
+    "pct22HppCurrent": null
+  },
+  "concepts": {
+    "$comment": "Distinct concepts: base corporate rate, listed-company reduction, Article 31E small-business facility, IKN facility. Facilities are conditions/formulas, not standalone unconditional rates.",
+    "badanBase": { "conceptId": "concept-pph-badan-base" },
+    "badanListed": { "conceptId": "concept-pph-badan-listed" },
+    "badan31E": { "conceptId": "concept-pph-badan-article31e" },
+    "iknFacility": { "conceptId": "concept-pph-badan-ikn" }
+  },
+  "boundaries": [
+    {
+      "id": "badan-2019-still-25pct",
+      "description": "UU 36/2008 Art 17(1)(b): 25% corporate rate still in effect for Tax Year 2019. Boundary day 2019-06-15 must resolve 25%, NOT 22%.",
+      "date": "2019-06-15",
+      "request": { "conceptId": "concept-pph-badan-base", "facts": { "taxpayerType": "badan", "resident": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.25", "pphAmount": "250000000.00" }
+    },
+    {
+      "id": "badan-2020-now-22pct",
+      "description": "Perppu 1/2020 -> UU 2/2020 Art 5(1)(a): 22% for Tax Year 2020. Boundary day 2020-06-15 must resolve 22%, NOT 25%.",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-badan-base", "facts": { "taxpayerType": "badan", "resident": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.22", "pphAmount": "220000000.00" }
+    },
+    {
+      "id": "badan-2021-still-22pct",
+      "description": "UU 2/2020 Art 5(1)(a): 22% still in effect for Tax Year 2021 (the last year of the UU 2/2020 regime).",
+      "date": "2021-06-15",
+      "request": { "conceptId": "concept-pph-badan-base", "facts": { "taxpayerType": "badan", "resident": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.22", "pphAmount": "220000000.00" }
+    },
+    {
+      "id": "badan-2022-hpp-22pct-not-20pct",
+      "description": "UU 7/2021 HPP Art 3 point 7 amending UU PPh Art 17(1)(b): 22% from Tax Year 2022 onward. The scheduled 20% from 2022 under UU 2/2020 was SUPERSEDED by UU HPP keeping 22%. Boundary day 2022-06-15 must resolve 22%, NOT 20%.",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-base", "facts": { "taxpayerType": "badan", "resident": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.22", "pphAmount": "220000000.00" }
+    },
+    {
+      "id": "badan-current-2025-22pct",
+      "description": "UU HPP 22% continues through Tax Year 2025 (current).",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-pph-badan-base", "facts": { "taxpayerType": "badan", "resident": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.22", "pphAmount": "220000000.00" }
+    },
+    {
+      "id": "listed-2019-20pct-5pp-reduction",
+      "description": "UU 36/2008 Art 17(1)(b) jo. listed conditions: a qualifying listed company gets a 5 percentage point reduction 25% -> 20% for Tax Year 2019. Reduction is in PERCENTAGE POINTS, not 3% proportional.",
+      "date": "2019-06-15",
+      "request": { "conceptId": "concept-pph-badan-listed", "facts": { "taxpayerType": "badan", "resident": true, "listed": true, "floatTradedPct": "0.40", "minShareholders": "300", "maxStakePct": "0.05", "heldDays": "200", "listedConditionsMet": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.20", "pphAmount": "200000000.00" }
+    },
+    {
+      "id": "listed-2020-19pct-3pp-reduction",
+      "description": "UU 2/2020 Art 5(1)(a): qualifying listed company gets 22% - 3pp = 19% for Tax Years 2020-2021.",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-badan-listed", "facts": { "taxpayerType": "badan", "resident": true, "listed": true, "floatTradedPct": "0.40", "minShareholders": "300", "maxStakePct": "0.05", "heldDays": "200", "listedConditionsMet": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.19", "pphAmount": "190000000.00" }
+    },
+    {
+      "id": "listed-2022-hpp-19pct-3pp-reduction",
+      "description": "UU 7/2021 HPP Art 3 point 7 amending UU PPh Art 17(1)(b) + Art 17(2b): qualifying listed company gets 22% - 3pp = 19% from Tax Year 2022-current. Reduction is 3 PERCENTAGE POINTS, not 3% proportional (which would be 21.34%).",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-listed", "facts": { "taxpayerType": "badan", "resident": true, "listed": true, "floatTradedPct": "0.40", "minShareholders": "300", "maxStakePct": "0.05", "heldDays": "200", "listedConditionsMet": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.19", "pphAmount": "190000000.00" }
+    },
+    {
+      "id": "listed-missing-conditions-fakta-kurang",
+      "description": "Listed-company reduction requires all conditions (>=40% traded, >=300 parties, each <5%, >=183 days/year, reporting) AND the derived gate fact listedConditionsMet. Without the float/ownership facts, resolver must return fakta_kurang or bersyarat — never an unconditional 19%.",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-listed", "facts": { "taxpayerType": "badan", "resident": true, "listed": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["fakta_kurang", "bersyarat"], "missingFactAny": ["floatTradedPct", "minShareholders", "maxStakePct", "heldDays", "listedConditionsMet"] }
+    },
+    {
+      "id": "listed-conditions-not-met-no-reduction",
+      "description": "When listed conditions are NOT met (e.g. floatTradedPct below 40%, so listedConditionsMet=false), the listed reduction does not apply. Resolver must NOT return 19%; the base 22% (via concept-pph-badan-base) applies instead.",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-listed", "facts": { "taxpayerType": "badan", "resident": true, "listed": true, "floatTradedPct": "0.30", "minShareholders": "300", "maxStakePct": "0.05", "heldDays": "200", "listedConditionsMet": false, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["fakta_kurang"] }
+    },
+    {
+      "id": "article31e-turnover-under-4.8bn",
+      "description": "UU PPh Pasal 31E(1): resident badan with gross turnover <= Rp4.8bn gets 50% rate reduction on PKP attributable to first Rp4.8bn turnover. Formula when turnover <= Rp4.8bn: 50% x 22% x PKP. For PKP 1.000.000.000 and turnover 4.000.000.000: PPh = 50% x 22% x 1.000.000.000 = 110.000.000.",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-article31e", "facts": { "taxpayerType": "badan", "resident": true, "grossTurnover": "4000000000", "article31eEligible": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "effectiveRateFraction": "0.11", "pphAmount": "110000000.00" }
+    },
+    {
+      "id": "article31e-turnover-exactly-4.8bn",
+      "description": "At turnover exactly Rp4.8bn, the full PKP is attributable to the first Rp4.8bn, so the full 50% reduction applies: 50% x 22% x PKP.",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-article31e", "facts": { "taxpayerType": "badan", "resident": true, "grossTurnover": "4800000000", "article31eEligible": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "effectiveRateFraction": "0.11", "pphAmount": "110000000.00" }
+    },
+    {
+      "id": "article31e-turnover-above-4.8bn-below-50bn-proportional",
+      "description": "UU PPh Pasal 31E(1): when Rp4.8bn < turnover <= Rp50bn, only the PKP PROPORTIONALLY attributable to the first Rp4.8bn turnover gets the 50% reduction (proportional allocation, NOT whole-PKP flattening). For turnover 24.000.000.000 (5x the 4.8bn threshold), 1/5 of PKP 1.000.000.000 = 200.000.000 gets 11% (22% x 50%), the rest 800.000.000 gets 22%. PPh = 22.000.000 + 176.000.000 = 198.000.000. Effective rate = 19.8%.",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-article31e", "facts": { "taxpayerType": "badan", "resident": true, "grossTurnover": "24000000000", "article31eEligible": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "pphAmount": "198000000.00" }
+    },
+    {
+      "id": "article31e-turnover-exactly-50bn-still-eligible",
+      "description": "At turnover exactly Rp50bn, the badan is still eligible for Article 31E (boundary is inclusive at 50bn).",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-article31e", "facts": { "taxpayerType": "badan", "resident": true, "grossTurnover": "50000000000", "article31eEligible": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"] }
+    },
+    {
+      "id": "article31e-turnover-above-50bn-no-reduction",
+      "description": "UU PPh Pasal 31E(1): no reduction above Rp50bn turnover. A badan with turnover 60.000.000.000 is NOT eligible (article31eEligible=false); the base 22% applies. The 31E concept must NOT resolve to a reduced rate.",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-article31e", "facts": { "taxpayerType": "badan", "resident": true, "grossTurnover": "60000000000", "article31eEligible": false, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["fakta_kurang"] }
+    },
+    {
+      "id": "article31e-missing-turnover-fakta-kurang",
+      "description": "Article 31E eligibility depends on the grossTurnover fact. Without it, resolver must return fakta_kurang — never an unconditional 11%.",
+      "date": "2022-06-15",
+      "request": { "conceptId": "concept-pph-badan-article31e", "facts": { "taxpayerType": "badan", "resident": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["fakta_kurang"], "missingFact": "grossTurnover" }
+    },
+    {
+      "id": "ikn-facility-100pct-reduction-needs-review",
+      "description": "PMK 28/2024 Art 4(1): IKN business in an eligible category gets 100% reduction for the duration per Art 8/10 schedules. The full category/eligibility/investment-window facts are not always available, so the record must surface as needs_review (bersyarat), never as an unconditional 0% tepat.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-pph-badan-ikn", "facts": { "taxpayerType": "badan", "resident": true, "iknBusiness": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["bersyarat"] }
+    },
+    {
+      "id": "ikn-facility-missing-category-fakta-kurang",
+      "description": "Without the IKN business category and investment window facts, the IKN facility cannot resolve exactly. Must return fakta_kurang or bersyarat — never an unconditional 0% tepat.",
+      "date": "2025-06-15",
+      "request": { "conceptId": "concept-pph-badan-ikn", "facts": { "taxpayerType": "badan", "resident": true, "pkp": "1000000000" } },
+      "expect": { "determinationIn": ["fakta_kurang", "bersyarat"] }
+    }
+  ],
+  "article31e": {
+    "$comment": "Article 31E proportional allocation parameters. Base rate 22% (UU HPP). Reduction 50% on the PKP proportionally attributable to the first Rp4.8bn turnover. Turnover ceiling Rp50bn for eligibility (inclusive). Formula not whole-PKP flattening.",
+    "baseRateFraction": "0.22",
+    "reductionFraction": "0.50",
+    "turnoverThreshold": "4800000000",
+    "turnoverCeiling": "50000000000"
+  },
+  "listedReduction": {
+    "$comment": "Listed-company reduction is in PERCENTAGE POINTS, not proportional. Pre-2020: 5pp off 25% = 20%. 2020-2021 (UU 2/2020): 3pp off 22% = 19%. 2022-current (UU HPP): 3pp off 22% = 19%. Conditions: >=40% floated, >=300 shareholders, each <5%, held >=183 days/year, reporting compliance.",
+    "pre2020BaseFraction": "0.25",
+    "pre2020ReductionPp": "0.05",
+    "pre2020EffectiveFraction": "0.20",
+    "uu2-2020BaseFraction": "0.22",
+    "uu2-2020ReductionPp": "0.03",
+    "uu2-2020EffectiveFraction": "0.19",
+    "hppBaseFraction": "0.22",
+    "hppReductionPp": "0.03",
+    "hppEffectiveFraction": "0.19",
+    "floatTradedPctMinimum": "0.40",
+    "minShareholders": "300",
+    "maxStakePct": "0.05",
+    "minHeldDays": "183"
+  }
+}

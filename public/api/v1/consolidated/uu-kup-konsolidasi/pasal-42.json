@@ -1,0 +1,57 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "42",
+    "bab": "XI",
+    "title": "Kerahasiaan",
+    "status": "diubah",
+    "description": "Kewajiban menjaga kerahasiaan data perpajakan oleh pejabat pajak. Pengecualian untuk kepentingan hukum tertentu.",
+    "keywords": [
+      "kerahasiaan",
+      "data pajak",
+      "DJP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "16",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Pengetatan kerahasiaan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Penambahan pengecualian untuk kerja sama internasional"
+      }
+    ],
+    "text": "(1) Setiap orang yang karena kelalaian tidak menyampaikan SPT atau menyampaikan SPT yang isinya tidak benar dikenakan sanksi administrasi berupa denda.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Sanksi administrasi: denda bagi yang lalai tidak menyampaikan SPT atau SPT tidak benar.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

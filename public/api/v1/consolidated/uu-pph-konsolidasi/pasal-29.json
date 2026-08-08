@@ -1,0 +1,36 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "29",
+    "bab": "VIII",
+    "title": "Pajak Penghasilan yang Tidak Final",
+    "status": "berlaku",
+    "description": "PPh yang bersifat tidak final dapat dikreditkan terhadap PPh terutang.",
+    "keywords": [
+      "tidak final",
+      "kredit"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Penghasilan yang tidak termasuk objek PPh final sebagaimana dimaksud dalam Pasal 4 ayat (3) tetap dikenakan PPh tidak final.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penghasilan yang bukan PPh final tetap dikenakan PPh tidak final.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

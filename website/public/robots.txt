@@ -1,0 +1,6 @@
+# Tarif Pajak ID — robots.txt
+# Allow all user agents to crawl the HTML surface.
+User-agent: *
+Allow: /
+
+Sitemap: https://tarif-pajak-id.pages.dev/sitemap.xml

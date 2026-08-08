@@ -1,0 +1,42 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "16F",
+    "bab": "II",
+    "bagian": "8",
+    "title": "Perpajakan di IKN",
+    "status": "ditambah",
+    "description": "Ketentuan PPN khusus untuk Ibu Kota Nusantara (IKN).",
+    "keywords": [
+      "IKN",
+      "fasilitas IKN"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru - PPN khusus IKN"
+      }
+    ],
+    "text": "(1) DJP dapat menerbitkan STP atas PPN yang tidak atau kurang disetor.\n(2) STP sebagaimana dimaksud pada ayat (1) mengikuti ketentuan UU KUP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "STP atas PPN tidak/kurang disetor.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Sesuai UU KUP.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

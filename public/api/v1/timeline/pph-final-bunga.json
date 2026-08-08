@@ -1,0 +1,36 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "group": "pph-final-bunga",
+    "count": 2,
+    "description": "Timeline pph final bunga",
+    "entries": [
+      {
+        "id": "pph-final-bunga-pre2009",
+        "transactionType": "Bunga Simpanan (Pra-2009)",
+        "rate": "15%",
+        "effectiveFrom": "2001-01-01",
+        "effectiveTo": "2008-12-31",
+        "status": "diubah",
+        "legalBasis": "UU 17/2000 Pasal 4 ayat (2)",
+        "supersedes": [],
+        "supersededBy": [
+          "pph-final-bunga-deposito"
+        ]
+      },
+      {
+        "id": "pph-final-bunga-deposito",
+        "transactionType": "Bunga Deposito dan Tabungan",
+        "rate": "20%",
+        "effectiveFrom": "2009-01-01",
+        "effectiveTo": null,
+        "status": "berlaku",
+        "legalBasis": "UU 36/2008 Pasal 4 ayat (2); PP 131/2000 Pasal 2",
+        "supersedes": [],
+        "supersededBy": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-badan-listed-20pct-pre2020",
+    "conceptId": "concept-pph-badan-listed",
+    "conceptName": "Fasilitas pengurangan tarif perusahaan listed (UU PPh Pasal 17 ayat (2b) jo. PP 55/2022 jo. PMK 40/2023)",
+    "categoryId": "cat-pph-badan",
+    "categoryName": "Pajak Penghasilan Badan",
+    "validFrom": "2010-01-01",
+    "validToExclusive": "2020-01-01",
+    "rate": {
+      "type": "percentage",
+      "value": "0.20"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "taxpayerType",
+          "value": "badan"
+        },
+        {
+          "op": "equals",
+          "fact": "resident",
+          "value": true
+        },
+        {
+          "op": "equals",
+          "fact": "listed",
+          "value": true
+        },
+        {
+          "op": "exists",
+          "fact": "floatTradedPct"
+        },
+        {
+          "op": "exists",
+          "fact": "minShareholders"
+        },
+        {
+          "op": "exists",
+          "fact": "maxStakePct"
+        },
+        {
+          "op": "exists",
+          "fact": "heldDays"
+        },
+        {
+          "op": "equals",
+          "fact": "listedConditionsMet",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-36-2008-pph"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 17 ayat (2b) UU PPh jo. Pasal 31A: pengurangan 5 persen poin dari tarif dasar 25% menjadi 20% bagi perusahaan yang memenuhi syarat listed"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Berlaku Tahun Pajak 2010 sampai 2019 (rezim UU 36/2008)"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 17 ayat (2b) jo. Pasal 31A: syarat free-float dan kepemilikan listed"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-badan-listed",
+    "supersedes": [],
+    "supersededBy": [
+      "rule-pph-badan-listed-19pct-uu2-2020"
+    ],
+    "examples": [
+      {
+        "id": "ex-pph-badan-listed-20pct-2019",
+        "label": "Perusahaan listed memenuhi syarat, TP 2019 PKP 1.000.000.000",
+        "illustrative": true,
+        "input": {
+          "taxpayerType": "badan",
+          "resident": true,
+          "listed": true,
+          "floatTradedPct": "0.40",
+          "minShareholders": "300",
+          "maxStakePct": "0.05",
+          "heldDays": "200",
+          "listedConditionsMet": true,
+          "pkp": "1000000000"
+        },
+        "expectedAmount": "200000000.00",
+        "notes": "Tarif efektif = 25% - 5 persen poin (5 pp) = 20%. 20% × 1.000.000.000 = 200.000.000. Pengurangan dalam PERSEN POIN, bukan 5% proporsional. Syarat free-float: >=40% diperdagangkan, >=300 pemegang saham, masing-masing <5%, >=183 hari/tahun."
+      }
+    ],
+    "notes": "Fasilitas perusahaan listed pra-2020: pengurangan 5 PERSEN POIN (5 pp) dari tarif dasar 25% menjadi 20% per UU 36/2008 Pasal 17 ayat (2b) jo. Pasal 31A. BUKAN pengurangan proporsional (25% × 0,95 = 23,75% SALAH). Fakta listedConditionsMet adalah gate boolean yang diturunkan pemanggil dari ambang numerik: floatTradedPct >= 0,40, minShareholders >= 300, maxStakePct <= 0,05, heldDays >= 183. Tanpa fakta floatTradedPct/minShareholders/maxStakePct/heldDays/listedConditionsMet, resolver mengembalikan fakta_kurang.",
+    "conflicts": []
+  }
+}

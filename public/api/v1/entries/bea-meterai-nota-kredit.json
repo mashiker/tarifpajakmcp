@@ -1,0 +1,57 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "bea-meterai-nota-kredit",
+    "category": "Bea Meterai",
+    "taxType": "Bea Meterai",
+    "transactionType": "Nota Kredit dan Dokumen Pengganti",
+    "description": "Bea meterai atas nota kredit dan dokumen yang menjadi pengganti nota kredit, kwitansi, atau tanda terima pembayaran.",
+    "rate": {
+      "type": "formula",
+      "value": "Rp 10.000 per lembar"
+    },
+    "taxBase": "Nota kredit dengan nilai > Rp 5.000.000",
+    "payer": "Pihak yang menandatangani nota kredit",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2021-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 10/2020",
+        "article": "Pasal 3-5",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/136460/uu-no-10-tahun-2020"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Nota kredit dengan nilai ≤ Rp 5.000.000: tidak kena bea meterai. > Rp 5.000.000: Rp 10.000 per lembar.",
+    "tags": [
+      "bea-meterai",
+      "nota-kredit",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Nota Kredit dan Dokumen Pengganti",
+        "calculation": "Sesuai formula yang berlaku",
+        "result": "Lihat ketentuan detail"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "bea-meterai-dokumen-2021",
+        "bea-meterai-cek-bilyet",
+        "bea-meterai-kontrak",
+        "bea-meterai-surat-berharga",
+        "bea-meterai-pre2021",
+        "bea-meterai-1000",
+        "bea-meterai-3000"
+      ]
+    }
+  }
+}

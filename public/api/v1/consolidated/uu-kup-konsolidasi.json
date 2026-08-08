@@ -1,0 +1,1179 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "uu-kup-konsolidasi",
+    "title": "Undang-Undang tentang Ketentuan Umum dan Tata Cara Perpajakan (Konsolidasi)",
+    "shortTitle": "UU KUP Konsolidasi",
+    "description": "Naskah konsolidasi UU KUP yang memuat teks terkini setelah seluruh perubahan diterapkan, lengkap dengan riwayat perubahan per pasal dari UU 6/1983 hingga UU 7/2021 HPP.",
+    "baseLaw": {
+      "type": "UU",
+      "number": "6",
+      "year": 1983,
+      "title": "Undang-Undang tentang Ketentuan Umum dan Tata Cara Perpajakan",
+      "effectiveDate": "1984-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/44027/uu-no-6-tahun-1983",
+      "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-6-tahun-1983"
+    },
+    "amendmentChain": [
+      {
+        "regulation": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983,
+          "title": "Ketentuan Umum dan Tata Cara Perpajakan",
+          "shortTitle": "UU KUP"
+        },
+        "order": 0,
+        "description": "UU Dasar KUP",
+        "effectiveDate": "1984-01-01",
+        "keyChanges": [
+          "Pembentukan sistem perpajakan modern Indonesia",
+          "Self assessment system",
+          "NPWP wajib bagi WP",
+          "SPT tahunan dan masa",
+          "Pembukuan dan pencatatan"
+        ]
+      },
+      {
+        "regulation": {
+          "type": "UU",
+          "number": "9",
+          "year": 1994,
+          "title": "Perubahan Pertama UU KUP",
+          "shortTitle": "UU 9/1994"
+        },
+        "order": 1,
+        "description": "Perubahan Pertama atas UU 6/1983 KUP",
+        "effectiveDate": "1995-01-01",
+        "keyChanges": [
+          "Perpanjangan waktu pembukuan",
+          "Penyesuaian sanksi administrasi",
+          "Perubahan ketentuan pembetulan SPT"
+        ]
+      },
+      {
+        "regulation": {
+          "type": "UU",
+          "number": "16",
+          "year": 2000,
+          "title": "Perubahan Kedua UU KUP",
+          "shortTitle": "UU 16/2000"
+        },
+        "order": 2,
+        "description": "Perubahan Kedua atas UU 6/1983 KUP",
+        "effectiveDate": "2001-01-01",
+        "keyChanges": [
+          "Pengetatan ketentuan kerahasiaan",
+          "Perubahan ketentuan keberatan dan banding",
+          "Penambahan sanksi pidana",
+          "Pengaturan forensik pajak"
+        ]
+      },
+      {
+        "regulation": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007,
+          "title": "Perubahan Ketiga UU KUP",
+          "shortTitle": "UU 28/2007"
+        },
+        "order": 3,
+        "description": "Perubahan Ketiga atas UU 6/1983 KUP",
+        "effectiveDate": "2008-01-01",
+        "keyChanges": [
+          "Perubahan pengaturan SPT",
+          "Pengaturan SUNAT (Surat Setoran Pajak)",
+          "Penambahan ketentuan media elektronik",
+          "Perubahan masa daluwarsa",
+          "Penambahan Pasal 43A-43D"
+        ]
+      },
+      {
+        "regulation": {
+          "type": "Perppu",
+          "number": "5",
+          "year": 2008,
+          "title": "Perubahan Keempat UU KUP (Perppu)",
+          "shortTitle": "Perppu 5/2008"
+        },
+        "order": 4,
+        "description": "Perubahan Keempat atas UU 6/1983 KUP melalui Perppu 5/2008",
+        "effectiveDate": "2008-12-30",
+        "keyChanges": [
+          "Pelaporan harta neto WP OP",
+          "Penambahan kewajiban pelaporan",
+          "Pencegahan dan penindakan"
+        ]
+      },
+      {
+        "regulation": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021,
+          "title": "Harmonisasi Peraturan Perpajakan",
+          "shortTitle": "UU HPP"
+        },
+        "order": 5,
+        "description": "Perubahan Kelima atas UU 6/1983 KUP melalui UU HPP",
+        "effectiveDate": "2022-01-01",
+        "keyChanges": [
+          "Kerja sama bantuan penagihan pajak antarnegara",
+          "Perubahan kuasa WP",
+          "Pemberian data untuk penegakan hukum",
+          "Daluwarsa penuntutan pidana pajak",
+          "Penambahan Pasal 44A-44E",
+          "Program Pengungkapan Sukarela"
+        ]
+      }
+    ],
+    "structure": [
+      {
+        "number": "I",
+        "title": "Ketentuan Umum",
+        "pasals": [
+          "1"
+        ]
+      },
+      {
+        "number": "II",
+        "title": "Nomor Pokok Wajib Pajak",
+        "pasals": [
+          "2",
+          "2A"
+        ]
+      },
+      {
+        "number": "III",
+        "title": "Surat Pemberitahuan",
+        "bagians": [
+          {
+            "number": "1",
+            "title": "Bentuk dan Isi",
+            "pasals": [
+              "3",
+              "4"
+            ]
+          },
+          {
+            "number": "2",
+            "title": "Tempat dan Waktu Penyampaian",
+            "pasals": [
+              "5",
+              "6",
+              "7"
+            ]
+          },
+          {
+            "number": "3",
+            "title": "Pembetulan dan Penyampaian Tambahan",
+            "pasals": [
+              "8",
+              "9"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "IV",
+        "title": "Pembukuan",
+        "bagians": [
+          {
+            "number": "1",
+            "title": "Kewajiban Pembukuan dan Pencatatan",
+            "pasals": [
+              "10",
+              "11",
+              "12",
+              "13"
+            ]
+          },
+          {
+            "number": "2",
+            "title": "Bentuk dan Isi Pembukuan atau Pencatatan",
+            "pasals": [
+              "14",
+              "15"
+            ]
+          },
+          {
+            "number": "3",
+            "title": "Penyimpanan Pembukuan atau Pencatatan",
+            "pasals": [
+              "16"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "V",
+        "title": "Penyetoran Pajak",
+        "pasals": [
+          "17",
+          "17A"
+        ]
+      },
+      {
+        "number": "VI",
+        "title": "Fiskus",
+        "bagians": [
+          {
+            "number": "1",
+            "title": "Tata Cara Pengawasan",
+            "pasals": [
+              "18",
+              "19"
+            ]
+          },
+          {
+            "number": "2",
+            "title": "Pemeriksaan",
+            "pasals": [
+              "20",
+              "21"
+            ]
+          },
+          {
+            "number": "3",
+            "title": "Himbauan dan Petunjuk",
+            "pasals": [
+              "22"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "VII",
+        "title": "Surat Ketetapan Pajak",
+        "bagians": [
+          {
+            "number": "1",
+            "title": "Surat Tagihan Pajak",
+            "pasals": [
+              "23"
+            ]
+          },
+          {
+            "number": "2",
+            "title": "Surat Pemberitahuan Hasil Pemeriksaan",
+            "pasals": [
+              "24"
+            ]
+          },
+          {
+            "number": "3",
+            "title": "Surat Ketetapan Pajak Kurang Bayar",
+            "pasals": [
+              "25"
+            ]
+          },
+          {
+            "number": "4",
+            "title": "Surat Ketetapan Pajak Kurang Bayar Tambahan",
+            "pasals": [
+              "26"
+            ]
+          },
+          {
+            "number": "5",
+            "title": "Surat Ketetapan Pajak Nihil",
+            "pasals": [
+              "27"
+            ]
+          },
+          {
+            "number": "6",
+            "title": "Surat Ketetapan Pajak Lebih Bayar",
+            "pasals": [
+              "28"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "VIII",
+        "title": "Keberatan dan Banding",
+        "bagians": [
+          {
+            "number": "1",
+            "title": "Keberatan",
+            "pasals": [
+              "29"
+            ]
+          },
+          {
+            "number": "2",
+            "title": "Banding",
+            "pasals": [
+              "30",
+              "31"
+            ]
+          },
+          {
+            "number": "3",
+            "title": "Peninjauan Kembali",
+            "pasals": [
+              "32"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "IX",
+        "title": "Pembayaran dan Penagihan Pajak",
+        "bagians": [
+          {
+            "number": "1",
+            "title": "Pembayaran",
+            "pasals": [
+              "33"
+            ]
+          },
+          {
+            "number": "2",
+            "title": "Penagihan Pajak",
+            "pasals": [
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39"
+            ]
+          },
+          {
+            "number": "3",
+            "title": "Daluwarsa Penagihan Pajak",
+            "pasals": [
+              "40"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "X",
+        "title": "Imbalan Bunga",
+        "pasals": [
+          "41"
+        ]
+      },
+      {
+        "number": "XI",
+        "title": "Kerahasiaan",
+        "pasals": [
+          "42"
+        ]
+      },
+      {
+        "number": "XII",
+        "title": "Sanksi Administrasi",
+        "bagians": [
+          {
+            "number": "1",
+            "title": "Denda dan Bunga",
+            "pasals": [
+              "43",
+              "43A",
+              "43B"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "XIII",
+        "title": "Sanksi Pidana",
+        "bagians": [
+          {
+            "number": "1",
+            "title": "Tindak Pidana di Bidang Perpajakan",
+            "pasals": [
+              "44",
+              "44A",
+              "44B",
+              "44C",
+              "44D",
+              "44E"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "XIV",
+        "title": "Penutup",
+        "pasals": [
+          "45",
+          "46",
+          "47",
+          "48",
+          "49"
+        ]
+      }
+    ],
+    "statistics": {
+      "totalPasals": 58,
+      "berlakuPasals": 23,
+      "diubahPasals": 26,
+      "dicabutPasals": 0,
+      "ditambahPasals": 9,
+      "totalAmendments": 6
+    },
+    "lastUpdated": "2026-05-29",
+    "sourceNotes": "Naskah konsolidasi disusun berdasarkan UU 6/1983 KUP beserta seluruh perubahannya (UU 9/1994, UU 16/2000, UU 28/2007, Perppu 5/2008, UU 7/2021 HPP). Teks menunjukkan versi terkini setelah semua perubahan diterapkan. Disusun dengan AI berdasarkan regulasi yang diketahui. Selalu verifikasi dengan peraturan resmi terbaru di peraturan.bpk.go.id.",
+    "pasalCount": 58,
+    "pasals": [
+      {
+        "number": "1",
+        "bab": "I",
+        "title": "Definisi",
+        "status": "diubah",
+        "description": "Ketentuan umum dan definisi istilah perpajakan termasuk definisi Wajib Pajak, penghasilan, pajak, tahun pajak, bagian tahun pajak, dan lain-lain.",
+        "keywords": [
+          "definisi",
+          "WP",
+          "penghasilan",
+          "NPWP",
+          "SPT",
+          "pembukuan"
+        ],
+        "amendmentCount": 4
+      },
+      {
+        "number": "2",
+        "bab": "II",
+        "title": "NPWP - Kewajiban dan Pemberian",
+        "status": "diubah",
+        "description": "Kewajiban memiliki NPWP bagi Wajib Pajak, tata cara pendaftaran, dan pemberian NPWP oleh DJP.",
+        "keywords": [
+          "NPWP",
+          "pendaftaran",
+          "WP orang pribadi",
+          "WP badan"
+        ],
+        "amendmentCount": 3
+      },
+      {
+        "number": "2A",
+        "bab": "II",
+        "title": "NPWP - Penggabungan dan Pemisahan",
+        "status": "ditambah",
+        "description": "Ketentuan tentang penggabungan dan pemisahan NPWP bagi WP tertentu.",
+        "keywords": [
+          "NPWP",
+          "penggabungan",
+          "pemisahan"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "3",
+        "bab": "III",
+        "title": "SPT - Bentuk dan Isi",
+        "status": "diubah",
+        "description": "Bentuk dan isi Surat Pemberitahuan (SPT) yang wajib disampaikan oleh WP, termasuk SPT Tahunan dan SPT Masa.",
+        "keywords": [
+          "SPT",
+          "SPT Tahunan",
+          "SPT Masa",
+          "pelaporan"
+        ],
+        "amendmentCount": 3
+      },
+      {
+        "number": "4",
+        "bab": "III",
+        "title": "SPT Tahunan dan SPT Masa",
+        "status": "diubah",
+        "description": "Jenis-jenis SPT: SPT Tahunan untuk PPh, PPN, PPnBM dan SPT Masa untuk pajak yang dipotong/dipungut.",
+        "keywords": [
+          "SPT Tahunan",
+          "SPT Masa",
+          "PPh",
+          "PPN"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "5",
+        "bab": "III",
+        "title": "SPT - Tempat Penyampaian",
+        "status": "diubah",
+        "description": "Tempat penyampaian SPT sesuai domisili WP.",
+        "keywords": [
+          "SPT",
+          "domisili",
+          "penyampaian"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "6",
+        "bab": "III",
+        "title": "SPT - Waktu Penyampaian",
+        "status": "diubah",
+        "description": "Batas waktu penyampaian SPT Tahunan (3 bulan setelah tahun pajak berakhir untuk OP, 4 bulan untuk Badan) dan SPT Masa (20 hari setelah masa pajak berakhir).",
+        "keywords": [
+          "SPT",
+          "batas waktu",
+          "deadline",
+          "3 bulan",
+          "4 bulan"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "7",
+        "bab": "III",
+        "title": "SPT - Perpanjangan Waktu",
+        "status": "diubah",
+        "description": "Ketentuan perpanjangan waktu penyampaian SPT Tahunan atas izin DJP.",
+        "keywords": [
+          "SPT",
+          "perpanjangan",
+          "izin"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "8",
+        "bab": "III",
+        "title": "Pembetulan SPT",
+        "status": "diubah",
+        "description": "Hak WP untuk membetulkan SPT yang telah disampaikan.",
+        "keywords": [
+          "SPT",
+          "pembetulan",
+          "koreksi"
+        ],
+        "amendmentCount": 3
+      },
+      {
+        "number": "9",
+        "bab": "III",
+        "title": "Penyampaian SPT Tambahan",
+        "status": "berlaku",
+        "description": "Ketentuan penyampaian SPT tambahan setelah pemeriksaan dimulai.",
+        "keywords": [
+          "SPT",
+          "tambahan",
+          "pemeriksaan"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "10",
+        "bab": "IV",
+        "title": "Kewajiban Pembukuan",
+        "status": "diubah",
+        "description": "Kewajiban menyelenggarakan pembukuan atau pencatatan bagi WP yang menjalankan usaha atau melakukan pekerjaan bebas.",
+        "keywords": [
+          "pembukuan",
+          "pencatatan",
+          "usaha",
+          "pekerjaan bebas"
+        ],
+        "amendmentCount": 3
+      },
+      {
+        "number": "11",
+        "bab": "IV",
+        "title": "Pengecualian Kewajiban Pembukuan",
+        "status": "diubah",
+        "description": "WP yang dikecualikan dari kewajiban pembukuan (cukup pencatatan).",
+        "keywords": [
+          "pembukuan",
+          "pengecualian",
+          "UMKM",
+          "peredaran bruto"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "12",
+        "bab": "IV",
+        "title": "Tahun Buku",
+        "status": "berlaku",
+        "description": "Ketentuan tentang tahun buku dan tanggal tutup buku.",
+        "keywords": [
+          "tahun buku",
+          "tanggal tutup buku"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "13",
+        "bab": "IV",
+        "title": "Metode Pembukuan",
+        "status": "berlaku",
+        "description": "Pembukuan diselenggarakan dengan cara atau metode yang lazim dipakai di Indonesia.",
+        "keywords": [
+          "metode pembukuan",
+          "saldo normal"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "14",
+        "bab": "IV",
+        "title": "Isi Pembukuan",
+        "status": "berlaku",
+        "description": "Syarat isi pembukuan: secara kronologis, sistematis, dan disertai bukti.",
+        "keywords": [
+          "isi pembukuan",
+          "kronologis",
+          "bukti"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "15",
+        "bab": "IV",
+        "title": "Bahasa dan Satuan Pembukuan",
+        "status": "berlaku",
+        "description": "Pembukuan diselenggarakan dalam bahasa Indonesia dan menggunakan satuan rupiah.",
+        "keywords": [
+          "bahasa Indonesia",
+          "rupiah",
+          "pembukuan"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "16",
+        "bab": "IV",
+        "title": "Penyimpanan Pembukuan",
+        "status": "diubah",
+        "description": "Kewajiban menyimpan pembukuan, catatan, dan dokumen pendukung selama 10 tahun.",
+        "keywords": [
+          "penyimpanan",
+          "10 tahun",
+          "arsip"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "17",
+        "bab": "V",
+        "title": "Penyetoran Pajak",
+        "status": "diubah",
+        "description": "Ketentuan penyetoran pajak oleh WP dan/atau pemotong/pemungut pajak ke kas negara.",
+        "keywords": [
+          "penyetoran",
+          "kode billing",
+          "SUNAT"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "17A",
+        "bab": "V",
+        "title": "Penyetoran Pajak secara Elektronik",
+        "status": "ditambah",
+        "description": "Ketentuan penyetoran pajak secara elektronik.",
+        "keywords": [
+          "elektronik",
+          "e-billing",
+          "mpn"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "18",
+        "bab": "VI",
+        "title": "Pengawasan oleh DJP",
+        "status": "diubah",
+        "description": "Tata cara pengawasan kepatuhan WP oleh Direktorat Jenderal Pajak.",
+        "keywords": [
+          "pengawasan",
+          "DJP",
+          "kepatuhan"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "19",
+        "bab": "VI",
+        "title": "Pengawasan Pemotong/Pemungut Pajak",
+        "status": "diubah",
+        "description": "Pengawasan terhadap pemotong dan pemungut pajak.",
+        "keywords": [
+          "pemotong",
+          "pemungut",
+          "pengawasan"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "20",
+        "bab": "VI",
+        "title": "Pemeriksaan",
+        "status": "diubah",
+        "description": "Ketentuan pemeriksaan untuk menguji kepatuhan pemenuhan kewajiban perpajakan.",
+        "keywords": [
+          "pemeriksaan",
+          "tax audit",
+          "kepatuhan"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "21",
+        "bab": "VI",
+        "title": "Waktu Pemeriksaan",
+        "status": "diubah",
+        "description": "Batas waktu pemeriksaan dan perpanjangan.",
+        "keywords": [
+          "pemeriksaan",
+          "waktu",
+          "perpanjangan"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "22",
+        "bab": "VI",
+        "title": "Himbauan",
+        "status": "berlaku",
+        "description": "Himbauan kepada WP untuk memenuhi kewajiban perpajakan.",
+        "keywords": [
+          "himbuauan",
+          "petunjuk"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "23",
+        "bab": "VII",
+        "title": "Surat Tagihan Pajak (STP)",
+        "status": "diubah",
+        "description": "STP diterbitkan untuk menagih pajak, bunga, dan denda apabila WP tidak atau terlambat membayar.",
+        "keywords": [
+          "STP",
+          "tagihan",
+          "bunga",
+          "denda"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "24",
+        "bab": "VII",
+        "title": "Surat Pemberitahuan Hasil Pemeriksaan (SPHP)",
+        "status": "berlaku",
+        "description": "SPHP diterbitkan setelah pemeriksaan sebagai dasar penerbitan SKP.",
+        "keywords": [
+          "SPHP",
+          "pemeriksaan"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "25",
+        "bab": "VII",
+        "title": "SKPKB",
+        "status": "berlaku",
+        "description": "Surat Ketetapan Pajak Kurang Bayar — diterbitkan apabila jumlah pajak terutang lebih besar dari kredit pajak.",
+        "keywords": [
+          "SKPKB",
+          "kurang bayar"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "26",
+        "bab": "VII",
+        "title": "SKPKBT",
+        "status": "berlaku",
+        "description": "SKP Kurang Bayar Tambahan — diterbitkan jika setelah SKPKB diterbitkan ditemukan data baru.",
+        "keywords": [
+          "SKPKBT",
+          "tambahan"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "27",
+        "bab": "VII",
+        "title": "SKPN",
+        "status": "berlaku",
+        "description": "SKP Nihil — pajak terutang sama dengan kredit pajak.",
+        "keywords": [
+          "SKPN",
+          "nihil"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "28",
+        "bab": "VII",
+        "title": "SKPLB",
+        "status": "berlaku",
+        "description": "SKP Lebih Bayar — kredit pajak lebih besar dari pajak terutang.",
+        "keywords": [
+          "SKPLB",
+          "lebih bayar",
+          "restitusi"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "29",
+        "bab": "VIII",
+        "title": "Keberatan",
+        "status": "diubah",
+        "description": "Hak WP untuk mengajukan keberatan terhadap SKP atau pemotongan/pemungutan pihak ketiga dalam waktu 3 bulan.",
+        "keywords": [
+          "keberatan",
+          "3 bulan",
+          "SKP"
+        ],
+        "amendmentCount": 3
+      },
+      {
+        "number": "30",
+        "bab": "VIII",
+        "title": "Banding ke PP",
+        "status": "diubah",
+        "description": "WP yang tidak menerima keputusan keberatan dapat mengajukan banding ke Pengadilan Pajak dalam waktu 3 bulan.",
+        "keywords": [
+          "banding",
+          "Pengadilan Pajak",
+          "3 bulan"
+        ],
+        "amendmentCount": 3
+      },
+      {
+        "number": "31",
+        "bab": "VIII",
+        "title": "Putusan Banding",
+        "status": "berlaku",
+        "description": "Ketentuan tentang putusan Pengadilan Pajak.",
+        "keywords": [
+          "putusan",
+          "Pengadilan Pajak"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "32",
+        "bab": "VIII",
+        "title": "Peninjauan Kembali",
+        "status": "berlaku",
+        "description": "Peninjauan kembali ke Mahkamah Agung terhadap putusan Pengadilan Pajak.",
+        "keywords": [
+          "PK",
+          "Mahkamah Agung",
+          "peninjauan kembali"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "33",
+        "bab": "IX",
+        "title": "Pembayaran Pajak",
+        "status": "berlaku",
+        "description": "WP wajib membayar pajak terutang termasuk sanksi administrasi.",
+        "keywords": [
+          "pembayaran",
+          "kewajiban"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "34",
+        "bab": "IX",
+        "title": "Surat Paksa",
+        "status": "diubah",
+        "description": "Penagihan pajak dengan Surat Paksa jika WP tidak membayar setelah diterbitkan STP/SKPKB.",
+        "keywords": [
+          "surat paksa",
+          "penagihan",
+          "21 hari"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "35",
+        "bab": "IX",
+        "title": "Surat Sitaan",
+        "status": "berlaku",
+        "description": "Penagihan dengan surat sitaan jika WP mengabaikan Surat Paksa.",
+        "keywords": [
+          "sitaan",
+          "eksekusi"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "36",
+        "bab": "IX",
+        "title": "Pencegahan",
+        "status": "diubah",
+        "description": "Pencegahan WP dari ke luar negeri jika diduga akan meninggalkan Indonesia untuk menghindar dari kewajiban perpajakan.",
+        "keywords": [
+          "pencegahan",
+          "imigrasi",
+          "ke luar negeri"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "37",
+        "bab": "IX",
+        "title": "Penyitaan",
+        "status": "berlaku",
+        "description": "Tata cara penyitaan barang bergerak dan tidak bergerak milik WP.",
+        "keywords": [
+          "penyitaan",
+          "barang bergerak",
+          "bum"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "38",
+        "bab": "IX",
+        "title": "Gugatan Pajak",
+        "status": "berlaku",
+        "description": "Ketentuan tentang gugatan atas penagihan pajak.",
+        "keywords": [
+          "gugatan",
+          "penagihan"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "39",
+        "bab": "IX",
+        "title": "Eksekusi",
+        "status": "berlaku",
+        "description": "Tata cara eksekusi terhadap barang yang disita.",
+        "keywords": [
+          "eksekusi",
+          "lelang"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "40",
+        "bab": "IX",
+        "title": "Daluwarsa Penagihan Pajak",
+        "status": "diubah",
+        "description": "Daluwarsa penagihan pajak 5 tahun sejak SKP diterbitkan. Dapat dipanjangkan.",
+        "keywords": [
+          "daluwarsa",
+          "5 tahun",
+          "penagihan"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "41",
+        "bab": "X",
+        "title": "Imbalan Bunga",
+        "status": "diubah",
+        "description": "Imbalan bunga atas kelebihan pembayaran pajak, dihitung berdasarkan tarif bunga per bulan.",
+        "keywords": [
+          "bunga",
+          "imbalan",
+          "restitusi"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "42",
+        "bab": "XI",
+        "title": "Kerahasiaan",
+        "status": "diubah",
+        "description": "Kewajiban menjaga kerahasiaan data perpajakan oleh pejabat pajak. Pengecualian untuk kepentingan hukum tertentu.",
+        "keywords": [
+          "kerahasiaan",
+          "data pajak",
+          "DJP"
+        ],
+        "amendmentCount": 3
+      },
+      {
+        "number": "43",
+        "bab": "XII",
+        "title": "Sanksi Administrasi - Denda dan Bunga",
+        "status": "diubah",
+        "description": "Sanksi administrasi berupa denda dan/atau bunga atas keterlambatan, ketidakbenaran, dan pelanggaran lainnya.",
+        "keywords": [
+          "sanksi",
+          "denda",
+          "bunga",
+          "administrasi"
+        ],
+        "amendmentCount": 4
+      },
+      {
+        "number": "43A",
+        "bab": "XII",
+        "title": "Sanksi Keterlambatan Penyampaian SPT",
+        "status": "ditambah",
+        "description": "Sanksi denda atas keterlambatan penyampaian SPT.",
+        "keywords": [
+          "sanksi",
+          "SPT",
+          "keterlambatan",
+          "Rp 1.000.000"
+        ],
+        "amendmentCount": 2
+      },
+      {
+        "number": "43B",
+        "bab": "XII",
+        "title": "Sanksi Keterlambatan Pembayaran",
+        "status": "ditambah",
+        "description": "Sanksi bunga atas keterlambatan pembayaran pajak sebesar 2% per bulan.",
+        "keywords": [
+          "sanksi",
+          "bunga",
+          "2%",
+          "keterlambatan"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "44",
+        "bab": "XIII",
+        "title": "Sanksi Pidana - Ketentuan Umum",
+        "status": "diubah",
+        "description": "Sanksi pidana atas tindak pidana di bidang perpajakan: tidak menyampaikan SPT, menyampaikan SPT tidak benar, tidak membayar pajak.",
+        "keywords": [
+          "pidana",
+          "penjara",
+          "denda",
+          "tindak pidana"
+        ],
+        "amendmentCount": 4
+      },
+      {
+        "number": "44A",
+        "bab": "XIII",
+        "title": "Pengungkapan Sukarela",
+        "status": "ditambah",
+        "description": "Program Pengungkapan Sukarela bagi WP yang mengungkapkan harta yang belum dilaporkan.",
+        "keywords": [
+          "pengungkapan sukarela",
+          "tax amnesty",
+          "VDP"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "44B",
+        "bab": "XIII",
+        "title": "Kerja Sama Bantuan Penagihan Pajak",
+        "status": "ditambah",
+        "description": "Ketentuan kerja sama bantuan penagihan pajak antarnegara.",
+        "keywords": [
+          "MAA",
+          "kerjasama internasional",
+          "penagihan lintas batas"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "44C",
+        "bab": "XIII",
+        "title": "Pertukaran Informasi Perpajakan",
+        "status": "ditambah",
+        "description": "Ketentuan pertukaran informasi perpajakan dengan yurisdiksi lain.",
+        "keywords": [
+          "EOI",
+          "pertukaran informasi",
+          "BEPS"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "44D",
+        "bab": "XIII",
+        "title": "Kewajiban Pelaporan Keuangan",
+        "status": "ditambah",
+        "description": "Ketentuan Country-by-Country Reporting dan pelaporan keuangan untuk WP MNE Group.",
+        "keywords": [
+          "CbCR",
+          "BEPS",
+          "MNE",
+          "pelaporan"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "44E",
+        "bab": "XIII",
+        "title": "Kerahasiaan Informasi Internasional",
+        "status": "ditambah",
+        "description": "Ketentuan kerahasiaan informasi yang diperoleh melalui kerja sama internasional.",
+        "keywords": [
+          "kerahasiaan",
+          "internasional"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "45",
+        "bab": "XIV",
+        "title": "Ketentuan Peralihan",
+        "status": "berlaku",
+        "description": "Ketentuan peralihan dari undang-undang lama ke undang-undang baru.",
+        "keywords": [
+          "peralihan",
+          "transisi"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "46",
+        "bab": "XIV",
+        "title": "Peraturan Pelaksanaan",
+        "status": "berlaku",
+        "description": "Ketentuan tentang peraturan pelaksanaan UU KUP.",
+        "keywords": [
+          "peraturan pelaksanaan",
+          "PP",
+          "PMK"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "47",
+        "bab": "XIV",
+        "title": "Pencabutan",
+        "status": "berlaku",
+        "description": "Pencabutan peraturan perundang-undangan yang bertentangan.",
+        "keywords": [
+          "pencabutan"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "48",
+        "bab": "XIV",
+        "title": "Pengesahan Perppu",
+        "status": "berlaku",
+        "description": "Ketentuan pengesahan Perppu menjadi UU.",
+        "keywords": [
+          "Perppu",
+          "pengesahan"
+        ],
+        "amendmentCount": 1
+      },
+      {
+        "number": "49",
+        "bab": "XIV",
+        "title": "Penutup",
+        "status": "berlaku",
+        "description": "UU ini mulai berlaku pada tanggal diundangkan.",
+        "keywords": [
+          "penutup",
+          "berlaku"
+        ],
+        "amendmentCount": 1
+      }
+    ]
+  }
+}

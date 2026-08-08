@@ -1,0 +1,18 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "28-406",
+    "count": 1,
+    "codes": [
+      {
+        "kode": "28-406-01",
+        "nama": "Transaksi Penjualan Saham di Bursa Efek (Bukan Saham Pendiri)",
+        "tarif": 0.1,
+        "entryId": "pph-final-transaksi-saham-bursa",
+        "entryTransactionType": "Keuntungan Transaksi Saham di Bursa Efek"
+      }
+    ]
+  }
+}

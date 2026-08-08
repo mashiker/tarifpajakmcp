@@ -1,0 +1,51 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "27",
+    "bab": "V",
+    "title": "Sanksi Pidana PPN/PPnBM",
+    "status": "diubah",
+    "description": "Sanksi pidana atas pelanggaran UU PPN/PPnBM.",
+    "keywords": [
+      "pidana",
+      "sanksi"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan sanksi"
+      }
+    ],
+    "text": "(1) Setiap orang yang dengan sengaja menerbitkan Faktur Pajak tidak berdasarkan penyerahan BKP/JKP atau menggunakan Faktur Pajak yang tidak berdasarkan penyerahan BKP/JKP diancam pidana.\n(2) Hukuman pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp 100.000.000.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pidana atas penerbitan/penggunaan FP fiktif.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Maks 2 tahun penjara atau denda max Rp100 juta.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

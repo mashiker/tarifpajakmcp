@@ -1,0 +1,148 @@
+{
+  "$comment": "Boundary fixtures for PPh 21 / TER migration (Task 4). Every expectation encodes a verified primary-source fact from PP 58/2023 Lampiran, PMK 168/2023, UU 7/2021 HPP, or the PTKP PMK chronology. Rates are stored as decimal fractions (0.0034 = 0.34% = 0.34 percent). PPh amounts are 2-decimal currency strings in IDR. See data/v2/sources.json for primary locators.",
+  "sourcesVerifiedAt": "2026-08-06",
+  "effectiveDate": {
+    "terStart": "2024-01-01",
+    "terDayBeforeStart": "2023-12-31"
+  },
+  "categoryMapping": {
+    "$comment": "PP 58/2023 Lampiran A/B/C map PTKP classes to TER categories. Not marital status.",
+    "TER A": { "ptkpClasses": ["TK/0", "TK/1", "K/0"] },
+    "TER B": { "ptkpClasses": ["TK/2", "K/1", "TK/3", "K/2"] },
+    "TER C": { "ptkpClasses": ["K/3"] }
+  },
+  "terA": {
+    "$comment": "PP 58/2023 Lampiran A. 44 layers. Top rate 34% above Rp 1.400.000.000.",
+    "firstBracket": { "lowerExclusive": "0", "upperInclusive": "5400000", "rateFraction": "0", "ratePercent": "0%" },
+    "secondBracket": { "lowerExclusive": "5400000", "upperInclusive": "5650000", "rateFraction": "0.0025", "ratePercent": "0.25%" },
+    "lastBracket": { "lowerExclusive": "1400000000", "upperInclusive": null, "rateFraction": "0.34", "ratePercent": "34%" }
+  },
+  "terB": {
+    "$comment": "PP 58/2023 Lampiran B. 40 layers. Top rate 34% above Rp 1.405.000.000.",
+    "firstBracket": { "lowerExclusive": "0", "upperInclusive": "6200000", "rateFraction": "0", "ratePercent": "0%" },
+    "lastBracket": { "lowerExclusive": "1405000000", "upperInclusive": null, "rateFraction": "0.34", "ratePercent": "34%" }
+  },
+  "terC": {
+    "$comment": "PP 58/2023 Lampiran C. 41 layers. Top rate 34% above Rp 1.419.000.000.",
+    "firstBracket": { "lowerExclusive": "0", "upperInclusive": "6600000", "rateFraction": "0", "ratePercent": "0%" },
+    "lastBracket": { "lowerExclusive": "1419000000", "upperInclusive": null, "rateFraction": "0.34", "ratePercent": "34%" }
+  },
+  "boundaries": [
+    {
+      "id": "pre-ter-2023-12-31",
+      "description": "Day before TER effective date: no TER rule covers 2023-12-31.",
+      "date": "2023-12-31",
+      "request": { "conceptId": "concept-pph-21-ter-monthly", "facts": { "ptkpClass": "TK/0", "monthlyGross": "10000000" } },
+      "expect": { "terCandidates": 0, "determinationIn": ["fakta_kurang"], "gap": true }
+    },
+    {
+      "id": "ter-start-2024-01-01",
+      "description": "TER effective date: TER A candidate resolves when PTKP class TK/0 and gross 10M.",
+      "date": "2024-01-01",
+      "request": { "conceptId": "concept-pph-21-ter-monthly", "facts": { "ptkpClass": "TK/0", "monthlyGross": "10000000" } },
+      "expect": { "terCandidates": 1, "winningCategory": "TER A", "determinationIn": ["tepat", "bersyarat"] }
+    },
+    {
+      "id": "ter-a-zero-bracket-edge",
+      "description": "TER A first bracket upper bound inclusive: 5,400,000 -> rate 0%, PPh 0.",
+      "date": "2024-06-01",
+      "request": { "conceptId": "concept-pph-21-ter-monthly", "facts": { "ptkpClass": "TK/0", "monthlyGross": "5400000" } },
+      "expect": { "winningCategory": "TER A", "rateFraction": "0", "pphAmount": "0.00" }
+    },
+    {
+      "id": "ter-a-second-bracket-edge",
+      "description": "TER A second bracket lower exclusive: just above 5,400,000 hits 0.25% (5,400,001). Half-open: lower exclusive, upper inclusive.",
+      "date": "2024-06-01",
+      "request": { "conceptId": "concept-pph-21-ter-monthly", "facts": { "ptkpClass": "TK/0", "monthlyGross": "5400001" } },
+      "expect": { "winningCategory": "TER A", "rateFraction": "0.0025", "pphAmount": "13500.00" }
+    },
+    {
+      "id": "ter-a-top-bracket-edge",
+      "description": "TER A top bracket lower exclusive: 1,400,000,001 -> 34%.",
+      "date": "2024-06-01",
+      "request": { "conceptId": "concept-pph-21-ter-monthly", "facts": { "ptkpClass": "TK/0", "monthlyGross": "1400000001" } },
+      "expect": { "winningCategory": "TER A", "rateFraction": "0.34", "pphAmount": "476000000.34" }
+    },
+    {
+      "id": "ter-b-category-mapping",
+      "description": "PTKP K/1 maps to TER B (not marital-only interpretation).",
+      "date": "2024-06-01",
+      "request": { "conceptId": "concept-pph-21-ter-monthly", "facts": { "ptkpClass": "K/1", "monthlyGross": "6200000" } },
+      "expect": { "winningCategory": "TER B", "rateFraction": "0", "pphAmount": "0.00" }
+    },
+    {
+      "id": "ter-c-category-mapping",
+      "description": "PTKP K/3 maps to TER C; first bracket upper bound 6,600,000 inclusive -> 0%.",
+      "date": "2024-06-01",
+      "request": { "conceptId": "concept-pph-21-ter-monthly", "facts": { "ptkpClass": "K/3", "monthlyGross": "6600000" } },
+      "expect": { "winningCategory": "TER C", "rateFraction": "0", "pphAmount": "0.00" }
+    },
+    {
+      "id": "missing-ptkp-class",
+      "description": "Without ptkpClass fact, TER rules carry a condition that cannot be evaluated -> fakta_kurang (never synthetic 0%).",
+      "date": "2024-06-01",
+      "request": { "conceptId": "concept-pph-21-ter-monthly", "facts": { "monthlyGross": "10000000" } },
+      "expect": { "determinationIn": ["fakta_kurang"], "missingFact": "ptkpClass" }
+    },
+    {
+      "id": "nonresident-no-treaty",
+      "description": "Nonresident without treaty: fixed 20% (UU PPh Pasal 26). Conditional rule with condition resident=false and treaty=no.",
+      "date": "2024-06-01",
+      "request": { "conceptId": "concept-pph-21-recipient-nonresident", "facts": { "resident": false, "treaty": "none" } },
+      "expect": { "winningRateFraction": "0.20", "determinationIn": ["tepat", "bersyarat"] }
+    },
+    {
+      "id": "nonresident-with-treaty",
+      "description": "Nonresident with treaty: the illustrative treaty candidate (rule-pph-21-nonresident-treaty) is the only survivor because the default-20% condition does not hold. The treaty rate itself is illustrative, so we assert the winning rule id and that determination stays bersyarat (never tepat for verified_secondary), without pinning an authoritative rate.",
+      "date": "2024-06-01",
+      "request": { "conceptId": "concept-pph-21-recipient-nonresident", "facts": { "resident": false, "treaty": "5pct" } },
+      "expect": { "winningRuleId": "rule-pph-21-nonresident-treaty", "determinationIn": ["bersyarat"] }
+    },
+    {
+      "id": "article17-annual-bands",
+      "description": "UU 7/2021 HPP Pasal 17 angka 7 annual progressive: 5/15/25/30/35. PKP 300M -> 5%*60M + 15%*190M + 25%*50M = 44,000,000.",
+      "date": "2024-12-01",
+      "request": { "conceptId": "concept-pph-21-article17-annual", "facts": { "pkpAnnual": "300000000" } },
+      "expect": { "pphAmount": "44000000.00" }
+    },
+    {
+      "id": "article17-open-band",
+      "description": "Top Article 17 band open (>5M): 35% applies above 5,000,000,000. PKP 6,000,000,000 -> 5%*60M + 15%*190M + 25%*250M + 30%*4500M + 35%*1000M = 1,794,000,000.",
+      "date": "2024-12-01",
+      "request": { "conceptId": "concept-pph-21-article17-annual", "facts": { "pkpAnnual": "6000000000" } },
+      "expect": { "pphAmount": "1794000000.00" }
+    },
+    {
+      "id": "ptkp-2016-current",
+      "description": "PMK 101/PMK.010/2016 PTKP: TK/0 = 54M, K/0 = 58.5M, dependent + 4.5M. Effective tax year 2016-current.",
+      "date": "2024-01-01",
+      "request": { "conceptId": "concept-pph-21-ptkp" },
+      "expect": { "ptkp": { "TK/0": "54000000", "K/0": "58500000", "K/3": "72000000", "dependentIncrement": "4500000" }, "validFromTaxYear": 2016 }
+    },
+    {
+      "id": "ptkp-2015-only",
+      "description": "PMK 122/PMK.010/2015 PTKP: TK/0 = 36M, dependent + 3M. Tax year 2015 only.",
+      "date": "2015-07-01",
+      "request": { "conceptId": "concept-pph-21-ptkp" },
+      "expect": { "ptkp": { "TK/0": "36000000", "K/0": "39000000", "dependentIncrement": "3000000" }, "validFromTaxYear": 2015, "validToTaxYearInclusive": 2015 }
+    },
+    {
+      "id": "final-period-trueup",
+      "description": "Final period (December) uses Article 17 annual minus prior TER months; never another TER month. Modeled as a separate concept with a formula rate.",
+      "date": "2024-12-01",
+      "request": { "conceptId": "concept-pph-21-final-period", "facts": { "annualPkp": "300000000", "priorWithheld": "30000000" } },
+      "expect": { "pphAmount": "14000000.00" }
+    }
+  ],
+  "reclassification": {
+    "$comment": "Per Task 4 behavior rules: natura/SHU/norma entries that lack a primary standalone rate become information_factor or summary_only.",
+    "informationFactor": [
+      "pph-21-norma-50pct"
+    ],
+    "summaryOnly": [
+      "pph-21-natura",
+      "pph-21-shu-koperasi",
+      "pph-21-pre2024-permanent-regime"
+    ]
+  }
+}

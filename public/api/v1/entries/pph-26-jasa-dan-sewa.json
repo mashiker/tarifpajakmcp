@@ -1,0 +1,62 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-26-jasa-dan-sewa",
+    "category": "PPh",
+    "taxType": "PPh 26",
+    "transactionType": "Imbalan Jasa dan Sewa WP Luar Negeri",
+    "description": "Pemotongan PPh 26 atas imbalan sehubungan dengan jasa dan sewa yang dibayarkan kepada WP luar negeri yang tidak melakukan kegiatan usaha melalui BUT di Indonesia.",
+    "rate": {
+      "type": "percentage",
+      "value": 20
+    },
+    "taxBase": "Jumlah bruto imbalan jasa/sewa",
+    "payer": "WP luar negeri penerima imbalan",
+    "recipient": "Negara",
+    "withholder": "WP dalam negeri/BUT yang membayar imbalan",
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 26 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 5"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 20% dari jumlah bruto. Jika WP luar negeri memiliki BUT di Indonesia, penghasilan yang diterima melalui BUT dikenakan PPh sesuai tarif umum (Pasal 17), bukan PPh 26.",
+    "tags": [
+      "pph-26",
+      "jasa",
+      "sewa",
+      "wp-luar-negeri",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Imbalan Jasa dan Sewa WP Luar Negeri Rp 100.000.000",
+        "calculation": "20% × 100.000.000",
+        "result": "Pajak = Rp 20.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-26-general-2024",
+        "pph-26-dividen",
+        "pph-26-bunga",
+        "pph-26-royalti",
+        "pph-26-but",
+        "pph-26-tax-treaty"
+      ]
+    }
+  }
+}

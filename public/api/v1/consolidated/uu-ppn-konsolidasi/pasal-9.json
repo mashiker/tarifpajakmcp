@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "9",
+    "bab": "II",
+    "bagian": "1",
+    "title": "PPN Final",
+    "status": "ditambah",
+    "description": "Ketentuan pengenaan tarif PPN final atas penyerahan BKP/JKP tertentu.",
+    "keywords": [
+      "PPN final",
+      "tarif final"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru - PPN final atas penyerahan tertentu"
+      }
+    ],
+    "text": "(1) Tarif PPN adalah sebesar 10% (sepuluh persen).\n(2) Tarif PPN sebagaimana dimaksud pada ayat (1) dapat diubah antara 5% (lima persen) sampai dengan 15% (lima belas persen) dengan Peraturan Pemerintah.\n(3) Tarif PPN atas ekspor BKP Berwujud, BKP Tidak Berwujud, dan JKP adalah 0% (nol persen).\n(4) Tarif PPN atas impor BKP yang tidak berwujud yang diserahkan melalui media elektronik dari luar Daerah Pabean ke dalam Daerah Pabean yang diserahkan oleh Perusahaan Perdagangan Melalui Sistem Elektronik (PPMSE) asing yang telah ditunjuk, adalah sebesar:\na. 0% untuk penyerahan BKP Tidak Berwujud yang bersifat digital melalui media elektronik; atau\nb. tarif PPN yang berlaku untuk penyerahan BKP di dalam Daerah Pabean.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Tarif PPN dasar: 10%.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Dapat diubah 5%-15% dengan PP.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Ekspor: 0%.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(4)",
+        "text": "PPN PMSE asing: 0% untuk digital atau tarif PPN berlaku.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

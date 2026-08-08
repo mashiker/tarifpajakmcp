@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "16",
+    "bab": "IV",
+    "title": "Penyimpanan Pembukuan",
+    "status": "diubah",
+    "description": "Kewajiban menyimpan pembukuan, catatan, dan dokumen pendukung selama 10 tahun.",
+    "keywords": [
+      "penyimpanan",
+      "10 tahun",
+      "arsip"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Perpanjangan masa penyimpanan"
+      }
+    ],
+    "text": "(1) Pembukuan atau pencatatan dan dokumen yang menjadi dasarnya wajib disimpan selama 10 tahun.\n(2) Dalam hal WP menyelenggarakan pembukuan dengan menggunakan pembukuan dalam bentuk catatan digital, WP wajib menyimpan cadangan (backup) pembukuan tersebut.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pembukuan/pencatatan dan dokumen dasar disimpan 10 tahun.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Pembukuan digital wajib menyimpan backup.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

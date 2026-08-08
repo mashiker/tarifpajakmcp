@@ -4,11 +4,17 @@
   "description": "Open database tarif pajak Indonesia - Indonesian tax rates open database",
   "type": "module",
   "scripts": {
-    "build": "node src/build.ts",
-    "validate": "node src/validate.ts",
-    "generate": "node src/generate.ts",
-    "build:api": "node src/build-api.ts",
-    "build:all": "npm run build && npm run build:api && cd website && npm run build"
+    "clean": "node --experimental-strip-types --eval \"import('./src/pipeline.ts').then(({ cleanGenerated }) => cleanGenerated())\"",
+    "validate": "node --experimental-strip-types src/validate.ts",
+    "test": "vitest run",
+    "test:contracts": "vitest run tests/contracts",
+    "generate": "node --experimental-strip-types src/generate.ts",
+    "sync": "node --experimental-strip-types src/sync-website.ts",
+    "build:site": "pnpm --dir website build",
+    "build": "node --experimental-strip-types src/pipeline.ts",
+    "check": "pnpm test && pnpm build",
+    "build:api": "node --experimental-strip-types src/build-api.ts",
+    "build:all": "pnpm build"
   },
   "keywords": [
     "pajak",
@@ -22,6 +28,8 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.7.0",
-    "ajv": "^8.17.0"
+    "ajv": "^8.17.0",
+    "ajv-formats": "^3.0.1",
+    "vitest": "^3.2.4"
   }
 }

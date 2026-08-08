@@ -1,0 +1,96 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "totalEntries": 136,
+    "totalCategories": 15,
+    "totalRegulations": 39,
+    "byStatus": {
+      "berlaku": 111,
+      "dicabut": 16,
+      "diubah": 9
+    },
+    "byCategory": [
+      {
+        "taxType": "Bea Masuk",
+        "slug": "bea-masuk",
+        "count": 4
+      },
+      {
+        "taxType": "Bea Meterai",
+        "slug": "bea-meterai",
+        "count": 8
+      },
+      {
+        "taxType": "BPHTB",
+        "slug": "bphtb",
+        "count": 3
+      },
+      {
+        "taxType": "Cukai",
+        "slug": "cukai",
+        "count": 3
+      },
+      {
+        "taxType": "Pajak Daerah",
+        "slug": "pajak-daerah",
+        "count": 8
+      },
+      {
+        "taxType": "PBB",
+        "slug": "pbb",
+        "count": 4
+      },
+      {
+        "taxType": "PPh 21",
+        "slug": "pph-21",
+        "count": 29
+      },
+      {
+        "taxType": "PPh 22",
+        "slug": "pph-22",
+        "count": 11
+      },
+      {
+        "taxType": "PPh 23",
+        "slug": "pph-23",
+        "count": 8
+      },
+      {
+        "taxType": "PPh 26",
+        "slug": "pph-26",
+        "count": 7
+      },
+      {
+        "taxType": "PPh 4(2) Final",
+        "slug": "pph-4-2-final",
+        "count": 18
+      },
+      {
+        "taxType": "PPh Badan",
+        "slug": "pph-badan",
+        "count": 8
+      },
+      {
+        "taxType": "PPh UMKM",
+        "slug": "pph-umkm",
+        "count": 3
+      },
+      {
+        "taxType": "PPN",
+        "slug": "ppn",
+        "count": 14
+      },
+      {
+        "taxType": "PPnBM",
+        "slug": "ppnbm",
+        "count": 8
+      }
+    ],
+    "temporalRange": {
+      "from": "1984-01-01",
+      "to": null
+    }
+  }
+}

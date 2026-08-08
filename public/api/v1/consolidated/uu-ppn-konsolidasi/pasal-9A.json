@@ -1,0 +1,64 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "9A",
+    "bab": "II",
+    "bagian": "2",
+    "title": "Tarif PPN",
+    "status": "ditambah",
+    "description": "Tarif PPN: 10%, 11% (sejak 2022 per UU HPP), dan 12% (direncanakan 2025, ditunda via PMK 131/2024). Tarif efektif 11/12 x 11% untuk 2022.",
+    "keywords": [
+      "tarif PPN",
+      "10%",
+      "11%",
+      "12%",
+      "PMK 131/2024"
+    ],
+    "relatedTaxRates": [
+      "ppn-11pct-2022",
+      "ppn-11pct-effective-2025"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru - pengaturan tarif PPN 11% (2022) dan 12% (2025)"
+      }
+    ],
+    "text": "(1) Dasar Pengenaan PPN atas penyerahan BKP adalah Jumlah Harga Jual.\n(2) Dasar Pengenaan PPN atas penyerahan JKP adalah Jumlah Penggantian.\n(3) Dasar Pengenaan PPN atas impor BKP adalah Nilai Impor.\n(4) Dasar Pengenaan PPN atas ekspor BKP Berwujud adalah Nilai Ekspor.\n(5) Dasar Pengenaan PPN atas ekspor BKP Tidak Berwujud dan JKP adalah Jumlah penggantian yang diterima atau yang seharusnya diterima.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DPP penyerahan BKP = Jumlah Harga Jual.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "DPP JKP = Jumlah Penggantian.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(3)",
+        "text": "DPP impor BKP = Nilai Impor.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(4)",
+        "text": "DPP ekspor BKP berwujud = Nilai Ekspor.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(5)",
+        "text": "DPP ekspor BKP tidak berwujud/JKP = jumlah penggantian.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

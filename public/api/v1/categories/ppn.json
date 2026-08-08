@@ -1,0 +1,125 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "category": "PPN",
+    "taxType": "PPN",
+    "description": "Pajak Pertambahan Nilai - Pajak atas konsumsi Barang Kena Pajak dan/atau Jasa Kena Pajak di dalam Daerah Pabean",
+    "count": 14,
+    "entries": [
+      {
+        "id": "ppn-11pct-effective-2025",
+        "transactionType": "Penyerahan BKP/JKP dalam negeri",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-11pct-2022",
+        "transactionType": "Penyerahan BKP/JKP (2022-2024)",
+        "rate": "11%",
+        "status": "diubah",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": "2024-12-31"
+      },
+      {
+        "id": "ppn-10pct",
+        "transactionType": "Penyerahan BKP/JKP (Pra-HPP)",
+        "rate": "10%",
+        "status": "diubah",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": "2022-03-31"
+      },
+      {
+        "id": "ppn-ekspor-bkp",
+        "transactionType": "Ekspor Barang Kena Pajak",
+        "rate": "0%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-impor-bkp",
+        "transactionType": "Impor Barang Kena Pajak",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-pmse",
+        "transactionType": "Penyerahan melalui Perdagangan Melalui Sistem Elektronik (PMSE)",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-jasa-tenaga-listrik",
+        "transactionType": "Penyerahan Jasa Tenaga Listrik",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-jasa-telekomunikasi",
+        "transactionType": "Penyerahan Jasa Telekomunikasi",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "2025-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-ekspor-jkp",
+        "transactionType": "Ekspor Jasa Kena Pajak",
+        "rate": "0%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-tidak-kena-pajak",
+        "transactionType": "Barang/Jasa Tidak Kena Pajak (Bukan JKP/BKP)",
+        "rate": "0%",
+        "status": "berlaku",
+        "effectiveFrom": "2010-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-jkpt-industri",
+        "transactionType": "PPN Tidak Dipungut (JKPT) Industri Strategis",
+        "rate": "0%",
+        "status": "berlaku",
+        "effectiveFrom": "2022-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-jasa-kegiatan-usaha-persewaan",
+        "transactionType": "Jasa Kegiatan Usaha Persewaan (JKP)",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-dpp-penghitungan",
+        "transactionType": "Dasar Pengenaan Pajak (DPP) PPN",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "ppn-pengkreditan",
+        "transactionType": "Pengkreditan PPN (Input Tax Credit)",
+        "rate": "11%",
+        "status": "berlaku",
+        "effectiveFrom": "1984-04-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

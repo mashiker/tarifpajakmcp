@@ -1,0 +1,39 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "43B",
+    "bab": "XII",
+    "title": "Sanksi Keterlambatan Pembayaran",
+    "status": "ditambah",
+    "description": "Sanksi bunga atas keterlambatan pembayaran pajak sebesar 2% per bulan.",
+    "keywords": [
+      "sanksi",
+      "bunga",
+      "2%",
+      "keterlambatan"
+    ],
+    "relatedTaxRates": [],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "added",
+        "effectiveDate": "2008-01-01",
+        "summary": "Pasal baru - sanksi bunga 2%/bulan"
+      }
+    ],
+    "text": "(1) WP yang karena kelalaian menyampaikan SPT yang isinya tidak benar atau tidak lengkap dikenakan sanksi administrasi berupa denda sebesar 150% (seratus lima puluh persen) dari pajak yang tidak atau kurang dibayar.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Sanksi denda 150% atas kelalaian SPT tidak benar/tidak lengkap.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

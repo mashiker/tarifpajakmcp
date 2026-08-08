@@ -1,0 +1,70 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "10",
+    "bab": "II",
+    "bagian": "3",
+    "title": "Dasar Pengenaan PPN (DPP)",
+    "status": "diubah",
+    "description": "DPP PPN: Harga Jual, Penggantian, Nilai Impor, Nilai Ekspor, dll.",
+    "keywords": [
+      "DPP",
+      "harga jual",
+      "penggantian",
+      "nilai impor",
+      "nilai ekspor"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan DPP untuk ekspor jasa, PMSE"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan DPP"
+      }
+    ],
+    "text": "(1) DPP atas penyerahan BKP yang menggunakan harga yang mengandung unsur PPN, DPP dihitung: DPP = 110/111 × Harga Jual.\n(2) DPP atas penyerahan JKP yang menggunakan harga yang mengandung unsur PPN, DPP dihitung: DPP = 110/111 × Penggantian.\n(3) Penghitungan DPP sebagaimana dimaksud pada ayat (1) dan ayat (2) berlaku sejak tanggal berlakunya tarif PPN 11%.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DPP jika harga mengandung PPN: 110/111 × Harga Jual (tarif 11%).",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "DPP JKP: 110/111 × Penggantian.",
+        "status": "diubah"
+      },
+      {
+        "number": "(3)",
+        "text": "Berlaku sejak tarif 11%.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

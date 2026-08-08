@@ -1,11 +1,18 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-09-11T02:40:00.000Z",
   "data": {
     "prefix": "24-100",
     "count": 3,
     "codes": [
+      {
+        "kode": "24-100-01",
+        "nama": "Hadiah, Penghargaan, Bonus dan Lainnya Selain yang Telah Dipotong PPh Pasal 21 Ayat (1) Huruf E UU PPh",
+        "tarif": 15,
+        "entryId": "pph-23-hadiah-penghargaan",
+        "entryTransactionType": "Hadiah/Penghargaan kepada OP Bukan Pegawai"
+      },
       {
         "kode": "24-100-02",
         "nama": "Sewa dan Penghasilan Lain Sehubungan Dengan Penggunaan Harta Kecuali Sewa Tanah dan/atau Bangunan yang Telah Dikenai PPh Pasal 4 Ayat (2) UU PPh.",
@@ -19,13 +26,6 @@
         "tarif": 2,
         "entryId": "pph-23-jasa-lain-4pct",
         "entryTransactionType": "Imbalan Jasa Lain (Tanpa NPWP)"
-      },
-      {
-        "kode": "24-100-01",
-        "nama": "Hadiah, Penghargaan, Bonus dan Lainnya Selain yang Telah Dipotong PPh Pasal 21 Ayat (1) Huruf E UU PPh",
-        "tarif": 15,
-        "entryId": "pph-23-hadiah-penghargaan",
-        "entryTransactionType": "Hadiah/Penghargaan kepada OP Bukan Pegawai"
       }
     ]
   }

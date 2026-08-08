@@ -1,0 +1,80 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-badan-pre2001",
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "transactionType": "Penghasilan Kena Pajak Badan (UU 7/1983)",
+    "description": "Tarif PPh badan berdasarkan UU 7/1983 menggunakan tarif yang sama dengan tarif progresif OP: 15%/25%/35%. Berlaku 1984-2000.",
+    "rate": {
+      "type": "progressive",
+      "value": "Progresif 3 lapis (sama OP)",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 10000000,
+          "rate": 15
+        },
+        {
+          "min": 10000000,
+          "max": 50000000,
+          "rate": 25
+        },
+        {
+          "min": 50000000,
+          "max": null,
+          "rate": 35
+        }
+      ]
+    },
+    "taxBase": "Penghasilan Kena Pajak (PKP) badan",
+    "payer": "WP Badan dalam negeri / BUT",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "1984-01-01",
+    "effectiveTo": "2000-12-31",
+    "status": "dicabut",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/1983",
+        "article": "Pasal 17 ayat (1) huruf b",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/43983/uu-no-7-tahun-1983"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [
+      "pph-badan-pre2010"
+    ],
+    "notes": "UU 7/1983 Pasal 17 ayat (1) huruf b: tarif PPh badan sama dengan tarif progresif OP. Diubah menjadi flat rate oleh UU 17/2000.",
+    "examples": [
+      {
+        "scenario": "PT dengan PKP Rp 100.000.000 tahun 1995",
+        "calculation": "15%×10jt + 25%×40jt + 35%×50jt = 1.5jt + 10jt + 17.5jt",
+        "result": "PPh Badan = Rp 29.000.000"
+      }
+    ],
+    "tags": [
+      "pph-badan",
+      "progresif",
+      "historis",
+      "uu-7-1983"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-badan-pre2010"
+      ],
+      "sameCategory": [
+        "pph-badan-2022-plus",
+        "pph-badan-pre2022",
+        "pph-badan-go-public",
+        "pph-badan-umkm",
+        "pph-badan-pre2010",
+        "pph-badan-ikn-0pct",
+        "pph-badan-ikn-10y"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "25",
+    "bab": "VII",
+    "title": "SKPKB",
+    "status": "berlaku",
+    "description": "Surat Ketetapan Pajak Kurang Bayar — diterbitkan apabila jumlah pajak terutang lebih besar dari kredit pajak.",
+    "keywords": [
+      "SKPKB",
+      "kurang bayar"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) SKPKB diterbitkan jika berdasarkan hasil pemeriksaan terdapat kurang bayar pajak.\n(2) Besarnya kurang bayar pajak sebagaimana dimaksud pada ayat (1) ditetapkan oleh DJP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SKPKB diterbitkan jika ada kurang bayar pajak dari pemeriksaan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Besarnya kurang bayar ditetapkan DJP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

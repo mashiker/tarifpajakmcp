@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "21",
+    "bab": "III",
+    "title": "Penyetoran PPnBM",
+    "status": "berlaku",
+    "description": "Penyetoran PPnBM oleh pabrikan atau importir.",
+    "keywords": [
+      "penyetoran",
+      "PPnBM"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) PPnBM atas penyerahan BKP oleh pabrikan dipungut oleh pabrikan.\n(2) PPnBM atas impor BKP dipungut oleh Direktorat Jenderal Bea dan Cukai.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPnBM dipungut oleh pabrikan saat penyerahan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "PPnBM impor dipungut oleh DJBC.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

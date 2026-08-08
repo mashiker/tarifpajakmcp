@@ -1,0 +1,30 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "uu-28-2009",
+    "number": "28",
+    "year": 2009,
+    "title": "Undang-Undang tentang Pajak Daerah dan Retribusi Daerah",
+    "shortName": "UU PDRD",
+    "type": "UU",
+    "promulgationDate": "2009-09-23",
+    "effectiveDate": "2010-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44213/uu-no-28-tahun-2009",
+    "status": "dicabut_sebagian",
+    "description": "UU PDRD lama. Mengatur PBB, BPHTB, dan pajak daerah. Dicabut sebagian oleh UU 1/2022 (HKPD) yang mengambil alih PBB-P3 dan BPHTB.",
+    "relevantArticles": "Pasal 1-7, 14",
+    "relatedRegulations": [
+      "uu-1-2022-hkpd"
+    ],
+    "referencingEntries": [
+      "bphtb-perolehan-umum",
+      "bphtb-perolehan-waris",
+      "bphtb-pengalihan-dinkes",
+      "pbb-perkotaan",
+      "pph-badan-ikn-0pct",
+      "pph-badan-ikn-10y"
+    ]
+  }
+}

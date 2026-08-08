@@ -1,0 +1,35 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "23",
+    "bab": "III",
+    "title": "Ketentuan Lain PPnBM",
+    "status": "berlaku",
+    "description": "Ketentuan lain terkait PPnBM.",
+    "keywords": [
+      "PPnBM"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Ketentuan mengenai pembukuan, penyimpanan dokumen, dan pemeriksaan PKP berlaku juga untuk pabrikan yang terkena PPnBM.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Ketentuan PKP berlaku juga untuk pabrikan PPnBM.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

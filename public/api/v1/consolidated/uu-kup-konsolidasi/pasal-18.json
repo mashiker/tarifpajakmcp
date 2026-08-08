@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "18",
+    "bab": "VI",
+    "title": "Pengawasan oleh DJP",
+    "status": "diubah",
+    "description": "Tata cara pengawasan kepatuhan WP oleh Direktorat Jenderal Pajak.",
+    "keywords": [
+      "pengawasan",
+      "DJP",
+      "kepatuhan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan tata cara pengawasan"
+      }
+    ],
+    "text": "(1) DJP dapat melakukan pengawasan terhadap pelaksanaan kewajiban perpajakan.\n(2) Pengawasan sebagaimana dimaksud pada ayat (1) dilakukan secara berkala.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DJP dapat melakukan pengawasan pelaksanaan kewajiban perpajakan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Pengawasan dilakukan secara berkala.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

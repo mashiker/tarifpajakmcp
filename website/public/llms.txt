@@ -1,208 +1,68 @@
-# Tarif Pajak Indonesia Open Database (tarif-pajak-id)
+# Tarif Pajak ID — LLM orientation (llms.txt)
 
-> Database tarif pajak Indonesia yang bersumber dari regulasi resmi.
-> Versi: 0.1.0 | Terverifikasi: 2026-05-26
-> Lisensi: MIT (kode) + CC-BY-SA (data)
+> Open database tarif pajak Indonesia, bersumber dari regulasi resmi Republik Indonesia.
+> Kanonik: https://tarif-pajak-id.pages.dev
+> Rilis: 2026-09-11 · versi 0.1.0 · sourceHash dd777bf7002f
+> Lisensi: MIT (kode) + CC-BY-SA 4.0 (data)
 
-## Statistik
-- 16 regulasi tercatat
-- 27 entry tarif pajak (22 berlaku saat ini)
-- 10 kategori pajak
+## Apa ini
+Database referensi tarif pajak Indonesia (PPh, PPN, PPh Final/UMKM, dst.) yang
+bersifat machine-readable. Setiap aturan punya interval berlaku (half-open),
+kondisi penerapan, dasar hukum primer, dan status verifikasi.
 
-## Kategori Pajak
-- **Bea Meterai** (Bea Meterai): 1 tarif - Bea Meterai - Pajak atas dokumen tertentu yang dikenakan berdasarkan UU Bea Meterai
-- **PPh 21** (PPh): 4 tarif - Pajak Penghasilan Pasal 21 - Pajak atas penghasilan sehubungan dengan pekerjaan, jasa, atau kegiatan orang pribadi
-- **PPh 22** (PPh): 3 tarif - Pajak Penghasilan Pasal 22 - Pemungutan pajak atas impor, pembelian barang, dan penjualan barang tertentu
-- **PPh 23** (PPh): 5 tarif - Pajak Penghasilan Pasal 23 - Pemotongan atas penghasilan berupa imbalan jasa tertentu, sewa tanah dan/atau bangunan, dan hadiah/penghargaan. Jenis jasa diatur dalam PMK 141/PMK.03/2015.
-- **PPh 26** (PPh): 1 tarif - Pajak Penghasilan Pasal 26 - Pemotongan atas penghasilan yang diterima WP luar negeri
-- **PPh 4(2) Final** (PPh): 4 tarif - Pajak Penghasilan Final Pasal 4 ayat (2) - Pajak yang dipungut pada saat penghasilan tertentu diterima
-- **PPh Badan** (PPh): 2 tarif - Pajak Penghasilan bagi Wajib Pajak Badan - Tarif flat yang berlaku atas penghasilan kena pajak badan
-- **PPh UMKM** (PPh): 2 tarif - Pajak Penghasilan atas penghasilan dari usaha UMKM - tarif final untuk WP yang memiliki peredaran bruto tertentu
-- **PPN** (PPN): 4 tarif - Pajak Pertambahan Nilai - Pajak atas konsumsi Barang Kena Pajak dan/atau Jasa Kena Pajak di dalam Daerah Pabean
-- **PPnBM** (PPnBM): 1 tarif - Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah
+## Statistik (kanonik, dari data v2)
+- 67 aturan · 41 konsep · 7 kategori
+- 49 aturan open-ended (masih berlaku sampai sekarang)
+- 47 aturan berstatus verified_primary (total; 13 historis sudah tutup interval, 34 open-ended)
+- 34 aturan berlaku saat ini (open-ended) DAN berstatus verified_primary
+- 4 aturan needs_review · 2 aturan source_conflict · 9 aturan summary_only
+- 1 konflik sumber terbuka
 
-## Tarif yang Sedang Berlaku
-### Bea Meterai - Dokumen dengan nilai tertentu
-- ID: bea-meterai-dokumen-2021
-- Tarif: Rp 10.000 per lembar
-- Status: berlaku
-- Berlaku sejak: 2021-01-01
-- Dasar hukum: UU 10/2020
-- Catatan: Dokumen dengan nominal > Rp 5 juta dikenakan bea meterai Rp 10.000. Dokumen di bawah Rp 5 juta atau Rp 5 juta tepat tidak kena bea meterai.
+## Penentuan tarif (determination)
+Resolver mengembalikan satu dari lima nilai determination. JANGAN memberikan jawaban pasti bila bukan `tepat`.
+- `tepat` — tarif tunggal cocok, semua fakta terpenuhi, didukung sumber primer.
+- `bersyarat` — tarif cocok tetapi butuh fakta tambahan (mis. NPWP penerima, klasifikasi BKP mewah).
+- `rentang` — lebih dari satu tarif sah berlaku pada tanggal itu, perlu fakta untuk memilih.
+- `fakta_kurang` — fakta transaksi kurang; JANGAN menebak satu angka.
+- `konflik_sumber` — ada konflik sumber yang belum diputuskan; JANGAN memberikan jawaban pasti.
 
-### PPh 21 - Gaji/Bulan TER
-- ID: pph-21-ter-monthly-2024
-- Tarif: TER sesuai tabel lampiran PP 58/2023 (TER A/B/C berdasarkan status PTKP)
-- Status: berlaku
-- Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 58/2023, PMK 168/2023, UU 7/2021 (HPP)
-- Catatan: TER berlaku untuk pemotongan bulanan. Pada akhir tahun tetap dilakukan perhitungan dengan tarif progresif Pasal 17 UU PPh untuk SPT Tahunan. Terdapat 3 kategori TER: TER A (tidak menikah tanpa tanggun
+## Status verifikasi
+- verified_primary — angka/periode/kondisi didukung sumber primer resmi.
+- verified_secondary — sudah ditinjau tetapi sumber primer belum lengkap.
+- needs_review — belum cukup untuk klaim pasti; JANGAN ditulis sebagai tarif berlaku.
+- source_conflict — konflik sumber yang belum diputuskan; tidak boleh jadi jawaban pasti.
+- summary_only — berguna untuk orientasi saja, BUKAN kalkulator.
 
-### PPh 21 - SPT Tahunan Progresif
-- ID: pph-21-progressive-annual-2024
-- Tarif: Progresif 5 lapis
-- Status: berlaku
-- Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP)
-- Catatan: Lapisan tarif 35% ditambahkan oleh UU HPP (sebelumnya maksimal 30%). PTKP 2024: Single Rp 54.000.000; Kawin Rp 58.500.000; Tanggungan Rp 4.500.000/orang (maks 3).
+## Batasan penting
+- Total 47 aturan berstatus verified_primary (di seluruh dataset, termasuk yang historis). Dari jumlah itu, 34 berlaku saat ini (open-ended) — itulah angka yang boleh dirujuk sebagai "tarif berlaku terverifikasi".
+- needs_review (4 aturan) dan source_conflict (2 aturan) TIDAK boleh muncul sebagai tarif berlaku.
+- summary_only (9 aturan) hanya orientasi, bukan kalkulator.
+- Database ini BUKAN nasihat pajak resmi dan BUKAN panduan pemerintah. Konteks fakta transaksi menentukan penerapan tarif. Selalu verifikasi ke sumber primer.
 
-### PPh 21 - PTKP (Penghasilan Tidak Kena Pajak)
-- ID: pph-21-non-taxable-income
-- Tarif: PTKP sesuai PMK berlaku
-- Status: berlaku
-- Berlaku sejak: 2016-01-01
-- Dasar hukum: PMK 122/2015
-- Catatan: PTKP: TK/0 = Rp 54.000.000; K/0 = Rp 58.500.000; K/1 = Rp 63.000.000; K/2 = Rp 67.500.000; K/3 = Rp 72.000.000. Belum ada perubahan sejak PMK 122/2015.
+## Kategori (dengan jumlah aturan)
+- Illustrative fixtures (`/kategori/illustrative`): 5 aturan
+- Pajak Penghasilan Badan (`/kategori/pph-badan`): 8 aturan
+- Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026) (`/kategori/pph-final-umkm`): 9 aturan
+- Pajak Penghasilan Pasal 21 (`/kategori/pph-21`): 20 aturan
+- Pajak Penghasilan Pasal 23 (`/kategori/pph-23`): 11 aturan
+- Pajak Pertambahan Nilai (PPN) (`/kategori/ppn`): 13 aturan
+- Rezim Pajak Penghasilan Khusus (PPh Pasal 15 dan sejenisnya) (`/kategori/pph-special-regimes`): 1 aturan
 
-### PPh 22 - Impor Barang
-- ID: pph-22-impor-2024
-- Tarif: 7.5%
-- Status: berlaku
-- Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023, UU 7/2021 (HPP)
-- Catatan: Tarif 7,5% untuk impor yang tidak menggunakan angka pengenal impor (API) atau menggunakan API umum. Berbeda untuk API produsen.
+## Endpoint AI-friendly
+- Ringkasan lengkap: https://tarif-pajak-id.pages.dev/llms-full.txt
+- Index v2: https://tarif-pajak-id.pages.dev/api/v2/index.json
+- Corpus aturan (untuk resolve client-side): https://tarif-pajak-id.pages.dev/api/v2/rules-corpus.json
+- Tahun: https://tarif-pajak-id.pages.dev/api/v2/by-year/index.json
+- Tanggal: https://tarif-pajak-id.pages.dev/api/v2/at-date/index.json
+- OpenAPI: https://tarif-pajak-id.pages.dev/api/v2/openapi.json
+- Search index: https://tarif-pajak-id.pages.dev/api/v2/search-index.json
 
-### PPh 22 - Pembelian Barang oleh Badan Usaha Industri Tertentu
-- ID: pph-22-pembelian-barang-2024
-- Tarif: 0.25%
-- Status: berlaku
-- Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023
-- Catatan: Tarif 0,25% berlaku untuk pembeli yang sudah ber-NPWP. Tanpa NPWP tarif menjadi 0,25% × 2 = 0,5%.
-
-### PPh 22 - Penjualan Barang Tertentu oleh Badan Usaha Industri Tertentu
-- ID: pph-22-penjualan-barang-2024
-- Tarif: 0.5%
-- Status: berlaku
-- Berlaku sejak: 2024-01-01
-- Dasar hukum: PP 60/2023
-
-
-### PPh 23 - Imbalan Jasa Lain (BerNPWP)
-- ID: pph-23-jasa-lain-2pct
-- Tarif: 2%
-- Status: berlaku
-- Berlaku sejak: 2015-12-31
-- Dasar hukum: UU 7/2021 (HPP), PMK 141/PMK.03/2015
-- Catatan: DPP untuk jasa katering = seluruh penghasilan bruto. DPP untuk jasa non-katering = seluruh penghasilan dikurangi: (1) gaji/upah/honorarium/tunjangan untuk tenaga kerja yang dipakai penyedia jasa, (2) 
-
-### PPh 23 - Imbalan Jasa Lain (Tanpa NPWP)
-- ID: pph-23-jasa-lain-4pct
-- Tarif: 4%
-- Status: berlaku
-- Berlaku sejak: 2015-12-31
-- Dasar hukum: PMK 141/PMK.03/2015, UU 7/2021 (HPP)
-- Catatan: Tarif 4% = 2% × 2 (pengali 100% lebih tinggi karena tidak berNPWP).
-
-### PPh 23 - Jasa Katering / Tata Boga
-- ID: pph-23-jasa-katering-2pct
-- Tarif: 2%
-- Status: berlaku
-- Berlaku sejak: 2015-12-31
-- Dasar hukum: PMK 141/PMK.03/2015
-- Catatan: Berbeda dari jasa lainnya, DPP katering tidak boleh dikurangi biaya bahan makanan maupun tenaga kerja. Seluruh tagihan katering menjadi dasar pemotongan.
-
-### PPh 23 - Sewa Tanah dan/atau Bangunan
-- ID: pph-23-sewa-tanah-bangunan
-- Tarif: 10%
-- Status: berlaku
-- Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP)
-- Catatan: Tarif 10% atas sewa tanah dan/atau bangunan. Tanpa NPWP: 10% × 2 = 20%. Juga berlaku untuk sewa peralatan dan mesin sejak UU HPP.
-
-### PPh 23 - Hadiah/Penghargaan kepada OP Bukan Pegawai
-- ID: pph-23-hadiah-penghargaan
-- Tarif: 15%
-- Status: berlaku
-- Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP)
-- Catatan: Tarif final 15% atas hadiah/penghargaan untuk non-pegawai. Termasuk penghargaan kepada petugas keamanan, anggota panitia, atau siapapun yang menerima imbalan terkait kegiatan tertentu. Tanpa NPWP: 15%
-
-### PPh 26 - Penghasilan WP Luar Negeri Umum
-- ID: pph-26-general-2024
-- Tarif: 20%
-- Status: berlaku
-- Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP)
-- Catatan: Tarif dapat berbeda berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/ tax treaty) antara Indonesia dan negara residen WP luar negeri.
-
-### PPh 4(2) Final - Bunga Deposito dan Tabungan
-- ID: pph-final-bunga-deposito
-- Tarif: 20%
-- Status: berlaku
-- Berlaku sejak: 2009-01-01
-- Dasar hukum: UU 36/2008, PP 131/2000
-- Catatan: Bunga tabungan dan deposito bank umum dan BPR dikenakan PPh final 20%. Bebas pajak untuk bunga simpanan di bank perwakilan negara P3B.
-
-### PPh 4(2) Final - Sewa Tanah dan/atau Bangunan
-- ID: pph-final-sewa-tanah
-- Tarif: 10%
-- Status: berlaku
-- Berlaku sejak: 2009-01-01
-- Dasar hukum: UU 36/2008, PP 131/2000
-- Catatan: PP 131/2000 Pasal 4 mengatur bahwa sewa tanah dan/atau bangunan yang dipotong PPh final 10% adalah yang tidak termasuk PPh 23.
-
-### PPh 4(2) Final - Hadiah Undian
-- ID: pph-final-hadiah-undian
-- Tarif: 25%
-- Status: berlaku
-- Berlaku sejak: 2009-01-01
-- Dasar hukum: PP 131/2000
-
-
-### PPh 4(2) Final - Keuntungan Transaksi Saham di Bursa Efek
-- ID: pph-final-transaksi-saham-bursa
-- Tarif: 0.1%
-- Status: berlaku
-- Berlaku sejak: 2009-01-01
-- Dasar hukum: UU 36/2008
-- Catatan: Tarif 0,1% dari nilai transaksi penjualan saham (final). Berlaku untuk transaksi di bursa efek.
-
-### PPh Badan - Penghasilan Kena Pajak Badan (2022-2023)
-- ID: pph-badan-2022-plus
-- Tarif: 22%
-- Status: berlaku
-- Berlaku sejak: 2022-01-01
-- Dasar hukum: UU 7/2021 (HPP)
-- Catatan: UU HPP menetapkan tarif PPh badan menurun: 22% (2022-dan seterusnya), turun menjadi 20% untuk WP badan yang sahamnya diperdagangkan di bursa efek dan memenuhi syarat tertentu. Penurunan ke 20% umum be
-
-### PPh UMKM - Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)
-- ID: pph-umkm-05pct-2023
-- Tarif: 0.5%
-- Status: berlaku
-- Berlaku sejak: 2023-01-01
-- Dasar hukum: PP 55/2022, UU 7/2021 (HPP)
-- Catatan: Masa berlaku 7 tahun sejak PP 55/2022. Batas peredaran bruto Rp 4,8 miliar/tahun. PP 55/2022 menggantikan PP 23/2018. Kini juga berlaku untuk WP badan (perubahan dari PP 23/2018).
-
-### PPN - Penyerahan BKP/JKP dalam negeri
-- ID: ppn-11pct-effective-2025
-- Tarif: 11%
-- Status: berlaku
-- Berlaku sejak: 2025-01-01
-- Dasar hukum: PMK 131/2024, UU 7/2021 (HPP)
-- Catatan: UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.
-
-### PPN - Ekspor Barang Kena Pajak
-- ID: ppn-ekspor-bkp
-- Tarif: 0%
-- Status: berlaku
-- Berlaku sejak: 2022-04-01
-- Dasar hukum: UU 7/2021 (HPP)
-- Catatan: Tarif 0% untuk ekspor BKP berwujud. Berbeda dengan ekspor jasa (dapat berbeda tarif tergantung jenis).
-
-### PPnBM - Penyerahan Barang Mewah
-- ID: ppnbm-general
-- Tarif: 10% - 200%
-- Status: berlaku
-- Berlaku sejak: 2022-04-01
-- Dasar hukum: UU 7/2021 (HPP)
-- Catatan: Tarif spesifik ditetapkan per kelompok barang: sedan/station wagon 4x2 (10-75%), sedan 4x4 (10-75%), van/wagon >10 penumpang (10%), kapal pesiar (10-50%), pesawat pribadi (10-50%), rumah mewah (10-40%
+## Sumber primer
+- JDIH BPK: https://peraturan.bpk.go.id
+- DJP/Kemenkeu: https://www.pajak.go.id
+- Portal peraturan: https://peraturan.go.id
 
 ## Disclaimer
-Database ini adalah referensi bersumber dari regulasi resmi, BUKAN nasihat hukum atau pajak.
-Selalu verifikasi dengan peraturan resmi terbaru.
-
-## Links
-- API: https://tarif-pajak-id.vercel.app/api.json
-- GitHub: https://github.com/user/tarif-pajak-id
-- Sumber regulasi: pasal.id, peraturan.bpk.go.id, peraturan.go.id
+Database ini adalah referensi bersumber dari regulasi resmi Republik Indonesia,
+BUKAN nasihat pajak resmi dan BUKAN panduan pemerintah. Selalu verifikasi
+dengan peraturan resmi terbaru sebelum mengambil keputusan perpajakan.

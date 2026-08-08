@@ -3,313 +3,597 @@ import BaseLayout from '../layouts/Base.astro';
 import fs from 'fs';
 import path from 'path';
 
-const apiPath = path.resolve(process.cwd(), 'public/api.json');
-const api = JSON.parse(fs.readFileSync(apiPath, 'utf-8'));
+// Task 9 rewiring: read the canonical v2 TER rules (PP 58/2023 Lampiran A/B/C)
+// instead of the v1 aggregate. The v1 aggregate carried the WRONG pre-HPP table
+// (42 layers, top 25%, single 6.6M 0% bound for all categories). The v2 rules
+// carry the correct values: 44/40/41 layers, 0% bounds 5.4M/6.2M/6.6M, top 34%.
+//
+// The calculator and tables below project directly from the v2 brackets so the
+// page can never drift back to the v1 numbers.
+const readJson = (rel: string) => JSON.parse(fs.readFileSync(path.resolve(process.cwd(), rel), 'utf-8'));
+const terA = readJson('public/api/v2/rules/rule-pph-21-ter-monthly-a.json').data;
+const terB = readJson('public/api/v2/rules/rule-pph-21-ter-monthly-b.json').data;
+const terC = readJson('public/api/v2/rules/rule-pph-21-ter-monthly-c.json').data;
 
-const pph21 = api.categories.find((c: any) => c.taxType === 'PPh 21');
-const terA = pph21.entries.find((e: any) => e.id === 'pph-21-ter-a-detail');
-const terB = pph21.entries.find((e: any) => e.id === 'pph-21-ter-b-detail');
-const terC = pph21.entries.find((e: any) => e.id === 'pph-21-ter-c-detail');
+interface Bracket { upTo: string | null; rate: string; }
+interface TerRule {
+  id: string;
+  rate: { type: string; brackets: Bracket[] };
+  // v2 TER rules carry an `in` condition on `ptkpClass`. TER A/B/C is set as
+  // an array; TER C is currently a scalar "K/3" in the source data, so the
+  // label derivation must normalize both shapes.
+  conditions: { value: string | string[] };
+  verification: { status: string };
+  notes?: string;
+}
 
+// Task 9 review C2: PTKP labels are driven from the canonical v2 condition
+// value (normalized scalar/array -> comma-joined string) so the page never
+// drifts from the rule data. Previously TER B was hardcoded with the wrong
+// "TK/1" instead of the canonical "K/1".
+function ptkpLabelFrom(rule: TerRule): string {
+  const v = rule.conditions?.value;
+  const arr = Array.isArray(v) ? v : v === undefined || v === null ? [] : [String(v)];
+  return `PTKP ${arr.join(', ')}`;
+}
+
+const TABS: { id: 'a' | 'b' | 'c'; label: string; data: TerRule }[] = [
+  { id: 'a', label: 'TER A', data: terA },
+  { id: 'b', label: 'TER B', data: terB },
+  { id: 'c', label: 'TER C', data: terC },
+];
+// Precompute per-tab PTKP labels (used in stat cards, tabs, table titles, captions).
+const TAB_PTKP: Record<'a' | 'b' | 'c', string> = {
+  a: ptkpLabelFrom(terA),
+  b: ptkpLabelFrom(terB),
+  c: ptkpLabelFrom(terC),
+};
+
+// Per-tab derived values for the header stat cards.
 function fmtRp(n: number | null): string {
   if (n === null) return '∞';
   if (n >= 1e9) return `Rp ${(n / 1e9).toLocaleString('id-ID')} miliar`;
-  if (n >= 1e6) return `Rp ${(n / 1e6).toLocaleString('id-ID')} juta`;
+  if (n >= 1e6) return `Rp ${(n / 1e6).toLocaleString('id-ID', { maximumFractionDigits: 1 })} juta`;
   return `Rp ${n.toLocaleString('id-ID')}`;
 }
+
+function bracketToLower(b: Bracket, prevUpTo: number | null) {
+  // Convert v2 cumulative upTo brackets to {min, max, rate} for the table view.
+  const max = b.upTo === null ? null : Number(b.upTo);
+  const min = prevUpTo === null ? 0 : prevUpTo;
+  return { min, max, rate: Math.round(Number(b.rate) * 10000) / 100, rateRaw: b.rate };
+}
+
+function tabLayers(t: TerRule) {
+  return t.rate.brackets.map((b, i) => {
+    const prev = i === 0 ? null : Number(t.rate.brackets[i - 1].upTo ?? '0');
+    return bracketToLower(b, prev);
+  });
+}
+
+function topRatePercent(t: TerRule): number {
+  const last = t.rate.brackets[t.rate.brackets.length - 1];
+  return Math.round(Number(last.rate) * 10000) / 100;
+}
+
+function zeroBound(t: TerRule): number {
+  return Number(t.rate.brackets[0].upTo ?? '0');
+}
+
+const DETAIL_HREF = '/tarif/concept-pph-21-ter-monthly';
 ---
 
-<BaseLayout title="Tabel TER PPh 21" activeNav="ter">
-  <!-- Breadcrumb -->
-  <nav class="flex items-center gap-1.5 text-xs mb-8 text-[var(--text-tertiary)]">
-    <a href="/" class="hover:text-[var(--text)] transition-colors">Beranda</a>
-    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-    <a href="/kategori/pph-21" class="hover:text-[var(--text)] transition-colors">PPh 21</a>
-    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-    <span class="text-[var(--text)] font-medium">Tabel TER</span>
+<BaseLayout title="Tabel TER PPh 21" activeNav="ter" canonicalPath="/ter-pph-21">
+  <nav class="ter-breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Database</a>
+    <span aria-hidden="true">›</span>
+    <a href="/kategori/pph-21">PPh 21</a>
+    <span aria-hidden="true">›</span>
+    <span class="ter-breadcrumb-current">Tabel TER</span>
   </nav>
 
-  <!-- Page Header -->
-  <div class="mb-8">
-    <div class="flex items-start gap-4 mb-5">
-      <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center text-white text-lg font-bold shadow-sm shrink-0">T</div>
+  <header class="ter-header">
+    <div>
+      <h1 class="ter-title">Tarif Efektif Rata-rata (TER)</h1>
+      <p class="ter-subtitle">
+        Pemotongan PPh Pasal 21 bulanan berdasarkan PP 58/2023 Lampiran A/B/C dan PMK 168/2023.
+        Tabel di bawah dibaca langsung dari aturan kanonik v2 (lihat <a href={DETAIL_HREF}>detail konsep</a>).
+      </p>
+    </div>
+    <a href={DETAIL_HREF} class="ter-detail-link">Lihat detail konsep &rarr;</a>
+  </header>
+
+  <section class="ter-stats" aria-label="Statistik kategori TER">
+    {TABS.map((tab) => (
+      <div class:list={['ter-stat-card', `ter-stat-card-${tab.id}`]}>
+        <div class="ter-stat-name">{tab.label}</div>
+        <div class="ter-stat-ptkp">{TAB_PTKP[tab.id]}</div>
+        <div class="ter-stat-layers">{tab.data.rate.brackets.length} lapisan</div>
+        <div class="ter-stat-bounds">0% s/d {fmtRp(zeroBound(tab.data))}</div>
+        <div class="ter-stat-top">Tarif tertinggi {topRatePercent(tab.data)}%</div>
+      </div>
+    ))}
+  </section>
+
+  {terA.verification.status !== 'verified_primary' && (
+    <aside class="ter-verification-note" role="note">
+      <strong>Catatan verifikasi:</strong> lapisan tengah direntusksi ulang dari sumber sekunder dan berstatus
+      <span class="ter-verification-status">{terA.verification.status}</span>. Interval dan kelas PTKP didukung sumber primer (PP 58/2023).
+      Lihat detail untuk locator klaim.
+    </aside>
+  )}
+
+  <section class="ter-calculator" aria-labelledby="ter-calc-title">
+    <h2 id="ter-calc-title" class="ter-calc-title">Kalkulator Cepat TER PPh 21</h2>
+    <div class="ter-calc-grid">
       <div>
-        <h1 class="text-xl font-bold text-[var(--text)] tracking-tight">Tarif Efektif Rata-rata (TER)</h1>
-        <p class="text-sm text-[var(--text-secondary)] mt-1">Pemotongan PPh Pasal 21 bulanan berdasarkan PP 58/2023 dan PMK 168/2023</p>
+        <label for="calc-income" class="ter-calc-label">Penghasilan Bruto Bulanan</label>
+        <div class="ter-calc-input-wrap">
+          <span class="ter-calc-prefix">Rp</span>
+          <input id="calc-income" type="text" placeholder="10.000.000" class="ter-calc-input" inputmode="numeric" />
+        </div>
+      </div>
+      <div>
+        <label for="calc-bpjs" class="ter-calc-label">Iuran Pensiun / BPJS</label>
+        <div class="ter-calc-input-wrap">
+          <span class="ter-calc-prefix">Rp</span>
+          <input id="calc-bpjs" type="text" placeholder="0" value="0" class="ter-calc-input" inputmode="numeric" />
+        </div>
+      </div>
+      <div>
+        <label for="calc-category" class="ter-calc-label">Status PTKP</label>
+        <select id="calc-category" class="ter-calc-select">
+          {TABS.map((tab) => (
+            <option value={tab.id}>{tab.label} — {TAB_PTKP[tab.id].replace(/^PTKP /, '')}</option>
+          ))}
+        </select>
       </div>
     </div>
+    <div id="calc-result" class="ter-calc-result" hidden>
+      <div>
+        <div class="ter-calc-result-label">Penghasilan Bruto</div>
+        <div id="res-bruto" class="ter-calc-result-value">—</div>
+      </div>
+      <div>
+        <div class="ter-calc-result-label">Dasar Pengenaan</div>
+        <div id="res-dasar" class="ter-calc-result-value">—</div>
+      </div>
+      <div>
+        <div class="ter-calc-result-label">Tarif TER</div>
+        <div id="res-rate" class="ter-calc-result-value ter-calc-result-rate">—</div>
+      </div>
+      <div>
+        <div class="ter-calc-result-label">PPh 21 / Bulan</div>
+        <div id="res-pph" class="ter-calc-result-value ter-calc-result-pph">—</div>
+      </div>
+    </div>
+  </section>
 
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-      <div class="card p-3">
-        <div class="text-[11px] text-[var(--text-secondary)] font-semibold uppercase mb-0.5">Berlaku Sejak</div>
-        <div class="text-sm font-bold text-[var(--text)]">1 Januari 2024</div>
-      </div>
-      <div class="card p-3 border-emerald-200/80 dark:border-emerald-800/40">
-        <div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold uppercase mb-0.5">Menggantikan</div>
-        <div class="text-sm font-bold text-[var(--text)]">Metode Progresif</div>
-      </div>
-      <div class="card p-3 border-violet-200/80 dark:border-violet-800/40">
-        <div class="text-[11px] text-violet-600 dark:text-violet-400 font-semibold uppercase mb-0.5">Kategori</div>
-        <div class="text-sm font-bold text-[var(--text)]">A / B / C</div>
-      </div>
-      <div class="card p-3 border-amber-200/80 dark:border-amber-800/40">
-        <div class="text-[11px] text-amber-600 dark:text-amber-400 font-semibold uppercase mb-0.5">Lapisan Tarif</div>
-        <div class="text-sm font-bold text-[var(--text)]">42 per kategori</div>
-      </div>
-    </div>
+  <div class="ter-tabs" role="tablist" aria-label="Kategori TER">
+    {TABS.map((tab, i) => (
+      <button
+        id={`tab-${tab.id}`}
+        class:list={['ter-tab', i === 0 && 'ter-tab-active']}
+        role="tab"
+        aria-selected={i === 0 ? 'true' : 'false'}
+        aria-controls={`table-${tab.id}`}
+        data-tab={tab.id}
+      >
+        <span class="ter-tab-name">{tab.label}</span>
+        <span class="ter-tab-ptkp">{TAB_PTKP[tab.id]}</span>
+      </button>
+    ))}
   </div>
 
-  <!-- Calculator -->
-  <div class="card mb-8 overflow-hidden">
-    <div class="px-6 py-5 bg-[var(--surface)] border-b border-[var(--border)]">
-      <div class="flex items-center gap-2.5 mb-4">
-        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 dark:bg-emerald-900/30">
-          <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+  {TABS.map((tab, i) => {
+    const layers = tabLayers(tab.data);
+    return (
+      <section
+        id={`table-${tab.id}`}
+        class:list={['ter-table-wrap', i !== 0 && 'ter-table-hidden']}
+        role="tabpanel"
+        aria-labelledby={`tab-${tab.id}`}
+      >
+        <div class="ter-table-header">
+          <h3 class="ter-table-title">{tab.label} — {TAB_PTKP[tab.id]}</h3>
+          <span class="ter-table-count">{layers.length} lapisan</span>
         </div>
-        <h2 class="text-sm font-bold text-[var(--text)]">Kalkulator Cepat TER PPh 21</h2>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <div>
-          <label class="text-xs text-[var(--text-secondary)] font-medium mb-1.5 block">Penghasilan Bruto Bulanan</label>
-          <div class="relative">
-            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[var(--text-tertiary)] font-mono">Rp</span>
-            <input id="calc-income" type="text" placeholder="10.000.000" class="w-full pl-10 pr-3 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none font-mono transition-all" oninput="calculateTER()" />
-          </div>
-        </div>
-        <div>
-          <label class="text-xs text-[var(--text-secondary)] font-medium mb-1.5 block">Iuran Pensiun / BPJS</label>
-          <div class="relative">
-            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[var(--text-tertiary)] font-mono">Rp</span>
-            <input id="calc-bpjs" type="text" placeholder="0" value="0" class="w-full pl-10 pr-3 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none font-mono transition-all" oninput="calculateTER()" />
-          </div>
-        </div>
-        <div>
-          <label class="text-xs text-[var(--text-secondary)] font-medium mb-1.5 block">Status PTKP</label>
-          <select id="calc-category" class="w-full py-2.5 px-3 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all" onchange="switchTab(this.value); calculateTER()">
-            <option value="a">TER A — Tidak Kawin</option>
-            <option value="b">TER B — Kawin, 0-2 Tanggungan</option>
-            <option value="c">TER C — Kawin, 3+ Tanggungan</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div id="calc-result" class="px-6 py-5 hidden">
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div>
-          <div class="text-[11px] text-[var(--text-tertiary)] font-medium uppercase">Penghasilan Bruto</div>
-          <div id="res-bruto" class="text-sm font-bold text-[var(--text)] font-mono mt-1">—</div>
-        </div>
-        <div>
-          <div class="text-[11px] text-[var(--text-tertiary)] font-medium uppercase">Dasar Pengenaan</div>
-          <div id="res-dasar" class="text-sm font-bold text-[var(--text)] font-mono mt-1">—</div>
-        </div>
-        <div>
-          <div class="text-[11px] text-[var(--text-tertiary)] font-medium uppercase">Tarif TER</div>
-          <div id="res-rate" class="text-sm font-bold text-[var(--text-secondary)] font-mono mt-1">—</div>
-        </div>
-        <div>
-          <div class="text-[11px] text-[var(--text-tertiary)] font-medium uppercase">PPh 21 / Bulan</div>
-          <div id="res-pph" class="text-base font-extrabold text-[var(--accent)] font-mono mt-1">—</div>
-        </div>
-      </div>
-    </div>
-  </div>
+        <table class="ter-table">
+          <caption class="ter-table-caption">
+            Tarif Efektif Rata-rata {tab.label} menurut PP 58/2023 Lampiran {tab.label.slice(4)}. Berlaku {TAB_PTKP[tab.id]}.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col" class="ter-col-no">No</th>
+              <th scope="col" class="ter-col-min">Batas Bawah</th>
+              <th scope="col" class="ter-col-max">Batas Atas</th>
+              <th scope="col" class="ter-col-rate">Tarif</th>
+            </tr>
+          </thead>
+          <tbody>
+            {layers.map((b, j) => {
+              const isZero = b.rate === 0;
+              const isTop = b.rate >= 30;
+              return (
+                <tr>
+                  <td class="ter-cell-no">{j + 1}</td>
+                  <td class="ter-cell-min">{fmtRp(b.min)}</td>
+                  <td class="ter-cell-max">
+                    {b.max === null ? <span class="ter-cell-open">di atas {fmtRp(b.min)}</span> : fmtRp(b.max)}
+                  </td>
+                  <td class:list={['ter-cell-rate', isZero && 'ter-cell-zero', isTop && 'ter-cell-top']}>
+                    {b.rate}%
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </section>
+    );
+  })}
 
-  <!-- Tabs -->
-  <div class="flex gap-2 mb-6">
-    <button id="tab-a" onclick="switchTab('a')" class="ter-tab active">
-      <span class="font-bold">TER A</span>
-      <span class="text-[10px] opacity-70 block">Tidak Kawin</span>
-    </button>
-    <button id="tab-b" onclick="switchTab('b')" class="ter-tab">
-      <span class="font-bold">TER B</span>
-      <span class="text-[10px] opacity-70 block">Kawin 0-2 Tanggungan</span>
-    </button>
-    <button id="tab-c" onclick="switchTab('c')" class="ter-tab">
-      <span class="font-bold">TER C</span>
-      <span class="text-[10px] opacity-70 block">Kawin 3+ Tanggungan</span>
-    </button>
-  </div>
+  <section class="ter-guide" aria-labelledby="ter-guide-title">
+    <h2 id="ter-guide-title" class="ter-guide-title">Dasar pengenaan & dasar hukum</h2>
+    <p class="ter-guide-text">
+      <strong>Dasar pengenaan:</strong> penghasilan bruto bulanan dikurangi iuran pensiun/BPJS yang dibayar pegawai.
+      Tidak lagi diperlukan perhitungan PTKP dan annualisasi seperti metode lama.
+    </p>
+    <p class="ter-guide-text">
+      <strong>Dasar hukum:</strong> PP 58 Tahun 2023 Lampiran A/B/C dan PMK 168/PMK.010/2023. Berlaku efektif sejak 1 Januari 2024.
+    </p>
+    <p class="ter-guide-warning">
+      Lapisan tengah direntusksi dari sumber sekunder dan berstatus <code>{terA.verification.status}</code>; lapisan terbawah (0%), batas atas,
+      kelas PTKP, dan tarif puncak ({topRatePercent(terA)}%) didukung sumber primer.
+    </p>
+  </section>
 
-  <!-- TER Tables -->
-  {[
-    { id: 'a', label: 'TER A — Tidak Kawin / Tidak Punya Tanggungan', data: terA },
-    { id: 'b', label: 'TER B — Kawin, Tanggungan 0-2', data: terB },
-    { id: 'c', label: 'TER C — Kawin, Tanggungan 3+', data: terC },
-  ].map((tab: any) => (
-    <div id={`table-${tab.id}`} class:list={[tab.id !== 'a' ? 'hidden' : '']}>
-      <div class="card overflow-hidden">
-        <div class="px-5 py-3 bg-[var(--surface)] border-b border-[var(--border)] flex items-center justify-between">
-          <h3 class="text-sm font-bold text-[var(--text)]">{tab.label}</h3>
-          <span class="text-[11px] text-[var(--text-tertiary)] font-mono">{tab.data.rate.brackets.length} lapisan</span>
-        </div>
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="border-b border-[var(--border)] bg-[var(--surface)]">
-                <th class="text-left px-4 py-3 text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider w-12">No</th>
-                <th class="text-right px-4 py-3 text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider">Batas Bawah</th>
-                <th class="text-right px-4 py-3 text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider">Batas Atas</th>
-                <th class="text-right px-4 py-3 text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider w-20">Tarif</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tab.data.rate.brackets.map((b: any, i: number) => {
-                const isZero = b.rate === 0;
-                const isHigh = b.rate >= 10;
-                return (
-                  <tr class="border-b border-[var(--border)] hover:bg-[var(--surface-alt)] transition-colors">
-                    <td class="px-4 py-2.5 text-[var(--text-tertiary)] font-mono text-xs">{i + 1}</td>
-                    <td class="px-4 py-2.5 text-right font-mono text-xs text-[var(--text-secondary)]">{fmtRp(b.min)}</td>
-                    <td class="px-4 py-2.5 text-right font-mono text-xs text-[var(--text-secondary)]">
-                      {b.max ? fmtRp(b.max) : <span class="text-[var(--text-secondary)] font-semibold">di atas {fmtRp(b.min)}</span>}
-                    </td>
-                    <td class="px-4 py-2.5 text-right font-mono text-sm">
-                      {isZero
-                        ? <span class="inline-block bg-[var(--accent-soft)] text-[var(--accent)] px-2.5 py-0.5 rounded-lg text-xs font-semibold ring-1 ring-emerald-200/60 dark:ring-emerald-800">0%</span>
-                        : isHigh
-                          ? <span class="inline-block bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300 px-2.5 py-0.5 rounded-lg text-xs font-semibold ring-1 ring-red-200/60 dark:ring-red-800">{b.rate}%</span>
-                          : <span class="text-[var(--text)] font-semibold">{b.rate}%</span>
-                      }
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  ))}
-
-  <!-- Guide -->
-  <div class="mt-10 card overflow-hidden">
-    <div class="px-5 py-3 bg-[var(--highlight-soft)] border-b border-amber-200/60 dark:border-amber-800/40">
-      <div class="flex items-center gap-2">
-        <svg class="w-4 h-4 text-[var(--highlight)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <h3 class="text-sm font-bold text-[var(--text)]">Panduan Kategori TER</h3>
-      </div>
-    </div>
-    <div class="p-5">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="card p-4">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="bg-slate-800 text-white text-xs font-bold px-2.5 py-1 rounded-lg">A</span>
-            <span class="text-sm font-bold text-[var(--text)]">Tidak Kawin</span>
-          </div>
-          <ul class="text-xs text-[var(--text-secondary)] space-y-1">
-            <li>&#8226; Tidak menikah / belum menikah</li>
-            <li>&#8226; Tidak memiliki tanggungan</li>
-            <li>&#8226; Atau ditinggal meninggal</li>
-          </ul>
-        </div>
-        <div class="card p-4 border-violet-200/80 dark:border-violet-800/40">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="bg-violet-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">B</span>
-            <span class="text-sm font-bold text-[var(--text)]">Kawin 0-2 Tanggungan</span>
-          </div>
-          <ul class="text-xs text-[var(--text-secondary)] space-y-1">
-            <li>&#8226; Menikah (kawin)</li>
-            <li>&#8226; 0, 1, atau 2 tanggungan</li>
-            <li>&#8226; Termasuk menikah lalu bercerai</li>
-          </ul>
-        </div>
-        <div class="card p-4 border-emerald-200/80 dark:border-emerald-800/40">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">C</span>
-            <span class="text-sm font-bold text-[var(--text)]">Kawin 3+ Tanggungan</span>
-          </div>
-          <ul class="text-xs text-[var(--text-secondary)] space-y-1">
-            <li>&#8226; Menikah (kawin)</li>
-            <li>&#8226; 3 atau lebih tanggungan</li>
-            <li>&#8226; Maksimal PTKP paling tinggi</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="mt-4 text-xs text-[var(--text-secondary)] card p-4">
-        <strong class="text-[var(--text)]">Dasar pengenaan TER:</strong> Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS yang dibayar oleh pegawai.
-        Tidak lagi diperlukan perhitungan PTKP dan annualisasi seperti metode lama.
-        <br/><br/>
-        <strong class="text-[var(--text)]">Dasar hukum:</strong> PP 58 Tahun 2023 dan PMK 168/PMK.010/2023.
-        Berlaku efektif sejak 1 Januari 2024.
-      </div>
-    </div>
-  </div>
-
-  <!-- Nav -->
-  <div class="mt-8 flex items-center justify-between">
-    <a href="/kategori/pph-21" class="btn-secondary">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-      Semua entry PPh 21
-    </a>
-    <a href="/api/v1/entries/pph-21-ter-a-detail.json" target="_blank" class="tag text-xs">
-      API <span class="text-slate-400">JSON</span> <span class="text-slate-300">&#8599;</span>
-    </a>
-  </div>
+  <nav class="ter-footer-nav" aria-label="Navigasi">
+    <a href="/kategori/pph-21" class="ter-footer-link">&larr; Semua entry PPh 21</a>
+    <a href={DETAIL_HREF} class="ter-footer-link">Detail konsep TER &rarr;</a>
+  </nav>
 </BaseLayout>
 
-<style>
-  .ter-tab {
-    @apply flex flex-col items-center px-5 py-3 rounded-xl text-sm border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-200 cursor-pointer;
-  }
-  .ter-tab.active {
-    @apply bg-slate-900 text-white border-slate-900 shadow-md dark:bg-white dark:text-slate-900 dark:border-white;
-  }
-</style>
-
-<script define:vars={{ terABrackets: terA.rate.brackets, terBBrackets: terB.rate.brackets, terCBrackets: terC.rate.brackets }}>
-  const brackets = { a: terABrackets, b: terBBrackets, c: terCBrackets };
+<script is:inline define:vars={{ TER_A_BRACKETS: terA.rate.brackets, TER_B_BRACKETS: terB.rate.brackets, TER_C_BRACKETS: terC.rate.brackets }}>
+  // Calculator wires directly to the v2 canonical TER brackets (passed in at
+  // build time), so the client never reads the v1 aggregate.
+  const BRACKETS = { a: TER_A_BRACKETS, b: TER_B_BRACKETS, c: TER_C_BRACKETS };
   let activeTab = 'a';
 
   function parseRp(str) {
     if (!str) return 0;
-    return parseInt(str.replace(/\D/g, ''), 10) || 0;
+    return parseInt(String(str).replace(/\D/g, ''), 10) || 0;
   }
-
   function formatRp(n) {
     if (n === 0) return 'Rp 0';
     return 'Rp ' + n.toLocaleString('id-ID');
   }
+  function rateFor(brackets, dasar) {
+    // v2 brackets are cumulative {upTo, rate}; upTo === null is the open top band.
+    for (const b of brackets) {
+      if (b.upTo === null) return Number(b.rate) * 100;
+      if (dasar <= Number(b.upTo)) return Number(b.rate) * 100;
+    }
+    return 0;
+  }
 
-  window.switchTab = function(tab) {
+  function setTab(tab) {
     activeTab = tab;
-    document.querySelectorAll('.ter-tab').forEach(b => b.classList.remove('active'));
-    document.getElementById('tab-' + tab)?.classList.add('active');
-    ['a', 'b', 'c'].forEach(t => {
-      const el = document.getElementById('table-' + t);
-      if (el) el.classList.toggle('hidden', t !== tab);
+    document.querySelectorAll('.ter-tab').forEach((b) => {
+      const isActive = b.getAttribute('data-tab') === tab;
+      b.classList.toggle('ter-tab-active', isActive);
+      b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+    document.querySelectorAll('.ter-table-wrap').forEach((w) => {
+      const wrapId = w.getAttribute('id');
+      w.classList.toggle('ter-table-hidden', wrapId !== 'table-' + tab);
     });
     const sel = document.getElementById('calc-category');
     if (sel) sel.value = tab;
-    calculateTER();
-  };
+    calculate();
+  }
 
-  window.calculateTER = function() {
+  function calculate() {
     const income = parseRp(document.getElementById('calc-income')?.value || '');
     const bpjs = parseRp(document.getElementById('calc-bpjs')?.value || '0');
     const dasar = Math.max(0, income - bpjs);
     const resultEl = document.getElementById('calc-result');
-
-    if (income <= 0) { resultEl?.classList.add('hidden'); return; }
-    resultEl?.classList.remove('hidden');
-
-    const bracket = brackets[activeTab];
-    let rate = 0;
-    for (const b of bracket) {
-      if (b.max === null) { rate = b.rate; break; }
-      if (dasar >= b.min && dasar <= b.max) { rate = b.rate; break; }
-    }
-
+    if (income <= 0) { resultEl?.setAttribute('hidden', ''); return; }
+    resultEl?.removeAttribute('hidden');
+    const rate = rateFor(BRACKETS[activeTab], dasar);
     const pph = Math.round(dasar * rate / 100);
+    const setText = (id, text) => { const el = document.getElementById(id); if (el) el.textContent = text; };
+    setText('res-bruto', formatRp(income));
+    setText('res-dasar', formatRp(dasar));
+    setText('res-rate', rate.toFixed(2) + '%');
+    setText('res-pph', formatRp(pph));
+  }
 
-    const brutoEl = document.getElementById('res-bruto');
-    const dasarEl = document.getElementById('res-dasar');
-    const rateEl = document.getElementById('res-rate');
-    const pphEl = document.getElementById('res-pph');
-    if (brutoEl) brutoEl.textContent = formatRp(income);
-    if (dasarEl) dasarEl.textContent = formatRp(dasar);
-    if (rateEl) rateEl.textContent = rate + '%';
-    if (pphEl) pphEl.textContent = formatRp(pph);
-  };
+  document.querySelectorAll('.ter-tab').forEach((b) => {
+    b.addEventListener('click', () => setTab(b.getAttribute('data-tab')));
+  });
+  document.getElementById('calc-income')?.addEventListener('input', calculate);
+  document.getElementById('calc-bpjs')?.addEventListener('input', calculate);
+  document.getElementById('calc-category')?.addEventListener('change', (e) => setTab(e.target.value));
+  // Expose for any keyboard shortcut wiring.
+  window.__ter_set_tab = setTab;
 </script>
+
+<style>
+  .ter-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.75rem;
+    color: var(--ink-tertiary, #8B93A1);
+    margin-bottom: 0.75rem;
+  }
+  .ter-breadcrumb a { color: var(--ink-secondary, #44545a); text-decoration: none; }
+  .ter-breadcrumb a:hover { color: #0E5E58; text-decoration: underline; }
+  .ter-breadcrumb-current { color: var(--ink, #132A2A); font-weight: 600; }
+
+  .ter-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule, #D9E0DC);
+  }
+  .ter-title { font-size: 1.375rem; font-weight: 700; color: var(--ink, #132A2A); margin: 0; letter-spacing: -0.01em; }
+  .ter-subtitle { font-size: 0.8125rem; color: var(--ink-secondary, #44545a); margin: 0.25rem 0 0; max-width: 60ch; line-height: 1.5; }
+  .ter-subtitle a, .ter-detail-link { color: #0E5E58; }
+  /* Inline links inside the subtitle must be visually distinct beyond colour
+     alone (WCAG 1.4.1 / axe link-in-text-block). Underline signals the link. */
+  .ter-subtitle a { text-decoration: underline; text-underline-offset: 2px; }
+  .ter-subtitle a:hover { text-decoration: underline; }
+  .ter-detail-link {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    border-radius: 0.5rem;
+    background: var(--surface, #FFFFFF);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .ter-detail-link:hover { border-color: #0E5E58; }
+
+  .ter-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .ter-stat-card {
+    padding: 0.75rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    border-radius: 0.5rem;
+    background: var(--surface, #FFFFFF);
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+  .ter-stat-name { font-weight: 700; font-size: 0.875rem; color: var(--ink, #132A2A); }
+  .ter-stat-ptkp { font-size: 0.6875rem; color: var(--ink-tertiary, #8B93A1); font-family: 'IBM Plex Mono', monospace; }
+  .ter-stat-layers { font-family: 'IBM Plex Mono', monospace; font-size: 0.8125rem; color: var(--ink-secondary, #44545a); margin-top: 0.25rem; }
+  .ter-stat-bounds { font-family: 'IBM Plex Mono', monospace; font-size: 0.6875rem; color: var(--ink-tertiary, #8B93A1); }
+  .ter-stat-top { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: #0E5E58; font-weight: 600; }
+
+  .ter-verification-note {
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.5rem;
+    background: var(--highlight-soft, #FBF3E3);
+    border: 1px solid rgba(183, 121, 31, 0.30);
+    font-size: 0.75rem;
+    color: var(--ink-secondary, #44545a);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  .ter-verification-status {
+    display: inline-block;
+    padding: 0.0625rem 0.375rem;
+    border-radius: 9999px;
+    background: rgba(183, 121, 31, 0.18);
+    color: #7A4F10;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.625rem;
+    font-weight: 700;
+    margin: 0 0.125rem;
+  }
+
+  .ter-calculator {
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    border-radius: 0.5rem;
+    background: var(--surface, #FFFFFF);
+    margin-bottom: 1rem;
+  }
+  .ter-calc-title { font-size: 0.875rem; font-weight: 700; color: var(--ink, #132A2A); margin: 0 0 0.75rem; }
+  .ter-calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 0.75rem;
+  }
+  .ter-calc-label {
+    display: block;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-secondary, #44545a);
+    margin-bottom: 0.25rem;
+  }
+  .ter-calc-input-wrap { position: relative; }
+  .ter-calc-prefix {
+    position: absolute;
+    left: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--ink-tertiary, #8B93A1);
+  }
+  .ter-calc-input, .ter-calc-select {
+    width: 100%;
+    height: 2.25rem;
+    padding: 0 0.625rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: var(--surface, #FFFFFF);
+    color: var(--ink, #132A2A);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8125rem;
+  }
+  .ter-calc-input { padding-left: 1.75rem; }
+  .ter-calc-input:focus, .ter-calc-select:focus { outline: none; border-color: #0E5E58; box-shadow: 0 0 0 3px rgba(14, 94, 88, 0.18); }
+  .ter-calc-select { font-family: 'Inter', sans-serif; cursor: pointer; }
+  .ter-calc-result {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--rule, #D9E0DC);
+  }
+  .ter-calc-result-label {
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-tertiary, #8B93A1);
+  }
+  .ter-calc-result-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--ink, #132A2A);
+    margin-top: 0.25rem;
+  }
+  .ter-calc-result-rate { color: var(--ink-secondary, #44545a); }
+  .ter-calc-result-pph { color: #0E5E58; font-size: 1rem; }
+
+  .ter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .ter-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.875rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: var(--surface, #FFFFFF);
+    color: var(--ink-secondary, #44545a);
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.15s ease;
+  }
+  .ter-tab:hover { border-color: #0E5E58; color: #0E5E58; }
+  .ter-tab-active { background: var(--ink, #132A2A); border-color: var(--ink, #132A2A); color: var(--paper, #F7F8F4); }
+  .ter-tab-name { font-weight: 700; font-size: 0.8125rem; }
+  .ter-tab-ptkp { font-family: 'IBM Plex Mono', monospace; font-size: 0.625rem; opacity: 0.85; }
+
+  .ter-table-wrap { margin-bottom: 1rem; }
+  .ter-table-hidden { display: none; }
+  .ter-table-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.375rem;
+  }
+  .ter-table-title { font-size: 0.875rem; font-weight: 700; color: var(--ink, #132A2A); margin: 0; }
+  .ter-table-count { font-family: 'IBM Plex Mono', monospace; font-size: 0.6875rem; color: var(--ink-tertiary, #8B93A1); }
+  .ter-table-caption {
+    font-size: 0.6875rem;
+    color: var(--ink-tertiary, #8B93A1);
+    text-align: left;
+    margin-bottom: 0.375rem;
+    caption-side: top;
+  }
+  .ter-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--rule, #D9E0DC);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    background: var(--surface, #FFFFFF);
+  }
+  .ter-table thead th {
+    text-align: left;
+    padding: 0.5rem 0.625rem;
+    background: var(--surface-alt, #EFF1EC);
+    color: var(--ink-secondary, #44545a);
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    border-bottom: 1px solid var(--rule, #D9E0DC);
+  }
+  .ter-table thead .ter-col-rate, .ter-table thead .ter-col-min, .ter-table thead .ter-col-max { text-align: right; }
+  .ter-table tbody td {
+    padding: 0.375rem 0.625rem;
+    border-bottom: 1px solid var(--rule, #D9E0DC);
+    color: var(--ink-secondary, #44545a);
+  }
+  .ter-table tbody tr:last-child td { border-bottom: none; }
+  .ter-cell-no { color: var(--ink-tertiary, #8B93A1); width: 3rem; }
+  .ter-cell-min, .ter-cell-max { text-align: right; }
+  .ter-cell-rate { text-align: right; font-weight: 600; color: var(--ink, #132A2A); }
+  .ter-cell-zero { background: var(--accent-soft, #EAF2F0); color: #0E5E58; border-radius: 0.25rem; }
+  .ter-cell-top { color: #B64545; }
+  .ter-cell-open { color: var(--ink-tertiary, #8B93A1); font-style: italic; font-weight: 600; }
+
+  .ter-guide {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    border-radius: 0.5rem;
+    background: var(--surface-alt, #EFF1EC);
+    margin-bottom: 1rem;
+  }
+  .ter-guide-title { font-size: 0.8125rem; font-weight: 700; color: var(--ink, #132A2A); margin: 0 0 0.5rem; }
+  .ter-guide-text { font-size: 0.75rem; color: var(--ink-secondary, #44545a); margin: 0.25rem 0; line-height: 1.5; }
+  .ter-guide-warning { font-size: 0.6875rem; color: #7A4F10; margin: 0.5rem 0 0; line-height: 1.5; }
+  .ter-guide-warning code { font-family: 'IBM Plex Mono', monospace; background: rgba(183, 121, 31, 0.10); padding: 0.0625rem 0.25rem; border-radius: 0.25rem; }
+
+  .ter-footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--rule, #D9E0DC);
+    font-size: 0.75rem;
+  }
+  .ter-footer-link { color: #0E5E58; text-decoration: none; font-weight: 600; }
+  .ter-footer-link:hover { text-decoration: underline; }
+
+  :global(html.dark) .ter-title { color: #EDF0F5; }
+  :global(html.dark) .ter-subtitle { color: #B6BCC6; }
+  :global(html.dark) .ter-stat-card { background: #111318; border-color: #23272F; }
+  :global(html.dark) .ter-stat-name { color: #EDF0F5; }
+  :global(html.dark) .ter-calculator, :global(html.dark) .ter-tab { background: #111318; border-color: #23272F; }
+  :global(html.dark) .ter-calc-input, :global(html.dark) .ter-calc-select { background: #0A0C10; border-color: #23272F; color: #EDF0F5; }
+  :global(html.dark) .ter-table { background: #111318; }
+  :global(html.dark) .ter-table thead th { background: #1A1D24; color: #B6BCC6; }
+  :global(html.dark) .ter-table tbody td { color: #B6BCC6; border-bottom-color: #23272F; }
+  :global(html.dark) .ter-cell-rate { color: #EDF0F5; }
+  :global(html.dark) .ter-guide { background: #111318; border-color: #23272F; }
+  :global(html.dark) .ter-guide-title { color: #EDF0F5; }
+  :global(html.dark) .ter-guide-text { color: #B6BCC6; }
+  :global(html.dark) .ter-table-title { color: #EDF0F5; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ter-tab, .ter-calc-input, .ter-calc-select, .ter-detail-link { transition: none; }
+  }
+</style>

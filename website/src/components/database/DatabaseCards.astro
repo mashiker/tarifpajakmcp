@@ -1,0 +1,92 @@
+---
+import { renderDatabaseCard } from '../../lib/database-markup.ts';
+import type { DatabaseRow } from '../../lib/database-state.ts';
+
+export interface Props {
+  rows: DatabaseRow[];
+  selectedDate?: string;
+  categoryMeta?: Record<string, { name: string; color?: string }>;
+}
+const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
+---
+
+<ul class="db-cards" id="db-mobile-list" role="list">
+  <Fragment set:html={rows.map((row) => {
+    const meta = categoryMeta[row.category];
+    return renderDatabaseCard({
+      row,
+      selectedDate,
+      categoryName: meta?.name,
+      categoryColor: meta?.color,
+    });
+  }).join('')} />
+  {
+    rows.length === 0 && (
+      <li class="db-cards-empty">Tidak ada tarif yang cocok dengan filter saat ini.</li>
+    )
+  }
+</ul>
+
+<style>
+  .db-cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  /* Hidden cards stay in DOM but are not displayed. */
+  .db-cards li[hidden] { display: none; }
+  .db-card {
+    display: block;
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--rule, #D9E0DC);
+    background: var(--surface, #FFFFFF);
+    text-decoration: none;
+    color: var(--ink, #132A2A);
+    transition: background-color 0.15s ease;
+  }
+  .db-card:hover { background: rgba(14, 94, 88, 0.04); }
+  .db-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.375rem;
+  }
+  .db-card-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.375rem;
+    background: rgba(19, 42, 42, 0.05);
+    color: var(--ink-secondary, #44545a);
+    font-size: 0.6875rem;
+    font-weight: 600;
+  }
+  .db-category-dot {
+    width: 0.4375rem;
+    height: 0.4375rem;
+    border-radius: 9999px;
+    background: var(--cat-color, #0E5E58);
+  }
+  .db-card-name { font-size: 0.875rem; font-weight: 500; margin-bottom: 0.375rem; }
+  .db-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  .db-card-rate { font-size: 0.875rem; }
+  .db-card-ruleid { font-family: 'IBM Plex Mono', monospace; font-size: 0.625rem; color: var(--ink-tertiary, #8B93A1); }
+  .db-card-detail { display: block; margin-top: 0.5rem; font-size: 0.75rem; color: #0E5E58; font-weight: 600; }
+  .db-cards-empty { padding: 1rem; text-align: center; color: var(--ink-secondary, #44545a); font-size: 0.875rem; list-style: none; }
+  :global(html.dark) .db-card { background: #111318; }
+  :global(html.dark) .db-card:hover { background: rgba(45, 212, 191, 0.06); }
+  @media (prefers-reduced-motion: reduce) {
+    .db-card { transition: none; }
+  }
+</style>

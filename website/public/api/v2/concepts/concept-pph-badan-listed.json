@@ -1,0 +1,23 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "concept-pph-badan-listed",
+    "categoryId": "cat-pph-badan",
+    "name": "Fasilitas pengurangan tarif perusahaan listed (UU PPh Pasal 17 ayat (2b) jo. PP 55/2022 jo. PMK 40/2023)",
+    "slug": "pph-badan-listed",
+    "description": "Pengurangan tarif badan bagi perusahaan yang sahamnya diperdagangkan di bursa efek. Pengurangan dalam PERSEN POIN (bukan proporsional): pra-2020 5pp dari 25% menjadi 20%; UU 2/2020 3pp dari 22% menjadi 19% (TP 2020-2021); UU HPP 3pp dari 22% menjadi 19% (TP 2022-sekarang). Syarat Pasal 17(2b) UU PPh jo. PP 55/2022 Pasal 64-65 jo. PMK 40/2023: (a) minimal 40% saham diperdagangkan di bursa, (b) minimal 300 pemegang saham, (c) masing-masing pemegang saham memiliki <5%, (d) saham dimiliki >=183 hari/tahun pajak, (e) kepatuhan pelaporan. Fasilitas ini KONDISIONAL — resolver tidak boleh mengembalikan 19%/20% tanpa seluruh fakta syarat.",
+    "ruleIds": [
+      "rule-pph-badan-listed-19pct-hpp",
+      "rule-pph-badan-listed-19pct-uu2-2020",
+      "rule-pph-badan-listed-20pct-pre2020"
+    ]
+  }
+}

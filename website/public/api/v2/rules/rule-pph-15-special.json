@@ -1,0 +1,57 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-15-special",
+    "conceptId": "concept-pph-15-special",
+    "conceptName": "PPh Pasal 15: perhitungan penghasilan neto khusus (delegasi)",
+    "categoryId": "cat-pph-special-regimes",
+    "categoryName": "Rezim Pajak Penghasilan Khusus (PPh Pasal 15 dan sejenisnya)",
+    "validFrom": "2009-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "free_text",
+      "text": "Delegasi perhitungan penghasilan neto khusus menurut UU PPh Pasal 15 per industri (angkutan laut/udara internasional, perbankan/asuransi asing, BUT, ladang migas, panas bumi, dsb.). Beberapa bersifat final, beberapa dapat dikreditkan."
+    },
+    "conditions": {
+      "op": "exists",
+      "fact": "industry"
+    },
+    "verification": {
+      "status": "summary_only",
+      "sourceIds": [
+        "src-uu-15-pph"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-15-pph",
+          "locator": "UU PPh Pasal 15: delegasi perhitungan penghasilan neto khusus — bukan tarif tunggal; ditetapkan per industri melalui PMK/peraturan pelaksana"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-15-pph",
+          "locator": "UU 36/2008 Pasal 15 berlaku sejak 1 Januari 2009"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-15-pph",
+          "locator": "UU PPh Pasal 15: WP industri tertentu (angkutan laut/udara internasional, perbankan/asuransi asing, BUT, migas, panas bumi, dsb.)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-15-special",
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "PPh Pasal 15 (UU PPh Pasal 15) adalah delegasi perhitungan penghasilan neto khusus, BERBEDA dari Pasal 4(2) final. Beberapa pajak Pasal 15 bersifat final, beberapa dapat dikreditkan. Dipisahkan dari kategori PPh 4(2) final (cat-pph-final-umkm) ke kategori tersendiri (cat-pph-special-regimes) sesuai Task 7. Diringkas summary_only sampai seluruh industri Pasal 15 ditelusuri penuh dari sumber primer.",
+    "conflicts": []
+  }
+}

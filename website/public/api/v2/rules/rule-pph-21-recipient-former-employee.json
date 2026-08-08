@@ -1,0 +1,58 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-21-recipient-former-employee",
+    "conceptId": "concept-pph-21-recipient-former-employee",
+    "conceptName": "Penerima: mantan pegawai (pensiun kepadanya)",
+    "categoryId": "cat-pph-21",
+    "categoryName": "Pajak Penghasilan Pasal 21",
+    "validFrom": "2024-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "formula",
+      "expression": "TER kategori A/B/C bulanan atau Pasal 17 sesuai konteks (PMK 168/2023)"
+    },
+    "conditions": {
+      "op": "equals",
+      "fact": "recipientClass",
+      "value": "mantan-pegawai"
+    },
+    "verification": {
+      "status": "summary_only",
+      "sourceIds": [
+        "src-pmk-168-2023"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Penarikan pensiun mantan pegawai"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Berlaku 2024"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Mantan pegawai"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-21-former-employee",
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Pensiun mantan pegawai: konteks menentukan TER A/B/C bulanan atau Pasal 17.",
+    "conflicts": []
+  }
+}

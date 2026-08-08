@@ -1,0 +1,46 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "39",
+    "bab": "IX",
+    "title": "Eksekusi",
+    "status": "berlaku",
+    "description": "Tata cara eksekusi terhadap barang yang disita.",
+    "keywords": [
+      "eksekusi",
+      "lelang"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Daluwarsa penagihan pajak terjadi setelah lewat 5 (lima) tahun sejak saat terutangnya pajak.\n(2) Daluwarsa tidak termasuk dalam penghitungan:\na. jangka waktu penundaan penagihan pajak;\nb. jangka waktu penundaan pemeriksaan;\nc. jangka waktu pemeriksaan.\n(3) Daluwarsa penagihan pajak terputus karena:\na. penyampaian SPT;\nb. penerbitan STP;\nc. penerbitan SKPKB;\nd. penerbitan SKPKBT;\ne. pengakuan salah atau kelalaian WP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Daluwarsa penagihan: 5 tahun sejak pajak terutang.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Tidak termasuk: penundaan penagihan, pemeriksaan, dan penghambatan.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Daluwarsa terputus: SPT, STP, SKPKB, SKPKBT, pengakuan WP.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

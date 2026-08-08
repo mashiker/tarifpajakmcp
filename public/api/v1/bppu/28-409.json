@@ -1,0 +1,109 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "28-409",
+    "count": 14,
+    "codes": [
+      {
+        "kode": "28-409-08",
+        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Dengan Kualifikasi Usaha)",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-09",
+        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Tanpa Kualifikasi Usaha)",
+        "tarif": 6,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-10",
+        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Kecil)",
+        "tarif": 2,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-11",
+        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Menengah dan Besar)",
+        "tarif": 3,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-12",
+        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Tanpa Kualifikasi Usaha)",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-13",
+        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Dengan Kualifikasi Usaha)",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-14",
+        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Tanpa Kualifikasi Usaha)",
+        "tarif": 6,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-22",
+        "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha Kualifikasi Kecil atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 1.75,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-23",
+        "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha Atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-24",
+        "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Selain Sertifikat Badan Usaha Kualifikasi Kecil atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 2.65,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-25",
+        "nama": "Pekerjaan Konstruksi Terintegrasi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha",
+        "tarif": 2.65,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-26",
+        "nama": "Pekerjaan Konstruksi Terintegrasi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha",
+        "tarif": 4,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-27",
+        "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 3.5,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      },
+      {
+        "kode": "28-409-28",
+        "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 6,
+        "entryId": "pph-final-konstruksi",
+        "entryTransactionType": "Pekerjaan dan Jasa Konstruksi"
+      }
+    ]
+  }
+}

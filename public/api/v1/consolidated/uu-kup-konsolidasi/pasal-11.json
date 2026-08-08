@@ -1,0 +1,53 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "11",
+    "bab": "IV",
+    "title": "Pengecualian Kewajiban Pembukuan",
+    "status": "diubah",
+    "description": "WP yang dikecualikan dari kewajiban pembukuan (cukup pencatatan).",
+    "keywords": [
+      "pembukuan",
+      "pengecualian",
+      "UMKM",
+      "peredaran bruto"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Perubahan batas peredaran bruto untuk pengecualian"
+      }
+    ],
+    "text": "(1) Pembukuan atau pencatatan diselenggarakan dengan mengikuti prinsip taat asas dan dengan itikad baik.\n(2) Pembukuan diselenggarakan dengan menggunakan huruf latin, angka arab, dan bahasa Indonesia.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pembukuan/pencatatan: taat asas dan itikad baik.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Huruf latin, angka arab, bahasa Indonesia.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

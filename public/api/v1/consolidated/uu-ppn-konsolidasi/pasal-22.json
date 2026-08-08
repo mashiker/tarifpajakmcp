@@ -1,0 +1,51 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "22",
+    "bab": "III",
+    "title": "Fasilitas PPnBM",
+    "status": "diubah",
+    "description": "Fasilitas PPnBM berupa pembebasan atau ketidakdipungutan.",
+    "keywords": [
+      "fasilitas",
+      "PPnBM"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan fasilitas PPnBM"
+      }
+    ],
+    "text": "(1) Pabrikan yang melakukan penyerahan BKP yang tergolong mewah wajib mendaftarkan diri.\n(2) Pabrikan wajib memungut, menyetor, dan melaporkan PPnBM.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pabrikan BKP mewah wajib mendaftar.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Wajib memungut, menyetor, melaporkan PPnBM.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

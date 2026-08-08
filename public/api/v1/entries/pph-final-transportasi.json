@@ -1,0 +1,100 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-final-transportasi",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Penghasilan dari Pengangkutan dan Charter",
+    "description": "Pemotongan PPh atas imbalan pengangkutan orang dan/atau barang, charter kapal laut dan pesawat udara, baik perusahaan dalam negeri maupun luar negeri.",
+    "rate": {
+      "type": "range",
+      "value": [
+        1.2,
+        2.64
+      ]
+    },
+    "taxBase": "Jumlah bruto imbalan",
+    "payer": "Perusahaan pelayaran/penerbangan",
+    "recipient": "Negara",
+    "withholder": "Pemberi kerja/pembayar imbalan",
+    "effectiveFrom": "2009-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PP 51/2008",
+        "article": "Pasal 5A"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Terdiri dari 5 kode objek pajak BPPU dengan tarif 1.2%, 1.8%, 2.64%.",
+    "examples": [
+      {
+        "scenario": "Penghasilan dari Pengangkutan dan Charter Rp 100.000.000",
+        "calculation": "Tarif 1.2%-2.64% × 100jt",
+        "result": "Pajak = Rp 1.200.000 - Rp 2.640.000"
+      }
+    ],
+    "tags": [
+      "pph-final",
+      "transportasi"
+    ],
+    "bppuKode": [
+      {
+        "kode": "28-410-02",
+        "nama": "Imbalan yang Dibayarkan/Terutang kepada Perusahaan Pelayaran Dalam Negeri",
+        "tarif": 1.2
+      },
+      {
+        "kode": "28-411-02",
+        "nama": "Imbalan Charter Kapal Laut dan/atau Pesawat Udara yang Dibayarkan/ Terutang kepada Perusahaan Pelayaran dan/atau Penerbangan Luar Negeri  melalui BUT di Indonesia",
+        "tarif": 2.64
+      },
+      {
+        "kode": "29-101-01",
+        "nama": "Imbalan Charter Pesawat Udara yang Dibayarkan/Terutang kepada Perusahaan Penerbangan Dalam Negeri oleh Pemotong Pajak",
+        "tarif": 1.8
+      },
+      {
+        "kode": "28-410-01",
+        "nama": "Imbalan yang Diterima/Diperoleh Sehubungan dengan Pengangkutan Orang dan/atau Barang Termasuk Penyewaan Kapal Laut Oleh Perusahaan Pelayaran Dalam Negeri",
+        "tarif": 1.2
+      },
+      {
+        "kode": "28-411-01",
+        "nama": "Imbalan yang Dibayarkan/Terutang kepada Perusahaan Pelayaran dan/atau Penerbangan Luar Negeri Sehubungan dengan Pengangkutan Orang dan/atau Barang (Selain Berdasarkan Perjanjian Charter)",
+        "tarif": 2.64
+      }
+    ],
+    "lastVerified": "2026-05-26",
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-final-bunga-deposito",
+        "pph-final-sewa-tanah",
+        "pph-final-hadiah-undian",
+        "pph-final-transaksi-saham-bursa",
+        "pph-final-konstruksi",
+        "pph-final-bunga-koperasi",
+        "pph-final-migas",
+        "pph-final-investasi-lpi",
+        "pph-final-bunga-pre2009",
+        "pph-final-pengalihan-pp131",
+        "pph-final-pengalihan-pp71",
+        "pph-15-penerbangan-domestik",
+        "pph-15-pelayaran-domestik",
+        "pph-15-perusahaan-asuransi",
+        "pph-15-buta-charter",
+        "pph-15-pma-opec",
+        "pph-15-perusahaan-kontraktor"
+      ]
+    }
+  }
+}

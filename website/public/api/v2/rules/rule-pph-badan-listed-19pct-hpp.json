@@ -1,0 +1,118 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-badan-listed-19pct-hpp",
+    "conceptId": "concept-pph-badan-listed",
+    "conceptName": "Fasilitas pengurangan tarif perusahaan listed (UU PPh Pasal 17 ayat (2b) jo. PP 55/2022 jo. PMK 40/2023)",
+    "categoryId": "cat-pph-badan",
+    "categoryName": "Pajak Penghasilan Badan",
+    "validFrom": "2022-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "percentage",
+      "value": "0.19"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "taxpayerType",
+          "value": "badan"
+        },
+        {
+          "op": "equals",
+          "fact": "resident",
+          "value": true
+        },
+        {
+          "op": "equals",
+          "fact": "listed",
+          "value": true
+        },
+        {
+          "op": "exists",
+          "fact": "floatTradedPct"
+        },
+        {
+          "op": "exists",
+          "fact": "minShareholders"
+        },
+        {
+          "op": "exists",
+          "fact": "maxStakePct"
+        },
+        {
+          "op": "exists",
+          "fact": "heldDays"
+        },
+        {
+          "op": "equals",
+          "fact": "listedConditionsMet",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-7-2021-hpp",
+        "src-pp-55-2022-badan",
+        "src-pmk-40-2023-listed"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Pasal 3 angka 7 UU HPP jo. Pasal 17 ayat (2b) UU PPh: pengurangan 3 persen poin dari tarif dasar 22% menjadi 19% bagi perusahaan listed"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Berlaku Tahun Pajak 2022 sampai saat ini (rezim UU HPP)"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-40-2023-listed",
+          "locator": "PMK 40/2023 Pasal 2-4 jo. PP 55/2022 Pasal 64-65: syarat >=40% saham diperdagangkan, >=300 pemegang saham, masing-masing <5%, dimiliki >=183 hari/tahun pajak, kepatuhan pelaporan"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-badan-listed",
+    "supersedes": [
+      "rule-pph-badan-listed-19pct-uu2-2020"
+    ],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-pph-badan-listed-19pct-2022-hpp",
+        "label": "Perusahaan listed memenuhi syarat, TP 2022 PKP 1.000.000.000",
+        "illustrative": true,
+        "input": {
+          "taxpayerType": "badan",
+          "resident": true,
+          "listed": true,
+          "floatTradedPct": "0.40",
+          "minShareholders": "300",
+          "maxStakePct": "0.05",
+          "heldDays": "200",
+          "listedConditionsMet": true,
+          "pkp": "1000000000"
+        },
+        "expectedAmount": "190000000.00",
+        "notes": "Tarif efektif = 22% - 3 persen poin (3 pp) = 19%. 19% × 1.000.000.000 = 190.000.000. Pengurangan dalam PERSEN POIN, bukan 3% proporsional (22% × 0,97 = 21,34% SALAH). Syarat free-float PP 55/2022 Pasal 64-65 jo. PMK 40/2023."
+      }
+    ],
+    "notes": "Fasilitas perusahaan listed TP 2022-sekarang: pengurangan 3 PERSEN POIN (3 pp) dari tarif dasar 22% menjadi 19% per UU HPP Pasal 3 angka 7 jo. Pasal 17 ayat (2b) UU PPh. BUKAN pengurangan proporsional. Syarat dikodifikasi di PP 55/2022 Pasal 64-65 jo. PMK 40/2023 Pasal 2-4: >=40% saham diperdagangkan, >=300 pemegang saham, masing-masing <5%, dimiliki >=183 hari/tahun pajak, kepatuhan pelaporan. Fakta listedConditionsMet adalah gate boolean yang diturunkan pemanggil dari ambang numerik.",
+    "conflicts": []
+  }
+}

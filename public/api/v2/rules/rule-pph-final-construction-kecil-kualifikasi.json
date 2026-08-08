@@ -1,0 +1,71 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-final-construction-kecil-kualifikasi",
+    "conceptId": "concept-pph-final-construction",
+    "conceptName": "PPh Final jasa konstruksi (PP 9/2022 mengubah PP 51/2008)",
+    "categoryId": "cat-pph-final-umkm",
+    "categoryName": "Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026)",
+    "validFrom": "2022-02-21",
+    "validToExclusive": null,
+    "rate": {
+      "type": "percentage",
+      "value": "0.04"
+    },
+    "conditions": {
+      "op": "equals",
+      "fact": "contractorQualification",
+      "value": "kecil"
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-pp-9-2022"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pp-9-2022",
+          "locator": "PP 9/2022 Lampiran: kontraktor kecil dikenai tarif final 4% (kualifikasi) atau 6% (tidak kualifikasi)"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pp-9-2022",
+          "locator": "PP 9/2022 berlaku efektif 21 Februari 2022"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pp-9-2022",
+          "locator": "PP 9/2022 Lampiran: kualifikasi kontraktor kecil"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-final-construction-kecil",
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-pph-final-construction-kecil-2023",
+        "label": "Jasa konstruksi kontraktor kecil, bruto Rp100.000.000 tahun 2023",
+        "illustrative": true,
+        "input": {
+          "contractorQualification": "kecil",
+          "gross": "100000000"
+        },
+        "expectedAmount": "4000000.00",
+        "notes": "4% × 100.000.000 = 4.000.000. Tarif final jasa konstruksi PP 9/2022 untuk kontraktor kecil (kualifikasi)."
+      }
+    ],
+    "notes": "PPh final jasa konstruksi PP 9/2022 tarif 4% untuk kontraktor kecil (kualifikasi). Berlaku 21 Februari 2022. Kontraktor kecil tidak kualifikasi dikenai 6%.",
+    "conflicts": []
+  }
+}

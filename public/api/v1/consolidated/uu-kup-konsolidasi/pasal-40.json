@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "40",
+    "bab": "IX",
+    "title": "Daluwarsa Penagihan Pajak",
+    "status": "diubah",
+    "description": "Daluwarsa penagihan pajak 5 tahun sejak SKP diterbitkan. Dapat dipanjangkan.",
+    "keywords": [
+      "daluwarsa",
+      "5 tahun",
+      "penagihan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli - daluwarsa 5 tahun"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perpanjangan daluwarsa untuk kasus tertentu"
+      }
+    ],
+    "text": "(1) Imbalan bunga diberikan kepada WP atas kelebihan pembayaran pajak.\n(2) Imbalan bunga dihitung sejak tanggal kelebihan dibayar sampai tanggal diterbitkannya SKPLB atau tanggal penyetoran kekurangan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Imbalan bunga atas kelebihan bayar pajak.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Dihitung sejak kelebihan dibayar sampai SKPLB/penyetoran.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

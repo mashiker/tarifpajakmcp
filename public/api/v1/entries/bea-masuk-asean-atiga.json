@@ -1,0 +1,54 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "bea-masuk-asean-atiga",
+    "category": "Bea Masuk",
+    "taxType": "Bea Masuk",
+    "transactionType": "Bea Masuk ASEAN (ATIGA)",
+    "description": "Tarif BM 0% untuk impor dari negara ASEAN berdasarkan ATIGA.",
+    "rate": {
+      "type": "percentage",
+      "value": 0
+    },
+    "taxBase": "Nilai Pabean (CIF)",
+    "payer": "Importir dari negara ASEAN",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2010-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "Perpres 55/2013",
+        "article": "Lampiran",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/53611/perpres-no-55-tahun-2013"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "ATIGA: tarif 0% untuk barang ASEAN dengan Form D. 6 founding + 4 CLMV (bertahap).",
+    "examples": [
+      {
+        "scenario": "Impor dari Thailand Form D USD 5.000",
+        "calculation": "Tarif ATIGA 0%",
+        "result": "BM = Rp 0"
+      }
+    ],
+    "tags": [
+      "bea-masuk",
+      "asean",
+      "atiga",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "bea-masuk-umum-mf",
+        "bea-masuk-bmt",
+        "bea-masuk-anti-dumping"
+      ]
+    }
+  }
+}

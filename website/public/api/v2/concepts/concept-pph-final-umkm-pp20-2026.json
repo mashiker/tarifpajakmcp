@@ -1,0 +1,21 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "concept-pph-final-umkm-pp20-2026",
+    "categoryId": "cat-pph-final-umkm",
+    "name": "PPh Final UMKM PP 20/2026 (perubahan PP 55/2022, 0,5%)",
+    "slug": "pph-final-umkm-pp20-2026",
+    "description": "PP 20/2026 mengubah PP 55/2022 efektif 22 April 2026. Tarif tetap 0,5%. Menyempitkan jenis badan eligible utama menjadi OP, perseroan perorangan (pendiri individu tunggal), dan koperasi. CV/firma/PT/BUM Desa hanya kelanjutan warisan di bawah ketentuan transisi. Pasal 59 PP 55/2022 DIHAPUS. Aturan agregasi dan jasa profesional diperketat.",
+    "ruleIds": [
+      "rule-pph-final-umkm-pp20-2026"
+    ]
+  }
+}

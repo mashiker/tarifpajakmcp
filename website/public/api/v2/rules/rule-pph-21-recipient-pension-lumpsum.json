@@ -1,0 +1,87 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-21-recipient-pension-lumpsum",
+    "conceptId": "concept-pph-21-recipient-pension-participant",
+    "conceptName": "Penerima: peserta pensiun / penarikan dana pensiun-JHT",
+    "categoryId": "cat-pph-21",
+    "categoryName": "Pajak Penghasilan Pasal 21",
+    "validFrom": "2024-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "progressive",
+      "brackets": [
+        {
+          "upTo": "50000000",
+          "rate": "0"
+        },
+        {
+          "upTo": "100000000",
+          "rate": "0.05"
+        },
+        {
+          "upTo": "500000000",
+          "rate": "0.1"
+        },
+        {
+          "upTo": null,
+          "rate": "0.15"
+        }
+      ]
+    },
+    "conditions": {
+      "op": "equals",
+      "fact": "withdrawalMode",
+      "value": "lumpsum"
+    },
+    "verification": {
+      "status": "summary_only",
+      "sourceIds": [
+        "src-pmk-168-2023"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Pasal 15 (tarif final berjenjang penarikan sekaligus)"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Berlaku sejak 1 Januari 2024 (PMK 168/2023). Era sebelum 2024 tidak dicakup; rezim penarikan dana pensiun/JHT pra-2024 memerlukan sumber primer kontemporer dan akan ditambahkan terpisah."
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Penarikan sekaligus (bukan anuitas)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-21-pension",
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-jht-80m",
+        "label": "Penarikan JHT 80.000.000",
+        "illustrative": true,
+        "input": {
+          "base": "80000000"
+        },
+        "expectedAmount": "1500000.00",
+        "notes": "50jt×0% + 30jt×5%."
+      }
+    ],
+    "notes": "Tarif final berjenjang atas penarikan dana pensiun/JHT sekaligus per PMK 168/2023 Pasal 15, berlaku 2024-01-01. Klaim era pra-2024 tidak dimasukkan karena tidak ada sumber primer kontemporer yang dikutip; penarikan anuitas digabung dengan penghasilan rutin (bukan final).",
+    "conflicts": []
+  }
+}

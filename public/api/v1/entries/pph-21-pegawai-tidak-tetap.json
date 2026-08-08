@@ -1,0 +1,85 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-21-pegawai-tidak-tetap",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
+    "description": "Pemotongan PPh 21 atas penghasilan pegawai tidak tetap atau tenaga kerja lepas yang menerima penghasilan secara harian, mingguan, atau satuan waktu tertentu. Jika penghasilan ≤ Rp 4.500.000/hari dan sudah kena PTKP harian, PPh = 0. Jika > Rp 4.500.000/hari, tarif Pasal 17 berlaku.",
+    "rate": {
+      "type": "formula",
+      "value": "Tarif Pasal 17 progresif dengan PTKP harian",
+      "effectiveRate": "0% jika ≤ Rp 4.500.000/hari setelah PTKP"
+    },
+    "taxBase": "Penghasilan bruto harian dikurangi PTKP harian (1/360 × PTKP tahunan × jumlah hari kerja)",
+    "payer": "Pegawai tidak tetap / tenaga kerja lepas",
+    "recipient": "Negara",
+    "withholder": "Pemberi kerja",
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PMK 168/2023",
+        "article": "Pasal 8-10",
+        "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+      },
+      {
+        "regulation": "PP 58/2023",
+        "article": "Pasal 5",
+        "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "PTKP harian = PTKP tahunan × 1/360. Untuk penghasilan > Rp 4.500.000/hari, dipotong PPh 21 dengan tarif Pasal 17 dengan PTKP harian terkumulasi.",
+    "tags": [
+      "pph-21",
+      "pegawai-tidak-tetap",
+      "tenaga-kerja-lepas",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
+        "calculation": "Sesuai formula yang berlaku",
+        "result": "Lihat ketentuan detail"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-21-ter-monthly-2024",
+        "pph-21-progressive-annual-2024",
+        "pph-21-progressive-pre2022",
+        "pph-21-non-taxable-income",
+        "pph-21-honorarium-bukan-pegawai",
+        "pph-21-shu-koperasi",
+        "pph-21-natura-kenikmatan",
+        "pph-21-dana-pensiun",
+        "pph-21-progressive-pre2009",
+        "pph-21-progressive-uulama1983",
+        "pph-21-progressive-uulama1994",
+        "pph-21-progressive-monthly-pre2024",
+        "pph-21-ptkp-1984",
+        "pph-21-ptkp-1995",
+        "pph-21-ptkp-2005",
+        "pph-21-ptkp-2009",
+        "pph-21-ter-a-detail",
+        "pph-21-ter-b-detail",
+        "pph-21-ter-c-detail",
+        "pph-21-norma-dokter",
+        "pph-21-norma-pengacara",
+        "pph-21-norma-akuntan",
+        "pph-21-norma-arsitek",
+        "pph-21-norma-notaris",
+        "pph-21-norma-konsultan",
+        "pph-21-norma-pedagang",
+        "pph-21-norma-petani",
+        "pph-21-norma-pengusaha-kecil"
+      ]
+    }
+  }
+}

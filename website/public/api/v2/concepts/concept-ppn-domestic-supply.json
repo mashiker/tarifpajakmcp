@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "concept-ppn-domestic-supply",
+    "categoryId": "cat-ppn",
+    "name": "PPN atas penyerahan BKP/JKP dalam negeri",
+    "slug": "ppn-domestic-supply",
+    "description": "Tarif PPN nominal atas penyerahan Barang Kena Pajak dan/atau Jasa Kena Pajak dalam negeri. UU 7/2021 HPP Pasal 7 menetapkan: 10% sampai 2022-03-31; 11% mulai 2022-04-01 sampai 2024-12-31; nominal 12% mulai 2025-01-01. Untuk tahun 2025, PMK 131/2024 Pasal 3 mengatur DPP nilai lain 11/12 untuk BKP bukan mewah, JKP biasa (beban efektif 12%×11/12=11%), sedangkan Pasal 2 menetapkan DPP penuh 12% untuk BKP mewah yang dikenai PPnBM. Tanpa fakta luxuryBkp, resolver harus mengembalikan kandidat bersyarat.",
+    "ruleIds": [
+      "rule-ppn-domestic-supply-10pct-pre-hpp",
+      "rule-ppn-domestic-supply-11pct",
+      "rule-ppn-domestic-supply-2025-luxury",
+      "rule-ppn-domestic-supply-2025-nonluxury",
+      "rule-ppn-domestic-supply-2025-nonluxury-dpp-factor"
+    ]
+  }
+}

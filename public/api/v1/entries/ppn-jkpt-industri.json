@@ -1,0 +1,70 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "ppn-jkpt-industri",
+    "category": "PPN",
+    "taxType": "PPN",
+    "transactionType": "PPN Tidak Dipungut (JKPT) Industri Strategis",
+    "description": "Pembebasan PPN (JKPT/Pajak Tidak Dipungut) untuk penyerahan BKP strategis tertentu yang dibeli oleh pengusaha yang mendapat fasilitas. Fasilitas PPN tidak dipungut diberikan melalui PMK.",
+    "rate": {
+      "type": "percentage",
+      "value": 0
+    },
+    "taxBase": "Harga jual BKP (PPN tidak dipungut)",
+    "payer": "Pembeli BKP (penerima fasilitas)",
+    "recipient": "Negara",
+    "withholder": "PKP penjual (tidak memungut PPN)",
+    "effectiveFrom": "2022-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 16B",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "UU 42/2009",
+        "article": "Pasal 16B",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Fasilitas PPN tidak dipungut diberikan antara lain untuk: mesin dan peralatan industri tertentu, kapal, pesawat, kereta api, BKP untuk keperluan pendidikan/penelitian, BKP untuk perwakilan diplomatik, dll.",
+    "tags": [
+      "ppn",
+      "fasilitas",
+      "jkpt",
+      "tidak-dipungut",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "PPN Tidak Dipungut (JKPT) Industri Strategis - tidak kena pajak",
+        "calculation": "Tarif 0%",
+        "result": "Pajak = Rp 0"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "ppn-11pct-effective-2025",
+        "ppn-11pct-2022",
+        "ppn-10pct",
+        "ppn-ekspor-bkp",
+        "ppn-impor-bkp",
+        "ppn-pmse",
+        "ppn-jasa-tenaga-listrik",
+        "ppn-jasa-telekomunikasi",
+        "ppn-ekspor-jkp",
+        "ppn-tidak-kena-pajak",
+        "ppn-jasa-kegiatan-usaha-persewaan",
+        "ppn-dpp-penghitungan",
+        "ppn-pengkreditan"
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-21-final-period",
+    "conceptId": "concept-pph-21-final-period",
+    "conceptName": "Periode final PPh 21 (reconciliation Masa Pajak Terakhir)",
+    "categoryId": "cat-pph-21",
+    "categoryName": "Pajak Penghasilan Pasal 21",
+    "validFrom": "2024-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "formula",
+      "expression": "PPh Pasal 17 tahunan (PKP setahun) − akumulasi PPh 21 dipotong pada masa pajak biasa (TER); tidak menambah bulan TER lain"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "exists",
+          "fact": "annualPkp"
+        },
+        {
+          "op": "exists",
+          "fact": "priorWithheld"
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-pmk-168-2023",
+        "src-uu-7-2021-hpp"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Pasal 17 ayat (1) huruf a (tarif tahunan)"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Pasal 9, 15 (Masa Pajak Terakhir/reconciliation)"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-168-2023",
+          "locator": "Pasal 18-19 (ordinary vs final-period)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-21-final-period",
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-final-trueup",
+        "label": "PKP 300jt, sudah dipotong 30jt",
+        "illustrative": true,
+        "input": {
+          "annualPkp": "300000000",
+          "priorWithheld": "30000000"
+        },
+        "expectedAmount": "14000000.00",
+        "notes": "PPh tahunan 44jt − 30jt = 14jt."
+      }
+    ],
+    "notes": "Periode final: PPh Pasal 17 setahun − PPh 21 masa pajak biasa. Tidak pernah menambahkan satu bulan TER lagi.",
+    "conflicts": []
+  }
+}

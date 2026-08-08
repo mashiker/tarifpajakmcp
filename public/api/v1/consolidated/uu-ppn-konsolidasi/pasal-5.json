@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "5",
+    "bab": "II",
+    "bagian": "1",
+    "title": "Bukan Objek PPN - Umum",
+    "status": "diubah",
+    "description": "Pengecualian umum dari objek PPN.",
+    "keywords": [
+      "bukan objek",
+      "pengecualian"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan pengecualian"
+      }
+    ],
+    "text": "(1) Penyerahan BKP dan JKP yang tidak dikenakan PPN meliputi:\na. penyerahan BKP dan JKP kepada misi diplomatik dan konsuler;\nb. penyerahan BKP dan JKP yang dibatalkan;\nc. penyerahan BKP dan JKP yang dikecualikan oleh PP.\n(2) Penyerahan sebagaimana dimaksud pada ayat (1) dikecualikan dengan syarat dan ketentuan yang ditetapkan oleh PP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Tidak dikenakan PPN: penyerahan ke misi diplomatik, yang dibatalkan, yang dikecualikan PP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Dengan syarat dan ketentuan PP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

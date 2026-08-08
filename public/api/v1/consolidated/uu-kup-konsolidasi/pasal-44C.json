@@ -1,0 +1,42 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "44C",
+    "bab": "XIII",
+    "title": "Pertukaran Informasi Perpajakan",
+    "status": "ditambah",
+    "description": "Ketentuan pertukaran informasi perpajakan dengan yurisdiksi lain.",
+    "keywords": [
+      "EOI",
+      "pertukaran informasi",
+      "BEPS"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru tentang exchange of information"
+      }
+    ],
+    "text": "(1) Setiap orang yang dengan sengaja menerbitkan dan/atau menggunakan Faktur Pajak, Surat Setoran Pajak, dan/atau bukti pungutan pajak lainnya yang tidak berdasarkan kegiatan usaha atau peristiwa sebenarnya diancam dengan pidana penjara paling lama 6 (enam) tahun atau denda paling banyak Rp 600.000.000.\n(2) Tindak pidana sebagaimana dimaksud pada ayat (1) adalah kejahatan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pidana max 6 tahun/denda max Rp600 juta atas penerbitan/penggunaan fiktif FP/SSP.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Kejahatan.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pp-60-2023",
+    "number": "60",
+    "year": 2023,
+    "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
+    "shortName": "PP Tarif PPh 22/23/26",
+    "type": "PP",
+    "promulgationDate": "2023-12-11",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
+    "status": "berlaku",
+    "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26.",
+    "relevantArticles": "Pasal 2 (PPh 22 impor/ekspor), Pasal 3 (PPh 22 pembelian/pengadaan), Pasal 4 (PPh 22 penjualan/PMSE/kripto), Pasal 5 (PPh 23 dan 26)",
+    "relatedRegulations": [
+      "pp-94-2010",
+      "pp-14-2002"
+    ],
+    "referencingEntries": [
+      "pph-21-shu-koperasi",
+      "pph-22-impor-2024",
+      "pph-22-pembelian-barang-2024",
+      "pph-22-penjualan-barang-2024",
+      "pph-22-impor-api-produsen",
+      "pph-22-bendaharawan",
+      "pph-22-ekspor-batubara",
+      "pph-22-bumn-pembelian",
+      "pph-22-pengadaan-pemerintah",
+      "pph-22-pmse",
+      "pph-22-kripto",
+      "pph-26-dividen",
+      "pph-26-bunga",
+      "pph-26-royalti",
+      "pph-26-jasa-dan-sewa",
+      "pph-26-but",
+      "pph-final-bunga-koperasi",
+      "pph-final-investasi-lpi"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "cukai-ecigarette",
+    "category": "Cukai",
+    "taxType": "Cukai",
+    "transactionType": "Cukai e-Cigarette / Heated Tobacco",
+    "description": "Cukai atas produk tembakau pemanasan dan e-liquid. Berlaku sejak 2024.",
+    "rate": {
+      "type": "formula",
+      "value": "Tarif ad valorem",
+      "effectiveRate": "± 15-27% dari HJE"
+    },
+    "taxBase": "HJE",
+    "payer": "Produsen/importir e-cigarette",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2024-07-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PMK 202/2023",
+        "article": "Pasal 2-4",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/202326/pmk-no-202-tahun-2023"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Cukai e-cigarette dan heated tobacco mulai Juli 2024. Skema ad valorem.",
+    "examples": [
+      {
+        "scenario": "e-Liquid HJE Rp 100.000, 10.000 botol",
+        "calculation": "±20% × Rp 100.000 × 10.000",
+        "result": "Cukai = ±Rp 200.000.000"
+      }
+    ],
+    "tags": [
+      "cukai",
+      "e-cigarette",
+      "vape",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "cukai-hasil-tembakau",
+        "cukai-eti-alkohol"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "concept-pph-badan-ikn",
+    "categoryId": "cat-pph-badan",
+    "name": "Fasilitas PPh Badan IKN (PMK 28/2024)",
+    "slug": "pph-badan-ikn",
+    "description": "Fasilitas PPh Badan bagi Pelaku Usaha di Ibu Kota Nusantara (IKN). PMK 28/2024 Art 4(1): pengurangan 100% atas PKP terutang. Art 8/10: jadwal durasi menurut kategori bisnis dan jendela investasi (2023-2030 / 2031-2035 / 2036-2045). Art 8(5): pengurangan 50% untuk 'bidang usaha lain' pada periode 2031-2045. Elegibilitas penuh (kategori bisnis spesifik, jendela investasi, persyaratan realisasi, zona IKN) tidak selalu dapat diverifikasi sepenuhnya pada tingkat rekord individual — ditandai needs_review/verified_secondary, bukan verified_primary. Resolver tidak boleh mengembalikan 'tepat' 0%.",
+    "ruleIds": [
+      "rule-pph-badan-ikn"
+    ]
+  }
+}

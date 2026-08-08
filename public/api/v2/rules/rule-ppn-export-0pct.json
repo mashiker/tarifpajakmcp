@@ -1,0 +1,71 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-ppn-export-0pct",
+    "conceptId": "concept-ppn-export",
+    "conceptName": "PPN atas ekspor BKP/JKP berkualifikasi (0%)",
+    "categoryId": "cat-ppn",
+    "categoryName": "Pajak Pertambahan Nilai (PPN)",
+    "validFrom": "1984-04-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "zero"
+    },
+    "conditions": {
+      "op": "equals",
+      "fact": "transactionKind",
+      "value": "export"
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-8-1983-ppn",
+        "src-uu-7-2021-hpp"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-8-1983-ppn",
+          "locator": "Pasal 7 ayat (2) UU PPN: ekspor BKP (tangible/tidak berwujud) dan JKP berkualifikasi dikenai 0%"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-8-1983-ppn",
+          "locator": "Pasal 7 ayat (2) UU PPN berlaku sejak 1984; tetap 0% sepanjang HPP"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-8-1983-ppn",
+          "locator": "Pasal 7 ayat (2): ekspor BKP/JKP berkualifikasi (zero-rated, bukan exempt/bukan objek)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "ppn-export",
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-ppn-export-0pct",
+        "label": "Ekspor BKP, nilai ekspor 1.000.000",
+        "illustrative": true,
+        "input": {
+          "dpp": "1000000",
+          "transactionKind": "export"
+        },
+        "expectedAmount": "0.00",
+        "notes": "Ekspor BKP/JKP berkualifikasi = 0%. Pajak masukan tetap dapat dikreditkan (zero-rated, bukan exempt)."
+      }
+    ],
+    "notes": "Ekspor BKP dan JKP berkualifikasi dikenai PPN 0% (zero-rated) per UU PPN Pasal 7 ayat (2). Berbeda dari BKP/JKP yang dibebaskan (exempt, Pasal 4A) atau bukan objek pajak (Pasal 3): zero-rated memungkinkan kredit pajak masukan, sedangkan exempt tidak.",
+    "conflicts": []
+  }
+}

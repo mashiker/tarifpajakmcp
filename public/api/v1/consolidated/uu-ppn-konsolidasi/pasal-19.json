@@ -1,0 +1,41 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "19",
+    "bab": "III",
+    "title": "Dasar Pengenaan PPnBM",
+    "status": "berlaku",
+    "description": "DPP PPnBM = harga jual atau nilai impor.",
+    "keywords": [
+      "DPP",
+      "PPnBM"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) DPP PPnBM sama dengan DPP PPN.\n(2) PPnBM = Tarif PPnBM × DPP.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "DPP PPnBM = DPP PPN.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "PPnBM = tarif × DPP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

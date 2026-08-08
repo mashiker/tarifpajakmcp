@@ -1,0 +1,64 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "20",
+    "bab": "VI",
+    "bagian": "1",
+    "title": "Kredit Pajak",
+    "status": "diubah",
+    "description": "Kredit pajak yang dapat dikurangkan dari PPh terutang: PPh yang dipotong pihak lain, PPh yang dibayar di luar negeri.",
+    "keywords": [
+      "kredit pajak",
+      "PPh dipotong",
+      "luar negeri",
+      "tax credit"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Perubahan kredit pajak"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan metode kredit pajak luar negeri"
+      }
+    ],
+    "text": "(1) Kredit pajak yang dapat dikurangkan dari PPh terutang meliputi:\na. PPh yang dipotong oleh pihak lain;\nb. PPh yang telah dibayar sendiri oleh WP; dan\nc. PPh yang dibayar di luar negeri.\n(2) Kredit pajak sebagaimana dimaksud pada ayat (1) huruf c hanya dapat dikreditkan sebesar pajak penghasilan yang terutang dikalikan perbandingan antara penghasilan netto dari luar Indonesia dan penghasilan netto total.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Kredit pajak: PPh dipotong pihak lain, PPh dibayar sendiri, PPh dibayar di luar negeri.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Kredit pajak luar negeri dibatasi proporsional.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

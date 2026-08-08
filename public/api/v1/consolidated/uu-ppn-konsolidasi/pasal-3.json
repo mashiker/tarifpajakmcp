@@ -1,0 +1,58 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "3",
+    "bab": "II",
+    "bagian": "1",
+    "title": "Penyerahan BKP",
+    "status": "diubah",
+    "description": "Penyerahan BKP yang terutang PPN: penyerahan hak, penyerahan karena sewa, dll.",
+    "keywords": [
+      "penyerahan",
+      "BKP",
+      "sewa"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "42",
+          "year": 2009
+        },
+        "changeType": "amended",
+        "effectiveDate": "2010-04-01",
+        "summary": "Penambahan jenis penyerahan"
+      }
+    ],
+    "text": "(1) Penyerahan BKP adalah penyerahan BKP dari wilayah Indonesia ke wilayah lain di dalam Daerah Pabean.\n(2) Yang termasuk penyerahan BKP:\na. penyerahan hak atas BKP karena suatu perjanjian;\nb. penyerahan BKP karena sewa;\nc. penyerahan BKP karena leasing.\n(3) Penyerahan BKP sebagaimana dimaksud pada ayat (1) tidak termasuk penyerahan BKP yang dibatalkan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penyerahan BKP: dari wilayah Indonesia ke wilayah lain dalam DP.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Termasuk: penyerahan hak, sewa, leasing.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(3)",
+        "text": "Tidak termasuk penyerahan yang dibatalkan.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

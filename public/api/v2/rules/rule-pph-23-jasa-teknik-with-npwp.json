@@ -1,0 +1,84 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-23-jasa-teknik-with-npwp",
+    "conceptId": "concept-pph-23-jasa-teknik",
+    "conceptName": "PPh 23 atas jasa teknik",
+    "categoryId": "cat-pph-23",
+    "categoryName": "Pajak Penghasilan Pasal 23",
+    "validFrom": "2009-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "percentage",
+      "value": "0.02"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "serviceClass",
+          "value": "teknik"
+        },
+        {
+          "op": "equals",
+          "fact": "recipientHasNpwp",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-36-2008-pph",
+        "src-pmk-141-2015"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 23 ayat (1) huruf c angka 2: jasa teknik 2% dari jumlah bruto"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "UU 36/2008 berlaku 1 Januari 2009 sampai sekarang"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-36-2008-pph",
+          "locator": "Pasal 23 ayat (1) huruf c angka 2 (penerima WP Dalam Negeri/BUT, dengan NPWP)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-23-jasa-teknik-recipient",
+    "supersedes": [],
+    "supersededBy": [],
+    "bppuId": "bppu-24-104-01",
+    "examples": [
+      {
+        "id": "ex-pph-23-teknik-2020-with-npwp",
+        "label": "Jasa teknik 2020, penerima dengan NPWP",
+        "illustrative": true,
+        "input": {
+          "serviceClass": "teknik",
+          "recipientHasNpwp": true,
+          "gross": "200000000"
+        },
+        "expectedAmount": "4000000.00",
+        "notes": "2% dari 200.000.000 (jumlah bruto excl. PPN)."
+      }
+    ],
+    "notes": "PPh 23 atas jasa teknik. Tarif kanonik dari UU PPh Pasal 23(1)(c)(2) (UU 36/2008), BUKAN dari KOP/BPPU 24-104-01 (metadata pelaporan berlaku 21 Feb 2022). Untuk konsultan perorangan di bidang teknik, uji PPh 21 sebagai tenaga ahli sebelum menerapkan PPh 23.",
+    "conflicts": []
+  }
+}

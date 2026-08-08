@@ -1,0 +1,78 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "12",
+    "bab": "III",
+    "bagian": "2",
+    "title": "PTKP (Penghasilan Tidak Kena Pajak)",
+    "status": "diubah",
+    "description": "PTKP untuk WP OP: TK/0, K/0, K/1 dst. Besaran PTKP diatur PMK terpisah. Pasca HPP dikenal PTKPT.",
+    "keywords": [
+      "PTKP",
+      "TK/0",
+      "K/0",
+      "K/1",
+      "PTKPT"
+    ],
+    "relatedTaxRates": [
+      "pph-21-non-taxable-income"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli PTKP"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "17",
+          "year": 2000
+        },
+        "changeType": "amended",
+        "effectiveDate": "2001-01-01",
+        "summary": "Penambahan tanggungan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "PTKP dinaikkan signifikan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Penambahan PTKPT (PTKP Tertentu)"
+      }
+    ],
+    "text": "(1) Penghasilan Tidak Kena Pajak (PTKP) bagi Wajib Pajak orang pribadi dalam negeri ditetapkan dalam jumlah tertentu yang ditetapkan dengan Peraturan Pemerintah.\n(2) Dalam menentukan besarnya Penghasilan Tidak Kena Pajak, Wajib Pajak dapat menggabungkan penghasilan istrinya atau suaminya yang tidak hidup rukun atau pisah meja dan ranjang.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PTKP bagi WP OP dalam negeri ditetapkan dengan PP. Saat ini TK/0 = Rp54.000.000 per tahun (berdasarkan PMK 122/2015).",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "PTKP dapat digabung dengan penghasilan istri/suami yang pisah meja dan ranjang.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

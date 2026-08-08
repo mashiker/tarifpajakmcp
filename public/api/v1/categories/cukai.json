@@ -1,0 +1,37 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "category": "Cukai",
+    "taxType": "Cukai",
+    "description": "Cukai — pungutan negara atas barang tertentu (etil alkohol, MMEA, hasil tembakau)",
+    "count": 3,
+    "entries": [
+      {
+        "id": "cukai-hasil-tembakau",
+        "transactionType": "Cukai Hasil Tembakau (Rokok)",
+        "rate": "Tarif spesifik + ad valorem",
+        "status": "berlaku",
+        "effectiveFrom": "2008-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "cukai-eti-alkohol",
+        "transactionType": "Cukai Etil Alkohol / MMEA",
+        "rate": "Tarif spesifik per liter",
+        "status": "berlaku",
+        "effectiveFrom": "2008-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "cukai-ecigarette",
+        "transactionType": "Cukai e-Cigarette / Heated Tobacco",
+        "rate": "Tarif ad valorem",
+        "status": "berlaku",
+        "effectiveFrom": "2024-07-01",
+        "effectiveTo": null
+      }
+    ]
+  }
+}

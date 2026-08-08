@@ -1,0 +1,55 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pbb-pertambangan",
+    "category": "Pajak Daerah",
+    "taxType": "PBB",
+    "transactionType": "PBB Pertambangan (PBB-P3)",
+    "description": "Pajak Bumi dan Bangunan untuk sektor pertambangan yang dikelola oleh Pemerintah Pusat.",
+    "rate": {
+      "type": "percentage",
+      "value": 0.05
+    },
+    "taxBase": "NJOP bumi dan bangunan pertambangan",
+    "payer": "Pemilik/penguasaan area pertambangan",
+    "recipient": "Negara (Pemerintah Pusat)",
+    "withholder": null,
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 47-52",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "PBB Pertambangan dikelola oleh Pemerintah Pusat dengan tarif 0,05% dari NJOP. Tidak ada NJOPTKP.",
+    "tags": [
+      "pbb",
+      "pertambangan",
+      "pbb-p3",
+      "pusat",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "PBB Pertambangan (PBB-P3) Rp 100.000.000",
+        "calculation": "0.05% × 100.000.000",
+        "result": "Pajak = Rp 50.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pbb-perkotaan",
+        "pbb-perkebunan",
+        "pbb-kehutanan"
+      ]
+    }
+  }
+}

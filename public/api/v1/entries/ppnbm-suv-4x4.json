@@ -1,0 +1,67 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "ppnbm-suv-4x4",
+    "category": "PPnBM",
+    "taxType": "PPnBM",
+    "transactionType": "Sedan dan Station Wagon 4x4 / SUV",
+    "description": "PPnBM atas penyerahan sedan, station wagon, dan SUV dengan sistem penggerak 4x4.",
+    "rate": {
+      "type": "range",
+      "value": [
+        10,
+        75
+      ]
+    },
+    "taxBase": "DPP (Harga Jual/Penggantian)",
+    "payer": "Pembeli konsumen",
+    "recipient": "Negara",
+    "withholder": "PKP penjual/ATPM",
+    "effectiveFrom": "2022-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 8",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "UU 42/2009",
+        "article": "Pasal 8",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif lebih tinggi dari 4x2. ≤1.500cc = 10%, 1.500-2.500cc = 30%, 2.500-3.000cc = 50%, 3.000-4.000cc = 75%, >4.000cc = 75%.",
+    "tags": [
+      "ppnbm",
+      "suv",
+      "4x4",
+      "kendaraan",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Sedan dan Station Wagon 4x4 / SUV Rp 100.000.000",
+        "calculation": "Tarif 10%-75% × 100jt",
+        "result": "Pajak = Rp 10.000.000 - Rp 75.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "ppnbm-general",
+        "ppnbm-sedan-station-wagon",
+        "ppnbm-van-wagon",
+        "ppnbm-kapal-pesiar",
+        "ppnbm-pesawat-pribadi",
+        "ppnbm-rumah-mewah",
+        "ppnbm-perlengkapan-mewah"
+      ]
+    }
+  }
+}

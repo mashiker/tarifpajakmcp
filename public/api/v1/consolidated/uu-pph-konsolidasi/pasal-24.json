@@ -1,0 +1,56 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "24",
+    "bab": "VI",
+    "bagian": "2",
+    "title": "Pemotongan PPh 26",
+    "status": "diubah",
+    "description": "Pemotongan PPh 26 atas penghasilan yang diterima WP luar negeri sebesar 20% dari brut.",
+    "keywords": [
+      "PPh 26",
+      "WP luar negeri",
+      "20%"
+    ],
+    "relatedTaxRates": [
+      "pph-26-wna-20pct"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan PPh 26"
+      }
+    ],
+    "text": "(1) Atas penghasilan yang diterima atau diperoleh WP luar negeri sehubungan dengan kegiatan usaha di Indonesia, dipotong PPh oleh pihak yang wajib memotong.\n(2) Tarif PPh 26 sebesar:\na. 20% (dua puluh persen) atas penghasilan berupa dividen, bunga, royalti, sewa, dan penghasilan lain dari harta; atau\nb. sesuai perjanjian pajak yang berlaku (tax treaty).",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPh 26 dipotong atas penghasilan WP luar negeri dari kegiatan usaha di Indonesia.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Tarif PPh 26: 20% umum atau sesuai tax treaty.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

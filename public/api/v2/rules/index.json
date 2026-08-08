@@ -1,0 +1,629 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "count": 67,
+    "rules": [
+      {
+        "id": "rule-illustrative-conflict-a",
+        "conceptId": "concept-illustrative-conflict",
+        "categoryId": "cat-illustrative",
+        "validFrom": "2024-01-01",
+        "validToExclusive": "2025-01-01",
+        "verification": "source_conflict",
+        "exclusiveGroup": "conflict-rate"
+      },
+      {
+        "id": "rule-illustrative-conflict-b",
+        "conceptId": "concept-illustrative-conflict",
+        "categoryId": "cat-illustrative",
+        "validFrom": "2024-01-01",
+        "validToExclusive": "2025-01-01",
+        "verification": "source_conflict",
+        "exclusiveGroup": "conflict-rate"
+      },
+      {
+        "id": "rule-illustrative-flat-new",
+        "conceptId": "concept-illustrative-flat",
+        "categoryId": "cat-illustrative",
+        "validFrom": "2025-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-illustrative-1",
+        "exclusiveGroup": "flat-rate"
+      },
+      {
+        "id": "rule-illustrative-flat-old",
+        "conceptId": "concept-illustrative-flat",
+        "categoryId": "cat-illustrative",
+        "validFrom": "2024-01-01",
+        "validToExclusive": "2025-01-01",
+        "verification": "needs_review",
+        "bppuId": "bppu-illustrative-1",
+        "exclusiveGroup": "flat-rate"
+      },
+      {
+        "id": "rule-illustrative-progressive",
+        "conceptId": "concept-illustrative-progressive",
+        "categoryId": "cat-illustrative",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "needs_review"
+      },
+      {
+        "id": "rule-pph-15-special",
+        "conceptId": "concept-pph-15-special",
+        "categoryId": "cat-pph-special-regimes",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "summary_only",
+        "exclusiveGroup": "pph-15-special"
+      },
+      {
+        "id": "rule-pph-21-article17-annual-hpp",
+        "conceptId": "concept-pph-21-article17-annual",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2022-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-21-article17-annual"
+      },
+      {
+        "id": "rule-pph-21-article17-annual-pre2022",
+        "conceptId": "concept-pph-21-article17-annual",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2009-01-01",
+        "validToExclusive": "2022-01-01",
+        "verification": "needs_review",
+        "exclusiveGroup": "pph-21-article17-annual"
+      },
+      {
+        "id": "rule-pph-21-final-period",
+        "conceptId": "concept-pph-21-final-period",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-21-final-period"
+      },
+      {
+        "id": "rule-pph-21-natura-summary",
+        "conceptId": "concept-pph-21-natura",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "summary_only",
+        "exclusiveGroup": "pph-21-natura"
+      },
+      {
+        "id": "rule-pph-21-nonresident-default",
+        "conceptId": "concept-pph-21-recipient-nonresident",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2022-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-21-nonresident"
+      },
+      {
+        "id": "rule-pph-21-nonresident-treaty",
+        "conceptId": "concept-pph-21-recipient-nonresident",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2022-01-01",
+        "validToExclusive": null,
+        "verification": "verified_secondary",
+        "exclusiveGroup": "pph-21-nonresident-treaty"
+      },
+      {
+        "id": "rule-pph-21-pre2024-permanent-regime",
+        "conceptId": "concept-pph-21-pre2024-permanent-regime",
+        "categoryId": "cat-pph-21",
+        "validFrom": "1984-01-01",
+        "validToExclusive": "2024-01-01",
+        "verification": "summary_only",
+        "exclusiveGroup": "pph-21-pre2024-regime"
+      },
+      {
+        "id": "rule-pph-21-ptkp-2013-2014",
+        "conceptId": "concept-pph-21-ptkp",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2013-01-01",
+        "validToExclusive": "2015-01-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-21-ptkp"
+      },
+      {
+        "id": "rule-pph-21-ptkp-2015",
+        "conceptId": "concept-pph-21-ptkp",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2015-01-01",
+        "validToExclusive": "2016-01-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-21-ptkp"
+      },
+      {
+        "id": "rule-pph-21-ptkp-2016-current",
+        "conceptId": "concept-pph-21-ptkp",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2016-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-21-ptkp"
+      },
+      {
+        "id": "rule-pph-21-recipient-activity-participant",
+        "conceptId": "concept-pph-21-recipient-activity-participant",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "summary_only",
+        "exclusiveGroup": "pph-21-activity-participant"
+      },
+      {
+        "id": "rule-pph-21-recipient-commissioner",
+        "conceptId": "concept-pph-21-recipient-commissioner",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "summary_only",
+        "exclusiveGroup": "pph-21-commissioner"
+      },
+      {
+        "id": "rule-pph-21-recipient-former-employee",
+        "conceptId": "concept-pph-21-recipient-former-employee",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "summary_only",
+        "exclusiveGroup": "pph-21-former-employee"
+      },
+      {
+        "id": "rule-pph-21-recipient-nonemployee-norma",
+        "conceptId": "concept-pph-21-recipient-nonemployee",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "summary_only",
+        "exclusiveGroup": "pph-21-nonemployee"
+      },
+      {
+        "id": "rule-pph-21-recipient-pension-lumpsum",
+        "conceptId": "concept-pph-21-recipient-pension-participant",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "summary_only",
+        "exclusiveGroup": "pph-21-pension"
+      },
+      {
+        "id": "rule-pph-21-shu-koperasi-final0",
+        "conceptId": "concept-pph-21-shu-koperasi",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2022-01-01",
+        "validToExclusive": null,
+        "verification": "summary_only",
+        "exclusiveGroup": "pph-21-shu"
+      },
+      {
+        "id": "rule-pph-21-ter-daily",
+        "conceptId": "concept-pph-21-ter-daily",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "verified_secondary",
+        "exclusiveGroup": "pph-21-ter-daily"
+      },
+      {
+        "id": "rule-pph-21-ter-monthly-a",
+        "conceptId": "concept-pph-21-ter-monthly",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "verified_secondary",
+        "exclusiveGroup": "pph-21-ter-monthly-a"
+      },
+      {
+        "id": "rule-pph-21-ter-monthly-b",
+        "conceptId": "concept-pph-21-ter-monthly",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "verified_secondary",
+        "exclusiveGroup": "pph-21-ter-monthly-b"
+      },
+      {
+        "id": "rule-pph-21-ter-monthly-c",
+        "conceptId": "concept-pph-21-ter-monthly",
+        "categoryId": "cat-pph-21",
+        "validFrom": "2024-01-01",
+        "validToExclusive": null,
+        "verification": "verified_secondary",
+        "exclusiveGroup": "pph-21-ter-monthly-c"
+      },
+      {
+        "id": "rule-pph-23-jasa-konsultan-with-npwp",
+        "conceptId": "concept-pph-23-jasa-konsultan",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-24-104-03",
+        "exclusiveGroup": "pph-23-jasa-konsultan-recipient"
+      },
+      {
+        "id": "rule-pph-23-jasa-konsultan-without-npwp",
+        "conceptId": "concept-pph-23-jasa-konsultan",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-24-104-03",
+        "exclusiveGroup": "pph-23-jasa-konsultan-multiplier-1a"
+      },
+      {
+        "id": "rule-pph-23-jasa-manajemen-with-npwp",
+        "conceptId": "concept-pph-23-jasa-manajemen",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-24-104-02",
+        "exclusiveGroup": "pph-23-jasa-manajemen-recipient"
+      },
+      {
+        "id": "rule-pph-23-jasa-manajemen-without-npwp",
+        "conceptId": "concept-pph-23-jasa-manajemen",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-24-104-02",
+        "exclusiveGroup": "pph-23-jasa-manajemen-multiplier-1a"
+      },
+      {
+        "id": "rule-pph-23-jasa-pmk141-lain-with-npwp",
+        "conceptId": "concept-pph-23-jasa-pmk141-lain",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2015-08-26",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-23-jasa-pmk141-lain-recipient"
+      },
+      {
+        "id": "rule-pph-23-jasa-pmk141-lain-without-npwp",
+        "conceptId": "concept-pph-23-jasa-pmk141-lain",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2015-08-26",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-23-jasa-pmk141-lain-multiplier-1a"
+      },
+      {
+        "id": "rule-pph-23-jasa-teknik-with-npwp",
+        "conceptId": "concept-pph-23-jasa-teknik",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-24-104-01",
+        "exclusiveGroup": "pph-23-jasa-teknik-recipient"
+      },
+      {
+        "id": "rule-pph-23-jasa-teknik-without-npwp",
+        "conceptId": "concept-pph-23-jasa-teknik",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-24-104-01",
+        "exclusiveGroup": "pph-23-jasa-teknik-multiplier-1a"
+      },
+      {
+        "id": "rule-pph-23-rent-movable-with-npwp",
+        "conceptId": "concept-pph-23-rent-movable",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-24-100-02",
+        "exclusiveGroup": "pph-23-rent-movable-recipient"
+      },
+      {
+        "id": "rule-pph-23-rent-movable-without-npwp",
+        "conceptId": "concept-pph-23-rent-movable",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-24-100-02",
+        "exclusiveGroup": "pph-23-rent-movable-multiplier-1a"
+      },
+      {
+        "id": "rule-pph-23-scope-rent-land-building",
+        "conceptId": "concept-pph-23-scope-rent-land-building",
+        "categoryId": "cat-pph-23",
+        "validFrom": "2009-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "bppuId": "bppu-28-403-02",
+        "exclusiveGroup": "pph-23-scope-rent-land-building"
+      },
+      {
+        "id": "rule-pph-badan-article31e",
+        "conceptId": "concept-pph-badan-article31e",
+        "categoryId": "cat-pph-badan",
+        "validFrom": "2010-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-badan-article31e"
+      },
+      {
+        "id": "rule-pph-badan-base-22pct-hpp",
+        "conceptId": "concept-pph-badan-base",
+        "categoryId": "cat-pph-badan",
+        "validFrom": "2022-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-badan-base"
+      },
+      {
+        "id": "rule-pph-badan-base-22pct-uu2-2020",
+        "conceptId": "concept-pph-badan-base",
+        "categoryId": "cat-pph-badan",
+        "validFrom": "2020-01-01",
+        "validToExclusive": "2022-01-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-badan-base"
+      },
+      {
+        "id": "rule-pph-badan-base-25pct-pre2020",
+        "conceptId": "concept-pph-badan-base",
+        "categoryId": "cat-pph-badan",
+        "validFrom": "2010-01-01",
+        "validToExclusive": "2020-01-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-badan-base"
+      },
+      {
+        "id": "rule-pph-badan-ikn",
+        "conceptId": "concept-pph-badan-ikn",
+        "categoryId": "cat-pph-badan",
+        "validFrom": "2023-01-01",
+        "validToExclusive": null,
+        "verification": "needs_review",
+        "exclusiveGroup": "pph-badan-ikn"
+      },
+      {
+        "id": "rule-pph-badan-listed-19pct-hpp",
+        "conceptId": "concept-pph-badan-listed",
+        "categoryId": "cat-pph-badan",
+        "validFrom": "2022-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-badan-listed"
+      },
+      {
+        "id": "rule-pph-badan-listed-19pct-uu2-2020",
+        "conceptId": "concept-pph-badan-listed",
+        "categoryId": "cat-pph-badan",
+        "validFrom": "2020-01-01",
+        "validToExclusive": "2022-01-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-badan-listed"
+      },
+      {
+        "id": "rule-pph-badan-listed-20pct-pre2020",
+        "conceptId": "concept-pph-badan-listed",
+        "categoryId": "cat-pph-badan",
+        "validFrom": "2010-01-01",
+        "validToExclusive": "2020-01-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-badan-listed"
+      },
+      {
+        "id": "rule-pph-final-construction-besar-kualifikasi",
+        "conceptId": "concept-pph-final-construction",
+        "categoryId": "cat-pph-final-umkm",
+        "validFrom": "2022-02-21",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-final-construction-besar"
+      },
+      {
+        "id": "rule-pph-final-construction-kecil-kualifikasi",
+        "conceptId": "concept-pph-final-construction",
+        "categoryId": "cat-pph-final-umkm",
+        "validFrom": "2022-02-21",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-final-construction-kecil"
+      },
+      {
+        "id": "rule-pph-final-rent-land-building",
+        "conceptId": "concept-pph-final-rent-land-building",
+        "categoryId": "cat-pph-final-umkm",
+        "validFrom": "2018-01-02",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-final-rent-land-building"
+      },
+      {
+        "id": "rule-pph-final-transfer-permukiman",
+        "conceptId": "concept-pph-final-transfer",
+        "categoryId": "cat-pph-final-umkm",
+        "validFrom": "2016-09-08",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-final-transfer-permukiman"
+      },
+      {
+        "id": "rule-pph-final-transfer-sederhana",
+        "conceptId": "concept-pph-final-transfer",
+        "categoryId": "cat-pph-final-umkm",
+        "validFrom": "2016-09-08",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-final-transfer-sederhana"
+      },
+      {
+        "id": "rule-pph-final-umkm-pp20-2026",
+        "conceptId": "concept-pph-final-umkm-pp20-2026",
+        "categoryId": "cat-pph-final-umkm",
+        "validFrom": "2026-04-22",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-final-umkm"
+      },
+      {
+        "id": "rule-pph-final-umkm-pp23",
+        "conceptId": "concept-pph-final-umkm-pp23",
+        "categoryId": "cat-pph-final-umkm",
+        "validFrom": "2018-07-01",
+        "validToExclusive": "2022-12-20",
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-final-umkm"
+      },
+      {
+        "id": "rule-pph-final-umkm-pp46",
+        "conceptId": "concept-pph-final-umkm-pp46",
+        "categoryId": "cat-pph-final-umkm",
+        "validFrom": "2013-07-01",
+        "validToExclusive": "2018-07-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-final-umkm"
+      },
+      {
+        "id": "rule-pph-final-umkm-pp55",
+        "conceptId": "concept-pph-final-umkm-pp55",
+        "categoryId": "cat-pph-final-umkm",
+        "validFrom": "2022-12-20",
+        "validToExclusive": "2026-04-22",
+        "verification": "verified_primary",
+        "exclusiveGroup": "pph-final-umkm"
+      },
+      {
+        "id": "rule-ppn-domestic-supply-10pct-pre-hpp",
+        "conceptId": "concept-ppn-domestic-supply",
+        "categoryId": "cat-ppn",
+        "validFrom": "1984-04-01",
+        "validToExclusive": "2022-04-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-domestic-supply-nominal"
+      },
+      {
+        "id": "rule-ppn-domestic-supply-11pct",
+        "conceptId": "concept-ppn-domestic-supply",
+        "categoryId": "cat-ppn",
+        "validFrom": "2022-04-01",
+        "validToExclusive": "2025-01-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-domestic-supply-nominal"
+      },
+      {
+        "id": "rule-ppn-domestic-supply-2025-luxury",
+        "conceptId": "concept-ppn-domestic-supply",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-domestic-supply-2025-luxury"
+      },
+      {
+        "id": "rule-ppn-domestic-supply-2025-nonluxury",
+        "conceptId": "concept-ppn-domestic-supply",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-domestic-supply-2025-nonluxury"
+      },
+      {
+        "id": "rule-ppn-domestic-supply-2025-nonluxury-dpp-factor",
+        "conceptId": "concept-ppn-domestic-supply",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-domestic-supply-2025-nonluxury-dpp-factor"
+      },
+      {
+        "id": "rule-ppn-dpp-nilai-lain-11-12",
+        "conceptId": "concept-ppn-dpp-nilai-lain",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-dpp-nilai-lain"
+      },
+      {
+        "id": "rule-ppn-export-0pct",
+        "conceptId": "concept-ppn-export",
+        "categoryId": "cat-ppn",
+        "validFrom": "1984-04-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-export"
+      },
+      {
+        "id": "rule-ppn-foreign-utilization-2025",
+        "conceptId": "concept-ppn-foreign-utilization",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-foreign-utilization"
+      },
+      {
+        "id": "rule-ppn-import-2025-luxury",
+        "conceptId": "concept-ppn-import",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-import-2025-luxury"
+      },
+      {
+        "id": "rule-ppn-import-2025-nonluxury",
+        "conceptId": "concept-ppn-import",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-01-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-import-2025-nonluxury"
+      },
+      {
+        "id": "rule-ppn-luxury-retail-dpp-11-12-jan-2025",
+        "conceptId": "concept-ppn-luxury-retail",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-01-01",
+        "validToExclusive": "2025-02-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-luxury-retail-dpp-factor-jan-2025"
+      },
+      {
+        "id": "rule-ppn-luxury-retail-feb-2025",
+        "conceptId": "concept-ppn-luxury-retail",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-02-01",
+        "validToExclusive": null,
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-luxury-retail-transition"
+      },
+      {
+        "id": "rule-ppn-luxury-retail-jan-2025",
+        "conceptId": "concept-ppn-luxury-retail",
+        "categoryId": "cat-ppn",
+        "validFrom": "2025-01-01",
+        "validToExclusive": "2025-02-01",
+        "verification": "verified_primary",
+        "exclusiveGroup": "ppn-luxury-retail-transition"
+      }
+    ]
+  }
+}

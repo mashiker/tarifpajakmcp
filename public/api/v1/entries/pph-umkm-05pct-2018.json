@@ -1,0 +1,63 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-umkm-05pct-2018",
+    "category": "PPh",
+    "taxType": "PPh UMKM",
+    "transactionType": "Penghasilan Usaha (PP 23/2018)",
+    "description": "Tarif final PPh 0,5% berdasarkan PP 23/2018 yang berlaku untuk WP OP pelaku UMKM. Dicabut dan diganti PP 55/2022.",
+    "rate": {
+      "type": "percentage",
+      "value": 0.5
+    },
+    "taxBase": "Peredaran bruto (omzet) bulanan",
+    "payer": "WP Orang Pribadi pelaku UMKM",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2018-07-01",
+    "effectiveTo": "2022-12-31",
+    "status": "dicabut",
+    "legalBasis": [
+      {
+        "regulation": "PP 23/2018",
+        "article": "Pasal 2-3",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/135493/pp-no-23-tahun-2018"
+      }
+    ],
+    "supersedes": [
+      "pph-umkm-1pct-pp46"
+    ],
+    "supersededBy": [
+      "pph-umkm-05pct-2023"
+    ],
+    "notes": "Berlaku 3 tahun (bisa diperpanjang). Hanya untuk WP OP, bukan badan. Dicabut oleh PP 55/2022.",
+    "tags": [
+      "pph-umkm",
+      "final",
+      "dicabut",
+      "historis"
+    ],
+    "lastVerified": "2026-05-26",
+    "examples": [
+      {
+        "scenario": "Penghasilan Usaha (PP 23/2018) Rp 100.000.000",
+        "calculation": "0.5% × 100.000.000",
+        "result": "Pajak = Rp 500.000"
+      }
+    ],
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-umkm-05pct-2023"
+      ],
+      "supersedes": [
+        "pph-umkm-1pct-pp46"
+      ],
+      "sameCategory": [
+        "pph-umkm-05pct-2023",
+        "pph-umkm-1pct-pp46"
+      ]
+    }
+  }
+}

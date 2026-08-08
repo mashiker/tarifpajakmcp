@@ -1,0 +1,73 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "43",
+    "bab": "XII",
+    "title": "Sanksi Administrasi - Denda dan Bunga",
+    "status": "diubah",
+    "description": "Sanksi administrasi berupa denda dan/atau bunga atas keterlambatan, ketidakbenaran, dan pelanggaran lainnya.",
+    "keywords": [
+      "sanksi",
+      "denda",
+      "bunga",
+      "administrasi"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli - sanksi administrasi"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "9",
+          "year": 1994
+        },
+        "changeType": "amended",
+        "effectiveDate": "1995-01-01",
+        "summary": "Penyesuaian sanksi"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Perubahan tarif sanksi dan penambahan sanksi keterlambatan"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan sanksi administrasi"
+      }
+    ],
+    "text": "(1) WP yang terlambat menyampaikan SPT dikenakan sanksi administrasi berupa denda.\n(2) Besarnya denda ditetapkan sebesar:\na. Rp 1.000.000 untuk SPT Tahunan WP OP;\nb. Rp 1.000.000 untuk SPT Tahunan WP badan;\nc. Rp 100.000 untuk SPT Masa.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Sanksi denda atas keterlambatan SPT.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Denda: Rp1.000.000 (SPT Tahunan OP/badan), Rp100.000 (SPT Masa).",
+        "status": "diubah"
+      }
+    ]
+  }
+}

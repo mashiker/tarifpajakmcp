@@ -1,0 +1,42 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "31A",
+    "bab": "IX",
+    "title": "Thin Capitalization",
+    "status": "ditambah",
+    "description": "Ketentuan thin capitalization — rasio utang terhadap modal untuk WP Badan tertentu.",
+    "keywords": [
+      "thin capitalization",
+      "rasio utang",
+      "DER"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "added",
+        "effectiveDate": "2009-01-01",
+        "summary": "Pasal baru tentang thin cap"
+      }
+    ],
+    "text": "(1) Dalam hal WP badan memperoleh pinjaman dari pihak yang mempunyai hubungan istimewa dengan rasio utang terhadap modal melebihi rasio yang ditetapkan oleh Peraturan Pemerintah, bunga atas pinjaman tersebut tidak dapat dikurangkan dari penghasilan bruto.\n(2) Rasio utang terhadap modal sebagaimana dimaksud pada ayat (1) ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Bunga atas pinjaman dari pihak hubungan istimewa yang melebihi rasio utang-modal tertentu tidak dapat dikurangkan (thin capitalization).",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Rasio utang-modal ditetapkan PP.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pp-51-2008",
+    "number": "51",
+    "year": 2008,
+    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Berdomisili di Wilayah Negara Bagian Malaysia",
+    "shortName": "PP PPh Penghasilan Tertentu",
+    "type": "PP",
+    "promulgationDate": "2008-07-28",
+    "effectiveDate": "2008-08-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/44098/pp-no-51-tahun-2008",
+    "status": "berlaku",
+    "description": "PP tentang PPh atas penghasilan tetap dari pengalihan hak atas tanah/bangunan (Pasal 5B), penghasilan dari pengangkutan charter (Pasal 5A), dan pekerjaan konstruksi (Pasal 2-5). Juga mengatur PPh Final migas. Catatan: untuk konstruksi, PP 40/2009 lebih spesifik.",
+    "relevantArticles": "Pasal 2, 5A, 5B",
+    "relatedRegulations": [
+      "pp-40-2009"
+    ],
+    "referencingEntries": [
+      "pph-final-konstruksi",
+      "pph-final-transportasi",
+      "pph-final-migas"
+    ]
+  }
+}

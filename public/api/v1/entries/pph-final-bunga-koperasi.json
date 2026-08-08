@@ -1,0 +1,85 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-final-bunga-koperasi",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Bunga Simpanan Koperasi",
+    "description": "Pemotongan PPh atas bunga simpanan yang dibayarkan oleh koperasi kepada anggota WP Orang Pribadi.",
+    "rate": {
+      "type": "range",
+      "value": [
+        0,
+        10
+      ]
+    },
+    "taxBase": "Jumlah bunga simpanan",
+    "payer": "Anggota koperasi (WP OP)",
+    "recipient": "Negara",
+    "withholder": "Koperasi",
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PP 60/2023",
+        "article": "Pasal 2"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Terdiri dari 2 kode objek pajak BPPU dengan tarif 0.0%, 10.0%.",
+    "examples": [
+      {
+        "scenario": "Bunga Simpanan Koperasi Rp 100.000.000",
+        "calculation": "Tarif 0.0%-10.0% × 100jt",
+        "result": "Pajak = Rp 0 - Rp 10.000.000"
+      }
+    ],
+    "tags": [
+      "pph-final",
+      "koperasi"
+    ],
+    "bppuKode": [
+      {
+        "kode": "28-417-01",
+        "nama": "Bunga Simpanan yang Dibayarkan oleh Koperasi kepada Anggota Wajib Pajak Orang Pribadi (bunga sampai dengan Rp240.000,00)",
+        "tarif": 0
+      },
+      {
+        "kode": "28-417-02",
+        "nama": "Bunga Simpanan yang Dibayarkan oleh Koperasi kepada Anggota Wajib Pajak Orang Pribadi (bunga di atas Rp240.000,00)",
+        "tarif": 10
+      }
+    ],
+    "lastVerified": "2026-05-26",
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-final-bunga-deposito",
+        "pph-final-sewa-tanah",
+        "pph-final-hadiah-undian",
+        "pph-final-transaksi-saham-bursa",
+        "pph-final-konstruksi",
+        "pph-final-transportasi",
+        "pph-final-migas",
+        "pph-final-investasi-lpi",
+        "pph-final-bunga-pre2009",
+        "pph-final-pengalihan-pp131",
+        "pph-final-pengalihan-pp71",
+        "pph-15-penerbangan-domestik",
+        "pph-15-pelayaran-domestik",
+        "pph-15-perusahaan-asuransi",
+        "pph-15-buta-charter",
+        "pph-15-pma-opec",
+        "pph-15-perusahaan-kontraktor"
+      ]
+    }
+  }
+}

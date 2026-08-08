@@ -1,0 +1,22 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "concept-pph-final-construction",
+    "categoryId": "cat-pph-final-umkm",
+    "name": "PPh Final jasa konstruksi (PP 9/2022 mengubah PP 51/2008)",
+    "slug": "pph-final-construction",
+    "description": "Pajak Penghasilan final atas jasa konstruksi menurut kualifikasi kontraktor. PP 9/2022 (mengubah PP 51/2008) efektif 21 Februari 2022: besar 2,65% (kualifikasi) atau 3,5% (tidak kualifikasi/asing), menengah 4%, kecil 4% (kualifikasi) atau 6% (tidak kualifikasi). Kontrak warisan sebelum 21 Februari 2022 dibagi menurut tanggal pembayaran (termin).",
+    "ruleIds": [
+      "rule-pph-final-construction-besar-kualifikasi",
+      "rule-pph-final-construction-kecil-kualifikasi"
+    ]
+  }
+}

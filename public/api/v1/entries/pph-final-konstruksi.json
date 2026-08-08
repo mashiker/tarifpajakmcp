@@ -1,0 +1,149 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-final-konstruksi",
+    "category": "PPh",
+    "taxType": "PPh 4(2) Final",
+    "transactionType": "Pekerjaan dan Jasa Konstruksi",
+    "description": "Pemotongan PPh Final atas penghasilan dari pekerjaan konstruksi, jasa perencanaan konstruksi, jasa pelaksanaan konstruksi, jasa pengawasan konstruksi, dan jasa konsultansi konstruksi sesuai PP 51/2008 jo. PP 40/2009.",
+    "rate": {
+      "type": "range",
+      "value": [
+        1.75,
+        6
+      ]
+    },
+    "taxBase": "Jumlah bruto nilai kontrak atau nilai pekerjaan",
+    "payer": "Penyedia jasa konstruksi",
+    "recipient": "Negara",
+    "withholder": "Pemberi kerja/pemilik proyek",
+    "effectiveFrom": "2009-07-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 51/2008",
+        "article": "Pasal 2-5"
+      },
+      {
+        "regulation": "PP 40/2009",
+        "article": "Pasal 2"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 19",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Terdiri dari 14 kode objek pajak BPPU dengan tarif 1.75%, 2.0%, 2.65%, 3.0%, 3.5%, 4.0%, 6.0%.",
+    "examples": [
+      {
+        "scenario": "Pekerjaan dan Jasa Konstruksi Rp 100.000.000",
+        "calculation": "Tarif 1.75%-6.0% × 100jt",
+        "result": "Pajak = Rp 1.750.000 - Rp 6.000.000"
+      }
+    ],
+    "tags": [
+      "pph-final",
+      "konstruksi"
+    ],
+    "bppuKode": [
+      {
+        "kode": "28-409-22",
+        "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha Kualifikasi Kecil atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 1.75
+      },
+      {
+        "kode": "28-409-23",
+        "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha Atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 4
+      },
+      {
+        "kode": "28-409-24",
+        "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Selain Sertifikat Badan Usaha Kualifikasi Kecil atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 2.65
+      },
+      {
+        "kode": "28-409-25",
+        "nama": "Pekerjaan Konstruksi Terintegrasi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha",
+        "tarif": 2.65
+      },
+      {
+        "kode": "28-409-26",
+        "nama": "Pekerjaan Konstruksi Terintegrasi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha",
+        "tarif": 4
+      },
+      {
+        "kode": "28-409-27",
+        "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 3.5
+      },
+      {
+        "kode": "28-409-28",
+        "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
+        "tarif": 6
+      },
+      {
+        "kode": "28-409-08",
+        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Dengan Kualifikasi Usaha)",
+        "tarif": 4
+      },
+      {
+        "kode": "28-409-09",
+        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Tanpa Kualifikasi Usaha)",
+        "tarif": 6
+      },
+      {
+        "kode": "28-409-10",
+        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Kecil)",
+        "tarif": 2
+      },
+      {
+        "kode": "28-409-11",
+        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Menengah dan Besar)",
+        "tarif": 3
+      },
+      {
+        "kode": "28-409-12",
+        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Tanpa Kualifikasi Usaha)",
+        "tarif": 4
+      },
+      {
+        "kode": "28-409-13",
+        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Dengan Kualifikasi Usaha)",
+        "tarif": 4
+      },
+      {
+        "kode": "28-409-14",
+        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Tanpa Kualifikasi Usaha)",
+        "tarif": 6
+      }
+    ],
+    "lastVerified": "2026-05-26",
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-final-bunga-deposito",
+        "pph-final-sewa-tanah",
+        "pph-final-hadiah-undian",
+        "pph-final-transaksi-saham-bursa",
+        "pph-final-bunga-koperasi",
+        "pph-final-transportasi",
+        "pph-final-migas",
+        "pph-final-investasi-lpi",
+        "pph-final-bunga-pre2009",
+        "pph-final-pengalihan-pp131",
+        "pph-final-pengalihan-pp71",
+        "pph-15-penerbangan-domestik",
+        "pph-15-pelayaran-domestik",
+        "pph-15-perusahaan-asuransi",
+        "pph-15-buta-charter",
+        "pph-15-pma-opec",
+        "pph-15-perusahaan-kontraktor"
+      ]
+    }
+  }
+}

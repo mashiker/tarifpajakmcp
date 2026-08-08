@@ -1,0 +1,53 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "23",
+    "bab": "VII",
+    "title": "Surat Tagihan Pajak (STP)",
+    "status": "diubah",
+    "description": "STP diterbitkan untuk menagih pajak, bunga, dan denda apabila WP tidak atau terlambat membayar.",
+    "keywords": [
+      "STP",
+      "tagihan",
+      "bunga",
+      "denda"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "partially_amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penyesuaian STP"
+      }
+    ],
+    "text": "(1) STP diterbitkan jika terdapat pajak yang terutang belum dibayar.\n(2) STP juga diterbitkan atas sanksi administrasi berupa bunga dan/atau denda.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "STP diterbitkan jika pajak terutang belum dibayar.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "STP juga untuk sanksi administrasi bunga/denda.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

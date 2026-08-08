@@ -1,0 +1,62 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "ppnbm-kapal-pesiar",
+    "category": "PPnBM",
+    "taxType": "PPnBM",
+    "transactionType": "Kapal Pesiar dan Kapal Mewah",
+    "description": "PPnBM atas penyerahan kapal pesiar, kapal pesiar pribadi, dan kapal layar mewah yang panjangnya > 15 meter.",
+    "rate": {
+      "type": "range",
+      "value": [
+        10,
+        50
+      ]
+    },
+    "taxBase": "DPP (Harga Jual/Penggantian)",
+    "payer": "Pembeli konsumen",
+    "recipient": "Negara",
+    "withholder": "PKP penjual",
+    "effectiveFrom": "2022-04-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 8",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif 10-50% tergantung jenis dan ukuran kapal pesiar.",
+    "tags": [
+      "ppnbm",
+      "kapal",
+      "pesiar",
+      "mewah",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Kapal Pesiar dan Kapal Mewah Rp 100.000.000",
+        "calculation": "Tarif 10%-50% × 100jt",
+        "result": "Pajak = Rp 10.000.000 - Rp 50.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "ppnbm-general",
+        "ppnbm-sedan-station-wagon",
+        "ppnbm-suv-4x4",
+        "ppnbm-van-wagon",
+        "ppnbm-pesawat-pribadi",
+        "ppnbm-rumah-mewah",
+        "ppnbm-perlengkapan-mewah"
+      ]
+    }
+  }
+}

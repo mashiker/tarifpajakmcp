@@ -1,0 +1,72 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-21-article17-annual-pre2022",
+    "conceptId": "concept-pph-21-article17-annual",
+    "conceptName": "Tarif Pasal 17 UU PPh tahunan (OP)",
+    "categoryId": "cat-pph-21",
+    "categoryName": "Pajak Penghasilan Pasal 21",
+    "validFrom": "2009-01-01",
+    "validToExclusive": "2022-01-01",
+    "rate": {
+      "type": "progressive",
+      "brackets": [
+        {
+          "upTo": "50000000",
+          "rate": "0.05"
+        },
+        {
+          "upTo": "250000000",
+          "rate": "0.15"
+        },
+        {
+          "upTo": "500000000",
+          "rate": "0.25"
+        },
+        {
+          "upTo": null,
+          "rate": "0.3"
+        }
+      ]
+    },
+    "verification": {
+      "status": "needs_review",
+      "sourceIds": [
+        "src-uu-7-2021-hpp"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Sebelum HPP: maksimum 30% (UU 36/2008)"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Berlaku sampai dengan Tahun Pajak 2021"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Tarif OP tahunan PKP"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-21-article17-annual",
+    "supersedes": [],
+    "supersededBy": [
+      "rule-pph-21-article17-annual-hpp"
+    ],
+    "notes": "Tarif Pasal 17 pra-HPP (UU 36/2008): 5/15/25/30%. Perlu penelusuran primer UU 36/2008 secara penuh; ditandai needs_review.",
+    "conflicts": []
+  }
+}

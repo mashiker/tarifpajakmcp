@@ -1,0 +1,9 @@
+[
+  {
+    "id": "conflict-illustrative-rate",
+    "kind": "rate",
+    "ruleIds": ["rule-illustrative-conflict-a", "rule-illustrative-conflict-b"],
+    "description": "Illustrative declared rate conflict between two synthetic rules covering the same interval. Not tax law.",
+    "declaredAt": "2026-08-06"
+  }
+]

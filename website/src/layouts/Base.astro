@@ -1,22 +1,80 @@
 ---
-interface Props { title: string; description?: string; activeNav?: string; wide?: boolean; }
-const { title, description = 'Database tarif pajak Indonesia yang terbuka dan bersumber dari regulasi resmi.', activeNav = '', wide = false } = Astro.props;
+import { serializeJsonLd, CANONICAL_ORIGIN } from '../lib/seo.ts';
+
+interface Props {
+  title: string;
+  description?: string;
+  activeNav?: string;
+  wide?: boolean;
+  fullWidth?: boolean;
+  /** Canonical path on the site (e.g. "/", "/tarif/concept-x"). When provided,
+   * the layout emits an absolute canonical URL on the canonical origin and
+   * matching og:url. */
+  canonicalPath?: string;
+  /** Optional OG/Twitter image (absolute URL or site-relative path). */
+  image?: string;
+  /** Optional JSON-LD object to inline in the head. The layout serializes it
+   * with HTML-safe escaping. */
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  /** When true, the page emits a noindex meta tag (e.g. the 404 page). */
+  noindex?: boolean;
+}
+
+const DEFAULT_IMAGE = `${CANONICAL_ORIGIN}/favicon.svg`;
+
+const {
+  title,
+  description = 'Database tarif pajak Indonesia yang terbuka dan bersumber dari regulasi resmi.',
+  activeNav = '',
+  wide = false,
+  fullWidth = false,
+  canonicalPath,
+  image = DEFAULT_IMAGE,
+  jsonLd,
+  noindex = false,
+} = Astro.props;
+
+const fullTitle = title.endsWith('Tarif Pajak ID') ? title : `${title} — Tarif Pajak ID`;
+const canonicalUrl = canonicalPath
+  ? `${CANONICAL_ORIGIN}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`
+  : CANONICAL_ORIGIN;
+
+const jsonLdBlocks: Record<string, unknown>[] = jsonLd
+  ? Array.isArray(jsonLd)
+    ? jsonLd
+    : [jsonLd]
+  : [];
 ---
 <!doctype html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} — Tarif Pajak ID</title>
+  <title>{fullTitle}</title>
   <meta name="description" content={description} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:opsz,wght@14..32,300..900&display=swap" rel="stylesheet" />
-  <meta property="og:title" content={title + ' — Tarif Pajak ID'} />
+  {noindex ? (
+    <meta name="robots" content="noindex, nofollow" />
+  ) : (
+    <link rel="canonical" href={canonicalUrl} />
+  )}
+  <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:image" content={image} />
+  <meta property="og:site_name" content="Tarif Pajak ID" />
+  <meta property="og:locale" content="id_ID" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={image} />
+  {jsonLdBlocks.map((block) => (
+    <script type="application/ld+json" set:html={serializeJsonLd(block)} />
+  ))}
   <script is:inline>
     (function() {
       const s = localStorage.getItem('darkMode');
@@ -25,53 +83,74 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
     })();
   </script>
   <style is:inline>
-    /* Light mode CSS variables */
+    /* Approved tokens (Task 8 / design spec):
+       ink #132A2A, deep teal #0E5E58, paper #F7F8F4, surface #FFFFFF,
+       rule #D9E0DC, warning #B7791F, conflict #B64545.
+       Inter + IBM Plex Mono. WCAG AA on paper/surface. */
     :root {
-      --bg:              #fafbfc;
-      --surface:         #ffffff;
-      --surface-alt:     #f4f5f7;
-      --border:          #e3e5e8;
-      --border-subtle:   #eff0f2;
-      --text:            #111318;
-      --text-secondary:  #555d6e;
-      --text-tertiary:   #8b93a1;
-      --accent:          #0d9488;
-      --accent-hover:    #0f766e;
-      --accent-soft:     #f0fdfa;
-      --accent-text:     #0d9488;
-      --highlight:       #b45309;
-      --highlight-soft:  #fffbeb;
-      --status-active:   #059669;
-      --status-revoked:  #dc2626;
-      --status-changed:  #d97706;
-      --status-pending:  #64748b;
+      --bg:              #F7F8F4;   /* paper */
+      --surface:         #FFFFFF;
+      --surface-alt:     #EFF1EC;
+      --border:          #D9E0DC;   /* rule */
+      --border-subtle:   #E6EBE7;
+      --text:            #132A2A;   /* ink */
+      --text-secondary:  #44545A;
+      --text-tertiary:   #5A6670;   /* AA: 5.2:1 on paper, 5.9:1 on surface (Task 11 a11y gate) */
+      --accent:          #0E5E58;   /* deep teal */
+      --accent-hover:    #0A4A45;
+      --accent-soft:     #EAF2F0;
+      --accent-text:     #0E5E58;
+      --highlight:       #B7791F;   /* warning */
+      --highlight-soft:  #FBF3E3;
+      --status-active:   #0E5E58;
+      --status-revoked:  #B64545;   /* conflict */
+      --status-changed:  #B7791F;
+      --status-pending:  #5A6670;
       --header-height:   56px;
       --font-mono:       "IBM Plex Mono", monospace;
+      /* Aliases used by the new database components. */
+      --ink:             #132A2A;
+      --ink-secondary:   #44545A;
+      --ink-tertiary:    #5A6670;
+      --rule:            #D9E0DC;
+      --paper:           #F7F8F4;
     }
-    /* Dark mode CSS variables */
+    /* Dark mode CSS variables. AA-tested against dark surfaces. */
     html.dark {
-      --bg:              #0a0c10;
+      --bg:              #0A0C10;
       --surface:         #111318;
-      --surface-alt:     #1a1d24;
-      --border:          #23272f;
-      --border-subtle:   #1d2028;
-      --text:            #edf0f5;
-      --text-secondary:  #8b93a1;
-      --text-tertiary:   #555d6e;
-      --accent:          #2dd4bf;
-      --accent-hover:    #5eead4;
+      --surface-alt:     #1A1D24;
+      --border:          #23272F;
+      --border-subtle:   #1D2028;
+      --text:            #EDF0F5;
+      --text-secondary:  #B6BCC6;
+      --text-tertiary:   #8B93A1;
+      --accent:          #2DD4BF;
+      --accent-hover:    #5EEAD4;
       --accent-soft:     rgba(13, 148, 136, 0.08);
-      --accent-text:     #2dd4bf;
-      --highlight:       #fbbf24;
+      --accent-text:     #2DD4BF;
+      --highlight:       #FBBF24;
       --highlight-soft:  rgba(251, 191, 36, 0.08);
-      --status-active:   #34d399;
-      --status-revoked:  #f87171;
-      --status-changed:  #fbbf24;
-      --status-pending:  #94a3b8;
+      --status-active:   #34D399;
+      --status-revoked:  #F87171;
+      --status-changed:  #FBBF24;
+      --status-pending:  #94A3B8;
+      --ink:             #EDF0F5;
+      --ink-secondary:   #B6BCC6;
+      --ink-tertiary:    #8B93A1;
+      --rule:            #23272F;
+      --paper:           #0A0C10;
     }
     body {
       color: var(--text);
       background: var(--bg);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
     }
   </style>
 </head>
@@ -109,7 +188,7 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
 
       <!-- Desktop Nav -->
       <nav class="hidden items-center gap-0.5 lg:flex" aria-label="Main">
-        <a href="/database" class:list={["nav-link", activeNav === "database" && "active"]}>Database</a>
+        <a href="/" class:list={["nav-link", activeNav === "home" && "active"]}>Database</a>
         <a href="/ter-pph-21" class:list={["nav-link", activeNav === "ter" && "active"]}>TER PPh 21</a>
         <a href="/kode-objek-pajak" class:list={["nav-link", activeNav === "bppu" && "active"]}>BPPU</a>
         <a href="/api-docs" class:list={["nav-link", activeNav === "api" && "active"]}>API</a>
@@ -117,11 +196,11 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
 
       <!-- Actions -->
       <div class="flex items-center gap-1">
-        <button id="dark-toggle" class="btn-ghost p-2 rounded-lg" aria-label="Toggle dark mode">
+        <button id="dark-toggle" class="btn-ghost p-2 rounded-lg" aria-label="Toggle dark mode" aria-pressed="false">
           <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
           <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
         </button>
-        <button id="mobile-menu-btn" class="btn-ghost p-2 rounded-lg lg:hidden" aria-label="Menu">
+        <button id="mobile-menu-btn" class="btn-ghost p-2 rounded-lg lg:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
@@ -135,8 +214,7 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
           <input id="mobile-search-input" type="text" placeholder="Cari tarif pajak..." class="w-full h-10 pl-9 pr-4 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-sm text-[var(--text)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent)]" />
           <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--text-tertiary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
         </div>
-        <a href="/" class:list={["nav-link w-full", activeNav === "home" && "active"]}>Beranda</a>
-        <a href="/database" class:list={["nav-link w-full", activeNav === "database" && "active"]}>Database</a>
+        <a href="/" class:list={["nav-link w-full", activeNav === "home" && "active"]}>Database</a>
         <a href="/ter-pph-21" class:list={["nav-link w-full", activeNav === "ter" && "active"]}>TER PPh 21</a>
         <a href="/kode-objek-pajak" class:list={["nav-link w-full", activeNav === "bppu" && "active"]}>BPPU</a>
         <a href="/api-docs" class:list={["nav-link w-full", activeNav === "api" && "active"]}>API</a>
@@ -147,7 +225,7 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
   <!-- Main -->
   <main id="main-content" class:list={[
     "mx-auto w-full px-4 py-6 sm:px-6 sm:py-8 lg:px-8",
-    wide ? "max-w-8xl" : "max-w-4xl"
+    fullWidth ? "max-w-screen-2xl" : wide ? "max-w-8xl" : "max-w-4xl"
   ]}>
     <slot />
   </main>
@@ -165,7 +243,7 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
             <span class="text-xs font-bold text-[var(--text)]">Tarif Pajak ID</span>
             <span class="mx-1.5 text-[var(--text-tertiary)]">·</span>
             <span class="text-xs text-[var(--text-secondary)]">Open database, sumber regulasi resmi.</span>
-            <div class="mt-1 inline-flex items-center gap-1 rounded bg-[var(--highlight-soft)] px-1.5 py-0.5 text-[10px] font-semibold text-[var(--highlight)]">
+            <div class="mt-1 inline-flex items-center gap-1 rounded bg-[var(--highlight-soft)] px-1.5 py-0.5 text-[10px] font-semibold text-[#8A5A13]">
               <svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               Bukan nasihat pajak resmi
             </div>
@@ -174,12 +252,12 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
 
         <!-- Right -->
         <div class="flex items-center gap-4 text-xs text-[var(--text-tertiary)]">
-          <a href="https://github.com/mashiker/tarifpajakmcp" target="_blank" class="hover:text-[var(--text)] transition-colors flex items-center gap-1.5">
+          <a href="https://github.com/mashiker/tarifpajakmcp" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--text)] transition-colors flex items-center gap-1.5">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             GitHub
           </a>
           <a href="/api-docs" class="hover:text-[var(--text)] transition-colors">API</a>
-          <a href="https://peraturan.bpk.go.id" target="_blank" class="hover:text-[var(--text)] transition-colors">JDIH BPK ↗</a>
+          <a href="https://peraturan.bpk.go.id" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--text)] transition-colors">JDIH BPK ↗</a>
         </div>
       </div>
 
@@ -193,29 +271,41 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
 
 <script>
   // Dark mode toggle
-  document.getElementById('dark-toggle')?.addEventListener('click', () => {
+  const darkToggle = document.getElementById('dark-toggle');
+  function syncDarkAria() {
+    if (darkToggle) darkToggle.setAttribute('aria-pressed', document.documentElement.classList.contains('dark') ? 'true' : 'false');
+  }
+  syncDarkAria();
+  darkToggle?.addEventListener('click', () => {
     document.documentElement.classList.toggle('dark');
     localStorage.setItem('darkMode', String(document.documentElement.classList.contains('dark')));
+    syncDarkAria();
   });
 
   // Mobile menu toggle
-  document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
-    document.getElementById('mobile-menu')?.classList.toggle('hidden');
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  function syncMobileMenuAria() {
+    if (!mobileMenuBtn || !mobileMenu) return;
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+    syncMobileMenuAria();
   });
 
-  // Search trigger — focus home search on desktop, mobile input on mobile
+  // Search trigger — focus the root database search input on desktop, mobile input on mobile.
+  // The database experience is now at /, so the home input is always the canonical search.
   document.getElementById('search-trigger')?.addEventListener('click', () => {
-    const homeInput = document.querySelector<HTMLInputElement>('#home-search');
-    const dbInput = document.querySelector<HTMLInputElement>('#db-search');
+    const dbInput = document.querySelector<HTMLInputElement>('#db-input-q');
     const mobileInput = document.querySelector<HTMLInputElement>('#mobile-search-input');
-    const target = homeInput || dbInput;
-    if (target) {
-      target.focus();
-      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (dbInput) {
+      dbInput.focus();
+      dbInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
     } else if (mobileInput) {
-      // Open mobile menu first, then focus
-      const mobileMenu = document.getElementById('mobile-menu');
       if (mobileMenu?.classList.contains('hidden')) mobileMenu.classList.remove('hidden');
+      syncMobileMenuAria();
       mobileInput.focus();
     }
   });
@@ -224,16 +314,14 @@ const { title, description = 'Database tarif pajak Indonesia yang terbuka dan be
   document.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
       e.preventDefault();
-      const homeInput = document.querySelector<HTMLInputElement>('#home-search');
-      const dbInput = document.querySelector<HTMLInputElement>('#db-search');
+      const dbInput = document.querySelector<HTMLInputElement>('#db-input-q');
       const mobileInput = document.querySelector<HTMLInputElement>('#mobile-search-input');
-      const target = homeInput || dbInput;
-      if (target) {
-        target.focus();
-        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (dbInput) {
+        dbInput.focus();
+        dbInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
-        const mobileMenu = document.getElementById('mobile-menu');
         if (mobileMenu?.classList.contains('hidden')) mobileMenu.classList.remove('hidden');
+        syncMobileMenuAria();
         if (mobileInput) mobileInput.focus();
       }
     }

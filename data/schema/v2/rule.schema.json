@@ -1,0 +1,205 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "V2 tax rule",
+  "type": "object",
+  "required": ["id", "conceptId", "validFrom", "validToExclusive"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "conceptId": { "type": "string", "minLength": 1 },
+    "categoryId": { "type": "string", "minLength": 1 },
+    "validFrom": { "type": "string", "format": "date" },
+    "validToExclusive": { "type": ["string", "null"], "format": "date" },
+    "exclusiveGroup": { "type": "string" },
+    "supersedes": { "type": "array", "items": { "type": "string" } },
+    "supersededBy": { "type": "array", "items": { "type": "string" } },
+    "bppuId": { "type": "string" },
+    "notes": { "type": "string" },
+    "rate": { "$ref": "#/$defs/rate" },
+    "conditions": { "$ref": "#/$defs/condition" },
+    "verification": {
+      "type": "object",
+      "required": ["status", "sourceIds"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["verified_primary", "verified_secondary", "needs_review", "source_conflict", "summary_only"]
+        },
+        "sourceIds": { "type": "array", "items": { "type": "string" } },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim", "sourceId", "locator"],
+            "properties": {
+              "claim": { "type": "string", "enum": ["rate", "interval", "condition"] },
+              "sourceId": { "type": "string" },
+              "locator": { "type": "string" }
+            }
+          }
+        },
+        "verifiedAt": { "type": "string", "format": "date" },
+        "verifiedBy": { "type": "string" }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "illustrative", "input"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "label": { "type": "string" },
+          "illustrative": { "type": "boolean" },
+          "input": { "type": "object" },
+          "expectedAmount": { "type": "string" },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "rate": {
+      "type": "object",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["type", "value"],
+          "properties": {
+            "type": { "type": "string", "const": "percentage" },
+            "value": { "type": "string", "pattern": "^-?\\d+(\\.\\d+)?$" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["type", "amount", "currency"],
+          "properties": {
+            "type": { "type": "string", "const": "fixed" },
+            "amount": { "type": "string", "pattern": "^-?\\d+(\\.\\d+)?$" },
+            "currency": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["type", "amount", "unit"],
+          "properties": {
+            "type": { "type": "string", "const": "specific" },
+            "amount": { "type": "string", "pattern": "^-?\\d+(\\.\\d+)?$" },
+            "unit": { "type": "string", "minLength": 1 },
+            "currency": { "type": "string" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["type", "brackets"],
+          "properties": {
+            "type": { "type": "string", "const": "progressive" },
+            "brackets": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["rate"],
+                "properties": {
+                  "upTo": { "type": ["string", "null"], "pattern": "^\\d+(\\.\\d+)?$" },
+                  "rate": { "type": "string", "pattern": "^\\d+(\\.\\d+)?$" }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["type", "expression"],
+          "properties": {
+            "type": { "type": "string", "const": "formula" },
+            "expression": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["type", "min", "max"],
+          "properties": {
+            "type": { "type": "string", "const": "range" },
+            "min": { "type": "string", "pattern": "^-?\\d+(\\.\\d+)?$" },
+            "max": { "type": "string", "pattern": "^-?\\d+(\\.\\d+)?$" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["type", "text"],
+          "properties": {
+            "type": { "type": "string", "const": "free_text" },
+            "text": { "type": "string", "minLength": 1 }
+          }
+        },
+        { "type": "object", "required": ["type"], "properties": { "type": { "type": "string", "const": "zero" } } },
+        { "type": "object", "required": ["type"], "properties": { "type": { "type": "string", "const": "not_applicable" } } },
+        {
+          "type": "object",
+          "required": ["type", "factor"],
+          "properties": {
+            "type": { "type": "string", "const": "information_factor" },
+            "factor": { "type": "string", "pattern": "^-?\\d+(\\.\\d+)?$" }
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "object",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["op", "fact", "value"],
+          "properties": {
+            "op": { "type": "string", "const": "equals" },
+            "fact": { "type": "string", "minLength": 1 },
+            "value": {}
+          }
+        },
+        {
+          "type": "object",
+          "required": ["op", "fact", "value"],
+          "properties": {
+            "op": { "type": "string", "const": "in" },
+            "fact": { "type": "string", "minLength": 1 },
+            "value": { "type": "array" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["op", "fact"],
+          "properties": {
+            "op": { "type": "string", "const": "exists" },
+            "fact": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["op", "conditions"],
+          "properties": {
+            "op": { "type": "string", "const": "and" },
+            "conditions": { "type": "array", "items": { "$ref": "#/$defs/condition" } }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["op", "conditions"],
+          "properties": {
+            "op": { "type": "string", "const": "or" },
+            "conditions": { "type": "array", "items": { "$ref": "#/$defs/condition" } }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["op", "condition"],
+          "properties": {
+            "op": { "type": "string", "const": "not" },
+            "condition": { "$ref": "#/$defs/condition" }
+          }
+        }
+      ]
+    }
+  }
+}

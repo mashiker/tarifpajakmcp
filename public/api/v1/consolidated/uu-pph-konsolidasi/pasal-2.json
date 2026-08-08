@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "2",
+    "bab": "I",
+    "title": "Bukan Subjek Pajak",
+    "status": "diubah",
+    "description": "Penghasilan yang diterima oleh badan tertentu yang bukan subjek pajak (kedutaan, organisasi internasional).",
+    "keywords": [
+      "bukan subjek pajak",
+      "kedutaan",
+      "organisasi internasional"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan ketentuan bukan SP"
+      }
+    ],
+    "text": "(1) Bukan subjek pajak meliputi:\na. badan perwakilan diplomatik yang bertindak untuk kepentingan negara yang diwakilinya;\nb. pejabat-pejabat diplomatik dari suatu negara asing yang bekerja pada badan perwakilan diplomatik di Indonesia yang bukan warga negara Indonesia dan tidak memperoleh penghasilan lain di luar jabatannya di Indonesia;\nc. pejabat-pejabat konsulat yang bekerja pada konsulat suatu negara asing di Indonesia yang bukan warga negara Indonesia dan tidak memperoleh penghasilan lain di luar jabatannya di Indonesia;\nd. pegawai-pegawai teknis yang diangkat oleh Pemerintah negara asing pada badan perwakilan diplomatik di Indonesia yang bukan warga negara Indonesia dan tidak memperoleh penghasilan lain di luar jabatannya di Indonesia;\ne. anggota delegasi militer dari suatu negara asing yang bertugas di Indonesia;\nf. pegawai negeri asing yang bekerja pada badan perwakilan negara asing di Indonesia;\ng. anggota staf teknis yang diangkat oleh Pemerintah suatu negara asing dan bertugas pada badan perwakilan diplomatik di Indonesia.\n(2) Pengecualian sebagaimana dimaksud pada ayat (1) berlaku juga untuk orang pribadi yang bertindak untuk dan atas nama:\na. Pemerintah suatu negara asing yang memperoleh penghasilan dari kegiatan usaha di Indonesia; atau\nb. badan atau organisasi internasional yang ditetapkan dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Bukan subjek pajak meliputi badan perwakilan diplomatik, pejabat diplomatik, pejabat konsulat, pegawai teknis, delegasi militer, pegawai negeri asing, dan staf teknis dari negara asing yang bukan WNI dan tidak memperoleh penghasilan lain di luar jabatannya di Indonesia.",
+        "status": "berlaku"
+      },
+      {
+        "number": "(2)",
+        "text": "Pengecualian berlaku juga untuk orang pribadi yang bertindak untuk dan atas nama Pemerintah negara asing atau badan/organisasi internasional yang ditetapkan dengan Peraturan Pemerintah.",
+        "status": "diubah"
+      }
+    ]
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "date": "2016-01-01",
+    "determination": "bersyarat",
+    "candidates": [
+      {
+        "ruleId": "rule-pph-15-special",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "industry"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-21-article17-annual-pre2022",
+        "conditionState": "true",
+        "missingFacts": [],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-21-pre2024-permanent-regime",
+        "conditionState": "true",
+        "missingFacts": [],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-21-ptkp-2016-current",
+        "conditionState": "true",
+        "missingFacts": [],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-konsultan-with-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-konsultan-without-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-manajemen-with-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-manajemen-without-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-pmk141-lain-with-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-pmk141-lain-without-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-teknik-with-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-teknik-without-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-rent-movable-with-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-rent-movable-without-npwp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "recipientHasNpwp",
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-23-scope-rent-land-building",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "serviceClass"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-badan-article31e",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "article31eEligible",
+          "grossTurnover",
+          "resident",
+          "taxpayerType"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-badan-base-25pct-pre2020",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "resident",
+          "taxpayerType"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-badan-listed-20pct-pre2020",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "floatTradedPct",
+          "heldDays",
+          "listed",
+          "listedConditionsMet",
+          "maxStakePct",
+          "minShareholders",
+          "resident",
+          "taxpayerType"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-pph-final-umkm-pp46",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "entityType",
+          "grossTurnover",
+          "umkmTurnoverEligible"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-ppn-domestic-supply-10pct-pre-hpp",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "luxuryBkp",
+          "transactionKind"
+        ],
+        "defeats": []
+      },
+      {
+        "ruleId": "rule-ppn-export-0pct",
+        "conditionState": "unknown",
+        "missingFacts": [
+          "transactionKind"
+        ],
+        "defeats": []
+      }
+    ],
+    "considered": [
+      {
+        "ruleId": "rule-pph-21-article17-annual-pre2022",
+        "conditionState": "true"
+      },
+      {
+        "ruleId": "rule-pph-21-ptkp-2016-current",
+        "conditionState": "true"
+      },
+      {
+        "ruleId": "rule-pph-21-pre2024-permanent-regime",
+        "conditionState": "true"
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-teknik-with-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-teknik-without-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-manajemen-with-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-manajemen-without-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-konsultan-with-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-konsultan-without-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-pmk141-lain-with-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-jasa-pmk141-lain-without-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-rent-movable-with-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-rent-movable-without-npwp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-23-scope-rent-land-building",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-ppn-domestic-supply-10pct-pre-hpp",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-ppn-export-0pct",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-badan-base-25pct-pre2020",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-badan-listed-20pct-pre2020",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-badan-article31e",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-final-umkm-pp46",
+        "conditionState": "unknown"
+      },
+      {
+        "ruleId": "rule-pph-15-special",
+        "conditionState": "unknown"
+      }
+    ],
+    "conflicts": [],
+    "warnings": [],
+    "gap": false
+  }
+}

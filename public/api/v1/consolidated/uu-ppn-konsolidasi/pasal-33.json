@@ -1,0 +1,35 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "33",
+    "bab": "VI",
+    "title": "Ketentuan Lain",
+    "status": "berlaku",
+    "description": "Ketentuan lain.",
+    "keywords": [
+      "ketentuan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "8",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-04-01",
+        "summary": "Pasal asli"
+      }
+    ],
+    "text": "(1) Hal-hal yang belum diatur dalam UU ini diatur dengan Peraturan Pemerintah.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Hal belum diatur: PP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

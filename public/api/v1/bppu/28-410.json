@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "28-410",
+    "count": 2,
+    "codes": [
+      {
+        "kode": "28-410-01",
+        "nama": "Imbalan yang Diterima/Diperoleh Sehubungan dengan Pengangkutan Orang dan/atau Barang Termasuk Penyewaan Kapal Laut Oleh Perusahaan Pelayaran Dalam Negeri",
+        "tarif": 1.2,
+        "entryId": "pph-final-transportasi",
+        "entryTransactionType": "Penghasilan dari Pengangkutan dan Charter"
+      },
+      {
+        "kode": "28-410-02",
+        "nama": "Imbalan yang Dibayarkan/Terutang kepada Perusahaan Pelayaran Dalam Negeri",
+        "tarif": 1.2,
+        "entryId": "pph-final-transportasi",
+        "entryTransactionType": "Penghasilan dari Pengangkutan dan Charter"
+      }
+    ]
+  }
+}

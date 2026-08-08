@@ -1,0 +1,77 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "category": "Bea Meterai",
+    "taxType": "Bea Meterai",
+    "description": "Bea Meterai - Pajak atas dokumen tertentu yang dikenakan berdasarkan UU Bea Meterai",
+    "count": 8,
+    "entries": [
+      {
+        "id": "bea-meterai-dokumen-2021",
+        "transactionType": "Dokumen dengan nilai tertentu",
+        "rate": "Rp 10.000 per lembar",
+        "status": "berlaku",
+        "effectiveFrom": "2021-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-meterai-cek-bilyet",
+        "transactionType": "Cek dan Bilyet Giro",
+        "rate": "Rp 10.000 per lembar",
+        "status": "berlaku",
+        "effectiveFrom": "2021-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-meterai-kontrak",
+        "transactionType": "Kontrak/Perjanjian",
+        "rate": "Rp 10.000 per lembar",
+        "status": "berlaku",
+        "effectiveFrom": "2021-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-meterai-surat-berharga",
+        "transactionType": "Surat Berharga dan Efek",
+        "rate": "Rp 10.000 per lembar",
+        "status": "berlaku",
+        "effectiveFrom": "2021-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-meterai-nota-kredit",
+        "transactionType": "Nota Kredit dan Dokumen Pengganti",
+        "rate": "Rp 10.000 per lembar",
+        "status": "berlaku",
+        "effectiveFrom": "2021-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "bea-meterai-pre2021",
+        "transactionType": "Bea Meterai Pra-UU 10/2020",
+        "rate": "Rp 6.000 per lembar",
+        "status": "dicabut",
+        "effectiveFrom": "2007-01-01",
+        "effectiveTo": "2020-12-31"
+      },
+      {
+        "id": "bea-meterai-1000",
+        "transactionType": "Dokumen / Surat (UU 13/1985)",
+        "rate": "0%",
+        "status": "dicabut",
+        "effectiveFrom": "1986-01-01",
+        "effectiveTo": "1999-12-31"
+      },
+      {
+        "id": "bea-meterai-3000",
+        "transactionType": "Dokumen / Surat (PP 23/2000)",
+        "rate": "0%",
+        "status": "dicabut",
+        "effectiveFrom": "2000-01-01",
+        "effectiveTo": "2006-12-31"
+      }
+    ]
+  }
+}

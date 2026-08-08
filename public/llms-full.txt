@@ -1,0 +1,154 @@
+# Tarif Pajak ID — LLM reference (llms-full.txt)
+
+> Database tarif pajak Indonesia, kanonik: https://tarif-pajak-id.pages.dev
+> Rilis: 2026-09-11 · versi 0.1.0 · sourceHash dd777bf7002f
+> Lisensi: MIT (kode) + CC-BY-SA 4.0 (data)
+
+## Apa ini
+Database referensi tarif pajak Indonesia yang machine-readable. Aturan memiliki:
+- ID aturan stabil + ID konsep stabil
+- interval berlaku half-open: `validFrom <= date < validToExclusive`
+- pemisahan valid time vs waktu pencatatan dataset
+- kondisi penerapan terstruktur (fact + op + value)
+- rate union bertipe (percentage, fixed, specific, progressive, formula, range, free_text, zero, not_applicable, information_factor)
+- provenance dan status verifikasi per klaim
+
+## Statistik kanonik (data v2)
+- 67 aturan
+- 41 konsep
+- 7 kategori
+- 49 aturan open-ended (tidak punya validToExclusive)
+- 47 aturan berstatus verified_primary (total di seluruh dataset)
+- 34 aturan berlaku saat ini (open-ended) DAN berstatus verified_primary
+- 13 aturan verified_primary historis (sudah tutup interval)
+- 5 aturan saat ini verified_secondary
+- 4 aturan needs_review (2 open-ended)
+- 2 aturan source_conflict
+- 9 aturan summary_only
+- 1 konflik sumber terbuka
+
+## Penentuan tarif (determination)
+Resolver mengembalikan satu dari lima nilai. Aturan main: JANGAN berikan jawaban pasti bila bukan `tepat`.
+- `tepat` — satu tarif cocok, semua fakta terpenuhi, didukung sumber primer. Hanya inilah yang boleh dilaporkan sebagai "tarif berlaku".
+- `bersyarat` — tarif cocok tetapi memerlukan fakta tambahan yang belum dipenuhi (mis. status NPWP penerima, klasifikasi BKP mewah, status konsumen akhir retail). Laporkan sebagai kondisional.
+- `rentang` — lebih dari satu tarif sah berlaku pada tanggal tersebut; fakta harus memilih. Laporkan rentang dan kondisi, bukan satu angka.
+- `fakta_kurang` — fakta transaksi kurang. JANGAN menebak satu angka. Minta fakta tambahan dan tampilkan kandidat.
+- `konflik_sumber` — ada konflik sumber yang belum diputuskan. JANGAN pernah memberikan jawaban pasti; tampilkan konflik.
+
+## Status verifikasi
+Setiap aturan punya status verifikasi. Hanya `verified_primary` yang boleh dirujuk sebagai tarif berlaku:
+- verified_primary — angka, periode, dan kondisi didukung sumber primer resmi beserta locator.
+- verified_secondary — sudah ditinjau tetapi sumber primer belum lengkap.
+- needs_review — belum cukup untuk klaim pasti. JANGAN ditulis sebagai tarif berlaku, bahkan bila intervalnya open-ended.
+- source_conflict — ada konflik sumber yang belum diputuskan; resolver tidak boleh mengembalikan `tepat` dari aturan ini.
+- summary_only — berguna sebagai orientasi, BUKAN kalkulator. Jangan dijadikan dasar angka final tanpa sumber primer.
+
+## Kategori (dengan jumlah aturan)
+- Illustrative fixtures — 5 aturan — https://tarif-pajak-id.pages.dev/kategori/illustrative
+- Pajak Penghasilan Badan — 8 aturan — https://tarif-pajak-id.pages.dev/kategori/pph-badan
+- Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026) — 9 aturan — https://tarif-pajak-id.pages.dev/kategori/pph-final-umkm
+- Pajak Penghasilan Pasal 21 — 20 aturan — https://tarif-pajak-id.pages.dev/kategori/pph-21
+- Pajak Penghasilan Pasal 23 — 11 aturan — https://tarif-pajak-id.pages.dev/kategori/pph-23
+- Pajak Pertambahan Nilai (PPN) — 13 aturan — https://tarif-pajak-id.pages.dev/kategori/ppn
+- Rezim Pajak Penghasilan Khusus (PPh Pasal 15 dan sejenisnya) — 1 aturan — https://tarif-pajak-id.pages.dev/kategori/pph-special-regimes
+
+## Tarif berlaku saat ini yang terverifikasi (verified_primary, open-ended)
+Total 47 aturan di seluruh dataset berstatus verified_primary, tetapi hanya 34 di antaranya yang berlaku saat ini (open-ended). Sisanya (13) verified_primary historis sudah tutup interval dan tidak berlaku lagi.
+Daftar di bawah ini hanya berisi 34 aturan yang open-ended DAN verified_primary. Inilah "tarif berlaku terverifikasi".
+(Catatan: 2 aturan needs_review open-ended TIDAK termasuk di daftar ini.)
+
+### Illustrative fixtures
+- Illustrative flat rate — 11% — 2025-01-01 → sekarang — rule-illustrative-flat-new — https://tarif-pajak-id.pages.dev/tarif/concept-illustrative-flat
+
+### Pajak Penghasilan Pasal 21
+- Penerima bukan pegawai: nonresiden (Pasal 26) — 20% — 2022-01-01 → sekarang — rule-pph-21-nonresident-default — https://tarif-pajak-id.pages.dev/tarif/concept-pph-21-recipient-nonresident
+- Penghasilan Tidak Kena Pajak (PTKP) — Faktor 1 — 2016-01-01 → sekarang — rule-pph-21-ptkp-2016-current — https://tarif-pajak-id.pages.dev/tarif/concept-pph-21-ptkp
+- Periode final PPh 21 (reconciliation Masa Pajak Terakhir) — Formula — 2024-01-01 → sekarang — rule-pph-21-final-period — https://tarif-pajak-id.pages.dev/tarif/concept-pph-21-final-period
+- Tarif Pasal 17 UU PPh tahunan (OP) — 5%/15%/25%/30%/35% — 2022-01-01 → sekarang — rule-pph-21-article17-annual-hpp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-21-article17-annual
+
+### Pajak Penghasilan Pasal 23
+- Pengecualian cakupan: persewaan tanah/bangunan adalah FINAL PPh 4(2) — N/A — 2009-01-01 → sekarang — rule-pph-23-scope-rent-land-building — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-scope-rent-land-building
+- PPh 23 atas jasa konsultan — 2% — 2009-01-01 → sekarang — rule-pph-23-jasa-konsultan-with-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-jasa-konsultan
+- PPh 23 atas jasa konsultan — 4% — 2009-01-01 → sekarang — rule-pph-23-jasa-konsultan-without-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-jasa-konsultan
+- PPh 23 atas jasa lain PMK 141/PMK.03/2015 — 2% — 2015-08-26 → sekarang — rule-pph-23-jasa-pmk141-lain-with-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-jasa-pmk141-lain
+- PPh 23 atas jasa lain PMK 141/PMK.03/2015 — 4% — 2015-08-26 → sekarang — rule-pph-23-jasa-pmk141-lain-without-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-jasa-pmk141-lain
+- PPh 23 atas jasa manajemen — 2% — 2009-01-01 → sekarang — rule-pph-23-jasa-manajemen-with-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-jasa-manajemen
+- PPh 23 atas jasa manajemen — 4% — 2009-01-01 → sekarang — rule-pph-23-jasa-manajemen-without-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-jasa-manajemen
+- PPh 23 atas jasa teknik — 2% — 2009-01-01 → sekarang — rule-pph-23-jasa-teknik-with-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-jasa-teknik
+- PPh 23 atas jasa teknik — 4% — 2009-01-01 → sekarang — rule-pph-23-jasa-teknik-without-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-jasa-teknik
+- PPh 23 atas sewa/perolehan harta selain tanah/bangunan — 2% — 2009-01-01 → sekarang — rule-pph-23-rent-movable-with-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-rent-movable
+- PPh 23 atas sewa/perolehan harta selain tanah/bangunan — 4% — 2009-01-01 → sekarang — rule-pph-23-rent-movable-without-npwp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-23-rent-movable
+
+### Pajak Penghasilan Badan
+- Fasilitas Pasal 31E(1) UU PPh: pengurangan 50% bagi badan kecil — Formula — 2010-01-01 → sekarang — rule-pph-badan-article31e — https://tarif-pajak-id.pages.dev/tarif/concept-pph-badan-article31e
+- Fasilitas pengurangan tarif perusahaan listed (UU PPh Pasal 17 ayat (2b) jo. PP 55/2022 jo. PMK 40/2023) — 19% — 2022-01-01 → sekarang — rule-pph-badan-listed-19pct-hpp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-badan-listed
+- Tarif dasar PPh Badan (UU PPh Pasal 17 ayat (1) huruf b) — 22% — 2022-01-01 → sekarang — rule-pph-badan-base-22pct-hpp — https://tarif-pajak-id.pages.dev/tarif/concept-pph-badan-base
+
+### Pajak Penghasilan Final Pasal 4(2) dan UMKM (PP 46/2013 / PP 23/2018 / PP 55/2022 / PP 20/2026)
+- PPh Final 10% persewaan tanah dan/atau bangunan (PP 34/2017) — 10% — 2018-01-02 → sekarang — rule-pph-final-rent-land-building — https://tarif-pajak-id.pages.dev/tarif/concept-pph-final-rent-land-building
+- PPh Final jasa konstruksi (PP 9/2022 mengubah PP 51/2008) — 2,65% — 2022-02-21 → sekarang — rule-pph-final-construction-besar-kualifikasi — https://tarif-pajak-id.pages.dev/tarif/concept-pph-final-construction
+- PPh Final jasa konstruksi (PP 9/2022 mengubah PP 51/2008) — 4% — 2022-02-21 → sekarang — rule-pph-final-construction-kecil-kualifikasi — https://tarif-pajak-id.pages.dev/tarif/concept-pph-final-construction
+- PPh Final transfer hak atas tanah dan/atau bangunan (PP 34/2016) — 2,5% — 2016-09-08 → sekarang — rule-pph-final-transfer-permukiman — https://tarif-pajak-id.pages.dev/tarif/concept-pph-final-transfer
+- PPh Final transfer hak atas tanah dan/atau bangunan (PP 34/2016) — 1% — 2016-09-08 → sekarang — rule-pph-final-transfer-sederhana — https://tarif-pajak-id.pages.dev/tarif/concept-pph-final-transfer
+- PPh Final UMKM PP 20/2026 (perubahan PP 55/2022, 0,5%) — 0,5% — 2026-04-22 → sekarang — rule-pph-final-umkm-pp20-2026 — https://tarif-pajak-id.pages.dev/tarif/concept-pph-final-umkm-pp20-2026
+
+### Pajak Pertambahan Nilai (PPN)
+- DPP nilai lain 11/12 untuk transaksi PPN non-mewah (PMK 131/2024 Pasal 3) — Faktor 0.9166667 — 2025-01-01 → sekarang — rule-ppn-dpp-nilai-lain-11-12 — https://tarif-pajak-id.pages.dev/tarif/concept-ppn-dpp-nilai-lain
+- PPN atas ekspor BKP/JKP berkualifikasi (0%) — 0% — 1984-04-01 → sekarang — rule-ppn-export-0pct — https://tarif-pajak-id.pages.dev/tarif/concept-ppn-export
+- PPN atas impor BKP — 12% — 2025-01-01 → sekarang — rule-ppn-import-2025-luxury — https://tarif-pajak-id.pages.dev/tarif/concept-ppn-import
+- PPN atas impor BKP — Formula — 2025-01-01 → sekarang — rule-ppn-import-2025-nonluxury — https://tarif-pajak-id.pages.dev/tarif/concept-ppn-import
+- PPN atas penyerahan BKP mewah kepada konsumen akhir oleh PKP retail (transisi Jan–Feb 2025) — 12% — 2025-02-01 → sekarang — rule-ppn-luxury-retail-feb-2025 — https://tarif-pajak-id.pages.dev/tarif/concept-ppn-luxury-retail
+- PPN atas penyerahan BKP/JKP dalam negeri — 12% — 2025-01-01 → sekarang — rule-ppn-domestic-supply-2025-luxury — https://tarif-pajak-id.pages.dev/tarif/concept-ppn-domestic-supply
+- PPN atas penyerahan BKP/JKP dalam negeri — Formula — 2025-01-01 → sekarang — rule-ppn-domestic-supply-2025-nonluxury — https://tarif-pajak-id.pages.dev/tarif/concept-ppn-domestic-supply
+- PPN atas penyerahan BKP/JKP dalam negeri — Faktor 0.9166667 — 2025-01-01 → sekarang — rule-ppn-domestic-supply-2025-nonluxury-dpp-factor — https://tarif-pajak-id.pages.dev/tarif/concept-ppn-domestic-supply
+- PPN atas perolehan JKP/BKP tidak berwujud dari luar negeri (utilization) — Formula — 2025-01-01 → sekarang — rule-ppn-foreign-utilization-2025 — https://tarif-pajak-id.pages.dev/tarif/concept-ppn-foreign-utilization
+
+## Aturan dengan caveats (JANGAN dirujuk sebagai tarif berlaku)
+
+### needs_review (4 aturan)
+Aturan ini belum cukup untuk klaim pasti. TIDAK boleh muncul sebagai tarif berlaku terverifikasi.
+- Illustrative flat rate — 10% — 2024-01-01 → 2025-01-01 — rule-illustrative-flat-old
+- Illustrative progressive rate — 5%/10%/20% — 2024-01-01 → sekarang — rule-illustrative-progressive
+- Tarif Pasal 17 UU PPh tahunan (OP) — 5%/15%/25%/30% — 2009-01-01 → 2022-01-01 — rule-pph-21-article17-annual-pre2022
+- Fasilitas PPh Badan IKN (PMK 28/2024) — Formula — 2023-01-01 → sekarang — rule-pph-badan-ikn
+
+### source_conflict (2 aturan)
+Aturan ini berada dalam konflik sumber yang belum diputuskan. Resolver tidak boleh mengembalikan `tepat` dari sini. JANGAN pernah memberikan jawaban pasti.
+- Illustrative conflicting rate — 15% — 2024-01-01 → 2025-01-01 — rule-illustrative-conflict-a
+- Illustrative conflicting rate — 20% — 2024-01-01 → 2025-01-01 — rule-illustrative-conflict-b
+
+### summary_only (9 aturan)
+Aturan ini berguna untuk orientasi, BUKAN kalkulator. Jangan dijadikan dasar angka final tanpa sumber primer.
+- PPh Pasal 15: perhitungan penghasilan neto khusus (delegasi) — Delegasi perhitungan penghasilan neto khusus menurut UU PPh Pasal 15 per industri (angkutan laut/udara internasional, perbankan/asuransi asing, BUT, ladang migas, panas bumi, dsb.). Beberapa bersifat final, beberapa dapat dikreditkan. — 2009-01-01 → sekarang — rule-pph-15-special
+- Natura / kenikmatan dari pemberi kerja — Formula — 2024-01-01 → sekarang — rule-pph-21-natura-summary
+- Rezim pemotongan PPh 21 pegawai tetap pra-2024 (PMK 252/2008) — Formula — 1984-01-01 → 2024-01-01 — rule-pph-21-pre2024-permanent-regime
+- Penerima bukan pegawai: peserta kegiatan (100% dasar) — Formula — 2024-01-01 → sekarang — rule-pph-21-recipient-activity-participant
+- Penerima: anggota dewan komisaris non-pegawai — Formula — 2024-01-01 → sekarang — rule-pph-21-recipient-commissioner
+- Penerima: mantan pegawai (pensiun kepadanya) — Formula — 2024-01-01 → sekarang — rule-pph-21-recipient-former-employee
+- Penerima bukan pegawai: tenaga ahli/pekerja bebas (norma 50%) — Faktor 0.5 — 2024-01-01 → sekarang — rule-pph-21-recipient-nonemployee-norma
+- Penerima: peserta pensiun / penarikan dana pensiun-JHT — 0%/5%/10%/15% — 2024-01-01 → sekarang — rule-pph-21-recipient-pension-lumpsum
+- Sisa Hasil Usaha (SHU) koperasi kepada anggota OP — 0% — 2022-01-01 → sekarang — rule-pph-21-shu-koperasi-final0
+
+## Endpoint AI-friendly
+- Index v2: https://tarif-pajak-id.pages.dev/api/v2/index.json
+- Aturan: https://tarif-pajak-id.pages.dev/api/v2/rules/index.json
+- Konsep: https://tarif-pajak-id.pages.dev/api/v2/concepts/index.json
+- Corpus aturan (untuk resolve client-side): https://tarif-pajak-id.pages.dev/api/v2/rules-corpus.json
+- Per tahun: https://tarif-pajak-id.pages.dev/api/v2/by-year/index.json
+- Per tanggal: https://tarif-pajak-id.pages.dev/api/v2/at-date/index.json
+- Sumber/provenance: https://tarif-pajak-id.pages.dev/api/v2/sources/index.json
+- OpenAPI v1+v2: https://tarif-pajak-id.pages.dev/api/v1/openapi.json · https://tarif-pajak-id.pages.dev/api/v2/openapi.json
+- Search index: https://tarif-pajak-id.pages.dev/api/v2/search-index.json
+- Ringkasan: https://tarif-pajak-id.pages.dev/llms.txt
+
+## Sumber primer
+- JDIH BPK: https://peraturan.bpk.go.id
+- DJP/Kemenkeu: https://www.pajak.go.id
+- Portal peraturan Kemenkeu: https://peraturan.go.id
+- Pasal.id (permen/.pdf): https://pasal.id
+
+## Disclaimer
+Database ini adalah referensi bersumber dari regulasi resmi Republik Indonesia,
+BUKAN nasihat pajak resmi dan BUKAN panduan pemerintah. Konteks fakta transaksi
+menentukan penerapan tarif. Selalu verifikasi ke sumber primer resmi terbaru
+sebelum mengambil keputusan perpajakan.

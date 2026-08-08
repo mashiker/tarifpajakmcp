@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "prefix": "28-417",
+    "count": 2,
+    "codes": [
+      {
+        "kode": "28-417-01",
+        "nama": "Bunga Simpanan yang Dibayarkan oleh Koperasi kepada Anggota Wajib Pajak Orang Pribadi (bunga sampai dengan Rp240.000,00)",
+        "tarif": 0,
+        "entryId": "pph-final-bunga-koperasi",
+        "entryTransactionType": "Bunga Simpanan Koperasi"
+      },
+      {
+        "kode": "28-417-02",
+        "nama": "Bunga Simpanan yang Dibayarkan oleh Koperasi kepada Anggota Wajib Pajak Orang Pribadi (bunga di atas Rp240.000,00)",
+        "tarif": 10,
+        "entryId": "pph-final-bunga-koperasi",
+        "entryTransactionType": "Bunga Simpanan Koperasi"
+      }
+    ]
+  }
+}

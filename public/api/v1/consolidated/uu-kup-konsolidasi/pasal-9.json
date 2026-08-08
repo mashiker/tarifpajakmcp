@@ -1,0 +1,47 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "9",
+    "bab": "III",
+    "title": "Penyampaian SPT Tambahan",
+    "status": "berlaku",
+    "description": "Ketentuan penyampaian SPT tambahan setelah pemeriksaan dimulai.",
+    "keywords": [
+      "SPT",
+      "tambahan",
+      "pemeriksaan"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penyesuaian ketentuan SPT tambahan"
+      }
+    ],
+    "text": "(1) WP dapat menyampaikan SPT Tambahan dalam hal WP mengetahui SPT yang disampaikan tidak benar.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "SPT Tambahan dapat disampaikan jika SPT yang telah disampaikan tidak benar.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

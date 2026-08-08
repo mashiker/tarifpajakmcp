@@ -1,0 +1,68 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-23-hadiah-penghargaan",
+    "category": "PPh",
+    "taxType": "PPh 23",
+    "transactionType": "Hadiah/Penghargaan kepada OP Bukan Pegawai",
+    "description": "Pemotongan PPh 23 final atas hadiah atau penghargaan yang diberikan kepada WP orang pribadi bukan pegawai yang berhubungan dengan pekerjaan, jasa, atau kegiatan, termasuk penghargaan kepada petugas/anggota kegiatan.",
+    "rate": {
+      "type": "percentage",
+      "value": 15
+    },
+    "taxBase": "Jumlah bruto hadiah/penghargaan (tidak termasuk PPN)",
+    "payer": "Penerima hadiah/penghargaan (OP bukan pegawai)",
+    "recipient": "Negara",
+    "withholder": "Penyelenggara kegiatan / pemberi hadiah/penghargaan",
+    "effectiveFrom": "2022-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 23 ayat (1) huruf d",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
+        "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif final 15% atas hadiah/penghargaan untuk non-pegawai. Termasuk penghargaan kepada petugas keamanan, anggota panitia, atau siapapun yang menerima imbalan terkait kegiatan tertentu. Tanpa NPWP: 15% × 2 = 30%.",
+    "tags": [
+      "pph-23",
+      "hadiah",
+      "penghargaan",
+      "final",
+      "15-persen",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-26",
+    "bppuKode": [
+      {
+        "kode": "24-100-01",
+        "nama": "Hadiah, Penghargaan, Bonus dan Lainnya Selain yang Telah Dipotong PPh Pasal 21 Ayat (1) Huruf E UU PPh",
+        "tarif": 15
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "Hadiah/Penghargaan kepada OP Bukan Pegawai Rp 100.000.000",
+        "calculation": "15% × 100.000.000",
+        "result": "Pajak = Rp 15.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-23-jasa-lain-2pct",
+        "pph-23-jasa-lain-4pct",
+        "pph-23-jasa-katering-2pct",
+        "pph-23-sewa-tanah-bangunan",
+        "pph-23-jasa-pre2001",
+        "pph-23-jasa-2001",
+        "pph-23-katering-pre2015"
+      ]
+    }
+  }
+}

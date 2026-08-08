@@ -1,0 +1,83 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-ppn-domestic-supply-2025-luxury",
+    "conceptId": "concept-ppn-domestic-supply",
+    "conceptName": "PPN atas penyerahan BKP/JKP dalam negeri",
+    "categoryId": "cat-ppn",
+    "categoryName": "Pajak Pertambahan Nilai (PPN)",
+    "validFrom": "2025-01-01",
+    "validToExclusive": null,
+    "rate": {
+      "type": "percentage",
+      "value": "0.12"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "transactionKind",
+          "value": "domestic-supply"
+        },
+        {
+          "op": "equals",
+          "fact": "luxuryBkp",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-7-2021-hpp",
+        "src-pmk-131-2024"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-7-2021-hpp",
+          "locator": "Pasal 7 HPP: tarif nominal PPN 12% mulai 2025-01-01"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-pmk-131-2024",
+          "locator": "PMK 131/2024 Pasal 2: BKP mewah yang dikenai PPnBM menggunakan DPP penuh (12%) atas penyerahan dalam negeri sejak 2025-01-01"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-pmk-131-2024",
+          "locator": "PMK 131/2024 Pasal 2: BKP mewah (luxuryBkp = true, subject to PPnBM)"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "ppn-domestic-supply-2025-luxury",
+    "supersedes": [],
+    "supersededBy": [],
+    "examples": [
+      {
+        "id": "ex-ppn-2025-luxury-full-12pct",
+        "label": "Penyerahan BKP mewah 1.000.000 pada 2025-06-15",
+        "illustrative": true,
+        "input": {
+          "dpp": "1000000",
+          "transactionKind": "domestic-supply",
+          "luxuryBkp": true
+        },
+        "expectedAmount": "120000.00",
+        "notes": "DPP penuh; PPN = 12% × 1.000.000 = 120.000. BKP mewah tunduk pada PPnBM (tersendiri)."
+      }
+    ],
+    "notes": "Penyerahan BKP mewah dalam negeri menggunakan DPP penuh dan tarif 12% per PMK 131/2024 Pasal 2 (BKP mewah juga tunduk PPnBM). Untuk penyerahan BKP mewah oleh PKP retail kepada konsumen akhir, lihat transisi Jan–Feb 2025 pada rule-ppn-luxury-retail-jan-2025 / rule-ppn-luxury-retail-feb-2025.",
+    "conflicts": []
+  }
+}

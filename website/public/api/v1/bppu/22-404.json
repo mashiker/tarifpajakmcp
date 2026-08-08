@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-09-11T02:40:00.000Z",
   "data": {
     "prefix": "22-404",
     "count": 2,
@@ -10,15 +10,15 @@
         "kode": "22-404-01",
         "nama": "Ekspor Komoditas Tambang Batubara, Mineral Logam, dan Mineral Bukan Logam yang Dilakukan Oleh Eksportir, Kecuali WP yang Terikat dalam PKP2B dan KK",
         "tarif": 1.5,
-        "entryId": "pph-22-impor-2024",
-        "entryTransactionType": "Impor Barang"
+        "entryId": "pph-22-ekspor-batubara",
+        "entryTransactionType": "Ekspor Batubara dan Mineral"
       },
       {
         "kode": "22-404-01",
         "nama": "Ekspor Komoditas Tambang Batubara, Mineral Logam, dan Mineral Bukan Logam yang Dilakukan Oleh Eksportir, Kecuali WP yang Terikat dalam PKP2B dan KK",
         "tarif": 1.5,
-        "entryId": "pph-22-ekspor-batubara",
-        "entryTransactionType": "Ekspor Batubara dan Mineral"
+        "entryId": "pph-22-impor-2024",
+        "entryTransactionType": "Impor Barang"
       }
     ]
   }

@@ -1,0 +1,58 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-badan-ikn-10y",
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "transactionType": "PPh Badan IKN 10 Tahun (10%)",
+    "description": "Tarif PPh badan 10% setelah masa fasilitas 0% di IKN.",
+    "rate": {
+      "type": "percentage",
+      "value": 10
+    },
+    "taxBase": "Penghasilan Kena Pajak (PKP) badan",
+    "payer": "WP Badan yang beroperasi di IKN",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 28/2023",
+        "article": "Pasal 2",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/196894/pp-no-28-tahun-2023"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "Tarif PPh badan 10% setelah masa fasilitas 0% di IKN.",
+    "examples": [
+      {
+        "scenario": "PT di IKN PKP Rp 1.000.000.000",
+        "calculation": "10% × 1.000.000.000",
+        "result": "PPh Badan = Rp 100.000.000"
+      }
+    ],
+    "tags": [
+      "pph-badan",
+      "ikn",
+      "fasilitas",
+      "berlaku"
+    ],
+    "lastVerified": "2026-05-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "pph-badan-2022-plus",
+        "pph-badan-pre2022",
+        "pph-badan-go-public",
+        "pph-badan-umkm",
+        "pph-badan-pre2010",
+        "pph-badan-pre2001",
+        "pph-badan-ikn-0pct"
+      ]
+    }
+  }
+}

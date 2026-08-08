@@ -1,18 +1,65 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-09-11T02:40:00.000Z",
   "data": {
-    "description": "Data untuk kalkulasi PPh Badan",
+    "description": "Data untuk kalkulasi PPh Badan (diproyeksikan dari aturan kanonik v2: UU PPh, UU 2/2020, UU HPP 7/2021, PP 55/2022, PMK 40/2023, PMK 28/2024)",
+    "sources": [
+      "src-pmk-28-2024-ikn",
+      "src-pmk-40-2023-listed",
+      "src-pp-55-2022-badan",
+      "src-uu-2-2020",
+      "src-uu-36-2008-pph",
+      "src-uu-7-2021-hpp"
+    ],
     "rates": {
-      "umum": 22,
-      "goPublic": 20,
-      "umkm": 11,
-      "ikn": 0
+      "umum": {
+        "rate": 22,
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null,
+        "note": "Tarif dasar PPh Badan 22% per UU 7/2021 HPP Pasal 17 ayat (1) huruf b (TP 2022 sampai saat ini). Sebelumnya 25% (UU 36/2008) dan 22% (UU 2/2020 untuk TP 2020-2021)."
+      },
+      "goPublic": {
+        "rate": 19,
+        "reductionPp": 3,
+        "effectiveFrom": "2022-01-01",
+        "effectiveTo": null,
+        "note": "Tarif perusahaan listed 19% = tarif dasar 22% dikurangi 3 persen poin (BUKAN 18% lama, BUKAN pengurangan proporsional 22% × 0,97) per UU 2/2020 dan UU HPP. Syarat Pasal 17(2b) UU PPh jo. PP 55/2022 Pasal 64-65 jo. PMK 40/2023: saham >=40% diperdagangkan, >=300 pemegang saham masing-masing <5%, dimiliki >=183 hari/tahun, kepatuhan pelaporan.",
+        "conditions": "Kualifikasi listed: free-float >=40%, >=300 pemegang saham, masing-masing <5%, kepemilikan >=183 hari/tahun, kepatuhan pelaporan."
+      },
+      "article31e": {
+        "type": "formula",
+        "ruleId": "rule-pph-badan-article31e",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": null,
+        "note": "Pasal 31E(1) UU PPh: pengurangan tarif 50% atas PKP yang PROPORSIONAL terhadap peredaran bruto pertama Rp4.800.000.000 (BUKAN pemulusan seluruh PKP dengan tarif 11%). Elegibilitas: badan resident dengan peredaran bruto <= Rp50.000.000.000. Bila peredaran bruto <= Rp4,8 miliar: seluruh PKP kena pengurangan 50%. Bila Rp4,8 miliar < peredaran bruto <= Rp50 miliar: porsi PKP = PKP × (Rp4,8 miliar / peredaran bruto) kena pengurangan 50%, sisanya kena tarif dasar penuh.",
+        "formula": "Pasal 31E(1) UU PPh. Elegibilitas: badan resident dengan peredaran bruto <= Rp50.000.000.000. Pengurangan tarif 50% atas PKP yang PROPORSIONAL terhadap peredaran bruto pertama Rp4.800.000.000 (bukan pemulusan seluruh PKP). Bila peredaran bruto <= Rp4.800.000.000: PPh = 50% × tarif dasar × PKP (seluruh PKP kena pengurangan). Bila Rp4.800.000.000 < peredaran bruto <= Rp50.000.000.000: porsi PKP kena pengurangan = PKP × (Rp4.800.000.000 / peredaran bruto); porsi tersebut kena (50% × tarif dasar), sisanya kena tarif dasar penuh."
+      },
+      "ikn": {
+        "type": "conditional",
+        "rate": null,
+        "ruleId": "rule-pph-badan-ikn",
+        "verification": "needs_review",
+        "effectiveFrom": "2023-01-01",
+        "effectiveTo": null,
+        "note": "Fasilitas PPh Badan IKN (PMK 28/2024) BERSYARAT dan verification needs_review — bukan tarif flat 0%. Art 4(1): pengurangan 100% untuk Pelaku Usaha IKN pada kategori/kualifikasi dan jendela investasi tertentu. Art 8/10: jadwal durasi menurut kategori bidang usaha (2023-2030 / 2031-2035 / 2036-2045). Art 8(5): pengurangan 50% untuk bidang usaha lain periode 2031-2045. Elegibilitas penuh per rekord belum sepenuhnya terbukti dari sumber primer.",
+        "formula": "PMK 28/2024. Art 4(1): pengurangan 100% atas PKP terutang untuk Pelaku Usaha IKN pada kategori/kualifikasi dan jendela investasi tertentu. Art 8/10: jadwal durasi menurut kategori bidang usaha dan jendela investasi (2023-2030 / 2031-2035 / 2036-2045). Art 8(5): pengurangan 50% untuk 'bidang usaha lain' pada periode 2031-2045."
+      }
     },
     "formula": {
       "pphBadan": "PPh = Tarif × PKP",
-      "pkp": "PKP = Penghasilan Neto - PTKP Badan"
+      "pkp": "PKP = Penghasilan Neto - PTKP Badan (jika ada)",
+      "listed": "Tarif listed = Tarif dasar - 3 persen poin (syarat free-float)",
+      "article31e": "Pengurangan 50% atas porsi PKP proporsional terhadap peredaran bruto pertama Rp4,8 miliar",
+      "ikn": "Fasilitas bersyarat (needs_review); bukan tarif flat"
+    },
+    "$projection": {
+      "v2RuleIds": [
+        "rule-pph-badan-article31e",
+        "rule-pph-badan-base-22pct-hpp",
+        "rule-pph-badan-ikn",
+        "rule-pph-badan-listed-19pct-hpp"
+      ]
     }
   }
 }

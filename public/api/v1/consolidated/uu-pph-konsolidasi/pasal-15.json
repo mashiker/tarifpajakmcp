@@ -1,0 +1,53 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "15",
+    "bab": "IV",
+    "bagian": "1",
+    "title": "Amortisasi",
+    "status": "diubah",
+    "description": "Ketentuan amortisasi pengeluaran untuk mendapatkan harta berwujud dan tidak berwujud.",
+    "keywords": [
+      "amortisasi",
+      "biaya perolehan",
+      "harta tidak berwujud"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Perubahan amortisasi"
+      }
+    ],
+    "text": "(1) Amortisasi atas pengeluaran untuk memperoleh harta tidak berwujud dan pengeluaran lain yang mempunyai masa manfaat lebih dari 1 (satu) tahun dilakukan dengan cara garis lurus atau saldo menurun.\n(2) Kelompok amortisasi:\na. Kelompok I: masa manfaat 4 tahun, garis lurus 25%, saldo menurun 50%;\nb. Kelompok II: masa manfaat 8 tahun, garis lurus 12,5%, saldo menurun 25%;\nc. Kelompok III: masa manfaat 16 tahun, garis lurus 6,25%, saldo menurun 12,5%;\nd. Kelompok IV: masa manfaat 20 tahun, garis lurus 5%.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Amortisasi harta tidak berwujud dan pengeluaran lain >1 tahun: garis lurus atau saldo menurun.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "4 kelompok amortisasi: I (4 thn), II (8 thn), III (16 thn), IV (20 thn).",
+        "status": "diubah"
+      }
+    ]
+  }
+}

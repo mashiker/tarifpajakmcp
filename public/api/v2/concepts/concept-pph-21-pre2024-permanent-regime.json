@@ -1,0 +1,21 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "concept-pph-21-pre2024-permanent-regime",
+    "categoryId": "cat-pph-21",
+    "name": "Rezim pemotongan PPh 21 pegawai tetap pra-2024 (PMK 252/2008)",
+    "slug": "pph-21-pre2024-permanent-regime",
+    "description": "Metode annualisasi tarif Pasal 17 untuk pegawai tetap sebelum TER berlaku (PMK 252/2008 dan pendahulunya). Tidak boleh diback-apply ke periode TER. Diringkas sebagai summary_only sampai seluruh lapisan historis sebelum 2008 ditelusuri penuh dari sumber primer.",
+    "ruleIds": [
+      "rule-pph-21-pre2024-permanent-regime"
+    ]
+  }
+}

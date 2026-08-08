@@ -1,22 +1,22 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-05-29T15:12:55.538Z",
+  "generated": "2026-09-11T02:40:00.000Z",
   "data": {
     "prefix": "28-499",
     "count": 2,
     "codes": [
       {
-        "kode": "28-499-02",
-        "nama": "Penghasilan yang Diterima atau Diperoleh Sehubungan dengan Kerja Sama dengan Lembaga Pengelola Investasi (LPI)",
-        "tarif": 7.5,
+        "kode": "28-499-01",
+        "nama": "Penghasilan Wajib Pajak yang Melakukan Kegiatan Usaha Jasa Maklon (Contract Manufacturing) Internasional di Bidang Produksi Mainan Anak-Anak",
+        "tarif": 2.1,
         "entryId": "pph-final-investasi-lpi",
         "entryTransactionType": "Penghasilan dari Kerja Sama dengan LPI / Jasa Maklon Internasional"
       },
       {
-        "kode": "28-499-01",
-        "nama": "Penghasilan Wajib Pajak yang Melakukan Kegiatan Usaha Jasa Maklon (Contract Manufacturing) Internasional di Bidang Produksi Mainan Anak-Anak",
-        "tarif": 2.1,
+        "kode": "28-499-02",
+        "nama": "Penghasilan yang Diterima atau Diperoleh Sehubungan dengan Kerja Sama dengan Lembaga Pengelola Investasi (LPI)",
+        "tarif": 7.5,
         "entryId": "pph-final-investasi-lpi",
         "entryTransactionType": "Penghasilan dari Kerja Sama dengan LPI / Jasa Maklon Internasional"
       }

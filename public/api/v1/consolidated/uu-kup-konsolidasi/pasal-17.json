@@ -1,0 +1,52 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "17",
+    "bab": "V",
+    "title": "Penyetoran Pajak",
+    "status": "diubah",
+    "description": "Ketentuan penyetoran pajak oleh WP dan/atau pemotong/pemungut pajak ke kas negara.",
+    "keywords": [
+      "penyetoran",
+      "kode billing",
+      "SUNAT"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "6",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "28",
+          "year": 2007
+        },
+        "changeType": "amended",
+        "effectiveDate": "2008-01-01",
+        "summary": "Penambahan SUNAT dan penyetoran elektronik"
+      }
+    ],
+    "text": "(1) Penyetoran pajak yang terutang berdasarkan SPT Masa wajib dilakukan oleh WP paling lambat akhir bulan berikutnya setelah Masa Pajak berakhir.\n(2) Penyetoran pajak yang terutang berdasarkan SPT Tahunan wajib dilakukan oleh WP paling lambat sebelum SPT Tahunan disampaikan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Penyetoran SPT Masa: paling lambat akhir bulan berikutnya.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "Penyetoran SPT Tahunan: sebelum SPT disampaikan.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}

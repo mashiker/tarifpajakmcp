@@ -1,0 +1,118 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v2",
+  "release": {
+    "generatedAt": "2026-09-11T02:40:00.000Z",
+    "sourceDateEpoch": 1789094400,
+    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "version": "0.1.0"
+  },
+  "data": {
+    "id": "rule-pph-badan-listed-19pct-uu2-2020",
+    "conceptId": "concept-pph-badan-listed",
+    "conceptName": "Fasilitas pengurangan tarif perusahaan listed (UU PPh Pasal 17 ayat (2b) jo. PP 55/2022 jo. PMK 40/2023)",
+    "categoryId": "cat-pph-badan",
+    "categoryName": "Pajak Penghasilan Badan",
+    "validFrom": "2020-01-01",
+    "validToExclusive": "2022-01-01",
+    "rate": {
+      "type": "percentage",
+      "value": "0.19"
+    },
+    "conditions": {
+      "op": "and",
+      "conditions": [
+        {
+          "op": "equals",
+          "fact": "taxpayerType",
+          "value": "badan"
+        },
+        {
+          "op": "equals",
+          "fact": "resident",
+          "value": true
+        },
+        {
+          "op": "equals",
+          "fact": "listed",
+          "value": true
+        },
+        {
+          "op": "exists",
+          "fact": "floatTradedPct"
+        },
+        {
+          "op": "exists",
+          "fact": "minShareholders"
+        },
+        {
+          "op": "exists",
+          "fact": "maxStakePct"
+        },
+        {
+          "op": "exists",
+          "fact": "heldDays"
+        },
+        {
+          "op": "equals",
+          "fact": "listedConditionsMet",
+          "value": true
+        }
+      ]
+    },
+    "verification": {
+      "status": "verified_primary",
+      "sourceIds": [
+        "src-uu-2-2020"
+      ],
+      "evidence": [
+        {
+          "claim": "rate",
+          "sourceId": "src-uu-2-2020",
+          "locator": "Pasal 5 ayat (1) huruf a UU 2/2020: perusahaan listed mendapat pengurangan 3 persen poin dari tarif dasar 22% menjadi 19%"
+        },
+        {
+          "claim": "interval",
+          "sourceId": "src-uu-2-2020",
+          "locator": "Berlaku Tahun Pajak 2020-2021 (rezim UU 2/2020)"
+        },
+        {
+          "claim": "condition",
+          "sourceId": "src-uu-2-2020",
+          "locator": "Pasal 5 ayat (1) huruf a jo. Pasal 17 ayat (2b) UU PPh: syarat free-float dan kepemilikan listed"
+        }
+      ],
+      "verifiedAt": "2026-08-06"
+    },
+    "exclusiveGroup": "pph-badan-listed",
+    "supersedes": [
+      "rule-pph-badan-listed-20pct-pre2020"
+    ],
+    "supersededBy": [
+      "rule-pph-badan-listed-19pct-hpp"
+    ],
+    "examples": [
+      {
+        "id": "ex-pph-badan-listed-19pct-2020",
+        "label": "Perusahaan listed memenuhi syarat, TP 2020 PKP 1.000.000.000",
+        "illustrative": true,
+        "input": {
+          "taxpayerType": "badan",
+          "resident": true,
+          "listed": true,
+          "floatTradedPct": "0.40",
+          "minShareholders": "300",
+          "maxStakePct": "0.05",
+          "heldDays": "200",
+          "listedConditionsMet": true,
+          "pkp": "1000000000"
+        },
+        "expectedAmount": "190000000.00",
+        "notes": "Tarif efektif = 22% - 3 persen poin (3 pp) = 19%. 19% × 1.000.000.000 = 190.000.000. Pengurangan dalam PERSEN POIN, bukan 3% proporsional (22% × 0,97 = 21,34% SALAH)."
+      }
+    ],
+    "notes": "Fasilitas perusahaan listed TP 2020-2021: pengurangan 3 PERSEN POIN (3 pp) dari tarif dasar 22% menjadi 19% per UU 2/2020 Pasal 5 ayat (1) huruf a. BUKAN pengurangan proporsional. Fakta listedConditionsMet adalah gate boolean yang diturunkan pemanggil dari ambang numerik: floatTradedPct >= 0,40, minShareholders >= 300, maxStakePct <= 0,05, heldDays >= 183.",
+    "conflicts": []
+  }
+}

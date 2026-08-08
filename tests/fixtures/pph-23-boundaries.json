@@ -1,0 +1,142 @@
+{
+  "$comment": "Boundary fixtures for PPh 23 + versioned BPPU migration (Task 5). Every expectation encodes a verified primary-source fact from UU 7/1983 jo. UU 36/2008 (PPh) Pasal 23 ayat (1) huruf c angka 2 / ayat (1a), PMK 141/PMK.03/2015, and the NIK-as-NPWP chronology (PMK 112/2022, PMK 136/2023, PENG-6/PJ.09/2024). Land/building rent is governed by PPh 4(2) final per PP 34/2017 (effective 2 Januari 2018) — encoded here only as a PPh 23 scope-exclusion marker (rate not_applicable) so the resolver never returns a 2% PPh 23 answer for it. Rates are stored as decimal fractions (0.02 = 2%). PPh amounts are 2-decimal currency strings in IDR. See data/v2/sources.json for primary locators.",
+  "sourcesVerifiedAt": "2026-08-06",
+  "effectiveDate": {
+    "$comment": "PPh 23 service rates under UU 36/2008 amendment became effective 1 Januari 2009. PMK 141/PMK.03/2015 expanded the 'jasa lain' list and jumlah bruto mechanics, promulgated 27 Juli 2015 with Pasal 4 mandating a 30-day lag → effective 26 Agustus 2015.",
+    "uu36EffectiveStart": "2009-01-01",
+    "pmk141Promulgated": "2015-07-27",
+    "pmk141EffectiveStart": "2015-08-26",
+    "pmk141DayBeforeEffective": "2015-08-25",
+    "pp34EffectiveStart": "2018-01-02",
+    "pp34DayBeforeEffective": "2018-01-01"
+  },
+  "serviceConcepts": {
+    "$comment": "PPh 23 ayat (1) huruf c angka 2: jasa teknik, jasa manajemen, jasa konstruksi, jasa konsultan, and PMK 141 'jasa lain'. Each concept is a distinct concept with explicit recipient conditions. Recipient must be a domestic taxpayer or BUT; the income must not already be PPh 21 (e.g. individual consultant fees paid in an employer-employee context); and no controlling final regime (e.g. PPh 4(2) for land/building rent, PPh 4(3) final construction) may apply.",
+    "teknik": { "conceptId": "concept-pph-23-jasa-teknik", "bppu": "bppu-24-104-01" },
+    "manajemen": { "conceptId": "concept-pph-23-jasa-manajemen", "bppu": "bppu-24-104-02" },
+    "konsultan": { "conceptId": "concept-pph-23-jasa-konsultan", "bppu": "bppu-24-104-03" },
+    "pmk141Lain": { "conceptId": "concept-pph-23-jasa-pmk141-lain", "bppu": null },
+    "rentMovable": { "conceptId": "concept-pph-23-rent-movable", "bppu": "bppu-24-100-02" },
+    "rentLandBuilding": { "conceptId": "concept-pph-23-scope-rent-land-building", "bppu": "bppu-28-403-02" }
+  },
+  "officialBppuCodes": {
+    "24-104-01": "Jasa Teknik",
+    "24-104-02": "Jasa Manajemen",
+    "24-104-03": "Jasa Konsultan",
+    "24-100-02": "Sewa/perolehan lain atas harta selain tanah/bangunan yang sudah final PPh 4(2)",
+    "28-403-02": "Persewaan Tanah dan/atau Bangunan (FINAL PPh 4(2))"
+  },
+  "boundaries": [
+    {
+      "id": "pmk141-day-before-effective",
+      "description": "PMK 141/PMK.03/2015 effective date is 26 Agustus 2015 (Pasal 4, 30-day lag from 27 Juli 2015). Day before (25 Agu 2015) the PMK-141 'jasa lain' concept must NOT yet apply — gap, not synthetic 2%.",
+      "date": "2015-08-25",
+      "request": { "conceptId": "concept-pph-23-jasa-pmk141-lain", "facts": { "serviceClass": "pmk141-lain", "recipientHasNpwp": true, "gross": "100000000" } },
+      "expect": { "determinationIn": ["fakta_kurang"], "gap": true }
+    },
+    {
+      "id": "pmk141-effective-day",
+      "description": "On the PMK 141 effective date (26 Agustus 2015) the 'jasa lain' concept resolves with a 2% rate (recipient with NPWP).",
+      "date": "2015-08-26",
+      "request": { "conceptId": "concept-pph-23-jasa-pmk141-lain", "facts": { "serviceClass": "pmk141-lain", "recipientHasNpwp": true, "gross": "100000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.02", "pphAmount": "2000000.00" }
+    },
+    {
+      "id": "jasa-konsultan-2020-with-npwp-goal-scenario",
+      "description": "Jevi's goal scenario: 'berapa tarif PPh 23 jasa konsultan tahun 2020?'. 2% of gross (excl. VAT) for a domestic-taxpayer recipient with NPWP. Source: UU PPh Pasal 23 ayat (1) huruf c angka 2.",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-23-jasa-konsultan", "facts": { "serviceClass": "konsultan", "recipientHasNpwp": true, "gross": "100000000" } },
+      "expect": {
+        "determinationIn": ["tepat", "bersyarat"],
+        "winningRateFraction": "0.02",
+        "pphAmount": "2000000.00",
+        "winnerSourceIncludes": ["src-uu-36-2008-pph"],
+        "winnerBppu": "bppu-24-104-03",
+        "noteMustMentionPph21": true
+      }
+    },
+    {
+      "id": "jasa-konsultan-2020-without-npwp-multiplier",
+      "description": "Pasal 23 ayat (1a): recipient without NPWP (and no valid integrated NIK in 2020) pays 100% higher → 2% becomes 4%.",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-23-jasa-konsultan", "facts": { "serviceClass": "konsultan", "recipientHasNpwp": false, "gross": "100000000" } },
+      "expect": {
+        "determinationIn": ["tepat", "bersyarat"],
+        "winningRateFraction": "0.04",
+        "pphAmount": "4000000.00"
+      }
+    },
+    {
+      "id": "jasa-konsultan-2020-missing-recipient-fact",
+      "description": "Without recipientHasNpwp fact, the multiplier branch is undecided → fakta_kurang, never a synthetic 2%.",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-23-jasa-konsultan", "facts": { "serviceClass": "konsultan", "gross": "100000000" } },
+      "expect": { "determinationIn": ["fakta_kurang"], "missingFact": "recipientHasNpwp" }
+    },
+    {
+      "id": "jasa-manajemen-2020",
+      "description": "Jasa manajemen 2020: 2% with NPWP. Distinct concept from konsultan — same rate family under Pasal 23(1)(c)(2).",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-23-jasa-manajemen", "facts": { "serviceClass": "manajemen", "recipientHasNpwp": true, "gross": "50000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.02", "pphAmount": "1000000.00" }
+    },
+    {
+      "id": "jasa-teknik-2020",
+      "description": "Jasa teknik 2020: 2% with NPWP under Pasal 23(1)(c)(2).",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-23-jasa-teknik", "facts": { "serviceClass": "teknik", "recipientHasNpwp": true, "gross": "200000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.02", "pphAmount": "4000000.00" }
+    },
+    {
+      "id": "rent-movable-2020-pph23-2pct",
+      "description": "Sewa harta selain tanah/bangunan remains PPh 23 2% (KOP 24-100-02) — NOT PPh 4(2) final. Recipient with NPWP.",
+      "date": "2020-06-15",
+      "request": { "conceptId": "concept-pph-23-rent-movable", "facts": { "serviceClass": "rent-movable", "recipientHasNpwp": true, "gross": "75000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.02", "pphAmount": "1500000.00" }
+    },
+    {
+      "id": "rent-land-building-pre-pp34-still-pph23",
+      "description": "Before PP 34/2017 took effect (1 Januari 2018), persewaan tanah/bangunan was PPh 23 final 10% (UU PPh Pasal 4(2) lama). For 2017 we still surface it under the PPh 23 scope marker as not_applicable-to-2% with a note that it was the old final 10% regime.",
+      "date": "2017-06-15",
+      "request": { "conceptId": "concept-pph-23-scope-rent-land-building", "facts": { "serviceClass": "rent-land-building" } },
+      "expect": { "determinationIn": ["bersyarat"], "winningRateType": "not_applicable" }
+    },
+    {
+      "id": "rent-land-building-post-pp34-excluded-from-pph23",
+      "description": "From PP 34/2017 effective 2 Januari 2018, persewaan tanah/bangunan is FINAL PPh 4(2) 10% — excluded from PPh 23. The PPh 23 concept carries rate not_applicable and a note pointing to PPh 4(2).",
+      "date": "2018-06-15",
+      "request": { "conceptId": "concept-pph-23-scope-rent-land-building", "facts": { "serviceClass": "rent-land-building" } },
+      "expect": { "determinationIn": ["bersyarat"], "winningRateType": "not_applicable", "noteMustMentionPph4_2": true }
+    },
+    {
+      "id": "nik-integrated-jan-2024-no-multiplier",
+      "description": "Per PENG-6/PJ.09/2024, a Masa Pajak Januari 2024 resident-individual recipient with a Dukcapil-integrated NIK is treated as having NPWP — the ayat (1a) 100% multiplier does NOT apply.",
+      "date": "2024-01-15",
+      "request": { "conceptId": "concept-pph-23-jasa-konsultan", "facts": { "serviceClass": "konsultan", "recipientHasNpwp": true, "nikIntegrated": true, "gross": "100000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.02", "pphAmount": "2000000.00" }
+    },
+    {
+      "id": "nik-bare-not-activated-2023-multiplier-still-applies",
+      "description": "Bare NIK without activation during the transition does NOT remove the ayat (1a) multiplier. A 2023 recipient without activated NPWP pays 4%.",
+      "date": "2023-06-15",
+      "request": { "conceptId": "concept-pph-23-jasa-konsultan", "facts": { "serviceClass": "konsultan", "recipientHasNpwp": false, "gross": "100000000" } },
+      "expect": { "determinationIn": ["tepat", "bersyarat"], "winningRateFraction": "0.04", "pphAmount": "4000000.00" }
+    },
+    {
+      "id": "pre-uu36-2008-no-rule",
+      "description": "Before UU 36/2008 took effect (1 Januari 2009), the modern PPh 23 service-rate regime does not apply — gap, not a synthetic number.",
+      "date": "2008-12-31",
+      "request": { "conceptId": "concept-pph-23-jasa-konsultan", "facts": { "serviceClass": "konsultan", "recipientHasNpwp": true, "gross": "100000000" } },
+      "expect": { "determinationIn": ["fakta_kurang"], "gap": true }
+    }
+  ],
+  "bppuVersioning": {
+    "$comment": "BPPU/KOP codes are first-class versioned reporting metadata with their own validity interval and source. They are NEVER the rate authority. The 24-104-0x codes' 'Berlaku' date in the KOP CSV is 2022-02-21 (KEP-143/PJ/2022); the canonical PPh 23 service rates themselves long predate that under UU 36/2008 + PMK 141/2015. The form chronology (PER-04/PJ/2017 → PER-23/PJ/2020 → PER-24/PJ/2021 → PER-11/PJ/2025 Coretax/BPPU) is encoded as the source registry and the BPPU validity interval, not as the rate.",
+    "formChronology": [
+      { "id": "src-per-04-pj-2017", "label": "PER-04/PJ/2017 (e-Bupot Masa PPh 23)", "validFrom": "2017-01-01", "validToExclusive": "2021-01-01" },
+      { "id": "src-per-23-pj-2020", "label": "PER-23/PJ/2020 (28 Des 2020, NOT retroactive for earlier 2020)", "validFrom": "2021-01-01", "validToExclusive": "2022-02-21" },
+      { "id": "src-kep-143-pj-2022", "label": "KEP-143/PJ/2022 + PER-24/PJ/2021 (KOP unifikasi berlaku 21 Feb 2022)", "validFrom": "2022-02-21", "validToExclusive": "2025-03-01" },
+      { "id": "src-per-11-pj-2025", "label": "PER-11/PJ/2025 (Coretax / BPPU)", "validFrom": "2025-03-01", "validToExclusive": null }
+    ]
+  }
+}

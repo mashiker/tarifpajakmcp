@@ -1,0 +1,42 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "44A",
+    "bab": "XIII",
+    "title": "Pengungkapan Sukarela",
+    "status": "ditambah",
+    "description": "Program Pengungkapan Sukarela bagi WP yang mengungkapkan harta yang belum dilaporkan.",
+    "keywords": [
+      "pengungkapan sukarela",
+      "tax amnesty",
+      "VDP"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "added",
+        "effectiveDate": "2022-01-01",
+        "summary": "Pasal baru tentang Voluntary Disclosure Program"
+      }
+    ],
+    "text": "(1) Setiap orang yang karena sengaja tidak mendaftarkan diri atau menyalahgunakan atau menggunakan NPWP orang lain sehingga menimbulkan kerugian bagi pendapatan negara diancam dengan pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp 100.000.000.\n(2) Tindak pidana sebagaimana dimaksud pada ayat (1) adalah kejahatan.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "Pidana penjara max 2 tahun atau denda max Rp100.000.000 atas kesengajaan NPWP.",
+        "status": "ditambah"
+      },
+      {
+        "number": "(2)",
+        "text": "Merupakan kejahatan.",
+        "status": "ditambah"
+      }
+    ]
+  }
+}

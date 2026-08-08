@@ -1,0 +1,68 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "id": "pph-badan-pre2010",
+    "category": "PPh",
+    "taxType": "PPh Badan",
+    "transactionType": "Penghasilan Kena Pajak Badan (Pra-2010)",
+    "description": "Tarif PPh badan 28% berdasarkan UU 17/2000 yang berlaku sebelum UU 36/2008.",
+    "rate": {
+      "type": "percentage",
+      "value": 28
+    },
+    "taxBase": "Penghasilan Kena Pajak (PKP) badan",
+    "payer": "WP Badan dalam negeri / BUT",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2001-01-01",
+    "effectiveTo": "2009-12-31",
+    "status": "diubah",
+    "legalBasis": [
+      {
+        "regulation": "UU 17/2000",
+        "article": "Pasal 17 ayat (1) huruf b",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44066/uu-no-17-tahun-2000"
+      }
+    ],
+    "supersedes": [
+      "pph-badan-pre2001"
+    ],
+    "supersededBy": [
+      "pph-badan-pre2022"
+    ],
+    "notes": "Tarif PPh badan 28% berdasarkan UU 17/2000. Go-public: 22%.",
+    "tags": [
+      "pph-badan",
+      "tarif-flat",
+      "historis",
+      "uu-17-2000"
+    ],
+    "lastVerified": "2026-05-27",
+    "examples": [
+      {
+        "scenario": "Penghasilan Kena Pajak Badan (Pra-2010) Rp 100.000.000",
+        "calculation": "28% × 100.000.000",
+        "result": "Pajak = Rp 28.000.000"
+      }
+    ],
+    "relatedEntries": {
+      "supersededBy": [
+        "pph-badan-pre2022"
+      ],
+      "supersedes": [
+        "pph-badan-pre2001"
+      ],
+      "sameCategory": [
+        "pph-badan-2022-plus",
+        "pph-badan-pre2022",
+        "pph-badan-go-public",
+        "pph-badan-umkm",
+        "pph-badan-pre2001",
+        "pph-badan-ikn-0pct",
+        "pph-badan-ikn-10y"
+      ]
+    }
+  }
+}

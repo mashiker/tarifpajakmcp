@@ -1,0 +1,63 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-09-11T02:40:00.000Z",
+  "data": {
+    "number": "28",
+    "bab": "VIII",
+    "title": "Fasilitas Pajak",
+    "status": "diubah",
+    "description": "Ketentuan fasilitas berupa pengurangan PPh terutang atau pembebasan bagi WP tertentu (investasi, IKN, dll).",
+    "keywords": [
+      "fasilitas",
+      "tax holiday",
+      "tax allowance",
+      "IKN"
+    ],
+    "amendmentHistory": [
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 1983
+        },
+        "changeType": "original",
+        "effectiveDate": "1984-01-01",
+        "summary": "Pasal asli"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "36",
+          "year": 2008
+        },
+        "changeType": "amended",
+        "effectiveDate": "2009-01-01",
+        "summary": "Perubahan fasilitas"
+      },
+      {
+        "source": {
+          "type": "UU",
+          "number": "7",
+          "year": 2021
+        },
+        "changeType": "amended",
+        "effectiveDate": "2022-01-01",
+        "summary": "Penambahan fasilitas IKN"
+      }
+    ],
+    "text": "(1) Pajak Penghasilan tidak final dikenakan atas penghasilan yang diterima atau diperoleh WP sebagaimana dimaksud dalam Pasal 4 ayat (1) dan ayat (2) yang tidak bersifat final.\n(2) Pajak Penghasilan tidak final sebagaimana dimaksud pada ayat (1) dihitung berdasarkan tarif yang berlaku dikalikan dengan penghasilan kena pajak.",
+    "ayats": [
+      {
+        "number": "(1)",
+        "text": "PPh tidak final dikenakan atas penghasilan WP yang tidak bersifat final.",
+        "status": "diubah"
+      },
+      {
+        "number": "(2)",
+        "text": "PPh tidak final = tarif berlaku × PKP.",
+        "status": "berlaku"
+      }
+    ]
+  }
+}
