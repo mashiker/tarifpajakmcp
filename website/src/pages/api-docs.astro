@@ -274,8 +274,8 @@ const apiBaseUrl = `${CANONICAL_ORIGIN}/api/`;
         <button id="api-copy-curl" class="btn-secondary">Copy curl</button>
       </div>
       <div id="api-response" class="code-block text-xs overflow-auto max-h-80">
-        {/* code-block selalu background gelap — teks di dalamnya pakai warna terang eksplisit, bukan token light-mode. */}
-        <span class="text-[#8B93A1]">Select an endpoint and click Execute...</span>
+        {/* code-block selalu background gelap — pakai token khusus (sama di light & dark). */}
+        <span class="text-[var(--code-muted)]">Select an endpoint and click Execute...</span>
       </div>
     </div>
   </div>
@@ -293,7 +293,7 @@ const apiBaseUrl = `${CANONICAL_ORIGIN}/api/`;
         <div class="card-hover p-5">
           <div class="text-sm font-medium text-[var(--text)] mb-3">{uc.q}</div>
           <div class="code-block text-xs py-2.5">
-            <span class="text-emerald-400">$</span> {uc.cmd} <span class="text-[#B6BCC6]">{uc.hint}</span>
+            <span class="text-emerald-400">$</span> {uc.cmd} <span class="text-[var(--code-soft)]">{uc.hint}</span>
           </div>
         </div>
       ))}
@@ -309,7 +309,7 @@ const apiBaseUrl = `${CANONICAL_ORIGIN}/api/`;
 
   btn?.addEventListener('click', async () => {
     const url = sel.value;
-    resp!.innerHTML = '<span class="text-[#8B93A1]">Loading...</span>';
+    resp!.innerHTML = '<span class="text-[var(--code-muted)]">Loading...</span>';
     try {
       const r = await fetch(url);
       const data = await r.json();
@@ -358,7 +358,7 @@ const apiBaseUrl = `${CANONICAL_ORIGIN}/api/`;
     padding: 0.0625rem 0.3125rem;
     border-radius: 0.25rem;
   }
-  :global(html.dark) .api-host-note { background: #111318; border-color: #23272F; }
-  :global(html.dark) .api-host-note-list { color: #B6BCC6; }
-  :global(html.dark) .api-host-note-list code { background: #1A1D24; }
+  :global(html.dark) .api-host-note { background: var(--surface); border-color: var(--border); }
+  :global(html.dark) .api-host-note-list { color: var(--text-secondary); }
+  :global(html.dark) .api-host-note-list code { background: var(--surface-alt); }
 </style>

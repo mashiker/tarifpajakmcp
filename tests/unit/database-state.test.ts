@@ -206,6 +206,56 @@ describe('filterDatabaseRows — text search', () => {
   it('returns nothing when no row matches', () => {
     expect(filterDatabaseRows(SAMPLE_ROWS, { ...DEFAULT_DATABASE_STATE, q: 'cukai' })).toEqual([]);
   });
+
+  it('finds "PPh Pasal 23" rows for the query "pph 23" (tokenized, not exact substring)', () => {
+    const rows = [
+      row({ id: 'r-pasal23', category: 'pph-23', name: 'PPh Pasal 23 atas jasa teknik', rate: '2%' }),
+      row({ id: 'r-ppn', category: 'ppn', name: 'PPN 12%', rate: '12%' }),
+    ];
+    const ids = filterDatabaseRows(rows, { ...DEFAULT_DATABASE_STATE, q: 'pph 23' }).map((r) => r.id);
+    expect(ids).toEqual(['r-pasal23']);
+  });
+
+  it('splits glued queries: "pph23" behaves like "pph 23"', () => {
+    const rows = [
+      row({ id: 'r-pasal23', category: 'pph-23', name: 'PPh Pasal 23 atas jasa teknik', rate: '2%' }),
+    ];
+    expect(filterDatabaseRows(rows, { ...DEFAULT_DATABASE_STATE, q: 'pph23' }).map((r) => r.id)).toEqual(['r-pasal23']);
+    // Kode regulasi menempel juga: pmk131, pp55, uu7.
+    expect(filterDatabaseRows(rows, { ...DEFAULT_DATABASE_STATE, q: 'pph23' })).length(1);
+  });
+
+  it('requires every query token to match (AND)', () => {
+    const rows = [
+      row({ id: 'r-jasa', category: 'pph-23', name: 'PPh 23 jasa lain', rate: '2%' }),
+      row({ id: 'r-sewa', category: 'pph-23', name: 'Sewa harta bergerak', rate: '2%' }),
+    ];
+    // "jasa sewa" tidak boleh mengambil kedua row — tiap token harus ada.
+    const ids = filterDatabaseRows(rows, { ...DEFAULT_DATABASE_STATE, q: 'jasa sewa' }).map((r) => r.id);
+    expect(ids).toEqual([]);
+  });
+
+  it('tolerates one-character typos on longer tokens (fuzzy)', () => {
+    const rows = [
+      row({ id: 'r-konstruksi', category: 'pph-4-2-final', name: 'Jasa konstruksi final', rate: '2,65%' }),
+    ];
+    expect(filterDatabaseRows(rows, { ...DEFAULT_DATABASE_STATE, q: 'konstruksu' }).map((r) => r.id)).toEqual(['r-konstruksi']);
+  });
+
+  it('does not fuzzy-match nonsense queries into results', () => {
+    expect(filterDatabaseRows(SAMPLE_ROWS, { ...DEFAULT_DATABASE_STATE, q: 'zzzzz-no-such-rate-xyz123' })).toEqual([]);
+  });
+
+  it('ranks results by relevance when a query is active (default sort)', () => {
+    const rows = [
+      row({ id: 'r-weak', category: 'pph-21', name: 'PPh 21 PTKP 2016 (kebetulan menyebut 23)', rate: 'Faktor 1' }),
+      row({ id: 'r-strong', category: 'pph-23', name: 'PPh Pasal 23 atas jasa', rate: '2%' }),
+    ];
+    const ids = filterDatabaseRows(rows, { ...DEFAULT_DATABASE_STATE, q: 'pph 23' }).map((r) => r.id);
+    // Nama yang memuat frasa "PPh 23/Pasal 23" harus di atas row yang hanya
+    // kebetulan mengandung token-nya.
+    expect(ids[0]).toBe('r-strong');
+  });
 });
 
 describe('filterDatabaseRows — category, status, verification, conflict', () => {

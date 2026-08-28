@@ -45,20 +45,21 @@ const isDefault = (a: string, b: string) => a === b;
 
 <form id="db-toolbar" class="db-toolbar" role="search" aria-label="Filter database tarif pajak" data-default-state="">
   <div class="db-toolbar-row db-toolbar-search">
-    <label for="db-input-q" class="db-field-label">Cari</label>
-    <div class="db-search-wrap">
+    <div class="db-search-bar">
+      <svg class="db-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      <label for="db-input-q" class="db-search-tag">Cari</label>
       <input
         id="db-input-q"
         name="q"
         type="search"
-        class="db-input db-search-input"
-        placeholder="Cari tarif, kategori, ID aturan…"
+        class="db-search-input"
+        placeholder="pph 23, sewa, cukai rokok, pmk131…"
         autocomplete="off"
         value={state.q}
       />
-      <svg class="db-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-      </svg>
+      <kbd class="db-search-kbd" aria-hidden="true">/</kbd>
     </div>
   </div>
 
@@ -162,7 +163,7 @@ const isDefault = (a: string, b: string) => a === b;
     background: var(--paper, #F7F8F4);
     border-bottom: 1px solid var(--rule, #D9E0DC);
   }
-  :global(html.dark) .db-toolbar { background: #0A0C10; border-bottom-color: #23272F; }
+  :global(html.dark) .db-toolbar { background: var(--bg); border-bottom-color: var(--border); }
 
   .db-toolbar-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
   .db-field { display: flex; flex-direction: column; gap: 0.25rem; flex: 1 1 9rem; min-width: 0; }
@@ -177,19 +178,66 @@ const isDefault = (a: string, b: string) => a === b;
      jadi basis 22rem diterjemahkan sebagai TINGGI 352px (bug gap raksasa di
      mobile). Row cukup ukuran konten (default flex: 0 1 auto). */
   .db-toolbar-search { flex: 0 0 auto; }
-  .db-search-wrap { position: relative; flex: 1; }
-  /* Dua class (>.db-input satu class) supaya mengalahkan .db-input yang
-     didefinisikan lebih bawah dengan specificity setara. */
-  .db-input.db-search-input { padding-left: 2.25rem; }
+  /* Search bar ringkas: ikon + tag + input dalam satu kapsul, max-width
+     terbatas supaya tidak membentang selebar halaman. */
+  .db-search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 40rem;
+    background: var(--surface, #FFFFFF);
+    border: 1px solid var(--border, #D9E0DC);
+    border-radius: 0.75rem;
+    padding: 0.3125rem 0.75rem 0.3125rem 0.625rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .db-search-bar:focus-within {
+    border-color: var(--accent, #0E5E58);
+    box-shadow: 0 0 0 3px var(--accent-soft, rgba(14, 94, 88, 0.12));
+  }
   .db-search-icon {
-    position: absolute;
-    left: 0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
     width: 1rem;
     height: 1rem;
-    color: var(--ink-tertiary, #8B93A1);
+    color: var(--text-tertiary, #5A6670);
+    flex-shrink: 0;
     pointer-events: none;
+  }
+  .db-search-tag {
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-tertiary, #5A6670);
+    padding-right: 0.5rem;
+    border-right: 1px solid var(--border, #D9E0DC);
+    flex-shrink: 0;
+  }
+  .db-search-input {
+    flex: 1;
+    min-width: 0;
+    height: 2rem;
+    border: none;
+    background: transparent;
+    color: var(--text, #132A2A);
+    font-size: 0.875rem;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    outline: none;
+  }
+  .db-search-input::placeholder { color: var(--text-tertiary, #5A6670); }
+  .db-search-input::-webkit-search-cancel-button { -webkit-appearance: none; }
+  .db-search-kbd {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.625rem;
+    color: var(--text-tertiary, #5A6670);
+    border: 1px solid var(--border, #D9E0DC);
+    border-radius: 0.25rem;
+    padding: 0.0625rem 0.375rem;
+    flex-shrink: 0;
+  }
+  @media (max-width: 639px) {
+    .db-search-bar { max-width: 100%; }
+    .db-search-kbd { display: none; }
   }
   .db-input {
     width: 100%;

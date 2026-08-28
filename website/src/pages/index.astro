@@ -62,16 +62,19 @@ for (const r of dataset.rows) {
 // Category metadata for pills/dots. Approved palette: deep teal accent, with
 // category-specific hues kept soft so the table reads as a reference sheet.
 const CATEGORY_COLOR: Record<string, string> = {
-  'pph-21': '#2563EB',
-  'pph-23': '#6366F1',
-  'pph-badan': '#0E5E58',
-  'pph-final-umkm': '#059669',
-  'pph-special-regimes': '#7C3AED',
-  'ppn': '#16A34A',
+  'pph-21': '#226FD3',              // biru
+  'pph-22': '#3227CE',              // indigo
+  'pph-23': '#702FC6',              // ungu
+  'pph-26': '#A737BE',              // purple
+  'pph-badan': '#CA2B88',           // magenta
+  'pph-final-umkm': '#2FC67A',      // hijau
+  'pph-special-regimes': '#18A8DC', // sky
+  'ppn': '#0FA394',                 // teal brand
 };
+const FALLBACK_CATEGORY_COLOR = '#698C8C';
 const categoryMeta: Record<string, { name: string; color?: string }> = {};
 for (const cat of dataset.categories) {
-  categoryMeta[cat.slug] = { name: cat.name, color: CATEGORY_COLOR[cat.slug] };
+  categoryMeta[cat.slug] = { name: cat.name, color: CATEGORY_COLOR[cat.slug] ?? FALLBACK_CATEGORY_COLOR };
 }
 
 // Pick a sensible default date label for the UI: the latest validFrom so the
@@ -128,9 +131,9 @@ try {
     </div>
     <dl class="db-stats" aria-label="Statistik dataset">
       <div class="db-stat"><dt>Aturan</dt><dd>{dataset.rows.length}</dd></div>
-      <div class="db-stat"><dt>Aktif</dt><dd>{statusCounts.berlaku}</dd></div>
-      <div class="db-stat"><dt>Konflik</dt><dd>{dataset.conflictCount}</dd></div>
-      <div class="db-stat"><dt>Kategori</dt><dd>{dataset.categories.length}</dd></div>
+      <div class="db-stat"><dt>Aktif</dt><dd class="db-stat-ok">{statusCounts.berlaku}</dd></div>
+      <div class="db-stat"><dt>Konflik</dt><dd class="db-stat-warn">{dataset.conflictCount}</dd></div>
+      <div class="db-stat"><dt>Kategori</dt><dd class="db-stat-info">{dataset.categories.length}</dd></div>
     </dl>
   </section>
 
@@ -536,20 +539,44 @@ try {
 
 <style>
   .db-hero {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    padding: 1.375rem 1.375rem 1.25rem;
+    margin-bottom: 0.625rem;
+    border: 1px solid var(--border, #D9E0DC);
+    border-radius: 1rem;
+    background:
+      radial-gradient(480px 180px at 88% -35%, rgba(99, 104, 238, 0.16), transparent 65%),
+      radial-gradient(520px 210px at 6% -45%, rgba(20, 184, 166, 0.20), transparent 65%),
+      var(--surface, #FFFFFF);
+    overflow: hidden;
   }
+  /* Dot-grid halus memudar ke bawah — pola murah yang menghilangkan kesan datar. */
+  .db-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(var(--border, #D9E0DC) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.55;
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent 80%);
+    mask-image: linear-gradient(to bottom, black, transparent 80%);
+    pointer-events: none;
+  }
+  .db-hero-main, .db-stats { position: relative; z-index: 1; }
   .db-title { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.01em; color: var(--ink, #132A2A); margin: 0; }
   .db-subtitle { font-size: 0.8125rem; color: var(--ink-secondary, #44545a); margin: 0.25rem 0 0; }
   .db-stats { display: flex; gap: 1rem; margin: 0; }
   .db-stat { display: flex; flex-direction: column; gap: 0; }
-  .db-stat dt { font-size: 0.625rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-tertiary, #8B93A1); font-weight: 600; }
+  .db-stat dt { font-size: 0.625rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-tertiary, var(--text-tertiary)); font-weight: 600; }
   .db-stat dd { margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 1rem; font-weight: 700; color: var(--ink, #132A2A); }
+  .db-stat .db-stat-ok { color: var(--stat-ok, #1E8E5A); }
+  .db-stat .db-stat-warn { color: var(--stat-warn, #B45309); }
+  .db-stat .db-stat-info { color: var(--stat-info, #1D5FBF); }
 
   .db-results { padding-top: 0.75rem; }
   .db-visible-count {
@@ -559,7 +586,7 @@ try {
   }
   .db-default-date-hint {
     font-size: 0.6875rem;
-    color: var(--ink-tertiary, #8B93A1);
+    color: var(--ink-tertiary, var(--text-tertiary));
     margin: 0 0 0.75rem;
   }
   .db-date-suggest {
@@ -588,12 +615,12 @@ try {
     padding: 0.625rem 0.875rem;
     border-top: 1px solid var(--rule, #D9E0DC);
     font-size: 0.6875rem;
-    color: var(--ink-tertiary, #8B93A1);
+    color: var(--ink-tertiary, var(--text-tertiary));
   }
-  :global(html.dark) .db-title { color: #EDF0F5; }
-  :global(html.dark) .db-subtitle { color: #8B93A1; }
-  :global(html.dark) .db-stat dd { color: #EDF0F5; }
-  :global(html.dark) .db-stat dt { color: #555D6E; }
-  :global(html.dark) .db-visible-count { color: #8B93A1; }
-  :global(html.dark) .db-disclaimer { color: #555D6E; border-top-color: #23272F; }
+  :global(html.dark) .db-title { color: var(--text); }
+  :global(html.dark) .db-subtitle { color: var(--text-tertiary); }
+  :global(html.dark) .db-stat dd { color: var(--text); }
+  :global(html.dark) .db-stat dt { color: var(--text-tertiary); }
+  :global(html.dark) .db-visible-count { color: var(--text-tertiary); }
+  :global(html.dark) .db-disclaimer { color: var(--text-tertiary); border-top-color: var(--border); }
 </style>

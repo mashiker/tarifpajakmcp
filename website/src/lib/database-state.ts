@@ -242,14 +242,154 @@ function matchesTemporal(row: DatabaseRow, date: string): boolean {
   return true;
 }
 
+// ---------------------------------------------------------------------------
+// Text search — tokenized, alias-aware, field-weighted, ranked.
+//
+// Sebelumnya ini substring eksak (`haystack.includes(q)`): mengetik "pph 23"
+// TIDAK menemukan "PPh Pasal 23 atas jasa teknik" karena tidak ada substring
+// "pph 23" di haystack. Sekarang:
+//   1. Query & haystack ditokenisasi (split non-alphanumeric).
+//   2. Query compact ala "pph23"/"pmk131" dipecah jadi ["pph","23"] dsb.
+//   3. SEMUA token query harus match (AND), tiap token dinilai kualitas
+//      match-nya: exact > prefix > substring > fuzzy (edit distance ≤1).
+//   4. Skor = jumlah (kualitas × bobot field): name > category > id > rate,
+//      bonus frasa utuh. Hasil diurutkan by skor saat query aktif.
+// Deterministik & pure: input sama -> output sama (dipakai server & client).
+// ---------------------------------------------------------------------------
+
+interface RowSearchIndex {
+  /** Field terpisah, sudah lowercase: [teks, bobot]. */
+  fields: Array<{ text: string; weight: number; tokens: string[]; compact: string }>;
+  /** Gabungan semua field untuk frasa-bonus & substring fallback. */
+  rawAll: string;
+  compactAll: string;
+}
+
+const FIELD_WEIGHTS: Array<[keyof DatabaseRow, number]> = [
+  ['name', 6],
+  ['category', 4],
+  ['id', 2],
+  ['ruleId', 2],
+  ['rate', 1],
+];
+
+const searchIndexCache = new WeakMap<DatabaseRow, RowSearchIndex>();
+
+function tokenize(text: string): string[] {
+  return text.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+}
+
+function compact(text: string): string {
+  return text.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+/** Prefix alphanumeric yang boleh "menempel" dengan angka: pph23 → pph+23. */
+const GLUED_PREFIX = new Set(['pph', 'ppn', 'pbb', 'pp', 'pmk', 'uu', 'bpe']);
+
+function expandGluedQuery(rawQuery: string): string[] {
+  const tokens: string[] = [];
+  for (const t of tokenize(rawQuery)) {
+    const glued = t.match(/^([a-z]{2,4})(\d{1,4}[a-z]?)$/);
+    if (glued && GLUED_PREFIX.has(glued[1])) {
+      tokens.push(glued[1], glued[2]);
+    } else {
+      tokens.push(t);
+    }
+  }
+  return tokens;
+}
+
+function buildSearchIndex(row: DatabaseRow): RowSearchIndex {
+  const fields = FIELD_WEIGHTS.map(([key, weight]) => {
+    const text = String(row[key] ?? '').toLowerCase();
+    return { text, weight, tokens: tokenize(text), compact: compact(text) };
+  });
+  const rawAll = fields.map((f) => f.text).join(' ');
+  return { fields, rawAll, compactAll: compact(rawAll) };
+}
+
+/** Levenshtein edit distance, dibatasi max untuk early-exit. */
+function editDistanceWithin(a: string, b: string, max: number): boolean {
+  if (Math.abs(a.length - b.length) > max) return false;
+  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    let rowMin = i;
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+      rowMin = Math.min(rowMin, cur[j]);
+    }
+    if (rowMin > max) return false;
+    prev = cur;
+  }
+  return prev[b.length] <= max;
+}
+
+/**
+ * Kualitas match terbaik sebuah token query terhadap satu field.
+ * Return 0 jika tidak match. Nilai 0..1 dikali bobot field.
+ */
+function tokenFieldScore(qTok: string, field: RowSearchIndex['fields'][number]): number {
+  const qLen = qTok.length;
+  // Substring mentah (menangkap fragmen id seperti "pph23-2" di "r-pph23-2").
+  if (qLen >= 3 && field.text.includes(qTok)) return 0.6;
+  for (const hTok of field.tokens) {
+    if (hTok === qTok) return 1;
+  }
+  if (qLen >= 2) {
+    for (const hTok of field.tokens) {
+      if (hTok.startsWith(qTok)) return 0.8;
+    }
+  }
+  if (qLen >= 3) {
+    const qCompact = compact(qTok);
+    for (const hTok of field.tokens) {
+      if (hTok.length >= qCompact.length && hTok.startsWith(qCompact)) return 0.7;
+      const hCompact = compact(hTok);
+      if (qCompact.length >= 3 && hCompact.startsWith(qCompact)) return 0.7;
+    }
+  }
+  // Fuzzy typo: 1 edit untuk token pendek-sedang, 2 untuk panjang.
+  if (qLen >= 4) {
+    const maxEdits = qLen >= 8 ? 2 : 1;
+    for (const hTok of field.tokens) {
+      if (Math.abs(hTok.length - qLen) > maxEdits) continue;
+      if (editDistanceWithin(qTok, hTok, maxEdits)) return 0.5;
+    }
+  }
+  return 0;
+}
+
+/** Skor relevansi row terhadap query; 0 berarti tidak match. */
+export function searchScore(row: DatabaseRow, q: string): number {
+  if (!q) return 0;
+  const index = searchIndexCache.get(row) ?? buildSearchIndex(row);
+  searchIndexCache.set(row, index);
+  const qTokens = expandGluedQuery(q);
+  if (qTokens.length === 0) return 0;
+
+  let total = 0;
+  for (const qTok of qTokens) {
+    let best = 0;
+    for (const field of index.fields) {
+      const s = tokenFieldScore(qTok, field);
+      if (s > best) best = s;
+    }
+    if (best === 0) return 0; // AND: satu token saja gagal -> row tidak match
+    total += best;
+  }
+  // Bonus frasa utuh ("pph 23" muncul berurutan setelah compact).
+  const compactQuery = compact(qTokens.join(' '));
+  if (compactQuery.length >= 4 && index.compactAll.includes(compactQuery)) {
+    total *= 1.35;
+  }
+  return total;
+}
+
 function matchesText(row: DatabaseRow, q: string): boolean {
   if (!q) return true;
-  // Defensively lowercase the query: callers may construct state inline
-  // without going through `parseDatabaseState`. The haystack is always
-  // lowercased so the comparison is case-insensitive in both directions.
-  const needle = q.toLowerCase();
-  const haystack = `${row.id} ${row.ruleId ?? ''} ${row.category} ${row.name} ${row.rate}`.toLowerCase();
-  return haystack.includes(needle);
+  return searchScore(row, q) > 0;
 }
 
 function matchesCategory(row: DatabaseRow, category: string): boolean {
@@ -355,16 +495,33 @@ export function filterDatabaseRows(
       break;
     case 'category':
     default:
-      filtered.sort(
-        (a, b) =>
-          a.category.localeCompare(b.category) ||
-          // Precedence berdasarkan STATUS turunan baris (berlaku → dicabut).
-          // STATUS_PRECEDENCE berkunci status; sebelumnya dipakai dengan kunci
-          // verification token sehingga tiebreaker ini selalu mati (9-9).
-          (STATUS_PRECEDENCE[deriveRowStatus(a, today ?? '')] ?? 9) -
-            (STATUS_PRECEDENCE[deriveRowStatus(b, today ?? '')] ?? 9) ||
-          byId(a, b),
-      );
+      if (state.q) {
+        // Relevance ranking: hasil pencarian diurutkan by skor (desc),
+        // lalu kategori & id sebagai tie-break deterministik. Sort lain
+        // (rate/tanggal) tetap menimpa urutan relevansi.
+        filtered.sort(
+          (a, b) =>
+            searchScore(b, state.q) - searchScore(a, state.q) ||
+            a.category.localeCompare(b.category) ||
+            // Precedence berdasarkan STATUS turunan baris (berlaku → dicabut).
+            // STATUS_PRECEDENCE berkunci status; sebelumnya dipakai dengan kunci
+            // verification token sehingga tiebreaker ini selalu mati (9-9).
+            (STATUS_PRECEDENCE[deriveRowStatus(a, today ?? '')] ?? 9) -
+              (STATUS_PRECEDENCE[deriveRowStatus(b, today ?? '')] ?? 9) ||
+            byId(a, b),
+        );
+      } else {
+        filtered.sort(
+          (a, b) =>
+            a.category.localeCompare(b.category) ||
+            // Precedence berdasarkan STATUS turunan baris (berlaku → dicabut).
+            // STATUS_PRECEDENCE berkunci status; sebelumnya dipakai dengan kunci
+            // verification token sehingga tiebreaker ini selalu mati (9-9).
+            (STATUS_PRECEDENCE[deriveRowStatus(a, today ?? '')] ?? 9) -
+              (STATUS_PRECEDENCE[deriveRowStatus(b, today ?? '')] ?? 9) ||
+            byId(a, b),
+        );
+      }
       break;
   }
 

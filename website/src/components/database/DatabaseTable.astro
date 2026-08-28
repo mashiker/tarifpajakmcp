@@ -80,7 +80,7 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
     /* Di dalam scroll container, sticky per shell: tetap kunci ke atas shell. */
     .db-table thead th { top: 0; }
   }
-  html.dark .db-table thead th { background: var(--surface, #111318); }
+  html.dark .db-table thead th { background: var(--surface, var(--surface)); }
   .db-table .col-category { width: 9rem; }
   .db-table .col-rate { width: 7rem; }
   .db-table .col-verification { width: 8.5rem; }
@@ -97,14 +97,22 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
     gap: 0.375rem;
     padding: 0.125rem 0.5rem;
     border-radius: 0.375rem;
+    /* Deklarasi kedua (color-mix) menimpa fallback di browser modern:
+       tint 12% warna kategori + border tipis 30%. Teks tetap ink (AA). */
     background: var(--surface-alt, #EFF1EC);
+    background: color-mix(in srgb, var(--cat-color, var(--accent, #0E5E58)) 12%, transparent);
+    border: 1px solid transparent;
+    border-color: color-mix(in srgb, var(--cat-color, var(--accent, #0E5E58)) 30%, transparent);
     color: var(--text-secondary, #44545A);
     font-size: 0.75rem;
     font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.15s ease;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
   }
-  .db-category-pill:hover { background: var(--border, #D9E0DC); color: var(--text, #132A2A); }
+  .db-category-pill:hover {
+    background: color-mix(in srgb, var(--cat-color, var(--accent, #0E5E58)) 20%, transparent);
+    color: var(--text, #132A2A);
+  }
   .db-category-dot {
     width: 0.4375rem;
     height: 0.4375rem;

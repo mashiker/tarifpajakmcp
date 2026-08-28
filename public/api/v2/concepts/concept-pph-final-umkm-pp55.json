@@ -2,10 +2,10 @@
   "api": "tarif-pajak-id",
   "version": "v2",
   "release": {
-    "generatedAt": "2026-08-28T06:23:00.000Z",
-    "sourceDateEpoch": 1787898180,
+    "generatedAt": "2026-08-28T08:21:36.000Z",
+    "sourceDateEpoch": 1787905296,
     "sourceHash": "ca945dce06e5a02561cb265033c18fa8c545dc8f88de43fb8de6a5f0b211bc4e",
-    "gitCommit": "3fea6d33fcc7e003ab9097a8da17cea9f1c82eab",
+    "gitCommit": "72c2dfe27376d73bbfa50f3b99bef315262267a7",
     "version": "0.1.0"
   },
   "data": {

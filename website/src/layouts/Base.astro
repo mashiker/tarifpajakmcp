@@ -114,6 +114,13 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
       --status-changed:  #B7791F;
       --status-changed-strong: #8A5A13; /* badge text di atas highlight-soft: AA 4.5:1 */
       --status-pending:  #5A6670;
+      /* Warna statistik hero — AA pada bg terang (bold 16px ≥4.5:1). */
+      --stat-info:       #1D5FBF;
+      --stat-ok:         #1E8E5A;
+      --stat-warn:       #B45309;
+      /* Konten di dalam .code-block (selalu background gelap, light & dark). */
+      --code-muted:      #97A3AF;
+      --code-soft:       #C2CBD4;
       --header-height:   56px;
       --font-mono:       "IBM Plex Mono", monospace;
       /* Aliases used by the new database components. */
@@ -123,22 +130,23 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
       --rule:            #D9E0DC;
       --paper:           #F7F8F4;
     }
-    /* Dark mode CSS variables. AA-tested against dark surfaces. */
+    /* Dark mode CSS variables — teal-tinted (bukan abu netral) supaya dark
+       mode ikut "berwarna" dan nyambung dengan accent. AA-tested. */
     html.dark {
-      --bg:              #0A0C10;
-      --surface:         #111318;
-      --surface-alt:     #1A1D24;
-      --border:          #23272F;
-      --border-subtle:   #1D2028;
-      --text:            #EDF0F5;
-      --text-secondary:  #B6BCC6;
-      --text-tertiary:   #8B93A1;
-      --accent:          #2DD4BF;
-      --accent-hover:    #5EEAD4;
-      --accent-soft:     rgba(13, 148, 136, 0.08);
-      --accent-text:     #2DD4BF;
+      --bg:              #0C1B1A;
+      --surface:         #132826;
+      --surface-alt:     #1C3835;
+      --border:          #27504C;
+      --border-subtle:   #1E3F3C;
+      --text:            #E8F1EF;
+      --text-secondary:  #B7CBC7;
+      --text-tertiary:   #8FA8A3;
+      --accent:          #3BD8C2;
+      --accent-hover:    #6BE5D4;
+      --accent-soft:     rgba(59, 216, 194, 0.10);
+      --accent-text:     #3BD8C2;
       --highlight:       #FBBF24;
-      --highlight-soft:  rgba(251, 191, 36, 0.08);
+      --highlight-soft:  rgba(251, 191, 36, 0.10);
       --status-active:   #34D399;
       --status-revoked:  #F87171;
       --status-revoked-strong: #FCA5A5;
@@ -146,11 +154,17 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
       --status-changed:  #FBBF24;
       --status-changed-strong: #FCD34D;
       --status-pending:  #94A3B8;
-      --ink:             #EDF0F5;
-      --ink-secondary:   #B6BCC6;
-      --ink-tertiary:    #8B93A1;
-      --rule:            #23272F;
-      --paper:           #0A0C10;
+      /* Warna statistik hero (light-safe padanan di :root bawah). */
+      --stat-info:       #60A5FA;
+      --stat-ok:         #4ADE80;
+      --stat-warn:       #FBBF24;
+      --code-muted:      #97A3AF;
+      --code-soft:       #C2CBD4;
+      --ink:             #E8F1EF;
+      --ink-secondary:   #B7CBC7;
+      --ink-tertiary:    #8FA8A3;
+      --rule:            #27504C;
+      --paper:           #0C1B1A;
     }
     body {
       color: var(--text);
@@ -323,20 +337,31 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
     }
   });
 
-  // ⌘K shortcut
+  // ⌘K dan "/" shortcut — fokus ke search database (jika ada di halaman).
+  const isTypingTarget = (el) =>
+    el instanceof HTMLElement && (el.tagName === 'INPUT' || el.tagName === 'SELECT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
+  function focusSearch() {
+    const dbInput = document.querySelector<HTMLInputElement>('#db-input-q');
+    const mobileInput = document.querySelector<HTMLInputElement>('#mobile-search-input');
+    if (dbInput) {
+      dbInput.focus();
+      dbInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      if (mobileMenu?.classList.contains('hidden')) mobileMenu.classList.remove('hidden');
+      syncMobileMenuAria();
+      if (mobileInput) mobileInput.focus();
+    }
+  }
   document.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
       e.preventDefault();
-      const dbInput = document.querySelector<HTMLInputElement>('#db-input-q');
-      const mobileInput = document.querySelector<HTMLInputElement>('#mobile-search-input');
-      if (dbInput) {
-        dbInput.focus();
-        dbInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else {
-        if (mobileMenu?.classList.contains('hidden')) mobileMenu.classList.remove('hidden');
-        syncMobileMenuAria();
-        if (mobileInput) mobileInput.focus();
-      }
+      focusSearch();
+      return;
+    }
+    // "/" fokus search — hanya saat user tidak sedang mengetik di field lain.
+    if (e.key === '/' && !e.metaKey && !e.ctrlKey && !e.altKey && !isTypingTarget(document.activeElement)) {
+      e.preventDefault();
+      focusSearch();
     }
   });
 </script>

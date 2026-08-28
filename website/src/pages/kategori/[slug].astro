@@ -117,13 +117,13 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
       })}
     </ul>
     <style is:inline>
-      .v2cat-breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem; font-size: 0.75rem; color: var(--ink-tertiary, #8B93A1); margin-bottom: 0.75rem; }
+      .v2cat-breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem; font-size: 0.75rem; color: var(--ink-tertiary, var(--text-tertiary)); margin-bottom: 0.75rem; }
       .v2cat-breadcrumb a { color: var(--ink-secondary, #44545a); text-decoration: none; }
       .v2cat-breadcrumb a:hover { color: #0E5E58; text-decoration: underline; }
       .v2cat-breadcrumb-current { color: var(--ink, #132A2A); font-weight: 600; }
       .v2cat-header { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--rule, #D9E0DC); }
       .v2cat-title { font-size: 1.375rem; font-weight: 700; color: var(--ink, #132A2A); margin: 0; letter-spacing: -0.01em; }
-      .v2cat-subtitle { font-size: 0.75rem; color: var(--ink-tertiary, #8B93A1); margin: 0.25rem 0 0; font-family: 'IBM Plex Mono', monospace; }
+      .v2cat-subtitle { font-size: 0.75rem; color: var(--ink-tertiary, var(--text-tertiary)); margin: 0.25rem 0 0; font-family: 'IBM Plex Mono', monospace; }
       .v2cat-desc { font-size: 0.8125rem; color: var(--ink-secondary, #44545a); margin: 0.5rem 0 0; line-height: 1.5; max-width: 70ch; }
       .v2cat-filter-link { display: inline-block; padding: 0.375rem 0.75rem; border: 1px solid var(--rule, #D9E0DC); border-radius: 0.5rem; background: var(--surface, #FFFFFF); color: #0E5E58; text-decoration: none; font-size: 0.75rem; font-weight: 600; flex-shrink: 0; }
       .v2cat-filter-link:hover { border-color: #0E5E58; text-decoration: underline; }
@@ -133,12 +133,12 @@ const next = ci < api.categories.length - 1 ? api.categories[ci + 1] : null;
       .v2cat-item-link:hover { background: var(--surface-alt, #EFF1EC); }
       .v2cat-item-name { flex: 1 1 18rem; font-weight: 600; color: var(--ink, #132A2A); font-size: 0.875rem; }
       .v2cat-item-rate { font-family: 'IBM Plex Mono', monospace; font-weight: 700; color: #0E5E58; font-size: 0.875rem; }
-      .v2cat-item-chronology { font-size: 0.6875rem; color: var(--ink-tertiary, #8B93A1); font-family: 'IBM Plex Mono', monospace; }
+      .v2cat-item-chronology { font-size: 0.6875rem; color: var(--ink-tertiary, var(--text-tertiary)); font-family: 'IBM Plex Mono', monospace; }
       .v2cat-item-interval { font-family: 'IBM Plex Mono', monospace; font-size: 0.6875rem; color: var(--ink-secondary, #44545a); }
-      :global(html.dark) .v2cat-item { background: #111318; border-color: #23272F; }
-      :global(html.dark) .v2cat-item-link:hover { background: #1A1D24; }
-      :global(html.dark) .v2cat-title, :global(html.dark) .v2cat-item-name { color: #EDF0F5; }
-      :global(html.dark) .v2cat-subtitle, :global(html.dark) .v2cat-item-interval { color: #B6BCC6; }
+      :global(html.dark) .v2cat-item { background: var(--surface); border-color: var(--border); }
+      :global(html.dark) .v2cat-item-link:hover { background: var(--surface-alt); }
+      :global(html.dark) .v2cat-title, :global(html.dark) .v2cat-item-name { color: var(--text); }
+      :global(html.dark) .v2cat-subtitle, :global(html.dark) .v2cat-item-interval { color: var(--text-secondary); }
       @media (prefers-reduced-motion: reduce) { .v2cat-filter-link, .v2cat-item-link { transition: none; } }
     </style>
   </BaseLayout>
