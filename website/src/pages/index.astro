@@ -300,15 +300,23 @@ try {
   // Compute the sticky table-header offset from the toolbar's measured
   // bottom. The toolbar sits beneath the global header (h-14 = 3.5rem);
   // the table header must sit beneath the toolbar. Recompute on resize.
+  //
+  // PENTING: tinggi toolbar berubah SETELAH `load` — webfont Inter swap
+  // membuat chips wrap ulang (357px → 248px) tanpa memicu event resize,
+  // sehingga offset hasil ukur awal jadi basi dan thead "melayang" jauh di
+  // bawah toolbar. Karena itu: (1) clamp dengan tinggi layout (offsetHeight)
+  // yang selalu benar saat toolbar stuck, (2) ukur ulang via ResizeObserver
+  // + document.fonts.ready, bukan hanya resize/load.
   function syncStickyOffset() {
     const toolbar = document.getElementById('db-toolbar');
     const root = document.documentElement;
     if (!toolbar || !root) return;
-    const rect = toolbar.getBoundingClientRect();
-    // rect.bottom is the toolbar's bottom edge in viewport coordinates,
-    // which equals the required sticky offset from the top of the viewport
-    // (the global header is sticky, so its height is already included).
-    const offsetPx = Math.max(rect.bottom, 56);
+    const headerH = parseFloat(getComputedStyle(root).getPropertyValue('--header-height')) || 56;
+    // Posisi bawah toolbar SAAT STUCK = header + tinggi layoutnya. Ini
+    // titik tempel thead yang benar, tidak terpengaruh scroll.
+    const stuckBottom = headerH + toolbar.offsetHeight;
+    const rectBottom = toolbar.getBoundingClientRect().bottom;
+    const offsetPx = Math.max(Math.min(rectBottom, stuckBottom), headerH);
     root.style.setProperty('--db-th-top', offsetPx + 'px');
   }
   window.addEventListener('resize', syncStickyOffset);
@@ -317,6 +325,13 @@ try {
   syncStickyOffset();
   // Re-measure once fonts/layout settle.
   setTimeout(syncStickyOffset, 0);
+  // Font swap mengubah tinggi chips tanpa event resize — ukur ulang.
+  document.fonts?.ready?.then(syncStickyOffset).catch(() => {});
+  // Perubahan ukuran toolbar apa pun (wrap, konten, font) memicu ukur ulang.
+  if (typeof ResizeObserver !== 'undefined') {
+    const toolbarEl = document.getElementById('db-toolbar');
+    if (toolbarEl) new ResizeObserver(syncStickyOffset).observe(toolbarEl);
+  }
 
   function applyState(state, opts) {
     // Toggle `hidden` on each row/card based on the pure per-rule test.
