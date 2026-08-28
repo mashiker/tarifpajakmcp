@@ -1,0 +1,28 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-08-28T05:06:34.000Z",
+  "data": {
+    "id": "pp-14-2021",
+    "number": "14",
+    "year": 2021,
+    "title": "PP tentang Perubahan atas PP Nomor 22 Tahun 2020 tentang Peraturan Pelaksanaan Undang-Undang Nomor 2 Tahun 2017 tentang Jasa Konstruksi",
+    "shortName": "PP Jasa Konstruksi",
+    "type": "PP",
+    "promulgationDate": "2021-02-02",
+    "effectiveDate": "2021-02-02",
+    "sourceUrl": "https://jdih.kemenkoinfra.go.id/id/peraturan-pemerintah-republik-indonesia-no-14-tahun-2021",
+    "status": "berlaku",
+    "description": "PP pelaksana UU Cipta Kerja untuk sektor jasa konstruksi (menggantikan PP 22/2020), mengatur SBU, penyelenggaraan, dan perlindungan pekerja. Konteks PPh: tarif PPh Final jasa konstruksi yang berlaku saat ini diatur dalam PP 51/2008 jo. PP 40/2009 sebagaimana diubah terakhir dengan PP 9/2022 (berlaku 21 Februari 2022).",
+    "relevantArticles": "Pasal 14-20 (SBU)",
+    "relatedRegulations": [
+      "pp-51-2008",
+      "pp-40-2009"
+    ],
+    "referencingEntries": [
+      "pph-23-jasa-lain-2pct",
+      "pph-23-jasa-lain-4pct",
+      "pph-23-jasa-katering-2pct"
+    ]
+  }
+}

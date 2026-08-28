@@ -1,17 +1,25 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "category": "PPh",
     "taxType": "PPh 22",
     "description": "Pajak Penghasilan Pasal 22 - Pemungutan pajak atas impor, pembelian barang, dan penjualan barang tertentu",
-    "count": 11,
+    "count": 12,
     "entries": [
       {
         "id": "pph-22-impor-2024",
-        "transactionType": "Impor Barang",
+        "transactionType": "Impor Barang (Umum)",
         "rate": "7.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-impor-barang-tertentu",
+        "transactionType": "Impor Barang Tertentu (Daftar PMK)",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "category": "PPh",
     "taxType": "PPh Badan",
@@ -10,7 +10,7 @@
     "entries": [
       {
         "id": "pph-badan-2022-plus",
-        "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
+        "transactionType": "Penghasilan Kena Pajak Badan (Tahun Pajak 2022 dan Seterusnya)",
         "rate": "22%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
@@ -34,7 +34,7 @@
       },
       {
         "id": "pph-badan-umkm",
-        "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar)",
+        "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto Tahun Sebelumnya ≤ Rp 50 miliar)",
         "rate": "11%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",

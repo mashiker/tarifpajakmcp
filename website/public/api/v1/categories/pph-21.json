@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "category": "PPh",
     "taxType": "PPh 21",
@@ -51,7 +51,7 @@
       {
         "id": "pph-21-pegawai-tidak-tetap",
         "transactionType": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
-        "rate": "Tarif Pasal 17 progresif dengan PTKP harian",
+        "rate": "0% untuk ≤ Rp 450.000/hari; 0,5% untuk > Rp 450.000 s.d. Rp 2.500.000/hari; tarif Pasal 17 (5%–35%) × DPP (50% × bruto sehari) untuk > Rp 2.500.000/hari",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null
@@ -67,7 +67,7 @@
       {
         "id": "pph-21-natura-kenikmatan",
         "transactionType": "Natura/Kenikmatan dari Pemberi Kerja",
-        "rate": "1%",
+        "rate": "Tidak ada tarif tersendiri: nilai wajar natura/kenikmatan digabungkan ke penghasilan bruto penerima dan dikenai TER bulanan/harian atau tarif Pasal 17 sesuai status penerima",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null
@@ -146,7 +146,7 @@
       },
       {
         "id": "pph-21-ter-a-detail",
-        "transactionType": "TER Kategori A (Tidak Menikah)",
+        "transactionType": "TER Kategori A (TK/0, TK/1, K/0)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -154,7 +154,7 @@
       },
       {
         "id": "pph-21-ter-b-detail",
-        "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
+        "transactionType": "TER Kategori B (TK/2, TK/3, K/1, K/2)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -162,7 +162,7 @@
       },
       {
         "id": "pph-21-ter-c-detail",
-        "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
+        "transactionType": "TER Kategori C (K/3)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -219,7 +219,7 @@
       {
         "id": "pph-21-norma-pedagang",
         "transactionType": "Norma - Pedagang",
-        "rate": "15%",
+        "rate": "20%",
         "status": "berlaku",
         "effectiveFrom": "2002-01-01",
         "effectiveTo": null
@@ -227,7 +227,7 @@
       {
         "id": "pph-21-norma-petani",
         "transactionType": "Norma - Petani/Peternak",
-        "rate": "25%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2002-01-01",
         "effectiveTo": null
@@ -235,7 +235,7 @@
       {
         "id": "pph-21-norma-pengusaha-kecil",
         "transactionType": "Norma - Pengusaha Kecil Lainnya",
-        "rate": "25%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2002-01-01",
         "effectiveTo": null

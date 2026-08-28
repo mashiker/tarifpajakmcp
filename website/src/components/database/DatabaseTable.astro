@@ -44,13 +44,23 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
   }
 </div>
 
-<style>
+<style is:global>
+  /* Global (bukan scoped) karena isi <tbody> dirender via <Fragment set:html>
+     sehingga tidak membawa atribut scoping Astro. Nama class semua berawalan
+     `db-` sehingga aman dari tabrakan. */
+
   /* Critical Task 8 constraint: NO nested vertical scroll. The shell never sets
      max-height or vertical overflow-auto. The page scrolls normally and the
      table header is sticky to the page beneath the sticky header+toolbar. */
   .db-table-shell {
     width: 100%;
-    overflow-x: auto;
+  }
+  /* Horizontal scroll hanya di viewport sempit. Pada desktop overflow harus
+     `visible`: container dengan overflow non-visible menjadi scroll container
+     dan mematikan `position: sticky` pada thead (sticky-nya menempel ke shell
+     yang tidak pernah scroll vertikal, bukan ke viewport). */
+  @media (max-width: 1023px) {
+    .db-table-shell { overflow-x: auto; }
   }
   .db-table {
     width: 100%;
@@ -66,7 +76,11 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
     z-index: 5;
     background: var(--surface, #FFFFFF);
   }
-  :global(html.dark) .db-table thead th { background: #111318; }
+  @media (max-width: 1023px) {
+    /* Di dalam scroll container, sticky per shell: tetap kunci ke atas shell. */
+    .db-table thead th { top: 0; }
+  }
+  html.dark .db-table thead th { background: var(--surface, #111318); }
   .db-table .col-category { width: 9rem; }
   .db-table .col-rate { width: 7rem; }
   .db-table .col-verification { width: 8.5rem; }
@@ -83,33 +97,34 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
     gap: 0.375rem;
     padding: 0.125rem 0.5rem;
     border-radius: 0.375rem;
-    background: rgba(19, 42, 42, 0.05);
-    color: var(--ink-secondary, #44545a);
+    background: var(--surface-alt, #EFF1EC);
+    color: var(--text-secondary, #44545A);
     font-size: 0.75rem;
     font-weight: 600;
     text-decoration: none;
     transition: background-color 0.15s ease;
   }
-  .db-category-pill:hover { background: rgba(19, 42, 42, 0.10); color: var(--ink, #132A2A); }
+  .db-category-pill:hover { background: var(--border, #D9E0DC); color: var(--text, #132A2A); }
   .db-category-dot {
     width: 0.4375rem;
     height: 0.4375rem;
     border-radius: 9999px;
-    background: var(--cat-color, #0E5E58);
+    background: var(--cat-color, var(--accent, #0E5E58));
+    flex-shrink: 0;
   }
   .db-detail-link {
     display: flex;
     flex-direction: column;
     gap: 0.125rem;
     text-decoration: none;
-    color: var(--ink, #132A2A);
+    color: var(--text, #132A2A);
   }
-  .db-detail-link:hover .db-name { color: #0E5E58; }
+  .db-detail-link:hover .db-name { color: var(--accent-text, #0E5E58); }
   .db-name { font-size: 0.875rem; font-weight: 500; }
-  .db-ruleid { font-family: 'IBM Plex Mono', monospace; font-size: 0.625rem; color: var(--ink-tertiary, #8B93A1); }
+  .db-ruleid { font-family: var(--font-mono, monospace); font-size: 0.625rem; color: var(--text-tertiary, #5A6670); }
   .db-rate { font-size: 0.875rem; }
 
-  .db-empty-inline { padding: 1rem; text-align: center; color: var(--ink-secondary, #44545a); font-size: 0.875rem; }
+  .db-empty-inline { padding: 1rem; text-align: center; color: var(--text-secondary, #44545A); font-size: 0.875rem; }
 
   @media (prefers-reduced-motion: reduce) {
     .db-category-pill, .db-detail-link { transition: none; }

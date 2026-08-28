@@ -61,6 +61,7 @@ export interface MetadataArtifacts {
 /** Default static HTML routes (no dynamic params). */
 export const DEFAULT_STATIC_HTML_ROUTES = [
   '/',
+  '/kalkulator',
   '/api-docs',
   '/ter-pph-21',
   '/kode-objek-pajak',

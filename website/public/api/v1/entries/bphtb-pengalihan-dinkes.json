@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "bphtb-pengalihan-dinkes",
     "category": "Pajak Daerah",
@@ -21,13 +21,9 @@
     "status": "berlaku",
     "legalBasis": [
       {
-        "regulation": "UU 28/2009",
-        "article": "Pasal 14 ayat (1)"
-      },
-      {
         "regulation": "UU 1/2022 (HKPD)",
         "article": "Pasal 84",
-        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/186730/uu-no-1-tahun-2022"
       }
     ],
     "supersedes": [],
@@ -39,7 +35,7 @@
       "fasilitas",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "examples": [
       {
         "scenario": "Pengalihan Hak untuk Kepentingan Umum - tidak kena pajak",
@@ -50,7 +46,9 @@
     "relatedEntries": {
       "sameCategory": [
         "bphtb-perolehan-umum",
-        "bphtb-perolehan-waris"
+        "bphtb-perolehan-umum-era-uu-28-2009",
+        "bphtb-perolehan-waris",
+        "bphtb-hibah-sedarah-keturunan-lurus"
       ]
     }
   }

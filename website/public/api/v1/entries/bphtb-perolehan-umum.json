@@ -1,44 +1,41 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "bphtb-perolehan-umum",
     "category": "Pajak Daerah",
     "taxType": "BPHTB",
     "transactionType": "Perolehan Hak atas Tanah/Bangunan (Umum)",
-    "description": "BPHTB atas perolehan hak atas tanah dan/atau bangunan melalui jual beli, tukar-menukar, hibah, waris, pemasukan dalam perseroan, pemisahan hak, penunjukan pembeli dalam lelang, pelaksanaan putusan hakim, penggabungan usaha, peleburan usaha, pemekaran usaha, hadiah, pemberian hak baru.",
+    "description": "BPHTB atas perolehan hak atas tanah dan/atau bangunan melalui jual beli, tukar-menukar, hibah (selain hibah wasiat dan hibah sedarah garis keturunan lurus satu derajat), pemasukan dalam perseroan, pemisahan hak, penunjukan pembeli dalam lelang, pelaksanaan putusan hakim, penggabungan usaha, peleburan usaha, pemekaran usaha, hadiah, pemberian hak baru. Tarif paling tinggi 5% (Pasal 78 UU 1/2022).",
     "rate": {
       "type": "percentage",
       "value": 5
     },
-    "taxBase": "NPOP (Nilai Perolehan Objek Pajak) dikurangi NPOPTKP (Rp 80.000.000 untuk perorangan)",
+    "taxBase": "NPOP (Nilai Perolehan Objek Pajak) dikurangi NPOPTKP (sekurang-kurangnya Rp 250.000.000 untuk perolehan selain waris/hibah wasiat; besaran pastinya ditetapkan Perda)",
     "payer": "Penerima/pemperoleh hak",
     "recipient": "Pemerintah Daerah",
     "withholder": "PPAT (Pejabat Pembuat Akta Tanah) / Notaris",
-    "effectiveFrom": "2010-01-01",
+    "effectiveFrom": "2025-01-05",
     "effectiveTo": null,
     "status": "berlaku",
     "legalBasis": [
       {
-        "regulation": "UU 28/2009",
-        "article": "Pasal 5-7",
-        "sourceUrl": "https://peraturan.bpk.go.id/Details/44141/uu-no-28-tahun-2009"
-      },
-      {
         "regulation": "UU 1/2022 (HKPD)",
-        "article": "Pasal 78-82",
-        "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+        "article": "Pasal 78, Pasal 80",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/186730/uu-no-1-tahun-2022"
       }
     ],
-    "supersedes": [],
+    "supersedes": [
+      "bphtb-perolehan-umum-era-uu-28-2009"
+    ],
     "supersededBy": [],
-    "notes": "NPOPTKP = Rp 80.000.000 (perorangan) atau Rp 80.000.000 × jumlah penerima hak (waris). NPOP minimum = NJOP. Tarif 5% × (NPOP - NPOPTKP).",
+    "notes": "Sejak UU 1/2022 berlaku penuh 5 Januari 2025 (3 tahun setelah diundangkan, Pasal 127U), NPOPTKP perolehan selain waris/hibah wasiat sekurang-kurangnya Rp 250.000.000 (sebelumnya Rp 80.000.000 era UU 28/2009). Tarif 5% × (NPOP - NPOPTKP); tarif maksimum 5% ditetapkan Perda. NPOP minimum = NJOP.",
     "examples": [
       {
-        "scenario": "Membeli rumah NPOP Rp 1.000.000.000",
-        "calculation": "5% × (1.000.000.000 - 80.000.000)",
-        "result": "BPHTB = Rp 46.000.000"
+        "scenario": "Membeli rumah NPOP Rp 1.000.000.000, NPOPTKP daerah Rp 250.000.000",
+        "calculation": "5% × (1.000.000.000 - 250.000.000)",
+        "result": "BPHTB = Rp 37.500.000"
       }
     ],
     "tags": [
@@ -46,12 +43,18 @@
       "tanah",
       "bangunan",
       "perolehan",
+      "uu-1-2022",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "relatedEntries": {
+      "supersedes": [
+        "bphtb-perolehan-umum-era-uu-28-2009"
+      ],
       "sameCategory": [
+        "bphtb-perolehan-umum-era-uu-28-2009",
         "bphtb-perolehan-waris",
+        "bphtb-hibah-sedarah-keturunan-lurus",
         "bphtb-pengalihan-dinkes"
       ]
     }

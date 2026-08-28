@@ -8,13 +8,11 @@
       "category": "Pajak Daerah",
       "taxType": "Pajak Daerah",
       "transactionType": "Pajak Hotel",
-      "description": "Pajak atas pelayanan hotel.",
+      "description": "Pajak atas pelayanan hotel. UU 1/2022 hanya menetapkan tarif maksimum 10% (tidak ada tarif minimum); besaran pastinya ditetapkan Perda.",
       "rate": {
-        "type": "range",
-        "value": [
-          5,
-          10
-        ]
+        "type": "percentage",
+        "value": 10,
+        "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); Perda menetapkan s.d. 10%, umumnya 10% hotel berbintang"
       },
       "taxBase": "Penerimaan hotel",
       "payer": "WP Daerah",
@@ -26,13 +24,13 @@
       "legalBasis": [
         {
           "regulation": "UU 1/2022 (HKPD)",
-          "article": "Pasal 60",
+          "article": "Pasal 58 ayat (1)",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
         }
       ],
       "supersedes": [],
       "supersededBy": [],
-      "notes": "Tarif 5-10%. Umumnya 10% hotel berbintang.",
+      "notes": "Tarif maksimum 10% dari penerimaan. UU 1/2022 tidak menetapkan minimum; tarif ditetapkan Perda dalam koridor maksimum tersebut. Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
       "examples": [
         {
           "scenario": "Hotel bintang 4 Rp 2.000.000/malam",
@@ -51,13 +49,11 @@
       "category": "Pajak Daerah",
       "taxType": "Pajak Daerah",
       "transactionType": "Pajak Restoran",
-      "description": "Pajak atas pelayanan restoran/rumah makan.",
+      "description": "Pajak atas pelayanan restoran/rumah makan. UU 1/2022 hanya menetapkan tarif maksimum 10% (tidak ada tarif minimum); besaran pastinya ditetapkan Perda.",
       "rate": {
-        "type": "range",
-        "value": [
-          5,
-          10
-        ]
+        "type": "percentage",
+        "value": 10,
+        "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); umumnya 10% di kota besar"
       },
       "taxBase": "Penerimaan restoran",
       "payer": "WP Daerah",
@@ -69,13 +65,13 @@
       "legalBasis": [
         {
           "regulation": "UU 1/2022 (HKPD)",
-          "article": "Pasal 60",
+          "article": "Pasal 58 ayat (1)",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
         }
       ],
       "supersedes": [],
       "supersededBy": [],
-      "notes": "Tarif 5-10%. Umumnya 10% di kota besar.",
+      "notes": "Tarif maksimum 10% dari penerimaan. UU 1/2022 tidak menetapkan minimum; tarif ditetapkan Perda dalam koridor maksimum tersebut. Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
       "examples": [
         {
           "scenario": "Makan di restoran Rp 500.000",
@@ -94,15 +90,16 @@
       "category": "Pajak Daerah",
       "taxType": "Pajak Daerah",
       "transactionType": "Pajak Hiburan",
-      "description": "Pajak atas pelayanan hiburan (bioskop, karaoke, dll).",
+      "description": "Pajak atas jasa pertunjukan/hiburan (bioskop, karaoke, dll). Tarif paling tinggi 10%; khusus jasa hiburan tertentu (diskotek, karaoke, klab malam, bar, mandi uap/spa, dan sejenisnya) diberlakukan tarif paling rendah 40% dan paling tinggi 75% dari tarif maksimum tersebut (efektif 4%-7,5%).",
       "rate": {
         "type": "range",
         "value": [
-          5,
-          35
-        ]
+          0,
+          10
+        ],
+        "effectiveRate": "Hiburan umum: maks 10%. Jasa hiburan tertentu (Pasal 58 ayat (2)): 40%-75% × tarif maksimum 10% = efektif 4%-7,5%"
       },
-      "taxBase": "Penerimaan / tiket hiburan",
+      "taxBase": "Penerimaan / nilai jasa hiburan",
       "payer": "WP Daerah",
       "recipient": "Pemerintah Daerah",
       "withholder": null,
@@ -112,18 +109,18 @@
       "legalBasis": [
         {
           "regulation": "UU 1/2022 (HKPD)",
-          "article": "Pasal 60",
+          "article": "Pasal 58 ayat (1)-(2)",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
         }
       ],
       "supersedes": [],
       "supersededBy": [],
-      "notes": "Tarif 5-35% tergantung jenis. Tertinggi perjudian (35%).",
+      "notes": "Tarif maksimum 10% untuk jasa pertunjukan/hiburan umum. Khusus jasa hiburan pada diskotek, karaoke, klab malam, bar, mandi uap/spa, dan sejenisnya: tarif paling rendah 40% dan paling tinggi 75% DARI tarif maksimum (efektif 4%-7,5%). Ketentuan 40%-75% ini pernah diuji di Mahkamah Konstitusi (kasus tarif pajak hiburan) namun tetap berlaku. Angka 35% (era UU 28/2009) tidak lagi berlaku.",
       "examples": [
         {
-          "scenario": "Tiket bioskop Rp 75.000",
-          "calculation": "15%×75rb",
-          "result": "Pajak=R11.250"
+          "scenario": "Tiket bioskop Rp 75.000 (hiburan umum, tarif Perda 10%)",
+          "calculation": "10%×75rb",
+          "result": "Pajak=R7.500"
         }
       ],
       "tags": [
@@ -180,13 +177,11 @@
       "category": "Pajak Daerah",
       "taxType": "Pajak Daerah",
       "transactionType": "Pajak Penerangan Jalan",
-      "description": "Pajak atas penggunaan listrik PJU.",
+      "description": "Pajak atas penggunaan listrik PJU. Tarif maksimum 10% dari nilai tenaga listrik (Pasal 58 UU 1/2022).",
       "rate": {
-        "type": "range",
-        "value": [
-          1,
-          5
-        ]
+        "type": "percentage",
+        "value": 10,
+        "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); besaran pastinya ditetapkan Perda"
       },
       "taxBase": "Nilai tenaga listrik",
       "payer": "WP Daerah",
@@ -198,13 +193,13 @@
       "legalBasis": [
         {
           "regulation": "UU 1/2022 (HKPD)",
-          "article": "Pasal 60",
+          "article": "Pasal 58 ayat (1)",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
         }
       ],
       "supersedes": [],
       "supersededBy": [],
-      "notes": "Tarif PPJ 1-5% dari nilai listrik.",
+      "notes": "Tarif maksimum 10% dari nilai tenaga listrik yang digunakan (sebelumnya maks 5% era UU 28/2009). Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
       "examples": [
         {
           "scenario": "Listrik PJU Rp 5.000.000/bulan",
@@ -223,15 +218,13 @@
       "category": "Pajak Daerah",
       "taxType": "Pajak Daerah",
       "transactionType": "Pajak MBLB",
-      "description": "Pajak atas eksploitasi mineral bukan logam/batuan.",
+      "description": "Pajak atas pengambilan/eksploitasi mineral bukan logam dan batuan. Tarif maksimum 20% dari nilai jual penghasilan (NJP) per Pasal 58 UU 1/2022.",
       "rate": {
-        "type": "range",
-        "value": [
-          5,
-          25
-        ]
+        "type": "percentage",
+        "value": 20,
+        "effectiveRate": "Tarif maksimum 20% (Pasal 58 UU 1/2022); besaran pastinya ditetapkan Perda"
       },
-      "taxBase": "NJP",
+      "taxBase": "NJP (Nilai Jual Penghasilan)",
       "payer": "WP Daerah",
       "recipient": "Pemerintah Daerah",
       "withholder": null,
@@ -241,13 +234,13 @@
       "legalBasis": [
         {
           "regulation": "UU 1/2022 (HKPD)",
-          "article": "Pasal 60",
+          "article": "Pasal 58",
           "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
         }
       ],
       "supersedes": [],
       "supersededBy": [],
-      "notes": "Tarif 5-25% dari NJP.",
+      "notes": "Tarif maksimum 20% dari NJP (sebelumnya maks 25% era UU 28/2009). Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
       "examples": [
         {
           "scenario": "Penambangan pasir NJP Rp 100.000.000",

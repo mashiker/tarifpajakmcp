@@ -1,229 +1,224 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-21-ter-c-detail",
     "category": "PPh",
     "taxType": "PPh 21",
-    "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
-    "description": "Tabel lengkap TER Kategori C (Kawin, tanggungan ≥3) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
+    "transactionType": "TER Kategori C (K/3)",
+    "description": "Tabel lengkap TER Kategori C (kelas PTKP K/3) berdasarkan PP 58/2023 Lampiran C jo. PMK 168/2023. 41 lapisan tarif dari 0% hingga 34%.",
     "rate": {
       "type": "progressive",
-      "value": "0% – 25% (42 lapisan)",
+      "value": "0% – 34% (41 lapisan)",
       "brackets": [
         {
           "min": 0,
-          "max": 7550000,
+          "max": 6600000,
           "rate": 0
         },
         {
-          "min": 7550001,
-          "max": 7900000,
+          "min": 6600001,
+          "max": 6950000,
           "rate": 0.25
         },
         {
-          "min": 7900001,
-          "max": 8300000,
+          "min": 6950001,
+          "max": 7350000,
           "rate": 0.5
         },
         {
-          "min": 8300001,
-          "max": 8700000,
+          "min": 7350001,
+          "max": 7800000,
           "rate": 0.75
         },
         {
-          "min": 8700001,
-          "max": 9150000,
+          "min": 7800001,
+          "max": 8850000,
           "rate": 1
         },
         {
-          "min": 9150001,
-          "max": 9600000,
+          "min": 8850001,
+          "max": 9800000,
           "rate": 1.25
         },
         {
-          "min": 9600001,
-          "max": 10100000,
+          "min": 9800001,
+          "max": 10950000,
           "rate": 1.5
         },
         {
-          "min": 10100001,
-          "max": 10650000,
+          "min": 10950001,
+          "max": 11200000,
           "rate": 1.75
         },
         {
-          "min": 10650001,
-          "max": 11250000,
+          "min": 11200001,
+          "max": 12050000,
           "rate": 2
         },
         {
-          "min": 11250001,
-          "max": 11850000,
-          "rate": 2.25
-        },
-        {
-          "min": 11850001,
-          "max": 12550000,
-          "rate": 2.5
-        },
-        {
-          "min": 12550001,
-          "max": 13250000,
-          "rate": 2.75
-        },
-        {
-          "min": 13250001,
-          "max": 14100000,
+          "min": 12050001,
+          "max": 12950000,
           "rate": 3
         },
         {
-          "min": 14100001,
-          "max": 14950000,
-          "rate": 3.25
-        },
-        {
-          "min": 14950001,
-          "max": 15950000,
-          "rate": 3.5
-        },
-        {
-          "min": 15950001,
-          "max": 17050000,
-          "rate": 3.75
-        },
-        {
-          "min": 17050001,
-          "max": 18250000,
+          "min": 12950001,
+          "max": 14150000,
           "rate": 4
         },
         {
-          "min": 18250001,
-          "max": 19550000,
-          "rate": 4.25
-        },
-        {
-          "min": 19550001,
-          "max": 20950000,
-          "rate": 4.5
-        },
-        {
-          "min": 20950001,
-          "max": 22550000,
-          "rate": 4.75
-        },
-        {
-          "min": 22550001,
-          "max": 24250000,
+          "min": 14150001,
+          "max": 15550000,
           "rate": 5
         },
         {
-          "min": 24250001,
-          "max": 26150000,
-          "rate": 5.5
-        },
-        {
-          "min": 26150001,
-          "max": 28350000,
+          "min": 15550001,
+          "max": 17050000,
           "rate": 6
         },
         {
-          "min": 28350001,
-          "max": 30750000,
-          "rate": 6.5
-        },
-        {
-          "min": 30750001,
-          "max": 33550000,
+          "min": 17050001,
+          "max": 19500000,
           "rate": 7
         },
         {
-          "min": 33550001,
-          "max": 36750000,
-          "rate": 7.5
-        },
-        {
-          "min": 36750001,
-          "max": 40450000,
+          "min": 19500001,
+          "max": 22700000,
           "rate": 8
         },
         {
-          "min": 40450001,
-          "max": 44750000,
-          "rate": 8.5
-        },
-        {
-          "min": 44750001,
-          "max": 49750000,
+          "min": 22700001,
+          "max": 26600000,
           "rate": 9
         },
         {
-          "min": 49750001,
-          "max": 55750000,
-          "rate": 9.5
-        },
-        {
-          "min": 55750001,
-          "max": 62950000,
+          "min": 26600001,
+          "max": 28100000,
           "rate": 10
         },
         {
-          "min": 62950001,
-          "max": 71950000,
-          "rate": 10.5
-        },
-        {
-          "min": 71950001,
-          "max": 83450000,
+          "min": 28100001,
+          "max": 30100000,
           "rate": 11
         },
         {
-          "min": 83450001,
-          "max": 97950000,
-          "rate": 11.5
-        },
-        {
-          "min": 97950001,
-          "max": 116950000,
+          "min": 30100001,
+          "max": 32600000,
           "rate": 12
         },
         {
-          "min": 116950001,
-          "max": 141950000,
-          "rate": 12.5
-        },
-        {
-          "min": 141950001,
-          "max": 177950000,
+          "min": 32600001,
+          "max": 35400000,
           "rate": 13
         },
         {
-          "min": 177950001,
-          "max": 232950000,
-          "rate": 13.5
-        },
-        {
-          "min": 232950001,
-          "max": 327950000,
+          "min": 35400001,
+          "max": 38900000,
           "rate": 14
         },
         {
-          "min": 327950001,
-          "max": 530950000,
-          "rate": 14.5
-        },
-        {
-          "min": 530950001,
-          "max": 955000000,
+          "min": 38900001,
+          "max": 43000000,
           "rate": 15
         },
         {
-          "min": 955000001,
-          "max": null,
+          "min": 43000001,
+          "max": 47400000,
+          "rate": 16
+        },
+        {
+          "min": 47400001,
+          "max": 51200000,
+          "rate": 17
+        },
+        {
+          "min": 51200001,
+          "max": 55800000,
+          "rate": 18
+        },
+        {
+          "min": 55800001,
+          "max": 60400000,
+          "rate": 19
+        },
+        {
+          "min": 60400001,
+          "max": 66700000,
+          "rate": 20
+        },
+        {
+          "min": 66700001,
+          "max": 74500000,
+          "rate": 21
+        },
+        {
+          "min": 74500001,
+          "max": 83200000,
+          "rate": 22
+        },
+        {
+          "min": 83200001,
+          "max": 95600000,
+          "rate": 23
+        },
+        {
+          "min": 95600001,
+          "max": 110000000,
+          "rate": 24
+        },
+        {
+          "min": 110000001,
+          "max": 134000000,
           "rate": 25
+        },
+        {
+          "min": 134000001,
+          "max": 169000000,
+          "rate": 26
+        },
+        {
+          "min": 169000001,
+          "max": 221000000,
+          "rate": 27
+        },
+        {
+          "min": 221000001,
+          "max": 390000000,
+          "rate": 28
+        },
+        {
+          "min": 390000001,
+          "max": 463000000,
+          "rate": 29
+        },
+        {
+          "min": 463000001,
+          "max": 561000000,
+          "rate": 30
+        },
+        {
+          "min": 561000001,
+          "max": 709000000,
+          "rate": 31
+        },
+        {
+          "min": 709000001,
+          "max": 965000000,
+          "rate": 32
+        },
+        {
+          "min": 965000001,
+          "max": 1419000000,
+          "rate": 33
+        },
+        {
+          "min": 1419000001,
+          "max": null,
+          "rate": 34
         }
       ],
-      "effectiveRate": "0% untuk ≤ Rp 7.550.000, naik bertahap hingga 25% untuk > Rp 955.000.000"
+      "effectiveRate": "0% untuk ≤ Rp 6.600.000, naik bertahap hingga 34% untuk > Rp 1.419.000.000"
     },
     "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
     "payer": "WP OP dalam negeri",
@@ -246,17 +241,22 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Berlaku untuk pegawai yang kawin dengan tanggungan 3 atau lebih. Tarif 0% untuk penghasilan bruto ≤ Rp 7.550.000/bulan. Tarif tertinggi 25% untuk penghasilan > Rp 955.000.000/bulan.",
+    "notes": "Kategori C hanya dipakai pegawai dengan kelas PTKP K/3 (kawin, 3 tanggungan). Tarif 0% untuk penghasilan bruto bulanan ≤ Rp 6.600.000. Tarif tertinggi 34% untuk penghasilan bruto > Rp 1.419.000.000/bulan. TER bulanan hanya untuk masa pajak Januari–November.",
     "examples": [
       {
-        "scenario": "Pegawai kawin 3 tanggungan, gaji Rp 10.000.000/bulan",
-        "calculation": "TER C: Rp 10.000.000 jatuh di lapisan ke-6 (Rp 9.600.001 – Rp 10.100.000) = 1.25%",
-        "result": "PPh 21 = 1.25% × Rp 10.000.000 = Rp 125.000"
+        "scenario": "Pegawai K/3, gaji Rp 10.000.000/bulan",
+        "calculation": "TER C: jatuh di lapisan ke-7 (di atas Rp 9.800.000 – Rp 10.950.000) = 1,5%",
+        "result": "PPh 21 = 1,5% × Rp 10.000.000 = Rp 150.000"
       },
       {
-        "scenario": "Pegawai kawin 3 tanggungan, gaji Rp 100.000.000/bulan",
-        "calculation": "TER C: Rp 100.000.000 jatuh di lapisan ke-36 (Rp 97.950.001 – Rp 116.950.000) = 12%",
-        "result": "PPh 21 = 12% × Rp 100.000.000 = Rp 12.000.000"
+        "scenario": "Pegawai K/3, gaji Rp 50.000.000/bulan",
+        "calculation": "TER C: jatuh di lapisan ke-24 (di atas Rp 47.400.000 – Rp 51.200.000) = 17%",
+        "result": "PPh 21 = 17% × Rp 50.000.000 = Rp 8.500.000"
+      },
+      {
+        "scenario": "Pegawai K/3, gaji Rp 100.000.000/bulan",
+        "calculation": "TER C: jatuh di lapisan ke-31 (di atas Rp 95.600.000 – Rp 110.000.000) = 24%",
+        "result": "PPh 21 = 24% × Rp 100.000.000 = Rp 24.000.000"
       }
     ],
     "tags": [
@@ -265,7 +265,7 @@
       "detail",
       "berlaku"
     ],
-    "lastVerified": "2026-05-28",
+    "lastVerified": "2026-08-28",
     "relatedEntries": {
       "sameCategory": [
         "pph-21-ter-monthly-2024",

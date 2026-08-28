@@ -1,0 +1,26 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-08-28T05:06:34.000Z",
+  "data": {
+    "id": "pmk-97-2024",
+    "number": "97",
+    "year": 2024,
+    "title": "PMK tentang Perubahan Ketiga atas PMK Nomor 192/PMK.010/2021 tentang Tarif Cukai Hasil Tembakau",
+    "shortName": "PMK Tarif Cukai Rokok 2025",
+    "type": "PMK",
+    "promulgationDate": "2024-12-12",
+    "effectiveDate": "2025-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/311469/pmk-no-97-tahun-2024",
+    "status": "berlaku",
+    "description": "PMK menetapkan tarif cukai hasil tembakau dan batas HJE berlaku 1 Januari 2025 (tarif 2025 = 2024, dibekukan s.d. 2027): SKM Gol I Rp 1.231/batang, SKM Gol II Rp 746; SPM Gol I Rp 1.336, SPM Gol II Rp 794; SKT/SPT Gol I Rp 378-483, Gol II Rp 223, Gol III Rp 122 (terendah); SKTF/SPTF Rp 1.231; cerutu s.d. Rp 110.000/gram. Ditetapkan 4 Desember 2024, diundangkan 12 Desember 2024.",
+    "relevantArticles": "Pasal 1-2, Lampiran",
+    "relatedRegulations": [
+      "uu-39-2007",
+      "pmk-202-2023"
+    ],
+    "referencingEntries": [
+      "cukai-hasil-tembakau"
+    ]
+  }
+}

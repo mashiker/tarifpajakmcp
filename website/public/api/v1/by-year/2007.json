@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "year": 2007,
     "count": 32,
@@ -127,7 +127,7 @@
         "id": "pph-21-norma-pedagang",
         "taxType": "PPh 21",
         "transactionType": "Norma - Pedagang",
-        "rate": "15%",
+        "rate": "20%",
         "status": "berlaku",
         "effectiveFrom": "2002-01-01",
         "effectiveTo": null
@@ -136,7 +136,7 @@
         "id": "pph-21-norma-petani",
         "taxType": "PPh 21",
         "transactionType": "Norma - Petani/Peternak",
-        "rate": "25%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2002-01-01",
         "effectiveTo": null
@@ -145,7 +145,7 @@
         "id": "pph-21-norma-pengusaha-kecil",
         "taxType": "PPh 21",
         "transactionType": "Norma - Pengusaha Kecil Lainnya",
-        "rate": "25%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2002-01-01",
         "effectiveTo": null

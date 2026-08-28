@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "uu-39-2007",
     "number": "39",
@@ -16,11 +16,15 @@
     "description": "UU Cukai mengatur pengenaan cukai atas hasil tembakau (rokok), minuman mengandung etil alkohol (MMEA), dan e-cigarette. Menggunakan tarif spesifik dan ad valorem.",
     "relevantArticles": "Pasal 6, 7, 8",
     "relatedRegulations": [
-      "pmk-202-2023"
+      "pmk-202-2023",
+      "pmk-96-2024",
+      "pmk-97-2024",
+      "pmk-160-2023"
     ],
     "referencingEntries": [
       "cukai-hasil-tembakau",
-      "cukai-eti-alkohol"
+      "cukai-eti-alkohol",
+      "cukai-ecigarette"
     ]
   }
 }

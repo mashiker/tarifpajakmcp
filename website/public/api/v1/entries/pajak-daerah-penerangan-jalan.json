@@ -1,19 +1,17 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pajak-daerah-penerangan-jalan",
     "category": "Pajak Daerah",
     "taxType": "Pajak Daerah",
     "transactionType": "Pajak Penerangan Jalan",
-    "description": "Pajak atas penggunaan listrik PJU.",
+    "description": "Pajak atas penggunaan listrik PJU. Tarif maksimum 10% dari nilai tenaga listrik (Pasal 58 UU 1/2022).",
     "rate": {
-      "type": "range",
-      "value": [
-        1,
-        5
-      ]
+      "type": "percentage",
+      "value": 10,
+      "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); besaran pastinya ditetapkan Perda"
     },
     "taxBase": "Nilai tenaga listrik",
     "payer": "WP Daerah",
@@ -25,13 +23,13 @@
     "legalBasis": [
       {
         "regulation": "UU 1/2022 (HKPD)",
-        "article": "Pasal 60",
+        "article": "Pasal 58 ayat (1)",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
       }
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif PPJ 1-5% dari nilai listrik.",
+    "notes": "Tarif maksimum 10% dari nilai tenaga listrik yang digunakan (sebelumnya maks 5% era UU 28/2009). Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
     "examples": [
       {
         "scenario": "Listrik PJU Rp 5.000.000/bulan",

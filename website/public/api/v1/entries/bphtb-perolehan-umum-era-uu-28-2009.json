@@ -1,0 +1,59 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-08-28T05:06:34.000Z",
+  "data": {
+    "id": "bphtb-perolehan-umum-era-uu-28-2009",
+    "category": "Pajak Daerah",
+    "taxType": "BPHTB",
+    "transactionType": "Perolehan Hak atas Tanah/Bangunan (Rejim UU 28/2009)",
+    "description": "BPHTB era UU 28/2009 dengan NPOPTKP Rp 80.000.000 untuk perorangan. Berakhir saat ketentuan BPHTB UU 1/2022 (HKPD) berlaku penuh pada 5 Januari 2025.",
+    "rate": {
+      "type": "percentage",
+      "value": 5
+    },
+    "taxBase": "NPOP dikurangi NPOPTKP (Rp 80.000.000 untuk perorangan)",
+    "payer": "Penerima/pemperoleh hak",
+    "recipient": "Pemerintah Daerah",
+    "withholder": "PPAT / Notaris",
+    "effectiveFrom": "2010-01-01",
+    "effectiveTo": "2025-01-04",
+    "status": "diubah",
+    "legalBasis": [
+      {
+        "regulation": "UU 28/2009",
+        "article": "Pasal 5-7",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/44141/uu-no-28-tahun-2009"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [
+      "bphtb-perolehan-umum"
+    ],
+    "notes": "Historis. NPOPTKP Rp 80.000.000 (perorangan) atau Rp 80.000.000 × jumlah penerima hak (waris). Digantikan NPOPTKP Rp 250.000.000 (perolehan umum) dan Rp 300.000.000 (waris/hibah wasiat) sesuai UU 1/2022.",
+    "examples": [
+      {
+        "scenario": "Membeli rumah NPOP Rp 1.000.000.000 (rejim lama s.d. 4 Jan 2025)",
+        "calculation": "5% × (1.000.000.000 - 80.000.000)",
+        "result": "BPHTB = Rp 46.000.000"
+      }
+    ],
+    "tags": [
+      "bphtb",
+      "historis",
+      "uu-28-2009"
+    ],
+    "lastVerified": "2026-08-28",
+    "relatedEntries": {
+      "supersededBy": [
+        "bphtb-perolehan-umum"
+      ],
+      "sameCategory": [
+        "bphtb-perolehan-umum",
+        "bphtb-perolehan-waris",
+        "bphtb-hibah-sedarah-keturunan-lurus",
+        "bphtb-pengalihan-dinkes"
+      ]
+    }
+  }
+}

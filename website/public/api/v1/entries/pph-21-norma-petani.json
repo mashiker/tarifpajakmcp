@@ -1,18 +1,18 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-21-norma-petani",
     "category": "PPh",
     "taxType": "PPh 21",
     "transactionType": "Norma - Petani/Peternak",
-    "description": "Norma penghitungan penghasilan neto 25% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+    "description": "Norma penghitungan penghasilan neto 10% dari bruto untuk usaha pertanian/peternakan. Dasar: PMK 523/2002 jo. PMK 43/2022.",
     "rate": {
       "type": "percentage",
-      "value": 25
+      "value": 10
     },
-    "taxBase": "25% × penghasilan bruto (norma penghitungan)",
+    "taxBase": "10% × penghasilan bruto (norma penghitungan)",
     "payer": "WP OP pelaku pekerjaan bebas",
     "recipient": "Negara",
     "withholder": null,

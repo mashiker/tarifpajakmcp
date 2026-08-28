@@ -358,7 +358,11 @@ export function filterDatabaseRows(
       filtered.sort(
         (a, b) =>
           a.category.localeCompare(b.category) ||
-          (STATUS_PRECEDENCE[a.verification] ?? 9) - (STATUS_PRECEDENCE[b.verification] ?? 9) ||
+          // Precedence berdasarkan STATUS turunan baris (berlaku → dicabut).
+          // STATUS_PRECEDENCE berkunci status; sebelumnya dipakai dengan kunci
+          // verification token sehingga tiebreaker ini selalu mati (9-9).
+          (STATUS_PRECEDENCE[deriveRowStatus(a, today ?? '')] ?? 9) -
+            (STATUS_PRECEDENCE[deriveRowStatus(b, today ?? '')] ?? 9) ||
           byId(a, b),
       );
       break;

@@ -242,7 +242,7 @@
       "type": "percentage",
       "value": 5
     },
-    "effectiveFrom": "2010-01-01",
+    "effectiveFrom": "2025-01-05",
     "effectiveTo": null,
     "status": "berlaku",
     "tags": [
@@ -250,25 +250,68 @@
       "tanah",
       "bangunan",
       "perolehan",
+      "uu-1-2022",
       "berlaku"
+    ]
+  },
+  {
+    "id": "bphtb-perolehan-umum-era-uu-28-2009",
+    "category": "Pajak Daerah",
+    "taxType": "BPHTB",
+    "transactionType": "Perolehan Hak atas Tanah/Bangunan (Rejim UU 28/2009)",
+    "rate": {
+      "type": "percentage",
+      "value": 5
+    },
+    "effectiveFrom": "2010-01-01",
+    "effectiveTo": "2025-01-04",
+    "status": "diubah",
+    "tags": [
+      "bphtb",
+      "historis",
+      "uu-28-2009"
     ]
   },
   {
     "id": "bphtb-perolehan-waris",
     "category": "Pajak Daerah",
     "taxType": "BPHTB",
-    "transactionType": "Perolehan Hak melalui Waris",
+    "transactionType": "Perolehan Hak melalui Waris / Hibah Wasiat",
     "rate": {
       "type": "percentage",
-      "value": 5
+      "value": 5,
+      "effectiveRate": "Efektif 2,5% atas (NPOP - NPOPTKP) karena fasilitas 50%"
     },
-    "effectiveFrom": "2010-01-01",
+    "effectiveFrom": "2025-01-05",
     "effectiveTo": null,
     "status": "berlaku",
     "tags": [
       "bphtb",
       "waris",
-      "perolehan",
+      "hibah-wasiat",
+      "fasilitas-50-persen",
+      "uu-1-2022",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "bphtb-hibah-sedarah-keturunan-lurus",
+    "category": "Pajak Daerah",
+    "taxType": "BPHTB",
+    "transactionType": "Hibah kepada Orang Pribadi Sedarah Garis Keturunan Lurus Satu Derajat",
+    "rate": {
+      "type": "percentage",
+      "value": 5
+    },
+    "effectiveFrom": "2025-01-05",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "bphtb",
+      "hibah",
+      "sedarah",
+      "keturunan-lurus",
+      "uu-1-2022",
       "berlaku"
     ]
   },
@@ -298,16 +341,18 @@
     "transactionType": "Cukai Hasil Tembakau (Rokok)",
     "rate": {
       "type": "formula",
-      "value": "Tarif spesifik + ad valorem",
-      "effectiveRate": "Rp 280 - Rp 640 per batang"
+      "value": "Tarif spesifik per batang sesuai jenis/golongan",
+      "effectiveRate": "Rp 122 (SKT/SPT Gol III) s.d. Rp 1.336 (SPM Gol I) per batang; SKM Gol I Rp 1.231/batang"
     },
-    "effectiveFrom": "2008-01-01",
+    "effectiveFrom": "2025-01-01",
     "effectiveTo": null,
     "status": "berlaku",
     "tags": [
       "cukai",
       "rokok",
       "tembakau",
+      "skm",
+      "pmk-97-2024",
       "berlaku"
     ]
   },
@@ -315,19 +360,21 @@
     "id": "cukai-eti-alkohol",
     "category": "Cukai",
     "taxType": "Cukai",
-    "transactionType": "Cukai Etil Alkohol / MMEA",
+    "transactionType": "Cukai Etil Alkohol / MMEA / KMEA",
     "rate": {
       "type": "formula",
-      "value": "Tarif spesifik per liter",
-      "effectiveRate": "Rp 5.000 - Rp 150.000 per liter"
+      "value": "Tarif spesifik per liter (per gram untuk KMEA padat)",
+      "effectiveRate": "EA Rp 20.000/ltr; MMEA Gol A Rp 16.500/ltr; Gol B Rp 42.500/ltr (impor Rp 53.000); Gol C Rp 101.000/ltr (impor Rp 152.000); KMEA cair Rp 228.000/ltr; KMEA padat Rp 1.000/gram"
     },
-    "effectiveFrom": "2008-01-01",
+    "effectiveFrom": "2024-01-01",
     "effectiveTo": null,
     "status": "berlaku",
     "tags": [
       "cukai",
       "alkohol",
       "mmea",
+      "kmea",
+      "pmk-160-2023",
       "berlaku"
     ]
   },
@@ -335,19 +382,21 @@
     "id": "cukai-ecigarette",
     "category": "Cukai",
     "taxType": "Cukai",
-    "transactionType": "Cukai e-Cigarette / Heated Tobacco",
+    "transactionType": "Cukai Rokok Elektrik / Heated Tobacco",
     "rate": {
       "type": "formula",
-      "value": "Tarif ad valorem",
-      "effectiveRate": "± 15-27% dari HJE"
+      "value": "Tarif spesifik per gram / mililiter",
+      "effectiveRate": "Padat Rp 3.074/gram; cair sistem terbuka Rp 636/ml; cair sistem tertutup Rp 6.776/ml"
     },
-    "effectiveFrom": "2024-07-01",
+    "effectiveFrom": "2025-01-01",
     "effectiveTo": null,
     "status": "berlaku",
     "tags": [
       "cukai",
       "e-cigarette",
       "vape",
+      "tarif-spesifik",
+      "pmk-96-2024",
       "berlaku"
     ]
   },
@@ -357,11 +406,9 @@
     "taxType": "Pajak Daerah",
     "transactionType": "Pajak Hotel",
     "rate": {
-      "type": "range",
-      "value": [
-        5,
-        10
-      ]
+      "type": "percentage",
+      "value": 10,
+      "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); Perda menetapkan s.d. 10%, umumnya 10% hotel berbintang"
     },
     "effectiveFrom": "2022-01-01",
     "effectiveTo": null,
@@ -377,11 +424,9 @@
     "taxType": "Pajak Daerah",
     "transactionType": "Pajak Restoran",
     "rate": {
-      "type": "range",
-      "value": [
-        5,
-        10
-      ]
+      "type": "percentage",
+      "value": 10,
+      "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); umumnya 10% di kota besar"
     },
     "effectiveFrom": "2022-01-01",
     "effectiveTo": null,
@@ -399,9 +444,10 @@
     "rate": {
       "type": "range",
       "value": [
-        5,
-        35
-      ]
+        0,
+        10
+      ],
+      "effectiveRate": "Hiburan umum: maks 10%. Jasa hiburan tertentu (Pasal 58 ayat (2)): 40%-75% × tarif maksimum 10% = efektif 4%-7,5%"
     },
     "effectiveFrom": "2022-01-01",
     "effectiveTo": null,
@@ -437,11 +483,9 @@
     "taxType": "Pajak Daerah",
     "transactionType": "Pajak Penerangan Jalan",
     "rate": {
-      "type": "range",
-      "value": [
-        1,
-        5
-      ]
+      "type": "percentage",
+      "value": 10,
+      "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); besaran pastinya ditetapkan Perda"
     },
     "effectiveFrom": "2022-01-01",
     "effectiveTo": null,
@@ -457,11 +501,9 @@
     "taxType": "Pajak Daerah",
     "transactionType": "Pajak MBLB",
     "rate": {
-      "type": "range",
-      "value": [
-        5,
-        25
-      ]
+      "type": "percentage",
+      "value": 20,
+      "effectiveRate": "Tarif maksimum 20% (Pasal 58 UU 1/2022); besaran pastinya ditetapkan Perda"
     },
     "effectiveFrom": "2022-01-01",
     "effectiveTo": null,
@@ -519,8 +561,8 @@
     "rate": {
       "type": "range",
       "value": [
-        0.01,
-        0.3
+        0.1,
+        0.5
       ]
     },
     "effectiveFrom": "2022-01-01",
@@ -602,8 +644,8 @@
     "transactionType": "Gaji/Bulan TER",
     "rate": {
       "type": "progressive",
-      "value": "0% – 25% (TER A/B/C)",
-      "effectiveRate": "0% untuk penghasilan rendah, hingga 25% untuk penghasilan tinggi"
+      "value": "0% – 34% (TER A/B/C)",
+      "effectiveRate": "0% untuk penghasilan bruto rendah (≤ Rp 5,4 juta / 6,2 juta / 6,6 juta sesuai kategori), hingga 34% untuk penghasilan bruto > Rp 1,4 miliar"
     },
     "effectiveFrom": "2024-01-01",
     "effectiveTo": null,
@@ -778,8 +820,8 @@
     "transactionType": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
     "rate": {
       "type": "formula",
-      "value": "Tarif Pasal 17 progresif dengan PTKP harian",
-      "effectiveRate": "0% jika ≤ Rp 4.500.000/hari setelah PTKP"
+      "value": "0% untuk ≤ Rp 450.000/hari; 0,5% untuk > Rp 450.000 s.d. Rp 2.500.000/hari; tarif Pasal 17 (5%–35%) × DPP (50% × bruto sehari) untuk > Rp 2.500.000/hari",
+      "effectiveRate": "0% / 0,5% / tarif Pasal 17 progresif sesuai jumlah penghasilan sehari"
     },
     "effectiveFrom": "2024-01-01",
     "effectiveTo": null,
@@ -817,8 +859,9 @@
     "taxType": "PPh 21",
     "transactionType": "Natura/Kenikmatan dari Pemberi Kerja",
     "rate": {
-      "type": "percentage",
-      "value": 1
+      "type": "formula",
+      "value": "Tidak ada tarif tersendiri: nilai wajar natura/kenikmatan digabungkan ke penghasilan bruto penerima dan dikenai TER bulanan/harian atau tarif Pasal 17 sesuai status penerima",
+      "effectiveRate": "Mengikuti TER / Pasal 17 penerima (tidak ada tarif khusus natura)"
     },
     "effectiveFrom": "2024-01-01",
     "effectiveTo": null,
@@ -1096,10 +1139,474 @@
     "id": "pph-21-ter-a-detail",
     "category": "PPh",
     "taxType": "PPh 21",
-    "transactionType": "TER Kategori A (Tidak Menikah)",
+    "transactionType": "TER Kategori A (TK/0, TK/1, K/0)",
     "rate": {
       "type": "progressive",
-      "value": "0% – 25% (42 lapisan)",
+      "value": "0% – 34% (44 lapisan)",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 5400000,
+          "rate": 0
+        },
+        {
+          "min": 5400001,
+          "max": 5650000,
+          "rate": 0.25
+        },
+        {
+          "min": 5650001,
+          "max": 5950000,
+          "rate": 0.5
+        },
+        {
+          "min": 5950001,
+          "max": 6300000,
+          "rate": 0.75
+        },
+        {
+          "min": 6300001,
+          "max": 6750000,
+          "rate": 1
+        },
+        {
+          "min": 6750001,
+          "max": 7500000,
+          "rate": 1.25
+        },
+        {
+          "min": 7500001,
+          "max": 8550000,
+          "rate": 1.5
+        },
+        {
+          "min": 8550001,
+          "max": 9650000,
+          "rate": 1.75
+        },
+        {
+          "min": 9650001,
+          "max": 10050000,
+          "rate": 2
+        },
+        {
+          "min": 10050001,
+          "max": 10350000,
+          "rate": 2.25
+        },
+        {
+          "min": 10350001,
+          "max": 10700000,
+          "rate": 2.5
+        },
+        {
+          "min": 10700001,
+          "max": 11050000,
+          "rate": 3
+        },
+        {
+          "min": 11050001,
+          "max": 11600000,
+          "rate": 3.5
+        },
+        {
+          "min": 11600001,
+          "max": 12500000,
+          "rate": 4
+        },
+        {
+          "min": 12500001,
+          "max": 13750000,
+          "rate": 5
+        },
+        {
+          "min": 13750001,
+          "max": 15100000,
+          "rate": 6
+        },
+        {
+          "min": 15100001,
+          "max": 16950000,
+          "rate": 7
+        },
+        {
+          "min": 16950001,
+          "max": 19750000,
+          "rate": 8
+        },
+        {
+          "min": 19750001,
+          "max": 24150000,
+          "rate": 9
+        },
+        {
+          "min": 24150001,
+          "max": 26450000,
+          "rate": 10
+        },
+        {
+          "min": 26450001,
+          "max": 28000000,
+          "rate": 11
+        },
+        {
+          "min": 28000001,
+          "max": 30050000,
+          "rate": 12
+        },
+        {
+          "min": 30050001,
+          "max": 32400000,
+          "rate": 13
+        },
+        {
+          "min": 32400001,
+          "max": 35400000,
+          "rate": 14
+        },
+        {
+          "min": 35400001,
+          "max": 39100000,
+          "rate": 15
+        },
+        {
+          "min": 39100001,
+          "max": 43850000,
+          "rate": 16
+        },
+        {
+          "min": 43850001,
+          "max": 47800000,
+          "rate": 17
+        },
+        {
+          "min": 47800001,
+          "max": 51400000,
+          "rate": 18
+        },
+        {
+          "min": 51400001,
+          "max": 56300000,
+          "rate": 19
+        },
+        {
+          "min": 56300001,
+          "max": 62200000,
+          "rate": 20
+        },
+        {
+          "min": 62200001,
+          "max": 68600000,
+          "rate": 21
+        },
+        {
+          "min": 68600001,
+          "max": 77500000,
+          "rate": 22
+        },
+        {
+          "min": 77500001,
+          "max": 89000000,
+          "rate": 23
+        },
+        {
+          "min": 89000001,
+          "max": 103000000,
+          "rate": 24
+        },
+        {
+          "min": 103000001,
+          "max": 125000000,
+          "rate": 25
+        },
+        {
+          "min": 125000001,
+          "max": 157000000,
+          "rate": 26
+        },
+        {
+          "min": 157000001,
+          "max": 206000000,
+          "rate": 27
+        },
+        {
+          "min": 206000001,
+          "max": 337000000,
+          "rate": 28
+        },
+        {
+          "min": 337000001,
+          "max": 454000000,
+          "rate": 29
+        },
+        {
+          "min": 454000001,
+          "max": 550000000,
+          "rate": 30
+        },
+        {
+          "min": 550000001,
+          "max": 695000000,
+          "rate": 31
+        },
+        {
+          "min": 695000001,
+          "max": 910000000,
+          "rate": 32
+        },
+        {
+          "min": 910000001,
+          "max": 1400000000,
+          "rate": 33
+        },
+        {
+          "min": 1400000001,
+          "max": null,
+          "rate": 34
+        }
+      ],
+      "effectiveRate": "0% untuk ≤ Rp 5.400.000, naik bertahap hingga 34% untuk > Rp 1.400.000.000"
+    },
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-21",
+      "ter",
+      "detail",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-21-ter-b-detail",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "TER Kategori B (TK/2, TK/3, K/1, K/2)",
+    "rate": {
+      "type": "progressive",
+      "value": "0% – 34% (40 lapisan)",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 6200000,
+          "rate": 0
+        },
+        {
+          "min": 6200001,
+          "max": 6500000,
+          "rate": 0.25
+        },
+        {
+          "min": 6500001,
+          "max": 6850000,
+          "rate": 0.5
+        },
+        {
+          "min": 6850001,
+          "max": 7300000,
+          "rate": 0.75
+        },
+        {
+          "min": 7300001,
+          "max": 9200000,
+          "rate": 1
+        },
+        {
+          "min": 9200001,
+          "max": 10750000,
+          "rate": 1.5
+        },
+        {
+          "min": 10750001,
+          "max": 11250000,
+          "rate": 2
+        },
+        {
+          "min": 11250001,
+          "max": 11600000,
+          "rate": 2.5
+        },
+        {
+          "min": 11600001,
+          "max": 12600000,
+          "rate": 3
+        },
+        {
+          "min": 12600001,
+          "max": 13600000,
+          "rate": 4
+        },
+        {
+          "min": 13600001,
+          "max": 14950000,
+          "rate": 5
+        },
+        {
+          "min": 14950001,
+          "max": 16400000,
+          "rate": 6
+        },
+        {
+          "min": 16400001,
+          "max": 18450000,
+          "rate": 7
+        },
+        {
+          "min": 18450001,
+          "max": 21850000,
+          "rate": 8
+        },
+        {
+          "min": 21850001,
+          "max": 26000000,
+          "rate": 9
+        },
+        {
+          "min": 26000001,
+          "max": 27700000,
+          "rate": 10
+        },
+        {
+          "min": 27700001,
+          "max": 29350000,
+          "rate": 11
+        },
+        {
+          "min": 29350001,
+          "max": 31450000,
+          "rate": 12
+        },
+        {
+          "min": 31450001,
+          "max": 33950000,
+          "rate": 13
+        },
+        {
+          "min": 33950001,
+          "max": 37100000,
+          "rate": 14
+        },
+        {
+          "min": 37100001,
+          "max": 41100000,
+          "rate": 15
+        },
+        {
+          "min": 41100001,
+          "max": 45800000,
+          "rate": 16
+        },
+        {
+          "min": 45800001,
+          "max": 49500000,
+          "rate": 17
+        },
+        {
+          "min": 49500001,
+          "max": 53800000,
+          "rate": 18
+        },
+        {
+          "min": 53800001,
+          "max": 58500000,
+          "rate": 19
+        },
+        {
+          "min": 58500001,
+          "max": 64000000,
+          "rate": 20
+        },
+        {
+          "min": 64000001,
+          "max": 71000000,
+          "rate": 21
+        },
+        {
+          "min": 71000001,
+          "max": 80000000,
+          "rate": 22
+        },
+        {
+          "min": 80000001,
+          "max": 93000000,
+          "rate": 23
+        },
+        {
+          "min": 93000001,
+          "max": 109000000,
+          "rate": 24
+        },
+        {
+          "min": 109000001,
+          "max": 129000000,
+          "rate": 25
+        },
+        {
+          "min": 129000001,
+          "max": 163000000,
+          "rate": 26
+        },
+        {
+          "min": 163000001,
+          "max": 211000000,
+          "rate": 27
+        },
+        {
+          "min": 211000001,
+          "max": 374000000,
+          "rate": 28
+        },
+        {
+          "min": 374000001,
+          "max": 459000000,
+          "rate": 29
+        },
+        {
+          "min": 459000001,
+          "max": 555000000,
+          "rate": 30
+        },
+        {
+          "min": 555000001,
+          "max": 704000000,
+          "rate": 31
+        },
+        {
+          "min": 704000001,
+          "max": 957000000,
+          "rate": 32
+        },
+        {
+          "min": 957000001,
+          "max": 1405000000,
+          "rate": 33
+        },
+        {
+          "min": 1405000001,
+          "max": null,
+          "rate": 34
+        }
+      ],
+      "effectiveRate": "0% untuk ≤ Rp 6.200.000, naik bertahap hingga 34% untuk > Rp 1.405.000.000"
+    },
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-21",
+      "ter",
+      "detail",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-21-ter-c-detail",
+    "category": "PPh",
+    "taxType": "PPh 21",
+    "transactionType": "TER Kategori C (K/3)",
+    "rate": {
+      "type": "progressive",
+      "value": "0% – 34% (41 lapisan)",
       "brackets": [
         {
           "min": 0,
@@ -1118,665 +1625,196 @@
         },
         {
           "min": 7350001,
-          "max": 7750000,
+          "max": 7800000,
           "rate": 0.75
         },
         {
-          "min": 7750001,
-          "max": 8200000,
+          "min": 7800001,
+          "max": 8850000,
           "rate": 1
         },
         {
-          "min": 8200001,
-          "max": 8650000,
+          "min": 8850001,
+          "max": 9800000,
           "rate": 1.25
         },
         {
-          "min": 8650001,
-          "max": 9150000,
+          "min": 9800001,
+          "max": 10950000,
           "rate": 1.5
         },
         {
-          "min": 9150001,
-          "max": 9700000,
+          "min": 10950001,
+          "max": 11200000,
           "rate": 1.75
         },
         {
-          "min": 9700001,
-          "max": 10300000,
+          "min": 11200001,
+          "max": 12050000,
           "rate": 2
         },
         {
-          "min": 10300001,
-          "max": 10900000,
-          "rate": 2.25
-        },
-        {
-          "min": 10900001,
-          "max": 11600000,
-          "rate": 2.5
-        },
-        {
-          "min": 11600001,
-          "max": 12300000,
-          "rate": 2.75
-        },
-        {
-          "min": 12300001,
-          "max": 13150000,
+          "min": 12050001,
+          "max": 12950000,
           "rate": 3
         },
         {
-          "min": 13150001,
-          "max": 14000000,
-          "rate": 3.25
-        },
-        {
-          "min": 14000001,
-          "max": 15000000,
-          "rate": 3.5
-        },
-        {
-          "min": 15000001,
-          "max": 16100000,
-          "rate": 3.75
-        },
-        {
-          "min": 16100001,
-          "max": 17300000,
+          "min": 12950001,
+          "max": 14150000,
           "rate": 4
         },
         {
-          "min": 17300001,
-          "max": 18600000,
-          "rate": 4.25
-        },
-        {
-          "min": 18600001,
-          "max": 20000000,
-          "rate": 4.5
-        },
-        {
-          "min": 20000001,
-          "max": 21600000,
-          "rate": 4.75
-        },
-        {
-          "min": 21600001,
-          "max": 23300000,
+          "min": 14150001,
+          "max": 15550000,
           "rate": 5
         },
         {
-          "min": 23300001,
-          "max": 25200000,
-          "rate": 5.5
-        },
-        {
-          "min": 25200001,
-          "max": 27400000,
-          "rate": 6
-        },
-        {
-          "min": 27400001,
-          "max": 29800000,
-          "rate": 6.5
-        },
-        {
-          "min": 29800001,
-          "max": 32600000,
-          "rate": 7
-        },
-        {
-          "min": 32600001,
-          "max": 35800000,
-          "rate": 7.5
-        },
-        {
-          "min": 35800001,
-          "max": 39500000,
-          "rate": 8
-        },
-        {
-          "min": 39500001,
-          "max": 43800000,
-          "rate": 8.5
-        },
-        {
-          "min": 43800001,
-          "max": 48800000,
-          "rate": 9
-        },
-        {
-          "min": 48800001,
-          "max": 54800000,
-          "rate": 9.5
-        },
-        {
-          "min": 54800001,
-          "max": 62000000,
-          "rate": 10
-        },
-        {
-          "min": 62000001,
-          "max": 71000000,
-          "rate": 10.5
-        },
-        {
-          "min": 71000001,
-          "max": 82500000,
-          "rate": 11
-        },
-        {
-          "min": 82500001,
-          "max": 97000000,
-          "rate": 11.5
-        },
-        {
-          "min": 97000001,
-          "max": 116000000,
-          "rate": 12
-        },
-        {
-          "min": 116000001,
-          "max": 141000000,
-          "rate": 12.5
-        },
-        {
-          "min": 141000001,
-          "max": 177000000,
-          "rate": 13
-        },
-        {
-          "min": 177000001,
-          "max": 232000000,
-          "rate": 13.5
-        },
-        {
-          "min": 232000001,
-          "max": 327000000,
-          "rate": 14
-        },
-        {
-          "min": 327000001,
-          "max": 530000000,
-          "rate": 14.5
-        },
-        {
-          "min": 530000001,
-          "max": 745000000,
-          "rate": 15
-        },
-        {
-          "min": 745000001,
-          "max": null,
-          "rate": 25
-        }
-      ],
-      "effectiveRate": "0% untuk ≤ Rp 6.600.000, naik bertahap hingga 25% untuk > Rp 745.000.000"
-    },
-    "effectiveFrom": "2024-01-01",
-    "effectiveTo": null,
-    "status": "berlaku",
-    "tags": [
-      "pph-21",
-      "ter",
-      "detail",
-      "berlaku"
-    ]
-  },
-  {
-    "id": "pph-21-ter-b-detail",
-    "category": "PPh",
-    "taxType": "PPh 21",
-    "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
-    "rate": {
-      "type": "progressive",
-      "value": "0% – 25% (42 lapisan)",
-      "brackets": [
-        {
-          "min": 0,
-          "max": 6950000,
-          "rate": 0
-        },
-        {
-          "min": 6950001,
-          "max": 7300000,
-          "rate": 0.25
-        },
-        {
-          "min": 7300001,
-          "max": 7700000,
-          "rate": 0.5
-        },
-        {
-          "min": 7700001,
-          "max": 8100000,
-          "rate": 0.75
-        },
-        {
-          "min": 8100001,
-          "max": 8550000,
-          "rate": 1
-        },
-        {
-          "min": 8550001,
-          "max": 9000000,
-          "rate": 1.25
-        },
-        {
-          "min": 9000001,
-          "max": 9500000,
-          "rate": 1.5
-        },
-        {
-          "min": 9500001,
-          "max": 10050000,
-          "rate": 1.75
-        },
-        {
-          "min": 10050001,
-          "max": 10650000,
-          "rate": 2
-        },
-        {
-          "min": 10650001,
-          "max": 11250000,
-          "rate": 2.25
-        },
-        {
-          "min": 11250001,
-          "max": 11950000,
-          "rate": 2.5
-        },
-        {
-          "min": 11950001,
-          "max": 12650000,
-          "rate": 2.75
-        },
-        {
-          "min": 12650001,
-          "max": 13500000,
-          "rate": 3
-        },
-        {
-          "min": 13500001,
-          "max": 14350000,
-          "rate": 3.25
-        },
-        {
-          "min": 14350001,
-          "max": 15350000,
-          "rate": 3.5
-        },
-        {
-          "min": 15350001,
-          "max": 16450000,
-          "rate": 3.75
-        },
-        {
-          "min": 16450001,
-          "max": 17650000,
-          "rate": 4
-        },
-        {
-          "min": 17650001,
-          "max": 18950000,
-          "rate": 4.25
-        },
-        {
-          "min": 18950001,
-          "max": 20350000,
-          "rate": 4.5
-        },
-        {
-          "min": 20350001,
-          "max": 21950000,
-          "rate": 4.75
-        },
-        {
-          "min": 21950001,
-          "max": 23650000,
-          "rate": 5
-        },
-        {
-          "min": 23650001,
-          "max": 25550000,
-          "rate": 5.5
-        },
-        {
-          "min": 25550001,
-          "max": 27750000,
-          "rate": 6
-        },
-        {
-          "min": 27750001,
-          "max": 30150000,
-          "rate": 6.5
-        },
-        {
-          "min": 30150001,
-          "max": 32950000,
-          "rate": 7
-        },
-        {
-          "min": 32950001,
-          "max": 36150000,
-          "rate": 7.5
-        },
-        {
-          "min": 36150001,
-          "max": 39850000,
-          "rate": 8
-        },
-        {
-          "min": 39850001,
-          "max": 44150000,
-          "rate": 8.5
-        },
-        {
-          "min": 44150001,
-          "max": 49150000,
-          "rate": 9
-        },
-        {
-          "min": 49150001,
-          "max": 55150000,
-          "rate": 9.5
-        },
-        {
-          "min": 55150001,
-          "max": 62350000,
-          "rate": 10
-        },
-        {
-          "min": 62350001,
-          "max": 71350000,
-          "rate": 10.5
-        },
-        {
-          "min": 71350001,
-          "max": 82850000,
-          "rate": 11
-        },
-        {
-          "min": 82850001,
-          "max": 97350000,
-          "rate": 11.5
-        },
-        {
-          "min": 97350001,
-          "max": 116350000,
-          "rate": 12
-        },
-        {
-          "min": 116350001,
-          "max": 141350000,
-          "rate": 12.5
-        },
-        {
-          "min": 141350001,
-          "max": 177350000,
-          "rate": 13
-        },
-        {
-          "min": 177350001,
-          "max": 232350000,
-          "rate": 13.5
-        },
-        {
-          "min": 232350001,
-          "max": 327350000,
-          "rate": 14
-        },
-        {
-          "min": 327350001,
-          "max": 530350000,
-          "rate": 14.5
-        },
-        {
-          "min": 530350001,
-          "max": 855000000,
-          "rate": 15
-        },
-        {
-          "min": 855000001,
-          "max": null,
-          "rate": 25
-        }
-      ],
-      "effectiveRate": "0% untuk ≤ Rp 6.950.000, naik bertahap hingga 25% untuk > Rp 855.000.000"
-    },
-    "effectiveFrom": "2024-01-01",
-    "effectiveTo": null,
-    "status": "berlaku",
-    "tags": [
-      "pph-21",
-      "ter",
-      "detail",
-      "berlaku"
-    ]
-  },
-  {
-    "id": "pph-21-ter-c-detail",
-    "category": "PPh",
-    "taxType": "PPh 21",
-    "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
-    "rate": {
-      "type": "progressive",
-      "value": "0% – 25% (42 lapisan)",
-      "brackets": [
-        {
-          "min": 0,
-          "max": 7550000,
-          "rate": 0
-        },
-        {
-          "min": 7550001,
-          "max": 7900000,
-          "rate": 0.25
-        },
-        {
-          "min": 7900001,
-          "max": 8300000,
-          "rate": 0.5
-        },
-        {
-          "min": 8300001,
-          "max": 8700000,
-          "rate": 0.75
-        },
-        {
-          "min": 8700001,
-          "max": 9150000,
-          "rate": 1
-        },
-        {
-          "min": 9150001,
-          "max": 9600000,
-          "rate": 1.25
-        },
-        {
-          "min": 9600001,
-          "max": 10100000,
-          "rate": 1.5
-        },
-        {
-          "min": 10100001,
-          "max": 10650000,
-          "rate": 1.75
-        },
-        {
-          "min": 10650001,
-          "max": 11250000,
-          "rate": 2
-        },
-        {
-          "min": 11250001,
-          "max": 11850000,
-          "rate": 2.25
-        },
-        {
-          "min": 11850001,
-          "max": 12550000,
-          "rate": 2.5
-        },
-        {
-          "min": 12550001,
-          "max": 13250000,
-          "rate": 2.75
-        },
-        {
-          "min": 13250001,
-          "max": 14100000,
-          "rate": 3
-        },
-        {
-          "min": 14100001,
-          "max": 14950000,
-          "rate": 3.25
-        },
-        {
-          "min": 14950001,
-          "max": 15950000,
-          "rate": 3.5
-        },
-        {
-          "min": 15950001,
+          "min": 15550001,
           "max": 17050000,
-          "rate": 3.75
+          "rate": 6
         },
         {
           "min": 17050001,
-          "max": 18250000,
-          "rate": 4
-        },
-        {
-          "min": 18250001,
-          "max": 19550000,
-          "rate": 4.25
-        },
-        {
-          "min": 19550001,
-          "max": 20950000,
-          "rate": 4.5
-        },
-        {
-          "min": 20950001,
-          "max": 22550000,
-          "rate": 4.75
-        },
-        {
-          "min": 22550001,
-          "max": 24250000,
-          "rate": 5
-        },
-        {
-          "min": 24250001,
-          "max": 26150000,
-          "rate": 5.5
-        },
-        {
-          "min": 26150001,
-          "max": 28350000,
-          "rate": 6
-        },
-        {
-          "min": 28350001,
-          "max": 30750000,
-          "rate": 6.5
-        },
-        {
-          "min": 30750001,
-          "max": 33550000,
+          "max": 19500000,
           "rate": 7
         },
         {
-          "min": 33550001,
-          "max": 36750000,
-          "rate": 7.5
-        },
-        {
-          "min": 36750001,
-          "max": 40450000,
+          "min": 19500001,
+          "max": 22700000,
           "rate": 8
         },
         {
-          "min": 40450001,
-          "max": 44750000,
-          "rate": 8.5
-        },
-        {
-          "min": 44750001,
-          "max": 49750000,
+          "min": 22700001,
+          "max": 26600000,
           "rate": 9
         },
         {
-          "min": 49750001,
-          "max": 55750000,
-          "rate": 9.5
-        },
-        {
-          "min": 55750001,
-          "max": 62950000,
+          "min": 26600001,
+          "max": 28100000,
           "rate": 10
         },
         {
-          "min": 62950001,
-          "max": 71950000,
-          "rate": 10.5
-        },
-        {
-          "min": 71950001,
-          "max": 83450000,
+          "min": 28100001,
+          "max": 30100000,
           "rate": 11
         },
         {
-          "min": 83450001,
-          "max": 97950000,
-          "rate": 11.5
-        },
-        {
-          "min": 97950001,
-          "max": 116950000,
+          "min": 30100001,
+          "max": 32600000,
           "rate": 12
         },
         {
-          "min": 116950001,
-          "max": 141950000,
-          "rate": 12.5
-        },
-        {
-          "min": 141950001,
-          "max": 177950000,
+          "min": 32600001,
+          "max": 35400000,
           "rate": 13
         },
         {
-          "min": 177950001,
-          "max": 232950000,
-          "rate": 13.5
-        },
-        {
-          "min": 232950001,
-          "max": 327950000,
+          "min": 35400001,
+          "max": 38900000,
           "rate": 14
         },
         {
-          "min": 327950001,
-          "max": 530950000,
-          "rate": 14.5
-        },
-        {
-          "min": 530950001,
-          "max": 955000000,
+          "min": 38900001,
+          "max": 43000000,
           "rate": 15
         },
         {
-          "min": 955000001,
-          "max": null,
+          "min": 43000001,
+          "max": 47400000,
+          "rate": 16
+        },
+        {
+          "min": 47400001,
+          "max": 51200000,
+          "rate": 17
+        },
+        {
+          "min": 51200001,
+          "max": 55800000,
+          "rate": 18
+        },
+        {
+          "min": 55800001,
+          "max": 60400000,
+          "rate": 19
+        },
+        {
+          "min": 60400001,
+          "max": 66700000,
+          "rate": 20
+        },
+        {
+          "min": 66700001,
+          "max": 74500000,
+          "rate": 21
+        },
+        {
+          "min": 74500001,
+          "max": 83200000,
+          "rate": 22
+        },
+        {
+          "min": 83200001,
+          "max": 95600000,
+          "rate": 23
+        },
+        {
+          "min": 95600001,
+          "max": 110000000,
+          "rate": 24
+        },
+        {
+          "min": 110000001,
+          "max": 134000000,
           "rate": 25
+        },
+        {
+          "min": 134000001,
+          "max": 169000000,
+          "rate": 26
+        },
+        {
+          "min": 169000001,
+          "max": 221000000,
+          "rate": 27
+        },
+        {
+          "min": 221000001,
+          "max": 390000000,
+          "rate": 28
+        },
+        {
+          "min": 390000001,
+          "max": 463000000,
+          "rate": 29
+        },
+        {
+          "min": 463000001,
+          "max": 561000000,
+          "rate": 30
+        },
+        {
+          "min": 561000001,
+          "max": 709000000,
+          "rate": 31
+        },
+        {
+          "min": 709000001,
+          "max": 965000000,
+          "rate": 32
+        },
+        {
+          "min": 965000001,
+          "max": 1419000000,
+          "rate": 33
+        },
+        {
+          "min": 1419000001,
+          "max": null,
+          "rate": 34
         }
       ],
-      "effectiveRate": "0% untuk ≤ Rp 7.550.000, naik bertahap hingga 25% untuk > Rp 955.000.000"
+      "effectiveRate": "0% untuk ≤ Rp 6.600.000, naik bertahap hingga 34% untuk > Rp 1.419.000.000"
     },
     "effectiveFrom": "2024-01-01",
     "effectiveTo": null,
@@ -1903,7 +1941,7 @@
     "transactionType": "Norma - Pedagang",
     "rate": {
       "type": "percentage",
-      "value": 15
+      "value": 20
     },
     "effectiveFrom": "2002-01-01",
     "effectiveTo": null,
@@ -1921,7 +1959,7 @@
     "transactionType": "Norma - Petani/Peternak",
     "rate": {
       "type": "percentage",
-      "value": 25
+      "value": 10
     },
     "effectiveFrom": "2002-01-01",
     "effectiveTo": null,
@@ -1939,7 +1977,7 @@
     "transactionType": "Norma - Pengusaha Kecil Lainnya",
     "rate": {
       "type": "percentage",
-      "value": 25
+      "value": 10
     },
     "effectiveFrom": "2002-01-01",
     "effectiveTo": null,
@@ -1954,7 +1992,7 @@
     "id": "pph-22-impor-2024",
     "category": "PPh",
     "taxType": "PPh 22",
-    "transactionType": "Impor Barang",
+    "transactionType": "Impor Barang (Umum)",
     "rate": {
       "type": "percentage",
       "value": 7.5
@@ -1965,6 +2003,26 @@
     "tags": [
       "pph-22",
       "impor",
+      "bea-cukai",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "pph-22-impor-barang-tertentu",
+    "category": "PPh",
+    "taxType": "PPh 22",
+    "transactionType": "Impor Barang Tertentu (Daftar PMK)",
+    "rate": {
+      "type": "percentage",
+      "value": 10
+    },
+    "effectiveFrom": "2024-01-01",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "tags": [
+      "pph-22",
+      "impor",
+      "barang-tertentu",
       "bea-cukai",
       "berlaku"
     ]
@@ -2445,11 +2503,11 @@
       "brackets": [
         {
           "min": 0,
-          "max": 50000000,
+          "max": 60000000,
           "rate": 5
         },
         {
-          "min": 50000000,
+          "min": 60000000,
           "max": 250000000,
           "rate": 15
         },
@@ -2460,8 +2518,13 @@
         },
         {
           "min": 500000000,
-          "max": null,
+          "max": 5000000000,
           "rate": 30
+        },
+        {
+          "min": 5000000000,
+          "max": null,
+          "rate": 35
         }
       ]
     },
@@ -2587,7 +2650,7 @@
         6
       ]
     },
-    "effectiveFrom": "2009-07-01",
+    "effectiveFrom": "2021-02-02",
     "effectiveTo": null,
     "status": "berlaku",
     "tags": [
@@ -2849,7 +2912,7 @@
     "id": "pph-badan-2022-plus",
     "category": "PPh",
     "taxType": "PPh Badan",
-    "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
+    "transactionType": "Penghasilan Kena Pajak Badan (Tahun Pajak 2022 dan Seterusnya)",
     "rate": {
       "type": "percentage",
       "value": 22
@@ -2906,7 +2969,7 @@
     "id": "pph-badan-umkm",
     "category": "PPh",
     "taxType": "PPh Badan",
-    "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar)",
+    "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto Tahun Sebelumnya ≤ Rp 50 miliar)",
     "rate": {
       "type": "percentage",
       "value": 11
@@ -3018,18 +3081,40 @@
     "id": "pph-umkm-05pct-2023",
     "category": "PPh",
     "taxType": "PPh UMKM",
-    "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
+    "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022",
     "rate": {
       "type": "percentage",
       "value": 0.5
     },
     "effectiveFrom": "2023-01-01",
+    "effectiveTo": "2026-04-21",
+    "status": "diubah",
+    "tags": [
+      "pph-umkm",
+      "final",
+      "0.5-persen",
+      "diubah",
+      "historis"
+    ]
+  },
+  {
+    "id": "pph-umkm-05pct-op-pp20-2026",
+    "category": "PPh",
+    "taxType": "PPh UMKM",
+    "transactionType": "Penghasilan Usaha WP Orang Pribadi (Peredaran Bruto s.d. Rp 4,8 miliar) - PP 20/2026",
+    "rate": {
+      "type": "percentage",
+      "value": 0.5
+    },
+    "effectiveFrom": "2026-04-22",
     "effectiveTo": null,
     "status": "berlaku",
     "tags": [
       "pph-umkm",
       "final",
       "0.5-persen",
+      "pp-20-2026",
+      "orang-pribadi",
       "berlaku"
     ]
   },
@@ -3080,7 +3165,7 @@
     "rate": {
       "type": "percentage",
       "value": 11,
-      "effectiveRate": "11/12 × 12% = 11% (PMK 131/2024)"
+      "effectiveRate": "12% × 11/12 = 11% untuk selain barang mewah (PMK 131/2024 jo. PMK 11/2025); 12% penuh hanya BKP mewah"
     },
     "effectiveFrom": "2025-01-01",
     "effectiveTo": null,
@@ -3089,6 +3174,8 @@
       "ppn",
       "tarif-efektif",
       "pmk-131-2024",
+      "pmk-11-2025",
+      "dpp-nilai-lain",
       "berlaku"
     ]
   },
@@ -3346,74 +3433,7 @@
     "id": "ppnbm-general",
     "category": "PPnBM",
     "taxType": "PPnBM",
-    "transactionType": "Penyerahan Barang Mewah",
-    "rate": {
-      "type": "range",
-      "value": [
-        10,
-        200
-      ]
-    },
-    "effectiveFrom": "2022-04-01",
-    "effectiveTo": null,
-    "status": "berlaku",
-    "tags": [
-      "ppnbm",
-      "barang-mewah",
-      "berlaku"
-    ]
-  },
-  {
-    "id": "ppnbm-sedan-station-wagon",
-    "category": "PPnBM",
-    "taxType": "PPnBM",
-    "transactionType": "Sedan dan Station Wagon 4x2",
-    "rate": {
-      "type": "range",
-      "value": [
-        10,
-        40
-      ]
-    },
-    "effectiveFrom": "2022-04-01",
-    "effectiveTo": null,
-    "status": "berlaku",
-    "tags": [
-      "ppnbm",
-      "sedan",
-      "station-wagon",
-      "kendaraan",
-      "berlaku"
-    ]
-  },
-  {
-    "id": "ppnbm-suv-4x4",
-    "category": "PPnBM",
-    "taxType": "PPnBM",
-    "transactionType": "Sedan dan Station Wagon 4x4 / SUV",
-    "rate": {
-      "type": "range",
-      "value": [
-        10,
-        75
-      ]
-    },
-    "effectiveFrom": "2022-04-01",
-    "effectiveTo": null,
-    "status": "berlaku",
-    "tags": [
-      "ppnbm",
-      "suv",
-      "4x4",
-      "kendaraan",
-      "berlaku"
-    ]
-  },
-  {
-    "id": "ppnbm-van-wagon",
-    "category": "PPnBM",
-    "taxType": "PPnBM",
-    "transactionType": "Van/Wagon > 10 Penumpang",
+    "transactionType": "Penyerahan Barang Mewah (3 Objek PPnBM pasca-UU HPP)",
     "rate": {
       "type": "percentage",
       "value": 10
@@ -3423,10 +3443,78 @@
     "status": "berlaku",
     "tags": [
       "ppnbm",
+      "barang-mewah",
+      "uu-hpp",
+      "berlaku"
+    ]
+  },
+  {
+    "id": "ppnbm-sedan-station-wagon",
+    "category": "PPnBM",
+    "taxType": "PPnBM",
+    "transactionType": "Sedan dan Station Wagon 4x2 (Historis - Pra-UU HPP)",
+    "rate": {
+      "type": "range",
+      "value": [
+        10,
+        40
+      ]
+    },
+    "effectiveFrom": "2009-10-06",
+    "effectiveTo": "2022-03-31",
+    "status": "dicabut",
+    "tags": [
+      "ppnbm",
+      "sedan",
+      "station-wagon",
+      "kendaraan",
+      "dicabut",
+      "historis"
+    ]
+  },
+  {
+    "id": "ppnbm-suv-4x4",
+    "category": "PPnBM",
+    "taxType": "PPnBM",
+    "transactionType": "Sedan dan Station Wagon 4x4 / SUV (Historis - Pra-UU HPP)",
+    "rate": {
+      "type": "range",
+      "value": [
+        10,
+        75
+      ]
+    },
+    "effectiveFrom": "2009-10-06",
+    "effectiveTo": "2022-03-31",
+    "status": "dicabut",
+    "tags": [
+      "ppnbm",
+      "suv",
+      "4x4",
+      "kendaraan",
+      "dicabut",
+      "historis"
+    ]
+  },
+  {
+    "id": "ppnbm-van-wagon",
+    "category": "PPnBM",
+    "taxType": "PPnBM",
+    "transactionType": "Van/Wagon > 10 Penumpang (Historis - Pra-UU HPP)",
+    "rate": {
+      "type": "percentage",
+      "value": 10
+    },
+    "effectiveFrom": "2009-10-06",
+    "effectiveTo": "2022-03-31",
+    "status": "dicabut",
+    "tags": [
+      "ppnbm",
       "van",
       "minibus",
       "kendaraan",
-      "berlaku"
+      "dicabut",
+      "historis"
     ]
   },
   {
@@ -3435,11 +3523,8 @@
     "taxType": "PPnBM",
     "transactionType": "Kapal Pesiar dan Kapal Mewah",
     "rate": {
-      "type": "range",
-      "value": [
-        10,
-        50
-      ]
+      "type": "percentage",
+      "value": 10
     },
     "effectiveFrom": "2022-04-01",
     "effectiveTo": null,
@@ -3458,11 +3543,8 @@
     "taxType": "PPnBM",
     "transactionType": "Pesawat Udara Pribadi",
     "rate": {
-      "type": "range",
-      "value": [
-        10,
-        50
-      ]
+      "type": "percentage",
+      "value": 10
     },
     "effectiveFrom": "2022-04-01",
     "effectiveTo": null,
@@ -3481,11 +3563,8 @@
     "taxType": "PPnBM",
     "transactionType": "Rumah Mewah dan Apartemen Mewah",
     "rate": {
-      "type": "range",
-      "value": [
-        10,
-        40
-      ]
+      "type": "percentage",
+      "value": 10
     },
     "effectiveFrom": "2022-04-01",
     "effectiveTo": null,
@@ -3502,7 +3581,7 @@
     "id": "ppnbm-perlengkapan-mewah",
     "category": "PPnBM",
     "taxType": "PPnBM",
-    "transactionType": "Perlengkapan Mewah",
+    "transactionType": "Perlengkapan Mewah (Historis - Pra-UU HPP)",
     "rate": {
       "type": "range",
       "value": [
@@ -3510,15 +3589,16 @@
         200
       ]
     },
-    "effectiveFrom": "2022-04-01",
-    "effectiveTo": null,
-    "status": "berlaku",
+    "effectiveFrom": "2009-10-06",
+    "effectiveTo": "2022-03-31",
+    "status": "dicabut",
     "tags": [
       "ppnbm",
       "perlengkapan",
       "mewah",
       "perhiasan",
-      "berlaku"
+      "dicabut",
+      "historis"
     ]
   }
 ]

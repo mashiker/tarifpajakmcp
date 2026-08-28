@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "uu-28-2009",
     "number": "28",
@@ -19,10 +19,7 @@
       "uu-1-2022-hkpd"
     ],
     "referencingEntries": [
-      "bphtb-perolehan-umum",
-      "bphtb-perolehan-waris",
-      "bphtb-pengalihan-dinkes",
-      "pbb-perkotaan",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y"
     ]

@@ -1,18 +1,18 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-22-impor-2024",
     "category": "PPh",
     "taxType": "PPh 22",
-    "transactionType": "Impor Barang",
-    "description": "Pemungutan PPh 22 atas impor barang oleh instansi pemerintah, yang dilakukan oleh Direktorat Jenderal Bea dan Cukai bersamaan dengan pemungutan Bea Masuk dan Cukai.",
+    "transactionType": "Impor Barang (Umum)",
+    "description": "Pemungutan PPh 22 atas impor barang yang dilakukan oleh Direktorat Jenderal Bea dan Cukai bersamaan dengan pembayaran Bea Masuk. Tarif 7,5% untuk impor yang tidak menggunakan Angka Pengenal Importir (API) atau menggunakan API umum, sepanjang barang tidak termasuk daftar barang impor tertentu yang dikenai 10%.",
     "rate": {
       "type": "percentage",
       "value": 7.5
     },
-    "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
+    "taxBase": "Nilai impor = CIF + Bea Masuk + pungutan lain berdasarkan ketentuan kepabeanan",
     "payer": "Importir",
     "recipient": "Negara",
     "withholder": "Direktorat Jenderal Bea dan Cukai",
@@ -26,6 +26,11 @@
         "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
       },
       {
+        "regulation": "PMK 51/2025",
+        "article": "Pasal 3-4 (daftar barang impor)",
+        "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-51-tahun-2025"
+      },
+      {
         "regulation": "UU 7/2021 (HPP)",
         "article": "Pasal 22",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
@@ -34,14 +39,14 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif 7,5% untuk impor yang tidak menggunakan angka pengenal impor (API) atau menggunakan API umum. Berbeda untuk API produsen.",
+    "notes": "Tarif 7,5% untuk impor yang tidak menggunakan API atau menggunakan API umum (selain daftar barang impor tertentu yang dikenai 10% dan kedelai/gandum/tepung terigu API 0,5%). Impor dengan API produsen: 2,5%. Impor atas barang yang tidak dikuasai: 7,5% × harga jual lelang. Tanpa NPWP: tarif tidak final × 2. Daftar barang impor diperbarui melalui PMK 51/2025 (menggantikan PMK 34/PMK.010/2017 jo. PMK 41/PMK.010/2022 yang dicabut via PMK 81/2024).",
     "tags": [
       "pph-22",
       "impor",
       "bea-cukai",
       "berlaku"
     ],
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-28",
     "bppuKode": [
       {
         "kode": "22-404-01",
@@ -58,6 +63,7 @@
     ],
     "relatedEntries": {
       "sameCategory": [
+        "pph-22-impor-barang-tertentu",
         "pph-22-pembelian-barang-2024",
         "pph-22-penjualan-barang-2024",
         "pph-22-impor-api-produsen",

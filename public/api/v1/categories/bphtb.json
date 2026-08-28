@@ -1,27 +1,43 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "category": "Pajak Daerah",
     "taxType": "BPHTB",
-    "description": "Bea Perolehan Hak atas Tanah dan Bangunan - Pajak yang dikenakan atas perolehan hak atas tanah dan/atau bangunan",
-    "count": 3,
+    "description": "Bea Perolehan Hak atas Tanah dan Bangunan - Pajak yang dikenakan atas perolehan hak atas tanah dan/atau bangunan (UU 1/2022 HKPD berlaku penuh sejak 5 Januari 2025)",
+    "count": 5,
     "entries": [
       {
         "id": "bphtb-perolehan-umum",
         "transactionType": "Perolehan Hak atas Tanah/Bangunan (Umum)",
         "rate": "5%",
         "status": "berlaku",
-        "effectiveFrom": "2010-01-01",
+        "effectiveFrom": "2025-01-05",
         "effectiveTo": null
       },
       {
+        "id": "bphtb-perolehan-umum-era-uu-28-2009",
+        "transactionType": "Perolehan Hak atas Tanah/Bangunan (Rejim UU 28/2009)",
+        "rate": "5%",
+        "status": "diubah",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": "2025-01-04"
+      },
+      {
         "id": "bphtb-perolehan-waris",
-        "transactionType": "Perolehan Hak melalui Waris",
+        "transactionType": "Perolehan Hak melalui Waris / Hibah Wasiat",
         "rate": "5%",
         "status": "berlaku",
-        "effectiveFrom": "2010-01-01",
+        "effectiveFrom": "2025-01-05",
+        "effectiveTo": null
+      },
+      {
+        "id": "bphtb-hibah-sedarah-keturunan-lurus",
+        "transactionType": "Hibah kepada Orang Pribadi Sedarah Garis Keturunan Lurus Satu Derajat",
+        "rate": "5%",
+        "status": "berlaku",
+        "effectiveFrom": "2025-01-05",
         "effectiveTo": null
       },
       {

@@ -1,18 +1,18 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-21-norma-pedagang",
     "category": "PPh",
     "taxType": "PPh 21",
     "transactionType": "Norma - Pedagang",
-    "description": "Norma penghitungan penghasilan neto 15% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+    "description": "Norma penghitungan penghasilan neto 20% dari bruto untuk usaha perdagangan. Dasar: PMK 523/2002 jo. PMK 43/2022.",
     "rate": {
       "type": "percentage",
-      "value": 15
+      "value": 20
     },
-    "taxBase": "15% × penghasilan bruto (norma penghitungan)",
+    "taxBase": "20% × penghasilan bruto (norma penghitungan)",
     "payer": "WP OP pelaku pekerjaan bebas",
     "recipient": "Negara",
     "withholder": null,

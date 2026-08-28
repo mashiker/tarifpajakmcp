@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-26-but",
     "category": "PPh",
@@ -14,11 +14,11 @@
       "brackets": [
         {
           "min": 0,
-          "max": 50000000,
+          "max": 60000000,
           "rate": 5
         },
         {
-          "min": 50000000,
+          "min": 60000000,
           "max": 250000000,
           "rate": 15
         },
@@ -29,8 +29,13 @@
         },
         {
           "min": 500000000,
-          "max": null,
+          "max": 5000000000,
           "rate": 30
+        },
+        {
+          "min": 5000000000,
+          "max": null,
+          "rate": 35
         }
       ]
     },
@@ -54,14 +59,14 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "BUT dikenakan PPh normal (Pasal 17) atas laba usaha + Branch Profit Tax 20% atas laba setelah pajak yang dikirim ke kantor pusat. Beberapa P3B mengurangi atau menghapus branch profit tax.",
+    "notes": "BUT dikenakan PPh normal (Pasal 17) atas laba usaha + Branch Profit Tax 20% atas laba setelah pajak yang dikirim ke kantor pusat. Beberapa P3B mengurangi atau menghapus branch profit tax. Tarif progresif mengikuti Pasal 17 ayat (1) huruf a pasca-UU HPP: 5% s.d. Rp 60 juta; 15% >60-250 juta; 25% >250-500 juta; 30% >500 juta-5 miliar; 35% >5 miliar.",
     "tags": [
       "pph-26",
       "but",
       "branch-profit-tax",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "examples": [
       {
         "scenario": "Penghasilan BUT (Bentuk Usaha Tetap) PKP Rp 100.000.000",

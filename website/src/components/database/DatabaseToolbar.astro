@@ -175,7 +175,9 @@ const isDefault = (a: string, b: string) => a === b;
   }
   .db-toolbar-search { flex: 1 1 22rem; }
   .db-search-wrap { position: relative; flex: 1; }
-  .db-search-input { padding-left: 2.25rem; }
+  /* Dua class (>.db-input satu class) supaya mengalahkan .db-input yang
+     didefinisikan lebih bawah dengan specificity setara. */
+  .db-input.db-search-input { padding-left: 2.25rem; }
   .db-search-icon {
     position: absolute;
     left: 0.75rem;

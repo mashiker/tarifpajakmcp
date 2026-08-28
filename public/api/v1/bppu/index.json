@@ -1,9 +1,9 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
-    "count": 253,
+    "count": 250,
     "prefixes": [
       "22-100",
       "22-101",
@@ -16,11 +16,10 @@
       "22-900",
       "22-910",
       "24-100",
-      "24-101",
-      "24-102",
-      "24-103",
       "24-104",
-      "24-105",
+      "27-101",
+      "27-102",
+      "27-103",
       "28-401",
       "28-402",
       "28-403",
@@ -340,42 +339,6 @@
         "nama": "Sewa dan Penghasilan Lain Sehubungan Dengan Penggunaan Harta Kecuali Sewa Tanah dan/atau Bangunan yang Telah Dikenai PPh Pasal 4 Ayat (2) UU PPh.",
         "tarif": 2,
         "entryId": "pph-23-jasa-lain-4pct"
-      },
-      {
-        "kode": "24-101-01",
-        "nama": "Dividen",
-        "tarif": 15,
-        "entryId": "pph-26-dividen"
-      },
-      {
-        "kode": "24-101-01",
-        "nama": "Dividen",
-        "tarif": 15,
-        "entryId": "pph-26-general-2024"
-      },
-      {
-        "kode": "24-102-01",
-        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
-        "tarif": 15,
-        "entryId": "pph-26-bunga"
-      },
-      {
-        "kode": "24-102-01",
-        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
-        "tarif": 15,
-        "entryId": "pph-26-general-2024"
-      },
-      {
-        "kode": "24-103-01",
-        "nama": "Royalti",
-        "tarif": 15,
-        "entryId": "pph-26-general-2024"
-      },
-      {
-        "kode": "24-103-01",
-        "nama": "Royalti",
-        "tarif": 15,
-        "entryId": "pph-26-royalti"
       },
       {
         "kode": "24-104-01",
@@ -1212,10 +1175,40 @@
         "entryId": "pph-23-jasa-lain-4pct"
       },
       {
-        "kode": "24-105-01",
-        "nama": "Bunga Pinjaman yang Diterima  Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap Melalui Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi",
-        "tarif": 0,
+        "kode": "27-101-01",
+        "nama": "Dividen (PPh Pasal 26)",
+        "tarif": 20,
+        "entryId": "pph-26-dividen"
+      },
+      {
+        "kode": "27-101-01",
+        "nama": "Dividen (PPh Pasal 26)",
+        "tarif": 20,
         "entryId": "pph-26-general-2024"
+      },
+      {
+        "kode": "27-102-01",
+        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2) (PPh Pasal 26)",
+        "tarif": 20,
+        "entryId": "pph-26-bunga"
+      },
+      {
+        "kode": "27-102-01",
+        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2) (PPh Pasal 26)",
+        "tarif": 20,
+        "entryId": "pph-26-general-2024"
+      },
+      {
+        "kode": "27-103-01",
+        "nama": "Royalti (PPh Pasal 26)",
+        "tarif": 20,
+        "entryId": "pph-26-general-2024"
+      },
+      {
+        "kode": "27-103-01",
+        "nama": "Royalti (PPh Pasal 26)",
+        "tarif": 20,
+        "entryId": "pph-26-royalti"
       },
       {
         "kode": "28-401-01",
@@ -1362,48 +1355,6 @@
         "entryId": "pph-final-transaksi-saham-bursa"
       },
       {
-        "kode": "28-409-08",
-        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Dengan Kualifikasi Usaha)",
-        "tarif": 4,
-        "entryId": "pph-final-konstruksi"
-      },
-      {
-        "kode": "28-409-09",
-        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Tanpa Kualifikasi Usaha)",
-        "tarif": 6,
-        "entryId": "pph-final-konstruksi"
-      },
-      {
-        "kode": "28-409-10",
-        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Kecil)",
-        "tarif": 2,
-        "entryId": "pph-final-konstruksi"
-      },
-      {
-        "kode": "28-409-11",
-        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Menengah dan Besar)",
-        "tarif": 3,
-        "entryId": "pph-final-konstruksi"
-      },
-      {
-        "kode": "28-409-12",
-        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Tanpa Kualifikasi Usaha)",
-        "tarif": 4,
-        "entryId": "pph-final-konstruksi"
-      },
-      {
-        "kode": "28-409-13",
-        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Dengan Kualifikasi Usaha)",
-        "tarif": 4,
-        "entryId": "pph-final-konstruksi"
-      },
-      {
-        "kode": "28-409-14",
-        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Tanpa Kualifikasi Usaha)",
-        "tarif": 6,
-        "entryId": "pph-final-konstruksi"
-      },
-      {
         "kode": "28-409-22",
         "nama": "Pekerjaan Konstruksi yang Dilakukan oleh Penyedia Jasa yang Memiliki Sertifikat Badan Usaha Kualifikasi Kecil atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
         "tarif": 1.75,
@@ -1518,10 +1469,22 @@
         "entryId": "pph-umkm-05pct-2023"
       },
       {
+        "kode": "28-423-01",
+        "nama": "Pemotongan atau pemungutan PPh atas  penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 23 Tahun 2018 atau Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0.5,
+        "entryId": "pph-umkm-05pct-op-pp20-2026"
+      },
+      {
         "kode": "28-423-02",
         "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 55 Tahun 2022.",
         "tarif": 0,
         "entryId": "pph-umkm-05pct-2023"
+      },
+      {
+        "kode": "28-423-02",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0,
+        "entryId": "pph-umkm-05pct-op-pp20-2026"
       },
       {
         "kode": "28-423-03",
@@ -1530,8 +1493,26 @@
         "entryId": "pph-umkm-05pct-2023"
       },
       {
+        "kode": "28-423-03",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak orang pribadi yang memiliki peredaran bruto tertentu sesuai dengan PP 55 Tahun 2022 dengan peredaran usaha s.d Rp500.000.000,00.",
+        "tarif": 0.5,
+        "entryId": "pph-umkm-05pct-op-pp20-2026"
+      },
+      {
         "kode": "28-423-12",
         "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak yang memenuhi persyaratan tertentu untuk dikenai PPh yang bersifat final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0,
+        "entryId": "pph-umkm-05pct-2023"
+      },
+      {
+        "kode": "28-423-12",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak yang memenuhi persyaratan tertentu untuk dikenai PPh yang bersifat final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0,
+        "entryId": "pph-umkm-05pct-op-pp20-2026"
+      },
+      {
+        "kode": "28-423-13",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
         "tarif": 0,
         "entryId": "pph-umkm-05pct-2023"
       },
@@ -1539,7 +1520,7 @@
         "kode": "28-423-13",
         "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
         "tarif": 0,
-        "entryId": "pph-umkm-05pct-2023"
+        "entryId": "pph-umkm-05pct-op-pp20-2026"
       },
       {
         "kode": "28-499-01",

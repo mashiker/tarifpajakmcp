@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "uu-10-2020-bea-meterai",
     "number": "10",
@@ -14,7 +14,7 @@
     "sourceUrl": "https://peraturan.bpk.go.id/Details/135968/uu-no-10-tahun-2020",
     "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-10-tahun-2020",
     "status": "berlaku",
-    "description": "UU Bea Meterai baru menggantikan UU 13/1985. Tarif Rp 10.000 untuk dokumen >Rp 1.000.000. Berlaku 1 Januari 2021.",
+    "description": "UU Bea Meterai baru menggantikan UU 13/1985. Tarif Rp 10.000 untuk dokumen dengan jumlah uang >Rp 5.000.000 (di bawahnya tidak dikenai bea meterai); dokumen selain keterangan jumlah uang kena Rp 10.000 per dokumen. Berlaku 1 Januari 2021 dan masih berlaku per Agustus 2026.",
     "relevantArticles": "Pasal 3, 4, 5",
     "relatedRegulations": [
       "uu-13-1985"

@@ -1,45 +1,80 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "prefix": "28-423",
-    "count": 5,
+    "count": 10,
     "codes": [
       {
         "kode": "28-423-01",
         "nama": "Pemotongan atau pemungutan PPh atas  penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 23 Tahun 2018 atau Peraturan Pemerintah Nomor 55 Tahun 2022.",
         "tarif": 0.5,
         "entryId": "pph-umkm-05pct-2023",
-        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)"
+        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022"
+      },
+      {
+        "kode": "28-423-01",
+        "nama": "Pemotongan atau pemungutan PPh atas  penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 23 Tahun 2018 atau Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0.5,
+        "entryId": "pph-umkm-05pct-op-pp20-2026",
+        "entryTransactionType": "Penghasilan Usaha WP Orang Pribadi (Peredaran Bruto s.d. Rp 4,8 miliar) - PP 20/2026"
       },
       {
         "kode": "28-423-02",
         "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 55 Tahun 2022.",
         "tarif": 0,
         "entryId": "pph-umkm-05pct-2023",
-        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)"
+        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022"
+      },
+      {
+        "kode": "28-423-02",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0,
+        "entryId": "pph-umkm-05pct-op-pp20-2026",
+        "entryTransactionType": "Penghasilan Usaha WP Orang Pribadi (Peredaran Bruto s.d. Rp 4,8 miliar) - PP 20/2026"
       },
       {
         "kode": "28-423-03",
         "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak orang pribadi yang memiliki peredaran bruto tertentu sesuai dengan PP 55 Tahun 2022 dengan peredaran usaha s.d Rp500.000.000,00.",
         "tarif": 0.5,
         "entryId": "pph-umkm-05pct-2023",
-        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)"
+        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022"
+      },
+      {
+        "kode": "28-423-03",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak orang pribadi yang memiliki peredaran bruto tertentu sesuai dengan PP 55 Tahun 2022 dengan peredaran usaha s.d Rp500.000.000,00.",
+        "tarif": 0.5,
+        "entryId": "pph-umkm-05pct-op-pp20-2026",
+        "entryTransactionType": "Penghasilan Usaha WP Orang Pribadi (Peredaran Bruto s.d. Rp 4,8 miliar) - PP 20/2026"
       },
       {
         "kode": "28-423-12",
         "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak yang memenuhi persyaratan tertentu untuk dikenai PPh yang bersifat final dengan tarif 0% di IKN (PPh UMKM di IKN).",
         "tarif": 0,
         "entryId": "pph-umkm-05pct-2023",
-        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)"
+        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022"
+      },
+      {
+        "kode": "28-423-12",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak yang memenuhi persyaratan tertentu untuk dikenai PPh yang bersifat final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0,
+        "entryId": "pph-umkm-05pct-op-pp20-2026",
+        "entryTransactionType": "Penghasilan Usaha WP Orang Pribadi (Peredaran Bruto s.d. Rp 4,8 miliar) - PP 20/2026"
       },
       {
         "kode": "28-423-13",
         "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
         "tarif": 0,
         "entryId": "pph-umkm-05pct-2023",
-        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)"
+        "entryTransactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022"
+      },
+      {
+        "kode": "28-423-13",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0,
+        "entryId": "pph-umkm-05pct-op-pp20-2026",
+        "entryTransactionType": "Penghasilan Usaha WP Orang Pribadi (Peredaran Bruto s.d. Rp 4,8 miliar) - PP 20/2026"
       }
     ]
   }

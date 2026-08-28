@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pbb-perkebunan",
     "category": "Pajak Daerah",
@@ -28,7 +28,7 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "PBB Perkebunan dikelola oleh Pemerintah Pusat dengan tarif 0,05% dari NJOP. Tidak ada NJOPTKP.",
+    "notes": "PBB Perkebunan dikelola oleh Pemerintah Pusat dengan tarif 0,05% dari NJOP berdasarkan peraturan Menteri Keuangan pelaksana PBB-P3. Band Pasal 48 UU 1/2022: paling rendah 0,01% dan paling tinggi 0,2%. Tidak ada NJOPTKP.",
     "tags": [
       "pbb",
       "perkebunan",

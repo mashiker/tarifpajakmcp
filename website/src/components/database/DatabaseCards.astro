@@ -27,7 +27,9 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
   }
 </ul>
 
-<style>
+<style is:global>
+  /* Global (bukan scoped): item list dirender via <Fragment set:html> tanpa
+     atribut scoping Astro. Semua class berawalan `db-` agar bebas tabrakan. */
   .db-cards {
     list-style: none;
     margin: 0;
@@ -42,13 +44,13 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
     display: block;
     padding: 0.75rem;
     border-radius: 0.625rem;
-    border: 1px solid var(--rule, #D9E0DC);
+    border: 1px solid var(--border, #D9E0DC);
     background: var(--surface, #FFFFFF);
     text-decoration: none;
-    color: var(--ink, #132A2A);
+    color: var(--text, #132A2A);
     transition: background-color 0.15s ease;
   }
-  .db-card:hover { background: rgba(14, 94, 88, 0.04); }
+  .db-card:hover { background: var(--surface-alt, #EFF1EC); }
   .db-card-top {
     display: flex;
     align-items: center;
@@ -62,8 +64,8 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
     gap: 0.375rem;
     padding: 0.125rem 0.5rem;
     border-radius: 0.375rem;
-    background: rgba(19, 42, 42, 0.05);
-    color: var(--ink-secondary, #44545a);
+    background: var(--surface-alt, #EFF1EC);
+    color: var(--text-secondary, #44545A);
     font-size: 0.6875rem;
     font-weight: 600;
   }
@@ -71,7 +73,8 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
     width: 0.4375rem;
     height: 0.4375rem;
     border-radius: 9999px;
-    background: var(--cat-color, #0E5E58);
+    background: var(--cat-color, var(--accent, #0E5E58));
+    flex-shrink: 0;
   }
   .db-card-name { font-size: 0.875rem; font-weight: 500; margin-bottom: 0.375rem; }
   .db-card-bottom {
@@ -81,11 +84,9 @@ const { rows, selectedDate = '', categoryMeta = {} } = Astro.props;
     margin-bottom: 0.5rem;
   }
   .db-card-rate { font-size: 0.875rem; }
-  .db-card-ruleid { font-family: 'IBM Plex Mono', monospace; font-size: 0.625rem; color: var(--ink-tertiary, #8B93A1); }
-  .db-card-detail { display: block; margin-top: 0.5rem; font-size: 0.75rem; color: #0E5E58; font-weight: 600; }
-  .db-cards-empty { padding: 1rem; text-align: center; color: var(--ink-secondary, #44545a); font-size: 0.875rem; list-style: none; }
-  :global(html.dark) .db-card { background: #111318; }
-  :global(html.dark) .db-card:hover { background: rgba(45, 212, 191, 0.06); }
+  .db-card-ruleid { font-family: var(--font-mono, monospace); font-size: 0.625rem; color: var(--text-tertiary, #5A6670); }
+  .db-card-detail { display: block; margin-top: 0.5rem; font-size: 0.75rem; color: var(--accent-text, #0E5E58); font-weight: 600; }
+  .db-cards-empty { padding: 1rem; text-align: center; color: var(--text-secondary, #44545A); font-size: 0.875rem; list-style: none; }
   @media (prefers-reduced-motion: reduce) {
     .db-card { transition: none; }
   }

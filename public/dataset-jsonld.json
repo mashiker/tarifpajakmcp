@@ -6,7 +6,7 @@
     "name": "Tarif Pajak ID",
     "url": "https://tarif-pajak-id.pages.dev"
   },
-  "dateModified": "2026-09-11",
+  "dateModified": "2026-08-28",
   "datePublished": "2024-01-01",
   "description": "Database referensi tarif pajak Indonesia (PPh, PPN, PPh Final/UMKM, dan sebagainya) yang bersumber dari regulasi resmi Republik Indonesia. Setiap aturan memiliki interval berlaku, kondisi penerapan, dasar hukum primer, dan status verifikasi. Bukan nasihat pajak resmi; bukan panduan pemerintah.",
   "distribution": [

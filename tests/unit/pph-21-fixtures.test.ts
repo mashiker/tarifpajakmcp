@@ -222,13 +222,33 @@ describe('PPh 21 / TER migration (Task 4) - reclassification & conflict surfacin
     }
   });
 
-  it('declares the legacy TER table discrepancy visibly (not silently overwritten in v1)', async () => {
+  it('v1 TER A/B/C tables now MATCH the canonical v2 values (legacy discrepancy resolved 2026-08-28)', async () => {
     const v2 = await loadV2FromDisk();
     const cat = v2.categories.find((c) => c.id === 'cat-pph-21') as any;
     expect(cat, 'PPh 21 category must exist').toBeDefined();
+    // Discrepancy diresolusi: v1 dikoreksi ke tabel resmi PP 58/2023, jadi tidak boleh ada lagi
+    // deklarasi legacy-ter yang menyatakan v1 bertentangan dengan v2.
     const discrepancies = (cat.knownDiscrepancies ?? []) as any[];
-    const declared = discrepancies.find((d) => typeof d.summary === 'string' && d.summary.toLowerCase().includes('legacy ter'));
-    expect(declared, 'legacy-vs-canonical TER discrepancy must be surfaced on the PPh 21 category').toBeDefined();
+    const stale = discrepancies.find((d) => typeof d.summary === 'string' && d.summary.toLowerCase().includes('legacy ter'));
+    expect(stale, 'resolved legacy TER discrepancy must no longer be declared as open').toBeUndefined();
+
+    // Kunci silang: jumlah lapisan & batas 0% & tarif tertinggi v1 == kanonik v2.
+    const v1 = JSON.parse((await import('node:fs')).readFileSync(new URL('../../data/categories/pph-21.json', import.meta.url), 'utf-8'));
+    const entries: any[] = Array.isArray(v1) ? v1 : v1.entries ?? [];
+    const expectBy = [
+      { id: 'pph-21-ter-a-detail', layers: 44, zeroCeiling: 5_400_000, top: 34 },
+      { id: 'pph-21-ter-b-detail', layers: 40, zeroCeiling: 6_200_000, top: 34 },
+      { id: 'pph-21-ter-c-detail', layers: 41, zeroCeiling: 6_600_000, top: 34 },
+    ];
+    for (const { id, layers, zeroCeiling, top } of expectBy) {
+      const entry = entries.find((e) => e.id === id);
+      expect(entry, `${id} must exist in v1 data`).toBeDefined();
+      const brackets: any[] = entry.rate?.brackets ?? entry.brackets ?? [];
+      expect(brackets.length, `${id} layer count`).toBe(layers);
+      expect(brackets[0]?.rate?.value ?? brackets[0]?.rate, `${id} first layer is 0%`).toBe(0);
+      expect(brackets[0]?.max, `${id} 0% ceiling`).toBe(zeroCeiling);
+      expect(brackets.at(-1)?.rate?.value ?? brackets.at(-1)?.rate, `${id} top rate`).toBe(top);
+    }
   });
 });
 

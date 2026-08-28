@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-badan-2022-plus",
     "category": "PPh",
     "taxType": "PPh Badan",
-    "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
-    "description": "Tarif PPh badan 22% berlaku untuk WP badan dalam negeri dan bentuk usaha tetap mulai tahun pajak 2022 sampai dengan tahun pajak yang belum ditentukan. Sebelumnya 25%.",
+    "transactionType": "Penghasilan Kena Pajak Badan (Tahun Pajak 2022 dan Seterusnya)",
+    "description": "Tarif PPh badan 22% berlaku untuk WP badan dalam negeri dan bentuk usaha tetap mulai tahun pajak 2022 dan masih berlaku sampai sekarang. Sebelumnya 25%.",
     "rate": {
       "type": "percentage",
       "value": 22
@@ -41,7 +41,7 @@
     "lastVerified": "2026-05-26",
     "examples": [
       {
-        "scenario": "Penghasilan Kena Pajak Badan (2022-2023) Rp 100.000.000",
+        "scenario": "Penghasilan Kena Pajak Badan (Tahun Pajak 2022 dan Seterusnya) Rp 100.000.000",
         "calculation": "22% × 100.000.000",
         "result": "Pajak = Rp 22.000.000"
       }

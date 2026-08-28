@@ -13,10 +13,10 @@
     "sources": "/api/v2/sources"
   },
   "release": {
-    "generatedAt": "2026-09-11T02:40:00.000Z",
-    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
-    "sourceDateEpoch": 1789094400,
-    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
+    "generatedAt": "2026-08-28T05:06:34.000Z",
+    "gitCommit": "5722827d6679cda347c9b44b2830b5975a86f5b2",
+    "sourceDateEpoch": 1787893594,
+    "sourceHash": "c361b17f1835313e3aff7e5cca490f87ee76ff70133b4df709cf7efc74f692ed",
     "version": "0.1.0"
   },
   "stats": {

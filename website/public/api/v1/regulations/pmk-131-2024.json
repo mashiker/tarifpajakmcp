@@ -1,22 +1,23 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pmk-131-2024",
     "number": "131",
     "year": 2024,
-    "title": "PMK tentang Penentuan Tarif Pajak Pertambahan Nilai",
-    "shortName": "PMK Tarif PPN",
+    "title": "PMK tentang Perlakuan Pajak Pertambahan Nilai atas Impor Barang Kena Pajak, Penyerahan Barang Kena Pajak, Penyerahan Jasa Kena Pajak, dan/atau Pemanfaatan Barang Kena Pajak Tidak Berwujud serta Jasa Kena Pajak dari Luar Daerah Pabean di Dalam Daerah Pabean",
+    "shortName": "PMK Tarif PPN 12% (11/12)",
     "type": "PMK",
-    "promulgationDate": "2024-07-30",
+    "promulgationDate": "2024-12-31",
     "effectiveDate": "2025-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/202689/pmk-no-131-tahun-2024",
+    "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024",
     "status": "berlaku",
-    "description": "PMK menentukan tarif PPN 12% berlaku 1 Januari 2025 untuk penyerahan BKP/JKP dalam negeri dan impor. Sebelumnya 11% (UU HPP). Ekspor tetap 0%.",
-    "relevantArticles": "Pasal 2",
+    "description": "PMK menentukan tarif PPN 12% berlaku 1 Januari 2025 untuk penyerahan BKP/JKP dalam negeri dan impor (sebelumnya 11%). 12% atas DPP penuh hanya untuk BKP mewah (terutang PPnBM: kapal pesiar, pesawat pribadi, rumah HJE > Rp 30 M); selain barang mewah DPP menggunakan nilai lain 11/12 sehingga beban efektif 11%. Ekspor tetap 0%. Ditandatangani dan diundangkan 31 Desember 2024 (BN 2024 No. 1065). Ketentuan DPP nilai lain kemudian dipertegas PMK 11/2025 (diubah PMK 53/2025).",
+    "relevantArticles": "Pasal 2, 3, 4, 5",
     "relatedRegulations": [
-      "uu-7-2021-hpp"
+      "uu-7-2021-hpp",
+      "pmk-11-2025"
     ],
     "referencingEntries": [
       "pph-final-bunga-deposito",

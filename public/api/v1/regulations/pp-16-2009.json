@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pp-16-2009",
     "number": "16",
@@ -19,6 +19,7 @@
       "pp-58-2023"
     ],
     "referencingEntries": [
+      "cukai-eti-alkohol",
       "pph-21-ter-monthly-2024",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-pegawai-tidak-tetap",

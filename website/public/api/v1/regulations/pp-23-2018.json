@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pp-23-2018",
     "number": "23",
@@ -13,7 +13,7 @@
     "effectiveDate": "2018-07-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/65898/pp-no-23-tahun-2018",
     "status": "dicabut_sebagian",
-    "description": "PP mengatur PPh Final 0,5% untuk UMKM dengan peredaran bruto s.d. Rp 4,8 miliar. Menggantikan PP 46/2013. Tarif 0,5% dibagi: 0,25% WP OP / 0,5% WP Badan. Digantikan oleh PP 55/2022.",
+    "description": "PP mengatur PPh Final 0,5% atas peredaran bruto s.d. Rp 4,8 miliar, hanya untuk WP OP (0,25% berlaku untuk proposal penawaran/jasa yang tidak dilaksanakan). Menggantikan PP 46/2013. Fasilitas bagi WP badan baru ditambahkan lewat PP 55/2022. Digantikan penerapannya oleh PP 55/2022.",
     "relevantArticles": "Pasal 2, 3",
     "relatedRegulations": [
       "pp-46-2013",
@@ -21,7 +21,7 @@
     ],
     "referencingEntries": [
       "bea-meterai-3000",
-      "cukai-ecigarette",
+      "cukai-eti-alkohol",
       "pph-21-ter-monthly-2024",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-shu-koperasi",
@@ -40,6 +40,7 @@
       "pph-21-norma-petani",
       "pph-21-norma-pengusaha-kecil",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024",
       "pph-22-impor-api-produsen",
@@ -49,6 +50,7 @@
       "pph-22-pengadaan-pemerintah",
       "pph-22-pmse",
       "pph-22-kripto",
+      "pph-26-general-2024",
       "pph-26-dividen",
       "pph-26-bunga",
       "pph-26-royalti",

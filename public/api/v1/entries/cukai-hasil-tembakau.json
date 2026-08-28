@@ -1,26 +1,31 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "cukai-hasil-tembakau",
     "category": "Cukai",
     "taxType": "Cukai",
     "transactionType": "Cukai Hasil Tembakau (Rokok)",
-    "description": "Cukai atas rokok berdasarkan UU 39/2007. Tarif spesifik + ad valorem sesuai Kepmenkeu tahunan.",
+    "description": "Cukai atas rokok berdasarkan UU 39/2007 dengan tarif spesifik per batang sesuai jenis dan golongan. Tarif 2025 = 2024 (dibekukan, dijamin tidak naik s.d. 2027) melalui PMK 97/2024, efektif 1 Januari 2025.",
     "rate": {
       "type": "formula",
-      "value": "Tarif spesifik + ad valorem",
-      "effectiveRate": "Rp 280 - Rp 640 per batang"
+      "value": "Tarif spesifik per batang sesuai jenis/golongan",
+      "effectiveRate": "Rp 122 (SKT/SPT Gol III) s.d. Rp 1.336 (SPM Gol I) per batang; SKM Gol I Rp 1.231/batang"
     },
-    "taxBase": "HJE × jumlah produksi/impor",
+    "taxBase": "Jumlah produksi/impor (per batang)",
     "payer": "Produsen/importir rokok",
     "recipient": "Negara",
     "withholder": null,
-    "effectiveFrom": "2008-01-01",
+    "effectiveFrom": "2025-01-01",
     "effectiveTo": null,
     "status": "berlaku",
     "legalBasis": [
+      {
+        "regulation": "PMK 97/2024",
+        "article": "Pasal 1-2 (Lampiran)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/311469/pmk-no-97-tahun-2024"
+      },
       {
         "regulation": "UU 39/2007",
         "article": "Pasal 6-8",
@@ -29,21 +34,23 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif cukai rokok naik setiap tahun. Spesifik (per batang) + ad valorem (% dari HJE).",
+    "notes": "Tarif utama 2025 (= 2024, dibekukan s.d. 2027): SKM Gol I Rp 1.231/batang (HJE min Rp 2.375), SKM Gol II Rp 746; SPM Gol I Rp 1.336 (HJE min Rp 2.495), SPM Gol II Rp 794; SKT/SPT Gol I Rp 378 (HJE Rp 1.555-2.170) dan Rp 483 (HJE > Rp 2.170); SKT/SPT Gol II Rp 223; SKT/SPT Gol III Rp 122 (tarif terendah); SKTF/SPTF Rp 1.231; cerutu (CRT) s.d. Rp 110.000/gram. Hasil tembakau impor: SKM Rp 1.231, SPM Rp 1.336 per batang. Menggantikan basis tarif PMK 202/2023 (tahun 2024).",
     "examples": [
       {
-        "scenario": "Rokok SKM HJE Rp 2.000/batang, 10.000 batang",
-        "calculation": "±Rp 600/batang × 10.000",
-        "result": "Cukai = ±Rp 6.000.000"
+        "scenario": "Rokok SKM Gol I produksi 10.000 batang",
+        "calculation": "Rp 1.231/batang × 10.000",
+        "result": "Cukai = Rp 12.310.000"
       }
     ],
     "tags": [
       "cukai",
       "rokok",
       "tembakau",
+      "skm",
+      "pmk-97-2024",
       "berlaku"
     ],
-    "lastVerified": "2026-05-28",
+    "lastVerified": "2026-08-28",
     "relatedEntries": {
       "sameCategory": [
         "cukai-eti-alkohol",

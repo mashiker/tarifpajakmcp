@@ -2,10 +2,10 @@
   "api": "tarif-pajak-id",
   "version": "v2",
   "release": {
-    "generatedAt": "2026-09-11T02:40:00.000Z",
-    "sourceDateEpoch": 1789094400,
-    "sourceHash": "dd777bf7002fd95dd6935f9536dc58b789c3fd1f574beb074d656cd74c780c94",
-    "gitCommit": "3c4e7c5b04c52ed334c57341c07e93dabaf5340f",
+    "generatedAt": "2026-08-28T05:06:34.000Z",
+    "sourceDateEpoch": 1787893594,
+    "sourceHash": "c361b17f1835313e3aff7e5cca490f87ee76ff70133b4df709cf7efc74f692ed",
+    "gitCommit": "5722827d6679cda347c9b44b2830b5975a86f5b2",
     "version": "0.1.0"
   },
   "data": {
@@ -4966,14 +4966,7 @@
         "name": "Pajak Penghasilan Pasal 21",
         "slug": "pph-21",
         "description": "PPh atas penghasilan sehubungan dengan pekerjaan, jasa, atau kegiatan orang pribadi. Mencakup Tarif Efektif Rata-rata (TER) PP 58/2023, tarif Pasal 17 UU PPh tahunan, PTKP, kelas penerima, dan periode final.",
-        "knownDiscrepancies": [
-          {
-            "id": "legacy-ter-vs-canonical",
-            "summary": "Legacy TER rate discrepancy: data/categories/pph-21.json (v1) TER A/B/C tables (42 lapisan, top 25%, batas 0% 6,6jt/6,95jt/7,55jt, pemetaan kategori berdasarkan status perkawinan) contradict the canonical v2 rules transcribed from PP 58/2023 Lampiran A/B/C (44/40/41 lapisan, top 34%, batas 0% 5,4jt/6,2jt/6,6jt; pemetaan kategori menurut kelas PTKP TK/0/TK/1/K/0 -> A, TK/2/K/1/TK/3/K/2 -> B, K/3 -> C).",
-            "resolution": "v2 memegang nilai kanonik terverifikasi (verified_primary). v1 dipertahankan apa adanya demi kompatibilitas API v1 sampai tugas migrasi v1 berikutnya. Resolver tidak boleh mengembalikan 'tepat' dari nilai v1.",
-            "declaredAt": "2026-08-06"
-          }
-        ]
+        "knownDiscrepancies": []
       },
       {
         "id": "cat-pph-23",

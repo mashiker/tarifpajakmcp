@@ -1,4 +1,9 @@
 ---
+// The component-layer stylesheet. WITHOUT this import the `@layer components`
+// rules (nav-link, skip-link, badges, data-table, ...) never reach the Vite
+// graph — @astrojs/tailwind only injects Tailwind's own directives — which is
+// what left the nav links squished and the skip-link permanently visible.
+import '../styles/global.css';
 import { serializeJsonLd, CANONICAL_ORIGIN } from '../lib/seo.ts';
 
 interface Props {
@@ -104,7 +109,10 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
       --highlight-soft:  #FBF3E3;
       --status-active:   #0E5E58;
       --status-revoked:  #B64545;   /* conflict */
+      --status-revoked-strong: #932F2F; /* badge text di atas revoked-soft: AA 4.5:1 */
+      --status-revoked-soft: rgba(182, 69, 69, 0.10);
       --status-changed:  #B7791F;
+      --status-changed-strong: #8A5A13; /* badge text di atas highlight-soft: AA 4.5:1 */
       --status-pending:  #5A6670;
       --header-height:   56px;
       --font-mono:       "IBM Plex Mono", monospace;
@@ -133,7 +141,10 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
       --highlight-soft:  rgba(251, 191, 36, 0.08);
       --status-active:   #34D399;
       --status-revoked:  #F87171;
+      --status-revoked-strong: #FCA5A5;
+      --status-revoked-soft: rgba(248, 113, 113, 0.12);
       --status-changed:  #FBBF24;
+      --status-changed-strong: #FCD34D;
       --status-pending:  #94A3B8;
       --ink:             #EDF0F5;
       --ink-secondary:   #B6BCC6;
@@ -189,6 +200,7 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
       <!-- Desktop Nav -->
       <nav class="hidden items-center gap-0.5 lg:flex" aria-label="Main">
         <a href="/" class:list={["nav-link", activeNav === "home" && "active"]}>Database</a>
+        <a href="/kalkulator" class:list={["nav-link", activeNav === "kalkulator" && "active"]}>Kalkulator</a>
         <a href="/ter-pph-21" class:list={["nav-link", activeNav === "ter" && "active"]}>TER PPh 21</a>
         <a href="/kode-objek-pajak" class:list={["nav-link", activeNav === "bppu" && "active"]}>BPPU</a>
         <a href="/api-docs" class:list={["nav-link", activeNav === "api" && "active"]}>API</a>
@@ -215,6 +227,7 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
           <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--text-tertiary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
         </div>
         <a href="/" class:list={["nav-link w-full", activeNav === "home" && "active"]}>Database</a>
+        <a href="/kalkulator" class:list={["nav-link w-full", activeNav === "kalkulator" && "active"]}>Kalkulator</a>
         <a href="/ter-pph-21" class:list={["nav-link w-full", activeNav === "ter" && "active"]}>TER PPh 21</a>
         <a href="/kode-objek-pajak" class:list={["nav-link w-full", activeNav === "bppu" && "active"]}>BPPU</a>
         <a href="/api-docs" class:list={["nav-link w-full", activeNav === "api" && "active"]}>API</a>

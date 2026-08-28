@@ -184,7 +184,7 @@
     "sourceUrl": "https://peraturan.bpk.go.id/Details/135968/uu-no-10-tahun-2020",
     "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-10-tahun-2020",
     "status": "berlaku",
-    "description": "UU Bea Meterai baru menggantikan UU 13/1985. Tarif Rp 10.000 untuk dokumen >Rp 1.000.000. Berlaku 1 Januari 2021.",
+    "description": "UU Bea Meterai baru menggantikan UU 13/1985. Tarif Rp 10.000 untuk dokumen dengan jumlah uang >Rp 5.000.000 (di bawahnya tidak dikenai bea meterai); dokumen selain keterangan jumlah uang kena Rp 10.000 per dokumen. Berlaku 1 Januari 2021 dan masih berlaku per Agustus 2026.",
     "relevantArticles": "Pasal 3, 4, 5",
     "relatedRegulations": [
       "uu-13-1985"
@@ -204,7 +204,10 @@
     "description": "UU Cukai mengatur pengenaan cukai atas hasil tembakau (rokok), minuman mengandung etil alkohol (MMEA), dan e-cigarette. Menggunakan tarif spesifik dan ad valorem.",
     "relevantArticles": "Pasal 6, 7, 8",
     "relatedRegulations": [
-      "pmk-202-2023"
+      "pmk-202-2023",
+      "pmk-96-2024",
+      "pmk-97-2024",
+      "pmk-160-2023"
     ]
   },
   {
@@ -249,12 +252,12 @@
     "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 21",
     "shortName": "PP TER PPh 21",
     "type": "PP",
-    "promulgationDate": "2023-12-11",
+    "promulgationDate": "2023-12-27",
     "effectiveDate": "2024-01-01",
-    "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023",
+    "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pp-58-tahun-2023",
     "pasalUrl": "https://pasal.id/peraturan/pp/pp-no-58-tahun-2023",
     "status": "berlaku",
-    "description": "PP yang mengatur Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif annualized. TER terdiri dari 3 kategori (A, B, C) masing-masing 42 lapisan. Juga mengatur pemotongan PPh 21 atas dana pensiun (Pasal 14), pegawai tidak tetap (Pasal 5).",
+    "description": "PP yang mengatur Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif annualized. TER terdiri dari 3 kategori (A, B, C) dengan masing-masing 44, 40, dan 41 lapisan; tarif 0% hingga 34%. Juga mengatur pemotongan PPh 21 atas dana pensiun (Pasal 14), pegawai tidak tetap (Pasal 5). Ditetapkan dan diundangkan 27 Desember 2023; penerapan pemotongan mulai masa Januari 2024.",
     "relevantArticles": "Pasal 2, 3, 4, 5, 14, Lampiran (Tabel TER A/B/C)",
     "relatedRegulations": [
       "pmk-168-2023",
@@ -268,11 +271,11 @@
     "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
     "shortName": "PP Tarif PPh 22/23/26",
     "type": "PP",
-    "promulgationDate": "2023-12-11",
+    "promulgationDate": "2023-12-27",
     "effectiveDate": "2024-01-01",
     "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
     "status": "berlaku",
-    "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26.",
+    "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26. Ditandatangani bersama PP 58/2023 pada 27 Desember 2023; tarif berlaku untuk masa pajak Januari 2024.",
     "relevantArticles": "Pasal 2 (PPh 22 impor/ekspor), Pasal 3 (PPh 22 pembelian/pengadaan), Pasal 4 (PPh 22 penjualan/PMSE/kripto), Pasal 5 (PPh 23 dan 26)",
     "relatedRegulations": [
       "pp-94-2010",
@@ -307,7 +310,7 @@
     "effectiveDate": "2001-01-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/44271/pp-no-131-tahun-2000",
     "status": "berlaku",
-    "description": "PP mengatur PPh Final atas: pengalihan hak atas tanah/bangunan (Pasal 5), hadiah undian (Pasal 3), sewa tanah/bangunan (Pasal 4). Catatan: Pasal 2 tentang bunga deposito sudah digantikan oleh PP 131/2000 hanya mengatur hal tersebut sebelum PP 131/2000 — bunga deposito sebenarnya diatur KMK 523/KMK.04/2002 dan PMK terkait.",
+    "description": "PP mengatur PPh Final atas: hadiah undian (Pasal 3), sewa tanah/bangunan (Pasal 4), pengalihan hak atas tanah/bangunan (Pasal 5). Pengaturan bunga deposito/tabungan pada Pasal 2 tidak dipakai lagi — pasca-UU HPP bunga deposito/tabungan diatur sebagai objek final melalui ketentuan pelaksana UU PPh (berawal dari KMK-523/KMK.04/2002 jo. PMK turunannya).",
     "relevantArticles": "Pasal 2 (bunga deposito/tabungan), Pasal 3 (hadiah undian), Pasal 4 (sewa tanah/bangunan), Pasal 5 (pengalihan hak atas tanah/bangunan)",
     "relatedRegulations": [
       "pp-71-2008"
@@ -445,7 +448,7 @@
     "effectiveDate": "2018-07-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/65898/pp-no-23-tahun-2018",
     "status": "dicabut_sebagian",
-    "description": "PP mengatur PPh Final 0,5% untuk UMKM dengan peredaran bruto s.d. Rp 4,8 miliar. Menggantikan PP 46/2013. Tarif 0,5% dibagi: 0,25% WP OP / 0,5% WP Badan. Digantikan oleh PP 55/2022.",
+    "description": "PP mengatur PPh Final 0,5% atas peredaran bruto s.d. Rp 4,8 miliar, hanya untuk WP OP (0,25% berlaku untuk proposal penawaran/jasa yang tidak dilaksanakan). Menggantikan PP 46/2013. Fasilitas bagi WP badan baru ditambahkan lewat PP 55/2022. Digantikan penerapannya oleh PP 55/2022.",
     "relevantArticles": "Pasal 2, 3",
     "relatedRegulations": [
       "pp-46-2013",
@@ -473,17 +476,35 @@
     "id": "pp-55-2022",
     "number": "55",
     "year": 2022,
-    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterika atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+    "title": "PP tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan",
+    "shortName": "PP PPh UMKM 0,5%",
+    "type": "PP",
+    "promulgationDate": "2022-12-20",
+    "effectiveDate": "2022-12-20",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/194769/pp-no-55-tahun-2022",
+    "status": "diubah_sebagian",
+    "description": "PP penyesuaian pengaturan PPh, antara lain PPh Final UMKM 0,5% untuk peredaran bruto s.d. Rp 4,8 miliar (termasuk membuka fasilitas bagi WP badan). Berlaku pada tanggal diundangkan, 20 Desember 2022. Diubah oleh PP 20/2026 (berlaku 22 April 2026), antara lain ketentuan UMKM: fasilitas 0,5% hanya untuk WP OP tanpa batas waktu; WP badan (PT/CV) tidak lagi memperoleh fasilitas.",
+    "relevantArticles": "Pasal 2, 3, Pasal 56-59 (UMKM)",
+    "relatedRegulations": [
+      "pp-23-2018",
+      "pp-20-2026"
+    ]
+  },
+  {
+    "id": "pp-20-2026",
+    "number": "20",
+    "year": 2026,
+    "title": "PP tentang Perubahan atas PP Nomor 55 Tahun 2022 tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan",
     "shortName": "PP PPh UMKM 0,5% (Terbaru)",
     "type": "PP",
-    "promulgationDate": "2022-12-22",
-    "effectiveDate": "2023-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/194769/pp-no-55-tahun-2022",
+    "promulgationDate": "2026-04-22",
+    "effectiveDate": "2026-04-22",
+    "sourceUrl": "https://peraturan.go.id/id/pp-no-20-tahun-2026",
     "status": "berlaku",
-    "description": "PP terbaru PPh UMKM. Tarif 0,5% final untuk peredaran bruto s.d. Rp 4,8 miliar (WP OP 0,25%). Menggantikan PP 23/2018.",
-    "relevantArticles": "Pasal 2, 3",
+    "description": "PP merevisi PP 55/2022. Tarif PPh Final UMKM 0,5% diperuntukkan bagi WP OP tanpa batas waktu (omzet s.d. Rp 4,8 miliar); WP badan (PT/CV) tidak lagi memperoleh fasilitas PPh Final UMKM. Ditetapkan dan diundangkan 22 April 2026 (LN 2026 No. 43, TLN 7173), berlaku pada tanggal diundangkan.",
+    "relevantArticles": "Pasal 56-57",
     "relatedRegulations": [
-      "pp-23-2018"
+      "pp-55-2022"
     ]
   },
   {
@@ -539,16 +560,35 @@
     "id": "pmk-131-2024",
     "number": "131",
     "year": 2024,
-    "title": "PMK tentang Penentuan Tarif Pajak Pertambahan Nilai",
-    "shortName": "PMK Tarif PPN",
+    "title": "PMK tentang Perlakuan Pajak Pertambahan Nilai atas Impor Barang Kena Pajak, Penyerahan Barang Kena Pajak, Penyerahan Jasa Kena Pajak, dan/atau Pemanfaatan Barang Kena Pajak Tidak Berwujud serta Jasa Kena Pajak dari Luar Daerah Pabean di Dalam Daerah Pabean",
+    "shortName": "PMK Tarif PPN 12% (11/12)",
     "type": "PMK",
-    "promulgationDate": "2024-07-30",
+    "promulgationDate": "2024-12-31",
     "effectiveDate": "2025-01-01",
-    "sourceUrl": "https://peraturan.bpk.go.id/Details/202689/pmk-no-131-tahun-2024",
+    "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024",
     "status": "berlaku",
-    "description": "PMK menentukan tarif PPN 12% berlaku 1 Januari 2025 untuk penyerahan BKP/JKP dalam negeri dan impor. Sebelumnya 11% (UU HPP). Ekspor tetap 0%.",
-    "relevantArticles": "Pasal 2",
+    "description": "PMK menentukan tarif PPN 12% berlaku 1 Januari 2025 untuk penyerahan BKP/JKP dalam negeri dan impor (sebelumnya 11%). 12% atas DPP penuh hanya untuk BKP mewah (terutang PPnBM: kapal pesiar, pesawat pribadi, rumah HJE > Rp 30 M); selain barang mewah DPP menggunakan nilai lain 11/12 sehingga beban efektif 11%. Ekspor tetap 0%. Ditandatangani dan diundangkan 31 Desember 2024 (BN 2024 No. 1065). Ketentuan DPP nilai lain kemudian dipertegas PMK 11/2025 (diubah PMK 53/2025).",
+    "relevantArticles": "Pasal 2, 3, 4, 5",
     "relatedRegulations": [
+      "uu-7-2021-hpp",
+      "pmk-11-2025"
+    ]
+  },
+  {
+    "id": "pmk-11-2025",
+    "number": "11",
+    "year": 2025,
+    "title": "PMK tentang Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu Pajak Pertambahan Nilai",
+    "shortName": "PMK DPP Nilai Lain PPN",
+    "type": "PMK",
+    "promulgationDate": "2025-02-04",
+    "effectiveDate": "2025-02-04",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/313574",
+    "status": "berlaku",
+    "description": "PMK menetapkan skema DPP Nilai Lain dan Besaran Tertentu PPN sebagai penerus PMK 121/2015: untuk penyerahan selain BKP mewah, DPP = 11/12 × harga jual sehingga beban efektif 12% × 11/12 = 11%. Ditetapkan dan diundangkan 4 Februari 2025 (BN 2025 No. 78), berlaku pada tanggal diundangkan. Diubah sebagian oleh PMK 53/2025 (berlaku 1 Agustus 2025).",
+    "relevantArticles": "Pasal 2, 3, 4",
+    "relatedRegulations": [
+      "pmk-131-2024",
       "uu-7-2021-hpp"
     ]
   },
@@ -629,7 +669,7 @@
     "effectiveDate": "2003-01-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/45176/kmk-no-523-kmk-04-2002",
     "status": "diubah_sebagian",
-    "description": "KMK mengatur norma penghitungan penghasilan neto untuk pekerja bebas (dokter 50%, pengacara 50%, akuntan 50%, arsitek 45%, notaris 50%, konsultan 50%, pedagang 20%, petani 10%, dll). Diubah sebagian oleh PMK 43/2022.",
+    "description": "KMK mengatur norma penghitungan penghasilan neto untuk pekerja bebas (akuntan 50%, arsitek 50%, pengacara 50%, notaris 50%, konsultan 50%, dokter 50%/25% sesuai kategori) dan usaha (pedagang/perdagangan 20%, petani/pertanian 10%, dll). Diubah sebagian oleh PMK 43/2022.",
     "relevantArticles": "Lampiran",
     "relatedRegulations": [
       "pmk-43-2022"
@@ -663,10 +703,100 @@
     "effectiveDate": "2024-01-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/198352/pmk-no-202-tahun-2023",
     "status": "berlaku",
-    "description": "PMK menetapkan tarif cukai untuk rokok kretek, rokok putih, SIGARET (SKM, SKT, SP), dan e-cigarette / heated tobacco product berlaku tahun 2024.",
+    "description": "PMK menetapkan tarif cukai untuk rokok kretek, rokok putih, SIGARET (SKM, SKT, SP), dan e-cigarette / heated tobacco product berlaku tahun 2024. Untuk tahun 2025 tarif diperbarui (disamakan dengan 2024, dibekukan) melalui PMK 97/2024 (hasil tembakau) dan PMK 96/2024 (rokok elektrik/HPTL, mengganti skema ad valorem e-rokok menjadi tarif spesifik).",
     "relevantArticles": "Pasal 2, 3, 4",
     "relatedRegulations": [
+      "uu-39-2007",
+      "pmk-96-2024",
+      "pmk-97-2024"
+    ]
+  },
+  {
+    "id": "pmk-96-2024",
+    "number": "96",
+    "year": 2024,
+    "title": "PMK tentang Perubahan Kedua atas PMK Nomor 193/PMK.010/2021 tentang Tarif Cukai Hasil Tembakau Berupa Rokok Elektrik dan Hasil Pengolahan Tembakau Lainnya",
+    "shortName": "PMK Tarif Cukai E-Rokok 2025",
+    "type": "PMK",
+    "promulgationDate": "2024-12-12",
+    "effectiveDate": "2025-01-01",
+    "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-96-tahun-2024",
+    "status": "berlaku",
+    "description": "PMK menetapkan tarif cukai rokok elektrik dan hasil pengolahan tembakau lainnya berlaku 1 Januari 2025: rokok elektrik padat Rp 3.074/gram; rokok elektrik cair sistem terbuka Rp 636/ml; rokok elektrik cair sistem tertutup Rp 6.776/ml; HPTL (molasses/hirup/kunyah) Rp 135/gram. Mengganti skema ad valorem era 2024. Tarif 2025 = 2024, dibekukan s.d. 2027.",
+    "relevantArticles": "Pasal 1-2, Lampiran",
+    "relatedRegulations": [
+      "uu-39-2007",
+      "pmk-202-2023"
+    ]
+  },
+  {
+    "id": "pmk-97-2024",
+    "number": "97",
+    "year": 2024,
+    "title": "PMK tentang Perubahan Ketiga atas PMK Nomor 192/PMK.010/2021 tentang Tarif Cukai Hasil Tembakau",
+    "shortName": "PMK Tarif Cukai Rokok 2025",
+    "type": "PMK",
+    "promulgationDate": "2024-12-12",
+    "effectiveDate": "2025-01-01",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/311469/pmk-no-97-tahun-2024",
+    "status": "berlaku",
+    "description": "PMK menetapkan tarif cukai hasil tembakau dan batas HJE berlaku 1 Januari 2025 (tarif 2025 = 2024, dibekukan s.d. 2027): SKM Gol I Rp 1.231/batang, SKM Gol II Rp 746; SPM Gol I Rp 1.336, SPM Gol II Rp 794; SKT/SPT Gol I Rp 378-483, Gol II Rp 223, Gol III Rp 122 (terendah); SKTF/SPTF Rp 1.231; cerutu s.d. Rp 110.000/gram. Ditetapkan 4 Desember 2024, diundangkan 12 Desember 2024.",
+    "relevantArticles": "Pasal 1-2, Lampiran",
+    "relatedRegulations": [
+      "uu-39-2007",
+      "pmk-202-2023"
+    ]
+  },
+  {
+    "id": "pmk-160-2023",
+    "number": "160",
+    "year": 2023,
+    "title": "PMK tentang Tarif Cukai Etil Alkohol, Minuman yang Mengandung Etil Alkohol, dan Konsentrat yang Mengandung Etil Alkohol",
+    "shortName": "PMK Tarif Cukai EA/MMEA/KMEA",
+    "type": "PMK",
+    "promulgationDate": "2023-12-28",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-160-tahun-2023",
+    "status": "berlaku",
+    "description": "PMK menetapkan tarif cukai EA/MMEA/KMEA sejak 1 Januari 2024 (mencabut PMK 158/PMK.010/2018): EA Rp 20.000/liter; MMEA Gol A Rp 16.500/liter; Gol B Rp 42.500/liter (impor Rp 53.000); Gol C Rp 101.000/liter (impor Rp 152.000); KMEA cair Rp 228.000/liter; KMEA padat Rp 1.000/gram. Ditetapkan 27 Desember 2023, diundangkan 28 Desember 2023.",
+    "relevantArticles": "Pasal 2, Lampiran",
+    "relatedRegulations": [
       "uu-39-2007"
+    ]
+  },
+  {
+    "id": "pmk-51-2025",
+    "number": "51",
+    "year": 2025,
+    "title": "PMK tentang Pemungutan Pajak Penghasilan Pasal 22 Sehubungan dengan Pembayaran atas Penyerahan Barang dan Kegiatan di Bidang Impor atau Kegiatan Usaha di Bidang Lain",
+    "shortName": "PMK PPh 22",
+    "type": "PMK",
+    "promulgationDate": "2025-07-28",
+    "effectiveDate": "2025-07-28",
+    "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-51-tahun-2025",
+    "status": "berlaku",
+    "description": "PMK pelaksana pemungutan PPh 22 (menggantikan PMK 34/PMK.010/2017 jo. PMK 41/PMK.010/2022 yang dicabut via PMK 81/2024 sejak 1 Januari 2025). Memuat daftar barang impor yang dikenai PPh 22: barang tertentu 10% (dengan/tanpa API), barang lainnya 7,5%, kedelai/gandum/tepung terigu 0,5%, dan daftar ekspor komoditas tambang.",
+    "relevantArticles": "Pasal 3-4, Lampiran",
+    "relatedRegulations": [
+      "pp-60-2023"
+    ]
+  },
+  {
+    "id": "pp-14-2021",
+    "number": "14",
+    "year": 2021,
+    "title": "PP tentang Perubahan atas PP Nomor 22 Tahun 2020 tentang Peraturan Pelaksanaan Undang-Undang Nomor 2 Tahun 2017 tentang Jasa Konstruksi",
+    "shortName": "PP Jasa Konstruksi",
+    "type": "PP",
+    "promulgationDate": "2021-02-02",
+    "effectiveDate": "2021-02-02",
+    "sourceUrl": "https://jdih.kemenkoinfra.go.id/id/peraturan-pemerintah-republik-indonesia-no-14-tahun-2021",
+    "status": "berlaku",
+    "description": "PP pelaksana UU Cipta Kerja untuk sektor jasa konstruksi (menggantikan PP 22/2020), mengatur SBU, penyelenggaraan, dan perlindungan pekerja. Konteks PPh: tarif PPh Final jasa konstruksi yang berlaku saat ini diatur dalam PP 51/2008 jo. PP 40/2009 sebagaimana diubah terakhir dengan PP 9/2022 (berlaku 21 Februari 2022).",
+    "relevantArticles": "Pasal 14-20 (SBU)",
+    "relatedRegulations": [
+      "pp-51-2008",
+      "pp-40-2009"
     ]
   },
   {
@@ -684,6 +814,24 @@
     "relevantArticles": "Lampiran",
     "relatedRegulations": [
       "uu-10-1995"
+    ]
+  },
+  {
+    "id": "pp-9-2022",
+    "number": "9",
+    "year": 2022,
+    "title": "Perubahan Kedua atas Peraturan Pemerintah Nomor 51 Tahun 2008 tentang Pajak Penghasilan atas Penghasilan dari Usaha Jasa Konstruksi",
+    "shortName": "PP PPh Final Konstruksi",
+    "type": "PP",
+    "promulgationDate": "2022-03-31",
+    "effectiveDate": "2022-04-06",
+    "sourceUrl": "https://jdih.kemenkoinfra.go.id/id/peraturan-pemerintah-republik-indonesia-no-14-tahun-2021",
+    "status": "berlaku",
+    "description": "Menetapkan 7 tarif PPh final jasa konstruksi (1,75% hingga 6% berdasarkan kualifikasi usaha, jenis jasa, dan kepemilikan sertifikat badan usaha), implementasi UU 7/2021 Pasal 40. Berlaku untuk penyerahan sejak masa pajak April 2022.",
+    "relevantArticles": "Pasal 14-20 (SBU)",
+    "relatedRegulations": [
+      "pp-51-2008",
+      "pp-40-2009"
     ]
   }
 ]

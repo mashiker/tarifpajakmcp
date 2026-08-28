@@ -1,49 +1,56 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "cukai-ecigarette",
     "category": "Cukai",
     "taxType": "Cukai",
-    "transactionType": "Cukai e-Cigarette / Heated Tobacco",
-    "description": "Cukai atas produk tembakau pemanasan dan e-liquid. Berlaku sejak 2024.",
+    "transactionType": "Cukai Rokok Elektrik / Heated Tobacco",
+    "description": "Cukai atas rokok elektrik (e-cigarette) berupa rokok elektrik padat (heated tobacco) dan rokok elektrik cair (e-liquid) dengan tarif spesifik per gram/mililiter sejak 1 Januari 2025 berdasarkan PMK 96/2024 (skema ad valorem era 2024 sudah dihapus).",
     "rate": {
       "type": "formula",
-      "value": "Tarif ad valorem",
-      "effectiveRate": "± 15-27% dari HJE"
+      "value": "Tarif spesifik per gram / mililiter",
+      "effectiveRate": "Padat Rp 3.074/gram; cair sistem terbuka Rp 636/ml; cair sistem tertutup Rp 6.776/ml"
     },
-    "taxBase": "HJE",
-    "payer": "Produsen/importir e-cigarette",
+    "taxBase": "Berat (gram) untuk rokok elektrik padat; volume (mililiter) untuk rokok elektrik cair",
+    "payer": "Produsen/importir rokok elektrik",
     "recipient": "Negara",
     "withholder": null,
-    "effectiveFrom": "2024-07-01",
+    "effectiveFrom": "2025-01-01",
     "effectiveTo": null,
     "status": "berlaku",
     "legalBasis": [
       {
-        "regulation": "PMK 202/2023",
-        "article": "Pasal 2-4",
-        "sourceUrl": "https://peraturan.bpk.go.id/Details/202326/pmk-no-202-tahun-2023"
+        "regulation": "PMK 96/2024",
+        "article": "Pasal 1-2 (Lampiran)",
+        "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-96-tahun-2024"
+      },
+      {
+        "regulation": "UU 39/2007",
+        "article": "Pasal 6-8",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/45946/uu-no-39-tahun-2007"
       }
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Cukai e-cigarette dan heated tobacco mulai Juli 2024. Skema ad valorem.",
+    "notes": "Sejak 1 Januari 2025 (PMK 96/2024, perubahan kedua atas PMK 193/2021): rokok elektrik padat Rp 3.074/gram (HJE min Rp 6.240/gram); rokok elektrik cair sistem terbuka Rp 636/ml (HJE min Rp 1.368/ml); rokok elektrik cair sistem tertutup Rp 6.776/ml (HJE min Rp 41.983/cartridge). Skema ad valorem (±15-27% HJE) yang berlaku Jul-Des 2024 via PMK 202/2023 sudah tidak berlaku. Tarif 2025 = 2024, dibekukan s.d. 2027.",
     "examples": [
       {
-        "scenario": "e-Liquid HJE Rp 100.000, 10.000 botol",
-        "calculation": "±20% × Rp 100.000 × 10.000",
-        "result": "Cukai = ±Rp 200.000.000"
+        "scenario": "e-Liquid sistem terbuka 10.000 botol × 10 ml",
+        "calculation": "Rp 636/ml × 100.000 ml",
+        "result": "Cukai = Rp 63.600.000"
       }
     ],
     "tags": [
       "cukai",
       "e-cigarette",
       "vape",
+      "tarif-spesifik",
+      "pmk-96-2024",
       "berlaku"
     ],
-    "lastVerified": "2026-05-28",
+    "lastVerified": "2026-08-28",
     "relatedEntries": {
       "sameCategory": [
         "cukai-hasil-tembakau",

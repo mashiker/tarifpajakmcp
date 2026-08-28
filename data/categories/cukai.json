@@ -1,27 +1,32 @@
 {
   "category": "Cukai",
   "taxType": "Cukai",
-  "description": "Cukai — pungutan negara atas barang tertentu (etil alkohol, MMEA, hasil tembakau)",
+  "description": "Cukai — pungutan negara atas barang tertentu (hasil tembakau, etil alkohol, MMEA, KMEA, rokok elektrik) — tarif 2025 = 2024 (dibekukan s.d. 2027)",
   "entries": [
     {
       "id": "cukai-hasil-tembakau",
       "category": "Cukai",
       "taxType": "Cukai",
       "transactionType": "Cukai Hasil Tembakau (Rokok)",
-      "description": "Cukai atas rokok berdasarkan UU 39/2007. Tarif spesifik + ad valorem sesuai Kepmenkeu tahunan.",
+      "description": "Cukai atas rokok berdasarkan UU 39/2007 dengan tarif spesifik per batang sesuai jenis dan golongan. Tarif 2025 = 2024 (dibekukan, dijamin tidak naik s.d. 2027) melalui PMK 97/2024, efektif 1 Januari 2025.",
       "rate": {
         "type": "formula",
-        "value": "Tarif spesifik + ad valorem",
-        "effectiveRate": "Rp 280 - Rp 640 per batang"
+        "value": "Tarif spesifik per batang sesuai jenis/golongan",
+        "effectiveRate": "Rp 122 (SKT/SPT Gol III) s.d. Rp 1.336 (SPM Gol I) per batang; SKM Gol I Rp 1.231/batang"
       },
-      "taxBase": "HJE × jumlah produksi/impor",
+      "taxBase": "Jumlah produksi/impor (per batang)",
       "payer": "Produsen/importir rokok",
       "recipient": "Negara",
       "withholder": null,
-      "effectiveFrom": "2008-01-01",
+      "effectiveFrom": "2025-01-01",
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
+        {
+          "regulation": "PMK 97/2024",
+          "article": "Pasal 1-2 (Lampiran)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/311469/pmk-no-97-tahun-2024"
+        },
         {
           "regulation": "UU 39/2007",
           "article": "Pasal 6-8",
@@ -30,41 +35,48 @@
       ],
       "supersedes": [],
       "supersededBy": [],
-      "notes": "Tarif cukai rokok naik setiap tahun. Spesifik (per batang) + ad valorem (% dari HJE).",
+      "notes": "Tarif utama 2025 (= 2024, dibekukan s.d. 2027): SKM Gol I Rp 1.231/batang (HJE min Rp 2.375), SKM Gol II Rp 746; SPM Gol I Rp 1.336 (HJE min Rp 2.495), SPM Gol II Rp 794; SKT/SPT Gol I Rp 378 (HJE Rp 1.555-2.170) dan Rp 483 (HJE > Rp 2.170); SKT/SPT Gol II Rp 223; SKT/SPT Gol III Rp 122 (tarif terendah); SKTF/SPTF Rp 1.231; cerutu (CRT) s.d. Rp 110.000/gram. Hasil tembakau impor: SKM Rp 1.231, SPM Rp 1.336 per batang. Menggantikan basis tarif PMK 202/2023 (tahun 2024).",
       "examples": [
         {
-          "scenario": "Rokok SKM HJE Rp 2.000/batang, 10.000 batang",
-          "calculation": "±Rp 600/batang × 10.000",
-          "result": "Cukai = ±Rp 6.000.000"
+          "scenario": "Rokok SKM Gol I produksi 10.000 batang",
+          "calculation": "Rp 1.231/batang × 10.000",
+          "result": "Cukai = Rp 12.310.000"
         }
       ],
       "tags": [
         "cukai",
         "rokok",
         "tembakau",
+        "skm",
+        "pmk-97-2024",
         "berlaku"
       ],
-      "lastVerified": "2026-05-28"
+      "lastVerified": "2026-08-28"
     },
     {
       "id": "cukai-eti-alkohol",
       "category": "Cukai",
       "taxType": "Cukai",
-      "transactionType": "Cukai Etil Alkohol / MMEA",
-      "description": "Cukai atas etil alkohol dan MMEA. Tarif berdasarkan golongan dan kadar alkohol.",
+      "transactionType": "Cukai Etil Alkohol / MMEA / KMEA",
+      "description": "Cukai atas etil alkohol (EA), minuman yang mengandung etil alkohol (MMEA), dan konsentrat yang mengandung etil alkohol (KMEA). Tarif spesifik per liter/gram berdasarkan PMK 160/2023, berlaku sejak 1 Januari 2024.",
       "rate": {
         "type": "formula",
-        "value": "Tarif spesifik per liter",
-        "effectiveRate": "Rp 5.000 - Rp 150.000 per liter"
+        "value": "Tarif spesifik per liter (per gram untuk KMEA padat)",
+        "effectiveRate": "EA Rp 20.000/ltr; MMEA Gol A Rp 16.500/ltr; Gol B Rp 42.500/ltr (impor Rp 53.000); Gol C Rp 101.000/ltr (impor Rp 152.000); KMEA cair Rp 228.000/ltr; KMEA padat Rp 1.000/gram"
       },
-      "taxBase": "Volume produksi/impor (liter)",
+      "taxBase": "Volume produksi/impor (liter; gram untuk KMEA padat)",
       "payer": "Produsen/importir MMEA",
       "recipient": "Negara",
       "withholder": null,
-      "effectiveFrom": "2008-01-01",
+      "effectiveFrom": "2024-01-01",
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
+        {
+          "regulation": "PMK 160/2023",
+          "article": "Pasal 2 (Lampiran)",
+          "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-160-tahun-2023"
+        },
         {
           "regulation": "UU 39/2007",
           "article": "Pasal 6 ayat (2)",
@@ -73,64 +85,73 @@
       ],
       "supersedes": [],
       "supersededBy": [],
-      "notes": "MMEA: Gol A (1-5%) Rp 5K-25K/ltr, Gol B (5-20%) Rp 25K-75K/ltr, Gol C (>20%) Rp 75K-150K/ltr.",
+      "notes": "Tarif sejak 1 Jan 2024 (PMK 160/2023, mencabut PMK 158/PMK.010/2018), masih berlaku 2025: EA Rp 20.000/liter (dalam negeri & impor); MMEA Golongan A (EA ≤5%) Rp 16.500/liter; Golongan B (EA >5-20%) Rp 42.500/liter produksi dalam negeri dan Rp 53.000/liter impor; Golongan C (EA >20-55%) Rp 101.000/liter dalam negeri dan Rp 152.000/liter impor; KMEA cair Rp 228.000/liter; KMEA padat Rp 1.000/gram.",
       "examples": [
         {
-          "scenario": "Impor wine 12% 1000 liter",
-          "calculation": "Gol B ±Rp 50.000/ltr × 1.000",
-          "result": "Cukai = ±Rp 50.000.000"
+          "scenario": "Impor wine 12% (Gol B) 1.000 liter",
+          "calculation": "Tarif impor Gol B Rp 53.000/ltr × 1.000",
+          "result": "Cukai = Rp 53.000.000"
         }
       ],
       "tags": [
         "cukai",
         "alkohol",
         "mmea",
+        "kmea",
+        "pmk-160-2023",
         "berlaku"
       ],
-      "lastVerified": "2026-05-28"
+      "lastVerified": "2026-08-28"
     },
     {
       "id": "cukai-ecigarette",
       "category": "Cukai",
       "taxType": "Cukai",
-      "transactionType": "Cukai e-Cigarette / Heated Tobacco",
-      "description": "Cukai atas produk tembakau pemanasan dan e-liquid. Berlaku sejak 2024.",
+      "transactionType": "Cukai Rokok Elektrik / Heated Tobacco",
+      "description": "Cukai atas rokok elektrik (e-cigarette) berupa rokok elektrik padat (heated tobacco) dan rokok elektrik cair (e-liquid) dengan tarif spesifik per gram/mililiter sejak 1 Januari 2025 berdasarkan PMK 96/2024 (skema ad valorem era 2024 sudah dihapus).",
       "rate": {
         "type": "formula",
-        "value": "Tarif ad valorem",
-        "effectiveRate": "± 15-27% dari HJE"
+        "value": "Tarif spesifik per gram / mililiter",
+        "effectiveRate": "Padat Rp 3.074/gram; cair sistem terbuka Rp 636/ml; cair sistem tertutup Rp 6.776/ml"
       },
-      "taxBase": "HJE",
-      "payer": "Produsen/importir e-cigarette",
+      "taxBase": "Berat (gram) untuk rokok elektrik padat; volume (mililiter) untuk rokok elektrik cair",
+      "payer": "Produsen/importir rokok elektrik",
       "recipient": "Negara",
       "withholder": null,
-      "effectiveFrom": "2024-07-01",
+      "effectiveFrom": "2025-01-01",
       "effectiveTo": null,
       "status": "berlaku",
       "legalBasis": [
         {
-          "regulation": "PMK 202/2023",
-          "article": "Pasal 2-4",
-          "sourceUrl": "https://peraturan.bpk.go.id/Details/202326/pmk-no-202-tahun-2023"
+          "regulation": "PMK 96/2024",
+          "article": "Pasal 1-2 (Lampiran)",
+          "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-96-tahun-2024"
+        },
+        {
+          "regulation": "UU 39/2007",
+          "article": "Pasal 6-8",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/45946/uu-no-39-tahun-2007"
         }
       ],
       "supersedes": [],
       "supersededBy": [],
-      "notes": "Cukai e-cigarette dan heated tobacco mulai Juli 2024. Skema ad valorem.",
+      "notes": "Sejak 1 Januari 2025 (PMK 96/2024, perubahan kedua atas PMK 193/2021): rokok elektrik padat Rp 3.074/gram (HJE min Rp 6.240/gram); rokok elektrik cair sistem terbuka Rp 636/ml (HJE min Rp 1.368/ml); rokok elektrik cair sistem tertutup Rp 6.776/ml (HJE min Rp 41.983/cartridge). Skema ad valorem (±15-27% HJE) yang berlaku Jul-Des 2024 via PMK 202/2023 sudah tidak berlaku. Tarif 2025 = 2024, dibekukan s.d. 2027.",
       "examples": [
         {
-          "scenario": "e-Liquid HJE Rp 100.000, 10.000 botol",
-          "calculation": "±20% × Rp 100.000 × 10.000",
-          "result": "Cukai = ±Rp 200.000.000"
+          "scenario": "e-Liquid sistem terbuka 10.000 botol × 10 ml",
+          "calculation": "Rp 636/ml × 100.000 ml",
+          "result": "Cukai = Rp 63.600.000"
         }
       ],
       "tags": [
         "cukai",
         "e-cigarette",
         "vape",
+        "tarif-spesifik",
+        "pmk-96-2024",
         "berlaku"
       ],
-      "lastVerified": "2026-05-28"
+      "lastVerified": "2026-08-28"
     }
   ]
 }

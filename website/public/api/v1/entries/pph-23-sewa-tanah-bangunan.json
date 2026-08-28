@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-23-sewa-tanah-bangunan",
     "category": "PPh",
@@ -29,7 +29,7 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif 10% atas sewa tanah dan/atau bangunan. Tanpa NPWP: 10% × 2 = 20%. Juga berlaku untuk sewa peralatan dan mesin sejak UU HPP.",
+    "notes": "Tarif 10% atas sewa tanah dan/atau bangunan. Tanpa NPWP: 10% × 2 = 20%. Catatan: sejak UU HPP, sewa aset tetap lainnya selain tanah/bangunan (mis. mesin dan peralatan) TIDAK lagi PPh 4(2) final 10%, melainkan terutang PPh 23 atas persewaan sebesar 2% (Pasal 23 ayat (1) huruf c angka 2 UU HPP).",
     "tags": [
       "pph-23",
       "sewa",

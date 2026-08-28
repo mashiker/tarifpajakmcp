@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pp-131-2000",
     "number": "131",
@@ -13,7 +13,7 @@
     "effectiveDate": "2001-01-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/44271/pp-no-131-tahun-2000",
     "status": "berlaku",
-    "description": "PP mengatur PPh Final atas: pengalihan hak atas tanah/bangunan (Pasal 5), hadiah undian (Pasal 3), sewa tanah/bangunan (Pasal 4). Catatan: Pasal 2 tentang bunga deposito sudah digantikan oleh PP 131/2000 hanya mengatur hal tersebut sebelum PP 131/2000 — bunga deposito sebenarnya diatur KMK 523/KMK.04/2002 dan PMK terkait.",
+    "description": "PP mengatur PPh Final atas: hadiah undian (Pasal 3), sewa tanah/bangunan (Pasal 4), pengalihan hak atas tanah/bangunan (Pasal 5). Pengaturan bunga deposito/tabungan pada Pasal 2 tidak dipakai lagi — pasca-UU HPP bunga deposito/tabungan diatur sebagai objek final melalui ketentuan pelaksana UU PPh (berawal dari KMK-523/KMK.04/2002 jo. PMK turunannya).",
     "relevantArticles": "Pasal 2 (bunga deposito/tabungan), Pasal 3 (hadiah undian), Pasal 4 (sewa tanah/bangunan), Pasal 5 (pengalihan hak atas tanah/bangunan)",
     "relatedRegulations": [
       "pp-71-2008"

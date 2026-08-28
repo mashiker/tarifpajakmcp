@@ -1,26 +1,31 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "cukai-eti-alkohol",
     "category": "Cukai",
     "taxType": "Cukai",
-    "transactionType": "Cukai Etil Alkohol / MMEA",
-    "description": "Cukai atas etil alkohol dan MMEA. Tarif berdasarkan golongan dan kadar alkohol.",
+    "transactionType": "Cukai Etil Alkohol / MMEA / KMEA",
+    "description": "Cukai atas etil alkohol (EA), minuman yang mengandung etil alkohol (MMEA), dan konsentrat yang mengandung etil alkohol (KMEA). Tarif spesifik per liter/gram berdasarkan PMK 160/2023, berlaku sejak 1 Januari 2024.",
     "rate": {
       "type": "formula",
-      "value": "Tarif spesifik per liter",
-      "effectiveRate": "Rp 5.000 - Rp 150.000 per liter"
+      "value": "Tarif spesifik per liter (per gram untuk KMEA padat)",
+      "effectiveRate": "EA Rp 20.000/ltr; MMEA Gol A Rp 16.500/ltr; Gol B Rp 42.500/ltr (impor Rp 53.000); Gol C Rp 101.000/ltr (impor Rp 152.000); KMEA cair Rp 228.000/ltr; KMEA padat Rp 1.000/gram"
     },
-    "taxBase": "Volume produksi/impor (liter)",
+    "taxBase": "Volume produksi/impor (liter; gram untuk KMEA padat)",
     "payer": "Produsen/importir MMEA",
     "recipient": "Negara",
     "withholder": null,
-    "effectiveFrom": "2008-01-01",
+    "effectiveFrom": "2024-01-01",
     "effectiveTo": null,
     "status": "berlaku",
     "legalBasis": [
+      {
+        "regulation": "PMK 160/2023",
+        "article": "Pasal 2 (Lampiran)",
+        "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-160-tahun-2023"
+      },
       {
         "regulation": "UU 39/2007",
         "article": "Pasal 6 ayat (2)",
@@ -29,21 +34,23 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "MMEA: Gol A (1-5%) Rp 5K-25K/ltr, Gol B (5-20%) Rp 25K-75K/ltr, Gol C (>20%) Rp 75K-150K/ltr.",
+    "notes": "Tarif sejak 1 Jan 2024 (PMK 160/2023, mencabut PMK 158/PMK.010/2018), masih berlaku 2025: EA Rp 20.000/liter (dalam negeri & impor); MMEA Golongan A (EA ≤5%) Rp 16.500/liter; Golongan B (EA >5-20%) Rp 42.500/liter produksi dalam negeri dan Rp 53.000/liter impor; Golongan C (EA >20-55%) Rp 101.000/liter dalam negeri dan Rp 152.000/liter impor; KMEA cair Rp 228.000/liter; KMEA padat Rp 1.000/gram.",
     "examples": [
       {
-        "scenario": "Impor wine 12% 1000 liter",
-        "calculation": "Gol B ±Rp 50.000/ltr × 1.000",
-        "result": "Cukai = ±Rp 50.000.000"
+        "scenario": "Impor wine 12% (Gol B) 1.000 liter",
+        "calculation": "Tarif impor Gol B Rp 53.000/ltr × 1.000",
+        "result": "Cukai = Rp 53.000.000"
       }
     ],
     "tags": [
       "cukai",
       "alkohol",
       "mmea",
+      "kmea",
+      "pmk-160-2023",
       "berlaku"
     ],
-    "lastVerified": "2026-05-28",
+    "lastVerified": "2026-08-28",
     "relatedEntries": {
       "sameCategory": [
         "cukai-hasil-tembakau",

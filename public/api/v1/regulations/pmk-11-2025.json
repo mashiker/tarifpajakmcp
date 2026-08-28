@@ -1,0 +1,26 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-08-28T05:06:34.000Z",
+  "data": {
+    "id": "pmk-11-2025",
+    "number": "11",
+    "year": 2025,
+    "title": "PMK tentang Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu Pajak Pertambahan Nilai",
+    "shortName": "PMK DPP Nilai Lain PPN",
+    "type": "PMK",
+    "promulgationDate": "2025-02-04",
+    "effectiveDate": "2025-02-04",
+    "sourceUrl": "https://peraturan.bpk.go.id/Details/313574",
+    "status": "berlaku",
+    "description": "PMK menetapkan skema DPP Nilai Lain dan Besaran Tertentu PPN sebagai penerus PMK 121/2015: untuk penyerahan selain BKP mewah, DPP = 11/12 × harga jual sehingga beban efektif 12% × 11/12 = 11%. Ditetapkan dan diundangkan 4 Februari 2025 (BN 2025 No. 78), berlaku pada tanggal diundangkan. Diubah sebagian oleh PMK 53/2025 (berlaku 1 Agustus 2025).",
+    "relevantArticles": "Pasal 2, 3, 4",
+    "relatedRegulations": [
+      "pmk-131-2024",
+      "uu-7-2021-hpp"
+    ],
+    "referencingEntries": [
+      "ppn-11pct-effective-2025"
+    ]
+  }
+}

@@ -1,19 +1,19 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-21-pegawai-tidak-tetap",
     "category": "PPh",
     "taxType": "PPh 21",
     "transactionType": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
-    "description": "Pemotongan PPh 21 atas penghasilan pegawai tidak tetap atau tenaga kerja lepas yang menerima penghasilan secara harian, mingguan, atau satuan waktu tertentu. Jika penghasilan ≤ Rp 4.500.000/hari dan sudah kena PTKP harian, PPh = 0. Jika > Rp 4.500.000/hari, tarif Pasal 17 berlaku.",
+    "description": "Pemotongan PPh 21 atas penghasilan pegawai tidak tetap atau tenaga kerja lepas yang menerima upah secara harian, mingguan, satuan, atau borongan (dihitung rata-rata sehari). Berlaku tarif efektif harian PMK 168/2023: 0% untuk penghasilan bruto sehari ≤ Rp 450.000; 0,5% untuk > Rp 450.000 s.d. Rp 2.500.000; di atas Rp 2.500.000 sehari memakai tarif Pasal 17 atas DPP = 50% × penghasilan bruto sehari.",
     "rate": {
       "type": "formula",
-      "value": "Tarif Pasal 17 progresif dengan PTKP harian",
-      "effectiveRate": "0% jika ≤ Rp 4.500.000/hari setelah PTKP"
+      "value": "0% untuk ≤ Rp 450.000/hari; 0,5% untuk > Rp 450.000 s.d. Rp 2.500.000/hari; tarif Pasal 17 (5%–35%) × DPP (50% × bruto sehari) untuk > Rp 2.500.000/hari",
+      "effectiveRate": "0% / 0,5% / tarif Pasal 17 progresif sesuai jumlah penghasilan sehari"
     },
-    "taxBase": "Penghasilan bruto harian dikurangi PTKP harian (1/360 × PTKP tahunan × jumlah hari kerja)",
+    "taxBase": "Penghasilan bruto sehari (rata-rata harian untuk upah mingguan, satuan, atau borongan)",
     "payer": "Pegawai tidak tetap / tenaga kerja lepas",
     "recipient": "Negara",
     "withholder": "Pemberi kerja",
@@ -34,19 +34,24 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "PTKP harian = PTKP tahunan × 1/360. Untuk penghasilan > Rp 4.500.000/hari, dipotong PPh 21 dengan tarif Pasal 17 dengan PTKP harian terkumulasi.",
+    "notes": "Tarif efektif harian per PMK 168/2023 (ambang lama Rp 4.500.000/hari dengan PTKP harian sudah tidak berlaku sejak 2024). Untuk upah mingguan/satuan/borongan, gunakan rata-rata penghasilan sehari. Penghasilan bruto di atas Rp 2.500.000 sehari dipotong dengan tarif Pasal 17 ayat (1) huruf a UU PPh yang ditentukan berdasarkan annualisasi penghasilan, dikenakan atas DPP sebesar 50% × penghasilan bruto sehari.",
     "tags": [
       "pph-21",
       "pegawai-tidak-tetap",
       "tenaga-kerja-lepas",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "examples": [
       {
-        "scenario": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
-        "calculation": "Sesuai formula yang berlaku",
-        "result": "Lihat ketentuan detail"
+        "scenario": "Upah harian Rp 400.000",
+        "calculation": "Bruto sehari ≤ Rp 450.000 → tarif efektif harian 0%",
+        "result": "PPh 21 = Rp 0"
+      },
+      {
+        "scenario": "Upah harian Rp 1.000.000",
+        "calculation": "Bruto sehari di atas Rp 450.000 s.d. Rp 2.500.000 → tarif efektif harian 0,5%",
+        "result": "PPh 21 = 0,5% × Rp 1.000.000 = Rp 5.000"
       }
     ],
     "relatedEntries": {

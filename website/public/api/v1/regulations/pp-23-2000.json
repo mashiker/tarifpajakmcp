@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pp-23-2000",
     "number": "23",
@@ -21,7 +21,7 @@
     ],
     "referencingEntries": [
       "bea-meterai-3000",
-      "cukai-ecigarette",
+      "cukai-eti-alkohol",
       "pph-21-ter-monthly-2024",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-shu-koperasi",
@@ -40,6 +40,7 @@
       "pph-21-norma-petani",
       "pph-21-norma-pengusaha-kecil",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024",
       "pph-22-impor-api-produsen",
@@ -49,6 +50,7 @@
       "pph-22-pengadaan-pemerintah",
       "pph-22-pmse",
       "pph-22-kripto",
+      "pph-26-general-2024",
       "pph-26-dividen",
       "pph-26-bunga",
       "pph-26-royalti",

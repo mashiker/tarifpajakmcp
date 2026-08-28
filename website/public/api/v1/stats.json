@@ -1,15 +1,15 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
-    "totalEntries": 136,
+    "totalEntries": 140,
     "totalCategories": 15,
-    "totalRegulations": 39,
+    "totalRegulations": 47,
     "byStatus": {
-      "berlaku": 111,
-      "dicabut": 16,
-      "diubah": 9
+      "berlaku": 109,
+      "dicabut": 20,
+      "diubah": 11
     },
     "byCategory": [
       {
@@ -25,7 +25,7 @@
       {
         "taxType": "BPHTB",
         "slug": "bphtb",
-        "count": 3
+        "count": 5
       },
       {
         "taxType": "Cukai",
@@ -50,7 +50,7 @@
       {
         "taxType": "PPh 22",
         "slug": "pph-22",
-        "count": 11
+        "count": 12
       },
       {
         "taxType": "PPh 23",
@@ -75,7 +75,7 @@
       {
         "taxType": "PPh UMKM",
         "slug": "pph-umkm",
-        "count": 3
+        "count": 4
       },
       {
         "taxType": "PPN",

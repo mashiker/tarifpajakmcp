@@ -1,0 +1,538 @@
+---
+// Kalkulator pajak client-side. Sengaja TANPA endpoint server: situs ini
+// static (Astro `output: 'static'` di Cloudflare Pages), jadi semua hitungan
+// dijalankan di browser dari data tarif yang di-embed saat build. Sumber data
+// adalah file data/categories/*.json yang sama dengan database — bukan
+// hardcoded angka di JS.
+import BaseLayout from '../layouts/Base.astro';
+import fs from 'fs';
+import path from 'path';
+
+// --- TER A/B/C dari sumber data kanonik (bukan salinan manual) ---
+// Saat build, CWD = website/ → data master ada satu level di atas.
+const repoRoot = path.resolve(process.cwd(), '../data/categories/pph-21.json');
+const pph21 = JSON.parse(fs.readFileSync(repoRoot, 'utf-8'));
+const entries: any[] = Array.isArray(pph21) ? pph21 : pph21.entries ?? [];
+const terTables: Record<string, { layers: number; brackets: { min: number; max: number | null; rate: number }[] }> = {};
+const TER_IDS: Record<string, string> = {
+  A: 'pph-21-ter-a-detail',
+  B: 'pph-21-ter-b-detail',
+  C: 'pph-21-ter-c-detail',
+};
+for (const [cat, id] of Object.entries(TER_IDS)) {
+  const entry = entries.find((e) => e.id === id);
+  const brackets = entry?.rate?.brackets ?? [];
+  terTables[cat] = {
+    layers: brackets.length,
+    brackets: brackets.map((b: any) => ({ min: b.min ?? 0, max: b.max ?? null, rate: b.rate ?? 0 })),
+  };
+}
+
+const KATEGORI_INFO: Record<string, string> = {
+  A: 'TK/0 · TK/1 · K/0',
+  B: 'TK/2 · TK/3 · K/1 · K/2',
+  C: 'K/3',
+};
+---
+
+<BaseLayout
+  title="Kalkulator Pajak"
+  activeNav="kalkulator"
+  canonicalPath="/kalkulator"
+  description="Kalkulator pajak Indonesia: TER PPh 21 bulanan, Pasal 17, tarif harian, PPh 23, PPh final 4(2), UMKM 0,5%, dan PPN 12%. Dihitung di browser dari database tarif resmi."
+>
+
+  <section class="kal-hero">
+    <h1 class="kal-title">Kalkulator Pajak</h1>
+    <p class="kal-subtitle">
+      Hitung cepat dari database tarif yang sama dengan halaman utama. Semua perhitungan dijalankan di browser — tanpa server, tanpa data dikirim ke mana pun.
+    </p>
+  </section>
+
+  <!-- Pilihan jenis hitungan -->
+  <div class="kal-tabs" role="tablist" aria-label="Jenis perhitungan">
+    <button role="tab" class="kal-tab active" data-calc="ter" aria-selected="true">TER PPh 21</button>
+    <button role="tab" class="kal-tab" data-calc="pasal17" aria-selected="false">Pasal 17 Tahunan</button>
+    <button role="tab" class="kal-tab" data-calc="harian" aria-selected="false">PPh 21 Harian</button>
+    <button role="tab" class="kal-tab" data-calc="pph23" aria-selected="false">PPh 23</button>
+    <button role="tab" class="kal-tab" data-calc="final42" aria-selected="false">PPh Final 4(2)</button>
+    <button role="tab" class="kal-tab" data-calc="umkm" aria-selected="false">UMKM 0,5%</button>
+    <button role="tab" class="kal-tab" data-calc="ppn" aria-selected="false">PPN</button>
+  </div>
+
+  <div class="kal-grid">
+    <!-- Panel input -->
+    <section class="kal-panel" aria-label="Input perhitungan">
+      <!-- TER -->
+      <form class="kal-form" data-panel="ter" role="tabpanel" aria-label="TER PPh 21">
+        <div class="kal-field">
+          <label for="ter-bruto">Penghasilan bruto per bulan</label>
+          <div class="kal-input-wrap"><span class="kal-rp">Rp</span><input id="ter-bruto" type="text" inputmode="numeric" class="kal-input" placeholder="8.500.000" /></div>
+        </div>
+        <div class="kal-field">
+          <label for="ter-kategori">Kategori TER (status PTKP)</label>
+          <select id="ter-kategori" class="kal-select">
+            {Object.entries(KATEGORI_INFO).map(([k, v]) => <option value={k}>{k} — {v}</option>)}
+          </select>
+        </div>
+      </form>
+
+      <!-- Pasal 17 -->
+      <form class="kal-form" data-panel="pasal17" hidden role="tabpanel" aria-label="PPh Pasal 17 tahunan">
+        <div class="kal-field">
+          <label for="p17-pkp">Penghasilan Kena Pajak (PKP) per tahun</label>
+          <div class="kal-input-wrap"><span class="kal-rp">Rp</span><input id="p17-pkp" type="text" inputmode="numeric" class="kal-input" placeholder="250.000.000" /></div>
+        </div>
+      </form>
+
+      <!-- Harian -->
+      <form class="kal-form" data-panel="harian" hidden role="tabpanel" aria-label="PPh 21 harian">
+        <div class="kal-field">
+          <label for="harian-bruto">Imbalan bruto per hari</label>
+          <div class="kal-input-wrap"><span class="kal-rp">Rp</span><input id="harian-bruto" type="text" inputmode="numeric" class="kal-input" placeholder="1.500.000" /></div>
+        </div>
+      </form>
+
+      <!-- PPh 23 -->
+      <form class="kal-form" data-panel="pph23" hidden role="tabpanel" aria-label="PPh 23">
+        <div class="kal-field">
+          <label for="pph23-bruto">Jumlah pembayaran bruto (jasa / sewa selain tanah-bangunan)</label>
+          <div class="kal-input-wrap"><span class="kal-rp">Rp</span><input id="pph23-bruto" type="text" inputmode="numeric" class="kal-input" placeholder="25.000.000" /></div>
+        </div>
+      </form>
+
+      <!-- PPh Final 4(2) -->
+      <form class="kal-form" data-panel="final42" hidden role="tabpanel" aria-label="PPh Final 4(2)">
+        <div class="kal-field">
+          <label for="f42-jenis">Jenis transaksi</label>
+          <select id="f42-jenis" class="kal-select">
+            <option value="sewa">Sewa tanah dan/atau bangunan — 10%</option>
+            <option value="pengalihan">Pengalihan hak atas tanah dan/atau bangunan — 2,5%</option>
+            <option value="konstruksi">Jasa konstruksi — sesuai kualifikasi</option>
+          </select>
+        </div>
+        <div class="kal-field" id="f42-kualifikasi-wrap" hidden>
+          <label for="f42-kualifikasi">Kualifikasi jasa konstruksi (PP 9/2022)</label>
+          <select id="f42-kualifikasi" class="kal-select">
+            <option value="1.75">Kualifikasi kecil / perseorangan bersertifikat — 1,75%</option>
+            <option value="2.65">Pelaksana kualifikasi menengah/besar bersertifikat — 2,65%</option>
+            <option value="2.65i">Konstruksi terintegrasi bersertifikat — 2,65%</option>
+            <option value="3.5">Konsultansi (perencanaan/pengawasan) bersertifikat — 3,5%</option>
+            <option value="4">Tanpa sertifikat badan usaha — 4%</option>
+            <option value="6">Konsultansi tanpa sertifikat — 6%</option>
+          </select>
+        </div>
+        <div class="kal-field">
+          <label for="f42-bruto">Nilai transaksi bruto (tanpa PPN)</label>
+          <div class="kal-input-wrap"><span class="kal-rp">Rp</span><input id="f42-bruto" type="text" inputmode="numeric" class="kal-input" placeholder="250.000.000" /></div>
+        </div>
+      </form>
+
+      <!-- UMKM -->
+      <form class="kal-form" data-panel="umkm" hidden role="tabpanel" aria-label="PPh Final UMKM">
+        <div class="kal-field">
+          <label for="umkm-omzet">Peredaran bruto (omzet) per bulan</label>
+          <div class="kal-input-wrap"><span class="kal-rp">Rp</span><input id="umkm-omzet" type="text" inputmode="numeric" class="kal-input" placeholder="75.000.000" /></div>
+        </div>
+        <p class="kal-note">
+          Fasilitas PPh final 0,5% berlaku untuk Wajib Pajak <strong>orang pribadi</strong> tanpa batas waktu (PP 20/2026).
+          WP badan (PT/CV) tidak lagi memperoleh fasilitas ini sejak 22 April 2026.
+        </p>
+      </form>
+
+      <!-- PPN -->
+      <form class="kal-form" data-panel="ppn" hidden role="tabpanel" aria-label="PPN">
+        <div class="kal-field">
+          <label for="ppn-harga">Harga / nilai penyerahan (DPP)</label>
+          <div class="kal-input-wrap"><span class="kal-rp">Rp</span><input id="ppn-harga" type="text" inputmode="numeric" class="kal-input" placeholder="10.000.000" /></div>
+        </div>
+        <div class="kal-field">
+          <label for="ppn-jenis">Kategori barang/jasa</label>
+          <select id="ppn-jenis" class="kal-select">
+            <option value="non-mewah">Umum (non-mewah) — PPN 12% × DPP nilai lain = efektif 11%</option>
+            <option value="mewah">Barang mewah (kapal pesiar, pesawat pribadi, rumah HJE &gt; Rp 30 M) — 12% penuh</option>
+          </select>
+        </div>
+      </form>
+    </section>
+
+    <!-- Panel hasil -->
+    <section class="kal-result" id="kal-result" aria-live="polite" aria-label="Hasil perhitungan">
+      <p class="kal-result-hint" id="kal-hint">Masukkan angka untuk melihat hasil.</p>
+      <div class="kal-result-body" id="kal-output" hidden>
+        <div class="kal-row">
+          <span class="kal-row-label">Tarif</span>
+          <span class="kal-row-value" id="r-tarif">—</span>
+        </div>
+        <div class="kal-row">
+          <span class="kal-row-label">Dasar pengenaan</span>
+          <span class="kal-row-value" id="r-dpp">—</span>
+        </div>
+        <div class="kal-row kal-row-strong">
+          <span class="kal-row-label">Pajak terutang</span>
+          <span class="kal-row-value" id="r-pajak">—</span>
+        </div>
+        <div class="kal-row" id="r-neto-row">
+          <span class="kal-row-label">Diterima bersih</span>
+          <span class="kal-row-value" id="r-neto">—</span>
+        </div>
+        <p class="kal-legal" id="r-legal"></p>
+      </div>
+    </section>
+  </div>
+
+  <aside class="kal-disclaimer">
+    <p>
+      Kalkulator adalah pratinjau perhitungan dari tarif yang tercatat di database ini — bukan nasihat pajak resmi.
+      Kondisi spesifik transaksi (status WP, perjanjian, waktu penyerahan) dapat mengubah penerapan tarif.
+      TER hanya berlaku untuk pemotongan bulanan Januari–November; Desember dihitung dengan Pasal 17 tahunan (true-up).
+    </p>
+  </aside>
+</BaseLayout>
+
+<script is:inline define:vars={{ terTables, KATEGORI_INFO }}>
+  const fmtIDR = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 });
+  function parseIDR(str) {
+    const clean = String(str || '').replace(/[^\d]/g, '');
+    return clean ? parseInt(clean, 10) : 0;
+  }
+
+  // TER lookup: cari bracket dengan min < bruto <= max (max null = tak terbatas).
+  function terRate(cat, bruto) {
+    const table = terTables[cat];
+    if (!table) return null;
+    for (const b of table.brackets) {
+      const above = bruto > b.min;
+      const belowMax = b.max === null || bruto <= b.max;
+      if (above && belowMax) return b.rate; // persen
+    }
+    return null;
+  }
+
+  // Pasal 17 UU PPh (UU HPP): lapisan progresif atas PKP tahunan.
+  const PASAL17 = [
+    { upTo: 60_000_000, rate: 0.05 },
+    { upTo: 250_000_000, rate: 0.15 },
+    { upTo: 500_000_000, rate: 0.25 },
+    { upTo: 5_000_000_000, rate: 0.30 },
+    { upTo: null, rate: 0.35 },
+  ];
+  function pasal17(pkp) {
+    let remaining = pkp;
+    let floor = 0;
+    let tax = 0;
+    for (const layer of PASAL17) {
+      if (remaining <= 0) break;
+      const width = layer.upTo === null ? Infinity : layer.upTo - floor;
+      const taxable = Math.min(remaining, width);
+      tax += taxable * layer.rate;
+      remaining -= taxable;
+      floor = layer.upTo ?? floor;
+    }
+    return tax;
+  }
+
+  const KONSTRUKSI_RATE = { '1.75': 0.0175, '2.65': 0.0265, '2.65i': 0.0265, '3.5': 0.035, '4': 0.04, '6': 0.06 };
+  const KONSTRUKSI_LABEL = {
+    '1.75': '1,75% (kualifikasi kecil/perseorangan bersertifikat — PP 9/2022)',
+    '2.65': '2,65% (pelaksana menengah/besar bersertifikat — PP 9/2022)',
+    '2.65i': '2,65% (konstruksi terintegrasi bersertifikat — PP 9/2022)',
+    '3.5': '3,5% (konsultansi bersertifikat — PP 9/2022)',
+    '4': '4% (tanpa sertifikat badan usaha — PP 9/2022)',
+    '6': '6% (konsultansi tanpa sertifikat — PP 9/2022)',
+  };
+
+  const els = {
+    hint: document.getElementById('kal-hint'),
+    output: document.getElementById('kal-output'),
+    tarif: document.getElementById('r-tarif'),
+    dpp: document.getElementById('r-dpp'),
+    pajak: document.getElementById('r-pajak'),
+    netoRow: document.getElementById('r-neto-row'),
+    neto: document.getElementById('r-neto'),
+    legal: document.getElementById('r-legal'),
+  };
+
+  let activeCalc = 'ter';
+
+  function showResult({ tarif, dpp, pajak, neto, legal, hideNeto }) {
+    els.hint.hidden = true;
+    els.output.hidden = false;
+    els.tarif.textContent = tarif;
+    els.dpp.textContent = dpp;
+    els.pajak.textContent = pajak;
+    els.netoRow.hidden = !!hideNeto;
+    if (!hideNeto) els.neto.textContent = neto;
+    els.legal.textContent = legal;
+  }
+  function resetResult(msg) {
+    els.output.hidden = true;
+    els.hint.hidden = false;
+    els.hint.textContent = msg || 'Masukkan angka untuk melihat hasil.';
+  }
+
+  function render() {
+    if (activeCalc === 'ter') {
+      const bruto = parseIDR(document.getElementById('ter-bruto').value);
+      if (!bruto) return resetResult();
+      const cat = document.getElementById('ter-kategori').value;
+      const rate = terRate(cat, bruto);
+      if (rate === null) return resetResult('Bruto di luar rentang tabel TER.');
+      const pajak = Math.round(rate / 100 * bruto);
+      const layers = terTables[cat].layers;
+      showResult({
+        tarif: rate.toLocaleString('id-ID') + '% — TER kategori ' + cat + ' (' + KATEGORI_INFO[cat] + ', ' + layers + ' lapisan)',
+        dpp: fmtIDR.format(bruto),
+        pajak: fmtIDR.format(pajak),
+        neto: fmtIDR.format(bruto - pajak),
+        legal: 'Dasar: PP 58/2023 jo. PMK 168/2023 — tarif efektif rata-rata bulanan Januari–November.',
+      });
+    } else if (activeCalc === 'pasal17') {
+      const pkp = parseIDR(document.getElementById('p17-pkp').value);
+      if (!pkp) return resetResult();
+      const pajak = Math.round(pasal17(pkp));
+      showResult({
+        tarif: 'Progresif 5% – 35% (UU HPP)',
+        dpp: fmtIDR.format(pkp),
+        pajak: fmtIDR.format(pajak),
+        neto: fmtIDR.format(pkp - pajak),
+        legal: 'Dasar: Pasal 17 ayat (1) huruf a UU PPh jo. UU 7/2021 — tarif tahunan atas PKP.',
+      });
+    } else if (activeCalc === 'harian') {
+      const bruto = parseIDR(document.getElementById('harian-bruto').value);
+      if (!bruto) return resetResult();
+      if (bruto <= 450000) {
+        showResult({
+          tarif: '0%',
+          dpp: fmtIDR.format(bruto),
+          pajak: 'Rp 0',
+          neto: fmtIDR.format(bruto),
+          legal: 'Dasar: Pasal 8–10 PMK 168/2023 — imbalan harian ≤ Rp 450.000 tidak dipotong.',
+        });
+      } else if (bruto <= 2500000) {
+        const pajak = Math.round(bruto * 0.005);
+        showResult({
+          tarif: '0,5% (tarif efektif harian)',
+          dpp: fmtIDR.format(bruto),
+          pajak: fmtIDR.format(pajak),
+          neto: fmtIDR.format(bruto - pajak),
+          legal: 'Dasar: Pasal 8–10 PMK 168/2023 — imbalan harian > Rp 450.000 s.d. Rp 2.500.000.',
+        });
+      } else {
+        showResult({
+          tarif: 'Tarif Pasal 17 (dihitung di luar kalkulator)',
+          dpp: fmtIDR.format(bruto),
+          pajak: '—',
+          neto: '—',
+          hideNeto: true,
+          legal: 'Dasar: Pasal 9 PMK 168/2023 — imbalan harian > Rp 2.500.000 dikenai tarif Pasal 17 atas DPP 50% × bruto (dianualisasi). Gunakan tab "Pasal 17 Tahunan" untuk estimasinya.',
+        });
+      }
+    } else if (activeCalc === 'pph23') {
+      const bruto = parseIDR(document.getElementById('pph23-bruto').value);
+      if (!bruto) return resetResult();
+      const pajak = Math.round(bruto * 0.02);
+      showResult({
+        tarif: '2%',
+        dpp: fmtIDR.format(bruto),
+        pajak: fmtIDR.format(pajak),
+        neto: fmtIDR.format(bruto - pajak),
+        legal: 'Dasar: Pasal 23 UU PPh jo. PMK 141/PMK.03/2015 — jasa, sewa aset selain tanah/bangunan, dll. Dipotong bila pembayaran ke pihak yang sama > Rp 500.000 per bulan.',
+      });
+    } else if (activeCalc === 'final42') {
+      const jenis = document.getElementById('f42-jenis').value;
+      const bruto = parseIDR(document.getElementById('f42-bruto').value);
+      if (!bruto) return resetResult();
+      let rate, tarifLabel, legal;
+      if (jenis === 'sewa') {
+        rate = 0.10;
+        tarifLabel = '10%';
+        legal = 'Dasar: Pasal 4 ayat (2) huruf b UU PPh jo. PP 34/2017 — sewa tanah dan/atau bangunan.';
+      } else if (jenis === 'pengalihan') {
+        rate = 0.025;
+        tarifLabel = '2,5%';
+        legal = 'Dasar: Pasal 4 ayat (2) huruf b UU PPh jo. PP 34/2017 — pengalihan hak atas tanah dan/atau bangunan.';
+      } else {
+        const k = document.getElementById('f42-kualifikasi').value;
+        rate = KONSTRUKSI_RATE[k];
+        tarifLabel = KONSTRUKSI_LABEL[k];
+        legal = 'Dasar: PP 51/2008 jo. PP 9/2022 (implementasi UU 7/2021) — PPh final jasa konstruksi.';
+      }
+      const pajak = Math.round(bruto * rate);
+      showResult({
+        tarif: tarifLabel,
+        dpp: fmtIDR.format(bruto),
+        pajak: fmtIDR.format(pajak),
+        neto: fmtIDR.format(bruto - pajak),
+        legal,
+      });
+    } else if (activeCalc === 'umkm') {
+      const omzet = parseIDR(document.getElementById('umkm-omzet').value);
+      if (!omzet) return resetResult();
+      const pajak = Math.round(omzet * 0.005);
+      showResult({
+        tarif: '0,5% (WP orang pribadi — PP 20/2026)',
+        dpp: fmtIDR.format(omzet),
+        pajak: fmtIDR.format(pajak),
+        neto: fmtIDR.format(omzet - pajak),
+        legal: 'Dasar: PP 20/2026 jo. PP 55/2022 — PPh final 0,5% dari peredaran bruto. Batas omzet UMKM: Rp 4,8 miliar per tahun.',
+      });
+    } else if (activeCalc === 'ppn') {
+      const harga = parseIDR(document.getElementById('ppn-harga').value);
+      if (!harga) return resetResult();
+      const jenis = document.getElementById('ppn-jenis').value;
+      if (jenis === 'mewah') {
+        const ppn = Math.round(harga * 0.12);
+        showResult({
+          tarif: '12% (barang mewah)',
+          dpp: fmtIDR.format(harga),
+          pajak: fmtIDR.format(ppn),
+          neto: fmtIDR.format(harga + ppn),
+          legal: 'Dasar: UU 7/2021 Pasal 7 jo. PMK 131/2024 — tarif 12% penuh untuk barang mewah (kapal pesiar, pesawat pribadi, rumah HJE > Rp 30 M).',
+        });
+      } else {
+        const dppNilaiLain = Math.round(harga * 11 / 12);
+        const ppn = Math.round(dppNilaiLain * 0.12);
+        showResult({
+          tarif: '12% × DPP nilai lain (11/12) = efektif 11%',
+          dpp: fmtIDR.format(dppNilaiLain) + ' (DPP nilai lain dari harga ' + fmtIDR.format(harga) + ')',
+          pajak: fmtIDR.format(ppn),
+          neto: fmtIDR.format(harga + ppn),
+          legal: 'Dasar: UU 7/2021 jo. PMK 131/2024 & PMK 11/2025 — barang non-mewah: PPN 12% dihitung dari DPP nilai lain 11/12, sehingga efektif 11%.',
+        });
+      }
+    }
+  }
+
+  // Tabs
+  const tabs = document.querySelectorAll('.kal-tab');
+  const panels = document.querySelectorAll('.kal-form');
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      activeCalc = tab.dataset.calc;
+      panels.forEach((p) => { p.hidden = p.dataset.panel !== activeCalc; });
+      resetResult();
+    });
+  });
+
+  // Jenis 4(2): tampilkan pilihan kualifikasi hanya untuk konstruksi.
+  document.getElementById('f42-jenis')?.addEventListener('change', (e) => {
+    const isKonstruksi = e.target.value === 'konstruksi';
+    document.getElementById('f42-kualifikasi-wrap').hidden = !isKonstruksi;
+    render();
+  });
+
+  // Format ribuan langsung saat mengetik + hitung ulang.
+  document.querySelectorAll('.kal-input').forEach((input) => {
+    input.addEventListener('input', () => {
+      const digits = input.value.replace(/[^\d]/g, '');
+      input.value = digits ? parseInt(digits, 10).toLocaleString('id-ID') : '';
+      render();
+    });
+  });
+  document.querySelectorAll('.kal-select').forEach((sel) => {
+    sel.addEventListener('change', render);
+  });
+</script>
+
+<style>
+  .kal-hero { margin-bottom: 1.25rem; }
+  .kal-title { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text); margin: 0; }
+  .kal-subtitle { font-size: 0.875rem; color: var(--text-secondary); margin: 0.375rem 0 0; max-width: 46rem; }
+
+  .kal-tabs { display: flex; flex-wrap: wrap; gap: 0.375rem; margin-bottom: 1rem; }
+  .kal-tab {
+    appearance: none; cursor: pointer;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+  .kal-tab:hover { background: var(--surface-alt); color: var(--text); }
+  .kal-tab.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+  .kal-grid { display: grid; gap: 1rem; grid-template-columns: 1fr; align-items: start; }
+  @media (min-width: 900px) { .kal-grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); } }
+
+  .kal-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+  }
+  .kal-form { display: flex; flex-direction: column; gap: 1rem; }
+  /* display:flex meng-override UA display:none dari atribut hidden —
+     paksa ulang supaya panel non-aktif benar-benar tersembunyi. */
+  .kal-form[hidden] { display: none; }
+  .kal-field { display: flex; flex-direction: column; gap: 0.375rem; }
+  .kal-field label { font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); }
+  .kal-input-wrap { display: flex; align-items: center; }
+  .kal-rp {
+    font-family: var(--font-mono); font-size: 0.8125rem; font-weight: 600;
+    color: var(--text-tertiary);
+    background: var(--surface-alt);
+    border: 1px solid var(--border); border-right: 0;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 0.5rem 0.625rem;
+  }
+  .kal-input {
+    width: 100%;
+    font-family: var(--font-mono); font-size: 0.9375rem; font-variant-numeric: tabular-nums;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border); border-left: 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    outline: none;
+  }
+  .kal-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .kal-select {
+    width: 100%;
+    font-size: 0.875rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.625rem;
+    outline: none;
+  }
+  .kal-select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .kal-note { font-size: 0.75rem; color: var(--text-tertiary); margin: 0; line-height: 1.55; }
+
+  .kal-result {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    min-height: 10rem;
+  }
+  .kal-result-hint { font-size: 0.875rem; color: var(--text-tertiary); margin: 0; }
+  .kal-result-body { display: flex; flex-direction: column; gap: 0.625rem; }
+  .kal-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+  .kal-row-label { font-size: 0.8125rem; color: var(--text-secondary); }
+  .kal-row-value {
+    font-family: var(--font-mono); font-variant-numeric: tabular-nums;
+    font-size: 0.875rem; font-weight: 600; color: var(--text);
+    text-align: right;
+  }
+  .kal-row-strong { border-top: 1px solid var(--border); padding-top: 0.625rem; margin-top: 0.125rem; }
+  .kal-row-strong .kal-row-label { color: var(--text); font-weight: 600; }
+  .kal-row-strong .kal-row-value { font-size: 1.125rem; font-weight: 700; color: var(--accent-text); }
+  .kal-legal { font-size: 0.6875rem; color: var(--text-tertiary); margin: 0.25rem 0 0; line-height: 1.55; border-top: 1px solid var(--border-subtle); padding-top: 0.625rem; }
+
+  .kal-disclaimer {
+    margin-top: 1.5rem;
+    padding: 0.625rem 0.875rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.6875rem;
+    color: var(--text-tertiary);
+    line-height: 1.6;
+  }
+</style>

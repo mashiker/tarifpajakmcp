@@ -3,10 +3,10 @@
     "name": "tarif-pajak-id",
     "version": "0.2.0",
     "description": "Open database tarif pajak Indonesia + UU Konsolidasi",
-    "lastUpdated": "2026-09-11",
+    "lastUpdated": "2026-08-28",
     "stats": {
-      "regulations": 39,
-      "entries": 136,
+      "regulations": 47,
+      "entries": 140,
       "categories": [
         {
           "taxType": "Bea Masuk",
@@ -18,7 +18,7 @@
         },
         {
           "taxType": "BPHTB",
-          "count": 3
+          "count": 5
         },
         {
           "taxType": "Cukai",
@@ -38,7 +38,7 @@
         },
         {
           "taxType": "PPh 22",
-          "count": 11
+          "count": 12
         },
         {
           "taxType": "PPh 23",
@@ -58,7 +58,7 @@
         },
         {
           "taxType": "PPh UMKM",
-          "count": 3
+          "count": 4
         },
         {
           "taxType": "PPN",
@@ -277,7 +277,7 @@
       "sourceUrl": "https://peraturan.bpk.go.id/Details/135968/uu-no-10-tahun-2020",
       "pasalUrl": "https://pasal.id/peraturan/uu/uu-no-10-tahun-2020",
       "status": "berlaku",
-      "description": "UU Bea Meterai baru menggantikan UU 13/1985. Tarif Rp 10.000 untuk dokumen >Rp 1.000.000. Berlaku 1 Januari 2021.",
+      "description": "UU Bea Meterai baru menggantikan UU 13/1985. Tarif Rp 10.000 untuk dokumen dengan jumlah uang >Rp 5.000.000 (di bawahnya tidak dikenai bea meterai); dokumen selain keterangan jumlah uang kena Rp 10.000 per dokumen. Berlaku 1 Januari 2021 dan masih berlaku per Agustus 2026.",
       "relevantArticles": "Pasal 3, 4, 5",
       "relatedRegulations": [
         "uu-13-1985"
@@ -297,7 +297,10 @@
       "description": "UU Cukai mengatur pengenaan cukai atas hasil tembakau (rokok), minuman mengandung etil alkohol (MMEA), dan e-cigarette. Menggunakan tarif spesifik dan ad valorem.",
       "relevantArticles": "Pasal 6, 7, 8",
       "relatedRegulations": [
-        "pmk-202-2023"
+        "pmk-202-2023",
+        "pmk-96-2024",
+        "pmk-97-2024",
+        "pmk-160-2023"
       ]
     },
     {
@@ -342,12 +345,12 @@
       "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 21",
       "shortName": "PP TER PPh 21",
       "type": "PP",
-      "promulgationDate": "2023-12-11",
+      "promulgationDate": "2023-12-27",
       "effectiveDate": "2024-01-01",
-      "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023",
+      "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pp-58-tahun-2023",
       "pasalUrl": "https://pasal.id/peraturan/pp/pp-no-58-tahun-2023",
       "status": "berlaku",
-      "description": "PP yang mengatur Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif annualized. TER terdiri dari 3 kategori (A, B, C) masing-masing 42 lapisan. Juga mengatur pemotongan PPh 21 atas dana pensiun (Pasal 14), pegawai tidak tetap (Pasal 5).",
+      "description": "PP yang mengatur Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif annualized. TER terdiri dari 3 kategori (A, B, C) dengan masing-masing 44, 40, dan 41 lapisan; tarif 0% hingga 34%. Juga mengatur pemotongan PPh 21 atas dana pensiun (Pasal 14), pegawai tidak tetap (Pasal 5). Ditetapkan dan diundangkan 27 Desember 2023; penerapan pemotongan mulai masa Januari 2024.",
       "relevantArticles": "Pasal 2, 3, 4, 5, 14, Lampiran (Tabel TER A/B/C)",
       "relatedRegulations": [
         "pmk-168-2023",
@@ -361,11 +364,11 @@
       "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
       "shortName": "PP Tarif PPh 22/23/26",
       "type": "PP",
-      "promulgationDate": "2023-12-11",
+      "promulgationDate": "2023-12-27",
       "effectiveDate": "2024-01-01",
       "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
       "status": "berlaku",
-      "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26.",
+      "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26. Ditandatangani bersama PP 58/2023 pada 27 Desember 2023; tarif berlaku untuk masa pajak Januari 2024.",
       "relevantArticles": "Pasal 2 (PPh 22 impor/ekspor), Pasal 3 (PPh 22 pembelian/pengadaan), Pasal 4 (PPh 22 penjualan/PMSE/kripto), Pasal 5 (PPh 23 dan 26)",
       "relatedRegulations": [
         "pp-94-2010",
@@ -400,7 +403,7 @@
       "effectiveDate": "2001-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/44271/pp-no-131-tahun-2000",
       "status": "berlaku",
-      "description": "PP mengatur PPh Final atas: pengalihan hak atas tanah/bangunan (Pasal 5), hadiah undian (Pasal 3), sewa tanah/bangunan (Pasal 4). Catatan: Pasal 2 tentang bunga deposito sudah digantikan oleh PP 131/2000 hanya mengatur hal tersebut sebelum PP 131/2000 — bunga deposito sebenarnya diatur KMK 523/KMK.04/2002 dan PMK terkait.",
+      "description": "PP mengatur PPh Final atas: hadiah undian (Pasal 3), sewa tanah/bangunan (Pasal 4), pengalihan hak atas tanah/bangunan (Pasal 5). Pengaturan bunga deposito/tabungan pada Pasal 2 tidak dipakai lagi — pasca-UU HPP bunga deposito/tabungan diatur sebagai objek final melalui ketentuan pelaksana UU PPh (berawal dari KMK-523/KMK.04/2002 jo. PMK turunannya).",
       "relevantArticles": "Pasal 2 (bunga deposito/tabungan), Pasal 3 (hadiah undian), Pasal 4 (sewa tanah/bangunan), Pasal 5 (pengalihan hak atas tanah/bangunan)",
       "relatedRegulations": [
         "pp-71-2008"
@@ -538,7 +541,7 @@
       "effectiveDate": "2018-07-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/65898/pp-no-23-tahun-2018",
       "status": "dicabut_sebagian",
-      "description": "PP mengatur PPh Final 0,5% untuk UMKM dengan peredaran bruto s.d. Rp 4,8 miliar. Menggantikan PP 46/2013. Tarif 0,5% dibagi: 0,25% WP OP / 0,5% WP Badan. Digantikan oleh PP 55/2022.",
+      "description": "PP mengatur PPh Final 0,5% atas peredaran bruto s.d. Rp 4,8 miliar, hanya untuk WP OP (0,25% berlaku untuk proposal penawaran/jasa yang tidak dilaksanakan). Menggantikan PP 46/2013. Fasilitas bagi WP badan baru ditambahkan lewat PP 55/2022. Digantikan penerapannya oleh PP 55/2022.",
       "relevantArticles": "Pasal 2, 3",
       "relatedRegulations": [
         "pp-46-2013",
@@ -566,17 +569,35 @@
       "id": "pp-55-2022",
       "number": "55",
       "year": 2022,
-      "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterika atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+      "title": "PP tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan",
+      "shortName": "PP PPh UMKM 0,5%",
+      "type": "PP",
+      "promulgationDate": "2022-12-20",
+      "effectiveDate": "2022-12-20",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/194769/pp-no-55-tahun-2022",
+      "status": "diubah_sebagian",
+      "description": "PP penyesuaian pengaturan PPh, antara lain PPh Final UMKM 0,5% untuk peredaran bruto s.d. Rp 4,8 miliar (termasuk membuka fasilitas bagi WP badan). Berlaku pada tanggal diundangkan, 20 Desember 2022. Diubah oleh PP 20/2026 (berlaku 22 April 2026), antara lain ketentuan UMKM: fasilitas 0,5% hanya untuk WP OP tanpa batas waktu; WP badan (PT/CV) tidak lagi memperoleh fasilitas.",
+      "relevantArticles": "Pasal 2, 3, Pasal 56-59 (UMKM)",
+      "relatedRegulations": [
+        "pp-23-2018",
+        "pp-20-2026"
+      ]
+    },
+    {
+      "id": "pp-20-2026",
+      "number": "20",
+      "year": 2026,
+      "title": "PP tentang Perubahan atas PP Nomor 55 Tahun 2022 tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan",
       "shortName": "PP PPh UMKM 0,5% (Terbaru)",
       "type": "PP",
-      "promulgationDate": "2022-12-22",
-      "effectiveDate": "2023-01-01",
-      "sourceUrl": "https://peraturan.bpk.go.id/Details/194769/pp-no-55-tahun-2022",
+      "promulgationDate": "2026-04-22",
+      "effectiveDate": "2026-04-22",
+      "sourceUrl": "https://peraturan.go.id/id/pp-no-20-tahun-2026",
       "status": "berlaku",
-      "description": "PP terbaru PPh UMKM. Tarif 0,5% final untuk peredaran bruto s.d. Rp 4,8 miliar (WP OP 0,25%). Menggantikan PP 23/2018.",
-      "relevantArticles": "Pasal 2, 3",
+      "description": "PP merevisi PP 55/2022. Tarif PPh Final UMKM 0,5% diperuntukkan bagi WP OP tanpa batas waktu (omzet s.d. Rp 4,8 miliar); WP badan (PT/CV) tidak lagi memperoleh fasilitas PPh Final UMKM. Ditetapkan dan diundangkan 22 April 2026 (LN 2026 No. 43, TLN 7173), berlaku pada tanggal diundangkan.",
+      "relevantArticles": "Pasal 56-57",
       "relatedRegulations": [
-        "pp-23-2018"
+        "pp-55-2022"
       ]
     },
     {
@@ -632,16 +653,35 @@
       "id": "pmk-131-2024",
       "number": "131",
       "year": 2024,
-      "title": "PMK tentang Penentuan Tarif Pajak Pertambahan Nilai",
-      "shortName": "PMK Tarif PPN",
+      "title": "PMK tentang Perlakuan Pajak Pertambahan Nilai atas Impor Barang Kena Pajak, Penyerahan Barang Kena Pajak, Penyerahan Jasa Kena Pajak, dan/atau Pemanfaatan Barang Kena Pajak Tidak Berwujud serta Jasa Kena Pajak dari Luar Daerah Pabean di Dalam Daerah Pabean",
+      "shortName": "PMK Tarif PPN 12% (11/12)",
       "type": "PMK",
-      "promulgationDate": "2024-07-30",
+      "promulgationDate": "2024-12-31",
       "effectiveDate": "2025-01-01",
-      "sourceUrl": "https://peraturan.bpk.go.id/Details/202689/pmk-no-131-tahun-2024",
+      "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024",
       "status": "berlaku",
-      "description": "PMK menentukan tarif PPN 12% berlaku 1 Januari 2025 untuk penyerahan BKP/JKP dalam negeri dan impor. Sebelumnya 11% (UU HPP). Ekspor tetap 0%.",
-      "relevantArticles": "Pasal 2",
+      "description": "PMK menentukan tarif PPN 12% berlaku 1 Januari 2025 untuk penyerahan BKP/JKP dalam negeri dan impor (sebelumnya 11%). 12% atas DPP penuh hanya untuk BKP mewah (terutang PPnBM: kapal pesiar, pesawat pribadi, rumah HJE > Rp 30 M); selain barang mewah DPP menggunakan nilai lain 11/12 sehingga beban efektif 11%. Ekspor tetap 0%. Ditandatangani dan diundangkan 31 Desember 2024 (BN 2024 No. 1065). Ketentuan DPP nilai lain kemudian dipertegas PMK 11/2025 (diubah PMK 53/2025).",
+      "relevantArticles": "Pasal 2, 3, 4, 5",
       "relatedRegulations": [
+        "uu-7-2021-hpp",
+        "pmk-11-2025"
+      ]
+    },
+    {
+      "id": "pmk-11-2025",
+      "number": "11",
+      "year": 2025,
+      "title": "PMK tentang Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu Pajak Pertambahan Nilai",
+      "shortName": "PMK DPP Nilai Lain PPN",
+      "type": "PMK",
+      "promulgationDate": "2025-02-04",
+      "effectiveDate": "2025-02-04",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/313574",
+      "status": "berlaku",
+      "description": "PMK menetapkan skema DPP Nilai Lain dan Besaran Tertentu PPN sebagai penerus PMK 121/2015: untuk penyerahan selain BKP mewah, DPP = 11/12 × harga jual sehingga beban efektif 12% × 11/12 = 11%. Ditetapkan dan diundangkan 4 Februari 2025 (BN 2025 No. 78), berlaku pada tanggal diundangkan. Diubah sebagian oleh PMK 53/2025 (berlaku 1 Agustus 2025).",
+      "relevantArticles": "Pasal 2, 3, 4",
+      "relatedRegulations": [
+        "pmk-131-2024",
         "uu-7-2021-hpp"
       ]
     },
@@ -722,7 +762,7 @@
       "effectiveDate": "2003-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/45176/kmk-no-523-kmk-04-2002",
       "status": "diubah_sebagian",
-      "description": "KMK mengatur norma penghitungan penghasilan neto untuk pekerja bebas (dokter 50%, pengacara 50%, akuntan 50%, arsitek 45%, notaris 50%, konsultan 50%, pedagang 20%, petani 10%, dll). Diubah sebagian oleh PMK 43/2022.",
+      "description": "KMK mengatur norma penghitungan penghasilan neto untuk pekerja bebas (akuntan 50%, arsitek 50%, pengacara 50%, notaris 50%, konsultan 50%, dokter 50%/25% sesuai kategori) dan usaha (pedagang/perdagangan 20%, petani/pertanian 10%, dll). Diubah sebagian oleh PMK 43/2022.",
       "relevantArticles": "Lampiran",
       "relatedRegulations": [
         "pmk-43-2022"
@@ -756,10 +796,100 @@
       "effectiveDate": "2024-01-01",
       "sourceUrl": "https://peraturan.bpk.go.id/Details/198352/pmk-no-202-tahun-2023",
       "status": "berlaku",
-      "description": "PMK menetapkan tarif cukai untuk rokok kretek, rokok putih, SIGARET (SKM, SKT, SP), dan e-cigarette / heated tobacco product berlaku tahun 2024.",
+      "description": "PMK menetapkan tarif cukai untuk rokok kretek, rokok putih, SIGARET (SKM, SKT, SP), dan e-cigarette / heated tobacco product berlaku tahun 2024. Untuk tahun 2025 tarif diperbarui (disamakan dengan 2024, dibekukan) melalui PMK 97/2024 (hasil tembakau) dan PMK 96/2024 (rokok elektrik/HPTL, mengganti skema ad valorem e-rokok menjadi tarif spesifik).",
       "relevantArticles": "Pasal 2, 3, 4",
       "relatedRegulations": [
+        "uu-39-2007",
+        "pmk-96-2024",
+        "pmk-97-2024"
+      ]
+    },
+    {
+      "id": "pmk-96-2024",
+      "number": "96",
+      "year": 2024,
+      "title": "PMK tentang Perubahan Kedua atas PMK Nomor 193/PMK.010/2021 tentang Tarif Cukai Hasil Tembakau Berupa Rokok Elektrik dan Hasil Pengolahan Tembakau Lainnya",
+      "shortName": "PMK Tarif Cukai E-Rokok 2025",
+      "type": "PMK",
+      "promulgationDate": "2024-12-12",
+      "effectiveDate": "2025-01-01",
+      "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-96-tahun-2024",
+      "status": "berlaku",
+      "description": "PMK menetapkan tarif cukai rokok elektrik dan hasil pengolahan tembakau lainnya berlaku 1 Januari 2025: rokok elektrik padat Rp 3.074/gram; rokok elektrik cair sistem terbuka Rp 636/ml; rokok elektrik cair sistem tertutup Rp 6.776/ml; HPTL (molasses/hirup/kunyah) Rp 135/gram. Mengganti skema ad valorem era 2024. Tarif 2025 = 2024, dibekukan s.d. 2027.",
+      "relevantArticles": "Pasal 1-2, Lampiran",
+      "relatedRegulations": [
+        "uu-39-2007",
+        "pmk-202-2023"
+      ]
+    },
+    {
+      "id": "pmk-97-2024",
+      "number": "97",
+      "year": 2024,
+      "title": "PMK tentang Perubahan Ketiga atas PMK Nomor 192/PMK.010/2021 tentang Tarif Cukai Hasil Tembakau",
+      "shortName": "PMK Tarif Cukai Rokok 2025",
+      "type": "PMK",
+      "promulgationDate": "2024-12-12",
+      "effectiveDate": "2025-01-01",
+      "sourceUrl": "https://peraturan.bpk.go.id/Details/311469/pmk-no-97-tahun-2024",
+      "status": "berlaku",
+      "description": "PMK menetapkan tarif cukai hasil tembakau dan batas HJE berlaku 1 Januari 2025 (tarif 2025 = 2024, dibekukan s.d. 2027): SKM Gol I Rp 1.231/batang, SKM Gol II Rp 746; SPM Gol I Rp 1.336, SPM Gol II Rp 794; SKT/SPT Gol I Rp 378-483, Gol II Rp 223, Gol III Rp 122 (terendah); SKTF/SPTF Rp 1.231; cerutu s.d. Rp 110.000/gram. Ditetapkan 4 Desember 2024, diundangkan 12 Desember 2024.",
+      "relevantArticles": "Pasal 1-2, Lampiran",
+      "relatedRegulations": [
+        "uu-39-2007",
+        "pmk-202-2023"
+      ]
+    },
+    {
+      "id": "pmk-160-2023",
+      "number": "160",
+      "year": 2023,
+      "title": "PMK tentang Tarif Cukai Etil Alkohol, Minuman yang Mengandung Etil Alkohol, dan Konsentrat yang Mengandung Etil Alkohol",
+      "shortName": "PMK Tarif Cukai EA/MMEA/KMEA",
+      "type": "PMK",
+      "promulgationDate": "2023-12-28",
+      "effectiveDate": "2024-01-01",
+      "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-160-tahun-2023",
+      "status": "berlaku",
+      "description": "PMK menetapkan tarif cukai EA/MMEA/KMEA sejak 1 Januari 2024 (mencabut PMK 158/PMK.010/2018): EA Rp 20.000/liter; MMEA Gol A Rp 16.500/liter; Gol B Rp 42.500/liter (impor Rp 53.000); Gol C Rp 101.000/liter (impor Rp 152.000); KMEA cair Rp 228.000/liter; KMEA padat Rp 1.000/gram. Ditetapkan 27 Desember 2023, diundangkan 28 Desember 2023.",
+      "relevantArticles": "Pasal 2, Lampiran",
+      "relatedRegulations": [
         "uu-39-2007"
+      ]
+    },
+    {
+      "id": "pmk-51-2025",
+      "number": "51",
+      "year": 2025,
+      "title": "PMK tentang Pemungutan Pajak Penghasilan Pasal 22 Sehubungan dengan Pembayaran atas Penyerahan Barang dan Kegiatan di Bidang Impor atau Kegiatan Usaha di Bidang Lain",
+      "shortName": "PMK PPh 22",
+      "type": "PMK",
+      "promulgationDate": "2025-07-28",
+      "effectiveDate": "2025-07-28",
+      "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-51-tahun-2025",
+      "status": "berlaku",
+      "description": "PMK pelaksana pemungutan PPh 22 (menggantikan PMK 34/PMK.010/2017 jo. PMK 41/PMK.010/2022 yang dicabut via PMK 81/2024 sejak 1 Januari 2025). Memuat daftar barang impor yang dikenai PPh 22: barang tertentu 10% (dengan/tanpa API), barang lainnya 7,5%, kedelai/gandum/tepung terigu 0,5%, dan daftar ekspor komoditas tambang.",
+      "relevantArticles": "Pasal 3-4, Lampiran",
+      "relatedRegulations": [
+        "pp-60-2023"
+      ]
+    },
+    {
+      "id": "pp-14-2021",
+      "number": "14",
+      "year": 2021,
+      "title": "PP tentang Perubahan atas PP Nomor 22 Tahun 2020 tentang Peraturan Pelaksanaan Undang-Undang Nomor 2 Tahun 2017 tentang Jasa Konstruksi",
+      "shortName": "PP Jasa Konstruksi",
+      "type": "PP",
+      "promulgationDate": "2021-02-02",
+      "effectiveDate": "2021-02-02",
+      "sourceUrl": "https://jdih.kemenkoinfra.go.id/id/peraturan-pemerintah-republik-indonesia-no-14-tahun-2021",
+      "status": "berlaku",
+      "description": "PP pelaksana UU Cipta Kerja untuk sektor jasa konstruksi (menggantikan PP 22/2020), mengatur SBU, penyelenggaraan, dan perlindungan pekerja. Konteks PPh: tarif PPh Final jasa konstruksi yang berlaku saat ini diatur dalam PP 51/2008 jo. PP 40/2009 sebagaimana diubah terakhir dengan PP 9/2022 (berlaku 21 Februari 2022).",
+      "relevantArticles": "Pasal 14-20 (SBU)",
+      "relatedRegulations": [
+        "pp-51-2008",
+        "pp-40-2009"
       ]
     },
     {
@@ -777,6 +907,24 @@
       "relevantArticles": "Lampiran",
       "relatedRegulations": [
         "uu-10-1995"
+      ]
+    },
+    {
+      "id": "pp-9-2022",
+      "number": "9",
+      "year": 2022,
+      "title": "Perubahan Kedua atas Peraturan Pemerintah Nomor 51 Tahun 2008 tentang Pajak Penghasilan atas Penghasilan dari Usaha Jasa Konstruksi",
+      "shortName": "PP PPh Final Konstruksi",
+      "type": "PP",
+      "promulgationDate": "2022-03-31",
+      "effectiveDate": "2022-04-06",
+      "sourceUrl": "https://jdih.kemenkoinfra.go.id/id/peraturan-pemerintah-republik-indonesia-no-14-tahun-2021",
+      "status": "berlaku",
+      "description": "Menetapkan 7 tarif PPh final jasa konstruksi (1,75% hingga 6% berdasarkan kualifikasi usaha, jenis jasa, dan kepemilikan sertifikat badan usaha), implementasi UU 7/2021 Pasal 40. Berlaku untuk penyerahan sejak masa pajak April 2022.",
+      "relevantArticles": "Pasal 14-20 (SBU)",
+      "relatedRegulations": [
+        "pp-51-2008",
+        "pp-40-2009"
       ]
     }
   ],
@@ -1332,7 +1480,7 @@
     {
       "category": "Pajak Daerah",
       "taxType": "BPHTB",
-      "description": "Bea Perolehan Hak atas Tanah dan Bangunan - Pajak yang dikenakan atas perolehan hak atas tanah dan/atau bangunan",
+      "description": "Bea Perolehan Hak atas Tanah dan Bangunan - Pajak yang dikenakan atas perolehan hak atas tanah dan/atau bangunan (UU 1/2022 HKPD berlaku penuh sejak 5 Januari 2025)",
       "serviceTypes": null,
       "entries": [
         {
@@ -1340,38 +1488,35 @@
           "category": "Pajak Daerah",
           "taxType": "BPHTB",
           "transactionType": "Perolehan Hak atas Tanah/Bangunan (Umum)",
-          "description": "BPHTB atas perolehan hak atas tanah dan/atau bangunan melalui jual beli, tukar-menukar, hibah, waris, pemasukan dalam perseroan, pemisahan hak, penunjukan pembeli dalam lelang, pelaksanaan putusan hakim, penggabungan usaha, peleburan usaha, pemekaran usaha, hadiah, pemberian hak baru.",
+          "description": "BPHTB atas perolehan hak atas tanah dan/atau bangunan melalui jual beli, tukar-menukar, hibah (selain hibah wasiat dan hibah sedarah garis keturunan lurus satu derajat), pemasukan dalam perseroan, pemisahan hak, penunjukan pembeli dalam lelang, pelaksanaan putusan hakim, penggabungan usaha, peleburan usaha, pemekaran usaha, hadiah, pemberian hak baru. Tarif paling tinggi 5% (Pasal 78 UU 1/2022).",
           "rate": {
             "type": "percentage",
             "value": 5
           },
-          "taxBase": "NPOP (Nilai Perolehan Objek Pajak) dikurangi NPOPTKP (Rp 80.000.000 untuk perorangan)",
+          "taxBase": "NPOP (Nilai Perolehan Objek Pajak) dikurangi NPOPTKP (sekurang-kurangnya Rp 250.000.000 untuk perolehan selain waris/hibah wasiat; besaran pastinya ditetapkan Perda)",
           "payer": "Penerima/pemperoleh hak",
           "recipient": "Pemerintah Daerah",
           "withholder": "PPAT (Pejabat Pembuat Akta Tanah) / Notaris",
-          "effectiveFrom": "2010-01-01",
+          "effectiveFrom": "2025-01-05",
           "effectiveTo": null,
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "UU 28/2009",
-              "article": "Pasal 5-7",
-              "sourceUrl": "https://peraturan.bpk.go.id/Details/44141/uu-no-28-tahun-2009"
-            },
-            {
               "regulation": "UU 1/2022 (HKPD)",
-              "article": "Pasal 78-82",
-              "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+              "article": "Pasal 78, Pasal 80",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/186730/uu-no-1-tahun-2022"
             }
           ],
-          "supersedes": [],
+          "supersedes": [
+            "bphtb-perolehan-umum-era-uu-28-2009"
+          ],
           "supersededBy": [],
-          "notes": "NPOPTKP = Rp 80.000.000 (perorangan) atau Rp 80.000.000 × jumlah penerima hak (waris). NPOP minimum = NJOP. Tarif 5% × (NPOP - NPOPTKP).",
+          "notes": "Sejak UU 1/2022 berlaku penuh 5 Januari 2025 (3 tahun setelah diundangkan, Pasal 127U), NPOPTKP perolehan selain waris/hibah wasiat sekurang-kurangnya Rp 250.000.000 (sebelumnya Rp 80.000.000 era UU 28/2009). Tarif 5% × (NPOP - NPOPTKP); tarif maksimum 5% ditetapkan Perda. NPOP minimum = NJOP.",
           "examples": [
             {
-              "scenario": "Membeli rumah NPOP Rp 1.000.000.000",
-              "calculation": "5% × (1.000.000.000 - 80.000.000)",
-              "result": "BPHTB = Rp 46.000.000"
+              "scenario": "Membeli rumah NPOP Rp 1.000.000.000, NPOPTKP daerah Rp 250.000.000",
+              "calculation": "5% × (1.000.000.000 - 250.000.000)",
+              "result": "BPHTB = Rp 37.500.000"
             }
           ],
           "tags": [
@@ -1379,55 +1524,142 @@
             "tanah",
             "bangunan",
             "perolehan",
+            "uu-1-2022",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27"
+          "lastVerified": "2026-08-28"
+        },
+        {
+          "id": "bphtb-perolehan-umum-era-uu-28-2009",
+          "category": "Pajak Daerah",
+          "taxType": "BPHTB",
+          "transactionType": "Perolehan Hak atas Tanah/Bangunan (Rejim UU 28/2009)",
+          "description": "BPHTB era UU 28/2009 dengan NPOPTKP Rp 80.000.000 untuk perorangan. Berakhir saat ketentuan BPHTB UU 1/2022 (HKPD) berlaku penuh pada 5 Januari 2025.",
+          "rate": {
+            "type": "percentage",
+            "value": 5
+          },
+          "taxBase": "NPOP dikurangi NPOPTKP (Rp 80.000.000 untuk perorangan)",
+          "payer": "Penerima/pemperoleh hak",
+          "recipient": "Pemerintah Daerah",
+          "withholder": "PPAT / Notaris",
+          "effectiveFrom": "2010-01-01",
+          "effectiveTo": "2025-01-04",
+          "status": "diubah",
+          "legalBasis": [
+            {
+              "regulation": "UU 28/2009",
+              "article": "Pasal 5-7",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/44141/uu-no-28-tahun-2009"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [
+            "bphtb-perolehan-umum"
+          ],
+          "notes": "Historis. NPOPTKP Rp 80.000.000 (perorangan) atau Rp 80.000.000 × jumlah penerima hak (waris). Digantikan NPOPTKP Rp 250.000.000 (perolehan umum) dan Rp 300.000.000 (waris/hibah wasiat) sesuai UU 1/2022.",
+          "examples": [
+            {
+              "scenario": "Membeli rumah NPOP Rp 1.000.000.000 (rejim lama s.d. 4 Jan 2025)",
+              "calculation": "5% × (1.000.000.000 - 80.000.000)",
+              "result": "BPHTB = Rp 46.000.000"
+            }
+          ],
+          "tags": [
+            "bphtb",
+            "historis",
+            "uu-28-2009"
+          ],
+          "lastVerified": "2026-08-28"
         },
         {
           "id": "bphtb-perolehan-waris",
           "category": "Pajak Daerah",
           "taxType": "BPHTB",
-          "transactionType": "Perolehan Hak melalui Waris",
-          "description": "BPHTB atas perolehan hak atas tanah dan/atau bangunan melalui waris. NPOPTKP yang lebih tinggi diberikan untuk waris.",
+          "transactionType": "Perolehan Hak melalui Waris / Hibah Wasiat",
+          "description": "BPHTB atas perolehan hak melalui waris dan hibah wasiat. NPOPTKP lebih tinggi (sekurang-kurangnya Rp 300.000.000) plus fasilitas BPHTB yang terutang hanya sebesar 50% dari yang seharusnya terutang (Pasal 83 UU 1/2022).",
           "rate": {
             "type": "percentage",
-            "value": 5
+            "value": 5,
+            "effectiveRate": "Efektif 2,5% atas (NPOP - NPOPTKP) karena fasilitas 50%"
           },
-          "taxBase": "NPOP dikurangi NPOPTKP waris (Rp 80.000.000 per ahli waris)",
-          "payer": "Ahli waris penerima hak",
+          "taxBase": "NPOP dikurangi NPOPTKP waris/hibah wasiat (sekurang-kurangnya Rp 300.000.000; umumnya diberikan per penerima hak sesuai ketentuan daerah), lalu hasilnya dikalikan 50%",
+          "payer": "Ahli waris/penerima hibah wasiat",
           "recipient": "Pemerintah Daerah",
           "withholder": "PPAT / Notaris",
-          "effectiveFrom": "2010-01-01",
+          "effectiveFrom": "2025-01-05",
           "effectiveTo": null,
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "UU 28/2009",
-              "article": "Pasal 7"
-            },
-            {
               "regulation": "UU 1/2022 (HKPD)",
-              "article": "Pasal 80",
-              "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+              "article": "Pasal 80, Pasal 83",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/186730/uu-no-1-tahun-2022"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Untuk waris, NPOPTKP = Rp 80.000.000 per ahli waris. Jika ada 3 ahli waris, NPOPTKP = 3 × Rp 80.000.000 = Rp 240.000.000.",
+          "notes": "Sejak UU 1/2022 berlaku penuh 5 Januari 2025: NPOPTKP waris/hibah wasiat sekurang-kurangnya Rp 300.000.000 (sebelumnya Rp 80.000.000 per ahli waris era UU 28/2009) dan fasilitas BPHTB terutang hanya 50%. Fasilitas 50% khusus untuk waris dan hibah wasiat; tidak berlaku untuk hibah biasa.",
+          "examples": [
+            {
+              "scenario": "Waris rumah NPOP Rp 600.000.000 oleh 1 ahli waris, NPOPTKP Rp 300.000.000",
+              "calculation": "5% × (600.000.000 - 300.000.000) = Rp 15.000.000, lalu fasilitas 50%: Rp 15.000.000 × 50%",
+              "result": "BPHTB = Rp 7.500.000"
+            }
+          ],
           "tags": [
             "bphtb",
             "waris",
-            "perolehan",
+            "hibah-wasiat",
+            "fasilitas-50-persen",
+            "uu-1-2022",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28"
+        },
+        {
+          "id": "bphtb-hibah-sedarah-keturunan-lurus",
+          "category": "Pajak Daerah",
+          "taxType": "BPHTB",
+          "transactionType": "Hibah kepada Orang Pribadi Sedarah Garis Keturunan Lurus Satu Derajat",
+          "description": "BPHTB atas hibah kepada orang pribadi yang memiliki hubungan sedarah dalam garis keturunan lurus satu derajat (orang tua-anak; kakek/nenek-cucu). NPOPTKP khusus sekurang-kurangnya Rp 60.000.000 (Pasal 80 ayat (1) huruf c UU 1/2022).",
+          "rate": {
+            "type": "percentage",
+            "value": 5
+          },
+          "taxBase": "NPOP dikurangi NPOPTKP hibah sedarah (sekurang-kurangnya Rp 60.000.000)",
+          "payer": "Penerima hibah (keluarga sedarah garis keturunan lurus satu derajat)",
+          "recipient": "Pemerintah Daerah",
+          "withholder": "PPAT / Notaris",
+          "effectiveFrom": "2025-01-05",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "UU 1/2022 (HKPD)",
+              "article": "Pasal 80 ayat (1) huruf c",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/186730/uu-no-1-tahun-2022"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "NPOPTKP Rp 60.000.000 hanya untuk hibah sedarah garis keturunan lurus satu derajat. Tidak dapat fasilitas 50% (khusus waris/hibah wasiat). Hibah kepada selain keluarga inti satu derajat menggunakan NPOPTKP umum (sekurang-kurangnya Rp 250.000.000).",
           "examples": [
             {
-              "scenario": "Perolehan Hak melalui Waris Rp 100.000.000",
-              "calculation": "5% × 100.000.000",
-              "result": "Pajak = Rp 5.000.000"
+              "scenario": "Hibah tanah dari orang tua kepada anak, NPOP Rp 400.000.000, NPOPTKP Rp 60.000.000",
+              "calculation": "5% × (400.000.000 - 60.000.000)",
+              "result": "BPHTB = Rp 17.000.000"
             }
-          ]
+          ],
+          "tags": [
+            "bphtb",
+            "hibah",
+            "sedarah",
+            "keturunan-lurus",
+            "uu-1-2022",
+            "berlaku"
+          ],
+          "lastVerified": "2026-08-28"
         },
         {
           "id": "bphtb-pengalihan-dinkes",
@@ -1448,13 +1680,9 @@
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "UU 28/2009",
-              "article": "Pasal 14 ayat (1)"
-            },
-            {
               "regulation": "UU 1/2022 (HKPD)",
               "article": "Pasal 84",
-              "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/186730/uu-no-1-tahun-2022"
             }
           ],
           "supersedes": [],
@@ -1466,7 +1694,7 @@
             "fasilitas",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
               "scenario": "Pengalihan Hak untuk Kepentingan Umum - tidak kena pajak",
@@ -1480,7 +1708,7 @@
     {
       "category": "Cukai",
       "taxType": "Cukai",
-      "description": "Cukai — pungutan negara atas barang tertentu (etil alkohol, MMEA, hasil tembakau)",
+      "description": "Cukai — pungutan negara atas barang tertentu (hasil tembakau, etil alkohol, MMEA, KMEA, rokok elektrik) — tarif 2025 = 2024 (dibekukan s.d. 2027)",
       "serviceTypes": null,
       "entries": [
         {
@@ -1488,20 +1716,25 @@
           "category": "Cukai",
           "taxType": "Cukai",
           "transactionType": "Cukai Hasil Tembakau (Rokok)",
-          "description": "Cukai atas rokok berdasarkan UU 39/2007. Tarif spesifik + ad valorem sesuai Kepmenkeu tahunan.",
+          "description": "Cukai atas rokok berdasarkan UU 39/2007 dengan tarif spesifik per batang sesuai jenis dan golongan. Tarif 2025 = 2024 (dibekukan, dijamin tidak naik s.d. 2027) melalui PMK 97/2024, efektif 1 Januari 2025.",
           "rate": {
             "type": "formula",
-            "value": "Tarif spesifik + ad valorem",
-            "effectiveRate": "Rp 280 - Rp 640 per batang"
+            "value": "Tarif spesifik per batang sesuai jenis/golongan",
+            "effectiveRate": "Rp 122 (SKT/SPT Gol III) s.d. Rp 1.336 (SPM Gol I) per batang; SKM Gol I Rp 1.231/batang"
           },
-          "taxBase": "HJE × jumlah produksi/impor",
+          "taxBase": "Jumlah produksi/impor (per batang)",
           "payer": "Produsen/importir rokok",
           "recipient": "Negara",
           "withholder": null,
-          "effectiveFrom": "2008-01-01",
+          "effectiveFrom": "2025-01-01",
           "effectiveTo": null,
           "status": "berlaku",
           "legalBasis": [
+            {
+              "regulation": "PMK 97/2024",
+              "article": "Pasal 1-2 (Lampiran)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/311469/pmk-no-97-tahun-2024"
+            },
             {
               "regulation": "UU 39/2007",
               "article": "Pasal 6-8",
@@ -1510,41 +1743,48 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif cukai rokok naik setiap tahun. Spesifik (per batang) + ad valorem (% dari HJE).",
+          "notes": "Tarif utama 2025 (= 2024, dibekukan s.d. 2027): SKM Gol I Rp 1.231/batang (HJE min Rp 2.375), SKM Gol II Rp 746; SPM Gol I Rp 1.336 (HJE min Rp 2.495), SPM Gol II Rp 794; SKT/SPT Gol I Rp 378 (HJE Rp 1.555-2.170) dan Rp 483 (HJE > Rp 2.170); SKT/SPT Gol II Rp 223; SKT/SPT Gol III Rp 122 (tarif terendah); SKTF/SPTF Rp 1.231; cerutu (CRT) s.d. Rp 110.000/gram. Hasil tembakau impor: SKM Rp 1.231, SPM Rp 1.336 per batang. Menggantikan basis tarif PMK 202/2023 (tahun 2024).",
           "examples": [
             {
-              "scenario": "Rokok SKM HJE Rp 2.000/batang, 10.000 batang",
-              "calculation": "±Rp 600/batang × 10.000",
-              "result": "Cukai = ±Rp 6.000.000"
+              "scenario": "Rokok SKM Gol I produksi 10.000 batang",
+              "calculation": "Rp 1.231/batang × 10.000",
+              "result": "Cukai = Rp 12.310.000"
             }
           ],
           "tags": [
             "cukai",
             "rokok",
             "tembakau",
+            "skm",
+            "pmk-97-2024",
             "berlaku"
           ],
-          "lastVerified": "2026-05-28"
+          "lastVerified": "2026-08-28"
         },
         {
           "id": "cukai-eti-alkohol",
           "category": "Cukai",
           "taxType": "Cukai",
-          "transactionType": "Cukai Etil Alkohol / MMEA",
-          "description": "Cukai atas etil alkohol dan MMEA. Tarif berdasarkan golongan dan kadar alkohol.",
+          "transactionType": "Cukai Etil Alkohol / MMEA / KMEA",
+          "description": "Cukai atas etil alkohol (EA), minuman yang mengandung etil alkohol (MMEA), dan konsentrat yang mengandung etil alkohol (KMEA). Tarif spesifik per liter/gram berdasarkan PMK 160/2023, berlaku sejak 1 Januari 2024.",
           "rate": {
             "type": "formula",
-            "value": "Tarif spesifik per liter",
-            "effectiveRate": "Rp 5.000 - Rp 150.000 per liter"
+            "value": "Tarif spesifik per liter (per gram untuk KMEA padat)",
+            "effectiveRate": "EA Rp 20.000/ltr; MMEA Gol A Rp 16.500/ltr; Gol B Rp 42.500/ltr (impor Rp 53.000); Gol C Rp 101.000/ltr (impor Rp 152.000); KMEA cair Rp 228.000/ltr; KMEA padat Rp 1.000/gram"
           },
-          "taxBase": "Volume produksi/impor (liter)",
+          "taxBase": "Volume produksi/impor (liter; gram untuk KMEA padat)",
           "payer": "Produsen/importir MMEA",
           "recipient": "Negara",
           "withholder": null,
-          "effectiveFrom": "2008-01-01",
+          "effectiveFrom": "2024-01-01",
           "effectiveTo": null,
           "status": "berlaku",
           "legalBasis": [
+            {
+              "regulation": "PMK 160/2023",
+              "article": "Pasal 2 (Lampiran)",
+              "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-160-tahun-2023"
+            },
             {
               "regulation": "UU 39/2007",
               "article": "Pasal 6 ayat (2)",
@@ -1553,64 +1793,73 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "MMEA: Gol A (1-5%) Rp 5K-25K/ltr, Gol B (5-20%) Rp 25K-75K/ltr, Gol C (>20%) Rp 75K-150K/ltr.",
+          "notes": "Tarif sejak 1 Jan 2024 (PMK 160/2023, mencabut PMK 158/PMK.010/2018), masih berlaku 2025: EA Rp 20.000/liter (dalam negeri & impor); MMEA Golongan A (EA ≤5%) Rp 16.500/liter; Golongan B (EA >5-20%) Rp 42.500/liter produksi dalam negeri dan Rp 53.000/liter impor; Golongan C (EA >20-55%) Rp 101.000/liter dalam negeri dan Rp 152.000/liter impor; KMEA cair Rp 228.000/liter; KMEA padat Rp 1.000/gram.",
           "examples": [
             {
-              "scenario": "Impor wine 12% 1000 liter",
-              "calculation": "Gol B ±Rp 50.000/ltr × 1.000",
-              "result": "Cukai = ±Rp 50.000.000"
+              "scenario": "Impor wine 12% (Gol B) 1.000 liter",
+              "calculation": "Tarif impor Gol B Rp 53.000/ltr × 1.000",
+              "result": "Cukai = Rp 53.000.000"
             }
           ],
           "tags": [
             "cukai",
             "alkohol",
             "mmea",
+            "kmea",
+            "pmk-160-2023",
             "berlaku"
           ],
-          "lastVerified": "2026-05-28"
+          "lastVerified": "2026-08-28"
         },
         {
           "id": "cukai-ecigarette",
           "category": "Cukai",
           "taxType": "Cukai",
-          "transactionType": "Cukai e-Cigarette / Heated Tobacco",
-          "description": "Cukai atas produk tembakau pemanasan dan e-liquid. Berlaku sejak 2024.",
+          "transactionType": "Cukai Rokok Elektrik / Heated Tobacco",
+          "description": "Cukai atas rokok elektrik (e-cigarette) berupa rokok elektrik padat (heated tobacco) dan rokok elektrik cair (e-liquid) dengan tarif spesifik per gram/mililiter sejak 1 Januari 2025 berdasarkan PMK 96/2024 (skema ad valorem era 2024 sudah dihapus).",
           "rate": {
             "type": "formula",
-            "value": "Tarif ad valorem",
-            "effectiveRate": "± 15-27% dari HJE"
+            "value": "Tarif spesifik per gram / mililiter",
+            "effectiveRate": "Padat Rp 3.074/gram; cair sistem terbuka Rp 636/ml; cair sistem tertutup Rp 6.776/ml"
           },
-          "taxBase": "HJE",
-          "payer": "Produsen/importir e-cigarette",
+          "taxBase": "Berat (gram) untuk rokok elektrik padat; volume (mililiter) untuk rokok elektrik cair",
+          "payer": "Produsen/importir rokok elektrik",
           "recipient": "Negara",
           "withholder": null,
-          "effectiveFrom": "2024-07-01",
+          "effectiveFrom": "2025-01-01",
           "effectiveTo": null,
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PMK 202/2023",
-              "article": "Pasal 2-4",
-              "sourceUrl": "https://peraturan.bpk.go.id/Details/202326/pmk-no-202-tahun-2023"
+              "regulation": "PMK 96/2024",
+              "article": "Pasal 1-2 (Lampiran)",
+              "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-96-tahun-2024"
+            },
+            {
+              "regulation": "UU 39/2007",
+              "article": "Pasal 6-8",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/45946/uu-no-39-tahun-2007"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Cukai e-cigarette dan heated tobacco mulai Juli 2024. Skema ad valorem.",
+          "notes": "Sejak 1 Januari 2025 (PMK 96/2024, perubahan kedua atas PMK 193/2021): rokok elektrik padat Rp 3.074/gram (HJE min Rp 6.240/gram); rokok elektrik cair sistem terbuka Rp 636/ml (HJE min Rp 1.368/ml); rokok elektrik cair sistem tertutup Rp 6.776/ml (HJE min Rp 41.983/cartridge). Skema ad valorem (±15-27% HJE) yang berlaku Jul-Des 2024 via PMK 202/2023 sudah tidak berlaku. Tarif 2025 = 2024, dibekukan s.d. 2027.",
           "examples": [
             {
-              "scenario": "e-Liquid HJE Rp 100.000, 10.000 botol",
-              "calculation": "±20% × Rp 100.000 × 10.000",
-              "result": "Cukai = ±Rp 200.000.000"
+              "scenario": "e-Liquid sistem terbuka 10.000 botol × 10 ml",
+              "calculation": "Rp 636/ml × 100.000 ml",
+              "result": "Cukai = Rp 63.600.000"
             }
           ],
           "tags": [
             "cukai",
             "e-cigarette",
             "vape",
+            "tarif-spesifik",
+            "pmk-96-2024",
             "berlaku"
           ],
-          "lastVerified": "2026-05-28"
+          "lastVerified": "2026-08-28"
         }
       ]
     },
@@ -1625,13 +1874,11 @@
           "category": "Pajak Daerah",
           "taxType": "Pajak Daerah",
           "transactionType": "Pajak Hotel",
-          "description": "Pajak atas pelayanan hotel.",
+          "description": "Pajak atas pelayanan hotel. UU 1/2022 hanya menetapkan tarif maksimum 10% (tidak ada tarif minimum); besaran pastinya ditetapkan Perda.",
           "rate": {
-            "type": "range",
-            "value": [
-              5,
-              10
-            ]
+            "type": "percentage",
+            "value": 10,
+            "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); Perda menetapkan s.d. 10%, umumnya 10% hotel berbintang"
           },
           "taxBase": "Penerimaan hotel",
           "payer": "WP Daerah",
@@ -1643,13 +1890,13 @@
           "legalBasis": [
             {
               "regulation": "UU 1/2022 (HKPD)",
-              "article": "Pasal 60",
+              "article": "Pasal 58 ayat (1)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif 5-10%. Umumnya 10% hotel berbintang.",
+          "notes": "Tarif maksimum 10% dari penerimaan. UU 1/2022 tidak menetapkan minimum; tarif ditetapkan Perda dalam koridor maksimum tersebut. Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
           "examples": [
             {
               "scenario": "Hotel bintang 4 Rp 2.000.000/malam",
@@ -1668,13 +1915,11 @@
           "category": "Pajak Daerah",
           "taxType": "Pajak Daerah",
           "transactionType": "Pajak Restoran",
-          "description": "Pajak atas pelayanan restoran/rumah makan.",
+          "description": "Pajak atas pelayanan restoran/rumah makan. UU 1/2022 hanya menetapkan tarif maksimum 10% (tidak ada tarif minimum); besaran pastinya ditetapkan Perda.",
           "rate": {
-            "type": "range",
-            "value": [
-              5,
-              10
-            ]
+            "type": "percentage",
+            "value": 10,
+            "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); umumnya 10% di kota besar"
           },
           "taxBase": "Penerimaan restoran",
           "payer": "WP Daerah",
@@ -1686,13 +1931,13 @@
           "legalBasis": [
             {
               "regulation": "UU 1/2022 (HKPD)",
-              "article": "Pasal 60",
+              "article": "Pasal 58 ayat (1)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif 5-10%. Umumnya 10% di kota besar.",
+          "notes": "Tarif maksimum 10% dari penerimaan. UU 1/2022 tidak menetapkan minimum; tarif ditetapkan Perda dalam koridor maksimum tersebut. Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
           "examples": [
             {
               "scenario": "Makan di restoran Rp 500.000",
@@ -1711,15 +1956,16 @@
           "category": "Pajak Daerah",
           "taxType": "Pajak Daerah",
           "transactionType": "Pajak Hiburan",
-          "description": "Pajak atas pelayanan hiburan (bioskop, karaoke, dll).",
+          "description": "Pajak atas jasa pertunjukan/hiburan (bioskop, karaoke, dll). Tarif paling tinggi 10%; khusus jasa hiburan tertentu (diskotek, karaoke, klab malam, bar, mandi uap/spa, dan sejenisnya) diberlakukan tarif paling rendah 40% dan paling tinggi 75% dari tarif maksimum tersebut (efektif 4%-7,5%).",
           "rate": {
             "type": "range",
             "value": [
-              5,
-              35
-            ]
+              0,
+              10
+            ],
+            "effectiveRate": "Hiburan umum: maks 10%. Jasa hiburan tertentu (Pasal 58 ayat (2)): 40%-75% × tarif maksimum 10% = efektif 4%-7,5%"
           },
-          "taxBase": "Penerimaan / tiket hiburan",
+          "taxBase": "Penerimaan / nilai jasa hiburan",
           "payer": "WP Daerah",
           "recipient": "Pemerintah Daerah",
           "withholder": null,
@@ -1729,18 +1975,18 @@
           "legalBasis": [
             {
               "regulation": "UU 1/2022 (HKPD)",
-              "article": "Pasal 60",
+              "article": "Pasal 58 ayat (1)-(2)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif 5-35% tergantung jenis. Tertinggi perjudian (35%).",
+          "notes": "Tarif maksimum 10% untuk jasa pertunjukan/hiburan umum. Khusus jasa hiburan pada diskotek, karaoke, klab malam, bar, mandi uap/spa, dan sejenisnya: tarif paling rendah 40% dan paling tinggi 75% DARI tarif maksimum (efektif 4%-7,5%). Ketentuan 40%-75% ini pernah diuji di Mahkamah Konstitusi (kasus tarif pajak hiburan) namun tetap berlaku. Angka 35% (era UU 28/2009) tidak lagi berlaku.",
           "examples": [
             {
-              "scenario": "Tiket bioskop Rp 75.000",
-              "calculation": "15%×75rb",
-              "result": "Pajak=R11.250"
+              "scenario": "Tiket bioskop Rp 75.000 (hiburan umum, tarif Perda 10%)",
+              "calculation": "10%×75rb",
+              "result": "Pajak=R7.500"
             }
           ],
           "tags": [
@@ -1797,13 +2043,11 @@
           "category": "Pajak Daerah",
           "taxType": "Pajak Daerah",
           "transactionType": "Pajak Penerangan Jalan",
-          "description": "Pajak atas penggunaan listrik PJU.",
+          "description": "Pajak atas penggunaan listrik PJU. Tarif maksimum 10% dari nilai tenaga listrik (Pasal 58 UU 1/2022).",
           "rate": {
-            "type": "range",
-            "value": [
-              1,
-              5
-            ]
+            "type": "percentage",
+            "value": 10,
+            "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); besaran pastinya ditetapkan Perda"
           },
           "taxBase": "Nilai tenaga listrik",
           "payer": "WP Daerah",
@@ -1815,13 +2059,13 @@
           "legalBasis": [
             {
               "regulation": "UU 1/2022 (HKPD)",
-              "article": "Pasal 60",
+              "article": "Pasal 58 ayat (1)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif PPJ 1-5% dari nilai listrik.",
+          "notes": "Tarif maksimum 10% dari nilai tenaga listrik yang digunakan (sebelumnya maks 5% era UU 28/2009). Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
           "examples": [
             {
               "scenario": "Listrik PJU Rp 5.000.000/bulan",
@@ -1840,15 +2084,13 @@
           "category": "Pajak Daerah",
           "taxType": "Pajak Daerah",
           "transactionType": "Pajak MBLB",
-          "description": "Pajak atas eksploitasi mineral bukan logam/batuan.",
+          "description": "Pajak atas pengambilan/eksploitasi mineral bukan logam dan batuan. Tarif maksimum 20% dari nilai jual penghasilan (NJP) per Pasal 58 UU 1/2022.",
           "rate": {
-            "type": "range",
-            "value": [
-              5,
-              25
-            ]
+            "type": "percentage",
+            "value": 20,
+            "effectiveRate": "Tarif maksimum 20% (Pasal 58 UU 1/2022); besaran pastinya ditetapkan Perda"
           },
-          "taxBase": "NJP",
+          "taxBase": "NJP (Nilai Jual Penghasilan)",
           "payer": "WP Daerah",
           "recipient": "Pemerintah Daerah",
           "withholder": null,
@@ -1858,13 +2100,13 @@
           "legalBasis": [
             {
               "regulation": "UU 1/2022 (HKPD)",
-              "article": "Pasal 60",
+              "article": "Pasal 58",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif 5-25% dari NJP.",
+          "notes": "Tarif maksimum 20% dari NJP (sebelumnya maks 25% era UU 28/2009). Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
           "examples": [
             {
               "scenario": "Penambangan pasir NJP Rp 100.000.000",
@@ -1977,15 +2219,15 @@
           "category": "Pajak Daerah",
           "taxType": "PBB",
           "transactionType": "PBB Perkotaan dan Perdesaan (PBB-P2)",
-          "description": "Pajak Bumi dan Bangunan Perkotaan dan Perdesaan (PBB-P2) yang dikelola oleh Pemerintah Daerah sejak UU HKPD berlaku.",
+          "description": "Pajak Bumi dan Bangunan Perkotaan dan Perdesaan (PBB-P2) yang dikelola oleh Pemerintah Daerah sejak UU HKPD berlaku. Tarif ditetapkan Perda, paling tinggi 0,5%, berupa tarif progresif wajib dengan jumlah jenjang paling sedikit 3 dan paling banyak 10.",
           "rate": {
             "type": "range",
             "value": [
-              0.01,
-              0.3
+              0.1,
+              0.5
             ]
           },
-          "taxBase": "NJOP (Nilai Jual Objek Pajak) dikurangi NJOPTKP (minimum Rp 10.000.000)",
+          "taxBase": "NJOP (Nilai Jual Objek Pajak) dikurangi NJOPTKP (minimum Rp 10.000.000); DPP ditetapkan paling rendah 20% dan paling tinggi 100% dari NJOP kena pajak",
           "payer": "Pemilik/penguasaan/pemanfaat tanah dan bangunan",
           "recipient": "Pemerintah Daerah Kabupaten/Kota",
           "withholder": null,
@@ -1995,20 +2237,16 @@
           "legalBasis": [
             {
               "regulation": "UU 1/2022 (HKPD)",
-              "article": "Pasal 39-46",
+              "article": "Pasal 39-46 (tarif: Pasal 41)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
-            },
-            {
-              "regulation": "UU 28/2009",
-              "article": "Pasal 1-5"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif PBB-P2 ditetapkan oleh Perda (Peraturan Daerah) antara 0,01% - 0,3% dari NJOP. NJOPTKP minimum Rp 10.000.000. Sejak UU HKPD, PBB-P2 menjadi pajak daerah yang sepenuhnya dikelola daerah.",
+          "notes": "Pasal 41 UU 1/2022: tarif PBB-P2 ditetapkan Perda paling tinggi 0,5% (naik dari maks 0,3% era UU 28/2009); khusus lahan yang digunakan untuk produksi pangan dan peternakan paling tinggi 0,1%. Tarif PBB-P2 wajib progresif dengan jumlah jenjang paling sedikit 3 dan paling banyak 10; jenjang pertama tidak lebih rendah dari 0,1% dan jenjang terakhir sama dengan tarif maksimum. Ketentuan tarif dan PBB-P2 UU 1/2022 berlaku penuh sejak 5 Januari 2025 (Pasal 127U). NJOPTKP minimum Rp 10.000.000 per WP.",
           "examples": [
             {
-              "scenario": "NJOP rumah Rp 500.000.000, tarif PBB 0,2%",
+              "scenario": "NJOP rumah Rp 500.000.000, tarif PBB 0,2% (jenjang Perda)",
               "calculation": "0,2% × (500.000.000 - 10.000.000)",
               "result": "PBB = Rp 980.000/tahun"
             }
@@ -2049,7 +2287,7 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "PBB Perkebunan dikelola oleh Pemerintah Pusat dengan tarif 0,05% dari NJOP. Tidak ada NJOPTKP.",
+          "notes": "PBB Perkebunan dikelola oleh Pemerintah Pusat dengan tarif 0,05% dari NJOP berdasarkan peraturan Menteri Keuangan pelaksana PBB-P3. Band Pasal 48 UU 1/2022: paling rendah 0,01% dan paling tinggi 0,2%. Tidak ada NJOPTKP.",
           "tags": [
             "pbb",
             "perkebunan",
@@ -2092,7 +2330,7 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "PBB Kehutanan dikelola oleh Pemerintah Pusat dengan tarif 0,05% dari NJOP. Tidak ada NJOPTKP.",
+          "notes": "PBB Kehutanan dikelola oleh Pemerintah Pusat dengan tarif 0,05% dari NJOP berdasarkan peraturan Menteri Keuangan pelaksana PBB-P3. Band Pasal 48 UU 1/2022: paling rendah 0,01% dan paling tinggi 0,2%. Tidak ada NJOPTKP.",
           "tags": [
             "pbb",
             "kehutanan",
@@ -2135,7 +2373,7 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "PBB Pertambangan dikelola oleh Pemerintah Pusat dengan tarif 0,05% dari NJOP. Tidak ada NJOPTKP.",
+          "notes": "PBB Pertambangan dikelola oleh Pemerintah Pusat dengan tarif 0,05% dari NJOP berdasarkan peraturan Menteri Keuangan pelaksana PBB-P3. Band Pasal 48 UU 1/2022: paling rendah 0,01% dan paling tinggi 0,2%. Tidak ada NJOPTKP.",
           "tags": [
             "pbb",
             "pertambangan",
@@ -2165,11 +2403,11 @@
           "category": "PPh",
           "taxType": "PPh 21",
           "transactionType": "Gaji/Bulan TER",
-          "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif lama sejak 1 Januari 2024. Terdiri dari 3 kategori: TER A (tidak kawin), TER B (kawin 0-2 tanggungan), TER C (kawin ≥3 tanggungan). Masing-masing memiliki 42 lapisan tarif.",
+          "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan pegawai tetap pada masa pajak selain masa pajak terakhir. Menggantikan metode tarif progresif annualized sejak 1 Januari 2024. Terdiri dari 3 kategori menurut kelas PTKP: TER A (TK/0, TK/1, K/0) 44 lapisan, TER B (TK/2, TK/3, K/1, K/2) 40 lapisan, dan TER C (K/3) 41 lapisan. Tarif 0% hingga 34%.",
           "rate": {
             "type": "progressive",
-            "value": "0% – 25% (TER A/B/C)",
-            "effectiveRate": "0% untuk penghasilan rendah, hingga 25% untuk penghasilan tinggi"
+            "value": "0% – 34% (TER A/B/C)",
+            "effectiveRate": "0% untuk penghasilan bruto rendah (≤ Rp 5,4 juta / 6,2 juta / 6,6 juta sesuai kategori), hingga 34% untuk penghasilan bruto > Rp 1,4 miliar"
           },
           "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
           "payer": "WP Orang Pribadi dalam negeri (pegawai/freelancer)",
@@ -2201,22 +2439,22 @@
             "pph-21-progressive-monthly-pre2024"
           ],
           "supersededBy": [],
-          "notes": "Dasar hukum: PP 58 Tahun 2023 tentang Perubahan atas PP 16 Tahun 2009. TER menggantikan metode perhitungan lama yang menggunakan tarif Pasal 17 UU PPh annualized. Lihat detail tabel per kategori: TER A, TER B, TER C.",
+          "notes": "Dasar hukum: PP 58 Tahun 2023 (Lampiran Tabel TER A/B/C) jo. PMK 168/2023. Kategori ditentukan kelas PTKP di awal tahun pajak: A = TK/0, TK/1, K/0; B = TK/2, TK/3, K/1, K/2; C = K/3. TER hanya dipakai untuk masa pajak Januari–November; masa pajak terakhir (Desember) dihitung dengan tarif Pasal 17 atas PKP setahun dikurangi PPh yang telah dipotong. Detail tabel per kategori: TER A, TER B, TER C.",
           "examples": [
             {
-              "scenario": "Pegawai tidak kawin, gaji Rp 10.000.000",
-              "calculation": "Gunakan TER A → 2%",
-              "result": "PPh 21 = Rp 200.000/bulan"
+              "scenario": "Pegawai TK/0, gaji Rp 10.000.000/bulan",
+              "calculation": "TER A: jatuh di lapisan di atas Rp 9.650.000 – Rp 10.050.000 = 2%",
+              "result": "PPh 21 = 2% × Rp 10.000.000 = Rp 200.000"
             },
             {
-              "scenario": "Pegawai kawin 2 tanggungan, gaji Rp 25.000.000",
-              "calculation": "Gunakan TER B → 5.5%",
-              "result": "PPh 21 = Rp 1.375.000/bulan"
+              "scenario": "Pegawai K/2, gaji Rp 25.000.000/bulan",
+              "calculation": "TER B: jatuh di lapisan di atas Rp 21.850.000 – Rp 26.000.000 = 9%",
+              "result": "PPh 21 = 9% × Rp 25.000.000 = Rp 2.250.000"
             },
             {
-              "scenario": "Pegawai kawin 3 tanggungan, gaji Rp 50.000.000",
-              "calculation": "Gunakan TER C → 9.5%",
-              "result": "PPh 21 = Rp 4.750.000/bulan"
+              "scenario": "Pegawai K/3, gaji Rp 50.000.000/bulan",
+              "calculation": "TER C: jatuh di lapisan di atas Rp 47.400.000 – Rp 51.200.000 = 17%",
+              "result": "PPh 21 = 17% × Rp 50.000.000 = Rp 8.500.000"
             }
           ],
           "tags": [
@@ -2226,7 +2464,7 @@
             "bulanan",
             "berlaku"
           ],
-          "lastVerified": "2026-05-26"
+          "lastVerified": "2026-08-28"
         },
         {
           "id": "pph-21-progressive-annual-2024",
@@ -2471,7 +2709,7 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Norma penghitungan 50% berlaku untuk tenaga ahli. Untuk pekerjaan bebas lainnya norma penghitungan bisa berbeda (misalnya: pedagang 15%, petani 25%). Pegawai tidak tetap dan bukan pegawai dengan penghasilan ≤ Rp 4.500.000/bulan: PTKP dihitung harian.",
+          "notes": "Norma penghitungan 50% berlaku untuk tenaga ahli. Untuk pekerjaan bebas/usaha lainnya norma penghitungan bisa berbeda (misalnya: pedagang 20%, petani 10% — nilai representatif; persentase NPPN kini diatur per jenis usaha/KLU dan wilayah via PER-17/PJ/2015 jo. PMK 81/2024). Pegawai tidak tetap tidak memakai norma ini — lihat entri Pegawai Tidak Tetap (tarif efektif harian 0%/0,5%; di atas Rp 2.500.000/hari tarif Pasal 17).",
           "examples": [
             {
               "scenario": "Notaris menerima honorarium Rp 100.000.000",
@@ -2491,20 +2729,20 @@
             "tenaga-ahli",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27"
+          "lastVerified": "2026-08-28"
         },
         {
           "id": "pph-21-pegawai-tidak-tetap",
           "category": "PPh",
           "taxType": "PPh 21",
           "transactionType": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
-          "description": "Pemotongan PPh 21 atas penghasilan pegawai tidak tetap atau tenaga kerja lepas yang menerima penghasilan secara harian, mingguan, atau satuan waktu tertentu. Jika penghasilan ≤ Rp 4.500.000/hari dan sudah kena PTKP harian, PPh = 0. Jika > Rp 4.500.000/hari, tarif Pasal 17 berlaku.",
+          "description": "Pemotongan PPh 21 atas penghasilan pegawai tidak tetap atau tenaga kerja lepas yang menerima upah secara harian, mingguan, satuan, atau borongan (dihitung rata-rata sehari). Berlaku tarif efektif harian PMK 168/2023: 0% untuk penghasilan bruto sehari ≤ Rp 450.000; 0,5% untuk > Rp 450.000 s.d. Rp 2.500.000; di atas Rp 2.500.000 sehari memakai tarif Pasal 17 atas DPP = 50% × penghasilan bruto sehari.",
           "rate": {
             "type": "formula",
-            "value": "Tarif Pasal 17 progresif dengan PTKP harian",
-            "effectiveRate": "0% jika ≤ Rp 4.500.000/hari setelah PTKP"
+            "value": "0% untuk ≤ Rp 450.000/hari; 0,5% untuk > Rp 450.000 s.d. Rp 2.500.000/hari; tarif Pasal 17 (5%–35%) × DPP (50% × bruto sehari) untuk > Rp 2.500.000/hari",
+            "effectiveRate": "0% / 0,5% / tarif Pasal 17 progresif sesuai jumlah penghasilan sehari"
           },
-          "taxBase": "Penghasilan bruto harian dikurangi PTKP harian (1/360 × PTKP tahunan × jumlah hari kerja)",
+          "taxBase": "Penghasilan bruto sehari (rata-rata harian untuk upah mingguan, satuan, atau borongan)",
           "payer": "Pegawai tidak tetap / tenaga kerja lepas",
           "recipient": "Negara",
           "withholder": "Pemberi kerja",
@@ -2525,19 +2763,24 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "PTKP harian = PTKP tahunan × 1/360. Untuk penghasilan > Rp 4.500.000/hari, dipotong PPh 21 dengan tarif Pasal 17 dengan PTKP harian terkumulasi.",
+          "notes": "Tarif efektif harian per PMK 168/2023 (ambang lama Rp 4.500.000/hari dengan PTKP harian sudah tidak berlaku sejak 2024). Untuk upah mingguan/satuan/borongan, gunakan rata-rata penghasilan sehari. Penghasilan bruto di atas Rp 2.500.000 sehari dipotong dengan tarif Pasal 17 ayat (1) huruf a UU PPh yang ditentukan berdasarkan annualisasi penghasilan, dikenakan atas DPP sebesar 50% × penghasilan bruto sehari.",
           "tags": [
             "pph-21",
             "pegawai-tidak-tetap",
             "tenaga-kerja-lepas",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
-              "scenario": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
-              "calculation": "Sesuai formula yang berlaku",
-              "result": "Lihat ketentuan detail"
+              "scenario": "Upah harian Rp 400.000",
+              "calculation": "Bruto sehari ≤ Rp 450.000 → tarif efektif harian 0%",
+              "result": "PPh 21 = Rp 0"
+            },
+            {
+              "scenario": "Upah harian Rp 1.000.000",
+              "calculation": "Bruto sehari di atas Rp 450.000 s.d. Rp 2.500.000 → tarif efektif harian 0,5%",
+              "result": "PPh 21 = 0,5% × Rp 1.000.000 = Rp 5.000"
             }
           ]
         },
@@ -2593,12 +2836,13 @@
           "category": "PPh",
           "taxType": "PPh 21",
           "transactionType": "Natura/Kenikmatan dari Pemberi Kerja",
-          "description": "Pajak atas pemberian natura (barang) atau kenikmatan dari pemberi kerja kepada pegawai. Mulai 2024, pemberian natura/kenikmatan yang diberikan bukan oleh pemberi kerja (bukan BP) menjadi objek PPh 21 yang dipotong oleh penerima penghasilan.",
+          "description": "Perlakuan PPh 21 atas natura/kenikmatan. Natura/kenikmatan yang diberikan pemberi kerja kepada pegawai dikenai PPh 21 dengan cara digabungkan ke penghasilan bruto bulanan pegawai (dikenai TER bulanan, atau tarif Pasal 17 pada masa pajak terakhir). Natura/kenikmatan yang diberikan bukan oleh pemberi kerja sejak UU HPP juga menjadi objek PPh 21 dan dipotong pemberi penghasilan dengan tarif efektif yang sesuai (TER harian/bulanan).",
           "rate": {
-            "type": "percentage",
-            "value": 1
+            "type": "formula",
+            "value": "Tidak ada tarif tersendiri: nilai wajar natura/kenikmatan digabungkan ke penghasilan bruto penerima dan dikenai TER bulanan/harian atau tarif Pasal 17 sesuai status penerima",
+            "effectiveRate": "Mengikuti TER / Pasal 17 penerima (tidak ada tarif khusus natura)"
           },
-          "taxBase": "Nilai wajar natura/kenikmatan",
+          "taxBase": "Nilai wajar natura/kenikmatan yang digabungkan ke penghasilan bruto penerima",
           "payer": "Penerima natura/kenikmatan",
           "recipient": "Negara",
           "withholder": "Pemberi kerja",
@@ -2619,7 +2863,7 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Natura/kenikmatan dari pemberi kerja (BP) yang diberikan kepada pegawai: PPh ditanggung pemberi kerja (gross-up) atau dihitung dari nilai wajar. Natura dari bukan BP: 1% dari nilai wajar sebagai PPh yang dipotong sendiri oleh penerima.",
+          "notes": "Tidak ada tarif pemotongan khusus (termasuk tarif 1%) atas natura dalam PP 58/2023 maupun PMK 168/2023 — angka 1% pada data lama tidak berdasar. Natura dari pemberi kerja (kasus khusus berupa pemberian dengan tanda kurung siku sebesar jumlah rupiah tertentu tetap mengikuti aturan natura) digabungkan ke penghasilan bruto sehubungan dengan pekerjaan bulan bersangkutan, sehingga tarifnya adalah TER bulanan kategori pegawai bersangkutan (atau Pasal 17 pada masa pajak terakhir).",
           "tags": [
             "pph-21",
             "natura",
@@ -2627,12 +2871,12 @@
             "benefit-in-kind",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
-              "scenario": "Natura/Kenikmatan dari Pemberi Kerja Rp 100.000.000",
-              "calculation": "1% × 100.000.000",
-              "result": "Pajak = Rp 1.000.000"
+              "scenario": "Pegawai tetap TK/0 menerima gaji Rp 10.000.000 plus natura sebesar Rp 1.000.000 dalam satu bulan",
+              "calculation": "Bruto = Rp 10.000.000 + Rp 1.000.000 = Rp 11.000.000 → TER A lapisan di atas Rp 10.700.000 – Rp 11.050.000 = 3%",
+              "result": "PPh 21 = 3% × Rp 11.000.000 = Rp 330.000"
             }
           ]
         },
@@ -3144,11 +3388,551 @@
           "id": "pph-21-ter-a-detail",
           "category": "PPh",
           "taxType": "PPh 21",
-          "transactionType": "TER Kategori A (Tidak Menikah)",
-          "description": "Tabel lengkap TER Kategori A (Tidak Kawin/Tidak Punya Tanggungan) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
+          "transactionType": "TER Kategori A (TK/0, TK/1, K/0)",
+          "description": "Tabel lengkap TER Kategori A (kelas PTKP TK/0, TK/1, dan K/0) berdasarkan PP 58/2023 Lampiran A jo. PMK 168/2023. 44 lapisan tarif dari 0% hingga 34%.",
           "rate": {
             "type": "progressive",
-            "value": "0% – 25% (42 lapisan)",
+            "value": "0% – 34% (44 lapisan)",
+            "brackets": [
+              {
+                "min": 0,
+                "max": 5400000,
+                "rate": 0
+              },
+              {
+                "min": 5400001,
+                "max": 5650000,
+                "rate": 0.25
+              },
+              {
+                "min": 5650001,
+                "max": 5950000,
+                "rate": 0.5
+              },
+              {
+                "min": 5950001,
+                "max": 6300000,
+                "rate": 0.75
+              },
+              {
+                "min": 6300001,
+                "max": 6750000,
+                "rate": 1
+              },
+              {
+                "min": 6750001,
+                "max": 7500000,
+                "rate": 1.25
+              },
+              {
+                "min": 7500001,
+                "max": 8550000,
+                "rate": 1.5
+              },
+              {
+                "min": 8550001,
+                "max": 9650000,
+                "rate": 1.75
+              },
+              {
+                "min": 9650001,
+                "max": 10050000,
+                "rate": 2
+              },
+              {
+                "min": 10050001,
+                "max": 10350000,
+                "rate": 2.25
+              },
+              {
+                "min": 10350001,
+                "max": 10700000,
+                "rate": 2.5
+              },
+              {
+                "min": 10700001,
+                "max": 11050000,
+                "rate": 3
+              },
+              {
+                "min": 11050001,
+                "max": 11600000,
+                "rate": 3.5
+              },
+              {
+                "min": 11600001,
+                "max": 12500000,
+                "rate": 4
+              },
+              {
+                "min": 12500001,
+                "max": 13750000,
+                "rate": 5
+              },
+              {
+                "min": 13750001,
+                "max": 15100000,
+                "rate": 6
+              },
+              {
+                "min": 15100001,
+                "max": 16950000,
+                "rate": 7
+              },
+              {
+                "min": 16950001,
+                "max": 19750000,
+                "rate": 8
+              },
+              {
+                "min": 19750001,
+                "max": 24150000,
+                "rate": 9
+              },
+              {
+                "min": 24150001,
+                "max": 26450000,
+                "rate": 10
+              },
+              {
+                "min": 26450001,
+                "max": 28000000,
+                "rate": 11
+              },
+              {
+                "min": 28000001,
+                "max": 30050000,
+                "rate": 12
+              },
+              {
+                "min": 30050001,
+                "max": 32400000,
+                "rate": 13
+              },
+              {
+                "min": 32400001,
+                "max": 35400000,
+                "rate": 14
+              },
+              {
+                "min": 35400001,
+                "max": 39100000,
+                "rate": 15
+              },
+              {
+                "min": 39100001,
+                "max": 43850000,
+                "rate": 16
+              },
+              {
+                "min": 43850001,
+                "max": 47800000,
+                "rate": 17
+              },
+              {
+                "min": 47800001,
+                "max": 51400000,
+                "rate": 18
+              },
+              {
+                "min": 51400001,
+                "max": 56300000,
+                "rate": 19
+              },
+              {
+                "min": 56300001,
+                "max": 62200000,
+                "rate": 20
+              },
+              {
+                "min": 62200001,
+                "max": 68600000,
+                "rate": 21
+              },
+              {
+                "min": 68600001,
+                "max": 77500000,
+                "rate": 22
+              },
+              {
+                "min": 77500001,
+                "max": 89000000,
+                "rate": 23
+              },
+              {
+                "min": 89000001,
+                "max": 103000000,
+                "rate": 24
+              },
+              {
+                "min": 103000001,
+                "max": 125000000,
+                "rate": 25
+              },
+              {
+                "min": 125000001,
+                "max": 157000000,
+                "rate": 26
+              },
+              {
+                "min": 157000001,
+                "max": 206000000,
+                "rate": 27
+              },
+              {
+                "min": 206000001,
+                "max": 337000000,
+                "rate": 28
+              },
+              {
+                "min": 337000001,
+                "max": 454000000,
+                "rate": 29
+              },
+              {
+                "min": 454000001,
+                "max": 550000000,
+                "rate": 30
+              },
+              {
+                "min": 550000001,
+                "max": 695000000,
+                "rate": 31
+              },
+              {
+                "min": 695000001,
+                "max": 910000000,
+                "rate": 32
+              },
+              {
+                "min": 910000001,
+                "max": 1400000000,
+                "rate": 33
+              },
+              {
+                "min": 1400000001,
+                "max": null,
+                "rate": 34
+              }
+            ],
+            "effectiveRate": "0% untuk ≤ Rp 5.400.000, naik bertahap hingga 34% untuk > Rp 1.400.000.000"
+          },
+          "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
+          "payer": "WP OP dalam negeri",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2024-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 58/2023",
+              "article": "Lampiran",
+              "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+            },
+            {
+              "regulation": "PMK 168/2023",
+              "article": "Pasal 4-6",
+              "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Kategori A dipakai pegawai dengan kelas PTKP TK/0, TK/1, atau K/0. Tarif 0% untuk penghasilan bruto bulanan ≤ Rp 5.400.000. Tarif tertinggi 34% untuk penghasilan bruto > Rp 1.400.000.000/bulan. TER bulanan hanya untuk masa pajak Januari–November.",
+          "examples": [
+            {
+              "scenario": "Pegawai TK/0, gaji Rp 10.000.000/bulan",
+              "calculation": "TER A: jatuh di lapisan ke-9 (di atas Rp 9.650.000 – Rp 10.050.000) = 2%",
+              "result": "PPh 21 = 2% × Rp 10.000.000 = Rp 200.000"
+            },
+            {
+              "scenario": "Pegawai K/0, gaji Rp 50.000.000/bulan",
+              "calculation": "TER A: jatuh di lapisan ke-28 (di atas Rp 47.800.000 – Rp 51.400.000) = 18%",
+              "result": "PPh 21 = 18% × Rp 50.000.000 = Rp 9.000.000"
+            },
+            {
+              "scenario": "Pegawai TK/1, gaji Rp 100.000.000/bulan",
+              "calculation": "TER A: jatuh di lapisan ke-34 (di atas Rp 89.000.000 – Rp 103.000.000) = 24%",
+              "result": "PPh 21 = 24% × Rp 100.000.000 = Rp 24.000.000"
+            }
+          ],
+          "tags": [
+            "pph-21",
+            "ter",
+            "detail",
+            "berlaku"
+          ],
+          "lastVerified": "2026-08-28"
+        },
+        {
+          "id": "pph-21-ter-b-detail",
+          "category": "PPh",
+          "taxType": "PPh 21",
+          "transactionType": "TER Kategori B (TK/2, TK/3, K/1, K/2)",
+          "description": "Tabel lengkap TER Kategori B (kelas PTKP TK/2, TK/3, K/1, dan K/2) berdasarkan PP 58/2023 Lampiran B jo. PMK 168/2023. 40 lapisan tarif dari 0% hingga 34%.",
+          "rate": {
+            "type": "progressive",
+            "value": "0% – 34% (40 lapisan)",
+            "brackets": [
+              {
+                "min": 0,
+                "max": 6200000,
+                "rate": 0
+              },
+              {
+                "min": 6200001,
+                "max": 6500000,
+                "rate": 0.25
+              },
+              {
+                "min": 6500001,
+                "max": 6850000,
+                "rate": 0.5
+              },
+              {
+                "min": 6850001,
+                "max": 7300000,
+                "rate": 0.75
+              },
+              {
+                "min": 7300001,
+                "max": 9200000,
+                "rate": 1
+              },
+              {
+                "min": 9200001,
+                "max": 10750000,
+                "rate": 1.5
+              },
+              {
+                "min": 10750001,
+                "max": 11250000,
+                "rate": 2
+              },
+              {
+                "min": 11250001,
+                "max": 11600000,
+                "rate": 2.5
+              },
+              {
+                "min": 11600001,
+                "max": 12600000,
+                "rate": 3
+              },
+              {
+                "min": 12600001,
+                "max": 13600000,
+                "rate": 4
+              },
+              {
+                "min": 13600001,
+                "max": 14950000,
+                "rate": 5
+              },
+              {
+                "min": 14950001,
+                "max": 16400000,
+                "rate": 6
+              },
+              {
+                "min": 16400001,
+                "max": 18450000,
+                "rate": 7
+              },
+              {
+                "min": 18450001,
+                "max": 21850000,
+                "rate": 8
+              },
+              {
+                "min": 21850001,
+                "max": 26000000,
+                "rate": 9
+              },
+              {
+                "min": 26000001,
+                "max": 27700000,
+                "rate": 10
+              },
+              {
+                "min": 27700001,
+                "max": 29350000,
+                "rate": 11
+              },
+              {
+                "min": 29350001,
+                "max": 31450000,
+                "rate": 12
+              },
+              {
+                "min": 31450001,
+                "max": 33950000,
+                "rate": 13
+              },
+              {
+                "min": 33950001,
+                "max": 37100000,
+                "rate": 14
+              },
+              {
+                "min": 37100001,
+                "max": 41100000,
+                "rate": 15
+              },
+              {
+                "min": 41100001,
+                "max": 45800000,
+                "rate": 16
+              },
+              {
+                "min": 45800001,
+                "max": 49500000,
+                "rate": 17
+              },
+              {
+                "min": 49500001,
+                "max": 53800000,
+                "rate": 18
+              },
+              {
+                "min": 53800001,
+                "max": 58500000,
+                "rate": 19
+              },
+              {
+                "min": 58500001,
+                "max": 64000000,
+                "rate": 20
+              },
+              {
+                "min": 64000001,
+                "max": 71000000,
+                "rate": 21
+              },
+              {
+                "min": 71000001,
+                "max": 80000000,
+                "rate": 22
+              },
+              {
+                "min": 80000001,
+                "max": 93000000,
+                "rate": 23
+              },
+              {
+                "min": 93000001,
+                "max": 109000000,
+                "rate": 24
+              },
+              {
+                "min": 109000001,
+                "max": 129000000,
+                "rate": 25
+              },
+              {
+                "min": 129000001,
+                "max": 163000000,
+                "rate": 26
+              },
+              {
+                "min": 163000001,
+                "max": 211000000,
+                "rate": 27
+              },
+              {
+                "min": 211000001,
+                "max": 374000000,
+                "rate": 28
+              },
+              {
+                "min": 374000001,
+                "max": 459000000,
+                "rate": 29
+              },
+              {
+                "min": 459000001,
+                "max": 555000000,
+                "rate": 30
+              },
+              {
+                "min": 555000001,
+                "max": 704000000,
+                "rate": 31
+              },
+              {
+                "min": 704000001,
+                "max": 957000000,
+                "rate": 32
+              },
+              {
+                "min": 957000001,
+                "max": 1405000000,
+                "rate": 33
+              },
+              {
+                "min": 1405000001,
+                "max": null,
+                "rate": 34
+              }
+            ],
+            "effectiveRate": "0% untuk ≤ Rp 6.200.000, naik bertahap hingga 34% untuk > Rp 1.405.000.000"
+          },
+          "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
+          "payer": "WP OP dalam negeri",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2024-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 58/2023",
+              "article": "Lampiran",
+              "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+            },
+            {
+              "regulation": "PMK 168/2023",
+              "article": "Pasal 4-6",
+              "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Kategori B dipakai pegawai dengan kelas PTKP TK/2, TK/3, K/1, atau K/2 (bukan \"kawin 0-2 tanggungan\"; K/0 termasuk kategori A). Tarif 0% untuk penghasilan bruto bulanan ≤ Rp 6.200.000. Tarif tertinggi 34% untuk penghasilan bruto > Rp 1.405.000.000/bulan. TER bulanan hanya untuk masa pajak Januari–November.",
+          "examples": [
+            {
+              "scenario": "Pegawai K/1, gaji Rp 10.000.000/bulan",
+              "calculation": "TER B: jatuh di lapisan ke-6 (di atas Rp 9.200.000 – Rp 10.750.000) = 1,5%",
+              "result": "PPh 21 = 1,5% × Rp 10.000.000 = Rp 150.000"
+            },
+            {
+              "scenario": "Pegawai K/2, gaji Rp 25.000.000/bulan",
+              "calculation": "TER B: jatuh di lapisan ke-15 (di atas Rp 21.850.000 – Rp 26.000.000) = 9%",
+              "result": "PPh 21 = 9% × Rp 25.000.000 = Rp 2.250.000"
+            },
+            {
+              "scenario": "Pegawai TK/2, gaji Rp 100.000.000/bulan",
+              "calculation": "TER B: jatuh di lapisan ke-30 (di atas Rp 93.000.000 – Rp 109.000.000) = 24%",
+              "result": "PPh 21 = 24% × Rp 100.000.000 = Rp 24.000.000"
+            }
+          ],
+          "tags": [
+            "pph-21",
+            "ter",
+            "detail",
+            "berlaku"
+          ],
+          "lastVerified": "2026-08-28"
+        },
+        {
+          "id": "pph-21-ter-c-detail",
+          "category": "PPh",
+          "taxType": "PPh 21",
+          "transactionType": "TER Kategori C (K/3)",
+          "description": "Tabel lengkap TER Kategori C (kelas PTKP K/3) berdasarkan PP 58/2023 Lampiran C jo. PMK 168/2023. 41 lapisan tarif dari 0% hingga 34%.",
+          "rate": {
+            "type": "progressive",
+            "value": "0% – 34% (41 lapisan)",
             "brackets": [
               {
                 "min": 0,
@@ -3167,736 +3951,196 @@
               },
               {
                 "min": 7350001,
-                "max": 7750000,
+                "max": 7800000,
                 "rate": 0.75
               },
               {
-                "min": 7750001,
-                "max": 8200000,
+                "min": 7800001,
+                "max": 8850000,
                 "rate": 1
               },
               {
-                "min": 8200001,
-                "max": 8650000,
+                "min": 8850001,
+                "max": 9800000,
                 "rate": 1.25
               },
               {
-                "min": 8650001,
-                "max": 9150000,
+                "min": 9800001,
+                "max": 10950000,
                 "rate": 1.5
               },
               {
-                "min": 9150001,
-                "max": 9700000,
+                "min": 10950001,
+                "max": 11200000,
                 "rate": 1.75
               },
               {
-                "min": 9700001,
-                "max": 10300000,
+                "min": 11200001,
+                "max": 12050000,
                 "rate": 2
               },
               {
-                "min": 10300001,
-                "max": 10900000,
-                "rate": 2.25
-              },
-              {
-                "min": 10900001,
-                "max": 11600000,
-                "rate": 2.5
-              },
-              {
-                "min": 11600001,
-                "max": 12300000,
-                "rate": 2.75
-              },
-              {
-                "min": 12300001,
-                "max": 13150000,
+                "min": 12050001,
+                "max": 12950000,
                 "rate": 3
               },
               {
-                "min": 13150001,
-                "max": 14000000,
-                "rate": 3.25
-              },
-              {
-                "min": 14000001,
-                "max": 15000000,
-                "rate": 3.5
-              },
-              {
-                "min": 15000001,
-                "max": 16100000,
-                "rate": 3.75
-              },
-              {
-                "min": 16100001,
-                "max": 17300000,
+                "min": 12950001,
+                "max": 14150000,
                 "rate": 4
               },
               {
-                "min": 17300001,
-                "max": 18600000,
-                "rate": 4.25
-              },
-              {
-                "min": 18600001,
-                "max": 20000000,
-                "rate": 4.5
-              },
-              {
-                "min": 20000001,
-                "max": 21600000,
-                "rate": 4.75
-              },
-              {
-                "min": 21600001,
-                "max": 23300000,
+                "min": 14150001,
+                "max": 15550000,
                 "rate": 5
               },
               {
-                "min": 23300001,
-                "max": 25200000,
-                "rate": 5.5
-              },
-              {
-                "min": 25200001,
-                "max": 27400000,
-                "rate": 6
-              },
-              {
-                "min": 27400001,
-                "max": 29800000,
-                "rate": 6.5
-              },
-              {
-                "min": 29800001,
-                "max": 32600000,
-                "rate": 7
-              },
-              {
-                "min": 32600001,
-                "max": 35800000,
-                "rate": 7.5
-              },
-              {
-                "min": 35800001,
-                "max": 39500000,
-                "rate": 8
-              },
-              {
-                "min": 39500001,
-                "max": 43800000,
-                "rate": 8.5
-              },
-              {
-                "min": 43800001,
-                "max": 48800000,
-                "rate": 9
-              },
-              {
-                "min": 48800001,
-                "max": 54800000,
-                "rate": 9.5
-              },
-              {
-                "min": 54800001,
-                "max": 62000000,
-                "rate": 10
-              },
-              {
-                "min": 62000001,
-                "max": 71000000,
-                "rate": 10.5
-              },
-              {
-                "min": 71000001,
-                "max": 82500000,
-                "rate": 11
-              },
-              {
-                "min": 82500001,
-                "max": 97000000,
-                "rate": 11.5
-              },
-              {
-                "min": 97000001,
-                "max": 116000000,
-                "rate": 12
-              },
-              {
-                "min": 116000001,
-                "max": 141000000,
-                "rate": 12.5
-              },
-              {
-                "min": 141000001,
-                "max": 177000000,
-                "rate": 13
-              },
-              {
-                "min": 177000001,
-                "max": 232000000,
-                "rate": 13.5
-              },
-              {
-                "min": 232000001,
-                "max": 327000000,
-                "rate": 14
-              },
-              {
-                "min": 327000001,
-                "max": 530000000,
-                "rate": 14.5
-              },
-              {
-                "min": 530000001,
-                "max": 745000000,
-                "rate": 15
-              },
-              {
-                "min": 745000001,
-                "max": null,
-                "rate": 25
-              }
-            ],
-            "effectiveRate": "0% untuk ≤ Rp 6.600.000, naik bertahap hingga 25% untuk > Rp 745.000.000"
-          },
-          "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
-          "payer": "WP OP dalam negeri",
-          "recipient": "Negara",
-          "withholder": null,
-          "effectiveFrom": "2024-01-01",
-          "effectiveTo": null,
-          "status": "berlaku",
-          "legalBasis": [
-            {
-              "regulation": "PP 58/2023",
-              "article": "Lampiran",
-              "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
-            },
-            {
-              "regulation": "PMK 168/2023",
-              "article": "Pasal 4-6",
-              "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
-            }
-          ],
-          "supersedes": [],
-          "supersededBy": [],
-          "notes": "Berlaku untuk pegawai yang tidak kawin dan tidak punya tanggungan. Tarif 0% untuk penghasilan bruto ≤ Rp 6.600.000/bulan. Tarif tertinggi 25% untuk penghasilan > Rp 745.000.000/bulan.",
-          "examples": [
-            {
-              "scenario": "Pegawai tidak kawin, gaji Rp 10.000.000/bulan",
-              "calculation": "TER A: Rp 10.000.000 jatuh di lapisan ke-10 (Rp 9.700.001 – Rp 10.300.000) = 2%",
-              "result": "PPh 21 = 2% × Rp 10.000.000 = Rp 200.000"
-            },
-            {
-              "scenario": "Pegawai tidak kawin, gaji Rp 50.000.000/bulan",
-              "calculation": "TER A: Rp 50.000.000 jatuh di lapisan ke-31 (Rp 48.800.001 – Rp 54.800.000) = 9.5%",
-              "result": "PPh 21 = 9.5% × Rp 50.000.000 = Rp 4.750.000"
-            },
-            {
-              "scenario": "Pegawai tidak kawin, gaji Rp 100.000.000/bulan",
-              "calculation": "TER A: Rp 100.000.000 jatuh di lapisan ke-36 (Rp 97.000.001 – Rp 116.000.000) = 12%",
-              "result": "PPh 21 = 12% × Rp 100.000.000 = Rp 12.000.000"
-            }
-          ],
-          "tags": [
-            "pph-21",
-            "ter",
-            "detail",
-            "berlaku"
-          ],
-          "lastVerified": "2026-05-28"
-        },
-        {
-          "id": "pph-21-ter-b-detail",
-          "category": "PPh",
-          "taxType": "PPh 21",
-          "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
-          "description": "Tabel lengkap TER Kategori B (Kawin, tanggungan 0-2) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
-          "rate": {
-            "type": "progressive",
-            "value": "0% – 25% (42 lapisan)",
-            "brackets": [
-              {
-                "min": 0,
-                "max": 6950000,
-                "rate": 0
-              },
-              {
-                "min": 6950001,
-                "max": 7300000,
-                "rate": 0.25
-              },
-              {
-                "min": 7300001,
-                "max": 7700000,
-                "rate": 0.5
-              },
-              {
-                "min": 7700001,
-                "max": 8100000,
-                "rate": 0.75
-              },
-              {
-                "min": 8100001,
-                "max": 8550000,
-                "rate": 1
-              },
-              {
-                "min": 8550001,
-                "max": 9000000,
-                "rate": 1.25
-              },
-              {
-                "min": 9000001,
-                "max": 9500000,
-                "rate": 1.5
-              },
-              {
-                "min": 9500001,
-                "max": 10050000,
-                "rate": 1.75
-              },
-              {
-                "min": 10050001,
-                "max": 10650000,
-                "rate": 2
-              },
-              {
-                "min": 10650001,
-                "max": 11250000,
-                "rate": 2.25
-              },
-              {
-                "min": 11250001,
-                "max": 11950000,
-                "rate": 2.5
-              },
-              {
-                "min": 11950001,
-                "max": 12650000,
-                "rate": 2.75
-              },
-              {
-                "min": 12650001,
-                "max": 13500000,
-                "rate": 3
-              },
-              {
-                "min": 13500001,
-                "max": 14350000,
-                "rate": 3.25
-              },
-              {
-                "min": 14350001,
-                "max": 15350000,
-                "rate": 3.5
-              },
-              {
-                "min": 15350001,
-                "max": 16450000,
-                "rate": 3.75
-              },
-              {
-                "min": 16450001,
-                "max": 17650000,
-                "rate": 4
-              },
-              {
-                "min": 17650001,
-                "max": 18950000,
-                "rate": 4.25
-              },
-              {
-                "min": 18950001,
-                "max": 20350000,
-                "rate": 4.5
-              },
-              {
-                "min": 20350001,
-                "max": 21950000,
-                "rate": 4.75
-              },
-              {
-                "min": 21950001,
-                "max": 23650000,
-                "rate": 5
-              },
-              {
-                "min": 23650001,
-                "max": 25550000,
-                "rate": 5.5
-              },
-              {
-                "min": 25550001,
-                "max": 27750000,
-                "rate": 6
-              },
-              {
-                "min": 27750001,
-                "max": 30150000,
-                "rate": 6.5
-              },
-              {
-                "min": 30150001,
-                "max": 32950000,
-                "rate": 7
-              },
-              {
-                "min": 32950001,
-                "max": 36150000,
-                "rate": 7.5
-              },
-              {
-                "min": 36150001,
-                "max": 39850000,
-                "rate": 8
-              },
-              {
-                "min": 39850001,
-                "max": 44150000,
-                "rate": 8.5
-              },
-              {
-                "min": 44150001,
-                "max": 49150000,
-                "rate": 9
-              },
-              {
-                "min": 49150001,
-                "max": 55150000,
-                "rate": 9.5
-              },
-              {
-                "min": 55150001,
-                "max": 62350000,
-                "rate": 10
-              },
-              {
-                "min": 62350001,
-                "max": 71350000,
-                "rate": 10.5
-              },
-              {
-                "min": 71350001,
-                "max": 82850000,
-                "rate": 11
-              },
-              {
-                "min": 82850001,
-                "max": 97350000,
-                "rate": 11.5
-              },
-              {
-                "min": 97350001,
-                "max": 116350000,
-                "rate": 12
-              },
-              {
-                "min": 116350001,
-                "max": 141350000,
-                "rate": 12.5
-              },
-              {
-                "min": 141350001,
-                "max": 177350000,
-                "rate": 13
-              },
-              {
-                "min": 177350001,
-                "max": 232350000,
-                "rate": 13.5
-              },
-              {
-                "min": 232350001,
-                "max": 327350000,
-                "rate": 14
-              },
-              {
-                "min": 327350001,
-                "max": 530350000,
-                "rate": 14.5
-              },
-              {
-                "min": 530350001,
-                "max": 855000000,
-                "rate": 15
-              },
-              {
-                "min": 855000001,
-                "max": null,
-                "rate": 25
-              }
-            ],
-            "effectiveRate": "0% untuk ≤ Rp 6.950.000, naik bertahap hingga 25% untuk > Rp 855.000.000"
-          },
-          "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
-          "payer": "WP OP dalam negeri",
-          "recipient": "Negara",
-          "withholder": null,
-          "effectiveFrom": "2024-01-01",
-          "effectiveTo": null,
-          "status": "berlaku",
-          "legalBasis": [
-            {
-              "regulation": "PP 58/2023",
-              "article": "Lampiran",
-              "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
-            },
-            {
-              "regulation": "PMK 168/2023",
-              "article": "Pasal 4-6",
-              "sourceUrl": "https://peraturan.go.id/id/pmk-no-168-tahun-2023"
-            }
-          ],
-          "supersedes": [],
-          "supersededBy": [],
-          "notes": "Berlaku untuk pegawai yang kawin dengan tanggungan 0, 1, atau 2. Tarif 0% untuk penghasilan bruto ≤ Rp 6.950.000/bulan. Tarif tertinggi 25% untuk penghasilan > Rp 855.000.000/bulan.",
-          "examples": [
-            {
-              "scenario": "Pegawai kawin 1 tanggungan, gaji Rp 10.000.000/bulan",
-              "calculation": "TER B: Rp 10.000.000 jatuh di lapisan ke-8 (Rp 9.500.001 – Rp 10.050.000) = 1.75%",
-              "result": "PPh 21 = 1.75% × Rp 10.000.000 = Rp 175.000"
-            },
-            {
-              "scenario": "Pegawai kawin 2 tanggungan, gaji Rp 50.000.000/bulan",
-              "calculation": "TER B: Rp 50.000.000 jatuh di lapisan ke-31 (Rp 49.150.001 – Rp 55.150.000) = 9.5%",
-              "result": "PPh 21 = 9.5% × Rp 50.000.000 = Rp 4.750.000"
-            }
-          ],
-          "tags": [
-            "pph-21",
-            "ter",
-            "detail",
-            "berlaku"
-          ],
-          "lastVerified": "2026-05-28"
-        },
-        {
-          "id": "pph-21-ter-c-detail",
-          "category": "PPh",
-          "taxType": "PPh 21",
-          "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
-          "description": "Tabel lengkap TER Kategori C (Kawin, tanggungan ≥3) berdasarkan PP 58/2023 Lampiran. 42 lapisan tarif dari 0% hingga 25%.",
-          "rate": {
-            "type": "progressive",
-            "value": "0% – 25% (42 lapisan)",
-            "brackets": [
-              {
-                "min": 0,
-                "max": 7550000,
-                "rate": 0
-              },
-              {
-                "min": 7550001,
-                "max": 7900000,
-                "rate": 0.25
-              },
-              {
-                "min": 7900001,
-                "max": 8300000,
-                "rate": 0.5
-              },
-              {
-                "min": 8300001,
-                "max": 8700000,
-                "rate": 0.75
-              },
-              {
-                "min": 8700001,
-                "max": 9150000,
-                "rate": 1
-              },
-              {
-                "min": 9150001,
-                "max": 9600000,
-                "rate": 1.25
-              },
-              {
-                "min": 9600001,
-                "max": 10100000,
-                "rate": 1.5
-              },
-              {
-                "min": 10100001,
-                "max": 10650000,
-                "rate": 1.75
-              },
-              {
-                "min": 10650001,
-                "max": 11250000,
-                "rate": 2
-              },
-              {
-                "min": 11250001,
-                "max": 11850000,
-                "rate": 2.25
-              },
-              {
-                "min": 11850001,
-                "max": 12550000,
-                "rate": 2.5
-              },
-              {
-                "min": 12550001,
-                "max": 13250000,
-                "rate": 2.75
-              },
-              {
-                "min": 13250001,
-                "max": 14100000,
-                "rate": 3
-              },
-              {
-                "min": 14100001,
-                "max": 14950000,
-                "rate": 3.25
-              },
-              {
-                "min": 14950001,
-                "max": 15950000,
-                "rate": 3.5
-              },
-              {
-                "min": 15950001,
+                "min": 15550001,
                 "max": 17050000,
-                "rate": 3.75
+                "rate": 6
               },
               {
                 "min": 17050001,
-                "max": 18250000,
-                "rate": 4
-              },
-              {
-                "min": 18250001,
-                "max": 19550000,
-                "rate": 4.25
-              },
-              {
-                "min": 19550001,
-                "max": 20950000,
-                "rate": 4.5
-              },
-              {
-                "min": 20950001,
-                "max": 22550000,
-                "rate": 4.75
-              },
-              {
-                "min": 22550001,
-                "max": 24250000,
-                "rate": 5
-              },
-              {
-                "min": 24250001,
-                "max": 26150000,
-                "rate": 5.5
-              },
-              {
-                "min": 26150001,
-                "max": 28350000,
-                "rate": 6
-              },
-              {
-                "min": 28350001,
-                "max": 30750000,
-                "rate": 6.5
-              },
-              {
-                "min": 30750001,
-                "max": 33550000,
+                "max": 19500000,
                 "rate": 7
               },
               {
-                "min": 33550001,
-                "max": 36750000,
-                "rate": 7.5
-              },
-              {
-                "min": 36750001,
-                "max": 40450000,
+                "min": 19500001,
+                "max": 22700000,
                 "rate": 8
               },
               {
-                "min": 40450001,
-                "max": 44750000,
-                "rate": 8.5
-              },
-              {
-                "min": 44750001,
-                "max": 49750000,
+                "min": 22700001,
+                "max": 26600000,
                 "rate": 9
               },
               {
-                "min": 49750001,
-                "max": 55750000,
-                "rate": 9.5
-              },
-              {
-                "min": 55750001,
-                "max": 62950000,
+                "min": 26600001,
+                "max": 28100000,
                 "rate": 10
               },
               {
-                "min": 62950001,
-                "max": 71950000,
-                "rate": 10.5
-              },
-              {
-                "min": 71950001,
-                "max": 83450000,
+                "min": 28100001,
+                "max": 30100000,
                 "rate": 11
               },
               {
-                "min": 83450001,
-                "max": 97950000,
-                "rate": 11.5
-              },
-              {
-                "min": 97950001,
-                "max": 116950000,
+                "min": 30100001,
+                "max": 32600000,
                 "rate": 12
               },
               {
-                "min": 116950001,
-                "max": 141950000,
-                "rate": 12.5
-              },
-              {
-                "min": 141950001,
-                "max": 177950000,
+                "min": 32600001,
+                "max": 35400000,
                 "rate": 13
               },
               {
-                "min": 177950001,
-                "max": 232950000,
-                "rate": 13.5
-              },
-              {
-                "min": 232950001,
-                "max": 327950000,
+                "min": 35400001,
+                "max": 38900000,
                 "rate": 14
               },
               {
-                "min": 327950001,
-                "max": 530950000,
-                "rate": 14.5
-              },
-              {
-                "min": 530950001,
-                "max": 955000000,
+                "min": 38900001,
+                "max": 43000000,
                 "rate": 15
               },
               {
-                "min": 955000001,
-                "max": null,
+                "min": 43000001,
+                "max": 47400000,
+                "rate": 16
+              },
+              {
+                "min": 47400001,
+                "max": 51200000,
+                "rate": 17
+              },
+              {
+                "min": 51200001,
+                "max": 55800000,
+                "rate": 18
+              },
+              {
+                "min": 55800001,
+                "max": 60400000,
+                "rate": 19
+              },
+              {
+                "min": 60400001,
+                "max": 66700000,
+                "rate": 20
+              },
+              {
+                "min": 66700001,
+                "max": 74500000,
+                "rate": 21
+              },
+              {
+                "min": 74500001,
+                "max": 83200000,
+                "rate": 22
+              },
+              {
+                "min": 83200001,
+                "max": 95600000,
+                "rate": 23
+              },
+              {
+                "min": 95600001,
+                "max": 110000000,
+                "rate": 24
+              },
+              {
+                "min": 110000001,
+                "max": 134000000,
                 "rate": 25
+              },
+              {
+                "min": 134000001,
+                "max": 169000000,
+                "rate": 26
+              },
+              {
+                "min": 169000001,
+                "max": 221000000,
+                "rate": 27
+              },
+              {
+                "min": 221000001,
+                "max": 390000000,
+                "rate": 28
+              },
+              {
+                "min": 390000001,
+                "max": 463000000,
+                "rate": 29
+              },
+              {
+                "min": 463000001,
+                "max": 561000000,
+                "rate": 30
+              },
+              {
+                "min": 561000001,
+                "max": 709000000,
+                "rate": 31
+              },
+              {
+                "min": 709000001,
+                "max": 965000000,
+                "rate": 32
+              },
+              {
+                "min": 965000001,
+                "max": 1419000000,
+                "rate": 33
+              },
+              {
+                "min": 1419000001,
+                "max": null,
+                "rate": 34
               }
             ],
-            "effectiveRate": "0% untuk ≤ Rp 7.550.000, naik bertahap hingga 25% untuk > Rp 955.000.000"
+            "effectiveRate": "0% untuk ≤ Rp 6.600.000, naik bertahap hingga 34% untuk > Rp 1.419.000.000"
           },
           "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
           "payer": "WP OP dalam negeri",
@@ -3919,17 +4163,22 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Berlaku untuk pegawai yang kawin dengan tanggungan 3 atau lebih. Tarif 0% untuk penghasilan bruto ≤ Rp 7.550.000/bulan. Tarif tertinggi 25% untuk penghasilan > Rp 955.000.000/bulan.",
+          "notes": "Kategori C hanya dipakai pegawai dengan kelas PTKP K/3 (kawin, 3 tanggungan). Tarif 0% untuk penghasilan bruto bulanan ≤ Rp 6.600.000. Tarif tertinggi 34% untuk penghasilan bruto > Rp 1.419.000.000/bulan. TER bulanan hanya untuk masa pajak Januari–November.",
           "examples": [
             {
-              "scenario": "Pegawai kawin 3 tanggungan, gaji Rp 10.000.000/bulan",
-              "calculation": "TER C: Rp 10.000.000 jatuh di lapisan ke-6 (Rp 9.600.001 – Rp 10.100.000) = 1.25%",
-              "result": "PPh 21 = 1.25% × Rp 10.000.000 = Rp 125.000"
+              "scenario": "Pegawai K/3, gaji Rp 10.000.000/bulan",
+              "calculation": "TER C: jatuh di lapisan ke-7 (di atas Rp 9.800.000 – Rp 10.950.000) = 1,5%",
+              "result": "PPh 21 = 1,5% × Rp 10.000.000 = Rp 150.000"
             },
             {
-              "scenario": "Pegawai kawin 3 tanggungan, gaji Rp 100.000.000/bulan",
-              "calculation": "TER C: Rp 100.000.000 jatuh di lapisan ke-36 (Rp 97.950.001 – Rp 116.950.000) = 12%",
-              "result": "PPh 21 = 12% × Rp 100.000.000 = Rp 12.000.000"
+              "scenario": "Pegawai K/3, gaji Rp 50.000.000/bulan",
+              "calculation": "TER C: jatuh di lapisan ke-24 (di atas Rp 47.400.000 – Rp 51.200.000) = 17%",
+              "result": "PPh 21 = 17% × Rp 50.000.000 = Rp 8.500.000"
+            },
+            {
+              "scenario": "Pegawai K/3, gaji Rp 100.000.000/bulan",
+              "calculation": "TER C: jatuh di lapisan ke-31 (di atas Rp 95.600.000 – Rp 110.000.000) = 24%",
+              "result": "PPh 21 = 24% × Rp 100.000.000 = Rp 24.000.000"
             }
           ],
           "tags": [
@@ -3938,7 +4187,7 @@
             "detail",
             "berlaku"
           ],
-          "lastVerified": "2026-05-28"
+          "lastVerified": "2026-08-28"
         },
         {
           "id": "pph-21-norma-dokter",
@@ -4221,12 +4470,12 @@
           "category": "PPh",
           "taxType": "PPh 21",
           "transactionType": "Norma - Pedagang",
-          "description": "Norma penghitungan penghasilan neto 15% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+          "description": "Norma penghitungan penghasilan neto 20% dari bruto untuk usaha perdagangan. Dasar: PMK 523/2002 jo. PMK 43/2022.",
           "rate": {
             "type": "percentage",
-            "value": 15
+            "value": 20
           },
-          "taxBase": "15% × penghasilan bruto (norma penghitungan)",
+          "taxBase": "20% × penghasilan bruto (norma penghitungan)",
           "payer": "WP OP pelaku pekerjaan bebas",
           "recipient": "Negara",
           "withholder": null,
@@ -4267,12 +4516,12 @@
           "category": "PPh",
           "taxType": "PPh 21",
           "transactionType": "Norma - Petani/Peternak",
-          "description": "Norma penghitungan penghasilan neto 25% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
+          "description": "Norma penghitungan penghasilan neto 10% dari bruto untuk usaha pertanian/peternakan. Dasar: PMK 523/2002 jo. PMK 43/2022.",
           "rate": {
             "type": "percentage",
-            "value": 25
+            "value": 10
           },
-          "taxBase": "25% × penghasilan bruto (norma penghitungan)",
+          "taxBase": "10% × penghasilan bruto (norma penghitungan)",
           "payer": "WP OP pelaku pekerjaan bebas",
           "recipient": "Negara",
           "withholder": null,
@@ -4316,9 +4565,9 @@
           "description": "Norma penghitungan penghasilan neto 25% dari bruto untuk pekerjaan bebas. Dasar: PMK 523/2002 jo. PMK 43/2022.",
           "rate": {
             "type": "percentage",
-            "value": 25
+            "value": 10
           },
-          "taxBase": "25% × penghasilan bruto (norma penghitungan)",
+          "taxBase": "10% × penghasilan bruto (norma penghitungan)",
           "payer": "WP OP pelaku pekerjaan bebas",
           "recipient": "Negara",
           "withholder": null,
@@ -4366,13 +4615,13 @@
           "id": "pph-22-impor-2024",
           "category": "PPh",
           "taxType": "PPh 22",
-          "transactionType": "Impor Barang",
-          "description": "Pemungutan PPh 22 atas impor barang oleh instansi pemerintah, yang dilakukan oleh Direktorat Jenderal Bea dan Cukai bersamaan dengan pemungutan Bea Masuk dan Cukai.",
+          "transactionType": "Impor Barang (Umum)",
+          "description": "Pemungutan PPh 22 atas impor barang yang dilakukan oleh Direktorat Jenderal Bea dan Cukai bersamaan dengan pembayaran Bea Masuk. Tarif 7,5% untuk impor yang tidak menggunakan Angka Pengenal Importir (API) atau menggunakan API umum, sepanjang barang tidak termasuk daftar barang impor tertentu yang dikenai 10%.",
           "rate": {
             "type": "percentage",
             "value": 7.5
           },
-          "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
+          "taxBase": "Nilai impor = CIF + Bea Masuk + pungutan lain berdasarkan ketentuan kepabeanan",
           "payer": "Importir",
           "recipient": "Negara",
           "withholder": "Direktorat Jenderal Bea dan Cukai",
@@ -4386,6 +4635,11 @@
               "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
             },
             {
+              "regulation": "PMK 51/2025",
+              "article": "Pasal 3-4 (daftar barang impor)",
+              "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-51-tahun-2025"
+            },
+            {
               "regulation": "UU 7/2021 (HPP)",
               "article": "Pasal 22",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021",
@@ -4394,14 +4648,14 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif 7,5% untuk impor yang tidak menggunakan angka pengenal impor (API) atau menggunakan API umum. Berbeda untuk API produsen.",
+          "notes": "Tarif 7,5% untuk impor yang tidak menggunakan API atau menggunakan API umum (selain daftar barang impor tertentu yang dikenai 10% dan kedelai/gandum/tepung terigu API 0,5%). Impor dengan API produsen: 2,5%. Impor atas barang yang tidak dikuasai: 7,5% × harga jual lelang. Tanpa NPWP: tarif tidak final × 2. Daftar barang impor diperbarui melalui PMK 51/2025 (menggantikan PMK 34/PMK.010/2017 jo. PMK 41/PMK.010/2022 yang dicabut via PMK 81/2024).",
           "tags": [
             "pph-22",
             "impor",
             "bea-cukai",
             "berlaku"
           ],
-          "lastVerified": "2026-05-26",
+          "lastVerified": "2026-08-28",
           "bppuKode": [
             {
               "kode": "22-404-01",
@@ -4414,6 +4668,59 @@
               "scenario": "Impor Barang Rp 100.000.000",
               "calculation": "7.5% × 100.000.000",
               "result": "Pajak = Rp 7.500.000"
+            }
+          ]
+        },
+        {
+          "id": "pph-22-impor-barang-tertentu",
+          "category": "PPh",
+          "taxType": "PPh 22",
+          "transactionType": "Impor Barang Tertentu (Daftar PMK)",
+          "description": "Pemungutan PPh 22 sebesar 10% dari nilai impor atas barang impor tertentu yang tercantum dalam daftar PMK (antara lain parfum, kosmetik, elektronik tertentu, kendaraan bermotor, dan barang konsumsi tertentu), baik dengan maupun tanpa menggunakan API. Dipungut DJBC bersamaan dengan Bea Masuk.",
+          "rate": {
+            "type": "percentage",
+            "value": 10
+          },
+          "taxBase": "Nilai impor = CIF + Bea Masuk + pungutan lain berdasarkan ketentuan kepabeanan",
+          "payer": "Importir",
+          "recipient": "Negara",
+          "withholder": "Direktorat Jenderal Bea dan Cukai",
+          "effectiveFrom": "2024-01-01",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 60/2023",
+              "article": "Pasal 2",
+              "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023"
+            },
+            {
+              "regulation": "PMK 51/2025",
+              "article": "Pasal 3 (Lampiran daftar barang impor tertentu)",
+              "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-51-tahun-2025"
+            },
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 22",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [],
+          "supersededBy": [],
+          "notes": "Band 10% berlaku untuk barang dalam daftar PMK terlepas dari jenis API. Historis daftar: PMK 132/PMK.010/2015 → PMK 34/PMK.010/2017 → PMK 110/PMK.010/2018 → PMK 41/PMK.010/2022 (berlaku 1 April 2022, menaikkan banyak barang konsumsi dari 7,5% ke 10%) → PMK 41/2022 dicabut per 1 Januari 2025 via PMK 81/2024 → kini PMK 51/2025 (2025). Kedelai, gandum, dan tepung terigu oleh importir ber-API dikenai 0,5%.",
+          "tags": [
+            "pph-22",
+            "impor",
+            "barang-tertentu",
+            "bea-cukai",
+            "berlaku"
+          ],
+          "lastVerified": "2026-08-28",
+          "examples": [
+            {
+              "scenario": "Impor barang tertentu (daftar PMK) Rp 100.000.000",
+              "calculation": "10% × 100.000.000",
+              "result": "Pajak = Rp 10.000.000"
             }
           ]
         },
@@ -4684,12 +4991,12 @@
           "category": "PPh",
           "taxType": "PPh 22",
           "transactionType": "Impor Barang (API Produsen)",
-          "description": "Pemungutan PPh 22 atas impor barang yang dilakukan importir yang memiliki Angka Pengenal Importir (API) produsen untuk keperluan industri/produksi.",
+          "description": "Pemungutan PPh 22 atas impor barang yang dilakukan importir yang memiliki Angka Pengenal Importir (API) produsen untuk keperluan industri/produksi, sepanjang barang tidak termasuk daftar barang impor tertentu yang dikenai 10%.",
           "rate": {
             "type": "percentage",
             "value": 2.5
           },
-          "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
+          "taxBase": "Nilai impor = CIF + Bea Masuk + pungutan lain berdasarkan ketentuan kepabeanan",
           "payer": "Importir (pemilik API produsen)",
           "recipient": "Negara",
           "withholder": "Direktorat Jenderal Bea dan Cukai",
@@ -4709,14 +5016,14 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif 2,5% untuk impor dengan API produsen. Berbeda dari non-API/API umum yang dikenakan 7,5%.",
+          "notes": "Tarif 2,5% untuk impor dengan API produsen. Berbeda dari non-API/API umum yang dikenakan 7,5%. Barang impor tertentu dalam daftar PMK dikenai 10% dengan atau tanpa API.",
           "tags": [
             "pph-22",
             "impor",
             "api-produsen",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "bppuKode": [
             {
               "kode": "22-200-01",
@@ -6301,7 +6608,7 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif 10% atas sewa tanah dan/atau bangunan. Tanpa NPWP: 10% × 2 = 20%. Juga berlaku untuk sewa peralatan dan mesin sejak UU HPP.",
+          "notes": "Tarif 10% atas sewa tanah dan/atau bangunan. Tanpa NPWP: 10% × 2 = 20%. Catatan: sejak UU HPP, sewa aset tetap lainnya selain tanah/bangunan (mis. mesin dan peralatan) TIDAK lagi PPh 4(2) final 10%, melainkan terutang PPh 23 atas persewaan sebesar 2% (Pasal 23 ayat (1) huruf c angka 2 UU HPP).",
           "tags": [
             "pph-23",
             "sewa",
@@ -6567,38 +6874,38 @@
               "regulation": "UU 7/2021 (HPP)",
               "article": "Pasal 26 ayat (1)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            },
+            {
+              "regulation": "PER-23/PJ/2020",
+              "article": "Lampiran (kode objek pajak PPh Pasal 26)",
+              "sourceUrl": "https://pajak.go.id/sites/default/files/2021-01/Lampiran%20PER23PJ2020.pdf"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif dapat berbeda berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/ tax treaty) antara Indonesia dan negara residen WP luar negeri.",
+          "notes": "Tarif dapat berbeda berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/ tax treaty) antara Indonesia dan negara residen WP luar negeri. Kode objek pajak PPh 26 pada bukti potong unifikasi: 27-101-01 (dividen), 27-102-01 (bunga selain yang dikenakan PPh Pasal 4 ayat (2)), 27-103-01 (royalti). Catatan: kode 24-101-xx/24-102-xx/24-103-xx adalah kode PPh 23, bukan PPh 26.",
           "tags": [
             "pph-26",
             "wp-luar-negeri",
             "tax-treaty",
             "berlaku"
           ],
-          "lastVerified": "2026-05-26",
+          "lastVerified": "2026-08-28",
           "bppuKode": [
             {
-              "kode": "24-101-01",
-              "nama": "Dividen",
-              "tarif": 15
+              "kode": "27-101-01",
+              "nama": "Dividen (PPh Pasal 26)",
+              "tarif": 20
             },
             {
-              "kode": "24-102-01",
-              "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
-              "tarif": 15
+              "kode": "27-102-01",
+              "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2) (PPh Pasal 26)",
+              "tarif": 20
             },
             {
-              "kode": "24-103-01",
-              "nama": "Royalti",
-              "tarif": 15
-            },
-            {
-              "kode": "24-105-01",
-              "nama": "Bunga Pinjaman yang Diterima  Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap Melalui Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi",
-              "tarif": 0
+              "kode": "27-103-01",
+              "nama": "Royalti (PPh Pasal 26)",
+              "tarif": 20
             },
             {
               "kode": "28-413-01",
@@ -6640,11 +6947,16 @@
             {
               "regulation": "PP 60/2023",
               "article": "Pasal 5"
+            },
+            {
+              "regulation": "PER-23/PJ/2020",
+              "article": "Lampiran (kode objek pajak PPh Pasal 26)",
+              "sourceUrl": "https://pajak.go.id/sites/default/files/2021-01/Lampiran%20PER23PJ2020.pdf"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif P3B bervariasi: Singapura 15%, Jepang 15%, Belanda 10%, Mauritius 10%, dll. Tarif dapat lebih rendah jika WP luar negeri memenuhi syarat beneficial owner dan menyertakan Certificate of Residence (CoR).",
+          "notes": "Tarif P3B bervariasi: Singapura 15%, Jepang 15%, Belanda 10%, Mauritius 10%, dll. Tarif dapat lebih rendah jika WP luar negeri memenuhi syarat beneficial owner dan menyertakan Certificate of Residence (CoR). Kode objek pajak bukti potong PPh 26 atas dividen: 27-101-01 (kode 24-101-01 adalah kode PPh 23, bukan PPh 26).",
           "tags": [
             "pph-26",
             "dividen",
@@ -6652,12 +6964,12 @@
             "tax-treaty",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "bppuKode": [
             {
-              "kode": "24-101-01",
-              "nama": "Dividen",
-              "tarif": 15
+              "kode": "27-101-01",
+              "nama": "Dividen (PPh Pasal 26)",
+              "tarif": 20
             }
           ],
           "examples": [
@@ -6694,11 +7006,16 @@
             {
               "regulation": "PP 60/2023",
               "article": "Pasal 5"
+            },
+            {
+              "regulation": "PER-23/PJ/2020",
+              "article": "Lampiran (kode objek pajak PPh Pasal 26)",
+              "sourceUrl": "https://pajak.go.id/sites/default/files/2021-01/Lampiran%20PER23PJ2020.pdf"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif P3B bervariasi untuk bunga: Singapura 15%, Jepang 10%, Belanda 10%, Hong Kong 10%. Bunga pinjaman luar negeri tertentu dapat dibebaskan berdasarkan P3B.",
+          "notes": "Tarif P3B bervariasi untuk bunga: Singapura 15%, Jepang 10%, Belanda 10%, Hong Kong 10%. Bunga pinjaman luar negeri tertentu dapat dibebaskan berdasarkan P3B. Kode objek pajak bukti potong PPh 26 atas bunga: 27-102-01 (kode 24-102-01 adalah kode PPh 23, bukan PPh 26).",
           "tags": [
             "pph-26",
             "bunga",
@@ -6706,12 +7023,12 @@
             "tax-treaty",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "bppuKode": [
             {
-              "kode": "24-102-01",
-              "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
-              "tarif": 15
+              "kode": "27-102-01",
+              "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2) (PPh Pasal 26)",
+              "tarif": 20
             }
           ],
           "examples": [
@@ -6748,11 +7065,16 @@
             {
               "regulation": "PP 60/2023",
               "article": "Pasal 5"
+            },
+            {
+              "regulation": "PER-23/PJ/2020",
+              "article": "Lampiran (kode objek pajak PPh Pasal 26)",
+              "sourceUrl": "https://pajak.go.id/sites/default/files/2021-01/Lampiran%20PER23PJ2020.pdf"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif P3B bervariasi untuk royalti: Singapura 15%, Jepang 10%, Belanda 10%, Amerika 10%. Definisi royalti mencakup penggunaan hak cipta, paten, merek dagang, dll.",
+          "notes": "Tarif P3B bervariasi untuk royalti: Singapura 15%, Jepang 10%, Belanda 10%, Amerika 10%. Definisi royalti mencakup penggunaan hak cipta, paten, merek dagang, dll. Kode objek pajak bukti potong PPh 26 atas royalti: 27-103-01 (kode 24-103-01 adalah kode PPh 23, bukan PPh 26).",
           "tags": [
             "pph-26",
             "royalti",
@@ -6760,12 +7082,12 @@
             "tax-treaty",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "bppuKode": [
             {
-              "kode": "24-103-01",
-              "nama": "Royalti",
-              "tarif": 15
+              "kode": "27-103-01",
+              "nama": "Royalti (PPh Pasal 26)",
+              "tarif": 20
             }
           ],
           "examples": [
@@ -6835,11 +7157,11 @@
             "brackets": [
               {
                 "min": 0,
-                "max": 50000000,
+                "max": 60000000,
                 "rate": 5
               },
               {
-                "min": 50000000,
+                "min": 60000000,
                 "max": 250000000,
                 "rate": 15
               },
@@ -6850,8 +7172,13 @@
               },
               {
                 "min": 500000000,
-                "max": null,
+                "max": 5000000000,
                 "rate": 30
+              },
+              {
+                "min": 5000000000,
+                "max": null,
+                "rate": 35
               }
             ]
           },
@@ -6875,14 +7202,14 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "BUT dikenakan PPh normal (Pasal 17) atas laba usaha + Branch Profit Tax 20% atas laba setelah pajak yang dikirim ke kantor pusat. Beberapa P3B mengurangi atau menghapus branch profit tax.",
+          "notes": "BUT dikenakan PPh normal (Pasal 17) atas laba usaha + Branch Profit Tax 20% atas laba setelah pajak yang dikirim ke kantor pusat. Beberapa P3B mengurangi atau menghapus branch profit tax. Tarif progresif mengikuti Pasal 17 ayat (1) huruf a pasca-UU HPP: 5% s.d. Rp 60 juta; 15% >60-250 juta; 25% >250-500 juta; 30% >500 juta-5 miliar; 35% >5 miliar.",
           "tags": [
             "pph-26",
             "but",
             "branch-profit-tax",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
               "scenario": "Penghasilan BUT (Bentuk Usaha Tetap) PKP Rp 100.000.000",
@@ -7266,7 +7593,7 @@
           "category": "PPh",
           "taxType": "PPh 4(2) Final",
           "transactionType": "Pekerjaan dan Jasa Konstruksi",
-          "description": "Pemotongan PPh Final atas penghasilan dari pekerjaan konstruksi, jasa perencanaan konstruksi, jasa pelaksanaan konstruksi, jasa pengawasan konstruksi, dan jasa konsultansi konstruksi sesuai PP 51/2008 jo. PP 40/2009.",
+          "description": "Pemotongan PPh Final atas penghasilan dari pekerjaan konstruksi dan jasa konsultansi konstruksi yang dilakukan penyedia jasa konstruksi, sesuai PP 51/2008 jo. PP 9/2022 (implementasi UU 7/2021 Pasal 4 ayat (2) huruf b), berlaku untuk penyerahan sejak masa pajak April 2022.",
           "rate": {
             "type": "range",
             "value": [
@@ -7278,17 +7605,13 @@
           "payer": "Penyedia jasa konstruksi",
           "recipient": "Negara",
           "withholder": "Pemberi kerja/pemilik proyek",
-          "effectiveFrom": "2009-07-01",
+          "effectiveFrom": "2021-02-02",
           "effectiveTo": null,
           "status": "berlaku",
           "legalBasis": [
             {
-              "regulation": "PP 51/2008",
-              "article": "Pasal 2-5"
-            },
-            {
-              "regulation": "PP 40/2009",
-              "article": "Pasal 2"
+              "regulation": "PP 51/2008 jo. PP 9/2022",
+              "article": "Pasal 43-44"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -7298,12 +7621,12 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Terdiri dari 14 kode objek pajak BPPU dengan tarif 1.75%, 2.0%, 2.65%, 3.0%, 3.5%, 4.0%, 6.0%.",
+          "notes": "Struktur 7 tarif final konstruksi diatur PP 9/2022 (perubahan kedua atas PP 51/2008), pelaksana UU 7/2021 Pasal 40; berlaku sejak masa pajak April 2022. Sektor jasa konstruksinya sendiri (kualifikasi usaha, sertifikat) diatur PP 22/2020 jo. PP 14/2021. Kode objek pajak BPPU aktif 7 kode: 28-409-22 s.d. 28-409-28 dengan tarif 1,75% (kualifikasi kecil/perseorangan bersertifikat), 2,65% (selain kecil bersertifikat dan konstruksi terintegrasi bersertifikat), 3,5% (konsultansi bersertifikat), 4% (tanpa sertifikat badan usaha), dan 6% (konsultansi tanpa sertifikat). Kode lama era PP 51/2008 jo. PP 40/2009 (28-409-08 s.d. 28-409-14: perencanaan 4%/6%, pelaksanaan 2%/3%/4%, pengawasan 4%/6%) HISTORIS dan tidak dipakai lagi.",
           "examples": [
             {
-              "scenario": "Pekerjaan dan Jasa Konstruksi Rp 100.000.000",
-              "calculation": "Tarif 1.75%-6.0% × 100jt",
-              "result": "Pajak = Rp 1.750.000 - Rp 6.000.000"
+              "scenario": "Pekerjaan Konstruksi Rp 100.000.000 oleh penyedia jasa kualifikasi kecil bersertifikat",
+              "calculation": "1,75% × 100jt",
+              "result": "PPh Final = Rp 1.750.000"
             }
           ],
           "tags": [
@@ -7345,44 +7668,9 @@
               "kode": "28-409-28",
               "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
               "tarif": 6
-            },
-            {
-              "kode": "28-409-08",
-              "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Dengan Kualifikasi Usaha)",
-              "tarif": 4
-            },
-            {
-              "kode": "28-409-09",
-              "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Tanpa Kualifikasi Usaha)",
-              "tarif": 6
-            },
-            {
-              "kode": "28-409-10",
-              "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Kecil)",
-              "tarif": 2
-            },
-            {
-              "kode": "28-409-11",
-              "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Menengah dan Besar)",
-              "tarif": 3
-            },
-            {
-              "kode": "28-409-12",
-              "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Tanpa Kualifikasi Usaha)",
-              "tarif": 4
-            },
-            {
-              "kode": "28-409-13",
-              "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Dengan Kualifikasi Usaha)",
-              "tarif": 4
-            },
-            {
-              "kode": "28-409-14",
-              "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Tanpa Kualifikasi Usaha)",
-              "tarif": 6
             }
           ],
-          "lastVerified": "2026-05-26"
+          "lastVerified": "2026-08-28"
         },
         {
           "id": "pph-final-bunga-koperasi",
@@ -8040,8 +8328,8 @@
           "id": "pph-badan-2022-plus",
           "category": "PPh",
           "taxType": "PPh Badan",
-          "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
-          "description": "Tarif PPh badan 22% berlaku untuk WP badan dalam negeri dan bentuk usaha tetap mulai tahun pajak 2022 sampai dengan tahun pajak yang belum ditentukan. Sebelumnya 25%.",
+          "transactionType": "Penghasilan Kena Pajak Badan (Tahun Pajak 2022 dan Seterusnya)",
+          "description": "Tarif PPh badan 22% berlaku untuk WP badan dalam negeri dan bentuk usaha tetap mulai tahun pajak 2022 dan masih berlaku sampai sekarang. Sebelumnya 25%.",
           "rate": {
             "type": "percentage",
             "value": 22
@@ -8075,7 +8363,7 @@
           "lastVerified": "2026-05-26",
           "examples": [
             {
-              "scenario": "Penghasilan Kena Pajak Badan (2022-2023) Rp 100.000.000",
+              "scenario": "Penghasilan Kena Pajak Badan (Tahun Pajak 2022 dan Seterusnya) Rp 100.000.000",
               "calculation": "22% × 100.000.000",
               "result": "Pajak = Rp 22.000.000"
             }
@@ -8152,7 +8440,7 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Syarat: saham diperdagangkan di bursa efek dan memenuhi persyaratan peraturan perundang-undangan di bidang pasar modal serta memenuhi syarat perbandingan antara saham yang dimiliki oleh pihak yang bukan pemegang saham pengendali dengan jumlah seluruh saham yang diserahkan.",
+          "notes": "Syarat: saham diperdagangkan di bursa efek dan memenuhi persyaratan peraturan perundang-undangan di bidang pasar modal serta memenuhi syarat perbandingan antara saham yang dimiliki oleh pihak yang bukan pemegang saham pengendali dengan jumlah seluruh saham yang diserahkan. UU HPP juga mengatur Pasal 31E: bagi WP badan yang melakukan penjualan saham pertama kali (IPO) sampai dengan akhir tahun pajak 2025, tarif PPh menurun 0,5% per tahun (mencapai minimum 18%) dengan syarat minimal 40% saham yang dimiliki pihak selain pemegang saham pengendali diperdagangkan di bursa efek - masa fasilitas penurunan ini sudah BERAKHIR (catatan historis) karena periode IPO s.d. akhir tahun pajak 2025 telah lewat.",
           "tags": [
             "pph-badan",
             "go-public",
@@ -8173,14 +8461,14 @@
           "id": "pph-badan-umkm",
           "category": "PPh",
           "taxType": "PPh Badan",
-          "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar)",
-          "description": "Tarif PPh badan dikurangi sebesar 50% dari tarif normal (22% × 50% = 11%) untuk WP badan yang menerima peredaran bruto ≤ Rp 50 miliar. Fasilitas ini diberikan berdasarkan UU HPP Pasal 17 ayat (2).",
+          "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto Tahun Sebelumnya ≤ Rp 50 miliar)",
+          "description": "Pengurangan tarif PPh badan sebesar 50% dari tarif normal 22% (tarif efektif 11%) yang diberikan HANYA atas Penghasilan Kena Pajak (PKP) dari bagian peredaran bruto sampai dengan Rp 4,8 miliar, dengan syarat peredaran bruto tahun sebelumnya tidak lebih dari Rp 50 miliar. PKP dari bagian peredaran bruto di atas Rp 4,8 miliar tetap kena tarif penuh 22%.",
           "rate": {
             "type": "percentage",
             "value": 11
           },
-          "taxBase": "Penghasilan Kena Pajak (PKP) badan",
-          "payer": "WP Badan UMKM (peredaran bruto ≤ Rp 50 miliar)",
+          "taxBase": "PKP dari bagian peredaran bruto s.d. Rp 4,8 miliar (tarif efektif 11%); sisa PKP kena tarif 22%",
+          "payer": "WP Badan UMKM (peredaran bruto tahun sebelumnya ≤ Rp 50 miliar)",
           "recipient": "Negara",
           "withholder": null,
           "effectiveFrom": "2022-01-01",
@@ -8195,19 +8483,24 @@
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Penurunan tarif 50% berlaku untuk WP badan yang menerima peredaran bruto dari usaha ≤ Rp 50 miliar dalam tahun pajak sebelumnya. Tarif efektif = 22% × 50% = 11%.",
+          "notes": "Pasal 17 ayat (2) UU HPP: pengurangan tarif 50% (efektif 11% × tarif normal) berlaku PROPORSIONAL hanya atas PKP dari bagian peredaran bruto sampai Rp 4,8 miliar - BUKAN atas seluruh PKP. PKP dari bagian peredaran bruto di atas Rp 4,8 miliar dikenai tarif penuh 22%. Syarat: WP badan menerima peredaran bruto dari usaha tidak lebih dari Rp 50 miliar dalam tahun pajak sebelumnya (penyusutan PKP dilakukan secara proporsional terhadap perbandingan bagian peredaran bruto s.d. Rp 4,8 miliar terhadap seluruh peredaran bruto).",
           "tags": [
             "pph-badan",
             "umkm",
             "tarif-dikurangi",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
-              "scenario": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar) Rp 100.000.000",
+              "scenario": "PKP Rp 100.000.000 yang seluruhnya berasal dari bagian peredaran bruto s.d. Rp 4,8 miliar (omzet tahun sebelumnya ≤ Rp 50 miliar)",
               "calculation": "11% × 100.000.000",
               "result": "Pajak = Rp 11.000.000"
+            },
+            {
+              "scenario": "Peredaran bruto Rp 20 miliar dengan PKP Rp 2.000.000.000 (omzet tahun sebelumnya ≤ Rp 50 miliar)",
+              "calculation": "Bagian PKP dari peredaran bruto s.d. Rp 4,8 M = Rp 2 M × (4,8/20) = Rp 480.000.000 → 11% × 480jt = Rp 52.800.000; sisa PKP Rp 1.520.000.000 → 22% × 1,52 M = Rp 334.400.000",
+              "result": "Pajak = Rp 387.200.000 (bukan 11% × seluruh PKP)"
             }
           ]
         },
@@ -8414,19 +8707,19 @@
           "id": "pph-umkm-05pct-2023",
           "category": "PPh",
           "taxType": "PPh UMKM",
-          "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
-          "description": "Tarif final PPh 0,5% atas penghasilan dari usaha yang diterima WP orang pribadi yang memiliki peredaran bruto tertentu, sesuai PP 55/2022.",
+          "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022",
+          "description": "HISTORIS (era PP 55/2022): Tarif final PPh 0,5% atas penghasilan dari usaha yang diterima WP orang pribadi maupun WP badan (PT/CV) dengan peredaran bruto tertentu. Berakhir untuk WP badan sejak 22 April 2026 melalui PP 20/2026; untuk WP OP fasilitas dilanjutkan tanpa batas waktu oleh PP 20/2026.",
           "rate": {
             "type": "percentage",
             "value": 0.5
           },
           "taxBase": "Peredaran bruto (omzet) bulanan",
-          "payer": "WP Orang Pribadi pelaku UMKM",
+          "payer": "WP Orang Pribadi dan WP Badan pelaku UMKM (masa PP 55/2022)",
           "recipient": "Negara",
           "withholder": null,
           "effectiveFrom": "2023-01-01",
-          "effectiveTo": null,
-          "status": "berlaku",
+          "effectiveTo": "2026-04-21",
+          "status": "diubah",
           "legalBasis": [
             {
               "regulation": "PP 55/2022",
@@ -8442,13 +8735,16 @@
           "supersedes": [
             "pph-umkm-05pct-2018"
           ],
-          "supersededBy": [],
-          "notes": "Masa berlaku 7 tahun sejak PP 55/2022. Batas peredaran bruto Rp 4,8 miliar/tahun. PP 55/2022 menggantikan PP 23/2018. Kini juga berlaku untuk WP badan (perubahan dari PP 23/2018).",
+          "supersededBy": [
+            "pph-umkm-05pct-op-pp20-2026"
+          ],
+          "notes": "PP 55/2022 memberikan fasilitas PPh final 0,5% dengan masa terbatas 7 tahun dan mencakup WP OP maupun WP badan (PT/CV). PP 20/2026 (berlaku 22 April 2026) merevisi PP 55/2022: (1) fasilitas WP Orang Pribadi tidak dibatasi masa berlaku (tidak ada lagi batas 7 tahun); (2) WP badan berbentuk PT dan CV TIDAK LAGI mendapat fasilitas PPh final 0,5% dan dikenai PPh tarif umum Pasal 17. Entri ini tetap relevan sebagai dasar untuk masa pajak s.d. 21 April 2026.",
           "tags": [
             "pph-umkm",
             "final",
             "0.5-persen",
-            "berlaku"
+            "diubah",
+            "historis"
           ],
           "lastVerified": "2026-05-26",
           "bppuKode": [
@@ -8480,9 +8776,92 @@
           ],
           "examples": [
             {
-              "scenario": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) Rp 100.000.000",
+              "scenario": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) Rp 100.000.000 (masa PP 55/2022, s.d. 21 April 2026)",
               "calculation": "0.5% × 100.000.000",
               "result": "Pajak = Rp 500.000"
+            }
+          ]
+        },
+        {
+          "id": "pph-umkm-05pct-op-pp20-2026",
+          "category": "PPh",
+          "taxType": "PPh UMKM",
+          "transactionType": "Penghasilan Usaha WP Orang Pribadi (Peredaran Bruto s.d. Rp 4,8 miliar) - PP 20/2026",
+          "description": "Tarif final PPh 0,5% atas penghasilan dari usaha WP Orang Pribadi dengan peredaran bruto sampai Rp 4,8 miliar per tahun, berlaku TANPA batas waktu berdasarkan PP 20/2026 yang merevisi PP 55/2022.",
+          "rate": {
+            "type": "percentage",
+            "value": 0.5
+          },
+          "taxBase": "Peredaran bruto (omzet) bulanan",
+          "payer": "WP Orang Pribadi pelaku UMKM",
+          "recipient": "Negara",
+          "withholder": null,
+          "effectiveFrom": "2026-04-22",
+          "effectiveTo": null,
+          "status": "berlaku",
+          "legalBasis": [
+            {
+              "regulation": "PP 20/2026",
+              "article": "Pasal 1-3",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/349415/pp-no-20-tahun-2026"
+            },
+            {
+              "regulation": "PP 55/2022",
+              "article": "Pasal 2-3",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022"
+            },
+            {
+              "regulation": "UU 7/2021 (HPP)",
+              "article": "Pasal 4 ayat (2)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+            }
+          ],
+          "supersedes": [
+            "pph-umkm-05pct-2023"
+          ],
+          "supersededBy": [],
+          "notes": "PP 20/2026 (diundangkan dan berlaku 22 April 2026) merevisi PP 55/2022: (1) fasilitas PPh final 0,5% untuk WP Orang Pribadi berlaku tanpa batas waktu - batas masa 7 tahun dihapus; (2) WP badan berbentuk PT dan CV TIDAK LAGI mendapat fasilitas dan dikenai PPh tarif umum Pasal 17; (3) fasilitas utama tetap diberikan kepada WP OP, koperasi, dan PT perseorangan (pendiri perseorangan tunggal). Batas peredaran bruto tetap Rp 4,8 miliar/tahun; melebihi itu dikenai PPh tarif umum.",
+          "tags": [
+            "pph-umkm",
+            "final",
+            "0.5-persen",
+            "pp-20-2026",
+            "orang-pribadi",
+            "berlaku"
+          ],
+          "lastVerified": "2026-08-28",
+          "bppuKode": [
+            {
+              "kode": "28-423-01",
+              "nama": "Pemotongan atau pemungutan PPh atas  penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 23 Tahun 2018 atau Peraturan Pemerintah Nomor 55 Tahun 2022.",
+              "tarif": 0.5
+            },
+            {
+              "kode": "28-423-02",
+              "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 55 Tahun 2022.",
+              "tarif": 0
+            },
+            {
+              "kode": "28-423-03",
+              "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak orang pribadi yang memiliki peredaran bruto tertentu sesuai dengan PP 55 Tahun 2022 dengan peredaran usaha s.d Rp500.000.000,00.",
+              "tarif": 0.5
+            },
+            {
+              "kode": "28-423-12",
+              "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak yang memenuhi persyaratan tertentu untuk dikenai PPh yang bersifat final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+              "tarif": 0
+            },
+            {
+              "kode": "28-423-13",
+              "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+              "tarif": 0
+            }
+          ],
+          "examples": [
+            {
+              "scenario": "WP OP, omzet bulan Juni 2026 Rp 100.000.000",
+              "calculation": "0.5% × 100.000.000 (tanpa batas masa fasilitas per PP 20/2026)",
+              "result": "PPh Final = Rp 500.000"
             }
           ]
         },
@@ -8590,13 +8969,13 @@
           "category": "PPN",
           "taxType": "PPN",
           "transactionType": "Penyerahan BKP/JKP dalam negeri",
-          "description": "Tarif PPN efektif 11% berdasarkan mekanisme PMK 131/2024. Tarif dasar UU HPP menetapkan PPN 12%, namun PMK 131/2024 menetapkan tarif efektif yang diperhitungkan sebagai 11/12 dari tarif dasar 12%.",
+          "description": "Tarif dasar PPN 12% berlaku 1 Januari 2025, namun 12% penuh hanya untuk BKP mewah (objek PPnBM: kapal pesiar/pesiar pribadi, pesawat udara pribadi, dan rumah dengan HJE > Rp 30 miliar). Untuk penyerahan BKP/JKP selain barang mewah, DPP menggunakan DPP nilai lain 11/12 dari harga jual sehingga beban efektif 11% (12% × 11/12). Mekanisme diatur PMK 131/2024 dan PMK 11/2025.",
           "rate": {
             "type": "percentage",
             "value": 11,
-            "effectiveRate": "11/12 × 12% = 11% (PMK 131/2024)"
+            "effectiveRate": "12% × 11/12 = 11% untuk selain barang mewah (PMK 131/2024 jo. PMK 11/2025); 12% penuh hanya BKP mewah"
           },
-          "taxBase": "Dasar Pengenaan Pajak (DPP) = Harga Jual/Penggantian/Uang muka/Nilai ekspor",
+          "taxBase": "Dasar Pengenaan Pajak (DPP) = Harga Jual/Penggantian/Uang muka/Nilai ekspor; selain barang mewah: DPP nilai lain 11/12 × harga jual",
           "payer": "Konsumen akhir",
           "recipient": "Negara",
           "withholder": "PKP (Pengusaha Kena Pajak) sebagai pemungut",
@@ -8606,8 +8985,13 @@
           "legalBasis": [
             {
               "regulation": "PMK 131/2024",
-              "article": "Pasal 2",
+              "article": "Pasal 2-3",
               "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024"
+            },
+            {
+              "regulation": "PMK 11/2025",
+              "article": "Pasal 2-3 (DPP Nilai Lain & Besaran Tertentu PPN)",
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/313574"
             },
             {
               "regulation": "UU 7/2021 (HPP)",
@@ -8620,21 +9004,23 @@
             "ppn-10pct"
           ],
           "supersededBy": [],
-          "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.",
+          "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan: BKP mewah (terutang PPnBM — kapal pesiar/pesiar pribadi, pesawat udara pribadi, rumah HJE > Rp 30 Miliar pada penyerahan pertama kali) dikenai 12% atas DPP penuh; selain barang mewah DPP nilai lain 11/12 sehingga efektif 11%. PMK 11/2025 (ditetapkan & diundangkan 4 Februari 2025, diubah PMK 53/2025) menegaskan skema DPP Nilai Lain dan Besaran Tertentu PPN sebagai penerus PMK 121/2015. Ekspor tetap 0%.",
           "examples": [
             {
-              "scenario": "Penjualan BKP Rp 1.000.000",
-              "calculation": "PPN = 11% × Rp 1.000.000",
-              "result": "PPN = Rp 110.000"
+              "scenario": "Penjualan BKP selain barang mewah Rp 1.200.000",
+              "calculation": "DPP nilai lain = 11/12 × 1.200.000 = 1.100.000; PPN = 12% × 1.100.000",
+              "result": "PPN = Rp 132.000 (efektif 11% × 1.200.000)"
             }
           ],
           "tags": [
             "ppn",
             "tarif-efektif",
             "pmk-131-2024",
+            "pmk-11-2025",
+            "dpp-nilai-lain",
             "berlaku"
           ],
-          "lastVerified": "2026-05-26"
+          "lastVerified": "2026-08-28"
         },
         {
           "id": "ppn-11pct-2022",
@@ -9244,21 +9630,18 @@
     {
       "category": "PPnBM",
       "taxType": "PPnBM",
-      "description": "Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah",
+      "description": "Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah. Sejak UU HPP (1 April 2022) objek PPnBM hanya 3 kelompok barang: kapal pesiar/layar mewah, pesawat udara pribadi mewah, dan rumah mewah (HJE > Rp 30 miliar), semuanya dengan tarif tunggal 10%.",
       "serviceTypes": null,
       "entries": [
         {
           "id": "ppnbm-general",
           "category": "PPnBM",
           "taxType": "PPnBM",
-          "transactionType": "Penyerahan Barang Mewah",
-          "description": "Tarif PPnBM berkisar 10% sampai dengan 200% tergantung kelompok barang mewah yang diserahkan.",
+          "transactionType": "Penyerahan Barang Mewah (3 Objek PPnBM pasca-UU HPP)",
+          "description": "Sejak 1 April 2022 (UU HPP Pasal 8 ayat (2)), PPnBM hanya dikenakan atas 3 kelompok barang: (1) kapal layar, kapal pesiar pribadi, dan kapal pesiar mewah; (2) pesawat udara mewah yang digunakan perseorangan/keluarga (bukan angkutan umum); dan (3) rumah mewah, apartemen mewah, kondominium mewah, atau ruko mewah dengan HJE > Rp 30 miliar. Tarif tunggal 10% untuk seluruh objek.",
           "rate": {
-            "type": "range",
-            "value": [
-              10,
-              200
-            ]
+            "type": "percentage",
+            "value": 10
           },
           "taxBase": "DPP (Harga Jual / Penggantian / Nilai ekspor)",
           "payer": "Pembeli / konsumen",
@@ -9270,24 +9653,25 @@
           "legalBasis": [
             {
               "regulation": "UU 7/2021 (HPP)",
-              "article": "Pasal 8",
+              "article": "Pasal 8 ayat (2)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif spesifik ditetapkan per kelompok barang: sedan/station wagon 4x2 (10-75%), sedan 4x4 (10-75%), van/wagon >10 penumpang (10%), kapal pesiar (10-50%), pesawat pribadi (10-50%), rumah mewah (10-40%), perlengkapan mewah (10-200%).",
+          "notes": "UU HPP menghapus kendaraan bermotor (sedan, SUV, van/wagon) dan perlengkapan mewah (perhiasan, batu permata, barang seni) dari objek PPnBM sejak 1 April 2022. Objek yang tersisa hanya 3 kelompok di atas, seluruhnya dengan tarif tunggal 10% (tidak ada lagi rentang 10%-200%). Rumah mewah kena PPnBM hanya pada penyerahan pertama kali oleh pengembang (developer).",
           "tags": [
             "ppnbm",
             "barang-mewah",
+            "uu-hpp",
             "berlaku"
           ],
-          "lastVerified": "2026-05-26",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
-              "scenario": "Penyerahan Barang Mewah Rp 100.000.000",
-              "calculation": "Tarif 10%-200% × 100jt",
-              "result": "Pajak = Rp 10.000.000 - Rp 200.000.000"
+              "scenario": "Penyerahan kapal pesiar mewah Rp 100.000.000",
+              "calculation": "10% × 100.000.000",
+              "result": "PPnBM = Rp 10.000.000"
             }
           ]
         },
@@ -9295,8 +9679,8 @@
           "id": "ppnbm-sedan-station-wagon",
           "category": "PPnBM",
           "taxType": "PPnBM",
-          "transactionType": "Sedan dan Station Wagon 4x2",
-          "description": "PPnBM atas penyerahan sedan dan station wagon dengan sistem penggerak 4x2. Tarif bervariasi berdasarkan kapasitas silinder.",
+          "transactionType": "Sedan dan Station Wagon 4x2 (Historis - Pra-UU HPP)",
+          "description": "HISTORIS: PPnBM atas penyerahan sedan dan station wagon dengan sistem penggerak 4x2 (tarif bervariasi berdasarkan kapasitas silinder). Sejak 1 April 2022 kendaraan bermotor TIDAK dikenai PPnBM lagi karena UU HPP menghapus kelompok ini dari objek PPnBM.",
           "rate": {
             "type": "range",
             "value": [
@@ -9308,15 +9692,10 @@
           "payer": "Pembeli konsumen",
           "recipient": "Negara",
           "withholder": "PKP penjual/ATPM",
-          "effectiveFrom": "2022-04-01",
-          "effectiveTo": null,
-          "status": "berlaku",
+          "effectiveFrom": "2009-10-06",
+          "effectiveTo": "2022-03-31",
+          "status": "dicabut",
           "legalBasis": [
-            {
-              "regulation": "UU 7/2021 (HPP)",
-              "article": "Pasal 8",
-              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-            },
             {
               "regulation": "UU 42/2009",
               "article": "Pasal 8",
@@ -9324,21 +9703,24 @@
             }
           ],
           "supersedes": [],
-          "supersededBy": [],
-          "notes": "Tarif berdasarkan cc: ≤1.500cc = 10%, 1.500-2.500cc = 20%, 2.500-3.000cc = 30%, 3.000-4.000cc = 40%, >4.000cc = 40%.",
+          "supersededBy": [
+            "ppnbm-general"
+          ],
+          "notes": "Objek PPnBM di bawah rezim UU 42/2009. Tarif berdasarkan cc: ≤1.500cc = 10%, 1.500-2.500cc = 20%, 2.500-3.000cc = 30%, >3.000cc = 40%. UU HPP (Pasal 8 ayat (2)) menghapus kendaraan bermotor dari daftar objek PPnBM efektif 1 April 2022 - penyerahan sedan/station wagon sejak tanggal tersebut hanya kena PPN, bukan PPnBM.",
           "tags": [
             "ppnbm",
             "sedan",
             "station-wagon",
             "kendaraan",
-            "berlaku"
+            "dicabut",
+            "historis"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
-              "scenario": "Sedan dan Station Wagon 4x2 Rp 100.000.000",
-              "calculation": "Tarif 10%-40% × 100jt",
-              "result": "Pajak = Rp 10.000.000 - Rp 40.000.000"
+              "scenario": "HISTORIS (sebelum 1 April 2022): Sedan 4x2 2.000cc Rp 100.000.000",
+              "calculation": "Tarif 20% × 100jt (masa berlaku UU 42/2009)",
+              "result": "PPnBM = Rp 20.000.000. Sejak 1 April 2022: tidak kena PPnBM (Rp 0)"
             }
           ]
         },
@@ -9346,8 +9728,8 @@
           "id": "ppnbm-suv-4x4",
           "category": "PPnBM",
           "taxType": "PPnBM",
-          "transactionType": "Sedan dan Station Wagon 4x4 / SUV",
-          "description": "PPnBM atas penyerahan sedan, station wagon, dan SUV dengan sistem penggerak 4x4.",
+          "transactionType": "Sedan dan Station Wagon 4x4 / SUV (Historis - Pra-UU HPP)",
+          "description": "HISTORIS: PPnBM atas penyerahan sedan, station wagon, dan SUV dengan sistem penggerak 4x4. Sejak 1 April 2022 kendaraan bermotor TIDAK dikenai PPnBM lagi karena UU HPP menghapus kelompok ini dari objek PPnBM.",
           "rate": {
             "type": "range",
             "value": [
@@ -9359,15 +9741,10 @@
           "payer": "Pembeli konsumen",
           "recipient": "Negara",
           "withholder": "PKP penjual/ATPM",
-          "effectiveFrom": "2022-04-01",
-          "effectiveTo": null,
-          "status": "berlaku",
+          "effectiveFrom": "2009-10-06",
+          "effectiveTo": "2022-03-31",
+          "status": "dicabut",
           "legalBasis": [
-            {
-              "regulation": "UU 7/2021 (HPP)",
-              "article": "Pasal 8",
-              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-            },
             {
               "regulation": "UU 42/2009",
               "article": "Pasal 8",
@@ -9375,21 +9752,24 @@
             }
           ],
           "supersedes": [],
-          "supersededBy": [],
-          "notes": "Tarif lebih tinggi dari 4x2. ≤1.500cc = 10%, 1.500-2.500cc = 30%, 2.500-3.000cc = 50%, 3.000-4.000cc = 75%, >4.000cc = 75%.",
+          "supersededBy": [
+            "ppnbm-general"
+          ],
+          "notes": "Objek PPnBM di bawah rezim UU 42/2009. Tarif lebih tinggi dari 4x2: ≤1.500cc = 10%, 1.500-2.500cc = 30%, 2.500-3.000cc = 50%, >3.000cc = 75%. UU HPP (Pasal 8 ayat (2)) menghapus kendaraan bermotor dari daftar objek PPnBM efektif 1 April 2022 - SUV/4x4 sejak tanggal tersebut hanya kena PPN, bukan PPnBM.",
           "tags": [
             "ppnbm",
             "suv",
             "4x4",
             "kendaraan",
-            "berlaku"
+            "dicabut",
+            "historis"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
-              "scenario": "Sedan dan Station Wagon 4x4 / SUV Rp 100.000.000",
-              "calculation": "Tarif 10%-75% × 100jt",
-              "result": "Pajak = Rp 10.000.000 - Rp 75.000.000"
+              "scenario": "HISTORIS (sebelum 1 April 2022): SUV 4x4 3.500cc Rp 100.000.000",
+              "calculation": "Tarif 75% × 100jt (masa berlaku UU 42/2009)",
+              "result": "PPnBM = Rp 75.000.000. Sejak 1 April 2022: tidak kena PPnBM (Rp 0)"
             }
           ]
         },
@@ -9397,8 +9777,8 @@
           "id": "ppnbm-van-wagon",
           "category": "PPnBM",
           "taxType": "PPnBM",
-          "transactionType": "Van/Wagon > 10 Penumpang",
-          "description": "PPnBM atas penyerahan van dan wagon dengan kapasitas lebih dari 10 penumpang.",
+          "transactionType": "Van/Wagon > 10 Penumpang (Historis - Pra-UU HPP)",
+          "description": "HISTORIS: PPnBM atas penyerahan van dan wagon dengan kapasitas lebih dari 10 penumpang (tarif 10%). Sejak 1 April 2022 kendaraan bermotor TIDAK dikenai PPnBM lagi karena UU HPP menghapus kelompok ini dari objek PPnBM.",
           "rate": {
             "type": "percentage",
             "value": 10
@@ -9407,32 +9787,35 @@
           "payer": "Pembeli konsumen",
           "recipient": "Negara",
           "withholder": "PKP penjual/ATPM",
-          "effectiveFrom": "2022-04-01",
-          "effectiveTo": null,
-          "status": "berlaku",
+          "effectiveFrom": "2009-10-06",
+          "effectiveTo": "2022-03-31",
+          "status": "dicabut",
           "legalBasis": [
             {
-              "regulation": "UU 7/2021 (HPP)",
+              "regulation": "UU 42/2009",
               "article": "Pasal 8",
-              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
             }
           ],
           "supersedes": [],
-          "supersededBy": [],
-          "notes": "Tarif tetap 10% untuk van dan wagon > 10 penumpang.",
+          "supersededBy": [
+            "ppnbm-general"
+          ],
+          "notes": "Objek PPnBM di bawah rezim UU 42/2009 dengan tarif tetap 10% untuk van dan wagon > 10 penumpang. UU HPP (Pasal 8 ayat (2)) menghapus kendaraan bermotor dari daftar objek PPnBM efektif 1 April 2022.",
           "tags": [
             "ppnbm",
             "van",
             "minibus",
             "kendaraan",
-            "berlaku"
+            "dicabut",
+            "historis"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
-              "scenario": "Van/Wagon > 10 Penumpang Rp 100.000.000",
-              "calculation": "10% × 100.000.000",
-              "result": "Pajak = Rp 10.000.000"
+              "scenario": "HISTORIS (sebelum 1 April 2022): Van/Wagon > 10 penumpang Rp 100.000.000",
+              "calculation": "10% × 100.000.000 (masa berlaku UU 42/2009)",
+              "result": "PPnBM = Rp 10.000.000. Sejak 1 April 2022: tidak kena PPnBM (Rp 0)"
             }
           ]
         },
@@ -9441,13 +9824,10 @@
           "category": "PPnBM",
           "taxType": "PPnBM",
           "transactionType": "Kapal Pesiar dan Kapal Mewah",
-          "description": "PPnBM atas penyerahan kapal pesiar, kapal pesiar pribadi, dan kapal layar mewah yang panjangnya > 15 meter.",
+          "description": "PPnBM atas penyerahan kapal layar, kapal pesiar pribadi, dan kapal pesiar mewah. Tetap menjadi objek PPnBM pasca-UU HPP dengan tarif tunggal 10%.",
           "rate": {
-            "type": "range",
-            "value": [
-              10,
-              50
-            ]
+            "type": "percentage",
+            "value": 10
           },
           "taxBase": "DPP (Harga Jual/Penggantian)",
           "payer": "Pembeli konsumen",
@@ -9459,13 +9839,13 @@
           "legalBasis": [
             {
               "regulation": "UU 7/2021 (HPP)",
-              "article": "Pasal 8",
+              "article": "Pasal 8 ayat (2)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif 10-50% tergantung jenis dan ukuran kapal pesiar.",
+          "notes": "UU HPP menetapkan tarif tunggal 10% (tidak lagi rentang 10%-50% era UU 42/2009). Tersedia pengecualian PPnBM untuk kapal pesiar/yacht yang disewakan atau diperdagangkan dalam usaha pariwisata tertentu sesuai aturan pelaksana.",
           "tags": [
             "ppnbm",
             "kapal",
@@ -9473,12 +9853,12 @@
             "mewah",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
               "scenario": "Kapal Pesiar dan Kapal Mewah Rp 100.000.000",
-              "calculation": "Tarif 10%-50% × 100jt",
-              "result": "Pajak = Rp 10.000.000 - Rp 50.000.000"
+              "calculation": "10% × 100.000.000",
+              "result": "PPnBM = Rp 10.000.000"
             }
           ]
         },
@@ -9487,13 +9867,10 @@
           "category": "PPnBM",
           "taxType": "PPnBM",
           "transactionType": "Pesawat Udara Pribadi",
-          "description": "PPnBM atas penyerahan pesawat udara pribadi yang tidak digunakan untuk penerbangan komersial.",
+          "description": "PPnBM atas penyerahan pesawat udara mewah yang digunakan oleh perseorangan atau keluarga dan tidak digunakan untuk usaha angkutan umum. Tetap menjadi objek PPnBM pasca-UU HPP dengan tarif tunggal 10%.",
           "rate": {
-            "type": "range",
-            "value": [
-              10,
-              50
-            ]
+            "type": "percentage",
+            "value": 10
           },
           "taxBase": "DPP (Harga Jual/Penggantian)",
           "payer": "Pembeli konsumen",
@@ -9505,13 +9882,13 @@
           "legalBasis": [
             {
               "regulation": "UU 7/2021 (HPP)",
-              "article": "Pasal 8",
+              "article": "Pasal 8 ayat (2)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Tarif 10-50% tergantung jenis pesawat. Tidak termasuk pesawat udara untuk angkutan umum.",
+          "notes": "UU HPP menetapkan tarif tunggal 10% (tidak lagi rentang 10%-50% era UU 42/2009). Tidak termasuk pesawat udara untuk angkutan umum maupun untuk keperluan negara.",
           "tags": [
             "ppnbm",
             "pesawat",
@@ -9519,12 +9896,12 @@
             "mewah",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
               "scenario": "Pesawat Udara Pribadi Rp 100.000.000",
-              "calculation": "Tarif 10%-50% × 100jt",
-              "result": "Pajak = Rp 10.000.000 - Rp 50.000.000"
+              "calculation": "10% × 100.000.000",
+              "result": "PPnBM = Rp 10.000.000"
             }
           ]
         },
@@ -9533,13 +9910,10 @@
           "category": "PPnBM",
           "taxType": "PPnBM",
           "transactionType": "Rumah Mewah dan Apartemen Mewah",
-          "description": "PPnBM atas penyerahan rumah mewah, apartemen mewah, dan kondominium mewah yang luas bangunan > 350 m² dan harga jual > Rp 5 miliar.",
+          "description": "PPnBM atas penyerahan pertama kali rumah mewah, apartemen mewah, kondominium mewah, atau ruko mewah dengan Harga Jual Eceran (HJE) di atas Rp 30 miliar, dikenakan oleh pengembang (developer). Tarif tunggal 10%.",
           "rate": {
-            "type": "range",
-            "value": [
-              10,
-              40
-            ]
+            "type": "percentage",
+            "value": 10
           },
           "taxBase": "DPP (Harga Jual/Penggantian)",
           "payer": "Pembeli konsumen",
@@ -9551,13 +9925,13 @@
           "legalBasis": [
             {
               "regulation": "UU 7/2021 (HPP)",
-              "article": "Pasal 8",
+              "article": "Pasal 8 ayat (2)",
               "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
             }
           ],
           "supersedes": [],
           "supersededBy": [],
-          "notes": "Kategori rumah mewah: tipe 350 m² dan yang tergolong sangat mewah. Tarif 10-40%.",
+          "notes": "Ambang objek sejak UU HPP: HJE > Rp 30 miliar (bukan lagi Rp 5 miliar era UU 42/2009 atau Rp 20 miliar era PP 61/2020). PPnBM rumah mewah hanya dikenakan satu kali pada penyerahan pertama kali oleh pengembang kepada pihak pertama; penyerahan berikutnya atau penjualan rumah bekas tidak kena PPnBM. Tarif tunggal 10% (tidak lagi rentang 10%-40%).",
           "tags": [
             "ppnbm",
             "rumah",
@@ -9565,12 +9939,12 @@
             "properti-mewah",
             "berlaku"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
-              "scenario": "Rumah Mewah dan Apartemen Mewah Rp 100.000.000",
-              "calculation": "Tarif 10%-40% × 100jt",
-              "result": "Pajak = Rp 10.000.000 - Rp 40.000.000"
+              "scenario": "Penyerahan pertama kali rumah mewah HJE Rp 35.000.000.000 oleh pengembang",
+              "calculation": "10% × 35.000.000.000",
+              "result": "PPnBM = Rp 3.500.000.000"
             }
           ]
         },
@@ -9578,8 +9952,8 @@
           "id": "ppnbm-perlengkapan-mewah",
           "category": "PPnBM",
           "taxType": "PPnBM",
-          "transactionType": "Perlengkapan Mewah",
-          "description": "PPnBM atas penyerahan perlengkapan mewah seperti perhiasan, batu permata, keramik mewah, lukisan, dan barang seni.",
+          "transactionType": "Perlengkapan Mewah (Historis - Pra-UU HPP)",
+          "description": "HISTORIS: PPnBM atas penyerahan perlengkapan mewah seperti perhiasan, batu permata, keramik mewah, lukisan, dan barang seni. Sejak 1 April 2022 kelompok perlengkapan mewah TIDAK dikenai PPnBM lagi karena dihapus dari objek PPnBM oleh UU HPP.",
           "rate": {
             "type": "range",
             "value": [
@@ -9591,32 +9965,35 @@
           "payer": "Pembeli konsumen",
           "recipient": "Negara",
           "withholder": "PKP penjual",
-          "effectiveFrom": "2022-04-01",
-          "effectiveTo": null,
-          "status": "berlaku",
+          "effectiveFrom": "2009-10-06",
+          "effectiveTo": "2022-03-31",
+          "status": "dicabut",
           "legalBasis": [
             {
-              "regulation": "UU 7/2021 (HPP)",
+              "regulation": "UU 42/2009",
               "article": "Pasal 8",
-              "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+              "sourceUrl": "https://peraturan.bpk.go.id/Details/45861/uu-no-42-tahun-2009"
             }
           ],
           "supersedes": [],
-          "supersededBy": [],
-          "notes": "Tarif 10-200% untuk perlengkapan mewah. Perhiasan dan batu permata dikenakan tarif 10%. Senjata api dan amunisi non-tentara/sipil: 10-200%.",
+          "supersededBy": [
+            "ppnbm-general"
+          ],
+          "notes": "Objek PPnBM di bawah rezim UU 42/2009 (tarif 10%-200% tergantung jenis barang; perhiasan dan batu permata 10%). UU HPP (Pasal 8 ayat (2)) menghapus kelompok perlengkapan mewah dari daftar objek PPnBM efektif 1 April 2022 - perhiasan, batu permata, dan barang seni sejak tanggal tersebut tidak kena PPnBM.",
           "tags": [
             "ppnbm",
             "perlengkapan",
             "mewah",
             "perhiasan",
-            "berlaku"
+            "dicabut",
+            "historis"
           ],
-          "lastVerified": "2026-05-27",
+          "lastVerified": "2026-08-28",
           "examples": [
             {
-              "scenario": "Perlengkapan Mewah Rp 100.000.000",
-              "calculation": "Tarif 10%-200% × 100jt",
-              "result": "Pajak = Rp 10.000.000 - Rp 200.000.000"
+              "scenario": "HISTORIS (sebelum 1 April 2022): Perhiasan Rp 100.000.000",
+              "calculation": "Tarif 10% × 100jt (masa berlaku UU 42/2009)",
+              "result": "PPnBM = Rp 10.000.000. Sejak 1 April 2022: tidak kena PPnBM (Rp 0)"
             }
           ]
         }

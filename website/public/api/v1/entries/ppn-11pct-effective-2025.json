@@ -1,19 +1,19 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "ppn-11pct-effective-2025",
     "category": "PPN",
     "taxType": "PPN",
     "transactionType": "Penyerahan BKP/JKP dalam negeri",
-    "description": "Tarif PPN efektif 11% berdasarkan mekanisme PMK 131/2024. Tarif dasar UU HPP menetapkan PPN 12%, namun PMK 131/2024 menetapkan tarif efektif yang diperhitungkan sebagai 11/12 dari tarif dasar 12%.",
+    "description": "Tarif dasar PPN 12% berlaku 1 Januari 2025, namun 12% penuh hanya untuk BKP mewah (objek PPnBM: kapal pesiar/pesiar pribadi, pesawat udara pribadi, dan rumah dengan HJE > Rp 30 miliar). Untuk penyerahan BKP/JKP selain barang mewah, DPP menggunakan DPP nilai lain 11/12 dari harga jual sehingga beban efektif 11% (12% × 11/12). Mekanisme diatur PMK 131/2024 dan PMK 11/2025.",
     "rate": {
       "type": "percentage",
       "value": 11,
-      "effectiveRate": "11/12 × 12% = 11% (PMK 131/2024)"
+      "effectiveRate": "12% × 11/12 = 11% untuk selain barang mewah (PMK 131/2024 jo. PMK 11/2025); 12% penuh hanya BKP mewah"
     },
-    "taxBase": "Dasar Pengenaan Pajak (DPP) = Harga Jual/Penggantian/Uang muka/Nilai ekspor",
+    "taxBase": "Dasar Pengenaan Pajak (DPP) = Harga Jual/Penggantian/Uang muka/Nilai ekspor; selain barang mewah: DPP nilai lain 11/12 × harga jual",
     "payer": "Konsumen akhir",
     "recipient": "Negara",
     "withholder": "PKP (Pengusaha Kena Pajak) sebagai pemungut",
@@ -23,8 +23,13 @@
     "legalBasis": [
       {
         "regulation": "PMK 131/2024",
-        "article": "Pasal 2",
+        "article": "Pasal 2-3",
         "sourceUrl": "https://peraturan.go.id/id/pmk-no-131-tahun-2024"
+      },
+      {
+        "regulation": "PMK 11/2025",
+        "article": "Pasal 2-3 (DPP Nilai Lain & Besaran Tertentu PPN)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/313574"
       },
       {
         "regulation": "UU 7/2021 (HPP)",
@@ -37,21 +42,23 @@
       "ppn-10pct"
     ],
     "supersededBy": [],
-    "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan tarif efektif 11% (bukan 12%) melalui mekanisme perhitungan 11/12 × tarif dasar.",
+    "notes": "UU HPP menaikkan tarif PPN dari 10% menjadi 11% (2022) lalu 12% (2025+). PMK 131/2024 menetapkan: BKP mewah (terutang PPnBM — kapal pesiar/pesiar pribadi, pesawat udara pribadi, rumah HJE > Rp 30 Miliar pada penyerahan pertama kali) dikenai 12% atas DPP penuh; selain barang mewah DPP nilai lain 11/12 sehingga efektif 11%. PMK 11/2025 (ditetapkan & diundangkan 4 Februari 2025, diubah PMK 53/2025) menegaskan skema DPP Nilai Lain dan Besaran Tertentu PPN sebagai penerus PMK 121/2015. Ekspor tetap 0%.",
     "examples": [
       {
-        "scenario": "Penjualan BKP Rp 1.000.000",
-        "calculation": "PPN = 11% × Rp 1.000.000",
-        "result": "PPN = Rp 110.000"
+        "scenario": "Penjualan BKP selain barang mewah Rp 1.200.000",
+        "calculation": "DPP nilai lain = 11/12 × 1.200.000 = 1.100.000; PPN = 12% × 1.100.000",
+        "result": "PPN = Rp 132.000 (efektif 11% × 1.200.000)"
       }
     ],
     "tags": [
       "ppn",
       "tarif-efektif",
       "pmk-131-2024",
+      "pmk-11-2025",
+      "dpp-nilai-lain",
       "berlaku"
     ],
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-28",
     "relatedEntries": {
       "supersedes": [
         "ppn-11pct-2022",

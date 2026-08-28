@@ -1,26 +1,28 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pp-55-2022",
     "number": "55",
     "year": 2022,
-    "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterika atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
-    "shortName": "PP PPh UMKM 0,5% (Terbaru)",
+    "title": "PP tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan",
+    "shortName": "PP PPh UMKM 0,5%",
     "type": "PP",
-    "promulgationDate": "2022-12-22",
-    "effectiveDate": "2023-01-01",
+    "promulgationDate": "2022-12-20",
+    "effectiveDate": "2022-12-20",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/194769/pp-no-55-tahun-2022",
-    "status": "berlaku",
-    "description": "PP terbaru PPh UMKM. Tarif 0,5% final untuk peredaran bruto s.d. Rp 4,8 miliar (WP OP 0,25%). Menggantikan PP 23/2018.",
-    "relevantArticles": "Pasal 2, 3",
+    "status": "diubah_sebagian",
+    "description": "PP penyesuaian pengaturan PPh, antara lain PPh Final UMKM 0,5% untuk peredaran bruto s.d. Rp 4,8 miliar (termasuk membuka fasilitas bagi WP badan). Berlaku pada tanggal diundangkan, 20 Desember 2022. Diubah oleh PP 20/2026 (berlaku 22 April 2026), antara lain ketentuan UMKM: fasilitas 0,5% hanya untuk WP OP tanpa batas waktu; WP badan (PT/CV) tidak lagi memperoleh fasilitas.",
+    "relevantArticles": "Pasal 2, 3, Pasal 56-59 (UMKM)",
     "relatedRegulations": [
-      "pp-23-2018"
+      "pp-23-2018",
+      "pp-20-2026"
     ],
     "referencingEntries": [
       "bea-masuk-asean-atiga",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ]
   }
 }

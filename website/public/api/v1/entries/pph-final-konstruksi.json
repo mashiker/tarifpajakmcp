@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-final-konstruksi",
     "category": "PPh",
     "taxType": "PPh 4(2) Final",
     "transactionType": "Pekerjaan dan Jasa Konstruksi",
-    "description": "Pemotongan PPh Final atas penghasilan dari pekerjaan konstruksi, jasa perencanaan konstruksi, jasa pelaksanaan konstruksi, jasa pengawasan konstruksi, dan jasa konsultansi konstruksi sesuai PP 51/2008 jo. PP 40/2009.",
+    "description": "Pemotongan PPh Final atas penghasilan dari pekerjaan konstruksi dan jasa konsultansi konstruksi yang dilakukan penyedia jasa konstruksi, sesuai PP 51/2008 jo. PP 9/2022 (implementasi UU 7/2021 Pasal 4 ayat (2) huruf b), berlaku untuk penyerahan sejak masa pajak April 2022.",
     "rate": {
       "type": "range",
       "value": [
@@ -19,17 +19,13 @@
     "payer": "Penyedia jasa konstruksi",
     "recipient": "Negara",
     "withholder": "Pemberi kerja/pemilik proyek",
-    "effectiveFrom": "2009-07-01",
+    "effectiveFrom": "2021-02-02",
     "effectiveTo": null,
     "status": "berlaku",
     "legalBasis": [
       {
-        "regulation": "PP 51/2008",
-        "article": "Pasal 2-5"
-      },
-      {
-        "regulation": "PP 40/2009",
-        "article": "Pasal 2"
+        "regulation": "PP 51/2008 jo. PP 9/2022",
+        "article": "Pasal 43-44"
       },
       {
         "regulation": "UU 7/2021 (HPP)",
@@ -39,12 +35,12 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Terdiri dari 14 kode objek pajak BPPU dengan tarif 1.75%, 2.0%, 2.65%, 3.0%, 3.5%, 4.0%, 6.0%.",
+    "notes": "Struktur 7 tarif final konstruksi diatur PP 9/2022 (perubahan kedua atas PP 51/2008), pelaksana UU 7/2021 Pasal 40; berlaku sejak masa pajak April 2022. Sektor jasa konstruksinya sendiri (kualifikasi usaha, sertifikat) diatur PP 22/2020 jo. PP 14/2021. Kode objek pajak BPPU aktif 7 kode: 28-409-22 s.d. 28-409-28 dengan tarif 1,75% (kualifikasi kecil/perseorangan bersertifikat), 2,65% (selain kecil bersertifikat dan konstruksi terintegrasi bersertifikat), 3,5% (konsultansi bersertifikat), 4% (tanpa sertifikat badan usaha), dan 6% (konsultansi tanpa sertifikat). Kode lama era PP 51/2008 jo. PP 40/2009 (28-409-08 s.d. 28-409-14: perencanaan 4%/6%, pelaksanaan 2%/3%/4%, pengawasan 4%/6%) HISTORIS dan tidak dipakai lagi.",
     "examples": [
       {
-        "scenario": "Pekerjaan dan Jasa Konstruksi Rp 100.000.000",
-        "calculation": "Tarif 1.75%-6.0% × 100jt",
-        "result": "Pajak = Rp 1.750.000 - Rp 6.000.000"
+        "scenario": "Pekerjaan Konstruksi Rp 100.000.000 oleh penyedia jasa kualifikasi kecil bersertifikat",
+        "calculation": "1,75% × 100jt",
+        "result": "PPh Final = Rp 1.750.000"
       }
     ],
     "tags": [
@@ -86,44 +82,9 @@
         "kode": "28-409-28",
         "nama": "Jasa Konsultansi Konstruksi yang Dilakukan oleh Penyedia Jasa yang Tidak Memiliki Sertifikat Badan Usaha atau Sertifikat Kompetensi Kerja untuk Usaha Orang Perseorangan",
         "tarif": 6
-      },
-      {
-        "kode": "28-409-08",
-        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Dengan Kualifikasi Usaha)",
-        "tarif": 4
-      },
-      {
-        "kode": "28-409-09",
-        "nama": "Jasa Konstruksi Berupa Jasa Perencanaan Konstruksi (Tanpa Kualifikasi Usaha)",
-        "tarif": 6
-      },
-      {
-        "kode": "28-409-10",
-        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Kecil)",
-        "tarif": 2
-      },
-      {
-        "kode": "28-409-11",
-        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Kualifikasi Usaha Menengah dan Besar)",
-        "tarif": 3
-      },
-      {
-        "kode": "28-409-12",
-        "nama": "Jasa Konstruksi Berupa Jasa Pelaksanaan Konstruksi (Tanpa Kualifikasi Usaha)",
-        "tarif": 4
-      },
-      {
-        "kode": "28-409-13",
-        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Dengan Kualifikasi Usaha)",
-        "tarif": 4
-      },
-      {
-        "kode": "28-409-14",
-        "nama": "Jasa Konstruksi Berupa Jasa Pengawasan Konstruksi (Tanpa Kualifikasi Usaha)",
-        "tarif": 6
       }
     ],
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-28",
     "relatedEntries": {
       "sameCategory": [
         "pph-final-bunga-deposito",

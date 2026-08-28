@@ -1,0 +1,98 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-08-28T05:06:34.000Z",
+  "data": {
+    "id": "pph-umkm-05pct-op-pp20-2026",
+    "category": "PPh",
+    "taxType": "PPh UMKM",
+    "transactionType": "Penghasilan Usaha WP Orang Pribadi (Peredaran Bruto s.d. Rp 4,8 miliar) - PP 20/2026",
+    "description": "Tarif final PPh 0,5% atas penghasilan dari usaha WP Orang Pribadi dengan peredaran bruto sampai Rp 4,8 miliar per tahun, berlaku TANPA batas waktu berdasarkan PP 20/2026 yang merevisi PP 55/2022.",
+    "rate": {
+      "type": "percentage",
+      "value": 0.5
+    },
+    "taxBase": "Peredaran bruto (omzet) bulanan",
+    "payer": "WP Orang Pribadi pelaku UMKM",
+    "recipient": "Negara",
+    "withholder": null,
+    "effectiveFrom": "2026-04-22",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "PP 20/2026",
+        "article": "Pasal 1-3",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/349415/pp-no-20-tahun-2026"
+      },
+      {
+        "regulation": "PP 55/2022",
+        "article": "Pasal 2-3",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022"
+      },
+      {
+        "regulation": "UU 7/2021 (HPP)",
+        "article": "Pasal 4 ayat (2)",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      }
+    ],
+    "supersedes": [
+      "pph-umkm-05pct-2023"
+    ],
+    "supersededBy": [],
+    "notes": "PP 20/2026 (diundangkan dan berlaku 22 April 2026) merevisi PP 55/2022: (1) fasilitas PPh final 0,5% untuk WP Orang Pribadi berlaku tanpa batas waktu - batas masa 7 tahun dihapus; (2) WP badan berbentuk PT dan CV TIDAK LAGI mendapat fasilitas dan dikenai PPh tarif umum Pasal 17; (3) fasilitas utama tetap diberikan kepada WP OP, koperasi, dan PT perseorangan (pendiri perseorangan tunggal). Batas peredaran bruto tetap Rp 4,8 miliar/tahun; melebihi itu dikenai PPh tarif umum.",
+    "tags": [
+      "pph-umkm",
+      "final",
+      "0.5-persen",
+      "pp-20-2026",
+      "orang-pribadi",
+      "berlaku"
+    ],
+    "lastVerified": "2026-08-28",
+    "bppuKode": [
+      {
+        "kode": "28-423-01",
+        "nama": "Pemotongan atau pemungutan PPh atas  penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 23 Tahun 2018 atau Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0.5
+      },
+      {
+        "kode": "28-423-02",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 55 Tahun 2022.",
+        "tarif": 0
+      },
+      {
+        "kode": "28-423-03",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak orang pribadi yang memiliki peredaran bruto tertentu sesuai dengan PP 55 Tahun 2022 dengan peredaran usaha s.d Rp500.000.000,00.",
+        "tarif": 0.5
+      },
+      {
+        "kode": "28-423-12",
+        "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak yang memenuhi persyaratan tertentu untuk dikenai PPh yang bersifat final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0
+      },
+      {
+        "kode": "28-423-13",
+        "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+        "tarif": 0
+      }
+    ],
+    "examples": [
+      {
+        "scenario": "WP OP, omzet bulan Juni 2026 Rp 100.000.000",
+        "calculation": "0.5% × 100.000.000 (tanpa batas masa fasilitas per PP 20/2026)",
+        "result": "PPh Final = Rp 500.000"
+      }
+    ],
+    "relatedEntries": {
+      "supersedes": [
+        "pph-umkm-05pct-2023"
+      ],
+      "sameCategory": [
+        "pph-umkm-05pct-2023",
+        "pph-umkm-05pct-2018",
+        "pph-umkm-1pct-pp46"
+      ]
+    }
+  }
+}

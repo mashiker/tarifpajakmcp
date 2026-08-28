@@ -1,21 +1,19 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pajak-daerah-mineral-air",
     "category": "Pajak Daerah",
     "taxType": "Pajak Daerah",
     "transactionType": "Pajak MBLB",
-    "description": "Pajak atas eksploitasi mineral bukan logam/batuan.",
+    "description": "Pajak atas pengambilan/eksploitasi mineral bukan logam dan batuan. Tarif maksimum 20% dari nilai jual penghasilan (NJP) per Pasal 58 UU 1/2022.",
     "rate": {
-      "type": "range",
-      "value": [
-        5,
-        25
-      ]
+      "type": "percentage",
+      "value": 20,
+      "effectiveRate": "Tarif maksimum 20% (Pasal 58 UU 1/2022); besaran pastinya ditetapkan Perda"
     },
-    "taxBase": "NJP",
+    "taxBase": "NJP (Nilai Jual Penghasilan)",
     "payer": "WP Daerah",
     "recipient": "Pemerintah Daerah",
     "withholder": null,
@@ -25,13 +23,13 @@
     "legalBasis": [
       {
         "regulation": "UU 1/2022 (HKPD)",
-        "article": "Pasal 60",
+        "article": "Pasal 58",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
       }
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif 5-25% dari NJP.",
+    "notes": "Tarif maksimum 20% dari NJP (sebelumnya maks 25% era UU 28/2009). Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
     "examples": [
       {
         "scenario": "Penambangan pasir NJP Rp 100.000.000",

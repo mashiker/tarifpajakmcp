@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "category": "Pajak Daerah",
     "taxType": "PBB",
@@ -11,7 +11,7 @@
       {
         "id": "pbb-perkotaan",
         "transactionType": "PBB Perkotaan dan Perdesaan (PBB-P2)",
-        "rate": "0.01%–0.3%",
+        "rate": "0.1%–0.5%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null

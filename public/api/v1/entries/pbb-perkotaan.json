@@ -1,21 +1,21 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pbb-perkotaan",
     "category": "Pajak Daerah",
     "taxType": "PBB",
     "transactionType": "PBB Perkotaan dan Perdesaan (PBB-P2)",
-    "description": "Pajak Bumi dan Bangunan Perkotaan dan Perdesaan (PBB-P2) yang dikelola oleh Pemerintah Daerah sejak UU HKPD berlaku.",
+    "description": "Pajak Bumi dan Bangunan Perkotaan dan Perdesaan (PBB-P2) yang dikelola oleh Pemerintah Daerah sejak UU HKPD berlaku. Tarif ditetapkan Perda, paling tinggi 0,5%, berupa tarif progresif wajib dengan jumlah jenjang paling sedikit 3 dan paling banyak 10.",
     "rate": {
       "type": "range",
       "value": [
-        0.01,
-        0.3
+        0.1,
+        0.5
       ]
     },
-    "taxBase": "NJOP (Nilai Jual Objek Pajak) dikurangi NJOPTKP (minimum Rp 10.000.000)",
+    "taxBase": "NJOP (Nilai Jual Objek Pajak) dikurangi NJOPTKP (minimum Rp 10.000.000); DPP ditetapkan paling rendah 20% dan paling tinggi 100% dari NJOP kena pajak",
     "payer": "Pemilik/penguasaan/pemanfaat tanah dan bangunan",
     "recipient": "Pemerintah Daerah Kabupaten/Kota",
     "withholder": null,
@@ -25,20 +25,16 @@
     "legalBasis": [
       {
         "regulation": "UU 1/2022 (HKPD)",
-        "article": "Pasal 39-46",
+        "article": "Pasal 39-46 (tarif: Pasal 41)",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
-      },
-      {
-        "regulation": "UU 28/2009",
-        "article": "Pasal 1-5"
       }
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif PBB-P2 ditetapkan oleh Perda (Peraturan Daerah) antara 0,01% - 0,3% dari NJOP. NJOPTKP minimum Rp 10.000.000. Sejak UU HKPD, PBB-P2 menjadi pajak daerah yang sepenuhnya dikelola daerah.",
+    "notes": "Pasal 41 UU 1/2022: tarif PBB-P2 ditetapkan Perda paling tinggi 0,5% (naik dari maks 0,3% era UU 28/2009); khusus lahan yang digunakan untuk produksi pangan dan peternakan paling tinggi 0,1%. Tarif PBB-P2 wajib progresif dengan jumlah jenjang paling sedikit 3 dan paling banyak 10; jenjang pertama tidak lebih rendah dari 0,1% dan jenjang terakhir sama dengan tarif maksimum. Ketentuan tarif dan PBB-P2 UU 1/2022 berlaku penuh sejak 5 Januari 2025 (Pasal 127U). NJOPTKP minimum Rp 10.000.000 per WP.",
     "examples": [
       {
-        "scenario": "NJOP rumah Rp 500.000.000, tarif PBB 0,2%",
+        "scenario": "NJOP rumah Rp 500.000.000, tarif PBB 0,2% (jenjang Perda)",
         "calculation": "0,2% × (500.000.000 - 10.000.000)",
         "result": "PBB = Rp 980.000/tahun"
       }

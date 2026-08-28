@@ -1,49 +1,49 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "category": "PPnBM",
     "taxType": "PPnBM",
-    "description": "Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah",
+    "description": "Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah. Sejak UU HPP (1 April 2022) objek PPnBM hanya 3 kelompok barang: kapal pesiar/layar mewah, pesawat udara pribadi mewah, dan rumah mewah (HJE > Rp 30 miliar), semuanya dengan tarif tunggal 10%.",
     "count": 8,
     "entries": [
       {
         "id": "ppnbm-general",
-        "transactionType": "Penyerahan Barang Mewah",
-        "rate": "10%–200%",
-        "status": "berlaku",
-        "effectiveFrom": "2022-04-01",
-        "effectiveTo": null
-      },
-      {
-        "id": "ppnbm-sedan-station-wagon",
-        "transactionType": "Sedan dan Station Wagon 4x2",
-        "rate": "10%–40%",
-        "status": "berlaku",
-        "effectiveFrom": "2022-04-01",
-        "effectiveTo": null
-      },
-      {
-        "id": "ppnbm-suv-4x4",
-        "transactionType": "Sedan dan Station Wagon 4x4 / SUV",
-        "rate": "10%–75%",
-        "status": "berlaku",
-        "effectiveFrom": "2022-04-01",
-        "effectiveTo": null
-      },
-      {
-        "id": "ppnbm-van-wagon",
-        "transactionType": "Van/Wagon > 10 Penumpang",
+        "transactionType": "Penyerahan Barang Mewah (3 Objek PPnBM pasca-UU HPP)",
         "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-04-01",
         "effectiveTo": null
       },
       {
+        "id": "ppnbm-sedan-station-wagon",
+        "transactionType": "Sedan dan Station Wagon 4x2 (Historis - Pra-UU HPP)",
+        "rate": "10%–40%",
+        "status": "dicabut",
+        "effectiveFrom": "2009-10-06",
+        "effectiveTo": "2022-03-31"
+      },
+      {
+        "id": "ppnbm-suv-4x4",
+        "transactionType": "Sedan dan Station Wagon 4x4 / SUV (Historis - Pra-UU HPP)",
+        "rate": "10%–75%",
+        "status": "dicabut",
+        "effectiveFrom": "2009-10-06",
+        "effectiveTo": "2022-03-31"
+      },
+      {
+        "id": "ppnbm-van-wagon",
+        "transactionType": "Van/Wagon > 10 Penumpang (Historis - Pra-UU HPP)",
+        "rate": "10%",
+        "status": "dicabut",
+        "effectiveFrom": "2009-10-06",
+        "effectiveTo": "2022-03-31"
+      },
+      {
         "id": "ppnbm-kapal-pesiar",
         "transactionType": "Kapal Pesiar dan Kapal Mewah",
-        "rate": "10%–50%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-04-01",
         "effectiveTo": null
@@ -51,7 +51,7 @@
       {
         "id": "ppnbm-pesawat-pribadi",
         "transactionType": "Pesawat Udara Pribadi",
-        "rate": "10%–50%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-04-01",
         "effectiveTo": null
@@ -59,18 +59,18 @@
       {
         "id": "ppnbm-rumah-mewah",
         "transactionType": "Rumah Mewah dan Apartemen Mewah",
-        "rate": "10%–40%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-04-01",
         "effectiveTo": null
       },
       {
         "id": "ppnbm-perlengkapan-mewah",
-        "transactionType": "Perlengkapan Mewah",
+        "transactionType": "Perlengkapan Mewah (Historis - Pra-UU HPP)",
         "rate": "10%–200%",
-        "status": "berlaku",
-        "effectiveFrom": "2022-04-01",
-        "effectiveTo": null
+        "status": "dicabut",
+        "effectiveFrom": "2009-10-06",
+        "effectiveTo": "2022-03-31"
       }
     ]
   }

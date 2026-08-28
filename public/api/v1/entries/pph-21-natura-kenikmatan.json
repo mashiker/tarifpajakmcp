@@ -1,18 +1,19 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-21-natura-kenikmatan",
     "category": "PPh",
     "taxType": "PPh 21",
     "transactionType": "Natura/Kenikmatan dari Pemberi Kerja",
-    "description": "Pajak atas pemberian natura (barang) atau kenikmatan dari pemberi kerja kepada pegawai. Mulai 2024, pemberian natura/kenikmatan yang diberikan bukan oleh pemberi kerja (bukan BP) menjadi objek PPh 21 yang dipotong oleh penerima penghasilan.",
+    "description": "Perlakuan PPh 21 atas natura/kenikmatan. Natura/kenikmatan yang diberikan pemberi kerja kepada pegawai dikenai PPh 21 dengan cara digabungkan ke penghasilan bruto bulanan pegawai (dikenai TER bulanan, atau tarif Pasal 17 pada masa pajak terakhir). Natura/kenikmatan yang diberikan bukan oleh pemberi kerja sejak UU HPP juga menjadi objek PPh 21 dan dipotong pemberi penghasilan dengan tarif efektif yang sesuai (TER harian/bulanan).",
     "rate": {
-      "type": "percentage",
-      "value": 1
+      "type": "formula",
+      "value": "Tidak ada tarif tersendiri: nilai wajar natura/kenikmatan digabungkan ke penghasilan bruto penerima dan dikenai TER bulanan/harian atau tarif Pasal 17 sesuai status penerima",
+      "effectiveRate": "Mengikuti TER / Pasal 17 penerima (tidak ada tarif khusus natura)"
     },
-    "taxBase": "Nilai wajar natura/kenikmatan",
+    "taxBase": "Nilai wajar natura/kenikmatan yang digabungkan ke penghasilan bruto penerima",
     "payer": "Penerima natura/kenikmatan",
     "recipient": "Negara",
     "withholder": "Pemberi kerja",
@@ -33,7 +34,7 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Natura/kenikmatan dari pemberi kerja (BP) yang diberikan kepada pegawai: PPh ditanggung pemberi kerja (gross-up) atau dihitung dari nilai wajar. Natura dari bukan BP: 1% dari nilai wajar sebagai PPh yang dipotong sendiri oleh penerima.",
+    "notes": "Tidak ada tarif pemotongan khusus (termasuk tarif 1%) atas natura dalam PP 58/2023 maupun PMK 168/2023 — angka 1% pada data lama tidak berdasar. Natura dari pemberi kerja (kasus khusus berupa pemberian dengan tanda kurung siku sebesar jumlah rupiah tertentu tetap mengikuti aturan natura) digabungkan ke penghasilan bruto sehubungan dengan pekerjaan bulan bersangkutan, sehingga tarifnya adalah TER bulanan kategori pegawai bersangkutan (atau Pasal 17 pada masa pajak terakhir).",
     "tags": [
       "pph-21",
       "natura",
@@ -41,12 +42,12 @@
       "benefit-in-kind",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "examples": [
       {
-        "scenario": "Natura/Kenikmatan dari Pemberi Kerja Rp 100.000.000",
-        "calculation": "1% × 100.000.000",
-        "result": "Pajak = Rp 1.000.000"
+        "scenario": "Pegawai tetap TK/0 menerima gaji Rp 10.000.000 plus natura sebesar Rp 1.000.000 dalam satu bulan",
+        "calculation": "Bruto = Rp 10.000.000 + Rp 1.000.000 = Rp 11.000.000 → TER A lapisan di atas Rp 10.700.000 – Rp 11.050.000 = 3%",
+        "result": "PPh 21 = 3% × Rp 11.000.000 = Rp 330.000"
       }
     ],
     "relatedEntries": {

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-badan-go-public",
     "category": "PPh",
@@ -28,7 +28,7 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Syarat: saham diperdagangkan di bursa efek dan memenuhi persyaratan peraturan perundang-undangan di bidang pasar modal serta memenuhi syarat perbandingan antara saham yang dimiliki oleh pihak yang bukan pemegang saham pengendali dengan jumlah seluruh saham yang diserahkan.",
+    "notes": "Syarat: saham diperdagangkan di bursa efek dan memenuhi persyaratan peraturan perundang-undangan di bidang pasar modal serta memenuhi syarat perbandingan antara saham yang dimiliki oleh pihak yang bukan pemegang saham pengendali dengan jumlah seluruh saham yang diserahkan. UU HPP juga mengatur Pasal 31E: bagi WP badan yang melakukan penjualan saham pertama kali (IPO) sampai dengan akhir tahun pajak 2025, tarif PPh menurun 0,5% per tahun (mencapai minimum 18%) dengan syarat minimal 40% saham yang dimiliki pihak selain pemegang saham pengendali diperdagangkan di bursa efek - masa fasilitas penurunan ini sudah BERAKHIR (catatan historis) karena periode IPO s.d. akhir tahun pajak 2025 telah lewat.",
     "tags": [
       "pph-badan",
       "go-public",

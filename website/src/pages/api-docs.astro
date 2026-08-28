@@ -274,7 +274,8 @@ const apiBaseUrl = `${CANONICAL_ORIGIN}/api/`;
         <button id="api-copy-curl" class="btn-secondary">Copy curl</button>
       </div>
       <div id="api-response" class="code-block text-xs overflow-auto max-h-80">
-        <span class="text-[var(--text-tertiary)]">Select an endpoint and click Execute...</span>
+        {/* code-block selalu background gelap — teks di dalamnya pakai warna terang eksplisit, bukan token light-mode. */}
+        <span class="text-[#8B93A1]">Select an endpoint and click Execute...</span>
       </div>
     </div>
   </div>
@@ -292,7 +293,7 @@ const apiBaseUrl = `${CANONICAL_ORIGIN}/api/`;
         <div class="card-hover p-5">
           <div class="text-sm font-medium text-[var(--text)] mb-3">{uc.q}</div>
           <div class="code-block text-xs py-2.5">
-            <span class="text-emerald-400">$</span> {uc.cmd} <span class="text-[var(--text-secondary)]">{uc.hint}</span>
+            <span class="text-emerald-400">$</span> {uc.cmd} <span class="text-[#B6BCC6]">{uc.hint}</span>
           </div>
         </div>
       ))}
@@ -308,7 +309,7 @@ const apiBaseUrl = `${CANONICAL_ORIGIN}/api/`;
 
   btn?.addEventListener('click', async () => {
     const url = sel.value;
-    resp!.innerHTML = '<span class="text-[var(--text-tertiary)]">Loading...</span>';
+    resp!.innerHTML = '<span class="text-[#8B93A1]">Loading...</span>';
     try {
       const r = await fetch(url);
       const data = await r.json();

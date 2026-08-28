@@ -1,10 +1,10 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "year": 2025,
-    "count": 111,
+    "count": 110,
     "entries": [
       {
         "id": "bea-masuk-umum-mf",
@@ -93,16 +93,34 @@
         "transactionType": "Perolehan Hak atas Tanah/Bangunan (Umum)",
         "rate": "5%",
         "status": "berlaku",
-        "effectiveFrom": "2010-01-01",
+        "effectiveFrom": "2025-01-05",
         "effectiveTo": null
+      },
+      {
+        "id": "bphtb-perolehan-umum-era-uu-28-2009",
+        "taxType": "BPHTB",
+        "transactionType": "Perolehan Hak atas Tanah/Bangunan (Rejim UU 28/2009)",
+        "rate": "5%",
+        "status": "diubah",
+        "effectiveFrom": "2010-01-01",
+        "effectiveTo": "2025-01-04"
       },
       {
         "id": "bphtb-perolehan-waris",
         "taxType": "BPHTB",
-        "transactionType": "Perolehan Hak melalui Waris",
+        "transactionType": "Perolehan Hak melalui Waris / Hibah Wasiat",
         "rate": "5%",
         "status": "berlaku",
-        "effectiveFrom": "2010-01-01",
+        "effectiveFrom": "2025-01-05",
+        "effectiveTo": null
+      },
+      {
+        "id": "bphtb-hibah-sedarah-keturunan-lurus",
+        "taxType": "BPHTB",
+        "transactionType": "Hibah kepada Orang Pribadi Sedarah Garis Keturunan Lurus Satu Derajat",
+        "rate": "5%",
+        "status": "berlaku",
+        "effectiveFrom": "2025-01-05",
         "effectiveTo": null
       },
       {
@@ -118,34 +136,34 @@
         "id": "cukai-hasil-tembakau",
         "taxType": "Cukai",
         "transactionType": "Cukai Hasil Tembakau (Rokok)",
-        "rate": "Tarif spesifik + ad valorem",
+        "rate": "Tarif spesifik per batang sesuai jenis/golongan",
         "status": "berlaku",
-        "effectiveFrom": "2008-01-01",
+        "effectiveFrom": "2025-01-01",
         "effectiveTo": null
       },
       {
         "id": "cukai-eti-alkohol",
         "taxType": "Cukai",
-        "transactionType": "Cukai Etil Alkohol / MMEA",
-        "rate": "Tarif spesifik per liter",
+        "transactionType": "Cukai Etil Alkohol / MMEA / KMEA",
+        "rate": "Tarif spesifik per liter (per gram untuk KMEA padat)",
         "status": "berlaku",
-        "effectiveFrom": "2008-01-01",
+        "effectiveFrom": "2024-01-01",
         "effectiveTo": null
       },
       {
         "id": "cukai-ecigarette",
         "taxType": "Cukai",
-        "transactionType": "Cukai e-Cigarette / Heated Tobacco",
-        "rate": "Tarif ad valorem",
+        "transactionType": "Cukai Rokok Elektrik / Heated Tobacco",
+        "rate": "Tarif spesifik per gram / mililiter",
         "status": "berlaku",
-        "effectiveFrom": "2024-07-01",
+        "effectiveFrom": "2025-01-01",
         "effectiveTo": null
       },
       {
         "id": "pajak-daerah-hotel",
         "taxType": "Pajak Daerah",
         "transactionType": "Pajak Hotel",
-        "rate": "5%–10%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -154,7 +172,7 @@
         "id": "pajak-daerah-restoran",
         "taxType": "Pajak Daerah",
         "transactionType": "Pajak Restoran",
-        "rate": "5%–10%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -163,7 +181,7 @@
         "id": "pajak-daerah-hiburan",
         "taxType": "Pajak Daerah",
         "transactionType": "Pajak Hiburan",
-        "rate": "5%–35%",
+        "rate": "0%–10%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -181,7 +199,7 @@
         "id": "pajak-daerah-penerangan-jalan",
         "taxType": "Pajak Daerah",
         "transactionType": "Pajak Penerangan Jalan",
-        "rate": "1%–5%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -190,7 +208,7 @@
         "id": "pajak-daerah-mineral-air",
         "taxType": "Pajak Daerah",
         "transactionType": "Pajak MBLB",
-        "rate": "5%–25%",
+        "rate": "20%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -217,7 +235,7 @@
         "id": "pbb-perkotaan",
         "taxType": "PBB",
         "transactionType": "PBB Perkotaan dan Perdesaan (PBB-P2)",
-        "rate": "0.01%–0.3%",
+        "rate": "0.1%–0.5%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -289,7 +307,7 @@
         "id": "pph-21-pegawai-tidak-tetap",
         "taxType": "PPh 21",
         "transactionType": "Penghasilan Pegawai Tidak Tetap / Tenaga Kerja Lepas",
-        "rate": "Tarif Pasal 17 progresif dengan PTKP harian",
+        "rate": "0% untuk ≤ Rp 450.000/hari; 0,5% untuk > Rp 450.000 s.d. Rp 2.500.000/hari; tarif Pasal 17 (5%–35%) × DPP (50% × bruto sehari) untuk > Rp 2.500.000/hari",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null
@@ -307,7 +325,7 @@
         "id": "pph-21-natura-kenikmatan",
         "taxType": "PPh 21",
         "transactionType": "Natura/Kenikmatan dari Pemberi Kerja",
-        "rate": "1%",
+        "rate": "Tidak ada tarif tersendiri: nilai wajar natura/kenikmatan digabungkan ke penghasilan bruto penerima dan dikenai TER bulanan/harian atau tarif Pasal 17 sesuai status penerima",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null
@@ -324,7 +342,7 @@
       {
         "id": "pph-21-ter-a-detail",
         "taxType": "PPh 21",
-        "transactionType": "TER Kategori A (Tidak Menikah)",
+        "transactionType": "TER Kategori A (TK/0, TK/1, K/0)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -333,7 +351,7 @@
       {
         "id": "pph-21-ter-b-detail",
         "taxType": "PPh 21",
-        "transactionType": "TER Kategori B (Menikah 0-2 Tanggungan)",
+        "transactionType": "TER Kategori B (TK/2, TK/3, K/1, K/2)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -342,7 +360,7 @@
       {
         "id": "pph-21-ter-c-detail",
         "taxType": "PPh 21",
-        "transactionType": "TER Kategori C (Menikah 3+ Tanggungan)",
+        "transactionType": "TER Kategori C (K/3)",
         "rate": "Progresif",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
@@ -406,7 +424,7 @@
         "id": "pph-21-norma-pedagang",
         "taxType": "PPh 21",
         "transactionType": "Norma - Pedagang",
-        "rate": "15%",
+        "rate": "20%",
         "status": "berlaku",
         "effectiveFrom": "2002-01-01",
         "effectiveTo": null
@@ -415,7 +433,7 @@
         "id": "pph-21-norma-petani",
         "taxType": "PPh 21",
         "transactionType": "Norma - Petani/Peternak",
-        "rate": "25%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2002-01-01",
         "effectiveTo": null
@@ -424,7 +442,7 @@
         "id": "pph-21-norma-pengusaha-kecil",
         "taxType": "PPh 21",
         "transactionType": "Norma - Pengusaha Kecil Lainnya",
-        "rate": "25%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2002-01-01",
         "effectiveTo": null
@@ -432,8 +450,17 @@
       {
         "id": "pph-22-impor-2024",
         "taxType": "PPh 22",
-        "transactionType": "Impor Barang",
+        "transactionType": "Impor Barang (Umum)",
         "rate": "7.5%",
+        "status": "berlaku",
+        "effectiveFrom": "2024-01-01",
+        "effectiveTo": null
+      },
+      {
+        "id": "pph-22-impor-barang-tertentu",
+        "taxType": "PPh 22",
+        "transactionType": "Impor Barang Tertentu (Daftar PMK)",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2024-01-01",
         "effectiveTo": null
@@ -669,7 +696,7 @@
         "transactionType": "Pekerjaan dan Jasa Konstruksi",
         "rate": "1.75%–6%",
         "status": "berlaku",
-        "effectiveFrom": "2009-07-01",
+        "effectiveFrom": "2021-02-02",
         "effectiveTo": null
       },
       {
@@ -774,7 +801,7 @@
       {
         "id": "pph-badan-2022-plus",
         "taxType": "PPh Badan",
-        "transactionType": "Penghasilan Kena Pajak Badan (2022-2023)",
+        "transactionType": "Penghasilan Kena Pajak Badan (Tahun Pajak 2022 dan Seterusnya)",
         "rate": "22%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
@@ -792,7 +819,7 @@
       {
         "id": "pph-badan-umkm",
         "taxType": "PPh Badan",
-        "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar)",
+        "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto Tahun Sebelumnya ≤ Rp 50 miliar)",
         "rate": "11%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
@@ -819,11 +846,11 @@
       {
         "id": "pph-umkm-05pct-2023",
         "taxType": "PPh UMKM",
-        "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
+        "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022",
         "rate": "0.5%",
-        "status": "berlaku",
+        "status": "diubah",
         "effectiveFrom": "2023-01-01",
-        "effectiveTo": null
+        "effectiveTo": "2026-04-21"
       },
       {
         "id": "ppn-11pct-effective-2025",
@@ -936,34 +963,7 @@
       {
         "id": "ppnbm-general",
         "taxType": "PPnBM",
-        "transactionType": "Penyerahan Barang Mewah",
-        "rate": "10%–200%",
-        "status": "berlaku",
-        "effectiveFrom": "2022-04-01",
-        "effectiveTo": null
-      },
-      {
-        "id": "ppnbm-sedan-station-wagon",
-        "taxType": "PPnBM",
-        "transactionType": "Sedan dan Station Wagon 4x2",
-        "rate": "10%–40%",
-        "status": "berlaku",
-        "effectiveFrom": "2022-04-01",
-        "effectiveTo": null
-      },
-      {
-        "id": "ppnbm-suv-4x4",
-        "taxType": "PPnBM",
-        "transactionType": "Sedan dan Station Wagon 4x4 / SUV",
-        "rate": "10%–75%",
-        "status": "berlaku",
-        "effectiveFrom": "2022-04-01",
-        "effectiveTo": null
-      },
-      {
-        "id": "ppnbm-van-wagon",
-        "taxType": "PPnBM",
-        "transactionType": "Van/Wagon > 10 Penumpang",
+        "transactionType": "Penyerahan Barang Mewah (3 Objek PPnBM pasca-UU HPP)",
         "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-04-01",
@@ -973,7 +973,7 @@
         "id": "ppnbm-kapal-pesiar",
         "taxType": "PPnBM",
         "transactionType": "Kapal Pesiar dan Kapal Mewah",
-        "rate": "10%–50%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-04-01",
         "effectiveTo": null
@@ -982,7 +982,7 @@
         "id": "ppnbm-pesawat-pribadi",
         "taxType": "PPnBM",
         "transactionType": "Pesawat Udara Pribadi",
-        "rate": "10%–50%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-04-01",
         "effectiveTo": null
@@ -991,16 +991,7 @@
         "id": "ppnbm-rumah-mewah",
         "taxType": "PPnBM",
         "transactionType": "Rumah Mewah dan Apartemen Mewah",
-        "rate": "10%–40%",
-        "status": "berlaku",
-        "effectiveFrom": "2022-04-01",
-        "effectiveTo": null
-      },
-      {
-        "id": "ppnbm-perlengkapan-mewah",
-        "taxType": "PPnBM",
-        "transactionType": "Perlengkapan Mewah",
-        "rate": "10%–200%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-04-01",
         "effectiveTo": null

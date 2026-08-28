@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pp-60-2023",
     "number": "60",
@@ -9,19 +9,21 @@
     "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 22, Pasal 23, dan Pasal 26",
     "shortName": "PP Tarif PPh 22/23/26",
     "type": "PP",
-    "promulgationDate": "2023-12-11",
+    "promulgationDate": "2023-12-27",
     "effectiveDate": "2024-01-01",
     "sourceUrl": "https://peraturan.go.id/id/pp-no-60-tahun-2023",
     "status": "berlaku",
-    "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26.",
+    "description": "PP yang mengatur tarif pemotongan PPh Pasal 22 (impor, pembelian BUMN, bendaharawan, ekspor batubara, PMSE, kripto), PPh Pasal 23, dan PPh Pasal 26. Menggantikan PP 94/2010 untuk PPh 22 dan PP 14/2002 untuk PPh 23/26. Ditandatangani bersama PP 58/2023 pada 27 Desember 2023; tarif berlaku untuk masa pajak Januari 2024.",
     "relevantArticles": "Pasal 2 (PPh 22 impor/ekspor), Pasal 3 (PPh 22 pembelian/pengadaan), Pasal 4 (PPh 22 penjualan/PMSE/kripto), Pasal 5 (PPh 23 dan 26)",
     "relatedRegulations": [
       "pp-94-2010",
       "pp-14-2002"
     ],
     "referencingEntries": [
+      "cukai-eti-alkohol",
       "pph-21-shu-koperasi",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024",
       "pph-22-impor-api-produsen",

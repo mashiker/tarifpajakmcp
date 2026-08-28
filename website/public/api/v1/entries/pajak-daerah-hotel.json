@@ -1,19 +1,17 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pajak-daerah-hotel",
     "category": "Pajak Daerah",
     "taxType": "Pajak Daerah",
     "transactionType": "Pajak Hotel",
-    "description": "Pajak atas pelayanan hotel.",
+    "description": "Pajak atas pelayanan hotel. UU 1/2022 hanya menetapkan tarif maksimum 10% (tidak ada tarif minimum); besaran pastinya ditetapkan Perda.",
     "rate": {
-      "type": "range",
-      "value": [
-        5,
-        10
-      ]
+      "type": "percentage",
+      "value": 10,
+      "effectiveRate": "Tarif maksimum 10% (Pasal 58 UU 1/2022); Perda menetapkan s.d. 10%, umumnya 10% hotel berbintang"
     },
     "taxBase": "Penerimaan hotel",
     "payer": "WP Daerah",
@@ -25,13 +23,13 @@
     "legalBasis": [
       {
         "regulation": "UU 1/2022 (HKPD)",
-        "article": "Pasal 60",
+        "article": "Pasal 58 ayat (1)",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
       }
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif 5-10%. Umumnya 10% hotel berbintang.",
+    "notes": "Tarif maksimum 10% dari penerimaan. UU 1/2022 tidak menetapkan minimum; tarif ditetapkan Perda dalam koridor maksimum tersebut. Ketentuan PBJT UU 1/2022 berlaku penuh sejak 5 Januari 2023.",
     "examples": [
       {
         "scenario": "Hotel bintang 4 Rp 2.000.000/malam",

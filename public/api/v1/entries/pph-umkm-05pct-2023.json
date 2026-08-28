@@ -1,24 +1,24 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-umkm-05pct-2023",
     "category": "PPh",
     "taxType": "PPh UMKM",
-    "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
-    "description": "Tarif final PPh 0,5% atas penghasilan dari usaha yang diterima WP orang pribadi yang memiliki peredaran bruto tertentu, sesuai PP 55/2022.",
+    "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022",
+    "description": "HISTORIS (era PP 55/2022): Tarif final PPh 0,5% atas penghasilan dari usaha yang diterima WP orang pribadi maupun WP badan (PT/CV) dengan peredaran bruto tertentu. Berakhir untuk WP badan sejak 22 April 2026 melalui PP 20/2026; untuk WP OP fasilitas dilanjutkan tanpa batas waktu oleh PP 20/2026.",
     "rate": {
       "type": "percentage",
       "value": 0.5
     },
     "taxBase": "Peredaran bruto (omzet) bulanan",
-    "payer": "WP Orang Pribadi pelaku UMKM",
+    "payer": "WP Orang Pribadi dan WP Badan pelaku UMKM (masa PP 55/2022)",
     "recipient": "Negara",
     "withholder": null,
     "effectiveFrom": "2023-01-01",
-    "effectiveTo": null,
-    "status": "berlaku",
+    "effectiveTo": "2026-04-21",
+    "status": "diubah",
     "legalBasis": [
       {
         "regulation": "PP 55/2022",
@@ -34,13 +34,16 @@
     "supersedes": [
       "pph-umkm-05pct-2018"
     ],
-    "supersededBy": [],
-    "notes": "Masa berlaku 7 tahun sejak PP 55/2022. Batas peredaran bruto Rp 4,8 miliar/tahun. PP 55/2022 menggantikan PP 23/2018. Kini juga berlaku untuk WP badan (perubahan dari PP 23/2018).",
+    "supersededBy": [
+      "pph-umkm-05pct-op-pp20-2026"
+    ],
+    "notes": "PP 55/2022 memberikan fasilitas PPh final 0,5% dengan masa terbatas 7 tahun dan mencakup WP OP maupun WP badan (PT/CV). PP 20/2026 (berlaku 22 April 2026) merevisi PP 55/2022: (1) fasilitas WP Orang Pribadi tidak dibatasi masa berlaku (tidak ada lagi batas 7 tahun); (2) WP badan berbentuk PT dan CV TIDAK LAGI mendapat fasilitas PPh final 0,5% dan dikenai PPh tarif umum Pasal 17. Entri ini tetap relevan sebagai dasar untuk masa pajak s.d. 21 April 2026.",
     "tags": [
       "pph-umkm",
       "final",
       "0.5-persen",
-      "berlaku"
+      "diubah",
+      "historis"
     ],
     "lastVerified": "2026-05-26",
     "bppuKode": [
@@ -72,16 +75,20 @@
     ],
     "examples": [
       {
-        "scenario": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) Rp 100.000.000",
+        "scenario": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) Rp 100.000.000 (masa PP 55/2022, s.d. 21 April 2026)",
         "calculation": "0.5% × 100.000.000",
         "result": "Pajak = Rp 500.000"
       }
     ],
     "relatedEntries": {
+      "supersededBy": [
+        "pph-umkm-05pct-op-pp20-2026"
+      ],
       "supersedes": [
         "pph-umkm-05pct-2018"
       ],
       "sameCategory": [
+        "pph-umkm-05pct-op-pp20-2026",
         "pph-umkm-05pct-2018",
         "pph-umkm-1pct-pp46"
       ]

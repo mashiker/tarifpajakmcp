@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "category": "Pajak Daerah",
     "taxType": "Pajak Daerah",
@@ -11,7 +11,7 @@
       {
         "id": "pajak-daerah-hotel",
         "transactionType": "Pajak Hotel",
-        "rate": "5%–10%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -19,7 +19,7 @@
       {
         "id": "pajak-daerah-restoran",
         "transactionType": "Pajak Restoran",
-        "rate": "5%–10%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -27,7 +27,7 @@
       {
         "id": "pajak-daerah-hiburan",
         "transactionType": "Pajak Hiburan",
-        "rate": "5%–35%",
+        "rate": "0%–10%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -43,7 +43,7 @@
       {
         "id": "pajak-daerah-penerangan-jalan",
         "transactionType": "Pajak Penerangan Jalan",
-        "rate": "1%–5%",
+        "rate": "10%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null
@@ -51,7 +51,7 @@
       {
         "id": "pajak-daerah-mineral-air",
         "transactionType": "Pajak MBLB",
-        "rate": "5%–25%",
+        "rate": "20%",
         "status": "berlaku",
         "effectiveFrom": "2022-01-01",
         "effectiveTo": null

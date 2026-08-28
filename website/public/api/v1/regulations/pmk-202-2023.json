@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pmk-202-2023",
     "number": "202",
@@ -13,10 +13,12 @@
     "effectiveDate": "2024-01-01",
     "sourceUrl": "https://peraturan.bpk.go.id/Details/198352/pmk-no-202-tahun-2023",
     "status": "berlaku",
-    "description": "PMK menetapkan tarif cukai untuk rokok kretek, rokok putih, SIGARET (SKM, SKT, SP), dan e-cigarette / heated tobacco product berlaku tahun 2024.",
+    "description": "PMK menetapkan tarif cukai untuk rokok kretek, rokok putih, SIGARET (SKM, SKT, SP), dan e-cigarette / heated tobacco product berlaku tahun 2024. Untuk tahun 2025 tarif diperbarui (disamakan dengan 2024, dibekukan) melalui PMK 97/2024 (hasil tembakau) dan PMK 96/2024 (rokok elektrik/HPTL, mengganti skema ad valorem e-rokok menjadi tarif spesifik).",
     "relevantArticles": "Pasal 2, 3, 4",
     "relatedRegulations": [
-      "uu-39-2007"
+      "uu-39-2007",
+      "pmk-96-2024",
+      "pmk-97-2024"
     ],
     "referencingEntries": [
       "bea-meterai-dokumen-2021",
@@ -26,7 +28,10 @@
       "bea-meterai-nota-kredit",
       "bphtb-perolehan-umum",
       "bphtb-perolehan-waris",
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
+      "cukai-hasil-tembakau",
+      "cukai-eti-alkohol",
       "cukai-ecigarette",
       "pajak-daerah-hotel",
       "pajak-daerah-restoran",
@@ -60,6 +65,7 @@
       "pph-21-norma-petani",
       "pph-21-norma-pengusaha-kecil",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024",
       "pph-22-impor-api-produsen",
@@ -91,6 +97,7 @@
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-11pct-effective-2025",
       "ppn-11pct-2022",
       "ppn-ekspor-bkp",
@@ -103,13 +110,9 @@
       "ppn-jkpt-industri",
       "ppn-jasa-kegiatan-usaha-persewaan",
       "ppnbm-general",
-      "ppnbm-sedan-station-wagon",
-      "ppnbm-suv-4x4",
-      "ppnbm-van-wagon",
       "ppnbm-kapal-pesiar",
       "ppnbm-pesawat-pribadi",
-      "ppnbm-rumah-mewah",
-      "ppnbm-perlengkapan-mewah"
+      "ppnbm-rumah-mewah"
     ]
   }
 }

@@ -1,19 +1,16 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "ppnbm-rumah-mewah",
     "category": "PPnBM",
     "taxType": "PPnBM",
     "transactionType": "Rumah Mewah dan Apartemen Mewah",
-    "description": "PPnBM atas penyerahan rumah mewah, apartemen mewah, dan kondominium mewah yang luas bangunan > 350 m² dan harga jual > Rp 5 miliar.",
+    "description": "PPnBM atas penyerahan pertama kali rumah mewah, apartemen mewah, kondominium mewah, atau ruko mewah dengan Harga Jual Eceran (HJE) di atas Rp 30 miliar, dikenakan oleh pengembang (developer). Tarif tunggal 10%.",
     "rate": {
-      "type": "range",
-      "value": [
-        10,
-        40
-      ]
+      "type": "percentage",
+      "value": 10
     },
     "taxBase": "DPP (Harga Jual/Penggantian)",
     "payer": "Pembeli konsumen",
@@ -25,13 +22,13 @@
     "legalBasis": [
       {
         "regulation": "UU 7/2021 (HPP)",
-        "article": "Pasal 8",
+        "article": "Pasal 8 ayat (2)",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
       }
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Kategori rumah mewah: tipe 350 m² dan yang tergolong sangat mewah. Tarif 10-40%.",
+    "notes": "Ambang objek sejak UU HPP: HJE > Rp 30 miliar (bukan lagi Rp 5 miliar era UU 42/2009 atau Rp 20 miliar era PP 61/2020). PPnBM rumah mewah hanya dikenakan satu kali pada penyerahan pertama kali oleh pengembang kepada pihak pertama; penyerahan berikutnya atau penjualan rumah bekas tidak kena PPnBM. Tarif tunggal 10% (tidak lagi rentang 10%-40%).",
     "tags": [
       "ppnbm",
       "rumah",
@@ -39,12 +36,12 @@
       "properti-mewah",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "examples": [
       {
-        "scenario": "Rumah Mewah dan Apartemen Mewah Rp 100.000.000",
-        "calculation": "Tarif 10%-40% × 100jt",
-        "result": "Pajak = Rp 10.000.000 - Rp 40.000.000"
+        "scenario": "Penyerahan pertama kali rumah mewah HJE Rp 35.000.000.000 oleh pengembang",
+        "calculation": "10% × 35.000.000.000",
+        "result": "PPnBM = Rp 3.500.000.000"
       }
     ],
     "relatedEntries": {

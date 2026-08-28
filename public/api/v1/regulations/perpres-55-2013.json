@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "perpres-55-2013",
     "number": "55",
@@ -20,7 +20,8 @@
     ],
     "referencingEntries": [
       "bea-masuk-asean-atiga",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ]
   }
 }

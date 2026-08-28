@@ -1,19 +1,19 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-badan-umkm",
     "category": "PPh",
     "taxType": "PPh Badan",
-    "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar)",
-    "description": "Tarif PPh badan dikurangi sebesar 50% dari tarif normal (22% × 50% = 11%) untuk WP badan yang menerima peredaran bruto ≤ Rp 50 miliar. Fasilitas ini diberikan berdasarkan UU HPP Pasal 17 ayat (2).",
+    "transactionType": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto Tahun Sebelumnya ≤ Rp 50 miliar)",
+    "description": "Pengurangan tarif PPh badan sebesar 50% dari tarif normal 22% (tarif efektif 11%) yang diberikan HANYA atas Penghasilan Kena Pajak (PKP) dari bagian peredaran bruto sampai dengan Rp 4,8 miliar, dengan syarat peredaran bruto tahun sebelumnya tidak lebih dari Rp 50 miliar. PKP dari bagian peredaran bruto di atas Rp 4,8 miliar tetap kena tarif penuh 22%.",
     "rate": {
       "type": "percentage",
       "value": 11
     },
-    "taxBase": "Penghasilan Kena Pajak (PKP) badan",
-    "payer": "WP Badan UMKM (peredaran bruto ≤ Rp 50 miliar)",
+    "taxBase": "PKP dari bagian peredaran bruto s.d. Rp 4,8 miliar (tarif efektif 11%); sisa PKP kena tarif 22%",
+    "payer": "WP Badan UMKM (peredaran bruto tahun sebelumnya ≤ Rp 50 miliar)",
     "recipient": "Negara",
     "withholder": null,
     "effectiveFrom": "2022-01-01",
@@ -28,19 +28,24 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Penurunan tarif 50% berlaku untuk WP badan yang menerima peredaran bruto dari usaha ≤ Rp 50 miliar dalam tahun pajak sebelumnya. Tarif efektif = 22% × 50% = 11%.",
+    "notes": "Pasal 17 ayat (2) UU HPP: pengurangan tarif 50% (efektif 11% × tarif normal) berlaku PROPORSIONAL hanya atas PKP dari bagian peredaran bruto sampai Rp 4,8 miliar - BUKAN atas seluruh PKP. PKP dari bagian peredaran bruto di atas Rp 4,8 miliar dikenai tarif penuh 22%. Syarat: WP badan menerima peredaran bruto dari usaha tidak lebih dari Rp 50 miliar dalam tahun pajak sebelumnya (penyusutan PKP dilakukan secara proporsional terhadap perbandingan bagian peredaran bruto s.d. Rp 4,8 miliar terhadap seluruh peredaran bruto).",
     "tags": [
       "pph-badan",
       "umkm",
       "tarif-dikurangi",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "examples": [
       {
-        "scenario": "Penghasilan Kena Pajak Badan UMKM (Peredaran Bruto ≤ Rp 50 miliar) Rp 100.000.000",
+        "scenario": "PKP Rp 100.000.000 yang seluruhnya berasal dari bagian peredaran bruto s.d. Rp 4,8 miliar (omzet tahun sebelumnya ≤ Rp 50 miliar)",
         "calculation": "11% × 100.000.000",
         "result": "Pajak = Rp 11.000.000"
+      },
+      {
+        "scenario": "Peredaran bruto Rp 20 miliar dengan PKP Rp 2.000.000.000 (omzet tahun sebelumnya ≤ Rp 50 miliar)",
+        "calculation": "Bagian PKP dari peredaran bruto s.d. Rp 4,8 M = Rp 2 M × (4,8/20) = Rp 480.000.000 → 11% × 480jt = Rp 52.800.000; sisa PKP Rp 1.520.000.000 → 22% × 1,52 M = Rp 334.400.000",
+        "result": "Pajak = Rp 387.200.000 (bukan 11% × seluruh PKP)"
       }
     ],
     "relatedEntries": {

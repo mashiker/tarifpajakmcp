@@ -1,22 +1,22 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
-    "prefix": "24-103",
+    "prefix": "27-103",
     "count": 2,
     "codes": [
       {
-        "kode": "24-103-01",
-        "nama": "Royalti",
-        "tarif": 15,
+        "kode": "27-103-01",
+        "nama": "Royalti (PPh Pasal 26)",
+        "tarif": 20,
         "entryId": "pph-26-general-2024",
         "entryTransactionType": "Penghasilan WP Luar Negeri Umum"
       },
       {
-        "kode": "24-103-01",
-        "nama": "Royalti",
-        "tarif": 15,
+        "kode": "27-103-01",
+        "nama": "Royalti (PPh Pasal 26)",
+        "tarif": 20,
         "entryId": "pph-26-royalti",
         "entryTransactionType": "Royalti WP Luar Negeri"
       }

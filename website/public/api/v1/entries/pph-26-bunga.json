@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-26-bunga",
     "category": "PPh",
@@ -28,11 +28,16 @@
       {
         "regulation": "PP 60/2023",
         "article": "Pasal 5"
+      },
+      {
+        "regulation": "PER-23/PJ/2020",
+        "article": "Lampiran (kode objek pajak PPh Pasal 26)",
+        "sourceUrl": "https://pajak.go.id/sites/default/files/2021-01/Lampiran%20PER23PJ2020.pdf"
       }
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif P3B bervariasi untuk bunga: Singapura 15%, Jepang 10%, Belanda 10%, Hong Kong 10%. Bunga pinjaman luar negeri tertentu dapat dibebaskan berdasarkan P3B.",
+    "notes": "Tarif P3B bervariasi untuk bunga: Singapura 15%, Jepang 10%, Belanda 10%, Hong Kong 10%. Bunga pinjaman luar negeri tertentu dapat dibebaskan berdasarkan P3B. Kode objek pajak bukti potong PPh 26 atas bunga: 27-102-01 (kode 24-102-01 adalah kode PPh 23, bukan PPh 26).",
     "tags": [
       "pph-26",
       "bunga",
@@ -40,12 +45,12 @@
       "tax-treaty",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "bppuKode": [
       {
-        "kode": "24-102-01",
-        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
-        "tarif": 15
+        "kode": "27-102-01",
+        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2) (PPh Pasal 26)",
+        "tarif": 20
       }
     ],
     "examples": [

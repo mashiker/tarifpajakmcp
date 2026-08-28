@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "uu-42-2009",
     "number": "42",
@@ -26,7 +26,9 @@
       "ppn-tidak-kena-pajak",
       "ppn-jkpt-industri",
       "ppnbm-sedan-station-wagon",
-      "ppnbm-suv-4x4"
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon",
+      "ppnbm-perlengkapan-mewah"
     ]
   }
 }

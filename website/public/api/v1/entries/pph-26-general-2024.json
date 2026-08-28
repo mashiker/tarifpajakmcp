@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-26-general-2024",
     "category": "PPh",
@@ -24,38 +24,38 @@
         "regulation": "UU 7/2021 (HPP)",
         "article": "Pasal 26 ayat (1)",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+      },
+      {
+        "regulation": "PER-23/PJ/2020",
+        "article": "Lampiran (kode objek pajak PPh Pasal 26)",
+        "sourceUrl": "https://pajak.go.id/sites/default/files/2021-01/Lampiran%20PER23PJ2020.pdf"
       }
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif dapat berbeda berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/ tax treaty) antara Indonesia dan negara residen WP luar negeri.",
+    "notes": "Tarif dapat berbeda berdasarkan Perjanjian Penghindaran Pajak Berganda (P3B/ tax treaty) antara Indonesia dan negara residen WP luar negeri. Kode objek pajak PPh 26 pada bukti potong unifikasi: 27-101-01 (dividen), 27-102-01 (bunga selain yang dikenakan PPh Pasal 4 ayat (2)), 27-103-01 (royalti). Catatan: kode 24-101-xx/24-102-xx/24-103-xx adalah kode PPh 23, bukan PPh 26.",
     "tags": [
       "pph-26",
       "wp-luar-negeri",
       "tax-treaty",
       "berlaku"
     ],
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-28",
     "bppuKode": [
       {
-        "kode": "24-101-01",
-        "nama": "Dividen",
-        "tarif": 15
+        "kode": "27-101-01",
+        "nama": "Dividen (PPh Pasal 26)",
+        "tarif": 20
       },
       {
-        "kode": "24-102-01",
-        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2)",
-        "tarif": 15
+        "kode": "27-102-01",
+        "nama": "Bunga Selain yang Dikenakan PPh Pasal 4 ayat (2) (PPh Pasal 26)",
+        "tarif": 20
       },
       {
-        "kode": "24-103-01",
-        "nama": "Royalti",
-        "tarif": 15
-      },
-      {
-        "kode": "24-105-01",
-        "nama": "Bunga Pinjaman yang Diterima  Wajib Pajak Dalam Negeri dan Bentuk Usaha Tetap Melalui Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi",
-        "tarif": 0
+        "kode": "27-103-01",
+        "nama": "Royalti (PPh Pasal 26)",
+        "tarif": 20
       },
       {
         "kode": "28-413-01",

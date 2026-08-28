@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "group": "pph-umkm",
     "count": 3,
@@ -37,16 +37,18 @@
       },
       {
         "id": "pph-umkm-05pct-2023",
-        "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
+        "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022",
         "rate": "0.5%",
         "effectiveFrom": "2023-01-01",
-        "effectiveTo": null,
-        "status": "berlaku",
+        "effectiveTo": "2026-04-21",
+        "status": "diubah",
         "legalBasis": "PP 55/2022 Pasal 2-3; UU 7/2021 (HPP) Pasal 4 ayat (2)",
         "supersedes": [
           "pph-umkm-05pct-2018"
         ],
-        "supersededBy": []
+        "supersededBy": [
+          "pph-umkm-05pct-op-pp20-2026"
+        ]
       }
     ]
   }

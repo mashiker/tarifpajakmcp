@@ -1,0 +1,29 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-08-28T05:06:34.000Z",
+  "data": {
+    "id": "pmk-51-2025",
+    "number": "51",
+    "year": 2025,
+    "title": "PMK tentang Pemungutan Pajak Penghasilan Pasal 22 Sehubungan dengan Pembayaran atas Penyerahan Barang dan Kegiatan di Bidang Impor atau Kegiatan Usaha di Bidang Lain",
+    "shortName": "PMK PPh 22",
+    "type": "PMK",
+    "promulgationDate": "2025-07-28",
+    "effectiveDate": "2025-07-28",
+    "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-51-tahun-2025",
+    "status": "berlaku",
+    "description": "PMK pelaksana pemungutan PPh 22 (menggantikan PMK 34/PMK.010/2017 jo. PMK 41/PMK.010/2022 yang dicabut via PMK 81/2024 sejak 1 Januari 2025). Memuat daftar barang impor yang dikenai PPh 22: barang tertentu 10% (dengan/tanpa API), barang lainnya 7,5%, kedelai/gandum/tepung terigu 0,5%, dan daftar ekspor komoditas tambang.",
+    "relevantArticles": "Pasal 3-4, Lampiran",
+    "relatedRegulations": [
+      "pp-60-2023"
+    ],
+    "referencingEntries": [
+      "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
+      "pph-final-konstruksi",
+      "pph-final-transportasi",
+      "pph-final-migas"
+    ]
+  }
+}

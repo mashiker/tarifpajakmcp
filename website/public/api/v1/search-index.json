@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-11",
-  "entryCount": 136,
+  "version": "2026-08-28",
+  "entryCount": 140,
   "entries": {
     "bea-masuk-anti-dumping": [
       "10",
@@ -277,10 +277,50 @@
       "termasuk",
       "uu"
     ],
-    "bphtb-pengalihan-dinkes": [
-      "2009",
+    "bphtb-hibah-sedarah-keturunan-lurus": [
+      "000",
       "2022",
-      "28",
+      "60",
+      "80",
+      "anak",
+      "atas",
+      "ayat",
+      "berlaku",
+      "bphtb",
+      "cucu",
+      "daerah",
+      "dalam",
+      "derajat",
+      "garis",
+      "hibah",
+      "hkpd",
+      "hubungan",
+      "huruf",
+      "kakek",
+      "kepada",
+      "keturunan",
+      "keturunan-lurus",
+      "khusus",
+      "kurangnya",
+      "lurus",
+      "memiliki",
+      "nenek",
+      "npoptkp",
+      "orang",
+      "pajak",
+      "pasal",
+      "pribadi",
+      "rp",
+      "satu",
+      "sedarah",
+      "sekurang",
+      "tua",
+      "uu",
+      "uu-1-2022",
+      "yang"
+    ],
+    "bphtb-pengalihan-dinkes": [
+      "2022",
       "atas",
       "atau",
       "bangunan",
@@ -308,9 +348,9 @@
       "yang"
     ],
     "bphtb-perolehan-umum": [
-      "2009",
       "2022",
-      "28",
+      "5%",
+      "78",
       "atas",
       "atau",
       "bangunan",
@@ -321,16 +361,22 @@
       "daerah",
       "dalam",
       "dan",
+      "derajat",
+      "garis",
       "hadiah",
       "hak",
       "hakim",
       "hibah",
       "hkpd",
       "jual",
+      "keturunan",
       "lelang",
+      "lurus",
       "melalui",
       "menukar",
       "pajak",
+      "paling",
+      "pasal",
       "pelaksanaan",
       "peleburan",
       "pemasukan",
@@ -343,62 +389,140 @@
       "perolehan",
       "perseroan",
       "putusan",
+      "satu",
+      "sedarah",
+      "selain",
       "tanah",
+      "tarif",
+      "tinggi",
       "tukar",
       "umum",
       "usaha",
       "uu",
-      "waris"
+      "uu-1-2022",
+      "wasiat"
     ],
-    "bphtb-perolehan-waris": [
+    "bphtb-perolehan-umum-era-uu-28-2009": [
+      "000",
       "2009",
       "2022",
+      "2025",
       "28",
+      "80",
       "atas",
-      "atau",
       "bangunan",
+      "berakhir",
+      "berlaku",
+      "bphtb",
+      "daerah",
+      "dengan",
+      "era",
+      "hak",
+      "historis",
+      "hkpd",
+      "januari",
+      "ketentuan",
+      "npoptkp",
+      "pada",
+      "pajak",
+      "penuh",
+      "perolehan",
+      "perorangan",
+      "rejim",
+      "rp",
+      "saat",
+      "tanah",
+      "umum",
+      "untuk",
+      "uu",
+      "uu-28-2009"
+    ],
+    "bphtb-perolehan-waris": [
+      "000",
+      "2022",
+      "300",
+      "50%",
+      "83",
+      "atas",
       "berlaku",
       "bphtb",
       "daerah",
       "dan",
-      "diberikan",
+      "dari",
+      "fasilitas",
+      "fasilitas-50-persen",
       "hak",
+      "hanya",
+      "hibah",
+      "hibah-wasiat",
       "hkpd",
+      "kurangnya",
       "lebih",
       "melalui",
       "npoptkp",
       "pajak",
+      "pasal",
       "perolehan",
-      "tanah",
+      "plus",
+      "rp",
+      "sebesar",
+      "seharusnya",
+      "sekurang",
+      "terutang",
       "tinggi",
-      "untuk",
       "uu",
+      "uu-1-2022",
       "waris",
+      "wasiat",
       "yang"
     ],
     "cukai-ecigarette": [
-      "202",
-      "2023",
+      "2007",
       "2024",
+      "2025",
+      "39",
+      "96",
+      "ad",
       "atas",
+      "berdasarkan",
       "berlaku",
+      "berupa",
+      "cair",
       "cigarette",
       "cukai",
       "dan",
+      "dengan",
+      "dihapus",
       "e-cigarette",
       "ecigarette",
+      "elektrik",
+      "era",
+      "gram",
       "heated",
+      "januari",
       "liquid",
-      "pemanasan",
+      "mililiter",
+      "padat",
+      "per",
       "pmk",
-      "produk",
+      "pmk-96-2024",
+      "rokok",
       "sejak",
-      "tembakau",
+      "skema",
+      "spesifik",
+      "sudah",
+      "tarif",
+      "tarif-spesifik",
       "tobacco",
+      "uu",
+      "valorem",
       "vape"
     ],
     "cukai-eti-alkohol": [
+      "160",
       "2007",
+      "2023",
+      "2024",
       "39",
       "alkohol",
       "atas",
@@ -406,32 +530,60 @@
       "berlaku",
       "cukai",
       "dan",
+      "ea",
       "eti",
       "etil",
-      "golongan",
-      "kadar",
+      "gram",
+      "januari",
+      "kmea",
+      "konsentrat",
+      "liter",
+      "mengandung",
+      "minuman",
       "mmea",
+      "per",
+      "pmk",
+      "pmk-160-2023",
+      "sejak",
+      "spesifik",
       "tarif",
-      "uu"
+      "uu",
+      "yang"
     ],
     "cukai-hasil-tembakau": [
       "2007",
+      "2024",
+      "2025",
+      "2027",
       "39",
-      "ad",
+      "97",
       "atas",
+      "batang",
       "berdasarkan",
       "berlaku",
       "cukai",
+      "dan",
+      "dengan",
+      "dibekukan",
+      "dijamin",
+      "efektif",
+      "golongan",
       "hasil",
-      "kepmenkeu",
+      "januari",
+      "jenis",
+      "melalui",
+      "naik",
+      "per",
+      "pmk",
+      "pmk-97-2024",
       "rokok",
       "sesuai",
+      "skm",
       "spesifik",
-      "tahunan",
       "tarif",
       "tembakau",
-      "uu",
-      "valorem"
+      "tidak",
+      "uu"
     ],
     "pajak-daerah-air-tanah": [
       "2022",
@@ -448,44 +600,95 @@
       "uu"
     ],
     "pajak-daerah-hiburan": [
+      "10%",
       "2022",
+      "4%",
+      "40%",
+      "5%",
+      "75%",
       "atas",
+      "bar",
       "bioskop",
       "daerah",
+      "dan",
+      "dari",
+      "diberlakukan",
+      "diskotek",
       "dll",
+      "efektif",
       "hiburan",
       "hkpd",
+      "jasa",
       "karaoke",
+      "khusus",
+      "klab",
+      "maksimum",
+      "malam",
+      "mandi",
       "pajak",
       "pajak-daerah",
-      "pelayanan",
+      "paling",
+      "pertunjukan",
+      "rendah",
+      "sejenisnya",
+      "spa",
+      "tarif",
+      "tersebut",
+      "tertentu",
+      "tinggi",
+      "uap",
       "uu"
     ],
     "pajak-daerah-hotel": [
+      "10%",
       "2022",
+      "ada",
       "atas",
+      "besaran",
       "daerah",
+      "ditetapkan",
+      "hanya",
       "hkpd",
       "hotel",
+      "maksimum",
+      "menetapkan",
+      "minimum",
       "pajak",
       "pajak-daerah",
+      "pastinya",
       "pelayanan",
+      "perda",
+      "tarif",
+      "tidak",
       "uu"
     ],
     "pajak-daerah-mineral-air": [
+      "20%",
       "2022",
+      "58",
       "air",
       "atas",
       "batuan",
       "bukan",
       "daerah",
+      "dan",
+      "dari",
       "eksploitasi",
       "hkpd",
+      "jual",
       "logam",
+      "maksimum",
       "mblb",
       "mineral",
+      "nilai",
+      "njp",
       "pajak",
       "pajak-daerah",
+      "pasal",
+      "pengambilan",
+      "penghasilan",
+      "per",
+      "tarif",
       "uu"
     ],
     "pajak-daerah-parkir": [
@@ -501,18 +704,26 @@
       "uu"
     ],
     "pajak-daerah-penerangan-jalan": [
+      "10%",
       "2022",
+      "58",
       "atas",
       "daerah",
+      "dari",
       "hkpd",
       "jalan",
       "listrik",
+      "maksimum",
+      "nilai",
       "pajak",
       "pajak-daerah",
+      "pasal",
       "penerangan",
       "penggunaan",
       "pju",
       "ppj",
+      "tarif",
+      "tenaga",
       "uu"
     ],
     "pajak-daerah-reklame": [
@@ -527,16 +738,28 @@
       "uu"
     ],
     "pajak-daerah-restoran": [
+      "10%",
       "2022",
+      "ada",
       "atas",
+      "besaran",
       "daerah",
+      "ditetapkan",
+      "hanya",
       "hkpd",
       "makan",
+      "maksimum",
+      "menetapkan",
+      "minimum",
       "pajak",
       "pajak-daerah",
+      "pastinya",
       "pelayanan",
+      "perda",
       "restoran",
       "rumah",
+      "tarif",
+      "tidak",
       "uu"
     ],
     "pbb-kehutanan": [
@@ -584,27 +807,40 @@
       "yang"
     ],
     "pbb-perkotaan": [
-      "2009",
+      "10",
       "2022",
-      "28",
+      "5%",
       "bangunan",
+      "banyak",
       "berlaku",
+      "berupa",
       "bumi",
       "daerah",
       "dan",
+      "dengan",
       "dikelola",
+      "ditetapkan",
       "hkpd",
+      "jenjang",
+      "jumlah",
       "oleh",
       "p2",
       "pajak",
       "pajak-daerah",
+      "paling",
       "pbb",
       "pbb-p2",
       "pemerintah",
+      "perda",
       "perdesaan",
       "perkotaan",
+      "progresif",
+      "sedikit",
       "sejak",
+      "tarif",
+      "tinggi",
       "uu",
+      "wajib",
       "yang"
     ],
     "pbb-pertambangan": [
@@ -828,38 +1064,53 @@
     ],
     "pph-21-natura-kenikmatan": [
       "168",
+      "17",
       "2021",
       "2023",
-      "2024",
       "21",
       "atas",
       "atau",
-      "barang",
       "benefit-in-kind",
       "berlaku",
-      "bp",
+      "bruto",
       "bukan",
+      "bulanan",
+      "cara",
+      "dan",
       "dari",
+      "dengan",
       "diberikan",
+      "digabungkan",
+      "dikenai",
       "dipotong",
+      "efektif",
+      "harian",
       "hpp",
+      "juga",
+      "ke",
       "kenikmatan",
       "kepada",
       "kerja",
+      "masa",
       "menjadi",
-      "mulai",
       "natura",
       "objek",
       "oleh",
+      "pada",
       "pajak",
+      "pasal",
       "pegawai",
       "pemberi",
-      "pemberian",
-      "penerima",
       "penghasilan",
+      "perlakuan",
       "pmk",
       "pph",
       "pph-21",
+      "sejak",
+      "sesuai",
+      "tarif",
+      "ter",
+      "terakhir",
       "uu",
       "yang"
     ],
@@ -1031,13 +1282,12 @@
     ],
     "pph-21-norma-pedagang": [
       "04",
-      "15%",
+      "20%",
       "2002",
       "2022",
       "21",
       "43",
       "523",
-      "bebas",
       "berlaku",
       "bruto",
       "dari",
@@ -1048,13 +1298,14 @@
       "norma",
       "norma-penghitungan",
       "pedagang",
-      "pekerjaan",
       "penghasilan",
       "penghitungan",
+      "perdagangan",
       "pmk",
       "pph",
       "pph-21",
-      "untuk"
+      "untuk",
+      "usaha"
     ],
     "pph-21-norma-pengacara": [
       "04",
@@ -1115,13 +1366,12 @@
     ],
     "pph-21-norma-petani": [
       "04",
+      "10%",
       "2002",
       "2022",
       "21",
-      "25%",
       "43",
       "523",
-      "bebas",
       "berlaku",
       "bruto",
       "dari",
@@ -1131,34 +1381,44 @@
       "neto",
       "norma",
       "norma-penghitungan",
-      "pekerjaan",
       "penghasilan",
       "penghitungan",
+      "pertanian",
       "petani",
       "peternak",
+      "peternakan",
       "pmk",
       "pph",
       "pph-21",
-      "untuk"
+      "untuk",
+      "usaha"
     ],
     "pph-21-pegawai-tidak-tetap": [
+      "0%",
       "000",
       "168",
       "17",
       "2023",
+      "2023:",
       "21",
+      "450",
+      "5%",
+      "50%",
       "500",
       "58",
       "atas",
       "atau",
       "berlaku",
-      "dan",
-      "hari",
+      "borongan",
+      "bruto",
+      "di",
+      "dihitung",
+      "dpp",
+      "efektif",
       "harian",
-      "jika",
-      "kena",
       "kerja",
       "lepas",
+      "memakai",
       "menerima",
       "mingguan",
       "pasal",
@@ -1170,18 +1430,18 @@
       "pp",
       "pph",
       "pph-21",
-      "ptkp",
+      "rata",
       "rp",
       "satuan",
       "secara",
-      "sudah",
+      "sehari",
       "tarif",
       "tenaga",
       "tenaga-kerja-lepas",
-      "tertentu",
       "tetap",
       "tidak",
-      "waktu",
+      "untuk",
+      "upah",
       "yang"
     ],
     "pph-21-progressive-annual-2024": [
@@ -1492,114 +1752,122 @@
       "168",
       "2023",
       "21",
-      "25%",
-      "42",
+      "34%",
+      "44",
       "58",
       "berdasarkan",
       "berlaku",
+      "dan",
       "dari",
       "detail",
       "hingga",
+      "jo",
       "kategori",
-      "kawin",
+      "kelas",
       "lampiran",
       "lapisan",
       "lengkap",
-      "menikah",
       "pmk",
       "pp",
       "pph",
       "pph-21",
-      "punya",
+      "ptkp",
       "tabel",
-      "tanggungan",
       "tarif",
       "ter",
-      "tidak"
+      "tk"
     ],
     "pph-21-ter-b-detail": [
       "0%",
       "168",
       "2023",
       "21",
-      "25%",
-      "42",
+      "34%",
+      "40",
       "58",
       "berdasarkan",
       "berlaku",
+      "dan",
       "dari",
       "detail",
       "hingga",
+      "jo",
       "kategori",
-      "kawin",
+      "kelas",
       "lampiran",
       "lapisan",
       "lengkap",
-      "menikah",
       "pmk",
       "pp",
       "pph",
       "pph-21",
+      "ptkp",
       "tabel",
-      "tanggungan",
       "tarif",
-      "ter"
+      "ter",
+      "tk"
     ],
     "pph-21-ter-c-detail": [
       "0%",
       "168",
       "2023",
       "21",
-      "25%",
-      "3+",
-      "42",
+      "34%",
+      "41",
       "58",
       "berdasarkan",
       "berlaku",
       "dari",
       "detail",
       "hingga",
+      "jo",
       "kategori",
-      "kawin",
+      "kelas",
       "lampiran",
       "lapisan",
       "lengkap",
-      "menikah",
       "pmk",
       "pp",
       "pph",
       "pph-21",
+      "ptkp",
       "tabel",
-      "tanggungan",
       "tarif",
-      "ter",
-      "≥3"
+      "ter"
     ],
     "pph-21-ter-monthly-2024": [
+      "0%",
       "168",
       "2021",
       "2023",
       "2024",
       "21",
-      "42",
+      "34%",
+      "40",
+      "41",
+      "44",
       "58",
+      "annualized",
       "berlaku",
       "bulan",
       "bulanan",
+      "dan",
       "dari",
       "efektif",
       "gaji",
+      "hingga",
       "hpp",
       "januari",
-      "kategori:",
-      "kawin",
-      "lama",
+      "kategori",
+      "kelas",
       "lapisan",
-      "masing",
-      "memiliki",
+      "masa",
       "menggantikan",
+      "menurut",
       "metode",
       "monthly",
+      "pada",
+      "pajak",
       "pegawai",
       "pemotongan",
       "pmk",
@@ -1607,16 +1875,18 @@
       "pph",
       "pph-21",
       "progresif",
+      "ptkp:",
       "rata",
       "sejak",
-      "tanggungan",
+      "selain",
       "tarif",
       "ter",
+      "terakhir",
       "terdiri",
-      "tidak",
+      "tetap",
+      "tk",
       "untuk",
-      "uu",
-      "≥3"
+      "uu"
     ],
     "pph-22-bendaharawan": [
       "01",
@@ -1711,13 +1981,20 @@
     ],
     "pph-22-impor-2024": [
       "01",
+      "10%",
       "2021",
       "2023",
       "2024",
+      "2025",
       "22",
       "404",
+      "5%",
+      "51",
       "60",
+      "angka",
+      "api",
       "atas",
+      "atau",
       "barang",
       "batubara",
       "bea",
@@ -1726,32 +2003,44 @@
       "bersamaan",
       "bukan",
       "cukai",
+      "daftar",
       "dalam",
       "dan",
       "dengan",
+      "dikenai",
       "dilakukan",
       "direktorat",
       "ekspor",
       "eksportir",
       "hpp",
       "impor",
-      "instansi",
+      "importir",
       "jenderal",
       "kecuali",
       "kk",
       "komoditas",
       "logam",
       "masuk",
+      "menggunakan",
       "mineral",
       "oleh",
-      "pemerintah",
+      "pembayaran",
       "pemungutan",
+      "pengenal",
       "pkp2b",
+      "pmk",
       "pp",
       "pph",
       "pph-22",
+      "sepanjang",
       "tambang",
+      "tarif",
       "terikat",
+      "termasuk",
+      "tertentu",
+      "tidak",
+      "umum",
+      "untuk",
       "uu",
       "wp",
       "yang"
@@ -1759,6 +2048,7 @@
     "pph-22-impor-api-produsen": [
       "01",
       "02",
+      "10%",
       "200",
       "2021",
       "2023",
@@ -1770,6 +2060,8 @@
       "atas",
       "barang",
       "berlaku",
+      "daftar",
+      "dikenai",
       "dilakukan",
       "hpp",
       "impor",
@@ -1786,8 +2078,62 @@
       "pph-22",
       "produksi",
       "produsen",
+      "sepanjang",
+      "termasuk",
+      "tertentu",
+      "tidak",
       "umum",
       "untuk",
+      "uu",
+      "yang"
+    ],
+    "pph-22-impor-barang-tertentu": [
+      "10%",
+      "2021",
+      "2023",
+      "2025",
+      "22",
+      "51",
+      "60",
+      "antara",
+      "api",
+      "atas",
+      "baik",
+      "barang",
+      "barang-tertentu",
+      "bea",
+      "bea-cukai",
+      "berlaku",
+      "bermotor",
+      "bersamaan",
+      "daftar",
+      "dalam",
+      "dan",
+      "dari",
+      "dengan",
+      "dipungut",
+      "djbc",
+      "elektronik",
+      "hpp",
+      "impor",
+      "kendaraan",
+      "konsumsi",
+      "kosmetik",
+      "lain",
+      "masuk",
+      "maupun",
+      "menggunakan",
+      "nilai",
+      "parfum",
+      "pemungutan",
+      "pmk",
+      "pp",
+      "pph",
+      "pph-22",
+      "sebesar",
+      "tanpa",
+      "tercantum",
+      "tertentu",
       "uu",
       "yang"
     ],
@@ -3126,10 +3472,12 @@
     "pph-26-bunga": [
       "01",
       "102",
+      "2020",
       "2021",
       "2023",
-      "24",
+      "23",
       "26",
+      "27",
       "60",
       "atas",
       "ayat",
@@ -3143,6 +3491,8 @@
       "negeri",
       "pasal",
       "pemotongan",
+      "per",
+      "pj",
       "pp",
       "pph",
       "pph-26",
@@ -3201,10 +3551,12 @@
       "01",
       "101",
       "20%",
+      "2020",
       "2021",
       "2023",
-      "24",
+      "23",
       "26",
+      "27",
       "60",
       "atas",
       "berdasarkan",
@@ -3222,7 +3574,10 @@
       "namun",
       "negeri",
       "p3b",
+      "pasal",
       "pemotongan",
+      "per",
+      "pj",
       "pp",
       "pph",
       "pph-26",
@@ -3242,23 +3597,20 @@
       "101",
       "102",
       "103",
-      "105",
+      "2020",
       "2021",
       "2024",
-      "24",
+      "23",
       "26",
+      "27",
       "28",
       "413",
       "atas",
       "atau",
       "ayat",
-      "bentuk",
-      "berbasis",
       "berlaku",
       "bunga",
       "dagang",
-      "dalam",
-      "dan",
       "dari",
       "di",
       "dikenakan",
@@ -3269,32 +3621,24 @@
       "general",
       "hpp",
       "indonesia",
-      "informasi",
       "kantor",
       "kecuali",
-      "layanan",
       "luar",
-      "melalui",
-      "meminjam",
       "mempunyai",
       "negeri",
       "pajak",
       "pasal",
       "pemotongan",
       "penghasilan",
+      "per",
       "perwakilan",
-      "pinjam",
-      "pinjaman",
+      "pj",
       "pph",
       "pph-26",
       "royalti",
       "selain",
       "tax-treaty",
-      "teknologi",
-      "tetap",
-      "uang",
       "umum",
-      "usaha",
       "uu",
       "wajib",
       "wp",
@@ -3339,10 +3683,12 @@
     "pph-26-royalti": [
       "01",
       "103",
+      "2020",
       "2021",
       "2023",
-      "24",
+      "23",
       "26",
+      "27",
       "60",
       "atas",
       "berlaku",
@@ -3351,7 +3697,10 @@
       "kepada",
       "luar",
       "negeri",
+      "pasal",
       "pemotongan",
+      "per",
+      "pj",
       "pp",
       "pph",
       "pph-26",
@@ -3395,19 +3744,16 @@
     "pph-badan-2022-plus": [
       "2021",
       "2022",
-      "2023",
       "22%",
       "25%",
       "badan",
-      "belum",
       "bentuk",
       "berlaku",
       "dalam",
       "dan",
-      "dengan",
-      "ditentukan",
       "hpp",
       "kena",
+      "masih",
       "mulai",
       "negeri",
       "pajak",
@@ -3417,6 +3763,8 @@
       "pph-badan",
       "sampai",
       "sebelumnya",
+      "sekarang",
+      "seterusnya",
       "tahun",
       "tarif",
       "tarif-flat",
@@ -3424,8 +3772,7 @@
       "untuk",
       "usaha",
       "uu",
-      "wp",
-      "yang"
+      "wp"
     ],
     "pph-badan-go-public": [
       "17",
@@ -3581,40 +3928,46 @@
     ],
     "pph-badan-umkm": [
       "11%",
-      "17",
       "2021",
       "22%",
       "50",
       "50%",
-      "ayat",
+      "atas",
       "badan",
-      "berdasarkan",
+      "bagian",
       "berlaku",
       "bruto",
       "dari",
+      "dengan",
+      "di",
       "diberikan",
-      "dikurangi",
-      "fasilitas",
+      "efektif",
+      "hanya",
       "hpp",
-      "ini",
       "kena",
-      "menerima",
+      "lebih",
       "miliar",
       "normal",
       "pajak",
-      "pasal",
       "penghasilan",
+      "pengurangan",
+      "penuh",
       "peredaran",
+      "pkp",
       "pph",
       "pph-badan",
       "rp",
+      "sampai",
+      "sebelumnya",
       "sebesar",
+      "syarat",
+      "tahun",
       "tarif",
       "tarif-dikurangi",
+      "tetap",
+      "tidak",
       "umkm",
-      "untuk",
       "uu",
-      "wp",
       "yang"
     ],
     "pph-final-bunga-deposito": [
@@ -3839,16 +4192,9 @@
       "yang"
     ],
     "pph-final-konstruksi": [
-      "08",
-      "09",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14",
       "2008",
-      "2009",
       "2021",
+      "2022",
       "22",
       "23",
       "24",
@@ -3856,20 +4202,21 @@
       "26",
       "27",
       "28",
-      "40",
       "409",
       "51",
+      "april",
       "atas",
       "atau",
+      "ayat",
       "badan",
-      "berupa",
-      "besar",
+      "berlaku",
       "dan",
       "dari",
-      "dengan",
       "dilakukan",
       "final",
       "hpp",
+      "huruf",
+      "implementasi",
       "jasa",
       "jo",
       "kecil",
@@ -3878,25 +4225,25 @@
       "konstruksi",
       "konsultansi",
       "kualifikasi",
+      "masa",
       "memiliki",
-      "menengah",
       "oleh",
       "orang",
+      "pajak",
+      "pasal",
       "pekerjaan",
-      "pelaksanaan",
       "pemotongan",
-      "pengawasan",
       "penghasilan",
       "penyedia",
-      "perencanaan",
+      "penyerahan",
       "perseorangan",
       "pp",
       "pph",
       "pph-final",
+      "sejak",
       "selain",
       "sertifikat",
       "sesuai",
-      "tanpa",
       "terintegrasi",
       "tidak",
       "untuk",
@@ -4187,38 +4534,52 @@
       "05pct",
       "12",
       "13",
+      "20",
       "2018",
       "2021",
       "2022",
       "2023",
+      "2026",
+      "22",
       "23",
       "28",
       "423",
       "5%",
       "55",
+      "april",
       "atas",
       "atau",
+      "badan",
       "barang",
-      "berlaku",
+      "batas",
+      "berakhir",
       "bersifat",
       "bruto",
+      "cv",
       "dari",
       "dengan",
       "di",
       "dikenai",
       "dilakukan",
+      "dilanjutkan",
       "diterima",
+      "diubah",
+      "era",
       "fasilitas",
       "final",
+      "historis",
       "hpp",
       "ikn",
       "jasa",
+      "maupun",
+      "melalui",
       "memanfaatkan",
       "memenuhi",
       "memiliki",
       "miliar",
       "nomor",
       "oleh",
+      "op",
       "orang",
       "pajak",
       "pembelian",
@@ -4235,10 +4596,13 @@
       "pph",
       "pph-umkm",
       "pribadi",
+      "pt",
       "rp",
       "rp500",
+      "sejak",
       "sesuai",
       "tahun",
+      "tanpa",
       "tarif",
       "tertentu",
       "transaksi",
@@ -4247,6 +4611,92 @@
       "usaha",
       "uu",
       "wajib",
+      "waktu",
+      "wp",
+      "yang"
+    ],
+    "pph-umkm-05pct-op-pp20-2026": [
+      "0%",
+      "0.5-persen",
+      "00",
+      "000",
+      "01",
+      "02",
+      "03",
+      "05pct",
+      "12",
+      "13",
+      "20",
+      "2018",
+      "2021",
+      "2022",
+      "2026",
+      "23",
+      "28",
+      "423",
+      "5%",
+      "55",
+      "atas",
+      "atau",
+      "barang",
+      "batas",
+      "berdasarkan",
+      "berlaku",
+      "bersifat",
+      "bruto",
+      "dari",
+      "dengan",
+      "di",
+      "dikenai",
+      "dilakukan",
+      "fasilitas",
+      "final",
+      "hpp",
+      "ikn",
+      "jasa",
+      "memanfaatkan",
+      "memenuhi",
+      "memiliki",
+      "merevisi",
+      "miliar",
+      "nomor",
+      "oleh",
+      "op",
+      "orang",
+      "orang-pribadi",
+      "pajak",
+      "pembelian",
+      "pemerintah",
+      "pemotongan",
+      "pemungutan",
+      "penghasilan",
+      "penjualan",
+      "penyerahan",
+      "per",
+      "peraturan",
+      "peredaran",
+      "persyaratan",
+      "pp",
+      "pp-20-2026",
+      "pp20",
+      "pph",
+      "pph-umkm",
+      "pribadi",
+      "rp",
+      "rp500",
+      "sampai",
+      "sesuai",
+      "tahun",
+      "tanpa",
+      "tarif",
+      "tertentu",
+      "transaksi",
+      "umkm",
+      "untuk",
+      "usaha",
+      "uu",
+      "wajib",
+      "waktu",
       "wp",
       "yang"
     ],
@@ -4337,30 +4787,57 @@
       "2021",
       "2024",
       "2025",
-      "berdasarkan",
+      "30",
+      "barang",
+      "beban",
       "berlaku",
       "bkp",
       "dalam",
+      "dan",
       "dari",
       "dasar",
-      "diperhitungkan",
+      "dengan",
+      "diatur",
+      "dpp",
+      "dpp-nilai-lain",
       "efektif",
       "effective",
+      "hanya",
+      "harga",
+      "hje",
       "hpp",
+      "januari",
       "jkp",
+      "jual",
+      "kapal",
+      "lain",
       "mekanisme",
-      "menetapkan",
+      "menggunakan",
+      "mewah",
+      "miliar",
       "namun",
       "negeri",
+      "nilai",
+      "objek",
+      "penuh",
       "penyerahan",
+      "pesawat",
+      "pesiar",
       "pmk",
+      "pmk-11-2025",
       "pmk-131-2024",
       "ppn",
-      "sebagai",
+      "ppnbm:",
+      "pribadi",
+      "rp",
+      "rumah",
+      "sehingga",
+      "selain",
       "tarif",
       "tarif-efektif",
-      "uu",
-      "yang"
+      "udara",
+      "untuk",
+      "uu"
     ],
     "ppn-dpp-penghitungan": [
       "1983",
@@ -4638,171 +5115,296 @@
     ],
     "ppnbm-general": [
       "10%",
-      "200%",
       "2021",
+      "2022",
+      "30",
+      "angkutan",
+      "apartemen",
+      "april",
+      "atas",
+      "atau",
+      "ayat",
       "barang",
       "barang-mewah",
-      "berkisar",
+      "barang:",
       "berlaku",
+      "bukan",
+      "dan",
       "dengan",
-      "diserahkan",
+      "digunakan",
+      "dikenakan",
       "general",
+      "hanya",
+      "hje",
       "hpp",
+      "kapal",
       "kelompok",
+      "keluarga",
+      "kondominium",
+      "layar",
       "mewah",
+      "miliar",
+      "objek",
+      "pasal",
+      "pasca",
       "penyerahan",
+      "perseorangan",
+      "pesawat",
+      "pesiar",
       "ppnbm",
-      "sampai",
+      "pribadi",
+      "rp",
+      "ruko",
+      "rumah",
+      "sejak",
+      "seluruh",
       "tarif",
-      "tergantung",
+      "tunggal",
+      "udara",
+      "umum",
+      "untuk",
       "uu",
+      "uu-hpp",
       "yang"
     ],
     "ppnbm-kapal-pesiar": [
-      "15",
+      "10%",
       "2021",
       "atas",
       "berlaku",
       "dan",
+      "dengan",
       "hpp",
       "kapal",
       "layar",
-      "meter",
+      "menjadi",
       "mewah",
-      "panjangnya",
+      "objek",
+      "pasca",
       "penyerahan",
       "pesiar",
       "ppnbm",
       "pribadi",
-      "uu",
-      "yang"
+      "tarif",
+      "tetap",
+      "tunggal",
+      "uu"
     ],
     "ppnbm-perlengkapan-mewah": [
-      "2021",
+      "2009",
+      "2022",
+      "42",
+      "april",
       "atas",
       "barang",
       "batu",
-      "berlaku",
       "dan",
+      "dari",
+      "dicabut",
+      "dihapus",
+      "dikenai",
+      "historis",
+      "historis:",
       "hpp",
+      "karena",
+      "kelompok",
       "keramik",
+      "lagi",
       "lukisan",
       "mewah",
+      "objek",
+      "oleh",
       "penyerahan",
       "perhiasan",
       "perlengkapan",
       "permata",
       "ppnbm",
+      "pra",
+      "sejak",
       "seni",
       "seperti",
+      "tidak",
       "uu"
     ],
     "ppnbm-pesawat-pribadi": [
+      "10%",
       "2021",
+      "angkutan",
       "atas",
+      "atau",
       "berlaku",
+      "dan",
+      "dengan",
       "digunakan",
       "hpp",
-      "komersial",
+      "keluarga",
+      "menjadi",
       "mewah",
-      "penerbangan",
+      "objek",
+      "oleh",
+      "pasca",
       "penyerahan",
+      "perseorangan",
       "pesawat",
       "ppnbm",
       "pribadi",
+      "tarif",
+      "tetap",
       "tidak",
+      "tunggal",
       "udara",
+      "umum",
       "untuk",
+      "usaha",
       "uu",
       "yang"
     ],
     "ppnbm-rumah-mewah": [
+      "10%",
       "2021",
-      "350",
+      "30",
       "apartemen",
       "atas",
-      "bangunan",
+      "atau",
       "berlaku",
       "dan",
+      "dengan",
+      "developer",
+      "di",
+      "dikenakan",
+      "eceran",
       "harga",
+      "hje",
       "hpp",
       "jual",
+      "kali",
       "kondominium",
-      "luas",
       "mewah",
       "miliar",
-      "m²",
+      "oleh",
+      "pengembang",
       "penyerahan",
+      "pertama",
       "ppnbm",
       "properti-mewah",
       "rp",
+      "ruko",
       "rumah",
-      "uu",
-      "yang"
+      "tarif",
+      "tunggal",
+      "uu"
     ],
     "ppnbm-sedan-station-wagon": [
       "2009",
-      "2021",
+      "2022",
       "42",
       "4x2",
+      "april",
       "atas",
       "berdasarkan",
-      "berlaku",
+      "bermotor",
       "bervariasi",
       "dan",
+      "dari",
       "dengan",
+      "dicabut",
+      "dikenai",
+      "historis",
+      "historis:",
       "hpp",
+      "ini",
       "kapasitas",
+      "karena",
+      "kelompok",
       "kendaraan",
+      "lagi",
+      "menghapus",
+      "objek",
       "penggerak",
       "penyerahan",
       "ppnbm",
+      "pra",
       "sedan",
+      "sejak",
       "silinder",
       "sistem",
       "station",
       "station-wagon",
       "tarif",
+      "tidak",
       "uu",
       "wagon"
     ],
     "ppnbm-suv-4x4": [
       "2009",
-      "2021",
+      "2022",
       "42",
       "4x4",
+      "april",
       "atas",
-      "berlaku",
+      "bermotor",
       "dan",
+      "dari",
       "dengan",
+      "dicabut",
+      "dikenai",
+      "historis",
+      "historis:",
       "hpp",
+      "ini",
+      "karena",
+      "kelompok",
       "kendaraan",
+      "lagi",
+      "menghapus",
+      "objek",
       "penggerak",
       "penyerahan",
       "ppnbm",
+      "pra",
       "sedan",
+      "sejak",
       "sistem",
       "station",
       "suv",
+      "tidak",
       "uu",
       "wagon"
     ],
     "ppnbm-van-wagon": [
       "10",
-      "2021",
+      "10%",
+      "2009",
+      "2022",
+      "42",
+      "april",
       "atas",
-      "berlaku",
+      "bermotor",
       "dan",
       "dari",
       "dengan",
+      "dicabut",
+      "dikenai",
+      "historis",
+      "historis:",
       "hpp",
+      "ini",
       "kapasitas",
+      "karena",
+      "kelompok",
       "kendaraan",
+      "lagi",
       "lebih",
+      "menghapus",
       "minibus",
+      "objek",
       "penumpang",
       "penyerahan",
       "ppnbm",
+      "pra",
+      "sejak",
+      "tarif",
+      "tidak",
       "uu",
       "van",
       "wagon"
@@ -4819,6 +5421,7 @@
       "bea-meterai-nota-kredit",
       "bea-meterai-pre2021",
       "bea-meterai-surat-berharga",
+      "pbb-perkotaan",
       "pph-21-progressive-uulama1994",
       "pph-21-ptkp-1995",
       "pph-22-penjualan-barang-2024",
@@ -4827,7 +5430,6 @@
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y",
       "pph-final-bunga-deposito",
-      "pph-final-konstruksi",
       "ppnbm-van-wagon"
     ],
     "11": [
@@ -4835,7 +5437,6 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-final-bunga-deposito",
-      "pph-final-konstruksi",
       "ppn-11pct-effective-2025"
     ],
     "12": [
@@ -4843,8 +5444,8 @@
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-final-konstruksi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-11pct-effective-2025"
     ],
     "13": [
@@ -4853,14 +5454,13 @@
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-final-konstruksi",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "14": [
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "pph-final-konstruksi"
+      "pph-23-jasa-lain-4pct"
     ],
     "15": [
       "pph-15-buta-charter",
@@ -4872,8 +5472,7 @@
       "pph-21-ptkp-2009",
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "ppnbm-kapal-pesiar"
+      "pph-23-jasa-lain-4pct"
     ],
     "16": [
       "pph-21-honorarium-bukan-pegawai",
@@ -4884,6 +5483,7 @@
     ],
     "17": [
       "pph-21-honorarium-bukan-pegawai",
+      "pph-21-natura-kenikmatan",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-progressive-monthly-pre2024",
       "pph-21-progressive-pre2009",
@@ -4895,7 +5495,6 @@
       "pph-26-but",
       "pph-badan-go-public",
       "pph-badan-pre2010",
-      "pph-badan-umkm",
       "pph-final-bunga-pre2009"
     ],
     "18": [
@@ -4911,7 +5510,9 @@
     "20": [
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct"
+      "pph-23-jasa-lain-4pct",
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "21": [
       "pph-21-dana-pensiun",
@@ -4954,6 +5555,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
@@ -4962,7 +5564,8 @@
       "pph-22-pre2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-final-konstruksi"
+      "pph-final-konstruksi",
+      "pph-umkm-05pct-2023"
     ],
     "23": [
       "bea-meterai-3000",
@@ -4975,10 +5578,15 @@
       "pph-23-jasa-pre2001",
       "pph-23-katering-pre2015",
       "pph-23-sewa-tanah-bangunan",
+      "pph-26-bunga",
+      "pph-26-dividen",
+      "pph-26-general-2024",
+      "pph-26-royalti",
       "pph-final-konstruksi",
       "pph-final-sewa-tanah",
       "pph-umkm-05pct-2018",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "24": [
       "pph-22-penjualan-barang-2024",
@@ -4986,10 +5594,6 @@
       "pph-23-jasa-katering-2pct",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-26-bunga",
-      "pph-26-dividen",
-      "pph-26-general-2024",
-      "pph-26-royalti",
       "pph-final-konstruksi"
     ],
     "25": [
@@ -5016,13 +5620,14 @@
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
+      "pph-26-bunga",
+      "pph-26-dividen",
+      "pph-26-general-2024",
+      "pph-26-royalti",
       "pph-final-konstruksi"
     ],
     "28": [
-      "bphtb-pengalihan-dinkes",
-      "bphtb-perolehan-umum",
-      "bphtb-perolehan-waris",
-      "pbb-perkotaan",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-23-sewa-tanah-bangunan",
@@ -5038,7 +5643,8 @@
       "pph-final-sewa-tanah",
       "pph-final-transaksi-saham-bursa",
       "pph-final-transportasi",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "29": [
       "pph-23-jasa-lain-2pct",
@@ -5047,7 +5653,10 @@
     ],
     "30": [
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct"
+      "pph-23-jasa-lain-4pct",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
+      "ppnbm-rumah-mewah"
     ],
     "31": [
       "pph-23-jasa-lain-2pct",
@@ -5090,6 +5699,7 @@
       "pph-23-jasa-lain-4pct"
     ],
     "39": [
+      "cukai-ecigarette",
       "cukai-eti-alkohol",
       "cukai-hasil-tembakau",
       "pph-23-jasa-katering-2pct",
@@ -5098,19 +5708,18 @@
     ],
     "40": [
       "bea-masuk-bmt",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-monthly-2024",
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "pph-final-konstruksi"
+      "pph-23-jasa-lain-4pct"
     ],
     "41": [
+      "pph-21-ter-c-detail",
+      "pph-21-ter-monthly-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
     "42": [
-      "pph-21-ter-a-detail",
-      "pph-21-ter-b-detail",
-      "pph-21-ter-c-detail",
-      "pph-21-ter-monthly-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "ppn-10pct",
@@ -5118,8 +5727,10 @@
       "ppn-impor-bkp",
       "ppn-jkpt-industri",
       "ppn-tidak-kena-pajak",
+      "ppnbm-perlengkapan-mewah",
       "ppnbm-sedan-station-wagon",
-      "ppnbm-suv-4x4"
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "43": [
       "pph-21-norma-akuntan",
@@ -5135,6 +5746,8 @@
       "pph-23-jasa-lain-4pct"
     ],
     "44": [
+      "pph-21-ter-a-detail",
+      "pph-21-ter-monthly-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "ppn-pmse"
@@ -5167,6 +5780,8 @@
       "pph-badan-umkm"
     ],
     "51": [
+      "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-final-konstruksi",
@@ -5190,7 +5805,8 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-umkm-05pct-2018",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "56": [
       "pph-23-jasa-lain-2pct",
@@ -5201,6 +5817,8 @@
       "pph-23-jasa-lain-4pct"
     ],
     "58": [
+      "pajak-daerah-mineral-air",
+      "pajak-daerah-penerangan-jalan",
       "pph-21-dana-pensiun",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-ter-a-detail",
@@ -5215,12 +5833,14 @@
       "pph-23-jasa-lain-4pct"
     ],
     "60": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "pph-21-shu-koperasi",
       "pph-22-bendaharawan",
       "pph-22-bumn-pembelian",
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
@@ -5276,11 +5896,25 @@
     "71": [
       "pph-final-pengalihan-pp71"
     ],
+    "78": [
+      "bphtb-perolehan-umum"
+    ],
     "80": [
-      "bea-meterai-pre2021"
+      "bea-meterai-pre2021",
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum-era-uu-28-2009"
+    ],
+    "83": [
+      "bphtb-perolehan-waris"
     ],
     "94": [
       "pph-22-pre2024"
+    ],
+    "96": [
+      "cukai-ecigarette"
+    ],
+    "97": [
+      "cukai-hasil-tembakau"
     ],
     "100": [
       "pph-22-penjualan-barang-2024",
@@ -5310,9 +5944,6 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
-    "105": [
-      "pph-26-general-2024"
-    ],
     "122": [
       "pph-21-non-taxable-income"
     ],
@@ -5336,6 +5967,9 @@
       "pph-23-jasa-lain-4pct",
       "pph-23-katering-pre2015"
     ],
+    "160": [
+      "cukai-eti-alkohol"
+    ],
     "162": [
       "pph-21-ptkp-2009"
     ],
@@ -5352,14 +5986,11 @@
       "bea-meterai-1000",
       "pph-22-impor-api-produsen"
     ],
-    "202": [
-      "cukai-ecigarette"
-    ],
     "250": [
       "pph-21-progressive-pre2009"
     ],
-    "350": [
-      "ppnbm-rumah-mewah"
+    "300": [
+      "bphtb-perolehan-waris"
     ],
     "401": [
       "pph-22-penjualan-barang-2024",
@@ -5413,7 +6044,11 @@
       "pph-final-migas"
     ],
     "423": [
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
+    ],
+    "450": [
+      "pph-21-pegawai-tidak-tetap"
     ],
     "499": [
       "pph-final-investasi-lpi"
@@ -5546,6 +6181,7 @@
     ],
     "2007": [
       "bea-meterai-pre2021",
+      "cukai-ecigarette",
       "cukai-eti-alkohol",
       "cukai-hasil-tembakau"
     ],
@@ -5567,23 +6203,21 @@
       "pph-final-transportasi"
     ],
     "2009": [
-      "bphtb-pengalihan-dinkes",
-      "bphtb-perolehan-umum",
-      "bphtb-perolehan-waris",
-      "pbb-perkotaan",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-progressive-monthly-pre2024",
       "pph-21-progressive-pre2009",
       "pph-21-ptkp-2009",
       "pph-final-bunga-pre2009",
-      "pph-final-konstruksi",
       "ppn-10pct",
       "ppn-ekspor-jkp",
       "ppn-impor-bkp",
       "ppn-jkpt-industri",
       "ppn-tidak-kena-pajak",
+      "ppnbm-perlengkapan-mewah",
       "ppnbm-sedan-station-wagon",
-      "ppnbm-suv-4x4"
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "2010": [
       "pph-22-pre2024",
@@ -5604,6 +6238,7 @@
     "2018": [
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "2020": [
@@ -5612,7 +6247,11 @@
       "bea-meterai-kontrak",
       "bea-meterai-nota-kredit",
       "bea-meterai-pre2021",
-      "bea-meterai-surat-berharga"
+      "bea-meterai-surat-berharga",
+      "pph-26-bunga",
+      "pph-26-dividen",
+      "pph-26-general-2024",
+      "pph-26-royalti"
     ],
     "2021": [
       "bea-meterai-dokumen-2021",
@@ -5626,6 +6265,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pengadaan-pemerintah",
       "pph-22-pmse",
@@ -5650,6 +6290,7 @@
       "pph-final-migas",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-11pct-2022",
       "ppn-11pct-effective-2025",
       "ppn-ekspor-bkp",
@@ -5663,16 +6304,14 @@
       "ppn-tidak-kena-pajak",
       "ppnbm-general",
       "ppnbm-kapal-pesiar",
-      "ppnbm-perlengkapan-mewah",
       "ppnbm-pesawat-pribadi",
-      "ppnbm-rumah-mewah",
-      "ppnbm-sedan-station-wagon",
-      "ppnbm-suv-4x4",
-      "ppnbm-van-wagon"
+      "ppnbm-rumah-mewah"
     ],
     "2022": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris",
       "pajak-daerah-air-tanah",
       "pajak-daerah-hiburan",
@@ -5696,13 +6335,20 @@
       "pph-21-norma-pengusaha-kecil",
       "pph-21-norma-petani",
       "pph-badan-2022-plus",
+      "pph-final-konstruksi",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-11pct-2022",
-      "ppn-pmse"
+      "ppn-pmse",
+      "ppnbm-general",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "2023": [
-      "cukai-ecigarette",
+      "cukai-eti-alkohol",
       "pph-21-dana-pensiun",
       "pph-21-natura-kenikmatan",
       "pph-21-pegawai-tidak-tetap",
@@ -5716,6 +6362,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
@@ -5727,7 +6374,6 @@
       "pph-26-dividen",
       "pph-26-jasa-dan-sewa",
       "pph-26-royalti",
-      "pph-badan-2022-plus",
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y",
       "pph-final-bunga-koperasi",
@@ -5736,7 +6382,8 @@
     ],
     "2024": [
       "cukai-ecigarette",
-      "pph-21-natura-kenikmatan",
+      "cukai-eti-alkohol",
+      "cukai-hasil-tembakau",
       "pph-21-progressive-annual-2024",
       "pph-21-progressive-monthly-pre2024",
       "pph-21-ter-monthly-2024",
@@ -5752,34 +6399,47 @@
       "ppn-pmse"
     ],
     "2025": [
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "cukai-ecigarette",
+      "cukai-hasil-tembakau",
+      "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "ppn-11pct-effective-2025"
+    ],
+    "2026": [
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
+    ],
+    "2027": [
+      "cukai-hasil-tembakau"
     ],
     "3000": [
       "bea-meterai-3000"
     ],
-    "≥3": [
-      "pph-21-ter-c-detail",
-      "pph-21-ter-monthly-2024"
-    ],
     "0.5-persen": [
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "0%": [
       "bea-masuk-asean-atiga",
       "bea-masuk-umum-mf",
+      "pph-21-pegawai-tidak-tetap",
       "pph-21-ter-a-detail",
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail",
+      "pph-21-ter-monthly-2024",
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y",
       "pph-final-pengalihan-pp71",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-ekspor-bkp",
       "ppn-ekspor-jkp"
     ],
     "00": [
       "pph-final-bunga-koperasi",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "000": [
       "bea-meterai-1000",
@@ -5787,13 +6447,17 @@
       "bea-meterai-dokumen-2021",
       "bea-meterai-kontrak",
       "bea-meterai-pre2021",
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "bphtb-perolehan-waris",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-ptkp-1984",
       "pph-21-ptkp-1995",
       "pph-21-ptkp-2005",
       "pph-21-ptkp-2009",
       "pph-final-bunga-koperasi",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "01": [
       "pph-22-bendaharawan",
@@ -5821,7 +6485,8 @@
       "pph-final-sewa-tanah",
       "pph-final-transaksi-saham-bursa",
       "pph-final-transportasi",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "010": [
       "pph-21-ptkp-2005",
@@ -5843,7 +6508,8 @@
       "pph-final-migas",
       "pph-final-sewa-tanah",
       "pph-final-transportasi",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "03": [
       "pph-22-penjualan-barang-2024",
@@ -5853,7 +6519,8 @@
       "pph-final-bunga-deposito",
       "pph-final-migas",
       "pph-final-sewa-tanah",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "04": [
       "pph-21-norma-akuntan",
@@ -5877,7 +6544,8 @@
     ],
     "05pct": [
       "pph-umkm-05pct-2018",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "06": [
       "pph-23-jasa-lain-2pct",
@@ -5894,15 +6562,13 @@
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-final-bunga-deposito",
-      "pph-final-konstruksi"
+      "pph-final-bunga-deposito"
     ],
     "09": [
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-final-bunga-deposito",
-      "pph-final-konstruksi"
+      "pph-final-bunga-deposito"
     ],
     "0pct": [
       "pph-badan-ikn-0pct"
@@ -5919,11 +6585,23 @@
       "ppn-10pct"
     ],
     "10%": [
+      "pajak-daerah-hiburan",
+      "pajak-daerah-hotel",
+      "pajak-daerah-penerangan-jalan",
+      "pajak-daerah-restoran",
+      "pph-21-norma-petani",
+      "pph-22-impor-2024",
+      "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-23-jasa-2001",
       "pph-23-jasa-pre2001",
       "pph-badan-ikn-10y",
       "ppn-10pct",
-      "ppnbm-general"
+      "ppnbm-general",
+      "ppnbm-kapal-pesiar",
+      "ppnbm-pesawat-pribadi",
+      "ppnbm-rumah-mewah",
+      "ppnbm-van-wagon"
     ],
     "100%": [
       "pph-23-jasa-katering-2pct",
@@ -5954,7 +6632,6 @@
       "pph-23-hadiah-penghargaan"
     ],
     "15%": [
-      "pph-21-norma-pedagang",
       "pph-21-progressive-uulama1983",
       "pph-23-jasa-2001",
       "pph-23-jasa-pre2001",
@@ -5978,13 +6655,15 @@
       "pph-23-katering-pre2015"
     ],
     "20%": [
+      "pajak-daerah-mineral-air",
+      "pph-21-norma-pedagang",
       "pph-26-but",
       "pph-26-dividen",
       "pph-26-tax-treaty",
       "pph-badan-go-public"
     ],
-    "200%": [
-      "ppnbm-general"
+    "2023:": [
+      "pph-21-pegawai-tidak-tetap"
     ],
     "22%": [
       "pph-badan-2022-plus",
@@ -5992,11 +6671,7 @@
     ],
     "25%": [
       "pph-21-norma-pengusaha-kecil",
-      "pph-21-norma-petani",
       "pph-21-progressive-uulama1983",
-      "pph-21-ter-a-detail",
-      "pph-21-ter-b-detail",
-      "pph-21-ter-c-detail",
       "pph-badan-2022-plus",
       "pph-badan-pre2001",
       "pph-badan-pre2022"
@@ -6008,11 +6683,14 @@
       "pph-23-jasa-katering-2pct",
       "pph-23-jasa-lain-2pct"
     ],
-    "3+": [
-      "pph-21-ter-c-detail"
-    ],
     "30%": [
       "pph-21-progressive-pre2022"
+    ],
+    "34%": [
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail",
+      "pph-21-ter-monthly-2024"
     ],
     "35%": [
       "pph-21-progressive-pre2009",
@@ -6023,8 +6701,12 @@
     "4-persen": [
       "pph-23-jasa-lain-4pct"
     ],
+    "4%": [
+      "pajak-daerah-hiburan"
+    ],
     "40%": [
-      "bea-masuk-umum-mf"
+      "bea-masuk-umum-mf",
+      "pajak-daerah-hiburan"
     ],
     "48%": [
       "pph-15-pma-opec"
@@ -6042,12 +6724,19 @@
       "ppnbm-suv-4x4"
     ],
     "5%": [
+      "bphtb-perolehan-umum",
+      "pajak-daerah-hiburan",
+      "pbb-perkotaan",
+      "pph-21-pegawai-tidak-tetap",
+      "pph-22-impor-2024",
       "pph-final-pengalihan-pp131",
       "pph-final-pengalihan-pp71",
       "pph-umkm-05pct-2018",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "50%": [
+      "bphtb-perolehan-waris",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-norma-akuntan",
       "pph-21-norma-arsitek",
@@ -6055,10 +6744,14 @@
       "pph-21-norma-konsultan",
       "pph-21-norma-notaris",
       "pph-21-norma-pengacara",
+      "pph-21-pegawai-tidak-tetap",
       "pph-badan-umkm"
     ],
     "70+": [
       "pph-26-tax-treaty"
+    ],
+    "75%": [
+      "pajak-daerah-hiburan"
     ],
     "80%": [
       "bea-masuk-bmt"
@@ -6068,9 +6761,11 @@
       "pph-23-jasa-lain-4pct"
     ],
     "ad": [
-      "cukai-hasil-tembakau"
+      "cukai-ecigarette"
     ],
     "ada": [
+      "pajak-daerah-hotel",
+      "pajak-daerah-restoran",
       "pph-23-jasa-2001",
       "pph-23-jasa-pre2001",
       "pph-23-katering-pre2015"
@@ -6127,6 +6822,7 @@
       "cukai-eti-alkohol"
     ],
     "anak": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
@@ -6142,14 +6838,25 @@
       "pph-final-bunga-koperasi"
     ],
     "angka": [
+      "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
       "pph-badan-go-public"
+    ],
+    "angkutan": [
+      "ppnbm-general",
+      "ppnbm-pesawat-pribadi"
     ],
     "annual": [
       "pph-21-progressive-annual-2024"
     ],
     "annualisasi": [
       "pph-21-progressive-monthly-pre2024"
+    ],
+    "annualized": [
+      "pph-21-ter-monthly-2024"
+    ],
+    "antara": [
+      "pph-22-impor-barang-tertentu"
     ],
     "anti": [
       "bea-masuk-anti-dumping"
@@ -6159,6 +6866,7 @@
     ],
     "apartemen": [
       "pph-22-penjualan-barang-2024",
+      "ppnbm-general",
       "ppnbm-rumah-mewah"
     ],
     "apbd": [
@@ -6170,7 +6878,9 @@
       "pph-23-jasa-lain-4pct"
     ],
     "api": [
-      "pph-22-impor-api-produsen"
+      "pph-22-impor-2024",
+      "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu"
     ],
     "api-produsen": [
       "pph-22-impor-api-produsen"
@@ -6183,7 +6893,14 @@
       "pph-23-jasa-lain-4pct"
     ],
     "april": [
-      "ppn-11pct-2022"
+      "pph-final-konstruksi",
+      "pph-umkm-05pct-2023",
+      "ppn-11pct-2022",
+      "ppnbm-general",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "arsitek": [
       "pph-21-honorarium-bukan-pegawai",
@@ -6215,8 +6932,10 @@
       "bea-meterai-kontrak",
       "bea-meterai-nota-kredit",
       "bea-meterai-surat-berharga",
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris",
       "cukai-ecigarette",
       "cukai-eti-alkohol",
@@ -6245,6 +6964,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
@@ -6264,6 +6984,7 @@
       "pph-26-general-2024",
       "pph-26-jasa-dan-sewa",
       "pph-26-royalti",
+      "pph-badan-umkm",
       "pph-final-bunga-deposito",
       "pph-final-bunga-koperasi",
       "pph-final-bunga-pre2009",
@@ -6277,6 +6998,7 @@
       "pph-final-transaksi-saham-bursa",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46",
       "ppn-ekspor-bkp",
       "ppn-ekspor-jkp",
@@ -6285,6 +7007,7 @@
       "ppn-jasa-telekomunikasi",
       "ppn-jasa-tenaga-listrik",
       "ppn-pmse",
+      "ppnbm-general",
       "ppnbm-kapal-pesiar",
       "ppnbm-perlengkapan-mewah",
       "ppnbm-pesawat-pribadi",
@@ -6299,11 +7022,11 @@
       "bea-meterai-nota-kredit",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
-      "bphtb-perolehan-waris",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-natura-kenikmatan",
       "pph-21-pegawai-tidak-tetap",
       "pph-22-bumn-pembelian",
+      "pph-22-impor-2024",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
@@ -6322,8 +7045,12 @@
       "pph-final-sewa-tanah",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-jasa-tenaga-listrik",
-      "ppn-pmse"
+      "ppn-pmse",
+      "ppnbm-general",
+      "ppnbm-pesawat-pribadi",
+      "ppnbm-rumah-mewah"
     ],
     "atestasi": [
       "pph-23-jasa-lain-2pct",
@@ -6347,6 +7074,7 @@
       "ppn-10pct"
     ],
     "ayat": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-2001",
       "pph-23-jasa-lain-2pct",
@@ -6355,7 +7083,8 @@
       "pph-26-bunga",
       "pph-26-general-2024",
       "pph-badan-go-public",
-      "pph-badan-umkm"
+      "pph-final-konstruksi",
+      "ppnbm-general"
     ],
     "badan": [
       "pph-15-pma-opec",
@@ -6373,10 +7102,14 @@
       "pph-badan-pre2010",
       "pph-badan-pre2022",
       "pph-badan-umkm",
-      "pph-final-konstruksi"
+      "pph-final-konstruksi",
+      "pph-umkm-05pct-2023"
     ],
     "bagi": [
       "pph-final-sewa-tanah"
+    ],
+    "bagian": [
+      "pph-badan-umkm"
     ],
     "bahan": [
       "pph-22-bumn-pembelian",
@@ -6389,6 +7122,7 @@
       "pph-22-penjualan-barang-2024"
     ],
     "baik": [
+      "pph-22-impor-barang-tertentu",
       "pph-final-hadiah-undian",
       "pph-final-transportasi",
       "ppn-pmse"
@@ -6410,7 +7144,7 @@
     "bangunan": [
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
-      "bphtb-perolehan-waris",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "pbb-kehutanan",
       "pbb-perkebunan",
       "pbb-perkotaan",
@@ -6421,8 +7155,7 @@
       "pph-23-sewa-tanah-bangunan",
       "pph-final-pengalihan-pp131",
       "pph-final-pengalihan-pp71",
-      "pph-final-sewa-tanah",
-      "ppnbm-rumah-mewah"
+      "pph-final-sewa-tanah"
     ],
     "bank": [
       "pph-final-bunga-deposito"
@@ -6431,14 +7164,20 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
+    "banyak": [
+      "pbb-perkotaan"
+    ],
+    "bar": [
+      "pajak-daerah-hiburan"
+    ],
     "barang": [
       "bea-masuk-anti-dumping",
       "bea-masuk-bmt",
-      "pph-21-natura-kenikmatan",
       "pph-22-bendaharawan",
       "pph-22-bumn-pembelian",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
@@ -6446,6 +7185,8 @@
       "pph-final-hadiah-undian",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
+      "ppn-11pct-effective-2025",
       "ppn-ekspor-bkp",
       "ppn-impor-bkp",
       "ppn-tidak-kena-pajak",
@@ -6455,17 +7196,28 @@
     "barang-mewah": [
       "ppnbm-general"
     ],
+    "barang-tertentu": [
+      "pph-22-impor-barang-tertentu"
+    ],
+    "barang:": [
+      "ppnbm-general"
+    ],
     "bareboat": [
       "pph-15-buta-charter"
     ],
     "baru": [
       "bphtb-perolehan-umum"
     ],
+    "batang": [
+      "cukai-hasil-tembakau"
+    ],
     "batangan": [
       "pph-22-penjualan-barang-2024"
     ],
     "batas": [
-      "pph-21-non-taxable-income"
+      "pph-21-non-taxable-income",
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "batu": [
       "pph-22-penjualan-barang-2024",
@@ -6502,10 +7254,12 @@
       "bea-meterai-pre2021",
       "bea-meterai-surat-berharga",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "ppn-impor-bkp"
     ],
     "bea-cukai": [
-      "pph-22-impor-2024"
+      "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu"
     ],
     "bea-masuk": [
       "bea-masuk-anti-dumping",
@@ -6523,6 +7277,9 @@
       "bea-meterai-pre2021",
       "bea-meterai-surat-berharga"
     ],
+    "beban": [
+      "ppn-11pct-effective-2025"
+    ],
     "bebas": [
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-norma-akuntan",
@@ -6530,10 +7287,8 @@
       "pph-21-norma-dokter",
       "pph-21-norma-konsultan",
       "pph-21-norma-notaris",
-      "pph-21-norma-pedagang",
       "pph-21-norma-pengacara",
-      "pph-21-norma-pengusaha-kecil",
-      "pph-21-norma-petani"
+      "pph-21-norma-pengusaha-kecil"
     ],
     "belanja": [
       "pph-23-jasa-lain-2pct",
@@ -6546,8 +7301,7 @@
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-2001",
       "pph-23-jasa-pre2001",
-      "pph-23-katering-pre2015",
-      "pph-badan-2022-plus"
+      "pph-23-katering-pre2015"
     ],
     "bendaharawan": [
       "pph-22-bendaharawan",
@@ -6558,12 +7312,12 @@
     ],
     "bentuk": [
       "pph-26-but",
-      "pph-26-general-2024",
       "pph-badan-2022-plus",
       "pph-final-bunga-deposito"
     ],
-    "berbasis": [
-      "pph-26-general-2024"
+    "berakhir": [
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "pph-umkm-05pct-2023"
     ],
     "berdasarkan": [
       "bea-masuk-asean-atiga",
@@ -6571,6 +7325,7 @@
       "bea-meterai-1000",
       "bea-meterai-3000",
       "bea-meterai-pre2021",
+      "cukai-ecigarette",
       "cukai-eti-alkohol",
       "cukai-hasil-tembakau",
       "pph-21-dana-pensiun",
@@ -6587,15 +7342,14 @@
       "pph-26-tax-treaty",
       "pph-badan-pre2001",
       "pph-badan-pre2010",
-      "pph-badan-umkm",
       "pph-final-bunga-pre2009",
       "pph-final-pengalihan-pp131",
       "pph-final-pengalihan-pp71",
       "pph-final-transportasi",
       "pph-umkm-05pct-2018",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46",
       "ppn-11pct-2022",
-      "ppn-11pct-effective-2025",
       "ppnbm-sedan-station-wagon"
     ],
     "berganda": [
@@ -6618,9 +7372,6 @@
     "berkedudukan": [
       "pph-final-bunga-deposito"
     ],
-    "berkisar": [
-      "ppnbm-general"
-    ],
     "berlaku": [
       "bea-masuk-anti-dumping",
       "bea-masuk-asean-atiga",
@@ -6634,8 +7385,10 @@
       "bea-meterai-nota-kredit",
       "bea-meterai-pre2021",
       "bea-meterai-surat-berharga",
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris",
       "cukai-ecigarette",
       "cukai-eti-alkohol",
@@ -6684,6 +7437,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
@@ -6715,12 +7469,13 @@
       "pph-final-bunga-deposito",
       "pph-final-bunga-pre2009",
       "pph-final-hadiah-undian",
+      "pph-final-konstruksi",
       "pph-final-pengalihan-pp131",
       "pph-final-pengalihan-pp71",
       "pph-final-sewa-tanah",
       "pph-final-transaksi-saham-bursa",
       "pph-umkm-05pct-2018",
-      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46",
       "ppn-10pct",
       "ppn-11pct-2022",
@@ -6738,15 +7493,15 @@
       "ppn-tidak-kena-pajak",
       "ppnbm-general",
       "ppnbm-kapal-pesiar",
-      "ppnbm-perlengkapan-mewah",
       "ppnbm-pesawat-pribadi",
-      "ppnbm-rumah-mewah",
+      "ppnbm-rumah-mewah"
+    ],
+    "bermotor": [
+      "pph-22-impor-barang-tertentu",
+      "pph-22-penjualan-barang-2024",
       "ppnbm-sedan-station-wagon",
       "ppnbm-suv-4x4",
       "ppnbm-van-wagon"
-    ],
-    "bermotor": [
-      "pph-22-penjualan-barang-2024"
     ],
     "bernilai": [
       "bea-meterai-kontrak"
@@ -6757,10 +7512,12 @@
     ],
     "bersamaan": [
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "ppn-impor-bkp"
     ],
     "bersifat": [
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "bersumber": [
       "pph-final-bunga-deposito"
@@ -6775,9 +7532,10 @@
       "pph-21-progressive-uulama1994"
     ],
     "berupa": [
+      "cukai-ecigarette",
+      "pbb-perkotaan",
       "pph-22-penjualan-barang-2024",
       "pph-final-hadiah-undian",
-      "pph-final-konstruksi",
       "pph-final-sewa-tanah",
       "ppn-ekspor-jkp"
     ],
@@ -6789,8 +7547,11 @@
       "ppn-impor-bkp"
     ],
     "besar": [
-      "pph-21-ptkp-2005",
-      "pph-final-konstruksi"
+      "pph-21-ptkp-2005"
+    ],
+    "besaran": [
+      "pajak-daerah-hotel",
+      "pajak-daerah-restoran"
     ],
     "beserta": [
       "pph-22-penjualan-barang-2024"
@@ -6859,12 +7620,14 @@
     "bonus": [
       "pph-23-hadiah-penghargaan"
     ],
-    "bp": [
-      "pph-21-natura-kenikmatan"
+    "borongan": [
+      "pph-21-pegawai-tidak-tetap"
     ],
     "bphtb": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris"
     ],
     "bracket": [
@@ -6878,6 +7641,7 @@
     ],
     "bruto": [
       "pph-21-honorarium-bukan-pegawai",
+      "pph-21-natura-kenikmatan",
       "pph-21-norma-akuntan",
       "pph-21-norma-arsitek",
       "pph-21-norma-dokter",
@@ -6887,12 +7651,14 @@
       "pph-21-norma-pengacara",
       "pph-21-norma-pengusaha-kecil",
       "pph-21-norma-petani",
+      "pph-21-pegawai-tidak-tetap",
       "pph-23-jasa-2001",
       "pph-23-jasa-katering-2pct",
       "pph-23-katering-pre2015",
       "pph-26-dividen",
       "pph-badan-umkm",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "btki": [
@@ -6908,7 +7674,8 @@
       "pph-22-penjualan-barang-2024",
       "pph-23-hadiah-penghargaan",
       "pph-final-transaksi-saham-bursa",
-      "ppn-tidak-kena-pajak"
+      "ppn-tidak-kena-pajak",
+      "ppnbm-general"
     ],
     "bukan-pegawai": [
       "pph-21-honorarium-bukan-pegawai"
@@ -6918,6 +7685,7 @@
       "pph-final-bunga-deposito"
     ],
     "bulanan": [
+      "pph-21-natura-kenikmatan",
       "pph-21-progressive-monthly-pre2024",
       "pph-21-ter-monthly-2024"
     ],
@@ -6969,6 +7737,12 @@
       "pph-26-but",
       "pph-final-bunga-deposito"
     ],
+    "cair": [
+      "cukai-ecigarette"
+    ],
+    "cara": [
+      "pph-21-natura-kenikmatan"
+    ],
     "cek": [
       "bea-meterai-cek-bilyet"
     ],
@@ -7003,6 +7777,9 @@
     "crypto": [
       "pph-22-kripto"
     ],
+    "cucu": [
+      "bphtb-hibah-sedarah-keturunan-lurus"
+    ],
     "cukai": [
       "cukai-ecigarette",
       "cukai-eti-alkohol",
@@ -7010,9 +7787,14 @@
       "pph-22-impor-2024",
       "ppn-impor-bkp"
     ],
+    "cv": [
+      "pph-umkm-05pct-2023"
+    ],
     "daerah": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris",
       "pajak-daerah-air-tanah",
       "pajak-daerah-hiburan",
@@ -7032,18 +7814,23 @@
       "pph-final-sewa-tanah"
     ],
     "daftar": [
+      "pph-22-impor-2024",
+      "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "ppn-tidak-kena-pajak"
     ],
     "dagang": [
       "pph-26-general-2024"
     ],
     "dalam": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-perolehan-umum",
       "pph-15-pelayaran-domestik",
       "pph-15-penerbangan-domestik",
       "pph-15-perusahaan-asuransi",
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
@@ -7051,7 +7838,6 @@
       "pph-23-jasa-lain-4pct",
       "pph-23-sewa-tanah-bangunan",
       "pph-26-but",
-      "pph-26-general-2024",
       "pph-badan-2022-plus",
       "pph-final-bunga-deposito",
       "pph-final-hadiah-undian",
@@ -7070,18 +7856,25 @@
       "bphtb-perolehan-waris",
       "cukai-ecigarette",
       "cukai-eti-alkohol",
+      "cukai-hasil-tembakau",
+      "pajak-daerah-hiburan",
+      "pajak-daerah-mineral-air",
       "pbb-kehutanan",
       "pbb-perkebunan",
       "pbb-perkotaan",
       "pbb-pertambangan",
       "pph-21-honorarium-bukan-pegawai",
-      "pph-21-pegawai-tidak-tetap",
+      "pph-21-natura-kenikmatan",
       "pph-21-progressive-annual-2024",
       "pph-21-progressive-uulama1983",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-monthly-2024",
       "pph-22-bendaharawan",
       "pph-22-bumn-pembelian",
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
@@ -7093,7 +7886,6 @@
       "pph-23-jasa-pre2001",
       "pph-23-sewa-tanah-bangunan",
       "pph-26-but",
-      "pph-26-general-2024",
       "pph-26-jasa-dan-sewa",
       "pph-badan-2022-plus",
       "pph-badan-go-public",
@@ -7105,11 +7897,14 @@
       "pph-final-sewa-tanah",
       "pph-final-transportasi",
       "pph-umkm-05pct-2018",
+      "ppn-11pct-effective-2025",
       "ppn-impor-bkp",
       "ppn-pmse",
       "ppn-tidak-kena-pajak",
+      "ppnbm-general",
       "ppnbm-kapal-pesiar",
       "ppnbm-perlengkapan-mewah",
+      "ppnbm-pesawat-pribadi",
       "ppnbm-rumah-mewah",
       "ppnbm-sedan-station-wagon",
       "ppnbm-suv-4x4",
@@ -7133,6 +7928,10 @@
     ],
     "dari": [
       "bea-masuk-asean-atiga",
+      "bphtb-perolehan-waris",
+      "pajak-daerah-hiburan",
+      "pajak-daerah-mineral-air",
+      "pajak-daerah-penerangan-jalan",
       "pph-15-buta-charter",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-natura-kenikmatan",
@@ -7152,6 +7951,7 @@
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail",
       "pph-21-ter-monthly-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
@@ -7173,8 +7973,12 @@
       "pph-final-transaksi-saham-bursa",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-11pct-effective-2025",
       "ppn-pmse",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
       "ppnbm-van-wagon"
     ],
     "dasar": [
@@ -7223,9 +8027,15 @@
       "bea-meterai-1000",
       "bea-meterai-3000",
       "bea-meterai-dokumen-2021",
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "cukai-ecigarette",
+      "cukai-hasil-tembakau",
+      "pbb-perkotaan",
       "pph-21-honorarium-bukan-pegawai",
+      "pph-21-natura-kenikmatan",
       "pph-21-progressive-monthly-pre2024",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
@@ -7235,16 +8045,20 @@
       "pph-23-jasa-lain-4pct",
       "pph-26-jasa-dan-sewa",
       "pph-26-tax-treaty",
-      "pph-badan-2022-plus",
       "pph-badan-pre2001",
+      "pph-badan-umkm",
       "pph-final-bunga-koperasi",
       "pph-final-investasi-lpi",
-      "pph-final-konstruksi",
       "pph-final-migas",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
+      "ppn-11pct-effective-2025",
       "ppn-impor-bkp",
       "ppnbm-general",
+      "ppnbm-kapal-pesiar",
+      "ppnbm-pesawat-pribadi",
+      "ppnbm-rumah-mewah",
       "ppnbm-sedan-station-wagon",
       "ppnbm-suv-4x4",
       "ppnbm-van-wagon"
@@ -7252,6 +8066,10 @@
     "deposito": [
       "pph-final-bunga-deposito",
       "pph-final-bunga-pre2009"
+    ],
+    "derajat": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum"
     ],
     "design": [
       "pph-23-jasa-lain-2pct",
@@ -7265,6 +8083,9 @@
       "ppn-jasa-kegiatan-usaha-persewaan",
       "ppn-pengkreditan"
     ],
+    "developer": [
+      "ppnbm-rumah-mewah"
+    ],
     "devisa": [
       "pph-final-bunga-deposito"
     ],
@@ -7273,6 +8094,7 @@
     ],
     "di": [
       "bea-masuk-anti-dumping",
+      "pph-21-pegawai-tidak-tetap",
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
@@ -7281,13 +8103,16 @@
       "pph-badan-go-public",
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y",
+      "pph-badan-umkm",
       "pph-final-bunga-deposito",
       "pph-final-bunga-koperasi",
       "pph-final-investasi-lpi",
       "pph-final-transaksi-saham-bursa",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
-      "ppn-ekspor-jkp"
+      "pph-umkm-05pct-op-pp20-2026",
+      "ppn-ekspor-jkp",
+      "ppnbm-rumah-mewah"
     ],
     "diadministrasikan": [
       "pph-final-bunga-deposito"
@@ -7295,6 +8120,7 @@
     "diatur": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
+      "ppn-11pct-effective-2025",
       "ppn-tidak-kena-pajak"
     ],
     "dibagikan": [
@@ -7316,22 +8142,34 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
+    "dibekukan": [
+      "cukai-hasil-tembakau"
+    ],
     "dibeli": [
       "ppn-jkpt-industri"
     ],
     "diberikan": [
-      "bphtb-perolehan-waris",
       "pph-21-natura-kenikmatan",
       "pph-23-hadiah-penghargaan",
       "pph-badan-umkm",
       "ppn-jkpt-industri"
     ],
+    "diberlakukan": [
+      "pajak-daerah-hiburan"
+    ],
     "dicabut": [
       "bea-meterai-pre2021",
-      "pph-umkm-05pct-2018"
+      "pph-umkm-05pct-2018",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "didirikan": [
       "pph-final-bunga-deposito"
+    ],
+    "digabungkan": [
+      "pph-21-natura-kenikmatan"
     ],
     "diganti": [
       "pph-umkm-05pct-2018"
@@ -7341,7 +8179,18 @@
     ],
     "digunakan": [
       "ppn-ekspor-jkp",
+      "ppnbm-general",
       "ppnbm-pesawat-pribadi"
+    ],
+    "dihapus": [
+      "cukai-ecigarette",
+      "ppnbm-perlengkapan-mewah"
+    ],
+    "dihitung": [
+      "pph-21-pegawai-tidak-tetap"
+    ],
+    "dijamin": [
+      "cukai-hasil-tembakau"
     ],
     "dikelola": [
       "pbb-kehutanan",
@@ -7350,9 +8199,17 @@
       "pbb-pertambangan"
     ],
     "dikenai": [
+      "pph-21-natura-kenikmatan",
+      "pph-22-impor-2024",
+      "pph-22-impor-api-produsen",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "dikenakan": [
       "pph-21-honorarium-bukan-pegawai",
@@ -7366,10 +8223,9 @@
       "ppn-ekspor-bkp",
       "ppn-ekspor-jkp",
       "ppn-impor-bkp",
-      "ppn-tidak-kena-pajak"
-    ],
-    "dikurangi": [
-      "pph-badan-umkm"
+      "ppn-tidak-kena-pajak",
+      "ppnbm-general",
+      "ppnbm-rumah-mewah"
     ],
     "dilakukan": [
       "bphtb-pengalihan-dinkes",
@@ -7384,7 +8240,11 @@
       "pph-final-konstruksi",
       "pph-final-sewa-tanah",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-ekspor-jkp"
+    ],
+    "dilanjutkan": [
+      "pph-umkm-05pct-2023"
     ],
     "dinaikkan": [
       "pph-21-progressive-uulama1994"
@@ -7394,9 +8254,6 @@
     ],
     "diperdagangkan": [
       "pph-badan-go-public"
-    ],
-    "diperhitungkan": [
-      "ppn-11pct-effective-2025"
     ],
     "diperlakukan": [
       "pph-21-shu-koperasi",
@@ -7423,6 +8280,7 @@
     ],
     "dipungut": [
       "bphtb-pengalihan-dinkes",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-penjualan-barang-2024",
       "ppn-impor-bkp",
@@ -7433,14 +8291,14 @@
       "pph-22-impor-2024",
       "ppn-impor-bkp"
     ],
-    "diserahkan": [
-      "ppnbm-general"
-    ],
     "disetor": [
       "ppn-pengkreditan"
     ],
     "diskonto": [
       "pph-final-bunga-deposito"
+    ],
+    "diskotek": [
+      "pajak-daerah-hiburan"
     ],
     "distribusi": [
       "pph-22-penjualan-barang-2024",
@@ -7455,9 +8313,6 @@
     ],
     "ditempatkan": [
       "pph-final-bunga-deposito"
-    ],
-    "ditentukan": [
-      "pph-badan-2022-plus"
     ],
     "diterima": [
       "bea-meterai-cek-bilyet",
@@ -7476,6 +8331,9 @@
       "pph-umkm-05pct-2023"
     ],
     "ditetapkan": [
+      "pajak-daerah-hotel",
+      "pajak-daerah-restoran",
+      "pbb-perkotaan",
       "pph-21-non-taxable-income",
       "pph-21-progressive-annual-2024"
     ],
@@ -7483,13 +8341,17 @@
       "pph-23-jasa-2001"
     ],
     "diubah": [
-      "pph-21-progressive-annual-2024"
+      "pph-21-progressive-annual-2024",
+      "pph-umkm-05pct-2023"
     ],
     "dividen": [
       "pph-21-shu-koperasi",
       "pph-26-dividen",
       "pph-26-general-2024",
       "pph-final-hadiah-undian"
+    ],
+    "djbc": [
+      "pph-22-impor-barang-tertentu"
     ],
     "dll": [
       "pajak-daerah-hiburan"
@@ -7512,13 +8374,18 @@
       "pph-15-penerbangan-domestik"
     ],
     "dpp": [
+      "pph-21-pegawai-tidak-tetap",
       "pph-23-jasa-2001",
       "pph-23-jasa-katering-2pct",
       "pph-23-katering-pre2015",
+      "ppn-11pct-effective-2025",
       "ppn-dpp-penghitungan"
     ],
     "dpp-khusus": [
       "pph-23-jasa-katering-2pct"
+    ],
+    "dpp-nilai-lain": [
+      "ppn-11pct-effective-2025"
     ],
     "drastis": [
       "pph-23-jasa-2001"
@@ -7544,6 +8411,12 @@
     "e-procurement": [
       "pph-22-pengadaan-pemerintah"
     ],
+    "ea": [
+      "cukai-eti-alkohol"
+    ],
+    "eceran": [
+      "ppnbm-rumah-mewah"
+    ],
     "ecigarette": [
       "cukai-ecigarette"
     ],
@@ -7555,7 +8428,12 @@
       "pph-final-transaksi-saham-bursa"
     ],
     "efektif": [
+      "cukai-hasil-tembakau",
+      "pajak-daerah-hiburan",
+      "pph-21-natura-kenikmatan",
+      "pph-21-pegawai-tidak-tetap",
       "pph-21-ter-monthly-2024",
+      "pph-badan-umkm",
       "ppn-11pct-effective-2025"
     ],
     "effective": [
@@ -7588,7 +8466,11 @@
       "pph-22-impor-2024",
       "pph-22-penjualan-barang-2024"
     ],
+    "elektrik": [
+      "cukai-ecigarette"
+    ],
     "elektronik": [
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
@@ -7598,7 +8480,10 @@
       "pph-22-penjualan-barang-2024"
     ],
     "era": [
-      "pph-23-jasa-pre2001"
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "cukai-ecigarette",
+      "pph-23-jasa-pre2001",
+      "pph-umkm-05pct-2023"
     ],
     "eti": [
       "cukai-eti-alkohol"
@@ -7621,11 +8506,15 @@
     ],
     "fasilitas": [
       "bphtb-pengalihan-dinkes",
+      "bphtb-perolehan-waris",
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y",
-      "pph-badan-umkm",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-jkpt-industri"
+    ],
+    "fasilitas-50-persen": [
+      "bphtb-perolehan-waris"
     ],
     "film": [
       "pph-23-jasa-lain-2pct",
@@ -7653,6 +8542,7 @@
       "pph-final-transportasi",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "fisik": [
@@ -7678,6 +8568,10 @@
     "gaji": [
       "pph-21-ter-monthly-2024"
     ],
+    "garis": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum"
+    ],
     "gas": [
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
@@ -7702,6 +8596,10 @@
       "pph-badan-go-public"
     ],
     "golongan": [
+      "cukai-hasil-tembakau"
+    ],
+    "gram": [
+      "cukai-ecigarette",
       "cukai-eti-alkohol"
     ],
     "hadiah": [
@@ -7712,6 +8610,7 @@
     "hak": [
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris",
       "pph-final-pengalihan-pp131",
       "pph-final-pengalihan-pp71",
@@ -7724,20 +8623,29 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
+    "hanya": [
+      "bphtb-perolehan-waris",
+      "pajak-daerah-hotel",
+      "pajak-daerah-restoran",
+      "pph-badan-umkm",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general"
+    ],
     "hardware": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
     "harga": [
       "bea-masuk-anti-dumping",
+      "ppn-11pct-effective-2025",
       "ppn-dpp-penghitungan",
       "ppnbm-rumah-mewah"
     ],
     "hari": [
-      "pph-21-dana-pensiun",
-      "pph-21-pegawai-tidak-tetap"
+      "pph-21-dana-pensiun"
     ],
     "harian": [
+      "pph-21-natura-kenikmatan",
       "pph-21-pegawai-tidak-tetap"
     ],
     "harta": [
@@ -7759,8 +8667,13 @@
       "cukai-ecigarette"
     ],
     "hibah": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-waris",
       "pph-final-pengalihan-pp71"
+    ],
+    "hibah-wasiat": [
+      "bphtb-perolehan-waris"
     ],
     "hiburan": [
       "pajak-daerah-hiburan"
@@ -7771,12 +8684,14 @@
       "pph-21-ter-a-detail",
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail",
+      "pph-21-ter-monthly-2024",
       "ppn-10pct"
     ],
     "historis": [
       "bea-meterai-1000",
       "bea-meterai-3000",
       "bea-meterai-pre2021",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "pph-21-progressive-monthly-pre2024",
       "pph-21-progressive-pre2009",
       "pph-21-progressive-pre2022",
@@ -7796,13 +8711,31 @@
       "pph-final-bunga-pre2009",
       "pph-final-pengalihan-pp131",
       "pph-umkm-05pct-2018",
+      "pph-umkm-05pct-2023",
       "pph-umkm-1pct-pp46",
       "ppn-10pct",
-      "ppn-11pct-2022"
+      "ppn-11pct-2022",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
+    ],
+    "historis:": [
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
+    ],
+    "hje": [
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
+      "ppnbm-rumah-mewah"
     ],
     "hkpd": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris",
       "pajak-daerah-air-tanah",
       "pajak-daerah-hiburan",
@@ -7835,6 +8768,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pengadaan-pemerintah",
       "pph-22-pmse",
@@ -7859,6 +8793,7 @@
       "pph-final-migas",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-10pct",
       "ppn-11pct-2022",
       "ppn-11pct-effective-2025",
@@ -7883,6 +8818,9 @@
     "hs": [
       "bea-masuk-umum-mf"
     ],
+    "hubungan": [
+      "bphtb-hibah-sedarah-keturunan-lurus"
+    ],
     "hukum": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
@@ -7891,11 +8829,13 @@
       "pph-final-migas"
     ],
     "huruf": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-2001",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-pre2001",
-      "pph-badan-go-public"
+      "pph-badan-go-public",
+      "pph-final-konstruksi"
     ],
     "hutan": [
       "pph-23-jasa-lain-2pct",
@@ -7911,7 +8851,8 @@
     "ikn": [
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "imbalan": [
       "pph-21-honorarium-bukan-pegawai",
@@ -7922,15 +8863,20 @@
       "pph-26-jasa-dan-sewa",
       "pph-final-transportasi"
     ],
+    "implementasi": [
+      "pph-final-konstruksi"
+    ],
     "impor": [
       "bea-masuk-anti-dumping",
       "bea-masuk-asean-atiga",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "ppn-dpp-penghitungan",
       "ppn-impor-bkp"
     ],
     "importir": [
+      "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
       "pph-22-penjualan-barang-2024"
     ],
@@ -7960,13 +8906,14 @@
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "pph-26-general-2024"
+      "pph-23-jasa-lain-4pct"
     ],
     "ini": [
       "pph-21-progressive-annual-2024",
       "pph-23-jasa-pre2001",
-      "pph-badan-umkm"
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "input": [
       "ppn-pengkreditan"
@@ -7976,8 +8923,7 @@
       "pph-23-jasa-lain-4pct"
     ],
     "instansi": [
-      "pph-22-bendaharawan",
-      "pph-22-impor-2024"
+      "pph-22-bendaharawan"
     ],
     "institusi": [
       "pph-23-jasa-lain-2pct",
@@ -8020,9 +8966,15 @@
       "pph-21-dana-pensiun"
     ],
     "januari": [
-      "pph-21-ter-monthly-2024"
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "cukai-ecigarette",
+      "cukai-eti-alkohol",
+      "cukai-hasil-tembakau",
+      "pph-21-ter-monthly-2024",
+      "ppn-11pct-effective-2025"
     ],
     "jasa": [
+      "pajak-daerah-hiburan",
       "pph-22-bendaharawan",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
@@ -8039,6 +8991,7 @@
       "pph-final-investasi-lpi",
       "pph-final-konstruksi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-ekspor-jkp",
       "ppn-jasa-kegiatan-usaha-persewaan",
       "ppn-jasa-telekomunikasi",
@@ -8054,13 +9007,14 @@
       "ppn-impor-bkp"
     ],
     "jenis": [
+      "cukai-hasil-tembakau",
       "pph-23-jasa-lain-2pct"
+    ],
+    "jenjang": [
+      "pbb-perkotaan"
     ],
     "jht": [
       "pph-21-dana-pensiun"
-    ],
-    "jika": [
-      "pph-21-pegawai-tidak-tetap"
     ],
     "jkp": [
       "ppn-10pct",
@@ -8084,14 +9038,23 @@
       "pph-21-norma-pengacara",
       "pph-21-norma-pengusaha-kecil",
       "pph-21-norma-petani",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail",
       "pph-final-konstruksi"
     ],
     "jual": [
       "bphtb-perolehan-umum",
+      "pajak-daerah-mineral-air",
+      "ppn-11pct-effective-2025",
       "ppn-dpp-penghitungan",
       "ppnbm-rumah-mewah"
     ],
+    "juga": [
+      "pph-21-natura-kenikmatan"
+    ],
     "jumlah": [
+      "pbb-perkotaan",
       "pph-23-jasa-2001",
       "pph-23-jasa-katering-2pct",
       "pph-23-katering-pre2015",
@@ -8104,8 +9067,11 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
-    "kadar": [
-      "cukai-eti-alkohol"
+    "kakek": [
+      "bphtb-hibah-sedarah-keturunan-lurus"
+    ],
+    "kali": [
+      "ppnbm-rumah-mewah"
     ],
     "kantor": [
       "pph-26-general-2024"
@@ -8113,6 +9079,8 @@
     "kapal": [
       "pph-15-buta-charter",
       "pph-final-transportasi",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
       "ppnbm-kapal-pesiar"
     ],
     "kapasitas": [
@@ -8122,15 +9090,19 @@
     "karaoke": [
       "pajak-daerah-hiburan"
     ],
+    "karena": [
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
+    ],
     "kartu": [
       "pph-22-penjualan-barang-2024"
     ],
     "kategori": [
       "pph-21-ter-a-detail",
       "pph-21-ter-b-detail",
-      "pph-21-ter-c-detail"
-    ],
-    "kategori:": [
+      "pph-21-ter-c-detail",
       "pph-21-ter-monthly-2024"
     ],
     "katering": [
@@ -8141,13 +9113,8 @@
       "pph-23-jasa-pre2001",
       "pph-23-katering-pre2015"
     ],
-    "kawin": [
-      "pph-21-ter-a-detail",
-      "pph-21-ter-b-detail",
-      "pph-21-ter-c-detail",
-      "pph-21-ter-monthly-2024"
-    ],
     "ke": [
+      "pph-21-natura-kenikmatan",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
@@ -8200,15 +9167,26 @@
       "pbb-kehutanan",
       "pph-22-penjualan-barang-2024"
     ],
+    "kelas": [
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail",
+      "pph-21-ter-monthly-2024"
+    ],
     "kelompok": [
-      "ppnbm-general"
+      "ppnbm-general",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "keluarga": [
-      "pph-final-pengalihan-pp71"
+      "pph-final-pengalihan-pp71",
+      "ppnbm-general",
+      "ppnbm-pesawat-pribadi"
     ],
     "kena": [
       "pph-21-non-taxable-income",
-      "pph-21-pegawai-tidak-tetap",
       "pph-21-ptkp-1984",
       "pph-21-ptkp-1995",
       "pph-21-ptkp-2005",
@@ -8226,6 +9204,7 @@
       "ppn-tidak-kena-pajak"
     ],
     "kendaraan": [
+      "pph-22-impor-barang-tertentu",
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
@@ -8237,6 +9216,7 @@
       "pph-21-natura-kenikmatan"
     ],
     "kepada": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-natura-kenikmatan",
       "pph-21-shu-koperasi",
@@ -8266,9 +9246,6 @@
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024"
     ],
-    "kepmenkeu": [
-      "cukai-hasil-tembakau"
-    ],
     "keramik": [
       "ppnbm-perlengkapan-mewah"
     ],
@@ -8284,8 +9261,18 @@
     "kertas": [
       "pph-22-penjualan-barang-2024"
     ],
+    "ketentuan": [
+      "bphtb-perolehan-umum-era-uu-28-2009"
+    ],
     "keterangan": [
       "bea-meterai-dokumen-2021"
+    ],
+    "keturunan": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum"
+    ],
+    "keturunan-lurus": [
+      "bphtb-hibah-sedarah-keturunan-lurus"
     ],
     "keuangan": [
       "pph-23-jasa-lain-2pct",
@@ -8295,6 +9282,8 @@
       "pph-final-transaksi-saham-bursa"
     ],
     "khusus": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "pajak-daerah-hiburan",
       "pph-23-jasa-2001",
       "pph-23-jasa-katering-2pct",
       "pph-23-jasa-pre2001",
@@ -8305,6 +9294,9 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024"
     ],
+    "klab": [
+      "pajak-daerah-hiburan"
+    ],
     "kliring": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
@@ -8312,6 +9304,9 @@
     "klise": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
+    ],
+    "kmea": [
+      "cukai-eti-alkohol"
     ],
     "kmk": [
       "pph-21-norma-akuntan",
@@ -8329,9 +9324,6 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
-    "komersial": [
-      "ppnbm-pesawat-pribadi"
-    ],
     "komoditas": [
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
@@ -8346,7 +9338,11 @@
     ],
     "kondominium": [
       "pph-22-penjualan-barang-2024",
+      "ppnbm-general",
       "ppnbm-rumah-mewah"
+    ],
+    "konsentrat": [
+      "cukai-eti-alkohol"
     ],
     "konstruksi": [
       "pph-23-jasa-lain-2pct",
@@ -8361,6 +9357,9 @@
     "konsultansi": [
       "pph-final-konstruksi"
     ],
+    "konsumsi": [
+      "pph-22-impor-barang-tertentu"
+    ],
     "kontrak": [
       "bea-meterai-kontrak"
     ],
@@ -8370,6 +9369,9 @@
     "koperasi": [
       "pph-21-shu-koperasi",
       "pph-final-bunga-koperasi"
+    ],
+    "kosmetik": [
+      "pph-22-impor-barang-tertentu"
     ],
     "kota": [
       "pph-23-jasa-lain-2pct",
@@ -8393,6 +9395,10 @@
     "kualifikasi": [
       "pph-final-konstruksi"
     ],
+    "kurangnya": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-waris"
+    ],
     "kursus": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
@@ -8408,16 +9414,24 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
+    "lagi": [
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
+    ],
     "lahan": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
     "lain": [
+      "pph-22-impor-barang-tertentu",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct"
+      "pph-23-jasa-lain-4pct",
+      "ppn-11pct-effective-2025"
     ],
     "lainnya": [
       "bea-meterai-surat-berharga",
@@ -8428,9 +9442,6 @@
       "pph-23-jasa-lain-2pct",
       "ppn-impor-bkp",
       "ppn-jasa-tenaga-listrik"
-    ],
-    "lama": [
-      "pph-21-ter-monthly-2024"
     ],
     "lampiran": [
       "pph-21-ter-a-detail",
@@ -8462,10 +9473,10 @@
     ],
     "layanan": [
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "pph-26-general-2024"
+      "pph-23-jasa-lain-4pct"
     ],
     "layar": [
+      "ppnbm-general",
       "ppnbm-kapal-pesiar"
     ],
     "lebih": [
@@ -8473,6 +9484,7 @@
       "pph-23-jasa-lain-4pct",
       "pph-26-dividen",
       "pph-26-tax-treaty",
+      "pph-badan-umkm",
       "pph-final-bunga-deposito",
       "ppnbm-van-wagon"
     ],
@@ -8511,6 +9523,9 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "ppn-jasa-tenaga-listrik"
+    ],
+    "liter": [
+      "cukai-eti-alkohol"
     ],
     "loading": [
       "pph-23-jasa-lain-2pct",
@@ -8556,14 +9571,14 @@
       "ppn-pmse"
     ],
     "luas": [
-      "pph-22-penjualan-barang-2024",
-      "ppnbm-rumah-mewah"
+      "pph-22-penjualan-barang-2024"
     ],
     "lukisan": [
       "ppnbm-perlengkapan-mewah"
     ],
-    "m²": [
-      "ppnbm-rumah-mewah"
+    "lurus": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum"
     ],
     "mainan": [
       "pph-final-investasi-lpi"
@@ -8583,9 +9598,22 @@
     "maksimal": [
       "pph-21-progressive-pre2022"
     ],
+    "maksimum": [
+      "pajak-daerah-hiburan",
+      "pajak-daerah-hotel",
+      "pajak-daerah-mineral-air",
+      "pajak-daerah-penerangan-jalan",
+      "pajak-daerah-restoran"
+    ],
+    "malam": [
+      "pajak-daerah-hiburan"
+    ],
     "manajemen": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
+    ],
+    "mandi": [
+      "pajak-daerah-hiburan"
     ],
     "manfaat": [
       "pph-badan-ikn-0pct"
@@ -8604,14 +9632,15 @@
       "ppn-pmse"
     ],
     "masa": [
+      "pph-21-natura-kenikmatan",
+      "pph-21-ter-monthly-2024",
       "pph-badan-ikn-0pct",
-      "pph-badan-ikn-10y"
+      "pph-badan-ikn-10y",
+      "pph-final-konstruksi"
     ],
     "masih": [
-      "pph-22-pre2024"
-    ],
-    "masing": [
-      "pph-21-ter-monthly-2024"
+      "pph-22-pre2024",
+      "pph-badan-2022-plus"
     ],
     "massa": [
       "pph-23-jasa-lain-2pct",
@@ -8623,6 +9652,7 @@
       "bea-masuk-bmt",
       "bea-masuk-umum-mf",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "ppn-impor-bkp"
     ],
     "masyarakat": [
@@ -8632,8 +9662,10 @@
       "pph-final-bunga-deposito"
     ],
     "maupun": [
+      "pph-22-impor-barang-tertentu",
       "pph-final-hadiah-undian",
       "pph-final-transportasi",
+      "pph-umkm-05pct-2023",
       "ppn-pmse"
     ],
     "mblb": [
@@ -8654,41 +9686,45 @@
     "melalui": [
       "bphtb-perolehan-umum",
       "bphtb-perolehan-waris",
+      "cukai-hasil-tembakau",
       "pph-22-kripto",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-26-general-2024",
       "pph-26-jasa-dan-sewa",
       "pph-final-bunga-deposito",
       "pph-final-transaksi-saham-bursa",
       "pph-final-transportasi",
+      "pph-umkm-05pct-2023",
       "ppn-jkpt-industri",
       "ppn-pmse"
     ],
     "meliputi": [
       "pph-final-migas"
     ],
+    "memakai": [
+      "pph-21-pegawai-tidak-tetap"
+    ],
     "memanfaatkan": [
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "memenuhi": [
       "pph-badan-go-public",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "memiliki": [
-      "pph-21-ter-monthly-2024",
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "pph-22-impor-api-produsen",
       "pph-23-jasa-lain-4pct",
       "pph-23-katering-pre2015",
       "pph-26-tax-treaty",
       "pph-final-konstruksi",
-      "pph-umkm-05pct-2023"
-    ],
-    "meminjam": [
-      "pph-26-general-2024"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "mempunyai": [
       "pph-23-jasa-lain-2pct",
@@ -8702,18 +9738,18 @@
       "pph-final-sewa-tanah",
       "ppn-jkpt-industri"
     ],
-    "menengah": [
-      "pph-final-konstruksi"
-    ],
     "menerima": [
-      "pph-21-pegawai-tidak-tetap",
-      "pph-badan-umkm"
+      "pph-21-pegawai-tidak-tetap"
     ],
     "menetapkan": [
-      "ppn-11pct-effective-2025"
+      "pajak-daerah-hotel",
+      "pajak-daerah-restoran"
     ],
     "mengalihkan": [
       "pph-final-sewa-tanah"
+    ],
+    "mengandung": [
+      "cukai-eti-alkohol"
     ],
     "mengenai": [
       "pph-final-sewa-tanah"
@@ -8723,8 +9759,16 @@
     ],
     "menggunakan": [
       "pph-21-progressive-monthly-pre2024",
+      "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
-      "pph-badan-pre2001"
+      "pph-22-impor-barang-tertentu",
+      "pph-badan-pre2001",
+      "ppn-11pct-effective-2025"
+    ],
+    "menghapus": [
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "menghitung": [
       "pph-21-non-taxable-income"
@@ -8732,21 +9776,24 @@
     "mengurangi": [
       "pph-21-non-taxable-income"
     ],
-    "menikah": [
-      "pph-21-ter-a-detail",
-      "pph-21-ter-b-detail",
-      "pph-21-ter-c-detail"
-    ],
     "menjadi": [
       "bea-meterai-nota-kredit",
       "pph-21-natura-kenikmatan",
-      "pph-23-jasa-2001"
+      "pph-23-jasa-2001",
+      "ppnbm-kapal-pesiar",
+      "ppnbm-pesawat-pribadi"
     ],
     "menukar": [
       "bphtb-perolehan-umum"
     ],
+    "menurut": [
+      "pph-21-ter-monthly-2024"
+    ],
     "menyewa": [
       "ppn-jasa-kegiatan-usaha-persewaan"
+    ],
+    "merevisi": [
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "merupakan": [
       "pph-21-progressive-annual-2024",
@@ -8756,9 +9803,6 @@
     "mesin": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
-    ],
-    "meter": [
-      "ppnbm-kapal-pesiar"
     ],
     "meterai": [
       "bea-meterai-1000",
@@ -8777,6 +9821,7 @@
     "mewah": [
       "bea-masuk-bmt",
       "pph-22-penjualan-barang-2024",
+      "ppn-11pct-effective-2025",
       "ppnbm-general",
       "ppnbm-kapal-pesiar",
       "ppnbm-perlengkapan-mewah",
@@ -8801,11 +9846,17 @@
     "miliar": [
       "pph-badan-umkm",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
       "ppnbm-rumah-mewah"
     ],
     "milik": [
       "pph-final-transaksi-saham-bursa"
+    ],
+    "mililiter": [
+      "cukai-ecigarette"
     ],
     "mineral": [
       "pajak-daerah-mineral-air",
@@ -8818,6 +9869,13 @@
     ],
     "minibus": [
       "ppnbm-van-wagon"
+    ],
+    "minimum": [
+      "pajak-daerah-hotel",
+      "pajak-daerah-restoran"
+    ],
+    "minuman": [
+      "cukai-eti-alkohol"
     ],
     "minyak": [
       "pph-15-pma-opec",
@@ -8843,9 +9901,11 @@
       "pph-21-ter-monthly-2024"
     ],
     "mulai": [
-      "pph-21-natura-kenikmatan",
       "pph-badan-2022-plus",
       "ppn-11pct-2022"
+    ],
+    "naik": [
+      "cukai-hasil-tembakau"
     ],
     "namun": [
       "pph-21-progressive-uulama1994",
@@ -8885,6 +9945,9 @@
       "ppn-11pct-effective-2025",
       "ppn-pmse"
     ],
+    "nenek": [
+      "bphtb-hibah-sedarah-keturunan-lurus"
+    ],
     "neto": [
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-non-taxable-income",
@@ -8901,13 +9964,21 @@
     "nilai": [
       "bea-meterai-1000",
       "bea-meterai-3000",
-      "bea-meterai-dokumen-2021"
+      "bea-meterai-dokumen-2021",
+      "pajak-daerah-mineral-air",
+      "pajak-daerah-penerangan-jalan",
+      "pph-22-impor-barang-tertentu",
+      "ppn-11pct-effective-2025"
     ],
     "njop": [
       "pph-final-pengalihan-pp131"
     ],
+    "njp": [
+      "pajak-daerah-mineral-air"
+    ],
     "nomor": [
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "non": [
       "pph-21-non-taxable-income"
@@ -8954,13 +10025,23 @@
       "pph-21-norma-notaris"
     ],
     "npoptkp": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris"
     ],
     "npwp": [
       "pph-23-jasa-lain-4pct"
     ],
     "objek": [
-      "pph-21-natura-kenikmatan"
+      "pph-21-natura-kenikmatan",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
+      "ppnbm-kapal-pesiar",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-pesawat-pribadi",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "obligasi": [
       "bea-meterai-surat-berharga",
@@ -8991,10 +10072,14 @@
       "pph-final-sewa-tanah",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-impor-bkp",
       "ppn-jasa-telekomunikasi",
       "ppn-jasa-tenaga-listrik",
-      "ppn-jkpt-industri"
+      "ppn-jkpt-industri",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-pesawat-pribadi",
+      "ppnbm-rumah-mewah"
     ],
     "op": [
       "pph-21-progressive-pre2009",
@@ -9002,6 +10087,8 @@
       "pph-21-progressive-uulama1994",
       "pph-23-hadiah-penghargaan",
       "pph-umkm-05pct-2018",
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "op:": [
@@ -9015,6 +10102,7 @@
       "ppn-jasa-telekomunikasi"
     ],
     "orang": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "pph-21-progressive-annual-2024",
       "pph-21-progressive-uulama1983",
       "pph-21-shu-koperasi",
@@ -9024,7 +10112,11 @@
       "pph-final-hadiah-undian",
       "pph-final-konstruksi",
       "pph-final-transportasi",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
+    ],
+    "orang-pribadi": [
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "organizer": [
       "pph-23-jasa-lain-2pct",
@@ -9053,15 +10145,23 @@
       "pph-26-tax-treaty"
     ],
     "pada": [
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "pph-21-natura-kenikmatan",
       "pph-21-progressive-monthly-pre2024",
+      "pph-21-ter-monthly-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-23-jasa-pre2001",
       "pph-23-katering-pre2015"
     ],
+    "padat": [
+      "cukai-ecigarette"
+    ],
     "pajak": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris",
       "pajak-daerah-air-tanah",
       "pajak-daerah-hiburan",
@@ -9082,6 +10182,7 @@
       "pph-21-ptkp-1995",
       "pph-21-ptkp-2005",
       "pph-21-ptkp-2009",
+      "pph-21-ter-monthly-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-26-but",
@@ -9097,10 +10198,12 @@
       "pph-final-bunga-koperasi",
       "pph-final-hadiah-undian",
       "pph-final-investasi-lpi",
+      "pph-final-konstruksi",
       "pph-final-sewa-tanah",
       "pph-final-transaksi-saham-bursa",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-dpp-penghitungan",
       "ppn-ekspor-bkp",
       "ppn-ekspor-jkp",
@@ -9119,6 +10222,11 @@
       "pajak-daerah-restoran",
       "pbb-perkotaan"
     ],
+    "paling": [
+      "bphtb-perolehan-umum",
+      "pajak-daerah-hiburan",
+      "pbb-perkotaan"
+    ],
     "pamphlet": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
@@ -9127,8 +10235,8 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
-    "panjangnya": [
-      "ppnbm-kapal-pesiar"
+    "parfum": [
+      "pph-22-impor-barang-tertentu"
     ],
     "parkir": [
       "pajak-daerah-parkir",
@@ -9139,7 +10247,13 @@
       "pph-final-migas"
     ],
     "pasal": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum",
+      "bphtb-perolehan-waris",
+      "pajak-daerah-mineral-air",
+      "pajak-daerah-penerangan-jalan",
       "pph-21-honorarium-bukan-pegawai",
+      "pph-21-natura-kenikmatan",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-progressive-monthly-pre2024",
       "pph-22-impor-api-produsen",
@@ -9151,10 +10265,22 @@
       "pph-23-jasa-pre2001",
       "pph-26-bunga",
       "pph-26-but",
+      "pph-26-dividen",
       "pph-26-general-2024",
+      "pph-26-royalti",
       "pph-badan-go-public",
-      "pph-badan-umkm",
-      "ppn-tidak-kena-pajak"
+      "pph-final-konstruksi",
+      "ppn-tidak-kena-pajak",
+      "ppnbm-general"
+    ],
+    "pasca": [
+      "ppnbm-general",
+      "ppnbm-kapal-pesiar",
+      "ppnbm-pesawat-pribadi"
+    ],
+    "pastinya": [
+      "pajak-daerah-hotel",
+      "pajak-daerah-restoran"
     ],
     "pbb": [
       "pbb-kehutanan",
@@ -9196,10 +10322,8 @@
       "pph-21-norma-dokter",
       "pph-21-norma-konsultan",
       "pph-21-norma-notaris",
-      "pph-21-norma-pedagang",
       "pph-21-norma-pengacara",
       "pph-21-norma-pengusaha-kecil",
-      "pph-21-norma-petani",
       "pph-23-hadiah-penghargaan",
       "pph-final-konstruksi"
     ],
@@ -9208,8 +10332,7 @@
       "pph-23-jasa-lain-4pct"
     ],
     "pelaksanaan": [
-      "bphtb-perolehan-umum",
-      "pph-final-konstruksi"
+      "bphtb-perolehan-umum"
     ],
     "pelaku": [
       "pph-umkm-05pct-2018",
@@ -9224,7 +10347,6 @@
       "pph-23-jasa-lain-4pct"
     ],
     "pelayanan": [
-      "pajak-daerah-hiburan",
       "pajak-daerah-hotel",
       "pajak-daerah-restoran",
       "pph-23-jasa-lain-2pct",
@@ -9239,9 +10361,6 @@
     ],
     "pelumas": [
       "pph-22-penjualan-barang-2024"
-    ],
-    "pemanasan": [
-      "cukai-ecigarette"
     ],
     "pemanenan": [
       "pph-23-jasa-lain-2pct",
@@ -9269,6 +10388,7 @@
       "bea-meterai-cek-bilyet",
       "bea-meterai-nota-kredit",
       "pph-22-bumn-pembelian",
+      "pph-22-impor-2024",
       "pph-22-pembelian-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
@@ -9288,14 +10408,14 @@
       "pph-22-bumn-pembelian",
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "pemberi": [
       "pph-21-natura-kenikmatan"
     ],
     "pemberian": [
-      "bphtb-perolehan-umum",
-      "pph-21-natura-kenikmatan"
+      "bphtb-perolehan-umum"
     ],
     "pembibitan": [
       "pph-23-jasa-lain-2pct",
@@ -9330,13 +10450,13 @@
       "pbb-perkotaan",
       "pbb-pertambangan",
       "pph-22-bendaharawan",
-      "pph-22-impor-2024",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-sewa-tanah-bangunan",
       "pph-final-sewa-tanah",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "pemindahan": [
       "bea-meterai-cek-bilyet"
@@ -9370,7 +10490,8 @@
       "pph-final-konstruksi",
       "pph-final-migas",
       "pph-final-transportasi",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "pemungut": [
       "pph-22-penjualan-barang-2024",
@@ -9382,12 +10503,14 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-impor-bkp"
     ],
     "penambangan": [
@@ -9434,15 +10557,13 @@
       "pph-15-penerbangan-domestik",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-final-transportasi",
-      "ppnbm-pesawat-pribadi"
+      "pph-final-transportasi"
     ],
     "penerbitan": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
     "penerima": [
-      "pph-21-natura-kenikmatan",
       "pph-23-jasa-lain-4pct"
     ],
     "penerjemahan": [
@@ -9468,15 +10589,13 @@
       "pph-final-sewa-tanah"
     ],
     "pengambilan": [
-      "pajak-daerah-air-tanah"
+      "pajak-daerah-air-tanah",
+      "pajak-daerah-mineral-air"
     ],
     "pengangkutan": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-final-transportasi"
-    ],
-    "pengawasan": [
-      "pph-final-konstruksi"
     ],
     "pengeboran": [
       "pph-23-jasa-lain-2pct",
@@ -9489,10 +10608,14 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
+    "pengembang": [
+      "ppnbm-rumah-mewah"
+    ],
     "pengenaan": [
       "ppn-dpp-penghitungan"
     ],
     "pengenal": [
+      "pph-22-impor-2024",
       "pph-22-impor-api-produsen"
     ],
     "pengepakan": [
@@ -9529,6 +10652,7 @@
       "pph-23-jasa-lain-4pct"
     ],
     "penghasilan": [
+      "pajak-daerah-mineral-air",
       "pph-15-perusahaan-kontraktor",
       "pph-15-pma-opec",
       "pph-21-honorarium-bukan-pegawai",
@@ -9572,6 +10696,7 @@
       "pph-final-transportasi",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "penghindaran": [
@@ -9620,7 +10745,8 @@
       "pph-21-ptkp-2009"
     ],
     "pengurangan": [
-      "pph-23-jasa-katering-2pct"
+      "pph-23-jasa-katering-2pct",
+      "pph-badan-umkm"
     ],
     "pengurusan": [
       "pph-23-jasa-lain-2pct",
@@ -9651,13 +10777,19 @@
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
       "pph-final-transaksi-saham-bursa",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "pensiun": [
       "pph-21-dana-pensiun"
     ],
     "penugasan": [
       "pph-final-sewa-tanah"
+    ],
+    "penuh": [
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "pph-badan-umkm",
+      "ppn-11pct-effective-2025"
     ],
     "penumpang": [
       "ppnbm-van-wagon"
@@ -9712,7 +10844,9 @@
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
+      "pph-final-konstruksi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-10pct",
       "ppn-11pct-2022",
       "ppn-11pct-effective-2025",
@@ -9748,6 +10882,17 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
+    "per": [
+      "cukai-ecigarette",
+      "cukai-eti-alkohol",
+      "cukai-hasil-tembakau",
+      "pajak-daerah-mineral-air",
+      "pph-26-bunga",
+      "pph-26-dividen",
+      "pph-26-general-2024",
+      "pph-26-royalti",
+      "pph-umkm-05pct-op-pp20-2026"
+    ],
     "peralatan": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
@@ -9763,7 +10908,8 @@
       "pph-final-transaksi-saham-bursa"
     ],
     "peraturan": [
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "perawatan": [
       "pph-23-jasa-lain-2pct",
@@ -9779,7 +10925,13 @@
     "perbuatan": [
       "bea-meterai-dokumen-2021"
     ],
+    "perda": [
+      "pajak-daerah-hotel",
+      "pajak-daerah-restoran",
+      "pbb-perkotaan"
+    ],
     "perdagangan": [
+      "pph-21-norma-pedagang",
       "pph-22-kripto",
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
@@ -9797,12 +10949,12 @@
     "peredaran": [
       "pph-badan-umkm",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "perencanaan": [
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct",
-      "pph-final-konstruksi"
+      "pph-23-jasa-lain-4pct"
     ],
     "perhiasan": [
       "pph-22-penjualan-barang-2024",
@@ -9848,6 +11000,7 @@
       "pbb-perkotaan"
     ],
     "perlakuan": [
+      "pph-21-natura-kenikmatan",
       "pph-23-jasa-pre2001",
       "pph-23-katering-pre2015"
     ],
@@ -9863,13 +11016,19 @@
     ],
     "perolehan": [
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris"
+    ],
+    "perorangan": [
+      "bphtb-perolehan-umum-era-uu-28-2009"
     ],
     "perpres": [
       "bea-masuk-asean-atiga"
     ],
     "perseorangan": [
-      "pph-final-konstruksi"
+      "pph-final-konstruksi",
+      "ppnbm-general",
+      "ppnbm-pesawat-pribadi"
     ],
     "perseroan": [
       "bphtb-perolehan-umum"
@@ -9882,10 +11041,12 @@
       "ppn-jasa-kegiatan-usaha-persewaan"
     ],
     "persyaratan": [
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "pertama": [
-      "pph-21-progressive-uulama1994"
+      "pph-21-progressive-uulama1994",
+      "ppnbm-rumah-mewah"
     ],
     "pertambangan": [
       "pbb-pertambangan",
@@ -9895,9 +11056,13 @@
       "pph-22-penjualan-barang-2024"
     ],
     "pertanian": [
+      "pph-21-norma-petani",
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
+    ],
+    "pertunjukan": [
+      "pajak-daerah-hiburan"
     ],
     "perubahan": [
       "pph-21-progressive-uulama1994"
@@ -9921,9 +11086,13 @@
     "pesawat": [
       "pph-15-buta-charter",
       "pph-final-transportasi",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
       "ppnbm-pesawat-pribadi"
     ],
     "pesiar": [
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
       "ppnbm-kapal-pesiar"
     ],
     "petani": [
@@ -9933,6 +11102,7 @@
       "pph-21-norma-petani"
     ],
     "peternakan": [
+      "pph-21-norma-petani",
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
@@ -9944,21 +11114,22 @@
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024"
     ],
-    "pinjam": [
-      "pph-26-general-2024"
-    ],
-    "pinjaman": [
-      "pph-26-general-2024"
-    ],
     "pipa": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
+    ],
+    "pj": [
+      "pph-26-bunga",
+      "pph-26-dividen",
+      "pph-26-general-2024",
+      "pph-26-royalti"
     ],
     "pju": [
       "pajak-daerah-penerangan-jalan"
     ],
     "pkp": [
-      "pph-21-non-taxable-income"
+      "pph-21-non-taxable-income",
+      "pph-badan-umkm"
     ],
     "pkp2b": [
       "pph-22-ekspor-batubara",
@@ -9968,6 +11139,7 @@
       "ppn-jasa-tenaga-listrik"
     ],
     "plus": [
+      "bphtb-perolehan-waris",
       "pph-badan-2022-plus"
     ],
     "pma": [
@@ -9975,6 +11147,8 @@
     ],
     "pmk": [
       "cukai-ecigarette",
+      "cukai-eti-alkohol",
+      "cukai-hasil-tembakau",
       "pph-21-dana-pensiun",
       "pph-21-natura-kenikmatan",
       "pph-21-non-taxable-income",
@@ -9994,6 +11168,8 @@
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail",
       "pph-21-ter-monthly-2024",
+      "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-23-jasa-katering-2pct",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
@@ -10005,12 +11181,24 @@
       "ppn-jkpt-industri",
       "ppn-pmse"
     ],
+    "pmk-11-2025": [
+      "ppn-11pct-effective-2025"
+    ],
     "pmk-131-2024": [
       "ppn-11pct-effective-2025"
     ],
     "pmk-141": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
+    ],
+    "pmk-160-2023": [
+      "cukai-eti-alkohol"
+    ],
+    "pmk-96-2024": [
+      "cukai-ecigarette"
+    ],
+    "pmk-97-2024": [
+      "cukai-hasil-tembakau"
     ],
     "pmse": [
       "pph-22-pmse",
@@ -10043,6 +11231,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
@@ -10068,8 +11257,12 @@
       "pph-final-transportasi",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46",
       "ppn-pmse"
+    ],
+    "pp-20-2026": [
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "pp-23-2000": [
       "bea-meterai-3000"
@@ -10082,6 +11275,9 @@
     ],
     "pp131": [
       "pph-final-pengalihan-pp131"
+    ],
+    "pp20": [
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "pp46": [
       "pph-umkm-1pct-pp46"
@@ -10133,6 +11329,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
@@ -10176,6 +11373,7 @@
       "pph-final-transportasi",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "pph-15": [
@@ -10223,6 +11421,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pembelian-barang-2024",
       "pph-22-pengadaan-pemerintah",
@@ -10276,6 +11475,7 @@
     "pph-umkm": [
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "ppj": [
@@ -10307,6 +11507,9 @@
       "ppnbm-suv-4x4",
       "ppnbm-van-wagon"
     ],
+    "ppnbm:": [
+      "ppn-11pct-effective-2025"
+    ],
     "pra": [
       "bea-meterai-pre2021",
       "pph-21-progressive-monthly-pre2024",
@@ -10317,7 +11520,11 @@
       "pph-badan-pre2010",
       "pph-badan-pre2022",
       "pph-final-bunga-pre2009",
-      "ppn-10pct"
+      "ppn-10pct",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "pra-ter": [
       "pph-21-progressive-monthly-pre2024"
@@ -10348,6 +11555,7 @@
       "pph-22-pre2024"
     ],
     "pribadi": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "pph-21-progressive-annual-2024",
       "pph-21-progressive-uulama1983",
       "pph-21-shu-koperasi",
@@ -10356,14 +11564,14 @@
       "pph-final-bunga-koperasi",
       "pph-final-hadiah-undian",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
       "ppnbm-kapal-pesiar",
       "ppnbm-pesawat-pribadi"
     ],
     "procurement": [
       "pph-22-pengadaan-pemerintah"
-    ],
-    "produk": [
-      "cukai-ecigarette"
     ],
     "produksi": [
       "pph-22-impor-api-produsen",
@@ -10388,6 +11596,7 @@
       "pph-23-jasa-lain-4pct"
     ],
     "progresif": [
+      "pbb-perkotaan",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-progressive-annual-2024",
       "pph-21-progressive-monthly-pre2024",
@@ -10419,14 +11628,22 @@
     "psc": [
       "pph-15-pma-opec"
     ],
+    "pt": [
+      "pph-umkm-05pct-2023"
+    ],
     "ptkp": [
       "pph-21-non-taxable-income",
-      "pph-21-pegawai-tidak-tetap",
       "pph-21-progressive-uulama1994",
       "pph-21-ptkp-1984",
       "pph-21-ptkp-1995",
       "pph-21-ptkp-2005",
-      "pph-21-ptkp-2009"
+      "pph-21-ptkp-2009",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-c-detail"
+    ],
+    "ptkp:": [
+      "pph-21-ter-monthly-2024"
     ],
     "public": [
       "pph-badan-go-public"
@@ -10437,9 +11654,6 @@
     ],
     "pungutan": [
       "ppn-impor-bkp"
-    ],
-    "punya": [
-      "pph-21-ter-a-detail"
     ],
     "pupuk": [
       "pph-22-penjualan-barang-2024"
@@ -10457,15 +11671,20 @@
       "pph-23-jasa-lain-4pct"
     ],
     "rata": [
+      "pph-21-pegawai-tidak-tetap",
       "pph-21-ter-monthly-2024"
     ],
     "reasuransi": [
       "pph-15-perusahaan-asuransi"
     ],
+    "rejim": [
+      "bphtb-perolehan-umum-era-uu-28-2009"
+    ],
     "reklame": [
       "pajak-daerah-reklame"
     ],
     "rendah": [
+      "pajak-daerah-hiburan",
       "pph-26-dividen",
       "pph-26-tax-treaty"
     ],
@@ -10478,6 +11697,7 @@
     ],
     "rokok": [
       "bea-masuk-bmt",
+      "cukai-ecigarette",
       "cukai-hasil-tembakau"
     ],
     "royalti": [
@@ -10490,6 +11710,9 @@
       "bea-meterai-dokumen-2021",
       "bea-meterai-kontrak",
       "bea-meterai-pre2021",
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "bphtb-perolehan-waris",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-progressive-pre2009",
       "pph-21-ptkp-1984",
@@ -10498,24 +11721,37 @@
       "pph-21-ptkp-2009",
       "pph-badan-umkm",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
       "ppnbm-rumah-mewah"
     ],
     "rp240": [
       "pph-final-bunga-koperasi"
     ],
     "rp500": [
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "ruang": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
+    "ruko": [
+      "ppnbm-general",
+      "ppnbm-rumah-mewah"
+    ],
     "rumah": [
       "pajak-daerah-restoran",
       "pph-22-penjualan-barang-2024",
       "pph-final-sewa-tanah",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
       "ppnbm-rumah-mewah"
+    ],
+    "saat": [
+      "bphtb-perolehan-umum-era-uu-28-2009"
     ],
     "saham": [
       "bea-meterai-surat-berharga",
@@ -10536,8 +11772,9 @@
     "sampai": [
       "pph-23-jasa-lain-2pct",
       "pph-badan-2022-plus",
+      "pph-badan-umkm",
       "pph-final-bunga-koperasi",
-      "ppnbm-general"
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "sangat": [
       "pph-22-penjualan-barang-2024"
@@ -10545,6 +11782,10 @@
     "sarana": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
+    ],
+    "satu": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum"
     ],
     "satuan": [
       "pph-21-pegawai-tidak-tetap"
@@ -10561,7 +11802,6 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-26-but",
-      "ppn-11pct-effective-2025",
       "ppn-pmse"
     ],
     "sebagaimana": [
@@ -10579,9 +11819,12 @@
       "ppn-10pct"
     ],
     "sebelumnya": [
-      "pph-badan-2022-plus"
+      "pph-badan-2022-plus",
+      "pph-badan-umkm"
     ],
     "sebesar": [
+      "bphtb-perolehan-waris",
+      "pph-22-impor-barang-tertentu",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-pre2001",
       "pph-badan-umkm"
@@ -10593,15 +11836,29 @@
       "ppnbm-sedan-station-wagon",
       "ppnbm-suv-4x4"
     ],
+    "sedarah": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum"
+    ],
     "sederhana": [
       "pph-final-pengalihan-pp71",
       "pph-final-sewa-tanah"
+    ],
+    "sedikit": [
+      "pbb-perkotaan"
     ],
     "sedot": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
+    "sehari": [
+      "pph-21-pegawai-tidak-tetap"
+    ],
+    "seharusnya": [
+      "bphtb-perolehan-waris"
+    ],
     "sehingga": [
+      "ppn-11pct-effective-2025",
       "ppn-tidak-kena-pajak"
     ],
     "sehubungan": [
@@ -10618,25 +11875,44 @@
     ],
     "sejak": [
       "cukai-ecigarette",
+      "cukai-eti-alkohol",
       "pbb-perkotaan",
+      "pph-21-natura-kenikmatan",
       "pph-21-ter-monthly-2024",
-      "ppn-10pct"
+      "pph-final-konstruksi",
+      "pph-umkm-05pct-2023",
+      "ppn-10pct",
+      "ppnbm-general",
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "sejenis": [
       "pph-22-penjualan-barang-2024"
     ],
     "sejenisnya": [
+      "pajak-daerah-hiburan",
       "pph-22-penjualan-barang-2024"
     ],
     "sekaligus": [
       "pph-21-dana-pensiun"
+    ],
+    "sekarang": [
+      "pph-badan-2022-plus"
     ],
     "sektor": [
       "pbb-kehutanan",
       "pbb-perkebunan",
       "pbb-pertambangan"
     ],
+    "sekurang": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-waris"
+    ],
     "selain": [
+      "bphtb-perolehan-umum",
+      "pph-21-ter-monthly-2024",
       "pph-22-ekspor-batubara",
       "pph-22-penjualan-barang-2024",
       "pph-23-hadiah-penghargaan",
@@ -10647,12 +11923,14 @@
       "pph-final-bunga-deposito",
       "pph-final-konstruksi",
       "pph-final-sewa-tanah",
-      "pph-final-transportasi"
+      "pph-final-transportasi",
+      "ppn-11pct-effective-2025"
     ],
     "seluruh": [
       "pph-23-jasa-katering-2pct",
       "pph-23-jasa-pre2001",
-      "pph-23-katering-pre2015"
+      "pph-23-katering-pre2015",
+      "ppnbm-general"
     ],
     "semen": [
       "pph-22-penjualan-barang-2024"
@@ -10666,6 +11944,10 @@
     "sentral": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
+    ],
+    "sepanjang": [
+      "pph-22-impor-2024",
+      "pph-22-impor-api-produsen"
     ],
     "seperti": [
       "pph-22-penjualan-barang-2024",
@@ -10698,16 +11980,21 @@
     ],
     "sesuai": [
       "cukai-hasil-tembakau",
+      "pph-21-natura-kenikmatan",
       "pph-badan-go-public",
       "pph-final-konstruksi",
       "pph-final-sewa-tanah",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "sesuatu": [
       "bea-meterai-dokumen-2021"
     ],
     "setelah": [
       "pph-badan-ikn-10y"
+    ],
+    "seterusnya": [
+      "pph-badan-2022-plus"
     ],
     "setiap": [
       "pph-21-non-taxable-income"
@@ -10747,6 +12034,12 @@
       "ppnbm-sedan-station-wagon",
       "ppnbm-suv-4x4"
     ],
+    "skema": [
+      "cukai-ecigarette"
+    ],
+    "skm": [
+      "cukai-hasil-tembakau"
+    ],
     "slide": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
@@ -10759,10 +12052,15 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-sewa-tanah-bangunan"
     ],
+    "spa": [
+      "pajak-daerah-hiburan"
+    ],
     "spbu": [
       "pph-22-penjualan-barang-2024"
     ],
     "spesifik": [
+      "cukai-ecigarette",
+      "cukai-eti-alkohol",
       "cukai-hasil-tembakau"
     ],
     "spt": [
@@ -10786,7 +12084,7 @@
       "pph-23-jasa-lain-4pct"
     ],
     "sudah": [
-      "pph-21-pegawai-tidak-tetap"
+      "cukai-ecigarette"
     ],
     "sulih": [
       "pph-23-jasa-lain-2pct",
@@ -10815,7 +12113,8 @@
       "ppnbm-suv-4x4"
     ],
     "syarat": [
-      "pph-badan-go-public"
+      "pph-badan-go-public",
+      "pph-badan-umkm"
     ],
     "syarat:": [
       "ppn-pengkreditan"
@@ -10842,11 +12141,12 @@
       "pph-badan-2022-plus",
       "pph-badan-ikn-0pct",
       "pph-badan-ikn-10y",
+      "pph-badan-umkm",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "tahunan": [
-      "cukai-hasil-tembakau",
       "pph-21-progressive-annual-2024"
     ],
     "tahunnya": [
@@ -10864,7 +12164,7 @@
     "tanah": [
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
-      "bphtb-perolehan-waris",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "pajak-daerah-air-tanah",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
@@ -10884,22 +12184,18 @@
     "tanda": [
       "bea-meterai-nota-kredit"
     ],
-    "tanggungan": [
-      "pph-21-ter-a-detail",
-      "pph-21-ter-b-detail",
-      "pph-21-ter-c-detail",
-      "pph-21-ter-monthly-2024"
-    ],
     "tank": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
     "tanpa": [
       "pph-21-progressive-pre2022",
+      "pph-22-impor-barang-tertentu",
       "pph-23-jasa-katering-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-23-katering-pre2015",
-      "pph-final-konstruksi"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "tanpa-npwp": [
       "pph-23-jasa-lain-4pct"
@@ -10908,11 +12204,20 @@
       "bea-masuk-asean-atiga",
       "bea-masuk-bmt",
       "bea-masuk-umum-mf",
+      "bphtb-perolehan-umum",
+      "cukai-ecigarette",
       "cukai-eti-alkohol",
       "cukai-hasil-tembakau",
+      "pajak-daerah-hiburan",
+      "pajak-daerah-hotel",
+      "pajak-daerah-mineral-air",
+      "pajak-daerah-penerangan-jalan",
+      "pajak-daerah-restoran",
+      "pbb-perkotaan",
       "pph-15-pma-opec",
       "pph-21-dana-pensiun",
       "pph-21-honorarium-bukan-pegawai",
+      "pph-21-natura-kenikmatan",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-progressive-annual-2024",
       "pph-21-progressive-monthly-pre2024",
@@ -10924,6 +12229,7 @@
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail",
       "pph-21-ter-monthly-2024",
+      "pph-22-impor-2024",
       "pph-22-pre2024",
       "pph-23-jasa-2001",
       "pph-23-jasa-katering-2pct",
@@ -10946,6 +12252,7 @@
       "pph-final-pengalihan-pp71",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46",
       "ppn-10pct",
       "ppn-11pct-2022",
@@ -10953,7 +12260,11 @@
       "ppn-ekspor-bkp",
       "ppn-ekspor-jkp",
       "ppnbm-general",
-      "ppnbm-sedan-station-wagon"
+      "ppnbm-kapal-pesiar",
+      "ppnbm-pesawat-pribadi",
+      "ppnbm-rumah-mewah",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-van-wagon"
     ],
     "tarif-dikurangi": [
       "pph-badan-umkm"
@@ -10973,6 +12284,9 @@
       "pph-21-shu-koperasi",
       "ppn-ekspor-bkp",
       "ppn-ekspor-jkp"
+    ],
+    "tarif-spesifik": [
+      "cukai-ecigarette"
     ],
     "tarif:": [
       "pph-21-progressive-uulama1983"
@@ -11008,9 +12322,6 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
-    "teknologi": [
-      "pph-26-general-2024"
-    ],
     "telah": [
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-lain-2pct",
@@ -11026,7 +12337,6 @@
       "ppn-jasa-telekomunikasi"
     ],
     "tembakau": [
-      "cukai-ecigarette",
       "cukai-hasil-tembakau"
     ],
     "tempat": [
@@ -11035,6 +12345,7 @@
       "pph-23-jasa-lain-4pct"
     ],
     "tenaga": [
+      "pajak-daerah-penerangan-jalan",
       "pph-21-honorarium-bukan-pegawai",
       "pph-21-pegawai-tidak-tetap",
       "pph-23-jasa-katering-2pct",
@@ -11055,6 +12366,7 @@
       "bea-meterai-dokumen-2021"
     ],
     "ter": [
+      "pph-21-natura-kenikmatan",
       "pph-21-progressive-monthly-pre2024",
       "pph-21-ter-a-detail",
       "pph-21-ter-b-detail",
@@ -11062,15 +12374,19 @@
       "pph-21-ter-monthly-2024"
     ],
     "terakhir": [
-      "pph-21-progressive-annual-2024"
+      "pph-21-natura-kenikmatan",
+      "pph-21-progressive-annual-2024",
+      "pph-21-ter-monthly-2024"
+    ],
+    "tercantum": [
+      "pph-22-impor-barang-tertentu"
     ],
     "terdiri": [
       "pph-21-progressive-uulama1983",
       "pph-21-ter-monthly-2024"
     ],
     "tergantung": [
-      "bea-masuk-umum-mf",
-      "ppnbm-general"
+      "bea-masuk-umum-mf"
     ],
     "tergolong": [
       "pph-22-penjualan-barang-2024"
@@ -11091,6 +12407,8 @@
     ],
     "termasuk": [
       "bea-meterai-surat-berharga",
+      "pph-22-impor-2024",
+      "pph-22-impor-api-produsen",
       "pph-23-hadiah-penghargaan",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
@@ -11099,17 +12417,22 @@
       "ppn-tidak-kena-pajak"
     ],
     "tersebut": [
+      "pajak-daerah-hiburan",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct"
     ],
     "tertentu": [
       "bea-meterai-dokumen-2021",
-      "pph-21-pegawai-tidak-tetap",
+      "pajak-daerah-hiburan",
       "pph-22-bumn-pembelian",
+      "pph-22-impor-2024",
+      "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024",
       "pph-badan-go-public",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-jkpt-industri"
     ],
     "tertinggi": [
@@ -11119,6 +12442,7 @@
       "bea-meterai-dokumen-2021"
     ],
     "terutang": [
+      "bphtb-perolehan-waris",
       "pph-final-transportasi"
     ],
     "tester": [
@@ -11127,16 +12451,22 @@
     ],
     "tetap": [
       "pph-21-pegawai-tidak-tetap",
+      "pph-21-ter-monthly-2024",
       "pph-23-jasa-2001",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-26-but",
-      "pph-26-general-2024",
       "pph-badan-2022-plus",
-      "pph-final-bunga-deposito"
+      "pph-badan-umkm",
+      "pph-final-bunga-deposito",
+      "ppnbm-kapal-pesiar",
+      "ppnbm-pesawat-pribadi"
     ],
     "tidak": [
       "bphtb-pengalihan-dinkes",
+      "cukai-hasil-tembakau",
+      "pajak-daerah-hotel",
+      "pajak-daerah-restoran",
       "pph-21-non-taxable-income",
       "pph-21-pegawai-tidak-tetap",
       "pph-21-progressive-uulama1994",
@@ -11144,18 +12474,23 @@
       "pph-21-ptkp-1995",
       "pph-21-ptkp-2005",
       "pph-21-ptkp-2009",
-      "pph-21-ter-a-detail",
-      "pph-21-ter-monthly-2024",
+      "pph-22-impor-2024",
+      "pph-22-impor-api-produsen",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
       "pph-22-pmse",
       "pph-23-jasa-lain-4pct",
       "pph-26-jasa-dan-sewa",
+      "pph-badan-umkm",
       "pph-final-konstruksi",
       "pph-final-transaksi-saham-bursa",
       "ppn-jkpt-industri",
       "ppn-tidak-kena-pajak",
-      "ppnbm-pesawat-pribadi"
+      "ppnbm-perlengkapan-mewah",
+      "ppnbm-pesawat-pribadi",
+      "ppnbm-sedan-station-wagon",
+      "ppnbm-suv-4x4",
+      "ppnbm-van-wagon"
     ],
     "tidak-dipungut": [
       "ppn-jkpt-industri"
@@ -11165,7 +12500,10 @@
     ],
     "tinggi": [
       "bea-masuk-bmt",
+      "bphtb-perolehan-umum",
       "bphtb-perolehan-waris",
+      "pajak-daerah-hiburan",
+      "pbb-perkotaan",
       "pph-23-jasa-lain-4pct"
     ],
     "tingkat": [
@@ -11175,7 +12513,10 @@
       "pph-21-ptkp-1984",
       "pph-21-ptkp-1995",
       "pph-21-ptkp-2005",
-      "pph-21-ptkp-2009"
+      "pph-21-ptkp-2009",
+      "pph-21-ter-a-detail",
+      "pph-21-ter-b-detail",
+      "pph-21-ter-monthly-2024"
     ],
     "tobacco": [
       "cukai-ecigarette"
@@ -11191,7 +12532,8 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-final-transaksi-saham-bursa",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "transportasi": [
       "pph-23-jasa-lain-2pct",
@@ -11203,10 +12545,17 @@
       "pph-26-tax-treaty"
     ],
     "tua": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "pph-21-dana-pensiun"
     ],
     "tukar": [
       "bphtb-perolehan-umum"
+    ],
+    "tunggal": [
+      "ppnbm-general",
+      "ppnbm-kapal-pesiar",
+      "ppnbm-pesawat-pribadi",
+      "ppnbm-rumah-mewah"
     ],
     "tv": [
       "pph-23-jasa-lain-2pct",
@@ -11216,26 +12565,33 @@
       "bea-meterai-cek-bilyet",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
-      "pph-26-general-2024",
       "pph-final-bunga-deposito",
       "pph-final-hadiah-undian"
+    ],
+    "uap": [
+      "pajak-daerah-hiburan"
     ],
     "udara": [
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-final-transportasi",
+      "ppn-11pct-effective-2025",
+      "ppnbm-general",
       "ppnbm-pesawat-pribadi"
     ],
     "umkm": [
       "pph-badan-umkm",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "umum": [
       "bea-masuk-umum-mf",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
+      "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
       "pph-22-penjualan-barang-2024",
       "pph-23-jasa-2001",
@@ -11244,7 +12600,9 @@
       "pph-26-general-2024",
       "pph-final-pengalihan-pp71",
       "pph-final-sewa-tanah",
-      "ppn-dpp-penghitungan"
+      "ppn-dpp-penghitungan",
+      "ppnbm-general",
+      "ppnbm-pesawat-pribadi"
     ],
     "undang": [
       "pph-23-jasa-lain-2pct",
@@ -11264,7 +12622,7 @@
       "bea-meterai-3000",
       "bea-meterai-dokumen-2021",
       "bphtb-pengalihan-dinkes",
-      "bphtb-perolehan-waris",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "pbb-kehutanan",
       "pbb-perkebunan",
       "pbb-pertambangan",
@@ -11278,11 +12636,13 @@
       "pph-21-norma-pengacara",
       "pph-21-norma-pengusaha-kecil",
       "pph-21-norma-petani",
+      "pph-21-pegawai-tidak-tetap",
       "pph-21-progressive-annual-2024",
       "pph-21-progressive-pre2009",
       "pph-21-ter-monthly-2024",
       "pph-22-bendaharawan",
       "pph-22-bumn-pembelian",
+      "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
       "pph-22-pembelian-barang-2024",
       "pph-22-penjualan-barang-2024",
@@ -11292,16 +12652,21 @@
       "pph-badan-2022-plus",
       "pph-badan-go-public",
       "pph-badan-ikn-0pct",
-      "pph-badan-umkm",
       "pph-final-konstruksi",
       "pph-final-sewa-tanah",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46",
+      "ppn-11pct-effective-2025",
       "ppn-dpp-penghitungan",
       "ppn-jkpt-industri",
       "ppn-pengkreditan",
+      "ppnbm-general",
       "ppnbm-pesawat-pribadi"
+    ],
+    "upah": [
+      "pph-21-pegawai-tidak-tetap"
     ],
     "uplift": [
       "pph-final-migas"
@@ -11312,6 +12677,8 @@
       "pph-15-penerbangan-domestik",
       "pph-15-perusahaan-asuransi",
       "pph-15-pma-opec",
+      "pph-21-norma-pedagang",
+      "pph-21-norma-petani",
       "pph-21-shu-koperasi",
       "pph-22-bumn-pembelian",
       "pph-22-pembelian-barang-2024",
@@ -11319,7 +12686,6 @@
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-26-but",
-      "pph-26-general-2024",
       "pph-26-jasa-dan-sewa",
       "pph-badan-2022-plus",
       "pph-final-bunga-deposito",
@@ -11328,9 +12694,11 @@
       "pph-final-sewa-tanah",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46",
       "ppn-jasa-kegiatan-usaha-persewaan",
-      "ppn-pengkreditan"
+      "ppn-pengkreditan",
+      "ppnbm-pesawat-pribadi"
     ],
     "usahanya": [
       "pph-22-bumn-pembelian",
@@ -11353,9 +12721,12 @@
       "bea-meterai-nota-kredit",
       "bea-meterai-pre2021",
       "bea-meterai-surat-berharga",
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-umum",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "bphtb-perolehan-waris",
+      "cukai-ecigarette",
       "cukai-eti-alkohol",
       "cukai-hasil-tembakau",
       "pajak-daerah-air-tanah",
@@ -11393,6 +12764,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pengadaan-pemerintah",
       "pph-22-pmse",
@@ -11427,6 +12799,7 @@
       "pph-final-transaksi-saham-bursa",
       "pph-final-transportasi",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-10pct",
       "ppn-11pct-2022",
       "ppn-11pct-effective-2025",
@@ -11450,6 +12823,11 @@
       "ppnbm-suv-4x4",
       "ppnbm-van-wagon"
     ],
+    "uu-1-2022": [
+      "bphtb-hibah-sedarah-keturunan-lurus",
+      "bphtb-perolehan-umum",
+      "bphtb-perolehan-waris"
+    ],
     "uu-10-1994": [
       "pph-21-progressive-uulama1994"
     ],
@@ -11462,6 +12840,9 @@
       "pph-23-katering-pre2015",
       "pph-badan-pre2010"
     ],
+    "uu-28-2009": [
+      "bphtb-perolehan-umum-era-uu-28-2009"
+    ],
     "uu-36-2008": [
       "pph-21-progressive-pre2022"
     ],
@@ -11469,6 +12850,9 @@
       "pph-21-progressive-uulama1983",
       "pph-23-jasa-pre2001",
       "pph-badan-pre2001"
+    ],
+    "uu-hpp": [
+      "ppnbm-general"
     ],
     "uulama1983": [
       "pph-21-progressive-uulama1983"
@@ -11480,7 +12864,7 @@
       "ppn-pengkreditan"
     ],
     "valorem": [
-      "cukai-hasil-tembakau"
+      "cukai-ecigarette"
     ],
     "van": [
       "ppnbm-van-wagon"
@@ -11501,6 +12885,7 @@
       "ppnbm-van-wagon"
     ],
     "wajib": [
+      "pbb-perkotaan",
       "pph-23-jasa-lain-2pct",
       "pph-23-jasa-lain-4pct",
       "pph-26-general-2024",
@@ -11508,17 +12893,22 @@
       "pph-final-bunga-koperasi",
       "pph-final-hadiah-undian",
       "pph-final-investasi-lpi",
-      "pph-umkm-05pct-2023"
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "waktu": [
-      "pph-21-pegawai-tidak-tetap",
       "pph-23-jasa-lain-2pct",
-      "pph-23-jasa-lain-4pct"
+      "pph-23-jasa-lain-4pct",
+      "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026"
     ],
     "waris": [
-      "bphtb-perolehan-umum",
       "bphtb-perolehan-waris",
       "pph-final-pengalihan-pp71"
+    ],
+    "wasiat": [
+      "bphtb-perolehan-umum",
+      "bphtb-perolehan-waris"
     ],
     "website": [
       "pph-23-jasa-lain-2pct",
@@ -11540,11 +12930,11 @@
       "pph-badan-2022-plus",
       "pph-badan-go-public",
       "pph-badan-ikn-0pct",
-      "pph-badan-umkm",
       "pph-final-bunga-koperasi",
       "pph-final-sewa-tanah",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-1pct-pp46"
     ],
     "wp-luar-negeri": [
@@ -11564,8 +12954,10 @@
       "bea-meterai-kontrak",
       "bea-meterai-nota-kredit",
       "bea-meterai-pre2021",
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
       "bphtb-perolehan-waris",
+      "cukai-eti-alkohol",
       "pbb-kehutanan",
       "pbb-perkebunan",
       "pbb-perkotaan",
@@ -11580,6 +12972,7 @@
       "pph-22-ekspor-batubara",
       "pph-22-impor-2024",
       "pph-22-impor-api-produsen",
+      "pph-22-impor-barang-tertentu",
       "pph-22-kripto",
       "pph-22-pengadaan-pemerintah",
       "pph-22-penjualan-barang-2024",
@@ -11595,7 +12988,6 @@
       "pph-26-general-2024",
       "pph-26-jasa-dan-sewa",
       "pph-26-royalti",
-      "pph-badan-2022-plus",
       "pph-badan-go-public",
       "pph-badan-pre2001",
       "pph-badan-pre2010",
@@ -11610,17 +13002,15 @@
       "pph-final-transportasi",
       "pph-umkm-05pct-2018",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-10pct",
       "ppn-11pct-2022",
-      "ppn-11pct-effective-2025",
       "ppn-ekspor-jkp",
       "ppn-impor-bkp",
       "ppn-jkpt-industri",
       "ppn-tidak-kena-pajak",
       "ppnbm-general",
-      "ppnbm-kapal-pesiar",
-      "ppnbm-pesawat-pribadi",
-      "ppnbm-rumah-mewah"
+      "ppnbm-pesawat-pribadi"
     ]
   }
 }

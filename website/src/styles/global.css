@@ -14,6 +14,11 @@
   @media (prefers-reduced-motion: no-preference) {
     html { scroll-behavior: smooth; }
   }
+  /* Fragment target harus berhenti DI BAWAH header sticky (56px), bukan
+     tertutupnya. Berlaku untuk anchor umum: rule article, heading, section. */
+  article[id], section[id], h2[id], h3[id], h4[id], div[id^="rule-"] {
+    scroll-margin-top: calc(var(--header-height, 56px) + 0.75rem);
+  }
   body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     color: var(--text);
@@ -119,8 +124,11 @@
 
   /* === SEARCH === */
   .search-input {
-    @apply w-full pl-10 pr-4 py-2 text-sm bg-[var(--surface)] border border-[var(--border)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20 focus:border-[var(--accent)] transition-all duration-200 placeholder:text-[var(--text-tertiary)];
+    @apply w-full pl-10 pr-4 py-2 text-sm bg-[var(--surface)] border border-[var(--border)] rounded-lg focus:outline-none focus:border-[var(--accent)] transition-all duration-200 placeholder:text-[var(--text-tertiary)];
   }
+  /* Catatan: ring opacity di var arbitrary (mis. ring-[var(--accent)]/20)
+     tidak didukung Tailwind 3 — pakai box-shadow eksplisit dengan token soft. */
+  .search-input:focus { box-shadow: 0 0 0 3px var(--accent-soft); }
   .search-panel {
     filter: drop-shadow(0 12px 32px rgba(0, 0, 0, .12));
   }
@@ -211,3 +219,84 @@
     @apply bg-[var(--surface)]/70 backdrop-blur-xl border border-[var(--border)];
   }
 }
+
+/* ==========================================================================
+   GLOBAL STYLES FOR set:html CONTENT
+   The database rows/cards are injected via <Fragment set:html> (shared markup
+   in src/lib/database-markup.ts), so Astro's scoped styles never match them
+   (no data-astro-cid on injected nodes). These rules must live in the global
+   sheet. All colors come from the approved token set so light + dark both work.
+   ========================================================================== */
+
+/* --- Verification badge --- */
+.verification-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+  background: var(--surface-alt);
+}
+.verification-dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 9999px;
+  background: var(--text-tertiary);
+  flex-shrink: 0;
+}
+.verification-primary { background: var(--accent-soft); color: var(--accent-text); }
+.verification-primary .verification-dot { background: var(--accent-text); }
+.verification-secondary { background: var(--accent-soft); color: var(--accent-text); }
+.verification-secondary .verification-dot { background: var(--accent-text); }
+.verification-review { background: var(--highlight-soft); color: var(--status-changed-strong); }
+.verification-review .verification-dot { background: var(--highlight); }
+.verification-conflict { background: var(--status-revoked-soft); color: var(--status-revoked-strong); font-weight: 700; }
+.verification-conflict .verification-dot { background: var(--status-revoked); }
+.verification-summary { background: var(--surface-alt); color: var(--text-tertiary); }
+.verification-conflict-marker { font-size: 0.625rem; line-height: 1; }
+
+/* --- Timeline cell (masa berlaku) --- */
+.timeline-cell { display: flex; flex-direction: column; gap: 0.25rem; }
+.timeline-track {
+  position: relative;
+  height: 0.25rem;
+  width: 100%;
+  border-radius: 9999px;
+  background: var(--surface-alt);
+  overflow: hidden;
+}
+.timeline-span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 9999px;
+  background: var(--accent);
+}
+.timeline-marker {
+  position: absolute;
+  top: -0.125rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: var(--accent);
+  border: 2px solid var(--surface);
+  transform: translateX(-50%);
+}
+.timeline-labels {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--text-tertiary);
+  font-variant-numeric: tabular-nums;
+}
+.timeline-from { color: var(--text-secondary); }
+.timeline-to { text-align: right; }
+.timeline-compact .timeline-track { height: 0.1875rem; }

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "count": 10,
     "timelines": [
@@ -51,7 +51,7 @@
         "group": "pph-umkm",
         "count": 3,
         "from": "2013-07-01",
-        "to": "sekarang"
+        "to": "2026-04-21"
       },
       {
         "group": "bea-meterai",

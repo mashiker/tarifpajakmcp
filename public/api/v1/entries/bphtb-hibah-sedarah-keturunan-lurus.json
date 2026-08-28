@@ -1,0 +1,57 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-08-28T05:06:34.000Z",
+  "data": {
+    "id": "bphtb-hibah-sedarah-keturunan-lurus",
+    "category": "Pajak Daerah",
+    "taxType": "BPHTB",
+    "transactionType": "Hibah kepada Orang Pribadi Sedarah Garis Keturunan Lurus Satu Derajat",
+    "description": "BPHTB atas hibah kepada orang pribadi yang memiliki hubungan sedarah dalam garis keturunan lurus satu derajat (orang tua-anak; kakek/nenek-cucu). NPOPTKP khusus sekurang-kurangnya Rp 60.000.000 (Pasal 80 ayat (1) huruf c UU 1/2022).",
+    "rate": {
+      "type": "percentage",
+      "value": 5
+    },
+    "taxBase": "NPOP dikurangi NPOPTKP hibah sedarah (sekurang-kurangnya Rp 60.000.000)",
+    "payer": "Penerima hibah (keluarga sedarah garis keturunan lurus satu derajat)",
+    "recipient": "Pemerintah Daerah",
+    "withholder": "PPAT / Notaris",
+    "effectiveFrom": "2025-01-05",
+    "effectiveTo": null,
+    "status": "berlaku",
+    "legalBasis": [
+      {
+        "regulation": "UU 1/2022 (HKPD)",
+        "article": "Pasal 80 ayat (1) huruf c",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/186730/uu-no-1-tahun-2022"
+      }
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "notes": "NPOPTKP Rp 60.000.000 hanya untuk hibah sedarah garis keturunan lurus satu derajat. Tidak dapat fasilitas 50% (khusus waris/hibah wasiat). Hibah kepada selain keluarga inti satu derajat menggunakan NPOPTKP umum (sekurang-kurangnya Rp 250.000.000).",
+    "examples": [
+      {
+        "scenario": "Hibah tanah dari orang tua kepada anak, NPOP Rp 400.000.000, NPOPTKP Rp 60.000.000",
+        "calculation": "5% × (400.000.000 - 60.000.000)",
+        "result": "BPHTB = Rp 17.000.000"
+      }
+    ],
+    "tags": [
+      "bphtb",
+      "hibah",
+      "sedarah",
+      "keturunan-lurus",
+      "uu-1-2022",
+      "berlaku"
+    ],
+    "lastVerified": "2026-08-28",
+    "relatedEntries": {
+      "sameCategory": [
+        "bphtb-perolehan-umum",
+        "bphtb-perolehan-umum-era-uu-28-2009",
+        "bphtb-perolehan-waris",
+        "bphtb-pengalihan-dinkes"
+      ]
+    }
+  }
+}

@@ -1,35 +1,35 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "category": "Cukai",
     "taxType": "Cukai",
-    "description": "Cukai — pungutan negara atas barang tertentu (etil alkohol, MMEA, hasil tembakau)",
+    "description": "Cukai — pungutan negara atas barang tertentu (hasil tembakau, etil alkohol, MMEA, KMEA, rokok elektrik) — tarif 2025 = 2024 (dibekukan s.d. 2027)",
     "count": 3,
     "entries": [
       {
         "id": "cukai-hasil-tembakau",
         "transactionType": "Cukai Hasil Tembakau (Rokok)",
-        "rate": "Tarif spesifik + ad valorem",
+        "rate": "Tarif spesifik per batang sesuai jenis/golongan",
         "status": "berlaku",
-        "effectiveFrom": "2008-01-01",
+        "effectiveFrom": "2025-01-01",
         "effectiveTo": null
       },
       {
         "id": "cukai-eti-alkohol",
-        "transactionType": "Cukai Etil Alkohol / MMEA",
-        "rate": "Tarif spesifik per liter",
+        "transactionType": "Cukai Etil Alkohol / MMEA / KMEA",
+        "rate": "Tarif spesifik per liter (per gram untuk KMEA padat)",
         "status": "berlaku",
-        "effectiveFrom": "2008-01-01",
+        "effectiveFrom": "2024-01-01",
         "effectiveTo": null
       },
       {
         "id": "cukai-ecigarette",
-        "transactionType": "Cukai e-Cigarette / Heated Tobacco",
-        "rate": "Tarif ad valorem",
+        "transactionType": "Cukai Rokok Elektrik / Heated Tobacco",
+        "rate": "Tarif spesifik per gram / mililiter",
         "status": "berlaku",
-        "effectiveFrom": "2024-07-01",
+        "effectiveFrom": "2025-01-01",
         "effectiveTo": null
       }
     ]

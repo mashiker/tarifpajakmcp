@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-21-honorarium-bukan-pegawai",
     "category": "PPh",
@@ -61,7 +61,7 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Norma penghitungan 50% berlaku untuk tenaga ahli. Untuk pekerjaan bebas lainnya norma penghitungan bisa berbeda (misalnya: pedagang 15%, petani 25%). Pegawai tidak tetap dan bukan pegawai dengan penghasilan ≤ Rp 4.500.000/bulan: PTKP dihitung harian.",
+    "notes": "Norma penghitungan 50% berlaku untuk tenaga ahli. Untuk pekerjaan bebas/usaha lainnya norma penghitungan bisa berbeda (misalnya: pedagang 20%, petani 10% — nilai representatif; persentase NPPN kini diatur per jenis usaha/KLU dan wilayah via PER-17/PJ/2015 jo. PMK 81/2024). Pegawai tidak tetap tidak memakai norma ini — lihat entri Pegawai Tidak Tetap (tarif efektif harian 0%/0,5%; di atas Rp 2.500.000/hari tarif Pasal 17).",
     "examples": [
       {
         "scenario": "Notaris menerima honorarium Rp 100.000.000",
@@ -81,7 +81,7 @@
       "tenaga-ahli",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "relatedEntries": {
       "sameCategory": [
         "pph-21-ter-monthly-2024",

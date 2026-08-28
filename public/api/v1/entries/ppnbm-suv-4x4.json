@@ -1,13 +1,13 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "ppnbm-suv-4x4",
     "category": "PPnBM",
     "taxType": "PPnBM",
-    "transactionType": "Sedan dan Station Wagon 4x4 / SUV",
-    "description": "PPnBM atas penyerahan sedan, station wagon, dan SUV dengan sistem penggerak 4x4.",
+    "transactionType": "Sedan dan Station Wagon 4x4 / SUV (Historis - Pra-UU HPP)",
+    "description": "HISTORIS: PPnBM atas penyerahan sedan, station wagon, dan SUV dengan sistem penggerak 4x4. Sejak 1 April 2022 kendaraan bermotor TIDAK dikenai PPnBM lagi karena UU HPP menghapus kelompok ini dari objek PPnBM.",
     "rate": {
       "type": "range",
       "value": [
@@ -19,15 +19,10 @@
     "payer": "Pembeli konsumen",
     "recipient": "Negara",
     "withholder": "PKP penjual/ATPM",
-    "effectiveFrom": "2022-04-01",
-    "effectiveTo": null,
-    "status": "berlaku",
+    "effectiveFrom": "2009-10-06",
+    "effectiveTo": "2022-03-31",
+    "status": "dicabut",
     "legalBasis": [
-      {
-        "regulation": "UU 7/2021 (HPP)",
-        "article": "Pasal 8",
-        "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
-      },
       {
         "regulation": "UU 42/2009",
         "article": "Pasal 8",
@@ -35,24 +30,30 @@
       }
     ],
     "supersedes": [],
-    "supersededBy": [],
-    "notes": "Tarif lebih tinggi dari 4x2. ≤1.500cc = 10%, 1.500-2.500cc = 30%, 2.500-3.000cc = 50%, 3.000-4.000cc = 75%, >4.000cc = 75%.",
+    "supersededBy": [
+      "ppnbm-general"
+    ],
+    "notes": "Objek PPnBM di bawah rezim UU 42/2009. Tarif lebih tinggi dari 4x2: ≤1.500cc = 10%, 1.500-2.500cc = 30%, 2.500-3.000cc = 50%, >3.000cc = 75%. UU HPP (Pasal 8 ayat (2)) menghapus kendaraan bermotor dari daftar objek PPnBM efektif 1 April 2022 - SUV/4x4 sejak tanggal tersebut hanya kena PPN, bukan PPnBM.",
     "tags": [
       "ppnbm",
       "suv",
       "4x4",
       "kendaraan",
-      "berlaku"
+      "dicabut",
+      "historis"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "examples": [
       {
-        "scenario": "Sedan dan Station Wagon 4x4 / SUV Rp 100.000.000",
-        "calculation": "Tarif 10%-75% × 100jt",
-        "result": "Pajak = Rp 10.000.000 - Rp 75.000.000"
+        "scenario": "HISTORIS (sebelum 1 April 2022): SUV 4x4 3.500cc Rp 100.000.000",
+        "calculation": "Tarif 75% × 100jt (masa berlaku UU 42/2009)",
+        "result": "PPnBM = Rp 75.000.000. Sejak 1 April 2022: tidak kena PPnBM (Rp 0)"
       }
     ],
     "relatedEntries": {
+      "supersededBy": [
+        "ppnbm-general"
+      ],
       "sameCategory": [
         "ppnbm-general",
         "ppnbm-sedan-station-wagon",

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "uu-1-2022-hkpd",
     "number": "1",
@@ -33,7 +33,9 @@
       "bea-meterai-1000",
       "bphtb-perolehan-umum",
       "bphtb-perolehan-waris",
+      "bphtb-hibah-sedarah-keturunan-lurus",
       "bphtb-pengalihan-dinkes",
+      "cukai-eti-alkohol",
       "pajak-daerah-hotel",
       "pajak-daerah-restoran",
       "pajak-daerah-hiburan",
@@ -66,6 +68,7 @@
       "pph-21-ter-b-detail",
       "pph-21-ter-c-detail",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-impor-api-produsen",
       "pph-22-bendaharawan",
       "pph-22-ekspor-batubara",
@@ -112,6 +115,7 @@
       "pph-badan-pre2010",
       "pph-badan-pre2001",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "pph-umkm-05pct-2018",
       "pph-umkm-1pct-pp46",
       "ppn-11pct-effective-2025",
@@ -129,13 +133,9 @@
       "ppn-dpp-penghitungan",
       "ppn-pengkreditan",
       "ppnbm-general",
-      "ppnbm-sedan-station-wagon",
-      "ppnbm-suv-4x4",
-      "ppnbm-van-wagon",
       "ppnbm-kapal-pesiar",
       "ppnbm-pesawat-pribadi",
-      "ppnbm-rumah-mewah",
-      "ppnbm-perlengkapan-mewah"
+      "ppnbm-rumah-mewah"
     ]
   }
 }

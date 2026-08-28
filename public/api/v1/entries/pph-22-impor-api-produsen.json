@@ -1,18 +1,18 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-22-impor-api-produsen",
     "category": "PPh",
     "taxType": "PPh 22",
     "transactionType": "Impor Barang (API Produsen)",
-    "description": "Pemungutan PPh 22 atas impor barang yang dilakukan importir yang memiliki Angka Pengenal Importir (API) produsen untuk keperluan industri/produksi.",
+    "description": "Pemungutan PPh 22 atas impor barang yang dilakukan importir yang memiliki Angka Pengenal Importir (API) produsen untuk keperluan industri/produksi, sepanjang barang tidak termasuk daftar barang impor tertentu yang dikenai 10%.",
     "rate": {
       "type": "percentage",
       "value": 2.5
     },
-    "taxBase": "Nilai impor (harga pabrik + pungutan impor + PPN)",
+    "taxBase": "Nilai impor = CIF + Bea Masuk + pungutan lain berdasarkan ketentuan kepabeanan",
     "payer": "Importir (pemilik API produsen)",
     "recipient": "Negara",
     "withholder": "Direktorat Jenderal Bea dan Cukai",
@@ -32,14 +32,14 @@
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif 2,5% untuk impor dengan API produsen. Berbeda dari non-API/API umum yang dikenakan 7,5%.",
+    "notes": "Tarif 2,5% untuk impor dengan API produsen. Berbeda dari non-API/API umum yang dikenakan 7,5%. Barang impor tertentu dalam daftar PMK dikenai 10% dengan atau tanpa API.",
     "tags": [
       "pph-22",
       "impor",
       "api-produsen",
       "berlaku"
     ],
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-28",
     "bppuKode": [
       {
         "kode": "22-200-01",
@@ -62,6 +62,7 @@
     "relatedEntries": {
       "sameCategory": [
         "pph-22-impor-2024",
+        "pph-22-impor-barang-tertentu",
         "pph-22-pembelian-barang-2024",
         "pph-22-penjualan-barang-2024",
         "pph-22-bendaharawan",

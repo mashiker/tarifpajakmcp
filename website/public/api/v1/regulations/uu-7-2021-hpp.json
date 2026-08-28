@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "uu-7-2021-hpp",
     "pasalLawId": 1829,
@@ -28,6 +28,7 @@
       "bea-meterai-pre2021",
       "cukai-hasil-tembakau",
       "cukai-eti-alkohol",
+      "cukai-ecigarette",
       "pph-21-ter-monthly-2024",
       "pph-21-progressive-annual-2024",
       "pph-21-honorarium-bukan-pegawai",
@@ -38,6 +39,7 @@
       "pph-21-progressive-monthly-pre2024",
       "pph-21-ptkp-1984",
       "pph-22-impor-2024",
+      "pph-22-impor-barang-tertentu",
       "pph-22-impor-api-produsen",
       "pph-22-bendaharawan",
       "pph-22-ekspor-batubara",
@@ -78,6 +80,7 @@
       "pph-badan-pre2010",
       "pph-badan-pre2001",
       "pph-umkm-05pct-2023",
+      "pph-umkm-05pct-op-pp20-2026",
       "ppn-11pct-effective-2025",
       "ppn-11pct-2022",
       "ppn-ekspor-bkp",
@@ -90,13 +93,9 @@
       "ppn-jkpt-industri",
       "ppn-jasa-kegiatan-usaha-persewaan",
       "ppnbm-general",
-      "ppnbm-sedan-station-wagon",
-      "ppnbm-suv-4x4",
-      "ppnbm-van-wagon",
       "ppnbm-kapal-pesiar",
       "ppnbm-pesawat-pribadi",
-      "ppnbm-rumah-mewah",
-      "ppnbm-perlengkapan-mewah"
+      "ppnbm-rumah-mewah"
     ]
   }
 }

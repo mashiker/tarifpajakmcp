@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "group": "ppn",
     "count": 3,
@@ -42,7 +42,7 @@
         "effectiveFrom": "2025-01-01",
         "effectiveTo": null,
         "status": "berlaku",
-        "legalBasis": "PMK 131/2024 Pasal 2; UU 7/2021 (HPP) Pasal 7 ayat (1)",
+        "legalBasis": "PMK 131/2024 Pasal 2-3; PMK 11/2025 Pasal 2-3 (DPP Nilai Lain & Besaran Tertentu PPN); UU 7/2021 (HPP) Pasal 7 ayat (1)",
         "supersedes": [
           "ppn-11pct-2022",
           "ppn-10pct"

@@ -1,0 +1,25 @@
+{
+  "api": "tarif-pajak-id",
+  "version": "v1",
+  "generated": "2026-08-28T05:06:34.000Z",
+  "data": {
+    "id": "pmk-160-2023",
+    "number": "160",
+    "year": 2023,
+    "title": "PMK tentang Tarif Cukai Etil Alkohol, Minuman yang Mengandung Etil Alkohol, dan Konsentrat yang Mengandung Etil Alkohol",
+    "shortName": "PMK Tarif Cukai EA/MMEA/KMEA",
+    "type": "PMK",
+    "promulgationDate": "2023-12-28",
+    "effectiveDate": "2024-01-01",
+    "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-160-tahun-2023",
+    "status": "berlaku",
+    "description": "PMK menetapkan tarif cukai EA/MMEA/KMEA sejak 1 Januari 2024 (mencabut PMK 158/PMK.010/2018): EA Rp 20.000/liter; MMEA Gol A Rp 16.500/liter; Gol B Rp 42.500/liter (impor Rp 53.000); Gol C Rp 101.000/liter (impor Rp 152.000); KMEA cair Rp 228.000/liter; KMEA padat Rp 1.000/gram. Ditetapkan 27 Desember 2023, diundangkan 28 Desember 2023.",
+    "relevantArticles": "Pasal 2, Lampiran",
+    "relatedRegulations": [
+      "uu-39-2007"
+    ],
+    "referencingEntries": [
+      "cukai-eti-alkohol"
+    ]
+  }
+}

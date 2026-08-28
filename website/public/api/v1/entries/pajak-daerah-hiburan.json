@@ -1,21 +1,22 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pajak-daerah-hiburan",
     "category": "Pajak Daerah",
     "taxType": "Pajak Daerah",
     "transactionType": "Pajak Hiburan",
-    "description": "Pajak atas pelayanan hiburan (bioskop, karaoke, dll).",
+    "description": "Pajak atas jasa pertunjukan/hiburan (bioskop, karaoke, dll). Tarif paling tinggi 10%; khusus jasa hiburan tertentu (diskotek, karaoke, klab malam, bar, mandi uap/spa, dan sejenisnya) diberlakukan tarif paling rendah 40% dan paling tinggi 75% dari tarif maksimum tersebut (efektif 4%-7,5%).",
     "rate": {
       "type": "range",
       "value": [
-        5,
-        35
-      ]
+        0,
+        10
+      ],
+      "effectiveRate": "Hiburan umum: maks 10%. Jasa hiburan tertentu (Pasal 58 ayat (2)): 40%-75% × tarif maksimum 10% = efektif 4%-7,5%"
     },
-    "taxBase": "Penerimaan / tiket hiburan",
+    "taxBase": "Penerimaan / nilai jasa hiburan",
     "payer": "WP Daerah",
     "recipient": "Pemerintah Daerah",
     "withholder": null,
@@ -25,18 +26,18 @@
     "legalBasis": [
       {
         "regulation": "UU 1/2022 (HKPD)",
-        "article": "Pasal 60",
+        "article": "Pasal 58 ayat (1)-(2)",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/189054/uu-no-1-tahun-2022"
       }
     ],
     "supersedes": [],
     "supersededBy": [],
-    "notes": "Tarif 5-35% tergantung jenis. Tertinggi perjudian (35%).",
+    "notes": "Tarif maksimum 10% untuk jasa pertunjukan/hiburan umum. Khusus jasa hiburan pada diskotek, karaoke, klab malam, bar, mandi uap/spa, dan sejenisnya: tarif paling rendah 40% dan paling tinggi 75% DARI tarif maksimum (efektif 4%-7,5%). Ketentuan 40%-75% ini pernah diuji di Mahkamah Konstitusi (kasus tarif pajak hiburan) namun tetap berlaku. Angka 35% (era UU 28/2009) tidak lagi berlaku.",
     "examples": [
       {
-        "scenario": "Tiket bioskop Rp 75.000",
-        "calculation": "15%×75rb",
-        "result": "Pajak=R11.250"
+        "scenario": "Tiket bioskop Rp 75.000 (hiburan umum, tarif Perda 10%)",
+        "calculation": "10%×75rb",
+        "result": "Pajak=R7.500"
       }
     ],
     "tags": [

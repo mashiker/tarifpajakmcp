@@ -2,7 +2,7 @@
 
 > Open database tarif pajak Indonesia, bersumber dari regulasi resmi Republik Indonesia.
 > Kanonik: https://tarif-pajak-id.pages.dev
-> Rilis: 2026-09-11 · versi 0.1.0 · sourceHash dd777bf7002f
+> Rilis: 2026-08-28 · versi 0.1.0 · sourceHash c361b17f1835
 > Lisensi: MIT (kode) + CC-BY-SA 4.0 (data)
 
 ## Apa ini

@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pp-58-2023",
     "number": "58",
@@ -9,12 +9,12 @@
     "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 21",
     "shortName": "PP TER PPh 21",
     "type": "PP",
-    "promulgationDate": "2023-12-11",
+    "promulgationDate": "2023-12-27",
     "effectiveDate": "2024-01-01",
-    "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023",
+    "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pp-58-tahun-2023",
     "pasalUrl": "https://pasal.id/peraturan/pp/pp-no-58-tahun-2023",
     "status": "berlaku",
-    "description": "PP yang mengatur Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif annualized. TER terdiri dari 3 kategori (A, B, C) masing-masing 42 lapisan. Juga mengatur pemotongan PPh 21 atas dana pensiun (Pasal 14), pegawai tidak tetap (Pasal 5).",
+    "description": "PP yang mengatur Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif annualized. TER terdiri dari 3 kategori (A, B, C) dengan masing-masing 44, 40, dan 41 lapisan; tarif 0% hingga 34%. Juga mengatur pemotongan PPh 21 atas dana pensiun (Pasal 14), pegawai tidak tetap (Pasal 5). Ditetapkan dan diundangkan 27 Desember 2023; penerapan pemotongan mulai masa Januari 2024.",
     "relevantArticles": "Pasal 2, 3, 4, 5, 14, Lampiran (Tabel TER A/B/C)",
     "relatedRegulations": [
       "pmk-168-2023",

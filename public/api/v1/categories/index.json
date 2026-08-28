@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "count": 15,
     "categories": [
@@ -23,14 +23,14 @@
         "category": "Pajak Daerah",
         "taxType": "BPHTB",
         "slug": "bphtb",
-        "description": "Bea Perolehan Hak atas Tanah dan Bangunan - Pajak yang dikenakan atas perolehan hak atas tanah dan/atau bangunan",
-        "count": 3
+        "description": "Bea Perolehan Hak atas Tanah dan Bangunan - Pajak yang dikenakan atas perolehan hak atas tanah dan/atau bangunan (UU 1/2022 HKPD berlaku penuh sejak 5 Januari 2025)",
+        "count": 5
       },
       {
         "category": "Cukai",
         "taxType": "Cukai",
         "slug": "cukai",
-        "description": "Cukai — pungutan negara atas barang tertentu (etil alkohol, MMEA, hasil tembakau)",
+        "description": "Cukai — pungutan negara atas barang tertentu (hasil tembakau, etil alkohol, MMEA, KMEA, rokok elektrik) — tarif 2025 = 2024 (dibekukan s.d. 2027)",
         "count": 3
       },
       {
@@ -59,7 +59,7 @@
         "taxType": "PPh 22",
         "slug": "pph-22",
         "description": "Pajak Penghasilan Pasal 22 - Pemungutan pajak atas impor, pembelian barang, dan penjualan barang tertentu",
-        "count": 11
+        "count": 12
       },
       {
         "category": "PPh",
@@ -94,7 +94,7 @@
         "taxType": "PPh UMKM",
         "slug": "pph-umkm",
         "description": "Pajak Penghasilan atas penghasilan dari usaha UMKM - tarif final untuk WP yang memiliki peredaran bruto tertentu",
-        "count": 3
+        "count": 4
       },
       {
         "category": "PPN",
@@ -107,7 +107,7 @@
         "category": "PPnBM",
         "taxType": "PPnBM",
         "slug": "ppnbm",
-        "description": "Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah",
+        "description": "Pajak Penjualan atas Barang Mewah - Pajak yang dipungut satu kali pada saat penyerahan BKP yang tergolong mewah. Sejak UU HPP (1 April 2022) objek PPnBM hanya 3 kelompok barang: kapal pesiar/layar mewah, pesawat udara pribadi mewah, dan rumah mewah (HJE > Rp 30 miliar), semuanya dengan tarif tunggal 10%.",
         "count": 8
       }
     ]

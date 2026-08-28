@@ -1,17 +1,17 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-21-ter-monthly-2024",
     "category": "PPh",
     "taxType": "PPh 21",
     "transactionType": "Gaji/Bulan TER",
-    "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan. Menggantikan metode tarif progresif lama sejak 1 Januari 2024. Terdiri dari 3 kategori: TER A (tidak kawin), TER B (kawin 0-2 tanggungan), TER C (kawin ≥3 tanggungan). Masing-masing memiliki 42 lapisan tarif.",
+    "description": "Tarif Efektif Rata-rata (TER) PPh 21 untuk pemotongan bulanan pegawai tetap pada masa pajak selain masa pajak terakhir. Menggantikan metode tarif progresif annualized sejak 1 Januari 2024. Terdiri dari 3 kategori menurut kelas PTKP: TER A (TK/0, TK/1, K/0) 44 lapisan, TER B (TK/2, TK/3, K/1, K/2) 40 lapisan, dan TER C (K/3) 41 lapisan. Tarif 0% hingga 34%.",
     "rate": {
       "type": "progressive",
-      "value": "0% – 25% (TER A/B/C)",
-      "effectiveRate": "0% untuk penghasilan rendah, hingga 25% untuk penghasilan tinggi"
+      "value": "0% – 34% (TER A/B/C)",
+      "effectiveRate": "0% untuk penghasilan bruto rendah (≤ Rp 5,4 juta / 6,2 juta / 6,6 juta sesuai kategori), hingga 34% untuk penghasilan bruto > Rp 1,4 miliar"
     },
     "taxBase": "Penghasilan bruto bulanan dikurangi iuran pensiun/BPJS",
     "payer": "WP Orang Pribadi dalam negeri (pegawai/freelancer)",
@@ -43,22 +43,22 @@
       "pph-21-progressive-monthly-pre2024"
     ],
     "supersededBy": [],
-    "notes": "Dasar hukum: PP 58 Tahun 2023 tentang Perubahan atas PP 16 Tahun 2009. TER menggantikan metode perhitungan lama yang menggunakan tarif Pasal 17 UU PPh annualized. Lihat detail tabel per kategori: TER A, TER B, TER C.",
+    "notes": "Dasar hukum: PP 58 Tahun 2023 (Lampiran Tabel TER A/B/C) jo. PMK 168/2023. Kategori ditentukan kelas PTKP di awal tahun pajak: A = TK/0, TK/1, K/0; B = TK/2, TK/3, K/1, K/2; C = K/3. TER hanya dipakai untuk masa pajak Januari–November; masa pajak terakhir (Desember) dihitung dengan tarif Pasal 17 atas PKP setahun dikurangi PPh yang telah dipotong. Detail tabel per kategori: TER A, TER B, TER C.",
     "examples": [
       {
-        "scenario": "Pegawai tidak kawin, gaji Rp 10.000.000",
-        "calculation": "Gunakan TER A → 2%",
-        "result": "PPh 21 = Rp 200.000/bulan"
+        "scenario": "Pegawai TK/0, gaji Rp 10.000.000/bulan",
+        "calculation": "TER A: jatuh di lapisan di atas Rp 9.650.000 – Rp 10.050.000 = 2%",
+        "result": "PPh 21 = 2% × Rp 10.000.000 = Rp 200.000"
       },
       {
-        "scenario": "Pegawai kawin 2 tanggungan, gaji Rp 25.000.000",
-        "calculation": "Gunakan TER B → 5.5%",
-        "result": "PPh 21 = Rp 1.375.000/bulan"
+        "scenario": "Pegawai K/2, gaji Rp 25.000.000/bulan",
+        "calculation": "TER B: jatuh di lapisan di atas Rp 21.850.000 – Rp 26.000.000 = 9%",
+        "result": "PPh 21 = 9% × Rp 25.000.000 = Rp 2.250.000"
       },
       {
-        "scenario": "Pegawai kawin 3 tanggungan, gaji Rp 50.000.000",
-        "calculation": "Gunakan TER C → 9.5%",
-        "result": "PPh 21 = Rp 4.750.000/bulan"
+        "scenario": "Pegawai K/3, gaji Rp 50.000.000/bulan",
+        "calculation": "TER C: jatuh di lapisan di atas Rp 47.400.000 – Rp 51.200.000 = 17%",
+        "result": "PPh 21 = 17% × Rp 50.000.000 = Rp 8.500.000"
       }
     ],
     "tags": [
@@ -68,7 +68,7 @@
       "bulanan",
       "berlaku"
     ],
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-28",
     "relatedEntries": {
       "supersedes": [
         "pph-21-progressive-monthly-pre2024"

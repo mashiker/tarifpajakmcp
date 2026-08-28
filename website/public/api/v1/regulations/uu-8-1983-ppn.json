@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "uu-8-1983-ppn",
     "number": "8",
@@ -22,10 +22,7 @@
     "referencingEntries": [
       "bea-meterai-pre2021",
       "bea-meterai-1000",
-      "bphtb-perolehan-umum",
-      "bphtb-perolehan-waris",
-      "bphtb-pengalihan-dinkes",
-      "pbb-perkotaan",
+      "bphtb-perolehan-umum-era-uu-28-2009",
       "pph-21-ter-monthly-2024",
       "pph-21-progressive-pre2022",
       "pph-21-pegawai-tidak-tetap",

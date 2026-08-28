@@ -1,9 +1,9 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
-    "count": 39,
+    "count": 47,
     "regulations": [
       {
         "id": "uu-7-1983-pph",
@@ -129,7 +129,7 @@
         "title": "PP tentang Tarif Pemotongan Pajak Penghasilan Pasal 21",
         "type": "PP",
         "status": "berlaku",
-        "sourceUrl": "https://peraturan.go.id/id/pp-no-58-tahun-2023"
+        "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pp-58-tahun-2023"
       },
       {
         "id": "pp-60-2023",
@@ -243,10 +243,19 @@
         "id": "pp-55-2022",
         "number": "55",
         "year": 2022,
-        "title": "PP tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterika atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu",
+        "title": "PP tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan",
+        "type": "PP",
+        "status": "diubah_sebagian",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/194769/pp-no-55-tahun-2022"
+      },
+      {
+        "id": "pp-20-2026",
+        "number": "20",
+        "year": 2026,
+        "title": "PP tentang Perubahan atas PP Nomor 55 Tahun 2022 tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan",
         "type": "PP",
         "status": "berlaku",
-        "sourceUrl": "https://peraturan.bpk.go.id/Details/194769/pp-no-55-tahun-2022"
+        "sourceUrl": "https://peraturan.go.id/id/pp-no-20-tahun-2026"
       },
       {
         "id": "pp-28-2023",
@@ -279,10 +288,19 @@
         "id": "pmk-131-2024",
         "number": "131",
         "year": 2024,
-        "title": "PMK tentang Penentuan Tarif Pajak Pertambahan Nilai",
+        "title": "PMK tentang Perlakuan Pajak Pertambahan Nilai atas Impor Barang Kena Pajak, Penyerahan Barang Kena Pajak, Penyerahan Jasa Kena Pajak, dan/atau Pemanfaatan Barang Kena Pajak Tidak Berwujud serta Jasa Kena Pajak dari Luar Daerah Pabean di Dalam Daerah Pabean",
         "type": "PMK",
         "status": "berlaku",
-        "sourceUrl": "https://peraturan.bpk.go.id/Details/202689/pmk-no-131-tahun-2024"
+        "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024"
+      },
+      {
+        "id": "pmk-11-2025",
+        "number": "11",
+        "year": 2025,
+        "title": "PMK tentang Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu Pajak Pertambahan Nilai",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/313574"
       },
       {
         "id": "pmk-141-2015",
@@ -348,6 +366,51 @@
         "sourceUrl": "https://peraturan.bpk.go.id/Details/198352/pmk-no-202-tahun-2023"
       },
       {
+        "id": "pmk-96-2024",
+        "number": "96",
+        "year": 2024,
+        "title": "PMK tentang Perubahan Kedua atas PMK Nomor 193/PMK.010/2021 tentang Tarif Cukai Hasil Tembakau Berupa Rokok Elektrik dan Hasil Pengolahan Tembakau Lainnya",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-96-tahun-2024"
+      },
+      {
+        "id": "pmk-97-2024",
+        "number": "97",
+        "year": 2024,
+        "title": "PMK tentang Perubahan Ketiga atas PMK Nomor 192/PMK.010/2021 tentang Tarif Cukai Hasil Tembakau",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://peraturan.bpk.go.id/Details/311469/pmk-no-97-tahun-2024"
+      },
+      {
+        "id": "pmk-160-2023",
+        "number": "160",
+        "year": 2023,
+        "title": "PMK tentang Tarif Cukai Etil Alkohol, Minuman yang Mengandung Etil Alkohol, dan Konsentrat yang Mengandung Etil Alkohol",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-160-tahun-2023"
+      },
+      {
+        "id": "pmk-51-2025",
+        "number": "51",
+        "year": 2025,
+        "title": "PMK tentang Pemungutan Pajak Penghasilan Pasal 22 Sehubungan dengan Pembayaran atas Penyerahan Barang dan Kegiatan di Bidang Impor atau Kegiatan Usaha di Bidang Lain",
+        "type": "PMK",
+        "status": "berlaku",
+        "sourceUrl": "https://jdih.kemenkeu.go.id/dok/pmk-51-tahun-2025"
+      },
+      {
+        "id": "pp-14-2021",
+        "number": "14",
+        "year": 2021,
+        "title": "PP tentang Perubahan atas PP Nomor 22 Tahun 2020 tentang Peraturan Pelaksanaan Undang-Undang Nomor 2 Tahun 2017 tentang Jasa Konstruksi",
+        "type": "PP",
+        "status": "berlaku",
+        "sourceUrl": "https://jdih.kemenkoinfra.go.id/id/peraturan-pemerintah-republik-indonesia-no-14-tahun-2021"
+      },
+      {
         "id": "perpres-55-2013",
         "number": "55",
         "year": 2013,
@@ -355,6 +418,15 @@
         "type": "Perpres",
         "status": "berlaku",
         "sourceUrl": "https://peraturan.bpk.go.id/Details/44947/perpres-no-55-tahun-2013"
+      },
+      {
+        "id": "pp-9-2022",
+        "number": "9",
+        "year": 2022,
+        "title": "Perubahan Kedua atas Peraturan Pemerintah Nomor 51 Tahun 2008 tentang Pajak Penghasilan atas Penghasilan dari Usaha Jasa Konstruksi",
+        "type": "PP",
+        "status": "berlaku",
+        "sourceUrl": "https://jdih.kemenkoinfra.go.id/id/peraturan-pemerintah-republik-indonesia-no-14-tahun-2021"
       }
     ]
   }

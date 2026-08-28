@@ -7,19 +7,19 @@
       "id": "pph-umkm-05pct-2023",
       "category": "PPh",
       "taxType": "PPh UMKM",
-      "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar)",
-      "description": "Tarif final PPh 0,5% atas penghasilan dari usaha yang diterima WP orang pribadi yang memiliki peredaran bruto tertentu, sesuai PP 55/2022.",
+      "transactionType": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) - Era PP 55/2022",
+      "description": "HISTORIS (era PP 55/2022): Tarif final PPh 0,5% atas penghasilan dari usaha yang diterima WP orang pribadi maupun WP badan (PT/CV) dengan peredaran bruto tertentu. Berakhir untuk WP badan sejak 22 April 2026 melalui PP 20/2026; untuk WP OP fasilitas dilanjutkan tanpa batas waktu oleh PP 20/2026.",
       "rate": {
         "type": "percentage",
         "value": 0.5
       },
       "taxBase": "Peredaran bruto (omzet) bulanan",
-      "payer": "WP Orang Pribadi pelaku UMKM",
+      "payer": "WP Orang Pribadi dan WP Badan pelaku UMKM (masa PP 55/2022)",
       "recipient": "Negara",
       "withholder": null,
       "effectiveFrom": "2023-01-01",
-      "effectiveTo": null,
-      "status": "berlaku",
+      "effectiveTo": "2026-04-21",
+      "status": "diubah",
       "legalBasis": [
         {
           "regulation": "PP 55/2022",
@@ -35,13 +35,16 @@
       "supersedes": [
         "pph-umkm-05pct-2018"
       ],
-      "supersededBy": [],
-      "notes": "Masa berlaku 7 tahun sejak PP 55/2022. Batas peredaran bruto Rp 4,8 miliar/tahun. PP 55/2022 menggantikan PP 23/2018. Kini juga berlaku untuk WP badan (perubahan dari PP 23/2018).",
+      "supersededBy": [
+        "pph-umkm-05pct-op-pp20-2026"
+      ],
+      "notes": "PP 55/2022 memberikan fasilitas PPh final 0,5% dengan masa terbatas 7 tahun dan mencakup WP OP maupun WP badan (PT/CV). PP 20/2026 (berlaku 22 April 2026) merevisi PP 55/2022: (1) fasilitas WP Orang Pribadi tidak dibatasi masa berlaku (tidak ada lagi batas 7 tahun); (2) WP badan berbentuk PT dan CV TIDAK LAGI mendapat fasilitas PPh final 0,5% dan dikenai PPh tarif umum Pasal 17. Entri ini tetap relevan sebagai dasar untuk masa pajak s.d. 21 April 2026.",
       "tags": [
         "pph-umkm",
         "final",
         "0.5-persen",
-        "berlaku"
+        "diubah",
+        "historis"
       ],
       "lastVerified": "2026-05-26",
       "bppuKode": [
@@ -73,9 +76,92 @@
       ],
       "examples": [
         {
-          "scenario": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) Rp 100.000.000",
+          "scenario": "Penghasilan Usaha (Peredaran Bruto s.d. Rp 4,8 miliar) Rp 100.000.000 (masa PP 55/2022, s.d. 21 April 2026)",
           "calculation": "0.5% × 100.000.000",
           "result": "Pajak = Rp 500.000"
+        }
+      ]
+    },
+    {
+      "id": "pph-umkm-05pct-op-pp20-2026",
+      "category": "PPh",
+      "taxType": "PPh UMKM",
+      "transactionType": "Penghasilan Usaha WP Orang Pribadi (Peredaran Bruto s.d. Rp 4,8 miliar) - PP 20/2026",
+      "description": "Tarif final PPh 0,5% atas penghasilan dari usaha WP Orang Pribadi dengan peredaran bruto sampai Rp 4,8 miliar per tahun, berlaku TANPA batas waktu berdasarkan PP 20/2026 yang merevisi PP 55/2022.",
+      "rate": {
+        "type": "percentage",
+        "value": 0.5
+      },
+      "taxBase": "Peredaran bruto (omzet) bulanan",
+      "payer": "WP Orang Pribadi pelaku UMKM",
+      "recipient": "Negara",
+      "withholder": null,
+      "effectiveFrom": "2026-04-22",
+      "effectiveTo": null,
+      "status": "berlaku",
+      "legalBasis": [
+        {
+          "regulation": "PP 20/2026",
+          "article": "Pasal 1-3",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/349415/pp-no-20-tahun-2026"
+        },
+        {
+          "regulation": "PP 55/2022",
+          "article": "Pasal 2-3",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/196497/pp-no-55-tahun-2022"
+        },
+        {
+          "regulation": "UU 7/2021 (HPP)",
+          "article": "Pasal 4 ayat (2)",
+          "sourceUrl": "https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021"
+        }
+      ],
+      "supersedes": [
+        "pph-umkm-05pct-2023"
+      ],
+      "supersededBy": [],
+      "notes": "PP 20/2026 (diundangkan dan berlaku 22 April 2026) merevisi PP 55/2022: (1) fasilitas PPh final 0,5% untuk WP Orang Pribadi berlaku tanpa batas waktu - batas masa 7 tahun dihapus; (2) WP badan berbentuk PT dan CV TIDAK LAGI mendapat fasilitas dan dikenai PPh tarif umum Pasal 17; (3) fasilitas utama tetap diberikan kepada WP OP, koperasi, dan PT perseorangan (pendiri perseorangan tunggal). Batas peredaran bruto tetap Rp 4,8 miliar/tahun; melebihi itu dikenai PPh tarif umum.",
+      "tags": [
+        "pph-umkm",
+        "final",
+        "0.5-persen",
+        "pp-20-2026",
+        "orang-pribadi",
+        "berlaku"
+      ],
+      "lastVerified": "2026-08-28",
+      "bppuKode": [
+        {
+          "kode": "28-423-01",
+          "nama": "Pemotongan atau pemungutan PPh atas  penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 23 Tahun 2018 atau Peraturan Pemerintah Nomor 55 Tahun 2022.",
+          "tarif": 0.5
+        },
+        {
+          "kode": "28-423-02",
+          "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak dengan peredaran bruto tertentu sesuai dengan Peraturan Pemerintah Nomor 55 Tahun 2022.",
+          "tarif": 0.0
+        },
+        {
+          "kode": "28-423-03",
+          "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak orang pribadi yang memiliki peredaran bruto tertentu sesuai dengan PP 55 Tahun 2022 dengan peredaran usaha s.d Rp500.000.000,00.",
+          "tarif": 0.5
+        },
+        {
+          "kode": "28-423-12",
+          "nama": "Pemotongan atau Pemungutan PPh atas transaksi penjualan barang atau penyerahan jasa yang dilakukan oleh Wajib Pajak yang memenuhi persyaratan tertentu untuk dikenai PPh yang bersifat final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+          "tarif": 0.0
+        },
+        {
+          "kode": "28-423-13",
+          "nama": "Pemotongan atau pemungutan PPh atas transaksi pembelian yang dilakukan oleh Wajib Pajak yang memanfaatkan fasilitas PPh final dengan tarif 0% di IKN (PPh UMKM di IKN).",
+          "tarif": 0.0
+        }
+      ],
+      "examples": [
+        {
+          "scenario": "WP OP, omzet bulan Juni 2026 Rp 100.000.000",
+          "calculation": "0.5% × 100.000.000 (tanpa batas masa fasilitas per PP 20/2026)",
+          "result": "PPh Final = Rp 500.000"
         }
       ]
     },

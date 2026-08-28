@@ -1,7 +1,7 @@
 {
   "api": "tarif-pajak-id",
   "version": "v1",
-  "generated": "2026-09-11T02:40:00.000Z",
+  "generated": "2026-08-28T05:06:34.000Z",
   "data": {
     "id": "pph-22-pre2024",
     "category": "PPh",
@@ -64,6 +64,7 @@
       ],
       "sameCategory": [
         "pph-22-impor-2024",
+        "pph-22-impor-barang-tertentu",
         "pph-22-pembelian-barang-2024",
         "pph-22-penjualan-barang-2024",
         "pph-22-impor-api-produsen",

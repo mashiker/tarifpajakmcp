@@ -121,10 +121,20 @@ test.describe('detail page — predecessor/successor anchors scroll', () => {
     // The URL now carries the fragment.
     await expect(page).toHaveURL(new RegExp(`#${targetFragment}$`));
     // The targeted article exists and is the active element (or near the top
-    // of the viewport). Give the browser a moment to complete the scroll.
+    // of the viewport). The site enables `scroll-behavior: smooth`, so the
+    // fragment scroll animates for a few hundred ms — wait for the position
+    // to settle before measuring instead of racing the animation.
     const target = page.locator(`#${targetFragment}`);
     await expect(target).toBeVisible();
-    // The element's top edge must be within the viewport's top region.
+    await page.waitForFunction((id) => {
+      const el = document.getElementById(id);
+      if (!el) return false;
+      const win = window as unknown as { __lastAnchorY?: number };
+      const y = Math.round(el.getBoundingClientRect().top);
+      const settled = win.__lastAnchorY !== undefined && Math.abs(win.__lastAnchorY - y) < 2;
+      win.__lastAnchorY = y;
+      return settled;
+    }, targetFragment, { polling: 120, timeout: 5000 });
     const box = await target.boundingBox();
     expect(box, 'target article must have a bounding box').not.toBeNull();
     // Allow some slack for sticky headers; the article top should be >=0 and
