@@ -173,7 +173,10 @@ const isDefault = (a: string, b: string) => a === b;
     letter-spacing: 0.06em;
     color: var(--ink-secondary, #44545a);
   }
-  .db-toolbar-search { flex: 1 1 22rem; }
+  /* CATATAN: JANGAN kasih flex-basis rem di sini — form adalah flex column,
+     jadi basis 22rem diterjemahkan sebagai TINGGI 352px (bug gap raksasa di
+     mobile). Row cukup ukuran konten (default flex: 0 1 auto). */
+  .db-toolbar-search { flex: 0 0 auto; }
   .db-search-wrap { position: relative; flex: 1; }
   /* Dua class (>.db-input satu class) supaya mengalahkan .db-input yang
      didefinisikan lebih bawah dengan specificity setara. */
@@ -271,7 +274,7 @@ const isDefault = (a: string, b: string) => a === b;
       gap: 0.75rem;
       align-items: end;
     }
-    .db-toolbar-search { flex: 1 1 100%; }
+    .db-toolbar-search { flex: 0 0 auto; }
   }
   @media (prefers-reduced-motion: reduce) {
     .db-chip, .db-clear-btn, .db-input { transition: none; }
