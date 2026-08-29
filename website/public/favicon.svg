@@ -1,23 +1,10 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="16" fill="#111318"/>
-  <!-- Data table grid -->
-  <rect x="16" y="18" width="32" height="28" rx="3" stroke="#0d9488" stroke-width="2" fill="none"/>
-  <!-- Header row -->
-  <line x1="16" y1="26" x2="48" y2="26" stroke="#0d9488" stroke-width="1.5"/>
-  <!-- Column divider -->
-  <line x1="32" y1="18" x2="32" y2="46" stroke="#0d9488" stroke-width="1.5"/>
-  <!-- Row dividers -->
-  <line x1="16" y1="33" x2="48" y2="33" stroke="#0d9488" stroke-width="1" opacity="0.5"/>
-  <line x1="16" y1="40" x2="48" y2="40" stroke="#0d9488" stroke-width="1" opacity="0.5"/>
-  <!-- Percentage symbol in top-right cell -->
-  <text x="40" y="24" font-family="IBM Plex Mono, monospace" font-size="9" font-weight="700" fill="#0d9488" text-anchor="middle">%</text>
-  <!-- Data dots in cells -->
-  <circle cx="22" cy="30" r="1.5" fill="#0d9488" opacity="0.4"/>
-  <circle cx="26" cy="30" r="1.5" fill="#0d9488" opacity="0.4"/>
-  <circle cx="22" cy="37" r="1.5" fill="#0d9488" opacity="0.4"/>
-  <circle cx="26" cy="37" r="1.5" fill="#0d9488" opacity="0.4"/>
-  <circle cx="38" cy="30" r="1.5" fill="#0d9488" opacity="0.4"/>
-  <circle cx="38" cy="37" r="1.5" fill="#0d9488" opacity="0.4"/>
-  <circle cx="38" cy="44" r="1.5" fill="#0d9488" opacity="0.4"/>
-  <circle cx="42" cy="44" r="1.5" fill="#0d9488" opacity="0.4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Tarif Pajak ID - brand mark: % dengan slash-panah naik di tile teal.
+       Konsep: tarif (persen) + data yang tumbuh (panah). Basis konsep
+       Gemini image (brand/logo-concepts/concept-d), rebuild vektor presisi. -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0E5E58"/>
+  <circle cx="21" cy="21" r="7.5" fill="none" stroke="#FFFFFF" stroke-width="5.2"/>
+  <circle cx="43" cy="43" r="7.5" fill="none" stroke="#FFFFFF" stroke-width="5.2"/>
+  <line x1="16" y1="48" x2="39.0" y2="25.0" stroke="#FFFFFF" stroke-width="5.6" stroke-linecap="round"/>
+  <polygon points="46.1,17.9 43.9,29.9 34.1,20.1" fill="#FFFFFF"/>
 </svg>

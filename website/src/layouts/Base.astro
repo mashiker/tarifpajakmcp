@@ -25,7 +25,7 @@ interface Props {
   noindex?: boolean;
 }
 
-const DEFAULT_IMAGE = `${CANONICAL_ORIGIN}/favicon.svg`;
+const DEFAULT_IMAGE = `${CANONICAL_ORIGIN}/og-image.png`;
 
 const {
   title,
@@ -58,6 +58,8 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:opsz,wght@14..32,300..900&display=swap" rel="stylesheet" />
@@ -73,7 +75,7 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
   <meta property="og:image" content={image} />
   <meta property="og:site_name" content="Tarif Pajak ID" />
   <meta property="og:locale" content="id_ID" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={fullTitle} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={image} />
@@ -188,14 +190,7 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
 
       <!-- Logo -->
       <a href="/" class="group flex shrink-0 items-center gap-2" aria-label="Tarif Pajak ID home">
-        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-[#111318] dark:bg-white transition-transform duration-200 group-hover:scale-105">
-          <svg class="h-4 w-4" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-            <rect x="14" y="16" width="36" height="32" rx="3" stroke="var(--accent)" stroke-width="3.5" fill="none"/>
-            <line x1="14" y1="26" x2="50" y2="26" stroke="var(--accent)" stroke-width="2.5"/>
-            <line x1="32" y1="16" x2="32" y2="48" stroke="var(--accent)" stroke-width="2.5"/>
-            <text x="41" y="23.5" font-family="monospace" font-size="8" font-weight="800" fill="var(--accent)" text-anchor="middle">%</text>
-          </svg>
-        </div>
+        <img src="/logo.svg" alt="" width="32" height="32" class="h-8 w-8 transition-transform duration-200 group-hover:scale-105" aria-hidden="true">
         <div class="flex items-center gap-1.5">
           <span class="text-sm font-bold tracking-tight text-[var(--text)]">Tarif Pajak</span>
           <span class="rounded bg-[var(--accent-soft)] px-1.5 py-0.5 font-mono text-[10px] font-bold text-[var(--accent)]">ID</span>
@@ -263,9 +258,7 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <!-- Left -->
         <div class="flex items-start gap-3">
-          <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#111318] dark:bg-white mt-0.5">
-            <svg class="h-3.5 w-3.5" viewBox="0 0 64 64" fill="none"><rect x="14" y="16" width="36" height="32" rx="3" stroke="var(--accent)" stroke-width="3.5" fill="none"/><line x1="14" y1="26" x2="50" y2="26" stroke="var(--accent)" stroke-width="2.5"/><line x1="32" y1="16" x2="32" y2="48" stroke="var(--accent)" stroke-width="2.5"/><text x="41" y="23.5" font-family="monospace" font-size="8" font-weight="800" fill="var(--accent)" text-anchor="middle">%</text></svg>
-          </div>
+          <img src="/logo.svg" alt="" width="28" height="28" class="h-7 w-7 shrink-0 mt-0.5" aria-hidden="true">
           <div>
             <span class="text-xs font-bold text-[var(--text)]">Tarif Pajak ID</span>
             <span class="mx-1.5 text-[var(--text-tertiary)]">·</span>

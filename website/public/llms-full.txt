@@ -1,7 +1,7 @@
 # Tarif Pajak ID — LLM reference (llms-full.txt)
 
 > Database tarif pajak Indonesia, kanonik: https://tarif-pajak-id.pages.dev
-> Rilis: 2026-08-28 · versi 0.1.0 · sourceHash ca945dce06e5
+> Rilis: 2026-08-29 · versi 0.1.0 · sourceHash ca945dce06e5
 > Lisensi: MIT (kode) + CC-BY-SA 4.0 (data)
 
 ## Apa ini
